@@ -16,7 +16,6 @@ defmodule PagesSite do
     "abandoned" => "🪦"
   }
   @pages ~w(README.md AGENTS.md BLOCKLIST.md PITFALLS.md KEYPOINTS.md)
-  @pinned [2360]
   @alive ~w(discussion prediscussion ideation published committed)
 
   def main([out]) do
@@ -408,7 +407,7 @@ defmodule PagesSite do
         %{date: l.date, label: l.label, id: ids[l.href], text: full_text(l)}
       end
 
-    tree = PagesTree.build(texts, notes, hd(@pinned), tree_repos(), ed.date)
+    tree = PagesTree.build(texts, notes, tree_repos(), ed.date)
 
     File.write!(
       Path.join(out, "assets/campus.domain.jsonld"),
@@ -420,15 +419,10 @@ defmodule PagesSite do
       JSON.encode!(PagesTree.problem(tree))
     )
 
-    hero =
-      for e <- rfds, e.serial in @pinned do
-        pinned_hero(e, ids, slugs, map_block(tree))
-      end
-      |> Enum.concat(["<!--search-->"])
-      |> Enum.join("\n\n")
+    hero = map_block(tree) <> "\n\n<!--search-->"
 
     foreword =
-      "## 1. The tech tree to #{short(hd(@pinned))} {#part-1}\n\n" <>
+      "## 1. The tech tree to the beta {#part-1}\n\n" <>
         "What the workspace measured (the logbook) and what it decided from that " <>
         "(the RFDs, also called requests for discussion, design docs or architecture " <>
         "decision records). #{tally(rfds)}\n\n" <>
@@ -451,25 +445,6 @@ defmodule PagesSite do
       "## Table of Contents\n{: #toc-title .no_toc}\n\n* TOC\n{:toc}",
       foreword,
       body
-    ]
-    |> Enum.join("\n\n")
-  end
-
-  defp pinned_hero(e, ids, slugs, map) do
-    id = ids[e.href]
-    meta = ~r/^\*\*(State|Feature|Scope):/
-    [head | _] = e |> pinned_text() |> linked("", slugs, e.serial) |> String.split("\n## Related")
-    paras = head |> String.split(~r/\n\s*\n/) |> Enum.map(&String.trim/1)
-    at = Enum.find_index(paras, &(String.starts_with?(&1, "**") and not Regex.match?(meta, &1)))
-    [hook, intrigue | _] = Enum.drop(paras, at)
-
-    [
-      "Pinned: [#{short(e.serial)}: #{e.label}](##{id}) #{e.status}\n{: .pinned}",
-      "#{hook}\n{: .hook}",
-      "#{intrigue}\n{: .intrigue}",
-      map,
-      "Select a skill to see what it needs, or a token sphere to travel down it. " <>
-        "[Read the whole RFD](##{id}).\n{: .exit}"
     ]
     |> Enum.join("\n\n")
   end
@@ -499,8 +474,6 @@ defmodule PagesSite do
       "<script type=\"application/json\" id=\"tree-data\">#{PagesTree.json(tree)}</script>\n" <>
       "<noscript>The map needs a script. Section 1 holds the same facts as tables.</noscript>"
   end
-
-  defp pinned_text(%{files: [{readme, _} | _]}), do: File.read!(readme)
 
   defp tally(rfds) do
     for s <- @states, n = Enum.count(rfds, &(&1.group == s)), n > 0 do
@@ -663,7 +636,6 @@ defmodule PagesSite do
           h2#toc-title + ul a { text-decoration: none; }
           h1.title { margin: 0 0 1.2rem; font: 600 .95rem system-ui, sans-serif;
             letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-          p.pinned { margin: 0 0 .8rem; padding: 0; font: 600 .85rem system-ui, sans-serif; }
           p.hook { margin: 0 0 .5rem; font-size: 2.2rem; line-height: 1.2; font-weight: 700; }
           p.intrigue { margin: 0 0 .8rem; font-size: 1.2rem; color: #444; }
           p.delivery { margin: 0 0 .4rem; }

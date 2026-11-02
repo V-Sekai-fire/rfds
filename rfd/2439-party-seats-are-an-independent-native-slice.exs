@@ -98,6 +98,7 @@ rfd 2439, "adventure party seats are an independent native slice", :discussion d
   rebac do
     verbs_from 2351
     relate "rfd-2439", :provides, "party-seats-native-slice"
+    relate "rfd-2439", :spends, "draw-wear-native-slice"
     relate "rfd-2439", :spends, "binary-translated-only-timings"
     relate "rfd-2439", :spends, "elf-guest-native-translation"
     relate "rfd-2439", :spends, "fex"

@@ -33,4 +33,9 @@ rfd 2389, "the sandbox addon is built at double", :discussion do
   the linux x86_64 and macos arm64 twins. The unrecorded double binaries in
   `taskweft-godot-sandbox` are not copied.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2389", :provides, "sandbox-addon-double-pinned"
+  end
 end

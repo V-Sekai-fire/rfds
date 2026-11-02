@@ -97,4 +97,9 @@ rfd 2437, "voice is an independent native slice", :discussion do
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2437", :provides, "voice-native-slice"
+  end
 end

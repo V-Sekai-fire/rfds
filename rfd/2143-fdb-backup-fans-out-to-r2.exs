@@ -187,4 +187,9 @@ rfd 2143, "FDB backup fans out to R2 for off-Fly durability", :discussion do
   FDB backups. A restore that cannot read the backup cannot issue the
   machine leaves the restored cluster needs.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2143", :provides, "fdb-backup-r2-dr-tag"
+  end
 end

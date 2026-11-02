@@ -61,4 +61,10 @@ rfd 2395, "the draw step runs the pipeline and lassoes a target", :discussion do
   Controls: `drop_seam` fails, `hidden` and `flat --expect=xr` fail, and priority off draws
   nothing.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2395", :provides, "draw-step-pipeline-attach"
+    relate "rfd-2395", :provides, "hand-lasso-target"
+  end
 end

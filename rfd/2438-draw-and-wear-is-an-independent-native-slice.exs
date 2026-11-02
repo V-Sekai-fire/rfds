@@ -96,4 +96,9 @@ rfd 2438, "draw and wear is an independent native slice", :discussion do
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2438", :provides, "draw-wear-native-slice"
+  end
 end

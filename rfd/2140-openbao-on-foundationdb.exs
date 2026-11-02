@@ -103,4 +103,10 @@ rfd 2140, "OpenBao on FoundationDB", :discussion do
   double redundancy, TLS, and backup, and raft on a single shared-cpu
   machine has no replication path.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2140", :provides, "bao"
+    relate "rfd-2140", :provides, "bao-fdb-storage-backend"
+  end
 end

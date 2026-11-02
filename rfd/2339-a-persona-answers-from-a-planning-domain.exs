@@ -79,4 +79,9 @@ rfd 2339, "a persona answers from a planning domain", :discussion do
   A persona cannot answer
   a question that is not a goal.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2339", :provides, "persona-goal-task-planner"
+  end
 end

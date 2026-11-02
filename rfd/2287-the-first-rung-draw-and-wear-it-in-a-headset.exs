@@ -129,4 +129,9 @@ garment-stage guest ELFs. The Steam Frame runs as a PC VR headset streamed from 
   | The shared Bao signing the CA | needs one signing grant (RFD66606-2142) | the next rung |
   | VRM export | delivery, not the rung's question | the shareable release |
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2287", :provides, "headset-draw-wear-rung"
+  end
 end

@@ -36,4 +36,9 @@ rfd 2368, "station parity is measured against a WARP render", :discussion do
   ANGLE's Vulkan path hashes the cloud noise's lattice corners from float sums differently on
   each side of a cell edge.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2368", :provides, "station-warp-parity-oracle"
+  end
 end

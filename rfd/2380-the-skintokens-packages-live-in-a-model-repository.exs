@@ -32,4 +32,9 @@ rfd 2380, "the SkinTokens packages live in a model repository", :discussion do
   The SkinTokens viewer's packages hold the rig model, about 1.3 GB each, more than a Space can
   hold.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2380", :provides, "skintokens-model-repo-packages"
+  end
 end

@@ -32,4 +32,9 @@ rfd 2419,
   `start` tries to run `\`. Godot raises its own process to above-normal priority, so a desk run
   lowers it by PID once started.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2419", :provides, "gitbash-pathconv-guard"
+  end
 end

@@ -46,4 +46,9 @@ rfd 2404, "the evidence step records one session", :discussion do
   count equals the `.cfhd`'s. Control: a truncated `.cfhd` is refused
   by `av1mkv check`.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2404", :provides, "session-evidence-recording"
+  end
 end

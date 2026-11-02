@@ -47,4 +47,9 @@ rfd 2390, "every ELF guest ships with its native translation", :discussion do
 
   Control: an ELF whose hash has no library reports untranslated and the gate fails by name.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2390", :provides, "elf-guest-native-translation"
+  end
 end

@@ -28,4 +28,9 @@ rfd 2425, "both avatars are free Apache-2.0 models", :discussion do
   The headset player is &{repo("character-mille-mire-feuille")}. The desktop player is
   &{repo("character-marocchino")}.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2425", :provides, "apache-avatar-pair"
+  end
 end

@@ -60,4 +60,9 @@ rfd 2426, "the garment handover is timed per leg", :discussion do
   The pass limits are not set yet: the first sustained run measures them, and the operator sets
   them from it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2426", :provides, "per-leg-handover-timing"
+  end
 end

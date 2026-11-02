@@ -68,4 +68,9 @@ rfd 2384, "the station is ported to Godot module by module against a reference",
   at seed 2 and must miss it, confirming the match depends on the
   seed and not the budget.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2384", :provides, "station-godot-module-port"
+  end
 end

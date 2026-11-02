@@ -201,4 +201,9 @@ rfd 2142, "Zero-trust service TLS via OpenBao PKI", :discussion do
   :: details The problem
   Any 6PN neighbor can observe or modify traffic to the listener.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2142", :provides, "bao-pki-service-tls"
+  end
 end

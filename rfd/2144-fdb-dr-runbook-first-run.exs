@@ -246,4 +246,10 @@ rfd 2144, "The DR runbook runs, and the CA it needed lands", :discussion do
   Tigris and R2 both
   survived (compute lost, storage kept), so the runbook had to run.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2144", :provides, "fdb-dr-restore-proven"
+    relate "rfd-2144", :provides, "break-glass-ca-in-1password"
+  end
 end

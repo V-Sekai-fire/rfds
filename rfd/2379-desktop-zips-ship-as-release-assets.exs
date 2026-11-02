@@ -48,4 +48,9 @@ rfd 2379, "desktop zips ship as release assets", :discussion do
   :: details The problem
   A Space holds at most 1 GB, and every earlier upload of the zips still counted in its history.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2379", :provides, "desktop-zips-release-assets"
+  end
 end

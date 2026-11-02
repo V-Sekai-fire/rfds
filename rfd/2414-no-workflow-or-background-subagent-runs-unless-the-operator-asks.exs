@@ -26,4 +26,9 @@ rfd 2414, "no workflow or background subagent runs unless the operator asks", :d
   :: details Where the rule lived
   The rule is one sentence from the section "How a desk works" of RFD66606-2294.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2414", :provides, "operator-asked-runs-only"
+  end
 end

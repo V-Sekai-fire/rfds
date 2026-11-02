@@ -49,4 +49,9 @@ rfd 2375, "the game ships to the headset as a Windows build", :discussion do
   repository of their own. The headset pulls the title with desync's arm64 build,
   or takes it over SSH as user `deck` with the desk's key, as a dev title.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2375", :provides, "windows-headset-game-build"
+  end
 end

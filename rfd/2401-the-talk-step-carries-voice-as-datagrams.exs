@@ -36,4 +36,10 @@ rfd 2401, "the talk step carries voice as datagrams", :discussion do
   against its input. Control: one packet dropped with the expectation
   kept falls below the threshold.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2401", :provides, "voice-datagram-transport"
+    relate "rfd-2401", :provides, "spatial-voice-at-head"
+  end
 end

@@ -54,4 +54,10 @@ rfd 2396, "the wear step attaches the garment to the avatar's hips", :discussion
   the stills, one of them in the mirror. Control: `--control=no_attach` leaves the garment under
   `Body`, displacement zero, FAIL.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2396", :provides, "garment-follows-hips"
+    relate "rfd-2396", :provides, "avatar-repo-humanoid-tsv"
+  end
 end

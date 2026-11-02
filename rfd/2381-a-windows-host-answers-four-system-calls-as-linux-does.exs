@@ -48,4 +48,9 @@ rfd 2381, "a Windows host answers four system calls as Linux does", :discussion 
   fixes are in our libriscv fork, and the addon takes them with Linux's `ENOSYS` for an unknown
   system call.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2381", :provides, "windows-host-four-syscalls"
+  end
 end

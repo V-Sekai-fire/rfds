@@ -27,4 +27,9 @@ rfd 2416, "a large area is parked one top-level entry at a time", :discussion do
   Each is pushed or moved into the tree and then removed until the area is empty, with no census
   of every file first.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2416", :provides, "area-parked-entry-by-entry"
+  end
 end

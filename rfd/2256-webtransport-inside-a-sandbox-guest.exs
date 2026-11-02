@@ -66,4 +66,9 @@ server and clients that host it, and a token-minting channel;
   :: details The problem
   Only a separate peer keeps it out of reach.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2256", :provides, "webtransport-guest-signer"
+  end
 end

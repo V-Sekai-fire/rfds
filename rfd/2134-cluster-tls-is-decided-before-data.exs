@@ -160,4 +160,10 @@ rfd 2134,
   :: details The problem
   Turning TLS on after the fact hit two walls, one known and one new.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2134", :provides, "fdb-cluster-mutual-tls"
+    relate "rfd-2134", :provides, "x509-v3-cert-profile"
+  end
 end

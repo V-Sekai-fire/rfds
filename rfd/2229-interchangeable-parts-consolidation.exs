@@ -232,4 +232,9 @@ loader path, memory `consolidate-interchangeable-parts`"
   them for one revision, passed a working tree carrying two known defects, and was
   decoration until its own third control caught it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2229", :provides, "interchangeable-parts-rule"
+  end
 end

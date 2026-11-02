@@ -41,4 +41,9 @@ rfd 2412, "each feature carries a joy forecast", :discussion do
   | dev.1 | MuJoCo collision, bit-deterministic | none | (unlikely, p=0.15) |
   | dev.1 | playing on macOS via oxrsys, PyroWave | none | (unlikely, p=0.10) |
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2412", :provides, "feature-joy-forecast-tags"
+  end
 end

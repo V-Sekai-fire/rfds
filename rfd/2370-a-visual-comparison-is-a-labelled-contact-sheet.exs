@@ -42,4 +42,9 @@ rfd 2370, "a visual comparison is a labelled contact sheet", :discussion do
   number
   rising so that no sheet is overwritten.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2370", :provides, "labelled-contact-sheet-compare"
+  end
 end

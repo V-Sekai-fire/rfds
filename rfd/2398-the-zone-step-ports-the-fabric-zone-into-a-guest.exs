@@ -40,4 +40,10 @@ rfd 2398, "the zone step ports the fabric zone into a guest", :discussion do
   and
   the search finds two owners.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2398", :provides, "fabric-zone-guest-port"
+    relate "rfd-2398", :provides, "zone-core-open-tick"
+  end
 end

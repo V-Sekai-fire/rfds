@@ -53,4 +53,9 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
   The
   logbook names that gap and counts five others, which RFD66606-2296's dev.2 works from.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2408", :provides, "dev1-station-visit"
+  end
 end

@@ -41,4 +41,10 @@ rfd 2391, "guests are built at double precision", :discussion do
   `curvenet.elf` and must print `RESULT: FAIL`. `linux.yml` gains
   `feat/*` and stays as the single-precision arm.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2391", :provides, "guest-elf-double"
+    relate "rfd-2391", :provides, "guests-double-precision-build"
+  end
 end

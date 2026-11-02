@@ -164,4 +164,9 @@ V-Sekai client and server that host the loop"
   One asked for emotes; none for rendered
   clips, hair motion or faces.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2262", :provides, "pen-wear-release-ladder"
+  end
 end

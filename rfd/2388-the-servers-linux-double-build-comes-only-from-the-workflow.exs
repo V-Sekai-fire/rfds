@@ -31,4 +31,9 @@ rfd 2388, "the servers' Linux double build comes only from the workflow", :discu
   `dlopen`. The x86_64 `SteamLinuxRuntime_sniper` entry point under FEX is tried once from the
   headset and `LD_DEBUG=libs` logged either way, and no rung waits on it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2388", :provides, "workflow-only-linux-double"
+  end
 end

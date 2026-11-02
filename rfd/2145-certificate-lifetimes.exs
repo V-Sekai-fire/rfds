@@ -184,4 +184,9 @@ rfd 2145, "Certificate lifetimes, from a risk-based ceiling", :discussion do
   :: details The problem
   The guidance predates CA/Browser Forum SC-081v3 (200 days now, 47 by 2029-03).
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2145", :provides, "cert-lifetime-table"
+  end
 end

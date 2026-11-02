@@ -30,4 +30,9 @@ rfd 2413,
   A procedure a desk repeats becomes an Elixir DSL or a tool in the tree rather than
   one-off shell.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2413", :provides, "desk-placed-tree-tooling"
+  end
 end

@@ -63,4 +63,9 @@ rfd 2296, "the first rung's dev.2", :discussion do
   dev rungs past dev.1 change daily while the rest of it does not. Kept
   there, each rung's edit is a diff to the workspace plan.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2296", :provides, "first-rung-dev2-gaps-closed"
+  end
 end

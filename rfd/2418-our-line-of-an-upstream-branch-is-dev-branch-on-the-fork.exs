@@ -27,4 +27,9 @@ rfd 2418, "our line of an upstream branch is dev/branch on the fork", :discussio
   A branch named `main/<x>` cannot sit beside one named `main`, since git stores each ref as a
   path.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2418", :provides, "fork-dev-branch-naming"
+  end
 end

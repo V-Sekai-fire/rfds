@@ -231,4 +231,9 @@ rules below"
   :: details The problem
   A rule changed on one desk disagreed with the others without anyone being told.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2294", :provides, "agent-knowledge-in-rfds"
+  end
 end

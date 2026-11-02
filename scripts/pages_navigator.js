@@ -11,6 +11,8 @@
   const data = JSON.parse(raw.textContent);
   const byN = new Map(data.nodes.map((n) => [n.n, n]));
   const tokenName = new Map([...data.tokens, ...data.boring].map((t) => [String(t.i), t.name]));
+  const tokenRepo = new Map([...data.tokens, ...data.boring]
+    .filter((t) => t.repos.length).map((t) => [String(t.i), t.repos.join(", ")]));
   const h = (tag, attrs = {}, text) => {
     const e = document.createElement(tag);
     for (const k in attrs) e.setAttribute(k, attrs[k]);
@@ -22,7 +24,7 @@
     bad_problem: "The problem document is not valid JSON-LD the planner can read.",
     no_goal: "The problem names no goal.",
     undeclared_goal: "No variable in the domain or problem declares that goal.",
-    unreachable: "No method chain reaches that goal from the facts that hold.",
+    unreachable: "No method chain reaches that goal from the facts that hold. A token we neither own nor may use blocks a route.",
   };
 
   const state = { mod: null, domain: "", problem: "", goals: [], level: "surface", last: null };
@@ -62,13 +64,16 @@
   function stepNode(action, i) {
     const li = h("li");
     const settle = /^settle-(\d+)$/.exec(action);
-    const token = /^acquire-token-(.+)$/.exec(action);
+    const token = /^acquire-token-(.+)-(owned|access)$/.exec(action);
     if (settle) {
       const n = byN.get(+settle[1]);
       const a = h("a", { href: n ? "#" + n.id : "#" }, "RFD66606-" + settle[1] + (n ? " " + n.t : ""));
       li.append("Settle ", a);
     } else if (token) {
-      li.append("Acquire " + (tokenName.get(token[1]) || "token " + token[1]));
+      const repo = tokenRepo.get(token[1]);
+      const how = token[2] === "owned" ? "ours" : "third party, we have access";
+      li.append("Acquire " + (tokenName.get(token[1]) || "token " + token[1])
+        + " (" + how + (repo ? ", from " + repo : "") + ")");
     } else {
       li.append(action);
     }

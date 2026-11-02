@@ -170,5 +170,19 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
 
     verb :supervisor_of, "the subject answers for the object's work"
     verb :partner_of, "the subject and the object share a goal as peers"
+    relate "datasource-store", :provides, "fdb-sqlite"
+    relate "private-lab", :provides, "fex"
+    relate "elixir", :spends, "pixi"
+    relate "weftspun", :owns, "fdb-sqlite"
+    relate "weftspun", :owns, "fex"
+    relate "weftspun", :owns, "guest-elf-double"
+    relate "weftspun", :has_capability, "bao"
+    relate "weftspun", :has_capability, "fly"
+    relate "weftspun", :has_capability, "tailscale"
+    relate "weftspun", :has_capability, "proton"
+    relate "weftspun", :has_capability, "pixi"
+    relate "weftspun", :has_capability, "prek"
+    relate "weftspun", :has_capability, "cross-build-image"
+    relate "weftspun", :has_capability, "elixir"
   end
 end

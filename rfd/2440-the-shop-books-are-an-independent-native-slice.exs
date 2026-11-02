@@ -93,6 +93,7 @@ rfd 2440, "the shop books are an independent native slice", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2440", :provides, "shop-books-native-slice"
+    relate "rfd-2440", :spends, "party-seats-native-slice"
     relate "rfd-2440", :spends, "binary-translated-only-timings"
     relate "rfd-2440", :spends, "elf-guest-native-translation"
     relate "rfd-2440", :spends, "fex"

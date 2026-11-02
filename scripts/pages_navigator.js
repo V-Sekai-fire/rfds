@@ -80,7 +80,7 @@
     return li;
   }
 
-  function needs(goal) {
+  function needs(goal, answer) {
     const n = /^\/rfd\/(\d+)$/.exec(goal);
     if (!n) return null;
     const cone = new Set();
@@ -104,7 +104,16 @@
     const names = (list) => list.map((t) => t.name + (t.repos.length ? " (" + t.repos.join(", ") + ")" : "")).join(", ") || "none";
     const todo = [...cone].filter((id) => byN.get(id).s !== "committed").sort((x, y) => x - y);
     const shown = todo.slice(0, 5).map((id) => "rfd-" + id).join(", ") + (todo.length > 5 ? ", and " + (todo.length - 5) + " more" : "");
+    const taken = new Set(((answer && answer.steps) || []).map((st) => st.action));
+    const options = Object.entries(data.caps || {})
+      .filter(([, ps]) => ps.some((id) => cone.has(id)))
+      .map(([token, ps]) => [
+        "Options for " + token,
+        ps.map((id) => "rfd-" + id + (taken.has("settle-" + id) ? " (taken)" : "")).join(" or "),
+        false,
+      ]);
     return [
+      ...options,
       ["Capability tokens we still lack (each open RFD is one)", todo.length + " of " + cone.size + (todo.length ? ": " + shown : ""), false],
       ["Tokens we own", names(toks.filter((t) => t.own)), false],
       ["Third-party tokens we have access to", names(toks.filter((t) => !t.own && t.access)), false],
@@ -113,8 +122,8 @@
     ];
   }
 
-  function showNeeds(goal) {
-    const rows = needs(goal);
+  function showNeeds(goal, answer) {
+    const rows = needs(goal, answer);
     if (!rows) return;
     const ul = h("ul", { class: "nv-needs" });
     rows.forEach(([label, text, blocker]) => ul.append(h("li", blocker ? { class: "nv-refused" } : {}, label + ": " + text)));
@@ -125,7 +134,7 @@
     ui.out.replaceChildren();
     if (answer.refused) {
       ui.out.append(h("p", { class: "nv-refused" }, "Refused: " + (REFUSALS[answer.refused] || answer.refused)));
-      showNeeds(goal);
+      showNeeds(goal, answer);
       return;
     }
     const steps = answer.steps || [];
@@ -134,7 +143,7 @@
     const name = rn ? "RFD66606-" + rn[1] + (byN.get(+rn[1]) ? " " + byN.get(+rn[1]).t : "") : goal;
     ui.out.append(h("p", {}, (answer.reached ? "Reached " : "Did not reach ") + name + " in "
       + steps.length + " steps (" + settles + " RFDs to settle)."));
-    showNeeds(goal);
+    showNeeds(goal, answer);
     const ol = h("ol", { class: "nv-steps" });
     steps.forEach((s, i) => ol.append(stepNode(s.action, i)));
     ui.out.append(ol);

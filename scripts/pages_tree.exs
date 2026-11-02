@@ -3,7 +3,6 @@
 # The prerequisite tree behind the beta freeze, RFD66606-2360: nodes, links, token spends, skipped-ahead links.
 defmodule PagesTree do
   @goal 2360
-  @max_depth 4
 
   @features [
     %{
@@ -38,23 +37,20 @@ defmodule PagesTree do
   @unsettled ~w(prediscussion ideation discussion)
 
   @tokens [
-    {1, "Guest ELFs on the pinned double engine", ~r/guest ELF|riscv64|libriscv|godot-sandbox/,
-     ~r/guest|riscv/},
-    {2, "SQLite on FoundationDB pages", ~r/FoundationDB|fdb-sqlite/, ~r/FoundationDB|fdb/},
-    {3, "Bao", ~r/\bBao\b|OpenBao/, ~r/\bBao\b|OpenBao/},
-    {4, "Fly", ~r/\bFly\b|Fly\.io/, ~r/\bFly\b/},
-    {5, "Tailscale", ~r/Tailscale/, ~r/Tailscale/},
-    {6, "FEX", ~r/\bFEX\b/, ~r/\bFEX\b/},
-    {7, "Proton", ~r/\bProton\b/, ~r/\bProton\b/}
+    {1, "Guest ELFs on the pinned double engine", "guest-elf-double"},
+    {2, "SQLite on FoundationDB pages", "fdb-sqlite"},
+    {3, "Bao", "bao"},
+    {4, "Fly", "fly"},
+    {5, "Tailscale", "tailscale"},
+    {6, "FEX", "fex"},
+    {7, "Proton", "proton"}
   ]
-
   @boring [
-    {"B1", "Elixir", ~r/Elixir|BEAM/, ~r/Elixir|BEAM/},
-    {"B2", "pixi", ~r/\bpixi\b/, ~r/\bpixi\b/},
-    {"B3", "prek", ~r/\bprek\b/, ~r/\bprek\b/},
-    {"B4", "cross-build image", ~r/llvm-mingw|osxcross/, ~r/cross-build|llvm-mingw|osxcross/}
+    {"B1", "Elixir", "elixir"},
+    {"B2", "pixi", "pixi"},
+    {"B3", "prek", "prek"},
+    {"B4", "cross-build image", "cross-build-image"}
   ]
-
   defp acquired do
     case File.read(Path.join(__DIR__, "acquired.json")) do
       {:ok, text} -> JSON.decode!(text)
@@ -65,14 +61,15 @@ defmodule PagesTree do
   def build(docs, logs, repos, asof) do
     goal = @goal
     live = Enum.reject(docs, &(&1.state == "abandoned"))
-    known = MapSet.new(live, & &1.serial)
     by = Map.new(live, &{&1.serial, &1})
-    links = Map.new(live, &{&1.serial, cites(&1, known)})
+    declared = declared()
+    links = Map.new(live, &{&1.serial, needs(&1.serial, declared, by)})
     depth = depths(links, goal)
 
     nodes =
-      for {serial, d} <- Enum.sort(depth), d <= @max_depth do
+      for {serial, d} <- Enum.sort(depth) do
         doc = by[serial]
+        spent = Map.get(declared.spends, serial, [])
 
         %{
           n: serial,
@@ -83,9 +80,9 @@ defmodule PagesTree do
           u: doc.date,
           a: Map.get(acquired(), to_string(serial), ""),
           l: evidence(logs, serial),
-          k: for({i, _, re, _} <- @tokens, Regex.match?(re, doc.text), do: i),
-          b: for({i, _, re, _} <- @boring, Regex.match?(re, doc.text), do: i),
-          c: links[serial] |> Enum.filter(&Map.has_key?(depth, &1)) |> Enum.sort()
+          k: for({i, _, slug} <- @tokens, held?(slug, spent, declared), do: i),
+          b: for({i, _, slug} <- @boring, held?(slug, spent, declared), do: i),
+          c: links[serial]
         }
       end
 
@@ -105,8 +102,8 @@ defmodule PagesTree do
       asof: asof,
       nodes: nodes,
       skips: skips,
-      tokens: tokens(live, nodes),
-      boring: boring(live, nodes),
+      tokens: tokens(declared, nodes),
+      boring: boring(declared, nodes),
       repos: repos,
       features: @features,
       all: depth |> Map.keys() |> length()
@@ -158,8 +155,7 @@ defmodule PagesTree do
             [%{name: "settle", subtasks: steps ++ [["settle-#{n.n}"]]}]
           end
 
-        {"reach-rfd-#{n.n}",
-         %{params: [], alternatives: [held.("/rfd/#{n.n}") | settle_alt]}}
+        {"reach-rfd-#{n.n}", %{params: [], alternatives: [held.("/rfd/#{n.n}") | settle_alt]}}
       end
 
     token_methods =
@@ -431,38 +427,70 @@ defmodule PagesTree do
         do: String.to_integer(a)..String.to_integer(b)//1
   end
 
-  defp cites(doc, known) do
-    singles = for [_, n] <- Regex.scan(~r/RFD66606-(\d{4})/, doc.text), do: String.to_integer(n)
+  defp declared do
+    tuples =
+      for path <- RFD.Source.all(),
+          doc = RFD.Source.load(path),
+          doc.rebac != nil,
+          t <- doc.rebac.tuples,
+          not t.deny,
+          do: {serial_of(t.subject), t.verb, t.object}
 
-    ranges =
-      for [_, a, b] <- Regex.scan(~r/RFD66606-(\d{4}) to RFD66606-(\d{4})/, doc.text),
-          n <- String.to_integer(a)..String.to_integer(b)//1,
-          do: n
-
-    (singles ++ ranges) |> Enum.uniq() |> Enum.filter(&(&1 != doc.serial and &1 in known))
+    %{
+      provides:
+        for(
+          {s, :provides, o} <- tuples,
+          reduce: %{},
+          do: (acc -> Map.update(acc, o, [s], &[s | &1]))
+        ),
+      spends:
+        for(
+          {s, :spends, o} <- tuples,
+          reduce: %{},
+          do: (acc -> Map.update(acc, s, [o], &[o | &1]))
+        )
+    }
   end
 
-  defp depths(links, goal), do: walk([goal], links, %{goal => 0})
+  defp serial_of("rfd-" <> n), do: String.to_integer(n)
+  defp serial_of(_), do: nil
 
-  defp walk([], _links, seen), do: seen
-
-  defp walk([n | queue], links, seen) do
-    fresh = for m <- Map.get(links, n, []), not Map.has_key?(seen, m), do: m
-    seen = Enum.reduce(fresh, seen, &Map.put(&2, &1, seen[n] + 1))
-    walk(queue ++ fresh, links, seen)
+  defp needs(serial, declared, by) do
+    for token <- Map.get(declared.spends, serial, []),
+        p <- Map.get(declared.provides, token, []),
+        p != serial,
+        Map.has_key?(by, p),
+        uniq: true,
+        do: p
   end
 
-  defp boring(live, nodes) do
-    for {i, name, _, title_re} <- @boring do
-      owners = for d <- live, Regex.match?(title_re, d.label), do: d.serial
+  defp held?(slug, spent, declared),
+    do: slug in spent and not Map.has_key?(declared.provides, slug)
+
+  defp depths(links, goal) do
+    relax(%{goal => 0}, links)
+  end
+
+  defp relax(depth, links) do
+    next =
+      for {a, d} <- depth, p <- Map.get(links, a, []), reduce: depth do
+        acc -> Map.update(acc, p, d + 1, &max(&1, d + 1))
+      end
+
+    if next == depth, do: depth, else: relax(next, links)
+  end
+
+  defp boring(declared, nodes) do
+    for {i, name, slug} <- @boring do
+      owners = Map.get(declared.provides, slug, [])
       users = for n <- nodes, i in n.b, do: n.n
       %{i: i, name: name, owners: owners, users: users}
     end
   end
 
-  defp tokens(live, nodes) do
-    for {i, name, _, title_re} <- @tokens do
-      owners = for d <- live, Regex.match?(title_re, d.label), do: d.serial
+  defp tokens(declared, nodes) do
+    for {i, name, slug} <- @tokens do
+      owners = Map.get(declared.provides, slug, [])
       users = for n <- nodes, i in n.k, do: n.n
       %{i: i, name: name, owners: owners, users: users}
     end

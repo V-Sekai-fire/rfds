@@ -40,5 +40,7 @@ rfd 2368, "station parity is measured against a WARP render", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2368", :provides, "station-warp-parity-oracle"
+    relate "rfd-2368", :is_a, "ci-gate"
+    relate "rfd-2368", :spends, "station-csg-baked-mesh-render"
   end
 end

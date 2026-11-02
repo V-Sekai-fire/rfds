@@ -38,5 +38,6 @@ rfd 2385, "the Proton tweak on the Frame is reproduced by script", :discussion d
     verbs_from 2351
     relate "rfd-2385", :provides, "proton"
     relate "rfd-2385", :provides, "scripted-proton-xrfix-tweak"
+    relate "rfd-2385", :is_a, "deployment"
   end
 end

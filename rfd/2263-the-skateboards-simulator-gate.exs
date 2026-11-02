@@ -120,5 +120,6 @@ tools/replay_oxrsys.py and CI workflows; the stage guest ELFs it builds"
   rebac do
     verbs_from 2351
     relate "rfd-2263", :provides, "oxr-simulator-gate"
+    relate "rfd-2263", :is_a, "ci-gate"
   end
 end

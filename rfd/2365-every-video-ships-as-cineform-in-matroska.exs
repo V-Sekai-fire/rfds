@@ -38,5 +38,6 @@ rfd 2365, "every video ships as CineForm in Matroska", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2365", :provides, "cineform-matroska-video"
+    relate "rfd-2365", :is_a, "workspace-policy"
   end
 end

@@ -45,5 +45,6 @@ rfd 2412, "each feature carries a joy forecast", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2412", :provides, "feature-joy-forecast-tags"
+    relate "rfd-2412", :is_a, "workspace-policy"
   end
 end

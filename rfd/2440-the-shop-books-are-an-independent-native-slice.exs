@@ -93,5 +93,12 @@ rfd 2440, "the shop books are an independent native slice", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2440", :provides, "shop-books-native-slice"
+    relate "rfd-2440", :spends, "binary-translated-only-timings"
+    relate "rfd-2440", :spends, "elf-guest-native-translation"
+    relate "rfd-2440", :spends, "fex"
+    relate "rfd-2440", :spends, "persona-goal-task-planner"
+    relate "rfd-2440", :spends, "bao"
+    relate "rfd-2440", :spends, "fdb-sqlite"
+    relate "rfd-2440", :is_a, "native-slice"
   end
 end

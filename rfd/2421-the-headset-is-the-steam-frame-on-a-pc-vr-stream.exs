@@ -36,5 +36,6 @@ rfd 2421, "the headset is the Steam Frame on a PC VR stream", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2421", :provides, "steam-frame-headset-sizing"
+    relate "rfd-2421", :is_a, "experiment-record"
   end
 end

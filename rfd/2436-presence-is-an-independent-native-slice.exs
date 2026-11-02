@@ -100,5 +100,6 @@ rfd 2436, "presence is an independent native slice", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2436", :provides, "see-each-other"
+    relate "rfd-2436", :is_a, "native-slice"
   end
 end

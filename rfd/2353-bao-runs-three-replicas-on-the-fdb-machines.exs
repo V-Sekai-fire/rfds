@@ -143,5 +143,12 @@ rfd 2353, "Bao runs three replicas on the FDB machines", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2353", :provides, "bao-single-fly-instance"
+    relate "rfd-2353", :is_a, "deployment"
+    relate "rfd-2353", :spends, "bao"
+    relate "rfd-2353", :spends, "bao-fdb-storage-backend"
+    relate "rfd-2353", :spends, "bao-cert-auth-role-map"
+    relate "rfd-2353", :spends, "fdb-backup-r2-dr-tag"
+    relate "rfd-2353", :spends, "fly"
+    relate "rfd-2353", :spends, "tailscale"
   end
 end

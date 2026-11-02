@@ -70,5 +70,7 @@ server and clients that host it, and a token-minting channel;
   rebac do
     verbs_from 2351
     relate "rfd-2256", :provides, "webtransport-guest-signer"
+    relate "rfd-2256", :spends, "rebac-agent-role-tuples"
+    relate "rfd-2256", :is_a, "guest-runtime"
   end
 end

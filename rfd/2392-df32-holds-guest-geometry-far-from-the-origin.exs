@@ -40,5 +40,6 @@ rfd 2392, "df32 holds guest geometry far from the origin", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2392", :provides, "df32-far-origin-geometry"
+    relate "rfd-2392", :is_a, "guest-runtime"
   end
 end

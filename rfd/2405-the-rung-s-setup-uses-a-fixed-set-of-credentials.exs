@@ -40,5 +40,8 @@ rfd 2405, "the rung's setup uses a fixed set of credentials", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2405", :provides, "fixed-setup-credentials-set"
+    relate "rfd-2405", :is_a, "security-control"
+    relate "rfd-2405", :spends, "bao"
+    relate "rfd-2405", :spends, "fly"
   end
 end

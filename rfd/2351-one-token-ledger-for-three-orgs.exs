@@ -159,5 +159,16 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   rebac do
     verb :provides, "the subject, once accomplished, mints the object token"
     verb :spends, "the subject is accomplished only by spending the object token"
+    verb :is_a, "the subject is a kind of the object, as a subclass is of its class"
+    verb :owns, "the subject is composed of the object, as an object owns the parts it has"
+    verb :controls, "the subject decides what the object does"
+    verb :delegated_to, "the subject hands its control to the object"
+    verb :has_capability, "the subject may use the object capability"
+
+    verb :is_member_of,
+         "the subject belongs to the object group, and inherits what the group holds"
+
+    verb :supervisor_of, "the subject answers for the object's work"
+    verb :partner_of, "the subject and the object share a goal as peers"
   end
 end

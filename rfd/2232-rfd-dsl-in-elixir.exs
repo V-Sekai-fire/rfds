@@ -102,5 +102,8 @@ rfd 2232, "RFD authoring as an Elixir DSL", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2232", :provides, "rfd-elixir-dsl-compiler"
+    relate "rfd-2232", :spends, "rfd-state-lifecycle"
+    relate "rfd-2232", :spends, "elixir"
+    relate "rfd-2232", :is_a, "ci-gate"
   end
 end

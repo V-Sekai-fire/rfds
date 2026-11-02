@@ -40,5 +40,6 @@ rfd 2373, "a guest keeps its source where it is consumed", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2373", :provides, "guest-source-at-consumer"
+    relate "rfd-2373", :is_a, "guest-runtime"
   end
 end

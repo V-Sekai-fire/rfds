@@ -168,5 +168,10 @@ V-Sekai client and server that host the loop"
   rebac do
     verbs_from 2351
     relate "rfd-2262", :provides, "pen-wear-release-ladder"
+    relate "rfd-2262", :spends, "oxr-simulator-gate"
+    relate "rfd-2262", :spends, "headset-draw-wear-rung"
+    relate "rfd-2262", :is_a, "release-rung"
+    relate "rfd-2262", :owns, "rfd-2263"
+    relate "rfd-2262", :owns, "rfd-2287"
   end
 end

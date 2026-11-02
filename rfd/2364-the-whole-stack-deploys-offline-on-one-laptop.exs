@@ -42,5 +42,8 @@ rfd 2364, "the whole stack deploys offline on one laptop", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2364", :provides, "offline-laptop-deploy"
+    relate "rfd-2364", :is_a, "deployment"
+    relate "rfd-2364", :spends, "bao"
+    relate "rfd-2364", :spends, "fdb-sqlite"
   end
 end

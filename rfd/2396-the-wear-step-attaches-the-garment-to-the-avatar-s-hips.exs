@@ -59,5 +59,7 @@ rfd 2396, "the wear step attaches the garment to the avatar's hips", :discussion
     verbs_from 2351
     relate "rfd-2396", :provides, "garment-follows-hips"
     relate "rfd-2396", :provides, "avatar-repo-humanoid-tsv"
+    relate "rfd-2396", :is_a, "avatar-pipeline"
+    relate "rfd-2396", :spends, "draw-step-pipeline-attach"
   end
 end

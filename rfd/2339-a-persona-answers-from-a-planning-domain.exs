@@ -83,5 +83,6 @@ rfd 2339, "a persona answers from a planning domain", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2339", :provides, "persona-goal-task-planner"
+    relate "rfd-2339", :is_a, "model-pipeline-stage"
   end
 end

@@ -49,5 +49,8 @@ rfd 2377, "a translation links into the addon, one bake per platform", :discussi
   rebac do
     verbs_from 2351
     relate "rfd-2377", :provides, "per-platform-baked-translation"
+    relate "rfd-2377", :spends, "elf-guest-native-translation"
+    relate "rfd-2377", :spends, "sandbox-addon-double-pinned"
+    relate "rfd-2377", :is_a, "guest-runtime"
   end
 end

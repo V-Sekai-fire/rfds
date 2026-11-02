@@ -40,5 +40,7 @@ rfd 2369, "the standalone headset draws at most 700k triangles", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2369", :provides, "headset-700k-triangle-budget"
+    relate "rfd-2369", :is_a, "workspace-policy"
+    relate "rfd-2369", :spends, "station-csg-baked-mesh-render"
   end
 end

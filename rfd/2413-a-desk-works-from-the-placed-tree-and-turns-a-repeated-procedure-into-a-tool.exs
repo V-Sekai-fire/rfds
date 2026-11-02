@@ -34,5 +34,7 @@ rfd 2413,
   rebac do
     verbs_from 2351
     relate "rfd-2413", :provides, "desk-placed-tree-tooling"
+    relate "rfd-2413", :is_a, "workspace-policy"
+    relate "rfd-2413", :spends, "elixir"
   end
 end

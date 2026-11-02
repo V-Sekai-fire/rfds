@@ -35,5 +35,12 @@ rfd 2411, "released: the rung is live and reproducible from a bare machine", :di
   rebac do
     verbs_from 2351
     relate "rfd-2411", :provides, "rung-live-reproducible-bare"
+    relate "rfd-2411", :is_a, "release-rung"
+    relate "rfd-2411", :spends, "rc-two-people-talking"
+    relate "rfd-2411", :spends, "session-evidence-recording"
+    relate "rfd-2411", :spends, "desk-github-credentials-destroyed"
+    relate "rfd-2411", :spends, "skateboard-manifest-repo"
+    relate "rfd-2411", :owns, "rfd-2404"
+    relate "rfd-2411", :owns, "rfd-2406"
   end
 end

@@ -52,5 +52,6 @@ rfd 2379, "desktop zips ship as release assets", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2379", :provides, "desktop-zips-release-assets"
+    relate "rfd-2379", :is_a, "deployment"
   end
 end

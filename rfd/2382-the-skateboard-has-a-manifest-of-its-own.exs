@@ -114,5 +114,7 @@ rfd 2382, "the Skateboard has a manifest of its own", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2382", :provides, "skateboard-manifest-repo"
+    relate "rfd-2382", :spends, "pixi"
+    relate "rfd-2382", :is_a, "workspace-policy"
   end
 end

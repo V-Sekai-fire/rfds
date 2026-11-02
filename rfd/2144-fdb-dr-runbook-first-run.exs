@@ -251,5 +251,8 @@ rfd 2144, "The DR runbook runs, and the CA it needed lands", :discussion do
     verbs_from 2351
     relate "rfd-2144", :provides, "fdb-dr-restore-proven"
     relate "rfd-2144", :provides, "break-glass-ca-in-1password"
+    relate "rfd-2144", :spends, "fdb-backup-r2-dr-tag"
+    relate "rfd-2144", :spends, "bao"
+    relate "rfd-2144", :is_a, "experiment-record"
   end
 end

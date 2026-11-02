@@ -51,5 +51,7 @@ rfd 2390, "every ELF guest ships with its native translation", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2390", :provides, "elf-guest-native-translation"
+    relate "rfd-2390", :spends, "sandbox-addon-double-pinned"
+    relate "rfd-2390", :is_a, "guest-runtime"
   end
 end

@@ -35,5 +35,6 @@ rfd 2423, "the setting is a port of the Sakuragaoka station plaza", :discussion 
   rebac do
     verbs_from 2351
     relate "rfd-2423", :provides, "sakuragaoka-plaza-setting"
+    relate "rfd-2423", :is_a, "asset-port"
   end
 end

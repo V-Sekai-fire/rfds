@@ -540,5 +540,8 @@ rfd 2195, "Expose weftspun-bao privately via Tailscale", :discussion do
     verbs_from 2351
     relate "rfd-2195", :provides, "tailscale"
     relate "rfd-2195", :provides, "bao-tailnet-private-access"
+    relate "rfd-2195", :spends, "bao"
+    relate "rfd-2195", :spends, "bao-pki-service-tls"
+    relate "rfd-2195", :is_a, "deployment"
   end
 end

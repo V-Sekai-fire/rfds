@@ -49,5 +49,6 @@ rfd 2169, "Abandon the strangler-fig studio core; the ladder is MaskScore", :pub
   rebac do
     verbs_from 2351
     relate "rfd-2169", :provides, "maskscore-ladder-decided"
+    relate "rfd-2169", :is_a, "workspace-policy"
   end
 end

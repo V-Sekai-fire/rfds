@@ -33,5 +33,8 @@ rfd 2386, "this Mac is the desktop client", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2386", :provides, "mac-desktop-client"
+    relate "rfd-2386", :spends, "actions-builds-double-binaries"
+    relate "rfd-2386", :spends, "sandbox-addon-double-pinned"
+    relate "rfd-2386", :is_a, "deployment"
   end
 end

@@ -43,5 +43,7 @@ rfd 2420, "the rung's guests are C++ built at double and tested with Lean", :dis
   rebac do
     verbs_from 2351
     relate "rfd-2420", :provides, "lean-tested-cpp-guests"
+    relate "rfd-2420", :spends, "guest-elf-double"
+    relate "rfd-2420", :is_a, "guest-runtime"
   end
 end

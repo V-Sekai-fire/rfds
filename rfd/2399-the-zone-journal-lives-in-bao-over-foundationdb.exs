@@ -53,5 +53,11 @@ rfd 2399, "the zone journal lives in Bao over FoundationDB", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2399", :provides, "zone-journal-in-bao-fdb"
+    relate "rfd-2399", :is_a, "deployment"
+    relate "rfd-2399", :spends, "bao"
+    relate "rfd-2399", :spends, "bao-fdb-storage-backend"
+    relate "rfd-2399", :spends, "fdb-sqlite"
+    relate "rfd-2399", :spends, "tailscale"
+    relate "rfd-2399", :spends, "zone-core-open-tick"
   end
 end

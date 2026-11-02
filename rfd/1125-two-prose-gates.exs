@@ -107,5 +107,7 @@ rfd 1125, "Two prose gates, one for each kind of writing", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-1125", :provides, "prose-gate-per-section"
+    relate "rfd-1125", :spends, "rfd-state-lifecycle"
+    relate "rfd-1125", :is_a, "prose-gate"
   end
 end

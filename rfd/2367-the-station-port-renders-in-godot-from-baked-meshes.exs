@@ -69,5 +69,7 @@ rfd 2367, "the station port renders in Godot from baked meshes", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2367", :provides, "station-csg-baked-mesh-render"
+    relate "rfd-2367", :is_a, "workspace-policy"
+    relate "rfd-2367", :spends, "sandbox-guest-heavy-compute"
   end
 end

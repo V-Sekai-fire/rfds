@@ -133,5 +133,26 @@ garment-stage guest ELFs. The Steam Frame runs as a PC VR headset streamed from 
   rebac do
     verbs_from 2351
     relate "rfd-2287", :provides, "headset-draw-wear-rung"
+    relate "rfd-2287", :spends, "guest-elf-double"
+    relate "rfd-2287", :spends, "fex"
+    relate "rfd-2287", :spends, "webtransport-guest-signer"
+    relate "rfd-2287", :spends, "guest-macaroon-capabilities"
+    relate "rfd-2287", :spends, "lean-tested-cpp-guests"
+    relate "rfd-2287", :spends, "steam-frame-headset-sizing"
+    relate "rfd-2287", :spends, "xr-grid-cassie-interface"
+    relate "rfd-2287", :spends, "sakuragaoka-plaza-setting"
+    relate "rfd-2287", :spends, "sketch-keypoint-body-fit"
+    relate "rfd-2287", :spends, "apache-avatar-pair"
+    relate "rfd-2287", :spends, "per-leg-handover-timing"
+    relate "rfd-2287", :spends, "handover-timing-planted-levels"
+    relate "rfd-2287", :is_a, "release-rung"
+    relate "rfd-2287", :owns, "rfd-2420"
+    relate "rfd-2287", :owns, "rfd-2421"
+    relate "rfd-2287", :owns, "rfd-2422"
+    relate "rfd-2287", :owns, "rfd-2423"
+    relate "rfd-2287", :owns, "rfd-2424"
+    relate "rfd-2287", :owns, "rfd-2425"
+    relate "rfd-2287", :owns, "rfd-2426"
+    relate "rfd-2287", :owns, "rfd-2427"
   end
 end

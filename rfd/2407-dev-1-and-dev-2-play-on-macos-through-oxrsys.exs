@@ -39,5 +39,7 @@ rfd 2407, "dev.1 and dev.2 play on macOS through oxrsys", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2407", :provides, "macos-oxrsys-dev-play"
+    relate "rfd-2407", :is_a, "workspace-policy"
+    relate "rfd-2407", :spends, "mac-desktop-client"
   end
 end

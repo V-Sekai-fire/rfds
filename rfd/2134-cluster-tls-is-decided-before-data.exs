@@ -165,5 +165,7 @@ rfd 2134,
     verbs_from 2351
     relate "rfd-2134", :provides, "fdb-cluster-mutual-tls"
     relate "rfd-2134", :provides, "x509-v3-cert-profile"
+    relate "rfd-2134", :spends, "fdb-sqlite"
+    relate "rfd-2134", :is_a, "security-control"
   end
 end

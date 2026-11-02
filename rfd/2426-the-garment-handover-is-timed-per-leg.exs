@@ -64,5 +64,8 @@ rfd 2426, "the garment handover is timed per leg", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2426", :provides, "per-leg-handover-timing"
+    relate "rfd-2426", :spends, "worker-zone-dispatch"
+    relate "rfd-2426", :spends, "fdb-sqlite"
+    relate "rfd-2426", :is_a, "experiment-record"
   end
 end

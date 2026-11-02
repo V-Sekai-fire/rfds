@@ -51,5 +51,6 @@ rfd 2374, "everything in a godot-sandbox runs binary-translated", :discussion do
     verbs_from 2351
     relate "rfd-2374", :provides, "binary-translated-only-timings"
     relate "rfd-2374", :provides, "sgd-compiled-scripts-only"
+    relate "rfd-2374", :is_a, "guest-runtime"
   end
 end

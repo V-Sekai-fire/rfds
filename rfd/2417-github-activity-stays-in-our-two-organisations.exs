@@ -37,5 +37,6 @@ rfd 2417, "GitHub activity stays in our two organisations", :discussion do
     verbs_from 2351
     relate "rfd-2417", :provides, "github-two-orgs-only"
     relate "rfd-2417", :provides, "upstream-cited-by-bare-sha"
+    relate "rfd-2417", :is_a, "workspace-policy"
   end
 end

@@ -73,5 +73,8 @@ rfd 2402, "the ghost servers run on Fly as weftspun-zone", :discussion do
     verbs_from 2351
     relate "rfd-2402", :provides, "fly"
     relate "rfd-2402", :provides, "weftspun-zone-ghost-servers"
+    relate "rfd-2402", :is_a, "deployment"
+    relate "rfd-2402", :spends, "workflow-only-linux-double"
+    relate "rfd-2402", :spends, "zone-core-open-tick"
   end
 end

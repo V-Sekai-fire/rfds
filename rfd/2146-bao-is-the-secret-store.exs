@@ -147,5 +147,8 @@ already presents a per-identity TLS leaf."
   rebac do
     verbs_from 2351
     relate "rfd-2146", :provides, "bao-cert-auth-role-map"
+    relate "rfd-2146", :spends, "bao"
+    relate "rfd-2146", :spends, "bao-pki-service-tls"
+    relate "rfd-2146", :is_a, "security-control"
   end
 end

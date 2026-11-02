@@ -43,5 +43,6 @@ rfd 2366, "a short runs forty seconds in four beats", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2366", :provides, "forty-second-hide-short"
+    relate "rfd-2366", :is_a, "workspace-policy"
   end
 end

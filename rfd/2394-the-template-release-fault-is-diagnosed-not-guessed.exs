@@ -34,5 +34,6 @@ rfd 2394, "the template_release fault is diagnosed, not guessed", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2394", :provides, "template-release-backtrace-diagnosed"
+    relate "rfd-2394", :is_a, "experiment-record"
   end
 end

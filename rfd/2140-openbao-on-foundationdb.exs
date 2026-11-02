@@ -108,5 +108,8 @@ rfd 2140, "OpenBao on FoundationDB", :discussion do
     verbs_from 2351
     relate "rfd-2140", :provides, "bao"
     relate "rfd-2140", :provides, "bao-fdb-storage-backend"
+    relate "rfd-2140", :spends, "fdb-sqlite"
+    relate "rfd-2140", :spends, "fdb-cluster-mutual-tls"
+    relate "rfd-2140", :is_a, "deployment"
   end
 end

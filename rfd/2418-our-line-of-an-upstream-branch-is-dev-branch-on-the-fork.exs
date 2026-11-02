@@ -31,5 +31,6 @@ rfd 2418, "our line of an upstream branch is dev/branch on the fork", :discussio
   rebac do
     verbs_from 2351
     relate "rfd-2418", :provides, "fork-dev-branch-naming"
+    relate "rfd-2418", :is_a, "workspace-policy"
   end
 end

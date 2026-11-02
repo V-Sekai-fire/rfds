@@ -11,6 +11,8 @@
   const data = JSON.parse(raw.textContent);
   const byN = new Map(data.nodes.map((n) => [n.n, n]));
   const tokenName = new Map([...data.tokens, ...data.boring].map((t) => [String(t.i), t.name]));
+  const tokenRepo = new Map([...data.tokens, ...data.boring]
+    .filter((t) => t.repos.length).map((t) => [String(t.i), t.repos.join(", ")]));
   const h = (tag, attrs = {}, text) => {
     const e = document.createElement(tag);
     for (const k in attrs) e.setAttribute(k, attrs[k]);
@@ -22,7 +24,7 @@
     bad_problem: "The problem document is not valid JSON-LD the planner can read.",
     no_goal: "The problem names no goal.",
     undeclared_goal: "No variable in the domain or problem declares that goal.",
-    unreachable: "No method chain reaches that goal from the facts that hold.",
+    unreachable: "No method chain reaches that goal from the facts that hold. A token we neither own nor may use blocks a route.",
   };
 
   const state = { mod: null, domain: "", problem: "", goals: [], level: "surface", last: null };
@@ -62,23 +64,68 @@
   function stepNode(action, i) {
     const li = h("li");
     const settle = /^settle-(\d+)$/.exec(action);
-    const token = /^acquire-token-(.+)$/.exec(action);
+    const token = /^acquire-token-(.+)-(owned|access)$/.exec(action);
     if (settle) {
       const n = byN.get(+settle[1]);
       const a = h("a", { href: n ? "#" + n.id : "#" }, "RFD66606-" + settle[1] + (n ? " " + n.t : ""));
       li.append("Settle ", a);
     } else if (token) {
-      li.append("Acquire " + (tokenName.get(token[1]) || "token " + token[1]));
+      const repo = tokenRepo.get(token[1]);
+      const how = token[2] === "owned" ? "ours" : "third party, we have access";
+      li.append("Acquire " + (tokenName.get(token[1]) || "token " + token[1])
+        + " (" + how + (repo ? ", from " + repo : "") + ")");
     } else {
       li.append(action);
     }
     return li;
   }
 
+  function needs(goal) {
+    const n = /^\/rfd\/(\d+)$/.exec(goal);
+    if (!n) return null;
+    const cone = new Set();
+    const queue = [+n[1]];
+    while (queue.length) {
+      const id = queue.pop();
+      if (cone.has(id) || !byN.has(id)) continue;
+      cone.add(id);
+      queue.push(...byN.get(id).c);
+    }
+    const used = new Set();
+    cone.forEach((id) => [...byN.get(id).k, ...byN.get(id).b].forEach((t) => used.add(String(t))));
+    const all = [...data.tokens, ...data.boring];
+    for (let grew = true; grew;) {
+      grew = false;
+      all.filter((t) => used.has(String(t.i))).forEach((t) => t.via.forEach((v) => {
+        if (!used.has(String(v))) { used.add(String(v)); grew = true; }
+      }));
+    }
+    const toks = all.filter((t) => used.has(String(t.i)));
+    const names = (list) => list.map((t) => t.name + (t.repos.length ? " (" + t.repos.join(", ") + ")" : "")).join(", ") || "none";
+    const todo = [...cone].filter((id) => byN.get(id).s !== "committed").sort((x, y) => x - y);
+    const shown = todo.slice(0, 5).map((id) => "rfd-" + id).join(", ") + (todo.length > 5 ? ", and " + (todo.length - 5) + " more" : "");
+    return [
+      ["Capability tokens we still lack (each open RFD is one)", todo.length + " of " + cone.size + (todo.length ? ": " + shown : ""), false],
+      ["Tokens we own", names(toks.filter((t) => t.own)), false],
+      ["Third-party tokens we have access to", names(toks.filter((t) => !t.own && t.access)), false],
+      ["Third-party tokens we do not have access to", names(toks.filter((t) => !t.own && !t.access)),
+        toks.some((t) => !t.own && !t.access)],
+    ];
+  }
+
+  function showNeeds(goal) {
+    const rows = needs(goal);
+    if (!rows) return;
+    const ul = h("ul", { class: "nv-needs" });
+    rows.forEach(([label, text, blocker]) => ul.append(h("li", blocker ? { class: "nv-refused" } : {}, label + ": " + text)));
+    ui.out.append(ul);
+  }
+
   function showSurface(answer, goal) {
     ui.out.replaceChildren();
     if (answer.refused) {
       ui.out.append(h("p", { class: "nv-refused" }, "Refused: " + (REFUSALS[answer.refused] || answer.refused)));
+      showNeeds(goal);
       return;
     }
     const steps = answer.steps || [];
@@ -87,6 +134,7 @@
     const name = rn ? "RFD66606-" + rn[1] + (byN.get(+rn[1]) ? " " + byN.get(+rn[1]).t : "") : goal;
     ui.out.append(h("p", {}, (answer.reached ? "Reached " : "Did not reach ") + name + " in "
       + steps.length + " steps (" + settles + " RFDs to settle)."));
+    showNeeds(goal);
     const ol = h("ol", { class: "nv-steps" });
     steps.forEach((s, i) => ol.append(stepNode(s.action, i)));
     ui.out.append(ol);

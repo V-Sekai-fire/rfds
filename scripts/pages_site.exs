@@ -686,6 +686,7 @@ defmodule PagesSite do
           .navigator button[aria-pressed="true"] { background: var(--accent); color: #fff; }
           .nv-status { margin: .4rem 0 0; color: var(--muted); font-size: 13px; }
           .nv-refused { color: #c0392b; font-weight: 600; }
+          .nv-needs { margin: .3rem 0 0; padding-left: 1.2rem; }
           .nv-steps { margin: .3rem 0 0; padding-left: 1.4rem; max-height: 14rem;
             overflow: auto; }
           .nv-console textarea { width: 100%; box-sizing: border-box;

@@ -3,6 +3,7 @@
 # The prerequisite tree behind the beta freeze, RFD66606-2360: nodes, links, token spends, skipped-ahead links.
 defmodule PagesTree do
   @goal 2360
+  @org "weftspun"
 
   @features [
     %{
@@ -137,9 +138,19 @@ defmodule PagesTree do
         {"settle-#{n.n}", %{params: [], body: holds ++ [set.("/rfd/#{n.n}")]}}
       end
 
+    by_id = Map.new(data.tokens ++ data.boring, &{to_string(&1.i), &1})
+    via = fn t -> Enum.map(by_id[t].via, &ge.("/token/#{&1}")) end
+
+    check = fn t, rel ->
+      %{eval: %{type: "rebac/check", subject: @org, rel: rel, object: by_id[t].slug}}
+    end
+
     acquire =
-      for t <- tokens, into: %{} do
-        {"acquire-token-#{t}", %{params: [], body: [set.("/token/#{t}")]}}
+      for t <- tokens,
+          {suffix, rel} <- [{"owned", "owns"}, {"access", "has-capability"}],
+          into: %{} do
+        {"acquire-token-#{t}-#{suffix}",
+         %{params: [], body: [check.(t, rel)] ++ via.(t) ++ [set.("/token/#{t}")]}}
       end
 
     rfd_methods =
@@ -165,7 +176,16 @@ defmodule PagesTree do
            params: [],
            alternatives: [
              held.("/token/#{t}"),
-             %{name: "acquire", subtasks: [["acquire-token-#{t}"]]}
+             %{
+               name: "acquire-owned",
+               subtasks:
+                 Enum.map(by_id[t].via, &["reach-token-#{&1}"]) ++ [["acquire-token-#{t}-owned"]]
+             },
+             %{
+               name: "acquire-access",
+               subtasks:
+                 Enum.map(by_id[t].via, &["reach-token-#{&1}"]) ++ [["acquire-token-#{t}-access"]]
+             }
            ]
          }}
       end
@@ -206,9 +226,15 @@ defmodule PagesTree do
         %{name: "rfd", type: "int", init: rfd},
         %{name: "token", type: "int", init: Map.new(tokens, &{&1, 0})}
       ],
-      capabilities: %{entities: %{}, graph: %{edges: []}},
+      capabilities: %{entities: %{}, graph: %{edges: access_edges(data)}},
       todo_list: [["reach-rfd-#{data.goal}"]]
     }
+  end
+
+  defp access_edges(data) do
+    for t <- data.tokens ++ data.boring, t.access do
+      %{subject: @org, rel: if(t.own, do: "owns", else: "has-capability"), object: t.slug}
+    end
   end
 
   def json(data) do
@@ -349,7 +375,8 @@ defmodule PagesTree do
   defp ledger(data, link) do
     rows =
       for t <- data.tokens ++ data.boring do
-        owners = t.owners |> Enum.map(&"RFD66606-#{&1}") |> cap()
+        kind = if t.own, do: "ours", else: if(t.access, do: "third party", else: "no access")
+        owners = ([kind] ++ Enum.map(t.owners, &"RFD66606-#{&1}") ++ t.repos) |> cap()
         settled = Enum.count(data.nodes, &(&1.n in t.users and done?(&1)))
 
         "| #{t.i} | #{t.name} | #{owners} | #{settled} of #{length(t.users)} | " <>
@@ -387,7 +414,7 @@ defmodule PagesTree do
   end
 
   defp unlinked(data, link) do
-    open = Enum.filter(data.tokens ++ data.boring, &(&1.owners == []))
+    open = Enum.filter(data.tokens ++ data.boring, &(&1.owners == [] and &1.repos == []))
 
     items =
       for t <- open do
@@ -434,38 +461,90 @@ defmodule PagesTree do
           doc.rebac != nil,
           t <- doc.rebac.tuples,
           not t.deny,
-          do: {serial_of(t.subject), t.verb, t.object}
+          do: {subject_of(t.subject), t.verb, t.object}
+
+    base =
+      %{
+        provides:
+          for(
+            {s, :provides, o} <- tuples,
+            reduce: %{},
+            do: (acc -> Map.update(acc, o, [s], &[s | &1]))
+          ),
+        spends:
+          for(
+            {s, :spends, o} <- tuples,
+            reduce: %{},
+            do: (acc -> Map.update(acc, s, [o], &[o | &1]))
+          ),
+        denied:
+          for(
+            path <- RFD.Source.all(),
+            doc = RFD.Source.load(path),
+            doc.rebac != nil,
+            t <- doc.rebac.tuples,
+            t.deny,
+            t.subject == @org,
+            t.verb == :has_capability,
+            do: t.object
+          ),
+        owned: for({"weftspun", :owns, o} <- tuples, do: o),
+        access: for({"weftspun", :has_capability, o} <- tuples, do: o)
+      }
+
+    serials = for path <- RFD.Source.all(), doc = RFD.Source.load(path), do: doc.serial
+    parts = for {s, :owns, "rfd-" <> _ = o} <- tuples, is_integer(s), do: {s, o}
 
     %{
-      provides:
-        for(
-          {s, :provides, o} <- tuples,
-          reduce: %{},
-          do: (acc -> Map.update(acc, o, [s], &[s | &1]))
-        ),
-      spends:
-        for(
-          {s, :spends, o} <- tuples,
-          reduce: %{},
-          do: (acc -> Map.update(acc, s, [o], &[o | &1]))
-        )
+      base
+      | provides:
+          Enum.reduce(serials, base.provides, fn s, acc ->
+            Map.update(acc, "rfd-#{s}", [s], &[s | &1])
+          end),
+        spends:
+          Enum.reduce(parts, base.spends, fn {s, o}, acc ->
+            Map.update(acc, s, [o], &Enum.uniq([o | &1]))
+          end)
     }
   end
 
-  defp serial_of("rfd-" <> n), do: String.to_integer(n)
-  defp serial_of(_), do: nil
+  defp subject_of("rfd-" <> n), do: String.to_integer(n)
+  defp subject_of(entity), do: entity
 
   defp needs(serial, declared, by) do
     for token <- Map.get(declared.spends, serial, []),
         p <- Map.get(declared.provides, token, []),
+        is_integer(p),
         p != serial,
         Map.has_key?(by, p),
         uniq: true,
         do: p
   end
 
-  defp held?(slug, spent, declared),
-    do: slug in spent and not Map.has_key?(declared.provides, slug)
+  defp rfd_owners(declared, slug),
+    do: for(p <- Map.get(declared.provides, slug, []), is_integer(p), do: p)
+
+  defp held?(slug, spent, declared), do: slug in spent and rfd_owners(declared, slug) == []
+
+  defp via(declared, slug) do
+    for t <- Map.get(declared.spends, slug, []),
+        {i, _, ^t} <- @tokens ++ @boring,
+        do: i
+  end
+
+  defp token_fields(declared, slug) do
+    if slug in declared.owned and slug in declared.denied,
+      do: raise("a token #{@org} owns cannot be denied: #{slug}")
+
+    %{
+      slug: slug,
+      owners: rfd_owners(declared, slug),
+      repos: for(p <- Map.get(declared.provides, slug, []), is_binary(p), do: p),
+      via: via(declared, slug),
+      own: slug in declared.owned,
+      access: (slug in declared.owned or slug in declared.access) and slug not in declared.denied
+    }
+  end
 
   defp depths(links, goal) do
     relax(%{goal => 0}, links)
@@ -482,17 +561,15 @@ defmodule PagesTree do
 
   defp boring(declared, nodes) do
     for {i, name, slug} <- @boring do
-      owners = Map.get(declared.provides, slug, [])
       users = for n <- nodes, i in n.b, do: n.n
-      %{i: i, name: name, owners: owners, users: users}
+      Map.merge(%{i: i, name: name, users: users}, token_fields(declared, slug))
     end
   end
 
   defp tokens(declared, nodes) do
     for {i, name, slug} <- @tokens do
-      owners = Map.get(declared.provides, slug, [])
       users = for n <- nodes, i in n.k, do: n.n
-      %{i: i, name: name, owners: owners, users: users}
+      Map.merge(%{i: i, name: name, users: users}, token_fields(declared, slug))
     end
   end
 end

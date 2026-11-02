@@ -309,22 +309,15 @@ defmodule PagesTree do
   end
 
   defp reading(data) do
-    "The map is a treemap. The goal is the banner across the top. Each rectangle below it is " <>
-      "a token, an innovation token or a boring one, sized by the skills it holds, and each " <>
-      "cell inside it is a skill, an RFD, placed in the token that most skills share. " <>
-      "#{length(data.nodes)} of the #{data.all} skills reachable from the goal are on the " <>
-      "map, read as of #{data.asof}.\n\n" <>
-      "- A filled cell is settled: its RFD is committed or published. An orange outline is " <>
-      "ready: open, with everything it depends on settled. A grey outline is blocked by a " <>
-      "skill that is open.\n" <>
-      "- A small square in a cell is another innovation token it spends, and a small circle " <>
-      "is another boring token.\n" <>
-      "- A red dashed outline is a skill that is settled while a skill it depends on is open: " <>
-      "skipped ahead. A dashed token border is a token no RFD title names.\n" <>
-      "- Select a skill to outline what it depends on in green and what depends on it in " <>
-      "purple, with its route and logbook evidence beside the map. Select a token header to " <>
-      "travel down it: the persona planner, compiled to WebAssembly, orders the skills still " <>
-      "to settle and numbers them.\n\nWithout a script, the tables below carry the same facts."
+    "The journey runs left to right. The first column holds the RFDs that are committed, " <>
+      "which is the only state that counts as complete, whatever order they landed in. Each " <>
+      "later column holds the open skills that need only the columns before it, and the last " <>
+      "column is the goal with its slice gates. #{length(data.nodes)} of the #{data.all} " <>
+      "skills reachable from the goal are on it, read as of #{data.asof}.\n\n" <>
+      "- A committed RFD outlined in red dashes landed before an RFD it cites.\n" <>
+      "- An orange outline is ready: open, with everything it depends on committed.\n" <>
+      "- The stripe on a chip is the first token its text names.\n\n" <>
+      "Without a script, the tables below carry the same facts."
   end
 
   defp ledger(data, link) do

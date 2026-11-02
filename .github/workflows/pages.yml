@@ -36,9 +36,6 @@ jobs:
       - run: mix local.hex --force && mix local.rebar --force && mix deps.get
       - run: ERL_COMPILER_OPTIONS='[nowarn_deprecated_catch]' mix rfd.render
       - run: mix run scripts/pages_site.exs _site_src
-      - run: gh release download persona-wasm-0.1.0 --repo V-Sekai-fire/interactor-taskweft-persona --dir _site_src/assets --pattern 'persona.*'
-        env:
-          GH_TOKEN: ${{ github.token }}
       - uses: actions/jekyll-build-pages@v1
         with:
           source: _site_src

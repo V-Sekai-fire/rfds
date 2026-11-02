@@ -467,12 +467,8 @@ defmodule PagesSite do
 
   defp map_block(tree) do
     "<div id=\"journey\" class=\"journey\" markdown=\"0\"></div>\n" <>
-      "<details class=\"explore\" markdown=\"0\">\n" <>
-      "<summary>Explore by feature and by token</summary>\n" <>
-      "<div id=\"beta-path\" class=\"beta-path\" markdown=\"0\"></div>\n" <>
-      "<div id=\"tree\" class=\"tree\" markdown=\"0\"></div></details>\n" <>
       "<script type=\"application/json\" id=\"tree-data\">#{PagesTree.json(tree)}</script>\n" <>
-      "<noscript>The map needs a script. Section 1 holds the same facts as tables.</noscript>"
+      "<noscript>The journey needs a script. Section 1 holds the same facts as tables.</noscript>"
   end
 
   defp tally(rfds) do
@@ -670,89 +666,6 @@ defmodule PagesSite do
           .jr-chip.done { background: #e8f0fb; }
           .jr-chip.ready { border-color: #e67e00; }
           .jr-chip.early { border-style: dashed; border-color: #c0392b; }
-          .explore { margin: .8rem 0; }
-          .explore > summary { cursor: pointer; font-weight: 600; }
-          .beta-path { margin: 0 0 1rem; font: 14px/1.45 system-ui, sans-serif; }
-          .beta-path h3 { margin: 0 0 .2rem; border: 0; padding: 0; font-size: 1.15rem; }
-          .beta-path p { margin: .2rem 0; }
-          .bp-gates .gate { display: inline-block; margin: 0 .3rem .2rem 0; padding: .1rem .5rem;
-            border-radius: .8rem; border: 2px solid #888; font-size: 12px; }
-          .bp-gates .gate.ok { background: #1a5fb4; border-color: #1a5fb4; color: #fff; }
-          .bp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            gap: .7rem; margin-top: .6rem; }
-          .bp-card { border: 1px solid var(--line); border-top: 4px solid #f2c94c;
-            padding: .5rem .7rem; background: #fcfcfd; }
-          .bp-base { border-top-color: #1a5fb4; margin-top: .6rem; }
-          .bp-card h4 { margin: 0 0 .2rem; font-size: 1rem; }
-          .bp-text { color: #444; }
-          .bp-def { padding: .5rem .8rem; background: #f0f6ff;
-            border-left: 4px solid var(--accent); }
-          .bp-dep { color: var(--muted); font-size: 12px; }
-          .bp-slices, .bp-sub { color: var(--muted); font-size: 12.5px; }
-          .bp-chips .chip { margin: 0 .25rem .25rem 0; padding: .1rem .5rem;
-            border: 2px solid var(--line); border-radius: 1rem; background: #fff;
-            font: inherit; font-size: 12px; cursor: pointer; }
-          .bp-card details { margin-top: .3rem; }
-          .bp-card ol { margin: .3rem 0 0; padding-left: 1.3rem; font-size: 12.5px; }
-          .tree { display: grid; grid-template-columns: 1fr 17rem; gap: 0 1rem; margin: 0 0 1rem;
-            font: 13px/1.4 system-ui, sans-serif; }
-          .tree-bar { grid-column: 1 / 3; display: flex; flex-wrap: wrap; gap: .35rem;
-            align-items: center; margin-bottom: .4rem; }
-          .tree .chip { padding: .15rem .55rem; border: 2px solid var(--line);
-            border-radius: 1rem;
-            background: #fff; font: inherit; cursor: pointer; }
-          .tree .chip.on { background: #222; color: #fff; }
-          .tree .chip.boring { border-color: #2e7d32; }
-          .tree .chk { margin-left: .6rem; color: var(--muted); }
-          .tree-wallet { grid-column: 1 / 3; display: flex; flex-wrap: wrap; gap: .35rem;
-            align-items: center; margin-bottom: .4rem; }
-          .tree .tw-label { margin-left: .4rem; font-weight: 600; }
-          .tree .boring-coin { padding: .1rem .5rem; border: 2px solid; border-radius: .9rem;
-            background: #fff; font: inherit; cursor: pointer; }
-          .tree .boring-coin.on { color: #fff; }
-          .tree .boring-coin.sel { outline: 2px solid #000; }
-          .tree .tw-goal { flex-basis: 100%; color: var(--muted); }
-          .tree-stage { height: 62vh; min-height: 400px; border: 1px solid var(--line);
-            background: #fcfcfd; overflow: hidden; }
-          .tree .tm-goal rect { fill: #f2c94c; stroke: #8a6d00; stroke-width: 2;
-            cursor: pointer; }
-          .tree .tm-goal.focus rect { stroke: #000; stroke-width: 4; }
-          .tree .tm-gt { font-size: 17px; font-weight: 700; fill: #222;
-            pointer-events: none; }
-          .tree .tm-gs { font-size: 12px; fill: #5a4a00; pointer-events: none; }
-          .tree .tm-zone.dim { opacity: .25; }
-          .tree .tm-head { cursor: pointer; }
-          .tree .tm-ht { font-size: 12px; font-weight: 600; fill: #222;
-            pointer-events: none; }
-          .tree .tm-cell { cursor: pointer; }
-          .tree .tm-cell rect { fill: #fff; stroke: #999; stroke-width: 1.5; }
-          .tree .tm-cell.done rect { fill: #1a5fb4; stroke: #1a5fb4; }
-          .tree .tm-cell.done.published rect { fill: #5b8def; stroke: #5b8def; }
-          .tree .tm-cell.ready rect { stroke: #e67e00; stroke-width: 2.5; }
-          .tree .tm-cell.prediscussion rect, .tree .tm-cell.ideation rect {
-            stroke-dasharray: 4 3; }
-          .tree .tm-cell.skip rect { stroke: #c0392b; stroke-width: 3;
-            stroke-dasharray: 6 3; }
-          .tree .tm-cell.dep rect { stroke: #1a8f4a; stroke-width: 4; }
-          .tree .tm-cell.by rect { stroke: #7b2fbf; stroke-width: 4; }
-          .tree .tm-cell.repo rect { stroke: #2e7d32; stroke-width: 4; }
-          .tree .tm-cell.focus rect { stroke: #000; stroke-width: 4; }
-          .tree .tm-cell.dim { opacity: .18; }
-          .tree .tm-cell text { font-size: 11px; fill: #222; pointer-events: none; }
-          .tree .tm-cell.done text { fill: #fff; }
-          .tree .step { fill: #222; }
-          .tree .tm-cell .steptext { font-size: 9px; fill: #fff; pointer-events: none; }
-          .tree-svg { width: 100%; height: 100%; cursor: grab; touch-action: none; }
-          .tree-panel { height: 62vh; min-height: 400px; overflow: auto; padding: 0 .4rem; }
-          .tree-panel h3 { margin: 0; padding: 0; border: 0; font-size: 1.1rem; }
-          .tree-panel h4 { margin: .8rem 0 .2rem; font-size: .85rem; }
-          .tree-panel ul { margin: 0; padding-left: 0; list-style: none; }
-          .tree-panel li { margin: 0 0 .25rem; }
-          .tree-panel .link { padding: 0; border: 0; background: none; color: var(--accent);
-            font: inherit; text-align: left; cursor: pointer; display: block; }
-          .tree-panel .flag { color: #c0392b; }
-          .tree .dim { opacity: .12; }
-          .tree-panel ol { margin: 0; padding-left: 1.2rem; }
           blockquote { margin: 1rem 0; padding: .2rem 1rem; background: #f0f6ff;
             border-left: 4px solid var(--accent); }
           @media (max-width: 1000px) {

@@ -80,10 +80,51 @@
     return li;
   }
 
+  function needs(goal) {
+    const n = /^\/rfd\/(\d+)$/.exec(goal);
+    if (!n) return null;
+    const cone = new Set();
+    const queue = [+n[1]];
+    while (queue.length) {
+      const id = queue.pop();
+      if (cone.has(id) || !byN.has(id)) continue;
+      cone.add(id);
+      queue.push(...byN.get(id).c);
+    }
+    const used = new Set();
+    cone.forEach((id) => [...byN.get(id).k, ...byN.get(id).b].forEach((t) => used.add(String(t))));
+    const all = [...data.tokens, ...data.boring];
+    for (let grew = true; grew;) {
+      grew = false;
+      all.filter((t) => used.has(String(t.i))).forEach((t) => t.via.forEach((v) => {
+        if (!used.has(String(v))) { used.add(String(v)); grew = true; }
+      }));
+    }
+    const toks = all.filter((t) => used.has(String(t.i)));
+    const names = (list) => list.map((t) => t.name + (t.repos.length ? " (" + t.repos.join(", ") + ")" : "")).join(", ") || "none";
+    const open = [...cone].filter((id) => byN.get(id).s !== "committed").length;
+    return [
+      ["RFDs to accomplish", open + " of " + cone.size + " (" + (cone.size - open) + " committed)", false],
+      ["Tokens we own", names(toks.filter((t) => t.own)), false],
+      ["Third-party tokens we have access to", names(toks.filter((t) => !t.own && t.access)), false],
+      ["Third-party tokens we do not have access to", names(toks.filter((t) => !t.own && !t.access)),
+        toks.some((t) => !t.own && !t.access)],
+    ];
+  }
+
+  function showNeeds(goal) {
+    const rows = needs(goal);
+    if (!rows) return;
+    const ul = h("ul", { class: "nv-needs" });
+    rows.forEach(([label, text, blocker]) => ul.append(h("li", blocker ? { class: "nv-refused" } : {}, label + ": " + text)));
+    ui.out.append(ul);
+  }
+
   function showSurface(answer, goal) {
     ui.out.replaceChildren();
     if (answer.refused) {
       ui.out.append(h("p", { class: "nv-refused" }, "Refused: " + (REFUSALS[answer.refused] || answer.refused)));
+      showNeeds(goal);
       return;
     }
     const steps = answer.steps || [];
@@ -92,6 +133,7 @@
     const name = rn ? "RFD66606-" + rn[1] + (byN.get(+rn[1]) ? " " + byN.get(+rn[1]).t : "") : goal;
     ui.out.append(h("p", {}, (answer.reached ? "Reached " : "Did not reach ") + name + " in "
       + steps.length + " steps (" + settles + " RFDs to settle)."));
+    showNeeds(goal);
     const ol = h("ol", { class: "nv-steps" });
     steps.forEach((s, i) => ol.append(stepNode(s.action, i)));
     ui.out.append(ol);

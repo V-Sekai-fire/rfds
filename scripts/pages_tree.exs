@@ -476,6 +476,17 @@ defmodule PagesTree do
           reduce: %{},
           do: (acc -> Map.update(acc, s, [o], &[o | &1]))
         ),
+      denied:
+        for(
+          path <- RFD.Source.all(),
+          doc = RFD.Source.load(path),
+          doc.rebac != nil,
+          t <- doc.rebac.tuples,
+          t.deny,
+          t.subject == @org,
+          t.verb == :has_capability,
+          do: t.object
+        ),
       owned: for({"weftspun", :owns, o} <- tuples, do: o),
       access: for({"weftspun", :has_capability, o} <- tuples, do: o)
     }
@@ -506,13 +517,16 @@ defmodule PagesTree do
   end
 
   defp token_fields(declared, slug) do
+    if slug in declared.owned and slug in declared.denied,
+      do: raise("a token #{@org} owns cannot be denied: #{slug}")
+
     %{
       slug: slug,
       owners: rfd_owners(declared, slug),
       repos: for(p <- Map.get(declared.provides, slug, []), is_binary(p), do: p),
       via: via(declared, slug),
       own: slug in declared.owned,
-      access: slug in declared.owned or slug in declared.access
+      access: (slug in declared.owned or slug in declared.access) and slug not in declared.denied
     }
   end
 

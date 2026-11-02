@@ -115,9 +115,6 @@ defmodule PagesTree do
 
   @context %{VSEKAI: "https://v-sekai.org/", domain: "VSEKAI:planning/domain/"}
 
-  # The domain and the problem are written in the RECTGTN engine's own shape: a goal is the task
-  # `reach-rfd-N` or `reach-token-T`, which holds when the variable is already 1 and otherwise
-  # settles what it needs first. The navigator's engine reads these documents as they are.
   def domain(data) do
     open = Enum.reject(data.nodes, &(&1.s in @advanced))
     tokens = for t <- data.tokens ++ data.boring, do: to_string(t.i)

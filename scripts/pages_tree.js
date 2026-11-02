@@ -25,7 +25,6 @@
   };
 
   const CHARTER = "https://v-sekai.github.io/manuals/decisions/20200608-vsekai-charter.html";
-  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Vancouver" }).format(new Date());
   const gates = [2436, 2437, 2438, 2439, 2440];
   const seen = new Set([data.goal]);
   const queue = [data.goal];
@@ -45,13 +44,8 @@
   }
   let ask = null;
 
-  function render(order, msg) {
+  function render(order) {
     host.replaceChildren();
-    host.appendChild(h("p", { class: "bp-def" }, "The journey to " + short(data.goal) + ", " + dn(data.goal).t
-      + ". It starts at the V-Sekai charter, submitted 2020-06-08 (Pacific), and today is " + today
-      + " (Pacific). An RFD that is committed counts as complete, whatever order it landed in. "
-      + doneIds.length + " of " + nodes.length + " skills are committed, " + open.length + " remain. "
-      + (order ? "The order of the remaining skills is planned by the persona planner." : msg)));
     const track = h("div", { class: "jr-track" });
     const col = (title, sub, cls) => {
       const c = h("section", { class: "jr-col " + cls });
@@ -103,14 +97,14 @@
     host.appendChild(track);
   }
 
-  render(null, "Loading the persona planner...");
+  render(null);
   import(here + "persona.mjs")
     .then((m) => m.default({ locateFile: (f) => here + f }))
     .then((mod) => {
       if (mod._persona_init() !== 0) throw new Error("persona_init failed");
       ask = mod.cwrap("persona_plan", "string", ["string"]);
       const order = plan();
-      render(order, order ? "" : "The planner found no route.");
+      render(order);
     })
-    .catch((e) => render(null, "The persona planner did not load, so the remaining skills have no order: " + e));
+    .catch(() => render(null));
 })();

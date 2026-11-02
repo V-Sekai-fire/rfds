@@ -1,7 +1,8 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: Apache-2.0 OR MIT
-# The prerequisite tree behind one goal RFD: nodes, links, token spends, skipped-ahead links.
+# The prerequisite tree behind the beta freeze, RFD66606-2360: nodes, links, token spends, skipped-ahead links.
 defmodule PagesTree do
+  @goal 2360
   @max_depth 4
 
   @features [
@@ -54,7 +55,8 @@ defmodule PagesTree do
     {"B4", "cross-build image", ~r/llvm-mingw|osxcross/, ~r/cross-build|llvm-mingw|osxcross/}
   ]
 
-  def build(docs, logs, goal, repos, asof) do
+  def build(docs, logs, repos, asof) do
+    goal = @goal
     live = Enum.reject(docs, &(&1.state == "abandoned"))
     known = MapSet.new(live, & &1.serial)
     by = Map.new(live, &{&1.serial, &1})

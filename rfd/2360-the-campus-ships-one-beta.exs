@@ -60,6 +60,7 @@ rfd 2360, "The campus as a beta", :discussion do
   :: details After the cut
   Dev is development: features land and change. After the beta is cut, only fixes land.
   """
+
   rebac do
     verbs_from 2351
     relate "rfd-2360", :spends, "see-each-other"

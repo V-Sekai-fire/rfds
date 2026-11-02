@@ -64,7 +64,10 @@ defmodule PagesTree do
     live = Enum.reject(docs, &(&1.state == "abandoned"))
     by = Map.new(live, &{&1.serial, &1})
     declared = declared()
-    links = Map.new(live, &{&1.serial, needs(&1.serial, declared, by)})
+    options = Map.new(live, &{&1.serial, options(&1.serial, declared, by)})
+
+    links = Map.new(options, fn {n, opts} -> {n, providers(opts)} end)
+
     depth = depths(links, goal)
 
     nodes =
@@ -83,7 +86,13 @@ defmodule PagesTree do
           l: evidence(logs, serial),
           k: for({i, _, slug} <- @tokens, held?(slug, spent, declared), do: i),
           b: for({i, _, slug} <- @boring, held?(slug, spent, declared), do: i),
-          c: links[serial]
+          c: options[serial] |> Enum.map(fn {_, [p | _]} -> p end) |> Enum.uniq(),
+          q:
+            for({t, ps} <- options[serial], uniq: true) do
+              if match?([_], ps), do: "reach-rfd-#{hd(ps)}", else: "reach-cap-#{t}"
+            end,
+          p1: for({_, [p]} <- options[serial], do: p),
+          alts: for({t, [_, _ | _] = ps} <- options[serial], do: %{token: t, providers: ps})
         }
       end
 
@@ -103,6 +112,7 @@ defmodule PagesTree do
       asof: asof,
       nodes: nodes,
       skips: skips,
+      caps: Map.new(for(n <- nodes, a <- n.alts, do: {a.token, a.providers})),
       tokens: tokens(declared, nodes),
       boring: boring(declared, nodes),
       repos: repos,
@@ -116,7 +126,6 @@ defmodule PagesTree do
   def domain(data) do
     open = Enum.reject(data.nodes, &(&1.s in @advanced))
     tokens = for t <- data.tokens ++ data.boring, do: to_string(t.i)
-    ids = MapSet.new(data.nodes, & &1.n)
 
     ge = fn p ->
       %{eval: %{type: "math/ge", a: %{type: "pointer/get", pointer: p}, b: 1}}
@@ -124,16 +133,12 @@ defmodule PagesTree do
 
     set = fn p -> %{"pointer/set": p, value: 1} end
 
-    need = fn n ->
-      for m <- n.c, m in ids, Enum.find(data.nodes, &(&1.n == m)).d > n.d, do: m
-    end
-
     held = fn p -> %{name: "held", check: [ge.(p)], subtasks: []} end
 
     settle =
       for n <- open, into: %{} do
         holds =
-          Enum.map(need.(n), &ge.("/rfd/#{&1}")) ++ Enum.map(n.k ++ n.b, &ge.("/token/#{&1}"))
+          Enum.map(n.p1, &ge.("/rfd/#{&1}")) ++ Enum.map(n.k ++ n.b, &ge.("/token/#{&1}"))
 
         {"settle-#{n.n}", %{params: [], body: holds ++ [set.("/rfd/#{n.n}")]}}
       end
@@ -160,13 +165,23 @@ defmodule PagesTree do
             []
           else
             steps =
-              Enum.map(need.(n), &["reach-rfd-#{&1}"]) ++
+              Enum.map(n.q, &[&1]) ++
                 Enum.map(n.k ++ n.b, &["reach-token-#{&1}"])
 
             [%{name: "settle", subtasks: steps ++ [["settle-#{n.n}"]]}]
           end
 
         {"reach-rfd-#{n.n}", %{params: [], alternatives: [held.("/rfd/#{n.n}") | settle_alt]}}
+      end
+
+    cap_methods =
+      for {token, providers} <- data.caps, into: %{} do
+        {"reach-cap-#{token}",
+         %{
+           params: [],
+           alternatives:
+             for(p <- providers, do: %{name: "via-rfd-#{p}", subtasks: [["reach-rfd-#{p}"]]})
+         }}
       end
 
     token_methods =
@@ -204,7 +219,7 @@ defmodule PagesTree do
         %{name: "token", type: "int", init: %{}}
       ],
       actions: Map.merge(settle, acquire),
-      methods: Map.merge(rfd_methods, token_methods)
+      methods: rfd_methods |> Map.merge(token_methods) |> Map.merge(cap_methods)
     }
   end
 
@@ -511,15 +526,26 @@ defmodule PagesTree do
   defp subject_of("rfd-" <> n), do: String.to_integer(n)
   defp subject_of(entity), do: entity
 
-  defp needs(serial, declared, by) do
+  defp options(serial, declared, by) do
     for token <- Map.get(declared.spends, serial, []),
-        p <- Map.get(declared.provides, token, []),
-        is_integer(p),
-        p != serial,
-        Map.has_key?(by, p),
-        uniq: true,
-        do: p
+        ps =
+          for(
+            p <- Map.get(declared.provides, token, []),
+            is_integer(p),
+            p != serial,
+            Map.has_key?(by, p),
+            do: p
+          ),
+        ps != [] do
+      {token, ps |> Enum.uniq() |> Enum.sort_by(&{rank(by[&1].state), &1})}
+    end
   end
+
+  defp providers(opts), do: opts |> Enum.flat_map(&elem(&1, 1)) |> Enum.uniq()
+
+  defp rank("committed"), do: 0
+  defp rank("published"), do: 1
+  defp rank(_), do: 2
 
   defp rfd_owners(declared, slug),
     do: for(p <- Map.get(declared.provides, slug, []), is_integer(p), do: p)

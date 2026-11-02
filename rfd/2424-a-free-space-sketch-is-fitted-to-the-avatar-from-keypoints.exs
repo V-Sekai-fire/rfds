@@ -34,4 +34,9 @@ rfd 2424, "a free-space sketch is fitted to the avatar from keypoints", :discuss
   On CASSIE's dress session, 0 of 12307 points end inside the body by winding number, and 4
   junctions miss. This is placement. The drape stays on the next rung.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2424", :provides, "sketch-keypoint-body-fit"
+  end
 end

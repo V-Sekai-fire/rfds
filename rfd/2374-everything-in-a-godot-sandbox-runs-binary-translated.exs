@@ -46,4 +46,10 @@ rfd 2374, "everything in a godot-sandbox runs binary-translated", :discussion do
   build ran on the same machine overstated the gap: Windows interpreted read 848 to
   907 ms then.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2374", :provides, "binary-translated-only-timings"
+    relate "rfd-2374", :provides, "sgd-compiled-scripts-only"
+  end
 end

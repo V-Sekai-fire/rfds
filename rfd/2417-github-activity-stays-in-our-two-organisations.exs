@@ -32,4 +32,10 @@ rfd 2417, "GitHub activity stays in our two organisations", :discussion do
   :: details The problem
   GitHub posts those back onto the upstream's timeline.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2417", :provides, "github-two-orgs-only"
+    relate "rfd-2417", :provides, "upstream-cited-by-bare-sha"
+  end
 end

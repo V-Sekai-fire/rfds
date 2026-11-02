@@ -49,4 +49,9 @@ rfd 2378, "desktop libraries build in WSL and cross-build from the Mac", :discus
   :: details The problem
   Nested quoting from `cmd` into WSL returns empty output.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2378", :provides, "wsl-desktop-library-builds"
+  end
 end

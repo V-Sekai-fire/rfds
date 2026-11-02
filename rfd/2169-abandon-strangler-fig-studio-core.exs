@@ -45,4 +45,9 @@ rfd 2169, "Abandon the strangler-fig studio core; the ladder is MaskScore", :pub
   persistence (RFD66606-1067 walked it back; replaced with sqlite-fdb plus S3-compatible streaming
   backup RFD66606-2143, plus OpenBao RFD66606-2140).
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2169", :provides, "maskscore-ladder-decided"
+  end
 end

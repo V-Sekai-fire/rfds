@@ -49,4 +49,9 @@ rfd 2399, "the zone journal lives in Bao over FoundationDB", :discussion do
   is refused by `capability.gd` before any Bao call. An exec name not in the catalog is refused by
   Bao. The plugin's own `--self-test` plants a fenced database opened without its fence.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2399", :provides, "zone-journal-in-bao-fdb"
+  end
 end

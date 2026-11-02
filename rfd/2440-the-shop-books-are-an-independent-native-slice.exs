@@ -89,4 +89,9 @@ rfd 2440, "the shop books are an independent native slice", :discussion do
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2440", :provides, "shop-books-native-slice"
+  end
 end

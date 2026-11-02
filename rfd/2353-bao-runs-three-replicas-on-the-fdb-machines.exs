@@ -139,4 +139,9 @@ rfd 2353, "Bao runs three replicas on the FDB machines", :discussion do
   depends on Bao being up, and RFD66606-2140's reliability budget is smaller than what routes
   through Bao now needs.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2353", :provides, "bao-single-fly-instance"
+  end
 end

@@ -31,4 +31,9 @@ rfd 2423, "the setting is a port of the Sakuragaoka station plaza", :discussion 
   disk, so the port rebuilds the scene in the engine with MToon materials rather than importing
   it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2423", :provides, "sakuragaoka-plaza-setting"
+  end
 end

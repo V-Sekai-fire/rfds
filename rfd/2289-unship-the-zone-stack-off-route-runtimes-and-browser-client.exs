@@ -70,4 +70,9 @@ rfd 2289, "Unship the zone stack, the off-route runtimes and the browser client"
   A search of the placed tree finds no implementation,
   or one on a runtime the workspace does not use.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2289", :provides, "zone-stack-unshipped"
+  end
 end

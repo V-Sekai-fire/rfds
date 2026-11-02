@@ -50,4 +50,9 @@ rfd 2403, "the zone reaches Bao by a certificate Bao issues", :discussion do
   plugin once with the root token from 1Password and creates the role,
   both recorded in the logbook with the sha256 Bao was given.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2403", :provides, "zone-bao-client-cert-auth"
+  end
 end

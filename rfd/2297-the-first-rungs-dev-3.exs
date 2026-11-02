@@ -72,4 +72,9 @@ rfd 2297, "the first rung's dev.3", :discussion do
   | dev.3 | a development title on the Frame | none | (unlikely, p=0.20) |
   | dev.3 | one executable, no checkout | none | (unlikely, p=0.15) |
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2297", :provides, "windows-single-exe-frame-build"
+  end
 end

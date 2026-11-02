@@ -31,4 +31,9 @@ rfd 2411, "released: the rung is live and reproducible from a bare machine", :di
   The manual's Sides and allowlist edits and this RFD landed. The
   desk's GitHub credentials destroyed.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2411", :provides, "rung-live-reproducible-bare"
+  end
 end

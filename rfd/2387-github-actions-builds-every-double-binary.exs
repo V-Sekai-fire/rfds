@@ -37,4 +37,9 @@ rfd 2387, "GitHub Actions builds every double binary", :discussion do
   macOS
   one.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2387", :provides, "actions-builds-double-binaries"
+  end
 end

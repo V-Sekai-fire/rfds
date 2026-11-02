@@ -143,4 +143,9 @@ already presents a per-identity TLS leaf."
   client already presents a per-identity cert at the TLS handshake,
   and the API layer above ignores it and re-asks with a token.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2146", :provides, "bao-cert-auth-role-map"
+  end
 end

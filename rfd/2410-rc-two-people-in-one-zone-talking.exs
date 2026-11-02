@@ -34,4 +34,9 @@ rfd 2410, "rc: two people in one zone, talking", :discussion do
   resumed after a restart. `weftspun-zone` deployed and the two-client gate run against its
   address with the headset as one client and the desktop as the other and the sidecar.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2410", :provides, "rc-two-people-talking"
+  end
 end

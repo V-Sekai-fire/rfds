@@ -47,4 +47,9 @@ rfd 2422, "the interface follows xr-grid and CASSIE and common OpenXR practice",
   - A haptic pulse confirms each stroke closed, lasso target taken and garment worn.
   - The mirror is a world-locked object the person walks up to, not a window on their view.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2422", :provides, "xr-grid-cassie-interface"
+  end
 end

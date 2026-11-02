@@ -36,4 +36,9 @@ rfd 2373, "a guest keeps its source where it is consumed", :discussion do
   `-lasso`, `-motion-guest`, `-rfdetr-seg-guest`, `-usd-guest`, `-av1mkv`.
   &{repo("transport-meshing-pen")} builds the guest ELFs from those sibling checkouts.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2373", :provides, "guest-source-at-consumer"
+  end
 end

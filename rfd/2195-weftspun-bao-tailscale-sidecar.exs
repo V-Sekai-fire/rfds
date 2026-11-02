@@ -535,4 +535,10 @@ rfd 2195, "Expose weftspun-bao privately via Tailscale", :discussion do
   backend, mTLS listener). Tailscale is what the workspace already uses for
   a private overlay.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2195", :provides, "tailscale"
+    relate "rfd-2195", :provides, "bao-tailnet-private-access"
+  end
 end

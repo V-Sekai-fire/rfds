@@ -116,4 +116,9 @@ tools/replay_oxrsys.py and CI workflows; the stage guest ELFs it builds"
   The first testable release (RFD66606-2262) asks whether a drawn outfit comes back as a
   garment that fits.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2263", :provides, "oxr-simulator-gate"
+  end
 end

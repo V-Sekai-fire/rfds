@@ -51,4 +51,9 @@ rfd 2427, "frontier learning picks the garment handover timing runs", :discussio
   runs is high when the level finds its defect only some of the time, so its result is luck.
   Mutation moves one attribute, kept only when the planted find rate rises.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2427", :provides, "handover-timing-planted-levels"
+  end
 end

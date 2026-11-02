@@ -36,4 +36,9 @@ rfd 2392, "df32 holds guest geometry far from the origin", :discussion do
   spacing is about 32 m, some 480 soda cans, so float32 world
   coordinates cannot place a stroke there.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2392", :provides, "df32-far-origin-geometry"
+  end
 end

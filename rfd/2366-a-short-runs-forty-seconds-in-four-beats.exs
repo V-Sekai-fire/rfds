@@ -39,4 +39,9 @@ rfd 2366, "a short runs forty seconds in four beats", :discussion do
   it is the `url` in each `.cff`, the web statement in its XMP and the line on
   its exit card, and each follows the four-beat script in this RFD.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2366", :provides, "forty-second-hide-short"
+  end
 end

@@ -36,4 +36,9 @@ rfd 2405, "the rung's setup uses a fixed set of credentials", :discussion do
   first `gh repo create` is the check, and a 403 is logged and handed back rather than worked
   around. The logbook records the three Bao commands and the plugin sha256.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2405", :provides, "fixed-setup-credentials-set"
+  end
 end

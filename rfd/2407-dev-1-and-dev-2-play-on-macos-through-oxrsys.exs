@@ -35,4 +35,9 @@ rfd 2407, "dev.1 and dev.2 play on macOS through oxrsys", :discussion do
   station beat by beat, each beat with a screenshot, and the logbook records it as the playtest
   with that deviation named.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2407", :provides, "macos-oxrsys-dev-play"
+  end
 end

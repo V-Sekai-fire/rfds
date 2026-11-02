@@ -34,4 +34,9 @@ rfd 2365, "every video ships as CineForm in Matroska", :discussion do
   :: details The problem
   Videos are uploaded by hand, and a WebM does not play on every desk.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2365", :provides, "cineform-matroska-video"
+  end
 end

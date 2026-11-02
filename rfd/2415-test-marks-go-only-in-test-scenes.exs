@@ -25,4 +25,9 @@ rfd 2415, "test marks go only in test scenes", :discussion do
   :: details Where this came from
   This rule came out of How a desk works in RFD66606-2294.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2415", :provides, "test-marks-test-scenes-only"
+  end
 end

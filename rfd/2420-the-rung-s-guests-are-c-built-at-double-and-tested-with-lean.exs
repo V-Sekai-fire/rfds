@@ -39,4 +39,9 @@ rfd 2420, "the rung's guests are C++ built at double and tested with Lean", :dis
   A guest's `Variant` is 24 bytes at single precision and 40 at double, so a single-precision
   guest misreads every value the engine hands it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2420", :provides, "lean-tested-cpp-guests"
+  end
 end

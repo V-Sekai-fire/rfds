@@ -29,4 +29,9 @@ rfd 2386, "this Mac is the desktop client", :discussion do
   `tools/run-mac.sh` beside `run-windows.sh` for the flat client and the sidecar; the pen's
   parked `macos.yml` becomes the macOS arm of the headless gates.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2386", :provides, "mac-desktop-client"
+  end
 end

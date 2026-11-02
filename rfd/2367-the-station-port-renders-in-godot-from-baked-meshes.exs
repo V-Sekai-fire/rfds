@@ -65,4 +65,9 @@ rfd 2367, "the station port renders in Godot from baked meshes", :discussion do
   not MToon's bent indirect-light normal, and takes depth and normal from the
   majority MSAA sample.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2367", :provides, "station-csg-baked-mesh-render"
+  end
 end

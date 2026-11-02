@@ -36,4 +36,9 @@ rfd 2363, "a person moves by world grab or by controllers", :discussion do
   with the stick setting movement and facing. No hand-written character
   controller is added.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2363", :provides, "xr-world-grab-locomotion"
+  end
 end

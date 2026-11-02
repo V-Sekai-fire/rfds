@@ -51,4 +51,10 @@ rfd 2400, "the worker zone dispatches and a sidecar computes", :discussion do
   A sidecar kernel built with `-ffp-contract=on` falls outside the interval and is named. The
   worker with no sidecar makes the garment itself and the gate records both times.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2400", :provides, "worker-zone-dispatch"
+    relate "rfd-2400", :provides, "gpu-sidecar-compute"
+  end
 end

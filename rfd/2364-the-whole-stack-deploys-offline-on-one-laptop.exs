@@ -38,4 +38,9 @@ rfd 2364, "the whole stack deploys offline on one laptop", :discussion do
   that reaches past the laptop fails by name. Uro runs next to its FoundationDB
   cluster, so a page read never leaves one machine.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2364", :provides, "offline-laptop-deploy"
+  end
 end

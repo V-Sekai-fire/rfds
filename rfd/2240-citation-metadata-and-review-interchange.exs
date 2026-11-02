@@ -184,4 +184,9 @@ rfd 2240,
   - A clip's sidecar states the frame rate and duration, and the timeline
     marker that names the clip must agree; a planted disagreement fails.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2240", :provides, "cff-xmp-metadata-derivation"
+  end
 end

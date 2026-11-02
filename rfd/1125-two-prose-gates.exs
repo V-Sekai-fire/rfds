@@ -103,4 +103,9 @@ rfd 1125, "Two prose gates, one for each kind of writing", :discussion do
   though a model wrote it. Neither kind owns a whole file either: a `DETAILS.md` carries a
   measurement beside the reasoning that motivates it.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-1125", :provides, "prose-gate-per-section"
+  end
 end

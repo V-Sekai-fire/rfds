@@ -68,4 +68,10 @@ rfd 2402, "the ghost servers run on Fly as weftspun-zone", :discussion do
   `fly-global-services` receives nothing, confirming the bind
   matters.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2402", :provides, "fly"
+    relate "rfd-2402", :provides, "weftspun-zone-ghost-servers"
+  end
 end

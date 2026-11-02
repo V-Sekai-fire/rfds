@@ -110,4 +110,9 @@ rfd 2382, "the Skateboard has a manifest of its own", :discussion do
   `--self-test` pass. Control: a row whose revision does not resolve
   is refused by `check_manifest_xml.py` by name.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2382", :provides, "skateboard-manifest-repo"
+  end
 end

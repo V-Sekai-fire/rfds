@@ -39,4 +39,9 @@ rfd 2376, "nothing runs in the headset unless the operator asks", :discussion do
   new line with carriage returns stripped, because the file may end without a
   newline and a `.pub` written on Windows ends its lines with CRLF.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2376", :provides, "headset-runs-operator-gated"
+  end
 end

@@ -172,4 +172,10 @@ rfd 1000, "Conventions", :published do
   An abandoned stub is outside the rule. The test file `test/rfd_hide_test.exs` plants a
   source that lacks each beat in turn, and each one must be refused.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-1000", :provides, "rfd-numbering-rule"
+    relate "rfd-1000", :provides, "rfd-state-lifecycle"
+  end
 end

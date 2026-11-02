@@ -94,4 +94,9 @@ rfd 2439, "adventure party seats are an independent native slice", :discussion d
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2439", :provides, "party-seats-native-slice"
+  end
 end

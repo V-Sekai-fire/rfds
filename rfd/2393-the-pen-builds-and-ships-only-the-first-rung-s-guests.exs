@@ -41,4 +41,9 @@ rfd 2393, "the pen builds and ships only the first rung's guests", :discussion d
     headfit, motion and rfdetr ELFs and fixtures are deleted. One PR,
     because `build.sh` runs drape's `gen.sh` unconditionally.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2393", :provides, "pen-first-rung-guests-only"
+  end
 end

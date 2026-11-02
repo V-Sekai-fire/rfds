@@ -31,4 +31,9 @@ rfd 2409, "beta: one person wears what they draw", :discussion do
   and `NOFEED=1`; lasso, the grid, local-floor, hand tracking and haptics; the avatars placed, the
   rigid attach and the mirror with `no_attach`; the rest of the town's modules.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2409", :provides, "beta-wear-what-you-draw"
+  end
 end

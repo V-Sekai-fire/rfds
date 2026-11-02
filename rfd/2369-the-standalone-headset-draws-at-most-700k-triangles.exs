@@ -36,4 +36,9 @@ rfd 2369, "the standalone headset draws at most 700k triangles", :discussion do
   skeleton (issue 110), not from the shadow map. An untapered capsule keeps stock
   Godot's height and radius behaviour.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2369", :provides, "headset-700k-triangle-budget"
+  end
 end

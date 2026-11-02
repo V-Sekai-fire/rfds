@@ -45,4 +45,9 @@ rfd 2377, "a translation links into the addon, one bake per platform", :discussi
   Chrome refuses to compile a WebAssembly module larger than 8 MB on the main thread, and a
   game's translation is larger.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2377", :provides, "per-platform-baked-translation"
+  end
 end

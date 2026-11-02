@@ -103,4 +103,10 @@ rfd 2293, "the Skateboard's workspace, and the first rung's plan", :discussion d
   is reproducible from a checkout, and every guest is single precision
   against a double engine.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2293", :provides, "skateboard-workspace-manifest"
+    relate "rfd-2293", :provides, "first-rung-release-plan"
+  end
 end

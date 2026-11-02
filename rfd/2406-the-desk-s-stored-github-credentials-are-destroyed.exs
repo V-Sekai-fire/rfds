@@ -38,4 +38,9 @@ rfd 2406, "the desk's stored GitHub credentials are destroyed", :discussion do
   Check: `security dump-keychain | grep github-app-4890712` prints nothing and `gh auth status`
   reports no account.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2406", :provides, "desk-github-credentials-destroyed"
+  end
 end

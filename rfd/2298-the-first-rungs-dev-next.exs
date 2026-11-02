@@ -96,4 +96,9 @@ rfd 2298, "the first rung's dev.next", :discussion do
   Work that no rung has claimed needs one place to wait, or it is
   lost between rungs.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2298", :provides, "dev-next-backlog-holder"
+  end
 end

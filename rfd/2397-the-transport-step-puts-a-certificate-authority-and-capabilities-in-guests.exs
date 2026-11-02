@@ -68,4 +68,10 @@ rfd 2397,
   table that skips the bit test lets it through. A macaroon with one
   caveat altered still verifies).
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2397", :provides, "guest-ca-capabilities-repos"
+    relate "rfd-2397", :provides, "zone-player-mode-elf"
+  end
 end

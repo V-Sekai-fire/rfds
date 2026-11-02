@@ -33,4 +33,10 @@ rfd 2385, "the Proton tweak on the Frame is reproduced by script", :discussion d
   `steamapps/common/Proton 11.0 (ARM64)` over `ssh frame` names the
   changed files.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2385", :provides, "proton"
+    relate "rfd-2385", :provides, "scripted-proton-xrfix-tweak"
+  end
 end

@@ -98,4 +98,9 @@ rfd 2232, "RFD authoring as an Elixir DSL", :discussion do
   it carried one serial on two directories, one serial allocated and deleted at once, and two
   slugs that no longer matched their directories.
   """
+
+  rebac do
+    verbs_from 2351
+    relate "rfd-2232", :provides, "rfd-elixir-dsl-compiler"
+  end
 end

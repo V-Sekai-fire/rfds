@@ -39,6 +39,7 @@ defmodule PagesSite do
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
     File.cp!(Path.join(__DIR__, "pages_tree.js"), Path.join(out, "assets/tree.js"))
+    File.cp!(Path.join(__DIR__, "pages_navigator.js"), Path.join(out, "assets/navigator.js"))
 
     File.write!(Path.join(out, "_config.yml"), config())
     File.mkdir_p!(Path.join(out, "_layouts"))
@@ -419,7 +420,7 @@ defmodule PagesSite do
       JSON.encode!(PagesTree.problem(tree))
     )
 
-    hero = map_block(tree) <> "\n\n<!--search-->"
+    hero = navigator_block() <> "\n\n" <> map_block(tree) <> "\n\n<!--search-->"
 
     foreword =
       "## 1. The tech tree to the beta {#part-1}\n\n" <>
@@ -463,6 +464,12 @@ defmodule PagesSite do
             "and the build runs through pixi."
       }
     ]
+  end
+
+  defp navigator_block do
+    "<div id=\"navigator\" class=\"navigator\" markdown=\"0\">" <>
+      "<noscript>The navigator needs a script. " <>
+      "The journey below lists the same RFDs.</noscript></div>"
   end
 
   defp map_block(tree) do
@@ -668,6 +675,21 @@ defmodule PagesSite do
           .jr-chip.done { background: #e8f0fb; }
           .jr-chip.ready { border-color: #e67e00; }
           .jr-chip.early { border-style: dashed; border-color: #c0392b; }
+          .navigator { margin: 0 0 1rem; padding: .6rem .8rem; border: 1px solid var(--line);
+            border-left: 5px solid var(--accent); background: #f7faff;
+            font: 14px/1.45 system-ui, sans-serif; }
+          .nv-title { margin: 0 0 .4rem; padding: 0; border: 0; font-size: 1rem; }
+          .nv-row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+          .nv-row label { font-weight: 600; }
+          .nv-row select { flex: 1 1 14rem; min-width: 0; max-width: 100%; padding: .3rem; }
+          .navigator button { padding: .3rem .7rem; font: inherit; cursor: pointer; }
+          .navigator button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+          .nv-status { margin: .4rem 0 0; color: var(--muted); font-size: 13px; }
+          .nv-refused { color: #c0392b; font-weight: 600; }
+          .nv-steps { margin: .3rem 0 0; padding-left: 1.4rem; max-height: 14rem;
+            overflow: auto; }
+          .nv-console textarea { width: 100%; box-sizing: border-box;
+            font: 12px/1.35 Menlo, monospace; }
           blockquote { margin: 1rem 0; padding: .2rem 1rem; background: #f0f6ff;
             border-left: 4px solid var(--accent); }
           @media (max-width: 1000px) {
@@ -695,6 +717,7 @@ defmodule PagesSite do
         </main>
         <script src="{{ "/assets/search.js" | relative_url }}" defer></script>
         <script src="{{ "/assets/tree.js" | relative_url }}" defer></script>
+        <script src="{{ "/assets/navigator.js" | relative_url }}" defer></script>
       </body>
     </html>
     """

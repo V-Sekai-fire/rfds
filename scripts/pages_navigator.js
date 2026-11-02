@@ -26,8 +26,22 @@
   };
 
   const state = { mod: null, domain: "", problem: "", goals: [], level: "surface", last: null };
-  let goalsFn = null;
-  let planFn = null;
+  let engine = null;
+
+  // The engine's own loader accepts a broken document as an empty one, so the page checks first.
+  const parse = (text, why) => { try { return JSON.parse(text); } catch (e) { return why; } };
+  function ask(goal) {
+    const d = parse(state.domain, "bad_domain");
+    if (typeof d === "string") return { refused: d };
+    const p = parse(state.problem, "bad_problem");
+    if (typeof p === "string") return { refused: p };
+    const n = /^\/rfd\/(\d+)$/.exec(goal);
+    if (!n) return { refused: "undeclared_goal" };
+    p.todo_list = [["reach-rfd-" + n[1]]];
+    const raw = engine(state.domain, JSON.stringify(p), "");
+    state.last = raw;
+    return JSON.parse(raw);
+  }
 
   const ui = {
     status: h("p", { class: "nv-status", role: "status" }, "Loading the persona planner..."),
@@ -102,10 +116,12 @@
   }
 
   function refreshGoals() {
-    const g = JSON.parse(goalsFn(state.domain, state.problem));
-    state.goals = g.goals || [];
-    if (g.refused) { ui.status.textContent = "Refused: " + (REFUSALS[g.refused] || g.refused); return; }
-    ui.status.textContent = g.actions + " actions and " + g.methods + " methods; problem " + g.problem + ".";
+    const d = parse(state.domain, "bad_domain");
+    const p = typeof d === "string" ? d : parse(state.problem, "bad_problem");
+    const bad = typeof d === "string" ? d : typeof p === "string" ? p : null;
+    if (bad) { ui.status.textContent = "Refused: " + REFUSALS[bad]; return; }
+    ui.status.textContent = Object.keys(d.actions || {}).length + " actions and "
+      + Object.keys(d.methods || {}).length + " methods; problem " + p.name + ". Planned by the RECTGTN planner, written in Lean.";
   }
 
   function fill() {
@@ -118,9 +134,10 @@
 
   function plan() {
     const goal = ui.pick.value;
-    const raw = planFn(state.domain, state.problem, goal);
-    state.last = raw;
-    showSurface(JSON.parse(raw), goal);
+    state.last = "";
+    const answer = ask(goal);
+    if (answer.refused) state.last = JSON.stringify(answer);
+    showSurface(answer, goal);
     if (state.level === "console") showConsole();
   }
 
@@ -142,8 +159,7 @@
       state.mod = mod;
       state.domain = domain;
       state.problem = problem;
-      goalsFn = mod.cwrap("persona_goals", "string", ["string", "string"]);
-      planFn = mod.cwrap("persona_plan_jsonld", "string", ["string", "string", "string"]);
+      engine = mod.cwrap("persona_plan_jsonld", "string", ["string", "string", "string"]);
       fill();
       refreshGoals();
       ui.pick.disabled = ui.go.disabled = false;

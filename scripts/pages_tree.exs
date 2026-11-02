@@ -115,16 +115,25 @@ defmodule PagesTree do
 
   @context %{VSEKAI: "https://v-sekai.org/", domain: "VSEKAI:planning/domain/"}
 
+  # The domain and the problem are written in the RECTGTN engine's own shape: a goal is the task
+  # `reach-rfd-N` or `reach-token-T`, which holds when the variable is already 1 and otherwise
+  # settles what it needs first. The navigator's engine reads these documents as they are.
   def domain(data) do
     open = Enum.reject(data.nodes, &(&1.s in @advanced))
     tokens = for t <- data.tokens ++ data.boring, do: to_string(t.i)
     ids = MapSet.new(data.nodes, & &1.n)
-    ge = fn p -> %{eval: %{type: "pointer/ge", pointer: p, value: 1}} end
+
+    ge = fn p ->
+      %{eval: %{type: "math/ge", a: %{type: "pointer/get", pointer: p}, b: 1}}
+    end
+
     set = fn p -> %{"pointer/set": p, value: 1} end
 
     need = fn n ->
       for m <- n.c, m in ids, Enum.find(data.nodes, &(&1.n == m)).d > n.d, do: m
     end
+
+    held = fn p -> %{name: "held", check: [ge.(p)], subtasks: []} end
 
     settle =
       for n <- open, into: %{} do
@@ -139,19 +148,33 @@ defmodule PagesTree do
         {"acquire-token-#{t}", %{params: [], body: [set.("/token/#{t}")]}}
       end
 
-    methods =
-      for n <- open, into: %{} do
-        steps =
-          Enum.map(need.(n), &["goal", "/rfd/#{&1}"]) ++
-            Enum.map(n.k ++ n.b, &["goal", "/token/#{&1}"])
+    rfd_methods =
+      for n <- data.nodes, into: %{} do
+        settle_alt =
+          if n.s in @advanced do
+            []
+          else
+            steps =
+              Enum.map(need.(n), &["reach-rfd-#{&1}"]) ++
+                Enum.map(n.k ++ n.b, &["reach-token-#{&1}"])
 
-        {"/rfd/#{n.n}",
-         %{alternatives: [%{name: "settle", subtasks: steps ++ [["settle-#{n.n}"]]}]}}
+            [%{name: "settle", subtasks: steps ++ [["settle-#{n.n}"]]}]
+          end
+
+        {"reach-rfd-#{n.n}",
+         %{params: [], alternatives: [held.("/rfd/#{n.n}") | settle_alt]}}
       end
 
-    tmethods =
+    token_methods =
       for t <- tokens, into: %{} do
-        {"/token/#{t}", %{alternatives: [%{name: "acquire", subtasks: [["acquire-token-#{t}"]]}]}}
+        {"reach-token-#{t}",
+         %{
+           params: [],
+           alternatives: [
+             held.("/token/#{t}"),
+             %{name: "acquire", subtasks: [["acquire-token-#{t}"]]}
+           ]
+         }}
       end
 
     %{
@@ -159,7 +182,7 @@ defmodule PagesTree do
       "@type": "domain:Definition",
       name: "campus_beta",
       source: "manuals-weftspun",
-      version: "0.1.0",
+      version: "0.2.0",
       description:
         "Skills and tokens assembled into a goal: a skill is settled once the skills it needs " <>
           "are settled and the tokens it spends are acquired.",
@@ -168,7 +191,7 @@ defmodule PagesTree do
         %{name: "token", type: "int", init: %{}}
       ],
       actions: Map.merge(settle, acquire),
-      methods: Map.merge(methods, tmethods)
+      methods: Map.merge(rfd_methods, token_methods)
     }
   end
 
@@ -180,18 +203,18 @@ defmodule PagesTree do
       "@context": @context,
       "@type": "domain:Problem",
       name: "campus_beta_rfd#{data.goal}",
-      domain: "campus_beta",
       source: "manuals-weftspun",
-      version: "0.1.0",
+      version: "0.2.0",
       description:
         "As of #{data.asof}: the RFDs that are committed or published are settled, no token " <>
-          "is held, and the goal is RFD66606-#{data.goal}.",
+          "is held, and the goal is RFD66606-#{data.goal}. The problem belongs to the domain " <>
+          "campus_beta.",
       variables: [
         %{name: "rfd", type: "int", init: rfd},
         %{name: "token", type: "int", init: Map.new(tokens, &{&1, 0})}
       ],
       capabilities: %{entities: %{}, graph: %{edges: []}},
-      todo_list: [%{goal: [%{pointer: "/rfd/#{data.goal}", eq: 1}]}]
+      todo_list: [["reach-rfd-#{data.goal}"]]
     }
   end
 

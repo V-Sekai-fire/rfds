@@ -102,9 +102,10 @@
     }
     const toks = all.filter((t) => used.has(String(t.i)));
     const names = (list) => list.map((t) => t.name + (t.repos.length ? " (" + t.repos.join(", ") + ")" : "")).join(", ") || "none";
-    const open = [...cone].filter((id) => byN.get(id).s !== "committed").length;
+    const todo = [...cone].filter((id) => byN.get(id).s !== "committed").sort((x, y) => x - y);
+    const shown = todo.slice(0, 5).map((id) => "rfd-" + id).join(", ") + (todo.length > 5 ? ", and " + (todo.length - 5) + " more" : "");
     return [
-      ["RFDs to accomplish", open + " of " + cone.size + " (" + (cone.size - open) + " committed)", false],
+      ["Capability tokens we still lack (each open RFD is one)", todo.length + " of " + cone.size + (todo.length ? ": " + shown : ""), false],
       ["Tokens we own", names(toks.filter((t) => t.own)), false],
       ["Third-party tokens we have access to", names(toks.filter((t) => !t.own && t.access)), false],
       ["Third-party tokens we do not have access to", names(toks.filter((t) => !t.own && !t.access)),

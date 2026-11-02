@@ -463,32 +463,48 @@ defmodule PagesTree do
           not t.deny,
           do: {subject_of(t.subject), t.verb, t.object}
 
+    base =
+      %{
+        provides:
+          for(
+            {s, :provides, o} <- tuples,
+            reduce: %{},
+            do: (acc -> Map.update(acc, o, [s], &[s | &1]))
+          ),
+        spends:
+          for(
+            {s, :spends, o} <- tuples,
+            reduce: %{},
+            do: (acc -> Map.update(acc, s, [o], &[o | &1]))
+          ),
+        denied:
+          for(
+            path <- RFD.Source.all(),
+            doc = RFD.Source.load(path),
+            doc.rebac != nil,
+            t <- doc.rebac.tuples,
+            t.deny,
+            t.subject == @org,
+            t.verb == :has_capability,
+            do: t.object
+          ),
+        owned: for({"weftspun", :owns, o} <- tuples, do: o),
+        access: for({"weftspun", :has_capability, o} <- tuples, do: o)
+      }
+
+    serials = for path <- RFD.Source.all(), doc = RFD.Source.load(path), do: doc.serial
+    parts = for {s, :owns, "rfd-" <> _ = o} <- tuples, is_integer(s), do: {s, o}
+
     %{
-      provides:
-        for(
-          {s, :provides, o} <- tuples,
-          reduce: %{},
-          do: (acc -> Map.update(acc, o, [s], &[s | &1]))
-        ),
-      spends:
-        for(
-          {s, :spends, o} <- tuples,
-          reduce: %{},
-          do: (acc -> Map.update(acc, s, [o], &[o | &1]))
-        ),
-      denied:
-        for(
-          path <- RFD.Source.all(),
-          doc = RFD.Source.load(path),
-          doc.rebac != nil,
-          t <- doc.rebac.tuples,
-          t.deny,
-          t.subject == @org,
-          t.verb == :has_capability,
-          do: t.object
-        ),
-      owned: for({"weftspun", :owns, o} <- tuples, do: o),
-      access: for({"weftspun", :has_capability, o} <- tuples, do: o)
+      base
+      | provides:
+          Enum.reduce(serials, base.provides, fn s, acc ->
+            Map.update(acc, "rfd-#{s}", [s], &[s | &1])
+          end),
+        spends:
+          Enum.reduce(parts, base.spends, fn {s, o}, acc ->
+            Map.update(acc, s, [o], &Enum.uniq([o | &1]))
+          end)
     }
   end
 

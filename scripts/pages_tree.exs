@@ -309,9 +309,11 @@ defmodule PagesTree do
   end
 
   defp reading(data) do
-    "The journey runs left to right. The first column holds the RFDs that are committed, " <>
-      "which is the only state that counts as complete, whatever order they landed in. Each " <>
-      "later column holds the open skills that need only the columns before it, and the last " <>
+    "The journey runs left to right. It starts at the V-Sekai charter, submitted 2020-06-08 " <>
+      "Pacific. The next column holds the RFDs that are committed, " <>
+      "which is the only state that counts as complete, whatever order they landed in. The " <>
+      "planned columns hold the open skills in the order the persona planner gives, and " <>
+      "the last " <>
       "column is the goal with its slice gates. #{length(data.nodes)} of the #{data.all} " <>
       "skills reachable from the goal are on it, read as of #{data.asof}.\n\n" <>
       "- A committed RFD outlined in red dashes landed before an RFD it cites.\n" <>

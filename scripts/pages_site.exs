@@ -658,6 +658,8 @@ defmodule PagesSite do
           .jr-sub { margin: .1rem 0 .4rem; color: var(--muted); font-size: 12px; }
           .jr-done { border-top-color: #1a5fb4; }
           .jr-now { border-top-color: #e67e00; background: #fff8ee; }
+          .jr-origin { border-top-color: #2e7d32; }
+          .jr-text { margin: 0; font-size: 12.5px; }
           .jr-end { border-top-color: #f2c94c; background: #fffbea; }
           .jr-chip { display: block; margin: 0 0 .25rem; padding: .15rem .4rem; font-size: 12px;
             border: 1px solid var(--line); border-left: 5px solid #bbb; background: #fff;

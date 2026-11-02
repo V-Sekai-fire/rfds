@@ -75,8 +75,16 @@
     p1.appendChild(link);
     p1.appendChild(document.createTextNode(": an open, self-hosted social VR hub with spatialized voice and upper-body tracking, which RFD66606-2360 carries forward as see each other and hear each other."));
     o.appendChild(p1);
-    const dc = col("Committed", doneIds.length + " done" + (early.size ? ", " + early.size + " landed before something they need" : ""), "jr-done");
-    doneIds.forEach((id) => chip(id, dc, early.has(id) ? " early" : ""));
+    const dated = doneIds.filter((id) => dn(id).a);
+    const undated = doneIds.filter((id) => !dn(id).a);
+    [...new Set(dated.map((id) => dn(id).a))].sort().forEach((day) => {
+      const c = col("Acquired " + day, dated.filter((id) => dn(id).a === day).length + " put into production", "jr-done");
+      dated.filter((id) => dn(id).a === day).forEach((id) => chip(id, c, early.has(id) ? " early" : ""));
+    });
+    const dc = col("Committed, date not recorded", undated.length + " committed"
+      + (early.size ? ", " + early.size + " landed before something they need" : "")
+      + ". Nothing yet says when each went into production, so no date is shown.", "jr-done");
+    undated.forEach((id) => chip(id, dc, early.has(id) ? " early" : ""));
     if (order) {
       const per = Math.ceil(order.length / 4);
       const opened = new Set();

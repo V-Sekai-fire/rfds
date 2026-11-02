@@ -66,5 +66,7 @@ rfd 2395, "the draw step runs the pipeline and lassoes a target", :discussion do
     verbs_from 2351
     relate "rfd-2395", :provides, "draw-step-pipeline-attach"
     relate "rfd-2395", :provides, "hand-lasso-target"
+    relate "rfd-2395", :is_a, "avatar-pipeline"
+    relate "rfd-2395", :spends, "guest-elf-double"
   end
 end

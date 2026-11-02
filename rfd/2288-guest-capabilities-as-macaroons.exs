@@ -71,6 +71,8 @@ makes host calls, and the ReBAC tuples of RFD66606-2200"
     verbs_from 2200
     verbs_from 2351
     relate "rfd-2288", :provides, "guest-macaroon-capabilities"
+    relate "rfd-2288", :spends, "rebac-agent-role-tuples"
+    relate "rfd-2288", :is_a, "security-control"
     verb :send, "the guest sends a frame to the object relay"
     verb :write, "the guest appends to the object file the zone holds"
     verb :transfer, "the guest's VM moves to the object zone"

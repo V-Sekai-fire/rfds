@@ -56,5 +56,8 @@ rfd 2400, "the worker zone dispatches and a sidecar computes", :discussion do
     verbs_from 2351
     relate "rfd-2400", :provides, "worker-zone-dispatch"
     relate "rfd-2400", :provides, "gpu-sidecar-compute"
+    relate "rfd-2400", :is_a, "guest-runtime"
+    relate "rfd-2400", :spends, "zone-core-open-tick"
+    relate "rfd-2400", :spends, "sandbox-guest-heavy-compute"
   end
 end

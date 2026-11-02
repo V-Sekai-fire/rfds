@@ -40,5 +40,7 @@ rfd 2363, "a person moves by world grab or by controllers", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2363", :provides, "xr-world-grab-locomotion"
+    relate "rfd-2363", :is_a, "workspace-policy"
+    relate "rfd-2363", :spends, "sandbox-guest-heavy-compute"
   end
 end

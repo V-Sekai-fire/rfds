@@ -30,5 +30,6 @@ rfd 2414, "no workflow or background subagent runs unless the operator asks", :d
   rebac do
     verbs_from 2351
     relate "rfd-2414", :provides, "operator-asked-runs-only"
+    relate "rfd-2414", :is_a, "workspace-policy"
   end
 end

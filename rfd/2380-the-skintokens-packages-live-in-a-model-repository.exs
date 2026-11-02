@@ -36,5 +36,6 @@ rfd 2380, "the SkinTokens packages live in a model repository", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2380", :provides, "skintokens-model-repo-packages"
+    relate "rfd-2380", :is_a, "deployment"
   end
 end

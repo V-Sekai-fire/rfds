@@ -64,9 +64,15 @@ rfd 2360, "The campus as a beta", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2360", :spends, "see-each-other"
-    relate "rfd-2360", :spends, "hear-each-other"
-    relate "rfd-2360", :spends, "draw-and-wear"
-    relate "rfd-2360", :spends, "adventure-party"
-    relate "rfd-2360", :spends, "shop-books"
+    relate "rfd-2360", :spends, "voice-native-slice"
+    relate "rfd-2360", :spends, "draw-wear-native-slice"
+    relate "rfd-2360", :spends, "party-seats-native-slice"
+    relate "rfd-2360", :spends, "shop-books-native-slice"
+    relate "rfd-2360", :is_a, "release-rung"
+    relate "rfd-2360", :owns, "rfd-2436"
+    relate "rfd-2360", :owns, "rfd-2437"
+    relate "rfd-2360", :owns, "rfd-2438"
+    relate "rfd-2360", :owns, "rfd-2439"
+    relate "rfd-2360", :owns, "rfd-2440"
   end
 end

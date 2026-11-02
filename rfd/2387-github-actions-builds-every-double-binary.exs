@@ -41,5 +41,6 @@ rfd 2387, "GitHub Actions builds every double binary", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2387", :provides, "actions-builds-double-binaries"
+    relate "rfd-2387", :is_a, "ci-gate"
   end
 end

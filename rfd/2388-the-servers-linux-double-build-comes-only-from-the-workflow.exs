@@ -35,5 +35,7 @@ rfd 2388, "the servers' Linux double build comes only from the workflow", :discu
   rebac do
     verbs_from 2351
     relate "rfd-2388", :provides, "workflow-only-linux-double"
+    relate "rfd-2388", :spends, "actions-builds-double-binaries"
+    relate "rfd-2388", :is_a, "ci-gate"
   end
 end

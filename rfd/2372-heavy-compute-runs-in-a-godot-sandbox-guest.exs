@@ -51,5 +51,6 @@ rfd 2372, "heavy compute runs in a godot-sandbox guest", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2372", :provides, "sandbox-guest-heavy-compute"
+    relate "rfd-2372", :is_a, "guest-runtime"
   end
 end

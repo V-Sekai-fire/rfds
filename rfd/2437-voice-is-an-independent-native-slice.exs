@@ -101,5 +101,9 @@ rfd 2437, "voice is an independent native slice", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2437", :provides, "voice-native-slice"
+    relate "rfd-2437", :spends, "binary-translated-only-timings"
+    relate "rfd-2437", :spends, "elf-guest-native-translation"
+    relate "rfd-2437", :spends, "fex"
+    relate "rfd-2437", :is_a, "native-slice"
   end
 end

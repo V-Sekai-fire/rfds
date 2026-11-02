@@ -191,5 +191,8 @@ rfd 2143, "FDB backup fans out to R2 for off-Fly durability", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2143", :provides, "fdb-backup-r2-dr-tag"
+    relate "rfd-2143", :spends, "fdb-sqlite"
+    relate "rfd-2143", :spends, "fdb-cluster-mutual-tls"
+    relate "rfd-2143", :is_a, "deployment"
   end
 end

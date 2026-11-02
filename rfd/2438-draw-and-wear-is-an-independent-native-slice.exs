@@ -100,5 +100,10 @@ rfd 2438, "draw and wear is an independent native slice", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2438", :provides, "draw-wear-native-slice"
+    relate "rfd-2438", :spends, "binary-translated-only-timings"
+    relate "rfd-2438", :spends, "elf-guest-native-translation"
+    relate "rfd-2438", :spends, "fex"
+    relate "rfd-2438", :spends, "headset-draw-wear-rung"
+    relate "rfd-2438", :is_a, "native-slice"
   end
 end

@@ -205,5 +205,8 @@ rfd 2142, "Zero-trust service TLS via OpenBao PKI", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2142", :provides, "bao-pki-service-tls"
+    relate "rfd-2142", :spends, "bao"
+    relate "rfd-2142", :spends, "x509-v3-cert-profile"
+    relate "rfd-2142", :is_a, "security-control"
   end
 end

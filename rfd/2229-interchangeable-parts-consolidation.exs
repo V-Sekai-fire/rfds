@@ -236,5 +236,6 @@ loader path, memory `consolidate-interchangeable-parts`"
   rebac do
     verbs_from 2351
     relate "rfd-2229", :provides, "interchangeable-parts-rule"
+    relate "rfd-2229", :is_a, "workspace-policy"
   end
 end

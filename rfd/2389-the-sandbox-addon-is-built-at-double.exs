@@ -37,5 +37,7 @@ rfd 2389, "the sandbox addon is built at double", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2389", :provides, "sandbox-addon-double-pinned"
+    relate "rfd-2389", :spends, "actions-builds-double-binaries"
+    relate "rfd-2389", :is_a, "ci-gate"
   end
 end

@@ -31,5 +31,6 @@ rfd 2416, "a large area is parked one top-level entry at a time", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2416", :provides, "area-parked-entry-by-entry"
+    relate "rfd-2416", :is_a, "workspace-policy"
   end
 end

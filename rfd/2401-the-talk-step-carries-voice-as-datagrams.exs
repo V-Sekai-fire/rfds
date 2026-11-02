@@ -41,5 +41,9 @@ rfd 2401, "the talk step carries voice as datagrams", :discussion do
     verbs_from 2351
     relate "rfd-2401", :provides, "voice-datagram-transport"
     relate "rfd-2401", :provides, "spatial-voice-at-head"
+    relate "rfd-2401", :is_a, "guest-runtime"
+    relate "rfd-2401", :spends, "guest-elf-double"
+    relate "rfd-2401", :spends, "guest-ca-capabilities-repos"
+    relate "rfd-2401", :spends, "zone-player-mode-elf"
   end
 end

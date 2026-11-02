@@ -54,5 +54,11 @@ rfd 2403, "the zone reaches Bao by a certificate Bao issues", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2403", :provides, "zone-bao-client-cert-auth"
+    relate "rfd-2403", :is_a, "security-control"
+    relate "rfd-2403", :spends, "bao"
+    relate "rfd-2403", :spends, "bao-pki-service-tls"
+    relate "rfd-2403", :spends, "bao-cert-auth-role-map"
+    relate "rfd-2403", :spends, "tailscale"
+    relate "rfd-2403", :spends, "fly"
   end
 end

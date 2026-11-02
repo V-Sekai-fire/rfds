@@ -42,5 +42,8 @@ rfd 2406, "the desk's stored GitHub credentials are destroyed", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2406", :provides, "desk-github-credentials-destroyed"
+    relate "rfd-2406", :is_a, "security-control"
+    relate "rfd-2406", :spends, "skateboard-manifest-repo"
+    relate "rfd-2406", :spends, "avatar-repo-humanoid-tsv"
   end
 end

@@ -50,5 +50,9 @@ rfd 2404, "the evidence step records one session", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2404", :provides, "session-evidence-recording"
+    relate "rfd-2404", :is_a, "experiment-record"
+    relate "rfd-2404", :spends, "cineform-matroska-video"
+    relate "rfd-2404", :spends, "mac-desktop-client"
+    relate "rfd-2404", :spends, "steamvr-priority-pen-drawing"
   end
 end

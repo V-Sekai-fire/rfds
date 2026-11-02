@@ -45,5 +45,6 @@ rfd 2393, "the pen builds and ships only the first rung's guests", :discussion d
   rebac do
     verbs_from 2351
     relate "rfd-2393", :provides, "pen-first-rung-guests-only"
+    relate "rfd-2393", :is_a, "workspace-policy"
   end
 end

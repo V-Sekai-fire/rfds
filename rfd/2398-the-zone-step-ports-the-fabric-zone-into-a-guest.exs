@@ -45,5 +45,8 @@ rfd 2398, "the zone step ports the fabric zone into a guest", :discussion do
     verbs_from 2351
     relate "rfd-2398", :provides, "fabric-zone-guest-port"
     relate "rfd-2398", :provides, "zone-core-open-tick"
+    relate "rfd-2398", :is_a, "guest-runtime"
+    relate "rfd-2398", :spends, "guest-elf-double"
+    relate "rfd-2398", :spends, "guest-ca-capabilities-repos"
   end
 end

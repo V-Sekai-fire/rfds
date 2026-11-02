@@ -74,5 +74,6 @@ rfd 2289, "Unship the zone stack, the off-route runtimes and the browser client"
   rebac do
     verbs_from 2351
     relate "rfd-2289", :provides, "zone-stack-unshipped"
+    relate "rfd-2289", :is_a, "workspace-policy"
   end
 end

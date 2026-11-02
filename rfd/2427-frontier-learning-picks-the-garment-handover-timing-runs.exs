@@ -55,5 +55,7 @@ rfd 2427, "frontier learning picks the garment handover timing runs", :discussio
   rebac do
     verbs_from 2351
     relate "rfd-2427", :provides, "handover-timing-planted-levels"
+    relate "rfd-2427", :spends, "per-leg-handover-timing"
+    relate "rfd-2427", :is_a, "experiment-record"
   end
 end

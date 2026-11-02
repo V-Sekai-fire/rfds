@@ -38,5 +38,6 @@ rfd 2424, "a free-space sketch is fitted to the avatar from keypoints", :discuss
   rebac do
     verbs_from 2351
     relate "rfd-2424", :provides, "sketch-keypoint-body-fit"
+    relate "rfd-2424", :is_a, "avatar-pipeline"
   end
 end

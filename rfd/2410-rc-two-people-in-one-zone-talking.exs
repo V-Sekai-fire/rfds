@@ -38,5 +38,19 @@ rfd 2410, "rc: two people in one zone, talking", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2410", :provides, "rc-two-people-talking"
+    relate "rfd-2410", :is_a, "release-rung"
+    relate "rfd-2410", :spends, "guest-ca-capabilities-repos"
+    relate "rfd-2410", :spends, "fabric-zone-guest-port"
+    relate "rfd-2410", :spends, "zone-journal-in-bao-fdb"
+    relate "rfd-2410", :spends, "worker-zone-dispatch"
+    relate "rfd-2410", :spends, "voice-datagram-transport"
+    relate "rfd-2410", :spends, "weftspun-zone-ghost-servers"
+    relate "rfd-2410", :spends, "beta-wear-what-you-draw"
+    relate "rfd-2410", :owns, "rfd-2397"
+    relate "rfd-2410", :owns, "rfd-2398"
+    relate "rfd-2410", :owns, "rfd-2399"
+    relate "rfd-2410", :owns, "rfd-2400"
+    relate "rfd-2410", :owns, "rfd-2401"
+    relate "rfd-2410", :owns, "rfd-2402"
   end
 end

@@ -43,5 +43,6 @@ rfd 2371, "a residual is fixed down a ladder, never smudged", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2371", :provides, "residual-fix-ladder"
+    relate "rfd-2371", :is_a, "workspace-policy"
   end
 end

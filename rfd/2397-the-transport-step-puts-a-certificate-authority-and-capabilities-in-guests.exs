@@ -73,5 +73,9 @@ rfd 2397,
     verbs_from 2351
     relate "rfd-2397", :provides, "guest-ca-capabilities-repos"
     relate "rfd-2397", :provides, "zone-player-mode-elf"
+    relate "rfd-2397", :is_a, "guest-runtime"
+    relate "rfd-2397", :spends, "guest-elf-double"
+    relate "rfd-2397", :spends, "webtransport-guest-signer"
+    relate "rfd-2397", :spends, "guest-macaroon-capabilities"
   end
 end

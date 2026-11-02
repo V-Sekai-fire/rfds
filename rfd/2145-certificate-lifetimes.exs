@@ -188,5 +188,7 @@ rfd 2145, "Certificate lifetimes, from a risk-based ceiling", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2145", :provides, "cert-lifetime-table"
+    relate "rfd-2145", :spends, "x509-v3-cert-profile"
+    relate "rfd-2145", :is_a, "security-control"
   end
 end

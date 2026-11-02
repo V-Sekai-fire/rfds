@@ -57,5 +57,11 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2408", :provides, "dev1-station-visit"
+    relate "rfd-2408", :is_a, "dev-rung"
+    relate "rfd-2408", :spends, "station-godot-module-port"
+    relate "rfd-2408", :spends, "macos-oxrsys-dev-play"
+    relate "rfd-2408", :spends, "guest-elf-double"
+    relate "rfd-2408", :spends, "actions-builds-double-binaries"
+    relate "rfd-2408", :spends, "xr-world-grab-locomotion"
   end
 end

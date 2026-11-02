@@ -188,5 +188,7 @@ rfd 2240,
   rebac do
     verbs_from 2351
     relate "rfd-2240", :provides, "cff-xmp-metadata-derivation"
+    relate "rfd-2240", :spends, "elixir"
+    relate "rfd-2240", :is_a, "workspace-policy"
   end
 end

@@ -174,6 +174,9 @@ rfd 2200, "ReBAC agent roles as tuples, not per-agent policy sprawl", :discussio
   rebac do
     verbs_from 2351
     relate "rfd-2200", :provides, "rebac-agent-role-tuples"
+    relate "rfd-2200", :spends, "bao"
+    relate "rfd-2200", :spends, "rfd-elixir-dsl-compiler"
+    relate "rfd-2200", :is_a, "security-control"
 
     verb :authors,
          "the subject drafts and owns retractions for the object (docs, experiments, RFDs)"

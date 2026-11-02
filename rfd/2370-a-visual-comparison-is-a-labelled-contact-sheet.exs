@@ -46,5 +46,7 @@ rfd 2370, "a visual comparison is a labelled contact sheet", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2370", :provides, "labelled-contact-sheet-compare"
+    relate "rfd-2370", :is_a, "workspace-policy"
+    relate "rfd-2370", :spends, "cff-xmp-metadata-derivation"
   end
 end

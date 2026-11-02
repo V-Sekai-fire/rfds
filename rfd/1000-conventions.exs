@@ -177,5 +177,6 @@ rfd 1000, "Conventions", :published do
     verbs_from 2351
     relate "rfd-1000", :provides, "rfd-numbering-rule"
     relate "rfd-1000", :provides, "rfd-state-lifecycle"
+    relate "rfd-1000", :is_a, "workspace-policy"
   end
 end

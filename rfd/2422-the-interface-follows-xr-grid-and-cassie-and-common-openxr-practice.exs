@@ -51,5 +51,7 @@ rfd 2422, "the interface follows xr-grid and CASSIE and common OpenXR practice",
   rebac do
     verbs_from 2351
     relate "rfd-2422", :provides, "xr-grid-cassie-interface"
+    relate "rfd-2422", :spends, "xr-world-grab-locomotion"
+    relate "rfd-2422", :is_a, "interface-spec"
   end
 end

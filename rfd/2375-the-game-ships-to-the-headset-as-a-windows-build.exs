@@ -53,5 +53,7 @@ rfd 2375, "the game ships to the headset as a Windows build", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2375", :provides, "windows-headset-game-build"
+    relate "rfd-2375", :spends, "elf-guest-native-translation"
+    relate "rfd-2375", :is_a, "deployment"
   end
 end

@@ -64,5 +64,6 @@ rfd 2383, "the assistant draws with the pen through SteamVR priority mode", :dis
   rebac do
     verbs_from 2351
     relate "rfd-2383", :provides, "steamvr-priority-pen-drawing"
+    relate "rfd-2383", :is_a, "dev-rung"
   end
 end

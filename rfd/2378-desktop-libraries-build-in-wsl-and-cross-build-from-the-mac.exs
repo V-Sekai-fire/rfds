@@ -53,5 +53,7 @@ rfd 2378, "desktop libraries build in WSL and cross-build from the Mac", :discus
   rebac do
     verbs_from 2351
     relate "rfd-2378", :provides, "wsl-desktop-library-builds"
+    relate "rfd-2378", :spends, "cross-build-image"
+    relate "rfd-2378", :is_a, "workspace-policy"
   end
 end

@@ -43,5 +43,6 @@ rfd 2376, "nothing runs in the headset unless the operator asks", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2376", :provides, "headset-runs-operator-gated"
+    relate "rfd-2376", :is_a, "workspace-policy"
   end
 end

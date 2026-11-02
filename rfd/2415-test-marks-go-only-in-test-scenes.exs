@@ -29,5 +29,6 @@ rfd 2415, "test marks go only in test scenes", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2415", :provides, "test-marks-test-scenes-only"
+    relate "rfd-2415", :is_a, "workspace-policy"
   end
 end

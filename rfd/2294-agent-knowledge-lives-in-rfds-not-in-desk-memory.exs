@@ -235,5 +235,6 @@ rules below"
   rebac do
     verbs_from 2351
     relate "rfd-2294", :provides, "agent-knowledge-in-rfds"
+    relate "rfd-2294", :is_a, "workspace-policy"
   end
 end

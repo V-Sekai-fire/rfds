@@ -52,5 +52,6 @@ rfd 2381, "a Windows host answers four system calls as Linux does", :discussion 
   rebac do
     verbs_from 2351
     relate "rfd-2381", :provides, "windows-host-four-syscalls"
+    relate "rfd-2381", :is_a, "guest-runtime"
   end
 end

@@ -36,5 +36,6 @@ rfd 2419,
   rebac do
     verbs_from 2351
     relate "rfd-2419", :provides, "gitbash-pathconv-guard"
+    relate "rfd-2419", :is_a, "workspace-policy"
   end
 end

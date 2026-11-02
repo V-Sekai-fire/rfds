@@ -67,5 +67,8 @@ rfd 2296, "the first rung's dev.2", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2296", :provides, "first-rung-dev2-gaps-closed"
+    relate "rfd-2296", :is_a, "dev-rung"
+    relate "rfd-2296", :spends, "dev1-station-visit"
+    relate "rfd-2296", :spends, "guest-elf-double"
   end
 end

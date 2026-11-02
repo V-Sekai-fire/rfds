@@ -35,5 +35,14 @@ rfd 2409, "beta: one person wears what they draw", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2409", :provides, "beta-wear-what-you-draw"
+    relate "rfd-2409", :is_a, "release-rung"
+    relate "rfd-2409", :spends, "draw-step-pipeline-attach"
+    relate "rfd-2409", :spends, "hand-lasso-target"
+    relate "rfd-2409", :spends, "garment-follows-hips"
+    relate "rfd-2409", :spends, "steamvr-priority-pen-drawing"
+    relate "rfd-2409", :spends, "dev1-station-visit"
+    relate "rfd-2409", :spends, "guest-elf-double"
+    relate "rfd-2409", :owns, "rfd-2395"
+    relate "rfd-2409", :owns, "rfd-2396"
   end
 end

@@ -76,5 +76,8 @@ rfd 2297, "the first rung's dev.3", :discussion do
   rebac do
     verbs_from 2351
     relate "rfd-2297", :provides, "windows-single-exe-frame-build"
+    relate "rfd-2297", :is_a, "dev-rung"
+    relate "rfd-2297", :spends, "first-rung-dev2-gaps-closed"
+    relate "rfd-2297", :spends, "guest-elf-double"
   end
 end

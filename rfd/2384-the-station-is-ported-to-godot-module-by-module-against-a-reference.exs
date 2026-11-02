@@ -72,5 +72,6 @@ rfd 2384, "the station is ported to Godot module by module against a reference",
   rebac do
     verbs_from 2351
     relate "rfd-2384", :provides, "station-godot-module-port"
+    relate "rfd-2384", :is_a, "dev-rung"
   end
 end

@@ -46,5 +46,7 @@ rfd 2391, "guests are built at double precision", :discussion do
     verbs_from 2351
     relate "rfd-2391", :provides, "guest-elf-double"
     relate "rfd-2391", :provides, "guests-double-precision-build"
+    relate "rfd-2391", :spends, "actions-builds-double-binaries"
+    relate "rfd-2391", :is_a, "guest-runtime"
   end
 end

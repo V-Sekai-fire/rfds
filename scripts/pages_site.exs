@@ -38,7 +38,6 @@ defmodule PagesSite do
     File.mkdir_p!(Path.join(out, "assets"))
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
-    File.cp!(Path.join(__DIR__, "pages_tree.js"), Path.join(out, "assets/tree.js"))
     File.cp!(Path.join(__DIR__, "pages_navigator.js"), Path.join(out, "assets/navigator.js"))
 
     File.write!(Path.join(out, "_config.yml"), config())
@@ -420,7 +419,7 @@ defmodule PagesSite do
       JSON.encode!(PagesTree.problem(tree))
     )
 
-    hero = navigator_block() <> "\n\n" <> map_block(tree) <> "\n\n<!--search-->"
+    hero = navigator_block() <> "\n\n" <> tree_data(tree) <> "\n\n<!--search-->"
 
     foreword =
       "## 1. The tech tree to the beta {#part-1}\n\n" <>
@@ -469,13 +468,11 @@ defmodule PagesSite do
   defp navigator_block do
     "<div id=\"navigator\" class=\"navigator\" markdown=\"0\">" <>
       "<noscript>The navigator needs a script. " <>
-      "The journey below lists the same RFDs.</noscript></div>"
+      "Section 1 lists the same RFDs.</noscript></div>"
   end
 
-  defp map_block(tree) do
-    "<div id=\"journey\" class=\"journey\" markdown=\"0\"></div>\n" <>
-      "<script type=\"application/json\" id=\"tree-data\">#{PagesTree.json(tree)}</script>\n" <>
-      "<noscript>The journey needs a script. Section 1 holds the same facts as tables.</noscript>"
+  defp tree_data(tree) do
+    "<script type=\"application/json\" id=\"tree-data\">#{PagesTree.json(tree)}</script>"
   end
 
   defp tally(rfds) do
@@ -656,25 +653,6 @@ defmodule PagesSite do
           pre { padding: .8rem; overflow: auto; border: 1px solid var(--line); }
           table { border-collapse: collapse; display: block; overflow: auto; }
           th, td { border: 1px solid var(--line); padding: .35rem .6rem; vertical-align: top; }
-          .journey { margin: 0 0 1rem; font: 14px/1.4 system-ui, sans-serif; }
-          .jr-track { display: flex; gap: .6rem; overflow-x: auto; align-items: flex-start;
-            max-height: 58vh; padding-bottom: .4rem; }
-          .jr-col { flex: 0 0 15rem; border: 1px solid var(--line); border-top: 4px solid #888;
-            padding: .4rem .5rem; background: #fcfcfd; max-height: 56vh; overflow-y: auto; }
-          .jr-col h4 { margin: 0; font-size: .95rem; }
-          .jr-sub { margin: .1rem 0 .4rem; color: var(--muted); font-size: 12px; }
-          .jr-done { border-top-color: #1a5fb4; }
-          .jr-now { border-top-color: #e67e00; background: #fff8ee; }
-          .jr-origin { border-top-color: #2e7d32; }
-          .jr-text { margin: 0; font-size: 12.5px; }
-          .jr-end { border-top-color: #f2c94c; background: #fffbea; }
-          .jr-chip { display: block; margin: 0 0 .25rem; padding: .15rem .4rem; font-size: 12px;
-            border: 1px solid var(--line); border-left: 5px solid #bbb; background: #fff;
-            color: #222; text-decoration: none; overflow: hidden; text-overflow: ellipsis;
-            white-space: nowrap; }
-          .jr-chip.done { background: #e8f0fb; }
-          .jr-chip.ready { border-color: #e67e00; }
-          .jr-chip.early { border-style: dashed; border-color: #c0392b; }
           .navigator { margin: 0 0 1rem; padding: .6rem .8rem; border: 1px solid var(--line);
             border-left: 5px solid var(--accent); background: #f7faff;
             font: 14px/1.45 system-ui, sans-serif; }
@@ -717,7 +695,6 @@ defmodule PagesSite do
           {{ content | replace: "<!--search-->", search }}
         </main>
         <script src="{{ "/assets/search.js" | relative_url }}" defer></script>
-        <script src="{{ "/assets/tree.js" | relative_url }}" defer></script>
         <script src="{{ "/assets/navigator.js" | relative_url }}" defer></script>
       </body>
     </html>

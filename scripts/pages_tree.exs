@@ -262,12 +262,11 @@ defmodule PagesTree do
 
     [
       "### 1.1. The path to the beta {#s1-1}\n\n" <> beta(data, by, link),
-      "### 1.2. How to read the map {#s1-2}\n\n" <> reading(data),
-      "### 1.3. Innovation tokens and boring technology {#s1-3}\n\n" <> ledger(data, link),
-      "### 1.4. Progress to the goal {#s1-4}\n\n" <> progress(data, by, link),
-      "### 1.5. Skipped ahead {#s1-5}\n\n" <> skipped(data, by, link),
-      "### 1.6. Technologies with no link {#s1-6}\n\n" <> unlinked(data, link),
-      "### 1.7. Repositories on the map {#s1-7}\n\n" <> repos(data, link)
+      "### 1.2. Innovation tokens and boring technology {#s1-2}\n\n" <> ledger(data, link),
+      "### 1.3. Progress to the goal {#s1-3}\n\n" <> progress(data, by, link),
+      "### 1.4. Skipped ahead {#s1-4}\n\n" <> skipped(data, by, link),
+      "### 1.5. Technologies with no link {#s1-5}\n\n" <> unlinked(data, link),
+      "### 1.6. Repositories on the path {#s1-6}\n\n" <> repos(data, link)
     ]
     |> Enum.join("\n\n")
   end
@@ -373,20 +372,6 @@ defmodule PagesTree do
     for n <- MapSet.to_list(walk.(walk, [goal], MapSet.new([goal]))), do: by[n]
   end
 
-  defp reading(data) do
-    "The journey runs left to right. It starts at the V-Sekai charter, submitted 2020-06-08 " <>
-      "Pacific. The next column holds the RFDs that are committed, " <>
-      "which is the only state that counts as complete, whatever order they landed in. The " <>
-      "planned columns hold the open skills in the order the persona planner gives, and " <>
-      "the last " <>
-      "column is the goal with its slice gates. #{length(data.nodes)} of the #{data.all} " <>
-      "skills reachable from the goal are on it, read as of #{data.asof}.\n\n" <>
-      "- A committed RFD outlined in red dashes landed before an RFD it cites.\n" <>
-      "- An orange outline is ready: open, with everything it depends on committed.\n" <>
-      "- The stripe on a chip is the first token its text names.\n\n" <>
-      "Without a script, the tables below carry the same facts."
-  end
-
   defp ledger(data, link) do
     rows =
       for t <- data.tokens ++ data.boring do
@@ -404,9 +389,9 @@ defmodule PagesTree do
       "technology below is tagged from the RFD text, " <>
       "as RFD66606-2351 tagged repositories from their metadata, so a mention counts as a " <>
       "use.\n\n" <>
-      "| token | technology | RFDs whose title names it | settled | skills on the map |\n" <>
+      "| token | technology | RFDs whose title names it | settled | skills on the path |\n" <>
       "| --- | --- | --- | --- | --- |\n#{Enum.join(rows, "\n")}\n\n" <>
-      "The map holds #{length(data.tokens)} innovation tokens and #{length(data.boring)} " <>
+      "The path holds #{length(data.tokens)} innovation tokens and #{length(data.boring)} " <>
       "boring tokens."
   end
 
@@ -424,7 +409,7 @@ defmodule PagesTree do
         "- #{link.(a)} is #{by[a].s} and cites #{link.(b)}, which is #{by[b].s}."
       end
 
-    "#{length(items)} skills on the map are settled while a skill they need is still open. " <>
+    "#{length(items)} skills on the path are settled while a skill they need is still open. " <>
       "Each is a technology switched on before its prerequisite.\n\n#{Enum.join(items, "\n")}"
   end
 
@@ -435,7 +420,7 @@ defmodule PagesTree do
       for t <- open do
         users =
           if t.users == [],
-            do: "no node on the map",
+            do: "no skill on the path",
             else: Enum.map_join(t.users, ", ", &link.(&1))
 
         "- Token #{t.i}, #{t.name}, is spent by #{users}. No RFD title names it."

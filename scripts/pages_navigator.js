@@ -48,17 +48,16 @@
   const ui = {
     status: h("p", { class: "nv-status", role: "status" }, "Loading the persona planner..."),
     pick: h("select", { id: "nv-pick", "aria-label": "RFD to plan a route to" }),
-    go: h("button", { type: "button" }, "Plan the route"),
     toggle: h("button", { type: "button", class: "nv-toggle", "aria-pressed": "false" }, "Console"),
     out: h("div", { class: "nv-out", "aria-live": "polite" }),
     console: h("div", { class: "nv-console" }),
   };
   ui.console.hidden = true;
-  ui.pick.disabled = ui.go.disabled = true;
+  ui.pick.disabled = true;
 
   const label = h("label", { for: "nv-pick" }, "Where do you want to get to?");
   const row = h("div", { class: "nv-row" });
-  row.append(label, ui.pick, ui.go, ui.toggle);
+  row.append(label, ui.pick, ui.toggle);
   host.replaceChildren(h("h2", { class: "nv-title" }, "Persona navigator"), row, ui.status, ui.out, ui.console);
 
   function stepNode(action, i) {
@@ -159,7 +158,7 @@
       const t = h("textarea", { rows: "8", spellcheck: "false", "aria-label": title });
       t.value = text;
       t.readOnly = !editable;
-      if (editable) t.addEventListener("change", () => { state[key] = t.value; refreshGoals(); });
+      if (editable) t.addEventListener("change", () => { state[key] = t.value; refreshGoals(); plan(); });
       d.append(t);
       return [d, t];
     };
@@ -198,7 +197,6 @@
     if (state.level === "console") showConsole();
   }
 
-  ui.go.addEventListener("click", plan);
   ui.pick.addEventListener("change", plan);
   ui.toggle.addEventListener("click", () => {
     state.level = state.level === "surface" ? "console" : "surface";
@@ -220,7 +218,7 @@
       engine = mod.cwrap("persona_plan_jsonld", "string", ["string", "string", "string"]);
       fill();
       refreshGoals();
-      ui.pick.disabled = ui.go.disabled = false;
+      ui.pick.disabled = false;
       plan();
     })
     .catch((e) => {

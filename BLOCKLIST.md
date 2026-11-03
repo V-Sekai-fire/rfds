@@ -81,6 +81,7 @@ here corresponds to an entry.
 - **CockroachDB** as a store: operator directive 2026-10-18 ("Retire crdb"); FoundationDB is the one transactional store, and SQLite on FoundationDB pages (`datasource-store`) takes the relational work — see below
 - **IEC 61131-3 function-block-diagram (FBD)**: operator 2026-10-29; the glTF behaviour graph is the framing we use instead, see the allowlist
 - AVX and AVX2 (and every flag that lets the compiler emit them: `-mavx*`, `-mfma`, `-march=native`, `-march=x86-64-v3` and up, MSVC `/arch:AVX*`) in `entities-godot` builds: the engine's x86 baseline is SSE4.2 with POPCNT, because AVX is missing on recent low-end Intel CPUs; a distribution compiler that defaults to x86-64-v3 (AlmaLinux 10) defines `__AVX__` and breaks the embree link, so `SConstruct` pins `-march=x86-64` and refuses AVX flags in `ccflags` and `cxxflags`; libwebp's own runtime-dispatched AVX2 sources are upstream's CPU detection and stay (operator, 2026-10-31)
+- **NLI models** (DeBERTa-v3 MNLI, bart-large-mnli) as a judge of RFD text: operator directive 2026-11-02: language models do this better; both models tried are blocked. Use a language model — see below
 
 ### Abliteration is blocked, and the model's own card is the argument
 
@@ -2072,3 +2073,28 @@ for `/`-switches, and a `.cmd` file for `start ""`. A workaround that every comm
 is the shell being wrong.
 
 Windows commands run in Nushell. Linux builds run in the desk's WSL Ubuntu 22.04 (operator, 2026-10-31).
+
+
+### NLI models are blocklisted as a judge of RFD text, and a language model does the job
+
+The two natural-language-inference models tried on the RFD dependency task are
+`MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli` and
+`facebook/bart-large-mnli`. Both are MIT-licensed. The objection is not licence. It is
+that a language model does this job better, and an NLI model adds a second kind of
+checkpoint to fetch, pin and license-check for a worse answer (operator, 2026-11-02).
+
+What was measured on 2026-11-02, so the next reader does not repeat it:
+
+- On 400 ANLI round 3 items DeBERTa-v3-large scored 0.63 and bart-large-mnli scored 0.30.
+  On 400 MNLI matched items they scored 0.897 and 0.89.
+- Asked whether an RFD's paragraph says it uses a capability that another RFD provides,
+  DeBERTa separated the 36 declared edges from 587 other pairs with an AUC of 0.63. Lemma
+  overlap alone scored 0.62. Four wordings of the question scored between 0.54 and 0.64.
+- RFD prose rarely states a dependency in one sentence, so entailment of "RFD X depends on
+  RFD Y" almost never holds, even for an edge that is declared.
+
+**Substitute:** a language model for the judging step. The spaCy parse and the lemma
+overlap that find candidate pairs do not use an NLI model and stay.
+
+**Carve-outs.** None. A model that is trained for entailment and scored on an NLI benchmark is
+an NLI model for this rule, whatever its name.

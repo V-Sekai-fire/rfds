@@ -234,8 +234,8 @@ defmodule PagesTree do
       source: "manuals-weftspun",
       version: "0.2.0",
       description:
-        "As of #{data.asof}: the RFDs that are committed or published are settled, no token " <>
-          "is held, and the goal is RFD66606-#{data.goal}. The problem belongs to the domain " <>
+        "As of #{data.asof}: the RFDs that are committed are settled, no token is held, " <>
+          "and the goal is RFD66606-#{data.goal}. The problem belongs to the domain " <>
           "campus_beta.",
       variables: [
         %{name: "rfd", type: "int", init: rfd},
@@ -351,7 +351,7 @@ defmodule PagesTree do
     ready = for n <- path, status(by, n) == :ready, do: link.(n.n)
 
     "As of #{data.asof}, #{Map.get(stat, :done, 0)} of the #{length(path)} skills on the " <>
-      "goal's path are settled (committed or published), #{Map.get(stat, :ready, 0)} are " <>
+      "goal's path are settled (committed), #{Map.get(stat, :ready, 0)} are " <>
       "ready and #{Map.get(stat, :blocked, 0)} are blocked by a skill that is open. " <>
       "The goal, #{link.(goal.n)}, is #{goal.s}.\n\n" <>
       "A skill is ready when it is open and every skill it cites at a deeper ring is settled. " <>

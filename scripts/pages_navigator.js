@@ -199,6 +199,7 @@
   }
 
   ui.go.addEventListener("click", plan);
+  ui.pick.addEventListener("change", plan);
   ui.toggle.addEventListener("click", () => {
     state.level = state.level === "surface" ? "console" : "surface";
     ui.toggle.setAttribute("aria-pressed", String(state.level === "console"));
@@ -220,6 +221,7 @@
       fill();
       refreshGoals();
       ui.pick.disabled = ui.go.disabled = false;
+      plan();
     })
     .catch((e) => {
       ui.status.textContent = "The persona planner did not load, so there is no route to show: " + e;

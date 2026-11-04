@@ -128,11 +128,6 @@ by time in a file listing and parses as a version in every package tool"
      moves a module path to `/v2`.
   5. A signed attestation binds the record to the artifact's digest.
 
-  :: details Open questions
-  - Two commits in one UTC second get tags in hash order, not commit order.
-  - Whether a Windows build needs the numeric version before part 3 lands.
-  - Docker's acceptance is read off its grammar, not run.
-
   :: details The problem
   Of 60 GitHub
   releases in repositories pushed since 2026-06-01, 33 are SemVer

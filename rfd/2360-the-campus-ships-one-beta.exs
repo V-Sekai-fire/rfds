@@ -73,13 +73,10 @@ rfd 2360, "The campus as a beta", :discussion do
   - a language other than English
   - a recorder or a replay inside the campus
   - a teacher seat or a learner seat; the people of a lesson are the player and the party's seats
-  - a shared screen, slide, whiteboard or document in a zone; the lesson's screen sits on the
-    desk beside the call
   - a paywall at the door: a licence, sponsor or membership check in the client or the server
   - a lesson record or a course cartridge: progress, completion, grades or an interchange format
   - host controls: mute-others, a raised hand or a per-person audio channel
   - more than four people in one zone
-  - the campus as a stand-in for a call or a meeting-room app
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.

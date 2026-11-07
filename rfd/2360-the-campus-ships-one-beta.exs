@@ -64,6 +64,12 @@ rfd 2360, "The campus as a beta", :discussion do
   - a leaderboard or achievements
   - real-money purchases
   - a build for any platform other than the one win64 build
+  - a client for a phone or a web page
+  - a market, a shop listing or a save slot for drawn outfits
+  - moderation, reporting and blocking tools
+  - a tutorial or first-run walkthrough
+  - a language other than English
+  - recording or replaying a session
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.

@@ -139,9 +139,14 @@
     const steps = answer.steps || [];
     const settles = steps.filter((s) => /^settle-/.test(s.action)).length;
     const rn = /^\/rfd\/(\d+)$/.exec(goal);
-    const name = rn ? "RFD66606-" + rn[1] + (byN.get(+rn[1]) ? " " + byN.get(+rn[1]).t : "") : goal;
-    ui.out.append(h("p", {}, (answer.reached ? "Reached " : "Did not reach ") + name + " in "
-      + steps.length + " steps (" + settles + " RFDs to settle)."));
+    const node = rn ? byN.get(+rn[1]) : null;
+    const name = rn ? "RFD66606-" + rn[1] + (node ? " " + node.t : "") : goal;
+    // The destination is a real link, so it opens in place, in a new tab, or by middle click.
+    const dest = node ? h("a", { href: "#" + node.id, class: "nv-dest" }, name) : name;
+    const p = h("p");
+    p.append(answer.reached ? "Reached " : "Did not reach ", dest,
+      " in " + steps.length + " steps (" + settles + " RFDs to settle).");
+    ui.out.append(p);
     showNeeds(goal, answer);
     const ol = h("ol", { class: "nv-steps" });
     steps.forEach((s, i) => ol.append(stepNode(s.action, i)));

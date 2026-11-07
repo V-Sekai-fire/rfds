@@ -46,7 +46,9 @@ rfd 2360, "The campus as a beta", :discussion do
   :: details Non-goals
   Everything outside the beta is cut, and every nongoal is abandoned rather than deferred
   (operator, 2026-10-30). A new idea that matches a nongoal is refused, and the list is not argued
-  again before the beta ships. The non-goals named so far:
+  again before the beta ships. A daily lesson between the operator and one to three learners is a
+  use of the five features, not a feature (operator, 2026-11-07). What a lesson wants beyond them is
+  named below. The non-goals named so far:
 
   - a hidden director that plans the day
   - friendships and romance
@@ -69,10 +71,20 @@ rfd 2360, "The campus as a beta", :discussion do
   - moderation, reporting and blocking tools
   - a tutorial or first-run walkthrough
   - a language other than English
-  - recording or replaying a session
+  - a recorder or a replay inside the campus
+  - a teacher seat or a learner seat; the people of a lesson are the player and the party's seats
+  - a shared screen, slide, whiteboard or document in a zone; the lesson's screen sits on the
+    desk beside the call
+  - a paywall at the door: a licence, sponsor or membership check in the client or the server
+  - a lesson record or a course cartridge: progress, completion, grades or an interchange format
+  - host controls: mute-others, a raised hand or a per-person audio channel
+  - more than four people in one zone
+  - the campus as a stand-in for a call or a meeting-room app
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.
+  - Whether the gate in RFD66606-2439 covers avatars and voice for the player and three filled
+    seats, or only the two people of RFD66606-2436 and RFD66606-2437.
   - How a Mac runs FEX and Proton. Both need a Linux guest on the Mac, and no run has made one.
   :: details After the cut
   Dev is development: features land and change. After the beta is cut, only fixes land.

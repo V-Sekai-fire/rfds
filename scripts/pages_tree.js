@@ -25,7 +25,7 @@
   };
 
   const CHARTER = "https://v-sekai.github.io/manuals/decisions/20200608-vsekai-charter.html";
-  const gates = [2436, 2437, 2438, 2439, 2440];
+  const gates = [2436, 2437, 2438, 2439, 2440, 2444];
   const seen = new Set([data.goal]);
   const queue = [data.goal];
   while (queue.length) needs(queue.shift()).forEach((m) => { if (!seen.has(m)) { seen.add(m); queue.push(m); } });

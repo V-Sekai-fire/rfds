@@ -19,11 +19,12 @@ rfd 2445, "the lesson surface is an independent native slice", :discussion do
   Run the board gate and the screen gate against recorded inputs. A dropped stroke and a frozen
   frame must each fail their gate.
   :: decision
-  - The lesson surface ships as one native program with no editor or browser. It owns two things in
-    a zone: a board that takes pen strokes, and a screen that shows frames from a window on the
-    teacher's desktop (operator, 2026-11-07).
+  - The lesson surface ships as one native program with no editor or browser. It owns two things
+    in a zone: a board that takes pen strokes, and a screen that shows frames from a window on
+    the teacher's desktop (operator, 2026-11-07).
   - The board is the pen's first rung, RFD66606-2287, drawn on a flat surface in place of a
-    garment. The slice reuses the stroke message of RFD66606-2438 and adds no second stroke format.
+    garment. The slice reuses the stroke message of RFD66606-2438 and adds no second stroke
+    format.
   - The slice runs with no avatar, voice, party or shop present. Its inputs are a recorded stroke
     stream and a recorded frame stream in place of those parts (operator, 2026-11-07).
   - Native means a riscv64 guest ELF for the sandbox, run binary-translated (operator,
@@ -54,8 +55,8 @@ rfd 2445, "the lesson surface is an independent native slice", :discussion do
   :: details The slice's edge
   In: a zone, a teacher, a recorded stroke stream and a recorded frame stream.
   Out: avatars, voice, outfits, seats and books, which are the sibling slices, and how a window is
-  captured on the teacher's desktop. The edge is a message shape between the teacher's program, the
-  zone and a viewer. Its first step writes it down.
+  captured on the teacher's desktop. The edge is a message shape between the teacher's program,
+  the zone and a viewer. Its first step writes it down.
 
   :: details Gates and controls
   Each gate has a control that plants the defect and must fail.
@@ -73,9 +74,9 @@ rfd 2445, "the lesson surface is an independent native slice", :discussion do
   :: details Frontier learning picks the runs
   The slice's gates run as levels in RFD66606-2309's sense, scheduled the way RFD66606-2323
   schedules the store's attacks.
-  A level is an input family with fixed attributes: the stroke rate, the frame rate, the frame size
-  and the loss pattern in the recorded stream. A problem is one 5 minute replay of a stream with a
-  drawn seed and offset.
+  A level is an input family with fixed attributes: the stroke rate, the frame rate, the frame
+  size and the loss pattern in the recorded stream. A problem is one 5 minute replay of a
+  stream with a drawn seed and offset.
 
   | Level | Planted defect | Found when |
   | --- | --- | --- |

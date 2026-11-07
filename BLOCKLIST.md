@@ -82,6 +82,7 @@ here corresponds to an entry.
 - **IEC 61131-3 function-block-diagram (FBD)**: operator 2026-10-29; the glTF behaviour graph is the framing we use instead, see the allowlist
 - AVX and AVX2 (and every flag that lets the compiler emit them: `-mavx*`, `-mfma`, `-march=native`, `-march=x86-64-v3` and up, MSVC `/arch:AVX*`) in `entities-godot` builds: the engine's x86 baseline is SSE4.2 with POPCNT, because AVX is missing on recent low-end Intel CPUs; a distribution compiler that defaults to x86-64-v3 (AlmaLinux 10) defines `__AVX__` and breaks the embree link, so `SConstruct` pins `-march=x86-64` and refuses AVX flags in `ccflags` and `cxxflags`; libwebp's own runtime-dispatched AVX2 sources are upstream's CPU detection and stay (operator, 2026-10-31)
 - **NLI models** (DeBERTa-v3 MNLI, bart-large-mnli) as a judge of RFD text: operator directive 2026-11-02: language models do this better; both models tried are blocked. Use a language model — see below
+- **Hilbert curve** for zone codes: operator directive 2026-11-07; the math is too hard to keep — zone assignment goes back to Morton — see below
 
 ### Abliteration is blocked, and the model's own card is the argument
 
@@ -2074,7 +2075,6 @@ is the shell being wrong.
 
 Windows commands run in Nushell. Linux builds run in the desk's WSL Ubuntu 22.04 (operator, 2026-10-31).
 
-
 ### NLI models are blocklisted as a judge of RFD text, and a language model does the job
 
 The two natural-language-inference models tried on the RFD dependency task are
@@ -2098,3 +2098,42 @@ overlap that find candidate pairs do not use an NLI model and stay.
 
 **Carve-outs.** None. A model that is trained for entailment and scored on an NLI benchmark is
 an NLI model for this rule, whatever its name.
+
+### Hilbert curve is blocklisted for zone codes, and Morton is why
+
+Operator directive, 2026-11-07. The Hilbert curve for zone assignment, authority
+and spatial indexing was the hardest part of the fabric zone, and the math did
+not stay cheap to keep: a correct forward code and inverse (fixed in
+lean-spatial-oracle 2, gated at build time, per the space-filling-curve logbook),
+and the run-extent bound — a run of L consecutive codes fits in a box of side
+2·L^(1/3)−1 — which was the reason to pay for the curve. The operator went back
+to Morton and did not ask to keep the bound.
+
+- **What is blocked:** the Hilbert curve for zone work, and everything derived
+  from it: zone assignment, authority, the DisjointRanges invariant, and the
+  spatial-index bucketing. That is `hilbert3d`, `hilbert3d_inverse`,
+  `hilbert_of_aabb`, `hilbert_cell_of`, `entity_hilbert`, `zone_for_hilbert`,
+  the `ghost_hilbert` field, the node `hilbert` field, and anything that
+  derives authority or zone membership from a Hilbert code.
+- **Replacement:** Morton coding for the same work. Morton is a bit permutation
+  (GF(2)-linear; its butterfly overlay is the Cayley graph of (ℤ/2)ⁿ), cheap
+  to compute and invert, and needs no hand-rolled inverse or build-time gate.
+- **Still on Hilbert (code search, 2026-11-07):** `fz/src/zone/` —
+  `pbvh_adapter.h` (`hilbert3d`, `hilbert3d_inverse`, `hilbert_of_aabb`,
+  `hilbert_cell_of`, the node `hilbert` field and the 4-pass LSD radix sort),
+  `zone_core.cpp` (`entity_hilbert`, `ghost_hilbert`, `zone_for_hilbert`, the
+  `pbvh_tree_insert_h` insert), `zone_core.h` (the `entity_hilbert` declaration),
+  `zone_types.h` (`ghost_hilbert`), `relativistic_zone.h`
+  (`zone_for_hilbert`, `HilbertRange`, the DisjointRanges invariant, the
+  "authority is a pure function of Hilbert code" invariant line), and
+  `predictive_bvh.h` (the Lean HilbertBroadphase reference). Each moves to
+  Morton. Until then, a fix is not new code.
+- **Not affected:** the thirdparty `geogram` spatial partitioning in
+  `zone-backend/c_src/thirdparty`, a vendored library outside this directive.
+- **Consequence, from the space-filling-curve logbook:** the Hilbert curve
+  carried the run-extent bound it was measured as worth (a run of L codes fits
+  in a box of side 2·L^(1/3)−1); Morton has no such bound at any L. Zone
+  geometry keyed on Morton can span more than the code range suggests, so zone
+  size and zone count are next to measure, not assume. Any persisted Hilbert
+  code or zone assignment derived from one is invalidated by the switch; the
+  forward code and its inverse move together, or both go stale.

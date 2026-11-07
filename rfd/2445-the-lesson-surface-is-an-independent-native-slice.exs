@@ -1,6 +1,7 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
 use RFD.DSL
+
 rfd 2445, "the lesson surface is an independent native slice", :discussion do
   flight_level :l1
   feature "a teacher puts a board and a shared screen in the campus zone; learners see both."

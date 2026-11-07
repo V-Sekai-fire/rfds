@@ -26,10 +26,9 @@ rfd 2360, "The campus as a beta", :discussion do
     the three seats, each filled by a friend or a persona, the takeover, the walk from the shop
     to a room and back, and the shopkeeper persona with its saved world.
   - Seamless zone transfer, RFD66606-2444: a person walks from one campus zone into another with
-    no cut, and the other person sees the avatar leave the one zone and arrive in the other
-    (operator, 2026-11-07).
-  - A lesson surface, RFD66606-2445: a teacher draws on a board and shows a window in the campus
-    zone, and the learners see both (operator, 2026-11-07).
+    no cut, and the other person sees the avatar leave and arrive (operator, 2026-11-07).
+  - A lesson surface, RFD66606-2445: a teacher draws on a board and shows a window, and the
+    learners see both (operator, 2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
     RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445 passes with its control.
   - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam
@@ -38,8 +37,7 @@ rfd 2360, "The campus as a beta", :discussion do
     host is ARM it runs through FEX. A test on the Mac also runs through Proton and FEX
     (operator, 2026-11-01).
   :: related
-  - RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445, the seven slices that carry
-    the features.
+  - RFD66606-2436 to RFD66606-2440, 2444 and 2445, the seven slices.
   - RFD66606-2312, the form of the release tag.
   """
 

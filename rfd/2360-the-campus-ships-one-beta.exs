@@ -55,6 +55,12 @@ rfd 2360, "The campus as a beta", :discussion do
   - the Hyper-V machine with its emulated TPM
   - an io_uring path in any server piece
   - a Linux-only server build
+  - text chat
+  - trading between players
+  - combat, damage and dying
+  - a leaderboard or achievements
+  - real-money purchases
+  - a build for any platform other than the one win64 build
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.

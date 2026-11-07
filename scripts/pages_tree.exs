@@ -268,12 +268,12 @@ defmodule PagesTree do
     link = fn n -> "[RFD66606-#{n}](##{by[n].id})" end
 
     [
-      "### 1.1. The path to the beta {#s1-1}\n\n" <> beta(data, by, link),
-      "### 1.2. Innovation tokens and boring technology {#s1-2}\n\n" <> ledger(data, link),
-      "### 1.3. Progress to the goal {#s1-3}\n\n" <> progress(data, by, link),
-      "### 1.4. Skipped ahead {#s1-4}\n\n" <> skipped(data, by, link),
-      "### 1.5. Technologies with no link {#s1-5}\n\n" <> unlinked(data, link),
-      "### 1.6. Repositories on the path {#s1-6}\n\n" <> repos(data, link)
+      "### The path to the beta {#s1-1}\n\n" <> beta(data, by, link),
+      "### Innovation tokens and boring technology {#s1-2}\n\n" <> ledger(data, link),
+      "### Progress to the goal {#s1-3}\n\n" <> progress(data, by, link),
+      "### Skipped ahead {#s1-4}\n\n" <> skipped(data, by, link),
+      "### Technologies with no link {#s1-5}\n\n" <> unlinked(data, link),
+      "### Repositories on the path {#s1-6}\n\n" <> repos(data, link)
     ]
     |> Enum.join("\n\n")
   end

@@ -422,7 +422,7 @@ defmodule PagesSite do
     hero = navigator_block() <> "\n\n" <> tree_data(tree) <> "\n\n<!--search-->"
 
     foreword =
-      "## 1. The tech tree to the beta {#part-1}\n\n" <>
+      "## The tech tree to the beta {#part-1}\n\n" <>
         "What the workspace measured (the logbook) and what it decided from that " <>
         "(the RFDs, also called requests for discussion, design docs or architecture " <>
         "decision records). #{tally(rfds)}\n\n" <>
@@ -433,7 +433,7 @@ defmodule PagesSite do
 
     body =
       Enum.map_join(numbered, "\n\n", fn {n, title, docs} ->
-        head = if n == "A", do: "Appendix A: #{title}", else: "#{n}. #{title}"
+        head = if n == "A", do: "Appendix A: #{title}", else: title
         "## #{head} {#part-#{n}}\n\n" <> Enum.map_join(docs, "\n\n", &doc_text(&1, ids))
       end)
 
@@ -504,22 +504,15 @@ defmodule PagesSite do
   end
 
   defp number_docs(n, docs) do
-    for {{href, title, text, source}, i} <- Enum.with_index(docs, 1) do
-      serial =
-        case n == "3" && Regex.run(~r/^RFD66606-(\d{4})\b/, title) do
-          [_, s] -> s
-          _ -> nil
-        end
-
-      label = cond do
-        n == "A" -> "A"
-        serial -> "#{n}.#{serial}"
-        true -> "#{n}.#{i}"
-      end
-      id = "s" <> String.replace(label, ".", "-")
-      %{href: href, id: id, label: label, title: title, text: text, source: source}
+    for {href, title, text, source} <- docs do
+      id = doc_id(href)
+      %{href: href, id: id, appendix: n == "A", title: title, text: text, source: source}
     end
   end
+
+  defp doc_id("rfd/" <> rest), do: "rfd-" <> (rest |> String.split("-") |> hd())
+  defp doc_id("logbook/" <> rest), do: Path.rootname(rest)
+  defp doc_id(href), do: Path.rootname(href)
 
   defp doc_text(d, ids) do
     {items, _} =
@@ -549,24 +542,23 @@ defmodule PagesSite do
   end
 
   defp legacy_anchor(id) do
-    case Map.get(legacy_anchors(), id) do
-      nil -> ""
-      old -> ~s(<span id="#{old}"></span>\n\n)
-    end
+    legacy_anchors()
+    |> Map.get(id, [])
+    |> Enum.map_join(&~s(<span id="#{&1}"></span>\n\n))
   end
 
   defp legacy_anchors do
     Path.join(__DIR__, "pages_legacy_anchors.json")
     |> File.read!()
     |> JSON.decode!()
-    |> Map.new(fn {old, new} -> {new, old} end)
+    |> Enum.group_by(fn {_old, new} -> new end, fn {old, _new} -> old end)
   end
 
   defp heading(d, 1, text, count, false) do
-    if d.label == "A" do
+    if d.appendix do
       {:skip, {false, count, true}}
     else
-      line = legacy_anchor(d.id) <> "### #{d.label}. #{text} {##{d.id}}"
+      line = legacy_anchor(d.id) <> "### #{text} {##{d.id}}"
       {{:heading, line, text, d.id}, {false, count, true}}
     end
   end
@@ -581,10 +573,9 @@ defmodule PagesSite do
       |> Enum.with_index()
       |> Enum.map(fn {c, i} -> if i < k, do: c, else: if(i == k, do: c + 1, else: 0) end)
 
-    label = d.label <> "." <> (count |> Enum.take(k + 1) |> Enum.join("."))
-    id = "s" <> String.replace(label, ".", "-")
-    hashes = String.duplicate("#", if(d.label == "A", do: level + 1, else: level + 2))
-    {{:heading, "#{hashes} #{label}. #{text} {##{id}}", text, id}, {false, count, seen}}
+    id = d.id <> "-" <> (count |> Enum.take(k + 1) |> Enum.join("-"))
+    hashes = String.duplicate("#", if(d.appendix, do: level + 1, else: level + 2))
+    {{:heading, "#{hashes} #{text} {##{id}}", text, id}, {false, count, seen}}
   end
 
   defp heading(_d, level, text, count, seen) do

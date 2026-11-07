@@ -53,6 +53,8 @@ rfd 2360, "The campus as a beta", :discussion do
   - a job board where each seat accepts or refuses a job
   - campuses built by players
   - the Hyper-V machine with its emulated TPM
+  - an io_uring path in any server piece
+  - a Linux-only server build
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.

@@ -505,7 +505,17 @@ defmodule PagesSite do
 
   defp number_docs(n, docs) do
     for {{href, title, text, source}, i} <- Enum.with_index(docs, 1) do
-      label = if n == "A", do: "A", else: "#{n}.#{i}"
+      serial =
+        case n == "3" && Regex.run(~r/^RFD66606-(\d{4})\b/, title) do
+          [_, s] -> s
+          _ -> nil
+        end
+
+      label = cond do
+        n == "A" -> "A"
+        serial -> "#{n}.#{serial}"
+        true -> "#{n}.#{i}"
+      end
       id = "s" <> String.replace(label, ".", "-")
       %{href: href, id: id, label: label, title: title, text: text, source: source}
     end
@@ -538,10 +548,27 @@ defmodule PagesSite do
     Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](#{d.href})*"
   end
 
+  defp legacy_anchor(id) do
+    case Map.get(legacy_anchors(), id) do
+      nil -> ""
+      old -> ~s(<span id="#{old}"></span>\n\n)
+    end
+  end
+
+  defp legacy_anchors do
+    Path.join(__DIR__, "pages_legacy_anchors.json")
+    |> File.read!()
+    |> JSON.decode!()
+    |> Map.new(fn {old, new} -> {new, old} end)
+  end
+
   defp heading(d, 1, text, count, false) do
-    if d.label == "A",
-      do: {:skip, {false, count, true}},
-      else: {{:heading, "### #{d.label}. #{text} {##{d.id}}", text, d.id}, {false, count, true}}
+    if d.label == "A" do
+      {:skip, {false, count, true}}
+    else
+      line = legacy_anchor(d.id) <> "### #{d.label}. #{text} {##{d.id}}"
+      {{:heading, line, text, d.id}, {false, count, true}}
+    end
   end
 
   defp heading(d, 1, text, count, true), do: heading(d, 2, text, count, true)

@@ -17,17 +17,17 @@ rfd 2360, "The campus as a beta", :discussion do
   :: decision
   The beta ships these five features and nothing else. Every nongoal is abandoned (operator,
   2026-10-30).
-  - See each other: two people in the campus zone, one in the Steam Frame on a PC VR stream and
-    one on the desktop, each sees the other's avatar.
-  - Hear each other: voice between the two, played at the speaker's avatar.
-  - Draw and wear: the pen's first rung, RFD66606-2287, in the campus zone. The other person
-    sees the drawn outfit worn.
-  - An adventure party and a shopkeeper persona: one player and the three seats, each filled by a friend or a
-    persona, the takeover, the walk from the shop to a room and back, and the shopkeeper persona
-    with its saved world.
-  - Seamless zone transfer: a person walks from one campus zone into another with no cut, and
-    the other person sees the avatar leave the one zone and arrive in the other (operator,
-    2026-11-07).
+  - See each other, RFD66606-2436: two people in the campus zone, one in the Steam Frame on a PC
+    VR stream and one on the desktop, each sees the other's avatar.
+  - Hear each other, RFD66606-2437: voice between the two, played at the speaker's avatar.
+  - Draw and wear, RFD66606-2438: the pen's first rung, RFD66606-2287, in the campus zone. The
+    other person sees the drawn outfit worn.
+  - An adventure party and a shopkeeper persona, RFD66606-2439 and RFD66606-2440: one player and
+    the three seats, each filled by a friend or a persona, the takeover, the walk from the shop
+    to a room and back, and the shopkeeper persona with its saved world.
+  - Seamless zone transfer, RFD66606-2444: a person walks from one campus zone into another with
+    no cut, and the other person sees the avatar leave the one zone and arrive in the other
+    (operator, 2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
     RFD66606-2436 to RFD66606-2440 and RFD66606-2444 passes with its control.
   - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam

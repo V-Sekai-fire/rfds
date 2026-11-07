@@ -15,7 +15,7 @@ rfd 2360, "The campus as a beta", :discussion do
   Check a new idea against the nongoals in the details, and cut the beta when every gate passes
   with its control.
   :: decision
-  The beta ships these five features and nothing else. Every nongoal is abandoned (operator,
+  The beta ships these six features and nothing else. Every nongoal is abandoned (operator,
   2026-10-30).
   - See each other, RFD66606-2436: two people in the campus zone, one in the Steam Frame on a PC
     VR stream and one on the desktop, each sees the other's avatar.
@@ -28,15 +28,18 @@ rfd 2360, "The campus as a beta", :discussion do
   - Seamless zone transfer, RFD66606-2444: a person walks from one campus zone into another with
     no cut, and the other person sees the avatar leave the one zone and arrive in the other
     (operator, 2026-11-07).
+  - A lesson surface, RFD66606-2445: a teacher draws on a board and shows a window in the campus
+    zone, and the learners see both (operator, 2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
-    RFD66606-2436 to RFD66606-2440 and RFD66606-2444 passes with its control.
+    RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445 passes with its control.
   - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam
     Frame in standalone and desktop modes and on the Steam Deck (operator, 2026-11-01).
   - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
     host is ARM it runs through FEX. A test on the Mac also runs through Proton and FEX
     (operator, 2026-11-01).
   :: related
-  - RFD66606-2436 to RFD66606-2440 and RFD66606-2444, the six slices that carry the features.
+  - RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445, the seven slices that carry
+    the features.
   - RFD66606-2312, the form of the release tag.
   """
 
@@ -46,9 +49,9 @@ rfd 2360, "The campus as a beta", :discussion do
   :: details Non-goals
   Everything outside the beta is cut, and every nongoal is abandoned rather than deferred
   (operator, 2026-10-30). A new idea that matches a nongoal is refused, and the list is not argued
-  again before the beta ships. A daily lesson between the operator and one to three learners is a
-  use of the five features, not a feature (operator, 2026-11-07). What a lesson wants beyond them is
-  named below. The non-goals named so far:
+  again before the beta ships. The operator teaches a daily lesson to one to three learners with
+  the six features (operator, 2026-11-07). What a lesson wants beyond them is named below. The
+  non-goals named so far:
 
   - a hidden director that plans the day
   - friendships and romance
@@ -95,6 +98,7 @@ rfd 2360, "The campus as a beta", :discussion do
     relate "rfd-2360", :spends, "party-seats-native-slice"
     relate "rfd-2360", :spends, "shop-books-native-slice"
     relate "rfd-2360", :spends, "zone-transfer-native-slice"
+    relate "rfd-2360", :spends, "lesson-surface-native-slice"
     relate "rfd-2360", :is_a, "release-rung"
     relate "rfd-2360", :owns, "rfd-2436"
     relate "rfd-2360", :owns, "rfd-2437"
@@ -102,5 +106,6 @@ rfd 2360, "The campus as a beta", :discussion do
     relate "rfd-2360", :owns, "rfd-2439"
     relate "rfd-2360", :owns, "rfd-2440"
     relate "rfd-2360", :owns, "rfd-2444"
+    relate "rfd-2360", :owns, "rfd-2445"
   end
 end

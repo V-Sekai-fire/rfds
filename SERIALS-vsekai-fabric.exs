@@ -238,6 +238,8 @@ defmodule Serials.VSekaiFabric do
       serial 2439, "party-seats-are-an-independent-native-slice", flight_level: :l1
       serial 2440, "the-shop-books-are-an-independent-native-slice", flight_level: :l1
       serial 2441, "github-job-logs-in-to-bao-with-its-identity-token", flight_level: :l1
+      serial 2442, "latency-is-the-metric-for-64-hz-entity-state"
+      serial 2443, "entityserver-serves-64-hz-entity-state-beside-feedserver"
     end
 
     deleted do

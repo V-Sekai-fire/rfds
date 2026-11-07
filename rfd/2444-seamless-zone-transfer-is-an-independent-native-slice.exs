@@ -6,7 +6,7 @@ rfd 2444, "seamless zone transfer is an independent native slice", :discussion d
   flight_level :l1
   feature "a person walks from one campus zone into another with no cut, from one program."
 
-  scope "the seamless-zone-transfer beta feature as its own native program, its gate and its control."
+  scope "seamless zone transfer as its own native program, its gate and its control."
 
   prose ~S"""
   :: hook
@@ -77,17 +77,17 @@ rfd 2444, "seamless zone transfer is an independent native slice", :discussion d
 
   | Level | Planted defect | Found when |
   | --- | --- | --- |
-  | never completes | the handoff never completes | the avatar vanishes from the first zone and never appears in the second |
+  | never completes | the handoff never completes | the avatar never appears in the second zone |
   | double | both zones list the avatar | a view lists the avatar twice |
   | pose drop | the zone drops poses during the switch | a gap in the viewer's poses |
-  | pose jump | the arrival pose differs from the departure pose | the avatar jumps at the boundary |
+  | pose jump | the arrival pose differs from the departure | the avatar jumps at the boundary |
   | no macaroon | the handoff skips the capability | the transfer goes ahead unrefused |
   | sibling input | a sibling's message planted | the program accepts it |
 
   Each level runs on the slice as it is and on the slice with that level's defect planted. On the
-  planted target, success is the defect found. Regret `1[s ≥ 1] − s/n` over the last eight runs is
-  high when a level finds its defect only some of the time. Mutation moves one attribute and is
-  kept only when the planted find rate rises.
+  planted target, success is the defect found. Regret `1[s ≥ 1] − s/n` over the last eight runs
+  is high when a level finds its defect only some of the time. Mutation moves one attribute and
+  is kept only when the planted find rate rises.
   A clean run counts only after its level found the planted defect in each of its last eight runs.
   A finding on the real slice is never averaged into a rate: it stops the lane and becomes a level
   that runs every time.

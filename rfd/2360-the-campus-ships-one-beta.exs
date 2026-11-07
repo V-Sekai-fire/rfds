@@ -25,8 +25,9 @@ rfd 2360, "The campus as a beta", :discussion do
   - An adventure party and a shopkeeper persona: one player and the three seats, each filled by a friend or a
     persona, the takeover, the walk from the shop to a room and back, and the shopkeeper persona
     with its saved world.
-  - Seamless zone transfer: a person walks from one campus zone into another with no cut, and the
-    other person sees the avatar leave the one zone and arrive in the other (operator, 2026-11-07).
+  - Seamless zone transfer: a person walks from one campus zone into another with no cut, and
+    the other person sees the avatar leave the one zone and arrive in the other (operator,
+    2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
     RFD66606-2436 to RFD66606-2440 and RFD66606-2444 passes with its control.
   - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam

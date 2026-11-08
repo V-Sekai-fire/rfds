@@ -494,7 +494,17 @@ defmodule PagesSite do
         [{from, _}] -> File.read!(from)
       end
 
-    {e.href, first_title(text, e.label), linked(text, "", slugs, Map.get(e, :serial)), e.source}
+    {e.href, first_title(text, e.label),
+     linked(text, up_to_root(e.href), slugs, Map.get(e, :serial)), e.source}
+  end
+
+  defp up_to_root(href) do
+    dir =
+      if String.ends_with?(href, "/"),
+        do: String.trim_trailing(href, "/"),
+        else: Path.dirname(href)
+
+    if dir == ".", do: "", else: String.duplicate("../", length(Path.split(dir)))
   end
 
   defp first_title(text, fallback) do
@@ -534,7 +544,7 @@ defmodule PagesSite do
       Enum.flat_map(items, fn
         {:code, line} -> [line]
         {:text, line} -> [line |> relink(d, ids, anchors) |> unopened()]
-        {:heading, line, _, _} -> [line]
+        {:heading, line, _, _} -> [relink(line, d, ids, anchors)]
         :skip -> []
       end)
 

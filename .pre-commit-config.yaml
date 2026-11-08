@@ -219,9 +219,11 @@ repos:
         files: ^scripts/check_blocklist_detail\.py$
         pass_filenames: false
 
-      # CLAUDE.md's comment rule, gated. It held nothing for as long as it took to
-      # write it down, and `check_comment_density.py` beside it is aimed at other
-      # people's repositories: C and C++ only, peers drawn from the repo being edited.
+      # CLAUDE.md's comment rule, gated for this repository's own Python and
+      # Elixir. Checking a diff sent to someone else's C/C++ repository is a
+      # separate, unscripted measurement (AGENTS.md, "How Other People's
+      # Codebases Are Edited") -- it has no gate here because it has no peers
+      # here.
       #
       # STAGED CHANGES ARE WHAT THIS SEES. The gate diffs against HEAD, so a local
       # commit is judged and `prek run --all-files` in CI is not -- nothing is staged

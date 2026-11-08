@@ -419,18 +419,17 @@ produced it, it is commented accordingly. Another project did not ask for that.
 Pushing our density into theirs makes a diff that reads as noise to the people
 who maintain it.
 
-So a change matches the density of the code it edits.
-`check_comment_density.py` measures it and fails when a changed file
-goes above the greater of its own density before the change and the p90 of its
-peers. Peers are files with the same extension under the same top-level
-directory.
+So a change matches the density of the code it edits: it may not go above the
+greater of its own density before the change and the p90 of its peers, where
+peers are files with the same extension under the same top-level directory in
+the repository being edited.
 
-    python check_comment_density.py <repo> --base <ref> --self-test
-
-Measured on godotengine/godot at 4.7.0-beta, across the 68 files in `servers/`
-over 200 lines: median 3.7%, mean 4.6%, p90 9.3%. A first edit to
-`movie_writer.cpp` took that file from 6.1% to 10.4% and the gate now rejects
-it.
+There is no scripted gate for this here — it is someone else's repository, and
+checking it before sending a diff is a manual measurement, not a prek hook in
+this one. Measured by hand on godotengine/godot at 4.7.0-beta, across the 68
+files in `servers/` over 200 lines: median 3.7%, mean 4.6%, p90 9.3%. A first
+edit to `movie_writer.cpp` took that file from 6.1% to 10.4%, past the p90 of
+the directory it landed in.
 
 The reasoning does not disappear, it moves. A commit message and a pull request
 description carry it, which is where those projects already keep it.

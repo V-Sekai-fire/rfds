@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 # Gate: a changed source file may not climb the comment-density ladder.
-# The measurement is a port of comment_density.py, which stays for check_comment_density.py.
+# The measurement is a port of comment_density.py, scoped to this repository.
 #
 # Usage:
 #     elixir scripts/check_comment_ladder.exs [<repo>] [--base HEAD] [--baseline] [--self-test]

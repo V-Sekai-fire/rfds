@@ -242,6 +242,7 @@ defmodule Serials.VSekaiFabric do
       serial 2443, "entityserver-serves-64-hz-entity-state-beside-feedserver"
       serial 2444, "seamless-zone-transfer-is-an-independent-native-slice", flight_level: :l1
       serial 2445, "the-lesson-surface-is-an-independent-native-slice", flight_level: :l1
+      serial 2446, "a2a-hardening-open-verification-gaps"
     end
 
     deleted do

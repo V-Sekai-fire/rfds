@@ -494,7 +494,19 @@ defmodule PagesSite do
         [{from, _}] -> File.read!(from)
       end
 
-    {e.href, first_title(text, e.label), linked(text, "", slugs, Map.get(e, :serial)), e.source}
+    {e.href, first_title(text, e.label),
+     linked(text, up_to_root(e.href), slugs, Map.get(e, :serial)), e.source}
+  end
+
+  # The single page resolves each link against its document's directory, so a link written from
+  # the site root needs one "../" per directory the document sits in.
+  defp up_to_root(href) do
+    dir =
+      if String.ends_with?(href, "/"),
+        do: String.trim_trailing(href, "/"),
+        else: Path.dirname(href)
+
+    if dir == ".", do: "", else: String.duplicate("../", length(Path.split(dir)))
   end
 
   defp first_title(text, fallback) do

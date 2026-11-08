@@ -498,8 +498,6 @@ defmodule PagesSite do
      linked(text, up_to_root(e.href), slugs, Map.get(e, :serial)), e.source}
   end
 
-  # The single page resolves each link against its document's directory, so a link written from
-  # the site root needs one "../" per directory the document sits in.
   defp up_to_root(href) do
     dir =
       if String.ends_with?(href, "/"),
@@ -546,7 +544,7 @@ defmodule PagesSite do
       Enum.flat_map(items, fn
         {:code, line} -> [line]
         {:text, line} -> [line |> relink(d, ids, anchors) |> unopened()]
-        {:heading, line, _, _} -> [line]
+        {:heading, line, _, _} -> [relink(line, d, ids, anchors)]
         :skip -> []
       end)
 

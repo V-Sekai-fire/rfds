@@ -243,6 +243,12 @@ defmodule Serials.VSekaiFabric do
       serial 2444, "seamless-zone-transfer-is-an-independent-native-slice", flight_level: :l1
       serial 2445, "the-lesson-surface-is-an-independent-native-slice", flight_level: :l1
       serial 2446, "a2a-hardening-open-verification-gaps"
+      serial 2447, "campus-beta-1-see-each-other", flight_level: :l1
+      serial 2448, "campus-beta-2-hear-each-other", flight_level: :l1
+      serial 2449, "campus-beta-3-draw-and-wear", flight_level: :l1
+      serial 2450, "campus-beta-4-adventure-party-and-shop", flight_level: :l1
+      serial 2451, "campus-beta-5-seamless-zone-transfer", flight_level: :l1
+      serial 2452, "campus-beta-6-lesson-surface", flight_level: :l1
     end
 
     deleted do

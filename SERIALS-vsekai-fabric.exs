@@ -282,6 +282,7 @@ defmodule Serials.VSekaiFabric do
       serial 2483, "find-the-group-commit-knee-rows-per-sqlite-transaction-against-commits"
       serial 2484, "load-the-challenge-seed-into-a-store-once-verified-by-counts-and-hashe"
       serial 2485, "find-what-produces-the-100-730-ms-commits"
+      serial 2487, "animation-mixer-migration"
     end
 
     deleted do

@@ -67,7 +67,7 @@ rfd 2487, "Walk mode's clips should rejoin the AnimationMixer ecosystem", :discu
   now reading the AnimationLibrary's tracks over the sandbox's calls into engine objects
   instead of a file, closest to the original plugin's design. In the other, baking moves to
   the engine side entirely, producing the same flat arrays the guest reads today, handed
-  across once rather than read from a file; the guest's own search code stays as it is. The
+  across once rather than read from a file. The guest's own search code stays as it is. The
   choice needs a measurement of how much the sandbox's call overhead costs when pulling every
   key of every clip once at bake time, not at the frame rate the search itself runs at.
   """

@@ -285,6 +285,7 @@ defmodule Serials.VSekaiFabric do
       serial 2486, "tri2d-cli-shared-algorithm-repo"
       serial 2487, "animation-mixer-migration"
       serial 2488, "cage-wrapped-surface-net"
+      serial 2489, "body-measurements-from-base-model"
     end
 
     deleted do

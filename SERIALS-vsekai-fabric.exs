@@ -283,6 +283,7 @@ defmodule Serials.VSekaiFabric do
       serial 2484, "load-the-challenge-seed-into-a-store-once-verified-by-counts-and-hashe"
       serial 2485, "find-what-produces-the-100-730-ms-commits"
       serial 2486, "tri2d-cli-shared-algorithm-repo"
+      serial 2487, "cage-wrapped-surface-net"
     end
 
     deleted do

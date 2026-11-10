@@ -16,7 +16,6 @@ defmodule PagesSite do
     "abandoned" => "🪦"
   }
   @pages ~w(README.md AGENTS.md BLOCKLIST.md PITFALLS.md KEYPOINTS.md)
-  @alive ~w(discussion prediscussion ideation published committed)
 
   def main([out]) do
     root = Path.expand("..", __DIR__)
@@ -43,7 +42,6 @@ defmodule PagesSite do
     File.write!(Path.join(out, "_config.yml"), config())
     File.mkdir_p!(Path.join(out, "_layouts"))
     File.write!(Path.join(out, "_layouts/default.html"), layout())
-    File.write!(Path.join(out, "page-SERIALS.md"), serials(root, rfds))
     File.write!(Path.join(out, "page-LOGBOOK.md"), logbook_page(logs))
     File.write!(Path.join(out, "_layouts/spec.html"), spec_layout())
 
@@ -271,92 +269,6 @@ defmodule PagesSite do
       body
   end
 
-  defp serials(root, rfds) do
-    docs = Map.new(rfds, &{&1.serial, &1})
-
-    sites =
-      for path <- Path.wildcard(Path.join(root, "SERIALS*.exs")) |> Enum.sort() do
-        r = RFD.Source.load(path)
-
-        {dead, alive} =
-          r.rows
-          |> Enum.sort_by(&elem(&1, 1))
-          |> Enum.map(fn {table, serial, slug, opts} ->
-            {row_state(table, opts, docs, serial), serial, slug}
-          end)
-          |> Enum.split_with(fn {state, _, _} -> dead?(state) end)
-
-        alive = Enum.sort_by(alive, fn {state, serial, _} -> {rank(state), serial} end)
-
-        "## #{r.name} (site #{r.layer[:site]})\n\n#{r.thesis}\n\n" <>
-          "<h3>Alive (#{length(alive)})</h3>\n\n" <>
-          serial_table(alive, docs) <>
-          "\n\n<details>\n<summary>Deleted, abandoned and retired " <>
-          "(#{length(dead)})</summary>\n" <>
-          "<p>Serials: #{ranges(dead)}</p>\n" <> serial_table(dead, docs) <> "\n</details>"
-      end
-
-    [
-      edit_from("SERIALS.exs") <> "# Serials",
-      "Every serial each register holds. Live documents come first, newest work on top. " <>
-        "A dead serial keeps its row in the fold below, so a citation of it still names one " <>
-        "document.",
-      "Search ranks abandoned stubs below live documents."
-      | sites
-    ]
-    |> Enum.join("\n\n")
-  end
-
-  defp dead?(state), do: state not in @alive
-
-  defp rank(state), do: Enum.find_index(@alive, &(&1 == state))
-
-  defp serial_table(rows, docs) do
-    body =
-      Enum.map_join(rows, "\n", fn {state, serial, slug} ->
-        "<tr><td>#{serial_link(serial, docs)}</td><td>#{slug}</td><td>#{state}</td></tr>"
-      end)
-
-    "<table>\n<thead><tr><th>serial</th><th>slug</th><th>state</th></tr></thead>\n" <>
-      "<tbody>\n#{body}\n</tbody>\n</table>"
-  end
-
-  defp serial_link(serial, docs) do
-    case docs[serial] do
-      nil -> short(serial)
-      e -> ~s(<a href="#{e.href}">#{short(serial)}</a>)
-    end
-  end
-
-  defp ranges(rows) do
-    rows
-    |> Enum.map(&elem(&1, 1))
-    |> Enum.chunk_while(
-      [],
-      fn
-        n, [] -> {:cont, [n]}
-        n, [last | _] = run when n == last + 1 -> {:cont, [n | run]}
-        n, run -> {:cont, Enum.reverse(run), [n]}
-      end,
-      fn
-        [] -> {:cont, []}
-        run -> {:cont, Enum.reverse(run), []}
-      end
-    )
-    |> Enum.map_join(", ", fn
-      [n] -> "#{n}"
-      run -> "#{hd(run)}–#{List.last(run)}"
-    end)
-  end
-
-  defp row_state(:allocated, _opts, docs, serial),
-    do: if(docs[serial], do: docs[serial].group, else: "allocated")
-
-  defp row_state(:retired, opts, _docs, _serial),
-    do: "retired, recorded in #{short(opts[:recorded_in])}"
-
-  defp row_state(table, _opts, _docs, _serial), do: String.replace(to_string(table), "_", " ")
-
   defp log_list(es), do: Enum.map_join(es, "\n", &"- [#{&1.label}](#{&1.href})")
 
   defp short(serial), do: "RFD66606-#{serial}"
@@ -384,7 +296,6 @@ defmodule PagesSite do
       {"3", "RFDs", rfds |> Enum.sort_by(& &1.serial) |> Enum.map(&entry_part(&1, slugs))},
       {"4", "Logbook",
        logs |> Enum.sort_by(&{&1.date, &1.href}) |> Enum.map(&entry_part(&1, slugs))},
-      {"A", "Serials", [{"page-SERIALS.html", "Serials", serials(root, rfds), "page-SERIALS.md"}]}
     ]
 
     numbered = for {n, title, docs} <- parts, do: {n, title, number_docs(n, docs)}
@@ -427,7 +338,7 @@ defmodule PagesSite do
         "(the RFDs, also called requests for discussion, design docs or architecture " <>
         "decision records). #{tally(rfds)}\n\n" <>
         "This page holds the whole site: #{length(pages)} reference pages, " <>
-        "#{length(rfds)} RFDs, #{length(logs)} logbook entries and the serial register. " <>
+        "#{length(rfds)} RFDs, and #{length(logs)} logbook entries. " <>
         "Each entry ends with a link to its own page. Search finds every RFD.\n\n" <>
         PagesTree.markdown(tree)
 

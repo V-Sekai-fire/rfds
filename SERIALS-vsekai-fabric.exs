@@ -284,6 +284,7 @@ defmodule Serials.VSekaiFabric do
       serial 2485, "find-what-produces-the-100-730-ms-commits"
       serial 2486, "tri2d-cli-shared-algorithm-repo"
       serial 2487, "animation-mixer-migration"
+      serial 2488, "cage-wrapped-surface-net"
     end
 
     deleted do

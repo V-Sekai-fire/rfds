@@ -2,8 +2,7 @@
 # SPDX-License-Identifier: MIT
 use RFD.DSL
 
-rfd 2307, "recording the xr pilot stream to cineform", :discussion do
-  flight_level :l1
+rfd 2307, "recording the xr pilot stream to cineform", :committed do
   feature "XR Pilot keeps the runtime's PyroWave packets as they arrive and a separate
 step decodes them on an idle GPU into a CineForm intermediate"
   scope "XR Pilot and its MCP server, the pyro2cfhd and frames2cfhd tools, the CineForm SDK

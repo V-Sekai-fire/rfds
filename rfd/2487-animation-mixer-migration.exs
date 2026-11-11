@@ -3,6 +3,7 @@
 use RFD.DSL
 
 rfd 2487, "Walk mode's clips should rejoin the AnimationMixer ecosystem", :discussion do
+  flight_level :l1
   feature "the motion-matching guest's pose database is built from a real AnimationLibrary, " <>
             "not from raw per-clip files copied into the pack by a build script."
 

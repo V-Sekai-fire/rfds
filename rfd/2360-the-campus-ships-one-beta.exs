@@ -33,6 +33,7 @@ rfd 2360, "The campus as a beta", :discussion do
   :: related
   - RFD66606-2436, the one slice; RFD66606-2487, RFD66606-2408 and RFD66606-2363, walking.
   - RFD66606-2312, the form of the release tag.
+  - RFD66606-2490, the board-wide non-goals this beta inherits.
   """
 
   details_title "The campus ships one beta"
@@ -69,14 +70,12 @@ rfd 2360, "The campus as a beta", :discussion do
   - a leaderboard or achievements
   - real-money purchases
   - a build for any platform other than the one win64 build
-  - a client for a phone or a web page
   - a market, a shop listing or a save slot for drawn outfits
   - moderation, reporting and blocking tools
   - a tutorial or first-run walkthrough
   - a language other than English
   - a recorder or a replay inside the campus
   - a teacher seat or a learner seat; the people of a lesson are the player and the party's seats
-  - a paywall at the door: a licence, sponsor or membership check in the client or the server
   - a lesson record or a course cartridge: progress, completion, grades or an interchange format
   - host controls: mute-others, a raised hand or a per-person audio channel
   - more than four people in one zone

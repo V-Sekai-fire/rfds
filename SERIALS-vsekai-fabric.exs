@@ -73,20 +73,20 @@ defmodule Serials.VSekaiFabric do
       serial 2260, "credentials-shared-by-path-in-bao"
       serial 2261, "mbedtls-is-the-tls-library"
       serial 2262, "make-it-with-the-pen-and-wear-it-together", flight_level: :l3
-      serial 2263, "the-skateboards-simulator-gate", flight_level: :l1
-      serial 2287, "the-first-rung-draw-and-wear-it-in-a-headset", flight_level: :l1
-      serial 2288, "guest-capabilities-as-macaroons", flight_level: :l1
+      serial 2263, "the-skateboards-simulator-gate"
+      serial 2287, "the-first-rung-draw-and-wear-it-in-a-headset"
+      serial 2288, "guest-capabilities-as-macaroons"
       serial 2289, "unship-the-zone-stack-off-route-runtimes-and-browser-client"
       serial 2291, "capability-rebac-is-a-dsl-feature", flight_level: :l2
       serial 2292, "the-organization-is-one-rectgtn-domain"
-      serial 2293, "the-skateboards-workspace-and-the-first-rungs-plan", flight_level: :l1
+      serial 2293, "the-skateboards-workspace-and-the-first-rungs-plan"
       serial 2294, "agent-knowledge-lives-in-rfds-not-in-desk-memory", flight_level: :l2
       serial 2295, "agent-replies-state-calibrated-confidence", flight_level: :l2
-      serial 2296, "the-first-rungs-dev-2", flight_level: :l1
-      serial 2297, "the-first-rungs-dev-3", flight_level: :l1
-      serial 2298, "the-first-rungs-dev-next", flight_level: :l1
-      serial 2302, "guest-work-runs-in-frame-slices", flight_level: :l1
-      serial 2306, "operating-the-shared-windows-vr-desk", flight_level: :l2
+      serial 2296, "the-first-rungs-dev-2"
+      serial 2297, "the-first-rungs-dev-3"
+      serial 2298, "the-first-rungs-dev-next"
+      serial 2302, "guest-work-runs-in-frame-slices"
+      serial 2306, "operating-the-shared-windows-vr-desk"
       serial 2307, "recording-the-xr-pilot-stream-to-cineform"
       serial 2311, "serving-bonsai-2-with-ninfer-all-and-dflash2"
       serial 2312, "release-tags-are-go-pseudo-versions"
@@ -94,7 +94,7 @@ defmodule Serials.VSekaiFabric do
       serial 2319, "a-serving-hosts-certificate-comes-from-agent-ca-v2"
       serial 2320, "an-agent-drives-the-oxrsys-simulator-through-cua-driver"
       serial 2321, "the-autobattler-fields-frames-that-wear"
-      serial 2333, "a-desk-reaches-foundationdb-only-through-bao", flight_level: :l1
+      serial 2333, "a-desk-reaches-foundationdb-only-through-bao"
       serial 2337, "a-garment-fit-at-mesh-on-the-gpu-l-bfgs-b"
       serial 2339, "a-persona-answers-from-a-planning-domain", flight_level: :l1
       serial 2340, "a-campus-where-a-party-of-four-draws-and-wears", flight_level: :l1
@@ -142,8 +142,7 @@ defmodule Serials.VSekaiFabric do
       serial 2381, "a-windows-host-answers-four-system-calls-as-linux-does", flight_level: :l2
       serial 2382, "the-skateboard-has-a-manifest-of-its-own", flight_level: :l1
 
-      serial 2383, "the-assistant-draws-with-the-pen-through-steamvr-priority-mode",
-        flight_level: :l2
+      serial 2383, "the-assistant-draws-with-the-pen-through-steamvr-priority-mode"
 
       serial 2384, "the-station-is-ported-to-godot-module-by-module-against-a-reference"
 
@@ -157,9 +156,9 @@ defmodule Serials.VSekaiFabric do
       serial 2389, "the-sandbox-addon-is-built-at-double", flight_level: :l1
       serial 2390, "every-elf-guest-ships-with-its-native-translation", flight_level: :l1
       serial 2391, "guests-are-built-at-double-precision", flight_level: :l1
-      serial 2392, "df32-holds-guest-geometry-far-from-the-origin", flight_level: :l1
-      serial 2393, "the-pen-builds-and-ships-only-the-first-rung-s-guests", flight_level: :l1
-      serial 2394, "the-template-release-fault-is-diagnosed-not-guessed", flight_level: :l1
+      serial 2392, "df32-holds-guest-geometry-far-from-the-origin"
+      serial 2393, "the-pen-builds-and-ships-only-the-first-rung-s-guests"
+      serial 2394, "the-template-release-fault-is-diagnosed-not-guessed"
       serial 2395, "the-draw-step-runs-the-pipeline-and-lassoes-a-target", flight_level: :l1
       serial 2396, "the-wear-step-attaches-the-garment-to-the-avatar-s-hips", flight_level: :l1
 
@@ -171,13 +170,13 @@ defmodule Serials.VSekaiFabric do
       serial 2400, "the-worker-zone-dispatches-and-a-sidecar-computes", flight_level: :l1
       serial 2401, "the-talk-step-carries-voice-as-datagrams", flight_level: :l1
       serial 2402, "the-ghost-servers-run-on-fly-as-weftspun-zone", flight_level: :l1
-      serial 2403, "the-zone-reaches-bao-by-a-certificate-bao-issues", flight_level: :l1
+      serial 2403, "the-zone-reaches-bao-by-a-certificate-bao-issues"
       serial 2404, "the-evidence-step-records-one-session", flight_level: :l1
-      serial 2405, "the-rung-s-setup-uses-a-fixed-set-of-credentials", flight_level: :l1
+      serial 2405, "the-rung-s-setup-uses-a-fixed-set-of-credentials"
       serial 2406, "the-desk-s-stored-github-credentials-are-destroyed", flight_level: :l1
       serial 2407, "dev-1-and-dev-2-play-on-macos-through-oxrsys", flight_level: :l1
       serial 2408, "dev-1-one-person-visits-the-station", flight_level: :l1
-      serial 2409, "beta-one-person-wears-what-they-draw", flight_level: :l2
+      serial 2409, "beta-one-person-wears-what-they-draw"
       serial 2410, "rc-two-people-in-one-zone-talking", flight_level: :l1
 
       serial 2411, "released-the-rung-is-live-and-reproducible-from-a-bare-machine",
@@ -199,13 +198,11 @@ defmodule Serials.VSekaiFabric do
       serial 2419, "git-bash-on-windows-runs-slash-switch-commands-under-a-path-conversion-guard",
         flight_level: :l2
 
-      serial 2420, "the-rung-s-guests-are-c-built-at-double-and-tested-with-lean",
-        flight_level: :l1
+      serial 2420, "the-rung-s-guests-are-c-built-at-double-and-tested-with-lean"
 
-      serial 2421, "the-headset-is-the-steam-frame-on-a-pc-vr-stream", flight_level: :l1
+      serial 2421, "the-headset-is-the-steam-frame-on-a-pc-vr-stream"
 
-      serial 2422, "the-interface-follows-xr-grid-and-cassie-and-common-openxr-practice",
-        flight_level: :l1
+      serial 2422, "the-interface-follows-xr-grid-and-cassie-and-common-openxr-practice"
 
       serial 2423, "the-setting-is-a-port-of-the-sakuragaoka-station-plaza", flight_level: :l1
       serial 2424, "a-free-space-sketch-is-fitted-to-the-avatar-from-keypoints", flight_level: :l1
@@ -232,22 +229,22 @@ defmodule Serials.VSekaiFabric do
 
       serial 2435, "a-garment-is-repaired-as-a-distance-field-surface", flight_level: :l1
       serial 2436, "presence-is-an-independent-native-slice", flight_level: :l1
-      serial 2437, "voice-is-an-independent-native-slice", flight_level: :l1
-      serial 2438, "draw-and-wear-is-an-independent-native-slice", flight_level: :l1
-      serial 2439, "party-seats-are-an-independent-native-slice", flight_level: :l1
-      serial 2440, "the-shop-books-are-an-independent-native-slice", flight_level: :l1
-      serial 2441, "github-job-logs-in-to-bao-with-its-identity-token", flight_level: :l1
+      serial 2437, "voice-is-an-independent-native-slice"
+      serial 2438, "draw-and-wear-is-an-independent-native-slice"
+      serial 2439, "party-seats-are-an-independent-native-slice"
+      serial 2440, "the-shop-books-are-an-independent-native-slice"
+      serial 2441, "github-job-logs-in-to-bao-with-its-identity-token"
       serial 2442, "latency-is-the-metric-for-64-hz-entity-state"
       serial 2443, "entityserver-serves-64-hz-entity-state-beside-feedserver"
-      serial 2444, "seamless-zone-transfer-is-an-independent-native-slice", flight_level: :l1
-      serial 2445, "the-lesson-surface-is-an-independent-native-slice", flight_level: :l1
+      serial 2444, "seamless-zone-transfer-is-an-independent-native-slice"
+      serial 2445, "the-lesson-surface-is-an-independent-native-slice"
       serial 2446, "a2a-hardening-open-verification-gaps"
       serial 2447, "campus-beta-1-see-each-other", flight_level: :l1
-      serial 2448, "campus-beta-2-hear-each-other", flight_level: :l1
-      serial 2449, "campus-beta-3-draw-and-wear", flight_level: :l1
-      serial 2450, "campus-beta-4-adventure-party-and-shop", flight_level: :l1
-      serial 2451, "campus-beta-5-seamless-zone-transfer", flight_level: :l1
-      serial 2452, "campus-beta-6-lesson-surface", flight_level: :l1
+      serial 2448, "campus-beta-2-hear-each-other"
+      serial 2449, "campus-beta-3-draw-and-wear"
+      serial 2450, "campus-beta-4-adventure-party-and-shop"
+      serial 2451, "campus-beta-5-seamless-zone-transfer"
+      serial 2452, "campus-beta-6-lesson-surface"
       serial 2453, "settle-the-open-questions-in-rfd66606-2441"
       serial 2454, "amend-rfd66606-2399-and-rfd66606-2403-so-the-zone-reaches-the-store-di"
       serial 2455, "rename-the-last-innovation-token-phrase-in-rfd66606-2341"

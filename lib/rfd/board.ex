@@ -12,7 +12,7 @@ defmodule RFD.Board do
 
   # The Skateboard's critical path as a checked-in taskweft plan (RFD66606-1037): the
   # L1 steps in execution order. An RFD off the plan sorts after it by serial.
-  @critical_path [2263]
+  @critical_path [2447]
 
   def critical_path, do: @critical_path
 

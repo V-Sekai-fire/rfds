@@ -53,6 +53,5 @@ rfd 2404, "the evidence step records one session", :discussion do
     relate "rfd-2404", :is_a, "experiment-record"
     relate "rfd-2404", :spends, "cineform-matroska-video"
     relate "rfd-2404", :spends, "mac-desktop-client"
-    relate "rfd-2404", :spends, "steamvr-priority-pen-drawing"
   end
 end

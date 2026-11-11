@@ -821,7 +821,6 @@ desk-agent--pushes--v-sekai-fire      # feature branches; a diverged one goes up
 desk-agent--pushes--chibifire-stages  # feature branches
 desk-agent--!admin--headset           # root needs the operator's approval at the password manager
 desk-agent--admin--default-branch     # may merge with the admin override (operator, 2026-10-30)
-desk-agent--!owns--rented-gpu         # the Compute constraint above
 ```
 
     elixir scripts/check_rebac.exs

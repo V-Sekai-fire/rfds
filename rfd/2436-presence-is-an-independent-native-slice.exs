@@ -28,7 +28,7 @@ rfd 2436, "presence is an independent native slice", :discussion do
     through FEX, and the slice's gates run there too (operator, 2026-11-01).
   :: related
   - RFD66606-2360, the one beta.
-  - The sibling slices are RFD66606-2437 to RFD66606-2440.
+  - The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned (operator, 2026-11-11).
   """
 
   details_title "presence is an independent native slice"

@@ -26,6 +26,10 @@ rfd 2423, "the setting is a port of the Sakuragaoka station plaza", :discussion 
   details_title "the setting is a port of the Sakuragaoka station plaza"
 
   prose ~S"""
+  :: details The station port is abandoned
+  RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
+  assets and tech stay in use, and baking goes through slughorn.
+
   :: details Why the port rebuilds the scene
   Its 43,727 lines of JavaScript under `src/` generate every texture in code and keep no mesh on
   disk, so the port rebuilds the scene in the engine with MToon materials rather than importing

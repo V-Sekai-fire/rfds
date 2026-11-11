@@ -3,7 +3,7 @@
 use RFD.DSL
 
 rfd 2409, "beta: one person wears what they draw", :discussion do
-  flight_level :l1
+  flight_level :l2
   scope "the beta release: what ships and what is playable."
 
   prose ~S"""

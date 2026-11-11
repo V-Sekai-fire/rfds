@@ -3,7 +3,7 @@
 use RFD.DSL
 
 rfd 2383, "the assistant draws with the pen through SteamVR priority mode", :discussion do
-  flight_level :l1
+  flight_level :l2
   scope "how the assistant draws with the pen through SteamVR priority mode."
 
   prose ~S"""

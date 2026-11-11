@@ -12,7 +12,7 @@ defmodule Rfd2383 do
   @variables %{
     rfd_state: %{type: :int, init: %{"2383": 2}},
     step_state: %{type: :int, init: %{}},
-    flight_level: %{type: :int, init: %{"2383": 1}}
+    flight_level: %{type: :int, init: %{"2383": 2}}
   }
 
   @todo_list [

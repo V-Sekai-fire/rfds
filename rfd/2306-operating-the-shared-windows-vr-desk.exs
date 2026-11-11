@@ -3,7 +3,7 @@
 use RFD.DSL
 
 rfd 2306, "operating the shared windows vr desk", :discussion do
-  flight_level :l1
+  flight_level :l2
   feature "the rules an agent follows to pilot, build on and switch the shared Windows VR
 desk without taking it from the person who is using it"
   scope "the Windows desk with two GPUs, its SteamVR install, OXRSys and XR Pilot, the Steam

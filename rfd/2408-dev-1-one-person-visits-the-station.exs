@@ -29,6 +29,10 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
   details_title "dev.1: one person visits the station"
 
   prose ~S"""
+  :: details The station port is abandoned
+  RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
+  assets and tech stay in use, and baking goes through slughorn.
+
   :: details The walker and world grab
   A walker ported from the original's `player.js` (radius 0.3 m, height 1.7 m, step 0.45 m) runs
   on
@@ -58,7 +62,7 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
     verbs_from 2351
     relate "rfd-2408", :provides, "dev1-station-visit"
     relate "rfd-2408", :is_a, "dev-rung"
-    relate "rfd-2408", :spends, "station-godot-module-port"
+    relate "rfd-2408", :spends, "sakuragaoka-plaza-setting"
     relate "rfd-2408", :spends, "macos-oxrsys-dev-play"
     relate "rfd-2408", :spends, "guest-elf-double"
     relate "rfd-2408", :spends, "actions-builds-double-binaries"

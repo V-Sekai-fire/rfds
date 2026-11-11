@@ -86,8 +86,8 @@ defmodule Serials.VSekaiFabric do
       serial 2297, "the-first-rungs-dev-3", flight_level: :l1
       serial 2298, "the-first-rungs-dev-next", flight_level: :l1
       serial 2302, "guest-work-runs-in-frame-slices", flight_level: :l1
-      serial 2306, "operating-the-shared-windows-vr-desk", flight_level: :l1
-      serial 2307, "recording-the-xr-pilot-stream-to-cineform", flight_level: :l1
+      serial 2306, "operating-the-shared-windows-vr-desk", flight_level: :l2
+      serial 2307, "recording-the-xr-pilot-stream-to-cineform"
       serial 2311, "serving-bonsai-2-with-ninfer-all-and-dflash2"
       serial 2312, "release-tags-are-go-pseudo-versions"
       serial 2316, "bao-holds-a-bounded-set", flight_level: :l2
@@ -143,10 +143,9 @@ defmodule Serials.VSekaiFabric do
       serial 2382, "the-skateboard-has-a-manifest-of-its-own", flight_level: :l1
 
       serial 2383, "the-assistant-draws-with-the-pen-through-steamvr-priority-mode",
-        flight_level: :l1
+        flight_level: :l2
 
-      serial 2384, "the-station-is-ported-to-godot-module-by-module-against-a-reference",
-        flight_level: :l1
+      serial 2384, "the-station-is-ported-to-godot-module-by-module-against-a-reference"
 
       serial 2385, "the-proton-tweak-on-the-frame-is-reproduced-by-script", flight_level: :l1
       serial 2386, "this-mac-is-the-desktop-client", flight_level: :l1
@@ -178,13 +177,13 @@ defmodule Serials.VSekaiFabric do
       serial 2406, "the-desk-s-stored-github-credentials-are-destroyed", flight_level: :l1
       serial 2407, "dev-1-and-dev-2-play-on-macos-through-oxrsys", flight_level: :l1
       serial 2408, "dev-1-one-person-visits-the-station", flight_level: :l1
-      serial 2409, "beta-one-person-wears-what-they-draw", flight_level: :l1
+      serial 2409, "beta-one-person-wears-what-they-draw", flight_level: :l2
       serial 2410, "rc-two-people-in-one-zone-talking", flight_level: :l1
 
       serial 2411, "released-the-rung-is-live-and-reproducible-from-a-bare-machine",
         flight_level: :l1
 
-      serial 2412, "each-feature-carries-a-joy-forecast", flight_level: :l1
+      serial 2412, "each-feature-carries-a-joy-forecast"
 
       serial 2413, "a-desk-works-from-the-placed-tree-and-turns-a-repeated-procedure-into-a-tool",
         flight_level: :l2
@@ -283,7 +282,7 @@ defmodule Serials.VSekaiFabric do
       serial 2484, "load-the-challenge-seed-into-a-store-once-verified-by-counts-and-hashe"
       serial 2485, "find-what-produces-the-100-730-ms-commits"
       serial 2486, "tri2d-cli-shared-algorithm-repo"
-      serial 2487, "animation-mixer-migration"
+      serial 2487, "animation-mixer-migration", flight_level: :l1
       serial 2488, "cage-wrapped-surface-net"
       serial 2489, "body-measurements-from-base-model"
     end

@@ -2,8 +2,7 @@
 # SPDX-License-Identifier: MIT
 use RFD.DSL
 
-rfd 2307, "recording the xr pilot stream to cineform", :discussion do
-  flight_level :l1
+rfd 2307, "recording the xr pilot stream to cineform", :committed do
   feature "XR Pilot keeps the runtime's PyroWave packets as they arrive and a separate
 step decodes them on an idle GPU into a CineForm intermediate"
   scope "XR Pilot and its MCP server, the pyro2cfhd and frames2cfhd tools, the CineForm SDK
@@ -32,6 +31,10 @@ build, and the av1mkv delivery of a recording"
   details_title "recording the xr pilot stream to cineform"
 
   prose ~S"""
+  :: details Superseded by nut-based ffmpeg recording
+  Recording moved to nut-based ffmpeg and works, so this RFD is committed (operator, 2026-11-11).
+  The `.pwrec` and CineForm steps below are the earlier design and stay as history.
+
   :: details The packet file
   `.pwrec` starts with the magic `PWREC`, two zero bytes and a version byte.
   Each frame is a u64 presentation time in ns, a u64 receive time in ns, a u32

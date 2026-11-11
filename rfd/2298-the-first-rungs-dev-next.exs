@@ -29,7 +29,8 @@ rfd 2298, "the first rung's dev.next", :discussion do
   It holds the work that waits for a rung of its own, and an item moves
   out of it into a numbered dev rung when that rung is planned:
 
-  - one player with a body: the walker, rx's player controllers and
+  - one player with a body, claimed by the campus beta's shop-to-room walk
+    (RFD66606-2360, RFD66606-2487): the walker, rx's player controllers and
     motion.elf merged into one player in rx's `sar_game_framework`
     through a MuJoCo-backed movement component, vendored into the pen;
     motion.elf at double driving Mire, the headset player's avatar,
@@ -74,8 +75,8 @@ rfd 2298, "the first rung's dev.next", :discussion do
   - the headset path: the Frame streaming from the desktop over oxrsys,
     and the extra companion controllers.
   :: details Which features are likely to bring joy
-  Each forecast uses RFD66606-2412's sense-of-wonder rubric and RFD66606-2295's
-  tag form.
+  Each forecast uses the sense-of-wonder rubric of RFD66606-2412 (abandoned 2026-11-11) and
+  RFD66606-2295's tag form.
 
   | rung | feature | criteria | joy |
   | --- | --- | --- | --- |

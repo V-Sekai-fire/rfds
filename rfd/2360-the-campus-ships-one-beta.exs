@@ -17,21 +17,21 @@ rfd 2360, "The campus as a beta", :discussion do
   :: decision
   The beta ships these six features and nothing else. Every nongoal is abandoned (operator,
   2026-10-30).
-  - See each other, RFD66606-2436: two people in the campus zone, one in the Steam Frame on a PC
-    VR stream and one on the desktop, each sees the other's avatar.
+  - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
+    Frame and one on the desktop, each sees the other's avatar.
   - Hear each other, RFD66606-2437: voice between the two, played at the speaker's avatar.
   - Draw and wear, RFD66606-2438: the pen's first rung, RFD66606-2287, in the campus zone. The
     other person sees the drawn outfit worn.
   - An adventure party and a shopkeeper persona, RFD66606-2439 and RFD66606-2440: one player and
     the three seats, each filled by a friend or a persona, the takeover, the walk from the shop
-    to a room and back, and the shopkeeper persona with its saved world.
+    to a room and back (walk mode, RFD66606-2487), and the shopkeeper persona with its world.
   - Seamless zone transfer, RFD66606-2444: a person walks from one campus zone into another with
     no cut, and the other person sees the avatar leave and arrive (operator, 2026-11-07).
   - A lesson surface, RFD66606-2445: a teacher draws on a board and shows a window, and the
     learners see both (operator, 2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
     RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445 passes with its control.
-  - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam
+  - The beta ships one win64 build. It runs through FEX on the Steam
     Frame in standalone and desktop modes and on the Steam Deck (operator, 2026-11-01).
   - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
     host is ARM it runs through FEX. A test on the Mac also runs through Proton and FEX
@@ -44,6 +44,12 @@ rfd 2360, "The campus as a beta", :discussion do
   details_title "The campus ships one beta"
 
   prose ~S"""
+  :: details Walk mode
+  The shop-to-room walk is walk mode: the motion guest drives the character from clips in an
+  AnimationLibrary (RFD66606-2487), and no hand-written character controller is added
+  (RFD66606-2363). It is a means to the party feature, not a seventh feature (operator,
+  2026-11-11).
+
   :: details Non-goals
   Everything outside the beta is cut, and every nongoal is abandoned rather than deferred
   (operator, 2026-10-30). A new idea that matches a nongoal is refused, and the list is not argued

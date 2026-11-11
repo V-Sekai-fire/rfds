@@ -18,8 +18,8 @@ rfd 2447, "Campus beta 1: see each other", :discussion do
   passes with its control.
   :: decision
   Beta 1 ships one feature: two people see each other in the campus zone (operator, 2026-11-07).
-  - See each other, RFD66606-2436 (the see-each-other slice): one person in the Steam Frame on a
-    PC VR stream and one on the desktop, each sees the other's avatar.
+  - See each other, RFD66606-2436 (the see-each-other slice): one person in the standalone Steam
+    Frame and one on the desktop, each sees the other's avatar.
   - Every other feature of RFD66606-2360 is deferred to the next beta in this sequence, not
     abandoned: it ships in beta 2 or later.
   :: related

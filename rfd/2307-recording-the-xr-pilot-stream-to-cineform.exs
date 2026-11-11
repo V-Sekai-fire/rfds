@@ -31,6 +31,10 @@ build, and the av1mkv delivery of a recording"
   details_title "recording the xr pilot stream to cineform"
 
   prose ~S"""
+  :: details Superseded by nut-based ffmpeg recording
+  Recording moved to nut-based ffmpeg and works, so this RFD is committed (operator, 2026-11-11).
+  The `.pwrec` and CineForm steps below are the earlier design and stay as history.
+
   :: details The packet file
   `.pwrec` starts with the magic `PWREC`, two zero bytes and a version byte.
   Each frame is a u64 presentation time in ns, a u64 receive time in ns, a u32

@@ -26,14 +26,7 @@ defmodule PagesSite do
     rfds = rfds(dates)
 
     slugs = Map.new(rfds, &{&1.serial, &1.href})
-    Enum.each(logs ++ rfds, &copy(&1, out, slugs))
-
-    for f <- @pages, File.exists?(Path.join(root, f)) do
-      text = edit_from(f) <> linked(File.read!(Path.join(root, f)), "", slugs, nil)
-      File.write!(Path.join(out, "page-" <> f), text)
-    end
-
-    docs = Enum.flat_map(logs ++ rfds, &found/1) ++ Enum.flat_map(@pages, &page_found(root, &1))
+    docs = Enum.flat_map(logs ++ rfds, &found/1) ++ Enum.flat_map(@pages -- ["README.md"], &page_found(root, &1))
     File.mkdir_p!(Path.join(out, "assets"))
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
@@ -42,7 +35,6 @@ defmodule PagesSite do
     File.write!(Path.join(out, "_config.yml"), config())
     File.mkdir_p!(Path.join(out, "_layouts"))
     File.write!(Path.join(out, "_layouts/default.html"), layout())
-    File.write!(Path.join(out, "page-LOGBOOK.md"), logbook_page(logs))
     File.write!(Path.join(out, "_layouts/spec.html"), spec_layout())
 
     File.write!(
@@ -117,34 +109,6 @@ defmodule PagesSite do
     end
   end
 
-  defp copy(%{files: files} = e, out, slugs) do
-    paired = length(files) == 2
-    up = String.duplicate("../", length(Path.split(hd(files) |> elem(1))) - 1)
-
-    for {from, to} <- files do
-      File.mkdir_p!(Path.dirname(Path.join(out, to)))
-
-      text =
-        cond do
-          not paired ->
-            File.read!(from) |> linked(up, slugs, Map.get(e, :serial))
-
-          Path.basename(to) == "README.md" ->
-            merged(files) |> linked(up, slugs, Map.get(e, :serial))
-
-          true ->
-            details_moved()
-        end
-
-      File.write!(Path.join(out, to), edit_from(e.source, index_of(to)) <> text)
-    end
-  end
-
-  defp details_moved do
-    refresh = ~s(<meta http-equiv="refresh" content="0; url=./">)
-    refresh <> "\n\nThe details moved to [the RFD page](./).\n"
-  end
-
   defp merged([{readme, _}, {details, _}]) do
     top =
       File.read!(readme)
@@ -212,14 +176,14 @@ defmodule PagesSite do
     end)
   end
 
-  defp found(%{files: [{_, to}, {_, _}]} = e) do
-    [doc(merged(e.files), url_of(to), e.kind, Map.get(e, :status, ""), e.date)]
+  defp found(%{files: [{_, _}, {_, _}]} = e) do
+    [doc(merged(e.files), "#" <> doc_id(e.href), e.kind, Map.get(e, :status, ""), e.date)]
   end
 
   defp found(e) do
     for {from, to} <- e.files do
       kind = if Path.basename(to) == "DETAILS.md", do: :details, else: e.kind
-      doc(File.read!(from), url_of(to), kind, Map.get(e, :status, ""), e.date)
+      doc(File.read!(from), "#" <> doc_id(e.href), kind, Map.get(e, :status, ""), e.date)
     end
   end
 
@@ -227,19 +191,13 @@ defmodule PagesSite do
     path = Path.join(root, f)
 
     if File.exists?(path),
-      do: [doc(File.read!(path), url_of("page-" <> f), :page, "", "")],
+      do: [doc(File.read!(path), "#" <> doc_id("page-" <> Path.rootname(f) <> ".html"), :page, "", "")],
       else: []
   end
 
   defp doc(text, url, kind, status, date) do
     [title | body] = String.split(text, "\n", parts: 2)
     %{u: url, k: kind, s: status, d: date, t: plain(title), b: plain(Enum.join(body))}
-  end
-
-  defp url_of(to) do
-    if Path.basename(to) == "README.md" and String.starts_with?(to, "rfd/"),
-      do: Path.dirname(to) <> "/",
-      else: String.replace_suffix(to, ".md", ".html")
   end
 
   defp plain(md) do
@@ -251,25 +209,6 @@ defmodule PagesSite do
     |> String.replace(~r/\s+/u, " ")
     |> String.trim()
   end
-
-  defp logbook_page(logs) do
-    {topics, single} =
-      logs |> Enum.group_by(& &1.group) |> Enum.split_with(fn {_, es} -> length(es) > 1 end)
-
-    groups =
-      Enum.sort(topics) ++
-        if(single == [], do: [], else: [{"other", single |> Enum.flat_map(&elem(&1, 1))}])
-
-    body =
-      Enum.map_join(groups, "\n\n", fn {g, es} ->
-        "## #{g} (#{length(es)})\n\n" <> log_list(es)
-      end)
-
-    "# Logbook (#{length(logs)} entries)\n\nWhat the workspace measured, grouped by topic.\n\n" <>
-      body
-  end
-
-  defp log_list(es), do: Enum.map_join(es, "\n", &"- [#{&1.label}](#{&1.href})")
 
   defp short(serial), do: "RFD66606-#{serial}"
 
@@ -459,7 +398,7 @@ defmodule PagesSite do
         :skip -> []
       end)
 
-    Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](#{d.href})*"
+    Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](https://github.com/V-Sekai-fire/rfds/blob/main/#{d.source})*"
   end
 
   defp legacy_anchor(id) do
@@ -641,15 +580,6 @@ defmodule PagesSite do
   end
 
   # The theme's edit link points at the generated copy; this one points at the tracked source.
-  defp edit_from(source, permalink \\ nil) do
-    at = if permalink, do: "permalink: #{permalink}\n", else: ""
-    "---\nedit_source: #{source}\n#{at}---\n"
-  end
-
-  defp index_of("rfd/" <> _ = to),
-    do: if(Path.basename(to) == "README.md", do: "/#{Path.dirname(to)}/")
-
-  defp index_of(_), do: nil
 
   defp layout do
     ~S"""

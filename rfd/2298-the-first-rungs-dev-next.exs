@@ -72,8 +72,8 @@ rfd 2298, "the first rung's dev.next", :discussion do
     2026-10-17). The first try stopped when the Mac asked for approval to
     open the recorder the first time, and nothing was recorded. It waits
     for that approval;
-  - the headset path: the Frame streaming from the desktop over oxrsys,
-    and the extra companion controllers.
+  - the headset path: the standalone Frame through FEX and Proton, and
+    the extra companion controllers.
   :: details Which features are likely to bring joy
   Each forecast uses the sense-of-wonder rubric of RFD66606-2412 (abandoned 2026-11-11) and
   RFD66606-2295's tag form.

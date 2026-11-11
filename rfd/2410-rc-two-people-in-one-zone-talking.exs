@@ -45,7 +45,6 @@ rfd 2410, "rc: two people in one zone, talking", :discussion do
     relate "rfd-2410", :spends, "worker-zone-dispatch"
     relate "rfd-2410", :spends, "voice-datagram-transport"
     relate "rfd-2410", :spends, "weftspun-zone-ghost-servers"
-    relate "rfd-2410", :spends, "beta-wear-what-you-draw"
     relate "rfd-2410", :owns, "rfd-2397"
     relate "rfd-2410", :owns, "rfd-2398"
     relate "rfd-2410", :owns, "rfd-2399"

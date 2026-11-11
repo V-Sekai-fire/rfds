@@ -10,13 +10,10 @@ defmodule Rfd2306 do
   @source "weftspun_organization"
 
   @variables %{
-    rfd_state: %{type: :int, init: %{"2306": 2}},
+    rfd_state: %{type: :int, init: %{"2306": -2}},
     step_state: %{type: :int, init: %{}},
     flight_level: %{type: :int, init: %{"2306": 0}}
   }
 
-  @todo_list [
-    ["prepare", "2306"],
-    ["land", "2306"]
-  ]
+  @todo_list []
 end

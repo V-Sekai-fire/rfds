@@ -26,7 +26,9 @@ defmodule PagesSite do
     rfds = rfds(dates)
 
     slugs = Map.new(rfds, &{&1.serial, &1.href})
-    docs = Enum.flat_map(logs ++ rfds, &found/1) ++ Enum.flat_map(@pages -- ["README.md"], &page_found(root, &1))
+    docs =
+      Enum.flat_map(logs ++ rfds, &found/1) ++
+        Enum.flat_map(@pages -- ["README.md"], &page_found(root, &1))
     File.mkdir_p!(Path.join(out, "assets"))
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
@@ -193,9 +195,12 @@ defmodule PagesSite do
   defp page_found(root, f) do
     path = Path.join(root, f)
 
-    if File.exists?(path),
-      do: [doc(File.read!(path), "#" <> doc_id("page-" <> Path.rootname(f) <> ".html"), :page, "", "")],
-      else: []
+    if File.exists?(path) do
+      id = doc_id("page-" <> Path.rootname(f) <> ".html")
+      [doc(File.read!(path), "#" <> id, :page, "", "")]
+    else
+      []
+    end
   end
 
   defp doc(text, url, kind, status, date) do
@@ -401,7 +406,8 @@ defmodule PagesSite do
         :skip -> []
       end)
 
-    Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](https://github.com/V-Sekai-fire/rfds/blob/main/#{d.source})*"
+    source = "https://github.com/V-Sekai-fire/rfds/blob/main/#{d.source}"
+    Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](#{source})*"
   end
 
   defp legacy_anchor(id) do

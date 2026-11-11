@@ -90,8 +90,8 @@ rfd 2436, "presence is an independent native slice", :discussion do
   repositories stay read-only.
 
   :: details What is not known
-  - Which pose message shape the standalone Frame client and the desktop client both send. The first step
-    reads it from the clients and writes it down.
+  - Which pose message shape the standalone Frame client and the desktop client both send.
+    The first step reads it from the clients and writes it down.
   - Whether a zone holds the pose rate for two people. Nothing has run, and no number is claimed.
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.

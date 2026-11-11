@@ -75,8 +75,8 @@ rfd 2298, "the first rung's dev.next", :discussion do
   - the headset path: the Frame streaming from the desktop over oxrsys,
     and the extra companion controllers.
   :: details Which features are likely to bring joy
-  Each forecast uses RFD66606-2412's sense-of-wonder rubric and RFD66606-2295's
-  tag form.
+  Each forecast uses the sense-of-wonder rubric of RFD66606-2412 (abandoned 2026-11-11) and
+  RFD66606-2295's tag form.
 
   | rung | feature | criteria | joy |
   | --- | --- | --- | --- |

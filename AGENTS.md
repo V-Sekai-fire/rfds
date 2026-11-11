@@ -1,7 +1,7 @@
 # Working agreements
 
 **New agent, a small local model included? Start here.** Open
-`2-contract/manuals-weftspun/rfd/2294-agent-knowledge-lives-in-rfds-not-in-desk-memory.exs`,
+`2-contract/rfds/rfd/2294-agent-knowledge-lives-in-rfds-not-in-desk-memory.exs`,
 find `details "Starting out in the workspace"`, and follow its numbered steps in
 order, one step at a time. Then come back and read the rest of this file.
 

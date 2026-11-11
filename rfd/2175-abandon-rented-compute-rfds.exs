@@ -16,12 +16,13 @@ rfd 2175, "Abandon RFDs whose decision uses blocklisted rented compute", :publis
   Read RFD66606-2169 next, the companion walk-back of the same class.
   :: decision
   Abandon five RFDs (1132, 1140, 1163, 2133, 2138) whose decisions name RunPod or Vast.ai rented
-  compute, which CLAUDE.md's hard constraint now blocklists. Each moves to `abandoned` alongside
-  this document landing.
+  compute, which CLAUDE.md's hard constraint blocklisted when this was written. Each moves to
+  `abandoned` alongside this document landing. The Compute rule re-allowed rented providers on
+  2026-11-04; the five stay abandoned to keep the scope down.
   :: related
   Retracts: urn:oid:1.3.6.1.4.1.66606.1.1.{1132,1140,1163},
   urn:oid:1.3.6.1.4.1.66606.1.2.{2133,2138}
-  Anchor: CLAUDE.md's Compute hard constraint and the RunPod, Vast.ai blocklist rows.
+  Anchor: CLAUDE.md's Compute hard constraint as it stood when this was written.
   Companion: RFD66606-2169 (studio-core abandonment), same class of walk-back.
   """
 

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2288, "guest capabilities: macaroons minted from ReBAC", :discussion do
-  flight_level :l1
   feature "A guest ELF reaches outside its own memory only through a
 capability: a macaroon that a ReBAC check mints, checked once at the host
 call and cached for the VM"

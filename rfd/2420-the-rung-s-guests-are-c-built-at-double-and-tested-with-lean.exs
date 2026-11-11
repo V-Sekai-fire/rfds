@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2420, "the rung's guests are C++ built at double and tested with Lean", :discussion do
-  flight_level :l1
   scope "how the rung's guest ELFs are built and tested."
 
   prose ~S"""

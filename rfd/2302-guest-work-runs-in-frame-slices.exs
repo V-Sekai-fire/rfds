@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2302, "guest work runs in frame slices", :discussion do
-  flight_level :l1
   feature "No work blocks the engine's main loop longer than one 144 Hz frame, and every
 load, test and solve has a stated wall-clock budget"
   scope "the godot-sandbox host calls into guest ELFs, the pen's scene load, its tests and

@@ -3,8 +3,6 @@
 use RFD.DSL
 
 rfd 2439, "adventure party seats are an independent native slice", :discussion do
-  flight_level :l1
-
   feature "an adventure party of one player and three seats runs from a program with no campus."
 
   scope "the seats half of the adventure party and shop feature, as its own program."

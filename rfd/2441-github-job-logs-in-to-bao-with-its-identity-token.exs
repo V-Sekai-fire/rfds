@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2441, "a GitHub job logs in to Bao with its identity token", :discussion do
-  flight_level :l1
   feature "a release job reads its secrets from Bao with the identity token GitHub gives it."
   scope "the GitHub Actions endpoint's login to Bao, and what that login may read."
 

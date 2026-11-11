@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2392, "df32 holds guest geometry far from the origin", :discussion do
-  flight_level :l1
   scope "the scalar for guest geometry that must hold far from the origin."
 
   prose ~S"""

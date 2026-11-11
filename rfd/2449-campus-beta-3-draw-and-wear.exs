@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2449, "Campus beta 3: draw and wear", :discussion do
-  flight_level :l1
   feature "the third milestone beta of RFD66606-2360, three features wide."
   scope "adding the pen's first rung to RFD66606-2448's hear-each-other beta."
 

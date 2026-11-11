@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2448, "Campus beta 2: hear each other", :discussion do
-  flight_level :l1
   feature "the second milestone beta of RFD66606-2360, two features wide."
   scope "adding voice to RFD66606-2447's see-each-other beta."
 

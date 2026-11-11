@@ -3,8 +3,6 @@
 use RFD.DSL
 
 rfd 2442, "latency is the metric for 64 Hz entity state", :discussion do
-  flight_level :l1
-
   feature "a 64 Hz 3D state server is judged by tick-to-send time at a held user count."
 
   scope "the metric, budget, sweep and pass rule for the entity server on one droplet."

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2263, "the first testable release's simulator gate", :discussion do
-  flight_level :l1
   feature "The pen draws a scripted outfit through a simulated OpenXR
 hand and curvenet closes it, repeatably, on a desk and in CI"
   scope "transport-meshing-pen's tools/gate_replay.gd,

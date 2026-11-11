@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2452, "Campus beta 6: lesson surface", :discussion do
-  flight_level :l1
   feature "the sixth and final milestone beta of RFD66606-2360, six features wide."
   scope "adding the lesson surface to RFD66606-2451's zone-transfer beta, for full parity."
 

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2393, "the pen builds and ships only the first rung's guests", :discussion do
-  flight_level :l1
   scope "which guests the pen builds and ships, and what leaves its build."
 
   prose ~S"""

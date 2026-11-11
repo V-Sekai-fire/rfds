@@ -3,8 +3,6 @@
 use RFD.DSL
 
 rfd 2333, "A desk reaches FoundationDB only through Bao", :discussion do
-  flight_level :l1
-
   feature "desks and other endpoints keep state in FoundationDB through a Bao engine that checks
 each request, never through an FDB client of their own"
 

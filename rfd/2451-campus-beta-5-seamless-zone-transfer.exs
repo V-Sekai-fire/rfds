@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2451, "Campus beta 5: seamless zone transfer", :discussion do
-  flight_level :l1
   feature "the fifth milestone beta of RFD66606-2360, five features wide."
   scope "adding seamless zone transfer to RFD66606-2450's party-and-shop beta."
 

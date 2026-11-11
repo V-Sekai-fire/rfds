@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2450, "Campus beta 4: adventure party and shop", :discussion do
-  flight_level :l1
   feature "the fourth milestone beta of RFD66606-2360, four features wide."
   scope "adding the adventure party and the shopkeeper persona to RFD66606-2449's beta."
 

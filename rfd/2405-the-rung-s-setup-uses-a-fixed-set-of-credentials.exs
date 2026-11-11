@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2405, "the rung's setup uses a fixed set of credentials", :discussion do
-  flight_level :l1
   scope "the credentials the rung's setup uses: the App, the Bao root token, Fly and the Frame."
 
   prose ~S"""

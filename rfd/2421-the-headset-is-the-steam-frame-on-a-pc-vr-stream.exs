@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2421, "the headset is the Steam Frame on a PC VR stream", :discussion do
-  flight_level :l1
   scope "the Steam Frame headset, its panels and compute, and the stream budget."
 
   prose ~S"""

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2293, "the Skateboard's workspace, and the first rung's plan", :discussion do
-  flight_level :l1
   feature "RFD66606-2287's first rung, from a hand-built headset run to a session on the Frame"
   scope "a new skateboard manifest, the pen, the double build, and the rung's guests"
 

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2287, "the first rung: draw it and wear it in a headset", :discussion do
-  flight_level :l1
   feature "A person in a headset draws an outfit with the pen and wears it,
 while a second person in the same zone sees it and talks with them; a
 worker zone makes the garment, and its ghost materializes in their zone"

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2394, "the template_release fault is diagnosed, not guessed", :discussion do
-  flight_level :l1
   scope "the template_release fault in the Step 1 build, and how it is diagnosed."
 
   prose ~S"""

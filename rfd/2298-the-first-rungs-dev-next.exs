@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2298, "the first rung's dev.next", :discussion do
-  flight_level :l1
   feature "the placeholder for dev work not yet assigned to a numbered rung"
   scope "the pen's work that waits for a dev rung of its own"
 

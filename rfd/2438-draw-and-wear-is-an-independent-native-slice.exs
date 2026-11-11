@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2438, "draw and wear is an independent native slice", :discussion do
-  flight_level :l1
   feature "a drawn outfit becomes a garment and is worn in the campus zone by one program."
   scope "the draw-and-wear beta feature as its own native program, its gate and its control."
 

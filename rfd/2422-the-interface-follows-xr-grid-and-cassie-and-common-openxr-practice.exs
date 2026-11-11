@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2422, "the interface follows xr-grid and CASSIE and common OpenXR practice", :discussion do
-  flight_level :l1
   scope "the interface's source in xr-grid and CASSIE, and its OpenXR practice."
 
   prose ~S"""

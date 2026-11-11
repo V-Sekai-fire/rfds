@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2444, "seamless zone transfer is an independent native slice", :discussion do
-  flight_level :l1
   feature "a person walks from one campus zone into another with no cut, from one program."
 
   scope "seamless zone transfer as its own native program, its gate and its control."

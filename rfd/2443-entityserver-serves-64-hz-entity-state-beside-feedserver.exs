@@ -3,8 +3,6 @@
 use RFD.DSL
 
 rfd 2443, "EntityServer serves 64 Hz entity state beside FeedServer", :discussion do
-  flight_level :l1
-
   feature "a sibling EntityServer serves 64 Hz 3D state beside FeedServer."
 
   scope "the transport repository: entity modules, one executable, the codec, the load generator."

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2440, "the shop books are an independent native slice", :discussion do
-  flight_level :l1
   feature "the shopkeeper keeps a saved world for each conversation, from one program."
 
   scope "the shop half of the adventure party and shop feature, as its own program."

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2403, "the zone reaches Bao by a certificate Bao issues", :discussion do
-  flight_level :l1
   scope "how the zone's worker and server reach Bao, and who issues their certificate."
 
   prose ~S"""

@@ -3,7 +3,6 @@
 use RFD.DSL
 
 rfd 2296, "the first rung's dev.2", :discussion do
-  flight_level :l1
   feature "the dev rung that follows dev.1 on RFD66606-2293's release ladder"
   scope "the pen's `v<date>-dev.2` release"
 

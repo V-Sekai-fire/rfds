@@ -35,7 +35,7 @@ rfd 2392, "df32 holds guest geometry far from the origin", :committed do
   On the Moon, about 3.8e8 m out, float32
   spacing is about 32 m, some 480 soda cans, so float32 world
   coordinates cannot place a stroke there.
-  - Gate evidence: &{guest-runtime/506d491}, guest/rd_worker/main.cpp, which
+  - Gate evidence: &{repo("contract-guest-runtime")}, guest/rd_worker/main.cpp, which
     runs a df32 dot over n floats with the two_sum and two_prod kernels this RFD names.
     The canvas origin crossing the API boundary in df32 or double is not in guest-
     runtime, so that acceptance is unmet and stated as such.

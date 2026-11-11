@@ -31,7 +31,7 @@ rfd 2360, "The campus as a beta", :discussion do
     learners see both (operator, 2026-11-07).
   - The beta is a feature-complete freeze after dev. It is cut when every gate in
     RFD66606-2436 to RFD66606-2440, RFD66606-2444 and RFD66606-2445 passes with its control.
-  - The beta ships one win64 build. It runs natively on Windows, and through FEX on the Steam
+  - The beta ships one win64 build. It runs through FEX on the Steam
     Frame in standalone and desktop modes and on the Steam Deck (operator, 2026-11-01).
   - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
     host is ARM it runs through FEX. A test on the Mac also runs through Proton and FEX

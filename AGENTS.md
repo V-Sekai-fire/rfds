@@ -30,13 +30,11 @@ recurring failure modes and the guards that catch them).
 
 ## Hard Constraints
 
-**Compute.** GPUs the operator owns are the only compute — the local desktop
-GPU and Thunderbolt-attached owned eGPUs both count. Rented GPU providers are
-blocklisted (see the RunPod and Vast.ai rows below): no budget for per-hour or
-per-invocation billing, and no way to run corpora on machines the operator does
-not own. Work that matters is pushed when it is produced. Nothing reports
+**Compute.** GPUs the operator owns count as compute: the local desktop GPU and
+Thunderbolt-attached owned eGPUs. Rented GPU providers (RunPod, including
+Serverless, and Vast.ai) are allowed again (operator, 2026-11-04); Oracle Cloud
+stays out. Work that matters is pushed when it is produced. Nothing reports
 uncommitted results on a local GPU.
-
 **Archive formats.** OpenUSD `.usda` if we want to remain text editable and ZStandard
 parquet for bulk storage. **zip is not acceptable**, and neither is gzip;
 compress and verify payload hashes before deleting an original.

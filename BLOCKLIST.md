@@ -51,8 +51,6 @@ here corresponds to an entry.
 - **integration tests on the CPU**: a whole model graph, end to end, run on the CPU; per-op unit tests and their controls are exempt; operator 2026-10-25 — see below
 - **Mermaid** as a published-figure format: the layout solver owns the picture and the house sheet cannot reach it — hand-authored inline SVG instead, see below
 - **LLaDA** (LLaDA-o, iLLaDA, LLaDA-1.5): block diffusion measured 5.76s / 64 tokens — 25x too slow for real-time avatar; RFD66606-1170 presence loop targets sub-500 ms — see below
-- **RunPod** as rented compute: no budget for per-invocation billing; `spot-broker` and `transport-runpod` archived alongside this row — see below
-- **Vast.ai** as rented compute: no budget for per-hour billing; `spot-broker` and `vast-market-snapshots` archived alongside this row — see below
 - **AnimeGAN** (v2, v3) as a photo-to-anime stylizer: non-commercial licence; checkpoints trained on copyrighted films; CycleGAN is the on-hand substitute — see below
 - **bnb NF4 4-bit** as a QAFT / QAT path: bf16-adapter-over-nf4-base pattern; adapter never sees quantization; slow-kernel fallback on non-64-aligned shapes (OmniGen2's 2520); real QAT with quantized forward instead — see below
 - **Post-quantization fine-tuning** (quantize-first, adapt-after): trains an adapter that never sees quantization; ships as two files at two precisions. Real QAT with quantized forward during training instead — see below
@@ -798,7 +796,7 @@ exposed it: Core ML's own CPU cannot disagree with PyTorch by 2.5.
 ### The tinygrad NVIDIA eGPU is allowlisted; the operational costs are why the record stays
 
 The eGPU is allowlisted under CLAUDE.md's compute rule ("GPUs the operator
-owns are the only compute"). The three failure modes below still hold and
+owns count as compute"). The three failure modes below still hold and
 are accepted as operational costs; this section stays as the record of
 what those costs are.
 
@@ -1242,56 +1240,6 @@ change — the masking operates on latents, not on the model that fills them.
 `sweep_quality_lladao.py`, and `measure_context_vram.py` stay in
 `llada-diffusion-lm` as the evidence behind this row. The numbers they produced
 are the reason LLaDA is here.
-
-### RunPod is blocklisted as rented compute — no budget
-
-The operator does not have money for per-invocation or per-second GPU
-billing. RunPod Serverless is capable technically (endpoint-queue-based,
-cold-start-per-request, matches the shape a batched MaskScore corpus
-scoring pass would take), and its 72B EditScore fit was priced at ~$150-250
-for the full three-dataset pass. That is money the workspace does not have.
-
-The credential path is also stalled: the RunPod-token → OpenBao migration
-cannot complete without a client cert signed by "chibifire.com Intermediate
-CA v2" that nobody has minted. So even a small trial run cannot land under
-production hygiene.
-
-**What is blocked.** RunPod as an execution target for corpus generation,
-model serving, or any interactor path. The `transport-runpod` interactor
-(v-sekai-fabric) is archived alongside this row.
-
-**What replaces it.** The local desktop GPU (RTX 3090). Corpus generation
-lands here too: small models at fp16 (Qwen3-VL-4B fits with room to
-spare), large models at NF4 (Wan-VACE, VoxHammer).
-
-`spot-broker` (managed Vast/RunPod deploys) is archived alongside this
-row.
-
-### Vast.ai is blocklisted as rented compute — no budget
-
-Same reason. The operator does not have money for per-hour spot rentals.
-Vast.ai was the workspace's active rented-compute path (`spot-broker`
-service, `vast-market-snapshots` corpus of pricing data, three ETNF
-Parquet snapshots recording ~40% churn per ~12 min at the hot
-$0.18-0.22 band). Neither survives the funding constraint.
-
-The Vast.ai pass this row retracts was estimated at ~$60-115 for a 115
-GPU-hour EditScore-72B corpus scoring run — cheaper than RunPod's
-per-second billing but still money the workspace does not have.
-
-**What is blocked.** Vast.ai as an execution target for corpus
-generation, model serving, or any interactor path.
-
-**What replaces it.** Same as RunPod above: local desktop GPU only. The
-precision-policy retraction (Condition 5 gone 2026-09-02) makes corpus
-generation on the 3090 real; the funding constraint on rented compute
-stays regardless.
-
-`spot-broker` and `vast-market-snapshots` are archived alongside this
-row. The HF dataset `chibifire/vast-market-snapshots` stays as
-historical record of Vast pricing during the period the workspace
-observed it — the numbers stopped being actionable when the funding
-did.
 
 ### bnb NF4 4-bit is blocklisted as a QAFT / QAT path
 

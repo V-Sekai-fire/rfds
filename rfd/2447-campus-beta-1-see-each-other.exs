@@ -25,6 +25,7 @@ rfd 2447, "Campus beta 1: see each other", :discussion do
   :: related
   - RFD66606-2360, the campus beta, which ships this one feature.
   - RFD66606-2436, the slice this beta cuts against.
+  - RFD66606-2490, what the fabric is for, and the board-wide non-goals.
   """
 
   details_title "Campus beta 1: see each other"

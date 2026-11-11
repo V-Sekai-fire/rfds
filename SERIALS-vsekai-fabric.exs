@@ -282,6 +282,7 @@ defmodule Serials.VSekaiFabric do
       serial 2487, "animation-mixer-migration", flight_level: :l1
       serial 2488, "cage-wrapped-surface-net"
       serial 2489, "body-measurements-from-base-model"
+      serial 2490, "what-the-fabric-is-for-and-what-it-is-not", flight_level: :l2
     end
 
     deleted do

@@ -88,7 +88,6 @@ defmodule PagesSite do
     end
   end
 
-  # Abandoned RFDs stay in git and off the site. Citations to them render as plain text.
   defp abandoned?(d), do: to_string(d.state) == "abandoned"
 
   defp rfds(dates) do

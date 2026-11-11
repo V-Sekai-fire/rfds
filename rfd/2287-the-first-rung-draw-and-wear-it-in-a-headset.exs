@@ -26,8 +26,8 @@ garment-stage guest ELFs. The Steam Frame runs as a PC VR headset streamed from 
   A worker zone owns the garment
   while it makes it. Its ghost materializes in the players' zone, and then its ownership hands
   over to that zone. One zone owns it at every frame. The garment attaches rigidly to the avatar's
-  bones. The headset is the Steam Frame on a PC VR stream from the desk. The Frame's
-  standalone mode and the Steam Deck run the win64 build through FEX (RFD66606-2360, operator,
+  bones. The headset is the standalone Steam Frame, with no PC VR stream (operator, 2026-11-11). The
+  Frame and the Steam Deck run the win64 build through FEX (RFD66606-2360, operator,
   2026-11-01).
   :: related
   - RFD66606-2262, the ladder; RFD66606-2136, the precedent; RFD66606-2263, step 2's test.

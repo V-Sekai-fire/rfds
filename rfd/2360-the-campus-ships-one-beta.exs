@@ -17,8 +17,8 @@ rfd 2360, "The campus as a beta", :discussion do
   :: decision
   The beta ships these six features and nothing else. Every nongoal is abandoned (operator,
   2026-10-30).
-  - See each other, RFD66606-2436: two people in the campus zone, one in the Steam Frame on a PC
-    VR stream and one on the desktop, each sees the other's avatar.
+  - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
+    Frame and one on the desktop, each sees the other's avatar.
   - Hear each other, RFD66606-2437: voice between the two, played at the speaker's avatar.
   - Draw and wear, RFD66606-2438: the pen's first rung, RFD66606-2287, in the campus zone. The
     other person sees the drawn outfit worn.

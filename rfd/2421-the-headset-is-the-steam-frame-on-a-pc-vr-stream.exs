@@ -27,6 +27,10 @@ rfd 2421, "the headset is the Steam Frame on a PC VR stream", :discussion do
   details_title "the headset is the Steam Frame on a PC VR stream"
 
   prose ~S"""
+  :: details Standalone only
+  The Frame runs standalone through FEX and Proton, and no PC VR stream is used (operator,
+  2026-11-11). The stream numbers below are the earlier sizing and stay as history.
+
   :: details The stream
   PyroWave encodes both eyes at 200 Mbit/s and 72 Hz in 12.4 ms through the CPU-buffer path,
   against 317 Mbit/s of measured Wi-Fi. `logbook/logbook-steam-frame-sizing.md` carries the

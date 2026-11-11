@@ -24,7 +24,7 @@ rfd 2360, "The campus as a beta", :discussion do
     other person sees the drawn outfit worn.
   - An adventure party and a shopkeeper persona, RFD66606-2439 and RFD66606-2440: one player and
     the three seats, each filled by a friend or a persona, the takeover, the walk from the shop
-    to a room and back, and the shopkeeper persona with its saved world.
+    to a room and back (walk mode, RFD66606-2487), and the shopkeeper persona with its saved world.
   - Seamless zone transfer, RFD66606-2444: a person walks from one campus zone into another with
     no cut, and the other person sees the avatar leave and arrive (operator, 2026-11-07).
   - A lesson surface, RFD66606-2445: a teacher draws on a board and shows a window, and the
@@ -44,6 +44,12 @@ rfd 2360, "The campus as a beta", :discussion do
   details_title "The campus ships one beta"
 
   prose ~S"""
+  :: details Walk mode
+  The shop-to-room walk is walk mode: the motion guest drives the character from clips in an
+  AnimationLibrary (RFD66606-2487), and no hand-written character controller is added
+  (RFD66606-2363). It is a means to the party feature, not a seventh feature (operator,
+  2026-11-11).
+
   :: details Non-goals
   Everything outside the beta is cut, and every nongoal is abandoned rather than deferred
   (operator, 2026-10-30). A new idea that matches a nongoal is refused, and the list is not argued

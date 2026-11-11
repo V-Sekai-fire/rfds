@@ -69,7 +69,7 @@ rfd 2443, "EntityServer serves 64 Hz entity state beside FeedServer", :committed
   :: details Open
   Extend the in-house emitter, which emits only the codec header today, or vendor the Trust-Lean
   compiler by subtree. One source either way, never a copy or a submodule.
-  - Gate evidence: V-Sekai-fire/transport-feed-entity-servers@506d491, CI run
+  - Gate evidence: &{transport-feed-entity-servers/506d491}, CI run
     42417791013, jobs tick-budget and client sweeps (success). entity_serve.c fails a
     run whose p99 is over 4 ms, and the planted-defect sweeps are caught. The Lean tick
     kernel and its emitted-C byte check are not in the repo, so the Lean-to-C acceptance

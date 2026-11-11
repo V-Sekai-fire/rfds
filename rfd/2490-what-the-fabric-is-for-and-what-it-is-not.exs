@@ -12,7 +12,7 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   or does it drift toward a walled garden?
   :: intrigue
   The 2020 charter asked for an open, remixable, self-hosted VR space.
-  Most of it still holds; the targets and the trust model have moved on.
+  Most of it still holds. The targets and the trust model have moved on.
   :: exit
   Check a new idea against the non-goals in the details. A match is
   refused, not argued again.

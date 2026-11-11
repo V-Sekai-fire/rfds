@@ -9,36 +9,9 @@ defmodule PagesTree do
     %{
       name: "See each other",
       text:
-        "Two people in the campus zone, one in the Steam Frame on a PC VR stream and one on " <>
-          "the desktop, each sees the other's avatar.",
+        "Two people in the campus zone, one in the standalone Steam Frame and one on the " <>
+          "desktop, each sees the other's avatar.",
       slices: [2436]
-    },
-    %{
-      name: "Hear each other",
-      text: "Voice between the two, played at the speaker's avatar.",
-      slices: [2437]
-    },
-    %{
-      name: "Draw and wear",
-      text:
-        "The pen's first rung, RFD66606-2287, in the campus zone. The other person sees the " <>
-          "drawn outfit worn.",
-      slices: [2438]
-    },
-    %{
-      name: "An adventure party and a shopkeeper persona",
-      text:
-        "One player and the three seats, each filled by a friend or a persona, the takeover, " <>
-          "the walk from the shop to a room and back, and the shopkeeper persona with its " <>
-          "saved world.",
-      slices: [2439, 2440]
-    },
-    %{
-      name: "Seamless zone transfer",
-      text:
-        "A person walks from one campus zone into another with no cut, and the other person " <>
-          "sees the avatar leave the one zone and arrive in the other.",
-      slices: [2444]
     }
   ]
   @advanced ~w(committed)
@@ -278,7 +251,7 @@ defmodule PagesTree do
     |> Enum.join("\n\n")
   end
 
-  @gates [2436, 2437, 2438, 2439, 2440, 2444]
+  @gates [2436]
 
   defp slice_needs(by, n) do
     if n.n in @gates do
@@ -328,9 +301,8 @@ defmodule PagesTree do
       "A skill is " <>
       "an RFD, and it depends on the skills it cites and on the tokens its text names.\n\n" <>
       "RFD66606-#{data.goal} is the beta freeze. It is cut when every gate in " <>
-      "RFD66606-2436 to " <>
-      "RFD66606-2440 and RFD66606-2444 passes with its control: #{Enum.join(gates, "; ")}.\n\n" <>
-      "All five features stand on a shared foundation: #{open.(common)} open skills of " <>
+      "RFD66606-2436 passes with its control: #{Enum.join(gates, "; ")}.\n\n" <>
+      "The feature stands on a shared foundation: #{open.(common)} open skills of " <>
       "#{MapSet.size(common)}, reached through RFD66606-2374 and RFD66606-2390, which every " <>
       "slice cites. Past that foundation:\n\n" <>
       "| feature | slice RFDs | skills of its own |\n| --- | --- | --- |\n" <>
@@ -438,12 +410,16 @@ defmodule PagesTree do
   end
 
   defp repos(data, link) do
+    live = MapSet.new(data.nodes, & &1.n)
+
     rows =
-      for r <- data.repos do
+      for r <- data.repos, MapSet.member?(live, r.n) do
         "- [#{r.repo}](https://github.com/#{r.repo}) holds the code of #{link.(r.n)}. " <> r.note
       end
 
-    Enum.join(rows, "\n")
+    if rows == [],
+      do: "No repository on the path to the beta yet.",
+      else: Enum.join(rows, "\n")
   end
 
   defp evidence(logs, serial) do

@@ -88,11 +88,14 @@ defmodule PagesSite do
     end
   end
 
+  defp abandoned?(d), do: to_string(d.state) == "abandoned"
+
   defp rfds(dates) do
     for path <- RFD.Source.all(),
         dir = RFD.Source.dir_of(path),
-        File.exists?(Path.join(dir, "README.md")) do
-      d = RFD.Source.load(path)
+        File.exists?(Path.join(dir, "README.md")),
+        d = RFD.Source.load(path),
+        not abandoned?(d) do
       slug = Path.basename(dir)
       drafted = d.attest_in != :none && %{ai: "🧑‍🦰", human: "✍️"}[d.drafted_by]
       status = [Map.get(@emoji, to_string(d.state), "❔"), drafted, RFD.Doc.details(d) && "📎"]

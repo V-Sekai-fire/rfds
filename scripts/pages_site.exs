@@ -4,6 +4,7 @@
 # A masthead and the newest RFDs lead; the logbook and RFD archives follow, dated from git.
 #   mix rfd.render && mix run scripts/pages_site.exs <out-dir>
 Code.require_file("pages_tree.exs", __DIR__)
+Code.require_file("pages_techtree.exs", __DIR__)
 
 defmodule PagesSite do
   @states ~w(prediscussion ideation discussion published committed abandoned)
@@ -26,9 +27,11 @@ defmodule PagesSite do
     rfds = rfds(dates)
 
     slugs = Map.new(rfds, &{&1.serial, &1.href})
+
     docs =
       Enum.flat_map(logs ++ rfds, &found/1) ++
         Enum.flat_map(@pages -- ["README.md"], &page_found(root, &1))
+
     File.mkdir_p!(Path.join(out, "assets"))
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
@@ -243,7 +246,7 @@ defmodule PagesSite do
        pages |> Enum.sort() |> Enum.map(&page_part(root, &1, slugs))},
       {"3", "RFDs", rfds |> Enum.sort_by(& &1.serial, :desc) |> Enum.map(&entry_part(&1, slugs))},
       {"4", "Logbook",
-       logs |> Enum.sort_by(&{&1.date, &1.href}) |> Enum.map(&entry_part(&1, slugs))},
+       logs |> Enum.sort_by(&{&1.date, &1.href}) |> Enum.map(&entry_part(&1, slugs))}
     ]
 
     numbered = for {n, title, docs} <- parts, do: {n, title, number_docs(n, docs)}
@@ -279,6 +282,7 @@ defmodule PagesSite do
     )
 
     File.write!(Path.join(out, "assets/campus.tree.json"), JSON.encode!(tree))
+    PagesTechtree.write(tree, out)
 
     hero = "<!--search-->"
 
@@ -290,7 +294,7 @@ defmodule PagesSite do
         "This page holds the whole site: #{length(pages)} reference pages, " <>
         "#{length(rfds)} RFDs, and #{length(logs)} logbook entries. " <>
         "Each entry ends with a link to its own page. Search finds every RFD.\n\n" <>
-        PagesTree.markdown(tree)
+        PagesTechtree.figure() <> "\n" <> PagesTree.markdown(tree)
 
     body =
       Enum.map_join(numbered, "\n\n", fn {n, title, docs} ->
@@ -325,8 +329,6 @@ defmodule PagesSite do
       }
     ]
   end
-
-
 
   defp tally(rfds) do
     for s <- @states, n = Enum.count(rfds, &(&1.group == s)), n > 0 do

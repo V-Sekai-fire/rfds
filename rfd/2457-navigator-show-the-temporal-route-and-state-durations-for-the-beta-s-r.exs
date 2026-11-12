@@ -7,7 +7,7 @@ rfd 2457,
     :prediscussion do
   feature "the navigator should show each RFD's earliest and latest possible time and route."
 
-  scope "the pages_tree.exs generator, the pages_navigator.js client and the pinned planner."
+  scope "the pages_tree.exs generator in this repository, the navigator client site/navigator.js in V-Sekai-fire/interactor-taskweft-persona, and the planner that client runs."
 
   prose ~S"""
   :: hook
@@ -22,7 +22,7 @@ rfd 2457,
   as an instant: of 44 committed RFDs, 39 landed in the PR that created them, leaving a median
   lead time that is useless as a stand-in.
   :: exit
-  Draft durations for the 33 RFDs in the cone, bump the pinned planner release, then run the
+  Draft durations for the 33 RFDs in the cone, then run the
   navigator against the new temporal plan.
   :: decision
   - Add a composite window-rfd-N method to the generator that decomposes into earliest-rfd-N
@@ -32,8 +32,8 @@ rfd 2457,
     possible time, with the problem document stating today as its origin (proposed).
   - Decide the declaration form for a duration, or a start and end per action, within the
     existing rebac block and with no new DSL (proposed).
-  - Bump the planner release pinned in the pages workflow to the latest tag of the persona
-    planner, which carries temporal plans and the shortest-plan export (proposed).
+  - Take the planner from the persona's latest release, as the navigator build already does,
+    and check that tag carries temporal plans and the shortest-plan export (proposed).
   - Draft the 33 RFDs' durations from a reference-class estimate rather than the useless
     observed lead time, and report a range or a P50 or P80 finish instead of one
     critical-path total (proposed).
@@ -51,13 +51,13 @@ rfd 2457,
   `scripts/pages_tree.exs` needs a composite `window-rfd-N` method that decomposes into
   `earliest-rfd-N` and `latest-rfd-N`. The latest side cannot reuse the `held` shortcut, since
   by that point the steps it would shortcut are already done, so it needs its own "again"
-  methods. `scripts/pages_navigator.js` needs to pair each step's two appearances as its first
+  methods. `site/navigator.js` in the persona repository needs to pair each step's two appearances as its first
   possible and last possible time, and the problem document needs to state today as its
   `origin`, or every start and end point is left out.
-  :: details The pinned release
-  `.github/workflows/pages.yml` pins an older tag of
-  `V-Sekai-fire/interactor-taskweft-persona`. The latest tag carries temporal plans and the
-  shortest-plan export that this work depends on.
+  :: details The planner release
+  The navigator build (`site/build.sh` in the persona repository) downloads the latest release
+  tag of `V-Sekai-fire/interactor-taskweft-persona`, so no tag is pinned here. Whether that tag
+  carries temporal plans and the shortest-plan export has not been checked against this work.
   :: details Estimating durations
   The literature on duration estimates covers the planning fallacy, reference classes,
   three-point estimates, PERT merge bias, Monte Carlo methods and resource-constrained

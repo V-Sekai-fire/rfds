@@ -53,8 +53,8 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - Kept: a neutral host for events, and for business meetings where
     privacy matters.
   - Superseded: Windows SteamVR and Oculus Quest as targets. The
-    targets are now the Mac and the Steam Frame, run through FEX and
-    Proton (operator, 2026-11-01).
+    targets are now the Mac, the Steam Frame and the Steam Deck. The Frame and the Deck build
+    natively (operator, 2026-11-12). Whether the Mac has a native build is not known.
   - Superseded: decentralized authentication through a GPG web of
     trust. OpenBao is the identity and secret store (operator,
     2026-11-11; see RFD66606-2146 and RFD66606-2202).

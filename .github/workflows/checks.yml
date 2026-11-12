@@ -121,4 +121,4 @@ jobs:
           prek run --all-files --hook-stage manual --show-diff-on-failure --color always
           ci-rfd-serials ci-rfd-structure ci-comment-ladder ci-line-length ci-trope-density
           ci-rfd-hooks ci-rfd-canary ci-rfd-literals ci-rfd-abandoned ci-rfd-refs ci-practices ci-spdx
-          ci-goal-manifests ci-rulesets
+          ci-goal-manifests ci-rulesets ci-static-site

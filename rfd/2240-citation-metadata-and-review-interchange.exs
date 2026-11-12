@@ -183,6 +183,31 @@ rfd 2240,
     planted sidecar-less asset reporting exactly one more.
   - A clip's sidecar states the frame rate and duration, and the timeline
     marker that names the clip must agree; a planted disagreement fails.
+  :: details Static delivery
+  Deliverables ship as committed static files, and no build step runs at
+  publish time (operator, 2026-11-12). The RFD site is `docs/`: one HTML page,
+  its search index, its assets and an empty `.nojekyll`. `mix run
+  scripts/pages_docs.exs --write` writes it from the RFD sources, and MDEx
+  turns the page's Markdown into HTML. Without `--write` the script builds into
+  a temporary directory and fails when `docs/` differs by one byte, lacks a
+  file or holds a file the build does not write. Its self-test plants each of
+  those faults.
+  The edition line carries the newest author date among the page's own
+  sources, and no commit name, so `docs/` goes stale only when page content
+  changes. A rebase keeps author dates. A change to an RFD therefore lands as
+  the source commit, then the regenerated `docs/`, and a pull request that
+  falls behind main's page content is rebased and regenerated before it
+  merges.
+  The tech tree is the first animated deliverable under this rule.
+  `docs/assets/techtree.lot` sits beside `techtree.cff` and the `techtree.xmp`
+  that `mix cff.xmp` derives from it. The gate refuses a sidecar whose frame
+  rate or duration disagrees with the `.lot` it describes. The page plays the
+  `.lot` with the ThorVG Lottie player, version 1.1.3, loaded from a CDN with
+  subresource integrity on the script. The player comes from a CDN for now
+  (operator, 2026-11-12).
+  `mix cff.xmp` reads the YAML subset the house records use and refuses the
+  rest. Where the mapping offers two sources, `abstract` comes before `message`
+  for `dc:description`, and a list of licences joins with " OR ".
   """
 
   rebac do

@@ -30,8 +30,7 @@ rfd 2337, "a garment fit at MESH on the GPU L-BFGS-B", :discussion do
   - The pen's check that no garment vertex is inside the body reads the fitted mesh. The
     scripted skirt's ring clearance goes back to 1 cm, a little more than a pencil's width.
   :: related
-  - RFD66606-2293, which cut the fit from the pen; RFD66606-2249, cloth by vertex block
-    descent; RFD66606-2294, where compute runs.
+  - RFD66606-2293, which cut the fit from the pen; RFD66606-2294, where compute runs.
   """
 
   details_title "a garment fit at MESH on the GPU L-BFGS-B"

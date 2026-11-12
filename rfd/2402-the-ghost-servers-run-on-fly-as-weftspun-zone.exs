@@ -29,7 +29,7 @@ rfd 2402, "the ghost servers run on Fly as weftspun-zone", :discussion do
     binds at `fly-global-services`, and no public TCP.
   :: related
   - RFD66606-2293, where this rule lived before the split.
-  - RFD66606-2403, where the worker and the server reach Bao.
+  - RFD66606-2146, where a service's certificate logs it into Bao.
   """
 
   details_title "the ghost servers run on Fly as weftspun-zone"

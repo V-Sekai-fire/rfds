@@ -92,11 +92,5 @@ rfd 2360, "The campus as a beta", :discussion do
     relate "rfd-2360", :spends, "see-each-other"
     relate "rfd-2360", :is_a, "release-rung"
     relate "rfd-2360", :owns, "rfd-2436"
-    relate "rfd-2360", :owns, "rfd-2437"
-    relate "rfd-2360", :owns, "rfd-2438"
-    relate "rfd-2360", :owns, "rfd-2439"
-    relate "rfd-2360", :owns, "rfd-2440"
-    relate "rfd-2360", :owns, "rfd-2444"
-    relate "rfd-2360", :owns, "rfd-2445"
   end
 end

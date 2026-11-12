@@ -21,7 +21,7 @@ server and clients that host it, and a token-minting channel;
   QUIC, HTTP/3 and WebTransport run inside a RISC-V guest ELF that
   libriscv binary-translates to near native speed: picoquic with
   h3zero, TLS 1.3 through picotls on mbedTLS. The first channel is a signer on a zone server whose
-  app key lives only in guest memory; it checks a ReBAC tuple and
+  app key lives only in guest memory. It checks a ReBAC tuple and
   returns a one-hour installation token, never the key.
   :: related
   - RFD66606-2255 (SSH tunnel to Bao), the path the signer peer's

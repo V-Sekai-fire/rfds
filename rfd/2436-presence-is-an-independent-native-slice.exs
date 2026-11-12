@@ -35,8 +35,8 @@ rfd 2436, "presence is an independent native slice", :discussion do
 
   prose ~S"""
   :: details What the beta asks
-  The beta's first feature is two people in the campus zone, one in the Steam Frame on a PC VR
-  stream and one on the desktop. Each sees the other's avatar. The slice holds that and nothing
+  The beta's first feature is two people in the campus zone, one in the standalone Steam Frame
+  and one on the desktop. Each sees the other's avatar. The slice holds that and nothing
   more: who is in the zone, where each avatar stands, and the pose each person sends.
 
   :: details The campus

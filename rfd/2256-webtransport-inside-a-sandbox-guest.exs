@@ -16,7 +16,7 @@ server and clients that host it, and a token-minting channel;
   :: intrigue
   A key on the desk, or a helper that hands out a token, is open to every script there.
   :: exit
-  Read RFD66606-2287 next, the first rung and the first user of this guest.
+  The signer's app key stays in guest memory. Each token request is checked against a tuple.
   :: decision
   QUIC, HTTP/3 and WebTransport run inside a RISC-V guest ELF that
   libriscv binary-translates to near native speed: picoquic with
@@ -28,7 +28,6 @@ server and clients that host it, and a token-minting channel;
     identity can use to reach Bao.
   - RFD66606-2060 (org-scoped app token), the token this mints.
   - RFD66606-2200 (ReBAC agent roles as tuples), the authorization.
-  - RFD66606-2287 (the first rung), its first user.
   """
 
   details_title "a token-minting guest over WebTransport"

@@ -52,9 +52,6 @@ rfd 2360, "The campus as a beta", :discussion do
   - an adventure party and a shopkeeper persona
   - seamless zone transfer
   - a lesson surface
-  - Fly as the host of the ghost servers (RFD66606-2402)
-  - FEX, the x86 emulation layer
-  - Proton, the third-party compatibility layer (RFD66606-2385)
 
   - a hidden director that plans the day
   - friendships and romance
@@ -71,7 +68,6 @@ rfd 2360, "The campus as a beta", :discussion do
   - combat, damage and dying
   - a leaderboard or achievements
   - real-money purchases
-  - a build for any platform other than the one win64 build
   - a market, a shop listing or a save slot for drawn outfits
   - moderation, reporting and blocking tools
   - a tutorial or first-run walkthrough

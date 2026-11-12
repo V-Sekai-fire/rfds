@@ -89,8 +89,10 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     rarely, to get or renew the credential it presents to the store.
   - Row 4, Fly, is a BORING-TOKEN. Delete it and the store, Bao and the KMS key that unseals Bao
     go with it.
-  - Row 5, Tailscale, is abandoned (RFD66606-2490, operator, 2026-11-12).
-    No replacement exists yet.
+  - Tailscale, B6, is a BORING-TOKEN (operator, 2026-11-12). It was row 5 and is no longer an
+    innovation token, and its id is retired, not renumbered.
+  - steamac, B7, is a third-party BORING-TOKEN (operator, 2026-11-12), the github.com/fxgl/steamac
+    repository. Its internals are not this ledger's tokens.
   - Row 6, FEX, and row 7, Proton, are abandoned (RFD66606-2490, operator, 2026-11-12).
     The win64 build targets the Steam Frame and the Steam Deck natively.
   - Windows (row 8), pixi (9), prek (10) and GitHub (11) are BORING-TOKENs. The build and gate
@@ -180,7 +182,8 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     relate "weftspun", :has_capability, "cross-build-image"
     relate "weftspun", :has_capability, "elixir"
     deny "weftspun", :has_capability, "fly", "abandoned, RFD66606-2490"
-    deny "weftspun", :has_capability, "tailscale", "abandoned, RFD66606-2490"
+    relate "weftspun", :has_capability, "tailscale"
+    relate "weftspun", :has_capability, "steamac"
     deny "weftspun", :has_capability, "proton", "abandoned, RFD66606-2490"
     deny "weftspun", :has_capability, "fex", "abandoned, RFD66606-2490"
   end

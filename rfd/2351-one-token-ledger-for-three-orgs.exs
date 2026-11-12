@@ -124,7 +124,8 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     service (compose only, never run: no desk runs containers).
   - Also moved, merged 2026-10-18: weftspun-character-taxonomy. Its
     image no longer starts a CockroachDB node, and CI finds its test
-    database's keys in FoundationDB. The smoke-test scripts in the multiplayer fabric meta repo need a merge with no CI
+    database's keys in FoundationDB.
+    The smoke-test scripts in the multiplayer fabric meta repo need a merge with no CI
     before they run.
   - Archived: the fabric's CockroachDB service, the Dokku CockroachDB
     service, the vertex interactor, the fabric's container service, the

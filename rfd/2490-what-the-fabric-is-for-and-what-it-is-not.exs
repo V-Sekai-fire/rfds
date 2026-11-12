@@ -75,6 +75,7 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - Fly as a host for any server piece (operator, 2026-11-12).
   - FEX, the x86 emulation layer, as a runtime for any build (operator, 2026-11-12).
   - Proton, the third-party compatibility layer (operator, 2026-11-12).
+  - Tailscale as the private network for any server piece (operator, 2026-11-12). Its replacement is open.
 
   :: details Beta-only non-goals in RFD66606-2360
   These stay beta-only non-goals in RFD66606-2360 (operator, 2026-11-11).

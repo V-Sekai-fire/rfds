@@ -278,6 +278,8 @@ defmodule PagesSite do
       JSON.encode!(PagesTree.problem(tree))
     )
 
+    File.write!(Path.join(out, "assets/campus.tree.json"), JSON.encode!(tree))
+
     hero = "<!--search-->"
 
     foreword =

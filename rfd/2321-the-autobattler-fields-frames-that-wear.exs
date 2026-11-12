@@ -130,8 +130,7 @@ solids, rolled on survey tables, and it carries wear from round to round"
   N rounds for a longer sim.
 
   :: details Zone server and VR mode
-  The zone, its transport and its crash journal are those of RFD66606-2287, the
-  first rung. The round is deterministic: one seed gives the same `ROUND`, `DAMAGE` and
+  The round is deterministic: one seed gives the same `ROUND`, `DAMAGE` and
   `WORLD` lines on the web and on the three desktop systems. That makes the game
   a fit for an authoritative zone. The zone server runs the round headless, and
   every client shows the same round.

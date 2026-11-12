@@ -89,11 +89,10 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     rarely, to get or renew the credential it presents to the store.
   - Row 4, Fly, is a BORING-TOKEN. Delete it and the store, Bao and the KMS key that unseals Bao
     go with it.
-  - Row 5, Tailscale, is a BORING-TOKEN. Delete it and the game cannot be updated, so the
-    transactions of a CRUD update are affected.
-  - Row 6, FEX, is an INNOVATION-TOKEN, and row 7, Proton, is a BORING-TOKEN (operator,
-    2026-11-01). Delete either and the win64 build stops running on the Steam Frame, the Steam
-    Deck or the Mac test, so the campus beta of RFD66606-2360 crashes on those targets.
+  - Row 5, Tailscale, is abandoned (RFD66606-2490, operator, 2026-11-12).
+    No replacement exists yet.
+  - Row 6, FEX, and row 7, Proton, are abandoned (RFD66606-2490, operator, 2026-11-12).
+    The win64 build targets the Steam Frame and the Steam Deck natively.
   - Windows (row 8), pixi (9), prek (10) and GitHub (11) are BORING-TOKENs. The build and gate
     tools count as the tech stack.
   - The Fedora cross-build image (row 12) and osxcross (row 15) are INNOVATION-TOKENs. LLVM
@@ -125,8 +124,9 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     service (compose only, never run: no desk runs containers).
   - Also moved, merged 2026-10-18: weftspun-character-taxonomy. Its
     image no longer starts a CockroachDB node, and CI finds its test
-    database's keys in FoundationDB. The smoke-test scripts in the
-    multiplayer fabric meta repo wait for a merge with no CI.
+    database's keys in FoundationDB.
+    The smoke-test scripts in the multiplayer fabric meta repo need a merge with no CI
+    before they run.
   - Archived: the fabric's CockroachDB service, the Dokku CockroachDB
     service, the vertex interactor, the fabric's container service, the
     fabric gateway transport and the fabric infra service (the Terraform
@@ -171,18 +171,17 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     verb :supervisor_of, "the subject answers for the object's work"
     verb :partner_of, "the subject and the object share a goal as peers"
     relate "datasource-store", :provides, "fdb-sqlite"
-    relate "private-lab", :provides, "fex"
     relate "elixir", :spends, "pixi"
     relate "weftspun", :owns, "fdb-sqlite"
-    relate "weftspun", :owns, "fex"
     relate "weftspun", :owns, "guest-elf-double"
     relate "weftspun", :has_capability, "bao"
-    relate "weftspun", :has_capability, "fly"
-    relate "weftspun", :has_capability, "tailscale"
-    relate "weftspun", :has_capability, "proton"
     relate "weftspun", :has_capability, "pixi"
     relate "weftspun", :has_capability, "prek"
     relate "weftspun", :has_capability, "cross-build-image"
     relate "weftspun", :has_capability, "elixir"
+    deny "weftspun", :has_capability, "fly", "abandoned, RFD66606-2490"
+    deny "weftspun", :has_capability, "tailscale", "abandoned, RFD66606-2490"
+    deny "weftspun", :has_capability, "proton", "abandoned, RFD66606-2490"
+    deny "weftspun", :has_capability, "fex", "abandoned, RFD66606-2490"
   end
 end

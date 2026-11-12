@@ -24,8 +24,8 @@ rfd 2436, "presence is an independent native slice", :discussion do
   - Native means a riscv64 guest ELF for the sandbox, run binary-translated (operator,
     2026-11-01). Its gates run on the CPU guest as the parity oracle (RFD66606-2374,
     RFD66606-2390).
-  - The host is the win64 build of RFD66606-2360. It runs on the Steam Frame and the Steam Deck
-    through FEX, and the slice's gates run there too (operator, 2026-11-01).
+  - The host is the win64 build of RFD66606-2360, built natively for the Steam Frame and the
+    Steam Deck, and the slice's gates run there too (operator, 2026-11-12).
   :: related
   - RFD66606-2360, the one beta.
   - The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned (operator, 2026-11-11).
@@ -102,7 +102,6 @@ rfd 2436, "presence is an independent native slice", :discussion do
     relate "rfd-2436", :provides, "see-each-other"
     relate "rfd-2436", :spends, "binary-translated-only-timings"
     relate "rfd-2436", :spends, "elf-guest-native-translation"
-    relate "rfd-2436", :spends, "fex"
     relate "rfd-2436", :is_a, "native-slice"
   end
 end

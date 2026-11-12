@@ -35,7 +35,8 @@ rfd 2442, "latency is the metric for 64 Hz entity state", :committed do
   - A figure stays labelled derived until a measured one replaces it.
   :: related
   - RFD66606-2443, the server that this metric judges.
-  - RFD66606-2402, where the ghost servers actually run. The droplet here is the benchmark host.
+  - The droplet here is the benchmark host. Where the ghost servers run is open:
+    Fly is a non-goal (RFD66606-2490, operator, 2026-11-12).
   - Gate evidence: the feed server, CI run 42417791013, job
     tick-budget (success). It proves a p99 under 4 ms budget on a 64-tick loopback check. The
     5-minute hold at fixed user counts and the sweep to the knee are not run yet, so the gate is

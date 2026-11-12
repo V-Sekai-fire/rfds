@@ -25,11 +25,10 @@ rfd 2360, "The campus as a beta", :discussion do
     under RFD66606-2363: no hand-written character controller is added.
   - The beta is a feature-complete freeze after dev. It is cut when the gate in RFD66606-2436
     passes with its control.
-  - The beta ships one win64 build. It runs through FEX on the Steam
-    Frame in standalone and desktop modes and on the Steam Deck (operator, 2026-11-01).
+  - The beta ships a native build for each target: win64 on Windows, and native builds for the
+    Steam Frame and the Steam Deck (operator, 2026-11-12).
   - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
-    host is ARM it runs through FEX. A test on the Mac also runs through Proton and FEX
-    (operator, 2026-11-01).
+    host is ARM, the piece needs a native ARM build (operator, 2026-11-12).
   :: related
   - RFD66606-2436, the one slice; RFD66606-2487, RFD66606-2408 and RFD66606-2363, walking.
   - RFD66606-2312, the form of the release tag.
@@ -69,7 +68,6 @@ rfd 2360, "The campus as a beta", :discussion do
   - combat, damage and dying
   - a leaderboard or achievements
   - real-money purchases
-  - a build for any platform other than the one win64 build
   - a market, a shop listing or a save slot for drawn outfits
   - moderation, reporting and blocking tools
   - a tutorial or first-run walkthrough
@@ -82,7 +80,6 @@ rfd 2360, "The campus as a beta", :discussion do
   :: details What is not known
   - Whether each server piece has a win64 build, and which RFDs that describe the Linux images
     the rule replaces. Each is read from its source before it is amended.
-  - How a Mac runs FEX and Proton. Both need a Linux guest on the Mac, and no run has made one.
   :: details After the cut
   Dev is development: features land and change. After the beta is cut, only fixes land.
   """

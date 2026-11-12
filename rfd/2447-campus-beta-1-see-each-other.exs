@@ -36,7 +36,8 @@ rfd 2447, "Campus beta 1: see each other", :discussion do
   surface are abandoned (operator, 2026-11-11). RFD66606-2360's own non-goals list governs what
   else is cut from the product.
   :: details What is not known
-  - Whether the win64 build and FEX targets of RFD66606-2360 are exercised at beta 1, or first at
+  - Whether the win64 build and the native Steam Frame and Steam Deck targets of
+    RFD66606-2360 are exercised at beta 1, or first at
     a later milestone once more of the server pieces are in place.
   """
 end

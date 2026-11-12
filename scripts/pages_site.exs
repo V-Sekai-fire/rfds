@@ -242,7 +242,7 @@ defmodule PagesSite do
     parts = [
       {"2", "Working agreements and reference pages",
        pages |> Enum.sort() |> Enum.map(&page_part(root, &1, slugs))},
-      {"3", "RFDs", rfds |> Enum.sort_by(& &1.serial) |> Enum.map(&entry_part(&1, slugs))},
+      {"3", "RFDs", rfds |> Enum.sort_by(& &1.serial, :desc) |> Enum.map(&entry_part(&1, slugs))},
       {"4", "Logbook",
        logs |> Enum.sort_by(&{&1.date, &1.href}) |> Enum.map(&entry_part(&1, slugs))},
     ]

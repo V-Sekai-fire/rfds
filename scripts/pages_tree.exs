@@ -20,7 +20,6 @@ defmodule PagesTree do
   @tokens [
     {1, "Guest ELFs on the pinned double engine", "guest-elf-double"},
     {2, "SQLite on FoundationDB pages", "fdb-sqlite"},
-    {3, "Bao", "bao"},
     {4, "Fly", "fly"},
     {5, "Tailscale", "tailscale"},
     {6, "FEX", "fex"},
@@ -30,7 +29,8 @@ defmodule PagesTree do
     {"B1", "Elixir", "elixir"},
     {"B2", "pixi", "pixi"},
     {"B3", "prek", "prek"},
-    {"B4", "cross-build image", "cross-build-image"}
+    {"B4", "cross-build image", "cross-build-image"},
+    {"B5", "Bao", "bao"}
   ]
   defp acquired do
     case File.read(Path.join(__DIR__, "acquired.json")) do

@@ -85,7 +85,7 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   :: details The parts added on 2026-11-01, classified
   The operator asked for the ledger to name these parts and ruled that each is a token
   (operator, 2026-11-01). The class of each follows the test in the decision.
-  - Row 3, Bao, is an INNOVATION-TOKEN. The zone talks to the store directly, and reaches Bao
+  - Row 3, Bao, is a BORING-TOKEN. The zone talks to the store directly, and reaches Bao
     rarely, to get or renew the credential it presents to the store.
   - Row 4, Fly, is a BORING-TOKEN. Delete it and the store, Bao and the KMS key that unseals Bao
     go with it.

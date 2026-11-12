@@ -15,7 +15,7 @@ defmodule PagesTechtree do
   @card {160, 112}
 
   def write(tree, out) do
-    lot = tree |> build() |> JSON.encode!()
+    lot = (tree |> build() |> encode()) <> "\n"
     File.write!(Path.join(out, "assets/techtree.lot"), lot)
     File.write!(Path.join(out, "assets/techtree.xmp"), xmp())
     lot
@@ -40,6 +40,14 @@ defmodule PagesTechtree do
       "<a href=\"assets/techtree.lot\">techtree.lot</a>. " <>
       "The same facts are in <a href=\"#s1-1\">the tables below</a>.</figcaption>\n</figure>\n"
   end
+
+  def encode(v) when is_map(v) do
+    pairs = v |> Enum.map(fn {k, x} -> {to_string(k), x} end) |> Enum.sort()
+    "{" <> Enum.map_join(pairs, ",", fn {k, x} -> JSON.encode!(k) <> ":" <> encode(x) end) <> "}"
+  end
+
+  def encode(v) when is_list(v), do: "[" <> Enum.map_join(v, ",", &encode/1) <> "]"
+  def encode(v), do: JSON.encode!(v)
 
   def build(tree) do
     font = glyphs()
@@ -95,12 +103,16 @@ defmodule PagesTechtree do
         {x2, y2} = pos[n.n]
         elbow({x1 + cw, y1 + ch / 2}, {x2, y2 + ch / 2}, @edge[PagesTree.status(by, by[m])])
       end
+      |> List.flatten()
 
     gates =
       for n <- path, n.d == 1 do
         {x, y} = pos[n.n]
-        line([{x + cw / 2, y}, {x + cw / 2, 118}], @edge[PagesTree.status(by, n)], 3)
+        c = @edge[PagesTree.status(by, n)]
+        mx = x + cw / 2
+        [line([{mx, y}, {mx, 128}], c, 3), arrow([{mx - 6, 130}, {mx, 120}, {mx + 6, 130}], c)]
       end
+      |> List.flatten()
 
     feature =
       for f <- tree.features, n <- path, n.n in f.slices do
@@ -180,8 +192,7 @@ defmodule PagesTechtree do
       {"blocked", 446, 648, 12.5, 120},
       {"filled mark: the org has access", 590, 648, 12.5, 260},
       {"#{spent} of #{length(tree.nodes)} skills name a token. " <>
-         "#{held} of #{length(tokens(tree))} tokens with access. As of #{tree.asof}.", 40, 690,
-       12.5, 1200}
+         "#{held} of #{length(tokens(tree))} tokens with access.", 40, 690, 12.5, 1200}
     ]
   end
 
@@ -338,7 +349,18 @@ defmodule PagesTechtree do
 
   defp elbow({x1, y1}, {x2, y2}, c) do
     mid = (x1 + x2) / 2
-    line([{x1, y1}, {mid, y1}, {mid, y2}, {x2, y2}], c, 3)
+
+    [
+      line([{x1, y1}, {mid, y1}, {mid, y2}, {x2 - 8, y2}], c, 3),
+      arrow([{x2 - 10, y2 - 6}, {x2, y2}, {x2 - 10, y2 + 6}], c)
+    ]
+  end
+
+  defp arrow(points, c) do
+    v = for {x, y} <- points, do: [r(x), r(y)]
+    z = for _ <- v, do: [0, 0]
+    sh = %{ty: "sh", ks: %{a: 0, k: %{c: true, v: v, i: z, o: z}}}
+    shape_layer([%{ty: "gr", it: [sh, fill(c), tr([0, 0], [0, 0])]}], 100)
   end
 
   defp line(points, c, w) do
@@ -366,6 +388,6 @@ defmodule PagesTechtree do
 
   defp xmp do
     media = %{format: "video/lottie+json", frame_rate: @fps, frames: @op}
-    Path.join(__DIR__, "techtree.cff") |> Rfd.Cff.read!() |> Rfd.CffXmp.derive(media)
+    Path.join(__DIR__, "../assets/techtree.cff") |> Rfd.Cff.read!() |> Rfd.CffXmp.derive(media)
   end
 end

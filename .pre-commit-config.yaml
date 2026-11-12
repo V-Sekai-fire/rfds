@@ -388,6 +388,26 @@ repos:
         files: '^(rfd/[0-9]{4}-[^/]+\.exs|rectgtn/.*|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
+      - id: techtree-artifacts
+        name: the tracked tech-tree .lot and .xmp match the generator and techtree.cff
+        entry: mix run scripts/check_techtree.exs
+        language: system
+        files: '^(rfd/[0-9]{4}-[^/]+\.exs|scripts/(pages_[a-z_]+\.(exs|json)|acquired\.json|check_techtree\.exs)|assets/techtree\..*|lib/rfd/cff.*\.ex)$'
+        pass_filenames: false
+
+      - id: techtree-artifacts-self-test
+        name: the tech-tree drift gate still fails on a planted drift
+        entry: mix run scripts/check_techtree.exs --self-test
+        language: system
+        files: ^scripts/check_techtree\.exs$
+        pass_filenames: false
+
+      - id: lottie-spec
+        name: every tracked .lot conforms to the Lottie 1.0 schema
+        entry: python scripts/check_lottie_spec.py
+        language: system
+        files: '\.lot$'
+
       # A `verbs_from` resolves only once every source is loaded, so the vocabulary check is
       # corpus-wide rather than per-file. It reads CLAUDE.md's fenced block as well.
       - id: rfd-dsl-rebac

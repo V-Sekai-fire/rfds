@@ -104,7 +104,7 @@ defmodule CffXmpTest do
     root = Path.expand("..", __DIR__)
 
     for f <-
-          ["CITATION.cff", "scripts/techtree.cff"] ++
+          ["CITATION.cff", "assets/techtree.cff"] ++
             Path.wildcard(Path.join(root, "apparatus/*/references/*.cff")) do
       cff = Rfd.Cff.read!(Path.expand(f, root))
       assert is_binary(cff["title"]) and cff["title"] != "", f

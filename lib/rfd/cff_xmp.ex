@@ -1,7 +1,7 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 defmodule Rfd.CffXmp do
-  @moduledoc "Derives an XMP sidecar (ISO 16684-1, RDF/XML) from a CFF 1.2.0 record, RFD66606-2240."
+  @moduledoc "Derives an XMP sidecar (ISO 16684-1, RDF/XML) from a CFF 1.2.0 record."
 
   @ns [
     dc: "http://purl.org/dc/elements/1.1/",
@@ -110,7 +110,8 @@ defmodule Rfd.CffXmp do
 
       v ->
         [
-          ~s(<#{prop}><rdf:Alt><rdf:li xml:lang="x-default">#{esc(v)}</rdf:li></rdf:Alt></#{prop}>)
+          ~s(<#{prop}><rdf:Alt><rdf:li xml:lang="x-default">#{esc(v)}</rdf:li>) <>
+            "</rdf:Alt></#{prop}>"
         ]
     end
   end

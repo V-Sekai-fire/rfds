@@ -43,7 +43,7 @@ defmodule PagesSite do
 
     File.write!(
       Path.join(out, "index.md"),
-      single_page(root, logs, rfds, edition(root), slugs, out)
+      single_page(root, logs, rfds, edition(dates), slugs, out)
     )
 
     File.write!(Path.join(out, "404.html"), not_found())
@@ -52,7 +52,7 @@ defmodule PagesSite do
   end
 
   defp last_changed(root) do
-    {out, 0} = System.cmd("git", ["-C", root, "log", "--format=%x00%cs", "--name-only"])
+    {out, 0} = System.cmd("git", ["-C", root, "log", "--format=%x00%as", "--name-only"])
 
     out
     |> String.split(<<0>>, trim: true)
@@ -62,10 +62,13 @@ defmodule PagesSite do
     end)
   end
 
-  defp edition(root) do
-    {out, 0} = System.cmd("git", ["-C", root, "log", "-1", "--format=%cs %h"])
-    [date, sha] = String.split(String.trim(out), " ")
-    %{date: date, sha: sha}
+  defp edition(dates) do
+    page = ~r/^(rfd|logbook)\/|^[A-Z]+\.md$/
+
+    %{
+      date:
+        dates |> Enum.filter(fn {f, _} -> f =~ page end) |> Enum.map(&elem(&1, 1)) |> Enum.max()
+    }
   end
 
   # Sources become records: what the index shows and which files the site carries.
@@ -273,16 +276,17 @@ defmodule PagesSite do
 
     File.write!(
       Path.join(out, "assets/campus.domain.jsonld"),
-      JSON.encode!(PagesTree.domain(tree))
+      PagesTechtree.encode(PagesTree.domain(tree))
     )
 
     File.write!(
       Path.join(out, "assets/campus.problem.jsonld"),
-      JSON.encode!(PagesTree.problem(tree))
+      PagesTechtree.encode(PagesTree.problem(tree))
     )
 
-    File.write!(Path.join(out, "assets/campus.tree.json"), JSON.encode!(tree))
+    File.write!(Path.join(out, "assets/campus.tree.json"), PagesTechtree.encode(tree))
     PagesTechtree.write(tree, out)
+    File.cp!(Path.join(root, "assets/techtree.cff"), Path.join(out, "assets/techtree.cff"))
 
     hero = "<!--search-->"
 
@@ -306,7 +310,7 @@ defmodule PagesSite do
       "---\nlayout: spec\ntitle: manuals-weftspun\nedit_source: scripts/pages_site.exs\n---",
       "# manuals-weftspun\n{: .title}",
       hero,
-      "Edition of #{ed.date}, built from `#{ed.sha}`.\n{: .edition}",
+      "Edition of #{ed.date}.\n{: .edition}",
       "## Table of Contents\n{: #toc-title .no_toc}\n\n* TOC\n{:toc}",
       foreword,
       body

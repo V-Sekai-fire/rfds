@@ -388,18 +388,19 @@ repos:
         files: '^(rfd/[0-9]{4}-[^/]+\.exs|rectgtn/.*|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
-      - id: techtree-artifacts
-        name: the tracked tech-tree .lot and .xmp match the generator and techtree.cff
-        entry: mix run scripts/check_techtree.exs
+      - id: ci-static-site
+        name: docs/ matches what the RFD sources generate
+        entry: mix run scripts/pages_docs.exs
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|scripts/(pages_[a-z_]+\.(exs|json)|acquired\.json|check_techtree\.exs)|assets/techtree\..*|lib/rfd/cff.*\.ex)$'
         pass_filenames: false
+        always_run: true
+        stages: [manual]
 
-      - id: techtree-artifacts-self-test
-        name: the tech-tree drift gate still fails on a planted drift
-        entry: mix run scripts/check_techtree.exs --self-test
+      - id: static-site-self-test
+        name: the docs/ drift gate still fails on planted drift
+        entry: mix run scripts/pages_docs.exs --self-test
         language: system
-        files: ^scripts/check_techtree\.exs$
+        files: ^scripts/pages_docs\.exs$
         pass_filenames: false
 
       - id: lottie-spec

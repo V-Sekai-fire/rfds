@@ -17,7 +17,7 @@ defmodule PagesTechtree do
   def write(tree, out) do
     lot = tree |> build() |> JSON.encode!()
     File.write!(Path.join(out, "assets/techtree.lot"), lot)
-    File.write!(Path.join(out, "assets/techtree.xmp"), xmp(tree))
+    File.write!(Path.join(out, "assets/techtree.xmp"), xmp())
     lot
   end
 
@@ -105,7 +105,9 @@ defmodule PagesTechtree do
     feature =
       for f <- tree.features, n <- path, n.n in f.slices do
         {x, y} = pos[n.n]
-        {"feature: #{f.name}", x + cw / 2 + 8, (y + 118) / 2 + 4, 12, 850 - x - cw / 2}
+        label = "feature: #{f.name}"
+        w = width(font, label, 12)
+        {label, x + cw / 2 - 8 - w, (y + 118) / 2 + 4, 12, w + 1}
       end
 
     texts = texts ++ feature
@@ -362,24 +364,8 @@ defmodule PagesTechtree do
 
   defp glyphs, do: Path.join(__DIR__, "pages_glyphs.json") |> File.read!() |> JSON.decode!()
 
-  defp xmp(tree) do
-    """
-    <?xpacket begin="" id="W5M0MpCehiHzreSzNTczkc9d"?>
-    <x:xmpmeta xmlns:x="adobe:ns:meta/">
-     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about="techtree.lot"
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:xmp="http://ns.adobe.com/xap/1.0/">
-       <dc:format>video/lottie+json</dc:format>
-       <dc:title><rdf:Alt>
-        <rdf:li xml:lang="x-default">The tech tree to RFD66606-#{tree.goal}</rdf:li>
-       </rdf:Alt></dc:title>
-       <dc:source>urn:oid:1.3.6.1.4.1.66606.1.#{div(tree.goal, 1000)}.#{tree.goal}</dc:source>
-       <xmp:CreateDate>#{tree.asof}</xmp:CreateDate>
-      </rdf:Description>
-     </rdf:RDF>
-    </x:xmpmeta>
-    <?xpacket end="r"?>
-    """
+  defp xmp do
+    media = %{format: "video/lottie+json", frame_rate: @fps, frames: @op}
+    Path.join(__DIR__, "techtree.cff") |> Rfd.Cff.read!() |> Rfd.CffXmp.derive(media)
   end
 end

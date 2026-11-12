@@ -357,7 +357,7 @@ defmodule PagesTree do
         kind =
           cond do
             t.own -> "ours"
-            t.denied -> "non-goal"
+            t.denied -> "abandoned"
             t.access -> "third party"
             true -> "no access"
           end

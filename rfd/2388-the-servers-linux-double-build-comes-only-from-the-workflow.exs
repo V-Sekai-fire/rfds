@@ -28,8 +28,7 @@ rfd 2388, "the servers' Linux double build comes only from the workflow", :discu
   :: details The Frame's own Linux path
   The Frame's own Linux path, the compatibility layer's missing XCursor and xkbcommon, is a
   runtime
-  `dlopen`. The x86_64 `SteamLinuxRuntime_sniper` entry point under FEX is tried once from the
-  headset and `LD_DEBUG=libs` logged either way, and no rung waits on it.
+  `dlopen`.
   """
 
   rebac do

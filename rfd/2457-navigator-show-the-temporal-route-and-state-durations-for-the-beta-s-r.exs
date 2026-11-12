@@ -7,7 +7,7 @@ rfd 2457,
     :prediscussion do
   feature "the navigator should show each RFD's earliest and latest possible time and route."
 
-  scope "the pages_tree.exs generator in this repository, the navigator client site/navigator.js in V-Sekai-fire/interactor-taskweft-persona, and the planner that client runs."
+  scope "the generator here, and the navigator and its planner in the persona repository."
 
   prose ~S"""
   :: hook
@@ -51,12 +51,13 @@ rfd 2457,
   `scripts/pages_tree.exs` needs a composite `window-rfd-N` method that decomposes into
   `earliest-rfd-N` and `latest-rfd-N`. The latest side cannot reuse the `held` shortcut, since
   by that point the steps it would shortcut are already done, so it needs its own "again"
-  methods. `site/navigator.js` in the persona repository needs to pair each step's two appearances as its first
+  methods. `site/navigator.js` in the persona repository needs to pair each step's two
+  appearances as its first
   possible and last possible time, and the problem document needs to state today as its
   `origin`, or every start and end point is left out.
   :: details The planner release
   The navigator build (`site/build.sh` in the persona repository) downloads the latest release
-  tag of `V-Sekai-fire/interactor-taskweft-persona`, so no tag is pinned here. Whether that tag
+  tag of the persona repository, so no tag is pinned here. Whether that tag
   carries temporal plans and the shortest-plan export has not been checked against this work.
   :: details Estimating durations
   The literature on duration estimates covers the planning fallacy, reference classes,

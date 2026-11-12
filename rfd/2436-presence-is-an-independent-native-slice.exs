@@ -102,7 +102,6 @@ rfd 2436, "presence is an independent native slice", :discussion do
     relate "rfd-2436", :provides, "see-each-other"
     relate "rfd-2436", :spends, "binary-translated-only-timings"
     relate "rfd-2436", :spends, "elf-guest-native-translation"
-    relate "rfd-2436", :spends, "fex"
     relate "rfd-2436", :is_a, "native-slice"
   end
 end

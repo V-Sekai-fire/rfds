@@ -591,6 +591,38 @@ defmodule PagesSite do
           {{ content | replace: "<!--search-->", search }}
         </main>
         <script src="{{ "/assets/search.js" | relative_url }}" defer></script>
+        <style>
+          .section-copy { margin-left: .4em; opacity: 0; text-decoration: none; }
+          h2:hover .section-copy, h3:hover .section-copy,
+          h4:hover .section-copy, .section-copy:focus-visible { opacity: 1; }
+          .section-copy[data-copied]::after {
+            content: " copied"; font-size: .75em; color: var(--color-fg-muted, #57606a);
+          }
+        </style>
+        <script>
+          (function () {
+            var sel = "h2[id]:not(.no_toc), h3[id], h4[id]";
+            document.querySelectorAll(sel).forEach(function (h) {
+              var a = document.createElement("a");
+              a.className = "section-copy";
+              a.href = "#" + h.id;
+              a.setAttribute("aria-label", "Copy link to section");
+              a.textContent = "¶";
+              h.appendChild(a);
+            });
+            document.addEventListener("click", function (e) {
+              var a = e.target.closest && e.target.closest("a.section-copy");
+              if (!a) return;
+              e.preventDefault();
+              var hash = a.getAttribute("href");
+              var url = location.origin + location.pathname + hash;
+              if (navigator.clipboard) navigator.clipboard.writeText(url);
+              history.replaceState(null, "", hash);
+              a.dataset.copied = "1";
+              setTimeout(function () { delete a.dataset.copied; }, 1200);
+            });
+          })();
+        </script>
       </body>
     </html>
     """

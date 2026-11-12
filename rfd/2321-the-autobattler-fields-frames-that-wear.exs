@@ -47,7 +47,7 @@ solids, rolled on survey tables, and it carries wear from round to round"
   :: details What a Frame is
   The guest builds 18 solids while the game loads: 12 whole solids and six parts
   (a head, a limb, a torso, a ring, a cube and a base). A Frame places parts by
-  species and merges them into one mesh, so a Frame is one draw call; the parts
+  species and merges them into one mesh, so a Frame is one draw call. The parts
   become separate pieces only when it breaks. The bounds of the parts set health,
   damage, speed and reach, as the single solid did before.
 
@@ -94,7 +94,7 @@ solids, rolled on survey tables, and it carries wear from round to round"
   The role's parts come from the same catalog of guest solids and merge into the
   Frame's one mesh, but they do not count toward its health, damage or reach.
   Each squad's draft holds every role at least once, so every round shows the
-  triangle; the other two places draw a role at random from the round's seed.
+  triangle. The other two places draw a role at random from the round's seed.
   The name tag shows the role before the species.
 
   :: details What the world gives each role
@@ -104,7 +104,7 @@ solids, rolled on survey tables, and it carries wear from round to round"
   that depends on the world.
 
   - Range needs a clear line. Five cover blocks stand in the middle. A range
-    Frame does not shoot through cover; it walks around the block until the
+    Frame does not shoot through cover. It walks around the block until the
     line is clear. Every Frame walks around cover, not through it.
   - Cyber needs its relay. Each side has a relay mast, with its reach drawn as
     a faint disc on the floor. A cyber Frame jams only within 6.5 m of its own
@@ -148,7 +148,7 @@ solids, rolled on survey tables, and it carries wear from round to round"
     it changed. The save thread writes the image to SQLite on FoundationDB
     (&{repo("datasource-store")}) and keeps only the newest one: a save that is
     still in flight when the next is ready is replaced, not queued. A slow
-    commit makes the stored image older; it never holds a tick or a frame.
+    commit makes the stored image older. It never holds a tick or a frame.
 
   The store's place in the third loop comes from a measurement. On 2026-10-19,
   sixteen players committing one row 20 times a second waited 5.5 to 6.0 ms
@@ -260,19 +260,19 @@ solids, rolled on survey tables, and it carries wear from round to round"
   range did 303 damage to cyber and cyber did 57 to range. The web game's
   slowest frame in round 1 read 150 ms with the roles and 134 ms without them,
   one run each in the same browser, so the difference is not measured past
-  noise. The release kept its tag, because the guest did not change; its zips
+  noise. The release kept its tag, because the guest did not change. Its zips
   and SHA256SUMS were replaced.
 
   On 2026-10-18 the world props changed the game script only, a third time.
   The self-test printed `WORLD mirror=true control=false line_through=false
   line_beside=true` on each system. The macOS, Windows and Linux zips and the
   web build in a desktop browser printed the same `ROUND`, `DAMAGE` and
-  `WORLD` lines for the four rounds they share; the web run went on to nine
+  `WORLD` lines for the four rounds they share. The web run went on to nine
   rounds and the macOS run to twelve. Over the twelve rounds each side won
   six. Per round, range Frames spent 0.3 to 3.0 s with no clear line, melee
   Frames spent 1.2 to 9.0 s beside cover, and cyber Frames landed 1 to 17 hits
   with the relay and 0 to 13 without it. Plants stood on soil in four of the
-  twelve rounds, for up to 8.0 s; plants are 2 in 100 of the species rolls, so
+  twelve rounds, for up to 8.0 s. Plants are 2 in 100 of the species rolls, so
   a sim that wants to read the soil rule needs many rounds. No relay went down
   in the twelve rounds (the lowest read 103 of 160). The first version moved a blocked range
   Frame sideways only, and in one round two range Frames stayed blocked for

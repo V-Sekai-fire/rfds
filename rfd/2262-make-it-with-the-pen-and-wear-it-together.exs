@@ -17,13 +17,12 @@ V-Sekai client and server that host the loop"
   An anonymous 16-person survey of the shared world's own community asked for two things: to
   create and share what others can see (8), and to be with people (8).
   :: exit
-  Read RFD66606-2263 next, the active release's simulator gate.
+  Each release is read through its own gate.
   :: decision
   The strategy is a release ladder: each release is a whole product put
   in front of real people to test one assumption, never a half-built
   release.
   :: related
-  - RFD66606-2263 and RFD66606-2287, the active release's simulator gate and first rung.
   - RFD66606-2234 (dress-on pipeline), the loop the releases ride on.
   - RFD66606-1053 (OpenUSD as the internal format).
   - RFD66606-2229 (interchangeable parts), the rule new parts answer to.

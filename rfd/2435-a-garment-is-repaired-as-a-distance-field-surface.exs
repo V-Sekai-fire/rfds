@@ -26,7 +26,6 @@ rfd 2435, "a garment is repaired as a distance-field surface", :discussion do
   - The repair uses no CoACD hulls and no CSG union of the shells (operator, 2026-11-01).
   :: related
   - RFD66606-2424, where a sketch is placed on the avatar before any fit.
-  - RFD66606-2420, the guests and their precision.
   """
 
   details_title "a garment is repaired as a distance-field surface"

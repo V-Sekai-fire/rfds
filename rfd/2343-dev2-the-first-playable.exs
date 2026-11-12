@@ -23,7 +23,7 @@ world grab"
   work. RFD66606-2344 proves each of these under the private working agreements.
   :: related
   - RFD66606-2342, dev.1 (tray); RFD66606-2344, dev.3 (the proof); RFD66606-2341 (dev.next).
-  - RFD66606-2287, RFD66606-2293, RFD66606-2296 (the pen's release ladder).
+  - RFD66606-2262, the pen's release ladder.
   - The private brief, the private blocklist and the private pitfalls list.
   """
 

@@ -22,7 +22,6 @@ rfd 2341, "dev.next", :discussion do
   rung is planned around it.
   :: related
   - RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2344, dev.3.
-  - RFD66606-2298, the FOSS side's dev.next.
   """
 
   details_title "dev.next, parked and not designed"
@@ -52,7 +51,7 @@ rfd 2341, "dev.next", :discussion do
     not build, it reads the rendered eye pair. Its metric points and
     normals give the plane, and the second eye checks the first. Without
     root, the headset's runtime publishes one colour view as a loopback
-    camera that the video group can read; it advertises 1920x1080 at 30
+    camera that the video group can read. It advertises 1920x1080 at 30
     fps and measured 1.4 to 3.8 fps. Its own camera API is off by
     default. MoGe-3 runs as a godot-sandbox guest ELF on ggml-rd, the
     shape RFD66606-2272 proved for segmentation. Its weights come
@@ -94,7 +93,7 @@ rfd 2341, "dev.next", :discussion do
     base, and the dress keeps a small slot under it. No flap, lap panel,
     ruffle trim or bow covers it, and the tail is kept. The cut is the
     tail base's sweep over the motion clips plus 5 mm. The tail's long
-    strands still cross the cardigan in motion; that is open.
+    strands still cross the cardigan in motion. That is open.
   - The Windows x86_64 executable, signing once a legal entity is chosen,
     spatial voice, controller walking and the first headset test.
   - The guest transport (QUIC, TLS and the session CA in guests) for

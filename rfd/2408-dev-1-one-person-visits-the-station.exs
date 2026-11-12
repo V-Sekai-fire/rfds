@@ -23,7 +23,7 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
     MuJoCo guest as the original's `physics.js` calls make them.
   :: related
   - RFD66606-2293, where this rule lived before the split.
-  - RFD66606-2296, whose dev.2 works from the gap the logbook names.
+  - RFD66606-2262, the release ladder this rung follows.
   """
 
   details_title "dev.1: one person visits the station"
@@ -55,7 +55,7 @@ rfd 2408, "dev.1: one person visits the station", :discussion do
   reach the platform or climb the stairs. The locomotion gate climbs the six treads headless. Past
   the four modules the terrain is open where the town's houses and shops stand in the original.
   The
-  logbook names that gap and counts five others, which RFD66606-2296's dev.2 works from.
+  logbook names that gap and counts five others.
   """
 
   rebac do

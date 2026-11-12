@@ -24,7 +24,6 @@ Simulator through cua-driver, in the background"
   runs in the background: no focus change and no cursor move, so the operator
   keeps working in another window. The operator ruled it done on 2026-10-17.
   :: related
-  - RFD66606-2263, the simulator gate: OXRSys is the runtime this drives.
   - RFD66606-2235, the agent that plans with taskweft through the editor, done in
     desktop mode through XR Pilot's plan tool.
   """

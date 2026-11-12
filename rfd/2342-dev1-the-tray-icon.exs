@@ -23,7 +23,7 @@ rung"
   - RFD66606-2343, dev.2, the first playable core.
   - RFD66606-2341, dev.next.
   - The FOSS release ladder this rung follows as defined: weftspun
-    RFD66606-2262 (releases), RFD66606-2293 (release rules), RFD66606-2296 (dev rungs).
+    RFD66606-2262 (releases).
   - The private blocklist, the private pitfalls list and the private licence audit.
   """
 

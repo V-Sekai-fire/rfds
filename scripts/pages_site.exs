@@ -593,16 +593,15 @@ defmodule PagesSite do
         <script src="{{ "/assets/search.js" | relative_url }}" defer></script>
         <style>
           .section-copy { margin-left: .4em; opacity: 0; text-decoration: none; }
-          .markdown-body h2:hover .section-copy, .markdown-body h3:hover .section-copy,
-          .markdown-body h4:hover .section-copy, .section-copy:focus-visible { opacity: 1; }
+          h2:hover .section-copy, h3:hover .section-copy,
+          h4:hover .section-copy, .section-copy:focus-visible { opacity: 1; }
           .section-copy[data-copied]::after {
             content: " copied"; font-size: .75em; color: var(--color-fg-muted, #57606a);
           }
         </style>
         <script>
           (function () {
-            var sel = ".markdown-body h2[id]:not(.no_toc), " +
-              ".markdown-body h3[id], .markdown-body h4[id]";
+            var sel = "h2[id]:not(.no_toc), h3[id], h4[id]";
             document.querySelectorAll(sel).forEach(function (h) {
               var a = document.createElement("a");
               a.className = "section-copy";

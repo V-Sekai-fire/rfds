@@ -172,6 +172,14 @@ rfd 2021, "Require pr and merge queue on main", :prediscussion do
     `gh api repos/v-sekai-multiplayer-fabric/<repo> --jq
     .delete_branch_on_merge` returns `true`, and the source branch of a
     merged PR no longer exists.
+
+    In the RFD repository, ruleset `23145233` keeps the `merge_queue` rule and adds
+    `required_status_checks` with context `prek` (integration 15368) and
+    `strict_required_status_checks_policy: false` (operator, 2026-11-12). Before that rule,
+    `rfds#575` merged through the queue 92 seconds after automerge was enabled, with `prek`
+    failed. With the rule, the control `rfds#580` carried planted rectgtn drift, `prek` failed,
+    automerge was enabled, and the pull request stayed blocked for 240 seconds with `main`
+    unchanged. The control was closed unmerged.
     """
 
     more_information ~S"""

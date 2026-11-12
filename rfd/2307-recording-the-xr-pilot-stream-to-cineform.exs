@@ -15,7 +15,7 @@ build, and the av1mkv delivery of a recording"
   Encoding live on the VR GPU would compete with the compositor, which an overload had
   already killed twice that day.
   :: exit
-  Read RFD66606-2306 next, on operating the shared desk.
+  The shared desk is run as the open work below records.
   :: decision
   A recording is the runtime's own video stream, not a screen capture. The
   pilot appends each PyroWave packet to a `.pwrec` file with its presentation
@@ -73,7 +73,7 @@ build, and the av1mkv delivery of a recording"
   - Run the `pyro2cfhd` self-test on the desk's second GPU, then record a real
     two-minute stream and deliver it.
   - Count compositor sync timeouts in the driver and give the sparklines fault
-    thresholds (RFD66606-2306).
+    thresholds, set from the sweep this RFD records.
   :: details The problem
   The first two-minute sweep was saved as left-eye PNG frames and encoded at
   10 fps, because a full-rate 4K clip passes the size limits of the CineForm

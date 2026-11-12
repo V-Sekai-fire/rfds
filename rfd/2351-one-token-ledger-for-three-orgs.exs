@@ -3,22 +3,22 @@
 use RFD.DSL
 
 rfd 2351, "one ledger of BORING-TOKENs and INNOVATION-TOKENs for three orgs", :discussion do
-  feature "a token is what the stack cannot run without: nineteen, seven INNOVATION-TOKENs and
-twelve BORING-TOKENs"
+  feature "a token is what the stack cannot run without: twenty, seven INNOVATION-TOKENs and
+thirteen BORING-TOKENs"
   scope "the token ledger in the private working agreements and the private plan, the
 private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the private org"
 
   prose ~S"""
   :: hook
-  Which of the nineteen tokens are INNOVATION-TOKENs, and which are BORING-TOKENs?
+  Which of the twenty tokens are INNOVATION-TOKENs, and which are BORING-TOKENs?
   :: intrigue
-  The stack crashes without any of the nineteen, and only seven of them are new risk.
+  The stack crashes without any of the twenty, and only seven of them are new risk.
   :: exit
   Check a new technology against the rule: a token is a substrate, and the tech stack crashes
   without it. Write it BORING-TOKEN if its failures are widely known, INNOVATION-TOKEN if not.
   :: decision
   A token is a substrate: delete it and the tech stack crashes. The name keeps it apart from a
-  credential (operator, 2026-11-01). The ledger has nineteen tokens. Each is a BORING-TOKEN,
+  credential (operator, 2026-11-01). The ledger has twenty tokens. Each is a BORING-TOKEN,
   whose failures are widely known and which runs as shipped, or an INNOVATION-TOKEN, which is
   our own build, a fork or a use nobody has run. The INNOVATION-TOKENs are guest ELFs on the
   pinned double engine as row 1, which also runs the pen, `zone.elf`, the ggml-rd models,
@@ -27,10 +27,11 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   image as row 12, osxcross as row 15 and the taskweft persona engine as row 18. The BORING-
   TOKENs are Fly as row 4, which hosts the store, Bao and the KMS key that unseals Bao, then
   Tailscale as row 5, Proton as row 7, Windows as row 8, pixi as row 9, prek as row 10, GitHub
-  as row 11, LLVM as row 13, llvm-mingw as row 14, SteamVR as row 16, Godot Engine as row 17 and
-  Elixir as row 19. The operator ruled Elixir and Proton BORING-TOKENs on 2026-11-01.
+  as row 11, LLVM as row 13, llvm-mingw as row 14, SteamVR as row 16, Godot Engine as row 17,
+  Elixir as row 19 and steamac as row 20. The operator ruled Elixir and Proton BORING-TOKENs on
+  2026-11-01.
   CockroachDB is retired (operator, 2026-10-18), and the guest BEAM is unship (operator,
-  2026-10-29). The count was three, then two INNOVATION-TOKENs, and is nineteen tokens of which
+  2026-10-29). The count was three, then two INNOVATION-TOKENs, and is twenty tokens of which
   seven are INNOVATION-TOKENs. The ledger changes between rungs, not in an open one, and the
   operator moved the two documents on 2026-10-30 rather than wait for a rung to claim them.
   """
@@ -89,10 +90,10 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
     rarely, to get or renew the credential it presents to the store.
   - Row 4, Fly, is a BORING-TOKEN. Delete it and the store, Bao and the KMS key that unseals Bao
     go with it.
-  - Tailscale, B6, is a BORING-TOKEN (operator, 2026-11-12). It was row 5 and is no longer an
-    innovation token, and its id is retired, not renumbered.
-  - steamac, B7, is a third-party BORING-TOKEN (operator, 2026-11-12), the github.com/fxgl/steamac
-    repository. Its internals are not this ledger's tokens.
+  - Row 5, Tailscale, is a BORING-TOKEN and is allowed (operator, 2026-11-12). The desk's Bao
+    client reaches Bao over it (RFD66606-2399).
+  - Row 20, steamac (github.com/fxgl/steamac), is a BORING-TOKEN (operator, 2026-11-12). It is
+    third party. What it runs underneath, FEX and Proton among them, is not this ledger's.
   - Row 6, FEX, and row 7, Proton, are abandoned (RFD66606-2490, operator, 2026-11-12).
     The win64 build targets the Steam Frame and the Steam Deck natively.
   - Windows (row 8), pixi (9), prek (10) and GitHub (11) are BORING-TOKENs. The build and gate

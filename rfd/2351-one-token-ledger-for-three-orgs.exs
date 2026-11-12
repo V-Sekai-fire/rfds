@@ -3,8 +3,8 @@
 use RFD.DSL
 
 rfd 2351, "one ledger of BORING-TOKENs and INNOVATION-TOKENs for three orgs", :discussion do
-  feature "a token is what the stack cannot run without: twenty, seven INNOVATION-TOKENs and
-thirteen BORING-TOKENs"
+  feature "a token is what the stack cannot run without: twenty, six INNOVATION-TOKENs and
+fourteen BORING-TOKENs"
   scope "the token ledger in the private working agreements and the private plan, the
 private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the private org"
 
@@ -12,7 +12,7 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   :: hook
   Which of the twenty tokens are INNOVATION-TOKENs, and which are BORING-TOKENs?
   :: intrigue
-  The stack crashes without any of the twenty, and only seven of them are new risk.
+  The stack crashes without any of the twenty, and only six of them are new risk.
   :: exit
   Check a new technology against the rule: a token is a substrate, and the tech stack crashes
   without it. Write it BORING-TOKEN if its failures are widely known, INNOVATION-TOKEN if not.
@@ -23,16 +23,16 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   our own build, a fork or a use nobody has run. The INNOVATION-TOKENs are guest ELFs on the
   pinned double engine as row 1, which also runs the pen, `zone.elf`, the ggml-rd models,
   `slug.elf`, voice, the USD guest and the Lean tests, then SQLite on FoundationDB pages as row
-  2, Bao as row 3 (our fork with an FDB storage backend), FEX as row 6, the Fedora cross-build
-  image as row 12, osxcross as row 15 and the taskweft persona engine as row 18. The BORING-
-  TOKENs are Fly as row 4, which hosts the store, Bao and the KMS key that unseals Bao, then
+  2, FEX as row 6, the Fedora cross-build image as row 12, osxcross as row 15 and the taskweft
+  persona engine as row 18. The BORING-TOKENs are Bao as row 3, our fork with an FDB storage
+  backend, then Fly as row 4, which hosts the store, Bao and the KMS key that unseals Bao, then
   Tailscale as row 5, Proton as row 7, Windows as row 8, pixi as row 9, prek as row 10, GitHub
   as row 11, LLVM as row 13, llvm-mingw as row 14, SteamVR as row 16, Godot Engine as row 17,
   Elixir as row 19 and steamac as row 20. The operator ruled Elixir and Proton BORING-TOKENs on
-  2026-11-01.
+  2026-11-01, and Bao a BORING-TOKEN on 2026-11-12 although it is a fork.
   CockroachDB is retired (operator, 2026-10-18), and the guest BEAM is unship (operator,
   2026-10-29). The count was three, then two INNOVATION-TOKENs, and is twenty tokens of which
-  seven are INNOVATION-TOKENs. The ledger changes between rungs, not in an open one, and the
+  six are INNOVATION-TOKENs. The ledger changes between rungs, not in an open one, and the
   operator moved the two documents on 2026-10-30 rather than wait for a rung to claim them.
   """
 
@@ -109,7 +109,7 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   - GitHub's identity-token login rides row 3, because it is a login to Bao.
 
   :: details What is not known
-  - How many INNOVATION-TOKENs the stack may hold. The old limit was two, and seven now stand.
+  - How many INNOVATION-TOKENs the stack may hold. The old limit was two, and six now stand.
   - Whether the classes of the rows the operator did not rule on one by one stand as written.
 
   :: details Related RFDs

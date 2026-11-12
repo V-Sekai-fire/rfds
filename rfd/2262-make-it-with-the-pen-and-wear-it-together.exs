@@ -40,7 +40,7 @@ V-Sekai client and server that host the loop"
   godot-sandbox guests on ggml-rd and compute-rd, not a second
   runtime. OpenUSD is the internal format, VRM the one a player shares.
   :: details The releases
-  One release advances at a time; later releases change with what the active one teaches.
+  One release advances at a time. Later releases change with what the active one teaches.
   Each release names what it tests, who tries it and where it stands.
 
   - **Demand test.** Do people want to make 3D things with a pen in VR,
@@ -66,7 +66,7 @@ V-Sekai client and server that host the loop"
     motion; nobody in the survey asked.
 
   Enabling work (CI, the drape's precision, comfort settings against
-  motion sickness, the org's rules) is not a release; it runs as the
+  motion sickness, the org's rules) is not a release. It runs as the
   active release needs it.
   :: details Where it runs
   The first host is `transport-meshing-pen`: the xr-grid pen with the

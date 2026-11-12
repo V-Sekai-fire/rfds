@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 # Builds the Pages source as one flow: sources -> records -> groups -> sections -> files.
 # A masthead and the newest RFDs lead; the logbook and RFD archives follow, dated from git.
-#   mix run scripts/pages_site.exs <out-dir>
+#   mix rfd.render && mix run scripts/pages_site.exs <out-dir>
 Code.require_file("pages_tree.exs", __DIR__)
 
 defmodule PagesSite do
@@ -43,6 +43,8 @@ defmodule PagesSite do
       Path.join(out, "index.md"),
       single_page(root, logs, rfds, edition(root), slugs, out)
     )
+
+    File.write!(Path.join(out, "404.html"), not_found())
 
     IO.puts("pages: #{length(logs)} logbook entries, #{length(rfds)} RFDs, #{length(docs)} found")
   end
@@ -175,7 +177,7 @@ defmodule PagesSite do
           &Regex.replace(
             ~r/(?<![\[\w\/`-])BLOCKLIST\.md(?![\]\w])/,
             &1,
-            "[BLOCKLIST.md](#{up}page-BLOCKLIST.html)"
+            "[BLOCKLIST.md](#page-BLOCKLIST)"
           )
         )
     end)
@@ -410,6 +412,36 @@ defmodule PagesSite do
     Enum.join(lines, "\n") <> "\n\n*Source: [#{d.source}](#{source})*"
   end
 
+  defp fallback_anchor("rfd/" <> rest, _), do: "#rfd-" <> String.slice(rest, 0, 4)
+  defp fallback_anchor("logbook/" <> rest, _), do: "#" <> Path.rootname(rest)
+  defp fallback_anchor("page-" <> rest, _), do: "#page-" <> Path.rootname(rest)
+
+  defp fallback_anchor(at, frag) do
+    base = "https://github.com/V-Sekai-fire/rfds/blob/main/"
+    base <> at <> Enum.map_join(frag, &("#" <> &1))
+  end
+
+  defp not_found do
+    ~S"""
+    <!doctype html>
+    <meta charset="utf-8">
+    <title>Moved to the RFD site</title>
+    <script>
+    (function () {
+      var base = "/rfds/";
+      var p = location.pathname.replace(base, "");
+      var m = p.match(/^rfd\/(\d{4})-/);
+      var t = "";
+      if (m) t = "rfd-" + m[1];
+      else if ((m = p.match(/^logbook\/(.+)\.html$/))) t = m[1];
+      else if ((m = p.match(/^page-(.+)\.html$/))) t = "page-" + m[1];
+      location.replace(base + (t ? "#" + t : ""));
+    })();
+    </script>
+    <p>This page moved to <a href="/rfds/">the RFD site</a>.</p>
+    """
+  end
+
   defp legacy_anchor(id) do
     legacy_anchors()
     |> Map.get(id, [])
@@ -481,7 +513,7 @@ defmodule PagesSite do
 
           at = path |> Path.expand(dir) |> String.trim_leading("/")
           found = Enum.find_value([at, at <> "/", details_owner(at)], &Map.get(ids, &1))
-          if found, do: "](##{found})", else: "](#{at}#{Enum.map_join(frag, &("#" <> &1))})"
+          if found, do: "](##{found})", else: "](#{fallback_anchor(at, frag)})"
       end
     end)
   end

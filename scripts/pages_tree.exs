@@ -354,7 +354,13 @@ defmodule PagesTree do
   defp ledger(data, link) do
     rows =
       for t <- data.tokens ++ data.boring do
-        kind = if t.own, do: "ours", else: if(t.access, do: "third party", else: "no access")
+        kind =
+          cond do
+            t.own -> "ours"
+            t.denied -> "non-goal"
+            t.access -> "third party"
+            true -> "no access"
+          end
         owners = ([kind] ++ Enum.map(t.owners, &"RFD66606-#{&1}") ++ t.repos) |> cap()
         settled = Enum.count(data.nodes, &(&1.n in t.users and done?(&1)))
 
@@ -536,6 +542,7 @@ defmodule PagesTree do
       repos: for(p <- Map.get(declared.provides, slug, []), is_binary(p), do: p),
       via: via(declared, slug),
       own: slug in declared.owned,
+      denied: slug in declared.denied,
       access: (slug in declared.owned or slug in declared.access) and slug not in declared.denied
     }
   end

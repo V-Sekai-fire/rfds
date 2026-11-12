@@ -90,7 +90,7 @@ private blocklist, and the repos of V-Sekai-fire, chibifire-stages and the priva
   - Row 4, Fly, is a BORING-TOKEN. Delete it and the store, Bao and the KMS key that unseals Bao
     go with it.
   - Row 5, Tailscale: non-goal of the board (RFD66606-2490, operator, 2026-11-12).
-    No replacement is chosen.
+    No replacement exists yet.
   - Row 6, FEX, and row 7, Proton: non-goals of the board (RFD66606-2490, operator, 2026-11-12).
     The win64 build targets the Steam Frame and the Steam Deck natively.
   - Windows (row 8), pixi (9), prek (10) and GitHub (11) are BORING-TOKENs. The build and gate

@@ -32,7 +32,6 @@ defmodule PagesSite do
     File.mkdir_p!(Path.join(out, "assets"))
     File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
-    File.cp!(Path.join(__DIR__, "pages_navigator.js"), Path.join(out, "assets/navigator.js"))
 
     File.write!(Path.join(out, "_config.yml"), config())
     File.mkdir_p!(Path.join(out, "_layouts"))
@@ -279,7 +278,7 @@ defmodule PagesSite do
       JSON.encode!(PagesTree.problem(tree))
     )
 
-    hero = navigator_block() <> "\n\n" <> tree_data(tree) <> "\n\n<!--search-->"
+    hero = "<!--search-->"
 
     foreword =
       "## The tech tree to the beta {#part-1}\n\n" <>
@@ -325,15 +324,7 @@ defmodule PagesSite do
     ]
   end
 
-  defp navigator_block do
-    "<div id=\"navigator\" class=\"navigator\" markdown=\"0\">" <>
-      "<noscript>The navigator needs a script. " <>
-      "Section 1 lists the same RFDs.</noscript></div>"
-  end
 
-  defp tree_data(tree) do
-    "<script type=\"application/json\" id=\"tree-data\">#{PagesTree.json(tree)}</script>"
-  end
 
   defp tally(rfds) do
     for s <- @states, n = Enum.count(rfds, &(&1.group == s)), n > 0 do
@@ -572,22 +563,6 @@ defmodule PagesSite do
           pre { padding: .8rem; overflow: auto; border: 1px solid var(--line); }
           table { border-collapse: collapse; display: block; overflow: auto; }
           th, td { border: 1px solid var(--line); padding: .35rem .6rem; vertical-align: top; }
-          .navigator { margin: 0 0 1rem; padding: .6rem .8rem; border: 1px solid var(--line);
-            border-left: 5px solid var(--accent); background: #f7faff;
-            font: 14px/1.45 system-ui, sans-serif; }
-          .nv-title { margin: 0 0 .4rem; padding: 0; border: 0; font-size: 1rem; }
-          .nv-row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
-          .nv-row label { font-weight: 600; }
-          .nv-row select { flex: 1 1 14rem; min-width: 0; max-width: 100%; padding: .3rem; }
-          .navigator button { padding: .3rem .7rem; font: inherit; cursor: pointer; }
-          .navigator button[aria-pressed="true"] { background: var(--accent); color: #fff; }
-          .nv-status { margin: .4rem 0 0; color: var(--muted); font-size: 13px; }
-          .nv-refused { color: #c0392b; font-weight: 600; }
-          .nv-needs { margin: .3rem 0 0; padding-left: 1.2rem; }
-          .nv-steps { margin: .3rem 0 0; padding-left: 1.4rem; max-height: 14rem;
-            overflow: auto; }
-          .nv-console textarea { width: 100%; box-sizing: border-box;
-            font: 12px/1.35 Menlo, monospace; }
           blockquote { margin: 1rem 0; padding: .2rem 1rem; background: #f0f6ff;
             border-left: 4px solid var(--accent); }
           @media (max-width: 1000px) {
@@ -614,7 +589,6 @@ defmodule PagesSite do
           {{ content | replace: "<!--search-->", search }}
         </main>
         <script src="{{ "/assets/search.js" | relative_url }}" defer></script>
-        <script src="{{ "/assets/navigator.js" | relative_url }}" defer></script>
       </body>
     </html>
     """

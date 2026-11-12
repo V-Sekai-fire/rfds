@@ -22,7 +22,6 @@ rfd 2341, "dev.next", :discussion do
   rung is planned around it.
   :: related
   - RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2344, dev.3.
-  - RFD66606-2298, the FOSS side's dev.next.
   """
 
   details_title "dev.next, parked and not designed"

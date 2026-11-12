@@ -23,8 +23,6 @@ rfd 2363, "a person moves by world grab or by controllers", :discussion do
   - The other is the controllers: smooth stick movement, snap turning and teleport.
   :: related
   - RFD66606-2294, where this rule lived before the split.
-  - RFD66606-2422, the first rung's interface, which moves a person by the world grab described
-    here.
   """
 
   details_title "a person moves by world grab or by controllers"

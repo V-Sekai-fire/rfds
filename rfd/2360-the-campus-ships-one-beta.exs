@@ -29,6 +29,8 @@ rfd 2360, "The campus as a beta", :discussion do
     Steam Frame and the Steam Deck (operator, 2026-11-12).
   - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
     host is ARM, the piece needs a native ARM build (operator, 2026-11-12).
+  - An io_uring path in a server piece is allowed again beside its portable path; the win64 build
+    keeps the portable one (operator, 2026-11-12).
   :: related
   - RFD66606-2436, the one slice; RFD66606-2487, RFD66606-2408 and RFD66606-2363, walking.
   - RFD66606-2312, the form of the release tag.
@@ -61,7 +63,6 @@ rfd 2360, "The campus as a beta", :discussion do
   - a job board where each seat accepts or refuses a job
   - campuses built by players
   - the Hyper-V machine with its emulated TPM
-  - an io_uring path in any server piece
   - a Linux-only server build
   - text chat
   - trading between players

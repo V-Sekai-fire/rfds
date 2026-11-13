@@ -665,6 +665,22 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
   holds the Sakuragaoka Station port's colliders and walks the player through them (ray and contact
   queries, bit-deterministic and migratable); Godot's own physics is not used there (operator,
   2026-10-01).
+- **Muscle skeleton:** MS-Human-700 (Apache-2.0, the `ms_human_700` model of
+  `google-deepmind/mujoco_menagerie`): 80 bodies and 700 muscles on spatial tendons, compiled from
+  its stock XML inside the same MuJoCo guest. It is the skeleton an ANNY avatar follows in the
+  presence slice (RFD66606-2436): body transforms, tendon paths, foot contact points and inverse
+  dynamics. This role is beside the collision uses of the row above, and it trains nothing
+  (operator, 2026-11-13).
+- **Frame codec:** Zstandard 1.5.7 (BSD-3-Clause, the BSD side of its dual licence,
+  `facebook/zstd`), the version the engine bundles, by git subtree in a godot-sandbox guest. It
+  codes each frame of 12 entity packets against a fixed dictionary file, as the engine's own
+  delta encoder does, so a gate can measure the bytes without an engine build (RFD66606-2436;
+  operator, 2026-11-13).
+- **World services surface:** `fireflyk64/udon2godot` (BSD-2-Clause), read as the reference for
+  the world services a game implements for converted world scripts: 114 public functions in seven
+  files. The presence slice exposes that surface under our own names and nothing more. Its engine
+  shim and its converter are not covered. The licence text and copyright line stay with any ported
+  file (operator, 2026-11-13).
 - **Matting:** BiRefNet_HR-matting (MIT), weights `ZhengPeng7/BiRefNet_HR-matting` from Hugging
   Face, draws the edge of a person mask over the RF-DETR instance; the MoGe-3 depth-edge check,
   not the matte, accepts the mask (RFD66606-2273).

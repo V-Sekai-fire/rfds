@@ -279,9 +279,12 @@ bundle half.
 **The merge queue is ruleset 23145233**, on the default branch:
 `MERGE` method, `ALLGREEN` grouping, a 60-minute check timeout,
 batches of up to five, and a pull request required with zero
-approvals. One check is required, `prek`, because every gate is a
-prek hook: the ones needing a base ref or a token run in the manual
-stage, which the CI job calls by hook id.
+approvals. No status check is required (operator, 2026-11-13), so
+the queue merges a pull request whatever `prek` reports. Both steps
+of the `prek` job are therefore run on the desk before a pull request
+is enqueued, on the Erlang/OTP and Elixir versions the workflow pins.
+Every gate is a prek hook: the ones needing a base ref or a token run
+in the manual stage, which the CI job calls by hook id.
 
 Requiring a check that does not run on `merge_group` hangs the
 queue for the whole timeout and then fails it, so the required set

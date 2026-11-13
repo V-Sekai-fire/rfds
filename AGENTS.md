@@ -651,6 +651,12 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
   native binary from `entities-godot-sandbox`; Mitsuba 3 GPU variants.
 - **Inference:** ggml (RFD66606-2188) with the Vulkan backend; Gemma 4 (E2B, E4B); rf-detr keypoint
   and segmentation heads.
+- **Language serving:** ninfer-all (Apache-2.0, our fork of `iamwavecut/ninfer-all`), the CUDA
+  engine and converter that serve Ternary Bonsai 2 27B (RFD66606-2311).
+- **In-weights machine:** qwenputer (MIT, `divagr18/qwenputer`, used from our fork), a compiler
+  that writes an RV32IM processor as Gated DeltaNet layers. Its circuit compiler, reference
+  machine and calc firmware build the chip tower a Bonsai 2 server runs (RFD66606-2491;
+  operator, 2026-11-13).
 - **XR computer use:** interactor-xr-pilot (Apache-2.0 OR MIT, `V-Sekai-fire/interactor-xr-pilot`),
   an MCP server in Lean 4 with a panelspun window that lets an agent screenshot and drive an OpenXR
   app as an OXRSys client: head, controllers and buttons out, PyroWave decoded on the GPU in

@@ -33,7 +33,7 @@ defmodule PagesSite do
         Enum.flat_map(@pages -- ["README.md"], &page_found(root, &1))
 
     File.mkdir_p!(Path.join(out, "assets"))
-    File.write!(Path.join(out, "search.json"), JSON.encode!(docs))
+    File.write!(Path.join(out, "search.json"), JSON.encode!(docs, &sorted_keys/2))
     File.cp!(Path.join(__DIR__, "pages_search.js"), Path.join(out, "assets/search.js"))
 
     File.write!(Path.join(out, "_config.yml"), config())
@@ -70,6 +70,19 @@ defmodule PagesSite do
         dates |> Enum.filter(fn {f, _} -> f =~ page end) |> Enum.map(&elem(&1, 1)) |> Enum.max()
     }
   end
+
+  defp sorted_keys(map, encoder) when is_map(map) and not is_struct(map) do
+    pairs = Enum.sort_by(map, fn {key, _} -> to_string(key) end)
+
+    fields =
+      Enum.map_intersperse(pairs, ",", fn {key, value} ->
+        [encoder.(to_string(key), encoder), ":", encoder.(value, encoder)]
+      end)
+
+    ["{", fields, "}"]
+  end
+
+  defp sorted_keys(term, encoder), do: JSON.protocol_encode(term, encoder)
 
   # Sources become records: what the index shows and which files the site carries.
   defp logbook(root, dates) do

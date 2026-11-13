@@ -22,7 +22,8 @@ ruleset 23145233 in this repository"
   token are `ci-*` hooks in the manual stage, which the job calls by
   id with `GATE_BASE` and `GH_TOKEN` set; a local commit never runs
   them. An unset `GATE_BASE` fails the hook. The merge queue
-  requires one check, `prek`.
+  requires no check (operator, 2026-11-13), so both steps of the job
+  are run on the desk before a pull request is enqueued.
   :: related
   - RFD66606-2245, the red merge that made gates required.
   - RFD66606-2232, the render every gate reads.
@@ -35,8 +36,7 @@ ruleset 23145233 in this repository"
   Locally through prek 0.5.3, `ci-comment-ladder`,
   `ci-trope-density`, `ci-spdx` and `ci-rfd-canary` pass on
   `main/main`, and `ci-comment-ladder` fails with `GATE_BASE` unset.
-  On the pull request that landed it, `prek` passed; the ruleset was
-  then set to require `prek` alone and the merge state went clean.
+  On the pull request that landed it, `prek` passed.
   :: details Warnings kept honest
   jose 1.11.12, pulled in by ex_mcp, uses bare `catch`, which OTP 29
   deprecates. The job silences that one warning only when jose, OTP

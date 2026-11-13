@@ -2911,9 +2911,12 @@ bundle half.</p>
 <p><strong>The merge queue is ruleset 23145233</strong>, on the default branch:
 <code>MERGE</code> method, <code>ALLGREEN</code> grouping, a 60-minute check timeout,
 batches of up to five, and a pull request required with zero
-approvals. One check is required, <code>prek</code>, because every gate is a
-prek hook: the ones needing a base ref or a token run in the manual
-stage, which the CI job calls by hook id.</p>
+approvals. No status check is required (operator, 2026-11-13), so
+the queue merges a pull request whatever <code>prek</code> reports. Both steps
+of the <code>prek</code> job are therefore run on the desk before a pull request
+is enqueued, on the Erlang/OTP and Elixir versions the workflow pins.
+Every gate is a prek hook: the ones needing a base ref or a token run
+in the manual stage, which the CI job calls by hook id.</p>
 <p>Requiring a check that does not run on <code>merge_group</code> hangs the
 queue for the whole timeout and then fails it, so the required set
 is read off the workflow’s <code>if:</code> conditions rather than assumed
@@ -14021,14 +14024,14 @@ are ordinary hooks. Gates that need a base ref or a code-host
 token are <code>ci-*</code> hooks in the manual stage, which the job calls by
 id with <code>GATE_BASE</code> and <code>GH_TOKEN</code> set; a local commit never runs
 them. An unset <code>GATE_BASE</code> fails the hook. The merge queue
-requires one check, <code>prek</code>.</p>
+requires no check (operator, 2026-11-13), so both steps of the job
+are run on the desk before a pull request is enqueued.</p>
 <p>Run a <code>ci-*</code> hook locally with <code>GATE_BASE</code> set; the sections below hold what was measured.</p>
 <h4 id="rfd-2258-1">What is measured</h4>
 <p>Locally through prek 0.5.3, <code>ci-comment-ladder</code>,
 <code>ci-trope-density</code>, <code>ci-spdx</code> and <code>ci-rfd-canary</code> pass on
 <code>main/main</code>, and <code>ci-comment-ladder</code> fails with <code>GATE_BASE</code> unset.
-On the pull request that landed it, <code>prek</code> passed; the ruleset was
-then set to require <code>prek</code> alone and the merge state went clean.</p>
+On the pull request that landed it, <code>prek</code> passed.</p>
 <h4 id="rfd-2258-2">Warnings kept honest</h4>
 <p>jose 1.11.12, pulled in by ex_mcp, uses bare <code>catch</code>, which OTP 29
 deprecates. The job silences that one warning only when jose, OTP
@@ -19161,13 +19164,16 @@ names and <code>strict_required_status_checks_policy: true</code>, and a PR with
 failing check cannot merge.</p>
 <p><code>gh api repos/v-sekai-multiplayer-fabric/&lt;repo&gt; --jq .delete_branch_on_merge</code> returns <code>true</code>, and the source branch of a
 merged PR no longer exists.</p>
-<p>In the RFD repository, ruleset <code>23145233</code> keeps the <code>merge_queue</code> rule and adds
-<code>required_status_checks</code> with context <code>prek</code> (integration 15368) and
-<code>strict_required_status_checks_policy: false</code> (operator, 2026-11-12). Before that rule,
-<code>rfds#575</code> merged through the queue 92 seconds after automerge was enabled, with <code>prek</code>
-failed. With the rule, the control <code>rfds#580</code> carried planted rectgtn drift, <code>prek</code> failed,
-automerge was enabled, and the pull request stayed blocked for 240 seconds with <code>main</code>
-unchanged. The control was closed unmerged.</p>
+<p>In the RFD repository, ruleset <code>23145233</code> carries <code>deletion</code>, <code>pull_request</code> and
+<code>merge_queue</code>, and no <code>required_status_checks</code> rule (operator, 2026-11-13). As the section
+on the merge queue says of such a ruleset, the queue merges a pull request whatever <code>prek</code>
+reports. The gate is run on the desk before a pull request is enqueued: both steps of the
+<code>prek</code> job, on the Erlang/OTP and Elixir versions the workflow pins.</p>
+<p>The rule was removed while a <code>prek</code> job sat queued for 26 minutes with no runner to take
+it. The command is the one under More information, sent with the rule left out:</p>
+<pre><code class="language-sh">gh api repos/&lt;org&gt;/&lt;repo&gt;/rulesets/&lt;id&gt; --jq '.rules[].type'
+</code></pre>
+<p>prints <code>deletion</code>, <code>pull_request</code> and <code>merge_queue</code>.</p>
 <h4 id="rfd-2021-8">More information</h4>
 <p>The ruleset is edited with <code>gh api -X PUT repos/&lt;org&gt;/&lt;repo&gt;/rulesets/&lt;id&gt; --input ruleset.json</code>. The API
 replaces the whole rule array, so read the current rules first and send

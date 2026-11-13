@@ -173,13 +173,20 @@ rfd 2021, "Require pr and merge queue on main", :prediscussion do
     .delete_branch_on_merge` returns `true`, and the source branch of a
     merged PR no longer exists.
 
-    In the RFD repository, ruleset `23145233` keeps the `merge_queue` rule and adds
-    `required_status_checks` with context `prek` (integration 15368) and
-    `strict_required_status_checks_policy: false` (operator, 2026-11-12). Before that rule,
-    `rfds#575` merged through the queue 92 seconds after automerge was enabled, with `prek`
-    failed. With the rule, the control `rfds#580` carried planted rectgtn drift, `prek` failed,
-    automerge was enabled, and the pull request stayed blocked for 240 seconds with `main`
-    unchanged. The control was closed unmerged.
+    In the RFD repository, ruleset `23145233` carries `deletion`, `pull_request` and
+    `merge_queue`, and no `required_status_checks` rule (operator, 2026-11-13). As the section
+    on the merge queue says of such a ruleset, the queue merges a pull request whatever `prek`
+    reports. The gate is run on the desk before a pull request is enqueued: both steps of the
+    `prek` job, on the Erlang/OTP and Elixir versions the workflow pins.
+
+    The rule was removed while a `prek` job sat queued for 26 minutes with no runner to take
+    it. The command is the one under More information, sent with the rule left out:
+
+    ```sh
+    gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'
+    ```
+
+    prints `deletion`, `pull_request` and `merge_queue`.
     """
 
     more_information ~S"""

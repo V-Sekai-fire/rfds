@@ -23,7 +23,7 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
 
   The server runs every token through the tower. The tower names the next token where it owns the
   position, and the body names it everywhere else. A firmware is a recurrent state the server
-  loads. The first firmware is the calc tool (operator, 2026-11-13).
+  loads, selected with `--chip`. The first firmware is the calc tool (operator, 2026-11-13).
   :: related
   - RFD66606-2311 (Bonsai 2 serving), whose artifact and server this extends.
   - RFD66606-2462 (the prism llama.cpp branch), a second runtime the same export can feed.
@@ -101,19 +101,43 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
     and DFlash2 object hash equals the one in an artifact converted without the tower. Measured:
     1,513 parameters compared and none differs, and all 178 tower parameters hold their source's
     words. Control: one planted bit in a text object fails.
-  - **Engine.** The served tower's kept dims equal the golden file bit for bit, and the served
-    echo tokens equal the reference machine's. Control: fp16 tower state fails.
+  - **Engine ops.** One token at a time through the engine's public ops, the kept dims equal
+    the golden file bit for bit over 17,792 positions. Controls: fp16 tower state fails, and one
+    flipped weight bit fails.
+  - **Engine runtime.** The tower loaded from the converted artifact by the engine's own loader
+    gives the same result: no inexact position, 17,104 owned positions, no wrong token. The same
+    two controls fail.
+  - **Served.** `ninfer-serve --chip calc-bridge` at temperature 0, twelve arithmetic prompts:
+    21 bursts and 80,468 chip tokens, each served token equal to the reference machine's when it
+    is fed the model's own call tokens. All twelve values equal Python's, and a power too large
+    for the firmware returns its `error`. Controls: without `--chip` the call comes back
+    unanswered, and with the ROM word the parked machine runs next spoiled in a copy of the
+    artifact, every burst differs from the reference.
   - **Body unchanged.** A prompt with no tool call gives the same temperature-0 answer hash
-    with and without the tower.
+    with `--chip`, without it, and on the engine before this work, for the same prompt text.
+
+  :: details Serving
+  `--chip NAME` selects a firmware and adds the calc tool to a request that declares none. The
+  answered call is returned inline in the content: the call, the tool response the firmware
+  printed, then the model's answer. `--chip-trace FILE` writes each burst's tokens.
+
+  A `--chip` server has one request lane, one device and no drafter. Any other combination
+  stops at startup. A request whose echo is cut by the output limit ends with the limit reason.
+
+  On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 105.1 tokens per
+  second without `--chip` and at 71.6 with it, both without a drafter.
 
   :: details Open questions
-  - The engine does not run the tower yet. The Engine and Body unchanged witnesses have not
-    run.
-  - The engine keeps recurrent state in FP32 and casts each head's output to BF16. Whether that
-    is bit-exact on circuit values is measured by the Engine witness, not assumed.
-  - A chip burst is a few thousand tokens per call. Its speed on the engine is unmeasured.
-  - How often Bonsai 2 writes a well-formed calc call is unmeasured.
-
+  - A drafter is refused beside the tower, so a `--chip` server runs without DFlash2. Drafting is
+    not shown safe: a drafted round could commit tokens after the closing tag.
+  - Each prompt token steps the tower by itself on every request, also on a prefix-cache hit.
+    Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
+    unmeasured.
+  - A burst runs inside one engine unit, so a cancel is seen only after it.
+  - Thinking mode, streaming, the other endpoints, structured output and histories that hold
+    earlier calls have not run with `--chip`.
+  - How often Bonsai 2 writes a well-formed calc call on its own is unmeasured.
+  - The tower is stored dense. The plane format above is not built.
   :: details The problem
   Bonsai 2 cannot do exact arithmetic on its own, and a host tool adds a round trip and a
   second program to trust.

@@ -284,6 +284,7 @@ defmodule Serials.VSekaiFabric do
       serial 2489, "body-measurements-from-base-model"
       serial 2490, "what-the-fabric-is-for-and-what-it-is-not", flight_level: :l2
       serial 2491, "bonsai-2-runs-a-risc-v-machine-in-its-own-layers"
+      serial 2492, "the-motion-matching-guest-predicts-a-body-on-the-wire"
     end
 
     deleted do

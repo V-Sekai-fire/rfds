@@ -38,7 +38,7 @@ here corresponds to an entry.
 - **onnxruntime GPU providers on macOS**: CoreML EP is the same Metal path Core ML gives; WebGPU EP measured 0.27x of it — see below
 - **Apple Neural Engine** as an execution target: 2 GiB weight ceiling at 2^31 bytes, against Metal's 8 GiB+ on the same part — see below
 - `weftspun/rf-detr-keypoint-data`: **val2017-derived** — carries the whole blinded holdout, and 78% of it is licence-dirty. Validation only, never training. See below
-- **IREE** as a build target or as an executor of StableHLO: a compiler rather than an execution provider, and it is not XLA; operator 2026-10-25 — see below
+- **IREE** as a build target or as an executor of StableHLO: a compiler rather than an execution provider, and it is not XLA; operator 2026-10-25, reinstated 2026-11-13 — see below
 - **zombies** as network test traffic: they walk straight and never stop, which flatters prediction — use pedestrians, see below
 - **speculative decoders other than MTP-3** on the ggml language server: DFlash2 with any drafter, the Qwen3.8 drafter, other draft lengths and draft-free serving measured slower on every decider game with identical decisions — see below
 - **1-bit PTQ1_0 bodies** of Ternary Bonsai 2 on the ggml language server: operator directive 2026-10-11; the served body is the 2-bit PQ2_0 — see below
@@ -976,6 +976,10 @@ compiles it. The reference stays readable; the device stays untargeted. That rep
 states no licence and ships a `.zip`, so it was not usable as a source regardless.
 
 ### IREE is blocklisted as a build target, and it differs from XLA
+
+**Reinstated on 2026-11-13.** The operator rescinded this block on 2026-11-11, tried IREE v3.13.1 on the Vulkan HAL
+as the replacement for `stablehlo.cpp` in `contract-ggml-rd-guest`, and on 2026-11-13 dropped it and kept the direct
+StableHLO-to-ggml lowering. The 2026-10-25 ruling below stands again.
 
 **Reaffirmed on 2026-10-25 for StableHLO.** The operator ruled that IREE does not execute the
 StableHLO the ggml backend emits either; that StableHLO runs on PJRT (RFD66606-2335).

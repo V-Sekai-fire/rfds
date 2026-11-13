@@ -3514,7 +3514,7 @@ here corresponds to an entry.</p>
 <li><strong>onnxruntime GPU providers on macOS</strong>: CoreML EP is the same Metal path Core ML gives; WebGPU EP measured 0.27x of it — see below</li>
 <li><strong>Apple Neural Engine</strong> as an execution target: 2 GiB weight ceiling at 2^31 bytes, against Metal’s 8 GiB+ on the same part — see below</li>
 <li><code>weftspun/rf-detr-keypoint-data</code>: <strong>val2017-derived</strong> — carries the whole blinded holdout, and 78% of it is licence-dirty. Validation only, never training. See below</li>
-<li><strong>IREE</strong> as a build target or as an executor of StableHLO: a compiler rather than an execution provider, and it is not XLA; operator 2026-10-25 — see below</li>
+<li><strong>IREE</strong> as a build target or as an executor of StableHLO: a compiler rather than an execution provider, and it is not XLA; operator 2026-10-25, reinstated 2026-11-13 — see below</li>
 <li><strong>zombies</strong> as network test traffic: they walk straight and never stop, which flatters prediction — use pedestrians, see below</li>
 <li><strong>speculative decoders other than MTP-3</strong> on the ggml language server: DFlash2 with any drafter, the Qwen3.8 drafter, other draft lengths and draft-free serving measured slower on every decider game with identical decisions — see below</li>
 <li><strong>1-bit PTQ1_0 bodies</strong> of Ternary Bonsai 2 on the ggml language server: operator directive 2026-10-11; the served body is the 2-bit PQ2_0 — see below</li>
@@ -4299,6 +4299,9 @@ and that decomposition is a useful reference for how a VLM partitions for an acc
 compiles it. The reference stays readable; the device stays untargeted. That repository also
 states no licence and ships a <code>.zip</code>, so it was not usable as a source regardless.</p>
 <h5 id="page-BLOCKLIST-1-20">IREE is blocklisted as a build target, and it differs from XLA</h5>
+<p><strong>Reinstated on 2026-11-13.</strong> The operator rescinded this block on 2026-11-11, tried IREE v3.13.1 on the Vulkan HAL
+as the replacement for <code>stablehlo.cpp</code> in <code>contract-ggml-rd-guest</code>, and on 2026-11-13 dropped it and kept the direct
+StableHLO-to-ggml lowering. The 2026-10-25 ruling below stands again.</p>
 <p><strong>Reaffirmed on 2026-10-25 for StableHLO.</strong> The operator ruled that IREE does not execute the
 StableHLO the ggml backend emits either; that StableHLO runs on PJRT (RFD66606-2335).</p>
 <p>IREE is a compiler, not an execution provider. It lowers a model ahead of time

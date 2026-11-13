@@ -128,6 +128,19 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2492" id="markdown-toc-rfd-2492">RFD66606-2492: the motion matching guest predicts a body on the wire</a><ul>
+<li><a href="#rfd-2492-1" id="markdown-toc-rfd-2492-1">Start here</a></li>
+<li><a href="#rfd-2492-2" id="markdown-toc-rfd-2492-2">What was measured</a></li>
+<li><a href="#rfd-2492-3" id="markdown-toc-rfd-2492-3">Why a predictor should work here</a></li>
+<li><a href="#rfd-2492-4" id="markdown-toc-rfd-2492-4">Loss is another matter</a></li>
+<li><a href="#rfd-2492-5" id="markdown-toc-rfd-2492-5">The ladder</a></li>
+<li><a href="#rfd-2492-6" id="markdown-toc-rfd-2492-6">Gates and controls</a></li>
+<li><a href="#rfd-2492-7" id="markdown-toc-rfd-2492-7">Rules a new session must keep</a></li>
+<li><a href="#rfd-2492-8" id="markdown-toc-rfd-2492-8">What is not known</a></li>
+<li><a href="#rfd-2492-9" id="markdown-toc-rfd-2492-9">The problem</a></li>
+<li><a href="#rfd-2492-10" id="markdown-toc-rfd-2492-10">The tuples</a></li>
+<li><a href="#rfd-2492-11" id="markdown-toc-rfd-2492-11">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2491" id="markdown-toc-rfd-2491">RFD66606-2491: Bonsai 2 runs a RISC-V machine in its own layers</a><ul>
 <li><a href="#rfd-2491-1" id="markdown-toc-rfd-2491-1">How the machine sits in the model</a></li>
 <li><a href="#rfd-2491-2" id="markdown-toc-rfd-2491-2">Why the tower is a separate component</a></li>
@@ -2529,8 +2542,8 @@
 </ul></li>
 </ul>
 <h2 id="part-1">The tech tree to the beta</h2>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 105 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 227 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 106 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 228 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <figure id="techtree" class="techtree">
 <script src="https://unpkg.com/@thorvg/lottie-player@1.1.3/dist/sw-lite/lottie-player.js" integrity="sha384-jG9aaX1Gb/uJNurNkdTDEuLP4dRsiuJwPIgZ6FWpcm1VeKFd4hwIdpM7xButdISs" crossorigin="anonymous" defer></script>
 <lottie-player src="assets/techtree.lot" filetype="lot" autoplay loop role="img" aria-label="The tech tree to the beta: skills, gates and tokens" style="display:block;width:100%;max-width:1280px;aspect-ratio:16/9"></lottie-player>
@@ -5720,6 +5733,195 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2492">RFD66606-2492: the motion matching guest predicts a body on the wire</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a sender states a clip and a time and sends only what the guest cannot predict.
+<strong>Scope:</strong> the presence slice’s frame codec: a predictor under Zstandard, its gates and controls.</p>
+<p><strong>Both ends of a presence stream hold the same clips and the same motion matching guest. How many
+bytes of a body does a sender still have to send?</strong></p>
+<p>A person’s body goes on the wire as 21 entity Packets of 100 bytes, in two frames of 12, once
+every 6 ticks of a 64 Hz clock. Each frame is coded alone against one fixed dictionary.
+Measured on 62 clips, that stream is 8,693 bytes a second at level 19, which is 6% over the
+sustained budget of 8,192. A dictionary cannot close the gap: coding a frame against the send
+before it saves 3%. But the body is not free motion. The stick feeds <code>mm_step</code>, which answers a
+clip and a time, and the body is that clip’s pose placed in the world. A viewer that runs the
+same guest on the same clips can make most of that pose itself.</p>
+<ul>
+<li>The predictor is the motion matching guest, <code>mm.elf</code> (operator, 2026-11-13: “he motion
+matching guest yes.”). No learned model is brought in before this has been tried.</li>
+<li>The predictor sits in the frame codec, under Zstandard. A decoded frame is still 12 whole
+Packets of 100 bytes, so the Packet layout does not change and the observers hash the same
+frames as today.</li>
+<li>The clip and the time travel in the payload of a Packet that is already sent. Nothing travels
+beside the Packets.</li>
+<li>Every send states its own clip and time. A frame stands alone, and a lost send does not make
+the next one unreadable.</li>
+<li>The hash of the clip set and of the guest joins the hashes of the dictionary and of the part
+table as one protocol version. A viewer with another version is refused.</li>
+</ul>
+<p>Run the frame size tool on the 62 clips with the predictor in the codec and without it. The
+rung passes when the bytes a second with the predictor are below the 8,693 of the fixed
+dictionary on the same sends, the decoded frames equal the frames that were sent, bit for bit,
+and each of the four controls below is caught.</p>
+<h4 id="rfd-2492-1">Start here</h4>
+<p>This RFD is written so that a session with no memory of the work can begin from it. Read these
+in order before writing anything.</p>
+<ul>
+<li>The presence repository, interactor-presence in our organisation. Read <code>docs/wire.md</code> for
+frames and Packets, <code>docs/frame-sizes.md</code> for the measurement this RFD must beat,
+<code>docs/ledger.md</code> with <code>ledger.tsv</code> for how a rung is recorded, and <code>tools/frame_sizes.exs</code>,
+the tool that measures any recorded stream.</li>
+<li>The motion matching guest’s repository, interactor-motion-matching-guest, which the
+workspace checks out on its interactor side. Its README has <code>mm_add_clip</code>, <code>mm_bake</code> and
+<code>mm_step(dt, vx, vz, facing, mode, jump)</code>, which answers a clip, a time, the character and
+the clip root for each frame.</li>
+<li>The packet contract, contract-entity-packet. A Packet is 100 bytes: <code>gid</code> at 0, position in
+micrometres at 4, velocity at 28, acceleration at 34, the tick at 40, rotation at 52 and 40
+bytes of payload at 58.</li>
+<li>The muscle course, entities-muscle-course. <code>follow.sgd</code> and <code>data/drive.tsv</code> hold the 21
+bodies of the muscle skeleton that drive ANNY, in the order the Packets take.</li>
+</ul>
+<h4 id="rfd-2492-2">What was measured</h4>
+<p>The 62 clips that pass the retarget gates, 29 minutes of motion, were played at the tick and
+written as the frames one person would send. Half the clips built the dictionary and sends of
+the other half were measured.</p>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Dictionary</th>
+<th>Level</th>
+<th>Bytes a send</th>
+<th>Bytes a second</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6 ticks</td>
+<td>none</td>
+<td>3</td>
+<td>982</td>
+<td>10,476</td>
+</tr>
+<tr>
+<td>6 ticks</td>
+<td>fixed, 64 KiB</td>
+<td>3</td>
+<td>947</td>
+<td>10,100</td>
+</tr>
+<tr>
+<td>6 ticks</td>
+<td>fixed, 64 KiB</td>
+<td>19</td>
+<td>815</td>
+<td>8,693</td>
+</tr>
+<tr>
+<td>6 ticks</td>
+<td>the send before</td>
+<td>19</td>
+<td>791</td>
+<td>8,436</td>
+</tr>
+<tr>
+<td>8 ticks</td>
+<td>fixed, 64 KiB</td>
+<td>19</td>
+<td>814</td>
+<td>6,510</td>
+</tr>
+</tbody>
+</table>
+<p>The row to beat is the third. The fourth shows why a better dictionary is not the way: the
+best possible one, the send before, gains 3%.</p>
+<h4 id="rfd-2492-3">Why a predictor should work here</h4>
+<p>A body in this slice is made in a chain. The left stick sets a wanted ground velocity. The
+motion matching guest picks a clip and a time. The clip’s pose at that time is placed in the
+world, and the muscle skeleton takes it. So for a sender whose body follows the guest, clip,
+time and root placement fix the pose of most of the 21 parts. What they do not fix is what the
+guest cannot know: the tracked head and hands, and what physics adds.</p>
+<p>No number is claimed for the saving. A rough bound, if only the head and two hands carried
+information beyond clip, time and root, is 150 to 250 bytes a send against 815. It is a guess
+until the first rung measures it.</p>
+<h4 id="rfd-2492-4">Loss is another matter</h4>
+<p>Zstandard is not an error-correcting code and is not used as one. Compression removes
+redundancy and a code for errors adds it. Loss is concealed by the curve a viewer already
+draws: one lost send costs nothing, and after three a part moves 7% over its top speed for one
+segment. A third interval of playback delay is the first remedy if loss hurts. RFD66606-2327
+has the gait phase the guest matches by, and <a href="#rfd-2363">RFD66606-2363</a> the controllers that feed it.</p>
+<h4 id="rfd-2492-5">The ladder</h4>
+<p>Each rung is held to the rung below it and not to the budget. The budget is where the ladder
+ends.</p>
+<p>Rungs are climbed in this order and none is skipped. A rung is the run of the rung below with
+one thing changed. It is run on the development machine before anything is pushed, and it
+passes when its number is better than the rung below while its controls are caught.</p>
+<ol start="0">
+<li>Run <code>tools/frame_sizes.exs</code> as it is on the 62 clips. Nothing has to improve: it must give
+8,693 again, so that the baseline is this session’s own.</li>
+<li>The guest’s digest on four hosts, as the MuJoCo guest has. Hosts that agree on <code>mm_step</code>
+go from 0 to 4.</li>
+<li>Residual frames: each Packet’s fields less the predicted pose, for clips played back as
+they are. Bytes a second go below rung 0.</li>
+<li>Clip and time in a payload, and the decoder that rebuilds the frame from them. Frames
+rebuilt bit for bit go from none to all.</li>
+<li>A body that strays from the clip: head and hands on a recorded track. Bytes a second are
+set against rung 2 and reported as they are.</li>
+<li>The codec as a sandbox guest beside <code>curve.sgd</code>. Its bytes equal the tool’s.</li>
+</ol>
+<p>Rung 1 comes before any coding because a predictor that differs between two machines by one
+bit makes every decoded frame wrong. The MuJoCo guest already has a digest on Linux x86_64,
+Linux arm64, Windows x86_64 and macOS arm64, with the in-process JIT switched off, and that
+check found a defect on its first day.</p>
+<h4 id="rfd-2492-6">Gates and controls</h4>
+<p>Each gate prints a <code>RESULT:</code> line, and each control plants a defect that must be caught and
+named.</p>
+<ul>
+<li>Round trip: every frame that is coded decodes to the bytes that were sent. Control: one bit
+of the residual flipped.</li>
+<li>Alone: a frame decodes with no other frame at hand. Control: a decoder that keeps the clip
+and time of the send before, which must fail when a send is withheld.</li>
+<li>Version: a viewer whose clip set differs is refused by name. Control: one clip altered.</li>
+<li>Bytes: the stream is smaller than the rung below on the same sends. Control: a predictor that
+answers the rest pose, which must give no saving.</li>
+</ul>
+<h4 id="rfd-2492-7">Rules a new session must keep</h4>
+<ul>
+<li>The Packet stays 100 bytes and a frame stays 12 Packets. New data goes into a payload.</li>
+<li>New guest code is SafeGDScript first. Tools are <code>.exs</code> and gates are <code>.gd</code>. No new Python.</li>
+<li>Comments are at most 3% of a file’s lines. The explanation goes into documentation.</li>
+<li>Commits are authored as the operator, in sentence case, with no trailer and no agent credit.</li>
+<li>No file names the reference social VR platform.</li>
+<li>CI confirms and does not find out: one finished pull request at a time, after the gate and
+its controls have passed on the development machine. No draft pull requests.</li>
+<li>Meshes are OpenUSD only. The clips come from a private repository whose release awaits a
+provenance check, and they are cleared for this work.</li>
+</ul>
+<h4 id="rfd-2492-8">What is not known</h4>
+<ul>
+<li>Whether <code>mm_step</code> is bit-identical across the four hosts. Nothing has run.</li>
+<li>How far a real player strays from the clips. Only play in a headset shows it, and the bytes
+of rung 4 are a first estimate.</li>
+<li>The time to code a frame with the predictor. The tick has about 1.8 ms to spare on the
+interpreted tier, so the codec may have to run off the tick.</li>
+<li>Whether rotation needs its own residual form. The Packet carries rotation in a swing-twist
+code, and a small error there may not be a small number.</li>
+</ul>
+<h4 id="rfd-2492-9">The problem</h4>
+<p>The stream is over its budget, the dictionary is spent, and the chosen cadence was kept twice
+by the operator. What is left is to stop sending what both ends already know.</p>
+<h4 id="rfd-2492-10">The tuples</h4>
+<pre><code class="language-rebac">rfd-2492--provides--motion-predicted-frames
+rfd-2492--spends--elf-guest-native-translation
+rfd-2492--is-a--frame-codec
+</code></pre>
+<h4 id="rfd-2492-11">Related</h4>
+<ul>
+<li><a href="#rfd-2436">RFD66606-2436</a>, presence, the slice this codec serves.</li>
+<li><a href="#rfd-2442">RFD66606-2442</a> and <a href="#rfd-2443">RFD66606-2443</a>, the latency metric and the server that carries the frames.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2492-the-motion-matching-guest-predicts-a-body-on-the-wire.exs">rfd/2492-the-motion-matching-guest-predicts-a-body-on-the-wire.exs</a></em></p>
 <h3 id="rfd-2491">RFD66606-2491: Bonsai 2 runs a RISC-V machine in its own layers</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> a Bonsai 2 server answers a calc tool call from inside its own artifact: eleven Gated

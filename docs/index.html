@@ -128,6 +128,17 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2493" id="markdown-toc-rfd-2493">RFD66606-2493: a zone relay only routes</a><ul>
+<li><a href="#rfd-2493-1" id="markdown-toc-rfd-2493-1">Where it lives</a></li>
+<li><a href="#rfd-2493-2" id="markdown-toc-rfd-2493-2">The rule and what it replaced</a></li>
+<li><a href="#rfd-2493-3" id="markdown-toc-rfd-2493-3">What was measured</a></li>
+<li><a href="#rfd-2493-4" id="markdown-toc-rfd-2493-4">Gates and controls</a></li>
+<li><a href="#rfd-2493-5" id="markdown-toc-rfd-2493-5">What it does not guarantee</a></li>
+<li><a href="#rfd-2493-6" id="markdown-toc-rfd-2493-6">What is not known</a></li>
+<li><a href="#rfd-2493-7" id="markdown-toc-rfd-2493-7">The problem</a></li>
+<li><a href="#rfd-2493-8" id="markdown-toc-rfd-2493-8">The tuples</a></li>
+<li><a href="#rfd-2493-9" id="markdown-toc-rfd-2493-9">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2492" id="markdown-toc-rfd-2492">RFD66606-2492: the motion matching guest predicts a body on the wire</a><ul>
 <li><a href="#rfd-2492-1" id="markdown-toc-rfd-2492-1">Start here</a></li>
 <li><a href="#rfd-2492-2" id="markdown-toc-rfd-2492-2">What was measured</a></li>
@@ -350,10 +361,11 @@
 <li><a href="#rfd-2436-4" id="markdown-toc-rfd-2436-4">Gates and controls</a></li>
 <li><a href="#rfd-2436-5" id="markdown-toc-rfd-2436-5">Frontier learning picks the runs</a></li>
 <li><a href="#rfd-2436-6" id="markdown-toc-rfd-2436-6">Where the code lands</a></li>
-<li><a href="#rfd-2436-7" id="markdown-toc-rfd-2436-7">What is not known</a></li>
-<li><a href="#rfd-2436-8" id="markdown-toc-rfd-2436-8">The problem</a></li>
-<li><a href="#rfd-2436-9" id="markdown-toc-rfd-2436-9">The tuples</a></li>
-<li><a href="#rfd-2436-10" id="markdown-toc-rfd-2436-10">Related</a></li>
+<li><a href="#rfd-2436-7" id="markdown-toc-rfd-2436-7">What has run</a></li>
+<li><a href="#rfd-2436-8" id="markdown-toc-rfd-2436-8">What is not known</a></li>
+<li><a href="#rfd-2436-9" id="markdown-toc-rfd-2436-9">The problem</a></li>
+<li><a href="#rfd-2436-10" id="markdown-toc-rfd-2436-10">The tuples</a></li>
+<li><a href="#rfd-2436-11" id="markdown-toc-rfd-2436-11">Related</a></li>
 </ul></li>
 <li><a href="#rfd-2435" id="markdown-toc-rfd-2435">RFD66606-2435: a garment is repaired as a distance-field surface</a><ul>
 <li><a href="#rfd-2435-1" id="markdown-toc-rfd-2435-1">What the solver takes</a></li>
@@ -2542,8 +2554,8 @@
 </ul></li>
 </ul>
 <h2 id="part-1">The tech tree to the beta</h2>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 106 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 228 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 107 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 229 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <figure id="techtree" class="techtree">
 <script src="https://unpkg.com/@thorvg/lottie-player@1.1.3/dist/sw-lite/lottie-player.js" integrity="sha384-jG9aaX1Gb/uJNurNkdTDEuLP4dRsiuJwPIgZ6FWpcm1VeKFd4hwIdpM7xButdISs" crossorigin="anonymous" defer></script>
 <lottie-player src="assets/techtree.lot" filetype="lot" autoplay loop role="img" aria-label="The tech tree to the beta: skills, gates and tokens" style="display:block;width:100%;max-width:1280px;aspect-ratio:16/9"></lottie-player>
@@ -5733,6 +5745,126 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2493">RFD66606-2493: a zone relay only routes</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a zone hands each member the others’ frames and reads none of them.
+<strong>Scope:</strong> the presence slice’s zone relay: its rule for taking a frame, its sockets, its gates.</p>
+<p><strong>Can a zone carry four people’s bodies to each other without simulating, decoding or judging
+anything, and without trusting the clock of anyone who sends to it?</strong></p>
+<p>A zone that simulates is one more party to trust. The first relay built here avoided that and
+still trusted something it should not have: it opened each sender’s turn on a tick of its own
+clock. Run on real sockets for the first time, it refused 7 honest frames of 320. A client’s
+clock is not the relay’s, and a send that drifts across the relay’s tick lands twice in one
+turn and not at all in the next. The model’s gate had passed, because its clients and its
+router shared one clock.</p>
+<ul>
+<li>A zone relay hands each member’s two frames to the other members as they came. It does not
+simulate, decode, compress or judge, and it holds no key (operator, 2026-11-13).</li>
+<li>A half of a slot is open again 5 ticks after the frame it last took, counted on the relay’s
+own clock from that frame and from nothing else. A frame that comes sooner is counted and
+not stored, so a flood makes the relay do less.</li>
+<li>The half of a datagram is the socket it arrived on: first frames go to one port and second
+frames to the next. Nothing is added to a frame and nothing travels beside it.</li>
+<li>The relay is plain C with no heap and no engine, held to a model in SafeGDScript by
+replaying a recorded trace of every call and every answer.</li>
+<li>Liveness is the relay’s and safety is not: it can drop or delay, and it cannot forge.</li>
+</ul>
+<p>Drive the relay’s state machine with four clients whose clocks are offset, skewed and
+jittered, for 19,200 ticks. It passes when no honest frame is refused and every flood frame is.</p>
+<h4 id="rfd-2493-1">Where it lives</h4>
+<p>The parts are repositories of their own in our organisation, each started anew on 2026-11-13.</p>
+<ul>
+<li>The model is the zone router guest, interactor-zone-router-guest: <code>router.sgd</code> and the
+script that writes its trace.</li>
+<li>The relay is transport-zone-relay: <code>src/zone_relay.c</code> is the state machine, <code>src/zone_net.c</code>
+puts it on two sockets and a 64 Hz tick, and <code>src/zone_load.c</code> is the load generator.</li>
+<li>The gates that run four clients through the model, with a planted zone, sender and viewer,
+are in interactor-presence-gates, beside the ledger of what each rung moved.</li>
+</ul>
+<h4 id="rfd-2493-2">The rule and what it replaced</h4>
+<p>The rule before opened slot <code>s</code> where the relay’s <code>now % 6</code> was 0, 1, 3 or 4. That put the
+senders on different ticks, which is good, and tied a sender’s turn to the relay’s clock,
+which is not. The rule now needs no shared clock. Five ticks and not six, so that a frame one
+tick early is still taken. A flood gets at most six frames through in five intervals.</p>
+<p>Clients still send on different ticks of the six. That is a courtesy that spreads arrivals,
+kept by the clients. The relay enforces no slot.</p>
+<h4 id="rfd-2493-3">What was measured</h4>
+<p>The same fixed sequence was given to the rule in use and to the old rule, kept as a planted
+build. Four clients start at different moments, run 1,000 and 100 parts in a million fast and
+slow, and arrive up to 0.4 of a tick early or late.</p>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Honest frames sent</th>
+<th>Honest frames refused</th>
+<th>Flood frames refused</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open 5 ticks after the last frame</td>
+<td>25,602</td>
+<td>0</td>
+<td>128 of 128</td>
+</tr>
+<tr>
+<td>open on a fixed tick of the relay’s clock</td>
+<td>25,602</td>
+<td>1,894</td>
+<td>128 of 128</td>
+</tr>
+</tbody>
+</table>
+<p>On sockets, four client threads on one machine: 0 honest frames refused of 960 over three
+runs, where the first run under the old rule refused 7 of 320. A Linux runner printed the same
+figures as the development machine.</p>
+<h4 id="rfd-2493-4">Gates and controls</h4>
+<p>Each gate prints a result line, and each control plants a defect that must be caught.</p>
+<ul>
+<li>Trace: the C relay answers every one of 1,469 recorded calls as the model did. Controls:
+five planted models, each of which must fail at the record where it first differs.</li>
+<li>Opaque: the relay’s source touches a frame only to store it and to send it. Control: one
+planted read of a frame byte.</li>
+<li>Clocks: the table above. Controls: the old rule, and a flood.</li>
+<li>Sockets: no viewer gets a frame that differs from what was sent, or its own, or one from
+the socket of the other half. Controls: a relay that sends from the wrong socket, and 6 ms
+of planted work in every tick, which must move the median tick by at least 5 ms.</li>
+</ul>
+<h4 id="rfd-2493-5">What it does not guarantee</h4>
+<ul>
+<li>It can drop or delay, and honest clients cannot route around it.</li>
+<li>A relay that is handed one pair key can alter a frame for that one viewer under a valid
+tag. The honest majority then names that viewer and not the relay.</li>
+<li>A person here is an address. The home server’s member table, and a datagram refused
+because its address was never named, arrive with the transport step.</li>
+</ul>
+<h4 id="rfd-2493-6">What is not known</h4>
+<ul>
+<li>The cost of one datagram. The development machine charges about 0.4 ms for a loopback
+datagram, so its times compare one run with the next and nothing else. No number of people
+is claimed.</li>
+<li>Whether a ring of submissions on Linux beats one send a datagram. That is a later rung, on
+a Linux machine of ours.</li>
+<li>How the relay shares a viewer’s frames among more than four people. The frame budget and
+its levels of detail by Morton prefix depth are a later rung.</li>
+</ul>
+<h4 id="rfd-2493-7">The problem</h4>
+<p>The relay had been made blind to frames and was still not blind to time.</p>
+<h4 id="rfd-2493-8">The tuples</h4>
+<pre><code class="language-rebac">rfd-2493--provides--router-only-zone
+rfd-2493--spends--elf-guest-native-translation
+rfd-2493--is-a--zone-relay
+</code></pre>
+<h4 id="rfd-2493-9">Related</h4>
+<ul>
+<li><a href="#rfd-2436">RFD66606-2436</a>, presence, the slice this relay serves.</li>
+<li><a href="#rfd-2443">RFD66606-2443</a>, the entity server it was first built beside, which this narrows.</li>
+<li><a href="#rfd-2442">RFD66606-2442</a>, the latency budget that is where its tick is going.</li>
+<li><a href="#rfd-2492">RFD66606-2492</a>, the predictor that makes what it carries smaller.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2493-a-zone-relay-only-routes.exs">rfd/2493-a-zone-relay-only-routes.exs</a></em></p>
 <h3 id="rfd-2492">RFD66606-2492: the motion matching guest predicts a body on the wire</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> a sender states a clip and a time and sends only what the guest cannot predict.
@@ -5767,10 +5899,12 @@ and each of the four controls below is caught.</p>
 <p>This RFD is written so that a session with no memory of the work can begin from it. Read these
 in order before writing anything.</p>
 <ul>
-<li>The presence repository, interactor-presence in our organisation. Read <code>docs/wire.md</code> for
-frames and Packets, <code>docs/frame-sizes.md</code> for the measurement this RFD must beat,
+<li>The gates repository, interactor-presence-gates in our organisation. Read <code>docs/wire.md</code>
+for frames and Packets, <code>docs/frame-sizes.md</code> for the measurement this RFD must beat,
 <code>docs/ledger.md</code> with <code>ledger.tsv</code> for how a rung is recorded, and <code>tools/frame_sizes.exs</code>,
-the tool that measures any recorded stream.</li>
+the tool that measures any recorded stream. The parts it joins are repositories of their
+own beside it; the Packet codec is interactor-packets-guest and <a href="#rfd-2493">RFD66606-2493</a> names the
+rest.</li>
 <li>The motion matching guest’s repository, interactor-motion-matching-guest, which the
 workspace checks out on its interactor side. Its README has <code>mm_add_clip</code>, <code>mm_bake</code> and
 <code>mm_step(dt, vx, vz, facing, mode, jump)</code>, which answers a clip, a time, the character and
@@ -5778,8 +5912,9 @@ the clip root for each frame.</li>
 <li>The packet contract, contract-entity-packet. A Packet is 100 bytes: <code>gid</code> at 0, position in
 micrometres at 4, velocity at 28, acceleration at 34, the tick at 40, rotation at 52 and 40
 bytes of payload at 58.</li>
-<li>The muscle course, entities-muscle-course. <code>follow.sgd</code> and <code>data/drive.tsv</code> hold the 21
-bodies of the muscle skeleton that drive ANNY, in the order the Packets take.</li>
+<li>The avatar follower, interactor-anny-follow-guest. <code>follow.sgd</code> and <code>data/drive.tsv</code> hold
+the 21 bodies of the muscle skeleton that drive ANNY. Their order on the wire is
+<code>data/parts.tsv</code> of the codec’s repository, a whole coarse body in the first frame.</li>
 </ul>
 <h4 id="rfd-2492-2">What was measured</h4>
 <p>The 62 clips that pass the retarget gates, 29 minutes of motion, were played at the tick and
@@ -7783,6 +7918,9 @@ pose streams in place of those parts (operator, 2026-11-01).</li>
 <a href="#rfd-2390">RFD66606-2390</a>).</li>
 <li>The host is the win64 build of <a href="#rfd-2360">RFD66606-2360</a>, built natively for the Steam Frame and the
 Steam Deck, and the slice’s gates run there too (operator, 2026-11-12).</li>
+<li>An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21 entity Packets of 100
+bytes. The zone only routes and four parties judge each sender (operator, 2026-11-13).</li>
+<li>The work climbs one ordered ladder from what already runs, one change a rung.</li>
 </ul>
 <p>Run the sight gate against a recorded pose stream. A zone that drops one side’s poses must fail
 it.</p>
@@ -7863,24 +8001,40 @@ a GPU.</p>
 <p>Each slice is a repository of its own in our organization, named for what it does with no game
 name, and pinned through the repo manifest. It arrives as an ordinary pull request. V-Sekai
 repositories stay read-only.</p>
-<h4 id="rfd-2436-7">What is not known</h4>
+<p>Since 2026-11-13 each part of this slice is a repository of its own too, started anew: the
+Packet codec, the zone router model, the observer, the curve, the replica, the avatar
+follower, the relay in C, and the gates that join them on a real body. <a href="#rfd-2493">RFD66606-2493</a> says
+where the relay’s parts are.</p>
+<h4 id="rfd-2436-7">What has run</h4>
+<p>One real body has crossed the wire inside one process. A clip moves the muscle skeleton, its
+21 parts go as Packets through the router model, the observers and the curve, and a second
+ANNY is posed from them 12 ticks behind. All 21 parts were drawn and no honest frame was
+refused. A part was 0.21 mm from the sender’s on average and 9.1 mm at worst, and its rotation
+up to 185 milliradians off, because a rotation has no rate on the wire. Three planted defects
+each made the largest error at least forty times worse.</p>
+<p>A position is whole micrometres on the wire and is never a float, so a body 8 billion
+kilometres from zero comes back within a micrometre, under a hair (operator, 2026-11-13).</p>
+<p>Not yet run: four bodies with the judgement of four parties, the clients as separate
+programs through the relay, feet that the floor carries, and a stick in place of a clip.</p>
+<h4 id="rfd-2436-8">What is not known</h4>
 <ul>
-<li>Which pose message shape the standalone Frame client and the desktop client both send.
-The first step reads it from the clients and writes it down.</li>
+<li>How a rotation should be drawn between two sends. The shortest arc does not follow a
+fast hand.</li>
 <li>Whether a zone holds the pose rate for two people. Nothing has run, and no number is claimed.</li>
 </ul>
-<h4 id="rfd-2436-8">The problem</h4>
+<h4 id="rfd-2436-9">The problem</h4>
 <p><a href="#rfd-2360">RFD66606-2360</a> lists four features and names no way to build one without the others.</p>
-<h4 id="rfd-2436-9">The tuples</h4>
+<h4 id="rfd-2436-10">The tuples</h4>
 <pre><code class="language-rebac">rfd-2436--provides--see-each-other
 rfd-2436--spends--binary-translated-only-timings
 rfd-2436--spends--elf-guest-native-translation
 rfd-2436--is-a--native-slice
 </code></pre>
-<h4 id="rfd-2436-10">Related</h4>
+<h4 id="rfd-2436-11">Related</h4>
 <ul>
 <li><a href="#rfd-2360">RFD66606-2360</a>, the one beta.</li>
 <li>The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned (operator, 2026-11-11).</li>
+<li><a href="#rfd-2493">RFD66606-2493</a>, the relay, and <a href="#rfd-2492">RFD66606-2492</a>, the predictor for what it carries.</li>
 </ul>
 <p>This RFD was drafted by an AI and read by a human before it shipped.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2436-presence-is-an-independent-native-slice.exs">rfd/2436-presence-is-an-independent-native-slice.exs</a></em></p>

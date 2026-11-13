@@ -50,10 +50,12 @@ rfd 2492, "the motion matching guest predicts a body on the wire", :discussion d
   This RFD is written so that a session with no memory of the work can begin from it. Read these
   in order before writing anything.
 
-  - The presence repository, interactor-presence in our organisation. Read `docs/wire.md` for
-    frames and Packets, `docs/frame-sizes.md` for the measurement this RFD must beat,
+  - The gates repository, interactor-presence-gates in our organisation. Read `docs/wire.md`
+    for frames and Packets, `docs/frame-sizes.md` for the measurement this RFD must beat,
     `docs/ledger.md` with `ledger.tsv` for how a rung is recorded, and `tools/frame_sizes.exs`,
-    the tool that measures any recorded stream.
+    the tool that measures any recorded stream. The parts it joins are repositories of their
+    own beside it; the Packet codec is interactor-packets-guest and RFD66606-2493 names the
+    rest.
   - The motion matching guest's repository, interactor-motion-matching-guest, which the
     workspace checks out on its interactor side. Its README has `mm_add_clip`, `mm_bake` and
     `mm_step(dt, vx, vz, facing, mode, jump)`, which answers a clip, a time, the character and
@@ -61,8 +63,9 @@ rfd 2492, "the motion matching guest predicts a body on the wire", :discussion d
   - The packet contract, contract-entity-packet. A Packet is 100 bytes: `gid` at 0, position in
     micrometres at 4, velocity at 28, acceleration at 34, the tick at 40, rotation at 52 and 40
     bytes of payload at 58.
-  - The muscle course, entities-muscle-course. `follow.sgd` and `data/drive.tsv` hold the 21
-    bodies of the muscle skeleton that drive ANNY, in the order the Packets take.
+  - The avatar follower, interactor-anny-follow-guest. `follow.sgd` and `data/drive.tsv` hold
+    the 21 bodies of the muscle skeleton that drive ANNY. Their order on the wire is
+    `data/parts.tsv` of the codec's repository, a whole coarse body in the first frame.
 
   :: details What was measured
   The 62 clips that pass the retarget gates, 29 minutes of motion, were played at the tick and

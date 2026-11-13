@@ -26,9 +26,13 @@ rfd 2436, "presence is an independent native slice", :discussion do
     RFD66606-2390).
   - The host is the win64 build of RFD66606-2360, built natively for the Steam Frame and the
     Steam Deck, and the slice's gates run there too (operator, 2026-11-12).
+  - An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21 entity Packets of 100
+    bytes. The zone only routes and four parties judge each sender (operator, 2026-11-13).
+  - The work climbs one ordered ladder from what already runs, one change a rung.
   :: related
   - RFD66606-2360, the one beta.
   - The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned (operator, 2026-11-11).
+  - RFD66606-2493, the relay, and RFD66606-2492, the predictor for what it carries.
   """
 
   details_title "presence is an independent native slice"
@@ -89,9 +93,28 @@ rfd 2436, "presence is an independent native slice", :discussion do
   name, and pinned through the repo manifest. It arrives as an ordinary pull request. V-Sekai
   repositories stay read-only.
 
+  Since 2026-11-13 each part of this slice is a repository of its own too, started anew: the
+  Packet codec, the zone router model, the observer, the curve, the replica, the avatar
+  follower, the relay in C, and the gates that join them on a real body. RFD66606-2493 says
+  where the relay's parts are.
+
+  :: details What has run
+  One real body has crossed the wire inside one process. A clip moves the muscle skeleton, its
+  21 parts go as Packets through the router model, the observers and the curve, and a second
+  ANNY is posed from them 12 ticks behind. All 21 parts were drawn and no honest frame was
+  refused. A part was 0.21 mm from the sender's on average and 9.1 mm at worst, and its rotation
+  up to 185 milliradians off, because a rotation has no rate on the wire. Three planted defects
+  each made the largest error at least forty times worse.
+
+  A position is whole micrometres on the wire and is never a float, so a body 8 billion
+  kilometres from zero comes back within a micrometre, under a hair (operator, 2026-11-13).
+
+  Not yet run: four bodies with the judgement of four parties, the clients as separate
+  programs through the relay, feet that the floor carries, and a stick in place of a clip.
+
   :: details What is not known
-  - Which pose message shape the standalone Frame client and the desktop client both send.
-    The first step reads it from the clients and writes it down.
+  - How a rotation should be drawn between two sends. The shortest arc does not follow a
+    fast hand.
   - Whether a zone holds the pose rate for two people. Nothing has run, and no number is claimed.
   :: details The problem
   RFD66606-2360 lists four features and names no way to build one without the others.

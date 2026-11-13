@@ -159,9 +159,10 @@
 <li><a href="#rfd-2491-4" id="markdown-toc-rfd-2491-4">The converter</a></li>
 <li><a href="#rfd-2491-5" id="markdown-toc-rfd-2491-5">Ternary planes</a></li>
 <li><a href="#rfd-2491-6" id="markdown-toc-rfd-2491-6">Witnesses</a></li>
-<li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Open questions</a></li>
-<li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">The problem</a></li>
-<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">Related</a></li>
+<li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Serving</a></li>
+<li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">Open questions</a></li>
+<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">The problem</a></li>
+<li><a href="#rfd-2491-10" id="markdown-toc-rfd-2491-10">Related</a></li>
 </ul></li>
 <li><a href="#rfd-2490" id="markdown-toc-rfd-2490">RFD66606-2490: What the fabric is for, and what it is not</a><ul>
 <li><a href="#rfd-2490-1" id="markdown-toc-rfd-2490-1">Charter digest</a></li>
@@ -6071,7 +6072,7 @@ by qwenputer into eleven Gated DeltaNet layers of Bonsai 2’s head geometry. Th
 component beside the text tower. The ternary body is stored unchanged, object for object.</p>
 <p>The server runs every token through the tower. The tower names the next token where it owns the
 position, and the body names it everywhere else. A firmware is a recurrent state the server
-loads. The first firmware is the calc tool (operator, 2026-11-13).</p>
+loads, selected with <code>--chip</code>. The first firmware is the calc tool (operator, 2026-11-13).</p>
 <p>Export the tower, check it against the reference machine, convert, then run the witnesses.</p>
 <h4 id="rfd-2491-1">How the machine sits in the model</h4>
 <p>qwenputer (MIT) compiles a circuit into the two sublayers of a Gated DeltaNet layer. An MLP unit
@@ -6134,24 +6135,46 @@ Controls: one flipped ROM word, one flipped MLP weight, and fp16 recurrent state
 and DFlash2 object hash equals the one in an artifact converted without the tower. Measured:
 1,513 parameters compared and none differs, and all 178 tower parameters hold their source’s
 words. Control: one planted bit in a text object fails.</li>
-<li><strong>Engine.</strong> The served tower’s kept dims equal the golden file bit for bit, and the served
-echo tokens equal the reference machine’s. Control: fp16 tower state fails.</li>
+<li><strong>Engine ops.</strong> One token at a time through the engine’s public ops, the kept dims equal
+the golden file bit for bit over 17,792 positions. Controls: fp16 tower state fails, and one
+flipped weight bit fails.</li>
+<li><strong>Engine runtime.</strong> The tower loaded from the converted artifact by the engine’s own loader
+gives the same result: no inexact position, 17,104 owned positions, no wrong token. The same
+two controls fail.</li>
+<li><strong>Served.</strong> <code>ninfer-serve --chip calc-bridge</code> at temperature 0, twelve arithmetic prompts:
+21 bursts and 80,468 chip tokens, each served token equal to the reference machine’s when it
+is fed the model’s own call tokens. All twelve values equal Python’s, and a power too large
+for the firmware returns its <code>error</code>. Controls: without <code>--chip</code> the call comes back
+unanswered, and with the ROM word the parked machine runs next spoiled in a copy of the
+artifact, every burst differs from the reference.</li>
 <li><strong>Body unchanged.</strong> A prompt with no tool call gives the same temperature-0 answer hash
-with and without the tower.</li>
+with <code>--chip</code>, without it, and on the engine before this work, for the same prompt text.</li>
 </ul>
-<h4 id="rfd-2491-7">Open questions</h4>
+<h4 id="rfd-2491-7">Serving</h4>
+<p><code>--chip NAME</code> selects a firmware and adds the calc tool to a request that declares none. The
+answered call is returned inline in the content: the call, the tool response the firmware
+printed, then the model’s answer. <code>--chip-trace FILE</code> writes each burst’s tokens.</p>
+<p>A <code>--chip</code> server has one request lane, one device and no drafter. Any other combination
+stops at startup. A request whose echo is cut by the output limit ends with the limit reason.</p>
+<p>On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 105.1 tokens per
+second without <code>--chip</code> and at 71.6 with it, both without a drafter.</p>
+<h4 id="rfd-2491-8">Open questions</h4>
 <ul>
-<li>The engine does not run the tower yet. The Engine and Body unchanged witnesses have not
-run.</li>
-<li>The engine keeps recurrent state in FP32 and casts each head’s output to BF16. Whether that
-is bit-exact on circuit values is measured by the Engine witness, not assumed.</li>
-<li>A chip burst is a few thousand tokens per call. Its speed on the engine is unmeasured.</li>
-<li>How often Bonsai 2 writes a well-formed calc call is unmeasured.</li>
+<li>A drafter is refused beside the tower, so a <code>--chip</code> server runs without DFlash2. Drafting is
+not shown safe: a drafted round could commit tokens after the closing tag.</li>
+<li>Each prompt token steps the tower by itself on every request, also on a prefix-cache hit.
+Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
+unmeasured.</li>
+<li>A burst runs inside one engine unit, so a cancel is seen only after it.</li>
+<li>Thinking mode, streaming, the other endpoints, structured output and histories that hold
+earlier calls have not run with <code>--chip</code>.</li>
+<li>How often Bonsai 2 writes a well-formed calc call on its own is unmeasured.</li>
+<li>The tower is stored dense. The plane format above is not built.</li>
 </ul>
-<h4 id="rfd-2491-8">The problem</h4>
+<h4 id="rfd-2491-9">The problem</h4>
 <p>Bonsai 2 cannot do exact arithmetic on its own, and a host tool adds a round trip and a
 second program to trust.</p>
-<h4 id="rfd-2491-9">Related</h4>
+<h4 id="rfd-2491-10">Related</h4>
 <ul>
 <li><a href="#rfd-2311">RFD66606-2311</a> (Bonsai 2 serving), whose artifact and server this extends.</li>
 <li><a href="#rfd-2462">RFD66606-2462</a> (the prism llama.cpp branch), a second runtime the same export can feed.</li>

@@ -128,6 +128,17 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2491" id="markdown-toc-rfd-2491">RFD66606-2491: Bonsai 2 runs a RISC-V machine in its own layers</a><ul>
+<li><a href="#rfd-2491-1" id="markdown-toc-rfd-2491-1">How the machine sits in the model</a></li>
+<li><a href="#rfd-2491-2" id="markdown-toc-rfd-2491-2">Why the tower is a separate component</a></li>
+<li><a href="#rfd-2491-3" id="markdown-toc-rfd-2491-3">The tower export</a></li>
+<li><a href="#rfd-2491-4" id="markdown-toc-rfd-2491-4">The converter</a></li>
+<li><a href="#rfd-2491-5" id="markdown-toc-rfd-2491-5">Ternary planes</a></li>
+<li><a href="#rfd-2491-6" id="markdown-toc-rfd-2491-6">Witnesses</a></li>
+<li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Open questions</a></li>
+<li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">The problem</a></li>
+<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2490" id="markdown-toc-rfd-2490">RFD66606-2490: What the fabric is for, and what it is not</a><ul>
 <li><a href="#rfd-2490-1" id="markdown-toc-rfd-2490-1">Charter digest</a></li>
 <li><a href="#rfd-2490-2" id="markdown-toc-rfd-2490-2">Board-wide non-goals</a></li>
@@ -2518,8 +2529,8 @@
 </ul></li>
 </ul>
 <h2 id="part-1">The tech tree to the beta</h2>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 104 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 226 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 105 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 227 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <figure id="techtree" class="techtree">
 <script src="https://unpkg.com/@thorvg/lottie-player@1.1.3/dist/sw-lite/lottie-player.js" integrity="sha384-jG9aaX1Gb/uJNurNkdTDEuLP4dRsiuJwPIgZ6FWpcm1VeKFd4hwIdpM7xButdISs" crossorigin="anonymous" defer></script>
 <lottie-player src="assets/techtree.lot" filetype="lot" autoplay loop role="img" aria-label="The tech tree to the beta: skills, gates and tokens" style="display:block;width:100%;max-width:1280px;aspect-ratio:16/9"></lottie-player>
@@ -3209,6 +3220,12 @@ orchestration and the DFC runtime; Metal and Core ML on macOS.</li>
 native binary from <code>entities-godot-sandbox</code>; Mitsuba 3 GPU variants.</li>
 <li><strong>Inference:</strong> ggml (RFD66606-2188) with the Vulkan backend; Gemma 4 (E2B, E4B); rf-detr keypoint
 and segmentation heads.</li>
+<li><strong>Language serving:</strong> ninfer-all (Apache-2.0, our fork of <code>iamwavecut/ninfer-all</code>), the CUDA
+engine and converter that serve Ternary Bonsai 2 27B (<a href="#rfd-2311">RFD66606-2311</a>).</li>
+<li><strong>In-weights machine:</strong> qwenputer (MIT, <code>divagr18/qwenputer</code>, used from our fork), a compiler
+that writes an RV32IM processor as Gated DeltaNet layers. Its circuit compiler, reference
+machine and calc firmware build the chip tower a Bonsai 2 server runs (<a href="#rfd-2491">RFD66606-2491</a>;
+operator, 2026-11-13).</li>
 <li><strong>XR computer use:</strong> interactor-xr-pilot (Apache-2.0 OR MIT, <a href="https://github.com/V-Sekai-fire/interactor-xr-pilot"><code>V-Sekai-fire/interactor-xr-pilot</code></a>),
 an MCP server in Lean 4 with a panelspun window that lets an agent screenshot and drive an OpenXR
 app as an OXRSys client: head, controllers and buttons out, PyroWave decoded on the GPU in
@@ -5700,6 +5717,107 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2491">RFD66606-2491: Bonsai 2 runs a RISC-V machine in its own layers</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a Bonsai 2 server answers a calc tool call from inside its own artifact: eleven Gated
+DeltaNet layers hold a 32-bit RISC-V processor, and the server’s recurrent state is its memory
+<strong>Scope:</strong> the chip tower as a component of the Bonsai 2 <code>.ninfer</code> artifact, the qwenputer compiler
+that writes it, the ninfer-all converter and engine that store and run it, and the calc firmware</p>
+<p><strong>Can Bonsai 2 answer an arithmetic tool call with no program outside its own weights?</strong></p>
+<p>A tool call leaves the model: the host parses it, runs a program and writes the answer back.
+A compiler can instead write a processor as transformer layers, and then no host runs anything.</p>
+<p>The Bonsai 2 artifact carries a chip tower: an RV32IM processor with the Zba extension, compiled
+by qwenputer into eleven Gated DeltaNet layers of Bonsai 2’s head geometry. The tower is its own
+component beside the text tower. The ternary body is stored unchanged, object for object.</p>
+<p>The server runs every token through the tower. The tower names the next token where it owns the
+position, and the body names it everywhere else. A firmware is a recurrent state the server
+loads. The first firmware is the calc tool (operator, 2026-11-13).</p>
+<p>Export the tower, check it against the reference machine, convert, then run the witnesses.</p>
+<h4 id="rfd-2491-1">How the machine sits in the model</h4>
+<p>qwenputer (MIT) compiles a circuit into the two sublayers of a Gated DeltaNet layer. An MLP unit
+is a lookup, and a recurrent head is a table whose rows a one-hot key overwrites. No weight is
+trained. The processor’s registers, ROM and RAM are the heads’ state rows.</p>
+<p>A run looks like this in the token stream. The body writes a tool call in its own syntax. The
+tower copies each token of the call into a text buffer. At the closing tag the tower takes over
+and emits chip tokens, one record per instruction. Each byte the firmware prints comes back as
+the body’s own token for that byte, so the body reads a tool response it wrote itself. Chip
+tokens run through the tower only. The body’s layers, cache and positions see the text alone.</p>
+<h4 id="rfd-2491-2">Why the tower is a separate component</h4>
+<p>Upstream widens the host model and puts the processor in the added residual dims. Bonsai 2
+cannot take that route:</p>
+<ul>
+<li>The body is Hadamard-rotated ternary in 1024-column blocks. Zero padding, mute columns and
+rescaled norm gains do not survive that packing word for word.</li>
+<li>The engine’s kernels are registered for the body’s hidden size.</li>
+<li>The chip token rows hold values such as 2^40, which are not ternary.</li>
+</ul>
+<p>So the tower keeps its own residual stream of 1280 dims, its own token table and its own
+states, and the body stays byte-identical. This is upstream’s own fast decoding path, which
+already runs the chip layers as a second view with a second cache.</p>
+<p>The circuit is compiled for Bonsai 2’s head geometry (16 key heads, 48 value heads, head
+dim 128, conv kernel 4), so the engine’s recurrent kernels run it. The MLP is cut from the
+body’s 17408 units to the 8576 the circuit uses.</p>
+<h4 id="rfd-2491-3">The tower export</h4>
+<p><code>chipformer.rv.export_tower</code> in the qwenputer fork reads the host’s config and tokenizer and
+writes a directory: <code>config.json</code> with architecture <code>ChipTower</code>, and <code>model.safetensors</code> with
+the eleven layers under their usual names, the token table and each firmware’s parked state.
+A host token keeps its id and chip token t has id 248320 + t. Every tensor passes the
+compiler’s bf16 check on the way out.</p>
+<h4 id="rfd-2491-4">The converter</h4>
+<p><code>--source chip=DIR</code> and <code>--components ...,chip</code> add the tower to recipe <code>bonsai2_27b_ternary</code>.
+Tower parameters are stored in direct formats (bf16, and fp32 for the states and the decay
+constants) by method <code>exact_direct</code>, which refuses a value the format would round. Each
+parameter is its own object. The converter refuses a tower whose head geometry or token offset
+differs from the text model’s.</p>
+<h4 id="rfd-2491-5">Ternary planes</h4>
+<p>Every tower matrix is a sum of ternary planes: weights in {-1, 0, +1} with one scale per
+row and group of 128 columns, or per column and group of 128 rows where that needs fewer
+planes. Each weight sits in one plane, so the sum equals the matrix bit for bit. Of the 89
+matrices, 82 need at most two planes and none needs more than seven.</p>
+<p>The scales are not binary16 values: they range from 2^-41 to 2^125. A ternary tower therefore
+needs a plane format with bf16 scales and no Hadamard rotation, which the artifact container
+does not have yet. Until it does, the tower is stored dense.</p>
+<h4 id="rfd-2491-6">Witnesses</h4>
+<p>Each one carries a control that must fail.</p>
+<ul>
+<li><strong>Compiled.</strong> The circuit for Bonsai 2’s geometry has eleven layers, and every emitted
+tensor is a bf16 value. Control: a weight that is not a bf16 value raises.</li>
+<li><strong>Reference tower.</strong> In stock Qwen3.5 modules, the residual after the chip layers equals the
+circuit evaluator’s on every kept dim at every position, token by token and as a chunked
+prefill, with the firmware state loaded after the prompt as a server loads it. The output
+code names the reference machine’s next token wherever the machine owns the position.
+Measured with the calc firmware: 17,387 positions token by token and 261,213 positions as a
+prefill, each with no inexact position and no wrong token.
+Controls: one flipped ROM word, one flipped MLP weight, and fp16 recurrent state each fail.</li>
+<li><strong>Planes.</strong> The planes of every matrix sum back bit for bit. Control: one flipped sign fails.</li>
+<li><strong>Converted.</strong> Every tower object reads back word for word, and every text, vision, MTP
+and DFlash2 object hash equals the one in an artifact converted without the tower. Measured:
+1,513 parameters compared and none differs, and all 178 tower parameters hold their source’s
+words. Control: one planted bit in a text object fails.</li>
+<li><strong>Engine.</strong> The served tower’s kept dims equal the golden file bit for bit, and the served
+echo tokens equal the reference machine’s. Control: fp16 tower state fails.</li>
+<li><strong>Body unchanged.</strong> A prompt with no tool call gives the same temperature-0 answer hash
+with and without the tower.</li>
+</ul>
+<h4 id="rfd-2491-7">Open questions</h4>
+<ul>
+<li>The engine does not run the tower yet. The Engine and Body unchanged witnesses have not
+run.</li>
+<li>The engine keeps recurrent state in FP32 and casts each head’s output to BF16. Whether that
+is bit-exact on circuit values is measured by the Engine witness, not assumed.</li>
+<li>A chip burst is a few thousand tokens per call. Its speed on the engine is unmeasured.</li>
+<li>How often Bonsai 2 writes a well-formed calc call is unmeasured.</li>
+</ul>
+<h4 id="rfd-2491-8">The problem</h4>
+<p>Bonsai 2 cannot do exact arithmetic on its own, and a host tool adds a round trip and a
+second program to trust.</p>
+<h4 id="rfd-2491-9">Related</h4>
+<ul>
+<li><a href="#rfd-2311">RFD66606-2311</a> (Bonsai 2 serving), whose artifact and server this extends.</li>
+<li><a href="#rfd-2462">RFD66606-2462</a> (the prism llama.cpp branch), a second runtime the same export can feed.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2491-bonsai-2-runs-a-risc-v-machine-in-its-own-layers.exs">rfd/2491-bonsai-2-runs-a-risc-v-machine-in-its-own-layers.exs</a></em></p>
 <h3 id="rfd-2490">RFD66606-2490: What the fabric is for, and what it is not</h3>
 <p><strong>State:</strong> discussion
 <strong>Scope:</strong> the whole RFD board: its purpose and its non-goals.</p>

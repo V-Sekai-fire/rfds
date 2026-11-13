@@ -10,7 +10,7 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
 
   prose ~S"""
   :: hook
-  Bonsai 2 answers an arithmetic tool call itself, with a processor that is part of its weights.
+  Can Bonsai 2 answer an arithmetic tool call with no program outside its own weights?
   :: intrigue
   A tool call leaves the model: the host parses it, runs a program and writes the answer back.
   A compiler can instead write a processor as transformer layers, and then no host runs anything.

@@ -157,12 +157,13 @@
 <li><a href="#rfd-2491-2" id="markdown-toc-rfd-2491-2">Why the tower is a separate component</a></li>
 <li><a href="#rfd-2491-3" id="markdown-toc-rfd-2491-3">The tower export</a></li>
 <li><a href="#rfd-2491-4" id="markdown-toc-rfd-2491-4">The converter</a></li>
-<li><a href="#rfd-2491-5" id="markdown-toc-rfd-2491-5">Ternary planes</a></li>
-<li><a href="#rfd-2491-6" id="markdown-toc-rfd-2491-6">Witnesses</a></li>
-<li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Serving</a></li>
-<li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">Open questions</a></li>
-<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">The problem</a></li>
-<li><a href="#rfd-2491-10" id="markdown-toc-rfd-2491-10">Related</a></li>
+<li><a href="#rfd-2491-5" id="markdown-toc-rfd-2491-5">The published artifact</a></li>
+<li><a href="#rfd-2491-6" id="markdown-toc-rfd-2491-6">Ternary planes</a></li>
+<li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Witnesses</a></li>
+<li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">Serving</a></li>
+<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">Open questions</a></li>
+<li><a href="#rfd-2491-10" id="markdown-toc-rfd-2491-10">The problem</a></li>
+<li><a href="#rfd-2491-11" id="markdown-toc-rfd-2491-11">Related</a></li>
 </ul></li>
 <li><a href="#rfd-2490" id="markdown-toc-rfd-2490">RFD66606-2490: What the fabric is for, and what it is not</a><ul>
 <li><a href="#rfd-2490-1" id="markdown-toc-rfd-2490-1">Charter digest</a></li>
@@ -6110,7 +6111,17 @@ Tower parameters are stored in direct formats (bf16, and fp32 for the states and
 constants) by method <code>exact_direct</code>, which refuses a value the format would round. Each
 parameter is its own object. The converter refuses a tower whose head geometry or token offset
 differs from the text model’s.</p>
-<h4 id="rfd-2491-5">Ternary planes</h4>
+<h4 id="rfd-2491-5">The published artifact</h4>
+<p>The artifact with the tower is <code>models/chip/bonsai2-27b-heretic-chip.ninfer</code> in the public
+dataset that holds the artifact of <a href="#rfd-2311">RFD66606-2311</a>. Its SHA-256 is in
+<code>models/chip/SHA256SUMS</code> beside it. The tower’s source and the golden stream are in
+<code>sources/tower-27b/</code>. The dataset’s <code>NOTICE</code> names qwenputer and the libraries
+the calc firmware is linked with.</p>
+<p>The conversion reads the tower from a path inside the checkout, so the artifact and its
+report name no host directory, and the job that publishes them stops if one does. Every
+object of the published file equals the object of the file the served witness ran on.</p>
+<p>The steps an operator follows are <code>v-sekai/chip-tower-sop.md</code> in the ninfer-all fork.</p>
+<h4 id="rfd-2491-6">Ternary planes</h4>
 <p>Every tower matrix is a sum of ternary planes: weights in {-1, 0, +1} with one scale per
 row and group of 128 columns, or per column and group of 128 rows where that needs fewer
 planes. Each weight sits in one plane, so the sum equals the matrix bit for bit. Of the 89
@@ -6118,7 +6129,7 @@ matrices, 82 need at most two planes and none needs more than seven.</p>
 <p>The scales are not binary16 values: they range from 2^-41 to 2^125. A ternary tower therefore
 needs a plane format with bf16 scales and no Hadamard rotation, which the artifact container
 does not have yet. Until it does, the tower is stored dense.</p>
-<h4 id="rfd-2491-6">Witnesses</h4>
+<h4 id="rfd-2491-7">Witnesses</h4>
 <p>Each one carries a control that must fail.</p>
 <ul>
 <li><strong>Compiled.</strong> The circuit for Bonsai 2’s geometry has eleven layers, and every emitted
@@ -6150,7 +6161,7 @@ artifact, every burst differs from the reference.</li>
 <li><strong>Body unchanged.</strong> A prompt with no tool call gives the same temperature-0 answer hash
 with <code>--chip</code>, without it, and on the engine before this work, for the same prompt text.</li>
 </ul>
-<h4 id="rfd-2491-7">Serving</h4>
+<h4 id="rfd-2491-8">Serving</h4>
 <p><code>--chip NAME</code> selects a firmware and adds the calc tool to a request that declares none. The
 answered call is returned inline in the content: the call, the tool response the firmware
 printed, then the model’s answer. <code>--chip-trace FILE</code> writes each burst’s tokens.</p>
@@ -6158,7 +6169,7 @@ printed, then the model’s answer. <code>--chip-trace FILE</code> writes each b
 stops at startup. A request whose echo is cut by the output limit ends with the limit reason.</p>
 <p>On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 105.1 tokens per
 second without <code>--chip</code> and at 71.6 with it, both without a drafter.</p>
-<h4 id="rfd-2491-8">Open questions</h4>
+<h4 id="rfd-2491-9">Open questions</h4>
 <ul>
 <li>A drafter is refused beside the tower, so a <code>--chip</code> server runs without DFlash2. Drafting is
 not shown safe: a drafted round could commit tokens after the closing tag.</li>
@@ -6171,10 +6182,10 @@ earlier calls have not run with <code>--chip</code>.</li>
 <li>How often Bonsai 2 writes a well-formed calc call on its own is unmeasured.</li>
 <li>The tower is stored dense. The plane format above is not built.</li>
 </ul>
-<h4 id="rfd-2491-9">The problem</h4>
+<h4 id="rfd-2491-10">The problem</h4>
 <p>Bonsai 2 cannot do exact arithmetic on its own, and a host tool adds a round trip and a
 second program to trust.</p>
-<h4 id="rfd-2491-10">Related</h4>
+<h4 id="rfd-2491-11">Related</h4>
 <ul>
 <li><a href="#rfd-2311">RFD66606-2311</a> (Bonsai 2 serving), whose artifact and server this extends.</li>
 <li><a href="#rfd-2462">RFD66606-2462</a> (the prism llama.cpp branch), a second runtime the same export can feed.</li>

@@ -28,9 +28,11 @@ rfd 2494, "mojo builds to a risc-v guest elf", :discussion do
   - The public function is registered while main runs. The Variant glue is C, the logic Mojo.
   - Each limit of the guest is a witness property that stays red until the limit is lifted, beside
     two controls that stay green (operator, 2026-11-14).
-  - This is a study. New guest code is still SafeGDScript first.
+  - Mojo is a guest language beside SafeGDScript, which stays first for new guest code
+    (operator, 2026-11-14).
   :: related
   - RFD66606-2391, guests are built at double precision, which the Variant size follows.
+  - RFD66606-2492, whose session rules name the guest languages.
   - RFD66606-2420, C guests built at double and tested with Lean.
   - RFD66606-2372, heavy compute runs in a sandbox guest.
   """

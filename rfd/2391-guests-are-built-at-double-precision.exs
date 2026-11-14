@@ -24,6 +24,9 @@ rfd 2391, "guests are built at double precision", :discussion do
     Xgodot_lite` stays float, since the host boundary is `api.hpp`'s
     `Variant` and `PackedFloat32Array` is float either way. `lasso` and
     `curvenet` export `variant_bytes()`.
+  - A Mojo guest is held to the same size. It names 40 bytes in its own `.sandbox_variant`
+    section and the double host refuses a guest that names another (RFD66606-2494, operator,
+    2026-11-14).
   :: related
   - RFD66606-2293, where this rule lived before the split.
   """
@@ -38,7 +41,9 @@ rfd 2391, "guests are built at double precision", :discussion do
   the replay pass on the double editor and template builds in CI on
   linux x86_64 and on the Frame through `run-xr.sh`. Control:
   `--control=single_elf` loads a committed single-precision
-  `curvenet.elf` and must print `RESULT: FAIL`. `linux.yml` gains
+  `curvenet.elf` and must print `RESULT: FAIL`. A Mojo guest built to name 24 bytes is refused by
+  the double host with "this program's Variant is 24 bytes, and this build's is 40".
+  `linux.yml` gains
   `feat/*` and stays as the single-precision arm.
   """
 

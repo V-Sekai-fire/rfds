@@ -654,7 +654,8 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
   native binary from `entities-godot-sandbox`; Mitsuba 3 GPU variants.
 - **Inference:** ggml (RFD66606-2188) with the Vulkan backend; Gemma 4 (E2B, E4B); rf-detr keypoint
   and segmentation heads.
-- **Language serving:** ninfer-all (Apache-2.0, our fork of `iamwavecut/ninfer-all`), the CUDA
+- **Language serving:** ninfer-all (Apache-2.0, our fork of `iamwavecut/ninfer-all`, kept in the
+  repository `interactor-language-ninfer`), the CUDA
   engine and converter that serve Ternary Bonsai 2 27B (RFD66606-2311).
 - **In-weights machine:** qwenputer (MIT, `divagr18/qwenputer`, used from our fork), a compiler
   that writes an RV32IM processor as Gated DeltaNet layers. Its circuit compiler, reference

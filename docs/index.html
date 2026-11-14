@@ -3250,7 +3250,8 @@ orchestration and the DFC runtime; Metal and Core ML on macOS.</li>
 native binary from <code>entities-godot-sandbox</code>; Mitsuba 3 GPU variants.</li>
 <li><strong>Inference:</strong> ggml (RFD66606-2188) with the Vulkan backend; Gemma 4 (E2B, E4B); rf-detr keypoint
 and segmentation heads.</li>
-<li><strong>Language serving:</strong> ninfer-all (Apache-2.0, our fork of <code>iamwavecut/ninfer-all</code>), the CUDA
+<li><strong>Language serving:</strong> ninfer-all (Apache-2.0, our fork of <code>iamwavecut/ninfer-all</code>, kept in the
+repository <code>interactor-language-ninfer</code>), the CUDA
 engine and converter that serve Ternary Bonsai 2 27B (<a href="#rfd-2311">RFD66606-2311</a>).</li>
 <li><strong>In-weights machine:</strong> qwenputer (MIT, <code>divagr18/qwenputer</code>, used from our fork), a compiler
 that writes an RV32IM processor as Gated DeltaNet layers. Its circuit compiler, reference
@@ -6120,7 +6121,8 @@ the calc firmware is linked with.</p>
 <p>The conversion reads the tower from a path inside the checkout, so the artifact and its
 report name no host directory, and the job that publishes them stops if one does. Every
 object of the published file equals the object of the file the served witness ran on.</p>
-<p>The steps an operator follows are <code>v-sekai/chip-tower-sop.md</code> in the ninfer-all fork.</p>
+<p>The steps an operator follows are <code>v-sekai/chip-tower-sop.md</code> in the ninfer-all fork, the
+repository interactor-language-ninfer.</p>
 <h4 id="rfd-2491-6">Ternary planes</h4>
 <p>Every tower matrix is a sum of ternary planes: weights in {-1, 0, +1} with one scale per
 row and group of 128 columns, or per column and group of 128 rows where that needs fewer
@@ -13139,8 +13141,9 @@ the stage to.</li>
 <p><strong>State:</strong> committed
 <strong>Feature:</strong> each card serves Ternary Bonsai 2 27B through ninfer-all with a DFlash2 drafter of five
 tokens, and this RFD is how to set that up again from nothing on any Fedora 44 host
-<strong>Scope:</strong> the V-Sekai-fire/ninfer-all fork, the t2 <code>.ninfer</code> artifact, one systemd unit per card on
-Fedora 44 (native or WSL2), the mTLS front and the client’s single router port</p>
+<strong>Scope:</strong> the ninfer-all fork (repository interactor-language-ninfer), the t2 <code>.ninfer</code> artifact,
+one systemd unit per card on Fedora 44 (native or WSL2), the mTLS front and the client’s single
+router port</p>
 <p><strong>Each card serves Bonsai 2 through ninfer-all with a DFlash2 drafter, set up from nothing.</strong></p>
 <p>No RFD decided how a card serves Bonsai 2, and the setup lived in agents’ notes, tied to
 whichever machine held the cards that week.</p>

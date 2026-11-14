@@ -85,7 +85,8 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
   report name no host directory, and the job that publishes them stops if one does. Every
   object of the published file equals the object of the file the served witness ran on.
 
-  The steps an operator follows are `v-sekai/chip-tower-sop.md` in the ninfer-all fork.
+  The steps an operator follows are `v-sekai/chip-tower-sop.md` in the ninfer-all fork, the
+  repository interactor-language-ninfer.
 
   :: details Ternary planes
   Every tower matrix is a sum of ternary planes: weights in {-1, 0, +1} with one scale per

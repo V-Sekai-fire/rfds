@@ -286,6 +286,7 @@ defmodule Serials.VSekaiFabric do
       serial 2491, "bonsai-2-runs-a-risc-v-machine-in-its-own-layers"
       serial 2492, "the-motion-matching-guest-predicts-a-body-on-the-wire"
       serial 2493, "a-zone-relay-only-routes"
+      serial 2494, "mojo-builds-to-a-risc-v-guest-elf"
     end
 
     deleted do

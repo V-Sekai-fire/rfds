@@ -74,6 +74,19 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
   parameter is its own object. The converter refuses a tower whose head geometry or token offset
   differs from the text model's.
 
+  :: details The published artifact
+  The artifact with the tower is `models/chip/bonsai2-27b-heretic-chip.ninfer` in the public
+  dataset that holds the artifact of RFD66606-2311. Its SHA-256 is in
+  `models/chip/SHA256SUMS` beside it. The tower's source and the golden stream are in
+  `sources/tower-27b/`. The dataset's `NOTICE` names qwenputer and the libraries
+  the calc firmware is linked with.
+
+  The conversion reads the tower from a path inside the checkout, so the artifact and its
+  report name no host directory, and the job that publishes them stops if one does. Every
+  object of the published file equals the object of the file the served witness ran on.
+
+  The steps an operator follows are `v-sekai/chip-tower-sop.md` in the ninfer-all fork.
+
   :: details Ternary planes
   Every tower matrix is a sum of ternary planes: weights in {-1, 0, +1} with one scale per
   row and group of 128 columns, or per column and group of 128 rows where that needs fewer

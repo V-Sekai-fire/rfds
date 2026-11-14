@@ -140,7 +140,8 @@ rfd 2492, "the motion matching guest predicts a body on the wire", :discussion d
 
   :: details Rules a new session must keep
   - The Packet stays 100 bytes and a frame stays 12 Packets. New data goes into a payload.
-  - New guest code is SafeGDScript first. Tools are `.exs` and gates are `.gd`. No new Python.
+  - New guest code is SafeGDScript first. Mojo is also a guest language (RFD66606-2494, operator,
+    2026-11-14). Tools are `.exs` and gates are `.gd`. No new Python.
   - Comments are at most 3% of a file's lines. The explanation goes into documentation.
   - Commits are authored as the operator, in sentence case, with no trailer and no agent credit.
   - No file names the reference social VR platform.

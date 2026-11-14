@@ -26,11 +26,13 @@ rfd 2494, "mojo builds to a risc-v guest elf", :discussion do
     2026-11-14).
   - The guest names its Variant size, 40 bytes for a double-precision host, in its own section.
   - The public function is registered while main runs. The Variant glue is C, the logic Mojo.
-  - Each limit of the guest is a witness property that stays red until the limit is lifted, beside
-    two controls that stay green (operator, 2026-11-14).
-  - This is a study. New guest code is still SafeGDScript first.
+  - Each limit of the guest is a witness property that is red until the limit is lifted, with a
+    control that stays green (operator, 2026-11-14).
+  - Mojo is a guest language beside SafeGDScript, which stays first for new guest code
+    (operator, 2026-11-14).
   :: related
   - RFD66606-2391, guests are built at double precision, which the Variant size follows.
+  - RFD66606-2492, whose session rules name the guest languages.
   - RFD66606-2420, C guests built at double and tested with Lean.
   - RFD66606-2372, heavy compute runs in a sandbox guest.
   """
@@ -45,9 +47,11 @@ rfd 2494, "mojo builds to a risc-v guest elf", :discussion do
   - It ran in the engine's double-precision Sandbox build in a real window, and in the safe-Rust
     libriscv port, which has no Sandbox host. A Godot build without the Sandbox class fails it.
   :: details The limits
-  The tests are in its tests directory and run in the Rust port. Five of seven are red today:
-  bool, float, string and object Variants, and a second worker. Int Variants and a spin lock
-  under 100 tasks are the green controls. The Wait_Timeout test is skipped, because the clock does
-  not advance in either host. Native arguments to a vmcall return null, checked in the engine.
+  The tests are in its tests directory. They run in the Rust port, and the string test also runs
+  in the engine, because a string lives in the host. Every property holds today: int, bool, float,
+  string and object Variants, one worker, parallelize on one worker, and a spin lock under tasks.
+  The Wait_Timeout test is skipped, because the clock does not advance in either host. A vmcall
+  of an echo function returns each of the five types unchanged in the engine. Native arguments
+  to a vmcall return null, which is the one limit still red.
   """
 end

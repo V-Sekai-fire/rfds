@@ -5771,9 +5771,10 @@ its unpublished headers, and the async runtime is its thread pool with one worke
 2026-11-14).</li>
 <li>The guest names its Variant size, 40 bytes for a double-precision host, in its own section.</li>
 <li>The public function is registered while main runs. The Variant glue is C, the logic Mojo.</li>
-<li>Each limit of the guest is a witness property that stays red until the limit is lifted, beside
-two controls that stay green (operator, 2026-11-14).</li>
-<li>This is a study. New guest code is still SafeGDScript first.</li>
+<li>Each limit of the guest is a witness property that is red until the limit is lifted, with a
+control that stays green (operator, 2026-11-14).</li>
+<li>Mojo is a guest language beside SafeGDScript, which stays first for new guest code
+(operator, 2026-11-14).</li>
 </ul>
 <p>Run the sample in the engine’s Sandbox build. It prints through the standard library, adds up
 three async tasks and answers a vmcall for add_numbers(3, 4) with 7. Then run the limits tests.</p>
@@ -5786,13 +5787,16 @@ after 1.0.0b3.dev2026071006 and through at least 1.1.0.dev2026081505, and works 
 libriscv port, which has no Sandbox host. A Godot build without the Sandbox class fails it.</li>
 </ul>
 <h4 id="rfd-2494-2">The limits</h4>
-<p>The tests are in its tests directory and run in the Rust port. Five of seven are red today:
-bool, float, string and object Variants, and a second worker. Int Variants and a spin lock
-under 100 tasks are the green controls. The Wait_Timeout test is skipped, because the clock does
-not advance in either host. Native arguments to a vmcall return null, checked in the engine.</p>
+<p>The tests are in its tests directory. They run in the Rust port, and the string test also runs
+in the engine, because a string lives in the host. Every property holds today: int, bool, float,
+string and object Variants, one worker, parallelize on one worker, and a spin lock under tasks.
+The Wait_Timeout test is skipped, because the clock does not advance in either host. A vmcall
+of an echo function returns each of the five types unchanged in the engine. Native arguments
+to a vmcall return null, which is the one limit still red.</p>
 <h4 id="rfd-2494-3">Related</h4>
 <ul>
 <li><a href="#rfd-2391">RFD66606-2391</a>, guests are built at double precision, which the Variant size follows.</li>
+<li><a href="#rfd-2492">RFD66606-2492</a>, whose session rules name the guest languages.</li>
 <li>RFD66606-2420, C guests built at double and tested with Lean.</li>
 <li><a href="#rfd-2372">RFD66606-2372</a>, heavy compute runs in a sandbox guest.</li>
 </ul>
@@ -6076,7 +6080,8 @@ answers the rest pose, which must give no saving.</li>
 <h4 id="rfd-2492-7">Rules a new session must keep</h4>
 <ul>
 <li>The Packet stays 100 bytes and a frame stays 12 Packets. New data goes into a payload.</li>
-<li>New guest code is SafeGDScript first. Tools are <code>.exs</code> and gates are <code>.gd</code>. No new Python.</li>
+<li>New guest code is SafeGDScript first. Mojo is also a guest language (<a href="#rfd-2494">RFD66606-2494</a>, operator,
+2026-11-14). Tools are <code>.exs</code> and gates are <code>.gd</code>. No new Python.</li>
 <li>Comments are at most 3% of a file’s lines. The explanation goes into documentation.</li>
 <li>Commits are authored as the operator, in sentence case, with no trailer and no agent credit.</li>
 <li>No file names the reference social VR platform.</li>
@@ -9474,13 +9479,16 @@ sandbox-api: <code>target_compile_definitions(sandbox_api PUBLIC DOUBLE_PRECISIO
 the host’s <code>ECALL_VEC3_OPS</code> handler in the placed source for what
 <code>fa0</code> carries. The pen’s <code>build.sh</code> passes <code>-DDOUBLE_PRECISION=ON</code>.
 Xgodot_lite<code>stays float, since the host boundary is</code>api.hpp<code>'s </code>Variant<code>and</code>PackedFloat32Array<code>is float either way.</code>lasso<code>and</code>curvenet<code>export</code>variant_bytes()`.</li>
+<li>A Mojo guest is held to the same size. It names 40 bytes in its own <code>.sandbox_variant</code>
+section and the double host refuses a guest that names another (<a href="#rfd-2494">RFD66606-2494</a>, operator,
+2026-11-14).</li>
 </ul>
 <p>Run <code>tools/probe_load.gd</code> and check that <code>variant_bytes() == 40</code> for curvenet and lasso when
 <code>OS.has_feature(&quot;double&quot;)</code> holds.</p>
 <h4 id="rfd-2391-1">Check and control</h4>
 <p>Check: <code>tools/probe_load.gd</code> loads <code>lasso.elf</code> (seven PASS lines with
 their controls) and asserts <code>OS.has_feature(&quot;double&quot;)</code> implies
-<code>variant_bytes() == 40</code> for curvenet and lasso. Xtools/test.sh<code>and the replay pass on the double editor and template builds in CI on linux x86_64 and on the Frame through</code>run-xr.sh<code>. Control: </code>–control=single_elf<code>loads a committed single-precision</code>curvenet.elf<code>and must print</code>RESULT: FAIL<code>. </code>linux.yml<code>gains</code>feat/*` and stays as the single-precision arm.</p>
+<code>variant_bytes() == 40</code> for curvenet and lasso. Xtools/test.sh<code>and the replay pass on the double editor and template builds in CI on linux x86_64 and on the Frame through</code>run-xr.sh<code>. Control: </code>–control=single_elf<code>loads a committed single-precision</code>curvenet.elf<code>and must print</code>RESULT: FAIL<code>. A Mojo guest built to name 24 bytes is refused by the double host with &quot;this program's Variant is 24 bytes, and this build's is 40&quot;. </code>linux.yml<code>gains</code>feat/*` and stays as the single-precision arm.</p>
 <h4 id="rfd-2391-2">The tuples</h4>
 <pre><code class="language-rebac">rfd-2391--provides--guest-elf-double
 rfd-2391--provides--guests-double-precision-build

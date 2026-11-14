@@ -161,9 +161,10 @@
 <li><a href="#rfd-2491-6" id="markdown-toc-rfd-2491-6">Ternary planes</a></li>
 <li><a href="#rfd-2491-7" id="markdown-toc-rfd-2491-7">Witnesses</a></li>
 <li><a href="#rfd-2491-8" id="markdown-toc-rfd-2491-8">Serving</a></li>
-<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">Open questions</a></li>
-<li><a href="#rfd-2491-10" id="markdown-toc-rfd-2491-10">The problem</a></li>
-<li><a href="#rfd-2491-11" id="markdown-toc-rfd-2491-11">Related</a></li>
+<li><a href="#rfd-2491-9" id="markdown-toc-rfd-2491-9">Drafting beside the tower</a></li>
+<li><a href="#rfd-2491-10" id="markdown-toc-rfd-2491-10">Open questions</a></li>
+<li><a href="#rfd-2491-11" id="markdown-toc-rfd-2491-11">The problem</a></li>
+<li><a href="#rfd-2491-12" id="markdown-toc-rfd-2491-12">Related</a></li>
 </ul></li>
 <li><a href="#rfd-2490" id="markdown-toc-rfd-2490">RFD66606-2490: What the fabric is for, and what it is not</a><ul>
 <li><a href="#rfd-2490-1" id="markdown-toc-rfd-2490-1">Charter digest</a></li>
@@ -6167,16 +6168,35 @@ with <code>--chip</code>, without it, and on the engine before this work, for th
 <p><code>--chip NAME</code> selects a firmware and adds the calc tool to a request that declares none. The
 answered call is returned inline in the content: the call, the tool response the firmware
 printed, then the model’s answer. <code>--chip-trace FILE</code> writes each burst’s tokens.</p>
-<p>A <code>--chip</code> server has one request lane, one device and no drafter. Any other combination
-stops at startup. A request whose echo is cut by the output limit ends with the limit reason.</p>
-<p>On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 105.1 tokens per
-second without <code>--chip</code> and at 71.6 with it, both without a drafter.</p>
-<h4 id="rfd-2491-9">Open questions</h4>
+<p>A <code>--chip</code> server has one request lane and one device. It runs with no drafter or with the
+DFlash2 drafter at up to 11 draft tokens. Any other combination stops at startup. A request
+whose echo is cut by the output limit ends with the limit reason.</p>
+<p>On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 93 to 99 tokens
+per second with <code>--chip</code> and DFlash2 at five draft tokens, at 69 to 71 with <code>--chip</code> and no
+drafter, and at 171 to 190 on the server of <a href="#rfd-2311">RFD66606-2311</a> without the tower.</p>
+<h4 id="rfd-2491-9">Drafting beside the tower</h4>
+<p>A DFlash2 round commits at most one token more than its draft tokens. While a tool call is
+open, the server gives a round a budget of one token, so the round carries no draft and the
+closing tag is the last token of its round. The burst starts there. The echo is forced
+through the text model by the path the thinking-budget close uses, and that path also
+appends the drafter’s context.</p>
+<p>The budget of one starts in the round after the opening tag. A round that held the opening
+tag, the closing tag and one more token would commit text before the echo. The shortest
+well-formed call is 12 tokens, and a round at 11 draft tokens holds 12, so no well-formed
+call fits. A malformed call shorter than a round is detected and counted, not prevented.</p>
+<p>Served with DFlash2 at five draft tokens, 47 bursts and 121,346 chip tokens equal the
+reference machine’s, 34 of 34 prompts equal Python, no round commits more than one token
+while a call is open, and no owned position is skipped. Controls: with the budget of one
+switched off by a test option, 234 rounds commit more than one token while a call is open,
+and with the ROM word spoiled every burst differs.</p>
+<h4 id="rfd-2491-10">Open questions</h4>
 <ul>
-<li>A drafter is refused beside the tower, so a <code>--chip</code> server runs without DFlash2. Drafting is
-not shown safe: a drafted round could commit tokens after the closing tag.</li>
-<li>Each prompt token steps the tower by itself on every request, also on a prefix-cache hit.
-Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
+<li>The n-gram drafter, MTP and DFlash are refused beside the tower. The n-gram drafter is the
+larger part of the speed that a <code>--chip</code> server still gives up.</li>
+<li>A malformed call shorter than a round can pass its closing tag. Preventing it needs a
+partial commit of a round, which the engine does not have.</li>
+<li>Each prompt token and each decoded token steps the tower by itself, also on a prefix-cache
+hit. Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
 unmeasured.</li>
 <li>A burst runs inside one engine unit, so a cancel is seen only after it.</li>
 <li>Thinking mode, streaming, the other endpoints, structured output and histories that hold
@@ -6184,10 +6204,10 @@ earlier calls have not run with <code>--chip</code>.</li>
 <li>How often Bonsai 2 writes a well-formed calc call on its own is unmeasured.</li>
 <li>The tower is stored dense. The plane format above is not built.</li>
 </ul>
-<h4 id="rfd-2491-10">The problem</h4>
+<h4 id="rfd-2491-11">The problem</h4>
 <p>Bonsai 2 cannot do exact arithmetic on its own, and a host tool adds a round trip and a
 second program to trust.</p>
-<h4 id="rfd-2491-11">Related</h4>
+<h4 id="rfd-2491-12">Related</h4>
 <ul>
 <li><a href="#rfd-2311">RFD66606-2311</a> (Bonsai 2 serving), whose artifact and server this extends.</li>
 <li><a href="#rfd-2462">RFD66606-2462</a> (the prism llama.cpp branch), a second runtime the same export can feed.</li>

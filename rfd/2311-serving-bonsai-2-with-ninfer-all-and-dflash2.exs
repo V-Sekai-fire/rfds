@@ -5,8 +5,9 @@ use RFD.DSL
 rfd 2311, "serving bonsai 2 with ninfer-all and dflash2", :committed do
   feature "each card serves Ternary Bonsai 2 27B through ninfer-all with a DFlash2 drafter of five
 tokens, and this RFD is how to set that up again from nothing on any Fedora 44 host"
-  scope "the V-Sekai-fire/ninfer-all fork, the t2 `.ninfer` artifact, one systemd unit per card on
-Fedora 44 (native or WSL2), the mTLS front and the client's single router port"
+  scope "the ninfer-all fork (repository interactor-language-ninfer), the t2 `.ninfer` artifact,
+one systemd unit per card on Fedora 44 (native or WSL2), the mTLS front and the client's single
+router port"
 
   prose ~S"""
   :: hook

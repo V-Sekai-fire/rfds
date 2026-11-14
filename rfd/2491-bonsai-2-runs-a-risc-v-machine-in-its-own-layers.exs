@@ -135,17 +135,39 @@ that writes it, the ninfer-all converter and engine that store and run it, and t
   answered call is returned inline in the content: the call, the tool response the firmware
   printed, then the model's answer. `--chip-trace FILE` writes each burst's tokens.
 
-  A `--chip` server has one request lane, one device and no drafter. Any other combination
-  stops at startup. A request whose echo is cut by the output limit ends with the limit reason.
+  A `--chip` server has one request lane and one device. It runs with no drafter or with the
+  DFlash2 drafter at up to 11 draft tokens. Any other combination stops at startup. A request
+  whose echo is cut by the output limit ends with the limit reason.
 
-  On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 105.1 tokens per
-  second without `--chip` and at 71.6 with it, both without a drafter.
+  On one RTX 4090 a burst runs at 500 chip tokens per second. Text decodes at 93 to 99 tokens
+  per second with `--chip` and DFlash2 at five draft tokens, at 69 to 71 with `--chip` and no
+  drafter, and at 171 to 190 on the server of RFD66606-2311 without the tower.
+
+  :: details Drafting beside the tower
+  A DFlash2 round commits at most one token more than its draft tokens. While a tool call is
+  open, the server gives a round a budget of one token, so the round carries no draft and the
+  closing tag is the last token of its round. The burst starts there. The echo is forced
+  through the text model by the path the thinking-budget close uses, and that path also
+  appends the drafter's context.
+
+  The budget of one starts in the round after the opening tag. A round that held the opening
+  tag, the closing tag and one more token would commit text before the echo. The shortest
+  well-formed call is 12 tokens, and a round at 11 draft tokens holds 12, so no well-formed
+  call fits. A malformed call shorter than a round is detected and counted, not prevented.
+
+  Served with DFlash2 at five draft tokens, 47 bursts and 121,346 chip tokens equal the
+  reference machine's, 34 of 34 prompts equal Python, no round commits more than one token
+  while a call is open, and no owned position is skipped. Controls: with the budget of one
+  switched off by a test option, 234 rounds commit more than one token while a call is open,
+  and with the ROM word spoiled every burst differs.
 
   :: details Open questions
-  - A drafter is refused beside the tower, so a `--chip` server runs without DFlash2. Drafting is
-    not shown safe: a drafted round could commit tokens after the closing tag.
-  - Each prompt token steps the tower by itself on every request, also on a prefix-cache hit.
-    Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
+  - The n-gram drafter, MTP and DFlash are refused beside the tower. The n-gram drafter is the
+    larger part of the speed that a `--chip` server still gives up.
+  - A malformed call shorter than a round can pass its closing tag. Preventing it needs a
+    partial commit of a round, which the engine does not have.
+  - Each prompt token and each decoded token steps the tower by itself, also on a prefix-cache
+    hit. Chunked calls would cost less, and whether the chunked ops are bit-exact on the tower is
     unmeasured.
   - A burst runs inside one engine unit, so a cancel is seen only after it.
   - Thinking mode, streaming, the other endpoints, structured output and histories that hold

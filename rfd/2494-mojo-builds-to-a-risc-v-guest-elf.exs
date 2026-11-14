@@ -51,7 +51,8 @@ rfd 2494, "mojo builds to a risc-v guest elf", :discussion do
   in the engine, because a string lives in the host. Every property holds today: int, bool, float,
   string and object Variants, one worker, parallelize on one worker, and a spin lock under tasks.
   The Wait_Timeout test is skipped, because the clock does not advance in either host. A vmcall
-  of an echo function returns each of the five types unchanged in the engine. Native arguments
-  to a vmcall return null, which is the one limit still red.
+  of an echo function returns each of the five types unchanged in the engine. A host that passes
+  native arguments gets its own function, add_numbers_native, which returns 7 for 3 and 4. Only
+  that function has a native form. Nothing is red except the skipped Wait_Timeout test.
   """
 end

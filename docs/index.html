@@ -5791,8 +5791,9 @@ libriscv port, which has no Sandbox host. A Godot build without the Sandbox clas
 in the engine, because a string lives in the host. Every property holds today: int, bool, float,
 string and object Variants, one worker, parallelize on one worker, and a spin lock under tasks.
 The Wait_Timeout test is skipped, because the clock does not advance in either host. A vmcall
-of an echo function returns each of the five types unchanged in the engine. Native arguments
-to a vmcall return null, which is the one limit still red.</p>
+of an echo function returns each of the five types unchanged in the engine. A host that passes
+native arguments gets its own function, add_numbers_native, which returns 7 for 3 and 4; only
+that function has a native form. Nothing is red except the skipped Wait_Timeout test.</p>
 <h4 id="rfd-2494-3">Related</h4>
 <ul>
 <li><a href="#rfd-2391">RFD66606-2391</a>, guests are built at double precision, which the Variant size follows.</li>

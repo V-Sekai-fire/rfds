@@ -105,6 +105,20 @@ rfd 2495, "aux part labels from alchemy3d-segment", :ideation do
     gives ARI 0.61 against garment and body, 0.65 against classes and 0.46 against panels. The
     fine-tune is worse on every row. The baseline's masks overlap the true garment pixels at a
     mean IoU of 0.88.
+  - Training data for the 2D maps is relabelled into AUX ids: Skirt 1, Sleeve 2, Collar 3, Cape
+    4 and Accessory 5. The real Fashionpedia-class set keeps 10,248 of 28,400 train
+    annotations (Sleeve 5,600, Accessory 3,005, Collar 1,026, Skirt 595, Cape 22). Cape has no
+    validation instance and two test instances, so it cannot be scored. Hood joins Collar and
+    a sleeve cuff follows its sleeve. Whole garments, shoes, tights and details such as
+    pockets are left as background.
+  - A synthetic set from 360 GarmentCode drapes on the neutral body (281 train, 39 valid, 40
+    test, split by garment, the tested garment held out) carries exact masks for Skirt, Sleeve
+    and Collar. The fine-tune on it reached validation mask AP 0.367 at epoch 5 of 15 and
+    was still rising. It has not been scored on the test split or on real photographs.
+  - HairDeck, which makes hair cards and spring-bone chains from one portrait, ran on the Mac
+    (Apple MPS) on one poseswap portrait in 35 seconds. It needs SAM 3 and DINOv3, both
+    gated. Mirrors of the same bytes matched the pinned SHA-256 of each. The output was not
+    inspected beyond its mask.
   - Segment has no camera input. Each map is cropped to its bounding box and fed as image
     tokens, and run() defaults to seed 42, so repeat runs match.
   - Mitsuba 3 and a nvdiffrast rasteriser agree on silhouettes at IoU 0.99 for seven of eight
@@ -126,8 +140,8 @@ rfd 2495, "aux part labels from alchemy3d-segment", :ideation do
     only for the class names.
   :: details Open questions
   - Do the scores hold on more garments, other bodies and the five classes GarmentCode lacks?
-  - Does the hood row belong to Collar, Accessory or the body?
-  - How should a cuff skirt on a sleeve or trouser be labelled?
+  - Hood goes to Collar and sleeve cuffs follow their sleeve in the training data. Does the
+    operator accept that, and should a trouser cuff stay with the body?
   - Can RF-DETR maps on photographs or dressed ANNY renders match the synthetic scores?
   """
 end

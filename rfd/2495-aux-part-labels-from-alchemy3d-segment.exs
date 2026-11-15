@@ -88,6 +88,17 @@ rfd 2495, "aux part labels from alchemy3d-segment", :ideation do
     against its true panels: instance maps give ARI 0.072 against a control of −0.001, and
     semantic maps give −0.104 against true classes. All four groups mix Skirt, body, Sleeve
     and Hood. Skirt is 72 percent of the faces, and this is one garment, not a rate.
+  - Dressed on the neutral body, the same garment scores ARI 0.123 (instance maps) and 0.139
+    (semantic maps) against true panels, and 0.096 and 0.144 with a red cloth and a skin
+    texture. Against the five true classes the range is 0.011 to 0.088, with shuffled controls
+    at 0.00. The groups still mix body and skirt faces.
+  - Garment against body as a two-way split: connected components separate them exactly (ARI
+    1.000, 19 components, none mixed), because they are separate shells. Segment's ARI on the
+    same split ranges from 0.015 to 0.051.
+  - Welding the garment to the body where they lie within 5 mm (about three stacked pennies)
+    changes 2,297 vertices and 2 faces and leaves one connected mesh, so components score
+    0.0. Segment scores 0.008 to 0.033 and calls 58 to 59 percent of faces right, against 54.6
+    percent for calling every face garment. The same holds with textures.
   - Mitsuba 3 and a nvdiffrast rasteriser agree on silhouettes at IoU 0.99 for seven of eight
     views. The pole view differs because its up vector is degenerate.
   - Segment ran without Blender, which is blocklisted as a renderer. The source ingest uses
@@ -95,8 +106,9 @@ rfd 2495, "aux part labels from alchemy3d-segment", :ideation do
   - Generating mannequin outfits with OmniGen2 takes 67 seconds an image at 50 steps and 34
     seconds at 25. At 25 steps, three of three prompts dropped a requested garment.
   :: details Not yet run
-  - The garment test used a grey cloth shell with no body, and the cameras came from Alchemy3D's
-    helper, not the workspace's reference orbit renderer. Neither is ruled out as the cause.
+  - Every garment result is one garment, one body and one seed. The cameras came from
+    Alchemy3D's helper, not the workspace's reference orbit renderer, which is ruled out only
+    by the pony control. The cage guest has not been run on any of this.
   - Where the SOMA-X twist skin weights live, and whether its ANNY wrap carries them to ANNY's
     topology, is unchecked. Labelling corrective vertices by offset magnitude over a pose set
     is our proposal, with a threshold SOMA-X does not define.

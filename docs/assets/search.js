@@ -198,8 +198,7 @@
     const re = pattern(r.groups || []);
     hits = r.hits.slice(0, limit).map(({ d }) => {
       const sn = snippet(d, re, r.phrases || []);
-      const frag = sn.word ? `#:~:text=${encodeURIComponent(sn.word)}` : "";
-      return { href: base + (d.u.startsWith("#") ? d.u + frag.replace(/^#/, "") : d.u + frag), d, sn };
+      return { href: base + d.u, d, sn };
     });
     at = hits.length ? 0 : -1;
     const n = r.hits.length;

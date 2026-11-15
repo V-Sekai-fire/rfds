@@ -128,6 +128,13 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2495" id="markdown-toc-rfd-2495">RFD66606-2495: aux part labels from alchemy3d-segment</a><ul>
+<li><a href="#rfd-2495-1" id="markdown-toc-rfd-2495-1">Class table</a></li>
+<li><a href="#rfd-2495-2" id="markdown-toc-rfd-2495-2">What was measured</a></li>
+<li><a href="#rfd-2495-3" id="markdown-toc-rfd-2495-3">Not yet run</a></li>
+<li><a href="#rfd-2495-4" id="markdown-toc-rfd-2495-4">Open questions</a></li>
+<li><a href="#rfd-2495-5" id="markdown-toc-rfd-2495-5">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2494" id="markdown-toc-rfd-2494">RFD66606-2494: mojo builds to a risc-v guest elf</a><ul>
 <li><a href="#rfd-2494-1" id="markdown-toc-rfd-2494-1">What was run</a></li>
 <li><a href="#rfd-2494-2" id="markdown-toc-rfd-2494-2">The limits</a></li>
@@ -2562,8 +2569,8 @@
 </ul></li>
 </ul>
 <h2 id="part-1">The tech tree to the beta</h2>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 2 ideation · 💬 108 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 230 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 108 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 231 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <figure id="techtree" class="techtree">
 <script src="https://unpkg.com/@thorvg/lottie-player@1.1.3/dist/sw-lite/lottie-player.js" integrity="sha384-jG9aaX1Gb/uJNurNkdTDEuLP4dRsiuJwPIgZ6FWpcm1VeKFd4hwIdpM7xButdISs" crossorigin="anonymous" defer></script>
 <lottie-player src="assets/techtree.lot" filetype="lot" autoplay loop role="img" aria-label="The tech tree to the beta: skills, gates and tokens" style="display:block;width:100%;max-width:1280px;aspect-ratio:16/9"></lottie-player>
@@ -5754,6 +5761,115 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2495">RFD66606-2495: aux part labels from alchemy3d-segment</h3>
+<p><strong>State:</strong> ideation
+<strong>Feature:</strong> one segmentation model labels every garment and body-helper part of a dressed avatar.
+<strong>Scope:</strong> part labels for ANNY avatars: class sources, label maps and the model that reads them.</p>
+<p><strong>Can one segmentation model split a dressed avatar into body and auxiliary parts, with a named
+source of labels for each of the ten classes, including the ones no dataset covers?</strong></p>
+<p>The cage-wrapped net of <a href="#rfd-2488">RFD66606-2488</a> (cage-wrapped surface net) needs a cage and a trained
+DiffusionNet. Alchemy3D-Segment reads 1 to 8 coloured 2D maps instead, and its weights exist.
+Its README lists the map-making pipeline as unreleased, and its training code is unreleased.
+GarmentCode has panel programs for skirts, sleeves, collars and waistbands, and none for a
+cape, scarf, belt or bag. ANNY has no twist bones and no correctives. SOMA-X has both.</p>
+<ul>
+<li>Alchemy3D-Segment (a LoRA that paints part colours onto a 3D asset from 2D maps) labels the
+parts, in place of the cage-wrapped net and of TailorRig labelling (operator, 2026-11-14).</li>
+<li>Separating auxiliary parts from the body is enough. SkinTokens (the skeleton and skin
+weight model) keeps rigging the body (operator, 2026-11-14).</li>
+<li>The class set is TailorRig’s ten auxiliary classes: Twist, Accessory, Correction, Muscle,
+Skirt, Hair, Cape, Sleeve, Collar, Face. Every class gets a source, and none is skipped
+because it is hard to source (operator, 2026-11-14).</li>
+<li>Skirt, Sleeve and Collar come from GarmentCodeData panel labels. Cape, scarf, belt and bag
+come from patterns and shells we author, draped or built here with exact labels.</li>
+<li>Hair comes from HairDeck. Twist and Correction come from SOMA-X. Face comes from ANNY’s own
+body-part segmentation. Muscle comes from the source <a href="#rfd-2478">RFD66606-2478</a> (ANNY-soma-x pipeline)
+names, which is still unread for this use.</li>
+<li>The 2D maps come from RF-DETR segmentation of renders. Instance or semantic maps are decided
+by testing Segment on both, not by preference (operator, 2026-11-14).</li>
+<li>Which classes are rigid and which are soft is our rule per class, not TailorRig’s.</li>
+</ul>
+<p>Read DETAILS for the class table, what was measured and the open test, which dresses a
+garment on a body before Segment reads it.</p>
+<h4 id="rfd-2495-1">Class table</h4>
+<p>The ten classes were read by eye from the dataset-histogram figure of the TailorRig paper.
+The spelling and the per-class counts need a recheck before they go in a shared document.</p>
+<ul>
+<li>Skirt, Sleeve, Collar: GarmentCodeData batch 0 of the default body, 3,450 garments. About
+ten panel families hold 7,537 distinct labels. Skirt is the largest. Hood belongs to the
+collar family upstream, and TailorRig has no hood class, so it is an open row.</li>
+<li>Cape: no source exists. GarmentCode has no cape program, Fashionpedia has 19 clean images.
+We author a circle panel hung from a neck band and drape it.</li>
+<li>Scarf and belt: waistbands exist upstream. A scarf is a long strip at the neck and a belt
+is a band at the waist, both authored.</li>
+<li>Bag: three bodies. A tote is two panels and two strap bands with a proxy volume inside. A
+shoulder bag or handbag is a parametric rigid shell with a strap curve. A backpack is a
+shell with two straps. Straps on ANNY’s shoulders and a posed hand are untested.</li>
+<li>Hair: HairDeck turns one portrait into hair cards and spring-bone chains. The cards are
+separate meshes, so labels are exact. Its code and checkpoints are Apache-2.0, which
+settles the licence question <a href="#rfd-2478">RFD66606-2478</a> left open for those two. It needs the SAM 3
+and DINOv3 weights, which are gated, and Blender with the VRM add-on. Its output is
+generated data, so the generated-data rules apply.</li>
+<li>Twist and Correction: ANNY’s rigs and its bundled 78-bone SOMA rig have no twist bone, and
+its 1,136 blendshapes are shape, not correctives. The SOMA-X model repository
+(Apache-2.0, not gated) defines twist joints on a 110-joint template rig and ships a
+corrective network from joint rotations to vertex offsets.</li>
+<li>Face: ANNY ships a body-part segmentation with head, eyes, mouth cavity, tongue, hands
+and feet.</li>
+<li>Muscle: not read for this use.</li>
+</ul>
+<h4 id="rfd-2495-2">What was measured</h4>
+<ul>
+<li>The GarmentCode segmentation file has one label per vertex of the box mesh: 29,667 labels
+and 29,667 vertices for one garment. The draped mesh has 29,784 vertices. Matching by index
+gives 83.2 percent of faces whose non-seam vertices share one panel, against 12.3 percent
+for a shuffled control. Exact labels on a drape need a drape we run ourselves.</li>
+<li>Seam vertices are 4.6 percent of batch 0.</li>
+<li>RF-DETR segmentation fine-tuned on Fashionpedia, a local clothing set and pseudo-labelled
+poseswap garments matched the baseline on held-out photographs: mask AP 0.327 against 0.328
+on the test split. Pseudo-labels added edges, not knowledge.</li>
+<li>Segment ran on its README example in 6 to 12 seconds and 10.5 GB of GPU memory. Its labels
+come from MeanShift clustering of the colours it paints, so they are anonymous same-part
+ids, not class ids.</li>
+<li>Positive control: given maps rendered from the pony’s own labels, Segment reproduces them
+at adjusted Rand index (ARI, 1 for the same grouping, 0 for chance) 0.985. The example’s
+own maps give 0.981 and a shuffled truth gives 0.0.</li>
+<li>One GarmentCode garment, eight Hammersley views from Alchemy3D’s camera helper, scored
+against its true panels: instance maps give ARI 0.072 against a control of −0.001, and
+semantic maps give −0.104 against true classes. All four groups mix Skirt, body, Sleeve
+and Hood. Skirt is 72 percent of the faces, and this is one garment, not a rate.</li>
+<li>Mitsuba 3 and a nvdiffrast rasteriser agree on silhouettes at IoU 0.99 for seven of eight
+views. The pole view differs because its up vector is degenerate.</li>
+<li>Segment ran without Blender, which is blocklisted as a renderer. The source ingest uses
+trimesh and the O-Voxel textured-mesh voxelizer, and is untested against upstream’s path.</li>
+<li>Generating mannequin outfits with OmniGen2 takes 67 seconds an image at 50 steps and 34
+seconds at 25. At 25 steps, three of three prompts dropped a requested garment.</li>
+</ul>
+<h4 id="rfd-2495-3">Not yet run</h4>
+<ul>
+<li>The garment test used a grey cloth shell with no body, and the cameras came from Alchemy3D’s
+helper, not the workspace’s reference orbit renderer. Neither is ruled out as the cause.</li>
+<li>Where the SOMA-X twist skin weights live, and whether its ANNY wrap carries them to ANNY’s
+topology, is unchecked. Labelling corrective vertices by offset magnitude over a pose set
+is our proposal, with a threshold SOMA-X does not define.</li>
+<li>Only batch 0 of GarmentCodeData was surveyed.</li>
+<li>TailorRig is CC BY-NC-ND and its dataset is blocklisted. Only the paper was read, and
+only for the class names.</li>
+</ul>
+<h4 id="rfd-2495-4">Open questions</h4>
+<ul>
+<li>Does Segment separate a skirt from a body once the garment is dressed on one?</li>
+<li>Does the hood row belong to Collar, Accessory or the body?</li>
+<li>How should a cuff skirt on a sleeve or trouser be labelled?</li>
+<li>Can RF-DETR maps on dressed ANNY renders be good enough for Segment’s inputs?</li>
+</ul>
+<h4 id="rfd-2495-5">Related</h4>
+<ul>
+<li><a href="#rfd-2488">RFD66606-2488</a>, the cage-wrapped net whose segmentation step this replaces.</li>
+<li><a href="#rfd-2478">RFD66606-2478</a>, ANNY-soma-x, whose HairDeck licence note this updates.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2495-aux-part-labels-from-alchemy3d-segment.exs">rfd/2495-aux-part-labels-from-alchemy3d-segment.exs</a></em></p>
 <h3 id="rfd-2494">RFD66606-2494: mojo builds to a risc-v guest elf</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> a Mojo program with its standard library runs as a sandbox guest.

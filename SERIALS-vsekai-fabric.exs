@@ -287,6 +287,7 @@ defmodule Serials.VSekaiFabric do
       serial 2492, "the-motion-matching-guest-predicts-a-body-on-the-wire"
       serial 2493, "a-zone-relay-only-routes"
       serial 2494, "mojo-builds-to-a-risc-v-guest-elf"
+      serial 2495, "aux-part-labels-from-alchemy3d-segment"
     end
 
     deleted do

@@ -77,6 +77,14 @@ rfd 2493, "a zone relay only routes", :discussion do
   runs, where the first run under the old rule refused 7 of 320. A Linux runner printed the same
   figures as the development machine.
 
+  On Linux the relay reads up to 32 datagrams in one call and sends the frames of one tick in
+  batched calls, and falls back to one call a datagram elsewhere. On a rented machine with the
+  loopback and the same traffic, at 256 people, the median tick fell from 1.97e-3 s to
+  1.64e-3 s and a datagram sent cost 4.6e-6 s where it cost 5.5e-6 s. A later run at 256
+  people read a median tick of 1.77e-3 s and a 99th percentile of 2.44e-3 s, under the 4e-3 s
+  budget of RFD66606-2442, with 4.9e-6 s a datagram and no overrun. At 1,024 people the
+  loader and the relay shared two cores and the 99th percentile passed the budget.
+
   :: details Gates and controls
   Each gate prints a result line, and each control plants a defect that must be caught.
 
@@ -97,11 +105,12 @@ rfd 2493, "a zone relay only routes", :discussion do
     because its address was never named, arrive with the transport step.
 
   :: details What is not known
-  - The cost of one datagram. The development machine charges about 0.4 ms for a loopback
-    datagram, so its times compare one run with the next and nothing else. No number of people
-    is claimed.
-  - Whether a ring of submissions on Linux beats one send a datagram. That is a later rung, on
-    a Linux machine of ours.
+  - The cost of one datagram on a real network. The development machine charges about 4e-4 s
+    for a loopback datagram, so its times compare one run with the next and nothing else. The
+    Linux figures above are loopback too, with the load generator beside the relay.
+  - Whether a ring of submissions on Linux beats batched calls. None was built. A send costs
+    about 3.4e-6 s at 75, 300 and 1,200 bytes alike, so a smaller frame saves time only when it
+    also means fewer datagrams.
   - How the relay shares a viewer's frames among more than four people. The frame budget and
     its levels of detail by Morton prefix depth are a later rung.
 

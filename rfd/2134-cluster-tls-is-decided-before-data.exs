@@ -151,7 +151,8 @@ rfd 2134,
   The production hop that landed is stunnel, not the versitygw sidecar
   first named here: the job needed only SNI added to a TCP stream, and a
   second S3 implementation in the path was more moving parts than eleven
-  lines of stunnel config. One more wall surfaced live, Tigris routes
+  lines of stunnel config. The operator rescinded versitygw on 2026-11-16, and SeaweedFS is
+  the S3-compatible server (RFD66606-2364). One more wall surfaced live, Tigris routes
   buckets from the Host header, so the endpoint's name has to survive the
   hop (/etc/hosts points it at loopback after the IP is resolved for
   stunnel's literal dial). datasource-store PRs #4 and #5 carry the

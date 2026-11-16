@@ -10727,6 +10727,8 @@ the tailnet, with nothing needed from the WAN:</p>
 binaries are mirrored with their sha256s;</li>
 <li>each runtime (FoundationDB, Uro, OpenBao, the zone servers, the object store)
 runs on the laptop, with only its own data;</li>
+<li>the S3-compatible object store is SeaweedFS (operator, 2026-11-16). Fly’s Tigris and
+Cloudflare’s R2 stay as the hosted S3 stores, and versitygw is rescinded;</li>
 <li>names come from the laptop’s own resolver or the tailnet, and certificates
 from the offline CA;</li>
 <li>sign-in has a LAN-only method beside the third-party providers.</li>
@@ -18699,7 +18701,8 @@ The <code>dr</code> tag writes to R2 IA (<code>weftspun-fdb-dr</code>) and is th
 via a stunnel loopback listener that adds the SNI FoundationDB does
 not send. R2 IA carries a 30-day minimum storage duration and free
 egress. Since 2026-11-01 the cluster runs as one machine on Fly again, and Tigris is the
-main backup again (operator, 2026-11-01).</p>
+main backup again (operator, 2026-11-01). Tigris and R2 stay as the hosted S3 destinations,
+and the self-hosted S3 server is SeaweedFS (operator, 2026-11-16, <a href="#rfd-2364">RFD66606-2364</a>).</p>
 <p><strong>Gate:</strong> <code>fdbbackup status -t dr</code> reports the tag restorable and its
 newest complete log within <code>WEFT_BACKUP_MAX_BEHIND</code>, read by
 <code>backup-fresh.sh --tag dr</code> and published as <code>/dr</code> for the
@@ -19335,7 +19338,8 @@ submits and runs: <code>The backup on tag 'default' is in progress</code>.</li>
 <p>The production hop that landed is stunnel, not the versitygw sidecar
 first named here: the job needed only SNI added to a TCP stream, and a
 second S3 implementation in the path was more moving parts than eleven
-lines of stunnel config. One more wall surfaced live, Tigris routes
+lines of stunnel config. The operator rescinded versitygw on 2026-11-16, and SeaweedFS is
+the S3-compatible server (<a href="#rfd-2364">RFD66606-2364</a>). One more wall surfaced live, Tigris routes
 buckets from the Host header, so the endpoint’s name has to survive the
 hop (/etc/hosts points it at loopback after the IP is resolved for
 stunnel’s literal dial). datasource-store PRs #4 and #5 carry the
@@ -22469,14 +22473,13 @@ inside <code>weftspun-crdb</code>, and that is safe only because of this bind.
 <code>deps/cockroach_local</code>’s own foreground task warns that <code>--insecure</code>
 fits a developer machine. On a single box with loopback-only ports,
 this container plays that same narrow role.</p>
-<p>versitygw fronts object storage with the S3 API, per the user’s
-existing setup. A future worker may read model weights over S3. It
-would reach versitygw on its own bound port, under the same rule as
-this section. No port goes past loopback unless a remote caller
-needs it, and then only that one port.</p>
-<p>RFD66606-1073 puts this to work, on the Fly toplevel: <code>versitygw</code> runs
-colocated with <code>weftspun_studio</code>, bound to <code>127.0.0.1:10000</code>, the
-same rule stated here.</p>
+<p>SeaweedFS fronts object storage with the S3 API (operator, 2026-11-16). A future worker
+may read model weights over S3. It would reach SeaweedFS on its own bound port, under the
+same rule as this section. No port goes past loopback unless a remote caller needs it, and
+then only that one port.</p>
+<p>RFD66606-1073 once ran <code>versitygw</code> on the Fly toplevel, colocated with <code>weftspun_studio</code>
+on <code>127.0.0.1:10000</code>. The operator rescinded versitygw on 2026-11-16, and <a href="#rfd-1079">RFD66606-1079</a>
+had already removed it. Fly’s Tigris and Cloudflare’s R2 stay as the hosted S3 stores.</p>
 <h4 id="rfd-1058-3">CockroachDB replaces the Manta metadata tier’s ZooKeeper</h4>
 <p>Mark Cavage and David Pacheco’s <a href="https://queue.acm.org/detail.cfm?id=2645649">“Bringing Arbitrary Compute to
 Authoritative Data”</a>
@@ -22591,11 +22594,11 @@ and the Pixal3D worker stage.</p>
 <h4 id="rfd-1058-9">The problem</h4>
 <p>Trust must come from isolation, not from network position.</p>
 <h4 id="rfd-1058-10">Related</h4>
-<p>RFD66606-1019 gives the API server. <a href="#rfd-1020">RFD66606-1020</a> pins the CockroachDB build.
+<p>RFD66606-1019 gives the API server, and <a href="#rfd-1020">RFD66606-1020</a> pins the CockroachDB build.
 RFD66606-1037 gives the taskweft job/task split. RFD66606-1055 selects Docker
 images, on this box first. <a href="#rfd-1057">RFD66606-1057</a> tracks what is still open.
-RFD66606-1073 wires versitygw into the Fly toplevel this RFD’s loopback rule
-governs.</p>
+RFD66606-1073 put an S3 server on the Fly toplevel this RFD’s loopback rule
+governed.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/1058-zero-trust-networking.exs">rfd/1058-zero-trust-networking.exs</a></em></p>
 <p><span id="s3-16"></span></p>
 <h3 id="rfd-1057">RFD66606-1057: Open work</h3>

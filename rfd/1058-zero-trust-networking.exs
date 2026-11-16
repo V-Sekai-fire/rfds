@@ -28,11 +28,11 @@ rfd 1058, "Zero trust networking", :published do
   boot bugs this RFD found and fixed, the deploy command, and the
   verified status.
   :: related
-  RFD66606-1019 gives the API server. RFD66606-1020 pins the CockroachDB build.
+  RFD66606-1019 gives the API server, and RFD66606-1020 pins the CockroachDB build.
   RFD66606-1037 gives the taskweft job/task split. RFD66606-1055 selects Docker
   images, on this box first. RFD66606-1057 tracks what is still open.
-  RFD66606-1073 wires versitygw into the Fly toplevel this RFD's loopback rule
-  governs.
+  RFD66606-1073 put an S3 server on the Fly toplevel this RFD's loopback rule
+  governed.
   """
 
   details_title "Zero trust networking"
@@ -59,15 +59,14 @@ rfd 1058, "Zero trust networking", :published do
   fits a developer machine. On a single box with loopback-only ports,
   this container plays that same narrow role.
 
-  versitygw fronts object storage with the S3 API, per the user's
-  existing setup. A future worker may read model weights over S3. It
-  would reach versitygw on its own bound port, under the same rule as
-  this section. No port goes past loopback unless a remote caller
-  needs it, and then only that one port.
+  SeaweedFS fronts object storage with the S3 API (operator, 2026-11-16). A future worker
+  may read model weights over S3. It would reach SeaweedFS on its own bound port, under the
+  same rule as this section. No port goes past loopback unless a remote caller needs it, and
+  then only that one port.
 
-  RFD66606-1073 puts this to work, on the Fly toplevel: `versitygw` runs
-  colocated with `weftspun_studio`, bound to `127.0.0.1:10000`, the
-  same rule stated here.
+  RFD66606-1073 once ran `versitygw` on the Fly toplevel, colocated with `weftspun_studio`
+  on `127.0.0.1:10000`. The operator rescinded versitygw on 2026-11-16, and RFD66606-1079
+  had already removed it. Fly's Tigris and Cloudflare's R2 stay as the hosted S3 stores.
   :: details CockroachDB replaces the Manta metadata tier's ZooKeeper
   Mark Cavage and David Pacheco's ["Bringing Arbitrary Compute to
   Authoritative Data"](https://queue.acm.org/detail.cfm?id=2645649)

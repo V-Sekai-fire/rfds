@@ -60,7 +60,7 @@
         <ol hidden></ol>
       </div>
       
-<p class="edition">Edition of 2026-11-15.</p>
+<p class="edition">Edition of 2026-11-16.</p>
 <h2 id="toc-title" class="no_toc">Table of Contents</h2>
 <ul id="markdown-toc">
 <li><a href="#part-1" id="markdown-toc-part-1">The tech tree to the beta</a><ul>
@@ -128,6 +128,12 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2496" id="markdown-toc-rfd-2496">RFD66606-2496: ZFS data disks on the Mac desk</a><ul>
+<li><a href="#rfd-2496-1" id="markdown-toc-rfd-2496-1">The recorded run</a></li>
+<li><a href="#rfd-2496-2" id="markdown-toc-rfd-2496-2">The checks</a></li>
+<li><a href="#rfd-2496-3" id="markdown-toc-rfd-2496-3">What is not known</a></li>
+<li><a href="#rfd-2496-4" id="markdown-toc-rfd-2496-4">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2495" id="markdown-toc-rfd-2495">RFD66606-2495: aux part labels from alchemy3d-segment</a><ul>
 <li><a href="#rfd-2495-1" id="markdown-toc-rfd-2495-1">Class table</a></li>
 <li><a href="#rfd-2495-2" id="markdown-toc-rfd-2495-2">What was measured</a></li>
@@ -2569,8 +2575,8 @@
 </ul></li>
 </ul>
 <h2 id="part-1">The tech tree to the beta</h2>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 108 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 231 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 109 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 232 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <figure id="techtree" class="techtree">
 <script src="https://unpkg.com/@thorvg/lottie-player@1.1.3/dist/sw-lite/lottie-player.js" integrity="sha384-jG9aaX1Gb/uJNurNkdTDEuLP4dRsiuJwPIgZ6FWpcm1VeKFd4hwIdpM7xButdISs" crossorigin="anonymous" defer></script>
 <lottie-player src="assets/techtree.lot" filetype="lot" autoplay loop role="img" aria-label="The tech tree to the beta: skills, gates and tokens" style="display:block;width:100%;max-width:1280px;aspect-ratio:16/9"></lottie-player>
@@ -2699,7 +2705,7 @@
 </table>
 <p>The path holds 4 innovation tokens and 8 boring tokens.</p>
 <h3 id="s1-3">Progress to the goal</h3>
-<p>As of 2026-11-15, 0 of the 6 skills on the goal’s path are settled (committed), 2 are ready and 4 are blocked by a skill that is open. The goal, <a href="#rfd-2360">RFD66606-2360</a>, is discussion.</p>
+<p>As of 2026-11-16, 0 of the 6 skills on the goal’s path are settled (committed), 2 are ready and 4 are blocked by a skill that is open. The goal, <a href="#rfd-2360">RFD66606-2360</a>, is discussion.</p>
 <p>A skill is ready when it is open and every skill it cites at a deeper ring is settled. Ready now: <a href="#rfd-2374">RFD66606-2374</a>, <a href="#rfd-2387">RFD66606-2387</a>.</p>
 <h3 id="s1-4">Skipped ahead</h3>
 <p>0 skills on the path are settled while a skill they need is still open. Each is a technology switched on before its prerequisite.</p>
@@ -5761,6 +5767,86 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2496">RFD66606-2496: ZFS data disks on the Mac desk</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a data disk on the Mac desk is one ZFS pool whose settings are fixed at creation.
+<strong>Scope:</strong> the Mac desk’s external data disks: the check before a wipe, the pool, its proof.</p>
+<p><strong>Which settings of a ZFS pool can never change once the disk holds data, and what must be
+true of a disk before anyone wipes it?</strong></p>
+<p>Nothing in the workspace said how to prepare a ZFS disk. The first one was a 4 TB external
+drive whose partition table named a FAT volume, while its first sector held zeros. Sampling
+125 places across it found only zeros, so the label was stale and the disk was empty. The
+settings that the Mac file browser needs, folded Unicode names and case-insensitive lookups,
+are the ones that cannot be changed afterwards.</p>
+<ul>
+<li>A data disk is one whole-disk pool made with the OpenZFS port for the Mac (operator,
+2026-11-16). The disk is chosen by media name and byte size, never by its disk number.</li>
+<li>The pool is created with a 4096-byte sector shift, zstd compression, no access times, one
+copy of each block, folded Unicode names, case-insensitive lookups and UTF-8 names only.</li>
+<li>Before the wipe, the disk is unmounted, sampled for existing data, and the operator
+approves the wipe by name.</li>
+<li>The pool is done when it reads ONLINE, its settings read back, a written file hashes the
+same after a sync, a second name differing only in case replaces the first, a scrub finds
+no errors and the pool survives an export and an import.</li>
+<li>A pool is exported before its disk is unplugged. Boot pools on other hosts are out of
+scope.</li>
+</ul>
+<p>Read the section “The recorded run” for the commands. Run its checks against any pool: it
+passes when every check prints its expected line, and the case control leaves one file.</p>
+<h4 id="rfd-2496-1">The recorded run</h4>
+<p>The first pool is FIRE202610 on a 4.0 TB external USB drive, 7,814,037,168 sectors of 512
+bytes. The tools are in <code>/usr/local/zfs/bin</code>, version 2.3.1, and the kernel module is loaded.</p>
+<p>Before the wipe, the desk read the media name, the byte size and the partition table with
+<code>diskutil</code>, then read 4096 bytes at 125 places of the data partition, including the start,
+the middle and the end. All 125 were zeros. A dry run with <code>zpool create -n</code> accepted the
+options before the real one.</p>
+<p>The pool is created with these options:</p>
+<pre><code class="language-sh">sudo diskutil unmountDisk force disk6
+sudo /usr/local/zfs/bin/zpool create -f \
+  -o ashift=12 -o autoexpand=on \
+  -O compression=zstd -O atime=off -O copies=1 \
+  -O normalization=formD -O casesensitivity=insensitive -O utf8only=on \
+  -O mountpoint=/Volumes/FIRE202610 \
+  FIRE202610 /dev/disk6
+</code></pre>
+<p>The properties normalization, casesensitivity and utf8only cannot be changed after
+creation. Compression and copies can be changed, and they apply to data written afterwards.</p>
+<h4 id="rfd-2496-2">The checks</h4>
+<ul>
+<li>Status: <code>zpool status</code> reads ONLINE with no errors, and <code>zfs get</code> reads back each option.</li>
+<li>Readback: a 200 MB compressible file and a 50 MB random file hash the same before and
+after <code>sync</code>.</li>
+<li>Compression: the test dataset held 243 MB and took 49.7 MB, a ratio of 4.90x. The random
+file takes its full size, so a ratio near 1.00x on it is the control.</li>
+<li>Case: writing <code>a.txt</code> after <code>A.txt</code> leaves one file whose content is the second write.
+That is the wanted result on a case-insensitive pool, and a pool that keeps two files
+fails the check.</li>
+<li>Scrub: <code>zpool scrub</code> repairs 0 bytes and reports 0 errors.</li>
+<li>Table: <code>diskutil list</code> shows the data partition as type ZFS and a second 8.4 MB ZFS
+reserve partition, and no FAT or EFI partition remains.</li>
+<li>Round trip: after <code>zpool export</code>, <code>sudo zpool import</code> lists the pool ONLINE, and
+<code>sudo zpool import &lt;name&gt;</code> mounts it again. <code>zpool import</code> without sudo fails with
+permission denied.</li>
+</ul>
+<p>After the import the pool lists its disk by GPT media identifier. That identifier stays the
+same when the drive moves to another port, and the disk number changes, so the record names
+the media and never the number.</p>
+<h4 id="rfd-2496-3">What is not known</h4>
+<ul>
+<li>How often a scrub runs, and who runs it.</li>
+<li>Whether the filename check holds for decomposed accents. The one test run counted 0 files,
+probably because the shell’s locale did not match the accent, so the result proves nothing.</li>
+<li>The USB link speed of the first drive was not read: <code>system_profiler</code> listed no matching
+device.</li>
+<li>Whether a pool of one disk needs <code>copies=2</code> on a dataset worth protecting.</li>
+<li>How later pools are named.</li>
+</ul>
+<h4 id="rfd-2496-4">Related</h4>
+<ul>
+<li><a href="#rfd-2294">RFD66606-2294</a>, the rule that agent knowledge lives in RFDs.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2496-zfs-data-disks-on-the-mac-desk.exs">rfd/2496-zfs-data-disks-on-the-mac-desk.exs</a></em></p>
 <h3 id="rfd-2495">RFD66606-2495: aux part labels from alchemy3d-segment</h3>
 <p><strong>State:</strong> ideation
 <strong>Feature:</strong> one segmentation model labels every garment and body-helper part of a dressed avatar.

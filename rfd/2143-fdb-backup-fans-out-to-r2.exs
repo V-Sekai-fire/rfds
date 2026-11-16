@@ -21,7 +21,8 @@ rfd 2143, "FDB backup fans out to R2 for off-Fly durability", :discussion do
   via a stunnel loopback listener that adds the SNI FoundationDB does
   not send. R2 IA carries a 30-day minimum storage duration and free
   egress. Since 2026-11-01 the cluster runs as one machine on Fly again, and Tigris is the
-  main backup again (operator, 2026-11-01).
+  main backup again (operator, 2026-11-01). Tigris and R2 stay as the hosted S3 destinations,
+  and the self-hosted S3 server is SeaweedFS (operator, 2026-11-16, RFD66606-2364).
 
   **Gate:** `fdbbackup status -t dr` reports the tag restorable and its
   newest complete log within `WEFT_BACKUP_MAX_BEHIND`, read by

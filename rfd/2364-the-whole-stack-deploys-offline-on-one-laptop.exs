@@ -23,6 +23,8 @@ rfd 2364, "the whole stack deploys offline on one laptop", :discussion do
     binaries are mirrored with their sha256s;
   - each runtime (FoundationDB, Uro, OpenBao, the zone servers, the object store)
     runs on the laptop, with only its own data;
+  - the S3-compatible object store is SeaweedFS (operator, 2026-11-16). Fly's Tigris and
+    Cloudflare's R2 stay as the hosted S3 stores, and versitygw is rescinded;
   - names come from the laptop's own resolver or the tailnet, and certificates
     from the offline CA;
   - sign-in has a LAN-only method beside the third-party providers.

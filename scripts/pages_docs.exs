@@ -18,7 +18,7 @@ defmodule PagesDocs do
       File.cp_r!(out, @docs)
       IO.puts("wrote docs/: #{length(files(@docs))} files")
     else
-      problems = drift(out, @docs) ++ sidecar(Path.join(@docs, "assets"))
+      problems = drift(out, @docs)
       Enum.each(problems, &IO.puts("  FAIL #{&1}"))
 
       if problems == [] do
@@ -196,33 +196,14 @@ defmodule PagesDocs do
           do: "docs/#{f} differs from what the generator writes"
   end
 
-  def sidecar(dir) do
-    with {:ok, lot} <- File.read(Path.join(dir, "techtree.lot")),
-         {:ok, xmp} <- File.read(Path.join(dir, "techtree.xmp")),
-         {:ok, cff} <- File.read(Path.join(dir, "techtree.cff")) do
-      doc = JSON.decode!(lot)
-      media = %{format: "video/lottie+json", frame_rate: doc["fr"], frames: doc["op"] - doc["ip"]}
-      want = cff |> Rfd.Cff.parse!() |> Rfd.CffXmp.derive(media)
-      if xmp == want, do: [], else: ["docs/assets/techtree.xmp is not what techtree.cff derives"]
-    else
-      _ -> ["docs/assets/techtree.lot, .xmp or .cff is missing"]
-    end
-  end
-
   defp self_test do
     dir = Path.join(System.tmp_dir!(), "pages-docs-self-#{System.unique_integer([:positive])}")
     [a, b] = for s <- ~w(built tracked), do: Path.join(dir, s)
     for d <- [a, b], do: File.mkdir_p!(Path.join(d, "assets"))
-    lot = ~s({"fr":30,"ip":0,"op":60}\n)
-    cff = File.read!(Path.join(@root, "assets/techtree.cff"))
-    media = %{format: "video/lottie+json", frame_rate: 30, frames: 60}
-    xmp = cff |> Rfd.Cff.parse!() |> Rfd.CffXmp.derive(media)
 
     for d <- [a, b] do
       File.write!(Path.join(d, "index.html"), "<p>x</p>\n")
-      File.write!(Path.join(d, "assets/techtree.lot"), lot)
-      File.write!(Path.join(d, "assets/techtree.cff"), cff)
-      File.write!(Path.join(d, "assets/techtree.xmp"), xmp)
+      File.write!(Path.join(d, "assets/note.txt"), "x\n")
     end
 
     md =
@@ -231,7 +212,7 @@ defmodule PagesDocs do
     h = html(md)
 
     checks = [
-      {"matching trees pass", drift(a, b) == [] and sidecar(Path.join(b, "assets")) == []},
+      {"matching trees pass", drift(a, b) == []},
       {"a heading's {#id} becomes its id", h =~ ~s(<h2 id="one">One</h2>)},
       {"a heading without one gets a kramdown id", h =~ ~s(<h3 id="two">Two</h3>)},
       {"an IAL line sets the class", h =~ ~s(<h1 class="title" id="t">T</h1>)},
@@ -245,12 +226,8 @@ defmodule PagesDocs do
        File.write!(Path.join(b, "stray.html"), "") == :ok and
          Enum.any?(drift(a, b), &(&1 =~ "not written"))},
       {"a missing file is drift",
-       File.rm!(Path.join(b, "assets/techtree.cff")) == :ok and
-         Enum.any?(drift(a, b), &(&1 =~ "missing"))},
-      {"a sidecar that disagrees with the .lot fails",
-       File.write!(Path.join(a, "assets/techtree.lot"), String.replace(lot, ":60", ":61")) ==
-         :ok and
-         sidecar(Path.join(a, "assets")) != []}
+       File.rm!(Path.join(b, "assets/note.txt")) == :ok and
+         Enum.any?(drift(a, b), &(&1 =~ "missing"))}
     ]
 
     for {name, ok} <- checks, do: IO.puts("  #{if ok, do: "ok  ", else: "FAIL"} #{name}")

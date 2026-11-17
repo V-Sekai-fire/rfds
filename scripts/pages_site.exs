@@ -3,8 +3,6 @@
 # Builds the Pages source as one flow: sources -> records -> groups -> sections -> files.
 # A masthead and the newest RFDs lead; the logbook and RFD archives follow, dated from git.
 #   mix rfd.render && mix run scripts/pages_site.exs <out-dir>
-Code.require_file("pages_tree.exs", __DIR__)
-Code.require_file("pages_techtree.exs", __DIR__)
 
 defmodule PagesSite do
   @states ~w(prediscussion ideation discussion published committed abandoned)
@@ -268,50 +266,15 @@ defmodule PagesSite do
     numbered = for {n, title, docs} <- parts, do: {n, title, number_docs(n, docs)}
     ids = for {_, _, docs} <- numbered, d <- docs, into: %{}, do: {d.href, d.id}
 
-    texts =
-      for e <- rfds do
-        %{
-          serial: e.serial,
-          label: e.label,
-          state: e.group,
-          id: ids[e.href],
-          date: e.date,
-          text: full_text(e)
-        }
-      end
-
-    notes =
-      for l <- logs do
-        %{date: l.date, label: l.label, id: ids[l.href], text: full_text(l)}
-      end
-
-    tree = PagesTree.build(texts, notes, tree_repos(), ed.date)
-
-    File.write!(
-      Path.join(out, "assets/campus.domain.jsonld"),
-      PagesTechtree.encode(PagesTree.domain(tree))
-    )
-
-    File.write!(
-      Path.join(out, "assets/campus.problem.jsonld"),
-      PagesTechtree.encode(PagesTree.problem(tree))
-    )
-
-    File.write!(Path.join(out, "assets/campus.tree.json"), PagesTechtree.encode(tree))
-    PagesTechtree.write(tree, out)
-    File.cp!(Path.join(root, "assets/techtree.cff"), Path.join(out, "assets/techtree.cff"))
-
     hero = "<!--search-->"
 
     foreword =
-      "## The tech tree to the beta {#part-1}\n\n" <>
-        "What the workspace measured (the logbook) and what it decided from that " <>
+      "What the workspace measured (the logbook) and what it decided from that " <>
         "(the RFDs, also called requests for discussion, design docs or architecture " <>
         "decision records). #{tally(rfds)}\n\n" <>
         "This page holds the whole site: #{length(pages)} reference pages, " <>
         "#{length(rfds)} RFDs, and #{length(logs)} logbook entries. " <>
-        "Each entry ends with a link to its own page. Search finds every RFD.\n\n" <>
-        PagesTechtree.figure() <> "\n" <> PagesTree.markdown(tree)
+        "Each entry ends with a link to its own page. Search finds every RFD."
 
     body =
       Enum.map_join(numbered, "\n\n", fn {n, title, docs} ->
@@ -329,22 +292,6 @@ defmodule PagesSite do
       body
     ]
     |> Enum.join("\n\n")
-  end
-
-  defp full_text(%{files: files}),
-    do: Enum.map_join(files, "\n\n", fn {from, _} -> File.read!(from) end)
-
-  defp tree_repos do
-    [
-      %{
-        repo: "V-Sekai-fire/interactor-taskweft-persona",
-        n: 2339,
-        note:
-          "It answers a goal with an exact plan from a planning domain, with no weights. " <>
-            "The guest persona.elf runs on the godot-sandbox extension under libriscv, " <>
-            "and the build runs through pixi."
-      }
-    ]
   end
 
   defp tally(rfds) do

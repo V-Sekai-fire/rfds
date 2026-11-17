@@ -289,6 +289,7 @@ defmodule Serials.VSekaiFabric do
       serial 2494, "mojo-builds-to-a-risc-v-guest-elf"
       serial 2495, "aux-part-labels-from-alchemy3d-segment"
       serial 2496, "zfs-data-disks-on-the-mac-desk"
+      serial 2497, "mixer-clients-in-own-repositories"
     end
 
     deleted do

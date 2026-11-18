@@ -290,6 +290,7 @@ defmodule Serials.VSekaiFabric do
       serial 2495, "aux-part-labels-from-alchemy3d-segment"
       serial 2496, "zfs-data-disks-on-the-mac-desk"
       serial 2497, "mixer-clients-in-own-repositories"
+      serial 2498, "zfs-pool-written-raw-to-bdxl-disc"
     end
 
     deleted do

@@ -60,7 +60,7 @@
         <ol hidden></ol>
       </div>
       
-<p class="edition">Edition of 2026-11-17.</p>
+<p class="edition">Edition of 2026-11-18.</p>
 <h2 id="toc-title" class="no_toc">Table of Contents</h2>
 <ul id="markdown-toc">
 <li><a href="#part-2" id="markdown-toc-part-2">Working agreements and reference pages</a><ul>
@@ -120,6 +120,14 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2498" id="markdown-toc-rfd-2498">RFD66606-2498: A ZFS pool written raw to a BDXL disc</a><ul>
+<li><a href="#rfd-2498-1" id="markdown-toc-rfd-2498-1">Layout and budget</a></li>
+<li><a href="#rfd-2498-2" id="markdown-toc-rfd-2498-2">Making the pool image</a></li>
+<li><a href="#rfd-2498-3" id="markdown-toc-rfd-2498-3">Writing the disc</a></li>
+<li><a href="#rfd-2498-4" id="markdown-toc-rfd-2498-4">The passphrase</a></li>
+<li><a href="#rfd-2498-5" id="markdown-toc-rfd-2498-5">Checks</a></li>
+<li><a href="#rfd-2498-6" id="markdown-toc-rfd-2498-6">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2497" id="markdown-toc-rfd-2497">RFD66606-2497: mixer clients live in repositories of their own</a><ul>
 <li><a href="#rfd-2497-1" id="markdown-toc-rfd-2497-1">What is where today</a></li>
 <li><a href="#rfd-2497-2" id="markdown-toc-rfd-2497-2">What gets its own repository</a></li>
@@ -2574,8 +2582,8 @@
 </ul></li>
 </ul></li>
 </ul>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 110 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 233 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 111 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 234 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <h2 id="part-2">Working agreements and reference pages</h2>
 <p><span id="s2-1"></span></p>
 <h3 id="page-AGENTS">Working agreements</h3>
@@ -5619,6 +5627,107 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2498">RFD66606-2498: A ZFS pool written raw to a BDXL disc</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a 100 GB BDXL archive is an encrypted ZFS pool image written to the disc raw.
+<strong>Scope:</strong> the encrypted archive image that is written raw to a 100 GB BDXL disc and its contents.</p>
+<p><strong>Can a 100 GB BDXL disc hold an encrypted ZFS pool with no filesystem of its own, and how
+many bytes of files does that leave room for?</strong></p>
+<p>A disc normally carries a UDF filesystem, which takes space and hides the blocks from ZFS.
+Written raw to a blank disc, the pool image fills the whole raw capacity of about 100.1
+billion bytes, and ZFS reads the disc device itself. ZFS still keeps about 3% of the pool
+free, so the files get about 96.7 GB.</p>
+<p>A BDXL archive is one ZFS pool image of 100,103,356,416 bytes with native encryption, written
+raw to a blank disc, with one dataset per file set and at most 96,500,000,000 bytes of files.</p>
+<ul>
+<li>The pool’s one disk is a file with the 4096-byte sector shift of <a href="#rfd-2496">RFD66606-2496</a> (ZFS data
+disks). It encrypts with aes-256-gcm and compresses every dataset with zstd.</li>
+<li>Each file set is one dataset named for the set, and files keep their names and paths.</li>
+<li>ZFS block checksums replace a separate checksum list. The pool is exported before the
+image is written, and the disc is never mounted or formatted.</li>
+<li>The disc holds one copy of each block, so only a second disc repairs a damaged one.</li>
+<li>The image size is the disc’s raw capacity, a multiple of 4096 bytes. The burn is refused
+when the blank disc reports fewer blocks than the image holds.</li>
+<li>The passphrase is a 24-word BIP39 seed phrase that the operator generates and types. No
+agent generates, types or stores it. The phrase is fresh for this disc and is never a
+wallet seed.</li>
+<li>An M-DISC BDXL disc counts as the same capacity as a BD-R XL disc until a blank one has
+been read in a drive.</li>
+</ul>
+<p>Read the section “Layout and budget” for the measured counts. The check passes when the disc
+is read back to the same hash as the image, the pool imports from the disc read-only and
+its files match the budget.</p>
+<h4 id="rfd-2498-1">Layout and budget</h4>
+<p>The raw capacity of a triple-layer BD-R XL disc is 100,103,356,416 bytes, which is
+48,878,592 logical sectors of 2048 bytes. The figure is listed for BD-R XL and BD-RE XL on
+the Wikipedia page for recordable Blu-ray discs, and the multiplication checks out. The
+ISO standard for these discs and the Blu-ray Disc Association paper give only the rounded
+100 GB, so the exact figure rests on that page and on burning tools that report real
+discs. A raw write needs no UDF space and no formatting, so the image may use all of it.
+A disc that was formatted with defect management first would hold 256 MiB less.</p>
+<p>A trial on the Mac made a pool of exactly that size on a file, with OpenZFS 2.3.1 and the
+options below. The pool reported 99,857,989,632 bytes, and the top dataset offered
+96,753,676,288 bytes to files, because ZFS holds back a share of the pool as slop space. A
+scrub found no errors, and the exported pool imported read-only from the file and loaded its
+key. The 96,500,000,000-byte budget keeps about 253 MB of that offer in reserve. The trial
+did not write to a disc, so the raw write and the read from a disc device are untested.</p>
+<h4 id="rfd-2498-2">Making the pool image</h4>
+<p>The options follow <a href="#rfd-2496">RFD66606-2496</a>, with encryption added and a mount point under /Volumes.
+The properties normalization, casesensitivity and utf8only cannot be changed after
+creation. The trial used a key file in place of the passphrase prompt. Set the four
+variables first. IMG is an absolute path, because a file disk needs one. The passphrase
+never goes in a variable: the pool prompts for it.</p>
+<pre><code class="language-sh">export ZBIN=/usr/local/zfs/bin POOL=NAME SET=&lt;set&gt; IMG=/abs/path/NAME.img
+truncate -s 100103356416 &quot;$IMG&quot;
+sudo &quot;$ZBIN/zpool&quot; create -f \
+  -o ashift=12 \
+  -O encryption=aes-256-gcm -O keyformat=passphrase -O keylocation=prompt \
+  -O compression=zstd -O atime=off -O copies=1 \
+  -O normalization=formD -O casesensitivity=insensitive -O utf8only=on \
+  -O mountpoint=&quot;/Volumes/$POOL&quot; \
+  &quot;$POOL&quot; &quot;$IMG&quot;
+sudo &quot;$ZBIN/zfs&quot; create &quot;$POOL/$SET&quot;
+sudo &quot;$ZBIN/zpool&quot; scrub -w &quot;$POOL&quot;
+sudo &quot;$ZBIN/zpool&quot; export &quot;$POOL&quot;
+</code></pre>
+<ul>
+<li>The operator types the passphrase at the prompt, twice, when the pool is created.</li>
+<li>Autoexpand stays off, so the pool never grows past the image.</li>
+<li>Compression is zstd on the pool and every dataset inherits it. No dataset sets it to off
+or to another algorithm, because the setting is part of what the checks read back.</li>
+<li>A scrub needs a writable pool, so it runs before the export and not on the disc.</li>
+</ul>
+<h4 id="rfd-2498-3">Writing the disc</h4>
+<p>The first burn tests the write path, so record which tool and flags worked. The candidate on
+the Mac is <code>xorriso -as cdrecord</code>, which writes a raw data track from an image file. Read
+the blank disc’s reported block count first and refuse the burn when it is under
+48,878,592. After the write, read the whole disc back and hash it against the image.</p>
+<h4 id="rfd-2498-4">The passphrase</h4>
+<p>The passphrase is a 24-word BIP39 seed phrase, which carries 256 bits. The operator makes
+it offline with a BIP39 generator, writes it on paper and keeps the paper apart from the
+disc. The pool takes the words themselves, lowercase and separated by single spaces, as the
+passphrase. The pool derives no wallet seed from the words. The word list is the attachment
+<code>bip39_english.txt</code> in this RFD’s apparatus directory, with its source and license in the
+<code>NOTICE.md</code> beside it. Use the list to check each word by hand. The pool prompt asks for the
+passphrase twice, but only a generator checks the BIP39 checksum.</p>
+<h4 id="rfd-2498-5">Checks</h4>
+<ul>
+<li>Capacity: the blank disc reports at least 48,878,592 blocks, and a blank M-DISC BDXL disc
+is read in a drive and compared with the raw figure above.</li>
+<li>Compression: <code>zfs get -r compression NAME</code> reads zstd on the pool and on every dataset,
+run before the export.</li>
+<li>Budget: the files total at most 96,500,000,000 bytes, read from the datasets’ used space.</li>
+<li>Readback: the whole disc reads back to the same SHA-256 as the image.</li>
+<li>Import: the pool imports from the disc device read-only, the key loads, and the files
+open.</li>
+<li>Cross host: the same disc imports on Linux and Windows with OpenZFS.</li>
+</ul>
+<h4 id="rfd-2498-6">Related</h4>
+<ul>
+<li><a href="#rfd-2496">RFD66606-2496</a> (ZFS data disks), the pool options this archive inherits.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2498-zfs-pool-written-raw-to-bdxl-disc.exs">rfd/2498-zfs-pool-written-raw-to-bdxl-disc.exs</a></em></p>
 <h3 id="rfd-2497">RFD66606-2497: mixer clients live in repositories of their own</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> the relay stays small and each client, bridge and contract gets a repository.

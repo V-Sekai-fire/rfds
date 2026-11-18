@@ -31,9 +31,10 @@ rfd 2498, "A ZFS pool written raw to a BDXL disc", :discussion do
   - The disc holds one copy of each block, so only a second disc repairs a damaged one.
   - The image size is the disc's raw capacity, a multiple of 4096 bytes. The burn is refused
     when the blank disc reports fewer blocks than the image holds.
-  - The passphrase is a 24-word BIP39 seed phrase that the operator generates and types. No
-    agent generates, types or stores it. The phrase is fresh for this disc and is never a
-    wallet seed.
+  - The passphrase is a fresh 24-word BIP39 seed phrase, never a wallet seed. The agent makes
+    it, pipes it to the pool and stores it in 1Password and the keychain (operator, 2026-11-18).
+  - A file set is stored as an encrypted dataset with its own passphrase on a data pool such
+    as FIRE202610, and archived by copying it into the disc's pool (operator, 2026-11-18).
   - An M-DISC BDXL disc counts as the same capacity as a BD-R XL disc until a blank one has
     been read in a drive.
   :: related
@@ -81,11 +82,22 @@ rfd 2498, "A ZFS pool written raw to a BDXL disc", :discussion do
   sudo "$ZBIN/zpool" export "$POOL"
   ```
 
-  - The operator types the passphrase at the prompt, twice, when the pool is created.
+  - The passphrase reaches the prompt on standard input, so no variable or history line holds
+    it.
+  - The image file is on the internal APFS volume. On the Mac, a file disk on the FIRE202610
+    ZFS pool failed with "no such device in pool", and the same create on APFS ran.
   - Autoexpand stays off, so the pool never grows past the image.
   - Compression is zstd on the pool and every dataset inherits it. No dataset sets it to off
     or to another algorithm, because the setting is part of what the checks read back.
   - A scrub needs a writable pool, so it runs before the export and not on the disc.
+
+  :: details Store and archive
+  Native encryption is per dataset, so the data pool stays unencrypted and each file set is
+  one encrypted dataset: `zfs create -o encryption=aes-256-gcm -o keyformat=passphrase -o
+  keylocation=prompt POOL/SET`. Names, sizes and properties of datasets stay readable without
+  the key, and file contents, names and paths do not. The archive copies the stored dataset
+  into the disc's pool. Whether a raw `zfs send` keeps the stored key or the disc pool's key
+  governs the copy is untested, so the first archive records which tool was used.
 
   :: details Writing the disc
   The first burn tests the write path, so record which tool and flags worked. The candidate on
@@ -94,13 +106,15 @@ rfd 2498, "A ZFS pool written raw to a BDXL disc", :discussion do
   48,878,592. After the write, read the whole disc back and hash it against the image.
 
   :: details The passphrase
-  The passphrase is a 24-word BIP39 seed phrase, which carries 256 bits. The operator makes
-  it offline with a BIP39 generator, writes it on paper and keeps the paper apart from the
-  disc. The pool takes the words themselves, lowercase and separated by single spaces, as the
-  passphrase. The pool derives no wallet seed from the words. The word list is the attachment
+  The passphrase is a 24-word BIP39 seed phrase, which carries 256 bits. The agent draws 32
+  random bytes, appends the 8 checksum bits and maps each 11 bits to a word of the list, then
+  stores the phrase in 1Password and the login keychain without printing it. The operator may
+  also keep it on paper apart from the disc. The pool takes the words themselves, lowercase
+  and separated by single spaces, as the passphrase, piped from the keychain to the prompt.
+  The pool derives no wallet seed from the words. The word list is the attachment
   `bip39_english.txt` in this RFD's apparatus directory, with its source and license in the
-  `NOTICE.md` beside it. Use the list to check each word by hand. The pool prompt asks for the
-  passphrase twice, but only a generator checks the BIP39 checksum.
+  `NOTICE.md` beside it. The agent recomputes the checksum bits from the stored phrase before
+  the pool is made, and reads the keychain and 1Password entries back to the same words.
 
   :: details Checks
   - Capacity: the blank disc reports at least 48,878,592 blocks, and a blank M-DISC BDXL disc

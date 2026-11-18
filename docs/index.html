@@ -123,10 +123,11 @@
 <li><a href="#rfd-2498" id="markdown-toc-rfd-2498">RFD66606-2498: A ZFS pool written raw to a BDXL disc</a><ul>
 <li><a href="#rfd-2498-1" id="markdown-toc-rfd-2498-1">Layout and budget</a></li>
 <li><a href="#rfd-2498-2" id="markdown-toc-rfd-2498-2">Making the pool image</a></li>
-<li><a href="#rfd-2498-3" id="markdown-toc-rfd-2498-3">Writing the disc</a></li>
-<li><a href="#rfd-2498-4" id="markdown-toc-rfd-2498-4">The passphrase</a></li>
-<li><a href="#rfd-2498-5" id="markdown-toc-rfd-2498-5">Checks</a></li>
-<li><a href="#rfd-2498-6" id="markdown-toc-rfd-2498-6">Related</a></li>
+<li><a href="#rfd-2498-3" id="markdown-toc-rfd-2498-3">Store and archive</a></li>
+<li><a href="#rfd-2498-4" id="markdown-toc-rfd-2498-4">Writing the disc</a></li>
+<li><a href="#rfd-2498-5" id="markdown-toc-rfd-2498-5">The passphrase</a></li>
+<li><a href="#rfd-2498-6" id="markdown-toc-rfd-2498-6">Checks</a></li>
+<li><a href="#rfd-2498-7" id="markdown-toc-rfd-2498-7">Related</a></li>
 </ul></li>
 <li><a href="#rfd-2497" id="markdown-toc-rfd-2497">RFD66606-2497: mixer clients live in repositories of their own</a><ul>
 <li><a href="#rfd-2497-1" id="markdown-toc-rfd-2497-1">What is where today</a></li>
@@ -5648,9 +5649,10 @@ image is written, and the disc is never mounted or formatted.</li>
 <li>The disc holds one copy of each block, so only a second disc repairs a damaged one.</li>
 <li>The image size is the disc’s raw capacity, a multiple of 4096 bytes. The burn is refused
 when the blank disc reports fewer blocks than the image holds.</li>
-<li>The passphrase is a 24-word BIP39 seed phrase that the operator generates and types. No
-agent generates, types or stores it. The phrase is fresh for this disc and is never a
-wallet seed.</li>
+<li>The passphrase is a fresh 24-word BIP39 seed phrase, never a wallet seed. The agent makes
+it, pipes it to the pool and stores it in 1Password and the keychain (operator, 2026-11-18).</li>
+<li>A file set is stored as an encrypted dataset with its own passphrase on a data pool such
+as FIRE202610, and archived by copying it into the disc’s pool (operator, 2026-11-18).</li>
 <li>An M-DISC BDXL disc counts as the same capacity as a BD-R XL disc until a blank one has
 been read in a drive.</li>
 </ul>
@@ -5691,26 +5693,37 @@ sudo &quot;$ZBIN/zpool&quot; scrub -w &quot;$POOL&quot;
 sudo &quot;$ZBIN/zpool&quot; export &quot;$POOL&quot;
 </code></pre>
 <ul>
-<li>The operator types the passphrase at the prompt, twice, when the pool is created.</li>
+<li>The passphrase reaches the prompt on standard input, so no variable or history line holds
+it.</li>
+<li>The image file is on the internal APFS volume. On the Mac, a file disk on the FIRE202610
+ZFS pool failed with “no such device in pool”, and the same create on APFS ran.</li>
 <li>Autoexpand stays off, so the pool never grows past the image.</li>
 <li>Compression is zstd on the pool and every dataset inherits it. No dataset sets it to off
 or to another algorithm, because the setting is part of what the checks read back.</li>
 <li>A scrub needs a writable pool, so it runs before the export and not on the disc.</li>
 </ul>
-<h4 id="rfd-2498-3">Writing the disc</h4>
+<h4 id="rfd-2498-3">Store and archive</h4>
+<p>Native encryption is per dataset, so the data pool stays unencrypted and each file set is
+one encrypted dataset: <code>zfs create -o encryption=aes-256-gcm -o keyformat=passphrase -o keylocation=prompt POOL/SET</code>. Names, sizes and properties of datasets stay readable without
+the key, and file contents, names and paths do not. The archive copies the stored dataset
+into the disc’s pool. Whether a raw <code>zfs send</code> keeps the stored key or the disc pool’s key
+governs the copy is untested, so the first archive records which tool was used.</p>
+<h4 id="rfd-2498-4">Writing the disc</h4>
 <p>The first burn tests the write path, so record which tool and flags worked. The candidate on
 the Mac is <code>xorriso -as cdrecord</code>, which writes a raw data track from an image file. Read
 the blank disc’s reported block count first and refuse the burn when it is under
 48,878,592. After the write, read the whole disc back and hash it against the image.</p>
-<h4 id="rfd-2498-4">The passphrase</h4>
-<p>The passphrase is a 24-word BIP39 seed phrase, which carries 256 bits. The operator makes
-it offline with a BIP39 generator, writes it on paper and keeps the paper apart from the
-disc. The pool takes the words themselves, lowercase and separated by single spaces, as the
-passphrase. The pool derives no wallet seed from the words. The word list is the attachment
+<h4 id="rfd-2498-5">The passphrase</h4>
+<p>The passphrase is a 24-word BIP39 seed phrase, which carries 256 bits. The agent draws 32
+random bytes, appends the 8 checksum bits and maps each 11 bits to a word of the list, then
+stores the phrase in 1Password and the login keychain without printing it. The operator may
+also keep it on paper apart from the disc. The pool takes the words themselves, lowercase
+and separated by single spaces, as the passphrase, piped from the keychain to the prompt.
+The pool derives no wallet seed from the words. The word list is the attachment
 <code>bip39_english.txt</code> in this RFD’s apparatus directory, with its source and license in the
-<code>NOTICE.md</code> beside it. Use the list to check each word by hand. The pool prompt asks for the
-passphrase twice, but only a generator checks the BIP39 checksum.</p>
-<h4 id="rfd-2498-5">Checks</h4>
+<code>NOTICE.md</code> beside it. The agent recomputes the checksum bits from the stored phrase before
+the pool is made, and reads the keychain and 1Password entries back to the same words.</p>
+<h4 id="rfd-2498-6">Checks</h4>
 <ul>
 <li>Capacity: the blank disc reports at least 48,878,592 blocks, and a blank M-DISC BDXL disc
 is read in a drive and compared with the raw figure above.</li>
@@ -5722,7 +5735,7 @@ run before the export.</li>
 open.</li>
 <li>Cross host: the same disc imports on Linux and Windows with OpenZFS.</li>
 </ul>
-<h4 id="rfd-2498-6">Related</h4>
+<h4 id="rfd-2498-7">Related</h4>
 <ul>
 <li><a href="#rfd-2496">RFD66606-2496</a> (ZFS data disks), the pool options this archive inherits.</li>
 </ul>

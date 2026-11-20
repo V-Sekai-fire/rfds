@@ -714,9 +714,11 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
 - **3D part labels:** GeoSAM2 (Apache-2.0 code and weights, `VAST-AI-Research/GeoSAM2`), SAM 2.1
   carried across views of a mesh; the source of its training objects is not named. PartField,
   P3-SAM, PartSAM and Point-SAM do not clear RFD66606-1028 (licence files read 2026-11-20).
-- **Parts by instruction:** Alchemy3D-Instruct (code Apache-2.0, `libadi/Alchemy3D-Instruct`; its
-  own weights state no licence) with Qwen3.5-2B (Apache-2.0) on TRELLIS.2, for feasibility runs
-  only: its outputs train nothing and ship nowhere until the weights' licence is stated.
+- **Parts by instruction:** Alchemy3D-Instruct (Apache-2.0: the code's LICENSE, and the project's
+  model card `libadi/Alchemy3D`, which names Instruct among its variants; the variant's own
+  repository carries no card) with Qwen3.5-2B (Apache-2.0) on TRELLIS.2. Its Python pipeline
+  calls nvdiffrast and nvdiffrec, which NVIDIA licenses for research and evaluation only, so
+  those two stay out of anything shipped: a port uses the engine's own mesh export in their place.
 - **Design system:** `contract-design-chibifire` (MIT): design tokens in the Design Tokens
   Community Group format, colours defined in OKLab, with CSS and a Godot theme; its faces are
   Marcellus, Cormorant Garamond, IBM Plex Sans and IBM Plex Mono (OFL-1.1, unmodified).

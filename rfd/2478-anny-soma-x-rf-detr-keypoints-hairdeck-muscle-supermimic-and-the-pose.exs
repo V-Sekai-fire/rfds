@@ -20,8 +20,8 @@ rfd 2478,
   muscle-supermimic's MyoFullBody (24 GB) and the entities-model-explorer motion clips are the
   motion sources, retargeted to the 78 ANNY joints with rotation-star. The licences read on
   2026-11-02: SOMA-X and ANNY code are Apache-2.0, ANNY data is CC0, so ANNY-soma-x meshes and
-  datasets can be published with attribution; AMASS clips stay non-commercial and unpublished;
-  HairDeck hair assets are unchecked.
+  datasets can be published with attribution; AMASS clips are SMPL-derived and are not used;
+  HairDeck's code and weights are Apache-2.0, and its DINOv3 encoder carries the DINOv3 License.
   :: exit
   A keypoint head, a hair occluder pass and one retargeted muscle-driven clip each run end to
   end on the desk, and the publish manifest lists every asset's licence class.
@@ -34,8 +34,8 @@ rfd 2478,
     clips to the 78 ANNY joints with rotation-star as the motion source for muscle-driven poses.
   - Clear each asset against its licence before publish: SOMA-X and ANNY code (Apache-2.0) and
     ANNY data (CC0) clear ANNY-soma-x meshes and datasets for publication with attribution.
-    AMASS clips stay non-commercial and are never published. HairDeck hair assets stay unchecked
-    until their licence is read, and are held out of any publish manifest until then.
+    No AMASS clip is used, published or unpublished: the blocklist's SMPL row covers internal
+    research too. HairDeck hair enters a publish manifest with the DINOv3 License named beside it.
   """
 
   details_title "ANNY-soma-x: RF-DETR keypoints, HairDeck, muscle-supermimic and the pose and " <>
@@ -50,8 +50,8 @@ rfd 2478,
   :: details Open questions
   - Whether rotation-star retargeting onto the 78 ANNY joints preserves muscle-supermimic's
     joint limits, or needs a clamp pass.
-  - Whether HairDeck's licence, once read, permits the same publish path as SOMA-X and ANNY
-    data, or restricts hair-bearing renders to an unpublished set.
+  - Which MyoFullBody and entities-model-explorer clips have no SMPL in their history. A clip
+    that cannot show it is left out of the sweep.
   - Whether RF-DETR's 576 px input resolution undersamples the hand and face keypoints ANNY
     needs, or a crop-and-rerun pass is required.
   """

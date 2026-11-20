@@ -60,7 +60,7 @@
         <ol hidden></ol>
       </div>
       
-<p class="edition">Edition of 2026-11-18.</p>
+<p class="edition">Edition of 2026-11-19.</p>
 <h2 id="toc-title" class="no_toc">Table of Contents</h2>
 <ul id="markdown-toc">
 <li><a href="#part-2" id="markdown-toc-part-2">Working agreements and reference pages</a><ul>
@@ -120,6 +120,11 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2499" id="markdown-toc-rfd-2499">RFD66606-2499: A portrait becomes a hair-card VRM inside the engine</a><ul>
+<li><a href="#rfd-2499-1" id="markdown-toc-rfd-2499-1">What was measured</a></li>
+<li><a href="#rfd-2499-2" id="markdown-toc-rfd-2499-2">What was not measured</a></li>
+<li><a href="#rfd-2499-3" id="markdown-toc-rfd-2499-3">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2498" id="markdown-toc-rfd-2498">RFD66606-2498: A ZFS pool written raw to a BDXL disc</a><ul>
 <li><a href="#rfd-2498-1" id="markdown-toc-rfd-2498-1">Layout and budget</a></li>
 <li><a href="#rfd-2498-2" id="markdown-toc-rfd-2498-2">Making the pool image</a></li>
@@ -2583,8 +2588,8 @@
 </ul></li>
 </ul></li>
 </ul>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 111 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 234 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 112 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 235 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <h2 id="part-2">Working agreements and reference pages</h2>
 <p><span id="s2-1"></span></p>
 <h3 id="page-AGENTS">Working agreements</h3>
@@ -5628,6 +5633,56 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2499">RFD66606-2499: A portrait becomes a hair-card VRM inside the engine</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> one portrait becomes a VRM 1.0 avatar with hair cards and spring bones, in-engine.
+<strong>Scope:</strong> the hair-card guests, the viewer that runs them, and the masks they read.</p>
+<p><strong>Can one portrait become a VRM with hair cards and spring bones inside the engine, with no
+Blender, no PyTorch and only openly licensed models?</strong></p>
+<p>HairDeck (single image to hair cards, Apache-2.0) ships as Python on Blender. Its five models
+now run as ggml-rd (ggml on the engine’s GPU) guests and match PyTorch within 5e-5. 26
+portraits gave 26 VRMs in one viewer process, about 7 s each after a 20 s load. The masks
+still come from SAM 3 and BiRefNet in PyTorch. SAM 3 is under Meta’s SAM licence.</p>
+<p>A portrait becomes a VRM 1.0 file in one engine process, with every model as a guest ELF or
+an engine module and no Python at run time.</p>
+<ul>
+<li>Text prompts become boxes through Bonsai 2 with its image projector, inside the engine
+(operator, 2026-11-19). SAM 2.1 base-plus turns each box into a mask, and BiRefNet-matting
+gives the person alpha, each as a guest ELF. SAM 3 leaves the pipeline.</li>
+<li>The VRM carries the hair cards, one spring chain per strand group, and a SOMA-X body with
+the ANNY identity (the reference rig) and its pose correctives, in a CC0 sport suit.</li>
+<li>The VRM’s licence fields are CC0, and the repositories keep HairDeck’s notices.</li>
+<li>All slow work runs on one worker thread. A stop over 4 s fails the run, and at 5 s the
+viewer ends itself.</li>
+</ul>
+<p>Run the viewer’s batch mode on a folder of portraits, then open one VRM in a second reader.
+The check passes when every image gives a VRM and the window never stops for 4 s.</p>
+<h4 id="rfd-2499-1">What was measured</h4>
+<p>Each guest was compared with HairDeck’s PyTorch code in fp32 on the same inputs, as relative
+L2 error: the card VAE 1.3e-6, the image, chain and colour DiTs about 1e-6, DINOv3 1.4e-5,
+and the 50-step sampler 4.5e-5. The guests also run binary-translated, with results
+identical to the interpreted run.</p>
+<p>Mask quality was measured against the SAM 3 masks on the same 26 images, given the box of
+the SAM 3 mask. SAM 2.1 base-plus reached a mean IoU of 0.83 on hair and 0.92 on face, and
+six hair masks fell below 0.7. SAM 2.1 large reached 0.85 and 0.91 at 2.6 times the encode
+time, so base-plus is the choice. Box detectors were measured on the same images by box IoU:
+OWLv2 base 0.87 on hair and 0.76 on face, Grounding DINO base 0.89 and 0.87.</p>
+<h4 id="rfd-2499-2">What was not measured</h4>
+<ul>
+<li>Bonsai 2’s boxes. The engine’s language module built its image projector code out, so the
+model never saw an image. The build fix is in review, and the 26-image box test waits on it.</li>
+<li>SAM 2.1 and BiRefNet as guests. Both ran only natively or in PyTorch so far.</li>
+<li>The effect of the new masks on the cards, and whether a reader other than the VRM add-on
+used to write the file opens it.</li>
+<li>The pose correctives when a bone turns. They are baked for the rest pose only.</li>
+</ul>
+<h4 id="rfd-2499-3">Related</h4>
+<ul>
+<li><a href="#rfd-2478">RFD66606-2478</a> (ANNY-soma-x keypoints), which held HairDeck’s licence as unread.</li>
+<li><a href="#rfd-2311">RFD66606-2311</a> (serving Bonsai 2), the same model served outside the engine.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2499-portraits-to-hair-card-vrm.exs">rfd/2499-portraits-to-hair-card-vrm.exs</a></em></p>
 <h3 id="rfd-2498">RFD66606-2498: A ZFS pool written raw to a BDXL disc</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> a 100 GB BDXL archive is an encrypted ZFS pool image written to the disc raw.

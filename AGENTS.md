@@ -112,10 +112,11 @@ a photograph has no ground-truth `front hair` / `back hair` split. Validating
 See-Through itself still needs held-out illustrations, and this set does not
 supply them.
 
-**Deployment.** glTF exports carry **pure data only** — skin weights, animation
-samplers, morph targets. No runtime modifiers, drivers, constraints, or custom
-extensions. An export that only looks right because the consumer runs our code
-is not portable.
+**Deployment.** glTF exports carry skin weights, animation samplers and morph
+targets as data, and may carry Khronos extensions, VRM extensions and custom
+extensions under the `VSEKAI_` prefix (operator, 2026-11-20, rescinding the
+pure-data rule: a VRM's humanoid and spring bones are extensions). No runtime
+modifiers, drivers or constraints.
 
 **Skinning.** Dual-quaternion skinning is **blocklisted**. Delta Mush and Direct
 Delta Mush are approved. Note DDM bakes the smoothing but not the pose
@@ -703,6 +704,24 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
   2026-10-22).
 - **Image generation and editing:** OmniGen2 through its native image-input pipeline;
   CycleGAN for photo-to-anime style transfer.
+- **Masks from boxes:** SAM 2.1 hiera base+ (Apache-2.0, `facebookresearch/sam2`) as a ggml graph
+  and a godot-sandbox guest in `interactor-hair-cards-guest`; Ternary Bonsai 2 gives the hair,
+  face and person boxes it is prompted with. SAM 3 stays out (operator, 2026-11-20).
+- **Hair cards:** HairDeck (Apache-2.0, `hyz317/HairDeck`): its card, colour and chain models as
+  guests, no Blender and no PyTorch at run time. Its image models read DINOv3 features (DINOv3
+  License, Meta, 2025-08-19: commercial use allowed, redistribution only under that agreement,
+  no military or weapons use), so a release names that agreement beside the encoder's weights.
+- **3D part labels:** GeoSAM2 (Apache-2.0 code and weights, `VAST-AI-Research/GeoSAM2`), SAM 2.1
+  carried across views of a mesh; the source of its training objects is not named. PartField,
+  P3-SAM, PartSAM and Point-SAM do not clear RFD66606-1028 (licence files read 2026-11-20).
+- **Parts by instruction:** Alchemy3D-Instruct (Apache-2.0: the code's LICENSE, and the project's
+  model card `libadi/Alchemy3D`, which names Instruct among its variants; the variant's own
+  repository carries no card) with Qwen3.5-2B (Apache-2.0) on TRELLIS.2. Its Python pipeline
+  calls nvdiffrast and nvdiffrec, which NVIDIA licenses for research and evaluation only, so
+  those two stay out of anything shipped: a port uses the engine's own mesh export in their place.
+- **Design system:** `contract-design-chibifire` (MIT): design tokens in the Design Tokens
+  Community Group format, colours defined in OKLab, with CSS and a Godot theme; its faces are
+  Marcellus, Cormorant Garamond, IBM Plex Sans and IBM Plex Mono (OFL-1.1, unmodified).
 - **Body, pose and skinning:** ANNY, SOMA-X (the route to ANNY instead of SMPL),
   ANNY/SOMA-2603.16858's own pose library, synthetic poses, a licence-clean third-party motion set
   as a verified control; Delta Mush and Direct Delta Mush; FACS action-unit names for facial
@@ -732,7 +751,7 @@ and role, before it is used. What was denied and why is in [`BLOCKLIST.md`](BLOC
   and baked meshes inside `slug.elf`, a godot-sandbox guest. The Slug patent was dedicated to
   the public domain on 2026-03-17 (operator, 2026-10-01).
 - **Formats and figures:** `.usda`, ZStandard parquet, usdz as a delivery container, PSD,
-  pure-data glTF, the CineForm SDK as the codec, hand-authored inline SVG for figures.
+  glTF with Khronos, VRM and `VSEKAI_` extensions, the CineForm SDK as the codec, hand-authored inline SVG for figures.
 - **glTF behaviour:** the Khronos glTF 2.0 Interactivity extension, `KHR_interactivity` (CC-BY-4.0,
   `KhronosGroup/glTF`), the behaviour-graph vocabulary a taskweft domain and its RFD are described
   in, in place of the IEC 61131-3 function-block-diagram vocabulary (operator, 2026-10-29).

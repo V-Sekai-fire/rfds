@@ -60,7 +60,7 @@
         <ol hidden></ol>
       </div>
       
-<p class="edition">Edition of 2026-11-19.</p>
+<p class="edition">Edition of 2026-11-21.</p>
 <h2 id="toc-title" class="no_toc">Table of Contents</h2>
 <ul id="markdown-toc">
 <li><a href="#part-2" id="markdown-toc-part-2">Working agreements and reference pages</a><ul>
@@ -120,6 +120,12 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2500" id="markdown-toc-rfd-2500">RFD66606-2500: A face tracker that starts from speech and a headcam</a><ul>
+<li><a href="#rfd-2500-1" id="markdown-toc-rfd-2500-1">What was measured</a></li>
+<li><a href="#rfd-2500-2" id="markdown-toc-rfd-2500-2">What was not measured</a></li>
+<li><a href="#rfd-2500-3" id="markdown-toc-rfd-2500-3">Parked</a></li>
+<li><a href="#rfd-2500-4" id="markdown-toc-rfd-2500-4">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2499" id="markdown-toc-rfd-2499">RFD66606-2499: A portrait becomes a hair-card VRM inside the engine</a><ul>
 <li><a href="#rfd-2499-1" id="markdown-toc-rfd-2499-1">What was measured</a></li>
 <li><a href="#rfd-2499-2" id="markdown-toc-rfd-2499-2">What was not measured</a></li>
@@ -2588,8 +2594,8 @@
 </ul></li>
 </ul></li>
 </ul>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 112 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 235 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 113 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 236 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <h2 id="part-2">Working agreements and reference pages</h2>
 <p><span id="s2-1"></span></p>
 <h3 id="page-AGENTS">Working agreements</h3>
@@ -2686,10 +2692,11 @@ evaluation-only twice over: derived from the holdout, and generated.</li>
 a photograph has no ground-truth <code>front hair</code> / <code>back hair</code> split. Validating
 See-Through itself still needs held-out illustrations, and this set does not
 supply them.</p>
-<p><strong>Deployment.</strong> glTF exports carry <strong>pure data only</strong> — skin weights, animation
-samplers, morph targets. No runtime modifiers, drivers, constraints, or custom
-extensions. An export that only looks right because the consumer runs our code
-is not portable.</p>
+<p><strong>Deployment.</strong> glTF exports carry skin weights, animation samplers and morph
+targets as data, and may carry Khronos extensions, VRM extensions and custom
+extensions under the <code>VSEKAI_</code> prefix (operator, 2026-11-20, rescinding the
+pure-data rule: a VRM’s humanoid and spring bones are extensions). No runtime
+modifiers, drivers or constraints.</p>
 <p><strong>Skinning.</strong> Dual-quaternion skinning is <strong>blocklisted</strong>. Delta Mush and Direct
 Delta Mush are approved. Note DDM bakes the smoothing but not the pose
 dependence, so it suits renders and baked clips and is not an option for live
@@ -3184,6 +3191,24 @@ its suit template, marker detection, triangulation and tracking, for the ChArUco
 2026-10-22).</li>
 <li><strong>Image generation and editing:</strong> OmniGen2 through its native image-input pipeline;
 CycleGAN for photo-to-anime style transfer.</li>
+<li><strong>Masks from boxes:</strong> SAM 2.1 hiera base+ (Apache-2.0, <code>facebookresearch/sam2</code>) as a ggml graph
+and a godot-sandbox guest in <code>interactor-hair-cards-guest</code>; Ternary Bonsai 2 gives the hair,
+face and person boxes it is prompted with. SAM 3 stays out (operator, 2026-11-20).</li>
+<li><strong>Hair cards:</strong> HairDeck (Apache-2.0, <code>hyz317/HairDeck</code>): its card, colour and chain models as
+guests, no Blender and no PyTorch at run time. Its image models read DINOv3 features (DINOv3
+License, Meta, 2025-08-19: commercial use allowed, redistribution only under that agreement,
+no military or weapons use), so a release names that agreement beside the encoder’s weights.</li>
+<li><strong>3D part labels:</strong> GeoSAM2 (Apache-2.0 code and weights, <code>VAST-AI-Research/GeoSAM2</code>), SAM 2.1
+carried across views of a mesh; the source of its training objects is not named. PartField,
+P3-SAM, PartSAM and Point-SAM do not clear <a href="#rfd-1028">RFD66606-1028</a> (licence files read 2026-11-20).</li>
+<li><strong>Parts by instruction:</strong> Alchemy3D-Instruct (Apache-2.0: the code’s LICENSE, and the project’s
+model card <code>libadi/Alchemy3D</code>, which names Instruct among its variants; the variant’s own
+repository carries no card) with Qwen3.5-2B (Apache-2.0) on TRELLIS.2. Its Python pipeline
+calls nvdiffrast and nvdiffrec, which NVIDIA licenses for research and evaluation only, so
+those two stay out of anything shipped: a port uses the engine’s own mesh export in their place.</li>
+<li><strong>Design system:</strong> <code>contract-design-chibifire</code> (MIT): design tokens in the Design Tokens
+Community Group format, colours defined in OKLab, with CSS and a Godot theme; its faces are
+Marcellus, Cormorant Garamond, IBM Plex Sans and IBM Plex Mono (OFL-1.1, unmodified).</li>
 <li><strong>Body, pose and skinning:</strong> ANNY, SOMA-X (the route to ANNY instead of SMPL),
 ANNY/SOMA-2603.16858’s own pose library, synthetic poses, a licence-clean third-party motion set
 as a verified control; Delta Mush and Direct Delta Mush; FACS action-unit names for facial
@@ -3213,7 +3238,7 @@ ThorVG (MIT) and Clipper2 (BSL-1.0) submodules, turning SVG into Slug curve and 
 and baked meshes inside <code>slug.elf</code>, a godot-sandbox guest. The Slug patent was dedicated to
 the public domain on 2026-03-17 (operator, 2026-10-01).</li>
 <li><strong>Formats and figures:</strong> <code>.usda</code>, ZStandard parquet, usdz as a delivery container, PSD,
-pure-data glTF, the CineForm SDK as the codec, hand-authored inline SVG for figures.</li>
+glTF with Khronos, VRM and <code>VSEKAI_</code> extensions, the CineForm SDK as the codec, hand-authored inline SVG for figures.</li>
 <li><strong>glTF behaviour:</strong> the Khronos glTF 2.0 Interactivity extension, <code>KHR_interactivity</code> (CC-BY-4.0,
 <code>KhronosGroup/glTF</code>), the behaviour-graph vocabulary a taskweft domain and its RFD are described
 in, in place of the IEC 61131-3 function-block-diagram vocabulary (operator, 2026-10-29).</li>
@@ -5633,6 +5658,103 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2500">RFD66606-2500: A face tracker that starts from speech and a headcam</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a face tracker for one wearer, from a headcam and speech to Unified Expressions.
+<strong>Scope:</strong> the take format, the keypoint head, the face policy, and the Hailo front end.</p>
+<p><strong>Can a muscle-driven policy track one person’s face from a headcam and from speech, and also
+drive a persona that has no camera, with every model openly licensed and the face never stored?</strong></p>
+<p>The pieces now exist in parts. A skin patch under small forces responds as a membrane should.
+A take file written by an Elixir DSL round-trips 200 random takes exactly, and OpenUSD 0.26.5
+opens it. The headcam gives an upright 768 by 1024 frame. The Hailo-10H is rated 40 TOPS at
+INT4 and 20 at INT8. A keypoint head trained on synthetic renders scores 0.86 against a bar of
+0.80 on held-out renders, in one run. No face muscle model or policy exists yet.</p>
+<p>The goal is a VRCFT tracker for the operator’s own face, headcam to Unified Expressions, by a
+MuscleMimic-style policy that also runs with any input masked (operator, 2026-11-21).</p>
+<ul>
+<li>English comes first, and the first slice is jaw and mouth from speech, driven by the TTS
+text and timing (operator, 2026-11-21).</li>
+<li>The operator’s face is never stored or trained on. It is scored live in memory, and only
+numbers are written (operator, 2026-11-21).</li>
+<li>Stages exchange a take, one OpenUSD file. Take files are written in GDScript, C++ or an
+Elixir DSL, never Python (operator, 2026-11-21).</li>
+<li>Data and weights are Apache, MIT or CC0 (operator, 2026-11-22). Training data are renders
+and simulation.</li>
+<li>The policy is a guest ELF trained on the RTX 4090. Reflexive networks go to the Hailo-10H
+when they fit, at 4-bit or lower, and exactness does not block them (operator, 2026-11-21).</li>
+</ul>
+<p>Run the single build command in the take repository. It compiles, runs the tests, and has
+OpenUSD open a good take and refuse three broken ones.</p>
+<h4 id="rfd-2500-1">What was measured</h4>
+<p>Skin patch: a 9 by 9 grid, 5 millimetres apart (a little under a pencil’s width) and 2 thick,
+border pinned, in MuJoCo 3.4.0 on CPU, stretch only. A free patch moved 6 to 23 millimetres,
+from about a pencil’s width to a bit more than a penny’s width. At 20 kilopascals an in-plane
+push of 2 millinewtons moved the centre 0.0756 millimetres (a tenth of a card’s thickness),
+and 4 millinewtons moved it twice as far. Ten times stiffer gave ten times less. A normal
+push moved it 1.88 millimetres (a little more than a penny’s thickness), and doubling the
+force gave 1.34 times that, near the 1.26 of a stretch-only membrane.</p>
+<p>Take format: 10 tests pass. 200 random takes, with quotes, newlines and non-Latin text,
+decode to exactly what was written, and a writer that rounds floats fails two tests. A second
+write never replaces a file. OpenUSD 0.26.5 in the usd guest opened the good take, read its
+layer data back, and refused a missing bracket, a half file and plain text.</p>
+<p>Hardware: the headcam opens only through the Media Foundation backend, upright, with the
+right eye closing on the image’s left. Windows shows the Hailo-10H with firmware 5.5.0, and the
+compiler’s TensorFlow and PyTorch both see the RTX 4090.</p>
+<p>Keypoint head: RF-DETR’s keypoint preview, fine-tuned for 40 epochs on 120 synthetic head
+renders with 88 keypoints whose labels come from the mesh, seed 1, on the GPU only. A held-out
+test of 24 renders (1,992 visible keypoints) is scored once per run, on the checkpoint that
+validation picks. PCK at 0.05 (the share of visible keypoints within 0.05 of the face box’s
+diagonal) is 0.86 overall with GPU image decoding, against 0.14 for a model-free control that
+places every point at its mean position in the box. The four pitch bands (camera 0 to 10, 10
+to 20, 20 to 30 and 30 to 40 degrees below the face) score 0.72, 0.92, 0.88 and 0.88, masked
+images 0.88 and bare ones 0.84. The same recipe with CPU image decoding scores 0.50, with
+bands from 0.48 to 0.51. The two runs differ in the decoder. One of them was also restarted
+during training. The cause of the gap is unknown. The bar, set before training, is 0.80
+overall and 0.60 in every band.</p>
+<p>Label quality: a second split of 480 renders (its own seed, sharing no image with the test,
+validation or first split) has a median camera fit of 0.118 px. 22 of the 480 sit over 1 px,
+11 over 2 px, and the worst is 4.2 px. A larger fit residual puts the label that far from the
+drawn feature. A 2020 study of landmark annotation noise (arXiv 2007.15269) finds zero-mean
+noise of up to 3 percent of the box does not lower accuracy and raises output jitter, and
+4.2 px is about 1.3 percent of the box diagonal (an estimate). All 600 images stay in the mix
+(operator, 2026-11-22).</p>
+<h4 id="rfd-2500-2">What was not measured</h4>
+<ul>
+<li>Whether any Hailo network parses, optimizes or compiles, and its distance from float.</li>
+<li>The skin patch with bending, a solid, a jaw with muscles, or a GPU run.</li>
+<li>The licence file inside the GNM weights, and the keypoint list.</li>
+<li>Any policy, the residual FSQ latent, and 2-bit weights, whose recipe is undisclosed.</li>
+<li>Reading the channel arrays back through OpenUSD. The guest reports counts and layer data.</li>
+<li>A live run on the operator’s face, and the memory of the Hailo module in use.</li>
+<li>A second seed of the keypoint head, and any score from the 600-image mix run.</li>
+</ul>
+<h4 id="rfd-2500-3">Parked</h4>
+<p>Each item names why it waits and what restarts it.</p>
+<ul>
+<li>Mix run: training on the 600 renders (the first 120 plus the second split) is paused after
+two of 40 epochs by a stop signal of unknown origin, and no score exists. It resumes when
+the operator releases it. Its best checkpoint is then scored once on the same 24 test renders
+and compared with the 0.86 above. More images and five times more optimizer steps change
+together, so a gain cannot be credited to the data alone.</li>
+<li>Decoder gap: the 0.50 and the 0.86 differ for a reason nobody has found. It resumes with a
+clean rerun of the CPU-decoding recipe, with no restart.</li>
+<li>Epoch timeline: AppSignal drops the last epoch span of a run in three runs, though the sender
+reports success. It resumes when the span timeline is needed. The integrated follower sends
+that span before the root span, which tests the guess that a late arrival is dropped.</li>
+<li>Portrait library: 1,499 AI-generated portraits under CC0, with a request not to redistribute
+the files. Projecting one onto a head as a texture is refused (operator, 2026-11-22). A mesh
+fitted from detected landmarks gives labels only as good as the detector, and a photograph
+has no truth to check against. It resumes after a landmark-driven fit on our own renders,
+where the truth is known, scores inside the 0.05 bar.</li>
+</ul>
+<h4 id="rfd-2500-4">Related</h4>
+<ul>
+<li><a href="#rfd-2478">RFD66606-2478</a> (ANNY-soma-x keypoints), whose keypoint head this one extends to the face.</li>
+<li>RFD66606-2327 (keypoints, supports and contacts), the generic keypoint vocabulary.</li>
+<li><a href="#rfd-2311">RFD66606-2311</a> (serving Bonsai 2), the quantization route for the 2-bit goal.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2500-presence-face-tracker.exs">rfd/2500-presence-face-tracker.exs</a></em></p>
 <h3 id="rfd-2499">RFD66606-2499: A portrait becomes a hair-card VRM inside the engine</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> one portrait becomes a VRM 1.0 avatar with hair cards and spring bones, in-engine.
@@ -7336,8 +7458,8 @@ training data. HairDeck covers hair as both an occluder and an avatar part on CU
 muscle-supermimic’s MyoFullBody (24 GB) and the entities-model-explorer motion clips are the
 motion sources, retargeted to the 78 ANNY joints with rotation-star. The licences read on
 2026-11-02: SOMA-X and ANNY code are Apache-2.0, ANNY data is CC0, so ANNY-soma-x meshes and
-datasets can be published with attribution; AMASS clips stay non-commercial and unpublished;
-HairDeck hair assets are unchecked.</p>
+datasets can be published with attribution; AMASS clips are SMPL-derived and are not used;
+HairDeck’s code and weights are Apache-2.0, and its DINOv3 encoder carries the DINOv3 License.</p>
 <ul>
 <li>Run RF-DETR Keypoint on the Windows desk’s RTX 4090 pixi env (Python 3.12, CUDA PyTorch).
 Its depth output is ground truth for evaluation only and is never folded into training data.</li>
@@ -7347,8 +7469,8 @@ avatar part on the published mesh.</li>
 clips to the 78 ANNY joints with rotation-star as the motion source for muscle-driven poses.</li>
 <li>Clear each asset against its licence before publish: SOMA-X and ANNY code (Apache-2.0) and
 ANNY data (CC0) clear ANNY-soma-x meshes and datasets for publication with attribution.
-AMASS clips stay non-commercial and are never published. HairDeck hair assets stay unchecked
-until their licence is read, and are held out of any publish manifest until then.</li>
+No AMASS clip is used, published or unpublished: the blocklist’s SMPL row covers internal
+research too. HairDeck hair enters a publish manifest with the DINOv3 License named beside it.</li>
 </ul>
 <p>A keypoint head, a hair occluder pass and one retargeted muscle-driven clip each run end to
 end on the desk, and the publish manifest lists every asset’s licence class.</p>
@@ -7361,8 +7483,8 @@ through the RF-DETR keypoint head with HairDeck’s occluder active.</p>
 <ul>
 <li>Whether rotation-star retargeting onto the 78 ANNY joints preserves muscle-supermimic’s
 joint limits, or needs a clamp pass.</li>
-<li>Whether HairDeck’s licence, once read, permits the same publish path as SOMA-X and ANNY
-data, or restricts hair-bearing renders to an unpublished set.</li>
+<li>Which MyoFullBody and entities-model-explorer clips have no SMPL in their history. A clip
+that cannot show it is left out of the sweep.</li>
 <li>Whether RF-DETR’s 576 px input resolution undersamples the hand and face keypoints ANNY
 needs, or a crop-and-rerun pass is required.</li>
 </ul>

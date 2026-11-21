@@ -120,6 +120,11 @@
 </ul></li>
 </ul></li>
 <li><a href="#part-3" id="markdown-toc-part-3">RFDs</a><ul>
+<li><a href="#rfd-2501" id="markdown-toc-rfd-2501">RFD66606-2501: A stream persona avatar drawn by Godot and cut out in OBS</a><ul>
+<li><a href="#rfd-2501-1" id="markdown-toc-rfd-2501-1">What was measured</a></li>
+<li><a href="#rfd-2501-2" id="markdown-toc-rfd-2501-2">What was not measured</a></li>
+<li><a href="#rfd-2501-3" id="markdown-toc-rfd-2501-3">Related</a></li>
+</ul></li>
 <li><a href="#rfd-2500" id="markdown-toc-rfd-2500">RFD66606-2500: A face tracker that starts from speech and a headcam</a><ul>
 <li><a href="#rfd-2500-1" id="markdown-toc-rfd-2500-1">What was measured</a></li>
 <li><a href="#rfd-2500-2" id="markdown-toc-rfd-2500-2">What was not measured</a></li>
@@ -2593,8 +2598,8 @@
 </ul></li>
 </ul></li>
 </ul>
-<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 113 discussion · 📢 31 published · ✅ 49 committed</p>
-<p>This page holds the whole site: 4 reference pages, 236 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
+<p>What the workspace measured (the logbook) and what it decided from that (the RFDs, also called requests for discussion, design docs or architecture decision records). 📝 40 prediscussion · 💡 3 ideation · 💬 114 discussion · 📢 31 published · ✅ 49 committed</p>
+<p>This page holds the whole site: 4 reference pages, 237 RFDs, and 90 logbook entries. Each entry ends with a link to its own page. Search finds every RFD.</p>
 <h2 id="part-2">Working agreements and reference pages</h2>
 <p><span id="s2-1"></span></p>
 <h3 id="page-AGENTS">Working agreements</h3>
@@ -5657,6 +5662,42 @@ their given names.</p>
 on every <code>CITATION.cff</code> change.</p>
 <p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/PITFALLS.md">PITFALLS.md</a></em></p>
 <h2 id="part-3">RFDs</h2>
+<h3 id="rfd-2501">RFD66606-2501: A stream persona avatar drawn by Godot and cut out in OBS</h3>
+<p><strong>State:</strong> discussion
+<strong>Feature:</strong> a Godot window draws colour and depth panels, and an OBS shader cuts the avatar out.
+<strong>Scope:</strong> the avatar project, the depth composite shader, and the OBS scene that uses them.</p>
+<p><strong>Can the stream persona be drawn by the engine, with her edges cut by depth in OBS, and
+show no seam against the game picture?</strong></p>
+<p>The three.js viewer is gone. A Godot window holds three panels side by side: colour, depth
+of the outfit and hair, and depth of the body alone. An obs-shaderfilter shader keeps the
+nearer depth as alpha. The first cut left a faint line down both sides of her box.</p>
+<p>The repository interactor-stream-persona holds the project, the shader and the
+scene collection, and its checkout is the folder OBS reads (operator, 2026-11-21).</p>
+<ul>
+<li>The shader samples the depth panels at exact thirds, half a texel inside each panel.</li>
+<li>OBS keeps the first shader it compiled, so a changed shader means a re-created filter.</li>
+<li>The avatar art, renders, MToon copies and generated data stay out of the repository.</li>
+</ul>
+<p>Read the filtered source back through OBS and check that the first and last columns have
+alpha 0, then look at the scene with the game picture behind her.</p>
+<h4 id="rfd-2501-1">What was measured</h4>
+<p>On a captured frame, the old shader gave alpha 0.39 in column 0 and 0 in the rest of an
+empty row, and exact thirds gave 0 in every column. In the live scene the old line was a
+dip of about 20 percent in brightness across one column. After the filter was re-created,
+alpha was 0 in columns 0 to 2 and 437 to 439 of the 440-column source.</p>
+<h4 id="rfd-2501-2">What was not measured</h4>
+<ul>
+<li>The result on a recorded or streamed output, and on a second monitor scale.</li>
+<li>Whether an edge remains at the game picture’s own borders for other videos.</li>
+<li>Any cost of the three-panel window on the 4090 or the stream’s frame rate.</li>
+</ul>
+<h4 id="rfd-2501-3">Related</h4>
+<ul>
+<li><a href="#rfd-2499">RFD66606-2499</a> (portrait to hair-card VRM), which makes the avatars this project draws.</li>
+<li><a href="#rfd-2500">RFD66606-2500</a> (the face tracker), which will drive her face from the headcam.</li>
+</ul>
+<p>This RFD was drafted by an AI and read by a human before it shipped.</p>
+<p><em>Source: <a href="https://github.com/V-Sekai-fire/rfds/blob/main/rfd/2501-stream-persona.exs">rfd/2501-stream-persona.exs</a></em></p>
 <h3 id="rfd-2500">RFD66606-2500: A face tracker that starts from speech and a headcam</h3>
 <p><strong>State:</strong> discussion
 <strong>Feature:</strong> a face tracker for one wearer, from a headcam and speech to Unified Expressions.

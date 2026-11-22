@@ -292,6 +292,7 @@ defmodule Serials.VSekaiFabric do
       serial 2497, "mixer-clients-in-own-repositories"
       serial 2498, "zfs-pool-written-raw-to-bdxl-disc"
       serial 2499, "portraits-to-hair-card-vrm"
+      serial 2500, "presence-face-tracker"
     end
 
     deleted do

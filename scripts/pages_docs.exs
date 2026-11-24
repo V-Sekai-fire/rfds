@@ -1,6 +1,6 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: Apache-2.0 OR MIT
-# The RFD site as committed static files in docs/: build, convert with MDEx, compare.
+# The RFD site as static files in docs/, built by the pages workflow: build, convert with MDEx.
 #     mix run scripts/pages_docs.exs [--write | --self-test]
 defmodule PagesDocs do
   @root Path.expand("..", __DIR__)

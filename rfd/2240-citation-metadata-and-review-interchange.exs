@@ -90,7 +90,7 @@ rfd 2240,
   still wins at ingest, so one reader does not see one story and another a
   different one. A `.lot` never carries RDF: a Lottie player wants strictly
   formed JSON, and the sidecar is mandatory there for that reason. A CineForm
-  file is left alone; its extended metadata resolves through the sidecar.
+  file is left alone. Its extended metadata resolves through the sidecar.
   :: details The mapping, CFF 1.2.0 to ISO 16684-1
   Namespaces: `dc:` Dublin Core, `xmp:` XMP Basic, `xmpRights:` Rights
   Management, `prism:` PRISM Basic, `xmpDM:` Dynamic Media, and `cff:` for the
@@ -110,7 +110,7 @@ rfd 2240,
   | `keywords` | `dc:subject` | `rdf:Bag` |
   | `commit` | `cff:commit` | plain literal |
 
-  An author with `name` is taken as written; one with `given-names` and
+  An author with `name` is taken as written. One with `given-names` and
   `family-names` is joined in that order. `dc:format` carries the asset's
   media type, which is `video/lottie+json` for a `.lot`, `image/svg+xml` for
   an `.svg`, and the container's type for a clip. A media sidecar adds
@@ -184,20 +184,13 @@ rfd 2240,
   - A clip's sidecar states the frame rate and duration, and the timeline
     marker that names the clip must agree; a planted disagreement fails.
   :: details Static delivery
-  Deliverables ship as committed static files, and no build step runs at
-  publish time (operator, 2026-11-12). The RFD site is `docs/`: one HTML page,
-  its search index, its assets and an empty `.nojekyll`. `mix run
-  scripts/pages_docs.exs --write` writes it from the RFD sources, and MDEx
-  turns the page's Markdown into HTML. Without `--write` the script builds into
-  a temporary directory and fails when `docs/` differs by one byte, lacks a
-  file or holds a file the build does not write. Its self-test plants each of
-  those faults.
+  Deliverables ship as static files. The RFD site is one HTML page, its search
+  index, its assets and an empty `.nojekyll`. The pages workflow runs `mix run
+  scripts/pages_docs.exs --write` on each push to main and publishes `docs/`,
+  and `docs/` is not committed (operator, 2026-11-24). MDEx turns the page's
+  Markdown into HTML. The script's self-test checks that conversion.
   The edition line carries the newest author date among the page's own
-  sources, and no commit name, so `docs/` goes stale only when page content
-  changes. A rebase keeps author dates. A change to an RFD therefore lands as
-  the source commit, then the regenerated `docs/`, and a pull request that
-  falls behind main's page content is rebased and regenerated before it
-  merges.
+  sources, and no commit name.
   The tech tree is the first animated deliverable under this rule.
   `docs/assets/techtree.lot` sits beside `techtree.cff` and the `techtree.xmp`
   that `mix cff.xmp` derives from it. The gate refuses a sidecar whose frame

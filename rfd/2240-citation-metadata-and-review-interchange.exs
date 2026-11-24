@@ -191,13 +191,6 @@ rfd 2240,
   Markdown into HTML. The script's self-test checks that conversion.
   The edition line carries the newest author date among the page's own
   sources, and no commit name.
-  The tech tree is the first animated deliverable under this rule.
-  `docs/assets/techtree.lot` sits beside `techtree.cff` and the `techtree.xmp`
-  that `mix cff.xmp` derives from it. The gate refuses a sidecar whose frame
-  rate or duration disagrees with the `.lot` it describes. The page plays the
-  `.lot` with the ThorVG Lottie player, version 1.1.3, loaded from a CDN with
-  subresource integrity on the script. The player comes from a CDN for now
-  (operator, 2026-11-12).
   `mix cff.xmp` reads the YAML subset the house records use and refuses the
   rest. Where the mapping offers two sources, `abstract` comes before `message`
   for `dc:description`, and a list of licences joins with " OR ".

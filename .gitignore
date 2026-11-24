@@ -39,3 +39,6 @@ apparatus/MUJOCO_LOG.TXT
 # sync.exs's preflight for every project at once, so one session's 28 MB worktree
 # held a whole sync on 2026-10-01. None of it is ours to track.
 /.claude/
+
+# The RFD site; the pages workflow generates it (RFD66606-2240).
+/docs/

@@ -45,8 +45,8 @@ rfd 2360, "The campus as a beta", :discussion do
   (RFD66606-2487), first proved on the plaza walk of RFD66606-2408. No hand-written character
   controller is added (RFD66606-2363) (operator, 2026-11-11).
   :: details Non-goals
-  Everything outside the beta is cut, and every nongoal is abandoned rather than deferred
-  (operator, 2026-10-30). A new idea that matches a nongoal is refused, and the list is not argued
+  Everything outside the beta is cut from this list, and an RFD outside it keeps its state
+  (RFD66606-1000). A new idea that matches a nongoal is refused, and the list is not argued
   again before the beta ships. The non-goals named so far:
 
   - voice between the players

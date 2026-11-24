@@ -20,8 +20,7 @@ rfd 2447, "Campus beta 1: see each other", :discussion do
   Beta 1 ships one feature: two people see each other in the campus zone (operator, 2026-11-07).
   - See each other, RFD66606-2436 (the see-each-other slice): one person in the standalone Steam
     Frame and one on the desktop, each sees the other's avatar.
-  - Every other feature of the earlier six-feature beta is abandoned, not deferred (operator,
-    2026-11-11).
+  - Every other feature of the earlier six-feature beta is out of beta 1.
   :: related
   - RFD66606-2360, the campus beta, which ships this one feature.
   - RFD66606-2436, the slice this beta cuts against.

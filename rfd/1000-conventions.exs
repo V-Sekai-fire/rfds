@@ -18,6 +18,11 @@ rfd 1000, "Conventions", :published do
   style. Each RFD has a state: prediscussion, ideation, discussion,
   published, committed, or abandoned.
 
+  Scope is not a state. A plan lists the RFDs it spends. An RFD outside
+  that list keeps its state. An RFD becomes abandoned when its own decision
+  is withdrawn, so one change abandons or deletes three live RFDs at most.
+  `scripts/check_rfd_state_churn.py` holds that limit.
+
   Technical writing follows ASD-STE100 Simplified Technical English.
   An essay follows the AI-trope gate, and a section names which one it
   takes. RFD66606-1125 gives that rule. Code and identifiers follow neither.

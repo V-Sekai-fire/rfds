@@ -699,6 +699,22 @@ repos:
         always_run: true
         stages: [manual]
 
+      # A scope cut is a list in the plan, not a wave of abandonments (RFD66606-1000).
+      - id: ci-rfd-state-churn
+        name: no change abandons or deletes more than three live RFDs
+        entry: bash -c 'python scripts/check_rfd_state_churn.py --base "${GATE_BASE:?GATE_BASE unset}"'
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [manual]
+
+      - id: rfd-state-churn-self-test
+        name: the RFD state churn gate still fails on a planted wave of abandonments
+        entry: python scripts/check_rfd_state_churn.py --self-test
+        language: system
+        files: ^scripts/check_rfd_state_churn\.py$
+        pass_filenames: false
+
       - id: ci-rfd-abandoned
         name: every abandoned_at SHA holds a source with a Decision
         entry: mix rfd.abandoned.check

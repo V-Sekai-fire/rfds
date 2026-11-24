@@ -19,7 +19,9 @@ import tempfile
 
 KILL_LIMIT = 3
 RFD_GLOB = "rfd/*.exs"
-STATE_RE = re.compile(r'^rfd\s+\d+\s*,\s*"(?:[^"\\]|\\.)*"\s*,\s*:([a-z_]+)', re.M)
+HEAD_RE = re.compile(r"^\s*rfd\s*\(?\s*(\d+)\s*,(.*?),\s*:([a-z_]+)\s*\)?\s+do\b", re.M | re.S)
+BARE_RE = re.compile(r'^\s*rfd\s+(\d+)\s*,\s*"(?:[^"\\]|\\.)*"\s+do\b', re.M)
+STATE_LINE_RE = re.compile(r"^\s*state\s+:([a-z_]+)", re.M)
 
 
 def git(*args: str, cwd: str | None = None, check: bool = True) -> str:
@@ -31,38 +33,50 @@ def git(*args: str, cwd: str | None = None, check: bool = True) -> str:
     return out.stdout
 
 
+def header(text: str) -> tuple[int, str] | None:
+    m = HEAD_RE.search(text)
+    if m:
+        return int(m.group(1)), m.group(3)
+    m, st = BARE_RE.search(text), STATE_LINE_RE.search(text)
+    return (int(m.group(1)), st.group(1)) if m and st else None
+
+
 def state_of(text: str) -> str | None:
-    m = STATE_RE.search(text)
-    return m.group(1) if m else None
+    h = header(text)
+    return h[1] if h else None
 
 
-def blob_state(rev: str, path: str, cwd: str | None) -> tuple[bool, str | None]:
-    out = subprocess.run(
-        ["git", "show", f"{rev}:{path}"], cwd=cwd, capture_output=True, text=True
-    )
-    if out.returncode != 0:
-        return False, None
-    return True, state_of(out.stdout)
+def states(rev: str, paths: list[str], cwd: str | None) -> tuple[dict, list[str]]:
+    by_num: dict[int, tuple[str, str]] = {}
+    unread = []
+    for path in paths:
+        out = subprocess.run(
+            ["git", "show", f"{rev}:{path}"], cwd=cwd, capture_output=True, text=True
+        )
+        if out.returncode != 0:
+            continue
+        h = header(out.stdout)
+        if h is None:
+            unread.append(f"{rev}:{path}")
+        else:
+            by_num[h[0]] = (h[1], path)
+    return by_num, unread
 
 
 def classify(old: str, new: str, cwd: str | None = None) -> dict[str, list[str]]:
     names = git(
         "diff", "--name-only", "--no-renames", old, new, "--", RFD_GLOB, cwd=cwd
     ).split()
-    res: dict[str, list[str]] = {"kill": [], "revive": [], "reap": [], "unread": []}
-    for path in names:
-        had, before = blob_state(old, path, cwd)
-        has, after = blob_state(new, path, cwd)
-        if (had and before is None) or (has and after is None):
-            res["unread"].append(path)
-            continue
-        if not had:
-            continue
-        if before != "abandoned" and (not has or after == "abandoned"):
+    before, u1 = states(old, names, cwd)
+    after, u2 = states(new, names, cwd)
+    res: dict[str, list[str]] = {"kill": [], "revive": [], "reap": [], "unread": u1 + u2}
+    for num, (was, path) in sorted(before.items()):
+        now = after.get(num, (None, None))[0]
+        if was != "abandoned" and now in (None, "abandoned"):
             res["kill"].append(path)
-        elif before == "abandoned" and not has:
+        elif was == "abandoned" and now is None:
             res["reap"].append(path)
-        elif before == "abandoned" and after != "abandoned":
+        elif was == "abandoned" and now != "abandoned":
             res["revive"].append(path)
     return res
 
@@ -98,7 +112,7 @@ def run_history(days: int, ref: str) -> int:
     ).splitlines()
     total = refused_lines = 0
     refused = []
-    kills = revives = 0
+    kills = revives = unread = 0
     for row in log:
         full, short, date, subj = row.split(" ", 3)
         num = git("show", "--numstat", "--format=", full, "--", RFD_GLOB)
@@ -112,6 +126,7 @@ def run_history(days: int, ref: str) -> int:
         if len(parent) < 2:
             continue
         res = classify(parent[1], full)
+        unread += len(res["unread"])
         kills += len(res["kill"])
         revives += len(res["revive"])
         if len(res["kill"]) > KILL_LIMIT:
@@ -119,7 +134,7 @@ def run_history(days: int, ref: str) -> int:
             refused_lines += lines
     print(f"window: {days} days on {ref}, {len(log)} commits touching {RFD_GLOB}")
     print(f"RFD lines changed: {total}")
-    print(f"kills: {kills}  revives: {revives}  limit per change: {KILL_LIMIT}")
+    print(f"kills: {kills}  revives: {revives}  unread: {unread}  limit: {KILL_LIMIT}")
     print(f"refused commits: {len(refused)}, lines {refused_lines} "
           f"({100 * refused_lines / max(total, 1):.1f}%)")
     for short, date, k, n, subj in refused:
@@ -177,7 +192,20 @@ def self_test() -> int:
     expect("state that does not parse", False, {f(0): "use RFD.DSL\n# no header\n"})
     expect("a title with an escaped quote still parses", True,
            {f(0): 'rfd 2000, "A \\"quoted\\" title", :discussion do\nend\n'})
-    print(f"{10 - failures}/10 controls hold")
+    expect("rename four live RFDs", True,
+           {**{f(i): None for i in range(4)},
+            **{f"{2000 + i}-renamed.exs": rfd(2000 + i, "discussion") for i in range(4)}})
+    expect("rename four and abandon them", False,
+           {**{f(i): None for i in range(4)},
+            **{f"{2000 + i}-renamed.exs": rfd(2000 + i, "abandoned") for i in range(4)}})
+    expect("a wrapped header inside defmodule parses", True,
+           {f(0): 'defmodule R do\n  use RFD.DSL\n  rfd 2000,\n    "A " <>\n      "b",\n'
+                  '    :discussion do\n  end\nend\n'})
+    expect("a parenthesised header parses", True,
+           {f(0): 'rfd(\n  2000,\n  "A, b",\n  :discussion\n) do\nend\n'})
+    expect("a state line under a bare header parses", True,
+           {f(0): 'rfd 2000, "t" do\n  state :discussion\nend\n'})
+    print(f"{15 - failures}/15 controls hold")
     return 0 if failures == 0 else 1
 
 

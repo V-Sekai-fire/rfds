@@ -258,7 +258,11 @@ defmodule PagesSite do
     parts = [
       {"2", "Working agreements and reference pages",
        pages |> Enum.sort() |> Enum.map(&page_part(root, &1, slugs))},
-      {"3", "RFDs", rfds |> Enum.sort_by(& &1.serial, :desc) |> Enum.map(&entry_part(&1, slugs))},
+      {"3", "RFDs in force: committed and published",
+       rfd_part(rfds, ~w(committed published), slugs)},
+      {"3b", "RFDs under discussion", rfd_part(rfds, ~w(discussion), slugs)},
+      {"3c", "RFD ideas: ideation and prediscussion",
+       rfd_part(rfds, ~w(ideation prediscussion), slugs)},
       {"4", "Logbook",
        logs |> Enum.sort_by(&{&1.date, &1.href}) |> Enum.map(&entry_part(&1, slugs))}
     ]
@@ -274,7 +278,10 @@ defmodule PagesSite do
         "decision records). #{tally(rfds)}\n\n" <>
         "This page holds the whole site: #{length(pages)} reference pages, " <>
         "#{length(rfds)} RFDs, and #{length(logs)} logbook entries. " <>
-        "Each entry ends with a link to its own page. Search finds every RFD."
+        "RFDs come in three parts by state: in force, under discussion, and ideas. " <>
+        "The contents list parts and entries only. " <>
+        "The sections of each entry follow its title. " <>
+        "Search finds every RFD."
 
     body =
       Enum.map_join(numbered, "\n\n", fn {n, title, docs} ->
@@ -292,6 +299,13 @@ defmodule PagesSite do
       body
     ]
     |> Enum.join("\n\n")
+  end
+
+  defp rfd_part(rfds, states, slugs) do
+    rfds
+    |> Enum.filter(&(&1.group in states))
+    |> Enum.sort_by(& &1.serial, :desc)
+    |> Enum.map(&entry_part(&1, slugs))
   end
 
   defp tally(rfds) do
@@ -565,6 +579,63 @@ defmodule PagesSite do
             content: " copied"; font-size: .75em; color: var(--color-fg-muted, #57606a);
           }
         </style>
+        <style>
+          ul#markdown-toc > li > a { font-weight: 700; }
+          ul#markdown-toc > li > details > summary { cursor: pointer; font-weight: 700; }
+          ul#markdown-toc > li > details > summary a { color: inherit; }
+          ul#markdown-toc .count { color: var(--muted); font-weight: 400; }
+          ul#markdown-toc a.current { background: #e3ecfa; border-radius: 3px; padding: 0 .2rem; }
+        </style>
+        <script>
+          (function () {
+            var toc = document.getElementById("markdown-toc");
+            if (!toc) return;
+            var parts = [];
+            Array.prototype.forEach.call(toc.children, function (li) {
+              var a = li.querySelector(":scope > a"), ul = li.querySelector(":scope > ul");
+              if (!a || !ul) return;
+              var d = document.createElement("details"), s = document.createElement("summary");
+              var n = document.createElement("span");
+              n.className = "count";
+              n.textContent = " (" + ul.children.length + ")";
+              s.appendChild(a); s.appendChild(n); d.appendChild(s); d.appendChild(ul);
+              li.appendChild(d);
+              parts.push(d);
+            });
+            var links = {};
+            toc.querySelectorAll("a[href^='#']").forEach(function (a) {
+              links[a.getAttribute("href").slice(1)] = a;
+            });
+            var heads = Array.prototype.filter.call(
+              document.querySelectorAll("main h2[id], main h3[id]"),
+              function (h) { return links[h.id]; });
+            var current = null;
+            function mark() {
+              var y = window.scrollY + 80, h = null;
+              for (var i = 0; i < heads.length && heads[i].offsetTop <= y; i++) h = heads[i];
+              var a = h && links[h.id];
+              if (a === current) return;
+              if (current) current.classList.remove("current");
+              current = a;
+              if (!a) return;
+              a.classList.add("current");
+              var d = a.closest("details");
+              if (d && !d.open) d.open = true;
+              var r = a.getBoundingClientRect(), t = toc.getBoundingClientRect();
+              var fixed = getComputedStyle(toc).position === "fixed";
+              if (fixed && (r.top < t.top || r.bottom > t.bottom))
+                toc.scrollTop += r.top - t.top - t.height / 2;
+            }
+            var queued = false;
+            window.addEventListener("scroll", function () {
+              if (queued) return;
+              queued = true;
+              requestAnimationFrame(function () { queued = false; mark(); });
+            }, { passive: true });
+            window.addEventListener("hashchange", mark);
+            mark();
+          })();
+        </script>
         <script>
           (function () {
             var sel = "h2[id]:not(.no_toc), h3[id], h4[id]";

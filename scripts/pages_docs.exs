@@ -128,7 +128,7 @@ defmodule PagesDocs do
 
   defp toc(html) do
     heads =
-      for [_, l, attrs, t] <- Regex.scan(~r/<h([2-4])([^>]*)>(.*?)<\/h\1>/, html),
+      for [_, l, attrs, t] <- Regex.scan(~r/<h([2-3])([^>]*)>(.*?)<\/h\1>/, html),
           [_, id] <- [Regex.run(~r/id="([^"]+)"/, attrs) || [nil, nil]],
           id != nil and not (attrs =~ "no_toc"),
           do: {String.to_integer(l), id, String.replace(t, ~r/<\/?a\b[^>]*>/, "")}
@@ -198,6 +198,7 @@ defmodule PagesDocs do
 
   defp self_test do
     dir = Path.join(System.tmp_dir!(), "pages-docs-self-#{System.unique_integer([:positive])}")
+    File.rm_rf!(dir)
     [a, b] = for s <- ~w(built tracked), do: Path.join(dir, s)
     for d <- [a, b], do: File.mkdir_p!(Path.join(d, "assets"))
 

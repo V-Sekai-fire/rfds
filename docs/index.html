@@ -60,7 +60,7 @@
         <ol hidden></ol>
       </div>
       
-<p class="edition">Edition of 2026-11-21.</p>
+<p class="edition">Edition of 2026-11-24.</p>
 <h2 id="toc-title" class="no_toc">Table of Contents</h2>
 <ul id="markdown-toc">
 <li><a href="#part-2" id="markdown-toc-part-2">Working agreements and reference pages</a><ul>
@@ -3018,6 +3018,17 @@ mix rfd.refs.check
 mix rfd.abandoned.check
 elixir scripts/check_rfd_literals.exs --base origin/main
 elixir scripts/check_rfd_literals.exs --self-test
+</code></pre>
+<p><strong>Scope is a list, not a state.</strong> A plan RFD lists the RFDs it spends; an
+RFD outside the list keeps the state it has. An RFD is abandoned when its
+own decision is withdrawn, never to cut a beta. In the 30 days to
+2026-11-22, three scope-cut commits abandoned or deleted 228 live RFDs and
+made 57% of all changed RFD lines; four of those RFDs came back the same
+day. <code>scripts/check_rfd_state_churn.py</code> refuses a change that abandons or
+deletes more than three live RFDs, and <code>--history</code> back-tests the limit.</p>
+<pre><code>python scripts/check_rfd_state_churn.py --base origin/main
+python scripts/check_rfd_state_churn.py --history 30 --ref origin/main
+python scripts/check_rfd_state_churn.py --self-test
 </code></pre>
 <p><strong>The logbook records retractions, and that is the division.</strong> An entry
 records an event, and a withdrawn measurement is itself an event, so it
@@ -11226,9 +11237,9 @@ AI-trope table. <a href="#rfd-1124">RFD66606-1124</a> gives the reason these gat
 <p><strong>State:</strong> discussion
 <strong>Scope:</strong> the stages, the one beta, and the nongoals.</p>
 <p><strong>Which features does the campus beta ship?</strong></p>
-<p>A feature that misses the one beta is abandoned rather than deferred.</p>
-<p>The beta ships one feature and nothing else. Every nongoal is abandoned (operator,
-2026-10-30).</p>
+<p>A feature that misses the one beta keeps its RFD and its state.</p>
+<p>The beta ships one feature and nothing else. An RFD outside this list keeps its state
+(<a href="#rfd-1000">RFD66606-1000</a>).</p>
 <ul>
 <li>See each other, <a href="#rfd-2436">RFD66606-2436</a>: two people in the campus zone, one in the standalone Steam
 Frame and one on the desktop, each sees the other’s avatar.</li>
@@ -24665,6 +24676,10 @@ validation in the Studio pipeline.</p>
 <p>This repository writes Request-for-Discussion documents in the Oxide
 style. Each RFD has a state: prediscussion, ideation, discussion,
 published, committed, or abandoned.</p>
+<p>Scope is not a state. A plan lists the RFDs it spends. An RFD outside
+that list keeps its state. An RFD becomes abandoned when its own decision
+is withdrawn, so one change abandons or deletes three live RFDs at most.
+<code>scripts/check_rfd_state_churn.py</code> holds that limit.</p>
 <p>Technical writing follows ASD-STE100 Simplified Technical English.
 An essay follows the AI-trope gate, and a section names which one it
 takes. <a href="#rfd-1125">RFD66606-1125</a> gives that rule. Code and identifiers follow neither.</p>

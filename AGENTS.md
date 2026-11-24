@@ -509,6 +509,18 @@ added `file:line`, branch or pull request number.
     elixir scripts/check_rfd_literals.exs --base origin/main
     elixir scripts/check_rfd_literals.exs --self-test
 
+**Scope is a list, not a state.** A plan RFD lists the RFDs it spends; an
+RFD outside the list keeps the state it has. An RFD is abandoned when its
+own decision is withdrawn, never to cut a beta. In the 30 days to
+2026-11-22, three scope-cut commits abandoned or deleted 228 live RFDs and
+made 57% of all changed RFD lines; four of those RFDs came back the same
+day. `scripts/check_rfd_state_churn.py` refuses a change that abandons or
+deletes more than three live RFDs, and `--history` back-tests the limit.
+
+    python scripts/check_rfd_state_churn.py --base origin/main
+    python scripts/check_rfd_state_churn.py --history 30 --ref origin/main
+    python scripts/check_rfd_state_churn.py --self-test
+
 **The logbook records retractions, and that is the division.** An entry
 records an event, and a withdrawn measurement is itself an event, so it
 keeps its "retractions stay in place next to what they retract" shape.

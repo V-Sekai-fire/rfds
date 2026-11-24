@@ -10,13 +10,13 @@ rfd 2360, "The campus as a beta", :discussion do
   :: hook
   Which features does the campus beta ship?
   :: intrigue
-  A feature that misses the one beta is abandoned rather than deferred.
+  A feature that misses the one beta keeps its RFD and its state.
   :: exit
   Check a new idea against the nongoals in the details, and cut the beta when every gate passes
   with its control.
   :: decision
-  The beta ships one feature and nothing else. Every nongoal is abandoned (operator,
-  2026-10-30).
+  The beta ships one feature and nothing else. An RFD outside this list keeps its state
+  (RFD66606-1000).
   - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
     Frame and one on the desktop, each sees the other's avatar.
   - Voice, the pen, the adventure party, the shopkeeper persona, seamless zone transfer and the

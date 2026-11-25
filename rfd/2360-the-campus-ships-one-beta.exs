@@ -19,16 +19,18 @@ rfd 2360, "The campus as a beta", :discussion do
   (RFD66606-1000).
   - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
     Frame and one on the desktop, each sees the other's avatar.
-  - Voice, the pen, the adventure party, the shopkeeper persona, seamless zone transfer and the
-    lesson surface are abandoned (operator, 2026-11-11).
+  - The pen, the adventure party, the shopkeeper persona, seamless zone transfer and the
+    lesson surface are abandoned (operator, 2026-11-11). Voice is not a non-goal (operator,
+    2026-11-25); the beta's one feature stays seeing each other.
   - A character moves by walk mode, RFD66606-2487, proved on the plaza walk of RFD66606-2408
     under RFD66606-2363: no hand-written character controller is added.
   - The beta is a feature-complete freeze after dev. It is cut when the gate in RFD66606-2436
     passes with its control.
   - The beta ships a native build for each target: win64 on Windows, and native builds for the
     Steam Frame and the Steam Deck (operator, 2026-11-12).
-  - Every server piece is win64: the zone server, the stores and the secrets engine. Where the
-    host is ARM, the piece needs a native ARM build (operator, 2026-11-12).
+  - Every server piece ships as win64 and as a NixOS flake, and both work (operator,
+    2026-11-25): the zone server, the stores and the secrets engine. Where the host is ARM, the
+    piece needs a native ARM build (operator, 2026-11-12).
   - An io_uring path in a server piece is allowed again beside its portable path, and the win64
     build keeps the portable one (operator, 2026-11-12).
   :: related
@@ -49,7 +51,6 @@ rfd 2360, "The campus as a beta", :discussion do
   (RFD66606-1000). A new idea that matches a nongoal is refused, and the list is not argued
   again before the beta ships. The non-goals named so far:
 
-  - voice between the players
   - the pen's draw and wear
   - an adventure party and a shopkeeper persona
   - seamless zone transfer

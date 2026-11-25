@@ -17,7 +17,7 @@ rfd 2216, "Three.js blocklist", :discussion do
   :: decision
   Blocklist three.js as an in-browser 3D runtime. Substitute is
   **Godot as a native binary per platform** built from
-  `entities-godot-sandbox` with the Vulkan renderer (MoltenVK on
+  &{repo("entities-godot-sandbox", planned: "4-entities")} with the Vulkan renderer (MoltenVK on
   macOS).
   :: related
   - [RFD66606-2210](../2210-atelier-godot-web-shipping-surface/), L3

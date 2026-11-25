@@ -104,7 +104,7 @@ loader path, memory `consolidate-interchangeable-parts`"
 
   ### `entities-godot-main` (trimmed 2026-09-05)
 
-  Same repo as `entities-godot-sandbox` at revision `main` instead
+  Same repo as &{repo("entities-godot-sandbox", planned: "4-entities")} at revision `main` instead
   of `feat/vsk-sandbox-4.7`. Trimmed as `weftspun-keypoint#101`.
   Recorded here as the reference case that proves the pattern
   lands cleanly.

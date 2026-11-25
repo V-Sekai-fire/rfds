@@ -48,7 +48,7 @@ rfd 1029, "FOSS model replacements", :published do
 
   The QuadWild Bi-MDF fork does not qualify. It uses the GPL-3 license.
   :: details Two of the candidates are already vendored
-  Checked 2026-09-12. `entities-godot` on `feat/cassie` carries both PMP
+  Checked 2026-09-12. &{repo("entities-godot")} on `feat/cassie` carries both PMP
   and Geogram under `thirdparty/`, so the decimation half of this
   replacement is checked out rather than sourced. Licenses were read
   from those copies, not from a package index.

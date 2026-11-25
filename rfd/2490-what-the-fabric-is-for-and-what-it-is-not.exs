@@ -18,13 +18,13 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   refused, not argued again.
   :: decision
   The fabric is an open, remixable, self-hosted collaborative space
-  built on Godot. People in one room can see each other. Hearing each
-  other is a charter intent that the first beta does not ship
-  (RFD66606-2447).
-  The beta maximizes every use case it needs and minimizes the work and
-  tools to reach them: one host, one message shape and one build path
-  (operator, 2026-11-25). A host ships as a NixOS flake or as win64, and
-  both work (operator, 2026-11-25).
+  built on Godot. Our mission is its first beta (RFD66606-2360): two
+  people in one campus zone see each other's avatars, one on the Steam
+  Frame or the Steam Deck and one on the desktop. The beta is one
+  platform, one guest host with one message shape and one build path,
+  shipped as a NixOS flake and as win64. It maximizes the use cases the
+  platform serves and minimizes the work and tools they cost (operator,
+  2026-11-25). The board picks its work as the details say.
   The board-wide non-goals below bind every RFD on this board
   (operator, 2026-11-11).
   :: related
@@ -52,8 +52,8 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
     privately.
   - Kept: easy to compile and modify.
   - Kept: baseline presence, people in a room who can see each other
-    (beta 1). Hearing each other is not in beta 1 and is not on this
-    board's current plan.
+    (beta 1). Hearing each other rides on the platform as a use case
+    (RFD66606-2360, operator, 2026-11-25).
   - Kept: a neutral host for events, and for business meetings where
     privacy matters.
   - Superseded: Windows SteamVR and Oculus Quest as targets. The

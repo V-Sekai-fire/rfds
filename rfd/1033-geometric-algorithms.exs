@@ -43,7 +43,7 @@ rfd 1033, "Geometric algorithms in the catalog", :published do
   from retopology because the two answer different questions: retopology
   rebuilds the edge flow, decimation removes elements from the flow that
   is there, and an avatar losing triangles without losing its silhouette
-  wants the second. PMP and Geogram are vendored in `entities-godot` on
+  wants the second. PMP and Geogram are vendored in &{repo("entities-godot")} on
   `feat/cassie`; RFD66606-1029 records the licenses as read from those copies
   and why blend shape transfer, not triangle removal, is the hard half.
 

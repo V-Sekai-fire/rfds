@@ -27,7 +27,7 @@ rfd 2484,
   matches the file seed, and `PRAGMA integrity_check` passes. A planted control, 1,000 posts
   dropped from the store after import, must be caught by the hash and the count.
   :: decision
-  - Look first for an existing import path in `datasource-store`: `prove_big_commit.c`,
+  - Look first for an existing import path in &{repo("datasource-store")}: `prove_big_commit.c`,
     `sqlrun.c`, `weft_sql.c`, `tpcc.c`, and `fly/backup-fresh.sh`; try SQLite's backup API or
     `VACUUM INTO` through the VFS before hand-chunking with `ATTACH` and rowid-ranged
     `INSERT ... SELECT` sized well under 10 MB.
@@ -48,7 +48,8 @@ rfd 2484,
 
   prose ~S"""
   :: details Look first for an existing path
-  Candidates in `datasource-store`: `prove_big_commit.c`, `sqlrun.c`, `weft_sql.c`, `tpcc.c`,
+  Candidates in &{repo("datasource-store")}: `prove_big_commit.c`, `sqlrun.c`, `weft_sql.c`,
+  `tpcc.c`,
   `fly/backup-fresh.sh`. The VFS already stages a commit too large for one FoundationDB
   transaction (the 10 MB limit), so SQLite's backup API or `VACUUM INTO` through the VFS may
   do the job. Hand-chunk only if nothing exists.

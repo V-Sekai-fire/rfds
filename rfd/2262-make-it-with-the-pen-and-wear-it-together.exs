@@ -69,7 +69,7 @@ V-Sekai client and server that host the loop"
   motion sickness, the org's rules) is not a release. It runs as the
   active release needs it.
   :: details Where it runs
-  The first host is `transport-meshing-pen`: the xr-grid pen with the
+  The first host is &{repo("transport-meshing-pen")}: the xr-grid pen with the
   stage guest ELFs it builds inserted through godot-sandbox. It has two
   implementations, chosen per process through the OpenXR runtime
   manifest (`XR_RUNTIME_JSON`):
@@ -117,7 +117,7 @@ V-Sekai client and server that host the loop"
   `feat/module-speech` branch.
 
   The loop's locomotion is its own: a generated clip retargeted onto the
-  avatar (`interactor-motion-guest`; gate 10 stays in the archived
+  avatar (&{repo("interactor-motion-guest")}; gate 10 stays in the archived
   `interactor-dress-on`), with the body grounded on the GPU
   as one rigid move per frame, so a foot stays where it lands and a seat
   holds a sitting body. Every contact is held to a penny (1.52 mm), within

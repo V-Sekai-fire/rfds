@@ -21,6 +21,10 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   built on Godot. People in one room can see each other. Hearing each
   other is a charter intent that the first beta does not ship
   (RFD66606-2447).
+  The beta maximizes every use case it needs and minimizes the work and
+  tools to reach them: one host, one message shape and one build path
+  (operator, 2026-11-25). A host ships as a NixOS flake or as win64, and
+  both work (operator, 2026-11-25).
   The board-wide non-goals below bind every RFD on this board
   (operator, 2026-11-11).
   :: related

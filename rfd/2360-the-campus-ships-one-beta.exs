@@ -43,14 +43,14 @@ rfd 2360, "The campus as a beta", :discussion do
 
   prose ~S"""
   :: details The platform
-  The platform is one guest host, one message shape and one build path. A use case is in the beta
-  when it is a guest of that platform with a gate and a control, and it adds no host, message shape
-  or build path of its own. The use cases maximize what the platform serves and the work minimizes
-  what each costs (operator, 2026-11-25). The use cases named are seeing each other (RFD66606-2436),
-  voice between the players, the console that loads, unloads and chains local models, and the
-  persona that answers from a planning domain (RFD66606-2339), with the planner and the solver as
-  its guests (operator, 2026-11-25). The beta ships each use case whose own gate has passed with its
-  control by the cut.
+  The platform is one guest host, one message shape and one build path. A use case is in the
+  beta when it is a guest of that platform with a gate and a control, and it adds no host,
+  message shape or build path of its own. The use cases maximize what the platform serves and
+  the work minimizes what each costs (operator, 2026-11-25). The use cases named are seeing each
+  other (RFD66606-2436), voice between the players, the console that loads, unloads and chains
+  local models, and the persona that answers from a planning domain (RFD66606-2339), with the
+  planner and the solver as its guests (operator, 2026-11-25). The beta ships each use case
+  whose own gate has passed with its control by the cut.
   :: details Servers and protocols
   Anything that is a protocol or a server has an AsyncAPI 3.1 document, written before or with it
   (operator, 2026-11-25). A server is a gen_server. Its document may carry its states as data in
@@ -58,10 +58,11 @@ rfd 2360, "The campus as a beta", :discussion do
   document. The server refuses a message with no transition from its state, and a document without
   the block describes a plain gen_server (operator, 2026-11-25).
 
-  Every server piece ships as win64 and as a NixOS flake, and both work (operator, 2026-11-25): the
-  zone server, the stores and the secrets engine. Where the host is ARM, the piece needs a native
-  ARM build (operator, 2026-11-12). An io_uring path in a server piece is allowed again beside its
-  portable path, and the win64 build keeps the portable one (operator, 2026-11-12).
+  Every server piece ships as win64 and as a NixOS flake, and both work (operator,
+  2026-11-25): the zone server, the stores and the secrets engine. Where the host is ARM, the
+  piece needs a native ARM build (operator, 2026-11-12). An io_uring path in a server piece is
+  allowed again beside its portable path, and the win64 build keeps the portable one (operator,
+  2026-11-12).
   :: details Walk mode
   The character walks by walk mode: the motion guest drives it from clips in an AnimationLibrary
   (RFD66606-2487), first proved on the plaza walk of RFD66606-2408. No hand-written character

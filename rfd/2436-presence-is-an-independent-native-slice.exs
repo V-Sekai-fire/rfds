@@ -29,7 +29,7 @@ rfd 2436, "presence is an independent native slice", :discussion do
     gates run there too (operator, 2026-11-12).
   - An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21 entity Packets of 100
     bytes. The zone only routes and four parties judge each sender (operator, 2026-11-13).
-  - Melatonin is optional content, loaded onto the same guest with logic; ANNY is the beta
+  - Melatonin is optional content, loaded onto the same guest with logic. ANNY is the beta
     avatar (operator, 2026-11-25).
   - The work climbs one ordered ladder from what already runs, one change a rung.
   :: related

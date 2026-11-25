@@ -17,16 +17,17 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   Check a new idea against the non-goals in the details. A match is
   refused, not argued again.
   :: decision
-  The fabric is an open, remixable, self-hosted collaborative space
-  built on Godot. People in one room can see each other. Hearing each
-  other is a charter intent that the first beta does not ship
-  (RFD66606-2447).
-  The beta maximizes every use case it needs and minimizes the work and
-  tools to reach them: one host, one message shape and one build path
-  (operator, 2026-11-25). A host ships as a NixOS flake or as win64, and
-  both work (operator, 2026-11-25).
+  We work on the important problem, the one with a reasonable attack, and
+  we stop work that serves no important problem (Hamming, "You and Your
+  Research", 1986). We maximize our use cases and minimize our work and
+  tools (operator, 2026-11-25). Today the important problem is the first
+  beta (RFD66606-2360): two people in one campus zone see each other's
+  avatars, one on the Steam Frame or the Steam Deck and one on the
+  desktop. The fabric is an open, remixable, self-hosted collaborative
+  space built on Godot. The beta is one platform, one guest host with one
+  message shape and one build path, shipped as a NixOS flake and as win64.
   The board-wide non-goals below bind every RFD on this board
-  (operator, 2026-11-11).
+  (operator, 2026-11-11). The details say how the board picks its work.
   :: related
   - RFD66606-2360, the campus beta, which points here for its
     non-goals.
@@ -52,8 +53,8 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
     privately.
   - Kept: easy to compile and modify.
   - Kept: baseline presence, people in a room who can see each other
-    (beta 1). Hearing each other is not in beta 1 and is not on this
-    board's current plan.
+    (beta 1). Hearing each other rides on the platform as a use case
+    (RFD66606-2360, operator, 2026-11-25).
   - Kept: a neutral host for events, and for business meetings where
     privacy matters.
   - Superseded: Windows SteamVR and Oculus Quest as targets. The
@@ -79,6 +80,23 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - Fly as a host for any server piece (operator, 2026-11-12).
   - FEX, the x86 emulation layer, as a runtime for any build (operator, 2026-11-12).
   - Proton, the third-party compatibility layer (operator, 2026-11-12).
+
+  :: details How the board picks its work
+  The board picks work the way Hamming's "You and Your Research" (1986,
+  https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) says a researcher does
+  (operator, 2026-11-25).
+  - A problem is important when it has a reasonable attack. A problem with no attack is a
+    non-goal, however large its consequence.
+  - The beta's important problem is the one the gate of RFD66606-2436 holds. Each session says
+    which important problem its work serves and what its attack is.
+  - A session whose work serves no important problem stops or changes its goal, whatever work
+    it has already started.
+  - Doors stay open. A session says what it works on and what it needs, and reads what the others
+    say.
+  - A slice of the effort goes to the bigger question: is the gate still the important problem?
+  - Unknowns stay on the page. Each RFD's "What is not known" and each planted-defect control is
+    the list of evidence against the work.
+  - Work is done so that others can build on it. A document comes before the code.
 
   :: details Beta-only non-goals in RFD66606-2360
   These stay beta-only non-goals in RFD66606-2360 (operator, 2026-11-11).

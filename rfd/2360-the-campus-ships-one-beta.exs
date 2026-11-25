@@ -21,6 +21,11 @@ rfd 2360, "The campus as a beta", :discussion do
     beta when it is a guest of that platform with a gate and a control, and it adds no host,
     message shape or build path of its own. The use cases maximize what the platform serves and
     the work minimizes what each costs (operator, 2026-11-25).
+  - Anything that is a protocol or a server has an AsyncAPI 3.1 document, written before or with
+    it (operator, 2026-11-25). A server is a gen_server. Its document may carry its states as
+    data in `x-state-machine`: an initial state, the states, and transitions that name messages
+    of the document. The server refuses a message with no transition from its state, and a
+    document without the block describes a plain gen_server (operator, 2026-11-25).
   - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
     Frame and one on the desktop, each sees the other's avatar. Its gate cuts the beta.
   - Voice between the players, the console that loads, unloads and chains local models, and the

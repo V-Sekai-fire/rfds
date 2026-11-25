@@ -27,6 +27,10 @@ rfd 2391, "guests are built at double precision", :discussion do
   - A Mojo guest is held to the same size. It names 40 bytes in its own `.sandbox_variant`
     section and the double host refuses a guest that names another (RFD66606-2494, operator,
     2026-11-14).
+  - Superseded for the beta (operator, 2026-11-25). The beta runs on stock Godot 4.8-beta5 at
+    single precision with the godot-sandbox addon, and the engine fork goes to the archive. A
+    guest builds at both precisions and releases both, and the beta loads the single ELF, whose
+    `.sandbox_variant` names 24 bytes. Double precision returns when a feature needs it.
   :: related
   - RFD66606-2293, where this rule lived before the split.
   """

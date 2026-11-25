@@ -80,6 +80,23 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - FEX, the x86 emulation layer, as a runtime for any build (operator, 2026-11-12).
   - Proton, the third-party compatibility layer (operator, 2026-11-12).
 
+  :: details How the board picks its work
+  The board picks work the way Hamming's "You and Your Research" (1986,
+  https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) says a researcher does
+  (operator, 2026-11-25).
+  - A problem is important when it has a reasonable attack. A problem with no attack is a
+    non-goal, however large its consequence.
+  - The beta's important problem is the one the gate of RFD66606-2436 holds. Each session says
+    which important problem its work serves and what its attack is.
+  - A session whose work serves no important problem stops or changes its goal, whatever work
+    it has already started.
+  - Doors stay open. A session says what it works on and what it needs, and reads what the others
+    say.
+  - A slice of the effort goes to the bigger question: is the gate still the important problem?
+  - Unknowns stay on the page. Each RFD's "What is not known" and each planted-defect control is
+    the list of evidence against the work.
+  - Work is done so that others can build on it. A document comes before the code.
+
   :: details Beta-only non-goals in RFD66606-2360
   These stay beta-only non-goals in RFD66606-2360 (operator, 2026-11-11).
   They are not on the board-wide list.

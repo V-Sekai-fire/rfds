@@ -48,7 +48,8 @@ rfd 2484,
 
   prose ~S"""
   :: details Look first for an existing path
-  Candidates in &{repo("datasource-store")}: `prove_big_commit.c`, `sqlrun.c`, `weft_sql.c`, `tpcc.c`,
+  Candidates in &{repo("datasource-store")}: `prove_big_commit.c`, `sqlrun.c`, `weft_sql.c`,
+  `tpcc.c`,
   `fly/backup-fresh.sh`. The VFS already stages a commit too large for one FoundationDB
   transaction (the 10 MB limit), so SQLite's backup API or `VACUUM INTO` through the VFS may
   do the job. Hand-chunk only if nothing exists.

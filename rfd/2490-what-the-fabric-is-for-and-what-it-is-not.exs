@@ -17,16 +17,17 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   Check a new idea against the non-goals in the details. A match is
   refused, not argued again.
   :: decision
-  The fabric is an open, remixable, self-hosted collaborative space
-  built on Godot. Our mission is its first beta (RFD66606-2360): two
-  people in one campus zone see each other's avatars, one on the Steam
-  Frame or the Steam Deck and one on the desktop. The beta is one
-  platform, one guest host with one message shape and one build path,
-  shipped as a NixOS flake and as win64. It maximizes the use cases the
-  platform serves and minimizes the work and tools they cost (operator,
-  2026-11-25). The board picks its work as the details say.
+  We work on the important problem, the one with a reasonable attack, and
+  we stop work that serves no important problem (Hamming, "You and Your
+  Research", 1986). We maximize our use cases and minimize our work and
+  tools (operator, 2026-11-25). Today the important problem is the first
+  beta (RFD66606-2360): two people in one campus zone see each other's
+  avatars, one on the Steam Frame or the Steam Deck and one on the
+  desktop. The fabric is an open, remixable, self-hosted collaborative
+  space built on Godot. The beta is one platform, one guest host with one
+  message shape and one build path, shipped as a NixOS flake and as win64.
   The board-wide non-goals below bind every RFD on this board
-  (operator, 2026-11-11).
+  (operator, 2026-11-11). The details say how the board picks its work.
   :: related
   - RFD66606-2360, the campus beta, which points here for its
     non-goals.

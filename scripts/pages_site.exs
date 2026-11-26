@@ -1,7 +1,8 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 # Builds the Pages source as one flow: sources -> records -> groups -> sections -> files.
-# A masthead and the newest RFDs lead; the logbook and RFD archives follow, dated from git.
+# A masthead and the newest RFDs lead; the logbook and RFD archives follow, dated from
+# journal/pages.txn (mix rfd.dates).
 #   mix rfd.render && mix run scripts/pages_site.exs <out-dir>
 
 defmodule PagesSite do
@@ -50,14 +51,10 @@ defmodule PagesSite do
   end
 
   defp last_changed(root) do
-    {out, 0} = System.cmd("git", ["-C", root, "log", "--format=%x00%as", "--name-only"])
-
-    out
-    |> String.split(<<0>>, trim: true)
-    |> Enum.reduce(%{}, fn chunk, acc ->
-      [date | files] = String.split(chunk, "\n", trim: true)
-      Enum.reduce(files, acc, &Map.put_new(&2, &1, date))
-    end)
+    root
+    |> Path.join("journal/pages.txn")
+    |> File.read!()
+    |> Mix.Tasks.Rfd.Dates.last_changed()
   end
 
   defp edition(dates) do

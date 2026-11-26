@@ -274,9 +274,12 @@ defmodule RFD.Ref do
     body =~ ~r/^## Decision|^\s*:: decision$|^\s*decision\s+(~S)?"/m
   end
 
+  @doc "git's output, or nil when git fails or is absent (a flake build has none)."
   def git(root, args) do
-    case System.cmd("git", ["-C", root | args], stderr_to_stdout: true) do
-      {out, 0} -> out
+    with bin when is_binary(bin) <- System.find_executable("git"),
+         {out, 0} <- System.cmd(bin, ["-C", root | args], stderr_to_stdout: true) do
+      out
+    else
       _ -> nil
     end
   end

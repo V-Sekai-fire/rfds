@@ -367,6 +367,13 @@ repos:
         files: '^(rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
+      - id: rfd-dates
+        name: the journal of page dates agrees with git and the index
+        entry: mix rfd.dates --check
+        language: system
+        files: '^(rfd/|logbook/|[A-Z]+\.md$|journal/|lib/|scripts/pages_)'
+        pass_filenames: false
+
       - id: rfd-dsl-check
         name: every RFD and register source compiles inside RFD66606-1000's shape
         entry: mix rfd.check

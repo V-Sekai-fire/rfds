@@ -14,187 +14,77 @@
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2469) 'Can the lowering reproduce XLA CPU's own order of adding floats, not only the value that order
+2026-11-07T00:00:03Z (RFD66606-2469) 'Can the lowering reproduce XLA CPU's own order of adding floats, not only the value that order happens to land on?
  # tags: rfd:hook
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2469) 'happens to land on?
- # tags: rfd:hook
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2469) 'Eight cases are not bit-equal on the RTX 4090 today: dot_batched, mlp_pre, mlp_f32,
+2026-11-07T00:00:04Z (RFD66606-2469) 'Eight cases are not bit-equal on the RTX 4090 today: dot_batched, mlp_pre, mlp_f32, reduce_sum_random, mean_last, softmax_f32, rms_norm_f32 and causal_attention. Each stays within the functional bar, a rel-L2 around 1e-7 and at most a few dozen ulp, but none is bit-equal. reduce with add sums in an irregular tree that changes with the shape, and dot_general runs as a fusion whose accumulation tree also depends on the shape; cases with the order written out, or whose partial sums are exact, are already bit-equal, so the gap is the order, not the arithmetic.
  # tags: rfd:intrigue
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2469) 'reduce_sum_random, mean_last, softmax_f32, rms_norm_f32 and causal_attention. Each stays within
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2469) 'the functional bar, a rel-L2 around 1e-7 and at most a few dozen ulp, but none is bit-equal.
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2469) 'reduce with add sums in an irregular tree that changes with the shape, and dot_general runs as
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2469) 'a fusion whose accumulation tree also depends on the shape; cases with the order written out,
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2469) 'or whose partial sums are exact, are already bit-equal, so the gap is the order, not the
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2469) 'arithmetic.
- # tags: rfd:intrigue
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2469) 'Reveal one new shape's tree, add it to the table, confirm that shape's case turns bit-equal,
+2026-11-07T00:00:05Z (RFD66606-2469) 'Reveal one new shape's tree, add it to the table, confirm that shape's case turns bit-equal, and confirm removing the table brings the old difference back.
  # tags: rfd:exit
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2469) 'and confirm removing the table brings the old difference back.
- # tags: rfd:exit
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2469) 'StableHLO: match XLA CPU's summation order in reduce and dot_general
+2026-11-07T00:00:06Z (RFD66606-2469) 'StableHLO: match XLA CPU's summation order in reduce and dot_general
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2469) 'Reveal XLA's accumulation tree for each reduce and dot shape the five graphs use, on the Zen 2
+2026-11-07T00:00:07Z (RFD66606-2469) 'Reveal XLA's accumulation tree for each reduce and dot shape the five graphs use, on the Zen 2 desk with this jax build, and record the trees in a table keyed by shape. Emit each tree as a sequence of slices and adds, or as a kernel that takes the tree as data, and fall back to today's order, with the case kept in XFAIL, for any shape the table does not cover. The table is tied to one CPU and one XLA build, the way rsqrt_zen2 already is, so it records both.
  # tags: rfd:decision
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2469) 'desk with this jax build, and record the trees in a table keyed by shape. Emit each tree as a
- # tags: rfd:decision
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2469) 'sequence of slices and adds, or as a kernel that takes the tree as data, and fall back to
- # tags: rfd:decision
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2469) 'today's order, with the case kept in XFAIL, for any shape the table does not cover. The table
- # tags: rfd:decision
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2469) 'is tied to one CPU and one XLA build, the way rsqrt_zen2 already is, so it records both.
- # tags: rfd:decision
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2469) 'The eight cases
+2026-11-07T00:00:08Z (RFD66606-2469) 'The eight cases
  # tags: rfd:details-heading
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2469) 'dot_batched, mlp_pre, mlp_f32, reduce_sum_random, mean_last, softmax_f32, rms_norm_f32 and
+2026-11-07T00:00:09Z (RFD66606-2469) 'dot_batched, mlp_pre, mlp_f32, reduce_sum_random, mean_last, softmax_f32, rms_norm_f32 and causal_attention: each is within the functional bar today, a rel-L2 around 1e-7 and at most a few dozen ulp, but not bit-equal. pinned_sum_tree, softmax_pinned and causal_softmax_pinned already pin the order and are already bit-equal, which is the evidence that order, not arithmetic, is the whole gap.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2469) 'causal_attention: each is within the functional bar today, a rel-L2 around 1e-7 and at most a
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2469) 'few dozen ulp, but not bit-equal. pinned_sum_tree, softmax_pinned and causal_softmax_pinned
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2469) 'already pin the order and are already bit-equal, which is the evidence that order, not
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2469) 'arithmetic, is the whole gap.
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2469) '
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2469) 'The two trees to reveal
+2026-11-07T00:00:10Z (RFD66606-2469) 'The two trees to reveal
  # tags: rfd:details-heading
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2469) '- reduce with add: an irregular summation tree that changes with the shape, matching an
+2026-11-07T00:00:11Z (RFD66606-2469) '- reduce with add: an irregular summation tree that changes with the shape, matching an unrolled chain of adds reassociated by LLVM. tools/reveal_sum_order and the notes in STABLEHLO.md describe how it is read back out.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2469) '  unrolled chain of adds reassociated by LLVM. tools/reveal_sum_order and the notes in
+2026-11-07T00:00:12Z (RFD66606-2469) '- dot_general: a fusion whose accumulation tree also depends on the shape, revealed the same way, on the same desk and jax build.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2469) '  STABLEHLO.md describe how it is read back out.
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2469) '- dot_general: a fusion whose accumulation tree also depends on the shape, revealed the same
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2469) '  way, on the same desk and jax build.
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2469) '
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2469) 'Acceptance
+2026-11-07T00:00:13Z (RFD66606-2469) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2469) '- The eight cases above are bit-equal on the GPU, or each keeps a measured reason in XFAIL.
+2026-11-07T00:00:14Z (RFD66606-2469) '- The eight cases above are bit-equal on the GPU, or each keeps a measured reason in XFAIL.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2469) '- Removing the table brings back the old differences; that is the control this decision must
+2026-11-07T00:00:15Z (RFD66606-2469) '- Removing the table brings back the old differences; that is the control this decision must fail without.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2469) '  fail without.
+2026-11-07T00:00:16Z (RFD66606-2469) '- The added cost in dispatches and time for the five graphs is measured and written down.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2469) '- The added cost in dispatches and time for the five graphs is measured and written down.
- # tags: rfd:details
- Text:RFD2469  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2469) '- All 11 desk gates still pass.
+2026-11-07T00:00:17Z (RFD66606-2469) '- All 11 desk gates still pass.
  # tags: rfd:details
  Text:RFD2469  1 LINE
  Text:Written

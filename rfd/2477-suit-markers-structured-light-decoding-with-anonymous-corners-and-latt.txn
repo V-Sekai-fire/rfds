@@ -19,77 +19,42 @@
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2477) 'Treat the board as a spatially coded pattern instead of a set of independently-read tags:
+2026-11-07T00:00:04Z (RFD66606-2477) 'Treat the board as a spatially coded pattern instead of a set of independently-read tags: detect corners without trusting their ids, place each corner on the chart by voting over offsets, rotations and instances, and recover unread markers from their read neighbours. `predict_neighbours.py` already exists for this but was never run, and was left out of the earlier pull requests.
  # tags: rfd:intrigue
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2477) 'detect corners without trusting their ids, place each corner on the chart by voting over
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2477) 'offsets, rotations and instances, and recover unread markers from their read neighbours.
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2477) '`predict_neighbours.py` already exists for this but was never run, and was left out of the
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2477) 'earlier pull requests.
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2477) 'Run `predict_neighbours.py` against planted gates before trusting any measurement from it.
+2026-11-07T00:00:05Z (RFD66606-2477) 'Run `predict_neighbours.py` against planted gates before trusting any measurement from it.
  # tags: rfd:exit
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2477) 'Ship three gates ahead of any measurement, each with its own planted-defect control:
+2026-11-07T00:00:06Z (RFD66606-2477) 'Ship three gates ahead of any measurement, each with its own planted-defect control:
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2477) '- A planted wrong offset must lose the vote, so one bad candidate never outvotes the
+2026-11-07T00:00:07Z (RFD66606-2477) '- A planted wrong offset must lose the vote, so one bad candidate never outvotes the consistent majority.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2477) '  consistent majority.
+2026-11-07T00:00:08Z (RFD66606-2477) '- A blank pattern (no corners detected) gives nothing back, rather than a false placement.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2477) '- A blank pattern (no corners detected) gives nothing back, rather than a false placement.
+2026-11-07T00:00:09Z (RFD66606-2477) '- The UV pass marks every assignment right or wrong, with no assignment left unjudged. Once those three gates pass, measure corners placed, wrong placements, and markers recovered that tag decoding alone misses, and report those three numbers together, not separately.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2477) '- The UV pass marks every assignment right or wrong, with no assignment left unjudged.
- # tags: rfd:decision
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2477) 'Once those three gates pass, measure corners placed, wrong placements, and markers recovered
- # tags: rfd:decision
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2477) 'that tag decoding alone misses, and report those three numbers together, not separately.
- # tags: rfd:decision
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2477) '- RFD66606-2467, the dead-on gate this recovery path feeds markers back into.
+2026-11-07T00:00:10Z (RFD66606-2477) '- RFD66606-2467, the dead-on gate this recovery path feeds markers back into.
  # tags: rfd:related
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2477) '- RFD66606-2469, island charting and the fold test that screens markers before placement.
+2026-11-07T00:00:11Z (RFD66606-2477) '- RFD66606-2469, island charting and the fold test that screens markers before placement.
  # tags: rfd:related
  Text:RFD2477  1 LINE
  Text:Written

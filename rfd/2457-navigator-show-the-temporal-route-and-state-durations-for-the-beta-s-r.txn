@@ -14,232 +14,87 @@
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2457) 'Can the navigator show a temporal route and state durations for the beta's RFDs when no RFD
+2026-11-07T00:00:03Z (RFD66606-2457) 'Can the navigator show a temporal route and state durations for the beta's RFDs when no RFD states a duration yet?
  # tags: rfd:hook
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2457) 'states a duration yet?
- # tags: rfd:hook
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2457) 'The navigator plans the beta's route from the RFDs' own token edges, a cone of 33 RFDs and
+2026-11-07T00:00:04Z (RFD66606-2457) 'The navigator plans the beta's route from the RFDs' own token edges, a cone of 33 RFDs and 37 steps. The persona planner now produces temporal plans with a start, an end and a duration per step, a critical-path total, and, through a composite task that lists each step twice, the earliest and latest possible time for that step. The site does not use any of that yet. Without a stated duration every step collapses to zero length, so the total reads as an instant: of 44 committed RFDs, 39 landed in the PR that created them, leaving a median lead time that is useless as a stand-in.
  # tags: rfd:intrigue
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2457) '37 steps. The persona planner now produces temporal plans with a start, an end and a
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2457) 'duration per step, a critical-path total, and, through a composite task that lists each step
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2457) 'twice, the earliest and latest possible time for that step. The site does not use any of
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2457) 'that yet. Without a stated duration every step collapses to zero length, so the total reads
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2457) 'as an instant: of 44 committed RFDs, 39 landed in the PR that created them, leaving a median
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2457) 'lead time that is useless as a stand-in.
- # tags: rfd:intrigue
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2457) 'Draft durations for the 33 RFDs in the cone, then run the
+2026-11-07T00:00:05Z (RFD66606-2457) 'Draft durations for the 33 RFDs in the cone, then run the navigator against the new temporal plan.
  # tags: rfd:exit
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2457) 'navigator against the new temporal plan.
- # tags: rfd:exit
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2457) 'navigator temporal route for the beta's RFDs
+2026-11-07T00:00:06Z (RFD66606-2457) 'navigator temporal route for the beta's RFDs
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2457) '- Add a composite window-rfd-N method to the generator that decomposes into earliest-rfd-N
+2026-11-07T00:00:07Z (RFD66606-2457) '- Add a composite window-rfd-N method to the generator that decomposes into earliest-rfd-N and latest-rfd-N, where the latest side needs its own again methods since the held shortcut no longer applies once the steps are already done (proposed).
  # tags: rfd:decision
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2457) '  and latest-rfd-N, where the latest side needs its own again methods since the held
+2026-11-07T00:00:08Z (RFD66606-2457) '- Pair each step's two appearances in the navigator client as its earliest and latest possible time, with the problem document stating today as its origin (proposed).
  # tags: rfd:decision
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2457) '  shortcut no longer applies once the steps are already done (proposed).
+2026-11-07T00:00:09Z (RFD66606-2457) '- Decide the declaration form for a duration, or a start and end per action, within the existing rebac block and with no new DSL (proposed).
  # tags: rfd:decision
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2457) '- Pair each step's two appearances in the navigator client as its earliest and latest
+2026-11-07T00:00:10Z (RFD66606-2457) '- Take the planner from the persona's latest release, as the navigator build already does, and check that tag carries temporal plans and the shortest-plan export (proposed).
  # tags: rfd:decision
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2457) '  possible time, with the problem document stating today as its origin (proposed).
+2026-11-07T00:00:11Z (RFD66606-2457) '- Draft the 33 RFDs' durations from a reference-class estimate rather than the useless observed lead time, and report a range or a P50 or P80 finish instead of one critical-path total (proposed).
  # tags: rfd:decision
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2457) '- Decide the declaration form for a duration, or a start and end per action, within the
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2457) '  existing rebac block and with no new DSL (proposed).
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2457) '- Take the planner from the persona's latest release, as the navigator build already does,
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2457) '  and check that tag carries temporal plans and the shortest-plan export (proposed).
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2457) '- Draft the 33 RFDs' durations from a reference-class estimate rather than the useless
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2457) '  observed lead time, and report a range or a P50 or P80 finish instead of one
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2457) '  critical-path total (proposed).
- # tags: rfd:decision
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2457) 'The blocker
+2026-11-07T00:00:12Z (RFD66606-2457) 'The blocker
  # tags: rfd:details-heading
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2457) 'No RFD states a duration, and the observed lead times are not a usable stand-in: 39 of the
+2026-11-07T00:00:13Z (RFD66606-2457) 'No RFD states a duration, and the observed lead times are not a usable stand-in: 39 of the 44 committed RFDs landed in the PR that created them, so the median lead time is 0 days. Left unfilled, every step in the generated domain is instantaneous and the plan's total reads as a zero-duration instant.
  # tags: rfd:details
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2457) '44 committed RFDs landed in the PR that created them, so the median lead time is 0 days.
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2457) 'Left unfilled, every step in the generated domain is instantaneous and the plan's total
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2457) 'reads as a zero-duration instant.
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2457) 'The two generator changes
+2026-11-07T00:00:14Z (RFD66606-2457) 'The two generator changes
  # tags: rfd:details-heading
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2457) '`scripts/pages_tree.exs` needs a composite `window-rfd-N` method that decomposes into
+2026-11-07T00:00:15Z (RFD66606-2457) '`scripts/pages_tree.exs` needs a composite `window-rfd-N` method that decomposes into `earliest-rfd-N` and `latest-rfd-N`. The latest side cannot reuse the `held` shortcut, since by that point the steps it would shortcut are already done, so it needs its own "again" methods. `site/navigator.js` in the persona repository needs to pair each step's two appearances as its first possible and last possible time, and the problem document needs to state today as its `origin`, or every start and end point is left out.
  # tags: rfd:details
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2457) '`earliest-rfd-N` and `latest-rfd-N`. The latest side cannot reuse the `held` shortcut, since
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2457) 'by that point the steps it would shortcut are already done, so it needs its own "again"
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2457) 'methods. `site/navigator.js` in the persona repository needs to pair each step's two
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2457) 'appearances as its first
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2457) 'possible and last possible time, and the problem document needs to state today as its
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2457) '`origin`, or every start and end point is left out.
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2457) 'The planner release
+2026-11-07T00:00:16Z (RFD66606-2457) 'The planner release
  # tags: rfd:details-heading
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2457) 'The navigator build (`site/build.sh` in the persona repository) downloads the latest release
+2026-11-07T00:00:17Z (RFD66606-2457) 'The navigator build (`site/build.sh` in the persona repository) downloads the latest release tag of the persona repository, so no tag is pinned here. Whether that tag carries temporal plans and the shortest-plan export has not been checked against this work.
  # tags: rfd:details
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2457) 'tag of the persona repository, so no tag is pinned here. Whether that tag
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2457) 'carries temporal plans and the shortest-plan export has not been checked against this work.
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2457) 'Estimating durations
+2026-11-07T00:00:18Z (RFD66606-2457) 'Estimating durations
  # tags: rfd:details-heading
  Text:RFD2457  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2457) 'The literature on duration estimates covers the planning fallacy, reference classes,
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2457) 'three-point estimates, PERT merge bias, Monte Carlo methods and resource-constrained
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2457) 'scheduling. These point toward a range or a P50 or P80 finish for the critical path, in
- # tags: rfd:details
- Text:RFD2457  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2457) 'place of one single total.
+2026-11-07T00:00:19Z (RFD66606-2457) 'The literature on duration estimates covers the planning fallacy, reference classes, three-point estimates, PERT merge bias, Monte Carlo methods and resource-constrained scheduling. These point toward a range or a P50 or P80 finish for the critical path, in place of one single total.
  # tags: rfd:details
  Text:RFD2457  1 LINE
  Text:Written

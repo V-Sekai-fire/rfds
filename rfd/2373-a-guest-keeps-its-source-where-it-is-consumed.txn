@@ -19,102 +19,57 @@
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2373) 'Check a new guest against the rule: `main.cpp` marshals and sees only `api.hpp`, and
+2026-10-31T00:00:04Z (RFD66606-2373) 'Check a new guest against the rule: `main.cpp` marshals and sees only `api.hpp`, and `*_api.cpp` sees the library.
  # tags: rfd:exit
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2373) '`*_api.cpp` sees the library.
- # tags: rfd:exit
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2373) 'a guest keeps its source where it is consumed
+2026-10-31T00:00:05Z (RFD66606-2373) 'a guest keeps its source where it is consumed
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2373) '- A guest's source lives in the repository that consumes it and follows curvenet's split:
+2026-10-31T00:00:06Z (RFD66606-2373) '- A guest's source lives in the repository that consumes it and follows curvenet's split: `main.cpp` marshals and sees only `api.hpp`, and `*_api.cpp` sees the library.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2373) '  `main.cpp` marshals and sees only `api.hpp`, and `*_api.cpp` sees the library.
+2026-10-31T00:00:07Z (RFD66606-2373) '- Mesh arrays cross in the layout of &{repo("contract-guest-common")}'s `mesh_wire.h`.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2373) '- Mesh arrays cross in the layout of &{repo("contract-guest-common")}'s `mesh_wire.h`.
+2026-10-31T00:00:08Z (RFD66606-2373) '- A vmcall takes at most seven arguments, an eighth failing with a register overflow, and each call returns inside the sandbox's `execution_timeout`.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2373) '- A vmcall takes at most seven arguments, an eighth failing with a register overflow, and each
- # tags: rfd:decision
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2373) '  call returns inside the sandbox's `execution_timeout`.
- # tags: rfd:decision
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2373) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2373) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2373) 'Where interactor-dress-on went
+2026-10-31T00:00:10Z (RFD66606-2373) 'Where interactor-dress-on went
  # tags: rfd:details-heading
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2373) 'The stages of the archived interactor-dress-on live in their own repositories:
+2026-10-31T00:00:11Z (RFD66606-2373) 'The stages of the archived interactor-dress-on live in their own repositories: &{repo("contract-guest-runtime")}, &{repo("contract-guest-common")}, &{repo("contract-ggml-rd")}, &{repo("contract-lbfgsb")}, &{repo("contract-anny-kernels")}, &{repo("contract-sinew-align")}, and &{repo("interactor-drape")}, `-curvenet`, `-garment-fit`, `-cage`, `-headfit`, `-lasso`, `-motion-guest`, `-rfdetr-seg-guest`, `-usd-guest`, `-av1mkv`. &{repo("transport-meshing-pen")} builds the guest ELFs from those sibling checkouts.
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2373) '&{repo("contract-guest-runtime")}, &{repo("contract-guest-common")},
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2373) '&{repo("contract-ggml-rd")}, &{repo("contract-lbfgsb")},
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2373) '&{repo("contract-anny-kernels")}, &{repo("contract-sinew-align")}, and
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2373) '&{repo("interactor-drape")}, `-curvenet`, `-garment-fit`, `-cage`, `-headfit`,
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2373) '`-lasso`, `-motion-guest`, `-rfdetr-seg-guest`, `-usd-guest`, `-av1mkv`.
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2373) '&{repo("transport-meshing-pen")} builds the guest ELFs from those sibling checkouts.
- # tags: rfd:details
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2373) '2351
+2026-10-31T00:00:12Z (RFD66606-2373) '2351
  # tags: rebac:verbs-from
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2373) 'rfd-2373 provides guest-source-at-consumer
+2026-10-31T00:00:13Z (RFD66606-2373) 'rfd-2373 provides guest-source-at-consumer
  # tags: rebac:relate
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2373) 'rfd-2373 is_a guest-runtime
+2026-10-31T00:00:14Z (RFD66606-2373) 'rfd-2373 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2373  1 LINE
  Text:Written

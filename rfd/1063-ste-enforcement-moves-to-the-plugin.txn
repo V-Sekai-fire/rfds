@@ -14,292 +14,102 @@
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1063) 'Three places ran the same STE check on the same files: the script, its `npm run lint:ste`
+2026-08-25T00:00:03Z (RFD66606-1063) 'Three places ran the same STE check on the same files: the script, its `npm run lint:ste` step in CI, and its `ste-lint` hook in `.pre-commit-config.yaml`.
  # tags: rfd:intrigue
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1063) 'step in CI, and its `ste-lint` hook in `.pre-commit-config.yaml`.
- # tags: rfd:intrigue
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1063) 'Check that the script, its `lint:ste` entry, its step in `scripts/ci.sh` and its hook in
+2026-08-25T00:00:04Z (RFD66606-1063) 'Check that the script, its `lint:ste` entry, its step in `scripts/ci.sh` and its hook in `.pre-commit-config.yaml` are gone, so the plugin's `Stop` hook is the only STE check.
  # tags: rfd:exit
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1063) '`.pre-commit-config.yaml` are gone, so the plugin's `Stop` hook is the only STE check.
- # tags: rfd:exit
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1063) 'STE enforcement moves to the plugin
+2026-08-25T00:00:05Z (RFD66606-1063) 'STE enforcement moves to the plugin
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1063) 'Delete `scripts/ste-lint-decisions.py`. Delete its `npm run lint:ste`
+2026-08-25T00:00:06Z (RFD66606-1063) 'Delete `scripts/ste-lint-decisions.py`. Delete its `npm run lint:ste` entry in `thirdparty/3d_studio/package.json`. Delete its step in `scripts/ci.sh`, and its hook in `.pre-commit-config.yaml`. STE enforcement now runs once, in the plugin's `Stop` hook, at write time.
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1063) 'entry in `thirdparty/3d_studio/package.json`. Delete its step in
+2026-08-25T00:00:07Z (RFD66606-1063) 'See `DETAILS.md` for what moved to the plugin, including three new checks this repository contributed upstream. It also names what the deleted script's aggregate score this repository does not gain back.
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1063) '`scripts/ci.sh`, and its hook in `.pre-commit-config.yaml`. STE
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1063) 'enforcement now runs once, in the plugin's `Stop` hook, at write
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1063) 'time.
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1063) '
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1063) 'See `DETAILS.md` for what moved to the plugin, including three new
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1063) 'checks this repository contributed upstream. It also names what the
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1063) 'deleted script's aggregate score this repository does not gain back.
- # tags: rfd:decision
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1063) 'RFD66606-1000 named the deleted script. RFD66606-1059 wired `npm run lint:ste`
+2026-08-25T00:00:08Z (RFD66606-1063) 'RFD66606-1000 named the deleted script. RFD66606-1059 wired `npm run lint:ste` into `scripts/ci.sh`. This RFD removes that step, and nothing replaces it. `fire/claude-ste-plugin#1` is the PR that carries this repository's contribution upstream.
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1063) 'into `scripts/ci.sh`. This RFD removes that step, and nothing
- # tags: rfd:related
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1063) 'replaces it. `fire/claude-ste-plugin#1` is the PR that carries this
- # tags: rfd:related
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1063) 'repository's contribution upstream.
- # tags: rfd:related
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1063) 'Why the plugin checks earlier
+2026-08-25T00:00:09Z (RFD66606-1063) 'Why the plugin checks earlier
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1063) '`fire/claude-ste-plugin` is a Claude Code plugin. It checks at a
+2026-08-25T00:00:10Z (RFD66606-1063) '`fire/claude-ste-plugin` is a Claude Code plugin. It checks at a better point in the process. It lints the reply before the reply reaches a file, and it asks for a rewrite. The old script caught a violation only after a commit already held it. Two enforcement points for one rule is the DRY policy's own complaint, turned on this repository's own tooling.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1063) 'better point in the process. It lints the reply before the reply
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1063) 'reaches a file, and it asks for a rewrite. The old script
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1063) 'caught a violation only after a commit already held it. Two
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1063) 'enforcement points for one rule is the DRY policy's own complaint,
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1063) 'turned on this repository's own tooling.
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1063) 'What moved where
+2026-08-25T00:00:11Z (RFD66606-1063) 'What moved where
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1063) 'Several checks the deleted script hand-wrote already existed in the
+2026-08-25T00:00:12Z (RFD66606-1063) 'Several checks the deleted script hand-wrote already existed in the plugin, and more precisely. The plugin cites an ASD-STE100 Part 1 rule number for each one. Its sentence splitter and word counter follow CommonMark structure, not a line-based heuristic.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1063) 'plugin, and more precisely. The plugin cites an ASD-STE100 Part 1
+2026-08-25T00:00:13Z (RFD66606-1063) 'Three checks were new. Each one went upstream instead of staying local, in `fire/claude-ste-plugin#1`:
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1063) 'rule number for each one. Its sentence splitter and word counter
+2026-08-25T00:00:14Z (RFD66606-1063) '- `style.bloat`, for an inflated word such as "utilize"
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1063) 'follow CommonMark structure, not a line-based heuristic.
+2026-08-25T00:00:15Z (RFD66606-1063) '- `style.marketing`, for a marketing word such as "seamless"
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1063) '
+2026-08-25T00:00:16Z (RFD66606-1063) '- `style.dash`, for an em dash that joins two clauses
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1063) 'Three checks were new. Each one went upstream instead of staying
+2026-08-25T00:00:17Z (RFD66606-1063) 'This repository's own `decisions/` tree is the prose the PR tested them against. The plugin checks all three now, in every project it installs into, not only this one.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1063) 'local, in `fire/claude-ste-plugin#1`:
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1063) '
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1063) '- `style.bloat`, for an inflated word such as "utilize"
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1063) '- `style.marketing`, for a marketing word such as "seamless"
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1063) '- `style.dash`, for an em dash that joins two clauses
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1063) '
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1063) 'This repository's own `decisions/` tree is the prose the PR tested
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1063) 'them against. The plugin checks all three now, in every project it
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1063) 'installs into, not only this one.
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1063) 'What this repository does not gain back
+2026-08-25T00:00:18Z (RFD66606-1063) 'What this repository does not gain back
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1063) 'The deleted script scored a whole document, at violations per 100
+2026-08-25T00:00:19Z (RFD66606-1063) 'The deleted script scored a whole document, at violations per 100 words. It also read many files at once and printed one pass or fail line per file. The plugin has no equivalent to either. It reports one finding per line, for one file at a time, and it does not score a document as a whole. A CI run that wants one pass/fail number across every RFD does not have that number anymore.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1063) 'words. It also read many files at once and printed one pass or fail
+2026-08-25T00:00:20Z (RFD66606-1063) 'This RFD accepts that loss. `decisions/README.md`'s STE policy never asked for a score. It asked for STE prose. The `Stop` hook catches a violation earlier than a CI gate can, on every reply that touches this repository, not only on a push.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1063) 'line per file. The plugin has no equivalent to either. It reports one
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1063) 'finding per line, for one file at a time, and it does not score a
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1063) 'document as a whole. A CI run that wants one pass/fail number across
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1063) 'every RFD does not have that number anymore.
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1063) '
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1063) 'This RFD accepts that loss. `decisions/README.md`'s STE policy never
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1063) 'asked for a score. It asked for STE prose. The `Stop` hook catches a
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1063) 'violation earlier than a CI gate can, on every reply that touches
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1063) 'this repository, not only on a push.
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1063) 'The problem
+2026-08-25T00:00:21Z (RFD66606-1063) 'The problem
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1063) 'RFD66606-1000 named `scripts/ste-lint-decisions.py` as this repository's
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1063) 'STE linter. It scored each RFD's prose at violations per 100 words.
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1063) 'It ran in CI, through `npm run lint:ste`. It ran again in
- # tags: rfd:details
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1063) '`.pre-commit-config.yaml`'s `ste-lint` hook.
+2026-08-25T00:00:22Z (RFD66606-1063) 'RFD66606-1000 named `scripts/ste-lint-decisions.py` as this repository's STE linter. It scored each RFD's prose at violations per 100 words. It ran in CI, through `npm run lint:ste`. It ran again in `.pre-commit-config.yaml`'s `ste-lint` hook.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written

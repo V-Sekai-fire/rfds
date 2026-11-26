@@ -19,97 +19,62 @@
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2363) 'Check a new way of moving a character against the rule: it uses the motion guest in the
+2026-10-31T00:00:04Z (RFD66606-2363) 'Check a new way of moving a character against the rule: it uses the motion guest in the details, and no hand-written character controller is added.
  # tags: rfd:exit
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2363) 'details, and no hand-written character controller is added.
- # tags: rfd:exit
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2363) 'a person moves by world grab or by controllers
+2026-10-31T00:00:05Z (RFD66606-2363) 'a person moves by world grab or by controllers
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2363) '- In the headset a person moves two ways, and both work.
+2026-10-31T00:00:06Z (RFD66606-2363) '- In the headset a person moves two ways, and both work.
  # tags: rfd:decision
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2363) '- One is xr-grid's world grab: both grips pinch the world, and moving, turning or spreading
+2026-10-31T00:00:07Z (RFD66606-2363) '- One is xr-grid's world grab: both grips pinch the world, and moving, turning or spreading the hands carries, turns or scales it about the hands' midpoint (`addons/procedural_3d_grid/core/xr_pinch.gd` on a canvas beside the hands, as &{repo("transport-meshing-pen")} wires it). One grip moves nothing.
  # tags: rfd:decision
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2363) '  the hands carries, turns or scales it about the hands' midpoint
+2026-10-31T00:00:08Z (RFD66606-2363) '- The other is the controllers: smooth stick movement, snap turning and teleport.
  # tags: rfd:decision
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2363) '  (`addons/procedural_3d_grid/core/xr_pinch.gd` on a canvas beside the hands, as
- # tags: rfd:decision
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2363) '  &{repo("transport-meshing-pen")} wires it). One grip moves nothing.
- # tags: rfd:decision
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2363) '- The other is the controllers: smooth stick movement, snap turning and teleport.
- # tags: rfd:decision
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2363) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2363) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2363) 'Moving a character with a gamepad
+2026-10-31T00:00:10Z (RFD66606-2363) 'Moving a character with a gamepad
  # tags: rfd:details-heading
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2363) 'A character moved with a gamepad uses &{repo("interactor-motion-guest")}: the motion models on
+2026-10-31T00:00:11Z (RFD66606-2363) 'A character moved with a gamepad uses &{repo("interactor-motion-guest")}: the motion models on ggml-rd with compute-rd in a godot-sandbox guest, retargeted onto the avatar, with the stick setting movement and facing. No hand-written character controller is added.
  # tags: rfd:details
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2363) 'ggml-rd with compute-rd in a godot-sandbox guest, retargeted onto the avatar,
- # tags: rfd:details
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2363) 'with the stick setting movement and facing. No hand-written character
- # tags: rfd:details
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2363) 'controller is added.
- # tags: rfd:details
- Text:RFD2363  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2363) '2351
+2026-10-31T00:00:12Z (RFD66606-2363) '2351
  # tags: rebac:verbs-from
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2363) 'rfd-2363 provides xr-world-grab-locomotion
+2026-10-31T00:00:13Z (RFD66606-2363) 'rfd-2363 provides xr-world-grab-locomotion
  # tags: rebac:relate
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2363) 'rfd-2363 is_a workspace-policy
+2026-10-31T00:00:14Z (RFD66606-2363) 'rfd-2363 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2363  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2363) 'rfd-2363 spends sandbox-guest-heavy-compute
+2026-10-31T00:00:15Z (RFD66606-2363) 'rfd-2363 spends sandbox-guest-heavy-compute
  # tags: rebac:relate
  Text:RFD2363  1 LINE
  Text:Written

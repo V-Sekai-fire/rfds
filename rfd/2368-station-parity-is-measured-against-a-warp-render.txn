@@ -14,112 +14,77 @@
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2368) 'ANGLE's Vulkan path draws seams the original does not intend, and D3D11 flips one 8-bit level
+2026-10-31T00:00:03Z (RFD66606-2368) 'ANGLE's Vulkan path draws seams the original does not intend, and D3D11 flips one 8-bit level from run to run.
  # tags: rfd:intrigue
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2368) 'from run to run.
- # tags: rfd:intrigue
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2368) 'Check a station change against the reference: compare each view's full-resolution MAD with the
+2026-10-31T00:00:04Z (RFD66606-2368) 'Check a station change against the reference: compare each view's full-resolution MAD with the WARP render of release `oracle-4112f57-h8-warp`.
  # tags: rfd:exit
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2368) 'WARP render of release `oracle-4112f57-h8-warp`.
- # tags: rfd:exit
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2368) 'station parity is measured against a WARP render
+2026-10-31T00:00:05Z (RFD66606-2368) 'station parity is measured against a WARP render
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2368) '- Parity with the three.js original is measured at sphere-Hammersley views against
+2026-10-31T00:00:06Z (RFD66606-2368) '- Parity with the three.js original is measured at sphere-Hammersley views against `tools/oracle/shot.mjs` renders.
  # tags: rfd:decision
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2368) '  `tools/oracle/shot.mjs` renders.
+2026-10-31T00:00:07Z (RFD66606-2368) '- The reference is the original rendered through WARP, Windows' software rasterizer (`--angle warp`, release `oracle-4112f57-h8-warp`), because it is deterministic and seam-free.
  # tags: rfd:decision
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2368) '- The reference is the original rendered through WARP, Windows' software rasterizer
+2026-10-31T00:00:08Z (RFD66606-2368) '- A change lands only when no view's full-resolution MAD rises against the reference, unless the operator accepts the exception on issue 72.
  # tags: rfd:decision
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2368) '  (`--angle warp`, release `oracle-4112f57-h8-warp`), because it is
- # tags: rfd:decision
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2368) '  deterministic and seam-free.
- # tags: rfd:decision
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2368) '- A change lands only when no view's full-resolution MAD rises against the reference, unless
- # tags: rfd:decision
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2368) '  the operator accepts the exception on issue 72.
- # tags: rfd:decision
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2368) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2368) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2368) 'The port's hashing
+2026-10-31T00:00:10Z (RFD66606-2368) 'The port's hashing
  # tags: rfd:details-heading
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2368) 'The port hashes from integer corners.
+2026-10-31T00:00:11Z (RFD66606-2368) 'The port hashes from integer corners.
  # tags: rfd:details
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2368) 'The problem
+2026-10-31T00:00:12Z (RFD66606-2368) 'The problem
  # tags: rfd:details-heading
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2368) 'ANGLE's Vulkan path hashes the cloud noise's lattice corners from float sums differently on
+2026-10-31T00:00:13Z (RFD66606-2368) 'ANGLE's Vulkan path hashes the cloud noise's lattice corners from float sums differently on each side of a cell edge.
  # tags: rfd:details
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2368) 'each side of a cell edge.
- # tags: rfd:details
- Text:RFD2368  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2368) '2351
+2026-10-31T00:00:14Z (RFD66606-2368) '2351
  # tags: rebac:verbs-from
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2368) 'rfd-2368 provides station-warp-parity-oracle
+2026-10-31T00:00:15Z (RFD66606-2368) 'rfd-2368 provides station-warp-parity-oracle
  # tags: rebac:relate
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2368) 'rfd-2368 is_a ci-gate
+2026-10-31T00:00:16Z (RFD66606-2368) 'rfd-2368 is_a ci-gate
  # tags: rebac:relate
  Text:RFD2368  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2368) 'rfd-2368 spends station-csg-baked-mesh-render
+2026-10-31T00:00:17Z (RFD66606-2368) 'rfd-2368 spends station-csg-baked-mesh-render
  # tags: rebac:relate
  Text:RFD2368  1 LINE
  Text:Written

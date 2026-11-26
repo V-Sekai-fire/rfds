@@ -8,8 +8,11 @@ defmodule RFD.Txn do
   title: it moves the serial from its site into its state. Each line of
   a property is one more transaction, its description the line and its
   tag the property, so a property's metadata runs and only the text
-  changes. A line is one transaction, however long. A value ends in a
-  newline unless its last line is also tagged `rfd:no-final-newline`.
+  changes. A Markdown value is one transaction per block (`RFD.Txn.Blocks`):
+  a paragraph or list item is one line, however long, and no blank line
+  is kept. Front matter is one transaction per line. A value ends in a
+  newline unless its last transaction is also tagged
+  `rfd:no-final-newline`.
 
   `write/2` writes a `%RFD.Doc{}` out; `parse/1` reads one back through
   `RFD.DSL.build/6`, so every check of the DSL runs on it.
@@ -127,7 +130,7 @@ defmodule RFD.Txn do
         do: {String.replace_suffix(s, "\n", ""), false},
         else: {s, true}
 
-    lines = String.split(body, "\n")
+    lines = if tag == "rfd:front-matter", do: String.split(body, "\n"), else: blocks(body)
     last = length(lines)
 
     lines
@@ -136,6 +139,9 @@ defmodule RFD.Txn do
       line(t, if(open? and i == last, do: tag <> ", rfd:no-final-newline", else: tag), l)
     end)
   end
+
+  defp blocks(""), do: [""]
+  defp blocks(body), do: RFD.Txn.Blocks.split(body)
 
   defp line(t, tag, s) do
     if s != String.trim_trailing(s) do
@@ -227,6 +233,7 @@ defmodule RFD.Txn do
     acc =
       rest
       |> Enum.reduce(empty(), &step/2)
+      |> finish()
 
     fields =
       [state: acc.state || state(state)] ++
@@ -259,22 +266,14 @@ defmodule RFD.Txn do
     |> Map.merge(%{rebac: [], steps: [], at: nil, state: nil})
   end
 
-  @text_tags ~w(rfd:section rfd:details rebac:meaning rebac:reason)
-
-  defp step(%{tags: [tag, "rfd:no-final-newline"]} = t, acc),
-    do: put(tag, t.description || "", acc)
-
-  defp step(%{tags: [tag]} = t, acc) do
-    s = t.description || ""
-    if text_tag?(tag), do: put(tag, s <> "\n", acc), else: put(tag, s, acc)
+  defp step(%{tags: [tag, "rfd:no-final-newline"]} = t, acc) do
+    acc = put(tag, t.description || "", acc)
+    put(tag, :open, acc)
   end
+
+  defp step(%{tags: [tag]} = t, acc), do: put(tag, t.description || "", acc)
 
   defp step(%{tags: tags}, _acc), do: raise(ArgumentError, "tags #{inspect(tags)} on a line")
-
-  defp text_tag?(tag) do
-    tag in @text_tags or
-      Enum.any?(@text ++ @spine, &("rfd:" <> dash(&1) == tag))
-  end
 
   defp put("rfd:state", s, acc), do: %{acc | state: state(s), at: nil}
 
@@ -346,7 +345,7 @@ defmodule RFD.Txn do
     k = known!(key, @text ++ @spine, "unknown property rfd:#{key}")
 
     order = if k in @spine and not Map.has_key?(acc.text, k), do: [k | acc.order], else: acc.order
-    %{acc | text: Map.update(acc.text, k, s, &(&1 <> s)), order: order, at: k}
+    %{acc | text: Map.update(acc.text, k, [s], &[s | &1]), order: order, at: k}
   end
 
   defp put(tag, _s, _acc), do: raise(ArgumentError, "unknown property #{tag}")
@@ -356,8 +355,40 @@ defmodule RFD.Txn do
 
   defp add([{h, body} | rest], s), do: [{h, append(body, s)} | rest]
 
-  defp append(nil, s), do: s
-  defp append(body, s), do: body <> s
+  defp append(nil, s), do: [s]
+  defp append(body, s), do: [s | body]
+
+  # Every value read so far is its blocks, newest first; join each once.
+  defp finish(acc) do
+    text = Map.new(acc.text, fn {k, v} -> {k, value(v, k == :front_matter)} end)
+    pairs = fn l -> Enum.map(l, fn {h, b} -> {h, b && value(b, false)} end) end
+
+    rebac =
+      Enum.map(acc.rebac, fn
+        {:verb, v} -> {:verb, %{v | meaning: v.meaning && value(v.meaning, false)}}
+        {:tuple, r} -> {:tuple, %{r | reason: r.reason && value(r.reason, false)}}
+        other -> other
+      end)
+
+    %{
+      acc
+      | text: text,
+        details: pairs.(acc.details),
+        sections: pairs.(acc.sections),
+        rebac: rebac
+    }
+  end
+
+  defp value(blocks_newest_first, lines?) do
+    {open?, blocks} =
+      case blocks_newest_first do
+        [:open | rest] -> {true, Enum.reverse(rest)}
+        all -> {false, Enum.reverse(all)}
+      end
+
+    body = if lines?, do: Enum.join(blocks, "\n"), else: RFD.Txn.Blocks.join(blocks)
+    if open?, do: body, else: body <> "\n"
+  end
 
   defp row(s, deny) do
     [subject, verb, object] = String.split(s, " ")

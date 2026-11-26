@@ -14,97 +14,62 @@
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2424) 'Can a whole dress session sit outside the body? On CASSIE's dress session, 0 of 12307 points
+2026-10-31T00:00:03Z (RFD66606-2424) 'Can a whole dress session sit outside the body? On CASSIE's dress session, 0 of 12307 points end inside the body by winding number, and 4 junctions miss.
  # tags: rfd:intrigue
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2424) 'end inside the body by winding number, and 4 junctions miss.
- # tags: rfd:intrigue
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2424) 'Count the points that end inside the body by winding number, as on CASSIE's dress session where
+2026-10-31T00:00:04Z (RFD66606-2424) 'Count the points that end inside the body by winding number, as on CASSIE's dress session where 0 of 12307 do.
  # tags: rfd:exit
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2424) '0 of 12307 do.
- # tags: rfd:exit
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2424) 'a free-space sketch is fitted to the avatar from keypoints
+2026-10-31T00:00:05Z (RFD66606-2424) 'a free-space sketch is fitted to the avatar from keypoints
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2424) '- A sketch drawn in free space is placed on the avatar from anthropometric keypoints in
+2026-10-31T00:00:06Z (RFD66606-2424) '- A sketch drawn in free space is placed on the avatar from anthropometric keypoints in `starforged-std-3001-appendix-e`: stature, crotch height as stature less sitting height, and hip breadth. Appendix E carries no waist height, so it comes from the ISO 7250 typical value.
  # tags: rfd:decision
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2424) '  `starforged-std-3001-appendix-e`: stature, crotch height as stature less sitting height, and
+2026-10-31T00:00:07Z (RFD66606-2424) '- Then each stroke, in drawing order, is pushed out of the body by `mujoco.elf`: rays against the mesh triangles, a point inside when its exit normal says so, and 4 mm of clearance, about five credit cards stacked.
  # tags: rfd:decision
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2424) '  hip breadth. Appendix E carries no waist height, so it comes from the ISO 7250 typical value.
+2026-10-31T00:00:08Z (RFD66606-2424) '- A junction stays pinned to the earlier stroke's pushed position.
  # tags: rfd:decision
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2424) '- Then each stroke, in drawing order, is pushed out of the body by `mujoco.elf`: rays against
- # tags: rfd:decision
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2424) '  the mesh triangles, a point inside when its exit normal says so, and 4 mm of clearance, about
- # tags: rfd:decision
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2424) '  five credit cards stacked.
- # tags: rfd:decision
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2424) '- A junction stays pinned to the earlier stroke's pushed position.
- # tags: rfd:decision
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2424) '- RFD66606-2287, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2424) '- RFD66606-2287, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2424) 'Result and scope
+2026-10-31T00:00:10Z (RFD66606-2424) 'Result and scope
  # tags: rfd:details-heading
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2424) 'On CASSIE's dress session, 0 of 12307 points end inside the body by winding number, and 4
+2026-10-31T00:00:11Z (RFD66606-2424) 'On CASSIE's dress session, 0 of 12307 points end inside the body by winding number, and 4 junctions miss. This is placement. The drape stays on the next rung.
  # tags: rfd:details
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2424) 'junctions miss. This is placement. The drape stays on the next rung.
- # tags: rfd:details
- Text:RFD2424  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2424) '2351
+2026-10-31T00:00:12Z (RFD66606-2424) '2351
  # tags: rebac:verbs-from
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2424) 'rfd-2424 provides sketch-keypoint-body-fit
+2026-10-31T00:00:13Z (RFD66606-2424) 'rfd-2424 provides sketch-keypoint-body-fit
  # tags: rebac:relate
  Text:RFD2424  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2424) 'rfd-2424 is_a avatar-pipeline
+2026-10-31T00:00:14Z (RFD66606-2424) 'rfd-2424 is_a avatar-pipeline
  # tags: rebac:relate
  Text:RFD2424  1 LINE
  Text:Written

@@ -4,167 +4,77 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-25T00:00:01Z (RFD66606-2258) 'One CI job runs prek, and every gate the workflow ran is a
- # tags: rfd:feature
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:02Z (RFD66606-2258) 'hook a desk can run the same way
+2026-09-25T00:00:01Z (RFD66606-2258) 'One CI job runs prek, and every gate the workflow ran is a hook a desk can run the same way
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:03Z (RFD66606-2258) '`.github/workflows/checks.yml`, `.pre-commit-config.yaml` and
- # tags: rfd:scope
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:04Z (RFD66606-2258) 'ruleset 23145233 in this repository
+2026-09-25T00:00:02Z (RFD66606-2258) '`.github/workflows/checks.yml`, `.pre-commit-config.yaml` and ruleset 23145233 in this repository
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:05Z (RFD66606-2258) 'One CI job runs prek, and a desk runs every gate the same way.
+2026-09-25T00:00:03Z (RFD66606-2258) 'One CI job runs prek, and a desk runs every gate the same way.
  # tags: rfd:hook
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:06Z (RFD66606-2258) 'Nine jobs repeated checks prek could run, and the ruleset required nine names that had to
+2026-09-25T00:00:04Z (RFD66606-2258) 'Nine jobs repeated checks prek could run, and the ruleset required nine names that had to match the workflow by hand.
  # tags: rfd:intrigue
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:07Z (RFD66606-2258) 'match the workflow by hand.
- # tags: rfd:intrigue
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:08Z (RFD66606-2258) 'Run a `ci-*` hook locally with `GATE_BASE` set; the sections below hold what was measured.
+2026-09-25T00:00:05Z (RFD66606-2258) 'Run a `ci-*` hook locally with `GATE_BASE` set; the sections below hold what was measured.
  # tags: rfd:exit
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:09Z (RFD66606-2258) 'every CI gate is a prek hook
+2026-09-25T00:00:06Z (RFD66606-2258) 'every CI gate is a prek hook
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:10Z (RFD66606-2258) 'The workflow has one job, `prek`. Gates that need only the tree
+2026-09-25T00:00:07Z (RFD66606-2258) 'The workflow has one job, `prek`. Gates that need only the tree are ordinary hooks. Gates that need a base ref or a code-host token are `ci-*` hooks in the manual stage, which the job calls by id with `GATE_BASE` and `GH_TOKEN` set; a local commit never runs them. An unset `GATE_BASE` fails the hook. The merge queue requires no check (operator, 2026-11-13), so both steps of the job are run on the desk before a pull request is enqueued.
  # tags: rfd:decision
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:11Z (RFD66606-2258) 'are ordinary hooks. Gates that need a base ref or a code-host
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:12Z (RFD66606-2258) 'token are `ci-*` hooks in the manual stage, which the job calls by
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:13Z (RFD66606-2258) 'id with `GATE_BASE` and `GH_TOKEN` set; a local commit never runs
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:14Z (RFD66606-2258) 'them. An unset `GATE_BASE` fails the hook. The merge queue
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:15Z (RFD66606-2258) 'requires no check (operator, 2026-11-13), so both steps of the job
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:16Z (RFD66606-2258) 'are run on the desk before a pull request is enqueued.
- # tags: rfd:decision
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:17Z (RFD66606-2258) '- RFD66606-2245, the red merge that made gates required.
+2026-09-25T00:00:08Z (RFD66606-2258) '- RFD66606-2245, the red merge that made gates required.
  # tags: rfd:related
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:18Z (RFD66606-2258) '- RFD66606-2232, the render every gate reads.
+2026-09-25T00:00:09Z (RFD66606-2258) '- RFD66606-2232, the render every gate reads.
  # tags: rfd:related
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:19Z (RFD66606-2258) 'What is measured
+2026-09-25T00:00:10Z (RFD66606-2258) 'What is measured
  # tags: rfd:details-heading
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:20Z (RFD66606-2258) 'Locally through prek 0.5.3, `ci-comment-ladder`,
+2026-09-25T00:00:11Z (RFD66606-2258) 'Locally through prek 0.5.3, `ci-comment-ladder`, `ci-trope-density`, `ci-spdx` and `ci-rfd-canary` pass on `main/main`, and `ci-comment-ladder` fails with `GATE_BASE` unset. On the pull request that landed it, `prek` passed.
  # tags: rfd:details
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:21Z (RFD66606-2258) '`ci-trope-density`, `ci-spdx` and `ci-rfd-canary` pass on
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:22Z (RFD66606-2258) '`main/main`, and `ci-comment-ladder` fails with `GATE_BASE` unset.
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:23Z (RFD66606-2258) 'On the pull request that landed it, `prek` passed.
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:24Z (RFD66606-2258) 'Warnings kept honest
+2026-09-25T00:00:12Z (RFD66606-2258) 'Warnings kept honest
  # tags: rfd:details-heading
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:25Z (RFD66606-2258) 'jose 1.11.12, pulled in by ex_mcp, uses bare `catch`, which OTP 29
+2026-09-25T00:00:13Z (RFD66606-2258) 'jose 1.11.12, pulled in by ex_mcp, uses bare `catch`, which OTP 29 deprecates. The job silences that one warning only when jose, OTP and Elixir read 1.11.12, 29 and 1.20.4, and any other tuple leaves the warnings on with a notice naming what it found.
  # tags: rfd:details
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:26Z (RFD66606-2258) 'deprecates. The job silences that one warning only when jose, OTP
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:27Z (RFD66606-2258) 'and Elixir read 1.11.12, 29 and 1.20.4, and any other tuple leaves
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:28Z (RFD66606-2258) 'the warnings on with a notice naming what it found.
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:29Z (RFD66606-2258) 'The problem
+2026-09-25T00:00:14Z (RFD66606-2258) 'The problem
  # tags: rfd:details-heading
  Text:RFD2258  1 LINE
  Text:Written
 
-2026-09-25T00:00:30Z (RFD66606-2258) 'Nine jobs repeated checks prek could run, each rendering the RFDs
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:31Z (RFD66606-2258) 'again, and the ruleset required nine names that had to match the
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:32Z (RFD66606-2258) 'workflow by hand. The list the working agreements stated had
- # tags: rfd:details
- Text:RFD2258  1 LINE
- Text:Written
-
-2026-09-25T00:00:33Z (RFD66606-2258) 'already drifted from the ruleset.
+2026-09-25T00:00:15Z (RFD66606-2258) 'Nine jobs repeated checks prek could run, each rendering the RFDs again, and the ruleset required nine names that had to match the workflow by hand. The list the working agreements stated had already drifted from the ruleset.
  # tags: rfd:details
  Text:RFD2258  1 LINE
  Text:Written

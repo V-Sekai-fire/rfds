@@ -14,502 +14,242 @@
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1020) 'The fact store holds facts in memory, so a trust change dies when the node stops and a
+2026-08-25T00:00:03Z (RFD66606-1020) 'The fact store holds facts in memory, so a trust change dies when the node stops and a retracted fact comes back.
  # tags: rfd:intrigue
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1020) 'retracted fact comes back.
- # tags: rfd:intrigue
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1020) 'Run `mix ecto.migrate` to create the `facts` table in the SQLite file, which is made on demand,
+2026-08-25T00:00:04Z (RFD66606-1020) 'Run `mix ecto.migrate` to create the `facts` table in the SQLite file, which is made on demand, and read below for the schema, the seed and the open risk.
  # tags: rfd:exit
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1020) 'and read below for the schema, the seed and the open risk.
- # tags: rfd:exit
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1020) 'SQLite persistence for catalog facts
+2026-08-25T00:00:05Z (RFD66606-1020) 'SQLite persistence for catalog facts
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1020) '**Use SQLite for storage, and Ecto for the mapping.** The service owns one
+2026-08-25T00:00:06Z (RFD66606-1020) '**Use SQLite for storage, and Ecto for the mapping.** The service owns one file. `Ecto.Adapters.SQLite3` drives it through `ecto_sqlite3`, and the `facts` table keys each row by its natural key, the model id.
  # tags: rfd:decision
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1020) 'file. `Ecto.Adapters.SQLite3` drives it through `ecto_sqlite3`, and the
+2026-08-25T00:00:07Z (RFD66606-1020) 'This RFD covers `weftspun_studio/`. `character_taxonomy/` runs under RFD66606-1065 on the same store.
  # tags: rfd:decision
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1020) '`facts` table keys each row by its natural key, the model id.
- # tags: rfd:decision
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1020) '
- # tags: rfd:decision
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1020) 'This RFD covers `weftspun_studio/`. `character_taxonomy/` runs under
- # tags: rfd:decision
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1020) 'RFD66606-1065 on the same store.
- # tags: rfd:decision
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1020) '
- # tags: rfd:decision
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1020) 'RFD66606-1016 (the inventory the seed reads), RFD66606-1019 (the API server),
+2026-08-25T00:00:08Z (RFD66606-1020) 'RFD66606-1016 (the inventory the seed reads), RFD66606-1019 (the API server), RFD66606-1021 (the vector encoding), RFD66606-1065 (`character_taxonomy/`).
  # tags: rfd:related
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1020) 'RFD66606-1021 (the vector encoding), RFD66606-1065 (`character_taxonomy/`).
- # tags: rfd:related
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1020) 'The facts table
+2026-08-25T00:00:09Z (RFD66606-1020) 'The facts table
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1020) '`priv/repo/migrations/20260804000000_create_facts.exs` creates it, with
+2026-08-25T00:00:10Z (RFD66606-1020) '`priv/repo/migrations/20260804000000_create_facts.exs` creates it, with Ecto's migration types:
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1020) 'Ecto's migration types:
+2026-08-25T00:00:11Z (RFD66606-1020) '| Column        | Type                 | Holds                                            |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1020) '
+2026-08-25T00:00:12Z (RFD66606-1020) '| ------------- | -------------------- | ------------------------------------------------ |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1020) '| Column        | Type                 | Holds                                            |
+2026-08-25T00:00:13Z (RFD66606-1020) '| `fact_id`     | `string`             | The model id. Primary key.                       |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1020) '| ------------- | -------------------- | ------------------------------------------------ |
+2026-08-25T00:00:14Z (RFD66606-1020) '| `content`     | `text`               | The label or the task text.                      |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1020) '| `fact_id`     | `string`             | The model id. Primary key.                       |
+2026-08-25T00:00:15Z (RFD66606-1020) '| `category`    | `string`             | The client feature, such as `image_to_raw_mesh`. |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1020) '| `content`     | `text`               | The label or the task text.                      |
+2026-08-25T00:00:16Z (RFD66606-1020) '| `tags`        | `{:array, :string}`  | Type, host, and status.                          |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1020) '| `category`    | `string`             | The client feature, such as `image_to_raw_mesh`. |
+2026-08-25T00:00:17Z (RFD66606-1020) '| `trust_score` | `float`              | Zero to one. Feedback moves it.                  |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1020) '| `tags`        | `{:array, :string}`  | Type, host, and status.                          |
+2026-08-25T00:00:18Z (RFD66606-1020) '| `hrr_vector`  | `binary`             | The packed float64 phase vector.                 |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1020) '| `trust_score` | `float`              | Zero to one. Feedback moves it.                  |
+2026-08-25T00:00:19Z (RFD66606-1020) '| `inserted_at` | `utc_datetime_usec`  | Row creation time.                               |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1020) '| `hrr_vector`  | `binary`             | The packed float64 phase vector.                 |
+2026-08-25T00:00:20Z (RFD66606-1020) '| `updated_at`  | `utc_datetime_usec`  | Last change time.                                |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1020) '| `inserted_at` | `utc_datetime_usec`  | Row creation time.                               |
+2026-08-25T00:00:21Z (RFD66606-1020) '`ecto_sqlite3` stores `tags` as JSON, and it round-trips and queries through `json_each`. The category and trust indexes serve the catalog's two reads. The shape follows the hermes-agent holographic memory store, as RFD66606-1019 records.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1020) '| `updated_at`  | `utc_datetime_usec`  | Last change time.                                |
+2026-08-25T00:00:22Z (RFD66606-1020) '`hrr_vector` holds the output of `WeftspunStudio.FactVector.encode/2` as a packed binary. `@default_dim` in `WeftspunStudio.FactVector` fixes the width at 1024 float64 phase angles, so a row takes 8 kilobytes. The changeset derives the vector from the other columns. No caller supplies it. A row therefore cannot hold a vector that disagrees with its fields. RFD66606-1021 records the encoding.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1020) '
+2026-08-25T00:00:23Z (RFD66606-1020) 'Search reads the candidate rows and scores them in Nx. The database applies the trust floor first. A phase similarity over a packed tensor has no SQL form, so the algebra stays in Elixir.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1020) '`ecto_sqlite3` stores `tags` as JSON, and it round-trips and queries
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1020) 'through `json_each`. The category and trust indexes serve the catalog's
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1020) 'two reads. The shape follows the hermes-agent holographic memory store,
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1020) 'as RFD66606-1019 records.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1020) '`hrr_vector` holds the output of `WeftspunStudio.FactVector.encode/2` as
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1020) 'a packed binary. `@default_dim` in `WeftspunStudio.FactVector` fixes the
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1020) 'width at 1024 float64 phase angles, so a row takes 8 kilobytes. The
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1020) 'changeset derives the vector from the other columns. No caller supplies
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1020) 'it. A row therefore cannot hold a vector that disagrees with its fields.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1020) 'RFD66606-1021 records the encoding.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1020) 'Search reads the candidate rows and scores them in Nx. The database
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1020) 'applies the trust floor first. A phase similarity over a packed tensor
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1020) 'has no SQL form, so the algebra stays in Elixir.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1020) 'The seed database
+2026-08-25T00:00:24Z (RFD66606-1020) 'The seed database
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1020) 'The RFD66606-1016 inventory is the seed, not a fixed table.
+2026-08-25T00:00:25Z (RFD66606-1020) 'The RFD66606-1016 inventory is the seed, not a fixed table. `WeftspunStudio.Adapters.EctoFactStore.seed/0` writes it once. A second run refreshes the same rows and adds no duplicate, because the model id is the primary key.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1020) '`WeftspunStudio.Adapters.EctoFactStore.seed/0` writes it once. A
+2026-08-25T00:00:26Z (RFD66606-1020) 'After the seed the database is the record. Feedback moves a trust score. A retraction deletes a row. The seed never overwrites those later changes for a fact it does not name.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1020) 'second run refreshes the same rows and adds no duplicate, because the
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1020) 'model id is the primary key.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1020) 'After the seed the database is the record. Feedback moves a trust
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1020) 'score. A retraction deletes a row. The seed never overwrites those
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1020) 'later changes for a fact it does not name.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1020) 'Modules
+2026-08-25T00:00:27Z (RFD66606-1020) 'Modules
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1020) '| Module                                  | Role                                      |
+2026-08-25T00:00:28Z (RFD66606-1020) '| Module                                  | Role                                      |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1020) '| --------------------------------------- | ----------------------------------------- |
+2026-08-25T00:00:29Z (RFD66606-1020) '| --------------------------------------- | ----------------------------------------- |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1020) '| `WeftspunStudio.Repo`                   | The connection pool.                      |
+2026-08-25T00:00:30Z (RFD66606-1020) '| `WeftspunStudio.Repo`                   | The connection pool.                      |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1020) '| `WeftspunStudio.Facts.Fact`             | The schema and the changeset.             |
+2026-08-25T00:00:31Z (RFD66606-1020) '| `WeftspunStudio.Facts.Fact`             | The schema and the changeset.             |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1020) '| `WeftspunStudio.Adapters.EctoFactStore` | A `Ports.FactSink` adapter.               |
+2026-08-25T00:00:32Z (RFD66606-1020) '| `WeftspunStudio.Adapters.EctoFactStore` | A `Ports.FactSink` adapter.               |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1020) '| `WeftspunStudio.Release`                | Migration and seed for a packaged binary. |
+2026-08-25T00:00:33Z (RFD66606-1020) '| `WeftspunStudio.Release`                | Migration and seed for a packaged binary. |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1020) '
+2026-08-25T00:00:34Z (RFD66606-1020) '`EctoFactStore` is the durable twin of `FactStore`. Both implement `WeftspunStudio.Ports.FactSink`, so a caller can take either one. The port keeps the choice out of the caller.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1020) '`EctoFactStore` is the durable twin of `FactStore`. Both implement
+2026-08-25T00:00:35Z (RFD66606-1020) 'A Burrito binary carries no Mix, so `mix ecto.migrate` cannot run against it. `WeftspunStudio.Release` does the same work. The command line offers `weftspun db migrate`, `weftspun db seed`, and `weftspun db status`.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1020) '`WeftspunStudio.Ports.FactSink`, so a caller can take either one. The
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1020) 'port keeps the choice out of the caller.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1020) 'A Burrito binary carries no Mix, so `mix ecto.migrate` cannot run
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1020) 'against it. `WeftspunStudio.Release` does the same work. The command
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1020) 'line offers `weftspun db migrate`, `weftspun db seed`, and
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1020) '`weftspun db status`.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1020) 'Local setup and settings
+2026-08-25T00:00:36Z (RFD66606-1020) 'Local setup and settings
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1020) 'The database is a file created on demand, so `mix ecto.migrate` is the
+2026-08-25T00:00:37Z (RFD66606-1020) 'The database is a file created on demand, so `mix ecto.migrate` is the whole instruction and `mix test` needs nothing before it. Each environment names its own file in `config/`.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1020) 'whole instruction and `mix test` needs nothing before it. Each
+2026-08-25T00:00:38Z (RFD66606-1020) '| Variable           | Default         | Holds                                        |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1020) 'environment names its own file in `config/`.
+2026-08-25T00:00:39Z (RFD66606-1020) '| ------------------ | --------------- | -------------------------------------------- |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1020) '
+2026-08-25T00:00:40Z (RFD66606-1020) '| `WEFTSPUN_DB`      | `1`             | Set to `0` to start with no connection pool. |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1020) '| Variable           | Default         | Holds                                        |
+2026-08-25T00:00:41Z (RFD66606-1020) '| `WEFTSPUN_DB_PATH` | per environment | The database file.                           |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1020) '| ------------------ | --------------- | -------------------------------------------- |
+2026-08-25T00:00:42Z (RFD66606-1020) '| `WEFTSPUN_DB_POOL` | `5`             | Pool size in a release.                      |
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1020) '| `WEFTSPUN_DB`      | `1`             | Set to `0` to start with no connection pool. |
+2026-08-25T00:00:43Z (RFD66606-1020) 'The inventory commands need no database. `WEFTSPUN_DB=0` therefore lets `weftspun models list` run on a host with no database file.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-1020) '| `WEFTSPUN_DB_PATH` | per environment | The database file.                           |
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1020) '| `WEFTSPUN_DB_POOL` | `5`             | Pool size in a release.                      |
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1020) 'The inventory commands need no database. `WEFTSPUN_DB=0` therefore
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1020) 'lets `weftspun models list` run on a host with no database file.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1020) 'The open risk
+2026-08-25T00:00:44Z (RFD66606-1020) 'The open risk
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1020) 'A second store is a second source of truth. The HTTP surface reads the
+2026-08-25T00:00:45Z (RFD66606-1020) 'A second store is a second source of truth. The HTTP surface reads the in-memory `FactStore` (`router.ex`), so the two can drift. Pointing the router at `EctoFactStore` and deleting the Agent closes it.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-1020) 'in-memory `FactStore` (`router.ex`), so the two can drift. Pointing the
+2026-08-25T00:00:46Z (RFD66606-1020) 'The column types, the settings and their defaults are read from the migration and `config/`; they hold by agreement, and no gate compares this page with them.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1020) 'router at `EctoFactStore` and deleting the Agent closes it.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1020) 'The column types, the settings and their defaults are read from the
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1020) 'migration and `config/`; they hold by agreement, and no gate compares
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1020) 'this page with them.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1020) 'The problem
+2026-08-25T00:00:47Z (RFD66606-1020) 'The problem
  # tags: rfd:details-heading
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:34Z (RFD66606-1020) 'RFD66606-1019 builds an API server. An API server must keep its data.
+2026-08-25T00:00:48Z (RFD66606-1020) 'RFD66606-1019 builds an API server. An API server must keep its data.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-1020) '
+2026-08-25T00:00:49Z (RFD66606-1020) 'The fact store in `WeftspunStudio.FactStore` holds facts in memory. An Agent rebuilds the store from the RFD66606-1016 inventory at every boot.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-1020) 'The fact store in `WeftspunStudio.FactStore` holds facts in memory.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1020) 'An Agent rebuilds the store from the RFD66606-1016 inventory at every
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1020) 'boot.
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-1020) '
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1020) 'RFD66606-1016 records that catalog facts change fast. A license gate
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-1020) 'vetoes a model, a benchmark moves a recommendation, and a backend
- # tags: rfd:details
- Text:RFD1020  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1020) 'drops a model. The store must keep those changes.
+2026-08-25T00:00:50Z (RFD66606-1020) 'RFD66606-1016 records that catalog facts change fast. A license gate vetoes a model, a benchmark moves a recommendation, and a backend drops a model. The store must keep those changes.
  # tags: rfd:details
  Text:RFD1020  1 LINE
  Text:Written

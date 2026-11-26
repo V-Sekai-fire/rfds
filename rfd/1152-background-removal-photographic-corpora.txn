@@ -14,452 +14,192 @@
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:03Z (RFD66606-1152) 'The union of See-Through's nineteen part masks looks like an obvious foreground matte. On a
+2026-08-27T00:00:03Z (RFD66606-1152) 'The union of See-Through's nineteen part masks looks like an obvious foreground matte. On a cosplay photograph it put a real Santa hat in the background and deleted it.
  # tags: rfd:intrigue
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:04Z (RFD66606-1152) 'cosplay photograph it put a real Santa hat in the background and deleted it.
- # tags: rfd:intrigue
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:05Z (RFD66606-1152) 'Adopt `ZhengPeng7/BiRefNet_HR-matting` as the default background remover, and use See-Through
+2026-08-27T00:00:04Z (RFD66606-1152) 'Adopt `ZhengPeng7/BiRefNet_HR-matting` as the default background remover, and use See-Through part masks only as regions, never as labels.
  # tags: rfd:exit
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:06Z (RFD66606-1152) 'part masks only as regions, never as labels.
- # tags: rfd:exit
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:07Z (RFD66606-1152) 'Background removal for photographic corpora
+2026-08-27T00:00:05Z (RFD66606-1152) 'Background removal for photographic corpora
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:08Z (RFD66606-1152) 'Background removal uses a photo-trained dichotomous matting model, not a union of
+2026-08-27T00:00:06Z (RFD66606-1152) 'Background removal uses a photo-trained dichotomous matting model, not a union of semantic part masks. `ZhengPeng7/BiRefNet_HR-matting` is the default. It has no vocabulary to fall outside of, so it cannot lose a garment for not knowing what the garment is.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:09Z (RFD66606-1152) 'semantic part masks. `ZhengPeng7/BiRefNet_HR-matting` is the default. It has no
+2026-08-27T00:00:07Z (RFD66606-1152) 'See-Through is retained for what transfers (geometry) and not for what does not (semantics). Its part masks may be used as regions, never as labels for what covers what.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:10Z (RFD66606-1152) 'vocabulary to fall outside of, so it cannot lose a garment for not knowing what
+2026-08-27T00:00:08Z (RFD66606-1152) '`DETAILS.md` carries the ground-truth ranking and the dtype it depends on.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:11Z (RFD66606-1152) 'the garment is.
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:12Z (RFD66606-1152) '
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:13Z (RFD66606-1152) 'See-Through is retained for what transfers (geometry) and not for what does
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:14Z (RFD66606-1152) 'not (semantics). Its part masks may be used as regions, never as labels for what
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:15Z (RFD66606-1152) 'covers what.
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:16Z (RFD66606-1152) '
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:17Z (RFD66606-1152) '`DETAILS.md` carries the ground-truth ranking and the dtype it depends on.
- # tags: rfd:decision
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:18Z (RFD66606-1152) 'RFD66606-1006 covers layer decomposition. RFD66606-1153 covers how the resulting mattes are
+2026-08-27T00:00:09Z (RFD66606-1152) 'RFD66606-1006 covers layer decomposition. RFD66606-1153 covers how the resulting mattes are judged. RFD66606-1030 records the See-Through components.
  # tags: rfd:related
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:19Z (RFD66606-1152) 'judged. RFD66606-1030 records the See-Through components.
- # tags: rfd:related
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:20Z (RFD66606-1152) 'Why the union of part masks fails
+2026-08-27T00:00:10Z (RFD66606-1152) 'Why the union of part masks fails
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:21Z (RFD66606-1152) 'It is the wrong instrument for a photographic corpus, for a structural reason
+2026-08-27T00:00:11Z (RFD66606-1152) 'It is the wrong instrument for a photographic corpus, for a structural reason rather than a quality one. A union of semantic classes can only keep what it can name, and the model is trained on anime characters. Measured on a cosplay photograph, a Santa hat scored -8.38 on `headwear` (a confident negative, not a borderline miss), so the union placed a real garment in the background and deleted it. No threshold recovers it; at a threshold low enough to matter the union grows from 0.50 to 0.56 of the frame while `headwear` stays empty.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:22Z (RFD66606-1152) 'rather than a quality one. A union of semantic classes can only keep what it can
+2026-08-27T00:00:12Z (RFD66606-1152) 'The same measurement showed the clothing classes fire on body region rather than on cloth: a nude torso is labelled `topwear`, and mask-derived coverage reads 0.81 to 0.93 on images that are largely bare skin.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:23Z (RFD66606-1152) 'name, and the model is trained on anime characters. Measured on a cosplay
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:24Z (RFD66606-1152) 'photograph, a Santa hat scored -8.38 on `headwear` (a confident negative, not a
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:25Z (RFD66606-1152) 'borderline miss), so the union placed a real garment in the background and
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:26Z (RFD66606-1152) 'deleted it. No threshold recovers it; at a threshold low enough to matter the
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:27Z (RFD66606-1152) 'union grows from 0.50 to 0.56 of the frame while `headwear` stays empty.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:28Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:29Z (RFD66606-1152) 'The same measurement showed the clothing classes fire on body region rather than
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:30Z (RFD66606-1152) 'on cloth: a nude torso is labelled `topwear`, and mask-derived coverage reads
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:31Z (RFD66606-1152) '0.81 to 0.93 on images that are largely bare skin.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:32Z (RFD66606-1152) 'Why a matting model rather than a segmenter
+2026-08-27T00:00:13Z (RFD66606-1152) 'Why a matting model rather than a segmenter
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:33Z (RFD66606-1152) 'A dichotomous segmenter is trained against binary ground truth, so its only soft
+2026-08-27T00:00:14Z (RFD66606-1152) 'A dichotomous segmenter is trained against binary ground truth, so its only soft pixels are silhouette antialiasing; a veil comes back either fully kept or fully cut. A matting model is trained against real alpha, so partial transparency is a value it can express.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:34Z (RFD66606-1152) 'pixels are silhouette antialiasing; a veil comes back either fully kept or fully
+2026-08-27T00:00:15Z (RFD66606-1152) 'The scale-free test is soft-alpha pixels per pixel of silhouette perimeter. Antialiasing is a constant band along the outline, so it stays near 1 whatever the subject. Transparency is area with no perimeter to pay for it.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:35Z (RFD66606-1152) 'cut. A matting model is trained against real alpha, so partial transparency is a
+2026-08-27T00:00:16Z (RFD66606-1152) 'Six photographs chosen for sheer fabric, specular surfaces and wispy hair:
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:36Z (RFD66606-1152) 'value it can express.
+2026-08-27T00:00:17Z (RFD66606-1152) '| source | BiRefNet | BiRefNet-matting | HR-matting (2048px) |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:37Z (RFD66606-1152) '
+2026-08-27T00:00:18Z (RFD66606-1152) '|---|---|---|---|
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:38Z (RFD66606-1152) 'The scale-free test is soft-alpha pixels per pixel of silhouette perimeter.
+2026-08-27T00:00:19Z (RFD66606-1152) '| sheer lace | 4.01 | 1.58 | 2.84 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:39Z (RFD66606-1152) 'Antialiasing is a constant band along the outline, so it stays near 1 whatever
+2026-08-27T00:00:20Z (RFD66606-1152) '| veil | 1.21 | 1.44 | 2.89 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:40Z (RFD66606-1152) 'the subject. Transparency is area with no perimeter to pay for it.
+2026-08-27T00:00:21Z (RFD66606-1152) '| latex | 1.02 | 2.08 | 2.61 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:41Z (RFD66606-1152) '
+2026-08-27T00:00:22Z (RFD66606-1152) '| latex | 1.14 | 1.55 | 3.39 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:42Z (RFD66606-1152) 'Six photographs chosen for sheer fabric, specular surfaces and wispy hair:
+2026-08-27T00:00:23Z (RFD66606-1152) '| wispy hair | 0.82 | 2.25 | 2.91 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:43Z (RFD66606-1152) '
+2026-08-27T00:00:24Z (RFD66606-1152) '| missed garment | 1.85 | 2.94 |, |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:44Z (RFD66606-1152) '| source | BiRefNet | BiRefNet-matting | HR-matting (2048px) |
+2026-08-27T00:00:25Z (RFD66606-1152) 'The segmenter clusters near 1.0 as predicted. The matting variants run higher, and the high-resolution variant is the most consistent.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:45Z (RFD66606-1152) '|---|---|---|---|
+2026-08-27T00:00:26Z (RFD66606-1152) '**This ratio ranks model families and must not be read per image.** The 4.01 is the highest number in the table and is not transparency: it is a soft uncertainty blob. The metric conflates partial alpha with an unsure model.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:46Z (RFD66606-1152) '| sheer lace | 4.01 | 1.58 | 2.84 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:47Z (RFD66606-1152) '| veil | 1.21 | 1.44 | 2.89 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:48Z (RFD66606-1152) '| latex | 1.02 | 2.08 | 2.61 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:49Z (RFD66606-1152) '| latex | 1.14 | 1.55 | 3.39 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:50Z (RFD66606-1152) '| wispy hair | 0.82 | 2.25 | 2.91 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:51Z (RFD66606-1152) '| missed garment | 1.85 | 2.94 |, |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:52Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:53Z (RFD66606-1152) 'The segmenter clusters near 1.0 as predicted. The matting variants run higher,
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:54Z (RFD66606-1152) 'and the high-resolution variant is the most consistent.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:55Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:56Z (RFD66606-1152) '**This ratio ranks model families and must not be read per image.** The 4.01 is
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:57Z (RFD66606-1152) 'the highest number in the table and is not transparency: it is a soft uncertainty
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:58Z (RFD66606-1152) 'blob. The metric conflates partial alpha with an unsure model.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:59Z (RFD66606-1152) 'Cost, and the dtype that decides it
+2026-08-27T00:00:27Z (RFD66606-1152) 'Cost, and the dtype that decides it
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:00Z (RFD66606-1152) 'HR-matting runs at 2048px, 5.7 s per image measured over 27 images on M2 Pro MPS,
+2026-08-27T00:00:28Z (RFD66606-1152) 'HR-matting runs at 2048px, 5.7 s per image measured over 27 images on M2 Pro MPS, against ~1.2 s for the 1024px variants. Weights are 220M parameters.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:01Z (RFD66606-1152) 'against ~1.2 s for the 1024px variants. Weights are 220M parameters.
+2026-08-27T00:00:29Z (RFD66606-1152) '**Float16, not bfloat16.** BiRefNet's ASPP uses deformable convolutions, and MPS ships `deformable_im2col_half` but not `deformable_im2col_bfloat`, so bf16 fails inside the forward pass while fp16 is fine. Reading that bf16-specific error as "no half precision available" forced fp32, and fp32 at 2048x2048 exhausts 32 GB of unified memory: one image per five minutes with the machine paging, which looked like the model being infeasible on this hardware. The model is feasible: the bf16 error was read as a missing precision. The dtype is not about the weights, which are under a gigabyte either way; it is about activations, where a single feature map at that resolution runs to gigabytes.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:02Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:03Z (RFD66606-1152) '**Float16, not bfloat16.** BiRefNet's ASPP uses deformable convolutions, and MPS
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:04Z (RFD66606-1152) 'ships `deformable_im2col_half` but not `deformable_im2col_bfloat`, so bf16 fails
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:05Z (RFD66606-1152) 'inside the forward pass while fp16 is fine. Reading that bf16-specific error as
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:06Z (RFD66606-1152) '"no half precision available" forced fp32, and fp32 at 2048x2048 exhausts 32 GB
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:07Z (RFD66606-1152) 'of unified memory: one image per five minutes with the machine paging, which looked like the
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:08Z (RFD66606-1152) 'model being infeasible on this hardware. The model
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:09Z (RFD66606-1152) 'is feasible: the bf16 error was read as a missing precision. The dtype is
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:10Z (RFD66606-1152) 'not about the weights, which are under a gigabyte either way; it is about
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:11Z (RFD66606-1152) 'activations, where a single feature map at that resolution runs to gigabytes.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:12Z (RFD66606-1152) 'Settled by ground truth
+2026-08-27T00:00:30Z (RFD66606-1152) 'Settled by ground truth
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:13Z (RFD66606-1152) 'The alphamatting.com training set has true alpha, so the ordering does not need a
+2026-08-27T00:00:31Z (RFD66606-1152) 'The alphamatting.com training set has true alpha, so the ordering does not need a judge. On the 16 images all three backends completed (lower is better):
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:14Z (RFD66606-1152) 'judge. On the 16 images all three backends completed (lower is better):
+2026-08-27T00:00:32Z (RFD66606-1152) '| backend | SAD | Gradient | Connectivity |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:15Z (RFD66606-1152) '
+2026-08-27T00:00:33Z (RFD66606-1152) '|---|---:|---:|---:|
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:16Z (RFD66606-1152) '| backend | SAD | Gradient | Connectivity |
+2026-08-27T00:00:34Z (RFD66606-1152) '| birefnet | 7.09 | 0.076 | 6.00 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:17Z (RFD66606-1152) '|---|---:|---:|---:|
+2026-08-27T00:00:35Z (RFD66606-1152) '| birefnet-matting | 4.75 | 0.032 | 3.80 |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:18Z (RFD66606-1152) '| birefnet | 7.09 | 0.076 | 6.00 |
+2026-08-27T00:00:36Z (RFD66606-1152) '| birefnet-hr-matting | **4.42** | **0.026** | **3.16** |
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:19Z (RFD66606-1152) '| birefnet-matting | 4.75 | 0.032 | 3.80 |
+2026-08-27T00:00:37Z (RFD66606-1152) '`hr-matting < matting < segmenter` on every metric, none dissenting. HR-matting separately completed all 27 images alone: SAD 4.48, MSE 1.370, gradient 0.04, connectivity 3.97, consistent with the subset.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:20Z (RFD66606-1152) '| birefnet-hr-matting | **4.42** | **0.026** | **3.16** |
+2026-08-27T00:00:38Z (RFD66606-1152) 'This also corrects the `soft_per_perimeter` proxy, which had ranked HR-matting first for the right answer by an unreliable route, and RFD66606-1153's judged ordering, which had ranked the segmenter best on gradient, inverted, since ground truth puts it roughly 3x worse.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:21Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:22Z (RFD66606-1152) '`hr-matting < matting < segmenter` on every metric, none dissenting. HR-matting
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:23Z (RFD66606-1152) 'separately completed all 27 images alone: SAD 4.48, MSE 1.370, gradient 0.04,
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:24Z (RFD66606-1152) 'connectivity 3.97, consistent with the subset.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:25Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:26Z (RFD66606-1152) 'This also corrects the `soft_per_perimeter` proxy, which had ranked HR-matting
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:27Z (RFD66606-1152) 'first for the right answer by an unreliable route, and RFD66606-1153's judged ordering,
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:28Z (RFD66606-1152) 'which had ranked the segmenter best on gradient, inverted, since ground truth
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:29Z (RFD66606-1152) 'puts it roughly 3x worse.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:30Z (RFD66606-1152) 'The problem
+2026-08-27T00:00:39Z (RFD66606-1152) 'The problem
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:31Z (RFD66606-1152) 'The See-Through union is already in the
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:32Z (RFD66606-1152) 'manifest, already loaded, and on most frames it produces a clean cutout.
+2026-08-27T00:00:40Z (RFD66606-1152) 'The See-Through union is already in the manifest, already loaded, and on most frames it produces a clean cutout.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written

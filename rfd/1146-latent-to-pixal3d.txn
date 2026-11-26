@@ -19,112 +19,42 @@
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1146) 'The router decides which repair arm runs, and it decides on a statistic nobody has
+2026-08-25T00:00:04Z (RFD66606-1146) 'The router decides which repair arm runs, and it decides on a statistic nobody has calibrated.
  # tags: rfd:intrigue
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1146) 'calibrated.
- # tags: rfd:intrigue
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1146) 'Read RFD66606-1143 next, the first of the other three loops.
+2026-08-25T00:00:05Z (RFD66606-1146) 'Read RFD66606-1143 next, the first of the other three loops.
  # tags: rfd:exit
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1146) 'Build it, and treat the router as uncalibrated until measured.
+2026-08-25T00:00:06Z (RFD66606-1146) 'Build it, and treat the router as uncalibrated until measured.
  # tags: rfd:decision
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1146) '
+2026-08-25T00:00:07Z (RFD66606-1146) 'The statistic is spread over mean, and a spread above 0.15 selects the latent arm. `routerCalibrated` is 0 in the plan, so that threshold is a starting value rather than a result. A router that picks the wrong arm produces a repair that cannot help, and the loop still terminates.
  # tags: rfd:decision
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1146) 'The statistic is spread over mean, and a spread above 0.15 selects the
+2026-08-25T00:00:08Z (RFD66606-1146) '**The hazard is an arm that cannot take what the loop holds.** VoxHammer raises `NotImplementedError` outside stub mode, and it takes a mesh where the loop carries a latent. So the arm passes through `/extract` first, and a route that skips that step fails inside the tool rather than at the boundary.
  # tags: rfd:decision
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1146) 'latent arm. `routerCalibrated` is 0 in the plan, so that threshold is a
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1146) 'starting value rather than a result. A router that picks the wrong arm
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1146) 'produces a repair that cannot help, and the loop still terminates.
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1146) '
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1146) '**The hazard is an arm that cannot take what the loop holds.**
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1146) 'VoxHammer raises `NotImplementedError` outside stub mode, and it takes
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1146) 'a mesh where the loop carries a latent. So the arm passes through
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1146) '`/extract` first, and a route that skips that step fails inside the
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1146) 'tool rather than at the boundary.
- # tags: rfd:decision
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1146) 'RFD66606-1143, RFD66606-1144 and RFD66606-1145 are the other three loops. RFD66606-1122 is
+2026-08-25T00:00:09Z (RFD66606-1146) 'RFD66606-1143, RFD66606-1144 and RFD66606-1145 are the other three loops. RFD66606-1122 is the goal, and RFD66606-1132 lists what converts.
  # tags: rfd:related
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1146) 'the goal, and RFD66606-1132 lists what converts.
- # tags: rfd:related
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1146) 'The problem
+2026-08-25T00:00:10Z (RFD66606-1146) 'The problem
  # tags: rfd:details-heading
  Text:RFD1146  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1146) 'Loop 4 is the only one that leaves the image plane. Pixal3D proposes a
- # tags: rfd:details
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1146) 'latent state, then views, then a glb; EditScore scores; and the repair
- # tags: rfd:details
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1146) 'arm forks between VoxHammer and OmniGen2. At size XL it is the largest
- # tags: rfd:details
- Text:RFD1146  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1146) 'of the four, and it is the only loop with a router.
+2026-08-25T00:00:11Z (RFD66606-1146) 'Loop 4 is the only one that leaves the image plane. Pixal3D proposes a latent state, then views, then a glb; EditScore scores; and the repair arm forks between VoxHammer and OmniGen2. At size XL it is the largest of the four, and it is the only loop with a router.
  # tags: rfd:details
  Text:RFD1146  1 LINE
  Text:Written

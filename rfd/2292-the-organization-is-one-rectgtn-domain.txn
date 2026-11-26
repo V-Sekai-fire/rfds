@@ -4,532 +4,242 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-02T00:00:01Z (RFD66606-2292) 'one Taskweft domain for the organization, one problem per RFD,
- # tags: rfd:feature
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:02Z (RFD66606-2292) 'and the plan it compiles to rendered into that RFD's own Markdown
+2026-10-02T00:00:01Z (RFD66606-2292) 'one Taskweft domain for the organization, one problem per RFD, and the plan it compiles to rendered into that RFD's own Markdown
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:03Z (RFD66606-2292) '`RFD.RECTGTN`, the `steps` block in `RFD.DSL`, `mix rfd.rectgtn`,
- # tags: rfd:scope
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:04Z (RFD66606-2292) '`rectgtn/organization.ex`, `rectgtn/problems/`, and
- # tags: rfd:scope
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:05Z (RFD66606-2292) '`scripts/check_rectgtn_plan.exs`
+2026-10-02T00:00:02Z (RFD66606-2292) '`RFD.RECTGTN`, the `steps` block in `RFD.DSL`, `mix rfd.rectgtn`, `rectgtn/organization.ex`, `rectgtn/problems/`, and `scripts/check_rectgtn_plan.exs`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:06Z (RFD66606-2292) 'Ask an RFD what comes next and get a plan, not a paragraph.
+2026-10-02T00:00:03Z (RFD66606-2292) 'Ask an RFD what comes next and get a plan, not a paragraph.
  # tags: rfd:hook, rfd:no-final-newline
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:07Z (RFD66606-2292) 'RFD66606-2287 states its critical path as eight numbered paragraphs.
+2026-10-02T00:00:04Z (RFD66606-2292) 'RFD66606-2287 states its critical path as eight numbered paragraphs.
  # tags: rfd:intrigue
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:08Z (RFD66606-2292) 'Run `elixir scripts/check_rectgtn_plan.exs` to hold each solution against
+2026-10-02T00:00:05Z (RFD66606-2292) 'Run `elixir scripts/check_rectgtn_plan.exs` to hold each solution against the planner.
  # tags: rfd:exit
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:09Z (RFD66606-2292) 'the planner.
- # tags: rfd:exit
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:10Z (RFD66606-2292) 'the organization is one RECTGTN domain
+2026-10-02T00:00:06Z (RFD66606-2292) 'the organization is one RECTGTN domain
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:11Z (RFD66606-2292) 'The organization is the domain and each RFD is a problem against it. The
+2026-10-02T00:00:07Z (RFD66606-2292) 'The organization is the domain and each RFD is a problem against it. The domain holds the ladder an RFD climbs and what preparing a document, running a step and landing it are; a problem holds one RFD's place on that ladder and the state of each step it declares.
  # tags: rfd:decision
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:12Z (RFD66606-2292) 'domain holds the ladder an RFD climbs and what preparing a document,
- # tags: rfd:decision
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:13Z (RFD66606-2292) 'running a step and landing it are; a problem holds one RFD's place on that
- # tags: rfd:decision
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:14Z (RFD66606-2292) 'ladder and the state of each step it declares.
- # tags: rfd:decision
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:15Z (RFD66606-2292) 'RFD66606-2287 (the first rung) is the first problem; RFD66606-2204 (RECTGTN fleet
+2026-10-02T00:00:08Z (RFD66606-2292) 'RFD66606-2287 (the first rung) is the first problem; RFD66606-2204 (RECTGTN fleet coordination) plans over peers rather than documents; RFD66606-2232 (RFD authoring as an Elixir DSL) gives the build-artifact rule; RFD66606-2177 carries the flight levels the domain holds.
  # tags: rfd:related
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:16Z (RFD66606-2292) 'coordination) plans over peers rather than documents; RFD66606-2232 (RFD
- # tags: rfd:related
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:17Z (RFD66606-2292) 'authoring as an Elixir DSL) gives the build-artifact rule; RFD66606-2177 carries
- # tags: rfd:related
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:18Z (RFD66606-2292) 'the flight levels the domain holds.
- # tags: rfd:related
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:19Z (RFD66606-2292) 'The problem
+2026-10-02T00:00:09Z (RFD66606-2292) 'The problem
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:20Z (RFD66606-2292) 'Written once as a domain, the question "what is next
+2026-10-02T00:00:10Z (RFD66606-2292) 'Written once as a domain, the question "what is next for this RFD" is a plan rather than a reading.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:21Z (RFD66606-2292) 'for this RFD" is a plan rather than a reading.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:22Z (RFD66606-2292) 'Why a paragraph is the wrong shape
+2026-10-02T00:00:11Z (RFD66606-2292) 'Why a paragraph is the wrong shape
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:23Z (RFD66606-2292) 'A paragraph
+2026-10-02T00:00:12Z (RFD66606-2292) 'A paragraph cannot be asked which step comes next, which steps are blocked, or what a failure costs, and the eight repeat a shape every rung of every ladder in this workspace already has: a step names a repository, what is missing, and the check it ends at.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:24Z (RFD66606-2292) 'cannot be asked which step comes next, which steps are blocked, or what a
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:25Z (RFD66606-2292) 'failure costs, and the eight repeat a shape every rung of every ladder in
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:26Z (RFD66606-2292) 'this workspace already has: a step names a repository, what is missing, and
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:27Z (RFD66606-2292) 'the check it ends at.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:28Z (RFD66606-2292) 'How the solution is held
+2026-10-02T00:00:13Z (RFD66606-2292) 'How the solution is held
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:29Z (RFD66606-2292) 'Both halves are Taskweft's
+2026-10-02T00:00:14Z (RFD66606-2292) 'Both halves are Taskweft's own Elixir DSL, rendered by `mix rfd.rectgtn` from the RFD sources, and `Taskweft.Compose.compose_strings/2` merges a pair so the planner compiles it into a solution. That solution renders into the RFD's `DETAILS.md`, and a gate holds it against what the planner returns.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:30Z (RFD66606-2292) 'own Elixir DSL, rendered by `mix rfd.rectgtn` from the RFD sources, and
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:31Z (RFD66606-2292) '`Taskweft.Compose.compose_strings/2` merges a pair so the planner compiles
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:32Z (RFD66606-2292) 'it into a solution. That solution renders into the RFD's `DETAILS.md`, and a
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:33Z (RFD66606-2292) 'gate holds it against what the planner returns.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:34Z (RFD66606-2292) 'Where the declarations live
+2026-10-02T00:00:15Z (RFD66606-2292) 'Where the declarations live
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:35Z (RFD66606-2292) 'A `steps` block inside an `rfd` block declares the critical path:
+2026-10-02T00:00:16Z (RFD66606-2292) 'A `steps` block inside an `rfd` block declares the critical path:
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:36Z (RFD66606-2292) '
+2026-10-02T00:00:17Z (RFD66606-2292) '    steps do
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:37Z (RFD66606-2292) '    steps do
+2026-10-02T00:00:18Z (RFD66606-2292) '      step "Build",
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:38Z (RFD66606-2292) '      step "Build",
+2026-10-02T00:00:19Z (RFD66606-2292) '        repos: ["entities-godot", "the godot-sandbox addon"],
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:39Z (RFD66606-2292) '        repos: ["entities-godot", "the godot-sandbox addon"],
+2026-10-02T00:00:20Z (RFD66606-2292) '        missing: "the exported template_release build faults in a StringName copy",
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:40Z (RFD66606-2292) '        missing: "the exported template_release build faults in a StringName copy",
+2026-10-02T00:00:21Z (RFD66606-2292) '        check: "an OpenXR session starts on each path and the pen scene draws in it",
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:41Z (RFD66606-2292) '        check: "an OpenXR session starts on each path and the pen scene draws in it",
+2026-10-02T00:00:22Z (RFD66606-2292) '        state: :failed
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:42Z (RFD66606-2292) '        state: :failed
+2026-10-02T00:00:23Z (RFD66606-2292) '    end
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:43Z (RFD66606-2292) '    end
+2026-10-02T00:00:24Z (RFD66606-2292) '`repos` and `check` are required, because a step nobody owns and a step that ends at nothing are the two ways a critical path rots. `missing` is what the step needs that does not exist yet, `control` is the planted defect its check must catch, and `state` is where the step stands. A step declared `parked` states what it is missing, so parking is never silent.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:44Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:45Z (RFD66606-2292) '`repos` and `check` are required, because a step nobody owns and a step that
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:46Z (RFD66606-2292) 'ends at nothing are the two ways a critical path rots. `missing` is what the
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:47Z (RFD66606-2292) 'step needs that does not exist yet, `control` is the planted defect its check
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:48Z (RFD66606-2292) 'must catch, and `state` is where the step stands. A step declared `parked`
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:49Z (RFD66606-2292) 'states what it is missing, so parking is never silent.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:50Z (RFD66606-2292) 'Why the Elixir DSL and not JSON-LD
+2026-10-02T00:00:25Z (RFD66606-2292) 'Why the Elixir DSL and not JSON-LD
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:51Z (RFD66606-2292) 'Taskweft reads a domain written in its own Elixir DSL, and
+2026-10-02T00:00:26Z (RFD66606-2292) 'Taskweft reads a domain written in its own Elixir DSL, and `Taskweft.Compose.compose_strings/2` composes DSL sources directly, so nothing here authors JSON-LD. Writing the first draft against the JSON-LD path found three defects in `Taskweft.DSL.SafeParser`, all one bug: a value went through `to_string/1`.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:52Z (RFD66606-2292) '`Taskweft.Compose.compose_strings/2` composes DSL sources directly, so
+2026-10-02T00:00:27Z (RFD66606-2292) '- An integer `value: 1` reached the planner as the string `"1"`.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:53Z (RFD66606-2292) 'nothing here authors JSON-LD. Writing the first draft against the JSON-LD
+2026-10-02T00:00:28Z (RFD66606-2292) '- A negative literal raised `Protocol.UndefinedError` on its unary-minus AST, in an action body, a variable's `init` and an alternative's `check`.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:54Z (RFD66606-2292) 'path found three defects in `Taskweft.DSL.SafeParser`, all one bug: a value
+2026-10-02T00:00:29Z (RFD66606-2292) '- A computed `value: %{type: "math/add", ...}` was dropped to `{}` or raised.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:55Z (RFD66606-2292) 'went through `to_string/1`.
+2026-10-02T00:00:30Z (RFD66606-2292) 'The same bug had been fixed once before for a goal's `eq`, and the comment recording it is still in `dsl_goal_test.exs`. Six controls in `dsl_value_type_test.exs` cover the three sites now; five of them fail against the parser as it was.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:00:56Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:57Z (RFD66606-2292) '- An integer `value: 1` reached the planner as the string `"1"`.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:58Z (RFD66606-2292) '- A negative literal raised `Protocol.UndefinedError` on its unary-minus
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:00:59Z (RFD66606-2292) '  AST, in an action body, a variable's `init` and an alternative's `check`.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:00Z (RFD66606-2292) '- A computed `value: %{type: "math/add", ...}` was dropped to `{}` or
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:01Z (RFD66606-2292) '  raised.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:02Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:03Z (RFD66606-2292) 'The same bug had been fixed once before for a goal's `eq`, and the comment
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:04Z (RFD66606-2292) 'recording it is still in `dsl_goal_test.exs`. Six controls in
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:05Z (RFD66606-2292) '`dsl_value_type_test.exs` cover the three sites now; five of them fail
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:06Z (RFD66606-2292) 'against the parser as it was.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:07Z (RFD66606-2292) 'Where the antifragility is
+2026-10-02T00:00:31Z (RFD66606-2292) 'Where the antifragility is
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:08Z (RFD66606-2292) 'A failure makes the plan longer rather than making it fail. The `step`
+2026-10-02T00:00:32Z (RFD66606-2292) 'A failure makes the plan longer rather than making it fail. The `step` method's alternatives are `already_checked`, `close_the_gap_first`, `parked_and_named`, `run_it`, `park_it`, and a step the problem states as `failed` matches the second, which plans `close-the-gap` **and then** `run-step`.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:09Z (RFD66606-2292) 'method's alternatives are `already_checked`, `close_the_gap_first`,
+2026-10-02T00:00:33Z (RFD66606-2292) 'Measured over one four-step problem, changing only step 3's state:
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:10Z (RFD66606-2292) '`parked_and_named`, `run_it`, `park_it`, and a step the problem states as
+2026-10-02T00:00:34Z (RFD66606-2292) '| step 3 | plan length | what the planner adds |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:11Z (RFD66606-2292) '`failed` matches the second, which plans `close-the-gap` **and then**
+2026-10-02T00:00:35Z (RFD66606-2292) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:12Z (RFD66606-2292) '`run-step`.
+2026-10-02T00:00:36Z (RFD66606-2292) '| `ready`, the control | 7 | nothing |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:13Z (RFD66606-2292) '
+2026-10-02T00:00:37Z (RFD66606-2292) '| `failed` | 8 | `close-the-gap` before the retry |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:14Z (RFD66606-2292) 'Measured over one four-step problem, changing only step 3's state:
+2026-10-02T00:00:38Z (RFD66606-2292) '| `parked` | 6 | nothing, and step 3 is not run |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:15Z (RFD66606-2292) '
+2026-10-02T00:00:39Z (RFD66606-2292) '| `checked` | 6 | nothing, and step 3 is not run again |
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:16Z (RFD66606-2292) '| step 3 | plan length | what the planner adds |
+2026-10-02T00:00:40Z (RFD66606-2292) 'A system that merely survived the failure would have planned 7 again and retried the same step. RFD66606-2287 carries this today: its Build step is `failed`, so its solution is 12 steps and opens with the gap.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:17Z (RFD66606-2292) '| --- | --- | --- |
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:18Z (RFD66606-2292) '| `ready`, the control | 7 | nothing |
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:19Z (RFD66606-2292) '| `failed` | 8 | `close-the-gap` before the retry |
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:20Z (RFD66606-2292) '| `parked` | 6 | nothing, and step 3 is not run |
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:21Z (RFD66606-2292) '| `checked` | 6 | nothing, and step 3 is not run again |
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:22Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:23Z (RFD66606-2292) 'A system that merely survived the failure would have planned 7 again and
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:24Z (RFD66606-2292) 'retried the same step. RFD66606-2287 carries this today: its Build step is
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:25Z (RFD66606-2292) '`failed`, so its solution is 12 steps and opens with the gap.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:26Z (RFD66606-2292) 'What the gate measures
+2026-10-02T00:00:41Z (RFD66606-2292) 'What the gate measures
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:27Z (RFD66606-2292) '`scripts/check_rectgtn_plan.exs` reads each RFD that declares steps, takes
+2026-10-02T00:00:42Z (RFD66606-2292) '`scripts/check_rectgtn_plan.exs` reads each RFD that declares steps, takes the solution its `DETAILS.md` renders, and asks the planner for the plan: `Taskweft.Compose.compose_strings/2` over `rectgtn/organization.ex` and that RFD's problem, then `Taskweft.NIF.plan/1`. A difference fails the command.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:28Z (RFD66606-2292) 'the solution its `DETAILS.md` renders, and asks the planner for the plan:
+2026-10-02T00:00:43Z (RFD66606-2292) '    elixir scripts/check_rectgtn_plan.exs             # 1/1 solutions are the planner's
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:29Z (RFD66606-2292) '`Taskweft.Compose.compose_strings/2` over `rectgtn/organization.ex` and that
+2026-10-02T00:00:44Z (RFD66606-2292) '    elixir scripts/check_rectgtn_plan.exs --self-test # 14 controls
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:30Z (RFD66606-2292) 'RFD's problem, then `Taskweft.NIF.plan/1`. A difference fails the command.
+2026-10-02T00:00:45Z (RFD66606-2292) 'Taskweft is a separate checkout, so the gate runs at the manual stage where a `repo` workspace exists, and a missing checkout is a FAIL rather than a skip. Fourteen controls cover the plan shape without it, including that a failure lengthens the plan and that a parked step naming nothing missing is refused.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:31Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:32Z (RFD66606-2292) '    elixir scripts/check_rectgtn_plan.exs             # 1/1 solutions are the planner's
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:33Z (RFD66606-2292) '    elixir scripts/check_rectgtn_plan.exs --self-test # 14 controls
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:34Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:35Z (RFD66606-2292) 'Taskweft is a separate checkout, so the gate runs at the manual stage where a
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:36Z (RFD66606-2292) '`repo` workspace exists, and a missing checkout is a FAIL rather than a skip.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:37Z (RFD66606-2292) 'Fourteen controls cover the plan shape without it, including that a failure
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:38Z (RFD66606-2292) 'lengthens the plan and that a parked step naming nothing missing is refused.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:39Z (RFD66606-2292) 'What this does not do
+2026-10-02T00:00:46Z (RFD66606-2292) 'What this does not do
  # tags: rfd:details-heading
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:40Z (RFD66606-2292) 'The planner does no work; it names the next step. Nothing writes a step's
+2026-10-02T00:00:47Z (RFD66606-2292) 'The planner does no work; it names the next step. Nothing writes a step's state from a check run, so a step's `state` is a declaration a reader keeps honest, the same way a blocklist row is.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written
 
-2026-10-02T00:01:41Z (RFD66606-2292) 'state from a check run, so a step's `state` is a declaration a reader keeps
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:42Z (RFD66606-2292) 'honest, the same way a blocklist row is.
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:43Z (RFD66606-2292) '
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:44Z (RFD66606-2292) 'One problem per RFD is rendered for all of them, and 360 of the 361 carry no
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:45Z (RFD66606-2292) 'steps, so their solutions are `prepare`, `gate`, `open-pr`, `enqueue` and say
- # tags: rfd:details
- Text:RFD2292  1 LINE
- Text:Written
-
-2026-10-02T00:01:46Z (RFD66606-2292) 'little. The shape is worth having before the second rung declares its path.
+2026-10-02T00:00:48Z (RFD66606-2292) 'One problem per RFD is rendered for all of them, and 360 of the 361 carry no steps, so their solutions are `prepare`, `gate`, `open-pr`, `enqueue` and say little. The shape is worth having before the second rung declares its path.
  # tags: rfd:details
  Text:RFD2292  1 LINE
  Text:Written

@@ -4,742 +4,277 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-01T00:00:01Z (RFD66606-2436) 'two people in one campus zone see each other's avatars from a
- # tags: rfd:feature
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:02Z (RFD66606-2436) 'program that runs alone.
+2026-11-01T00:00:01Z (RFD66606-2436) 'two people in one campus zone see each other's avatars from a program that runs alone.
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:03Z (RFD66606-2436) 'the see-each-other beta feature as its own native program, its
- # tags: rfd:scope
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:04Z (RFD66606-2436) 'gate and its control.
+2026-11-01T00:00:02Z (RFD66606-2436) 'the see-each-other beta feature as its own native program, its gate and its control.
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:05Z (RFD66606-2436) 'Can two people see each other from a program that needs nothing else
+2026-11-01T00:00:03Z (RFD66606-2436) 'Can two people see each other from a program that needs nothing else in the beta?
  # tags: rfd:hook
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:06Z (RFD66606-2436) 'in the beta?
- # tags: rfd:hook
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:07Z (RFD66606-2436) 'RFD66606-2360 cuts the beta on seeing each other, and nothing built
+2026-11-01T00:00:04Z (RFD66606-2436) 'RFD66606-2360 cuts the beta on seeing each other, and nothing built yet carries it alone.
  # tags: rfd:intrigue
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:08Z (RFD66606-2436) 'yet carries it alone.
- # tags: rfd:intrigue
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:09Z (RFD66606-2436) 'Run the sight gate against a recorded pose stream. A zone that drops
+2026-11-01T00:00:05Z (RFD66606-2436) 'Run the sight gate against a recorded pose stream. A zone that drops one side's poses must fail it.
  # tags: rfd:exit
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:10Z (RFD66606-2436) 'one side's poses must fail it.
- # tags: rfd:exit
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:11Z (RFD66606-2436) 'presence is an independent native slice
+2026-11-01T00:00:06Z (RFD66606-2436) 'presence is an independent native slice
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:12Z (RFD66606-2436) 'Presence ships as one native program, a riscv64 guest ELF run
+2026-11-01T00:00:07Z (RFD66606-2436) 'Presence ships as one native program, a riscv64 guest ELF run binary-translated, that owns the zone's people and their poses. It runs with no voice, pen, party or shop (operator, 2026-11-01). The details hold the host, the avatar and the ladder.
  # tags: rfd:decision
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:13Z (RFD66606-2436) 'binary-translated, that owns the zone's people and their poses. It
- # tags: rfd:decision
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:14Z (RFD66606-2436) 'runs with no voice, pen, party or shop (operator, 2026-11-01). The
- # tags: rfd:decision
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:15Z (RFD66606-2436) 'details hold the host, the avatar and the ladder.
- # tags: rfd:decision
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:16Z (RFD66606-2436) '- RFD66606-2360, the one beta.
+2026-11-01T00:00:08Z (RFD66606-2436) '- RFD66606-2360, the one beta.
  # tags: rfd:related
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:17Z (RFD66606-2436) '- The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned
+2026-11-01T00:00:09Z (RFD66606-2436) '- The sibling slices, RFD66606-2437 to RFD66606-2440, are abandoned (operator, 2026-11-11).
  # tags: rfd:related
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:18Z (RFD66606-2436) '  (operator, 2026-11-11).
+2026-11-01T00:00:10Z (RFD66606-2436) '- RFD66606-2493, the relay, and RFD66606-2492, the predictor for what it carries.
  # tags: rfd:related
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:19Z (RFD66606-2436) '- RFD66606-2493, the relay, and RFD66606-2492, the predictor for what
- # tags: rfd:related
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:20Z (RFD66606-2436) '  it carries.
- # tags: rfd:related
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:21Z (RFD66606-2436) 'The rulings
+2026-11-01T00:00:11Z (RFD66606-2436) 'The rulings
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:22Z (RFD66606-2436) 'A slice that needs voice, the pen and the adventure party to run
+2026-11-01T00:00:12Z (RFD66606-2436) 'A slice that needs voice, the pen and the adventure party to run depends on all three, so this one needs none of them.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:23Z (RFD66606-2436) 'depends on all three, so this one needs none of them.
+2026-11-01T00:00:13Z (RFD66606-2436) '- Presence ships as one native program with no editor or browser. It owns the zone's list of people and their avatar poses (operator, 2026-11-01).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:24Z (RFD66606-2436) '- Presence ships as one native program with no editor or browser. It
+2026-11-01T00:00:14Z (RFD66606-2436) '- The slice runs with no voice, pen, adventure party or shop present. Its inputs are recorded pose streams in place of those parts (operator, 2026-11-01).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:25Z (RFD66606-2436) '  owns the zone's list of people and their avatar poses (operator,
+2026-11-01T00:00:15Z (RFD66606-2436) '- Native means a riscv64 guest ELF for the sandbox, run binary-translated (operator, 2026-11-01). Its gates run on the CPU guest as the parity oracle (RFD66606-2374, RFD66606-2390).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:26Z (RFD66606-2436) '  2026-11-01).
+2026-11-01T00:00:16Z (RFD66606-2436) '- The host is the win64 client of RFD66606-2360, and the zone it joins is a NixOS flake container under Ankaios (operator, 2026-11-26). The client is built natively for the win64 desktop, and the slice's gates run there too (operator, 2026-11-26).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:27Z (RFD66606-2436) '- The slice runs with no voice, pen, adventure party or shop present.
+2026-11-01T00:00:17Z (RFD66606-2436) '- An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21 entity Packets of 100 bytes. The zone only routes and four parties judge each sender (operator, 2026-11-13).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:28Z (RFD66606-2436) '  Its inputs are recorded pose streams in place of those parts
+2026-11-01T00:00:18Z (RFD66606-2436) '- Melatonin is optional content, loaded onto the same guest with logic. ANNY is the beta avatar (operator, 2026-11-25).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:29Z (RFD66606-2436) '  (operator, 2026-11-01).
+2026-11-01T00:00:19Z (RFD66606-2436) '- The work climbs one ordered ladder from what already runs, one change a rung.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:30Z (RFD66606-2436) '- Native means a riscv64 guest ELF for the sandbox, run
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:31Z (RFD66606-2436) '  binary-translated (operator, 2026-11-01). Its gates run on the CPU
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:32Z (RFD66606-2436) '  guest as the parity oracle (RFD66606-2374, RFD66606-2390).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:33Z (RFD66606-2436) '- The host is the win64 client of RFD66606-2360, and the zone it joins
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:34Z (RFD66606-2436) '  is a NixOS flake container under Ankaios (operator, 2026-11-26). The
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:35Z (RFD66606-2436) '  client is built natively for the win64 desktop, and
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:36Z (RFD66606-2436) '  the slice's gates run there too (operator, 2026-11-26).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:37Z (RFD66606-2436) '- An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:38Z (RFD66606-2436) '  entity Packets of 100 bytes. The zone only routes and four parties
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:39Z (RFD66606-2436) '  judge each sender (operator, 2026-11-13).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:40Z (RFD66606-2436) '- Melatonin is optional content, loaded onto the same guest with
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:41Z (RFD66606-2436) '  logic. ANNY is the beta avatar (operator, 2026-11-25).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:42Z (RFD66606-2436) '- The work climbs one ordered ladder from what already runs, one
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:43Z (RFD66606-2436) '  change a rung.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:44Z (RFD66606-2436) 'What the beta asks
+2026-11-01T00:00:20Z (RFD66606-2436) 'What the beta asks
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:45Z (RFD66606-2436) 'RFD66606-2360 says what the beta ships and on which devices. The slice
+2026-11-01T00:00:21Z (RFD66606-2436) 'RFD66606-2360 says what the beta ships and on which devices. The slice holds the part that lets two people see each other and nothing more: who is in the zone, where each avatar stands, and the pose each person sends.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:46Z (RFD66606-2436) 'holds the part that lets two people see each other and nothing more:
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:47Z (RFD66606-2436) 'who is in the zone, where each avatar stands, and the pose each person
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:48Z (RFD66606-2436) 'sends.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:49Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:50Z (RFD66606-2436) 'The campus
+2026-11-01T00:00:22Z (RFD66606-2436) 'The campus
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:51Z (RFD66606-2436) 'A campus is a world, and a world runs as instances. Any player starts
+2026-11-01T00:00:23Z (RFD66606-2436) 'A campus is a world, and a world runs as instances. Any player starts an instance for friends, public or invite-only. One zone server is the authority for one instance. Each instance keeps its own shop books. One campus ships first, and building a campus stays with the V-Sekai content tools (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:52Z (RFD66606-2436) 'an instance for friends, public or invite-only. One zone server is the
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:53Z (RFD66606-2436) 'authority for one instance. Each instance keeps its own shop books.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:54Z (RFD66606-2436) 'One campus ships first, and building a campus stays with the V-Sekai
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:55Z (RFD66606-2436) 'content tools (operator, 2026-10-30).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:56Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:00:57Z (RFD66606-2436) 'The slice's edge
+2026-11-01T00:00:24Z (RFD66606-2436) 'The slice's edge
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:58Z (RFD66606-2436) 'In: the zone's list of people, a pose from each, and a view of the
+2026-11-01T00:00:25Z (RFD66606-2436) 'In: the zone's list of people, a pose from each, and a view of the others for each person. Out: voice, outfits, seats and books, which are the sibling slices. The edge is a message shape between the zone and a client. It is the only contract the slice shares, and its first step writes it down.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:00:59Z (RFD66606-2436) 'others for each person. Out: voice, outfits, seats and books, which
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:00Z (RFD66606-2436) 'are the sibling slices. The edge is a message shape between the zone
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:01Z (RFD66606-2436) 'and a client. It is the only contract the slice shares, and its first
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:02Z (RFD66606-2436) 'step writes it down.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:03Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:04Z (RFD66606-2436) 'Gates and controls
+2026-11-01T00:00:26Z (RFD66606-2436) 'Gates and controls
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:05Z (RFD66606-2436) 'Each gate has a control that plants the defect and must fail.
+2026-11-01T00:00:27Z (RFD66606-2436) 'Each gate has a control that plants the defect and must fail.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:06Z (RFD66606-2436) '
+2026-11-01T00:00:28Z (RFD66606-2436) '- Sight: two clients replay a pose stream, and each client's view lists the other's avatar at the replayed pose. Control: a zone that drops one client's poses.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:07Z (RFD66606-2436) '- Sight: two clients replay a pose stream, and each client's view
+2026-11-01T00:00:29Z (RFD66606-2436) '- Alone: the program starts and passes its sight gate with every sibling slice absent. Control: a sibling's message planted in the input, which the program must refuse by name.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:08Z (RFD66606-2436) '  lists the other's avatar at the replayed pose. Control: a zone that
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:09Z (RFD66606-2436) '  drops one client's poses.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:10Z (RFD66606-2436) '- Alone: the program starts and passes its sight gate with every
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:11Z (RFD66606-2436) '  sibling slice absent. Control: a sibling's message planted in the
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:12Z (RFD66606-2436) '  input, which the program must refuse by name.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:13Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:14Z (RFD66606-2436) 'Frontier learning picks the runs
+2026-11-01T00:00:30Z (RFD66606-2436) 'Frontier learning picks the runs
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:15Z (RFD66606-2436) 'The slice's gates run as levels in RFD66606-2309's sense, scheduled
+2026-11-01T00:00:31Z (RFD66606-2436) 'The slice's gates run as levels in RFD66606-2309's sense, scheduled the way RFD66606-2323 schedules the store's attacks. A level is an input family with fixed attributes: the number of people in the zone, the pose rate, the client side (stream or desktop), and the loss pattern in the recorded pose stream. A problem is one 5 minute replay of a pose stream with a drawn seed and offset.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:16Z (RFD66606-2436) 'the way RFD66606-2323 schedules the store's attacks. A level is an
+2026-11-01T00:00:32Z (RFD66606-2436) 'Each level, its planted defect, and how the defect shows:
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:17Z (RFD66606-2436) 'input family with fixed attributes: the number of people in the zone,
+2026-11-01T00:00:33Z (RFD66606-2436) '- pose drop: the zone drops one client's poses; seen as a client's view missing the other avatar.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:18Z (RFD66606-2436) 'the pose rate, the client side (stream or desktop), and the loss
+2026-11-01T00:00:34Z (RFD66606-2436) '- pose order: the zone swaps two poses; seen as an avatar at an older pose than the replay.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:19Z (RFD66606-2436) 'pattern in the recorded pose stream. A problem is one 5 minute replay
+2026-11-01T00:00:35Z (RFD66606-2436) '- self echo: the zone lists a person to themselves; seen as a view that lists its own avatar.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:20Z (RFD66606-2436) 'of a pose stream with a drawn seed and offset.
+2026-11-01T00:00:36Z (RFD66606-2436) '- late join: the zone skips the list for a late client; seen as a late client that sees nobody.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:21Z (RFD66606-2436) '
+2026-11-01T00:00:37Z (RFD66606-2436) '- sibling input: a sibling's message is planted; seen as the program accepting it.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:22Z (RFD66606-2436) 'Each level, its planted defect, and how the defect shows:
+2026-11-01T00:00:38Z (RFD66606-2436) 'Each level runs on the slice as it is and on the slice with that level's defect planted. On the planted target, success is the defect found. Regret `1[s ≥ 1] − s/n` over the last eight runs is high when a level finds its defect only some of the time. Mutation moves one attribute and is kept only when the planted find rate rises. A clean run counts only after its level found the planted defect in each of its last eight runs. A finding on the real slice is never averaged into a rate: it stops the lane and becomes a level that runs every time. The runs are guest ELF runs on the CPU guest, which is the parity oracle, so no gate here needs a GPU.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:23Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:24Z (RFD66606-2436) '- pose drop: the zone drops one client's poses; seen as a client's
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:25Z (RFD66606-2436) '  view missing the other avatar.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:26Z (RFD66606-2436) '- pose order: the zone swaps two poses; seen as an avatar at an older
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:27Z (RFD66606-2436) '  pose than the replay.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:28Z (RFD66606-2436) '- self echo: the zone lists a person to themselves; seen as a view
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:29Z (RFD66606-2436) '  that lists its own avatar.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:30Z (RFD66606-2436) '- late join: the zone skips the list for a late client; seen as a late
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:31Z (RFD66606-2436) '  client that sees nobody.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:32Z (RFD66606-2436) '- sibling input: a sibling's message is planted; seen as the program
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:33Z (RFD66606-2436) '  accepting it.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:34Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:35Z (RFD66606-2436) 'Each level runs on the slice as it is and on the slice with that
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:36Z (RFD66606-2436) 'level's defect planted. On the planted target, success is the defect
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:37Z (RFD66606-2436) 'found. Regret `1[s ≥ 1] − s/n` over the last eight runs is high when a
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:38Z (RFD66606-2436) 'level finds its defect only some of the time. Mutation moves one
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:39Z (RFD66606-2436) 'attribute and is kept only when the planted find rate rises. A clean
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:40Z (RFD66606-2436) 'run counts only after its level found the planted defect in each of
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:41Z (RFD66606-2436) 'its last eight runs. A finding on the real slice is never averaged
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:42Z (RFD66606-2436) 'into a rate: it stops the lane and becomes a level that runs every
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:43Z (RFD66606-2436) 'time. The runs are guest ELF runs on the CPU guest, which is the
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:44Z (RFD66606-2436) 'parity oracle, so no gate here needs a GPU.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:45Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:46Z (RFD66606-2436) 'Where the code lands
+2026-11-01T00:00:39Z (RFD66606-2436) 'Where the code lands
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:47Z (RFD66606-2436) 'Each slice is a repository of its own in our organization, named for
+2026-11-01T00:00:40Z (RFD66606-2436) 'Each slice is a repository of its own in our organization, named for what it does with no game name, and pinned through the repo manifest. It arrives as an ordinary pull request. V-Sekai repositories stay read-only.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:48Z (RFD66606-2436) 'what it does with no game name, and pinned through the repo manifest.
+2026-11-01T00:00:41Z (RFD66606-2436) 'Since 2026-11-13 each part of this slice is a repository of its own too, started anew: the Packet codec, the zone router model, the observer, the curve, the replica, the avatar follower, the relay in C, and the gates that join them on a real body. RFD66606-2493 says where the relay's parts are.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:49Z (RFD66606-2436) 'It arrives as an ordinary pull request. V-Sekai repositories stay
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:50Z (RFD66606-2436) 'read-only.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:51Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:52Z (RFD66606-2436) 'Since 2026-11-13 each part of this slice is a repository of its own
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:53Z (RFD66606-2436) 'too, started anew: the Packet codec, the zone router model, the
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:54Z (RFD66606-2436) 'observer, the curve, the replica, the avatar follower, the relay in C,
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:55Z (RFD66606-2436) 'and the gates that join them on a real body. RFD66606-2493 says where
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:56Z (RFD66606-2436) 'the relay's parts are.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:57Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:01:58Z (RFD66606-2436) 'What has run
+2026-11-01T00:00:42Z (RFD66606-2436) 'What has run
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:01:59Z (RFD66606-2436) 'One real body has crossed the wire inside one process. A clip moves
+2026-11-01T00:00:43Z (RFD66606-2436) 'One real body has crossed the wire inside one process. A clip moves the muscle skeleton, its 21 parts go as Packets through the router model, the observers and the curve, and a second ANNY is posed from them 12 ticks behind. All 21 parts were drawn and no honest frame was refused. A part was 0.21 mm from the sender's on average and 9.1 mm at worst, and its rotation up to 185 milliradians off, because a rotation has no rate on the wire. Three planted defects each made the largest error at least forty times worse.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:00Z (RFD66606-2436) 'the muscle skeleton, its 21 parts go as Packets through the router
+2026-11-01T00:00:44Z (RFD66606-2436) 'A position is whole micrometres on the wire and is never a float, so a body 8 billion kilometres from zero comes back within a micrometre, under a hair (operator, 2026-11-13).
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:01Z (RFD66606-2436) 'model, the observers and the curve, and a second ANNY is posed from
+2026-11-01T00:00:45Z (RFD66606-2436) 'Not yet run: four bodies with the judgement of four parties, the clients as separate programs through the relay, feet that the floor carries, and a stick in place of a clip.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:02Z (RFD66606-2436) 'them 12 ticks behind. All 21 parts were drawn and no honest frame was
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:03Z (RFD66606-2436) 'refused. A part was 0.21 mm from the sender's on average and 9.1 mm at
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:04Z (RFD66606-2436) 'worst, and its rotation up to 185 milliradians off, because a rotation
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:05Z (RFD66606-2436) 'has no rate on the wire. Three planted defects each made the largest
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:06Z (RFD66606-2436) 'error at least forty times worse.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:07Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:08Z (RFD66606-2436) 'A position is whole micrometres on the wire and is never a float, so a
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:09Z (RFD66606-2436) 'body 8 billion kilometres from zero comes back within a micrometre,
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:10Z (RFD66606-2436) 'under a hair (operator, 2026-11-13).
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:11Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:12Z (RFD66606-2436) 'Not yet run: four bodies with the judgement of four parties, the
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:13Z (RFD66606-2436) 'clients as separate programs through the relay, feet that the floor
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:14Z (RFD66606-2436) 'carries, and a stick in place of a clip.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:15Z (RFD66606-2436) '
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:16Z (RFD66606-2436) 'What is not known
+2026-11-01T00:00:46Z (RFD66606-2436) 'What is not known
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:17Z (RFD66606-2436) '- How a rotation should be drawn between two sends. The shortest arc
+2026-11-01T00:00:47Z (RFD66606-2436) '- How a rotation should be drawn between two sends. The shortest arc does not follow a fast hand.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:18Z (RFD66606-2436) '  does not follow a fast hand.
+2026-11-01T00:00:48Z (RFD66606-2436) '- Whether a zone holds the pose rate for two people. Nothing has run, and no number is claimed.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:19Z (RFD66606-2436) '- Whether a zone holds the pose rate for two people. Nothing has run,
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:20Z (RFD66606-2436) '  and no number is claimed.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:21Z (RFD66606-2436) 'The problem
+2026-11-01T00:00:49Z (RFD66606-2436) 'The problem
  # tags: rfd:details-heading
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:22Z (RFD66606-2436) 'RFD66606-2360 lists four features and names no way to build one
+2026-11-01T00:00:50Z (RFD66606-2436) 'RFD66606-2360 lists four features and names no way to build one without the others.
  # tags: rfd:details
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:23Z (RFD66606-2436) 'without the others.
- # tags: rfd:details
- Text:RFD2436  1 LINE
- Text:Written
-
-2026-11-01T00:02:24Z (RFD66606-2436) '2351
+2026-11-01T00:00:51Z (RFD66606-2436) '2351
  # tags: rebac:verbs-from
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:25Z (RFD66606-2436) 'rfd-2436 provides see-each-other
+2026-11-01T00:00:52Z (RFD66606-2436) 'rfd-2436 provides see-each-other
  # tags: rebac:relate
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:26Z (RFD66606-2436) 'rfd-2436 spends binary-translated-only-timings
+2026-11-01T00:00:53Z (RFD66606-2436) 'rfd-2436 spends binary-translated-only-timings
  # tags: rebac:relate
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:27Z (RFD66606-2436) 'rfd-2436 spends elf-guest-native-translation
+2026-11-01T00:00:54Z (RFD66606-2436) 'rfd-2436 spends elf-guest-native-translation
  # tags: rebac:relate
  Text:RFD2436  1 LINE
  Text:Written
 
-2026-11-01T00:02:28Z (RFD66606-2436) 'rfd-2436 is_a native-slice
+2026-11-01T00:00:55Z (RFD66606-2436) 'rfd-2436 is_a native-slice
  # tags: rebac:relate
  Text:RFD2436  1 LINE
  Text:Written

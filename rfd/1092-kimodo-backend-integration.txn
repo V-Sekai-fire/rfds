@@ -14,97 +14,42 @@
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1092) 'The DGX side owns every failure mode, prefetch step, and timeout, in its own ops document,
+2026-08-25T00:00:03Z (RFD66606-1092) 'The DGX side owns every failure mode, prefetch step, and timeout, in its own ops document, not in this repository. An agent debugging a Kimodo job failure needs to know that document exists, and where.
  # tags: rfd:intrigue
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1092) 'not in this repository. An agent debugging a Kimodo job failure needs to know that document
- # tags: rfd:intrigue
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1092) 'exists, and where.
- # tags: rfd:intrigue
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1092) 'Read the DGX-side ops document before debugging a Kimodo job failure.
+2026-08-25T00:00:04Z (RFD66606-1092) 'Read the DGX-side ops document before debugging a Kimodo job failure.
  # tags: rfd:exit
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1092) 'Read the DGX-side ops document first, before debugging a Kimodo job
+2026-08-25T00:00:05Z (RFD66606-1092) 'Read the DGX-side ops document first, before debugging a Kimodo job failure here. Its path: `/home/sifr/3DAIGC-API/memory-bank/kimodo-text-to-motion-ops.md`, on the DGX host, not in this repository.
  # tags: rfd:decision
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1092) 'failure here. Its path:
+2026-08-25T00:00:06Z (RFD66606-1092) 'Run prefetch, restart, and test directly on the DGX. Do not ask the user to run those scripts by hand.
  # tags: rfd:decision
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1092) '`/home/sifr/3DAIGC-API/memory-bank/kimodo-text-to-motion-ops.md`, on
+2026-08-25T00:00:07Z (RFD66606-1092) 'Verified working, this session's own check: job `544b726e…` produced `studio_motion.json`, the expected output.
  # tags: rfd:decision
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1092) 'the DGX host, not in this repository.
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1092) '
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1092) 'Run prefetch, restart, and test directly on the DGX. Do not ask the
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1092) 'user to run those scripts by hand.
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1092) '
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1092) 'Verified working, this session's own check: job `544b726e…`
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1092) 'produced `studio_motion.json`, the expected output.
- # tags: rfd:decision
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1092) '`taskManager.js` dispatches the job. `KimodoMotionPromptBar.jsx`
+2026-08-25T00:00:08Z (RFD66606-1092) '`taskManager.js` dispatches the job. `KimodoMotionPromptBar.jsx` triggers it from the animation bar.
  # tags: rfd:related
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1092) 'triggers it from the animation bar.
- # tags: rfd:related
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1092) 'The problem
+2026-08-25T00:00:09Z (RFD66606-1092) 'The problem
  # tags: rfd:details-heading
  Text:RFD1092  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1092) 'The frontend triggers text-to-motion through
- # tags: rfd:details
- Text:RFD1092  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1092) '`KimodoMotionPromptBar.jsx` and `taskManager.js`.
+2026-08-25T00:00:10Z (RFD66606-1092) 'The frontend triggers text-to-motion through `KimodoMotionPromptBar.jsx` and `taskManager.js`.
  # tags: rfd:details
  Text:RFD1092  1 LINE
  Text:Written

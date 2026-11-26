@@ -19,82 +19,32 @@
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2473) '`shortestOf` raises a bound on the number of actions until a plan reaches its goals, through
+2026-11-07T00:00:04Z (RFD66606-2473) '`shortestOf` raises a bound on the number of actions until a plan reaches its goals, through a backtracking decomposition. That search is exhaustive at each bound, so the whole search is exponential: fine for the Sussman anomaly at six actions, too slow for 16 cubes.
  # tags: rfd:intrigue
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2473) 'a backtracking decomposition. That search is exhaustive at each bound, so the whole search is
- # tags: rfd:intrigue
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2473) 'exponential: fine for the Sussman anomaly at six actions, too slow for 16 cubes.
- # tags: rfd:intrigue
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2473) 'Run the blocks-world domain at 16 cubes under a wall-clock budget. A plan that returns within
+2026-11-07T00:00:05Z (RFD66606-2473) 'Run the blocks-world domain at 16 cubes under a wall-clock budget. A plan that returns within budget, at the same length an exhaustive search would find, passes.
  # tags: rfd:exit
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2473) 'budget, at the same length an exhaustive search would find, passes.
- # tags: rfd:exit
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2473) 'Add three heuristics to the bound-raising search, each kept only if it holds plan length
+2026-11-07T00:00:06Z (RFD66606-2473) 'Add three heuristics to the bound-raising search, each kept only if it holds plan length unchanged while cutting search time:
  # tags: rfd:decision
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2473) 'unchanged while cutting search time:
+2026-11-07T00:00:07Z (RFD66606-2473) '- A lower bound supplied by the domain (admissible, so the rising bound starts higher and prunes branches that cannot reach a shorter plan).
  # tags: rfd:decision
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2473) '- A lower bound supplied by the domain (admissible, so the rising bound starts higher and
+2026-11-07T00:00:08Z (RFD66606-2473) '- Memoising failed (state, bound) pairs, so a branch already shown to fail at a bound is never re-explored at that bound.
  # tags: rfd:decision
  Text:RFD2473  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2473) '  prunes branches that cannot reach a shorter plan).
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2473) '- Memoising failed (state, bound) pairs, so a branch already shown to fail at a bound is never
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2473) '  re-explored at that bound.
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2473) '- Ordering alternatives by a heuristic, so the search tries the branch most likely to reach the
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2473) '  goal first, before the branches it would otherwise explore in declaration order.
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2473) 'Each heuristic ships behind its own control: a planted domain that breaks admissibility, a
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2473) 'planted stale memo entry, and a planted heuristic that always ranks last, each of which must
- # tags: rfd:decision
- Text:RFD2473  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2473) 'make its gate fail.
+2026-11-07T00:00:09Z (RFD66606-2473) '- Ordering alternatives by a heuristic, so the search tries the branch most likely to reach the goal first, before the branches it would otherwise explore in declaration order. Each heuristic ships behind its own control: a planted domain that breaks admissibility, a planted stale memo entry, and a planted heuristic that always ranks last, each of which must make its gate fail.
  # tags: rfd:decision
  Text:RFD2473  1 LINE
  Text:Written

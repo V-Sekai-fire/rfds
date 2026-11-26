@@ -19,77 +19,52 @@
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2388) 'Check that a Linux build for the servers comes from the matrix's `linux-x86_64` job in the
+2026-10-31T00:00:04Z (RFD66606-2388) 'Check that a Linux build for the servers comes from the matrix's `linux-x86_64` job in the workflow.
  # tags: rfd:exit
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2388) 'workflow.
- # tags: rfd:exit
- Text:RFD2388  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2388) 'the servers' Linux double build comes only from the workflow
+2026-10-31T00:00:05Z (RFD66606-2388) 'the servers' Linux double build comes only from the workflow
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2388) '- Linux x86_64 double, the servers' build, comes only from the workflow: the matrix's
+2026-10-31T00:00:06Z (RFD66606-2388) '- Linux x86_64 double, the servers' build, comes only from the workflow: the matrix's `linux-x86_64` job is the servers' one Linux build, it runs `--headless` in the Fly image, and the pen's headless gates run on the `ubuntu` runner.
  # tags: rfd:decision
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2388) '  `linux-x86_64` job is the servers' one Linux build, it runs `--headless` in the Fly image, and
- # tags: rfd:decision
- Text:RFD2388  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2388) '  the pen's headless gates run on the `ubuntu` runner.
- # tags: rfd:decision
- Text:RFD2388  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2388) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2388) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2388) 'The Frame's own Linux path
+2026-10-31T00:00:08Z (RFD66606-2388) 'The Frame's own Linux path
  # tags: rfd:details-heading
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2388) 'The Frame's own Linux path, the compatibility layer's missing XCursor and xkbcommon, is a
+2026-10-31T00:00:09Z (RFD66606-2388) 'The Frame's own Linux path, the compatibility layer's missing XCursor and xkbcommon, is a runtime `dlopen`.
  # tags: rfd:details
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2388) 'runtime
- # tags: rfd:details
- Text:RFD2388  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2388) '`dlopen`.
- # tags: rfd:details
- Text:RFD2388  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2388) '2351
+2026-10-31T00:00:10Z (RFD66606-2388) '2351
  # tags: rebac:verbs-from
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2388) 'rfd-2388 provides workflow-only-linux-double
+2026-10-31T00:00:11Z (RFD66606-2388) 'rfd-2388 provides workflow-only-linux-double
  # tags: rebac:relate
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2388) 'rfd-2388 spends actions-builds-double-binaries
+2026-10-31T00:00:12Z (RFD66606-2388) 'rfd-2388 spends actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2388  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2388) 'rfd-2388 is_a ci-gate
+2026-10-31T00:00:13Z (RFD66606-2388) 'rfd-2388 is_a ci-gate
  # tags: rebac:relate
  Text:RFD2388  1 LINE
  Text:Written

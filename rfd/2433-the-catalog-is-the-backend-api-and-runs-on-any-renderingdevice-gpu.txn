@@ -19,72 +19,47 @@
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2433) 'Reach a module from the native shell over plain HTTP at `/health` and `/predict`, or in
+2026-10-31T00:00:04Z (RFD66606-2433) 'Reach a module from the native shell over plain HTTP at `/health` and `/predict`, or in process with `Ggml.run_inference()` when its adapter is loaded in the binary.
  # tags: rfd:exit
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2433) 'process with `Ggml.run_inference()` when its adapter is loaded in the binary.
- # tags: rfd:exit
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2433) 'the catalog is the backend API and runs on any RenderingDevice GPU
+2026-10-31T00:00:05Z (RFD66606-2433) 'the catalog is the backend API and runs on any RenderingDevice GPU
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2433) '- This catalog is the backend API. The native shell (RFD66606-2215) calls
+2026-10-31T00:00:06Z (RFD66606-2433) '- This catalog is the backend API. The native shell (RFD66606-2215) calls each module's `/health` and `/predict` over plain HTTP, or `Ggml.run_inference()` in process for an adapter loaded in the binary.
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2433) '  each module's `/health` and `/predict` over plain HTTP, or `Ggml.run_inference()` in process
+2026-10-31T00:00:07Z (RFD66606-2433) '- The backend does not depend on one GPU vendor. Inference runs on ggml-rd and other kernels on compute-rd, both dispatched through Godot's RenderingDevice, so a module runs on any GPU the RenderingDevice drives (RFD66606-2272, RFD66606-2265).
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2433) '  for an adapter loaded in the binary.
- # tags: rfd:decision
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2433) '- The backend does not depend on one GPU vendor. Inference runs on ggml-rd and other kernels on
- # tags: rfd:decision
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2433) '  compute-rd, both dispatched through Godot's RenderingDevice, so a module runs on any GPU the
- # tags: rfd:decision
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2433) '  RenderingDevice drives (RFD66606-2272, RFD66606-2265).
- # tags: rfd:decision
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2433) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2433) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2433) '- RFD66606-2215, the native shell.
+2026-10-31T00:00:09Z (RFD66606-2433) '- RFD66606-2215, the native shell.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2433) '- RFD66606-2272, RFD66606-2265, the RenderingDevice dispatch.
+2026-10-31T00:00:10Z (RFD66606-2433) '- RFD66606-2272, RFD66606-2265, the RenderingDevice dispatch.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2433) 'The endpoint reference
+2026-10-31T00:00:11Z (RFD66606-2433) 'The endpoint reference
  # tags: rfd:details-heading
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2433) 'The per-task table in RFD66606-1102 is the endpoint reference.
+2026-10-31T00:00:12Z (RFD66606-2433) 'The per-task table in RFD66606-1102 is the endpoint reference.
  # tags: rfd:details
  Text:RFD2433  1 LINE
  Text:Written

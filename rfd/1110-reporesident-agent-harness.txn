@@ -4,482 +4,282 @@
  RFD:Committed  1 RFD
  Serials:Weftspun
 
-2026-08-25T00:00:01Z (RFD66606-1110) '`CLAUDE.md`, `AGENTS.md`, `.agent/` (`STATE.md`, `MAP.md`, `PROJECT.md`,
- # tags: rfd:scope
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:02Z (RFD66606-1110) '`DECISIONS.md`, `ISSUES.md`, `workflows/`, `designs/`, `areas/`, `journal/`, `scratch/`)
+2026-08-25T00:00:01Z (RFD66606-1110) '`CLAUDE.md`, `AGENTS.md`, `.agent/` (`STATE.md`, `MAP.md`, `PROJECT.md`, `DECISIONS.md`, `ISSUES.md`, `workflows/`, `designs/`, `areas/`, `journal/`, `scratch/`)
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1110) 'An agent session loads five capped layers of files, not the whole project.
+2026-08-25T00:00:02Z (RFD66606-1110) 'An agent session loads five capped layers of files, not the whole project.
  # tags: rfd:hook
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1110) 'A coding agent session that loads every project file, every closed issue, and every past
+2026-08-25T00:00:03Z (RFD66606-1110) 'A coding agent session that loads every project file, every closed issue, and every past design spends context on history instead of the current task.
  # tags: rfd:intrigue
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1110) 'design spends context on history instead of the current task.
- # tags: rfd:intrigue
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1110) 'Read below for the file map, the context-layer table, the workflow-selection rules, and the
+2026-08-25T00:00:04Z (RFD66606-1110) 'Read below for the file map, the context-layer table, the workflow-selection rules, and the technical decisions from `DECISIONS.md` not already covered by another RFD.
  # tags: rfd:exit
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1110) 'technical decisions from `DECISIONS.md` not already covered by another RFD.
- # tags: rfd:exit
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1110) 'RepoResident, a file-based operating harness for coding agents
+2026-08-25T00:00:05Z (RFD66606-1110) 'RepoResident, a file-based operating harness for coding agents
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1110) 'Weftspun3DStudio adopted RepoResident on 2026-07-23, replacing an
+2026-08-25T00:00:06Z (RFD66606-1110) 'Weftspun3DStudio adopted RepoResident on 2026-07-23, replacing an earlier "MindLink" personal-memory approach, now archived to `.agent/areas/mindlink.md`. Context loads in five capped layers: `CLAUDE.md` (operating rules, every session), `STATE.md` (current state, rewritten in full each session, every session), one workflow file matched to the task, then project facts and decisions, then targeted source. Five roles (Architect, Builder, Fixer, Reviewer, Curator) carry different rules for the same repository, not conversational personas. `STATE.md` stays a live handoff, not a decision record; it holds no lasting content and does not become part of this RFD.
  # tags: rfd:decision
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1110) 'earlier "MindLink" personal-memory approach, now archived to
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1110) '`.agent/areas/mindlink.md`. Context loads in five capped layers:
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1110) '`CLAUDE.md` (operating rules, every session), `STATE.md` (current
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1110) 'state, rewritten in full each session, every session), one workflow
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1110) 'file matched to the task, then project facts and decisions, then
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1110) 'targeted source. Five roles (Architect, Builder, Fixer, Reviewer,
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1110) 'Curator) carry different rules for the same repository, not
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1110) 'conversational personas. `STATE.md` stays a live handoff, not a
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1110) 'decision record; it holds no lasting content and does not become
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1110) 'part of this RFD.
- # tags: rfd:decision
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1110) 'RFD66606-1086 gives the Surface/DGX topology `PROJECT.md`'s sync-ownership
+2026-08-25T00:00:07Z (RFD66606-1110) 'RFD66606-1086 gives the Surface/DGX topology `PROJECT.md`'s sync-ownership rule depends on. RFD66606-1099 gives the operator command cheat sheet this harness's workflows point to for exact commands.
  # tags: rfd:related
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1110) 'rule depends on. RFD66606-1099 gives the operator command cheat sheet this
- # tags: rfd:related
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1110) 'harness's workflows point to for exact commands.
- # tags: rfd:related
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1110) 'File map
+2026-08-25T00:00:08Z (RFD66606-1110) 'File map
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1110) '| File                    | Role                                                        | Loaded                          |
+2026-08-25T00:00:09Z (RFD66606-1110) '| File                    | Role                                                        | Loaded                          |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1110) '| ----------------------- | ----------------------------------------------------------- | ------------------------------- |
+2026-08-25T00:00:10Z (RFD66606-1110) '| ----------------------- | ----------------------------------------------------------- | ------------------------------- |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1110) '| `CLAUDE.md`             | Operating rules, protocol, routing, and project facts       | Every session                   |
+2026-08-25T00:00:11Z (RFD66606-1110) '| `CLAUDE.md`             | Operating rules, protocol, routing, and project facts       | Every session                   |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1110) '| `AGENTS.md`             | Entry point for tools using the `AGENTS.md` convention      | Tool dependent                  |
+2026-08-25T00:00:12Z (RFD66606-1110) '| `AGENTS.md`             | Entry point for tools using the `AGENTS.md` convention      | Tool dependent                  |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1110) '| `.agent/STATE.md`       | Current project state and inter-session handoff             | Every session                   |
+2026-08-25T00:00:13Z (RFD66606-1110) '| `.agent/STATE.md`       | Current project state and inter-session handoff             | Every session                   |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1110) '| `.agent/MAP.md`         | Compact module and directory map                            | When locating code              |
+2026-08-25T00:00:14Z (RFD66606-1110) '| `.agent/MAP.md`         | Compact module and directory map                            | When locating code              |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1110) '| `.agent/PROJECT.md`     | Architecture, constraints, glossary, and project-wide risks | Feature work or confusion       |
+2026-08-25T00:00:15Z (RFD66606-1110) '| `.agent/PROJECT.md`     | Architecture, constraints, glossary, and project-wide risks | Feature work or confusion       |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1110) '| `.agent/DECISIONS.md`   | Binding technical choices with reasons                      | Before design work              |
+2026-08-25T00:00:16Z (RFD66606-1110) '| `.agent/DECISIONS.md`   | Binding technical choices with reasons                      | Before design work              |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1110) '| `.agent/ISSUES.md`      | Bounded backlog for bugs, debt, and deferred work           | Before design or work selection |
+2026-08-25T00:00:17Z (RFD66606-1110) '| `.agent/ISSUES.md`      | Bounded backlog for bugs, debt, and deferred work           | Before design or work selection |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1110) '| `.agent/workflows/*.md` | Procedures for task categories                              | One per task                    |
+2026-08-25T00:00:18Z (RFD66606-1110) '| `.agent/workflows/*.md` | Procedures for task categories                              | One per task                    |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1110) '| `.agent/designs/`       | Active and archived feature designs                         | Active design only              |
+2026-08-25T00:00:19Z (RFD66606-1110) '| `.agent/designs/`       | Active and archived feature designs                         | Active design only              |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1110) '| `.agent/areas/`         | Optional deep documentation for complex modules             | When working in that area       |
+2026-08-25T00:00:20Z (RFD66606-1110) '| `.agent/areas/`         | Optional deep documentation for complex modules             | When working in that area       |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1110) '| `.agent/journal/`       | Append-only session outcomes                                | Written at session close        |
+2026-08-25T00:00:21Z (RFD66606-1110) '| `.agent/journal/`       | Append-only session outcomes                                | Written at session close        |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1110) '| `.agent/scratch/`       | Ignored temporary investigation notes                       | Only while active               |
+2026-08-25T00:00:22Z (RFD66606-1110) '| `.agent/scratch/`       | Ignored temporary investigation notes                       | Only while active               |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1110) 'Context layers
+2026-08-25T00:00:23Z (RFD66606-1110) 'Context layers
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1110) '| Layer | Content                                                             |
+2026-08-25T00:00:24Z (RFD66606-1110) '| Layer | Content                                                             |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1110) '| ----- | ------------------------------------------------------------------- |
+2026-08-25T00:00:25Z (RFD66606-1110) '| ----- | ------------------------------------------------------------------- |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1110) '| L0    | `CLAUDE.md`, the operating manual                                   |
+2026-08-25T00:00:26Z (RFD66606-1110) '| L0    | `CLAUDE.md`, the operating manual                                   |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1110) '| L1    | `STATE.md`, the current project state                               |
+2026-08-25T00:00:27Z (RFD66606-1110) '| L1    | `STATE.md`, the current project state                               |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1110) '| L2    | One workflow for the current request                                |
+2026-08-25T00:00:28Z (RFD66606-1110) '| L2    | One workflow for the current request                                |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1110) '| L3    | Map, project facts, decisions, issues, area docs, and active design |
+2026-08-25T00:00:29Z (RFD66606-1110) '| L3    | Map, project facts, decisions, issues, area docs, and active design |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1110) '| L4    | Targeted source code                                                |
+2026-08-25T00:00:30Z (RFD66606-1110) '| L4    | Targeted source code                                                |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1110) 'Working roles
+2026-08-25T00:00:31Z (RFD66606-1110) 'Working roles
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1110) 'Rules for a phase, not conversational personas.
+2026-08-25T00:00:32Z (RFD66606-1110) 'Rules for a phase, not conversational personas.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1110) '
+2026-08-25T00:00:33Z (RFD66606-1110) '- **Architect:** scopes and designs without writing implementation code.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1110) '- **Architect:** scopes and designs without writing implementation code.
+2026-08-25T00:00:34Z (RFD66606-1110) '- **Builder:** implements an approved design without changing its structure silently.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1110) '- **Builder:** implements an approved design without changing its structure silently.
+2026-08-25T00:00:35Z (RFD66606-1110) '- **Fixer:** makes the smallest complete correction and avoids unrelated refactoring.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1110) '- **Fixer:** makes the smallest complete correction and avoids unrelated refactoring.
+2026-08-25T00:00:36Z (RFD66606-1110) '- **Reviewer:** reports verified findings and does not rewrite unless asked.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1110) '- **Reviewer:** reports verified findings and does not rewrite unless asked.
+2026-08-25T00:00:37Z (RFD66606-1110) '- **Curator:** maintains the harness and its bounded knowledge files.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1110) '- **Curator:** maintains the harness and its bounded knowledge files.
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1110) 'Workflow selection
+2026-08-25T00:00:38Z (RFD66606-1110) 'Workflow selection
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1110) '| Workflow       | For                                                                                                                |
+2026-08-25T00:00:39Z (RFD66606-1110) '| Workflow       | For                                                                                                                |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1110) '| -------------- | ------------------------------------------------------------------------------------------------------------------ |
+2026-08-25T00:00:40Z (RFD66606-1110) '| -------------- | ------------------------------------------------------------------------------------------------------------------ |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1110) '| `bootstrap.md` | First session on a new or adopted project; `CLAUDE.md` still has `<fill>` placeholders, or `STATE.md` Session is 0 |
+2026-08-25T00:00:41Z (RFD66606-1110) '| `bootstrap.md` | First session on a new or adopted project; `CLAUDE.md` still has `<fill>` placeholders, or `STATE.md` Session is 0 |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1110) '| `patch.md`     | Small fix, cause known or trivially findable, no interface change, at most two files                               |
+2026-08-25T00:00:42Z (RFD66606-1110) '| `patch.md`     | Small fix, cause known or trivially findable, no interface change, at most two files                               |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1110) '| `debug.md`     | A defect whose cause is unknown; output is a named root cause with evidence, then `patch.md` or `feature.md`       |
+2026-08-25T00:00:43Z (RFD66606-1110) '| `debug.md`     | A defect whose cause is unknown; output is a named root cause with evidence, then `patch.md` or `feature.md`       |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1110) '| `feature.md`   | New capability, or any change touching more than two files or any interface/schema/dependency                      |
+2026-08-25T00:00:44Z (RFD66606-1110) '| `feature.md`   | New capability, or any change touching more than two files or any interface/schema/dependency                      |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1110) '| `refactor.md`  | Structure improvement with zero behavior change; a bug found mid-refactor gets parked, not bundled                 |
+2026-08-25T00:00:45Z (RFD66606-1110) '| `refactor.md`  | Structure improvement with zero behavior change; a bug found mid-refactor gets parked, not bundled                 |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1110) '| `review.md`    | Reviewing a diff, PR, or branch; best run fresh, from a session that did not write the code                        |
+2026-08-25T00:00:46Z (RFD66606-1110) '| `review.md`    | Reviewing a diff, PR, or branch; best run fresh, from a session that did not write the code                        |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1110) '| `maintain.md`  | Every tenth session, or when a size budget is blown, or the user asks; checks the harness against the repository   |
+2026-08-25T00:00:47Z (RFD66606-1110) '| `maintain.md`  | Every tenth session, or when a size budget is blown, or the user asks; checks the harness against the repository   |
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1110) '
+2026-08-25T00:00:48Z (RFD66606-1110) '`feature.md`'s exit test: if a change has a single known site, no interface change, and obvious verification, it downgrades to `patch.md`. `patch.md` escalates to `feature.md` the moment an interface or schema must change, or the fix wants more than two files; it escalates to `debug.md` the moment five files are read and the cause still cannot be named with evidence.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1110) '`feature.md`'s exit test: if a change has a single known site, no
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1110) 'interface change, and obvious verification, it downgrades to
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1110) '`patch.md`. `patch.md` escalates to `feature.md` the moment an
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1110) 'interface or schema must change, or the fix wants more than two
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1110) 'files; it escalates to `debug.md` the moment five files are read and
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1110) 'the cause still cannot be named with evidence.
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1110) 'Technical decisions not covered by another RFD
+2026-08-25T00:00:49Z (RFD66606-1110) 'Technical decisions not covered by another RFD
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1110) 'From `.agent/DECISIONS.md`, append-only, project-specific choices
+2026-08-25T00:00:50Z (RFD66606-1110) 'From `.agent/DECISIONS.md`, append-only, project-specific choices this repository's own numbered RFDs do not yet record:
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1110) 'this repository's own numbered RFDs do not yet record:
+2026-08-25T00:00:51Z (RFD66606-1110) '- **2026-07-26, XR disembody:** the avatar exits at the exit spot facing the headset, the viewer stands one meter behind, and Move-to-Viewpoint, X, and the stick-click all work without opening a menu. Embody never shifts the rig's Y position. Reason: user-confirmed on the Galaxy XR editing flow.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1110) '
+2026-08-25T00:00:52Z (RFD66606-1110) '- **2026-07-26, LingBot Gaussian-splat worlds:** these use Spark with `orientationMode: none`, never an XYZRGB point stride, since the wrong stride scatters points. Gravity-aligned point clouds must not receive TripoSplat's X-flip.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1110) '- **2026-07-26, XR disembody:** the avatar exits at the exit spot
+2026-08-25T00:00:53Z (RFD66606-1110) '- **2026-06-26, API↔client contracts:** must land together, since `models.yaml` and `aiModelsCatalog.js`/`taskManager.js` describe the same models from two sides.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1110) '  facing the headset, the viewer stands one meter behind, and
+2026-08-25T00:00:54Z (RFD66606-1110) 'Decisions already carried by other RFDs, not repeated here: UI on the Surface, API on the DGX (RFD66606-1086); scp-based sync with no agent git push (RFD66606-1086, RFD66606-1099); RepoResident's own adoption, replacing MindLink (this RFD's README).
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1110) '  Move-to-Viewpoint, X, and the stick-click all work without opening
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1110) '  a menu. Embody never shifts the rig's Y position. Reason:
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1110) '  user-confirmed on the Galaxy XR editing flow.
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1110) '- **2026-07-26, LingBot Gaussian-splat worlds:** these use Spark with
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1110) '  `orientationMode: none`, never an XYZRGB point stride, since the
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1110) '  wrong stride scatters points. Gravity-aligned point clouds must not
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1110) '  receive TripoSplat's X-flip.
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1110) '- **2026-06-26, API↔client contracts:** must land together, since
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1110) '  `models.yaml` and `aiModelsCatalog.js`/`taskManager.js` describe
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1110) '  the same models from two sides.
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1110) '
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-1110) 'Decisions already carried by other RFDs, not repeated here: UI on
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1110) 'the Surface, API on the DGX (RFD66606-1086); scp-based sync with no agent
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1110) 'git push (RFD66606-1086, RFD66606-1099); RepoResident's own adoption,
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1110) 'replacing MindLink (this RFD's README).
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1110) 'The problem
+2026-08-25T00:00:55Z (RFD66606-1110) 'The problem
  # tags: rfd:details-heading
  Text:RFD1110  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-1110) 'Without a named procedure per task type, agents
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1110) 'improvise process, and a large model and a small model handle
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1110) 'ambiguity differently. Without a place for state to persist,
- # tags: rfd:details
- Text:RFD1110  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1110) 'knowledge learned in one session does not reach the next.
+2026-08-25T00:00:56Z (RFD66606-1110) 'Without a named procedure per task type, agents improvise process, and a large model and a small model handle ambiguity differently. Without a place for state to persist, knowledge learned in one session does not reach the next.
  # tags: rfd:details
  Text:RFD1110  1 LINE
  Text:Written

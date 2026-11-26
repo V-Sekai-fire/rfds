@@ -19,302 +19,122 @@
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1144) 'A filename that matches no key is skipped without a word, so a run reports success and
+2026-08-25T00:00:04Z (RFD66606-1144) 'A filename that matches no key is skipped without a word, so a run reports success and edits nothing.
  # tags: rfd:intrigue
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1144) 'edits nothing.
- # tags: rfd:intrigue
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1144) 'Check each quantity in `fourloops-plan.usda` against the measurements below.
+2026-08-25T00:00:05Z (RFD66606-1144) 'Check each quantity in `fourloops-plan.usda` against the measurements below.
  # tags: rfd:exit
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1144) 'The image-to-OmniGen2 loop
+2026-08-25T00:00:06Z (RFD66606-1144) 'The image-to-OmniGen2 loop
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1144) 'Loop 2 exercises OmniGen2 and EditScore with nothing else in the way, so its
+2026-08-25T00:00:07Z (RFD66606-1144) 'Loop 2 exercises OmniGen2 and EditScore with nothing else in the way, so its numbers are the ones the plan layers check their quantities against. Both `fourloops-plan.usda` and `fourloops-etnf.usda` name this file as a source.
  # tags: rfd:details-preamble
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1144) 'numbers are the ones the plan layers check their quantities against. Both
+2026-08-25T00:00:08Z (RFD66606-1144) 'Measured on the desk described in `logbook-fourloops-first-runs.md`, which holds the apparatus and the runs these are lifted from.
  # tags: rfd:details-preamble
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1144) '`fourloops-plan.usda` and `fourloops-etnf.usda` name this file as a source.
- # tags: rfd:details-preamble
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1144) '
- # tags: rfd:details-preamble
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1144) 'Measured on the desk described in `logbook-fourloops-first-runs.md`, which holds
- # tags: rfd:details-preamble
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1144) 'the apparatus and the runs these are lifted from.
- # tags: rfd:details-preamble
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1144) 'Run loop 2 first among the four, and let it carry the measurements.
+2026-08-25T00:00:09Z (RFD66606-1144) 'Run loop 2 first among the four, and let it carry the measurements.
  # tags: rfd:decision
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1144) '
+2026-08-25T00:00:10Z (RFD66606-1144) '**The hazard is a silent skip.** The edit instruction comes from a text input rather than from the filename. A filename that matches no key is skipped without a word, which produces a run that reports success and edits nothing.
  # tags: rfd:decision
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1144) '**The hazard is a silent skip.** The edit instruction comes from a text
+2026-08-25T00:00:11Z (RFD66606-1144) '`DETAILS.md` holds what the first runs measured: what OmniGen2 costs at bf16 and at four bits, what EditScore costs, and what EditScore returns for an instruction the edit actually matched. `fourloops-plan.usda` and `fourloops-etnf.usda` both name that file as a source, so a quantity in either layer is checked against a measurement rather than against a recollection.
  # tags: rfd:decision
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1144) 'input rather than from the filename. A filename that matches no key is
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1144) 'skipped without a word, which produces a run that reports success and
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1144) 'edits nothing.
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1144) '
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1144) '`DETAILS.md` holds what the first runs measured: what OmniGen2 costs at
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1144) 'bf16 and at four bits, what EditScore costs, and what EditScore returns
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1144) 'for an instruction the edit actually matched. `fourloops-plan.usda` and
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1144) '`fourloops-etnf.usda` both name that file as a source, so a quantity in
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1144) 'either layer is checked against a measurement rather than against a
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1144) 'recollection.
- # tags: rfd:decision
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1144) 'RFD66606-1143, RFD66606-1145 and RFD66606-1146 are the other three loops. RFD66606-1128
+2026-08-25T00:00:12Z (RFD66606-1144) 'RFD66606-1143, RFD66606-1145 and RFD66606-1146 are the other three loops. RFD66606-1128 records four-bit tolerance for another model on the same card.
  # tags: rfd:related
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1144) 'records four-bit tolerance for another model on the same card.
- # tags: rfd:related
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1144) 'OmniGen2, and what four bits buys
+2026-08-25T00:00:13Z (RFD66606-1144) 'OmniGen2, and what four bits buys
  # tags: rfd:details-heading
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1144) 'Same input, same seed, 1024 square, 30 steps:
+2026-08-25T00:00:14Z (RFD66606-1144) 'Same input, same seed, 1024 square, 30 steps:
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1144) '
+2026-08-25T00:00:15Z (RFD66606-1144) '| precision | weights   | peak      | seconds |
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1144) '| precision | weights   | peak      | seconds |
+2026-08-25T00:00:16Z (RFD66606-1144) '| --------- | --------- | --------- | ------: |
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1144) '| --------- | --------- | --------- | ------: |
+2026-08-25T00:00:17Z (RFD66606-1144) '| bf16      | 14.75 GiB | 17.14 GiB |     131 |
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1144) '| bf16      | 14.75 GiB | 17.14 GiB |     131 |
+2026-08-25T00:00:18Z (RFD66606-1144) '| NF4       | 4.33 GiB  | 6.72 GiB  |     133 |
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1144) '| NF4       | 4.33 GiB  | 6.72 GiB  |     133 |
+2026-08-25T00:00:19Z (RFD66606-1144) 'Four bits bought memory and cost two seconds. Weights fall to 0.29 of bf16 and peak to 0.39, while the wall time moves from 131 to 133 seconds, which is inside the run-to-run spread and should be read as unchanged rather than as slower.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1144) '
+2026-08-25T00:00:20Z (RFD66606-1144) 'That matters for a 24 GiB desk. At bf16 the peak of 17.14 GiB leaves 6.86 GiB for everything else in the process; at NF4 the peak of 6.72 GiB leaves 17.28. Loop 2 fits either way and loop 4 does not, which is why the plan carries both rows rather than only the one it runs.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1144) 'Four bits bought memory and cost two seconds. Weights fall to 0.29 of bf16 and
+2026-08-25T00:00:21Z (RFD66606-1144) 'CLAUDE.md's generated-synthetic condition 5 decides what may be done with the NF4 row: quantised weights produce no corpus data. So the four-bit form is a way to fit the loop on this desk, and never a way to make data with it. RFD66606-1128 reaches the same place for a different model, and records that four bits bought no speed there either.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1144) 'peak to 0.39, while the wall time moves from 131 to 133 seconds, which is inside
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1144) 'the run-to-run spread and should be read as unchanged rather than as slower.
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1144) '
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1144) 'That matters for a 24 GiB desk. At bf16 the peak of 17.14 GiB leaves 6.86 GiB for
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1144) 'everything else in the process; at NF4 the peak of 6.72 GiB leaves 17.28. Loop 2
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1144) 'fits either way and loop 4 does not, which is why the plan carries both rows
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1144) 'rather than only the one it runs.
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1144) '
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1144) 'CLAUDE.md's generated-synthetic condition 5 decides what may be done with the
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1144) 'NF4 row: quantised weights produce no corpus data. So the four-bit form is a way
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1144) 'to fit the loop on this desk, and never a way to make data with it. RFD66606-1128
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1144) 'reaches the same place for a different model, and records that four bits bought
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1144) 'no speed there either.
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1144) 'Why loop 2 carries the numbers
+2026-08-25T00:00:22Z (RFD66606-1144) 'Why loop 2 carries the numbers
  # tags: rfd:details-heading
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1144) 'Being smallest makes it the one that measures the two components every
+2026-08-25T00:00:23Z (RFD66606-1144) 'Being smallest makes it the one that measures the two components every other loop also uses, so its numbers are the plan's numbers.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1144) 'other loop also uses, so its numbers are the plan's numbers.
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1144) 'What EditScore costs and returns
+2026-08-25T00:00:24Z (RFD66606-1144) 'What EditScore costs and returns
  # tags: rfd:details-heading
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1144) 'RFD66606-1147 holds it. Every loop scores with EditScore and only loops 2 and 3
+2026-08-25T00:00:25Z (RFD66606-1144) 'RFD66606-1147 holds it. Every loop scores with EditScore and only loops 2 and 3 propose with OmniGen2, so the scorer's figures belong to the plan rather than to this loop. `editscoreMatchingOverall`, `editscoreNonsenseOverall`, `editscorePeakGib512` and `editscorePeakGib1024` all resolve there.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1144) 'propose with OmniGen2, so the scorer's figures belong to the plan rather than to
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1144) 'this loop. `editscoreMatchingOverall`, `editscoreNonsenseOverall`,
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1144) '`editscorePeakGib512` and `editscorePeakGib1024` all resolve there.
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1144) 'The problem
+2026-08-25T00:00:26Z (RFD66606-1144) 'The problem
  # tags: rfd:details-heading
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1144) 'Loop 2 is the smallest complete loop: OmniGen2 proposes an edited png,
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1144) 'EditScore scores it, OmniGen2 repairs. One propose stage, one scorer,
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1144) 'one repair arm, size M, and it runs second because the harness is the
- # tags: rfd:details
- Text:RFD1144  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1144) 'only thing it waits on.
+2026-08-25T00:00:27Z (RFD66606-1144) 'Loop 2 is the smallest complete loop: OmniGen2 proposes an edited png, EditScore scores it, OmniGen2 repairs. One propose stage, one scorer, one repair arm, size M, and it runs second because the harness is the only thing it waits on.
  # tags: rfd:details
  Text:RFD1144  1 LINE
  Text:Written

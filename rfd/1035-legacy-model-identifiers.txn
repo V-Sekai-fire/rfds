@@ -14,147 +14,102 @@
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1035) 'Seven model identifiers remain in the code after the TRELLIS.2 move. A reader who sees
+2026-08-25T00:00:03Z (RFD66606-1035) 'Seven model identifiers remain in the code after the TRELLIS.2 move. A reader who sees them in a picker cannot tell them from the current models.
  # tags: rfd:intrigue
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1035) 'them in a picker cannot tell them from the current models.
- # tags: rfd:intrigue
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1035) 'Check that every picker lists the identifiers in `LEGACY_MODEL_IDS` after the current
+2026-08-25T00:00:04Z (RFD66606-1035) 'Check that every picker lists the identifiers in `LEGACY_MODEL_IDS` after the current models, and that none of them is deleted from the code.
  # tags: rfd:exit
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1035) 'models, and that none of them is deleted from the code.
- # tags: rfd:exit
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1035) 'Legacy model identifiers
+2026-08-25T00:00:05Z (RFD66606-1035) 'Legacy model identifiers
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1035) 'Keep the identifiers, and list them last in every picker.
+2026-08-25T00:00:06Z (RFD66606-1035) 'Keep the identifiers, and list them last in every picker. `LEGACY_MODEL_IDS` in src/library/aiModelsCatalog.js drives that order. Do not delete them, because saved tasks reference them.
  # tags: rfd:decision
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1035) '`LEGACY_MODEL_IDS` in src/library/aiModelsCatalog.js drives that
- # tags: rfd:decision
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1035) 'order. Do not delete them, because saved tasks reference them.
- # tags: rfd:decision
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1035) '
- # tags: rfd:decision
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1035) 'RFD66606-1016 lists the active models. RFD66606-1005 records the avatar
+2026-08-25T00:00:07Z (RFD66606-1035) 'RFD66606-1016 lists the active models. RFD66606-1005 records the avatar pipeline. RFD66606-1028 records the license gate.
  # tags: rfd:related
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1035) 'pipeline. RFD66606-1028 records the license gate.
- # tags: rfd:related
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1035) 'The identifiers
+2026-08-25T00:00:08Z (RFD66606-1035) 'The identifiers
  # tags: rfd:details-heading
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1035) '| Model id                       | Task                         |
+2026-08-25T00:00:09Z (RFD66606-1035) '| Model id                       | Task                         |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1035) '| ------------------------------ | ---------------------------- |
+2026-08-25T00:00:10Z (RFD66606-1035) '| ------------------------------ | ---------------------------- |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1035) '| trellis_text_to_textured_mesh  | Text to 3D                   |
+2026-08-25T00:00:11Z (RFD66606-1035) '| trellis_text_to_textured_mesh  | Text to 3D                   |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1035) '| trellis_image_to_textured_mesh | Image to 3D (legacy)         |
+2026-08-25T00:00:12Z (RFD66606-1035) '| trellis_image_to_textured_mesh | Image to 3D (legacy)         |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1035) '| trellis_image_mesh_painting    | Image mesh painting (legacy) |
+2026-08-25T00:00:13Z (RFD66606-1035) '| trellis_image_mesh_painting    | Image mesh painting (legacy) |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1035) '| trellis_text_mesh_painting     | Text mesh painting           |
+2026-08-25T00:00:14Z (RFD66606-1035) '| trellis_text_mesh_painting     | Text mesh painting           |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1035) '| unirig_auto_rig                | Auto rig (template VRM)      |
+2026-08-25T00:00:15Z (RFD66606-1035) '| unirig_auto_rig                | Auto rig (template VRM)      |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1035) '| appearance_component_auto_rig  | Auto rig (appearance)        |
+2026-08-25T00:00:16Z (RFD66606-1035) '| appearance_component_auto_rig  | Auto rig (appearance)        |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1035) '| creature_template_auto_rig     | Auto rig (creature)          |
+2026-08-25T00:00:17Z (RFD66606-1035) '| creature_template_auto_rig     | Auto rig (creature)          |
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1035) 'Two rules stay
+2026-08-25T00:00:18Z (RFD66606-1035) 'Two rules stay
  # tags: rfd:details-heading
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1035) 'TRELLIS v1 fails xformers on GB200-class GPUs. Avoid it on that
+2026-08-25T00:00:19Z (RFD66606-1035) 'TRELLIS v1 fails xformers on GB200-class GPUs. Avoid it on that hardware tier, except for the multiview path.
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1035) 'hardware tier, except for the multiview path.
+2026-08-25T00:00:20Z (RFD66606-1035) 'UniRig is the only backend for the template VRM mode. SkinTokens rejects that mode.
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1035) '
- # tags: rfd:details
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1035) 'UniRig is the only backend for the template VRM mode. SkinTokens
- # tags: rfd:details
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1035) 'rejects that mode.
- # tags: rfd:details
- Text:RFD1035  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1035) 'The problem
+2026-08-25T00:00:21Z (RFD66606-1035) 'The problem
  # tags: rfd:details-heading
  Text:RFD1035  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1035) 'The picker lists the legacy identifiers beside the current models.
+2026-08-25T00:00:22Z (RFD66606-1035) 'The picker lists the legacy identifiers beside the current models.
  # tags: rfd:details
  Text:RFD1035  1 LINE
  Text:Written

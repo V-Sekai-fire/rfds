@@ -4,152 +4,77 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-09-05T00:00:01Z (RFD66606-2216) 'three.js goes on the CLAUDE.md / BLOCKLIST.md
- # tags: rfd:feature
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:02Z (RFD66606-2216) 'blocklist as an in-browser 3D runtime
+2026-09-05T00:00:01Z (RFD66606-2216) 'three.js goes on the CLAUDE.md / BLOCKLIST.md blocklist as an in-browser 3D runtime
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:03Z (RFD66606-2216) '`CLAUDE.md`, `BLOCKLIST.md`, cascade of retirements
- # tags: rfd:scope
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:04Z (RFD66606-2216) 'in consumer files
+2026-09-05T00:00:02Z (RFD66606-2216) '`CLAUDE.md`, `BLOCKLIST.md`, cascade of retirements in consumer files
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:05Z (RFD66606-2216) 'Three.js is blocklisted as an in-browser 3D runtime; Godot ships every 3D surface.
+2026-09-05T00:00:03Z (RFD66606-2216) 'Three.js is blocklisted as an in-browser 3D runtime; Godot ships every 3D surface.
  # tags: rfd:hook
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:06Z (RFD66606-2216) 'A three.js path forks the scene-graph, material pipeline, animation graph, and lighting
+2026-09-05T00:00:04Z (RFD66606-2216) 'A three.js path forks the scene-graph, material pipeline, animation graph, and lighting model that the workspace otherwise ships through Godot.
  # tags: rfd:intrigue
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:07Z (RFD66606-2216) 'model that the workspace otherwise ships through Godot.
- # tags: rfd:intrigue
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:08Z (RFD66606-2216) 'Read RFD66606-2215 next for the one-runtime argument behind this blocklist.
+2026-09-05T00:00:05Z (RFD66606-2216) 'Read RFD66606-2215 next for the one-runtime argument behind this blocklist.
  # tags: rfd:exit
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:09Z (RFD66606-2216) 'Three.js blocklist
+2026-09-05T00:00:06Z (RFD66606-2216) 'Three.js blocklist
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:10Z (RFD66606-2216) 'Blocklist three.js as an in-browser 3D runtime. Substitute is
+2026-09-05T00:00:07Z (RFD66606-2216) 'Blocklist three.js as an in-browser 3D runtime. Substitute is **Godot as a native binary per platform** built from &{repo("entities-godot-sandbox", planned: "4-entities")} with the Vulkan renderer (MoltenVK on macOS).
  # tags: rfd:decision
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:11Z (RFD66606-2216) '**Godot as a native binary per platform** built from
- # tags: rfd:decision
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:12Z (RFD66606-2216) '&{repo("entities-godot-sandbox", planned: "4-entities")} with the Vulkan renderer (MoltenVK on
- # tags: rfd:decision
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:13Z (RFD66606-2216) 'macOS).
- # tags: rfd:decision
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:14Z (RFD66606-2216) '- [RFD66606-2210](../2210-atelier-godot-web-shipping-surface/), L3
+2026-09-05T00:00:08Z (RFD66606-2216) '- [RFD66606-2210](../2210-atelier-godot-web-shipping-surface/), L3 strategic bet.
  # tags: rfd:related
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:15Z (RFD66606-2216) '  strategic bet.
+2026-09-05T00:00:09Z (RFD66606-2216) '- [RFD66606-2211](../2211-base-tree-entities-godot-sandbox/), base tree pick.
  # tags: rfd:related
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:16Z (RFD66606-2216) '- [RFD66606-2211](../2211-base-tree-entities-godot-sandbox/), base
+2026-09-05T00:00:10Z (RFD66606-2216) '- [RFD66606-2215](../2215-one-binary-two-heads/), the "one runtime, not two" argument that also drives this blocklist.
  # tags: rfd:related
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:17Z (RFD66606-2216) '  tree pick.
+2026-09-05T00:00:11Z (RFD66606-2216) '- RFD66606-1170 (cleanroom presence loop), earlier RFD picking Godot over three.js for a different workload.
  # tags: rfd:related
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:18Z (RFD66606-2216) '- [RFD66606-2215](../2215-one-binary-two-heads/), the "one runtime,
- # tags: rfd:related
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:19Z (RFD66606-2216) '  not two" argument that also drives this blocklist.
- # tags: rfd:related
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:20Z (RFD66606-2216) '- RFD66606-1170 (cleanroom presence loop), earlier RFD picking Godot
- # tags: rfd:related
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:21Z (RFD66606-2216) '  over three.js for a different workload.
- # tags: rfd:related
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:22Z (RFD66606-2216) 'The objection
+2026-09-05T00:00:12Z (RFD66606-2216) 'The objection
  # tags: rfd:details-heading
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:23Z (RFD66606-2216) 'Three.js itself is MIT-licensed, the objection is not
+2026-09-05T00:00:13Z (RFD66606-2216) 'Three.js itself is MIT-licensed, the objection is not licence, it is runtime story: the workspace ships every 3D surface via Godot, and a three.js path forks the scene-graph, material pipeline, animation graph, and lighting model.
  # tags: rfd:details
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:24Z (RFD66606-2216) 'licence, it is
- # tags: rfd:details
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:25Z (RFD66606-2216) 'runtime story: the workspace ships every 3D surface via Godot,
- # tags: rfd:details
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:26Z (RFD66606-2216) 'and a three.js path forks the scene-graph, material pipeline,
- # tags: rfd:details
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:27Z (RFD66606-2216) 'animation graph, and lighting model.
- # tags: rfd:details
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:28Z (RFD66606-2216) 'Live rows
+2026-09-05T00:00:14Z (RFD66606-2216) 'Live rows
  # tags: rfd:details-heading
  Text:RFD2216  1 LINE
  Text:Written
 
-2026-09-05T00:00:29Z (RFD66606-2216) '`CLAUDE.md` blocklist table + `BLOCKLIST.md` full
- # tags: rfd:details
- Text:RFD2216  1 LINE
- Text:Written
-
-2026-09-05T00:00:30Z (RFD66606-2216) 'section (the section body carries the argument in current form).
+2026-09-05T00:00:15Z (RFD66606-2216) '`CLAUDE.md` blocklist table + `BLOCKLIST.md` full section (the section body carries the argument in current form).
  # tags: rfd:details
  Text:RFD2216  1 LINE
  Text:Written

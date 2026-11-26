@@ -19,442 +19,167 @@
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1125) 'RFD66606-1000 requires ASD-STE100 for every document here, and that rule was written for one
+2026-08-25T00:00:04Z (RFD66606-1125) 'RFD66606-1000 requires ASD-STE100 for every document here, and that rule was written for one kind of writing but is applied to two.
  # tags: rfd:intrigue
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1125) 'kind of writing but is applied to two.
- # tags: rfd:intrigue
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1125) 'Mark each section with its gate (RFD66606-2361), and run the table against the corpus
+2026-08-25T00:00:05Z (RFD66606-1125) 'Mark each section with its gate (RFD66606-2361), and run the table against the corpus first (RFD66606-2362).
  # tags: rfd:exit
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1125) 'first (RFD66606-2362).
- # tags: rfd:exit
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1125) 'Two prose gates, one for each kind of writing
+2026-08-25T00:00:06Z (RFD66606-1125) 'Two prose gates, one for each kind of writing
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1125) '**Technical writing answers to ASD-STE100**, through the existing enforcer:
+2026-08-25T00:00:07Z (RFD66606-1125) '**Technical writing answers to ASD-STE100**, through the existing enforcer: code comments, error messages, procedures, any measurement or schema.
  # tags: rfd:decision
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1125) 'code comments, error messages, procedures, any measurement or schema.
+2026-08-25T00:00:08Z (RFD66606-1125) '**An essay answers to `seeds/ai_trope.parquet`**, which already exists, seeded from https://tropes.fyi. A `README.md` is an essay throughout. That table assigns READMEs to ASD-STE100 today, and this RFD reverses it.
  # tags: rfd:decision
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1125) '
- # tags: rfd:decision
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1125) '**An essay answers to `seeds/ai_trope.parquet`**, which already exists,
- # tags: rfd:decision
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1125) 'seeded from https://tropes.fyi. A `README.md` is an essay throughout. That
- # tags: rfd:decision
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1125) 'table assigns READMEs to ASD-STE100 today, and this RFD reverses it.
- # tags: rfd:decision
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1125) 'RFD66606-1000 states the rule this supersedes. RFD66606-1063 moved enforcement to a
+2026-08-25T00:00:09Z (RFD66606-1125) 'RFD66606-1000 states the rule this supersedes. RFD66606-1063 moved enforcement to a write-time hook, so this adds a hook and not a script. RFD66606-1124 gives the measure-first rule, and the reason these gates read an AST. RFD66606-2361 marks sections, and RFD66606-2362 measures the AI-trope table.
  # tags: rfd:related
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1125) 'write-time hook, so this adds a hook and not a script. RFD66606-1124 gives the
- # tags: rfd:related
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1125) 'measure-first rule, and the reason these gates read an AST.
- # tags: rfd:related
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1125) 'RFD66606-2361 marks sections, and RFD66606-2362 measures the AI-trope table.
- # tags: rfd:related
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1125) 'Why the rule was split
+2026-08-25T00:00:10Z (RFD66606-1125) 'Why the rule was split
  # tags: rfd:details-heading
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1125) '<!-- gate: tropes -->
+2026-08-25T00:00:11Z (RFD66606-1125) '<!-- gate: tropes -->
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1125) '
+2026-08-25T00:00:12Z (RFD66606-1125) 'The blanket rule was not wrong when it was written. It was written for one kind of document, and the repository then grew a second kind without anyone noticing that the rule had stopped fitting.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1125) 'The blanket rule was not wrong when it was written. It was written for one kind
+2026-08-25T00:00:13Z (RFD66606-1125) 'ASD-STE100 exists so a maintenance technician reading in their second language can take a procedure and act on it correctly the first time. Every constraint it carries serves that: bounded sentences, one approved term per referent, no contractions, no ambiguity about what a pronoun points at. Applied to a schema table or an install step, those constraints are exactly right.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1125) 'of document, and the repository then grew a second kind without anyone noticing
+2026-08-25T00:00:14Z (RFD66606-1125) 'Applied to an argument they remove the structure of its reasons. A decision persuades through how its reasons sit against each other, and a controlled vocabulary flattens that into a list of assertions. The reader loses the ability to tell a load-bearing claim from an incidental one.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1125) 'that the rule had stopped fitting.
+2026-08-25T00:00:15Z (RFD66606-1125) 'The failure an essay actually has is one ASD-STE100 says nothing about. An essay fails by reading as though nobody wrote it. The tropes.fyi catalog names that failure, which is why a second gate buys something instead of duplicating the first.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1125) 'ASD-STE100 exists so a maintenance technician reading in their second language
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1125) 'can take a procedure and act on it correctly the first time. Every constraint it
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1125) 'carries serves that: bounded sentences, one approved term per referent, no
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1125) 'contractions, no ambiguity about what a pronoun points at. Applied to a schema
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1125) 'table or an install step, those constraints are exactly right.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1125) 'Applied to an argument they remove the structure of its reasons. A decision
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1125) 'persuades through how its reasons sit against each other, and a controlled
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1125) 'vocabulary flattens that into a list of assertions. The reader loses the ability
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1125) 'to tell a load-bearing claim from an incidental one.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1125) 'The failure an essay actually has is one ASD-STE100 says nothing about. An essay
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1125) 'fails by reading as though nobody wrote it. The tropes.fyi catalog names that
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1125) 'failure, which is why a second gate buys something instead of duplicating the
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1125) 'first.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1125) 'The conflict this RFD resolves
+2026-08-25T00:00:16Z (RFD66606-1125) 'The conflict this RFD resolves
  # tags: rfd:details-heading
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1125) '<!-- gate: tropes -->
+2026-08-25T00:00:17Z (RFD66606-1125) '<!-- gate: tropes -->
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1125) '
+2026-08-25T00:00:18Z (RFD66606-1125) '`seed_ai_tropes.py` already assigns work to each table, and it puts READMEs on the ASD-STE100 side:
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1125) '`seed_ai_tropes.py` already assigns work to each table, and it puts READMEs on
+2026-08-25T00:00:19Z (RFD66606-1125) '    trope.parquet      ASD-STE100        READMEs, procedures, reference, rules
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1125) 'the ASD-STE100 side:
+2026-08-25T00:00:20Z (RFD66606-1125) '    ai_trope.parquet   AI-writing tells  essays, design notes, logbook entries
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1125) '
+2026-08-25T00:00:21Z (RFD66606-1125) 'This RFD moves READMEs to the other column. The disagreement belongs in the open rather than under a silent overwrite.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1125) '    trope.parquet      ASD-STE100        READMEs, procedures, reference, rules
+2026-08-25T00:00:22Z (RFD66606-1125) 'That assignment is defensible on its own terms. A README in most repositories is reference material, and reference material belongs under a controlled language. It is wrong here because an RFD README is not that kind of README. RFD66606-1000 asks it to state a problem and a decision in forty lines, which makes it the most compressed argument in the repository rather than the most procedural document.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1125) '    ai_trope.parquet   AI-writing tells  essays, design notes, logbook entries
+2026-08-25T00:00:23Z (RFD66606-1125) 'The measurement decides it rather than merely permitting it. Both tables were run over the same 119 READMEs, through the same extractor:
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1125) '
+2026-08-25T00:00:24Z (RFD66606-1125) '| table                    | documents flagged | hits  |
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1125) 'This RFD moves READMEs to the other column. The disagreement belongs in the open
+2026-08-25T00:00:25Z (RFD66606-1125) '| ------------------------ | ----------------- | ----- |
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1125) 'rather than under a silent overwrite.
+2026-08-25T00:00:26Z (RFD66606-1125) '| `ai_trope.parquet`       | 10 of 119         | 11    |
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1125) '
+2026-08-25T00:00:27Z (RFD66606-1125) '| `trope.parquet` patterns | 119 of 119        | 4,397 |
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1125) 'That assignment is defensible on its own terms. A README in most repositories is
+2026-08-25T00:00:28Z (RFD66606-1125) 'Three orders of magnitude apart, on identical input. `Three+ Nouns in a Row` alone flags every document in the corpus. `Contraction Used` flags roughly two thirds of them, and `Semicolon Used` about a quarter.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1125) 'reference material, and reference material belongs under a controlled language.
+2026-08-25T00:00:29Z (RFD66606-1125) 'Neither number is a verdict, and the trope side is not flattered by the comparison: its 11 hits are all false positives, as RFD66606-2362 records. These are weak-label screens from `scripts/seed_labels.py` rather than the shipped classifier, which applies thresholds these patterns do not. Read them as direction and magnitude, not as counts of real defects.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1125) 'It is wrong here because an RFD README is not that kind of README. RFD66606-1000 asks
+2026-08-25T00:00:30Z (RFD66606-1125) 'The direction is the whole argument. A gate that fails 119 documents out of 119 is not holding a standard, it is producing noise, and people stop running it. `prose_nodes.py` was written to avoid the same outcome, which arrives here through the choice of table rather than through the choice of parser.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1125) 'it to state a problem and a decision in forty lines, which makes it the most
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1125) 'compressed argument in the repository rather than the most procedural document.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1125) 'The measurement decides it rather than merely permitting it. Both tables were run
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1125) 'over the same 119 READMEs, through the same extractor:
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1125) '| table                    | documents flagged | hits  |
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1125) '| ------------------------ | ----------------- | ----- |
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1125) '| `ai_trope.parquet`       | 10 of 119         | 11    |
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1125) '| `trope.parquet` patterns | 119 of 119        | 4,397 |
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1125) 'Three orders of magnitude apart, on identical input. `Three+ Nouns in a Row`
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1125) 'alone flags every document in the corpus. `Contraction Used` flags roughly two
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1125) 'thirds of them, and `Semicolon Used` about a quarter.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1125) 'Neither number is a verdict, and the trope side is not flattered by the
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1125) 'comparison: its 11 hits are all false positives, as RFD66606-2362 records.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-1125) 'These are weak-label screens from `scripts/seed_labels.py` rather than the
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1125) 'shipped classifier, which applies thresholds these patterns do not. Read them as
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1125) 'direction and magnitude, not as counts of real defects.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1125) '
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1125) 'The direction is the whole argument. A gate that fails 119 documents out of 119
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1125) 'is not holding a standard, it is producing noise, and people stop running it.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1125) '`prose_nodes.py` was written to avoid the same outcome, which arrives here
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1125) 'through the choice of table rather than through the choice of parser.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1125) 'The problem
+2026-08-25T00:00:31Z (RFD66606-1125) 'The problem
  # tags: rfd:details-heading
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1125) 'ASD-STE100 is a controlled language for technical writing, and a schema table is better under
+2026-08-25T00:00:32Z (RFD66606-1125) 'ASD-STE100 is a controlled language for technical writing, and a schema table is better under it. An argument is not, because a controlled vocabulary flattens an argument into a specification. An essay also fails in a way ASD-STE100 never describes, since it can read as though a model wrote it. Neither kind owns a whole file either: a `DETAILS.md` carries a measurement beside the reasoning that motivates it.
  # tags: rfd:details
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1125) 'it. An argument is not, because a controlled vocabulary flattens an argument into a
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1125) 'specification. An essay also fails in a way ASD-STE100 never describes, since it can read as
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1125) 'though a model wrote it. Neither kind owns a whole file either: a `DETAILS.md` carries a
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1125) 'measurement beside the reasoning that motivates it.
- # tags: rfd:details
- Text:RFD1125  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-1125) '2351
+2026-08-25T00:00:33Z (RFD66606-1125) '2351
  # tags: rebac:verbs-from
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-1125) 'rfd-1125 provides prose-gate-per-section
+2026-08-25T00:00:34Z (RFD66606-1125) 'rfd-1125 provides prose-gate-per-section
  # tags: rebac:relate
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-1125) 'rfd-1125 spends rfd-state-lifecycle
+2026-08-25T00:00:35Z (RFD66606-1125) 'rfd-1125 spends rfd-state-lifecycle
  # tags: rebac:relate
  Text:RFD1125  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-1125) 'rfd-1125 is_a prose-gate
+2026-08-25T00:00:36Z (RFD66606-1125) 'rfd-1125 is_a prose-gate
  # tags: rebac:relate
  Text:RFD1125  1 LINE
  Text:Written

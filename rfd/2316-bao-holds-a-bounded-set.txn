@@ -9,282 +9,162 @@
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:02Z (RFD66606-2316) 'weftspun-bao on weftspun-fdb, every secrets engine and auth method mounted on it, and
- # tags: rfd:scope
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:03Z (RFD66606-2316) 'the plugins built for it
+2026-10-13T00:00:02Z (RFD66606-2316) 'weftspun-bao on weftspun-fdb, every secrets engine and auth method mounted on it, and the plugins built for it
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:04Z (RFD66606-2316) 'Bao stays the same size however many users, sessions or requests arrive.
+2026-10-13T00:00:03Z (RFD66606-2316) 'Bao stays the same size however many users, sessions or requests arrive.
  # tags: rfd:hook
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:05Z (RFD66606-2316) 'Bao's default is to keep a lease for every dynamic secret, so an engine on the defaults
+2026-10-13T00:00:04Z (RFD66606-2316) 'Bao's default is to keep a lease for every dynamic secret, so an engine on the defaults grows with its traffic until a write fails.
  # tags: rfd:intrigue
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:06Z (RFD66606-2316) 'grows with its traffic until a write fails.
- # tags: rfd:intrigue
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:07Z (RFD66606-2316) 'Read RFD66606-2317 next, the first engine held to this rule.
+2026-10-13T00:00:05Z (RFD66606-2316) 'Read RFD66606-2317 next, the first engine held to this rule.
  # tags: rfd:exit
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:08Z (RFD66606-2316) 'Bao holds a bounded set
+2026-10-13T00:00:06Z (RFD66606-2316) 'Bao holds a bounded set
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:09Z (RFD66606-2316) '- Bao stores keys, configuration, policies and ReBAC tuples, and nothing that
+2026-10-13T00:00:07Z (RFD66606-2316) '- Bao stores keys, configuration, policies and ReBAC tuples, and nothing that grows with users, sessions or requests (operator, 2026-10-13).
  # tags: rfd:decision
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:10Z (RFD66606-2316) '  grows with users, sessions or requests (operator, 2026-10-13).
+2026-10-13T00:00:08Z (RFD66606-2316) '- An engine that issues a credential per request keeps no lease and no record of it. The credential carries its own expiry and is never revoked.
  # tags: rfd:decision
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:11Z (RFD66606-2316) '- An engine that issues a credential per request keeps no lease and no record
+2026-10-13T00:00:09Z (RFD66606-2316) '- Application data lives outside Bao, in the service that owns it.
  # tags: rfd:decision
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:12Z (RFD66606-2316) '  of it. The credential carries its own expiry and is never revoked.
+2026-10-13T00:00:10Z (RFD66606-2316) '- Every engine ships a growth gate: issuing many credentials leaves the engine's storage unchanged, and a control that stores each one fails it.
  # tags: rfd:decision
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:13Z (RFD66606-2316) '- Application data lives outside Bao, in the service that owns it.
- # tags: rfd:decision
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:14Z (RFD66606-2316) '- Every engine ships a growth gate: issuing many credentials leaves the
- # tags: rfd:decision
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:15Z (RFD66606-2316) '  engine's storage unchanged, and a control that stores each one fails it.
- # tags: rfd:decision
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:16Z (RFD66606-2316) '- RFD66606-2140, Bao on FDB.
+2026-10-13T00:00:11Z (RFD66606-2316) '- RFD66606-2140, Bao on FDB.
  # tags: rfd:related
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:17Z (RFD66606-2316) '- RFD66606-2353, Bao runs three replicas on the FDB machines.
+2026-10-13T00:00:12Z (RFD66606-2316) '- RFD66606-2353, Bao runs three replicas on the FDB machines.
  # tags: rfd:related
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:18Z (RFD66606-2316) '- RFD66606-2200, ReBAC agent roles.
+2026-10-13T00:00:13Z (RFD66606-2316) '- RFD66606-2200, ReBAC agent roles.
  # tags: rfd:related
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:19Z (RFD66606-2316) '- RFD66606-2317, the first engine held to this rule.
+2026-10-13T00:00:14Z (RFD66606-2316) '- RFD66606-2317, the first engine held to this rule.
  # tags: rfd:related
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:20Z (RFD66606-2316) 'Why the limit is part of the design
+2026-10-13T00:00:15Z (RFD66606-2316) 'Why the limit is part of the design
  # tags: rfd:details-heading
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:21Z (RFD66606-2316) 'FoundationDB refuses a value over 100,000 bytes and a transaction over
+2026-10-13T00:00:16Z (RFD66606-2316) 'FoundationDB refuses a value over 100,000 bytes and a transaction over 10,000,000 bytes, so the limit is part of the design and not a setting.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:22Z (RFD66606-2316) '10,000,000 bytes, so the limit is part of the design and not a setting.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:23Z (RFD66606-2316) 'Sources
+2026-10-13T00:00:17Z (RFD66606-2316) 'Sources
  # tags: rfd:details-heading
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:24Z (RFD66606-2316) 'Written on 2026-10-13 from the operator's note that Bao has a hard data
+2026-10-13T00:00:18Z (RFD66606-2316) 'Written on 2026-10-13 from the operator's note that Bao has a hard data limit by design. The FDB backend was read in our OpenBao fork: `Put` calls one `Set` with the whole encrypted entry and splits nothing. The value and transaction limits are FoundationDB's published known limits. Neither limit has been measured on our cluster yet; the first engine's end-to-end test writes an entry just under and just over 100,000 bytes and records which one FDB refuses.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:25Z (RFD66606-2316) 'limit by design. The FDB backend was read in our OpenBao fork: `Put`
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:26Z (RFD66606-2316) 'calls one `Set` with the whole encrypted entry and splits nothing. The
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:27Z (RFD66606-2316) 'value and transaction limits are FoundationDB's published known limits.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:28Z (RFD66606-2316) 'Neither limit has been measured on our cluster yet; the first engine's
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:29Z (RFD66606-2316) 'end-to-end test writes an entry just under and just over 100,000 bytes and
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:30Z (RFD66606-2316) 'records which one FDB refuses.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:31Z (RFD66606-2316) 'What may be stored
+2026-10-13T00:00:19Z (RFD66606-2316) 'What may be stored
  # tags: rfd:details-heading
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:32Z (RFD66606-2316) 'An entry belongs in Bao when the count of such entries is set by the
+2026-10-13T00:00:20Z (RFD66606-2316) 'An entry belongs in Bao when the count of such entries is set by the operator, not by traffic:
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:33Z (RFD66606-2316) 'operator, not by traffic:
+2026-10-13T00:00:21Z (RFD66606-2316) '- signing keys, CA keys and certificates of issuers;
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:34Z (RFD66606-2316) '- signing keys, CA keys and certificates of issuers;
+2026-10-13T00:00:22Z (RFD66606-2316) '- engine and mount configuration;
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:35Z (RFD66606-2316) '- engine and mount configuration;
+2026-10-13T00:00:23Z (RFD66606-2316) '- policies, cert roles and ReBAC tuples;
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:36Z (RFD66606-2316) '- policies, cert roles and ReBAC tuples;
+2026-10-13T00:00:24Z (RFD66606-2316) '- one-off secrets an operator puts there, such as an API token.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:37Z (RFD66606-2316) '- one-off secrets an operator puts there, such as an API token.
+2026-10-13T00:00:25Z (RFD66606-2316) 'These do not belong in Bao:
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:38Z (RFD66606-2316) '
+2026-10-13T00:00:26Z (RFD66606-2316) '- a lease or record per issued credential;
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:39Z (RFD66606-2316) 'These do not belong in Bao:
+2026-10-13T00:00:27Z (RFD66606-2316) '- sessions, messages, counters, logs or audit trails of a service;
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:40Z (RFD66606-2316) '- a lease or record per issued credential;
+2026-10-13T00:00:28Z (RFD66606-2316) '- files and blobs of any size.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:41Z (RFD66606-2316) '- sessions, messages, counters, logs or audit trails of a service;
+2026-10-13T00:00:29Z (RFD66606-2316) 'An engine that needs to hold a resource for a while, such as a slot in a shared cap, may still use a lease, because the number of leases is capped by the resource and not by traffic. Its growth gate then checks that the lease count stays at or under the cap.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:42Z (RFD66606-2316) '- files and blobs of any size.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:43Z (RFD66606-2316) '
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:44Z (RFD66606-2316) 'An engine that needs to hold a resource for a while, such as a slot in a
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:45Z (RFD66606-2316) 'shared cap, may still use a lease, because the number of leases is capped
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:46Z (RFD66606-2316) 'by the resource and not by traffic. Its growth gate then checks that the
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:47Z (RFD66606-2316) 'lease count stays at or under the cap.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:48Z (RFD66606-2316) 'The growth gate
+2026-10-13T00:00:30Z (RFD66606-2316) 'The growth gate
  # tags: rfd:details-heading
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:49Z (RFD66606-2316) 'Each engine's unit tests run against `logical.InmemStorage` and count its
+2026-10-13T00:00:31Z (RFD66606-2316) 'Each engine's unit tests run against `logical.InmemStorage` and count its keys with a recursive `List` before and after issuing 1,000 credentials. The gate passes when the count and the summed value size are unchanged. The control flips the engine to store each credential and must fail the same gate. The end-to-end test does the same against a dev server and also checks that the response carries no lease id.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:50Z (RFD66606-2316) 'keys with a recursive `List` before and after issuing 1,000 credentials.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:51Z (RFD66606-2316) 'The gate passes when the count and the summed value size are unchanged.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:52Z (RFD66606-2316) 'The control flips the engine to store each credential and must fail the
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:53Z (RFD66606-2316) 'same gate. The end-to-end test does the same against a dev server and also
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:54Z (RFD66606-2316) 'checks that the response carries no lease id.
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:55Z (RFD66606-2316) 'The problem
+2026-10-13T00:00:32Z (RFD66606-2316) 'The problem
  # tags: rfd:details-heading
  Text:RFD2316  1 LINE
  Text:Written
 
-2026-10-13T00:00:56Z (RFD66606-2316) 'Bao's storage is FoundationDB on three small machines, and the FDB backend
- # tags: rfd:details
- Text:RFD2316  1 LINE
- Text:Written
-
-2026-10-13T00:00:57Z (RFD66606-2316) 'writes each entry as one FDB value.
+2026-10-13T00:00:33Z (RFD66606-2316) 'Bao's storage is FoundationDB on three small machines, and the FDB backend writes each entry as one FDB value.
  # tags: rfd:details
  Text:RFD2316  1 LINE
  Text:Written

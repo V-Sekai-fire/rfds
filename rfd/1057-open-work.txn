@@ -14,477 +14,162 @@
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1057) 'This branch changed the host, the packaging, the backend, and the planner. Some of that work
+2026-08-25T00:00:03Z (RFD66606-1057) 'This branch changed the host, the packaging, the backend, and the planner. Some of that work is complete, some is measured but not built, and some is written but never run.
  # tags: rfd:intrigue
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1057) 'is complete, some is measured but not built, and some is written but never run.
- # tags: rfd:intrigue
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1057) 'Close an entry below by doing what it names, then delete it, and check that every remaining
+2026-08-25T00:00:04Z (RFD66606-1057) 'Close an entry below by doing what it names, then delete it, and check that every remaining entry names its owning RFD and what closing it needs.
  # tags: rfd:exit
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1057) 'entry names its owning RFD and what closing it needs.
- # tags: rfd:exit
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1057) 'Open work
+2026-08-25T00:00:05Z (RFD66606-1057) 'Open work
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1057) 'Delete an entry when it closes. This file shrinks, and it never
+2026-08-25T00:00:06Z (RFD66606-1057) 'Delete an entry when it closes. This file shrinks, and it never grows a history section.
  # tags: rfd:details-preamble
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1057) 'grows a history section.
- # tags: rfd:details-preamble
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1057) 'Keep one list of open work, in `DETAILS.md`. Each entry names the
+2026-08-25T00:00:07Z (RFD66606-1057) 'Keep one list of open work, in `DETAILS.md`. Each entry names the RFD that owns it, and what closing it needs. Delete an entry when it closes, so that file shrinks and never grows a history section.
  # tags: rfd:decision
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1057) 'RFD that owns it, and what closing it needs. Delete an entry when it
+2026-08-25T00:00:08Z (RFD66606-1057) '`DETAILS.md` holds five sections: verified and running, written and never run, measured and not built, unknown and blocking a number, and decided but waiting.
  # tags: rfd:decision
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1057) 'closes, so that file shrinks and never grows a history section.
- # tags: rfd:decision
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1057) '
- # tags: rfd:decision
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1057) '`DETAILS.md` holds five sections: verified and running, written and
- # tags: rfd:decision
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1057) 'never run, measured and not built, unknown and blocking a number, and
- # tags: rfd:decision
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1057) 'decided but waiting.
- # tags: rfd:decision
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1057) 'RFD66606-1055 selects the host. RFD66606-1056 selects the development system.
+2026-08-25T00:00:09Z (RFD66606-1057) 'RFD66606-1055 selects the host. RFD66606-1056 selects the development system. RFD66606-1036 packages the models. RFD66606-1025 holds the memory numbers.
  # tags: rfd:related
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1057) 'RFD66606-1036 packages the models. RFD66606-1025 holds the memory numbers.
+2026-08-25T00:00:10Z (RFD66606-1057) 'RFD66606-1058 gives the Quadlet deployment. RFD66606-1059 gives the one-step build. RFD66606-1061 gives the `idtx_core` upload-prep decision. RFD66606-1062 gives the Fly.io / 4090 split.
  # tags: rfd:related
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1057) '
- # tags: rfd:related
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1057) 'RFD66606-1058 gives the Quadlet deployment. RFD66606-1059 gives the one-step
- # tags: rfd:related
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1057) 'build. RFD66606-1061 gives the `idtx_core` upload-prep decision. RFD66606-1062
- # tags: rfd:related
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1057) 'gives the Fly.io / 4090 split.
- # tags: rfd:related
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1057) 'Verified, and running
+2026-08-25T00:00:11Z (RFD66606-1057) 'Verified, and running
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1057) '- The planner composes three documents: `pipeline_test.exs`, all 105 pass on this box now that
+2026-08-25T00:00:12Z (RFD66606-1057) '- The planner composes three documents: `pipeline_test.exs`, all 105 pass on this box now that `taskweft_nif` is rebuilt for x86_64.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1057) '  `taskweft_nif` is rebuilt for x86_64.
+2026-08-25T00:00:13Z (RFD66606-1057) '- The model image serves HTTP: RFD66606-1040, run in Docker on this machine.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1057) '- The model image serves HTTP: RFD66606-1040, run in Docker on this machine.
+2026-08-25T00:00:14Z (RFD66606-1057) '- CockroachDB provisions and runs: RFD66606-1020, 92 tests with the node up.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1057) '- CockroachDB provisions and runs: RFD66606-1020, 92 tests with the node up.
+2026-08-25T00:00:15Z (RFD66606-1057) '- taskweft composition: PRs 207, 208, 209, merged upstream.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1057) '- taskweft composition: PRs 207, 208, 209, merged upstream.
+2026-08-25T00:00:16Z (RFD66606-1057) '- Both Quadlets run end to end: RFD66606-1058, `weftspun.service` and `weftspun-crdb.service` both `active (running)`, `/api/v1/health` and `/api/v1/models` answered over `weftspun.network`.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1057) '- Both Quadlets run end to end: RFD66606-1058, `weftspun.service` and `weftspun-crdb.service`
+2026-08-25T00:00:17Z (RFD66606-1057) '- `taskweft_nif` runs on x86_64: `make clean && mix deps.compile taskweft_nif --force` from `deps/taskweft_nif/`. `mix test` then runs 105/105 with no arch-mismatch failure.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1057) '  both `active (running)`, `/api/v1/health` and `/api/v1/models` answered over
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1057) '  `weftspun.network`.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1057) '- `taskweft_nif` runs on x86_64: `make clean && mix deps.compile taskweft_nif --force` from
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1057) '  `deps/taskweft_nif/`. `mix test` then runs 105/105 with no arch-mismatch failure.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1057) 'Written, and never run
+2026-08-25T00:00:18Z (RFD66606-1057) 'Written, and never run
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1057) '**The dev container.** RFD66606-1056. The image does not build yet. The
+2026-08-25T00:00:19Z (RFD66606-1057) '**The dev container.** RFD66606-1056. The image does not build yet. The Debian attempt failed at `mix local.hex`, and the Fedora rewrite answers that by reading the error. Build it before trusting it.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1057) 'Debian attempt failed at `mix local.hex`, and the Fedora rewrite
+2026-08-25T00:00:20Z (RFD66606-1057) '**The Pixal3D worker stage.** RFD66606-1040. Only the contract stage ran. The worker stage pulls 24.045 GB and needs an NVIDIA device, thus it needs a rented card.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1057) 'answers that by reading the error. Build it before trusting it.
+2026-08-25T00:00:21Z (RFD66606-1057) '**The local worker.** RFD66606-1055 Phase 2. No worker service runs on this box yet, only a manual contract-stage test (RFD66606-1040). No instance is rented either, and RFD66606-1062's Gall's law says none should be, until this box is not enough.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1057) '
+2026-08-25T00:00:22Z (RFD66606-1057) '**The Fly.io / 4090 split.** RFD66606-1062. No `fly.toml`, no worker-side job-receiving adapter, no Tailscale join between a Fly machine and this box, no CockroachDB migration off this box. RFD66606-1062 names the target. None of it runs yet. The adapter's asset-transport half is settled, `idtx_transport`/aria-storage, per RFD66606-1062's own DETAILS.md. Open work narrows to the job-control envelope, and whether an aria-storage instance runs anywhere reachable yet.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1057) '**The Pixal3D worker stage.** RFD66606-1040. Only the contract stage ran.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1057) 'The worker stage pulls 24.045 GB and needs an NVIDIA device, thus it
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1057) 'needs a rented card.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1057) '**The local worker.** RFD66606-1055 Phase 2. No worker service runs on
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1057) 'this box yet, only a manual contract-stage test (RFD66606-1040). No
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1057) 'instance is rented either, and RFD66606-1062's Gall's law says none
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1057) 'should be, until this box is not enough.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1057) '**The Fly.io / 4090 split.** RFD66606-1062. No `fly.toml`, no worker-side
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1057) 'job-receiving adapter, no Tailscale join between a Fly machine and
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1057) 'this box, no CockroachDB migration off this box. RFD66606-1062 names the
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1057) 'target. None of it runs yet. The adapter's asset-transport half is
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1057) 'settled, `idtx_transport`/aria-storage, per RFD66606-1062's own DETAILS.md.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1057) 'Open work narrows to the job-control envelope, and whether an
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1057) 'aria-storage instance runs anywhere reachable yet.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1057) 'Measured, and not built
+2026-08-25T00:00:23Z (RFD66606-1057) 'Measured, and not built
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1057) '**Fourteen model folders.** RFD66606-1036. Each still carries a `cog.yaml`
+2026-08-25T00:00:24Z (RFD66606-1057) '**Fourteen model folders.** RFD66606-1036. Each still carries a `cog.yaml` and a `predict.py`, and RFD66606-1036 no longer selects Cog. Convert one when its model is next worked on, and not in a sweep. The folder names are already converted, and the files inside are not.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1057) 'and a `predict.py`, and RFD66606-1036 no longer selects Cog. Convert one
+2026-08-25T00:00:25Z (RFD66606-1057) '**`_to_usd` in the worker.** RFD66606-1053. The layer records the GLB as an asset attribute, because `usd-core` alone reads no glTF. A glTF file format plugin would let it be a reference arc.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1057) 'when its model is next worked on, and not in a sweep. The folder
+2026-08-25T00:00:26Z (RFD66606-1057) '**The `idtx_core` NIF adapter.** RFD66606-1061. `flow/adapters/` in `thirdparty/fabric-flow-adapters/` holds three hosts, Godot, Unity, CLI, and no Elixir one. Needs a fourth adapter, a `weftspun_studio` route, and the browser call site swapped over. RFD66606-1061's stopgap (`prepareGlbForApiUpload` in `glbCompress.js`) stays until this lands.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1057) 'names are already converted, and the files inside are not.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1057) '**`_to_usd` in the worker.** RFD66606-1053. The layer records the GLB as an
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1057) 'asset attribute, because `usd-core` alone reads no glTF. A glTF file
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1057) 'format plugin would let it be a reference arc.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1057) '**The `idtx_core` NIF adapter.** RFD66606-1061. `flow/adapters/` in
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1057) '`thirdparty/fabric-flow-adapters/` holds three hosts, Godot, Unity,
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1057) 'CLI, and no Elixir one. Needs a fourth adapter, a `weftspun_studio`
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1057) 'route, and the browser call site swapped over. RFD66606-1061's stopgap
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1057) '(`prepareGlbForApiUpload` in `glbCompress.js`) stays until this
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1057) 'lands.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1057) 'Unknown, and blocking a number
+2026-08-25T00:00:27Z (RFD66606-1057) 'Unknown, and blocking a number
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1057) '**The Q4_K_M quality cost.** RFD66606-1043. Quantization is a price choice
+2026-08-25T00:00:28Z (RFD66606-1057) '**The Q4_K_M quality cost.** RFD66606-1043. Quantization is a price choice now, and no measurement compares the two formats.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1057) 'now, and no measurement compares the two formats.
+2026-08-25T00:00:29Z (RFD66606-1057) '**The browser client's own test suite.** RFD66606-1059. Failures span `skintokensLoadOrientation.test.js`, `taskAdvancedOptionsDecimation.test.js` (multiple, past the three already skipped), `viewportAnimationTarget.test.js`, and `src/library/taskModelUrl.test.js`, unrelated to each other and to any one commit. `.github/workflows/main.yml` is deleted until this is fixed, not patched test by test under a deadline.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1057) '**The browser client's own test suite.** RFD66606-1059. Failures span
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1057) '`skintokensLoadOrientation.test.js`,
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1057) '`taskAdvancedOptionsDecimation.test.js` (multiple, past the three
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1057) 'already skipped), `viewportAnimationTarget.test.js`, and
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1057) '`src/library/taskModelUrl.test.js`, unrelated to each other and to
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1057) 'any one commit. `.github/workflows/main.yml` is deleted until this
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1057) 'is fixed, not patched test by test under a deadline.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1057) 'Decided, and waiting on order
+2026-08-25T00:00:30Z (RFD66606-1057) 'Decided, and waiting on order
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1057) '**The Replicate passthrough.** RFD66606-1055 Phase 1 step 3 removes it.
+2026-08-25T00:00:31Z (RFD66606-1057) '**The Replicate passthrough.** RFD66606-1055 Phase 1 step 3 removes it. RFD66606-1055 also records why it stays until this box's own worker answers.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1057) 'RFD66606-1055 also records why it stays until this box's own worker
+2026-08-25T00:00:32Z (RFD66606-1057) '**The abandoned world cluster's stale references.** RFD66606-1064 pivots the roadmap to character concepts. RFD66606-1049, RFD66606-1050, RFD66606-1051, and RFD66606-1052 record the abandonment, but RFD66606-1016, RFD66606-1017, RFD66606-1026, RFD66606-1027, RFD66606-1037, and RFD66606-1038 still cite all four as active work. `lib/weftspun_studio/inventory.ex` still marks all four `:active`. Update each reference, or mark the four `:vetoed`, when the catalog is next touched.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1057) 'answers.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1057) '
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1057) '**The abandoned world cluster's stale references.** RFD66606-1064 pivots
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-1057) 'the roadmap to character concepts. RFD66606-1049, RFD66606-1050, RFD66606-1051, and
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1057) 'RFD66606-1052 record the abandonment, but RFD66606-1016, RFD66606-1017, RFD66606-1026,
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1057) 'RFD66606-1027, RFD66606-1037, and RFD66606-1038 still cite all four as active work.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1057) '`lib/weftspun_studio/inventory.ex` still marks all four `:active`.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1057) 'Update each reference, or mark the four `:vetoed`, when the catalog
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1057) 'is next touched.
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1057) 'The problem
+2026-08-25T00:00:33Z (RFD66606-1057) 'The problem
  # tags: rfd:details-heading
  Text:RFD1057  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-1057) 'A reader who returns to this cannot tell those apart from the RFDs
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1057) 'alone. Each RFD records its own decision, and none records what is
- # tags: rfd:details
- Text:RFD1057  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1057) 'still owed.
+2026-08-25T00:00:34Z (RFD66606-1057) 'A reader who returns to this cannot tell those apart from the RFDs alone. Each RFD records its own decision, and none records what is still owed.
  # tags: rfd:details
  Text:RFD1057  1 LINE
  Text:Written

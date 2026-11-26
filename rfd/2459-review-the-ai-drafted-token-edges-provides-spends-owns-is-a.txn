@@ -14,107 +14,37 @@
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2459) 'Were the edges two AI agents drafted from each RFD's own text faithful to what each RFD
+2026-11-07T00:00:03Z (RFD66606-2459) 'Were the edges two AI agents drafted from each RFD's own text faithful to what each RFD actually asks for, or just internally consistent with each other?
  # tags: rfd:hook
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2459) 'actually asks for, or just internally consistent with each other?
- # tags: rfd:hook
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2459) 'Two agent passes produced provides, spends, owns, and one is_a edge for each of the
+2026-11-07T00:00:04Z (RFD66606-2459) 'Two agent passes produced provides, spends, owns, and one is_a edge for each of the ninety-nine open RFDs: a hundred seventeen provides edges, a hundred fifty-six spends edges, and thirty-three owns edges. Those edges already pass checks for cycles, provider conflicts, and owner consistency, but passing a structural check is not the same as being true to the source text. About a dozen RFDs spend nothing at all, which likely means the agent could not pin down a real prerequisite rather than that the RFD truly has none, and a short route through the planner can hide a dependency that should have slowed it down.
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2459) 'ninety-nine open RFDs: a hundred seventeen provides edges, a hundred fifty-six spends edges,
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2459) 'and thirty-three owns edges. Those edges already pass checks for cycles, provider conflicts,
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2459) 'and owner consistency, but passing a structural check is not the same as being true to the
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2459) 'source text. About a dozen RFDs spend nothing at all, which likely means the agent could not
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2459) 'pin down a real prerequisite rather than that the RFD truly has none, and a short route
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2459) 'through the planner can hide a dependency that should have slowed it down.
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2459) 'Read each of the roughly twelve RFDs that spend nothing and decide, by hand, whether a real
+2026-11-07T00:00:05Z (RFD66606-2459) 'Read each of the roughly twelve RFDs that spend nothing and decide, by hand, whether a real prerequisite is missing; where one is found, add the spends edge and re-run the cycle and provider checks.
  # tags: rfd:exit
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2459) 'prerequisite is missing; where one is found, add the spends edge and re-run the cycle and
- # tags: rfd:exit
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2459) 'provider checks.
- # tags: rfd:exit
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2459) '- Review the drafted edges RFD by RFD rather than trusting the structural checks alone,
+2026-11-07T00:00:06Z (RFD66606-2459) '- Review the drafted edges RFD by RFD rather than trusting the structural checks alone, starting with the dozen that spend nothing, since an empty spends list is the likeliest sign of a missed dependency.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2459) '  starting with the dozen that spend nothing, since an empty spends list is the likeliest
+2026-11-07T00:00:07Z (RFD66606-2459) '- Re-check the ownership and access facts recorded for RFD66606-2351, including the claim that it owns the store, fex, and the guest ELF double capability, since those facts were guessed rather than sourced.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2459) '  sign of a missed dependency.
+2026-11-07T00:00:08Z (RFD66606-2459) '- Decide, separately, whether the bare repository name used for the private lab should become public, and record that decision once made.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2459) '- Re-check the ownership and access facts recorded for RFD66606-2351, including the claim
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2459) '  that it owns the store, fex, and the guest ELF double capability, since those facts were
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2459) '  guessed rather than sourced.
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2459) '- Decide, separately, whether the bare repository name used for the private lab should become
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2459) '  public, and record that decision once made.
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2459) '- RFD66606-2351, the ownership and access facts under review.
+2026-11-07T00:00:09Z (RFD66606-2459) '- RFD66606-2351, the ownership and access facts under review.
  # tags: rfd:related
  Text:RFD2459  1 LINE
  Text:Written

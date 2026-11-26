@@ -14,82 +14,27 @@
  Text:RFD2476  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2476) 'Can an island hold more than 2,600 markers without widening past the id pool of 3,917 that
+2026-11-07T00:00:03Z (RFD66606-2476) 'Can an island hold more than 2,600 markers without widening past the id pool of 3,917 that the 6x6, distance-9-or-greater family provides?
  # tags: rfd:hook
  Text:RFD2476  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2476) 'the 6x6, distance-9-or-greater family provides?
- # tags: rfd:hook
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2476) 'Run b places 2,600 markers, which is the id cap of that family, even though the pool itself
+2026-11-07T00:00:04Z (RFD66606-2476) 'Run b places 2,600 markers, which is the id cap of that family, even though the pool itself has room for 3,917. Marker squares cover only 24.6% to 28.3% of island area, well under the 50% cap (markers sit only in white squares), so the limit today is island layout, not the id pool or the per-square area cap.
  # tags: rfd:intrigue
  Text:RFD2476  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2476) 'has room for 3,917. Marker squares cover only 24.6% to 28.3% of island area, well under the
- # tags: rfd:intrigue
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2476) '50% cap (markers sit only in white squares), so the limit today is island layout, not the id
- # tags: rfd:intrigue
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2476) 'pool or the per-square area cap.
- # tags: rfd:intrigue
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2476) 'Re-chart islands with one of the candidate options and show more than 2,600 markers placed at
+2026-11-07T00:00:05Z (RFD66606-2476) 'Re-chart islands with one of the candidate options and show more than 2,600 markers placed at the same read rate as run b, with no marker id reused twice on one garment.
  # tags: rfd:exit
  Text:RFD2476  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2476) 'the same read rate as run b, with no marker id reused twice on one garment.
- # tags: rfd:exit
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2476) 'Raise yield per island by changing how islands are charted, trying in order: an xatlas crease
+2026-11-07T00:00:06Z (RFD66606-2476) 'Raise yield per island by changing how islands are charted, trying in order: an xatlas crease patch with a size window, a custom charter, and larger islands via `maxChartArea` and `maxBoundaryLength`. Screen candidate markers with a 3D fold test before placement: the largest normal deviation within 37 mm separates unread from read markers at a median of 76 degrees versus 31 degrees. Dropping every marker over 90 degrees keeps only 90.3% of markers, so the 90-degree cutoff alone is not the gate; it is a pre-filter ahead of the dead-on gate, since it would not have caught the camera 74 fault on its own.
  # tags: rfd:decision
  Text:RFD2476  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2476) 'patch with a size window, a custom charter, and larger islands via `maxChartArea` and
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2476) '`maxBoundaryLength`. Screen candidate markers with a 3D fold test before placement: the largest
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2476) 'normal deviation within 37 mm separates unread from read markers at a median of 76 degrees
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2476) 'versus 31 degrees. Dropping every marker over 90 degrees keeps only 90.3% of markers, so the
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2476) '90-degree cutoff alone is not the gate; it is a pre-filter ahead of the dead-on gate, since it
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2476) 'would not have caught the camera 74 fault on its own.
- # tags: rfd:decision
- Text:RFD2476  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2476) '- RFD66606-2467, the dead-on gate that the fold-test pre-filter feeds markers into.
+2026-11-07T00:00:07Z (RFD66606-2476) '- RFD66606-2467, the dead-on gate that the fold-test pre-filter feeds markers into.
  # tags: rfd:related
  Text:RFD2476  1 LINE
  Text:Written

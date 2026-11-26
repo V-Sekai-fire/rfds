@@ -19,47 +19,42 @@
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2431) 'Before you pass an asset between stages, keep it as an OpenUSD `.usda` or `.usdc` layer.
+2026-10-31T00:00:04Z (RFD66606-2431) 'Before you pass an asset between stages, keep it as an OpenUSD `.usda` or `.usdc` layer. Convert to glTF binary, VRM or USDZ only at the boundary.
  # tags: rfd:exit
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2431) 'Convert to glTF binary, VRM or USDZ only at the boundary.
- # tags: rfd:exit
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2431) 'internal assets are OpenUSD and transmission is glTF, VRM or USDZ
+2026-10-31T00:00:05Z (RFD66606-2431) 'internal assets are OpenUSD and transmission is glTF, VRM or USDZ
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2431) '- Internal: OpenUSD `.usda` / `.usdc` (RFD66606-1053 `committed`), each stage adds a layer.
+2026-10-31T00:00:06Z (RFD66606-2431) '- Internal: OpenUSD `.usda` / `.usdc` (RFD66606-1053 `committed`), each stage adds a layer.
  # tags: rfd:decision
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2431) '- Convert at the boundary only.
+2026-10-31T00:00:07Z (RFD66606-2431) '- Convert at the boundary only.
  # tags: rfd:decision
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2431) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2431) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2431) '- RFD66606-1053, the `committed` OpenUSD stage.
+2026-10-31T00:00:09Z (RFD66606-2431) '- RFD66606-1053, the `committed` OpenUSD stage.
  # tags: rfd:related
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2431) 'Transmission formats
+2026-10-31T00:00:10Z (RFD66606-2431) 'Transmission formats
  # tags: rfd:details-heading
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2431) 'Transmission: glTF binary (asset), VRM (avatar), USDZ (archive).
+2026-10-31T00:00:11Z (RFD66606-2431) 'Transmission: glTF binary (asset), VRM (avatar), USDZ (archive).
  # tags: rfd:details
  Text:RFD2431  1 LINE
  Text:Written

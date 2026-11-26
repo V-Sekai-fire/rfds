@@ -19,72 +19,37 @@
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2464) 'JAX's exact GELU (`approximate=False`) lowers through `erf`, arriving as `chlo.erf` or as an
+2026-11-07T00:00:04Z (RFD66606-2464) 'JAX's exact GELU (`approximate=False`) lowers through `erf`, arriving as `chlo.erf` or as an expanded polynomial depending on the JAX version. ggml-rd has `gelu_erf_f32`, but it needs checking against XLA's erf bit for bit.
  # tags: rfd:intrigue
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2464) 'expanded polynomial depending on the JAX version. ggml-rd has `gelu_erf_f32`, but it needs
- # tags: rfd:intrigue
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2464) 'checking against XLA's erf bit for bit.
- # tags: rfd:intrigue
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2464) 'Cases in `tools/gen_stablehlo_cases.py` cover erf, including zeros of both signs, infinities,
+2026-11-07T00:00:05Z (RFD66606-2464) 'Cases in `tools/gen_stablehlo_cases.py` cover erf, including zeros of both signs, infinities, NaN and denormals, compared bit for bit against XLA CPU's output from the Zen 2 desk.
  # tags: rfd:exit
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2464) 'NaN and denormals, compared bit for bit against XLA CPU's output from the Zen 2 desk.
- # tags: rfd:exit
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2464) '- Check which form jax 0.12 emits for `approximate=False`, `chlo.erf` or an expanded
+2026-11-07T00:00:06Z (RFD66606-2464) '- Check which form jax 0.12 emits for `approximate=False`, `chlo.erf` or an expanded polynomial, before choosing the lowering path.
  # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2464) '  polynomial, before choosing the lowering path.
+2026-11-07T00:00:07Z (RFD66606-2464) '- Model XLA's erf approximation on the host and sweep all 2^32 f32 inputs against XLA CPU, the same route `tanh` and `exp`/`log` already took.
  # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2464) '- Model XLA's erf approximation on the host and sweep all 2^32 f32 inputs against XLA CPU, the
+2026-11-07T00:00:08Z (RFD66606-2464) '- Emit the matched kernel in place of `gelu_erf_f32`, and add erf cases to `tools/gen_stablehlo_cases.py` with the special values above.
  # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2464) '  same route `tanh` and `exp`/`log` already took.
+2026-11-07T00:00:09Z (RFD66606-2464) '- A case that cannot reach bit-equality carries a measured reason in `XFAIL`, a planted control case must fail its gate, and all 11 desk gates still pass.
  # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2464) '- Emit the matched kernel in place of `gelu_erf_f32`, and add erf cases to
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2464) '  `tools/gen_stablehlo_cases.py` with the special values above.
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2464) '- A case that cannot reach bit-equality carries a measured reason in `XFAIL`, a planted control
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2464) '  case must fail its gate, and all 11 desk gates still pass.
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2464) '- RFD66606-2372, the guest ELF and ggml-rd compute route this kernel runs on.
+2026-11-07T00:00:10Z (RFD66606-2464) '- RFD66606-2372, the guest ELF and ggml-rd compute route this kernel runs on.
  # tags: rfd:related
  Text:RFD2464  1 LINE
  Text:Written

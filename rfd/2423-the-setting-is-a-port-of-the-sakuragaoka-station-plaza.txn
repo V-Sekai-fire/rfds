@@ -29,87 +29,47 @@
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2423) 'The two players stand in a train-station plaza, a port of the MIT-licensed procedural three.js
+2026-10-31T00:00:06Z (RFD66606-2423) 'The two players stand in a train-station plaza, a port of the MIT-licensed procedural three.js scene `sakuragaoka-station`, placed at &{repo("sakuragaoka-station")} (&{pin("sakuragaoka-station")}). The port lives in &{repo("entities-sakuragaoka-station")}, and the pen vendors it with `tools/vendor_station.sh <commit>`, which takes only a commit some remote branch contains.
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2423) 'scene `sakuragaoka-station`, placed at &{repo("sakuragaoka-station")}
- # tags: rfd:decision
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2423) '(&{pin("sakuragaoka-station")}). The port lives in
- # tags: rfd:decision
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2423) '&{repo("entities-sakuragaoka-station")}, and the pen vendors it with
- # tags: rfd:decision
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2423) '`tools/vendor_station.sh <commit>`, which takes only a commit some remote branch contains.
- # tags: rfd:decision
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2423) '- RFD66606-2287, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2423) '- RFD66606-2287, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2423) 'The station port is abandoned
+2026-10-31T00:00:08Z (RFD66606-2423) 'The station port is abandoned
  # tags: rfd:details-heading
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2423) 'RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
+2026-10-31T00:00:09Z (RFD66606-2423) 'RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's assets and tech stay in use, and baking goes through slughorn.
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2423) 'assets and tech stay in use, and baking goes through slughorn.
- # tags: rfd:details
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2423) '
- # tags: rfd:details
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2423) 'Why the port rebuilds the scene
+2026-10-31T00:00:10Z (RFD66606-2423) 'Why the port rebuilds the scene
  # tags: rfd:details-heading
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2423) 'Its 43,727 lines of JavaScript under `src/` generate every texture in code and keep no mesh on
+2026-10-31T00:00:11Z (RFD66606-2423) 'Its 43,727 lines of JavaScript under `src/` generate every texture in code and keep no mesh on disk, so the port rebuilds the scene in the engine with MToon materials rather than importing it.
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2423) 'disk, so the port rebuilds the scene in the engine with MToon materials rather than importing
- # tags: rfd:details
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2423) 'it.
- # tags: rfd:details
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2423) '2351
+2026-10-31T00:00:12Z (RFD66606-2423) '2351
  # tags: rebac:verbs-from
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2423) 'rfd-2423 provides sakuragaoka-plaza-setting
+2026-10-31T00:00:13Z (RFD66606-2423) 'rfd-2423 provides sakuragaoka-plaza-setting
  # tags: rebac:relate
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2423) 'rfd-2423 is_a asset-port
+2026-10-31T00:00:14Z (RFD66606-2423) 'rfd-2423 is_a asset-port
  # tags: rebac:relate
  Text:RFD2423  1 LINE
  Text:Written

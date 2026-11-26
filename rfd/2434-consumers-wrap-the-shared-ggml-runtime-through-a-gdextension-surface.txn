@@ -14,67 +14,42 @@
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2434) 'Each model has its own GDScript adapter file, loaded under Godot's script sandbox, so the
+2026-10-31T00:00:03Z (RFD66606-2434) 'Each model has its own GDScript adapter file, loaded under Godot's script sandbox, so the runtime itself stays shared.
  # tags: rfd:intrigue
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2434) 'runtime itself stays shared.
- # tags: rfd:intrigue
- Text:RFD2434  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2434) 'Check a new consumer against the rule: it wraps the shared ggml runtime of RFD66606-2188 and
+2026-10-31T00:00:04Z (RFD66606-2434) 'Check a new consumer against the rule: it wraps the shared ggml runtime of RFD66606-2188 and calls `Ggml.load_model`.
  # tags: rfd:exit
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2434) 'calls
- # tags: rfd:exit
- Text:RFD2434  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2434) '`Ggml.load_model`.
- # tags: rfd:exit
- Text:RFD2434  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2434) 'consumers wrap the shared ggml runtime through a GDExtension surface
+2026-10-31T00:00:05Z (RFD66606-2434) 'consumers wrap the shared ggml runtime through a GDExtension surface
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2434) 'Consumer projects wrap the shared ggml runtime of RFD66606-2188.
+2026-10-31T00:00:06Z (RFD66606-2434) 'Consumer projects wrap the shared ggml runtime of RFD66606-2188.
  # tags: rfd:decision
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2434) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2434) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2434) '- RFD66606-2230, the native `modules/ggml/` module.
+2026-10-31T00:00:08Z (RFD66606-2434) '- RFD66606-2230, the native `modules/ggml/` module.
  # tags: rfd:related
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2434) 'The GDExtension surface
+2026-10-31T00:00:09Z (RFD66606-2434) 'The GDExtension surface
  # tags: rfd:details-heading
  Text:RFD2434  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2434) 'The native `modules/ggml/` module (RFD66606-2230) exposes a GDExtension surface
- # tags: rfd:details
- Text:RFD2434  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2434) '(`Ggml.load_model`, `Ggml.run_inference`, `Ggml.load_lora`) consumed by per-model GDScript
- # tags: rfd:details
- Text:RFD2434  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2434) 'adapter files loaded under Godot's script sandbox.
+2026-10-31T00:00:10Z (RFD66606-2434) 'The native `modules/ggml/` module (RFD66606-2230) exposes a GDExtension surface (`Ggml.load_model`, `Ggml.run_inference`, `Ggml.load_lora`) consumed by per-model GDScript adapter files loaded under Godot's script sandbox.
  # tags: rfd:details
  Text:RFD2434  1 LINE
  Text:Written

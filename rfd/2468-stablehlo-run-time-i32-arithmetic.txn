@@ -14,167 +14,77 @@
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2468) 'Can an i32 value computed at run time reach the device, instead of being refused because it
+2026-11-07T00:00:03Z (RFD66606-2468) 'Can an i32 value computed at run time reach the device, instead of being refused because it was not already known when the graph was compiled?
  # tags: rfd:hook
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2468) 'was not already known when the graph was compiled?
- # tags: rfd:hook
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2468) 'Today an i32 value is folded away on the host whenever the compiler already knows it, and
+2026-11-07T00:00:04Z (RFD66606-2468) 'Today an i32 value is folded away on the host whenever the compiler already knows it, and refused the moment it is computed at run time: an argument, or anything derived from one. Gather's index arithmetic and dynamic masks need those values on the device, not on the host, and the five graphs the probes run (qwen, dit, sconv and the two Kimodo layers) all touch one.
  # tags: rfd:intrigue
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2468) 'refused the moment it is computed at run time: an argument, or anything derived from one.
- # tags: rfd:intrigue
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2468) 'Gather's index arithmetic and dynamic masks need those values on the device, not on the host,
- # tags: rfd:intrigue
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2468) 'and the five graphs the probes run (qwen, dit, sconv and the two Kimodo layers) all touch one.
- # tags: rfd:intrigue
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2468) 'Run the generated cases, including zeros of both signs, infinities, NaN and denormals, against
+2026-11-07T00:00:05Z (RFD66606-2468) 'Run the generated cases, including zeros of both signs, infinities, NaN and denormals, against XLA CPU's own output from the Zen 2 desk as the reference, and confirm a case built to fail does fail.
  # tags: rfd:exit
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2468) 'XLA CPU's own output from the Zen 2 desk as the reference, and confirm a case built to fail
- # tags: rfd:exit
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2468) 'does fail.
- # tags: rfd:exit
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2468) 'StableHLO: run-time i32 arithmetic
+2026-11-07T00:00:06Z (RFD66606-2468) 'StableHLO: run-time i32 arithmetic
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2468) 'Hold run-time i32 values as i32 tensors on the device, and add element-wise kernels under XLA's
+2026-11-07T00:00:07Z (RFD66606-2468) 'Hold run-time i32 values as i32 tensors on the device, and add element-wise kernels under XLA's wrapping semantics: add, subtract, multiply, compare, select, clamp, and convert to and from f32. Lift each refusal that exists only for lack of one of these kernels, case by case, so that every case in the generator is either bit-equal on the GPU or carries a measured reason in XFAIL, with all 11 desk gates kept green throughout.
  # tags: rfd:decision
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2468) 'wrapping semantics: add, subtract, multiply, compare, select, clamp, and convert to and from
- # tags: rfd:decision
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2468) 'f32. Lift each refusal that exists only for lack of one of these kernels, case by case, so that
- # tags: rfd:decision
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2468) 'every case in the generator is either bit-equal on the GPU or carries a measured reason in
- # tags: rfd:decision
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2468) 'XFAIL, with all 11 desk gates kept green throughout.
- # tags: rfd:decision
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2468) 'Cases and reference
+2026-11-07T00:00:08Z (RFD66606-2468) 'Cases and reference
  # tags: rfd:details-heading
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2468) 'tools/gen_stablehlo_cases.py exercises the special values a run-time i32 path must survive:
+2026-11-07T00:00:09Z (RFD66606-2468) 'tools/gen_stablehlo_cases.py exercises the special values a run-time i32 path must survive: zeros of both signs, infinities, NaN and denormals. XLA CPU's own output, taken from the Zen 2 desk, is the bit-equal reference for every case; there is no other oracle in use here.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2468) 'zeros of both signs, infinities, NaN and denormals. XLA CPU's own output, taken from the Zen 2
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2468) 'desk, is the bit-equal reference for every case; there is no other oracle in use here.
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2468) '
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2468) 'What ships
+2026-11-07T00:00:10Z (RFD66606-2468) 'What ships
  # tags: rfd:details-heading
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2468) '- Run-time i32 values held as i32 tensors on the device, never folded away because they were
+2026-11-07T00:00:11Z (RFD66606-2468) '- Run-time i32 values held as i32 tensors on the device, never folded away because they were not known at compile time.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2468) '  not known at compile time.
+2026-11-07T00:00:12Z (RFD66606-2468) '- Element-wise kernels: add, subtract, multiply, compare, select, clamp, and conversion to and from f32, each under XLA's own wrapping semantics rather than a saturating one.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2468) '- Element-wise kernels: add, subtract, multiply, compare, select, clamp, and conversion to and
+2026-11-07T00:00:13Z (RFD66606-2468) '- Refusals lifted only where one of the kernels above now covers the case; a case no kernel covers keeps its refusal unchanged.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2468) '  from f32, each under XLA's own wrapping semantics rather than a saturating one.
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2468) '- Refusals lifted only where one of the kernels above now covers the case; a case no kernel
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2468) '  covers keeps its refusal unchanged.
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2468) '
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2468) 'Acceptance
+2026-11-07T00:00:14Z (RFD66606-2468) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2468) '- Every case in tools/gen_stablehlo_cases.py is bit-equal on the GPU, or carries a measured
+2026-11-07T00:00:15Z (RFD66606-2468) '- Every case in tools/gen_stablehlo_cases.py is bit-equal on the GPU, or carries a measured reason recorded in XFAIL.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2468) '  reason recorded in XFAIL.
+2026-11-07T00:00:16Z (RFD66606-2468) '- A case built to fail does fail; a gate that cannot fail proves nothing.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2468) '- A case built to fail does fail; a gate that cannot fail proves nothing.
- # tags: rfd:details
- Text:RFD2468  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2468) '- All 11 desk gates still pass after the change lands.
+2026-11-07T00:00:17Z (RFD66606-2468) '- All 11 desk gates still pass after the change lands.
  # tags: rfd:details
  Text:RFD2468  1 LINE
  Text:Written

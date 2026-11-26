@@ -14,162 +14,97 @@
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2377) 'Chrome refuses to compile a WebAssembly module larger than 8 MB on the main thread, and a
+2026-10-31T00:00:03Z (RFD66606-2377) 'Chrome refuses to compile a WebAssembly module larger than 8 MB on the main thread, and a game's translation is larger. C baked on one platform does not match on another.
  # tags: rfd:intrigue
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2377) 'game's translation is larger. C baked on one platform does not match on another.
- # tags: rfd:intrigue
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2377) 'Bake the C of a platform by running the game once on that platform with the emitter on,
+2026-10-31T00:00:04Z (RFD66606-2377) 'Bake the C of a platform by running the game once on that platform with the emitter on, then compile the emitted C for that platform.
  # tags: rfd:exit
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2377) 'then compile the emitted C for that platform.
- # tags: rfd:exit
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2377) 'a translation links into the addon, one bake per platform
+2026-10-31T00:00:05Z (RFD66606-2377) 'a translation links into the addon, one bake per platform
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2377) '- A translation can be compiled into the addon library of its platform instead of being
+2026-10-31T00:00:06Z (RFD66606-2377) '- A translation can be compiled into the addon library of its platform instead of being loaded as a library at run time. On the web this is the only route that works. The desktop builds of the same game use the same route.
  # tags: rfd:decision
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2377) '  loaded as a library at run time. On the web this is the only route that works. The
+2026-10-31T00:00:07Z (RFD66606-2377) '- Each platform bakes its own C. The game runs once on that platform with the emitter on, and the emitted C is compiled for that platform.
  # tags: rfd:decision
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2377) '  desktop builds of the same game use the same route.
- # tags: rfd:decision
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2377) '- Each platform bakes its own C. The game runs once on that platform with the emitter on,
- # tags: rfd:decision
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2377) '  and the emitted C is compiled for that platform.
- # tags: rfd:decision
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2377) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2377) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2377) 'Where the objects live
+2026-10-31T00:00:09Z (RFD66606-2377) 'Where the objects live
  # tags: rfd:details-heading
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2377) 'The addon keeps each platform's translation objects in a folder of their own,
+2026-10-31T00:00:10Z (RFD66606-2377) 'The addon keeps each platform's translation objects in a folder of their own, `src/bintr/<platform>.<arch>/`.
  # tags: rfd:details
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2377) '`src/bintr/<platform>.<arch>/`.
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2377) '
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2377) 'Why each platform bakes
+2026-10-31T00:00:11Z (RFD66606-2377) 'Why each platform bakes
  # tags: rfd:details-heading
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2377) 'The program hash covers the machine layout as well as the program, so C baked on one
+2026-10-31T00:00:12Z (RFD66606-2377) 'The program hash covers the machine layout as well as the program, so C baked on one platform does not match on another. Windows and Linux on x86_64 share a layout and a hash, and each still compiles its own copy. One bake of the SolidCraft guest is 32 C files, 336 MB of C for 16.2 MB of RISC-V code.
  # tags: rfd:details
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2377) 'platform does not match on another. Windows and Linux on x86_64 share a layout and a hash,
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2377) 'and each still compiles its own copy. One bake of the SolidCraft guest is 32 C files, 336
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2377) 'MB of C for 16.2 MB of RISC-V code.
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2377) '
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2377) 'A change to the host's system calls
+2026-10-31T00:00:13Z (RFD66606-2377) 'A change to the host's system calls
  # tags: rfd:details-heading
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2377) 'A change to the host's system calls leaves the guest's translation as it was, so the
+2026-10-31T00:00:14Z (RFD66606-2377) 'A change to the host's system calls leaves the guest's translation as it was, so the compiled objects and the hash stay valid and only a relink is needed.
  # tags: rfd:details
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2377) 'compiled objects and the hash stay valid and only a relink is needed.
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2377) 'The problem
+2026-10-31T00:00:15Z (RFD66606-2377) 'The problem
  # tags: rfd:details-heading
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2377) 'Chrome refuses to compile a WebAssembly module larger than 8 MB on the main thread, and a
+2026-10-31T00:00:16Z (RFD66606-2377) 'Chrome refuses to compile a WebAssembly module larger than 8 MB on the main thread, and a game's translation is larger.
  # tags: rfd:details
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2377) 'game's translation is larger.
- # tags: rfd:details
- Text:RFD2377  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2377) '2351
+2026-10-31T00:00:17Z (RFD66606-2377) '2351
  # tags: rebac:verbs-from
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2377) 'rfd-2377 provides per-platform-baked-translation
+2026-10-31T00:00:18Z (RFD66606-2377) 'rfd-2377 provides per-platform-baked-translation
  # tags: rebac:relate
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2377) 'rfd-2377 spends elf-guest-native-translation
+2026-10-31T00:00:19Z (RFD66606-2377) 'rfd-2377 spends elf-guest-native-translation
  # tags: rebac:relate
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2377) 'rfd-2377 spends sandbox-addon-double-pinned
+2026-10-31T00:00:20Z (RFD66606-2377) 'rfd-2377 spends sandbox-addon-double-pinned
  # tags: rebac:relate
  Text:RFD2377  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2377) 'rfd-2377 is_a guest-runtime
+2026-10-31T00:00:21Z (RFD66606-2377) 'rfd-2377 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2377  1 LINE
  Text:Written

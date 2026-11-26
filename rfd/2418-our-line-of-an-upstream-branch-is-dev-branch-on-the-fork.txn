@@ -14,67 +14,47 @@
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2418) 'Would the upstream's branch-keyed workflows fire on our line, or could `main/<x>` sit beside
+2026-10-31T00:00:03Z (RFD66606-2418) 'Would the upstream's branch-keyed workflows fire on our line, or could `main/<x>` sit beside `main`?
  # tags: rfd:intrigue
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2418) '`main`?
- # tags: rfd:intrigue
- Text:RFD2418  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2418) 'Check that a new line of an upstream branch is named `dev/<branch>` and created at the
+2026-10-31T00:00:04Z (RFD66606-2418) 'Check that a new line of an upstream branch is named `dev/<branch>` and created at the upstream commit.
  # tags: rfd:exit
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2418) 'upstream commit.
- # tags: rfd:exit
- Text:RFD2418  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2418) '- Our line of an upstream branch is `dev/<branch>` on the V-Sekai-fire fork, created at the
+2026-10-31T00:00:05Z (RFD66606-2418) '- Our line of an upstream branch is `dev/<branch>` on the V-Sekai-fire fork, created at the upstream commit, so the upstream's branch-keyed workflows do not fire on it.
  # tags: rfd:decision
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2418) '  upstream commit, so the upstream's branch-keyed workflows do not fire on it.
- # tags: rfd:decision
- Text:RFD2418  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2418) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:06Z (RFD66606-2418) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2418) 'The problem
+2026-10-31T00:00:07Z (RFD66606-2418) 'The problem
  # tags: rfd:details-heading
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2418) 'A branch named `main/<x>` cannot sit beside one named `main`, since git stores each ref as a
+2026-10-31T00:00:08Z (RFD66606-2418) 'A branch named `main/<x>` cannot sit beside one named `main`, since git stores each ref as a path.
  # tags: rfd:details
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2418) 'path.
- # tags: rfd:details
- Text:RFD2418  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2418) '2351
+2026-10-31T00:00:09Z (RFD66606-2418) '2351
  # tags: rebac:verbs-from
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2418) 'rfd-2418 provides fork-dev-branch-naming
+2026-10-31T00:00:10Z (RFD66606-2418) 'rfd-2418 provides fork-dev-branch-naming
  # tags: rebac:relate
  Text:RFD2418  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2418) 'rfd-2418 is_a workspace-policy
+2026-10-31T00:00:11Z (RFD66606-2418) 'rfd-2418 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2418  1 LINE
  Text:Written

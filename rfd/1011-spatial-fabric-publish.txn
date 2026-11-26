@@ -14,97 +14,67 @@
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1011) 'A completed mesh task should reach shared worlds, and the app has no publish path to
+2026-08-25T00:00:03Z (RFD66606-1011) 'A completed mesh task should reach shared worlds, and the app has no publish path to the spatial fabric.
  # tags: rfd:intrigue
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1011) 'the spatial fabric.
- # tags: rfd:intrigue
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1011) 'Read `docs/SPATIAL_FABRIC_INTEGRATION.md` for the integration.
+2026-08-25T00:00:04Z (RFD66606-1011) 'Read `docs/SPATIAL_FABRIC_INTEGRATION.md` for the integration.
  # tags: rfd:exit
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1011) 'Add a publish flow for completed tasks.
+2026-08-25T00:00:05Z (RFD66606-1011) 'Add a publish flow for completed tasks.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1011) '
+2026-08-25T00:00:06Z (RFD66606-1011) '- Publish RP1 sends the completed mesh to the spatial fabric.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1011) '- Publish RP1 sends the completed mesh to the spatial fabric.
+2026-08-25T00:00:07Z (RFD66606-1011) '- Validate OMB tier checks the GLB export against the fabric.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1011) '- Validate OMB tier checks the GLB export against the fabric.
+2026-08-25T00:00:08Z (RFD66606-1011) 'The flow opens the Scene Assembler in a new tab. The spatial fabric adapter checks the manifest and the tier presets.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1011) '
- # tags: rfd:decision
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1011) 'The flow opens the Scene Assembler in a new tab. The spatial
- # tags: rfd:decision
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1011) 'fabric adapter checks the manifest and the tier presets.
- # tags: rfd:decision
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1011) '- Adapter: `src/library/spatialFabricAdapter.js`
+2026-08-25T00:00:09Z (RFD66606-1011) '- Adapter: `src/library/spatialFabricAdapter.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1011) '- Hook: `src/hooks/useSpatialFabric.js`
+2026-08-25T00:00:10Z (RFD66606-1011) '- Hook: `src/hooks/useSpatialFabric.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1011) '- Presets: `src/library/ombExportPresets.js`
+2026-08-25T00:00:11Z (RFD66606-1011) '- Presets: `src/library/ombExportPresets.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1011) '- Docs: `docs/SPATIAL_FABRIC_INTEGRATION.md`
+2026-08-25T00:00:12Z (RFD66606-1011) '- Docs: `docs/SPATIAL_FABRIC_INTEGRATION.md`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1011) 'RFD66606-1007 replaces the publish terminal validation with motion
+2026-08-25T00:00:13Z (RFD66606-1011) 'RFD66606-1007 replaces the publish terminal validation with motion validation in the Studio pipeline.
  # tags: rfd:related
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1011) 'validation in the Studio pipeline.
- # tags: rfd:related
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1011) 'The problem
+2026-08-25T00:00:14Z (RFD66606-1011) 'The problem
  # tags: rfd:details-heading
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1011) 'The fabric needs a valid
- # tags: rfd:details
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1011) 'manifest and a scene assembler.
+2026-08-25T00:00:15Z (RFD66606-1011) 'The fabric needs a valid manifest and a scene assembler.
  # tags: rfd:details
  Text:RFD1011  1 LINE
  Text:Written

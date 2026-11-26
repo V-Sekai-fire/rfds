@@ -19,627 +19,267 @@
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1141) 'Code goes to GitHub, and the goal manifest places every repository on a side of the hexagon.
+2026-08-25T00:00:04Z (RFD66606-1141) 'Code goes to GitHub, and the goal manifest places every repository on a side of the hexagon. Artifacts had no such rule.
  # tags: rfd:intrigue
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1141) 'Artifacts had no such rule.
- # tags: rfd:intrigue
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1141) 'Read `SKILL.md` for the procedure and the sections below for what is not published.
+2026-08-25T00:00:05Z (RFD66606-1141) 'Read `SKILL.md` for the procedure and the sections below for what is not published.
  # tags: rfd:exit
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1141) 'Publishing artifacts
+2026-08-25T00:00:06Z (RFD66606-1141) 'Publishing artifacts
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1141) 'Artifacts go to Hugging Face. Code stays on GitHub, and each names the
+2026-08-25T00:00:07Z (RFD66606-1141) 'Artifacts go to Hugging Face. Code stays on GitHub, and each names the other. A dataset repository holds corpora; a model repository holds weights, in safetensors, carrying only the tensors that were trained.
  # tags: rfd:decision
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1141) 'other. A dataset repository holds corpora; a model repository holds
+2026-08-25T00:00:08Z (RFD66606-1141) 'Every artifact repository carries a `CITATION.cff` naming its title, its licence, and every source it derives from. An artifact without one cannot answer what it is made of, which is condition 1.
  # tags: rfd:decision
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1141) 'weights, in safetensors, carrying only the tensors that were trained.
+2026-08-25T00:00:09Z (RFD66606-1141) 'The name matches the source repository, and the README names the side it sits on, so a reader who finds the artifact first reaches the code.
  # tags: rfd:decision
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1141) '
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1141) 'Every artifact repository carries a `CITATION.cff` naming its title,
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1141) 'its licence, and every source it derives from. An artifact without one
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1141) 'cannot answer what it is made of, which is condition 1.
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1141) '
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1141) 'The name matches the source repository, and the README names the side
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1141) 'it sits on, so a reader who finds the artifact first reaches the code.
- # tags: rfd:decision
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1141) '- `SKILL.md` is the procedure. `DETAILS.md` says what is not published.
+2026-08-25T00:00:10Z (RFD66606-1141) '- `SKILL.md` is the procedure. `DETAILS.md` says what is not published.
  # tags: rfd:references
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1141) 'RFD66606-1140 rents the machines. RFD66606-1000 gives placement.
+2026-08-25T00:00:11Z (RFD66606-1141) 'RFD66606-1140 rents the machines. RFD66606-1000 gives placement.
  # tags: rfd:related
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1141) 'Why artifacts are not code
+2026-08-25T00:00:12Z (RFD66606-1141) 'Why artifacts are not code
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1141) 'A trained adapter, a
+2026-08-25T00:00:13Z (RFD66606-1141) 'A trained adapter, a rendered corpus and a set of vertex weights are not code: too large for a source repository, regenerated rather than edited, and carrying the licence of whatever they derive from as well as our own. Left on a desk they go with the desk. Pushed into a source repository they bloat a history nobody can shrink again.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1141) 'rendered corpus and a set of vertex weights are not code: too large for
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1141) 'a source repository, regenerated rather than edited, and carrying the
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1141) 'licence of whatever they derive from as well as our own. Left on a desk
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1141) 'they go with the desk. Pushed into a source repository they bloat a
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1141) 'history nobody can shrink again.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1141) 'The size measurement that drives the weights rule
+2026-08-25T00:00:14Z (RFD66606-1141) 'The size measurement that drives the weights rule
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1141) 'Measured 2026-08-25 on `experiments/anny_camera_lora_1gpu/checkpoint-200`:
+2026-08-25T00:00:15Z (RFD66606-1141) 'Measured 2026-08-25 on `experiments/anny_camera_lora_1gpu/checkpoint-200`:
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1141) '
+2026-08-25T00:00:16Z (RFD66606-1141) '| | |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1141) '| | |
+2026-08-25T00:00:17Z (RFD66606-1141) '| --- | ---: |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1141) '| --- | ---: |
+2026-08-25T00:00:18Z (RFD66606-1141) '| checkpoint on disk | **14.8 GiB** |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1141) '| checkpoint on disk | **14.8 GiB** |
+2026-08-25T00:00:19Z (RFD66606-1141) '| tensors in it | 886 |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1141) '| tensors in it | 886 |
+2026-08-25T00:00:20Z (RFD66606-1141) '| tensors carrying LoRA | **304** |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1141) '| tensors carrying LoRA | **304** |
+2026-08-25T00:00:21Z (RFD66606-1141) '| extracted adapter | **19.52 MiB** |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1141) '| extracted adapter | **19.52 MiB** |
+2026-08-25T00:00:22Z (RFD66606-1141) '| ratio | **776x** |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1141) '| ratio | **776x** |
+2026-08-25T00:00:23Z (RFD66606-1141) '`docs/FINETUNE.md:80-81` records why: under FSDP the trainer cannot easily separate the adapter parameters, so it writes all of them. Two checkpoints at `checkpoints_total_limit: 2` is already 30 GB for 39 MB of trained weight.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1141) '`docs/FINETUNE.md:80-81` records why: under FSDP the trainer cannot easily separate the
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1141) 'adapter parameters, so it writes all of them. Two checkpoints at `checkpoints_total_limit: 2`
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1141) 'is already 30 GB for 39 MB of trained weight.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1141) 'The rename that fails silently
+2026-08-25T00:00:24Z (RFD66606-1141) 'The rename that fails silently
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1141) 'The trainer writes `context_refiner.0.attn.to_k.lora_A.default.weight`. PEFT reads
+2026-08-25T00:00:25Z (RFD66606-1141) 'The trainer writes `context_refiner.0.attn.to_k.lora_A.default.weight`. PEFT reads `base_model.model.context_refiner.0.attn.to_k.lora_A.weight`. Two differences: the `.default.` segment carrying the adapter's PEFT name, and the `base_model.model.` prefix.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1141) '`base_model.model.context_refiner.0.attn.to_k.lora_A.weight`. Two differences: the `.default.`
+2026-08-25T00:00:26Z (RFD66606-1141) 'A loader that finds nothing under its expected keys does not raise. It adds a freshly initialised adapter and generates from the base model, so the output is ordinary rather than broken, and the run reads as a model that learned nothing. `extract_lora_adapter.py` counts both rewrites and exits non-zero on a partial, because a rewrite that hits some keys and not others is the same failure wearing a smaller mask.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1141) 'segment carrying the adapter's PEFT name, and the `base_model.model.` prefix.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1141) 'A loader that finds nothing under its expected keys does not raise. It adds a freshly
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1141) 'initialised adapter and generates from the base model, so the output is ordinary rather than
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1141) 'broken, and the run reads as a model that learned nothing. `extract_lora_adapter.py` counts
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1141) 'both rewrites and exits non-zero on a partial, because a rewrite that hits some keys and not
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1141) 'others is the same failure wearing a smaller mask.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1141) 'What must not be published
+2026-08-25T00:00:27Z (RFD66606-1141) 'What must not be published
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1141) '**Quantised output.** CLAUDE.md's condition 5. NF4 outputs are device evidence. Measured
+2026-08-25T00:00:28Z (RFD66606-1141) '**Quantised output.** CLAUDE.md's condition 5. NF4 outputs are device evidence. Measured here, four bits also bought no speed on this card, 133 s against 131 s, so there is nothing to trade.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1141) 'here, four bits also bought no speed on this card, 133 s against 131 s, so there is
+2026-08-25T00:00:29Z (RFD66606-1141) '**Blinded-holdout derivatives.** `coco_person_commercial_val2017` is 523 licence-filtered COCO person images and is not inspected during development at all. Anything derived from it inherits that: `6-datasource/coco-ood-eval` is evaluation-only twice over, being both val2017-derived and generated.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1141) 'nothing to trade.
+2026-08-25T00:00:30Z (RFD66606-1141) '**`weftspun/rf-detr-keypoint-data`.** Its own README says the licence file is wrong: it claims CC BY 4.0 for the whole set, and **1,823 of 2,346** images carry NC, ND or share-alike terms. The file names look like a training split and are not one.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1141) '
+2026-08-25T00:00:31Z (RFD66606-1141) '**`alfredplpl/anime-with-caption-cc0` images.** Blocklisted for hand quality; the captions are permitted. An artifact using the captions says so and does not imply the images.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1141) '**Blinded-holdout derivatives.** `coco_person_commercial_val2017` is 523 licence-filtered
+2026-08-25T00:00:32Z (RFD66606-1141) '**Anything from a set behind a registration form.** Terms that cannot be read without accepting them cannot be gated on, so the set is not licence-clean whatever it says after you accept.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1141) 'COCO person images and is not inspected during development at all. Anything derived from it
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1141) 'inherits that: `6-datasource/coco-ood-eval` is evaluation-only twice over, being both
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1141) 'val2017-derived and generated.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1141) '**`weftspun/rf-detr-keypoint-data`.** Its own README says the licence file is wrong: it claims
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1141) 'CC BY 4.0 for the whole set, and **1,823 of 2,346** images carry NC, ND or share-alike terms.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1141) 'The file names look like a training split and are not one.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1141) '**`alfredplpl/anime-with-caption-cc0` images.** Blocklisted for hand quality; the captions are
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1141) 'permitted. An artifact using the captions says so and does not imply the images.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1141) '**Anything from a set behind a registration form.** Terms that cannot be read without
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1141) 'accepting them cannot be gated on, so the set is not licence-clean whatever it says after you
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1141) 'accept.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1141) 'Naming, worked through
+2026-08-25T00:00:33Z (RFD66606-1141) 'Naming, worked through
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1141) '`weftspun/anny-render-corpus` on GitHub sits on `6-datasource`. Its artifacts publish under
+2026-08-25T00:00:34Z (RFD66606-1141) '`weftspun/anny-render-corpus` on GitHub sits on `6-datasource`. Its artifacts publish under the same name, and the dataset card's first line links back to the GitHub repository and names the side.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1141) 'the same name, and the dataset card's first line links back to the GitHub repository and
+2026-08-25T00:00:35Z (RFD66606-1141) 'Where one source repository produces both a corpus and a weight, they are two Hugging Face repositories, one dataset and one model, sharing the name and differing in type. A model repository holding a corpus is the mistake this rule prevents, and it is easy to make because the run that produced both is one run.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1141) 'names the side.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1141) 'Where one source repository produces both a corpus and a weight, they are two Hugging Face
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1141) 'repositories, one dataset and one model, sharing the name and differing in type. A model
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1141) 'repository holding a corpus is the mistake this rule prevents, and it is easy to make because
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1141) 'the run that produced both is one run.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1141) 'Mirroring the base, measured
+2026-08-25T00:00:36Z (RFD66606-1141) 'Mirroring the base, measured
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1141) '| | |
+2026-08-25T00:00:37Z (RFD66606-1141) '| | |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1141) '| --- | ---: |
+2026-08-25T00:00:38Z (RFD66606-1141) '| --- | ---: |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1141) '| snapshot on disk | **29.13 GiB** across 42 files |
+2026-08-25T00:00:39Z (RFD66606-1141) '| snapshot on disk | **29.13 GiB** across 42 files |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1141) '| new data actually uploaded | **81.6 MB** |
+2026-08-25T00:00:40Z (RFD66606-1141) '| new data actually uploaded | **81.6 MB** |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1141) '| observed rate | 382 MB/s |
+2026-08-25T00:00:41Z (RFD66606-1141) '| observed rate | 382 MB/s |
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1141) '
+2026-08-25T00:00:42Z (RFD66606-1141) 'The hub stores content-addressed, so objects it already holds are not re-sent. Mirroring a public model therefore costs almost nothing in bandwidth, and an earlier draft of the skill warned against it on exactly that ground. The warning was wrong and is withdrawn.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-1141) 'The hub stores content-addressed, so objects it already holds are not re-sent. Mirroring a
+2026-08-25T00:00:43Z (RFD66606-1141) '**The local cache was incomplete.** Six README images had never been fetched, because training pulls weights and nothing else wanted them. `snapshot_download(..., local_files_only=True)` raised `IncompleteSnapshotError` and named them. Uploading anyway would have produced 36 files under a name that promises 42. Complete the snapshot at the pinned revision, and print that it happened, so the record says whether the mirror came from the cache or from a fetch.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1141) 'public model therefore costs almost nothing in bandwidth, and an earlier draft of the skill
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1141) 'warned against it on exactly that ground. The warning was wrong and is withdrawn.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1141) '**The local cache was incomplete.** Six README images had never been fetched, because training
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1141) 'pulls weights and nothing else wanted them. `snapshot_download(..., local_files_only=True)`
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1141) 'raised `IncompleteSnapshotError` and named them. Uploading anyway would have produced 36 files
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1141) 'under a name that promises 42. Complete the snapshot at the pinned revision, and print that it
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1141) 'happened, so the record says whether the mirror came from the cache or from a fetch.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1141) 'Verifying a mirror, and where the hub cannot help
+2026-08-25T00:00:44Z (RFD66606-1141) 'Verifying a mirror, and where the hub cannot help
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-1141) '`repo_info(..., files_metadata=True)` exposes `sha256` for **LFS objects only**. On this
+2026-08-25T00:00:45Z (RFD66606-1141) '`repo_info(..., files_metadata=True)` exposes `sha256` for **LFS objects only**. On this mirror that is 15 of 41 files, every weight, and none of the configs.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:38Z (RFD66606-1141) 'mirror that is 15 of 41 files, every weight, and none of the configs.
+2026-08-25T00:00:46Z (RFD66606-1141) 'So the first verification reported "15 compared by sha256, 0 differing" and left 26 files checked only for presence. Presence and identity are different claims, and the gap matters more than the count suggests: a mirror whose `config.json` had drifted would load a different model while every weight matched.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-1141) '
+2026-08-25T00:00:47Z (RFD66606-1141) 'The 26 are a few hundred kilobytes. Downloading both copies and hashing them locally took seconds and closed it: **26 small files hashed, 0 differing**.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:40Z (RFD66606-1141) 'So the first verification reported "15 compared by sha256, 0 differing" and left 26 files
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-1141) 'checked only for presence. Presence and identity are different claims, and the gap matters
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1141) 'more than the count suggests: a mirror whose `config.json` had drifted would load a different
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:43Z (RFD66606-1141) 'model while every weight matched.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1141) 'The 26 are a few hundred kilobytes. Downloading both copies and hashing them locally took
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:46Z (RFD66606-1141) 'seconds and closed it: **26 small files hashed, 0 differing**.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-1141) 'Absolute paths, and the one that hid in prose
+2026-08-25T00:00:48Z (RFD66606-1141) 'Absolute paths, and the one that hid in prose
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:48Z (RFD66606-1141) 'Three staged files named a home directory after the first rewrite pass, and a fourth survived
+2026-08-25T00:00:49Z (RFD66606-1141) 'Three staged files named a home directory after the first rewrite pass, and a fourth survived a second pass. The first three were path *fields*, `source_frame` in the measurement JSONs. The fourth was inside a sentence:
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:49Z (RFD66606-1141) 'a second pass. The first three were path *fields*, `source_frame` in the measurement JSONs.
+2026-08-25T00:00:50Z (RFD66606-1141) '    "no person detected in C:\Users\...\az045_A.png at threshold 0.3"
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:50Z (RFD66606-1141) 'The fourth was inside a sentence:
+2026-08-25T00:00:51Z (RFD66606-1141) 'A check on whole-string values misses that entirely, and it discloses just as much. Substitute inside strings, then scan the staged tree and refuse to upload while one remains.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:51Z (RFD66606-1141) '
+2026-08-25T00:00:52Z (RFD66606-1141) 'One more, worth naming because it made a check pass while doing nothing: the scanning regex was written with a character class holding an escaped slash, which is just a slash. It matched no backslash at all, so a drive-letter path sailed through a check that reported success.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:01:52Z (RFD66606-1141) '    "no person detected in C:\Users\...\az045_A.png at threshold 0.3"
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:53Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-1141) 'A check on whole-string values misses that entirely, and it discloses just as much. Substitute
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-1141) 'inside strings, then scan the staged tree and refuse to upload while one remains.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1141) '
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1141) 'One more, worth naming because it made a check pass while doing nothing: the scanning regex
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:58Z (RFD66606-1141) 'was written with a character class holding an escaped slash, which is just a slash. It matched
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:01:59Z (RFD66606-1141) 'no backslash at all, so a drive-letter path sailed through a check that reported success.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:00Z (RFD66606-1141) 'What is not measured here
+2026-08-25T00:00:53Z (RFD66606-1141) 'What is not measured here
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:02:01Z (RFD66606-1141) 'Hugging Face upload throughput, LFS behaviour on files above 5 GB, and whether the hub's own
+2026-08-25T00:00:54Z (RFD66606-1141) 'Hugging Face upload throughput, LFS behaviour on files above 5 GB, and whether the hub's own licence detector agrees with a dual `Apache-2.0 OR MIT` pair. The last of those has a known answer on GitHub, two `LICENSE-*` files at the root read as "Other" until one is on the default branch, and nothing here has checked the hub.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-1141) 'licence detector agrees with a dual `Apache-2.0 OR MIT` pair. The last of those has a known
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:03Z (RFD66606-1141) 'answer on GitHub, two `LICENSE-*` files at the root read as "Other" until one is on the
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:04Z (RFD66606-1141) 'default branch, and nothing here has checked the hub.
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1141) 'The problem
+2026-08-25T00:00:55Z (RFD66606-1141) 'The problem
  # tags: rfd:details-heading
  Text:RFD1141  1 LINE
  Text:Written
 
-2026-08-25T00:02:06Z (RFD66606-1141) 'A checkpoint also lies about its own size: the trainer writes the whole
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-1141) 'model, so a 19.5 MiB adapter arrives as 14.8 GiB of mostly somebody
- # tags: rfd:details
- Text:RFD1141  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1141) 'else's Apache-2.0 base weights.
+2026-08-25T00:00:56Z (RFD66606-1141) 'A checkpoint also lies about its own size: the trainer writes the whole model, so a 19.5 MiB adapter arrives as 14.8 GiB of mostly somebody else's Apache-2.0 base weights.
  # tags: rfd:details
  Text:RFD1141  1 LINE
  Text:Written

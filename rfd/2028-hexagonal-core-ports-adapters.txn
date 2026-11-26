@@ -9,517 +9,177 @@
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2028) 'Components in the stack span several languages (C, C++, Python,
+2026-08-25T00:00:02Z (RFD66606-2028) 'Components in the stack span several languages (C, C++, Python, Elixir, GDScript), run as separate processes, and each binds to hardware, a GPU, the network, or an engine runtime. A component has to stay testable without its device, replaceable without a rewrite of its callers, and composable with components written in another language.
  # tags: rfd:intrigue
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-2028) 'Elixir, GDScript), run as separate processes, and each binds to
- # tags: rfd:intrigue
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-2028) 'hardware, a GPU, the network, or an engine runtime. A component has to
- # tags: rfd:intrigue
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-2028) 'stay testable without its device, replaceable without a rewrite of its
- # tags: rfd:intrigue
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-2028) 'callers, and composable with components written in another language.
- # tags: rfd:intrigue
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-2028) 'Read RFD66606-2111 next, which defines the service that components compose into.
+2026-08-25T00:00:03Z (RFD66606-2028) 'Read RFD66606-2111 next, which defines the service that components compose into.
  # tags: rfd:exit
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2028) 'Hexagonal core ports adapters
+2026-08-25T00:00:04Z (RFD66606-2028) 'Hexagonal core ports adapters
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2028) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:05Z (RFD66606-2028) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2028) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2028) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2028) 'The problem
+2026-08-25T00:00:07Z (RFD66606-2028) 'The problem
  # tags: rfd:details-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2028) 'A
+2026-08-25T00:00:08Z (RFD66606-2028) 'A shared monolith or a single in-memory object model does not hold across those boundaries.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-2028) 'shared monolith or a single in-memory object model does not hold
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-2028) 'across those boundaries.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-2028) 'Context and problem statement
+2026-08-25T00:00:09Z (RFD66606-2028) 'Context and problem statement
  # tags: rfd:madr-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-2028) 'Components in the stack span several languages (C, C++, Python,
+2026-08-25T00:00:10Z (RFD66606-2028) 'Components in the stack span several languages (C, C++, Python, Elixir, GDScript), run as separate processes, and each binds to hardware, a GPU, the network, or an engine runtime. A component has to stay testable without its device, replaceable without a rewrite of its callers, and composable with components written in another language. A shared monolith or a single in-memory object model does not hold across those boundaries.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2028) 'Elixir, GDScript), run as separate processes, and each binds to
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-2028) 'hardware, a GPU, the network, or an engine runtime. A component has to
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-2028) 'stay testable without its device, replaceable without a rewrite of its
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-2028) 'callers, and composable with components written in another language.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-2028) 'A shared monolith or a single in-memory object model does not hold
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-2028) 'across those boundaries.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-2028) 'Decision drivers
+2026-08-25T00:00:11Z (RFD66606-2028) 'Decision drivers
  # tags: rfd:madr-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2028) '- Real-time and pipeline paths cross process and language boundaries
+2026-08-25T00:00:12Z (RFD66606-2028) '- Real-time and pipeline paths cross process and language boundaries with no shared object model.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2028) '  with no shared object model.
+2026-08-25T00:00:13Z (RFD66606-2028) '- Hardware, OS, GPU, network, and engine concerns have to stay out of the entities and the interactors, or they become untestable away from the live system.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2028) '- Hardware, OS, GPU, network, and engine concerns have to stay out of
+2026-08-25T00:00:14Z (RFD66606-2028) '- CI runs the interactors against recorded data, without the device or the runtime.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-2028) '  the entities and the interactors, or they become untestable away
+2026-08-25T00:00:15Z (RFD66606-2028) '- One computed result often feeds several outputs from a single pass.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2028) '  from the live system.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-2028) '- CI runs the interactors against recorded data, without the device or
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-2028) '  the runtime.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-2028) '- One computed result often feeds several outputs from a single pass.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-2028) 'Decision outcome
+2026-08-25T00:00:16Z (RFD66606-2028) 'Decision outcome
  # tags: rfd:madr-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2028) 'Each component takes a uniform `entities/` + `repositories/` +
+2026-08-25T00:00:17Z (RFD66606-2028) 'Each component takes a uniform `entities/` + `repositories/` + `datasources/` layout, in the Netflix formulation of the pattern. Components compose into a service, as RFD66606-2111 defines a service.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-2028) '`datasources/` layout, in the Netflix formulation of the pattern.
+2026-08-25T00:00:18Z (RFD66606-2028) '### entities/: the objects, and the interactors that act on them
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2028) 'Components compose into a service, as RFD66606-2111 defines a service.
+2026-08-25T00:00:19Z (RFD66606-2028) 'An entity is an object the component works on, and it knows nothing about where it is stored. An interactor performs the actions on entities. Together they open no socket, read no device, and link no framework. They carry their own `entities/spec/` of tests that run in isolation against recorded data. A transport layer never reaches inside them.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2028) '
+2026-08-25T00:00:20Z (RFD66606-2028) '### repositories/: interfaces to the entities
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-2028) '### entities/: the objects, and the interactors that act on them
+2026-08-25T00:00:21Z (RFD66606-2028) 'A repository is an interface that gets, creates, and changes entities. The interactor declares it and a data source implements it.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2028) '
+2026-08-25T00:00:22Z (RFD66606-2028) 'A repository stays at the lowest common denominator every binding language can implement: a C-ABI struct of function pointers where a service crosses languages, a language-native interface where it does not. One header then binds C, C++, and Python data sources alike.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2028) 'An entity is an object the component works on, and it knows nothing
+2026-08-25T00:00:23Z (RFD66606-2028) '### datasources/: the implementations, outside the interactor
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2028) 'about where it is stored. An interactor performs the actions on
+2026-08-25T00:00:24Z (RFD66606-2028) 'A data source implements a repository against the real world: a serial device, a UDP socket, a recorded fixture for CI, a GPU compute host, a renderer, an engine runtime. One repository admits many data sources, so one pass of an interactor reaches several destinations, and a recorded fixture stands in for live hardware under CI.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2028) 'entities. Together they open no socket, read no device, and link no
+2026-08-25T00:00:25Z (RFD66606-2028) '### The transport layer, and composition across the seam
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2028) 'framework. They carry their own `entities/spec/` of tests that run in
+2026-08-25T00:00:26Z (RFD66606-2028) 'A transport layer is the input that triggers an interactor. All dependencies point inward, so the transport layer depends on the interactor and never the reverse.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2028) 'isolation against recorded data. A transport layer never reaches
+2026-08-25T00:00:27Z (RFD66606-2028) 'Components compose when a data source of one component is the transport layer of another. An in-process dependency links the sibling directly. A cross-process dependency meets on a wire, which is a protocol the two ends share. The wire is the integration contract, so a producer in one language and a consumer in another share no code, only the message format. Each component declares its sibling wiring beside its repositories.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2028) 'inside them.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-2028) '### repositories/: interfaces to the entities
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-2028) 'A repository is an interface that gets, creates, and changes entities.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-2028) 'The interactor declares it and a data source implements it.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-2028) 'A repository stays at the lowest common denominator every binding
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-2028) 'language can implement: a C-ABI struct of function pointers where a
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-2028) 'service crosses languages, a language-native interface where it does
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-2028) 'not. One header then binds C, C++, and Python data sources alike.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-2028) '### datasources/: the implementations, outside the interactor
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-2028) 'A data source implements a repository against the real world: a serial
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-2028) 'device, a UDP socket, a recorded fixture for CI, a GPU compute host, a
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-2028) 'renderer, an engine runtime. One repository admits many data sources,
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-2028) 'so one pass of an interactor reaches several destinations, and a
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-2028) 'recorded fixture stands in for live hardware under CI.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-2028) '### The transport layer, and composition across the seam
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-2028) 'A transport layer is the input that triggers an interactor. All
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-2028) 'dependencies point inward, so the transport layer depends on the
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-2028) 'interactor and never the reverse.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-2028) 'Components compose when a data source of one component is the
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-2028) 'transport layer of another. An in-process dependency links the sibling
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-2028) 'directly. A cross-process dependency meets on a wire, which is a
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-2028) 'protocol the two ends share. The wire is the integration contract, so
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-2028) 'a producer in one language and a consumer in another share no code,
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-2028) 'only the message format. Each component declares its sibling wiring
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-2028) 'beside its repositories.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-2028) 'Consequences
+2026-08-25T00:00:28Z (RFD66606-2028) 'Consequences
  # tags: rfd:madr-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-2028) '- Entities and interactors with no dependencies let CI replay recorded
+2026-08-25T00:00:29Z (RFD66606-2028) '- Entities and interactors with no dependencies let CI replay recorded data through them with no device and no runtime.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-2028) '  data through them with no device and no runtime.
+2026-08-25T00:00:30Z (RFD66606-2028) '- The wire seam decouples languages and processes, so any component is rewritable or replaceable as long as it keeps the message contract.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-2028) '- The wire seam decouples languages and processes, so any component is
+2026-08-25T00:00:31Z (RFD66606-2028) '- A new output is a new data source, with no change to the interactor that produced the data.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-2028) '  rewritable or replaceable as long as it keeps the message contract.
+2026-08-25T00:00:32Z (RFD66606-2028) '- All dependencies point inward, so a data source depends on the interactor through a repository, and the interactor depends on nothing.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-2028) '- A new output is a new data source, with no change to the interactor
+2026-08-25T00:00:33Z (RFD66606-2028) '- The convention costs interface boilerplate, and across a process boundary it adds a serialize and parse step the in-process link avoids. That cost buys cross-language, cross-process composition.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-2028) '  that produced the data.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-2028) '- All dependencies point inward, so a data source depends on the
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-2028) '  interactor through a repository, and the interactor depends on
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-2028) '  nothing.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-2028) '- The convention costs interface boilerplate, and across a process
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-2028) '  boundary it adds a serialize and parse step the in-process link
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-2028) '  avoids. That cost buys cross-language, cross-process composition.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-2028) 'More information
+2026-08-25T00:00:34Z (RFD66606-2028) 'More information
  # tags: rfd:madr-heading
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-2028) 'The `sinew-mocap` components apply the pattern end to end. Each git
+2026-08-25T00:00:35Z (RFD66606-2028) 'The `sinew-mocap` components apply the pattern end to end. Each git repository (`driver`, `mount_drift`, `solve`, `viewer`, `vr_bridge`) carries the triad. The interfaces are header-only C struct vtables (FrameSource, TrackerSink, PoseSink, HmdSource). The data sources bind the serial dongle, a recorded `.rawlog`, UDP, polyscope, SteamVR, OpenVR, and Vulkan. The components compose over the `/sinew` OSC wire (UDP 39539), and each `sibling-repos.txt` declares the wiring. The synthetic-data branch in `sinew-vrdance/pose_distill` applies the same triad in Python: geometry and label cleaning inside, interfaces for the teacher pose model, the renderer, and the dataset, and data sources for the model, the Godot renderer, and the COCO output.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written
 
-2026-08-25T00:01:32Z (RFD66606-2028) 'repository (`driver`, `mount_drift`, `solve`, `viewer`, `vr_bridge`)
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-2028) 'carries the triad. The interfaces are header-only C struct vtables
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-2028) '(FrameSource, TrackerSink, PoseSink, HmdSource). The data sources bind
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-2028) 'the serial dongle, a recorded `.rawlog`, UDP, polyscope, SteamVR,
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-2028) 'OpenVR, and Vulkan. The components compose over the `/sinew` OSC wire
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-2028) '(UDP 39539), and each `sibling-repos.txt` declares the wiring. The
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-2028) 'synthetic-data branch in `sinew-vrdance/pose_distill` applies the same
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-2028) 'triad in Python: geometry and label cleaning inside, interfaces for the
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-2028) 'teacher pose model, the renderer, and the dataset, and data sources for
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-2028) 'the model, the Godot renderer, and the COCO output.
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-2028) '
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:43Z (RFD66606-2028) 'Those files still carry the older names on disk, and the `*_source.h` /
- # tags: rfd:details
- Text:RFD2028  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-2028) '`*_sink.h` spelling with them. RFD66606-2111 holds the rename list.
+2026-08-25T00:00:36Z (RFD66606-2028) 'Those files still carry the older names on disk, and the `*_source.h` / `*_sink.h` spelling with them. RFD66606-2111 holds the rename list.
  # tags: rfd:details
  Text:RFD2028  1 LINE
  Text:Written

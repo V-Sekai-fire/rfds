@@ -44,97 +44,52 @@
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:09Z (RFD66606-2171) 'The public tagline names two things: the pipeline that makes characters, and the deliverable
+2026-09-02T00:00:09Z (RFD66606-2171) 'The public tagline names two things: the pipeline that makes characters, and the deliverable that leaves it. "Workshop" alone was doing both jobs and reads as generic.
  # tags: rfd:intrigue
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2171) 'that leaves it. "Workshop" alone was doing both jobs and reads as generic.
- # tags: rfd:intrigue
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:11Z (RFD66606-2171) 'Read RFD66606-2136 next, the concrete atelier-workshop.
+2026-09-02T00:00:10Z (RFD66606-2171) 'Read RFD66606-2136 next, the concrete atelier-workshop.
  # tags: rfd:exit
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:12Z (RFD66606-2171) 'The atelier-workshop / shuttle vocabulary
+2026-09-02T00:00:11Z (RFD66606-2171) 'The atelier-workshop / shuttle vocabulary
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:13Z (RFD66606-2171) 'The pipeline is `atelier-workshop`, the deliverable that leaves it is `shuttle`. One word for each, used verbatim in RFD titles, changelogs, and public prose.
+2026-09-02T00:00:12Z (RFD66606-2171) 'The pipeline is `atelier-workshop`, the deliverable that leaves it is `shuttle`. One word for each, used verbatim in RFD titles, changelogs, and public prose. Never use `atelier` alone in shipping prose (loanword, pretentious without the gloss). `Workshop` alone is permitted where context already fixes it (the 2021 `character-workshop` decision doc stays).
  # tags: rfd:decision
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:14Z (RFD66606-2171) 'Never use `atelier` alone in shipping prose (loanword, pretentious without the gloss). `Workshop` alone is permitted where context already fixes it (the 2021 `character-workshop` decision doc stays).
- # tags: rfd:decision
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:15Z (RFD66606-2171) 'Spine: chibifire.com public tagline; RFD66606-2136 (gacha ladder).
+2026-09-02T00:00:13Z (RFD66606-2171) 'Spine: chibifire.com public tagline; RFD66606-2136 (gacha ladder). Applies to: this file and every subsequent public README.
  # tags: rfd:related
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:16Z (RFD66606-2171) 'Applies to: this file and every subsequent public README.
- # tags: rfd:related
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:17Z (RFD66606-2171) 'The two words
+2026-09-02T00:00:14Z (RFD66606-2171) 'The two words
  # tags: rfd:details-heading
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:18Z (RFD66606-2171) '- `atelier-workshop` (the pipeline). The compound keeps the elegance of the French loanword for
+2026-09-02T00:00:15Z (RFD66606-2171) '- `atelier-workshop` (the pipeline). The compound keeps the elegance of the French loanword for readers who know it, and the plain-English gloss for those who do not. RFD66606-2136 (gacha ladder: 10-rung generation pipeline) is the concrete atelier-workshop.
  # tags: rfd:details
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:19Z (RFD66606-2171) '  readers who know it, and the plain-English gloss for those who do not. RFD66606-2136 (gacha
+2026-09-02T00:00:16Z (RFD66606-2171) '- `shuttle` (the portable-character deliverable), a portable VRM at rung 6 of RFD66606-2136. Retained without change; `nx-shuttle` already uses it for the same weft-across-warp metaphor. The two uses do not conflict: one shuttles a character out, the other shuttles a graph across.
  # tags: rfd:details
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2171) '  ladder: 10-rung generation pipeline) is the concrete atelier-workshop.
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2171) '- `shuttle` (the portable-character deliverable), a portable VRM at rung 6 of RFD66606-2136.
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2171) '  Retained without change; `nx-shuttle` already uses it for the same weft-across-warp metaphor.
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2171) '  The two uses do not conflict: one shuttles a character out, the other shuttles a graph across.
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2171) 'The problem
+2026-09-02T00:00:17Z (RFD66606-2171) 'The problem
  # tags: rfd:details-heading
  Text:RFD2171  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2171) '`nx-shuttle` already uses "shuttle" (carrying a graph across to another runtime,
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2171) 'weft-across-warp). Without a settled vocabulary, prose drifts between studio, pipeline,
- # tags: rfd:details
- Text:RFD2171  1 LINE
- Text:Written
-
-2026-09-02T00:00:27Z (RFD66606-2171) 'workshop, atelier.
+2026-09-02T00:00:18Z (RFD66606-2171) '`nx-shuttle` already uses "shuttle" (carrying a graph across to another runtime, weft-across-warp). Without a settled vocabulary, prose drifts between studio, pipeline, workshop, atelier.
  # tags: rfd:details
  Text:RFD2171  1 LINE
  Text:Written

@@ -14,82 +14,42 @@
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2466) 'Can `stablehlo.convolution` map onto ggml-rd's existing conv kernels for the dimension
+2026-11-07T00:00:03Z (RFD66606-2466) 'Can `stablehlo.convolution` map onto ggml-rd's existing conv kernels for the dimension numbers the sconv and dit graphs actually use?
  # tags: rfd:hook
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2466) 'numbers the sconv and dit graphs actually use?
- # tags: rfd:hook
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2466) 'sconv and dit need `stablehlo.convolution`. ggml-rd has `conv2d`, `conv_2d_dw`,
+2026-11-07T00:00:04Z (RFD66606-2466) 'sconv and dit need `stablehlo.convolution`. ggml-rd has `conv2d`, `conv_2d_dw`, `conv_transpose_2d` and an im2col path, but none of them is wired to the dimension numbers, padding, strides, dilation and feature groups those graphs use.
  # tags: rfd:intrigue
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2466) '`conv_transpose_2d` and an im2col path, but none of them is wired to the dimension numbers,
- # tags: rfd:intrigue
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2466) 'padding, strides, dilation and feature groups those graphs use.
- # tags: rfd:intrigue
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2466) 'Cases in `tools/gen_stablehlo_cases.py` cover convolution, including zeros of both signs,
+2026-11-07T00:00:05Z (RFD66606-2466) 'Cases in `tools/gen_stablehlo_cases.py` cover convolution, including zeros of both signs, infinities, NaN and denormals, compared bit for bit against XLA CPU's output from the Zen 2 desk.
  # tags: rfd:exit
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2466) 'infinities, NaN and denormals, compared bit for bit against XLA CPU's output from the Zen 2
- # tags: rfd:exit
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2466) 'desk.
- # tags: rfd:exit
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2466) '- Map the dimension numbers, padding, strides, dilation and feature groups that sconv and dit
+2026-11-07T00:00:06Z (RFD66606-2466) '- Map the dimension numbers, padding, strides, dilation and feature groups that sconv and dit use onto `conv2d`, `conv_2d_dw`, `conv_transpose_2d` or the im2col path, and refuse the rest.
  # tags: rfd:decision
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2466) '  use onto `conv2d`, `conv_2d_dw`, `conv_transpose_2d` or the im2col path, and refuse the rest.
+2026-11-07T00:00:07Z (RFD66606-2466) '- Treat the functional bar as the first target, since bit-equality likely meets the same summation-order question `dot_general` already met.
  # tags: rfd:decision
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2466) '- Treat the functional bar as the first target, since bit-equality likely meets the same
+2026-11-07T00:00:08Z (RFD66606-2466) '- Add convolution cases to `tools/gen_stablehlo_cases.py` with the special values above; a case that cannot reach bit-equality carries a measured reason in `XFAIL`.
  # tags: rfd:decision
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2466) '  summation-order question `dot_general` already met.
+2026-11-07T00:00:09Z (RFD66606-2466) '- A planted control case must fail its gate, and all 11 desk gates still pass.
  # tags: rfd:decision
  Text:RFD2466  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2466) '- Add convolution cases to `tools/gen_stablehlo_cases.py` with the special values above; a
- # tags: rfd:decision
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2466) '  case that cannot reach bit-equality carries a measured reason in `XFAIL`.
- # tags: rfd:decision
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2466) '- A planted control case must fail its gate, and all 11 desk gates still pass.
- # tags: rfd:decision
- Text:RFD2466  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2466) '- RFD66606-2372, the guest ELF and ggml-rd compute route this kernel runs on.
+2026-11-07T00:00:10Z (RFD66606-2466) '- RFD66606-2372, the guest ELF and ggml-rd compute route this kernel runs on.
  # tags: rfd:related
  Text:RFD2466  1 LINE
  Text:Written

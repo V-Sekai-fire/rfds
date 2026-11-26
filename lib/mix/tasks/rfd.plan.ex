@@ -58,7 +58,9 @@ defmodule Mix.Tasks.Rfd.Plan do
   # `RFD.Plan.build/2` raises while the source compiles, so a broken plan arrives here as
   # an exception rather than as a struct; both are reported the same way.
   defp load(source) do
-    case Enum.find(Code.compile_file(source), fn {m, _} -> function_exported?(m, :__plan__, 0) end) do
+    plan? = fn {m, _} -> function_exported?(m, :__plan__, 0) end
+
+    case Enum.find(Code.compile_file(source), plan?) do
       {mod, _} -> {:ok, mod.__plan__()}
       nil -> {:error, "defines no module with __plan__/0"}
     end

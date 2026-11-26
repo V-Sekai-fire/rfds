@@ -28,7 +28,7 @@ defmodule RegisterJournalTest do
         layer: @layer,
         thesis: "Every serial this site has allocated.\nA second line.",
         sections: [
-          {:allocated, nil, [{9001, :l2}]},
+          {:allocated, nil, []},
           {:unused, "Never written.", [9004]},
           {:deleted, "A deleted serial keeps its row.", [9003, 9002]}
         ]
@@ -62,12 +62,13 @@ defmodule RegisterJournalTest do
     }
   }
 
-  defp rfd(serial, slug, site \\ "Test") do
+  defp rfd(serial, slug, site \\ "Test", tags \\ []) do
     code = "RFD66606-#{serial}"
 
     {"rfd/#{serial}-#{slug}.txn",
      "2026-08-25T00:00:00Z (#{code}) 'A title\n # uuid: #{RFD.Txn.v5("rfd", code)}\n" <>
-       " # tags: rfd:title\n RFD:Published  1 RFD\n Serials:#{site}\n"}
+       " # tags: #{Enum.join(["rfd:title" | tags], ", ")}\n RFD:Published  1 RFD\n" <>
+       " Serials:#{site}\n"}
   end
 
   defp tree(journal, rfds) do
@@ -94,7 +95,11 @@ defmodule RegisterJournalTest do
   end
 
   test "the registers are the RFD journals plus the serials journal" do
-    root = tree(Journal.write(@model), [rfd(9000, "conventions"), rfd(9001, "a-slug")])
+    root =
+      tree(Journal.write(@model), [
+        rfd(9000, "conventions"),
+        rfd(9001, "a-slug", "Test", ["rfd:flight-level:l2"])
+      ])
 
     assert [
              %RFD.Register{
@@ -136,6 +141,20 @@ defmodule RegisterJournalTest do
 
     root = tree(Journal.write(@model), [rfd(9000, "conventions"), rfd(9001, "a-slug", "Other")])
     assert_raise ArgumentError, ~r/Serials:Other/, fn -> RFD.Register.from_journals(root) end
+  end
+
+  test "an allocated row's flight level comes from its RFD journal alone" do
+    with_level =
+      String.replace(
+        Journal.write(@model),
+        "'allocated\n # tags: site:section\n Text:Site9  1 LINE\n Text:Written\n",
+        "'allocated\n # tags: site:section\n Text:Site9  1 LINE\n Text:Written\n\n" <>
+          "2026-08-25T00:59:59Z (SITE66606-9) 'RFD66606-9001\n" <>
+          " # tags: site:flight-level:l2\n Text:Site9  1 LINE\n Text:Written\n"
+      )
+
+    assert with_level != Journal.write(@model)
+    assert_raise ArgumentError, ~r/site:flight-level:l2/, fn -> Journal.read!(with_level) end
   end
 
   test "a deleted serial with an RFD journal is a serial listed twice" do

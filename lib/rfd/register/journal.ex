@@ -9,11 +9,9 @@ defmodule RFD.Register.Journal do
   An allocated serial is its RFD, `rfd/NNNN-slug.txn`. Its title
   transaction, dated the registration day and coded `RFD66606-NNNN`,
   posts `RFD:<State>  1 RFD` from `Serials:<Site>`. The slug is the file
-  name, and allocated rows run in serial order, the order they were
-  appended in. The register's flight level of an allocated row is the
-  register's own column, not the RFD's `rfd:flight-level:` title tag:
-  the two were recorded apart and 35 of them disagree, so the register's
-  stays in `journal/serials.txn` until a ruling joins them.
+  name, its `rfd:flight-level:lN` title tag is the row's flight level
+  (the RFD journal is the one source, operator, 2026-11-26), and
+  allocated rows run in serial order, the order they were appended in.
 
   `journal/serials.txn` holds the rest, one entity per code, each
   transaction of an entity on its own second so the order survives
@@ -25,9 +23,9 @@ defmodule RFD.Register.Journal do
     `site:category-name`, `site:pen`, `site:rule`, `site:note:<kind>`,
     `site:thesis`. The sections follow in order: `site:section` names
     one (allocated, unused or deleted), `site:section-note` carries its
-    note, and `site:row` lists its rows by code in register order. Under
-    allocated, `site:flight-level:lN` names an allocated row by code with
-    the register's flight level for it. A line of text is one
+    note, and `site:row` lists its rows by code in register order; the
+    allocated section lists none, its rows are the RFD journals. A line of
+    text is one
     transaction however long it is: a sentence is never broken up for
     line length (operator, 2026-11-26).
   - a serial with no RFD, coded `RFD66606-NNNN` and dated the day it was
@@ -162,13 +160,6 @@ defmodule RFD.Register.Journal do
   defp put(_code, "site:section-note", s, %{sections: [{k, note, rows} | rest]} = acc),
     do: %{acc | sections: [{k, append(note, s), rows} | rest]}
 
-  defp put(_code, "site:flight-level:" <> l, @serial <> n, acc)
-       when l in ~w(l1 l2 l3) and elem(hd(acc.sections), 0) == :allocated do
-    [{:allocated, note, levels} | rest] = acc.sections
-    level = {String.to_integer(n), String.to_atom(l)}
-    %{acc | sections: [{:allocated, note, [level | levels]} | rest]}
-  end
-
   defp put(_code, "site:row", @serial <> n, %{sections: [{k, note, rows} | rest]} = acc)
        when k != :allocated,
        do: %{acc | sections: [{k, note, [String.to_integer(n) | rows]} | rest]}
@@ -243,7 +234,11 @@ defmodule RFD.Register.Journal do
           _ -> raise ArgumentError, "#{path}: the title posts from no Serials: site"
         end
 
-      %{serial: String.to_integer(n), slug: String.slice(name, 5..-1//1), site: site}
+      opts =
+        for "rfd:flight-level:" <> l <- title.tags,
+            do: {:flight_level, String.to_existing_atom(l)}
+
+      %{serial: String.to_integer(n), slug: String.slice(name, 5..-1//1), site: site, opts: opts}
     end
   end
 
@@ -318,17 +313,8 @@ defmodule RFD.Register.Journal do
 
       register_rows =
         Enum.flat_map(s.sections, fn
-          {:allocated, _, levels} ->
-            levels = Map.new(levels)
-
-            for {n, _} <- levels, not Enum.any?(own, &(&1.serial == n)) do
-              raise ArgumentError, "#{@path}: #{@serial}#{n} has a flight level and no RFD"
-            end
-
-            for t <- own do
-              opts = if levels[t.serial], do: [flight_level: levels[t.serial]], else: []
-              {:allocated, t.serial, t.slug, opts}
-            end
+          {:allocated, _, _} ->
+            for t <- own, do: {:allocated, t.serial, t.slug, t.opts}
 
           {_, _, serials} ->
             for n <- serials, r = Map.fetch!(rows, n), do: {r.table, n, r.slug, r.opts}
@@ -359,16 +345,7 @@ defmodule RFD.Register.Journal do
           thesis: r.thesis,
           sections:
             for {kind, note} <- r.sections do
-              serials =
-                if kind == :allocated,
-                  do:
-                    for(
-                      {:allocated, n, _, o} <- r.rows,
-                      o[:flight_level],
-                      do: {n, o[:flight_level]}
-                    ),
-                  else: for({t, n, _, _} <- r.rows, @home[t] == kind, do: n)
-
+              serials = for {t, n, _, _} <- r.rows, @home[t] == kind, do: n
               {kind, note, serials}
             end
         }
@@ -388,7 +365,7 @@ defmodule RFD.Register.Journal do
   def write(%{sites: sites, rows: rows}) do
     blocks =
       Enum.map(sites, &site_text/1) ++
-        for s <- sites, {kind, _, serials} <- s.sections, kind != :allocated, n <- serials do
+        for s <- sites, {_, _, serials} <- s.sections, n <- serials do
           row_text(Map.fetch!(rows, n))
         end
 
@@ -418,7 +395,7 @@ defmodule RFD.Register.Journal do
         Enum.flat_map(s.sections, fn {kind, n, serials} ->
           [{"site:section", Atom.to_string(kind)}] ++
             if(n, do: [{"site:section-note", n}], else: []) ++
-            for(r <- serials, do: row_line(kind, r))
+            for(r <- serials, do: {"site:row", @serial <> Integer.to_string(r)})
         end)
 
     lines =
@@ -433,11 +410,6 @@ defmodule RFD.Register.Journal do
 
     Enum.join([title | lines], "\n")
   end
-
-  defp row_line(:allocated, {n, l}),
-    do: {"site:flight-level:#{l}", @serial <> Integer.to_string(n)}
-
-  defp row_line(_kind, n), do: {"site:row", @serial <> Integer.to_string(n)}
 
   defp row_text(r) do
     code = @serial <> Integer.to_string(r.serial)

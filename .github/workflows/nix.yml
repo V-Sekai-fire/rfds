@@ -3,18 +3,17 @@
 # by digest.
 name: nix
 on:
-  push:
-    branches: [main]
-  pull_request:
-  merge_group:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      run:
+        description: Build the site. When false the jobs report as skipped.
+        type: boolean
+        default: true
 permissions:
   contents: read
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   breaker:
+    if: ${{ inputs.run }}
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     permissions:

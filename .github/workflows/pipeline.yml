@@ -1,0 +1,67 @@
+# The repository's whole CI, one job at a time. Each pull request and branch runs on its own: a newer
+# pull request push cancels the run it supersedes; a merge queue entry, a push to main and the nightly
+# sweep always finish.
+name: pipeline
+on:
+  push:
+    branches: [main]
+  pull_request:
+  merge_group:
+  schedule:
+    # Nightly sweep for orphans, so a branch pushed to after its merge gets caught the next day
+    # rather than at the next unrelated push.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+concurrency:
+  group: pipeline-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+jobs:
+  # What changed, for the part that builds only when its files do. The site build reads the whole
+  # tree except flake.nix, flake.lock, .github, deps, _build and docs (flake.nix, the filter), so a
+  # pull request that touches only those, apart from this pipeline and the nix workflow, skips it
+  # and the skipped job still reports. Pushes, the merge queue, the nightly sweep and manual runs
+  # build everything.
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      site: ${{ steps.changes.outputs.site }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - id: changes
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          files=$RUNNER_TEMP/changed.txt
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            git diff --name-only "$BASE" HEAD > "$files"
+          else
+            echo '.github/workflows/pipeline.yml' > "$files"
+          fi
+          cat "$files"
+          # A file reaches the site unless it is under .github or docs; this pipeline and the nix workflow reach it.
+          if grep -qE '^\.github/workflows/(pipeline|nix)\.yml$' "$files" || grep -vE '^\.github/|(^|/)docs/' "$files" > /dev/null; then
+            echo "site=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "site=false" >> "$GITHUB_OUTPUT"
+          fi
+  checks:
+    needs: plan
+    uses: ./.github/workflows/checks.yml
+    with:
+      run: true
+    secrets: inherit
+  nix:
+    needs: [plan, checks]
+    if: ${{ !cancelled() }}
+    permissions:
+      actions: write
+      contents: read
+      packages: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/nix.yml
+    with:
+      run: ${{ needs.plan.outputs.site == 'true' }}
+    secrets: inherit

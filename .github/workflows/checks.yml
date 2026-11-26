@@ -1,29 +1,18 @@
 name: Checks
 
 on:
-  pull_request:
-  merge_group:
-  # A push to main fills the cache. A run restores caches saved on its own branch
-  # or on main, so a cache saved by a pull request helps only that pull request.
-  push:
-    branches: [main]
-  schedule:
-    # Nightly sweep for orphans, so a branch pushed to after its merge
-    # gets caught the next day rather than at the next unrelated push.
-    - cron: "17 5 * * *"
-
-concurrency:
-  # One CI run per branch. A newer pull_request run cancels the older one
-  # still running; a merge_group entry, a push or a scheduled run is never cancelled.
-  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
-
+  workflow_call:
+    inputs:
+      run:
+        description: Run the checks. When false the job reports as skipped.
+        type: boolean
+        default: true
 jobs:
   # prek is the only job: every gate is a hook in `.pre-commit-config.yaml`.
   # The ci-* hooks sit in the manual stage because they need GATE_BASE or
   # GH_TOKEN, which a local commit does not have.
   prek:
-    if: github.event_name == 'pull_request' || github.event_name == 'merge_group' || github.event_name == 'push'
+    if: ${{ inputs.run && (github.event_name == 'pull_request' || github.event_name == 'merge_group' || github.event_name == 'push') }}
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:

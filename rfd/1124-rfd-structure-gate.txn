@@ -1,0 +1,2360 @@
+2026-08-25T00:00:00Z (RFD66606-1124) 'The RFD structure gate reads a CommonMark AST
+ # uuid: 935c5778-f793-5059-898b-e598ede58a05
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Committed  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1124) '`scripts/check-rfd-structure.py`,
+ # tags: rfd:scope
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1124) '`scripts/check-rfd-numbers.py`,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1124) '`scripts/requirements.txt`,
+ # tags: rfd:scope
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1124) '`.pre-commit-config.yaml`,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1124) '`.github/workflows/checks.yml`
+ # tags: rfd:scope
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1124) 'A gate that reads RFDs as a
+ # tags: rfd:hook
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1124) 'CommonMark AST sees what a byte
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1124) 'scan misses.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1124) '
+ # tags: rfd:hook
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1124) 'This repository held 116 RFDs and
+ # tags: rfd:intrigue
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1124) 'one gate. That gate checked
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1124) 'numbers. Nothing checked the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1124) 'shape of a document, so the shape
+ # tags: rfd:intrigue
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1124) 'stayed an agreement each writer
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1124) 'kept from memory.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1124) '
+ # tags: rfd:intrigue
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1124) 'Check a new rule against every
+ # tags: rfd:exit
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1124) 'RFD, with no exception list,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1124) 'before it joins
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1124) '`scripts/check-rfd-structure.py`.
+ # tags: rfd:exit
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1124) '
+ # tags: rfd:exit
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1124) 'The RFD structure gate reads a
+ # tags: rfd:details-title
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1124) 'CommonMark AST
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1124) '`scripts/check-rfd-structure.py`
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1124) 'parses each `README.md` and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1124) '`DETAILS.md`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1124) 'into a CommonMark AST and checks
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1124) 'the document against that tree.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1124) 'It
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1124) 'joins the inline text of a
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1124) 'paragraph before it matches, so a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1124) 'wrapped
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1124) 'citation is one citation. It
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1124) 'found all 37.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1124) '
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1124) 'Each rule ran against all 116
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1124) 'RFDs before it became a rule. A
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1124) 'rule that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1124) 'needed an exception did not ship.
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1124) 'The gate reads both its state
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1124) 'list and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1124) 'its README line limit out of
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1124) 'RFD66606-1000, so document and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1124) 'gate cannot drift
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1124) 'apart. It takes one dependency,
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1124) '`markdown-it-py`, pinned. The
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1124) 'number
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1124) 'gate keeps numbering only, and
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1124) 'its weaker citation scan moved
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1124) 'here.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1124) '
+ # tags: rfd:decision
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1124) 'RFD66606-1000 gives the
+ # tags: rfd:related
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1124) 'conventions this gate measures.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1124) 'RFD66606-1063 moves the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1124) 'prose rules to a plugin, and this
+ # tags: rfd:related
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1124) 'gate checks structure only.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1124) '
+ # tags: rfd:related
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1124) 'How the rules were chosen
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1124) 'Every candidate rule ran against
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1124) 'all 116 RFDs before it became a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1124) 'check.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1124) 'A rule that held with no
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1124) 'exception shipped. A rule that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1124) 'needed an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1124) 'exception list did not, and
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1124) 'appears under "Measured and not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1124) 'gated"
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1124) 'below, with its count, because an
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1124) 'omitted check reads exactly like
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1124) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1124) 'passing one.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1124) 'The survey script parsed each
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1124) '`README.md` and `DETAILS.md` with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1124) '`markdown-it-py` and counted
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1124) 'heading sequences, preamble
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1124) 'fields, states,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1124) 'citations, and sibling files. It
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1124) 'is not kept, because
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1124) '`check-rfd-structure.py` now
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1124) 'asserts what it measured.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1124) 'The rules, and what each measured
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1124) '| rule | held before the gate |
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1124) '| ---- | -------------------- |
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1124) '| One level-1 heading, and it
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1124) 'opens the document | 116 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1124) '| Title reads `RFD <num>:
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1124) '<title>`, number equals the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1124) 'directory | 116 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1124) '| A metadata paragraph sits under
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1124) 'the title | 116 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1124) '| Its fields are State, then
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1124) 'Feature, then Scope | 116 of 116
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1124) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1124) '| State is a value RFD66606-1000
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1124) 'lists | 115 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1124) '| Problem, Decision, References
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1124) 'and Related keep that order | 116
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1124) 'of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1124) '| A `## Decision` section is
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1124) 'present | 114 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1124) '| Every citation resolves to a
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1124) 'directory or an ALIASES.md row |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1124) '116 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1124) '| No citation uses the old
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1124) 'decimal form | 84 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1124) '| A README names its `DETAILS.md`
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1124) '(rescinded, see below) | 87 of 89
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1124) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1124) '| `DETAILS.md` reads `RFD <num>
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1124) 'details: <title>` | 94 of 95 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1124) '| A README is 40 lines or fewer |
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1124) '108 of 116 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1124) '**Rescinded: a README names its
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1124) '`DETAILS.md`.** The gate held
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1124) 'this rule at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1124) '87 of 89 and then stopped
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1124) 'checking it. The site prints
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1124) '`DETAILS.md` on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1124) 'same page as its README, so a
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1124) 'reader no longer needs a pointer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1124) 'to find it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1124) 'The row above stays as it was
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1124) 'measured, next to what it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1124) 'retracts.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1124) '`check-rfd-structure.py` accepts
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1124) 'a `DETAILS.md` the README does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1124) 'not name,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1124) 'and its self-test says so.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1124) 'Two of these need their exception
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1124) 'stated, because the number above
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1124) 'is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1124) 'not 116 and the rule still
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1124) 'shipped.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1124) '**A `## Decision` section.** The
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1124) 'two without it are RFD66606-1074
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1124) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1124) 'RFD66606-1078. Both carry `State:
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1124) 'abandoned`, which means another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1124) 'repository
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1124) 'now develops the RFD, and an
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1124) 'abandoned RFD states only where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1124) 'it went. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1124) 'gate requires a Decision unless
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1124) 'the state is `abandoned`, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1124) 'that holds at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1124) '116 of 116.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1124) '**A retracted decision renames
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1124) 'its own heading.** RFD66606-1067
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1124) 'heads its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1124) 'section "Decision, as published
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1124) 'and now retracted". The gate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1124) 'matches a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1124) 'heading that starts with
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1124) '`Decision` and a comma, so a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1124) 'retraction in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1124) 'place does not have to hide
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1124) 'behind the original title.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1124) 'Measured and not gated
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1124) '**A `## Problem` section.** 111
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1124) 'of 116. The five without one are
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1124) 'RFD66606-1000, RFD66606-1012,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1124) 'RFD66606-1015, RFD66606-1074 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1124) 'RFD66606-1078. Four are
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1124) 'abandoned, and RFD66606-1000 is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1124) 'the conventions
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1124) 'document itself. The carve-outs
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1124) 'would outnumber the signal, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1124) 'the gate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1124) 'checks the position of Problem
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1124) 'and not its presence.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1124) '**A `## Related` section.** 111
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1124) 'of 116. RFD66606-1020,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1124) 'RFD66606-1021, RFD66606-1022 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1124) 'RFD66606-1023 end at their
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1124) 'Decision, and RFD66606-1074 has
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1124) 'no section at all. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1124) 'four look like omissions rather
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1124) 'than a choice, and adding a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1124) 'section to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1124) 'somebody else's RFD is an edit
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1124) 'this work did not make.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1124) 'The line limit, and the two
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1124) 'things it turned up
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1124) 'RFD66606-1000 stated "under 40
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1124) 'lines" and 8 of 116 READMEs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1124) 'exceeded it, at 41,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1124) '43, 46, 82, 93, 131, 152 and 179
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1124) 'lines. Five were long because
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-1124) 'they
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-1124) 'carried a retraction in place,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-1124) 'which `CLAUDE.md` requires, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-1124) 'that read
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-1124) 'as a conflict between two house
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-1124) 'rules.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-1124) 'It was not one. A retraction
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-1124) 'stays next to what it retracts,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-1124) 'and after a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-1124) 'move the thing it retracts is the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-1124) 'detail, which lives in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-1124) '`DETAILS.md`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-1124) 'So the retraction goes there too
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-1124) 'and the rule is unbroken. All
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-1124) 'eight
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-1124) 'READMEs were split on that
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-1124) 'reading, and no retraction was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-1124) 'deleted.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-1124) 'Splitting them turned up the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-1124) 'second thing. With the eight
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-1124) 'fixed, **12
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-1124) 'READMEs sat at exactly 40
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-1124) 'lines**. Twelve files landing on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-1124) 'one number is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-1124) 'not chance, so the bound the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-1124) 'corpus keeps is inclusive and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-1124) 'RFD66606-1000's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-1124) '"under 40" was off by one. The
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-1124) 'document was corrected to "40
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-1124) 'lines or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-1124) 'fewer" and the gate reads the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-1124) 'number from that sentence.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-1124) 'Three of the eight needed real
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-1124) 'compression rather than a move:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-1124) 'RFD66606-1121,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-1124) 'RFD66606-1122 and RFD66606-1123
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-1124) 'state a long decision, and their
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-1124) 'READMEs went from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-1124) '131, 152 and 182 lines to 39
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-1124) 'each. Nothing was dropped. Every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-1124) 'removed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-1124) 'section either moved into
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (RFD66606-1124) '`DETAILS.md` or was already there
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (RFD66606-1124) 'in fuller
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (RFD66606-1124) 'form, which is why three of them
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (RFD66606-1124) 'could go without a replacement.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:08Z (RFD66606-1124) 'The defects the measurement
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:09Z (RFD66606-1124) 'found, and the repairs
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:10Z (RFD66606-1124) '- Citations in the old decimal
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:11Z (RFD66606-1124) 'form: count 37 in 32 files;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:12Z (RFD66606-1124) 'repair Rewritten from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:13Z (RFD66606-1124) 'ALIASES.md
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:14Z (RFD66606-1124) '  map. The substitution keeps the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:15Z (RFD66606-1124) 'same four characters, so every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:16Z (RFD66606-1124) 'line wrap is unchanged.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:17Z (RFD66606-1124) '- `State: pre-discussion`: count
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:18Z (RFD66606-1124) '1, RFD66606-1064; repair
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:19Z (RFD66606-1124) 'Corrected to `prediscussion`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:20Z (RFD66606-1124) '- A state RFD66606-1000 does not
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:21Z (RFD66606-1124) 'list: count 2, RFD66606-1074 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:22Z (RFD66606-1124) 'RFD66606-1078; repair `moved`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:23Z (RFD66606-1124) '  added to RFD66606-1000, because
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:24Z (RFD66606-1124) 'the use predates the list. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:25Z (RFD66606-1124) 'state left the list again when
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:26Z (RFD66606-1124) '  the vocabulary returned to the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:27Z (RFD66606-1124) 'six, and both now read
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:28Z (RFD66606-1124) '`abandoned`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:29Z (RFD66606-1124) '- A `DETAILS.md` no README named:
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:30Z (RFD66606-1124) 'count 2, RFD66606-1118 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:31Z (RFD66606-1124) 'RFD66606-1123; repair A pointer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:32Z (RFD66606-1124) '  line added before Related,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:33Z (RFD66606-1124) 'where the other 87 put it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:34Z (RFD66606-1124) '- A `DETAILS.md` with a title of
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:35Z (RFD66606-1124) 'its own: count 1, RFD66606-1000;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:36Z (RFD66606-1124) 'repair Retitled `RFD 1000
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:37Z (RFD66606-1124) '  details: numbering`.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:38Z (RFD66606-1124) '- READMEs over the line limit:
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:39Z (RFD66606-1124) 'count 8 of 116; repair Split into
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:40Z (RFD66606-1124) '`README.md` and `DETAILS.md`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:41Z (RFD66606-1124) '  retractions included.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:42Z (RFD66606-1124) '- RFD66606-1000's limit was off
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:43Z (RFD66606-1124) 'by one: count 1; repair Corrected
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:44Z (RFD66606-1124) 'to "40 lines or fewer", which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:45Z (RFD66606-1124) '  is what 12 READMEs already sit
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:46Z (RFD66606-1124) 'on.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:47Z (RFD66606-1124) '- A heading written twice on one
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:48Z (RFD66606-1124) 'line: count 1, RFD66606-1122's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:49Z (RFD66606-1124) '`DETAILS.md`; repair `## What
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:50Z (RFD66606-1124) '  exists, and what does not##
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:51Z (RFD66606-1124) 'What exists, and what does not`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:52Z (RFD66606-1124) '- An RFD after the migration
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:53Z (RFD66606-1124) 'cannot pass: count latent; repair
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:54Z (RFD66606-1124) 'See below.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:55Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:56Z (RFD66606-1124) 'The last one had not fired yet.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:57Z (RFD66606-1124) '`check-rfd-numbers.py` required
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:58Z (RFD66606-1124) 'an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:04:59Z (RFD66606-1124) 'ALIASES.md row for every
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:00Z (RFD66606-1124) 'directory. ALIASES.md maps an old
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:01Z (RFD66606-1124) 'number to a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:02Z (RFD66606-1124) 'new one, and an RFD written after
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:03Z (RFD66606-1124) 'the migration has no old number.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:04Z (RFD66606-1124) 'This
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:05Z (RFD66606-1124) 'RFD is the first such RFD, and it
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:06Z (RFD66606-1124) 'would have failed the gate that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:07Z (RFD66606-1124) 'records how it is numbered. The
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:08Z (RFD66606-1124) 'check now reads the migrated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:09Z (RFD66606-1124) 'range out
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:10Z (RFD66606-1124) 'of the table and applies only
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:11Z (RFD66606-1124) 'inside it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:12Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:13Z (RFD66606-1124) 'Why an AST, in a repository that
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:14Z (RFD66606-1124) 'had no dependency
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:15Z (RFD66606-1124) 'The gap is measurable rather than
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:16Z (RFD66606-1124) 'theoretical. The byte scan found
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:17Z (RFD66606-1124) '3 of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:18Z (RFD66606-1124) 'the 37 unmigrated citations. The
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:19Z (RFD66606-1124) 'other 34 sat across a line break,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:20Z (RFD66606-1124) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:21Z (RFD66606-1124) '`RFD` on one line with `0019` on
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:22Z (RFD66606-1124) 'the next is two unrelated tokens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:23Z (RFD66606-1124) 'to a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:24Z (RFD66606-1124) 'regular expression and one
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:25Z (RFD66606-1124) 'citation to a reader.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:26Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:27Z (RFD66606-1124) 'Widening the expression to allow
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:28Z (RFD66606-1124) 'a newline would repair that one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:29Z (RFD66606-1124) 'case.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:30Z (RFD66606-1124) 'It would not repair the next one,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:31Z (RFD66606-1124) 'because the class of defect is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:32Z (RFD66606-1124) 'reading
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:33Z (RFD66606-1124) 'markup as text. The AST is where
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:34Z (RFD66606-1124) 'the distinction lives, and every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:35Z (RFD66606-1124) 'later
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:36Z (RFD66606-1124) 'rule here reuses it: the metadata
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:37Z (RFD66606-1124) 'fields come from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:38Z (RFD66606-1124) 'strong-emphasis
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:39Z (RFD66606-1124) 'tokens rather than from counting
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:40Z (RFD66606-1124) 'asterisks, and the section spine
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:41Z (RFD66606-1124) 'comes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:42Z (RFD66606-1124) 'from heading tokens rather than
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:43Z (RFD66606-1124) 'from lines that start with a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:44Z (RFD66606-1124) 'hash.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:45Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:46Z (RFD66606-1124) '`markdown-it-py` is pinned in
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:47Z (RFD66606-1124) '`scripts/requirements.txt`. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:48Z (RFD66606-1124) 'parser change
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:49Z (RFD66606-1124) 'would move what the gate sees,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:50Z (RFD66606-1124) 'and a gate that changes verdict
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:51Z (RFD66606-1124) 'without a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:52Z (RFD66606-1124) 'diff is not a gate.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:53Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:54Z (RFD66606-1124) 'The negative controls
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:55Z (RFD66606-1124) '`python
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:56Z (RFD66606-1124) 'scripts/check-rfd-structure.py
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:57Z (RFD66606-1124) '--self-test` builds a small tree
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:58Z (RFD66606-1124) 'for each case and asserts the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:05:59Z (RFD66606-1124) 'verdict. One case is a clean tree
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:00Z (RFD66606-1124) 'that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:01Z (RFD66606-1124) 'must pass. Fifteen are known-bad
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:02Z (RFD66606-1124) 'trees that must fail:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:03Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:04Z (RFD66606-1124) '    title number disagrees with
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:05Z (RFD66606-1124) 'the directory
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:06Z (RFD66606-1124) '    the title is not the first
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:07Z (RFD66606-1124) 'block
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:08Z (RFD66606-1124) '    a second level-1 heading
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:09Z (RFD66606-1124) '    no metadata paragraph
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:10Z (RFD66606-1124) '    a state RFD 1000 does not
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:11Z (RFD66606-1124) 'list
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:12Z (RFD66606-1124) '    Scope written before Feature
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:13Z (RFD66606-1124) '    an unknown metadata field
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:14Z (RFD66606-1124) '    no Decision section
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:15Z (RFD66606-1124) '    Decision written before
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:16Z (RFD66606-1124) 'Problem
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:17Z (RFD66606-1124) '    a decimal citation split
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:18Z (RFD66606-1124) 'across a line break
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:19Z (RFD66606-1124) '    a citation that resolves
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:20Z (RFD66606-1124) 'nowhere
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:21Z (RFD66606-1124) '    a DETAILS.md titled for
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:22Z (RFD66606-1124) 'another RFD
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:23Z (RFD66606-1124) '    a README past the line limit
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:24Z (RFD66606-1124) 'RFD 1000 gives
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:25Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:26Z (RFD66606-1124) '`check-rfd-numbers.py` carries
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:27Z (RFD66606-1124) 'seven of its own, including the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:28Z (RFD66606-1124) 'two that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:29Z (RFD66606-1124) 'reject the withdrawn hex form: a
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:30Z (RFD66606-1124) 'hex directory name must fail, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:31Z (RFD66606-1124) 'so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:32Z (RFD66606-1124) 'must a hex heading over a decimal
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:33Z (RFD66606-1124) 'directory.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:34Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:35Z (RFD66606-1124) 'Both self-tests run before the
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:36Z (RFD66606-1124) 'gate itself in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:37Z (RFD66606-1124) '`.github/workflows/checks.yml`,
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:38Z (RFD66606-1124) 'so each proves it can reject
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:39Z (RFD66606-1124) 'before it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:40Z (RFD66606-1124) 'judges the repository.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:41Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:42Z (RFD66606-1124) 'What the decimal renumbering
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:43Z (RFD66606-1124) 'withdrew
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:44Z (RFD66606-1124) 'Every count above was measured
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:45Z (RFD66606-1124) 'against the corpus while RFD
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:46Z (RFD66606-1124) 'numbers were
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:47Z (RFD66606-1124) 'hexadecimal and `ALIASES.md`
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:48Z (RFD66606-1124) 'existed. RFD66606-1000 renumbered
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:49Z (RFD66606-1124) 'the corpus to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:50Z (RFD66606-1124) 'decimal and deleted that table.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:51Z (RFD66606-1124) 'The measurements stay as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:52Z (RFD66606-1124) 'measured. Two of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:53Z (RFD66606-1124) 'the rules they produced do not.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:54Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:55Z (RFD66606-1124) 'The row reading "Every citation
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:56Z (RFD66606-1124) 'resolves to a directory or an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:57Z (RFD66606-1124) 'ALIASES.md
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:58Z (RFD66606-1124) 'row" now reads "to a serial
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:06:59Z (RFD66606-1124) '`SERIALS.usda` lists", live or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:00Z (RFD66606-1124) 'deleted. This
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:01Z (RFD66606-1124) 'gate borrows
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:02Z (RFD66606-1124) '`check-rfd-serials.py`'s reader
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:03Z (RFD66606-1124) 'rather than parsing the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:04Z (RFD66606-1124) 'register a second way, so the two
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:05Z (RFD66606-1124) 'cannot disagree about which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:06Z (RFD66606-1124) 'numbers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:07Z (RFD66606-1124) 'exist. That is the arrangement
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:08Z (RFD66606-1124) 'the state list and the line limit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:09Z (RFD66606-1124) 'already
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:10Z (RFD66606-1124) 'use, one file further along.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:11Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:12Z (RFD66606-1124) 'An earlier draft of this
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:13Z (RFD66606-1124) 'paragraph said the gate parses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:14Z (RFD66606-1124) 'the deleted numbers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:15Z (RFD66606-1124) 'out of RFD66606-1070's prose. It
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:16Z (RFD66606-1124) 'did, for one commit, and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:17Z (RFD66606-1124) 'register replaced
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:18Z (RFD66606-1124) 'it. The paragraph is corrected
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:19Z (RFD66606-1124) 'rather than deleted because a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:20Z (RFD66606-1124) 'document that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:21Z (RFD66606-1124) 'states a rule the code does not
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:22Z (RFD66606-1124) 'implement is the failure this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:23Z (RFD66606-1124) 'whole RFD was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:24Z (RFD66606-1124) 'written against, and it happened
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:25Z (RFD66606-1124) 'here.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:26Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:27Z (RFD66606-1124) 'The row reading "No citation uses
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:28Z (RFD66606-1124) 'the old decimal form" now covers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:29Z (RFD66606-1124) 'two
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:30Z (RFD66606-1124) 'withdrawn forms. A number
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:31Z (RFD66606-1124) 'beginning with 0 is the first. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:32Z (RFD66606-1124) 'serial carrying
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:33Z (RFD66606-1124) 'a letter is the second, and 131
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:34Z (RFD66606-1124) 'RFDs wore it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:35Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:36Z (RFD66606-1124) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:37Z (RFD66606-1124) 'A measurement over all 116 found
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:38Z (RFD66606-1124) 'nine kinds of defect. The largest
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:39Z (RFD66606-1124) 'was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:40Z (RFD66606-1124) '37 citations still in the old
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:41Z (RFD66606-1124) 'decimal form. The number gate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:42Z (RFD66606-1124) 'looked for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:43Z (RFD66606-1124) 'those and reported 3. An RFD
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:44Z (RFD66606-1124) 'wraps its prose at about 72
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:45Z (RFD66606-1124) 'columns, so a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:46Z (RFD66606-1124) 'citation splits across a line
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:47Z (RFD66606-1124) 'break, and a scan of the bytes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:48Z (RFD66606-1124) 'cannot see
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:49Z (RFD66606-1124) 'it. That gate measured the file.
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:50Z (RFD66606-1124) 'The rule is about the sentence.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1124  1 LINE
+ Text:Written
+
+2026-08-25T00:07:51Z (RFD66606-1124) '
+ # tags: rfd:details
+ Text:RFD1124  1 LINE
+ Text:Written

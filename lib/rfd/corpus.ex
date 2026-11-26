@@ -63,11 +63,11 @@ defmodule RFD.Corpus do
     Code.compiler_options(ignore_module_conflict: true)
 
     entries =
-      for path <- Path.wildcard(Path.join(root, "rfd/[0-9][0-9][0-9][0-9]-*.exs")),
+      for path <- Path.wildcard(Path.join(root, "rfd/[0-9][0-9][0-9][0-9]-*.txn")),
           doc = RFD.Source.load(path) do
         %Entry{
           serial: doc.serial,
-          slug: path |> Path.basename(".exs") |> String.slice(5..-1//1),
+          slug: path |> Path.basename(".txn") |> String.slice(5..-1//1),
           title: doc.title,
           state: doc.state,
           feature: doc.feature,

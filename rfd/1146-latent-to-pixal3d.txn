@@ -1,0 +1,315 @@
+2026-08-25T00:00:00Z (RFD66606-1146) 'The latent-to-Pixal3D loop
+ # uuid: db2249b5-bfe2-54e0-ad92-b70280817b08
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Published  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1146) 'loop 4 of the four-loop plan
+ # tags: rfd:feature
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1146) '`fourloops-plan.usda`
+ # tags: rfd:scope
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1146) 'Loop 4 leaves the image plane,
+ # tags: rfd:hook
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1146) 'and its router waits on
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1146) 'calibration.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1146) '
+ # tags: rfd:hook
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1146) 'The router decides which repair
+ # tags: rfd:intrigue
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1146) 'arm runs, and it decides on a
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1146) 'statistic nobody has
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1146) 'calibrated.
+ # tags: rfd:intrigue
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1146) '
+ # tags: rfd:intrigue
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1146) 'Read RFD66606-1143 next, the
+ # tags: rfd:exit
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1146) 'first of the other three loops.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1146) '
+ # tags: rfd:exit
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1146) 'Build it, and treat the router as
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1146) 'uncalibrated until measured.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1146) '
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1146) 'The statistic is spread over
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1146) 'mean, and a spread above 0.15
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1146) 'selects the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1146) 'latent arm. `routerCalibrated` is
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1146) '0 in the plan, so that threshold
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1146) 'is a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1146) 'starting value rather than a
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1146) 'result. A router that picks the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1146) 'wrong arm
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1146) 'produces a repair that cannot
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1146) 'help, and the loop still
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1146) 'terminates.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1146) '
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1146) '**The hazard is an arm that
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1146) 'cannot take what the loop
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1146) 'holds.**
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1146) 'VoxHammer raises
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1146) '`NotImplementedError` outside
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1146) 'stub mode, and it takes
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1146) 'a mesh where the loop carries a
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1146) 'latent. So the arm passes through
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1146) '`/extract` first, and a route
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1146) 'that skips that step fails inside
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1146) 'the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1146) 'tool rather than at the boundary.
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1146) '
+ # tags: rfd:decision
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1146) 'RFD66606-1143, RFD66606-1144 and
+ # tags: rfd:related
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1146) 'RFD66606-1145 are the other three
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1146) 'loops. RFD66606-1122 is
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1146) 'the goal, and RFD66606-1132 lists
+ # tags: rfd:related
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1146) 'what converts.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1146) '
+ # tags: rfd:related
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1146) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1146) 'Loop 4 is the only one that
+ # tags: rfd:details
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1146) 'leaves the image plane. Pixal3D
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1146) 'proposes a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1146) 'latent state, then views, then a
+ # tags: rfd:details
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1146) 'glb; EditScore scores; and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1146) 'repair
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1146) 'arm forks between VoxHammer and
+ # tags: rfd:details
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1146) 'OmniGen2. At size XL it is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1146) 'largest
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1146) 'of the four, and it is the only
+ # tags: rfd:details
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1146) 'loop with a router.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1146  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1146) '
+ # tags: rfd:details
+ Text:RFD1146  1 LINE
+ Text:Written

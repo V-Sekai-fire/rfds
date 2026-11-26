@@ -1,0 +1,485 @@
+2026-11-07T00:00:00Z (RFD66606-2468) 'StableHLO: run-time i32 arithmetic
+ # uuid: 858df197-5c50-5d5f-8e9e-2f3cbe48bc89
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2468) 'run-time i32 values become i32
+ # tags: rfd:feature
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2468) 'tensors on the device instead of
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2468) 'a refusal.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2468) 'the StableHLO lowering in
+ # tags: rfd:scope
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2468) 'guest/pjrt-rd/stablehlo.cpp and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2468) 'its generated test cases.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2468) 'Can an i32 value computed at run
+ # tags: rfd:hook
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2468) 'time reach the device, instead of
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2468) 'being refused because it
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2468) 'was not already known when the
+ # tags: rfd:hook
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2468) 'graph was compiled?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2468) '
+ # tags: rfd:hook
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2468) 'Today an i32 value is folded away
+ # tags: rfd:intrigue
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2468) 'on the host whenever the compiler
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2468) 'already knows it, and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2468) 'refused the moment it is computed
+ # tags: rfd:intrigue
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2468) 'at run time: an argument, or
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2468) 'anything derived from one.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2468) 'Gather's index arithmetic and
+ # tags: rfd:intrigue
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2468) 'dynamic masks need those values
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2468) 'on the device, not on the host,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2468) 'and the five graphs the probes
+ # tags: rfd:intrigue
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2468) 'run (qwen, dit, sconv and the two
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2468) 'Kimodo layers) all touch one.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2468) '
+ # tags: rfd:intrigue
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2468) 'Run the generated cases,
+ # tags: rfd:exit
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2468) 'including zeros of both signs,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2468) 'infinities, NaN and denormals,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2468) 'against
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2468) 'XLA CPU's own output from the Zen
+ # tags: rfd:exit
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2468) '2 desk as the reference, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2468) 'confirm a case built to fail
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2468) 'does fail.
+ # tags: rfd:exit
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2468) '
+ # tags: rfd:exit
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2468) 'StableHLO: run-time i32
+ # tags: rfd:details-title
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2468) 'arithmetic
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2468) 'Hold run-time i32 values as i32
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2468) 'tensors on the device, and add
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2468) 'element-wise kernels under XLA's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2468) 'wrapping semantics: add,
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2468) 'subtract, multiply, compare,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2468) 'select, clamp, and convert to and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2468) 'from
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2468) 'f32. Lift each refusal that
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2468) 'exists only for lack of one of
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2468) 'these kernels, case by case, so
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2468) 'that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2468) 'every case in the generator is
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2468) 'either bit-equal on the GPU or
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2468) 'carries a measured reason in
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2468) 'XFAIL, with all 11 desk gates
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2468) 'kept green throughout.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2468) '
+ # tags: rfd:decision
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2468) 'Cases and reference
+ # tags: rfd:details-heading
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2468) 'tools/gen_stablehlo_cases.py
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2468) 'exercises the special values a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2468) 'run-time i32 path must survive:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2468) 'zeros of both signs, infinities,
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2468) 'NaN and denormals. XLA CPU's own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2468) 'output, taken from the Zen 2
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2468) 'desk, is the bit-equal reference
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2468) 'for every case; there is no other
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:03Z (RFD66606-2468) 'oracle in use here.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:04Z (RFD66606-2468) '
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:05Z (RFD66606-2468) '
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:06Z (RFD66606-2468) 'What ships
+ # tags: rfd:details-heading
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:07Z (RFD66606-2468) '- Run-time i32 values held as i32
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:08Z (RFD66606-2468) 'tensors on the device, never
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:09Z (RFD66606-2468) 'folded away because they were
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:10Z (RFD66606-2468) '  not known at compile time.
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:11Z (RFD66606-2468) '- Element-wise kernels: add,
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:12Z (RFD66606-2468) 'subtract, multiply, compare,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:13Z (RFD66606-2468) 'select, clamp, and conversion to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:14Z (RFD66606-2468) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:15Z (RFD66606-2468) '  from f32, each under XLA's own
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:16Z (RFD66606-2468) 'wrapping semantics rather than a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:17Z (RFD66606-2468) 'saturating one.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:18Z (RFD66606-2468) '- Refusals lifted only where one
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:19Z (RFD66606-2468) 'of the kernels above now covers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:20Z (RFD66606-2468) 'the case; a case no kernel
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:21Z (RFD66606-2468) '  covers keeps its refusal
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:22Z (RFD66606-2468) 'unchanged.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:23Z (RFD66606-2468) '
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:24Z (RFD66606-2468) '
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:25Z (RFD66606-2468) 'Acceptance
+ # tags: rfd:details-heading
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:26Z (RFD66606-2468) '- Every case in
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:27Z (RFD66606-2468) 'tools/gen_stablehlo_cases.py is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:28Z (RFD66606-2468) 'bit-equal on the GPU, or carries
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:29Z (RFD66606-2468) 'a measured
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:30Z (RFD66606-2468) '  reason recorded in XFAIL.
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:31Z (RFD66606-2468) '- A case built to fail does fail;
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:32Z (RFD66606-2468) 'a gate that cannot fail proves
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:33Z (RFD66606-2468) 'nothing.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:34Z (RFD66606-2468) '- All 11 desk gates still pass
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:35Z (RFD66606-2468) 'after the change lands.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2468  1 LINE
+ Text:Written
+
+2026-11-07T00:01:36Z (RFD66606-2468) '
+ # tags: rfd:details
+ Text:RFD2468  1 LINE
+ Text:Written

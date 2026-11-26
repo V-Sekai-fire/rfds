@@ -40,7 +40,7 @@ defmodule Mix.Tasks.Rfd.Next do
   end
 
   defp claimed(site) do
-    files = for f <- Path.wildcard("rfd/#{site}[0-9][0-9][0-9]-*.exs"), do: Path.basename(f)
+    files = for f <- Path.wildcard("rfd/#{site}[0-9][0-9][0-9]-*.txn"), do: Path.basename(f)
     branches = remote_branches() ++ files
 
     for name <- branches,

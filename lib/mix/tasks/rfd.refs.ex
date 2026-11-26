@@ -40,7 +40,11 @@ defmodule Mix.Tasks.Rfd.Refs.Update do
     Mix.Task.run("rfd.render", [])
   end
 
-  def calls, do: Enum.flat_map(RFD.Source.all(), &RFD.Ref.calls(File.read!(&1))) |> Enum.uniq()
+  def calls do
+    RFD.Source.all()
+    |> Enum.flat_map(&RFD.Ref.calls(RFD.Txn.prose(RFD.Txn.parse_raw!(File.read!(&1)))))
+    |> Enum.uniq()
+  end
 
   def world(xml, commit, calls, url) do
     %{
@@ -139,8 +143,8 @@ defmodule Mix.Tasks.Rfd.Restore do
   @impl true
   def run([serial]) do
     path =
-      Path.wildcard(Path.join(RFD.Source.rfd_root(), "#{serial}-*.exs")) |> List.first() ||
-        Mix.raise("no rfd/#{serial}-*.exs")
+      Path.wildcard(Path.join(RFD.Source.rfd_root(), "#{serial}-*.txn")) |> List.first() ||
+        Mix.raise("no rfd/#{serial}-*.txn")
 
     sha = RFD.Source.load(path).abandoned_at || Mix.raise("RFD #{serial} has no abandoned_at")
     root = RFD.Source.repo_root()
@@ -149,7 +153,7 @@ defmodule Mix.Tasks.Rfd.Restore do
       [old | _] ->
         text = RFD.Ref.git(root, ["show", "#{sha}:#{old}"])
         {text, note} = reopen(text)
-        File.write!(path, text)
+        File.write!(path, journal(text, path))
         Mix.shell().info("#{path} restored from #{sha}:#{old}#{note}")
 
       [] ->
@@ -161,6 +165,22 @@ defmodule Mix.Tasks.Rfd.Restore do
   end
 
   def run(_), do: Mix.raise("usage: mix rfd.restore NNNN")
+
+  # The restored source is an old `.exs`; it comes back as a journal dated
+  # by the day its serial was registered.
+  defp journal(source, path) do
+    tmp = Path.join(System.tmp_dir!(), "restore-#{System.unique_integer([:positive])}.exs")
+    File.write!(tmp, source)
+
+    try do
+      doc = RFD.DSL.unexpanded(fn -> RFD.Source.load(tmp) end)
+      site = if div(doc.serial, 1000) == 1, do: "Weftspun", else: "VSekaiFabric"
+      day = RFD.Txn.registered_on(File.read!(path))
+      RFD.Txn.write(doc, day: day, site: site, madr: source =~ ~r/^\s*madr do/m)
+    after
+      File.rm(tmp)
+    end
+  end
 
   def reopen(text) do
     re = ~r/^(rfd\s+\d+,[^\n]*?(?:\n[^\n]*?)??,\s*):abandoned(\s+do\b)/m
@@ -249,9 +269,10 @@ defmodule Mix.Tasks.Rfd.Abandoned.Check do
 
     stubs =
       for path <- RFD.Source.all(),
-          [_, sha] <- [Regex.run(~r/^\s*abandoned_at\s+"([^"]*)"/m, File.read!(path))] do
-        serial = path |> Path.basename() |> String.slice(0, 4) |> String.to_integer()
-        RFD.Ref.abandoned!(serial, sha, root, verify: true)
+          doc = RFD.DSL.unexpanded(fn -> RFD.Source.load(path) end),
+          sha = doc.abandoned_at,
+          is_binary(sha) do
+        RFD.Ref.abandoned!(doc.serial, sha, root, verify: true)
       end
 
     Mix.shell().info("ok   #{length(stubs)} abandoned_at SHA(s) hold a source with a Decision")

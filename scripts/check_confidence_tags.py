@@ -7,13 +7,47 @@ The bands are read from RFD66606-2295's source, so the scale and this gate canno
     python scripts/check_confidence_tags.py --self-test
 """
 import pathlib
+import json
+import subprocess
 import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "rfd" / "2295-agent-replies-state-calibrated-confidence.exs"
+SOURCE = ROOT / "rfd" / "2295-agent-replies-state-calibrated-confidence.txn"
 TAG = re.compile(r"\(([a-z][a-z ]*?), p=(\d\.\d\d)\)")
 ROW = re.compile(r"^\| ([a-z ]+?) \| (\d\.\d\d) \| (\d\.\d\d) \|$")
+
+
+_RFD_TEXTS = {}
+
+
+def _rfd_fetch(rev, paths):
+    args = ["mix", "rfd.text"] + (["--rev", rev] if rev else []) + paths
+    out = subprocess.run(args, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    if out.returncode != 0:
+        raise SystemExit(f"FAIL mix rfd.text: {out.stderr.strip()[-300:]}")
+    rows = (json.loads(l) for l in out.stdout.splitlines() if l.startswith("{"))
+    return {r["path"]: r for r in rows}
+
+
+def rfd_text(rev, path):
+    """An RFD journal as the prose gates read it; one `mix rfd.text` per revision."""
+    if rev not in _RFD_TEXTS:
+        every = sorted(str(p.relative_to(ROOT)) for p in pathlib.Path(ROOT).glob("rfd/[0-9][0-9][0-9][0-9]-*.txn"))
+        _RFD_TEXTS[rev] = _rfd_fetch(rev, every)
+    path = str(path).replace("\\", "/")
+    if path not in _RFD_TEXTS[rev]:
+        _RFD_TEXTS[rev].update(_rfd_fetch(rev, [path]))
+    return _RFD_TEXTS[rev][path]
+
+
+def rfd_markdown(rev, path):
+    t = rfd_text(rev, path)
+    return t["markdown"] if t.get("found") else None
+
+
+def is_journal(path):
+    return re.match(r"^rfd/[0-9]{4}-[^/]+\.txn$", str(path).replace("\\", "/")) is not None
 
 
 def read_bands(text: str) -> dict:
@@ -38,8 +72,15 @@ def problems(text: str, bands: dict, where: str) -> list:
     return out
 
 
+def read_text(path) -> str:
+    rel = path.relative_to(ROOT) if path.is_absolute() else path
+    if is_journal(rel):
+        return rfd_markdown(None, str(rel)) or ""
+    return path.read_text(encoding="utf-8")
+
+
 def default_paths() -> list:
-    return sorted(ROOT.glob("logbook/*.md")) + sorted(ROOT.glob("rfd/[0-9][0-9][0-9][0-9]-*.exs"))
+    return sorted(ROOT.glob("logbook/*.md")) + sorted(ROOT.glob("rfd/[0-9][0-9][0-9][0-9]-*.txn"))
 
 
 def self_test(bands: dict) -> int:
@@ -59,14 +100,14 @@ def self_test(bands: dict) -> int:
 
 
 def main(argv: list) -> int:
-    bands = read_bands(SOURCE.read_text(encoding="utf-8"))
+    bands = read_bands(read_text(SOURCE))
     if "--self-test" in argv:
         return self_test(bands)
     paths = [pathlib.Path(a) for a in argv] or default_paths()
     found = []
     tags = 0
     for path in paths:
-        text = path.read_text(encoding="utf-8")
+        text = read_text(path)
         tags += len(TAG.findall(text))
         found += problems(text, bands, str(path.relative_to(ROOT) if path.is_absolute() else path))
     for line in found:

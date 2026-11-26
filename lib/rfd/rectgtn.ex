@@ -517,8 +517,8 @@ defmodule RFD.RECTGTN do
   def slug(%{serial: serial}) do
     prefix = Integer.to_string(serial) <> "-"
 
-    Path.wildcard("rfd/#{prefix}*.exs")
-    |> Enum.map(&Path.basename(&1, ".exs"))
+    Path.wildcard("rfd/#{prefix}*.txn")
+    |> Enum.map(&Path.basename(&1, ".txn"))
     |> Enum.find("#{serial}-unknown", &String.starts_with?(&1, prefix))
   end
 end

@@ -1,0 +1,240 @@
+2026-10-31T00:00:00Z (RFD66606-2380) 'the SkinTokens packages live in a model repository
+ # uuid: 12cadfa6-9558-57b5-bd69-588c987fdebf
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2380) 'where the SkinTokens viewer's
+ # tags: rfd:scope
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2380) 'packages ship, and how an upload
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2380) 'is checked.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2380) 'The SkinTokens viewer's packages
+ # tags: rfd:hook
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2380) 'ship from a public model
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2380) 'repository, checked by hash.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2380) '
+ # tags: rfd:hook
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2380) 'Each package holds the rig model
+ # tags: rfd:intrigue
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2380) 'and is about 1.3 GB, more than a
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2380) 'Space can hold. Which files
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2380) 'do visitors get, and who decides
+ # tags: rfd:intrigue
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2380) 'when they change?
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2380) '
+ # tags: rfd:intrigue
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2380) 'Check each upload by comparing
+ # tags: rfd:exit
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2380) 'the repository's file hashes with
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2380) 'the package's `SHA256SUMS`,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2380) 'and change the Space page's
+ # tags: rfd:exit
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2380) 'SHA-256 lines in the same pass.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2380) '
+ # tags: rfd:exit
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2380) 'the SkinTokens packages live in a
+ # tags: rfd:details-title
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2380) 'model repository
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2380) '- The packages are files of a
+ # tags: rfd:decision
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2380) 'public model repository on
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2380) 'Hugging Face, and the auto-rig
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2380) 'Space
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2380) '  links that repository's `main`.
+ # tags: rfd:decision
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2380) '
+ # tags: rfd:decision
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2380) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2380) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2380) '
+ # tags: rfd:related
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2380) 'Dev releases
+ # tags: rfd:details-heading
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2380) 'A dev release puts the same files
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2380) 'on its `dev` branch, so visitors
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2380) 'keep the files on `main`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2380) 'until the operator promotes it
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2380) '(operator, 2026-10-18).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2380) '
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2380) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2380) 'The SkinTokens viewer's packages
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2380) 'hold the rig model, about 1.3 GB
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2380) 'each, more than a Space can
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2380) 'hold.
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2380) '
+ # tags: rfd:details
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2380) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2380) 'rfd-2380 provides
+ # tags: rebac:relate
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2380) 'skintokens-model-repo-packages
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2380  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2380) 'rfd-2380 is_a deployment
+ # tags: rebac:relate
+ Text:RFD2380  1 LINE
+ Text:Written

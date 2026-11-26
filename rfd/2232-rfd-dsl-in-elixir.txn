@@ -1,0 +1,1190 @@
+2026-09-07T00:00:00Z (RFD66606-2232) 'RFD authoring as an Elixir DSL
+ # uuid: 109bde34-61f8-5d7c-97df-50917e546c5a
+ # tags: rfd:title
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-07T00:00:01Z (RFD66606-2232) 'one `rfd/NNNN-slug.exs` per RFD
+ # tags: rfd:feature
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:02Z (RFD66606-2232) 'and one `SERIALS*.exs` per site,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:03Z (RFD66606-2232) 'compiled by `rfd_dsl`; the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:04Z (RFD66606-2232) 'Markdown and the `.usda`
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:05Z (RFD66606-2232) 'registers are renderings of them
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:06Z (RFD66606-2232) 'and are not tracked
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:07Z (RFD66606-2232) 'the Mix project at the repository
+ # tags: rfd:scope
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:08Z (RFD66606-2232) 'root, every `rfd/*.exs`,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:09Z (RFD66606-2232) '`SERIALS.exs` and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:10Z (RFD66606-2232) '`SERIALS-vsekai-fabric.exs`
+ # tags: rfd:scope
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:11Z (RFD66606-2232) 'An RFD is an Elixir file, and the
+ # tags: rfd:hook
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:12Z (RFD66606-2232) 'compiler refuses a malformed one
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:13Z (RFD66606-2232) 'before it is written.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:14Z (RFD66606-2232) '
+ # tags: rfd:hook
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:15Z (RFD66606-2232) 'The shape was enforced after the
+ # tags: rfd:intrigue
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:16Z (RFD66606-2232) 'fact by Python gates reading
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:17Z (RFD66606-2232) 'Markdown, and 143 problems
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:18Z (RFD66606-2232) 'accumulated before one pass fixed
+ # tags: rfd:intrigue
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:19Z (RFD66606-2232) 'them.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:20Z (RFD66606-2232) '
+ # tags: rfd:intrigue
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:21Z (RFD66606-2232) 'Add a new RFD as
+ # tags: rfd:exit
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:22Z (RFD66606-2232) '`rfd/NNNN-slug.exs` plus a
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:23Z (RFD66606-2232) '`serial` line, then run `mix
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:24Z (RFD66606-2232) 'rfd.serials`.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:25Z (RFD66606-2232) '
+ # tags: rfd:exit
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:26Z (RFD66606-2232) 'RFD authoring as an Elixir DSL
+ # tags: rfd:details-title
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:27Z (RFD66606-2232) 'An RFD is an Elixir module that
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:28Z (RFD66606-2232) 'uses `RFD.DSL`: one `rfd` block
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:29Z (RFD66606-2232) 'with `state`, `feature`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:30Z (RFD66606-2232) '`scope`, `flight_level`,
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:31Z (RFD66606-2232) '`decision`, `problem`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:32Z (RFD66606-2232) '`references`, `related`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:33Z (RFD66606-2232) '`details` sections and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:34Z (RFD66606-2232) '`drafted_by`. The block builds an
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:35Z (RFD66606-2232) '`RFD.Doc` and validates it
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:36Z (RFD66606-2232) 'against RFD66606-1000 while the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:37Z (RFD66606-2232) 'file compiles, so a state outside
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:38Z (RFD66606-2232) 'the list, a missing Decision or a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:39Z (RFD66606-2232) 'README over 40 lines is a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:40Z (RFD66606-2232) 'compile error that names the
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:41Z (RFD66606-2232) 'rule.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:42Z (RFD66606-2232) '
+ # tags: rfd:decision
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:43Z (RFD66606-2232) '- RFD66606-1000, the shape
+ # tags: rfd:references
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:44Z (RFD66606-2232) '- RFD66606-2177, the flight_level
+ # tags: rfd:references
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:45Z (RFD66606-2232) 'tag on the register
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:46Z (RFD66606-2232) '
+ # tags: rfd:references
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:47Z (RFD66606-2232) 'The register and the render
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:48Z (RFD66606-2232) 'A site's serial register is a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:49Z (RFD66606-2232) 'module that uses `RFD.Register`:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:50Z (RFD66606-2232) '`allocated`, `unused` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:51Z (RFD66606-2232) '`deleted` blocks of `serial`,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:52Z (RFD66606-2232) '`never_written` and `retired`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:53Z (RFD66606-2232) 'rows.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:54Z (RFD66606-2232) '`mix rfd.render` writes
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:55Z (RFD66606-2232) 'README.md, DETAILS.md and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:56Z (RFD66606-2232) '`SERIALS*.usda`, the shape the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:57Z (RFD66606-2232) 'gates and `pen-66606.usda` read,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:58Z (RFD66606-2232) 'and those files are ignored by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:00:59Z (RFD66606-2232) 'git.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:00Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:01Z (RFD66606-2232) 'Why Elixir
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:02Z (RFD66606-2232) 'The taskweft domains beside many
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:03Z (RFD66606-2232) 'RFDs are already Elixir, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:04Z (RFD66606-2232) 'authoring form that can
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:05Z (RFD66606-2232) 'refuse a malformed document
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:06Z (RFD66606-2232) 'before it is written is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:07Z (RFD66606-2232) 'language the repository already
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:08Z (RFD66606-2232) 'runs.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:09Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:10Z (RFD66606-2232) 'The flight level
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:11Z (RFD66606-2232) 'RFD66606-2177: the register
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:12Z (RFD66606-2232) 'carries `flight_level`, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:13Z (RFD66606-2232) 'DSL writes it to the register
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:14Z (RFD66606-2232) 'row, not the README.
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:15Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:16Z (RFD66606-2232) 'Layout
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:17Z (RFD66606-2232) 'One file per RFD,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:18Z (RFD66606-2232) '`rfd/NNNN-slug.exs`, rendered
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:19Z (RFD66606-2232) 'into `rfd/NNNN-slug/`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:20Z (RFD66606-2232) 'A directory exists in git only
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:21Z (RFD66606-2232) 'when it carries apparatus beside
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:22Z (RFD66606-2232) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:23Z (RFD66606-2232) 'document (a USD layer, a skill, a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:24Z (RFD66606-2232) 'script); README.md, DETAILS.md
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:25Z (RFD66606-2232) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:26Z (RFD66606-2232) '`index.md` under `rfd/` are build
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:27Z (RFD66606-2232) 'artifacts and `.gitignore` names
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:28Z (RFD66606-2232) 'them.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:29Z (RFD66606-2232) 'The registers are `SERIALS.exs`
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:30Z (RFD66606-2232) '(site 1, frozen) and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:31Z (RFD66606-2232) '`SERIALS-vsekai-fabric.exs` (site
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:32Z (RFD66606-2232) '2, where new serials come from),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:33Z (RFD66606-2232) 'rendered
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:34Z (RFD66606-2232) 'to the `.usda` beside them. A new
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:35Z (RFD66606-2232) 'RFD is a new `.exs` and a new
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:36Z (RFD66606-2232) '`serial`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:37Z (RFD66606-2232) 'line in the site's `allocated`
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:38Z (RFD66606-2232) 'block; `mix rfd.serials` refuses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:39Z (RFD66606-2232) 'a source
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:40Z (RFD66606-2232) 'with no row, a row with no
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:41Z (RFD66606-2232) 'source, a slug that disagrees
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:42Z (RFD66606-2232) 'with the file
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:43Z (RFD66606-2232) 'name, and a deleted serial that
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:44Z (RFD66606-2232) 'has a source.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:45Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:46Z (RFD66606-2232) 'What the render is checked
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:47Z (RFD66606-2232) 'against
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:48Z (RFD66606-2232) '`mix test` at the root runs the
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:49Z (RFD66606-2232) 'positive cases and the negative
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:50Z (RFD66606-2232) 'controls: an unknown state, a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:51Z (RFD66606-2232) 'missing Decision, a 40-line
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:52Z (RFD66606-2232) 'overflow, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:53Z (RFD66606-2232) 'serial listed twice, a serial
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:54Z (RFD66606-2232) 'from another site, a retired row
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:55Z (RFD66606-2232) 'naming no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:56Z (RFD66606-2232) 'serial, a renumbering and a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:57Z (RFD66606-2232) 'revived serial are each refused.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:58Z (RFD66606-2232) 'The rendered
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:01:59Z (RFD66606-2232) 'tree then passes
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:00Z (RFD66606-2232) '`check-rfd-structure.py`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:01Z (RFD66606-2232) '`check-rfd-serials.py`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:02Z (RFD66606-2232) '`check_tropes.py` and
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:03Z (RFD66606-2232) '`check_rfd_canary.py` unchanged,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:04Z (RFD66606-2232) 'which is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:05Z (RFD66606-2232) 'compatibility claim: the DSL
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:06Z (RFD66606-2232) 'emits what the existing pipeline
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:07Z (RFD66606-2232) 'consumes.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:08Z (RFD66606-2232) 'CI and the prek hooks render
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:09Z (RFD66606-2232) 'before any gate reads the tree,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:10Z (RFD66606-2232) 'and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:11Z (RFD66606-2232) 'diff-based gates scope themselves
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:12Z (RFD66606-2232) 'by the changed `.exs` sources.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:13Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:14Z (RFD66606-2232) 'What the conversion found
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:15Z (RFD66606-2232) 'Importing 306 RFDs lost no line
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:16Z (RFD66606-2232) 'of prose (`mix rfd.import`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:17Z (RFD66606-2232) 'refuses a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:18Z (RFD66606-2232) 'lossy import). Importing the two
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:19Z (RFD66606-2232) 'registers refused four rows:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:20Z (RFD66606-2232) 'serial
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:21Z (RFD66606-2232) '2143 named both
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:22Z (RFD66606-2232) '`fdb-backup-fans-out-to-r2` on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:23Z (RFD66606-2232) 'main and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:24Z (RFD66606-2232) '`close-out-gates-red-green-scout`
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:25Z (RFD66606-2232) 'from a merged branch, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:26Z (RFD66606-2232) 'second
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:27Z (RFD66606-2232) 'took the next unused serial,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:28Z (RFD66606-2232) '2233; serial 2169 was allocated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:29Z (RFD66606-2232) 'and deleted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:30Z (RFD66606-2232) 'at once; 2184 and 2186 carried
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:31Z (RFD66606-2232) 'slugs their directories had left
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:32Z (RFD66606-2232) 'behind;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:33Z (RFD66606-2232) 'and 2232 had been appended into
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:34Z (RFD66606-2232) 'the deleted scope. A prose tell
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:35Z (RFD66606-2232) '(an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:36Z (RFD66606-2232) 'em-dash join, a pompous copula,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:37Z (RFD66606-2232) 'an `exact` on a soft noun) in any
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:38Z (RFD66606-2232) 'field a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:39Z (RFD66606-2232) 'reader sees is a compile error,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:40Z (RFD66606-2232) 'like the other shape rules.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:41Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:42Z (RFD66606-2232) 'The MADR template as a block
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:43Z (RFD66606-2232) 'The seven MADR headings are a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:44Z (RFD66606-2232) '`madr` block rather than seven
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:45Z (RFD66606-2232) '`details`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:46Z (RFD66606-2232) 'strings: `context`, `drivers`,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:47Z (RFD66606-2232) '`options`, `outcome`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:48Z (RFD66606-2232) '`consequences`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:49Z (RFD66606-2232) '`confirmation`,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:50Z (RFD66606-2232) '`more_information`. The DSL owns
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:51Z (RFD66606-2232) 'the headings, so a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:52Z (RFD66606-2232) 'spelling cannot drift, and it
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:53Z (RFD66606-2232) 'refuses a section given twice, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:54Z (RFD66606-2232) 'run out of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:55Z (RFD66606-2232) 'the template's order, a block
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:56Z (RFD66606-2232) 'missing its context or its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:57Z (RFD66606-2232) 'outcome, a second
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:58Z (RFD66606-2232) 'block and an empty one. A body is
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:02:59Z (RFD66606-2232) 'a string or a list of strings,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:00Z (RFD66606-2232) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:01Z (RFD66606-2232) '`consequences` also takes `good:`
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:02Z (RFD66606-2232) 'and `bad:` lists. `details/2`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:03Z (RFD66606-2232) 'stays for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:04Z (RFD66606-2232) 'a section outside the template,
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:05Z (RFD66606-2232) 'in declaration order beside the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:06Z (RFD66606-2232) 'block.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:07Z (RFD66606-2232) 'The RFDs that carry nothing but
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:08Z (RFD66606-2232) 'the template render the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:09Z (RFD66606-2232) 'bytes through
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:10Z (RFD66606-2232) 'it as they did through the
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:11Z (RFD66606-2232) 'strings. The block nests one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:12Z (RFD66606-2232) 'level and `mix
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:13Z (RFD66606-2232) 'format` re-indents a heredoc to
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:14Z (RFD66606-2232) 'its call, so a file whose body
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:15Z (RFD66606-2232) 'lines
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:16Z (RFD66606-2232) 'already run past the formatter's
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:17Z (RFD66606-2232) '`line_length` stays on `details`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:18Z (RFD66606-2232) 'strings:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:19Z (RFD66606-2232) 'RFD66606-2062 carries an
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:20Z (RFD66606-2232) 'inventory table of 124 such
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:21Z (RFD66606-2232) 'lines.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:22Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:23Z (RFD66606-2232) 'Related RFDs
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:24Z (RFD66606-2232) 'RFD66606-1000 (the README limit
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:25Z (RFD66606-2232) 'and the spine), RFD66606-2177,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:26Z (RFD66606-2232) 'RFD66606-2026 (commit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:27Z (RFD66606-2232) 'style the rendered files ride
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:28Z (RFD66606-2232) 'on).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:29Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:30Z (RFD66606-2232) 'What the DSL does not do
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:31Z (RFD66606-2232) 'It does not read the register
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:32Z (RFD66606-2232) 'from the RFD sources: a serial is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:33Z (RFD66606-2232) 'a fact the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:34Z (RFD66606-2232) 'register records once, and a
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:35Z (RFD66606-2232) 'deleted serial has no source to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:36Z (RFD66606-2232) 'derive it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:37Z (RFD66606-2232) 'from. It does not write: the
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:38Z (RFD66606-2232) 'endpoint answers, and a change is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:39Z (RFD66606-2232) 'a pull
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:40Z (RFD66606-2232) 'request.
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:41Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:42Z (RFD66606-2232) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:43Z (RFD66606-2232) 'The register was a hand-edited
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:44Z (RFD66606-2232) 'layer nothing compiled:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:45Z (RFD66606-2232) 'it carried one serial on two
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:46Z (RFD66606-2232) 'directories, one serial allocated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:47Z (RFD66606-2232) 'and deleted at once, and two
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:48Z (RFD66606-2232) 'slugs that no longer matched
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:49Z (RFD66606-2232) 'their directories.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:50Z (RFD66606-2232) '
+ # tags: rfd:details
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:51Z (RFD66606-2232) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:52Z (RFD66606-2232) 'rfd-2232 provides
+ # tags: rebac:relate
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:53Z (RFD66606-2232) 'rfd-elixir-dsl-compiler
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:54Z (RFD66606-2232) 'rfd-2232 spends
+ # tags: rebac:relate
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:55Z (RFD66606-2232) 'rfd-state-lifecycle
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:56Z (RFD66606-2232) 'rfd-2232 spends elixir
+ # tags: rebac:relate
+ Text:RFD2232  1 LINE
+ Text:Written
+
+2026-09-07T00:03:57Z (RFD66606-2232) 'rfd-2232 is_a ci-gate
+ # tags: rebac:relate
+ Text:RFD2232  1 LINE
+ Text:Written

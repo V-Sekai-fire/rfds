@@ -1,0 +1,290 @@
+2026-10-31T00:00:00Z (RFD66606-2363) 'a person moves by world grab or by controllers
+ # uuid: e64ff4d6-85c2-54fb-96a2-3d15a6b438b1
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2363) 'how a person moves in the
+ # tags: rfd:scope
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2363) 'headset.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2363) 'In the headset a person moves by
+ # tags: rfd:hook
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2363) 'world grab or by controllers, and
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2363) 'both work.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2363) '
+ # tags: rfd:hook
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2363) 'One grip moves nothing, and a
+ # tags: rfd:intrigue
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2363) 'character moved with a gamepad
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2363) 'gets no hand-written controller.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2363) '
+ # tags: rfd:intrigue
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2363) 'Check a new way of moving a
+ # tags: rfd:exit
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2363) 'character against the rule: it
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2363) 'uses the motion guest in the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2363) 'details, and no hand-written
+ # tags: rfd:exit
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2363) 'character controller is added.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2363) '
+ # tags: rfd:exit
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2363) 'a person moves by world grab or
+ # tags: rfd:details-title
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2363) 'by controllers
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2363) '- In the headset a person moves
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2363) 'two ways, and both work.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2363) '- One is xr-grid's world grab:
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2363) 'both grips pinch the world, and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2363) 'moving, turning or spreading
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2363) '  the hands carries, turns or
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2363) 'scales it about the hands'
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2363) 'midpoint
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2363) '  (`addons/procedural_3d_grid/core/xr_pinch.gd`
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2363) 'on a canvas beside the hands, as
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2363) '  &{repo("transport-meshing-pen")}
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2363) 'wires it). One grip moves
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2363) 'nothing.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2363) '- The other is the controllers:
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2363) 'smooth stick movement, snap
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2363) 'turning and teleport.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2363) '
+ # tags: rfd:decision
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2363) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2363) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2363) '
+ # tags: rfd:related
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2363) 'Moving a character with a gamepad
+ # tags: rfd:details-heading
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2363) 'A character moved with a gamepad
+ # tags: rfd:details
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2363) 'uses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2363) '&{repo("interactor-motion-guest")}:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2363) 'the motion models on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2363) 'ggml-rd with compute-rd in a
+ # tags: rfd:details
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2363) 'godot-sandbox guest, retargeted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2363) 'onto the avatar,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2363) 'with the stick setting movement
+ # tags: rfd:details
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2363) 'and facing. No hand-written
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2363) 'character
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2363) 'controller is added.
+ # tags: rfd:details
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2363) '
+ # tags: rfd:details
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2363) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2363) 'rfd-2363 provides
+ # tags: rebac:relate
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2363) 'xr-world-grab-locomotion
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2363) 'rfd-2363 is_a workspace-policy
+ # tags: rebac:relate
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2363) 'rfd-2363 spends
+ # tags: rebac:relate
+ Text:RFD2363  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2363) 'sandbox-guest-heavy-compute
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2363  1 LINE
+ Text:Written

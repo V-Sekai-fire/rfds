@@ -1,0 +1,325 @@
+2026-10-31T00:00:00Z (RFD66606-2429) 'the MaskScore pipeline runs from a container to HF
+ # uuid: 637f3805-86bc-5216-90d1-39cda3624d7e
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2429) 'the MaskScore corpus pipeline,
+ # tags: rfd:scope
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2429) 'from input container to the HF
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2429) 'dataset.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2429) 'The MaskScore corpus is built in
+ # tags: rfd:hook
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2429) 'one pipeline, from a Docker
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2429) 'container per model to HF.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2429) '
+ # tags: rfd:hook
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2429) 'Only 5 of 8 stubs are shipped to
+ # tags: rfd:intrigue
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2429) 'chibifire/maskscore-rung-1-bootstrap
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2429) 'on HF so far.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2429) '
+ # tags: rfd:intrigue
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2429) 'Check a new stub against the
+ # tags: rfd:exit
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2429) 'diagram: it is a 3-file ZSTD
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2429) 'parquet in ETNF with the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2429) 'RFD66606-2165.1 schema.
+ # tags: rfd:exit
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2429) '
+ # tags: rfd:exit
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2429) 'the MaskScore pipeline runs from
+ # tags: rfd:details-title
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2429) 'a container to HF
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2429) '- The pipeline runs in order:
+ # tags: rfd:decision
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2429) 'input, render, MaskScore,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2429) 'parquet, HF.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2429) '- Input is a Docker container per
+ # tags: rfd:decision
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2429) 'model with /health and /predict
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2429) '(RFD66606-1036).
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2429) '- The reconstruct model is ggml
+ # tags: rfd:decision
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2429) 'native per RFD66606-1102.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2429) '
+ # tags: rfd:decision
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2429) '- RFD66606-1102, where this rule
+ # tags: rfd:related
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2429) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2429) '- RFD66606-1036, the model
+ # tags: rfd:related
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2429) 'container with /health and
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2429) '/predict.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2429) '- RFD66606-2165, the schema of
+ # tags: rfd:related
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2429) 'the parquet stubs.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2429) '
+ # tags: rfd:related
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2429) 'Pipeline: MaskScore corpus
+ # tags: rfd:details-heading
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2429) 'construction
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2429) '
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2429) '      input      Docker container
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2429) 'per model, /health + /predict
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2429) '(RFD66606-1036)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2429) '           |
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2429) '      render     Mitsuba
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2429) 'llvm_ad_rgb or metal_ad_rgb,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2429) 'sphere_hammersley
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2429) '           |
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2429) '      MaskScore  mask →
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2429) 'reconstruct → score decoded
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2429) 'outputs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2429) '           |     (reconstruct
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2429) 'model = ggml native per this RFD)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2429) '      parquet    3-file ZSTD per
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2429) 'stub (root + candidates +
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2429) 'scores),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2429) '                 ETNF (no nulls,
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2429) 'interned vocab), RFD66606-2165.1
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2429) 'schema
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2429) '           |
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2429) '      HF         chibifire/maskscore-rung-1-bootstrap,
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2429) '5 of 8 stubs shipped
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2429) '                 (mesh, depth,
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2429) 'pose, keypoints, multimodal,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2429) 'speech)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2429) '
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written

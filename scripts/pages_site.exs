@@ -111,14 +111,14 @@ defmodule PagesSite do
 
       %{
         kind: :rfd,
-        source: "rfd/#{slug}.exs",
+        source: "rfd/#{slug}.txn",
         group: to_string(d.state),
         serial: d.serial,
         hook: d.hook && d.hook |> String.split() |> Enum.join(" "),
         label: shorten(d.title, &short/1),
         status: status |> Enum.reject(&(&1 in [nil, false])) |> Enum.join(" "),
         href: "rfd/#{slug}/",
-        date: Map.get(dates, "rfd/#{slug}.exs", ""),
+        date: RFD.Txn.registered_on(File.read!(path)),
         files:
           for(
             f <- ["README.md", "DETAILS.md"],

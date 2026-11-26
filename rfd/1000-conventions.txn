@@ -1,0 +1,1850 @@
+2026-08-25T00:00:00Z (RFD66606-1000) 'Conventions
+ # uuid: 29104c45-4bc0-5f37-ba9c-6ca6310dd25f
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Published  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1000) 'all files
+ # tags: rfd:scope
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1000) 'One convention sets how this
+ # tags: rfd:hook
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1000) 'repository writes, numbers and
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1000) 'states its RFDs.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1000) '
+ # tags: rfd:hook
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1000) 'Two repositories allocated RFD
+ # tags: rfd:intrigue
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1000) 'numbers from what each treated as
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1000) 'a private space.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1000) '
+ # tags: rfd:intrigue
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1000) 'Read below for the numbering
+ # tags: rfd:exit
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1000) 'rule, and run `mix rfd.check`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1000) 'before you push.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1000) '
+ # tags: rfd:exit
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1000) 'Conventions
+ # tags: rfd:details-title
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1000) 'This repository writes
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1000) 'Request-for-Discussion documents
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1000) 'in the Oxide
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1000) 'style. Each RFD has a state:
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1000) 'prediscussion, ideation,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1000) 'discussion,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1000) 'published, committed, or
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1000) 'abandoned.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1000) '
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1000) 'Scope is not a state. A plan
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1000) 'lists the RFDs it spends. An RFD
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1000) 'outside
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1000) 'that list keeps its state. An RFD
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1000) 'becomes abandoned when its own
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1000) 'decision
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1000) 'is withdrawn, so one change
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1000) 'abandons or deletes three live
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1000) 'RFDs at most.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1000) '`scripts/check_rfd_state_churn.py`
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1000) 'holds that limit.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1000) '
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1000) 'Technical writing follows
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1000) 'ASD-STE100 Simplified Technical
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1000) 'English.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1000) 'An essay follows the AI-trope
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1000) 'gate, and a section names which
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1000) 'one it
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1000) 'takes. RFD66606-1125 gives that
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1000) 'rule. Code and identifiers follow
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1000) 'neither.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1000) '
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1000) 'Each RFD's `README.md` stays at
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1000) '40 lines or fewer. It states the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1000) 'hook, intrigue, decision and exit
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1000) '(HIDE), in the fewest lines that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1000) 'keep them true. The
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1000) '`draft-readable-rfd` skill has
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1000) 'the BLUF rules.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1000) 'Measurement, verification log,
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1000) 'deep walkthrough, or code sample
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1000) 'moves to a sibling `DETAILS.md`,
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1000) 'which the site prints on the same
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1000) 'page. Retractions
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1000) 'move with the rest, and stay next
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1000) 'to what they retract.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1000) '
+ # tags: rfd:decision
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1000) '- RFD style:
+ # tags: rfd:references
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1000) '`rfd-driven-architecture` skill
+ # tags: rfd:references, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1000) '- Numbering rule and OID arc:
+ # tags: rfd:references
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1000) '`DETAILS.md`. Serials in use:
+ # tags: rfd:references, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1000) '`SERIALS.usda`
+ # tags: rfd:references, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1000) '- STE spec:
+ # tags: rfd:references
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1000) 'https://www.asd-ste100.org/
+ # tags: rfd:references, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1000) 'Tropes: https://tropes.fyi
+ # tags: rfd:references, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1000) '
+ # tags: rfd:references
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1000) 'See the DRY policy and the STE
+ # tags: rfd:related
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1000) 'policy in `decisions/README.md`.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1000) '
+ # tags: rfd:related
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1000) 'The STE linter
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1000) 'STE linter: the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1000) '`simplified-technical-english`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1000) 'Claude Code plugin
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1000) '(`fire/claude-ste-plugin`).
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1000) 'RFD66606-1063 records the move
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1000) 'off a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1000) 'repo-local script.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1000) 'Where designs live
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1000) 'The repository keeps designs in
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1000) 'one place. The decisions
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1000) 'directory
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1000) 'records durable decisions. The
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1000) 'docs tree holds detailed designs.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1000) 'An RFD points to its source. It
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1000) 'does not copy the source.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1000) 'The problem this rule answers
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1000) 'Two repositories allocated RFD
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1000) 'numbers from what each treated as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1000) 'a private
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1000) 'space. The spaces were the same
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1000) 'space. This repository held 116
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1000) 'RFDs numbered
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1000) '0000 to 0123.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1000) '`v-sekai-fabric/multiplayer-fabric-manuals`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1000) 'held 129 RFDs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1000) 'numbered 0000 to 0132. 113
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1000) 'numbers named a document in both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1000) 'places.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1000) 'The old rule in this file did not
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1000) 'cause the collision on its own.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1000) 'It said
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1000) 'nothing about numbering at all.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1000) 'The root README said the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1000) 'repository used "one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1000) 'shared numbering space", and it
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1000) 'meant shared across weftspun
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1000) 'projects. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1000) 'fabric repository told its
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1000) 'writers to check its own listing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1000) 'and, in its own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1000) 'words, "not any other repo's own
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1000) 'numbering". Each rule was correct
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1000) 'inside its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1000) 'repository. Together they
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1000) 'guaranteed the collision.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1000) 'The rule
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1000) 'An RFD number has four decimal
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1000) 'digits.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1000) 'The first digit names the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1000) 'organization. This repository
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1000) 'uses digit 1. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1000) 'fabric manuals use digit 2.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1000) 'V-Sekai-fire's private manuals
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1000) 'use digit 3
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1000) '(operator, 2026-10-12).
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1000) '`fire/manuals` reserves digit 4
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1000) 'and has no RFD.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1000) 'The last three digits are the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1000) 'serial number. A new RFD takes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1000) 'the next unused
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1000) 'serial under its own organization
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1000) 'digit. A writer no longer checks
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1000) 'another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1000) 'repository, because another
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1000) 'organization cannot reach this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1000) 'digit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1000) '    RFD 1015    this repository,
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1000) 'serial 015
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1000) '    RFD 2015    the fabric
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1000) 'manuals, serial 015
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1000) 'Three decimal digits give 1000
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1000) 'serials for each organization.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1000) 'This repository
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1000) 'uses 131 of them.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1000) 'Where the organization digit
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1000) 'comes from
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1000) 'The digit is a short name for an
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1000) 'arc under an IANA Private
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1000) 'Enterprise Number.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1000) 'PEN 66606 is assigned to iFire.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1000) 'RFC 9371 gives the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1000) 'registration procedure, and the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1000) 'assignment is itself the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1000) 'delegation. No arc
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1000) 'below 66606 is registered with
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1000) 'anybody.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1000) 'That is also the hazard. RFC 9371
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1000) 'section 1.1 says plainly that no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1000) 'one controls
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1000) 'how an assignee uses its PEN.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1000) 'Nothing outside this workspace
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1000) 'will stop two of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1000) 'our own namespaces from minting
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1000) 'the same arc. Only a table we
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1000) 'keep will.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1000) 'So one arc under the PEN names a
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1000) 'namespace, and no namespace mints
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1000) 'a sibling of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1000) 'another:
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1000) '    66606.1    documents, one arc
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1000) 'for each manual site
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1000) 'The category arc is not
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1000) 'decoration. Without it, a manual
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1000) 'site and anything else
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1000) 'this PEN ever identifies allocate
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1000) 'from one space. A fifth site
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1000) 'would take arc
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1000) '5, and whatever else had picked 5
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1000) 'would already hold it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-1000) 'No second category is allocated.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-1000) 'This document allocates one when
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-1000) 'something
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-1000) 'needs one, under RFD66606-1070's
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-1000) 'rule.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-1000) '66606.1 carries the sites, and
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-1000) 'the site arc is the organization
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-1000) 'digit:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-1000) '    66606.1.1    weftspun
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-1000) '    66606.1.2    v-sekai-fabric
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-1000) '    66606.1.3    v-sekai-fire
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-1000) '    66606.1.4    fire
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-1000) '`fire/manuals` names a decision
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-1000) 'by its date rather than by a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-1000) 'serial, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-1000) 'digit 4 is reserved and holds
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-1000) 'nothing. Digit 3 allocates 3NNN
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-1000) 'serials, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-1000) 'its register stays with the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-1000) 'private manuals that allocate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-1000) 'from it. A reserved
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-1000) 'digit costs one line here. An
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-1000) 'unreserved one costs what the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-1000) 'collision above
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-1000) 'cost, which was 113 numbers
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-1000) 'meaning two documents at once.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-1000) 'Site 1 was decommissioned on
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-1000) '2026-08-31. `SERIALS.usda` at arc
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-1000) '66606.1.1 is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-1000) 'frozen: existing 1NNN serials
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-1000) 'stay in place and stay citable,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-1000) 'and no new
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-1000) 'serial is allocated there. New
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-1000) 'RFDs in this repository take the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-1000) 'next unused
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-1000) '2NNN serial from
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-1000) '`SERIALS-vsekai-fabric.usda` at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-1000) 'arc 66606.1.2, whose site
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-1000) 'was decommissioned on 2026-08-29
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-1000) 'and reactivated on 2026-08-31 for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-1000) 'that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (RFD66606-1000) 'purpose. The full argument, and
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (RFD66606-1000) 'the retraction of the 2026-08-29
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (RFD66606-1000) 'sentence
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (RFD66606-1000) 'that promised no further
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (RFD66606-1000) 'allocations under 66606.1.2, is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:08Z (RFD66606-1000) 'in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:09Z (RFD66606-1000) '`pen-66606.usda`
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:10Z (RFD66606-1000) '`sitesDecommissioned`. When site
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:11Z (RFD66606-1000) '2 fills up, site 5 opens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:12Z (RFD66606-1000) 'at arc 66606.1.5 under this rule;
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:13Z (RFD66606-1000) 'site 4 stays reserved for a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:14Z (RFD66606-1000) 'date-named register.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:15Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:16Z (RFD66606-1000) 'The full identifier of an RFD is:
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:17Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:18Z (RFD66606-1000) '    1.3.6.1.4.1.66606.1.<site>.<number>
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:19Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:20Z (RFD66606-1000) 'RFD66606-1015 is
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:21Z (RFD66606-1000) '`urn:oid:1.3.6.1.4.1.66606.1.1.1015`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:22Z (RFD66606-1000) 'The last arc is the four
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:23Z (RFD66606-1000) 'digits the folder name already
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:24Z (RFD66606-1000) 'writes. Its first digit repeats
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:25Z (RFD66606-1000) 'the site arc
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:26Z (RFD66606-1000) 'above it, and the repetition is
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:27Z (RFD66606-1000) 'worth its cost. The mapping from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:28Z (RFD66606-1000) 'a document
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:29Z (RFD66606-1000) 'number to its arc is the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:30Z (RFD66606-1000) 'identity, so a reader who can
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:31Z (RFD66606-1000) 'read one can read the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:32Z (RFD66606-1000) 'other. That is what the decimal
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:33Z (RFD66606-1000) 'rule below was for.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:34Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:35Z (RFD66606-1000) 'Two rules carry to whatever takes
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:36Z (RFD66606-1000) 'the next category. It keeps a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:37Z (RFD66606-1000) 'register of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:38Z (RFD66606-1000) 'what it allocates, in the way
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:39Z (RFD66606-1000) '`SERIALS.usda` does. A kind of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:40Z (RFD66606-1000) 'thing gets an arc of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:41Z (RFD66606-1000) 'its own rather than a
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:42Z (RFD66606-1000) 'neighbouring parent number,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:43Z (RFD66606-1000) 'because `<thing>.1.<id>` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:44Z (RFD66606-1000) '`<thing>.2.<id>` say which kind
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:45Z (RFD66606-1000) 'they are and `<thing>` beside
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:46Z (RFD66606-1000) '`<thing+1>` does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:47Z (RFD66606-1000) 'not.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:48Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:49Z (RFD66606-1000) 'The searchable shorthand
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:50Z (RFD66606-1000) 'A search engine reads `RFD 1015`
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:51Z (RFD66606-1000) 'as two common words, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:52Z (RFD66606-1000) '`rfd1015` already
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:53Z (RFD66606-1000) 'names an unrelated account, so
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:54Z (RFD66606-1000) 'neither finds one of these
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:55Z (RFD66606-1000) 'documents alone.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:56Z (RFD66606-1000) 'The shorthand puts the PEN in the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:57Z (RFD66606-1000) 'name (operator, 2026-10-24):
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:58Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:04:59Z (RFD66606-1000) '    RFD66606-1015    urn:oid:1.3.6.1.4.1.66606.1.1.1015
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:00Z (RFD66606-1000) '    RFD66606-2287    urn:oid:1.3.6.1.4.1.66606.1.2.2287
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:01Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:02Z (RFD66606-1000) 'It holds the PEN and the four
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:03Z (RFD66606-1000) 'digits, and the first digit is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:04Z (RFD66606-1000) 'the site arc,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:05Z (RFD66606-1000) 'so each shorthand names exactly
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:06Z (RFD66606-1000) 'one full identifier. A web search
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:07Z (RFD66606-1000) 'for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:08Z (RFD66606-1000) '`RFD66606` found nothing when it
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:09Z (RFD66606-1000) 'was chosen, so a search for it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:10Z (RFD66606-1000) 'finds only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:11Z (RFD66606-1000) 'these documents.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:12Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:13Z (RFD66606-1000) 'Every title, citation, code
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:14Z (RFD66606-1000) 'comment, commit subject and pull
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:15Z (RFD66606-1000) 'request title
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:16Z (RFD66606-1000) 'writes this form (operator,
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:17Z (RFD66606-1000) '2026-10-24). Code, and text
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:18Z (RFD66606-1000) 'quoted from a commit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:19Z (RFD66606-1000) 'or a person, stays as written.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:20Z (RFD66606-1000) '`check-rfd-structure.py` refuses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:21Z (RFD66606-1000) 'a bare
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:22Z (RFD66606-1000) '`RFD NNNN` in rendered prose
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:23Z (RFD66606-1000) 'outside code and quotes, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:24Z (RFD66606-1000) '`check_commit_style.py` refuses
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:25Z (RFD66606-1000) 'one in a commit subject; each has
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:26Z (RFD66606-1000) 'a planted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:27Z (RFD66606-1000) 'control that must fail.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:28Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:29Z (RFD66606-1000) 'The HIDE beats
+ # tags: rfd:details-heading
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:30Z (RFD66606-1000) 'Every live RFD declares three
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:31Z (RFD66606-1000) 'keywords beside its decision
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:32Z (RFD66606-1000) '(operator, 2026-10-31).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:33Z (RFD66606-1000) '`RFD.Hide` checks them when the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:34Z (RFD66606-1000) 'source compiles, so `mix
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:35Z (RFD66606-1000) 'rfd.render` and `mix rfd.check`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:36Z (RFD66606-1000) 'refuse a source without them. In
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:37Z (RFD66606-1000) 'a `prose` block each one opens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:38Z (RFD66606-1000) 'with `:: hook`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:39Z (RFD66606-1000) '`:: intrigue` or `:: exit`.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:40Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:41Z (RFD66606-1000) '- `hook`: one paragraph, the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:42Z (RFD66606-1000) 'promise. The README prints it in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:43Z (RFD66606-1000) 'bold above the decision.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:44Z (RFD66606-1000) '- `intrigue`: one paragraph that
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:45Z (RFD66606-1000) 'ends in a sentence. The README
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:46Z (RFD66606-1000) 'prints it first in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:47Z (RFD66606-1000) '  problem.
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:48Z (RFD66606-1000) '- `exit`: one paragraph that ends
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:49Z (RFD66606-1000) 'in a period and is not a list
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:50Z (RFD66606-1000) 'item, a table row or a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:51Z (RFD66606-1000) '  code fence. The README prints
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:52Z (RFD66606-1000) 'it last in the decision.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:53Z (RFD66606-1000) '- The decision is the Delivery,
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:54Z (RFD66606-1000) 'and the README prints it between
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:55Z (RFD66606-1000) 'the hook and the exit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:56Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:57Z (RFD66606-1000) 'An abandoned stub is outside the
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:58Z (RFD66606-1000) 'rule. The test file
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:05:59Z (RFD66606-1000) '`test/rfd_hide_test.exs` plants a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:00Z (RFD66606-1000) 'source that lacks each beat in
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:01Z (RFD66606-1000) 'turn, and each one must be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:02Z (RFD66606-1000) 'refused.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:03Z (RFD66606-1000) '
+ # tags: rfd:details
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:04Z (RFD66606-1000) '2351
+ # tags: rebac:verbs-from
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:05Z (RFD66606-1000) 'rfd-1000 provides
+ # tags: rebac:relate
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:06Z (RFD66606-1000) 'rfd-numbering-rule
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:07Z (RFD66606-1000) 'rfd-1000 provides
+ # tags: rebac:relate
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:08Z (RFD66606-1000) 'rfd-state-lifecycle
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD1000  1 LINE
+ Text:Written
+
+2026-08-25T00:06:09Z (RFD66606-1000) 'rfd-1000 is_a workspace-policy
+ # tags: rebac:relate
+ Text:RFD1000  1 LINE
+ Text:Written

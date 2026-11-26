@@ -1,0 +1,410 @@
+2026-09-25T00:00:00Z (RFD66606-2257) 'workspace tooling runs in the Linux subsystem
+ # uuid: 5f2f3ad5-c5f7-51ae-89f5-a4da71184f10
+ # tags: rfd:title
+ RFD:Committed  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-25T00:00:01Z (RFD66606-2257) 'Every workspace tool on a desk
+ # tags: rfd:feature
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:02Z (RFD66606-2257) 'runs inside the host's Linux
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:03Z (RFD66606-2257) 'subsystem, with the host's
+ # tags: rfd:feature
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:04Z (RFD66606-2257) 'network mirrored in, so one
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:05Z (RFD66606-2257) 'toolchain and one credential
+ # tags: rfd:feature
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:06Z (RFD66606-2257) 'store serve the whole session
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:07Z (RFD66606-2257) 'the desks' host operating system,
+ # tags: rfd:scope
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:08Z (RFD66606-2257) 'the subsystem's `.wslconfig`,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:09Z (RFD66606-2257) 'and the pixi environments the
+ # tags: rfd:scope
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:10Z (RFD66606-2257) 'gates run in
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:11Z (RFD66606-2257) 'Workspace tools run in one place,
+ # tags: rfd:hook
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:12Z (RFD66606-2257) 'so one toolchain and one
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:13Z (RFD66606-2257) 'credential store serve a session.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:14Z (RFD66606-2257) '
+ # tags: rfd:hook
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:15Z (RFD66606-2257) 'A tool installed on both sides
+ # tags: rfd:intrigue
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:16Z (RFD66606-2257) 'keeps two copies of its state:
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:17Z (RFD66606-2257) 'the password manager answered
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:18Z (RFD66606-2257) 'on one side and not the other,
+ # tags: rfd:intrigue
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:19Z (RFD66606-2257) 'and the Bao CLI existed on only
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:20Z (RFD66606-2257) 'one.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:21Z (RFD66606-2257) '
+ # tags: rfd:intrigue
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:22Z (RFD66606-2257) 'Read RFD66606-2255 next, the SSH
+ # tags: rfd:exit
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:23Z (RFD66606-2257) 'tunnel to Bao that IPv6 opened.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:24Z (RFD66606-2257) '
+ # tags: rfd:exit
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:25Z (RFD66606-2257) 'workspace tooling runs in the
+ # tags: rfd:details-title
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:26Z (RFD66606-2257) 'Linux subsystem
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:27Z (RFD66606-2257) 'The desk's host operating system
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:28Z (RFD66606-2257) 'is blocklisted as a place to run
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:29Z (RFD66606-2257) 'workspace tooling: `repo`,
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:30Z (RFD66606-2257) '`pixi`, the `bao` and 1Password
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:31Z (RFD66606-2257) 'CLIs,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:32Z (RFD66606-2257) 'the gates, builds and runs all
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:33Z (RFD66606-2257) 'run in the Linux subsystem. The
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:34Z (RFD66606-2257) 'subsystem uses mirrored
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:35Z (RFD66606-2257) 'networking
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:36Z (RFD66606-2257) '(`networkingMode=mirrored` in
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:37Z (RFD66606-2257) '`%UserProfile%\.wslconfig`), so
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:38Z (RFD66606-2257) 'it shares the host's IPv6 route.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:39Z (RFD66606-2257) 'A release artifact built for the
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:40Z (RFD66606-2257) 'host is still tested on the host.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:41Z (RFD66606-2257) '
+ # tags: rfd:decision
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:42Z (RFD66606-2257) '- RFD66606-2255 (SSH tunnel to
+ # tags: rfd:related
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:43Z (RFD66606-2257) 'Bao), the path IPv6 opened.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:44Z (RFD66606-2257) '- RFD66606-2016 (checking
+ # tags: rfd:related
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:45Z (RFD66606-2257) 'sccache), whose cross-shell
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:46Z (RFD66606-2257) 'driver this
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:47Z (RFD66606-2257) '  rule changes.
+ # tags: rfd:related
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:48Z (RFD66606-2257) '
+ # tags: rfd:related
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:49Z (RFD66606-2257) 'What the rule governs
+ # tags: rfd:details-heading
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:50Z (RFD66606-2257) 'This rule governs where tools
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:51Z (RFD66606-2257) 'run, not what ships.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:52Z (RFD66606-2257) '
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:53Z (RFD66606-2257) 'What is measured
+ # tags: rfd:details-heading
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:54Z (RFD66606-2257) 'Under NAT, `ip -6 route` held
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:55Z (RFD66606-2257) 'only the link-local route and an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:56Z (RFD66606-2257) 'IPv6 fetch returned nothing,
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:57Z (RFD66606-2257) 'while the host reached the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:58Z (RFD66606-2257) 'address. After
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:00:59Z (RFD66606-2257) '`networkingMode=mirrored` and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:00Z (RFD66606-2257) 'restart, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:01Z (RFD66606-2257) 'subsystem fetched over IPv6 (HTTP
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:02Z (RFD66606-2257) '200) and opened the Bao tunnel
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:03Z (RFD66606-2257) 'on its public IPv6 address.
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:04Z (RFD66606-2257) '
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:05Z (RFD66606-2257) 'The toolchain
+ # tags: rfd:details-heading
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:06Z (RFD66606-2257) 'Elixir 1.20.4 on Erlang/OTP
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:07Z (RFD66606-2257) '29.1.1 comes from pixi (`pixi
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:08Z (RFD66606-2257) 'global
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:09Z (RFD66606-2257) 'install --environment elixir`),
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:10Z (RFD66606-2257) 'the same pair CI pins, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:11Z (RFD66606-2257) '`~/.pixi/bin` sits ahead of the
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:12Z (RFD66606-2257) 'host PATH the subsystem appends.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:13Z (RFD66606-2257) 'The request-for-discussion pixi
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:14Z (RFD66606-2257) 'workspace declares `linux-64`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:15Z (RFD66606-2257) '
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:16Z (RFD66606-2257) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:17Z (RFD66606-2257) 'Under NAT the subsystem had no
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:18Z (RFD66606-2257) 'IPv6,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:19Z (RFD66606-2257) 'so it could not reach Bao's
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:20Z (RFD66606-2257) 'public tunnel address at all.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2257  1 LINE
+ Text:Written
+
+2026-09-25T00:01:21Z (RFD66606-2257) '
+ # tags: rfd:details
+ Text:RFD2257  1 LINE
+ Text:Written

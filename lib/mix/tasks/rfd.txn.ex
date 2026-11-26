@@ -2,69 +2,91 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 defmodule Mix.Tasks.Rfd.Txn do
-  @shortdoc "Write each RFD as a tackler journal, or prove the round trip"
+  @shortdoc "Check that every RFD journal is in its written form"
   @moduledoc """
-      mix rfd.txn --write --days journal/pages.txn
-      mix rfd.txn --check --days journal/pages.txn
+      mix rfd.txn [--check]
+      mix rfd.txn --convert --days JOURNAL
 
-  `--write` writes `rfd/NNNN-slug.txn` beside each source, dated by the
-  day its serial was registered (the `(RFD66606-NNNN)` entries of the
-  journal `--days` names). `--check` reads every journal back and fails
-  unless it equals the doc its source loads and writes back to the same
-  bytes.
+  With no flag, or `--check`, every `rfd/NNNN-slug.txn` must read
+  through `RFD.Txn` and write back to the same bytes; `--write`
+  rewrites any that do not.
+
+  `--convert` writes each `rfd/NNNN-slug.exs` out as its journal, with
+  `&{...}` references kept as written, dated by the day its serial was
+  registered (the `(RFD66606-NNNN)` entries of JOURNAL). It fails
+  unless the journal reads back to the doc the source loads, with and
+  without references expanded, and is already in its written form.
   """
   use Mix.Task
-
-  @sites %{1 => "Weftspun", 2 => "VSekaiFabric"}
 
   @impl true
   def run(args) do
     {opts, _} =
-      OptionParser.parse!(args, strict: [write: :boolean, check: :boolean, days: :string])
+      OptionParser.parse!(args,
+        strict: [check: :boolean, write: :boolean, convert: :boolean, days: :string]
+      )
 
     Mix.Task.run("compile")
-    days = days(Keyword.fetch!(opts, :days))
-
-    results =
-      for path <- RFD.Source.all(), not RFD.Source.register?(path) do
-        d = RFD.Source.load(path)
-        madr? = File.read!(path) =~ ~r/^\s*madr do/m
-        day = Map.get(days, d.serial) || Mix.raise("RFD #{d.serial}: no registration day")
-
-        text =
-          RFD.Txn.write(d, day: day, site: Map.fetch!(@sites, div(d.serial, 1000)), madr: madr?)
-
-        out = String.replace_suffix(path, ".exs", ".txn")
-        if opts[:write], do: File.write!(out, text)
-        {path, if(opts[:check], do: check(d, text, day, madr?), else: :ok)}
-      end
-
-    bad = for {p, r} <- results, r != :ok, do: {p, r}
-    for {p, r} <- bad, do: Mix.shell().error("FAIL #{p}: #{r}")
-    Mix.shell().info("#{length(results) - length(bad)} of #{length(results)} RFDs round-trip")
-    if bad != [], do: Mix.raise("#{length(bad)} RFDs do not round-trip")
+    if opts[:convert], do: convert(days(Keyword.fetch!(opts, :days))), else: check(opts)
   end
 
-  defp check(d, text, day, madr?) do
-    case RFD.Txn.parse(text) do
-      {:ok, ^d} ->
-        site = Map.fetch!(@sites, div(d.serial, 1000))
-        again = RFD.Txn.write(d, day: day, site: site, madr: madr?)
-        if again == text, do: :ok, else: "writing it again gives other bytes"
+  defp check(opts) do
+    paths = Path.wildcard("rfd/[0-9][0-9][0-9][0-9]-*.txn") |> Enum.sort()
 
-      {:ok, other} ->
-        diff =
-          for {k, v} <- Map.from_struct(d), Map.get(other, k) != v, do: k
+    bad =
+      for path <- paths,
+          text = File.read!(path),
+          canonical = RFD.Txn.canonical(text),
+          canonical != text do
+        if opts[:write], do: File.write!(path, canonical)
+        path
+      end
 
-        "fields differ: #{inspect(diff)}"
+    for p <- bad, do: Mix.shell().error("#{if opts[:write], do: "wrote", else: "FAIL"} #{p}")
 
-      {:error, e} ->
-        "does not parse: #{e}"
+    Mix.shell().info(
+      "#{length(paths) - length(bad)} of #{length(paths)} journals in written form"
+    )
+
+    if bad != [] and !opts[:write], do: Mix.raise("run mix rfd.txn --write")
+  end
+
+  defp convert(days) do
+    sources = Path.wildcard("rfd/[0-9][0-9][0-9][0-9]-*.exs") |> Enum.sort()
+
+    bad =
+      for path <- sources, r = convert_one(path, days), r != :ok do
+        Mix.shell().error("FAIL #{path}: #{r}")
+        path
+      end
+
+    Mix.shell().info("#{length(sources) - length(bad)} of #{length(sources)} RFDs converted")
+    if bad != [], do: Mix.raise("#{length(bad)} RFDs did not convert")
+  end
+
+  defp convert_one(path, days) do
+    loaded = RFD.Source.load(path)
+    raw = RFD.DSL.unexpanded(fn -> RFD.Source.load(path) end)
+    day = Map.get(days, raw.serial) || Mix.raise("RFD #{raw.serial}: no registration day")
+    site = if div(raw.serial, 1000) == 1, do: "Weftspun", else: "VSekaiFabric"
+    madr? = File.read!(path) =~ ~r/^\s*madr do/m
+    text = RFD.Txn.write(raw, day: day, site: site, madr: madr?)
+
+    cond do
+      RFD.Txn.parse!(text) != loaded -> "does not read back to the doc its source loads"
+      RFD.Txn.parse_raw!(text) != raw -> "loses a reference as written"
+      RFD.Txn.canonical(text) != text -> "is not in its written form"
+      true -> write_journal(path, text)
     end
   end
 
+  defp write_journal(path, text) do
+    File.write!(String.replace_suffix(path, ".exs", ".txn"), text)
+    :ok
+  end
+
   defp days(path) do
-    head = ~r/^(\d{4}-\d\d-\d\d) \(RFD66606-(\d+)\)/m
+    head = ~r/^(\d{4}-\d\d-\d\d)\S* \(RFD66606-(\d+)\)/m
 
     for [_, day, n] <- Regex.scan(head, File.read!(path)), into: %{} do
       {String.to_integer(n), day}

@@ -1,0 +1,775 @@
+2026-11-08T00:00:00Z (RFD66606-2487) 'Walk mode's clips should rejoin the AnimationMixer ecosystem
+ # uuid: 278739d5-28bb-5c4f-960f-2eb3f572a8aa
+ # tags: rfd:title, rfd:flight-level:l1
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-08T00:00:01Z (RFD66606-2487) 'the motion-matching guest's pose
+ # tags: rfd:feature
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:02Z (RFD66606-2487) 'database is built from a real
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:03Z (RFD66606-2487) 'AnimationLibrary, not from raw
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:04Z (RFD66606-2487) 'per-clip files copied into the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:05Z (RFD66606-2487) 'pack by a build script.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:06Z (RFD66606-2487) 'the motion-matching guest's bake
+ # tags: rfd:scope
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:07Z (RFD66606-2487) 'step, the walk mode viewer's clip
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:08Z (RFD66606-2487) 'loading, and the release pipeline
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:09Z (RFD66606-2487) 'steps that currently move clip
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:10Z (RFD66606-2487) 'files around.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:11Z (RFD66606-2487) 'Why does a clip the guest needs
+ # tags: rfd:hook
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:12Z (RFD66606-2487) 'sometimes never reach the shipped
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:13Z (RFD66606-2487) 'package, with nothing
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:14Z (RFD66606-2487) 'catching it until a user opens
+ # tags: rfd:hook
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:15Z (RFD66606-2487) 'the app?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:16Z (RFD66606-2487) '
+ # tags: rfd:hook
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:17Z (RFD66606-2487) 'A release once shipped walk mode
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:18Z (RFD66606-2487) 'with its clip data missing. Two
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:19Z (RFD66606-2487) 'fixes were tried and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:20Z (RFD66606-2487) 'withdrawn: a loader change and a
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:21Z (RFD66606-2487) 'pack allowlist change, each
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:22Z (RFD66606-2487) 'disproven by planting a real
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:23Z (RFD66606-2487) 'clip in a fresh export and
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:24Z (RFD66606-2487) 'watching it come through fine
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:25Z (RFD66606-2487) 'either way. The honest cause is
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:26Z (RFD66606-2487) 'narrower: the one script step
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:27Z (RFD66606-2487) 'that copies clip files into the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:28Z (RFD66606-2487) 'project before packing wrote
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:29Z (RFD66606-2487) 'nothing, once, and nothing in the
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:30Z (RFD66606-2487) 'resource system noticed, because
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:31Z (RFD66606-2487) 'raw files carry no such
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:32Z (RFD66606-2487) 'check. The guest's own data
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:33Z (RFD66606-2487) 'loader already changed shape once
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:34Z (RFD66606-2487) 'for this port: a comment in
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:35Z (RFD66606-2487) 'the guest's pose code says clips
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:36Z (RFD66606-2487) 'arrive as flat transforms instead
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:37Z (RFD66606-2487) 'of animation tracks,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:38Z (RFD66606-2487) 'changed only for the sandboxed
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:39Z (RFD66606-2487) 'port. Upstream's own baker reads
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:40Z (RFD66606-2487) 'a real AnimationLibrary
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:41Z (RFD66606-2487) 'directly, built from a mixer and
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:42Z (RFD66606-2487) 'a skeleton.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:43Z (RFD66606-2487) '
+ # tags: rfd:intrigue
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:44Z (RFD66606-2487) 'Clip data for a shipped package
+ # tags: rfd:exit
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:45Z (RFD66606-2487) 'is as safe as any other imported
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:46Z (RFD66606-2487) 'resource: if it is still
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:47Z (RFD66606-2487) 'missing, the package itself
+ # tags: rfd:exit
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:48Z (RFD66606-2487) 'failed to build, not merely to
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:49Z (RFD66606-2487) 'work once launched.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:50Z (RFD66606-2487) '
+ # tags: rfd:exit
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:51Z (RFD66606-2487) 'Walk mode's clips should rejoin
+ # tags: rfd:details-title
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:52Z (RFD66606-2487) 'the AnimationMixer ecosystem
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:53Z (RFD66606-2487) '- Build one AnimationLibrary
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:54Z (RFD66606-2487) 'resource per clip set, keyed one
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:55Z (RFD66606-2487) 'track at a time, in place of
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:56Z (RFD66606-2487) '  the flat transform files and
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:57Z (RFD66606-2487) 'the clip list file.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:58Z (RFD66606-2487) '- Decide whether the guest bakes
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:00:59Z (RFD66606-2487) 'its own pose database from that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:00Z (RFD66606-2487) 'library over the sandbox's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:01Z (RFD66606-2487) '  existing calls into engine
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:02Z (RFD66606-2487) 'objects, or whether baking
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:03Z (RFD66606-2487) 'happens once on the engine side
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:04Z (RFD66606-2487) 'and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:05Z (RFD66606-2487) '  only the finished flat arrays
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:06Z (RFD66606-2487) 'cross into the guest, as they do
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:07Z (RFD66606-2487) 'today.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:08Z (RFD66606-2487) '- Drop the three script steps
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:09Z (RFD66606-2487) 'whose only job is moving clip
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:10Z (RFD66606-2487) 'files between repositories and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:11Z (RFD66606-2487) '  into the exported package once
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:12Z (RFD66606-2487) 'the library carries the same data
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:13Z (RFD66606-2487) 'as a tracked resource.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:14Z (RFD66606-2487) '
+ # tags: rfd:decision
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:15Z (RFD66606-2487) '- RFD66606-2382, which names the
+ # tags: rfd:related
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:16Z (RFD66606-2487) 'datasource store these release
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:17Z (RFD66606-2487) 'steps also move data for.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:18Z (RFD66606-2487) '
+ # tags: rfd:related
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:19Z (RFD66606-2487) 'Current data flow
+ # tags: rfd:details-heading
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:20Z (RFD66606-2487) 'Clip data is produced as a set of
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:21Z (RFD66606-2487) 'per-bone transform arrays, a clip
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:22Z (RFD66606-2487) 'list file, a skeleton
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:23Z (RFD66606-2487) 'description and a parent list,
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:24Z (RFD66606-2487) 'one set of files per clip. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:25Z (RFD66606-2487) 'release step copies these files
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:26Z (RFD66606-2487) 'from the source repository into
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:27Z (RFD66606-2487) 'the project, where an editor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:28Z (RFD66606-2487) 'setting is relied on to carry
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:29Z (RFD66606-2487) 'them into the exported package as
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:30Z (RFD66606-2487) 'plain files. The guest reads its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:31Z (RFD66606-2487) 'own copy of these files
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:32Z (RFD66606-2487) 'at run time and parses the
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:33Z (RFD66606-2487) 'transform layout itself to build
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:34Z (RFD66606-2487) 'its pose search structure.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:35Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:36Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:37Z (RFD66606-2487) 'Where the raw layout came from
+ # tags: rfd:details-heading
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:38Z (RFD66606-2487) 'The guest is a port of an
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:39Z (RFD66606-2487) 'existing engine plugin whose pose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:40Z (RFD66606-2487) 'database is built directly from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:41Z (RFD66606-2487) 'an AnimationLibrary, over a real
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:42Z (RFD66606-2487) 'mixer and skeleton, using the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:43Z (RFD66606-2487) 'engine's own animation
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:44Z (RFD66606-2487) 'tracks. The port's own comment
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:45Z (RFD66606-2487) 'records that clips were changed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:46Z (RFD66606-2487) 'to arrive as flat transforms
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:47Z (RFD66606-2487) '"instead of Godot Animation
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:48Z (RFD66606-2487) 'tracks", changed for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:49Z (RFD66606-2487) 'sandboxed port alone.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:50Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:51Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:52Z (RFD66606-2487) 'Target data flow
+ # tags: rfd:details-heading
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:53Z (RFD66606-2487) 'A build step reads the same
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:54Z (RFD66606-2487) 'source transform arrays once and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:55Z (RFD66606-2487) 'writes one AnimationLibrary
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:56Z (RFD66606-2487) 'resource, one Animation per clip,
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:57Z (RFD66606-2487) 'each built by adding a track and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:58Z (RFD66606-2487) 'inserting a key at a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:01:59Z (RFD66606-2487) 'time rather than copying bytes.
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:00Z (RFD66606-2487) 'That resource is tracked and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:01Z (RFD66606-2487) 'imported like any other
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:02Z (RFD66606-2487) 'project asset, so the normal
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:03Z (RFD66606-2487) 'export path carries it with no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:04Z (RFD66606-2487) 'special allowlist. The guest
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:05Z (RFD66606-2487) 'reads pose data through the
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:06Z (RFD66606-2487) 'sandbox's existing calls into
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:07Z (RFD66606-2487) 'engine objects rather than
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:08Z (RFD66606-2487) 'through a file.
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:09Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:10Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:11Z (RFD66606-2487) 'Open question
+ # tags: rfd:details-heading
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:12Z (RFD66606-2487) 'Two shapes remain undecided. In
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:13Z (RFD66606-2487) 'one, the guest keeps baking its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:14Z (RFD66606-2487) 'own pose search structure,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:15Z (RFD66606-2487) 'now reading the
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:16Z (RFD66606-2487) 'AnimationLibrary's tracks over
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:17Z (RFD66606-2487) 'the sandbox's calls into engine
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:18Z (RFD66606-2487) 'objects
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:19Z (RFD66606-2487) 'instead of a file, closest to the
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:20Z (RFD66606-2487) 'original plugin's design. In the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:21Z (RFD66606-2487) 'other, baking moves to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:22Z (RFD66606-2487) 'the engine side entirely,
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:23Z (RFD66606-2487) 'producing the same flat arrays
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:24Z (RFD66606-2487) 'the guest reads today, handed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:25Z (RFD66606-2487) 'across once rather than read from
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:26Z (RFD66606-2487) 'a file. The guest's own search
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:27Z (RFD66606-2487) 'code stays as it is. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:28Z (RFD66606-2487) 'choice needs a measurement of how
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:29Z (RFD66606-2487) 'much the sandbox's call overhead
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:30Z (RFD66606-2487) 'costs when pulling every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:31Z (RFD66606-2487) 'key of every clip once at bake
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:32Z (RFD66606-2487) 'time, not at the frame rate the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:33Z (RFD66606-2487) 'search itself runs at.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2487  1 LINE
+ Text:Written
+
+2026-11-08T00:02:34Z (RFD66606-2487) '
+ # tags: rfd:details
+ Text:RFD2487  1 LINE
+ Text:Written

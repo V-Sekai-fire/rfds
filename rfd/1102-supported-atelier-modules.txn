@@ -1,0 +1,1105 @@
+2026-08-25T00:00:00Z (RFD66606-1102) 'The supported task catalog, one live source
+ # uuid: 70c77d02-60ed-52c3-9ae6-857b916dbeb6
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Committed  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1102) 'RFD66606-1036 (packaging),
+ # tags: rfd:scope
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1102) 'RFD66606-1173 (pipeline),
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1102) 'RFD66606-2136 (gacha ladder),
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1102) 'RFD66606-2188 (one ggml across
+ # tags: rfd:scope
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1102) 'workspace), RFD66606-2210
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1102) '(atelier surface), RFD66606-2230
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1102) '(ggml
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1102) 'adapters)
+ # tags: rfd:scope
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1102) 'Every atelier module runs on
+ # tags: rfd:hook
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1102) 'ggml, and one live catalog lists
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1102) 'them.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1102) '
+ # tags: rfd:hook
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1102) 'Wan-VACE, Pixal3D and MoGe-3 have
+ # tags: rfd:intrigue
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1102) 'no upstream GGUF conversion and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1102) 'carry "port needed".
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1102) '
+ # tags: rfd:intrigue
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1102) 'Before you merge a new atelier
+ # tags: rfd:exit
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1102) 'module, confirm it runs on ggml
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1102) 'with GGUF weights at Q4, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1102) 'mark it "port needed" when
+ # tags: rfd:exit
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1102) 'upstream has no GGUF conversion.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1102) '
+ # tags: rfd:exit
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1102) 'The supported task catalog, one
+ # tags: rfd:details-title
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1102) 'live source
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1102) 'Every module in the atelier
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1102) 'catalog runs on **ggml**
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1102) '(RFD66606-2188:
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1102) 'one ggml source across the
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1102) 'workspace at `2-contract/ggml/`).
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1102) 'Weights ship as GGUF, quantised
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1102) 'to Q4 unless a measurement asks
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1102) 'for wider precision. Consumer
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1102) 'projects wrap the shared runtime;
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1102) 'per-model adapters (tokenizer,
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1102) 'prompt template, LoRA, sampler
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1102) 'config) are GDScript files loaded
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1102) 'under Godot's script sandbox per
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1102) 'RFD66606-2230. Models with no
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1102) 'upstream GGUF conversion carry a
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1102) '"port
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1102) 'needed" note; RFD66606-2428 holds
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1102) 'the six-step migration recipe.
+ # tags: rfd:details-preamble, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1102) '
+ # tags: rfd:details-preamble
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1102) 'Every module in the atelier
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1102) 'catalog runs on **ggml**
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1102) '(RFD66606-2188). Weights ship as
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1102) 'GGUF,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1102) 'quantised to Q4. The set of
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1102) 'Docker images this workspace
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1102) 'ships per RFD66606-1036 (plain
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1102) 'HTTP,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1102) '`/health` + `/predict`, weights
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1102) 'at build time, one model per
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1102) 'image) runs on the local desktop
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1102) 'GPU per CLAUDE.md via ggml's
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1102) 'Vulkan backend (RFD66606-2231's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1102) 'substitute), and feeds the two
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1102) 'pipelines the workspace operates:
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1102) '
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1102) '- **MaskScore corpus
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1102) 'construction** (RFD66606-1173):
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1102) 'eight stubs across
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1102) '  mesh/depth/pose/keypoints/multimodal/speech/text/video.
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1102) 'Five shipped on HF (RFD66606-2164
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1102) '  speech + Rung 1 walking
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1102) 'skeleton).
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1102) '- **The gacha critical path**
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1102) '(RFD66606-2136): ten-rung ladder
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1102) 'from a language prompt to a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1102) '  public roll-button-dispensed
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1102) 'VRM.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1102) '
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1102) '
+ # tags: rfd:decision
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging),
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1102) 'RFD66606-1053 (OpenUSD internal +
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1102) 'glTF/VRM at edge),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1102) 'RFD66606-1027 (GPU tier),
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1102) 'RFD66606-1173 (multimodal
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1102) 'pipeline), RFD66606-2136 (gacha
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1102) 'ladder),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1102) 'RFD66606-2164 (Speech stub
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1102) 'shipped), RFD66606-2188 (one ggml
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1102) 'across workspace), RFD66606-2210
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1102) '(atelier native shipping
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1102) 'surface), RFD66606-2214 (model
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1102) 'bundle SQLite+ZSTD),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1102) 'RFD66606-2229
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1102) '(interchangeable-parts
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1102) 'consolidation), RFD66606-2230
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1102) '(ggml adapters in godot-sandbox),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1102) 'RFD66606-2231 (Vulkan renderer).
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1102) 'RFD66606-2428 to RFD66606-2434,
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1102) 'the recipe, the two pipelines,
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1102) 'the format boundary, the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1102) 'packaging, the backend API and
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1102) 'the consumers, one RFD each.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1102) '
+ # tags: rfd:related
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1102) 'Model catalog
+ # tags: rfd:details-heading
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1102) '| Task                          |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1102) 'Model                         |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1102) 'Weights (Q4 target)             |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1102) 'Runtime                                        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1102) '| ----------------------------- |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1102) '----------------------------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1102) '------------------------------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1102) '----------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1102) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1102) '| Text/image reasoning          |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1102) 'Gemma-4-12B (QAT Q4_0)        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1102) '~6 GB Q4_0 GGUF                 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1102) 'ggml native (llama.cpp Vulkan
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1102) 'backend)         |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1102) '| Reward model (image editing)  |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1102) 'Qwen3-VL-8B + EditScore LoRA  |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1102) '~4 GB Q4 GGUF + LoRA GGUF sidecar
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1102) '| ggml native; LoRA applied via
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1102) '`Ggml.load_lora` |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1102) '| Text/image → image            |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1102) 'Wan-VACE                      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1102) '~7 GB Q4 GGUF                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1102) 'ggml native; **port needed**
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1102) '(upstream is torch) |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1102) '| Image → coarse mesh           |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1102) 'Pixal3D (TRELLIS.2 impl)      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1102) '~2 GB Q4 GGUF                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1102) 'ggml native; **port needed**                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1102) '| Mesh refinement               |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1102) 'VoxHammer                     |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1102) 'no weights                      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1102) 'ggml native (procedural, no model
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1102) 'file)        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1102) '| Image → mesh (fast)           |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1102) 'Pixal3D (TRELLIS.2 impl)      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1102) 'same row as above               |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1102) 'one repo, one GGUF, one row per
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1102) 'Pixal3D-is-TRELLIS.2 memory |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1102) '| Metric depth                  |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1102) 'MoGe-3                        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1102) '~250 MB Q4 GGUF                 |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1102) 'ggml native; **port needed**                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1102) '| Auto-rig                      |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1102) 'SkinTokens                    |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1102) 'GGUF (skin-tokens.cpp)          |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1102) 'ggml native (vendor's own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1102) 'runtime, already GGML) |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1102) '| Text → motion | Kimodo | GGUF
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1102) '(motion-bricks-cpp rev) | ggml
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1102) 'native; see the note below |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1102) '| Mesh segmentation | rf-detr-Seg
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1102) '(RFD66606-1168) | GGUF
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1102) '(segmentation head) | ggml
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1102) 'native;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1102) '**port needed** from ONNX | |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1102) 'Layer decomposition | rf-detr-Seg
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1102) '+ LaMa inpainting | GGUF each |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1102) 'ggml native; **port needed** | |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1102) 'Mesh retopology | AutoRemesher,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1102) 'xatlas UV | no weights | native
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1102) 'binary (format-adjacent tools) |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1102) '
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1102) 'Kimodo writes the SOMA-2603.16858
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1102) 'pose format: 77 rotation vectors,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1102) 'which become 78 with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1102) 'root identity prepended.
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1102) '
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1102) 'Voice + ASR (RFD66606-2164)
+ # tags: rfd:details-heading
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1102) '| Task                          |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1102) 'Model                                      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1102) 'Weights (Q4 target)   | Runtime                                    |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1102) '| ----------------------------- |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1102) '------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1102) '| --------------------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1102) '------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1102) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1102) '| Voice cloning                 |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1102) 'Qwen3-TTS-12Hz-1.7B-Base                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1102) '~900 MB Q4 GGUF       | ggml
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1102) 'native; **port needed**              |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1102) '| ASR (canonical)               |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1102) 'Parakeet TDT 0.6B v3 (CC-BY-4.0)           |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1102) '~350 MB Q4 GGUF       | ggml
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1102) 'native; **port needed** from Nemo    |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1102) '| ASR panel (7 tracks)          |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1102) 'Parakeet TDT 0.6B v3, Voxtral
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1102) 'Mini 3B, wav2vec2, Voxtral-IPA,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1102) 'Gemma-4-12B GBNF-IPA, allosaurus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1102) 'universal + eng | ~various Q4
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1102) 'GGUFs     | ggml native for each;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1102) 'Gemma-4-12B already GGUF; Voxtral
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1102) '+ wav2vec2 + allosaurus **ports
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1102) 'needed** |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1102) '| Speaker embedding             |
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1102) 'Microsoft WavLM Base+ SV                   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1102) '~100 MB Q4 GGUF       | ggml
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1102) 'native; **port needed**              |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1102) '
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1102) 'Related
+ # tags: rfd:details-heading
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging),
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-1102) 'RFD66606-1053 (OpenUSD internal +
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-1102) 'glTF/VRM
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-1102) 'at edge), RFD66606-1094
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-1102) '(multi-image routing),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-1102) 'RFD66606-1084 (avatar pipeline
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-1102) 'client side), RFD66606-1088
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-1102) '(HTTPS setup), RFD66606-1085
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-1102) '(code map), RFD66606-1105
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-1102) '(webcam avatar control),
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-1102) 'RFD66606-1108 (XR floor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-1102) 'anchoring), RFD66606-2188
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-1102) '(one ggml across workspace),
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-1102) 'RFD66606-2214 (model bundle
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-1102) 'SQLite+ZSTD),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-1102) 'RFD66606-2229
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-1102) '(interchangeable-parts
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-1102) 'consolidation policy),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-1102) 'RFD66606-2230
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-1102) '(ggml adapters in godot-sandbox),
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-1102) 'RFD66606-2210 (atelier shipping
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-1102) 'surface, native).
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-1102) '
+ # tags: rfd:details
+ Text:RFD1102  1 LINE
+ Text:Written

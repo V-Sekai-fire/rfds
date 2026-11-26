@@ -1,0 +1,405 @@
+2026-10-31T00:00:00Z (RFD66606-2404) 'the evidence step records one session
+ # uuid: be4e339d-49aa-584e-be0d-5e6add352421
+ # tags: rfd:title, rfd:flight-level:l1
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2404) 'Step 8, the evidence: one
+ # tags: rfd:scope
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2404) 'session, its recordings, logs and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2404) 'logbook.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2404) 'The evidence step records one
+ # tags: rfd:hook
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2404) 'session, with a check that
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2404) 'refuses a truncated recording.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2404) '
+ # tags: rfd:hook
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2404) 'A truncated `.cfhd` must not pass
+ # tags: rfd:intrigue
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2404) 'as the recorded session.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2404) '
+ # tags: rfd:intrigue
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2404) 'Check that `av1mkv info`'s frame
+ # tags: rfd:exit
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2404) 'count equals the `.cfhd`'s, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2404) 'that a truncated
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2404) '`.cfhd` fails `av1mkv check`.
+ # tags: rfd:exit
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2404) '
+ # tags: rfd:exit
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2404) 'the evidence step records one
+ # tags: rfd:details-title
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2404) 'session
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2404) '- The evidence is one session:
+ # tags: rfd:decision
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2404) 'the person in the headset and the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2404) 'operator on the desktop, the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2404) '  assistant's hands on the pen
+ # tags: rfd:decision
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2404) 'through priority mode and the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2404) 'live feeder.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2404) '- `av1mkv mkv` makes the lossless
+ # tags: rfd:decision
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2404) 'wrap here, which with its `.cff`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2404) 'is the whole deliverable,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2404) '  and no WebM is made.
+ # tags: rfd:decision
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2404) '
+ # tags: rfd:decision
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2404) '- RFD66606-2293, where this rule
+ # tags: rfd:related
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2404) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2404) '
+ # tags: rfd:related
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2404) 'The recordings and logs
+ # tags: rfd:details-heading
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2404) 'The headset view is `clip.sh`
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2404) 'from the compositor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2404) 'mirror and `still.sh`. The
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2404) 'desktop view is `godot-cineform`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2404) 'rebuilt
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2404) 'at double for macOS arm64 (its
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2404) 'own manifest's `godot-cpp` with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2404) 'precision double) writing
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2404) '`session.cfhd` through Movie
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2404) 'Maker at a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2404) 'fixed 30 fps on the flat client,
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2404) 'never the XR one. The zone logs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2404) 'are the three
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2404) '`zone.elf` journals exported
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2404) 'under the write capability.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2404) '
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2404) '
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2404) 'The logbook
+ # tags: rfd:details-heading
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2404) '`logbook/logbook-rfd2287-rung.md`
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2404) 'carries the apparatus (the exact
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2404) '`run-xr.sh` lines, driver
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2404) 'settings, sha256s), the numbers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2404) 'with their
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2404) 'baselines (frame ms with and
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2404) 'without the world, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2404) 'bone-follow
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2404) 'displacement, the tracker
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2404) 'profiles in both modes), every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2404) 'control's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2404) 'outcome, and the counted
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2404) 'unchecked items.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2404) '
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2404) '
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2404) 'Check and control
+ # tags: rfd:details-heading
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2404) 'Check: `av1mkv info`'s frame
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2404) 'count equals the `.cfhd`'s.
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2404) 'Control: a truncated `.cfhd` is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2404) 'refused
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:11Z (RFD66606-2404) 'by `av1mkv check`.
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:12Z (RFD66606-2404) '
+ # tags: rfd:details
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:13Z (RFD66606-2404) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:14Z (RFD66606-2404) 'rfd-2404 provides
+ # tags: rebac:relate
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:15Z (RFD66606-2404) 'session-evidence-recording
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:16Z (RFD66606-2404) 'rfd-2404 is_a experiment-record
+ # tags: rebac:relate
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:17Z (RFD66606-2404) 'rfd-2404 spends
+ # tags: rebac:relate
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:18Z (RFD66606-2404) 'cineform-matroska-video
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:19Z (RFD66606-2404) 'rfd-2404 spends
+ # tags: rebac:relate
+ Text:RFD2404  1 LINE
+ Text:Written
+
+2026-10-31T00:01:20Z (RFD66606-2404) 'mac-desktop-client
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2404  1 LINE
+ Text:Written

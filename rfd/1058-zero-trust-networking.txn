@@ -1,0 +1,2055 @@
+2026-08-25T00:00:00Z (RFD66606-1058) 'Zero trust networking
+ # uuid: a52dd5d1-9f61-5676-b0b9-02380b784c13
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Published  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1058) '`weftspun_studio/`,
+ # tags: rfd:scope
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1058) '`scripts/deploy-weftspun-quadlet.sh`
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1058) 'weftspun_studio and its
+ # tags: rfd:hook
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1058) 'CockroachDB host run as Podman
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1058) 'Quadlets on loopback-only ports.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1058) '
+ # tags: rfd:hook
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1058) 'A perimeter firewall is not a
+ # tags: rfd:intrigue
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1058) 'boundary here. The router and the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1058) 'database run on the same
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1058) 'host as every other process the
+ # tags: rfd:intrigue
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1058) 'operator runs.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1058) '
+ # tags: rfd:intrigue
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1058) 'Run `sudo bash
+ # tags: rfd:exit
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1058) 'scripts/deploy-weftspun-quadlet.sh`;
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1058) 'the sections below hold the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1058) 'verified status.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1058) '
+ # tags: rfd:exit
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1058) 'Zero trust networking
+ # tags: rfd:details-title
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1058) 'Run weftspun_studio and its
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1058) 'CockroachDB host as Podman
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1058) 'Quadlets. A
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1058) 'Quadlet is a `.container`,
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1058) '`.volume`, `.network`, or
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1058) '`.build` file.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1058) '`podman-system-generator` reads
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1058) 'it and writes a systemd service.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1058) '
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1058) 'Write no hand-written `.service`
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1058) 'file. Each unit here is a Quadlet
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1058) 'file under
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1058) '`weftspun_studio/deploy/quadlet/`.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1058) '
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1058) 'See `DETAILS.md` for the two
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1058) 'zero-trust mechanisms, and why
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1058) 'CockroachDB replaces the
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1058) 'ZooKeeper Manta's metadata tier
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1058) 'needed. It
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1058) 'also covers the two images, the
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1058) 'migrate-before-serve entrypoint,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1058) 'two
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1058) 'boot bugs this RFD found and
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1058) 'fixed, the deploy command, and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1058) 'the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1058) 'verified status.
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1058) '
+ # tags: rfd:decision
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1058) 'RFD66606-1019 gives the API
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1058) 'server, and RFD66606-1020 pins
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1058) 'the CockroachDB build.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1058) 'RFD66606-1037 gives the taskweft
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1058) 'job/task split. RFD66606-1055
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1058) 'selects Docker
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1058) 'images, on this box first.
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1058) 'RFD66606-1057 tracks what is
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1058) 'still open.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1058) 'RFD66606-1073 put an S3 server on
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1058) 'the Fly toplevel this RFD's
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1058) 'loopback rule
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1058) 'governed.
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1058) '
+ # tags: rfd:related
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1058) 'Why the deploy shape
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1058) 'RFD66606-1055 selects plain
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1058) 'Docker images, on this box first.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1058) 'The router
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1058) 'and the CockroachDB host need a
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1058) 'deploy shape on this box too, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1058) 'single 4090 RTX box this project
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1058) 'develops on.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1058) 'Zero trust, in this deployment
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1058) 'Zero trust denies a request by
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1058) 'default. It grants access by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1058) 'identity and by context, not by
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1058) 'network position. The two
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1058) 'mechanisms below give that here.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1058) '**A private network per
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1058) 'deployment.** `weftspun.network`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1058) 'joins the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1058) '`weftspun` and `weftspun-crdb`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1058) 'containers. No other container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1058) 'reaches
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1058) 'either one by name.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1058) '**No port past the loopback
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1058) 'address.** Each `PublishPort`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1058) 'binds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1058) '`127.0.0.1`. A process on this
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1058) 'host reaches the API or the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1058) 'database,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1058) 'and a process on the network does
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1058) 'not. CockroachDB runs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1058) '`--insecure`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1058) 'inside `weftspun-crdb`, and that
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1058) 'is safe only because of this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1058) 'bind.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1058) '`deps/cockroach_local`'s own
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1058) 'foreground task warns that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1058) '`--insecure`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1058) 'fits a developer machine. On a
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1058) 'single box with loopback-only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1058) 'ports,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1058) 'this container plays that same
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1058) 'narrow role.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1058) 'SeaweedFS fronts object storage
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1058) 'with the S3 API (operator,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1058) '2026-11-16). A future worker
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1058) 'may read model weights over S3.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1058) 'It would reach SeaweedFS on its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1058) 'own bound port, under the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1058) 'same rule as this section. No
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1058) 'port goes past loopback unless a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1058) 'remote caller needs it, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1058) 'then only that one port.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1058) 'RFD66606-1073 once ran
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1058) '`versitygw` on the Fly toplevel,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1058) 'colocated with `weftspun_studio`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1058) 'on `127.0.0.1:10000`. The
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1058) 'operator rescinded versitygw on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1058) '2026-11-16, and RFD66606-1079
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1058) 'had already removed it. Fly's
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1058) 'Tigris and Cloudflare's R2 stay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1058) 'as the hosted S3 stores.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1058) 'CockroachDB replaces the Manta
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1058) 'metadata tier's ZooKeeper
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1058) 'Mark Cavage and David Pacheco's
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1058) '["Bringing Arbitrary Compute to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1058) 'Authoritative
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1058) 'Data"](https://queue.acm.org/detail.cfm?id=2645649)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1058) '(ACM Queue, 2014) describes
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1058) 'Manta, Joyent's object store with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1058) 'in-place compute. Two parts of
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1058) 'that design carry over here.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1058) 'Manta's metadata tier shards
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1058) 'PostgreSQL, fronted by a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1058) 'key/value
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1058) 'layer named Moray. A crashed
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1058) 'primary needs a new one, chosen
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1058) 'by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1058) 'leader election. Manta wrote that
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1058) 'election on top of ZooKeeper,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1058) 'because PostgreSQL holds no
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1058) 'leader election of its own.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1058) 'CockroachDB holds Raft consensus
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1058) 'and leader election inside the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1058) 'database. `weftspun-crdb` needs
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1058) 'no ZooKeeper, and no Moray, for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1058) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1058) 'same failover Manta built by
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1058) 'hand.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1058) 'Manta isolates each compute task
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1058) 'in its own OS zone, and it rolls
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1058) 'that zone back between jobs. A
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1058) 'Podman Quadlet container is this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1058) 'project's equivalent. It gives
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1058) 'one container per service, its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1058) 'own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1058) 'network namespace, and its own
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1058) 'file system. `podman build` tears
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1058) 'each one down and rebuilds it
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1058) 'from the image. RFD66606-1037's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1058) 'taskweft
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1058) 'domains give the job/task split
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1058) 'Manta's supervisor and agent
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1058) 'gave.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1058) 'The Quadlet gives the isolation
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1058) 'Manta's zone gave.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1058) 'The images
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1058) '`weftspun_studio/Dockerfile`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1058) 'builds the `weftspun_container`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1058) 'release
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1058) '(`mix.exs`). It is a plain `mix
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1058) 'release` with no Burrito step.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1058) 'Burrito wraps a release for a
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1058) 'host with no Elixir and no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1058) 'Erlang.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1058) 'Inside a container the image is
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1058) 'already that unit, so wrapping it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1058) 'again would add a Zig build step
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1058) 'for nothing. The bare-metal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1058) 'Burrito
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1058) 'release (`weftspun`, same
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1058) '`mix.exs`) still exists for a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1058) 'host with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1058) 'no Podman.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1058) '`weftspun_studio/deploy/Dockerfile.crdb`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1058) 'builds CockroachDB from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1058) 'V-Sekai 22.1 binary
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1058) '`deps/cockroach_local` downloads.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1058) 'It does not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-1058) 'use the stock Docker Hub image,
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-1058) 'so the container matches the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-1058) 'version
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-1058) 'RFD66606-1020 already pins.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-1058) 'Migrate before serve, inside the
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-1058) 'container
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-1058) '`weftspun_studio/deploy/docker-entrypoint.sh`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-1058) 'runs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-1058) '`WeftspunStudio.Release.create/0`,
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-1058) 'then `migrate/0`, then execs the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-1058) 'server. No second Quadlet runs
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-1058) 'the migration as a oneshot step.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-1058) 'The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-1058) 'entrypoint does it, so the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-1058) 'deployment stays to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-1058) 'Quadlet-managed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-1058) 'containers only.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-1058) '`Release.create/0` is new.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-1058) '`Ecto.Migrator.with_repo/2`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-1058) 'connects to a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-1058) 'database. It does not create one.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-1058) 'A first boot against an empty
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-1058) 'CockroachDB node failed with
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-1058) '`invalid_catalog_name` before
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-1058) 'this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-1058) 'function existed. `storage_up/1`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-1058) 'is idempotent, so the entrypoint
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-1058) 'calls it every start.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-1058) 'Two boot bugs this RFD found and
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-1058) 'fixed
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-1058) 'Building and running the images
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-1058) 'surfaced two faults in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-1058) '`WeftspunStudio.Application`.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-1058) 'Neither ran before this RFD.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-1058) 'RFD66606-1057
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-1058) 'marks the Burrito binary
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-1058) '"written, and never run." The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-1058) 'container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-1058) 'path was the first real boot of
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-1058) 'either fault.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-1058) '**The halt-after-boot bug.**
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (RFD66606-1058) '`application.ex` ran
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (RFD66606-1058) '`WeftspunStudio.CLI.main(argv())`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (RFD66606-1058) 'and halted whenever
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (RFD66606-1058) '`RELEASE_NAME`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (RFD66606-1058) 'was set, with no check for empty
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:08Z (RFD66606-1058) 'argv. A standard Elixir release
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:09Z (RFD66606-1058) 'sets `RELEASE_NAME` and passes no
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:10Z (RFD66606-1058) 'argv on `bin/APP start`. A normal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:11Z (RFD66606-1058) 'release start therefore halted
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:12Z (RFD66606-1058) 'the node right after it booted.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:13Z (RFD66606-1058) 'The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:14Z (RFD66606-1058) 'Burrito binary never hit this
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:15Z (RFD66606-1058) 'fault, because Burrito's own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:16Z (RFD66606-1058) 'launcher
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:17Z (RFD66606-1058) 'sets `__BURRITO_RELEASE_NAME`,
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:18Z (RFD66606-1058) 'not `RELEASE_NAME`, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:19Z (RFD66606-1058) '`release?()`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:20Z (RFD66606-1058) 'read false there by accident. The
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:21Z (RFD66606-1058) 'fix checks for non-empty argv
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:22Z (RFD66606-1058) 'too,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:23Z (RFD66606-1058) 'so `db migrate` still reaches the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:24Z (RFD66606-1058) 'CLI and a bare `start` does not.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:25Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:26Z (RFD66606-1058) '**The `Mix.env/0` crash.**
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:27Z (RFD66606-1058) '`serve?()` called `Mix.env()` to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:28Z (RFD66606-1058) 'skip the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:29Z (RFD66606-1058) 'HTTP listener in tests. Mix ships
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:30Z (RFD66606-1058) 'with the compiler, not with a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:31Z (RFD66606-1058) 'release, so a released node
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:32Z (RFD66606-1058) 'crashed at boot with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:33Z (RFD66606-1058) '`UndefinedFunctionError`. The fix
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:34Z (RFD66606-1058) 'guards the call with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:35Z (RFD66606-1058) '`Code.ensure_loaded?(Mix)`, the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:36Z (RFD66606-1058) 'same pattern `argv/0` already
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:37Z (RFD66606-1058) 'used
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:38Z (RFD66606-1058) 'for `Burrito.Util.Args`.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:39Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:40Z (RFD66606-1058) 'Deploy
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:41Z (RFD66606-1058) '```bash
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:42Z (RFD66606-1058) 'sudo bash
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:43Z (RFD66606-1058) 'scripts/deploy-weftspun-quadlet.sh
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:44Z (RFD66606-1058) '```
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:45Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:46Z (RFD66606-1058) 'The script syncs this repository
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:47Z (RFD66606-1058) 'to `/opt/weftspun/src`, the fixed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:48Z (RFD66606-1058) 'path the `.build` Quadlets read a
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:49Z (RFD66606-1058) '`Containerfile` from. It installs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:50Z (RFD66606-1058) 'the Quadlet files to
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:51Z (RFD66606-1058) '`/etc/containers/systemd/`, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:52Z (RFD66606-1058) 'it starts
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:53Z (RFD66606-1058) '`weftspun.service`.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:54Z (RFD66606-1058) '`weftspun.service` requires
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:55Z (RFD66606-1058) '`weftspun-crdb.service`, so one
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:56Z (RFD66606-1058) 'command brings up both. The API
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:57Z (RFD66606-1058) 'answers at
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:58Z (RFD66606-1058) '`http://127.0.0.1:4001`. See
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:04:59Z (RFD66606-1058) 'Verified, below, for why
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:00Z (RFD66606-1058) '4000 is not the port.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:01Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:02Z (RFD66606-1058) 'Verified, on this box, through
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:03Z (RFD66606-1058) 'the real Quadlet path
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:04Z (RFD66606-1058) '`scripts/deploy-weftspun-quadlet.sh`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:05Z (RFD66606-1058) 'ran as root.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:06Z (RFD66606-1058) '`podman-system-generator` turned
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:07Z (RFD66606-1058) 'all six Quadlet files into
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:08Z (RFD66606-1058) '`.service` units. `systemctl
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:09Z (RFD66606-1058) 'status` shows both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:10Z (RFD66606-1058) '`weftspun-crdb.service`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:11Z (RFD66606-1058) 'and `weftspun.service` as `active
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:12Z (RFD66606-1058) '(running)`, not merely built.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:13Z (RFD66606-1058) '`curl
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:14Z (RFD66606-1058) 'http://127.0.0.1:4001/api/v1/health`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:15Z (RFD66606-1058) 'and `/api/v1/models`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:16Z (RFD66606-1058) 'both answered, over the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:17Z (RFD66606-1058) 'Quadlet-managed container, with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:18Z (RFD66606-1058) 'no Postgrex
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:19Z (RFD66606-1058) 'error in the journal. The app
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:20Z (RFD66606-1058) 'reached CockroachDB by container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:21Z (RFD66606-1058) 'name
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:22Z (RFD66606-1058) '(`weftspun-crdb`) over
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:23Z (RFD66606-1058) '`weftspun.network`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:24Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:25Z (RFD66606-1058) 'Two host-specific faults surfaced
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:26Z (RFD66606-1058) 'only at this last step, past what
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:27Z (RFD66606-1058) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:28Z (RFD66606-1058) 'direct `podman run` (this RFD's
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:29Z (RFD66606-1058) 'first verification pass) reached.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:30Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:31Z (RFD66606-1058) '**Rootful Podman's bridge network
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:32Z (RFD66606-1058) 'could not reach the internet on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:33Z (RFD66606-1058) 'this host. The kernel dropped it,
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:34Z (RFD66606-1058) 'and DNS was not the cause.**
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:35Z (RFD66606-1058) '`weftspun-crdb-build.service`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:36Z (RFD66606-1058) 'failed inside `apt-get update`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:37Z (RFD66606-1058) 'timing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:38Z (RFD66606-1058) 'out on every mirror. DNS was the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:39Z (RFD66606-1058) 'first suspect (`--dns=1.1.1.1`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:40Z (RFD66606-1058) 'still set on both `.build`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:41Z (RFD66606-1058) 'units). It did not fix the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:42Z (RFD66606-1058) 'failure.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:43Z (RFD66606-1058) '`sudo nft list ruleset` showed
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:44Z (RFD66606-1058) 'why.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:45Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:46Z (RFD66606-1058) 'Docker's installer wrote a
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:47Z (RFD66606-1058) '`FORWARD` chain with `policy
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:48Z (RFD66606-1058) 'drop`. Only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:49Z (RFD66606-1058) 'two chains it jumps to accept
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:50Z (RFD66606-1058) 'anything: `ts-forward`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:51Z (RFD66606-1058) '(Tailscale) and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:52Z (RFD66606-1058) '`DOCKER-FORWARD`, which itself
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:53Z (RFD66606-1058) 'drops everything not on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:54Z (RFD66606-1058) '`docker0`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:55Z (RFD66606-1058) 'Podman's netavark bridge for
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:56Z (RFD66606-1058) '`weftspun.network` is neither, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:57Z (RFD66606-1058) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:58Z (RFD66606-1058) 'host dropped every packet the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:05:59Z (RFD66606-1058) 'build container sent outbound
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:00Z (RFD66606-1058) 'before
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:01Z (RFD66606-1058) 'it left the host. Rootless Podman
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:02Z (RFD66606-1058) 'never hit this chain. It routes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:03Z (RFD66606-1058) 'through slirp4netns/pasta in user
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:04Z (RFD66606-1058) 'space, not the kernel
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:05Z (RFD66606-1058) 'bridge/forward
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:06Z (RFD66606-1058) 'path rootful Podman uses. That is
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:07Z (RFD66606-1058) 'why the same Dockerfiles built
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:08Z (RFD66606-1058) 'cleanly under rootless Podman
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:09Z (RFD66606-1058) 'earlier in this session.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:10Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:11Z (RFD66606-1058) '`DNS=1.1.1.1` on both `.build`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:12Z (RFD66606-1058) 'units, scoped to the build
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:13Z (RFD66606-1058) 'container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:14Z (RFD66606-1058) 'only, is the change on record.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:15Z (RFD66606-1058) '`sudo nft list ruleset` today
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:16Z (RFD66606-1058) 'shows
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:17Z (RFD66606-1058) 'no accept rule added for the
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:18Z (RFD66606-1058) '`weftspun` bridge subnet, and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:19Z (RFD66606-1058) '`FORWARD` policy this section
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:20Z (RFD66606-1058) 'describes is still `drop`. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:21Z (RFD66606-1058) 'later
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:22Z (RFD66606-1058) '`deploy-weftspun-quadlet.sh` run
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:23Z (RFD66606-1058) 'built both images and started
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:24Z (RFD66606-1058) 'both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:25Z (RFD66606-1058) 'services, and `systemctl status`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:26Z (RFD66606-1058) 'confirms both `weftspun.service`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:27Z (RFD66606-1058) 'and `weftspun-crdb.service` run
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:28Z (RFD66606-1058) 'today. This RFD records that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:29Z (RFD66606-1058) 'outcome. It does not claim to
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:30Z (RFD66606-1058) 'explain why the DNS change alone
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:31Z (RFD66606-1058) 'was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:32Z (RFD66606-1058) 'enough on a retry, when it was
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:33Z (RFD66606-1058) 'not enough on the first attempt.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:34Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:35Z (RFD66606-1058) 'A host-wide `nft` `FORWARD`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:36Z (RFD66606-1058) 'change may still be the more
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:37Z (RFD66606-1058) 'durable
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:38Z (RFD66606-1058) 'fix. Confirm `systemctl status
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:39Z (RFD66606-1058) 'weftspun.service` and `systemctl
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:40Z (RFD66606-1058) 'status weftspun-crdb.service`
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:41Z (RFD66606-1058) 'show `active (running)` after any
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:42Z (RFD66606-1058) 'future rebuild, the same caution
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:43Z (RFD66606-1058) 'RFD66606-1057 gives the dev
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:44Z (RFD66606-1058) 'container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:45Z (RFD66606-1058) 'and the Pixal3D worker stage.
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:46Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:47Z (RFD66606-1058) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:48Z (RFD66606-1058) 'Trust must come from isolation,
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:49Z (RFD66606-1058) 'not from network position.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1058  1 LINE
+ Text:Written
+
+2026-08-25T00:06:50Z (RFD66606-1058) '
+ # tags: rfd:details
+ Text:RFD1058  1 LINE
+ Text:Written

@@ -246,14 +246,14 @@ end
 defmodule RFD.Serials do
   @moduledoc "The register held against the tree and against its own previous revision."
 
-  @doc "Reasons the register and the `rfd/*.exs` sources disagree."
+  @doc "Reasons the register and the `rfd/*.txn` sources disagree."
   def tree_problems(%RFD.Register{} = r, sources) do
     {allocated, deleted} = RFD.Register.tables(r)
     site = r.layer[:site]
 
     on_disk =
       for path <- sources,
-          name = path |> Path.basename() |> String.replace_suffix(".exs", ""),
+          name = path |> Path.basename() |> String.replace_suffix(".txn", ""),
           serial = String.to_integer(String.slice(name, 0, 4)),
           div(serial, 1000) == site,
           into: %{},
@@ -313,35 +313,55 @@ defmodule RFD.Source do
   def rfd_root, do: Path.join(repo_root(), "rfd")
 
   def all do
-    rfd_root() |> Path.join("[0-9][0-9][0-9][0-9]-*.exs") |> Path.wildcard() |> Enum.sort()
+    rfd_root() |> Path.join("[0-9][0-9][0-9][0-9]-*.txn") |> Path.wildcard() |> Enum.sort()
   end
 
   def registers do
     repo_root() |> Path.join("SERIALS*.exs") |> Path.wildcard() |> Enum.sort()
   end
 
-  @doc "Resolve `NNNN-slug`, `rfd/NNNN-slug.exs`, a directory, or `SERIALS*.exs` to a source path."
+  @doc "Resolve `NNNN-slug`, `rfd/NNNN-slug.txn`, a directory, or `SERIALS*.exs` to a source path."
   def at(name) do
-    base = name |> Path.basename() |> String.replace_suffix(".exs", "")
+    base =
+      name
+      |> Path.basename()
+      |> String.replace_suffix(".exs", "")
+      |> String.replace_suffix(".txn", "")
 
     if String.starts_with?(base, "SERIALS"),
       do: Path.join(repo_root(), base <> ".exs"),
-      else: Path.join(rfd_root(), base <> ".exs")
+      else: Path.join(rfd_root(), base <> ".txn")
   end
 
   def register?(path), do: path |> Path.basename() |> String.starts_with?("SERIALS")
 
   @doc "The directory an RFD rendering goes to."
-  def dir_of(path), do: String.replace_suffix(path, ".exs", "")
+  def dir_of(path),
+    do: path |> String.replace_suffix(".txn", "") |> String.replace_suffix(".exs", "")
 
   @doc "Compile one source and return its document; the compile itself validates it."
   def load(path) do
+    if String.ends_with?(path, ".txn"), do: load_txn(File.read!(path), path), else: compile(path)
+  end
+
+  defp load_txn(text, path) do
+    RFD.Txn.parse!(text)
+  rescue
+    e in ArgumentError ->
+      reraise ArgumentError, "#{path}: #{Exception.message(e)}", __STACKTRACE__
+  end
+
+  defp compile(path) do
     Code.compiler_options(ignore_module_conflict: true)
     path |> Code.compile_file() |> Enum.map(&elem(&1, 0)) |> pick(path)
   end
 
   @doc "Compile source text (a base revision read from git) the same way."
   def load_string(text, name) do
+    if String.ends_with?(name, ".txn"), do: load_txn(text, name), else: compile_string(text, name)
+  end
+
+  defp compile_string(text, name) do
     Code.compiler_options(ignore_module_conflict: true)
     text |> Code.compile_string(name) |> Enum.map(&elem(&1, 0)) |> pick(name)
   end

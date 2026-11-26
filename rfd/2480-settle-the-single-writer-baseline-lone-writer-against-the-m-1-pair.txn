@@ -1,0 +1,485 @@
+2026-11-07T00:00:00Z (RFD66606-2480) 'Settle the single-writer baseline: lone writer against the M=1 pair
+ # uuid: ba156591-52dc-5acb-8d68-9cb3f4773f23
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2480) 'the lone-writer baseline that
+ # tags: rfd:feature
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2480) 'every pair-matrix ratio divides
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2480) 'by gets measured.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2480) 'the scratch FoundationDB
+ # tags: rfd:scope
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2480) 'cluster's contention benchmark
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2480) 'and PROTOCOL.md.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2480) 'Why did the M=1 pair writer run
+ # tags: rfd:hook
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2480) 'about 142 commits/s at max rate,
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2480) 'when a lone writer ran
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2480) '90-114 commits/s in every other
+ # tags: rfd:hook
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2480) 'run?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2480) '
+ # tags: rfd:hook
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2480) 'Every "ratio to M=1" in the pair
+ # tags: rfd:intrigue
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2480) 'matrix divides by the lone-writer
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2480) 'baseline. The 0.68-0.73
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2480) 'bend seen at M=4 and M=8 may be
+ # tags: rfd:intrigue
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2480) 'mostly an inflated denominator:
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2480) 'pairs at M=4 and M=8 ran
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2480) '98-101 commits/s, the same as a
+ # tags: rfd:intrigue
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2480) 'lone writer. See the details for
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2480) 'the logs behind both
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2480) 'figures. A Mac power-state or
+ # tags: rfd:intrigue
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2480) 'clock effect is a hypothesis,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2480) 'untested.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2480) '
+ # tags: rfd:intrigue
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2480) 'A table in the repo, built from
+ # tags: rfd:exit
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2480) 'the log files, giving min, mean
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2480) 'and max commits/s for the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2480) 'lone writer and the M=1 pair
+ # tags: rfd:exit
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2480) 'across the alternating cycles,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2480) 'plus a one-line PROTOCOL.md
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2480) 'amendment naming which baseline
+ # tags: rfd:exit
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2480) 'the pair ratios use.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2480) '
+ # tags: rfd:exit
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2480) 'Settle the single-writer
+ # tags: rfd:details-title
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2480) 'baseline: lone writer against the
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2480) 'M=1 pair
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2480) '- Alternate the lone writer and
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2480) 'the M=1 pair back to back, three
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2480) 'cycles, on the same
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2480) '  4-process scratch cluster
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2480) '(never port 4700), same 15 s cell
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2480) 'length, using mac/contention.c
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2480) '  and mac/scratch-fdb.sh. Record
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2480) 'load average, writer p50 and p99,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2480) 'and commits over 100 ms.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2480) '- Fixed before the run: if the
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2480) 'lone writer and the M=1 pair land
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2480) 'within 10% of each other,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2480) '  call it no effect, and
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2480) 'recompute every pair ratio
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2480) 'against the lone-writer figure.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2480) '- Fixed before the run: if they
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2480) 'land outside 10%, name the cause
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2480) 'before any ratio is quoted.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2480) '  Run a CPU-burner control, an
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2480) 'idle-core spinner next to a lone
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2480) 'writer, and require it to
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2480) '  move the lone writer's rate; if
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2480) 'it cannot, drop the power-state
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2480) 'hypothesis.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2480) '- Ship a table in the repo
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:03Z (RFD66606-2480) '(min/mean/max over the cycles)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:04Z (RFD66606-2480) 'and one line in PROTOCOL.md
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:05Z (RFD66606-2480) '  stating which baseline the pair
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:06Z (RFD66606-2480) 'ratios use. If the cause is not
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:07Z (RFD66606-2480) 'found, mark it
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:08Z (RFD66606-2480) '  undetermined rather than
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:09Z (RFD66606-2480) 'guessed.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:10Z (RFD66606-2480) '
+ # tags: rfd:decision
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:11Z (RFD66606-2480) '- RFD66606-2474, the companion
+ # tags: rfd:related
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:12Z (RFD66606-2480) 'WSL-desk run that separates the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:13Z (RFD66606-2480) 'Mac from the cluster.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:14Z (RFD66606-2480) '
+ # tags: rfd:related
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:15Z (RFD66606-2480) 'The logs behind both figures
+ # tags: rfd:details-heading
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:16Z (RFD66606-2480) 'results-contention-matrix4.log
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:17Z (RFD66606-2480) '(commit 1b6db4e) shows the M=1
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:18Z (RFD66606-2480) 'pair writer at 141.8-142.0
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:19Z (RFD66606-2480) 'commits/s across three repeats at
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:20Z (RFD66606-2480) 'max rate. Lone-writer runs on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:21Z (RFD66606-2480) 'same scratch cluster
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:22Z (RFD66606-2480) 'shape read lower:
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:23Z (RFD66606-2480) 'results-contention-matrix2.log
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:24Z (RFD66606-2480) 'gives 98.7-106.9 commits/s with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:25Z (RFD66606-2480) 'stores=1;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:26Z (RFD66606-2480) 'results-contention-matrix3.log
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:27Z (RFD66606-2480) '(482974a) gives 89.7, 100.7 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:28Z (RFD66606-2480) '98.5 commits/s; and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:29Z (RFD66606-2480) 'results-contention-matrix5.log
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:30Z (RFD66606-2480) '(6be7ddb), a bare libfdb_c loop
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:31Z (RFD66606-2480) 'at N=1, gives 106.5-113.5
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:32Z (RFD66606-2480) 'commits/s. The first matrix on a
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:33Z (RFD66606-2480) 'one-process cluster showed the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:34Z (RFD66606-2480) 'same jump: 111 commits/s
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:35Z (RFD66606-2480) 'alone, 150 with 2 readers.
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written
+
+2026-11-07T00:01:36Z (RFD66606-2480) '
+ # tags: rfd:details
+ Text:RFD2480  1 LINE
+ Text:Written

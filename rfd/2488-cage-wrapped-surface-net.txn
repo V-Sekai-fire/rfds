@@ -1,0 +1,785 @@
+2026-11-10T00:00:00Z (RFD66606-2488) 'Cage-wrapped segmentation net and independent garment bodies for VRM spring-bone rigs
+ # uuid: 7b017824-3cb3-570a-9022-10ce4d0b4e26
+ # tags: rfd:title
+ RFD:Ideation  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-10T00:00:01Z (RFD66606-2488) 'net segments garment and body;
+ # tags: rfd:feature
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:02Z (RFD66606-2488) 'everything else becomes a VRM
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:03Z (RFD66606-2488) 'spring-bone chain
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:04Z (RFD66606-2488) 'cage guest, diffusion-net,
+ # tags: rfd:scope
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:05Z (RFD66606-2488) 'spring-bone addon, Cassie VBD,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:06Z (RFD66606-2488) 'and the two datasets
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:07Z (RFD66606-2488) 'Can a garment become independent
+ # tags: rfd:hook
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:08Z (RFD66606-2488) 'bodies that swing on their own?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:09Z (RFD66606-2488) '
+ # tags: rfd:hook
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:10Z (RFD66606-2488) 'The product avatar wears clothes.
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:11Z (RFD66606-2488) 'Hair, skirts, belts and scarves
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:12Z (RFD66606-2488) 'are separate parts with cavities
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:13Z (RFD66606-2488) 'and non-manifold edges.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:14Z (RFD66606-2488) 'A plain surface net cannot see
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:15Z (RFD66606-2488) 'across disconnected components.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:16Z (RFD66606-2488) 'Garments must move independently.
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:17Z (RFD66606-2488) 'Skin weights attach; they do not
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:18Z (RFD66606-2488) 'swing the cloth.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:19Z (RFD66606-2488) '
+ # tags: rfd:intrigue
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:20Z (RFD66606-2488) 'Read DETAILS for the part-to-body
+ # tags: rfd:exit
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:21Z (RFD66606-2488) 'mapping and the first gate.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:22Z (RFD66606-2488) '
+ # tags: rfd:exit
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:23Z (RFD66606-2488) 'Cage-wrapped segmentation net and
+ # tags: rfd:details-title
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:24Z (RFD66606-2488) 'independent garment bodies for
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:25Z (RFD66606-2488) 'VRM spring-bone rigs
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:26Z (RFD66606-2488) 'The cage-wrapped net segments the
+ # tags: rfd:decision
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:27Z (RFD66606-2488) 'body and garment into per-vertex
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:28Z (RFD66606-2488) 'part and panel labels.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:29Z (RFD66606-2488) 'Every part that is not the body
+ # tags: rfd:decision
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:30Z (RFD66606-2488) 'base becomes a VRM spring-bone
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:31Z (RFD66606-2488) 'chain.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:32Z (RFD66606-2488) 'SkinTokens gives the body base
+ # tags: rfd:decision
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:33Z (RFD66606-2488) 'skeleton and weights; the chains
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:34Z (RFD66606-2488) 'swing on their own.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:35Z (RFD66606-2488) 'Rest lengths come from the mesh;
+ # tags: rfd:decision
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:36Z (RFD66606-2488) 'spring stiffness and damping are
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:37Z (RFD66606-2488) 'tuned.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:38Z (RFD66606-2488) '
+ # tags: rfd:decision
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:39Z (RFD66606-2488) '- CageNet, SIGGRAPH 2025. doi
+ # tags: rfd:references
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:40Z (RFD66606-2488) '10.1145/3721238.3730654
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:41Z (RFD66606-2488) '- DiffusionNet, ToG 2022. doi
+ # tags: rfd:references
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:42Z (RFD66606-2488) '10.1145/3507905
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:43Z (RFD66606-2488) '- SkinTokens, arXiv:2602.04805.
+ # tags: rfd:references
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:44Z (RFD66606-2488) '
+ # tags: rfd:references
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:45Z (RFD66606-2488) '- RFD66606-1029, mesh
+ # tags: rfd:related
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:46Z (RFD66606-2488) 'segmentation and the part model
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:47Z (RFD66606-2488) 'it replaces.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:48Z (RFD66606-2488) '- RFD66606-1030, the See-Through
+ # tags: rfd:related
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:49Z (RFD66606-2488) 'split the net feeds.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:50Z (RFD66606-2488) '
+ # tags: rfd:related
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:51Z (RFD66606-2488) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:52Z (RFD66606-2488) 'The product avatar wears clothes.
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:53Z (RFD66606-2488) 'Hair, skirts, belts and scarves
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:54Z (RFD66606-2488) 'are separate parts.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:55Z (RFD66606-2488) 'They must move independently: a
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:56Z (RFD66606-2488) 'belt swings, a skirt drapes, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:57Z (RFD66606-2488) 'tail and hair dangle.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:58Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:00:59Z (RFD66606-2488) 'The two layers
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:00Z (RFD66606-2488) '- The segmentation net: CageNet
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:01Z (RFD66606-2488) 'builds a manifold cage;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:02Z (RFD66606-2488) 'DiffusionNet runs on the cage;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:03Z (RFD66606-2488) 'the mapping operator P projects
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:04Z (RFD66606-2488) 'per-vertex part and panel labels
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:05Z (RFD66606-2488) 'back to the messy mesh.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:06Z (RFD66606-2488) '- The independent bodies: VRM
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:07Z (RFD66606-2488) 'spring-bone chains for every part
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:08Z (RFD66606-2488) 'that is not the body base.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:09Z (RFD66606-2488) '- Stiff parts (belt, collar, hat)
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:10Z (RFD66606-2488) 'use short chains or a rigid pivot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:11Z (RFD66606-2488) 'at the attachment bone.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:12Z (RFD66606-2488) '- Soft fabric (skirt, dress,
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:13Z (RFD66606-2488) 'sleeves) is a cloth approximated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:14Z (RFD66606-2488) 'by spring-bone chains that Cassie
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:15Z (RFD66606-2488) 'VBD drives.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:16Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:17Z (RFD66606-2488) 'Why the cage
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:18Z (RFD66606-2488) 'DiffusionNet alone does not
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:19Z (RFD66606-2488) 'communicate between distinct
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:20Z (RFD66606-2488) 'components.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:21Z (RFD66606-2488) 'The single manifold cage lets one
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:22Z (RFD66606-2488) 'net see across hair, clothes and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:23Z (RFD66606-2488) 'eyes.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:24Z (RFD66606-2488) 'So it is the part-label engine
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:25Z (RFD66606-2488) 'for the garment and the body.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:26Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:27Z (RFD66606-2488) 'Part-to-body mapping
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:28Z (RFD66606-2488) '- Body base: SkinTokens skeleton
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:29Z (RFD66606-2488) 'and weights; the static rig
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:30Z (RFD66606-2488) 'everything hangs from.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:31Z (RFD66606-2488) '- Everything else: a VRM
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:32Z (RFD66606-2488) 'spring-bone chain.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:33Z (RFD66606-2488) '- Belt, collar, skirt, dress,
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:34Z (RFD66606-2488) 'sleeves, shawl, hair, tail,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:35Z (RFD66606-2488) 'scarf.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:36Z (RFD66606-2488) '- Each chain carries bones with
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:37Z (RFD66606-2488) 'rest lengths from the mesh, tuned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:38Z (RFD66606-2488) 'stiffness, damping and collision
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:39Z (RFD66606-2488) 'shapes.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:40Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:41Z (RFD66606-2488) 'Data
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:42Z (RFD66606-2488) '- GarmentCodeData v2 (CC BY 4.0):
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:43Z (RFD66606-2488) 'the garment mesh, per-vertex
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:44Z (RFD66606-2488) 'panel segmentation, waist and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:45Z (RFD66606-2488) 'collar vertex labels, the sewing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:46Z (RFD66606-2488) 'specification, and body
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:47Z (RFD66606-2488) 'measurements. The segmentation is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:48Z (RFD66606-2488) 'the carving; the scrappy path
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:49Z (RFD66606-2488) 'uses it directly without the net.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:50Z (RFD66606-2488) '- Articulation-XL 2.0 (CC BY
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:51Z (RFD66606-2488) '4.0): models, skeletons, meshes,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:52Z (RFD66606-2488) 'skins and point clouds. Feeds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:53Z (RFD66606-2488) 'SkinTokens evaluation, which was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:54Z (RFD66606-2488) 'trained on it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:55Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:56Z (RFD66606-2488) 'What we already have
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:57Z (RFD66606-2488) 'The cage.elf guest ships the cage
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:58Z (RFD66606-2488) 'build and the bind.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:01:59Z (RFD66606-2488) 'Its self test and property test
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:00Z (RFD66606-2488) 'assert every target vertex lies
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:01Z (RFD66606-2488) 'inside the cage.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:02Z (RFD66606-2488) 'The VRM addon runs
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:03Z (RFD66606-2488) 'SpringBoneSimulator3D with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:04Z (RFD66606-2488) 'per-bone stiffness, damping,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:05Z (RFD66606-2488) 'limits and collision shapes.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:06Z (RFD66606-2488) 'Cassie cloth emits VBD soft-body
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:07Z (RFD66606-2488) 'code with adjacency, gather and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:08Z (RFD66606-2488) 'project springs.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:09Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:10Z (RFD66606-2488) 'What is new
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:11Z (RFD66606-2488) 'The DiffusionNet stage on the
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:12Z (RFD66606-2488) 'cage, and the mapping operator P,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:13Z (RFD66606-2488) 'which segment the garment and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:14Z (RFD66606-2488) 'body into parts.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:15Z (RFD66606-2488) 'The rig: a SkinTokens base
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:16Z (RFD66606-2488) 'skeleton, and spring-bone chains
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:17Z (RFD66606-2488) 'for everything else.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:18Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:19Z (RFD66606-2488) 'The licence line
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:20Z (RFD66606-2488) 'The CageNet paper is
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:21Z (RFD66606-2488) 'non-commercial; we implement the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:22Z (RFD66606-2488) 'cage and DiffusionNet (MIT) on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:23Z (RFD66606-2488) 'our own code.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:24Z (RFD66606-2488) 'SkinTokens is permissive and
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:25Z (RFD66606-2488) 'in-house; we adopt it for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:26Z (RFD66606-2488) 'base skeleton and weights.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:27Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:28Z (RFD66606-2488) 'First gate
+ # tags: rfd:details-heading
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:29Z (RFD66606-2488) 'A production garment is carved
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:30Z (RFD66606-2488) 'into labeled parts and rigged as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:31Z (RFD66606-2488) 'VRM spring-bone chains.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:32Z (RFD66606-2488) 'Its belt, skirt and hair move
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:33Z (RFD66606-2488) 'independently while the body
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:34Z (RFD66606-2488) 'moves, in the model-explorer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:35Z (RFD66606-2488) 'viewer.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2488  1 LINE
+ Text:Written
+
+2026-11-10T00:02:36Z (RFD66606-2488) '
+ # tags: rfd:details
+ Text:RFD2488  1 LINE
+ Text:Written

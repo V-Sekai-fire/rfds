@@ -1,0 +1,395 @@
+2026-11-07T00:00:00Z (RFD66606-2482) 'Build a 50-200 MB feed-shaped table before any read or cluster-shape claim
+ # uuid: 4d70d088-45ec-5b68-8997-ce90ad20843b
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2482) 'the reader bend gets re-measured
+ # tags: rfd:feature
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2482) 'on a realistic feed-shaped table,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2482) 'not a toy one.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2482) 'the scratch FoundationDB
+ # tags: rfd:scope
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2482) 'cluster's VFS, its test table,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2482) 'and PROTOCOL.md's pair cells.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2482) 'Does the reader bend survive a
+ # tags: rfd:hook
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2482) 'realistic table?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2482) '
+ # tags: rfd:hook
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2482) 'In the pair matrix, per-pair
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2482) 'reads fell to 0.65-0.67 of M=1 at
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2482) 'M=8 with the writer fixed at
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2482) '50 commits/s, and to 0.47-0.48
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2482) 'with the writer at max rate. The
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2482) 'current test table has 2,000
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2482) 'rows, about 500 KB, with a total
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2482) 'store size probably around 4 MB,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2482) 'which data distribution
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2482) 'almost certainly keeps in one
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2482) 'shard on one storage process;
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2482) 'adding storage processes would
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2482) 'then change nothing, so a "not
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2482) 'the cluster" conclusion drawn
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2482) 'from it would be wrong. Under
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2482) 'NORMAL locking, SQLite drops its
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2482) 'whole page cache on every head
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2482) 'move, so each uncached page
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2482) 'costs one round trip when the
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2482) 'speculative get hits and two when
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2482) 'it misses, and a 500 KB
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2482) 'table flatters that cost. Three
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2482) 'candidate causes must stay
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2482) 'separate: one storage process
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2482) 'serving
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2482) 'every page read, the VFS
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2482) 're-fetching pages after each head
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2482) 'move, and this Mac.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2482) '
+ # tags: rfd:intrigue
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2482) 'A measured partitions_count above
+ # tags: rfd:exit
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2482) 'one (or a stated reason it stayed
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2482) 'at one), and the M=8
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2482) 'reader ratio on the feed-shaped
+ # tags: rfd:exit
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2482) 'table with its confounds stated.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2482) '
+ # tags: rfd:exit
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2482) '- Build a 50-200 MB table with
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2482) 'the challenge's schema shape
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2482) '(schema.sql: users, posts, likes)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2482) '  and run a feed-shaped query
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2482) 'against it.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2482) '- Before reading any result,
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2482) 'record
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2482) 'cluster.data.partitions_count and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2482) 'the per-role query
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2482) '  counters from status json, and
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2482) 'read per-process CPU as deltas of
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2482) 'cputime, never ps %cpu.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2482) '- Repeat the M=1 and M=8 pair
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2482) 'cells, three repeats, under the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2482) 'pre-registered reading rule in
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2482) '  PROTOCOL.md.
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2482) '- Report a measured partitions
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2482) 'count above one, or a stated
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:03Z (RFD66606-2482) 'reason it stayed at one, and the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:04Z (RFD66606-2482) '  M=8 reader ratio with its
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:05Z (RFD66606-2482) 'confounds stated.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:06Z (RFD66606-2482) '- Any change to fdb_vfs.c goes on
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:07Z (RFD66606-2482) 'a dev/ branch of datasource-store
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:08Z (RFD66606-2482) 'with a probe that fails
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:09Z (RFD66606-2482) '  without it, and only after this
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:10Z (RFD66606-2482) 'question is answered.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:11Z (RFD66606-2482) '
+ # tags: rfd:decision
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:12Z (RFD66606-2482) '- RFD66606-2473, the
+ # tags: rfd:related
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:13Z (RFD66606-2482) 'single-writer baseline the pair
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:14Z (RFD66606-2482) 'ratios divide by.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:15Z (RFD66606-2482) '- RFD66606-2474, the companion
+ # tags: rfd:related
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:16Z (RFD66606-2482) 'WSL-desk run that separates the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:17Z (RFD66606-2482) 'Mac from the cluster.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2482  1 LINE
+ Text:Written
+
+2026-11-07T00:01:18Z (RFD66606-2482) '
+ # tags: rfd:related
+ Text:RFD2482  1 LINE
+ Text:Written

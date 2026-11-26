@@ -1,0 +1,380 @@
+2026-10-31T00:00:00Z (RFD66606-2430) 'the gacha critical path is ten rungs from a prompt to a public roll
+ # uuid: 0c064553-dacd-51d8-b151-f3432a1c9819
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2430) 'the ten rungs of the gacha path
+ # tags: rfd:scope
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2430) 'and its runtime motion source.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2430) 'Ten rungs take the gacha from a
+ # tags: rfd:hook
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2430) 'language prompt to a public,
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2430) 'hosted roll button.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2430) '
+ # tags: rfd:hook
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2430) 'Each rung produces an output the
+ # tags: rfd:intrigue
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2430) 'next rung consumes, so a rung
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2430) 'with no output leaves the next
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2430) 'one nothing to take.
+ # tags: rfd:intrigue
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2430) '
+ # tags: rfd:intrigue
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2430) 'Follow the ten rungs in order,
+ # tags: rfd:exit
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2430) 'from the language prompt to the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2430) 'public hosted roll page, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2430) 'check that each consumes the
+ # tags: rfd:exit
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2430) 'output of the one before.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2430) '
+ # tags: rfd:exit
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2430) 'the gacha critical path is ten
+ # tags: rfd:details-title
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2430) 'rungs from a prompt to a public
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2430) 'roll
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2430) 'Ten rungs, each producing an
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2430) 'output the next rung consumes:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2430) '
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2430) '    0. Language prompt → image           (OmniGen2,
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2430) 'Q4 GGUF + Flow LCM LoRA GGUF)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2430) '    1. Image → mesh                      (Pixal3D,
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2430) 'Q4 GGUF)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2430) '    2. Mesh → judged                     (EditScore
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2430) 'over Qwen3-VL-8B Q4 GGUF)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2430) '    3. Judged → repaired                 (VoxHammer,
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2430) 'procedural, N-attempt bound)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2430) '    4. Repaired → skinned                (skin-tokens.cpp
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2430) 'against ANNY, GGUF)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2430) '    5. Skinned → tagged (SAM2 or
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2430) 'rf-detr-Seg + OmniGen2 per
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2430) 'RFD66606-2183, all GGUF)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2430) '    6. Tagged → VRM                      (portable
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2430) 'character)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2430) '    7. Prompt list → pool                (~50
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2430) 'VRMs, judged, seed-reproducible)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2430) '    8. Pool → roll button                (native
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2430) 'Godot binary head per
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2430) 'RFD66606-2210)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2430) '    9. Public                            (hosted
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2430) 'with sponsor link)
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2430) '
+ # tags: rfd:decision
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2430) '- RFD66606-1102, where this rule
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2430) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2430) '- RFD66606-2183, the tagging of
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2430) 'rung 5.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2430) '- RFD66606-2210, the native Godot
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2430) 'binary head of rung 8.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2430) '- RFD66606-1028, the license
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2430) 'class already accepted for
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2430) 'Kimodo-SOMA-*.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2430) '- RFD66606-2230, the shared
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2430) '`modules/ggml/` module.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2430) '
+ # tags: rfd:related
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2430) 'Runtime motion
+ # tags: rfd:details-heading
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2430) 'Runtime motion: motion-bricks.cpp
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2430) '(already ggml/GGUF) generates
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2430) 'keyframe-driven animation from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2430) 'the shipped VRM. Apache-2.0 code,
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2430) 'NVIDIA Open Model License on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2430) 'weights (same license class
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2430) 'already accepted for
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2430) 'Kimodo-SOMA-* per RFD66606-1028).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2430) 'The model has 183M params. Runs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2430) 'alongside rungs 7-9 as
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2430) 'the animation source for the pool
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:11Z (RFD66606-2430) 'preview and hosted roll page.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:12Z (RFD66606-2430) 'Loaded through the shared
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:13Z (RFD66606-2430) '`modules/ggml/` module per
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:14Z (RFD66606-2430) 'RFD66606-2230.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:01:15Z (RFD66606-2430) '
+ # tags: rfd:details
+ Text:RFD2430  1 LINE
+ Text:Written

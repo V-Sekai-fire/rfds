@@ -1,0 +1,185 @@
+2026-10-31T00:00:00Z (RFD66606-2418) 'our line of an upstream branch is dev/branch on the fork
+ # uuid: 51578b9f-7f4b-5eab-8516-67b83265339b
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2418) 'where our line of an upstream
+ # tags: rfd:scope
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2418) 'branch lives on the fork.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2418) 'Our line of an upstream branch is
+ # tags: rfd:hook
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2418) '`dev/<branch>` on the
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2418) 'V-Sekai-fire fork.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2418) '
+ # tags: rfd:hook
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2418) 'Would the upstream's branch-keyed
+ # tags: rfd:intrigue
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2418) 'workflows fire on our line, or
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2418) 'could `main/<x>` sit beside
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2418) '`main`?
+ # tags: rfd:intrigue
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2418) '
+ # tags: rfd:intrigue
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2418) 'Check that a new line of an
+ # tags: rfd:exit
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2418) 'upstream branch is named
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2418) '`dev/<branch>` and created at the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2418) 'upstream commit.
+ # tags: rfd:exit
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2418) '
+ # tags: rfd:exit
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2418) '- Our line of an upstream branch
+ # tags: rfd:decision
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2418) 'is `dev/<branch>` on the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2418) 'V-Sekai-fire fork, created at the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2418) '  upstream commit, so the
+ # tags: rfd:decision
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2418) 'upstream's branch-keyed workflows
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2418) 'do not fire on it.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2418) '
+ # tags: rfd:decision
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2418) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2418) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2418) '
+ # tags: rfd:related
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2418) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2418) 'A branch named `main/<x>` cannot
+ # tags: rfd:details
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2418) 'sit beside one named `main`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2418) 'since git stores each ref as a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2418) 'path.
+ # tags: rfd:details
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2418) '
+ # tags: rfd:details
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2418) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2418) 'rfd-2418 provides
+ # tags: rebac:relate
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2418) 'fork-dev-branch-naming
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2418  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2418) 'rfd-2418 is_a workspace-policy
+ # tags: rebac:relate
+ Text:RFD2418  1 LINE
+ Text:Written

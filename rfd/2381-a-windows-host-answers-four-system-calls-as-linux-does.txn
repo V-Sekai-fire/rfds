@@ -1,0 +1,425 @@
+2026-10-31T00:00:00Z (RFD66606-2381) 'a Windows host answers four system calls as Linux does
+ # uuid: 9877aecb-baf3-51c8-9e73-75562f4b469e
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2381) 'what a Linux guest needs from the
+ # tags: rfd:scope
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2381) 'emulator's Windows host.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2381) 'A Linux guest runs on the Windows
+ # tags: rfd:hook
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2381) 'host once four system calls
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2381) 'answer as they do on Linux.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2381) '
+ # tags: rfd:hook
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2381) 'A Rust guest linked against
+ # tags: rfd:intrigue
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2381) 'static glibc failed on the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2381) 'Windows host, translated and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2381) 'interpreted alike, and so did the
+ # tags: rfd:intrigue
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2381) 'released addon. The first three
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2381) 'fixes left the crash in
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2381) 'place.
+ # tags: rfd:intrigue
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2381) '
+ # tags: rfd:intrigue
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2381) 'Check that the Windows host
+ # tags: rfd:exit
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2381) 'answers `brk`, `clock_gettime`,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2381) 'error numbers and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2381) '`sched_getaffinity` as the Linux
+ # tags: rfd:exit
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2381) 'host does.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2381) '
+ # tags: rfd:exit
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2381) 'a Windows host answers four
+ # tags: rfd:details-title
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2381) 'system calls as Linux does
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2381) 'The emulator's Windows host
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2381) 'answers four system calls as its
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2381) 'Linux host does:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2381) '- `brk` keeps the new break.
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2381) '- `clock_gettime` writes the
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2381) '64-bit guest's two 64-bit fields.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2381) '- Error numbers map to the Linux
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2381) 'numbers in one header.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2381) '- `sched_getaffinity` reports one
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2381) 'CPU, as the Linux and macOS hosts
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2381) 'do.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2381) '
+ # tags: rfd:decision
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2381) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2381) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2381) '
+ # tags: rfd:related
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2381) 'What went wrong
+ # tags: rfd:details-heading
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2381) 'The emulator's Windows host
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2381) 'answered four system calls
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2381) 'differently from its Linux host:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2381) '
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2381) '- `brk` did not keep the new
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2381) 'break. Static glibc puts the main
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2381) 'thread's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2381) '  thread-local block at the first
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2381) 'break, so the heap handed out
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2381) 'memory inside it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2381) '  and, later, an address in
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2381) 'read-only data. This was the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2381) 'crash.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2381) '- `clock_gettime` wrote the
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2381) 'host's own `timespec`, a 32-bit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2381) 'nanosecond field with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2381) '  padding, where the 64-bit guest
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2381) 'reads two 64-bit fields.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2381) '- Error numbers above `ERANGE`
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2381) 'follow the Windows C runtime
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2381) '(`ENOSYS` is 40, where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2381) '  Linux has 38). glibc chooses
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2381) 'its `rseq` and `clone3` fallbacks
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2381) 'on `ENOSYS`, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2381) '  the host now maps errors to the
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2381) 'Linux numbers in one header.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2381) '- `sched_getaffinity` was
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2381) 'missing. The Linux and macOS
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2381) 'hosts report one CPU, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2381) '  the Windows host now does the
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2381) 'same.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2381) '
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:11Z (RFD66606-2381) '
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:12Z (RFD66606-2381) 'How the break was found
+ # tags: rfd:details-heading
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:13Z (RFD66606-2381) 'A dump of the guest registers and
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:14Z (RFD66606-2381) 'the page's permissions at the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:15Z (RFD66606-2381) 'fault found the break. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:16Z (RFD66606-2381) 'fixes are in our libriscv fork,
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:17Z (RFD66606-2381) 'and the addon takes them with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:18Z (RFD66606-2381) 'Linux's `ENOSYS` for an unknown
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:19Z (RFD66606-2381) 'system call.
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:20Z (RFD66606-2381) '
+ # tags: rfd:details
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:21Z (RFD66606-2381) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:22Z (RFD66606-2381) 'rfd-2381 provides
+ # tags: rebac:relate
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:23Z (RFD66606-2381) 'windows-host-four-syscalls
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2381  1 LINE
+ Text:Written
+
+2026-10-31T00:01:24Z (RFD66606-2381) 'rfd-2381 is_a guest-runtime
+ # tags: rebac:relate
+ Text:RFD2381  1 LINE
+ Text:Written

@@ -83,15 +83,12 @@ defmodule RFD.TxnTest do
     end
   end
 
-  test "every RFD reads back to its doc and writes back to the same bytes" do
+  test "every RFD journal is in its written form and keeps its references as written" do
     for path <- RFD.Source.all(), not RFD.Source.register?(path) do
-      d = RFD.Source.load(path)
-      madr? = File.read!(path) =~ ~r/^\s*madr do/m
-      site = if div(d.serial, 1000) == 1, do: "Weftspun", else: "VSekaiFabric"
-      opts = [day: "2026-01-01", site: site, madr: madr?]
-      text = RFD.Txn.write(d, opts)
-      assert {:ok, ^d} = RFD.Txn.parse(text), path
-      assert RFD.Txn.write(d, opts) == text, path
+      text = File.read!(path)
+      assert RFD.Txn.canonical(text) == text, path
+      raw = RFD.Txn.parse_raw!(text)
+      assert RFD.Txn.parse_raw!(RFD.Txn.canonical(text)) == raw, path
     end
   end
 
@@ -124,7 +121,7 @@ defmodule RFD.TxnTest do
   end
 
   test "lines keep their order when read back sorted, as tackler sorts" do
-    d = RFD.Source.load(hd(Path.wildcard("rfd/2360-*.exs")))
+    d = RFD.Source.load(hd(Path.wildcard("rfd/2360-*.txn")))
     text = RFD.Txn.write(d, day: "2026-01-01", site: "VSekaiFabric")
     reversed = text |> String.split("\n\n") |> Enum.reverse() |> Enum.join("\n\n")
     assert {:ok, ^d} = RFD.Txn.parse(reversed <> "\n")

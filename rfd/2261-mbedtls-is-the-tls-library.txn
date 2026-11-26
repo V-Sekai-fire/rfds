@@ -1,0 +1,210 @@
+2026-09-25T00:00:00Z (RFD66606-2261) 'mbedTLS is the TLS library
+ # uuid: afca2ea9-47db-59ca-ab43-897e0b2282b5
+ # tags: rfd:title
+ RFD:Committed  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-25T00:00:01Z (RFD66606-2261) 'New TLS, mutual-TLS and signing
+ # tags: rfd:feature
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:02Z (RFD66606-2261) 'code, sandbox guests included,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:03Z (RFD66606-2261) 'builds on mbedTLS
+ # tags: rfd:feature
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:04Z (RFD66606-2261) 'code this workspace writes that
+ # tags: rfd:scope
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:05Z (RFD66606-2261) 'opens TLS, presents a client
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:06Z (RFD66606-2261) 'certificate or signs a token
+ # tags: rfd:scope
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:07Z (RFD66606-2261) 'New TLS, mutual-TLS and signing
+ # tags: rfd:hook
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:08Z (RFD66606-2261) 'code builds on mbedTLS.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:09Z (RFD66606-2261) '
+ # tags: rfd:hook
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:10Z (RFD66606-2261) 'Each new component chose its own
+ # tags: rfd:intrigue
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:11Z (RFD66606-2261) 'TLS stack, and a guest ELF that
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:12Z (RFD66606-2261) 'must reach Bao cannot lean on
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:13Z (RFD66606-2261) 'the engine's HTTP client.
+ # tags: rfd:intrigue
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:14Z (RFD66606-2261) '
+ # tags: rfd:intrigue
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:15Z (RFD66606-2261) 'Read RFD66606-2256 next: its QUIC
+ # tags: rfd:exit
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:16Z (RFD66606-2261) 'stack runs TLS 1.3 through
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:17Z (RFD66606-2261) 'picotls on mbedTLS.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:18Z (RFD66606-2261) '
+ # tags: rfd:exit
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:19Z (RFD66606-2261) 'mbedTLS is the TLS library
+ # tags: rfd:details-title
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:20Z (RFD66606-2261) 'mbedTLS (Apache-2.0) is the TLS
+ # tags: rfd:decision
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:21Z (RFD66606-2261) 'and crypto library for new code:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:22Z (RFD66606-2261) 'the same library Godot vendors,
+ # tags: rfd:decision
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:23Z (RFD66606-2261) 'so an engine build and a guest
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:24Z (RFD66606-2261) 'ELF share one implementation. It
+ # tags: rfd:decision
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:25Z (RFD66606-2261) 'covers mutual TLS with an agent
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:26Z (RFD66606-2261) 'certificate and the RS256 signing
+ # tags: rfd:decision
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:27Z (RFD66606-2261) 'an app-token JWT needs.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:28Z (RFD66606-2261) '
+ # tags: rfd:decision
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:29Z (RFD66606-2261) '- RFD66606-2256 (WebTransport
+ # tags: rfd:related
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:30Z (RFD66606-2261) 'inside a sandbox guest), whose
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:31Z (RFD66606-2261) 'QUIC stack
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:32Z (RFD66606-2261) '  runs TLS 1.3 through picotls on
+ # tags: rfd:related
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:33Z (RFD66606-2261) 'mbedTLS.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:34Z (RFD66606-2261) '
+ # tags: rfd:related
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:35Z (RFD66606-2261) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:36Z (RFD66606-2261) 'A guest ELF that
+ # tags: rfd:details
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:37Z (RFD66606-2261) 'must reach Bao needs client
+ # tags: rfd:details
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:38Z (RFD66606-2261) 'certificates the engine's HTTP
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:39Z (RFD66606-2261) 'client
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:40Z (RFD66606-2261) 'cannot present.
+ # tags: rfd:details
+ Text:RFD2261  1 LINE
+ Text:Written
+
+2026-09-25T00:00:41Z (RFD66606-2261) '
+ # tags: rfd:details
+ Text:RFD2261  1 LINE
+ Text:Written

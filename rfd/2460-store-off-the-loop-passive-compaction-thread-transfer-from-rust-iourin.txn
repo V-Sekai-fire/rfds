@@ -1,0 +1,315 @@
+2026-11-07T00:00:00Z (RFD66606-2460) 'Store: off-the-loop passive compaction thread (transfer from rust-iouring-kensac)
+ # uuid: 70ca590f-b633-581a-915e-5122c756f03e
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2460) 'the store's compaction moves off
+ # tags: rfd:feature
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2460) 'the write loop onto its own
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2460) 'passive, timed thread.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2460) 'the store's fold and compact path
+ # tags: rfd:scope
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2460) 'in fdb_vfs.c, ported from a
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2460) 'challenge submission.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2460) 'Can the store's compaction run on
+ # tags: rfd:hook
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2460) 'its own thread, on a timer, so a
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2460) 'write caller never pays a
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2460) 'fold's cost on its own latency?
+ # tags: rfd:hook
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2460) '
+ # tags: rfd:hook
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2460) 'A winning entry in an outside
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2460) 'challenge, rust-iouring-kensac,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2460) 'already runs its checkpoint and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2460) 'compaction off the write loop on
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2460) 'a second, low-priority thread, so
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2460) 'write callers never wait on
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2460) 'it. The store's compaction today
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2460) 'is demand-driven: a call to
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2460) 'weft_compact_due blocks whichever
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2460) 'caller happens to ask for it.
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2460) 'That is exactly the kind of tail
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2460) 'latency a day-long benchmark is
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2460) 'built to catch, since it measures
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2460) 'the slowest save a day reaches
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2460) 'rather than a p99.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2460) '
+ # tags: rfd:intrigue
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2460) 'Add a dedicated, nice'd
+ # tags: rfd:exit
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2460) 'compaction thread on its own
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2460) 'FoundationDB connection, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2460) 'measure
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2460) 'whether a planted burst of writes
+ # tags: rfd:exit
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2460) 'still shows a fold cost on the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2460) 'write caller's own latency.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2460) '
+ # tags: rfd:exit
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2460) '- Add a dedicated, lower-priority
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2460) 'compaction thread that opens its
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2460) 'own FoundationDB connection
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2460) '  and runs folds passively on a
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2460) 'timer once the log grows past a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2460) 'threshold, instead of folding
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2460) '  on demand inside the caller's
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2460) 'path.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2460) '- Change weft_compact_due from a
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2460) 'blocking fold into a cheap call
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2460) 'that wakes the thread when the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2460) '  log is already short, so the
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2460) 'write loop never performs the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2460) 'fold itself.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2460) '- Bound the hold time the
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2460) 'compaction thread may take per
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2460) 'pass, following the referenced
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2460) '  entry's bound of at most 250
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2460) 'milliseconds, so passive
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2460) 'compaction cannot itself become a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2460) '  tail-latency source.
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2460) '- Verify the change against the
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2460) 'existing day-long benchmark that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2460) 'measures the slowest saves a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2460) '  day reaches, not only the
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2460) 'median or the p99.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2460  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2460) '
+ # tags: rfd:decision
+ Text:RFD2460  1 LINE
+ Text:Written

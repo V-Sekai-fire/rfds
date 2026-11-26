@@ -64,6 +64,51 @@
 #
 # Exit codes: 0 within the ratchet, 1 a file rose or crossed, 2 bad usage.
 
+defmodule RfdText do
+  @moduledoc false
+  # An RFD journal's text as the prose gates read it, from `mix rfd.text`.
+  # The first lookup at a revision reads every RFD journal in one `mix rfd.text`.
+  def get(repo, rev, path) do
+    key = {__MODULE__, repo, rev}
+
+    texts =
+      Process.get(key) ||
+        (fn ->
+           t = fetch(repo, rev, Path.wildcard(Path.join(repo, "rfd/[0-9][0-9][0-9][0-9]-*.txn")))
+           Process.put(key, t)
+           t
+         end).()
+
+    Map.get(texts, path) || fetch(repo, rev, [Path.join(repo, path)]) |> Map.get(path)
+  end
+
+  defp fetch(repo, rev, fulls) do
+    paths = Enum.map(fulls, &Path.relative_to(&1, repo))
+    args = ["rfd.text"] ++ if(rev, do: ["--rev", rev], else: []) ++ paths
+
+    case System.cmd("mix", args, cd: repo) do
+      {out, 0} ->
+        for line <- String.split(out, "\n", trim: true),
+            String.starts_with?(line, "{"),
+            t = JSON.decode!(line),
+            into: %{},
+            do: {t["path"], t}
+
+      {out, _} ->
+        raise "mix rfd.text failed: #{out}"
+    end
+  end
+
+  def rfd?(path), do: path =~ ~r"^rfd/[0-9]{4}-[^/]+[.]txn$"
+
+  def markdown(repo, rev, path) do
+    case get(repo, rev, path) do
+      %{"found" => true, "markdown" => md} -> md
+      _ -> nil
+    end
+  end
+end
+
 defmodule ProseTropes do
   # A short sentence whose predicate is a negation. Length does real work: an aphorism is
   # pithy, and a long negating sentence is usually an argument.
@@ -79,7 +124,7 @@ defmodule ProseTropes do
   @max_words 22
   @commons 0.30
   @floor_words 200
-  @exts [".md", ".py", ".ex", ".exs", ".usda"]
+  @exts [".md", ".py", ".ex", ".exs", ".usda", ".txn"]
   # USD CARRIES PROSE THAT THIS GATE NEVER SCORED. `rfd1122-plan.usda` holds 11,096 words of
   # `doc` strings -- the largest single body of prose in this repository -- at 2.16 per
   # 1k, higher than CLAUDE.md or BLOCKLIST.md. It went unscored because this gate
@@ -140,6 +185,17 @@ defmodule ProseTropes do
     end
   end
 
+  defp hooks(repo, base, path, full) do
+    if RfdText.rfd?(path) do
+      flat = fn h -> h && h |> String.split() |> Enum.join(" ") end
+      prev = RfdText.get(repo, base, path)
+      {flat.(RfdText.get(repo, nil, path)["hook"]), prev["found"] && flat.(prev["hook"])}
+    else
+      prev = git(repo, ["show", "#{base}:#{path}"])
+      {hook(File.read!(full)), if(prev, do: hook(prev), else: nil)}
+    end
+  end
+
   @doc "A new or edited hook must ask or tease; one left as it stands is not read."
   def hook_ok?(_before, nil), do: true
   def hook_ok?(before, now) when before == now, do: true
@@ -148,13 +204,12 @@ defmodule ProseTropes do
   defp hook_gate(repo, base, path) do
     full = Path.join(repo, path)
 
-    if not (String.starts_with?(path, "rfd/") and String.ends_with?(path, ".exs") and
-              File.exists?(full)) do
+    rfd? = String.starts_with?(path, "rfd/") and Path.extname(path) in [".exs", ".txn"]
+
+    if not (rfd? and File.exists?(full)) do
       0
     else
-      now = hook(File.read!(full))
-      prev = git(repo, ["show", "#{base}:#{path}"])
-      before = if prev, do: hook(prev), else: nil
+      {now, before} = hooks(repo, base, path, full)
 
       if hook_ok?(before, now) do
         0
@@ -199,15 +254,23 @@ defmodule ProseTropes do
     if not File.exists?(full) do
       0
     else
-      {now, hits, words} = rate(prose(path, File.read!(full)))
+      text = if RfdText.rfd?(path), do: RfdText.markdown(repo, nil, path), else: File.read!(full)
+      {now, hits, words} = rate(prose(path, text))
 
       cond do
         words < @floor_words ->
-          IO.puts("  ..   #{path}: #{words} words, under the #{@floor_words}-word floor, not scored")
+          IO.puts(
+            "  ..   #{path}: #{words} words, under the #{@floor_words}-word floor, not scored"
+          )
+
           0
 
         true ->
-          prev = git(repo, ["show", "#{base}:#{path}"])
+          prev =
+            if RfdText.rfd?(path),
+              do: RfdText.markdown(repo, base, path),
+              else: git(repo, ["show", "#{base}:#{path}"])
+
           before = if prev, do: elem(rate(prose(path, prev)), 0), else: 0.0
           {ok, ceiling, why} = judge(before, now, prev != nil)
 
@@ -287,14 +350,27 @@ defmodule ProseTropes do
 
     usd_noise =
       "# A stage is not a scene." <>
-        "\ndef Xform " <> q <> "root" <> q <> " {\n  float2 extent = (0, 1)\n  int parent = -1\n}\n"
+        "\ndef Xform " <>
+        q <> "root" <> q <> " {\n  float2 extent = (0, 1)\n  int parent = -1\n}\n"
 
     usd_block =
-      "def Xform " <> q <> "root" <> q <> " {\n  doc = " <> q <> q <> q <>
+      "def Xform " <>
+        q <>
+        "root" <>
+        q <>
+        " {\n  doc = " <>
+        q <>
+        q <>
+        q <>
         plain <> " An ignore is not a lock." <> q <> q <> q <> "\n}\n"
 
     usd_line =
-      "def Xform " <> q <> "root" <> q <> " {\n  doc = " <> q <>
+      "def Xform " <>
+        q <>
+        "root" <>
+        q <>
+        " {\n  doc = " <>
+        q <>
         plain <> " A file is not a capability." <> q <> "\n}\n"
 
     extraction = [

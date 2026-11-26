@@ -1,0 +1,610 @@
+2026-09-25T00:00:00Z (RFD66606-2256) 'WebTransport inside a sandbox guest
+ # uuid: 607ebf0a-c6e3-504c-bd91-8321aec5349c
+ # tags: rfd:title
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-25T00:00:01Z (RFD66606-2256) 'A godot-sandbox guest carries
+ # tags: rfd:feature
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:02Z (RFD66606-2256) 'bulk game traffic over QUIC,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:03Z (RFD66606-2256) 'HTTP/3 and WebTransport at
+ # tags: rfd:feature
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:04Z (RFD66606-2256) 'binary-translated speed, and the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:05Z (RFD66606-2256) 'first
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:06Z (RFD66606-2256) 'channel it carries mints tokens
+ # tags: rfd:feature
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:07Z (RFD66606-2256) 'from a key the host never sees
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:08Z (RFD66606-2256) 'a godot-sandbox guest ELF running
+ # tags: rfd:scope
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:09Z (RFD66606-2256) 'the QUIC stack, the zone
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:10Z (RFD66606-2256) 'server and clients that host it,
+ # tags: rfd:scope
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:11Z (RFD66606-2256) 'and a token-minting channel;
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:12Z (RFD66606-2256) '`interactor-fabric-zone`'s ELFs
+ # tags: rfd:scope
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:13Z (RFD66606-2256) '(RFD66606-2287) are its first
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:14Z (RFD66606-2256) 'user
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:15Z (RFD66606-2256) 'A sandbox guest carries QUIC
+ # tags: rfd:hook
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:16Z (RFD66606-2256) 'traffic and mints tokens from a
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:17Z (RFD66606-2256) 'key the host never sees.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:18Z (RFD66606-2256) '
+ # tags: rfd:hook
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:19Z (RFD66606-2256) 'A key on the desk, or a helper
+ # tags: rfd:intrigue
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:20Z (RFD66606-2256) 'that hands out a token, is open
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:21Z (RFD66606-2256) 'to every script there.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:22Z (RFD66606-2256) '
+ # tags: rfd:intrigue
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:23Z (RFD66606-2256) 'The signer's app key stays in
+ # tags: rfd:exit
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:24Z (RFD66606-2256) 'guest memory. Each token request
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:25Z (RFD66606-2256) 'is checked against a tuple.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:26Z (RFD66606-2256) '
+ # tags: rfd:exit
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:27Z (RFD66606-2256) 'a token-minting guest over
+ # tags: rfd:details-title
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:28Z (RFD66606-2256) 'WebTransport
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:29Z (RFD66606-2256) 'QUIC, HTTP/3 and WebTransport run
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:30Z (RFD66606-2256) 'inside a RISC-V guest ELF that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:31Z (RFD66606-2256) 'libriscv binary-translates to
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:32Z (RFD66606-2256) 'near native speed: picoquic with
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:33Z (RFD66606-2256) 'h3zero, TLS 1.3 through picotls
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:34Z (RFD66606-2256) 'on mbedTLS. The first channel is
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:35Z (RFD66606-2256) 'a signer on a zone server whose
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:36Z (RFD66606-2256) 'app key lives only in guest
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:37Z (RFD66606-2256) 'memory. It checks a ReBAC tuple
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:38Z (RFD66606-2256) 'and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:39Z (RFD66606-2256) 'returns a one-hour installation
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:40Z (RFD66606-2256) 'token, never the key.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:41Z (RFD66606-2256) '
+ # tags: rfd:decision
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:42Z (RFD66606-2256) '- RFD66606-2255 (SSH tunnel to
+ # tags: rfd:related
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:43Z (RFD66606-2256) 'Bao), the path the signer peer's
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:44Z (RFD66606-2256) '  identity can use to reach Bao.
+ # tags: rfd:related
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:45Z (RFD66606-2256) '- RFD66606-2060 (org-scoped app
+ # tags: rfd:related
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:46Z (RFD66606-2256) 'token), the token this mints.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:47Z (RFD66606-2256) '- RFD66606-2200 (ReBAC agent
+ # tags: rfd:related
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:48Z (RFD66606-2256) 'roles as tuples), the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:49Z (RFD66606-2256) 'authorization.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:50Z (RFD66606-2256) '
+ # tags: rfd:related
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:51Z (RFD66606-2256) 'The host's part
+ # tags: rfd:details-heading
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:52Z (RFD66606-2256) 'The host relays UDP through
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:53Z (RFD66606-2256) '`PacketPeerUDP` and ticks timers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:54Z (RFD66606-2256) 'without seeing plaintext.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:55Z (RFD66606-2256) '
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:56Z (RFD66606-2256) 'The exchange
+ # tags: rfd:details-heading
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:57Z (RFD66606-2256) '1. The signer guest starts, logs
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:58Z (RFD66606-2256) 'in to Bao with its own cert
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:00:59Z (RFD66606-2256) '   identity over mTLS terminated
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:00Z (RFD66606-2256) 'inside the guest, and reads the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:01Z (RFD66606-2256) '   app key into guest memory.
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:02Z (RFD66606-2256) '2. An agent's guest opens a
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:03Z (RFD66606-2256) 'WebTransport session to the zone
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:04Z (RFD66606-2256) '   server on UDP 7443 and sends a
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:05Z (RFD66606-2256) 'mint request naming itself.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:06Z (RFD66606-2256) '3. The signer checks
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:07Z (RFD66606-2256) '`agent:<cn>#mint@app:<app>` in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:08Z (RFD66606-2256) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:09Z (RFD66606-2256) '   relationship store and refuses
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:10Z (RFD66606-2256) 'without it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:11Z (RFD66606-2256) '4. It signs a JWT, exchanges it
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:12Z (RFD66606-2256) 'for an installation token over
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:13Z (RFD66606-2256) '   TLS inside the guest, and
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:14Z (RFD66606-2256) 'returns the token and its expiry.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:15Z (RFD66606-2256) '
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:16Z (RFD66606-2256) 'What is not settled
+ # tags: rfd:details-heading
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:17Z (RFD66606-2256) '- **Throughput.** Bulk game
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:18Z (RFD66606-2256) 'traffic needs the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:19Z (RFD66606-2256) 'binary-translated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:20Z (RFD66606-2256) '  guest to keep up with a native
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:21Z (RFD66606-2256) 'QUIC stack. Nothing is measured
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:22Z (RFD66606-2256) '  yet; the comparison is the same
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:23Z (RFD66606-2256) 'stack built native against the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:24Z (RFD66606-2256) '  translated guest, same payload,
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:25Z (RFD66606-2256) 'same link.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:26Z (RFD66606-2256) '- **Per-call instruction
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:27Z (RFD66606-2256) 'budget.** Translation shortens a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:28Z (RFD66606-2256) 'TLS 1.3
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:29Z (RFD66606-2256) '  handshake but does not remove
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:30Z (RFD66606-2256) 'the sandbox's per-call limit, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:31Z (RFD66606-2256) '  the budget for this guest is
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:32Z (RFD66606-2256) 'set from a measured handshake.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:33Z (RFD66606-2256) '- **Transport.** WebTransport is
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:34Z (RFD66606-2256) 'the proposal; ENet through the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:35Z (RFD66606-2256) '  existing ENet sandbox is the
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:36Z (RFD66606-2256) 'fallback if the translated QUIC
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:37Z (RFD66606-2256) '  guest cannot carry the traffic.
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:38Z (RFD66606-2256) '- **Licences.** picoquic, picotls
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:39Z (RFD66606-2256) 'and mbedTLS are MIT or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:40Z (RFD66606-2256) '  Apache-2.0. libriscv and
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:41Z (RFD66606-2256) 'godot-sandbox are BSD-3-Clause,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:42Z (RFD66606-2256) 'so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:43Z (RFD66606-2256) '  an MIT-or-Apache-only rule
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:44Z (RFD66606-2256) 'needs an exception for the host.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:45Z (RFD66606-2256) '- **Which peer.** A zone server
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:46Z (RFD66606-2256) 'the operator runs, on owned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:47Z (RFD66606-2256) '  hardware or the existing
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:48Z (RFD66606-2256) 'hosting; the choice decides who
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:49Z (RFD66606-2256) 'can
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:50Z (RFD66606-2256) '  read that peer's memory.
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:51Z (RFD66606-2256) '
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:52Z (RFD66606-2256) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:53Z (RFD66606-2256) 'Only a separate peer keeps it out
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:54Z (RFD66606-2256) 'of reach.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:55Z (RFD66606-2256) '
+ # tags: rfd:details
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:56Z (RFD66606-2256) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:57Z (RFD66606-2256) 'rfd-2256 provides
+ # tags: rebac:relate
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:58Z (RFD66606-2256) 'webtransport-guest-signer
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:01:59Z (RFD66606-2256) 'rfd-2256 spends
+ # tags: rebac:relate
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:02:00Z (RFD66606-2256) 'rebac-agent-role-tuples
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2256  1 LINE
+ Text:Written
+
+2026-09-25T00:02:01Z (RFD66606-2256) 'rfd-2256 is_a guest-runtime
+ # tags: rebac:relate
+ Text:RFD2256  1 LINE
+ Text:Written

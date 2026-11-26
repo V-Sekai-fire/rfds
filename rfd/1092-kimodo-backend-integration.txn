@@ -1,0 +1,255 @@
+2026-08-25T00:00:00Z (RFD66606-1092) 'Kimodo backend integration
+ # uuid: 661abfd2-6e55-5343-9dba-b1375981feec
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Committed  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1092) '`KimodoMotionPromptBar.jsx`,
+ # tags: rfd:scope
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1092) '`taskManager.js`, the DGX-side
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1092) 'Kimodo ops
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1092) 'A Kimodo job failure has one
+ # tags: rfd:hook
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1092) 'document that explains it, and it
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1092) 'lives on the DGX.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1092) '
+ # tags: rfd:hook
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1092) 'The DGX side owns every failure
+ # tags: rfd:intrigue
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1092) 'mode, prefetch step, and timeout,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1092) 'in its own ops document,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1092) 'not in this repository. An agent
+ # tags: rfd:intrigue
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1092) 'debugging a Kimodo job failure
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1092) 'needs to know that document
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1092) 'exists, and where.
+ # tags: rfd:intrigue
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1092) '
+ # tags: rfd:intrigue
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1092) 'Read the DGX-side ops document
+ # tags: rfd:exit
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1092) 'before debugging a Kimodo job
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1092) 'failure.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1092) '
+ # tags: rfd:exit
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1092) 'Read the DGX-side ops document
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1092) 'first, before debugging a Kimodo
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1092) 'job
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1092) 'failure here. Its path:
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1092) '`/home/sifr/3DAIGC-API/memory-bank/kimodo-text-to-motion-ops.md`,
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1092) 'on
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1092) 'the DGX host, not in this
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1092) 'repository.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1092) '
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1092) 'Run prefetch, restart, and test
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1092) 'directly on the DGX. Do not ask
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1092) 'the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1092) 'user to run those scripts by
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1092) 'hand.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1092) '
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1092) 'Verified working, this session's
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1092) 'own check: job `544b726e…`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1092) 'produced `studio_motion.json`,
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1092) 'the expected output.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1092) '
+ # tags: rfd:decision
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1092) '`taskManager.js` dispatches the
+ # tags: rfd:related
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1092) 'job. `KimodoMotionPromptBar.jsx`
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1092) 'triggers it from the animation
+ # tags: rfd:related
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1092) 'bar.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1092) '
+ # tags: rfd:related
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1092) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1092) 'The frontend triggers
+ # tags: rfd:details
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1092) 'text-to-motion through
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1092) '`KimodoMotionPromptBar.jsx` and
+ # tags: rfd:details
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1092) '`taskManager.js`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1092  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1092) '
+ # tags: rfd:details
+ Text:RFD1092  1 LINE
+ Text:Written

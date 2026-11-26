@@ -1,0 +1,465 @@
+2026-10-31T00:00:00Z (RFD66606-2390) 'every ELF guest ships with its native translation
+ # uuid: a9bb28b0-7ab8-549a-83fd-426e14c371ab
+ # tags: rfd:title, rfd:flight-level:l1
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2390) 'native binary translation of
+ # tags: rfd:scope
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2390) 'every ELF guest on every
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2390) 'platform.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2390) 'Every ELF guest runs translated,
+ # tags: rfd:hook
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2390) 'never interpreted, on every
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2390) 'platform it ships to.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2390) '
+ # tags: rfd:hook
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2390) 'What happens when the setting is
+ # tags: rfd:intrigue
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2390) 'on and no library is present? On
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2390) 'Windows it segfaulted on
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2390) '2026-09-23.
+ # tags: rfd:intrigue
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2390) '
+ # tags: rfd:intrigue
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2390) 'Run `probe_load.gd` and check
+ # tags: rfd:exit
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2390) 'that
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2390) '`Sandbox.is_binary_translated()`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2390) 'holds for every ELF on the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2390) 'Frame, the desktop and the Fly
+ # tags: rfd:exit
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2390) 'image.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2390) '
+ # tags: rfd:exit
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2390) 'every ELF guest ships with its
+ # tags: rfd:details-title
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2390) 'native translation
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2390) '- Native binary translation,
+ # tags: rfd:decision
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2390) 'required, interpretation never:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2390) 'every ELF guest we author ships
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2390) '  with its translation on every
+ # tags: rfd:decision
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2390) 'platform it ships to, Windows,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2390) 'Linux and macOS alike.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2390) '- `stages/sandbox_util.gd`'s
+ # tags: rfd:decision
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2390) '`enable_native_translation` drops
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2390) 'its Linux-only guard and turns
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2390) '  the setting on wherever a
+ # tags: rfd:decision
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2390) 'library for the platform is
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2390) 'shipped.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2390) '
+ # tags: rfd:decision
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2390) '- RFD66606-2293, where this rule
+ # tags: rfd:related
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2390) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2390) '
+ # tags: rfd:related
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2390) 'Build
+ # tags: rfd:details-heading
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2390) 'The addon is built with the
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2390) 'emitter
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2390) '(`GODOT_SANDBOX_BINTR_EMIT=<dir>`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2390) 'writes each program's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2390) 'translation as C99,
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2390) '`RISCV_ASMJIT=OFF`, no JIT), and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2390) 'the pen's `guests.yml` emits each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2390) 'program's C99 on the linux runner
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2390) 'and compiles one library per
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2390) 'program hash,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2390) '`res://bintr/bintr-<HASH>.so` for
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2390) 'linux x86_64, `.dll` for windows
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2390) 'x86_64 through LLVM's clang
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2390) '(`clang-cl` on a desk, the
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2390) 'llvm-mingw clang on the runner),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2390) 'and `.dylib` for macos arm64, at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2390) 'double. Xtools/build.exs` does
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2390) 'the same on a desk. The Windows
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2390) 'leg is in progress. Until its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2390) '`.dll` loads, a Windows guest is
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2390) 'untranslated and the gate below
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2390) 'names it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2390) 'The Windows segfault of
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2390) '2026-09-23 (the setting on with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2390) 'no library present) is reproduced
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2390) 'on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2390) 'the double build, its backtrace
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2390) 'logged, and fixed in the placed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2390) 'addon source, not avoided.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2390) '`guests.yml` and the release
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2390) 'carry the libraries beside the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:11Z (RFD66606-2390) 'ELFs with their sha256s.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:12Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:13Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:14Z (RFD66606-2390) 'Check and control
+ # tags: rfd:details-heading
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:15Z (RFD66606-2390) 'Check: `probe_load.gd` asserts
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:16Z (RFD66606-2390) '`Sandbox.is_binary_translated()`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:17Z (RFD66606-2390) 'for every ELF on the Frame, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:18Z (RFD66606-2390) 'desktop and the Fly image, and
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:19Z (RFD66606-2390) 'the logbook records each ELF's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:20Z (RFD66606-2390) 'instructions per second
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:21Z (RFD66606-2390) 'translated against interpreted.
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:22Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:23Z (RFD66606-2390) 'Control: an ELF whose hash has no
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:24Z (RFD66606-2390) 'library reports untranslated and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:25Z (RFD66606-2390) 'the gate fails by name.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:26Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:27Z (RFD66606-2390) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:28Z (RFD66606-2390) 'rfd-2390 provides
+ # tags: rebac:relate
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:29Z (RFD66606-2390) 'elf-guest-native-translation
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:30Z (RFD66606-2390) 'rfd-2390 spends
+ # tags: rebac:relate
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:31Z (RFD66606-2390) 'sandbox-addon-double-pinned
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:01:32Z (RFD66606-2390) 'rfd-2390 is_a guest-runtime
+ # tags: rebac:relate
+ Text:RFD2390  1 LINE
+ Text:Written

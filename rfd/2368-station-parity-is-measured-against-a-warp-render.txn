@@ -1,0 +1,295 @@
+2026-10-31T00:00:00Z (RFD66606-2368) 'station parity is measured against a WARP render
+ # uuid: 0331ab72-ac46-53fa-92b6-4d70c5b6f21b
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2368) 'the reference render that the
+ # tags: rfd:scope
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2368) 'station port's parity is measured
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2368) 'against.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2368) 'A station change lands only when
+ # tags: rfd:hook
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2368) 'no view's full-resolution MAD
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2368) 'rises against the WARP reference.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2368) '
+ # tags: rfd:hook
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2368) 'ANGLE's Vulkan path draws seams
+ # tags: rfd:intrigue
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2368) 'the original does not intend, and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2368) 'D3D11 flips one 8-bit level
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2368) 'from run to run.
+ # tags: rfd:intrigue
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2368) '
+ # tags: rfd:intrigue
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2368) 'Check a station change against
+ # tags: rfd:exit
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2368) 'the reference: compare each
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2368) 'view's full-resolution MAD with
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2368) 'the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2368) 'WARP render of release
+ # tags: rfd:exit
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2368) '`oracle-4112f57-h8-warp`.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2368) '
+ # tags: rfd:exit
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2368) 'station parity is measured
+ # tags: rfd:details-title
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2368) 'against a WARP render
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2368) '- Parity with the three.js
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2368) 'original is measured at
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2368) 'sphere-Hammersley views against
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2368) '  `tools/oracle/shot.mjs`
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2368) 'renders.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2368) '- The reference is the original
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2368) 'rendered through WARP, Windows'
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2368) 'software rasterizer
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2368) '  (`--angle warp`, release
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2368) '`oracle-4112f57-h8-warp`),
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2368) 'because it is
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2368) '  deterministic and seam-free.
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2368) '- A change lands only when no
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2368) 'view's full-resolution MAD rises
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2368) 'against the reference, unless
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2368) '  the operator accepts the
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2368) 'exception on issue 72.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2368) '
+ # tags: rfd:decision
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2368) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2368) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2368) '
+ # tags: rfd:related
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2368) 'The port's hashing
+ # tags: rfd:details-heading
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2368) 'The port hashes from integer
+ # tags: rfd:details
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2368) 'corners.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2368) '
+ # tags: rfd:details
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2368) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2368) 'ANGLE's Vulkan path hashes the
+ # tags: rfd:details
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2368) 'cloud noise's lattice corners
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2368) 'from float sums differently on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2368) 'each side of a cell edge.
+ # tags: rfd:details
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2368) '
+ # tags: rfd:details
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2368) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2368) 'rfd-2368 provides
+ # tags: rebac:relate
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2368) 'station-warp-parity-oracle
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2368) 'rfd-2368 is_a ci-gate
+ # tags: rebac:relate
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2368) 'rfd-2368 spends
+ # tags: rebac:relate
+ Text:RFD2368  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2368) 'station-csg-baked-mesh-render
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2368  1 LINE
+ Text:Written

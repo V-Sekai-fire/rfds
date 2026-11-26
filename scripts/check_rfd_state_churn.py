@@ -18,7 +18,10 @@ import sys
 import tempfile
 
 KILL_LIMIT = 3
-RFD_GLOB = "rfd/*.exs"
+RFD_GLOBS = ["rfd/*.exs", "rfd/*.txn"]
+TXN_HEAD_RE = re.compile(r"^\d{4}-\d\d-\d\d\S* \(RFD66606-(\d+)\) '", re.M)
+TXN_STATE_RE = re.compile(r"^ RFD:([A-Za-z]+)  1 RFD$", re.M)
+TXN_CHANGE_RE = re.compile(r"^\S+ \(RFD66606-\d+\) '([a-z]+)\n # tags: rfd:state$", re.M)
 HEAD_RE = re.compile(r"^\s*rfd\s*\(?\s*(\d+)\s*,(.*?),\s*:([a-z_]+)\s*\)?\s+do\b", re.M | re.S)
 BARE_RE = re.compile(r'^\s*rfd\s+(\d+)\s*,\s*"(?:[^"\\]|\\.)*"\s+do\b', re.M)
 STATE_LINE_RE = re.compile(r"^\s*state\s+:([a-z_]+)", re.M)
@@ -34,6 +37,12 @@ def git(*args: str, cwd: str | None = None, check: bool = True) -> str:
 
 
 def header(text: str) -> tuple[int, str] | None:
+    t = TXN_HEAD_RE.search(text)
+    if t:
+        changes = TXN_CHANGE_RE.findall(text)
+        first = TXN_STATE_RE.search(text)
+        state = changes[-1] if changes else (first.group(1).lower() if first else None)
+        return (int(t.group(1)), state) if state else None
     m = HEAD_RE.search(text)
     if m:
         return int(m.group(1)), m.group(3)
@@ -65,7 +74,7 @@ def states(rev: str, paths: list[str], cwd: str | None) -> tuple[dict, list[str]
 
 def classify(old: str, new: str, cwd: str | None = None) -> dict[str, list[str]]:
     names = git(
-        "diff", "--name-only", "--no-renames", old, new, "--", RFD_GLOB, cwd=cwd
+        "diff", "--name-only", "--no-renames", old, new, "--", *RFD_GLOBS, cwd=cwd
     ).split()
     before, u1 = states(old, names, cwd)
     after, u2 = states(new, names, cwd)
@@ -108,14 +117,14 @@ def run_base(base: str) -> int:
 def run_history(days: int, ref: str) -> int:
     log = git(
         "log", ref, f"--since={days}.days", "--no-merges", "--format=%H %h %ad %s",
-        "--date=short", "--", RFD_GLOB,
+        "--date=short", "--", *RFD_GLOBS,
     ).splitlines()
     total = refused_lines = 0
     refused = []
     kills = revives = unread = 0
     for row in log:
         full, short, date, subj = row.split(" ", 3)
-        num = git("show", "--numstat", "--format=", full, "--", RFD_GLOB)
+        num = git("show", "--numstat", "--format=", full, "--", *RFD_GLOBS)
         lines = sum(
             int(a) + int(b)
             for a, b, *_ in (r.split("\t") for r in num.splitlines() if r)

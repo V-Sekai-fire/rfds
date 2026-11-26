@@ -19,12 +19,12 @@ rfd 2360, "The campus as a beta", :discussion do
   outside this list keeps its state (RFD66606-1000).
   - The platform is one guest host, one message shape and one build path. A use case is a guest of
     it with a gate and a control, and adds none of its own.
-  - See each other, RFD66606-2436: two people in the campus zone, one in the standalone Steam
-    Frame and one on the desktop, each sees the other's avatar. Its gate cuts the beta.
+  - See each other, RFD66606-2436: two people in the campus zone, one on the Steam Frame or the
+    Steam Deck and one on the win64 desktop, each sees the other's avatar (operator,
+    2026-11-26). Its gate cuts the beta.
   - Voice, the model console and the persona that answers from a planning domain (RFD66606-2339)
     ride on the platform. A use case whose gate has not passed by the cut does not hold the cut.
-  - The pen, the adventure party, the shopkeeper persona, seamless zone transfer and the
-    lesson surface are abandoned (operator, 2026-11-11).
+  - Abandoned use cases are listed once, in the non-goals of the details.
   - A character moves by walk mode, RFD66606-2487, proved on the plaza walk of RFD66606-2408
     under RFD66606-2363: no hand-written character controller is added.
   - The beta is a feature-complete freeze after dev. It is cut when the gate in RFD66606-2436
@@ -36,7 +36,9 @@ rfd 2360, "The campus as a beta", :discussion do
   :: related
   - RFD66606-2436, the one slice; RFD66606-2487, RFD66606-2408 and RFD66606-2363, walking.
   - RFD66606-2312, the form of the release tag.
-  - RFD66606-2490, the board-wide non-goals this beta inherits.
+  - RFD66606-2490, the mission, how the board picks its work, and the board-wide non-goals this
+    beta inherits.
+  - RFD66606-2447, beta 1, abandoned and folded in here (operator, 2026-11-26).
   """
 
   details_title "The campus ships one beta"
@@ -76,6 +78,8 @@ rfd 2360, "The campus as a beta", :discussion do
   - an adventure party and a shopkeeper persona
   - seamless zone transfer
   - a lesson surface
+
+  The four above were abandoned (operator, 2026-11-11).
 
   - a hidden director that plans the day
   - friendships and romance

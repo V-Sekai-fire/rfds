@@ -11,8 +11,8 @@ rfd 2436, "presence is an independent native slice", :discussion do
   :: hook
   Can two people see each other from a program that needs nothing else in the beta?
   :: intrigue
-  The beta lists seeing each other first, and nothing built yet carries it alone. A slice that
-  needs voice, the pen and the adventure party to run depends on all three.
+  RFD66606-2360 cuts the beta on seeing each other, and nothing built yet carries it alone. A
+  slice that needs voice, the pen and the adventure party to run depends on all three.
   :: exit
   Run the sight gate against a recorded pose stream. A zone that drops one side's poses must fail
   it.
@@ -42,9 +42,9 @@ rfd 2436, "presence is an independent native slice", :discussion do
 
   prose ~S"""
   :: details What the beta asks
-  The beta's first feature is two people in the campus zone, one in the standalone Steam Frame
-  and one on the desktop. Each sees the other's avatar. The slice holds that and nothing
-  more: who is in the zone, where each avatar stands, and the pose each person sends.
+  RFD66606-2360 says what the beta ships and on which devices. The slice holds the part that
+  lets two people see each other and nothing more: who is in the zone, where each avatar
+  stands, and the pose each person sends.
 
   :: details The campus
   A campus is a world, and a world runs as instances. Any player starts an instance for friends,

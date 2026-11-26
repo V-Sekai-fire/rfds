@@ -89,8 +89,20 @@ defmodule RFD.Txn do
           text(t, "rebac:meaning", v.meaning)
       end) ++
       Enum.flat_map(r.tuples, &tuple(t, &1)) ++
-      Enum.flat_map(r.capabilities, &term(t, "rebac:capability", &1)) ++
-      Enum.flat_map(r.renders_into, &term(t, "rebac:renders-into", &1))
+      Enum.flat_map(r.capabilities, &capability(t, &1)) ++
+      Enum.flat_map(r.renders_into, &renders_into(t, &1))
+  end
+
+  defp capability(t, c) do
+    line(t, "rebac:capability", Atom.to_string(c.name)) ++
+      line(t, "rebac:capability-verb", Atom.to_string(c.verb)) ++
+      if(c.object, do: line(t, "rebac:capability-object", c.object), else: []) ++
+      Enum.flat_map(c.caveats, &line(t, "rebac:caveat", Atom.to_string(&1)))
+  end
+
+  defp renders_into(t, {path, subject}) do
+    line(t, "rebac:renders-into", path) ++
+      if(subject, do: line(t, "rebac:renders-subject", subject), else: [])
   end
 
   defp tuple(t, %{subject: s, verb: v, object: o} = row) do
@@ -276,11 +288,29 @@ defmodule RFD.Txn do
   defp put("rebac:reason", s, %{at: :tuple, rebac: [{:tuple, r} | rest]} = acc),
     do: %{acc | rebac: [{:tuple, %{r | reason: append(r.reason, s)}} | rest]}
 
-  defp put("rebac:capability", s, acc),
-    do: %{acc | rebac: [{:capability, literal!(s)} | acc.rebac], at: nil}
+  defp put("rebac:capability", s, acc) do
+    cap = %{name: String.to_atom(s), verb: String.to_atom(s), object: nil, caveats: []}
+    %{acc | rebac: [{:capability, cap} | acc.rebac], at: :capability}
+  end
+
+  defp put("rebac:capability-verb", s, %{at: :capability} = acc),
+    do: update_capability(acc, &%{&1 | verb: String.to_atom(s)})
+
+  defp put("rebac:capability-object", s, %{at: :capability} = acc),
+    do: update_capability(acc, &%{&1 | object: s})
+
+  defp put("rebac:caveat", s, %{at: :capability} = acc),
+    do: update_capability(acc, &%{&1 | caveats: &1.caveats ++ [String.to_atom(s)]})
 
   defp put("rebac:renders-into", s, acc),
-    do: %{acc | rebac: [{:renders_into, literal!(s)} | acc.rebac], at: nil}
+    do: %{acc | rebac: [{:renders_into, {s, nil}} | acc.rebac], at: :renders}
+
+  defp put(
+         "rebac:renders-subject",
+         s,
+         %{at: :renders, rebac: [{:renders_into, {p, nil}} | r]} = acc
+       ),
+       do: %{acc | rebac: [{:renders_into, {p, s}} | r]}
 
   defp put("rfd:step", s, acc),
     do: %{acc | steps: [struct!(RFD.Step, literal!(s) |> Map.from_struct()) | acc.steps], at: nil}
@@ -293,6 +323,9 @@ defmodule RFD.Txn do
   end
 
   defp put(tag, _s, _acc), do: raise(ArgumentError, "unknown property #{tag}")
+
+  defp update_capability(%{rebac: [{:capability, c} | r]} = acc, fun),
+    do: %{acc | rebac: [{:capability, fun.(c)} | r]}
 
   defp add([{h, body} | rest], s), do: [{h, append(body, s)} | rest]
 

@@ -1,0 +1,2025 @@
+2026-09-07T00:00:00Z (RFD66606-2235) 'An ACP agent that plans with taskweft and executes through the editor
+ # uuid: 9a9cf8cf-895f-5b11-85a1-85ceb038e537
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Committed  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-07T00:00:01Z (RFD66606-2235) 'a no-model Agent Client Protocol
+ # tags: rfd:feature
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:02Z (RFD66606-2235) 'agent: a deterministic grammar,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:03Z (RFD66606-2235) 'taskweft plans, ACP tool calls
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:04Z (RFD66606-2235) 'under the client's permission,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:05Z (RFD66606-2235) 'the session as an event log in
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:06Z (RFD66606-2235) 'the fdb-sqlite store
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:07Z (RFD66606-2235) '`1-transport/transport-taskweft-acp`,
+ # tags: rfd:scope
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:08Z (RFD66606-2235) 'the Fly app
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:09Z (RFD66606-2235) '`weftspun-taskweft-acp`, the
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:10Z (RFD66606-2235) 'executor sides that dial into it
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:11Z (RFD66606-2235) 'A no-model agent plans with
+ # tags: rfd:hook
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:12Z (RFD66606-2235) 'taskweft and runs every step
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:13Z (RFD66606-2235) 'through the editor.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:14Z (RFD66606-2235) '
+ # tags: rfd:hook
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:15Z (RFD66606-2235) 'MCP tools answer one call and
+ # tags: rfd:intrigue
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:16Z (RFD66606-2235) 'forget it, so an agent driven
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:17Z (RFD66606-2235) 'through them loses the turn's
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:18Z (RFD66606-2235) 'context. Taskweft had a planner
+ # tags: rfd:intrigue
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:19Z (RFD66606-2235) 'and no executor.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:20Z (RFD66606-2235) '
+ # tags: rfd:intrigue
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:21Z (RFD66606-2235) 'Read below for the session store,
+ # tags: rfd:exit
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:22Z (RFD66606-2235) 'the executor sides and what was
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:23Z (RFD66606-2235) 'measured.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:24Z (RFD66606-2235) '
+ # tags: rfd:exit
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:25Z (RFD66606-2235) 'An ACP agent that plans with
+ # tags: rfd:details-title
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:26Z (RFD66606-2235) 'taskweft and executes through the
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:27Z (RFD66606-2235) 'editor
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:28Z (RFD66606-2235) 'The agent holds no language
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:29Z (RFD66606-2235) 'model. A prompt is a slash
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:30Z (RFD66606-2235) 'command or a phrase matched
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:31Z (RFD66606-2235) 'against the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:32Z (RFD66606-2235) 'domain's method names; taskweft
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:33Z (RFD66606-2235) 'plans it; every step is one ACP
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:34Z (RFD66606-2235) 'tool call through the client's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:35Z (RFD66606-2235) 'files and terminals behind a
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:36Z (RFD66606-2235) 'permission prompt; a failed step
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:37Z (RFD66606-2235) 'replans from the verified prefix
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:38Z (RFD66606-2235) 'or says that no other
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:39Z (RFD66606-2235) 'decomposition reaches the goal.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:40Z (RFD66606-2235) 'Claude Code drives the same agent
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:41Z (RFD66606-2235) 'through
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:42Z (RFD66606-2235) 'an MCP bridge that is an ACP
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:43Z (RFD66606-2235) 'client, so the session keeps its
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:44Z (RFD66606-2235) 'context. Every request and update
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:45Z (RFD66606-2235) 'is an event in one `weft_fdb`
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:46Z (RFD66606-2235) 'database per session, the hosted
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:47Z (RFD66606-2235) 'door being the fabric-store
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:48Z (RFD66606-2235) 'writer and OpenBao's sqlite-fdb
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:49Z (RFD66606-2235) 'engine the fallback. The Fly door
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:50Z (RFD66606-2235) 'is gated by OpenBao tokens,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:51Z (RFD66606-2235) 'never GitHub, and runs no step
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:52Z (RFD66606-2235) 'itself: executor sides dial in
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:53Z (RFD66606-2235) 'under a bao-held policy with a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:54Z (RFD66606-2235) 'local override. `DETAILS.md`
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:55Z (RFD66606-2235) 'carries the rest.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:56Z (RFD66606-2235) '
+ # tags: rfd:decision
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:57Z (RFD66606-2235) '- RFD66606-2154, RFD66606-2157
+ # tags: rfd:references
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:58Z (RFD66606-2235) 'and RFD66606-2159, the
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:00:59Z (RFD66606-2235) 'plan-to-Godot-Sandbox path the
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:00Z (RFD66606-2235) 'export
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:01Z (RFD66606-2235) '  follows
+ # tags: rfd:references
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:02Z (RFD66606-2235) '- RFD66606-2140, RFD66606-2146
+ # tags: rfd:references
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:03Z (RFD66606-2235) 'and RFD66606-2205, OpenBao and
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:04Z (RFD66606-2235) 'the sqlite-fdb engine the
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:05Z (RFD66606-2235) 'fallback
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:06Z (RFD66606-2235) '  extends
+ # tags: rfd:references
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:07Z (RFD66606-2235) '
+ # tags: rfd:references
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:08Z (RFD66606-2235) 'RFD66606-2234 (the dress-on plan
+ # tags: rfd:related
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:09Z (RFD66606-2235) 'this repository's planning
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:10Z (RFD66606-2235) 'pattern was first tried on),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:11Z (RFD66606-2235) 'RFD66606-2111 (the side the
+ # tags: rfd:related
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:12Z (RFD66606-2235) 'repository sits on),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:13Z (RFD66606-2235) 'RFD66606-2134 (the cluster's
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:14Z (RFD66606-2235) 'TLS).
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:15Z (RFD66606-2235) '
+ # tags: rfd:related
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:16Z (RFD66606-2235) 'Document form
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:17Z (RFD66606-2235) 'RFD66606-2232, the RFD DSL this
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:18Z (RFD66606-2235) 'document is written in.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:19Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:20Z (RFD66606-2235) 'Where steps run
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:21Z (RFD66606-2235) 'The editor already owns the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:22Z (RFD66606-2235) 'files, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:23Z (RFD66606-2235) 'terminals and the permission
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:24Z (RFD66606-2235) 'dialog. Hosting the bridge raised
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:25Z (RFD66606-2235) 'the question of where steps run,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:26Z (RFD66606-2235) 'and a machine on Fly is not the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:27Z (RFD66606-2235) 'desk with the checkout, the GPU
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:28Z (RFD66606-2235) 'box, or the editor a human is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:29Z (RFD66606-2235) 'watching.
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:30Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:31Z (RFD66606-2235) 'The shape in the
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:32Z (RFD66606-2235) 'decompilable-model vocabulary
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:33Z (RFD66606-2235) 'A natively decompilable model
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:34Z (RFD66606-2235) 'separates perception from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:35Z (RFD66606-2235) 'execution, routes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:36Z (RFD66606-2235) 'with hard gates instead of
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:37Z (RFD66606-2235) 'continuous attention, keeps its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:38Z (RFD66606-2235) 'state discrete,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:39Z (RFD66606-2235) 'and executes over a syntax tree
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:40Z (RFD66606-2235) 'it can export as code. This
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:41Z (RFD66606-2235) 'repository is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:42Z (RFD66606-2235) 'that shape with the neural half
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:43Z (RFD66606-2235) 'left empty. The grammar is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:44Z (RFD66606-2235) 'perception
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:45Z (RFD66606-2235) 'layer; its output is a DSL term.
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:46Z (RFD66606-2235) 'If a learned front door is ever
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:47Z (RFD66606-2235) 'added, its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:48Z (RFD66606-2235) 'hidden state is quantized through
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:49Z (RFD66606-2235) 'residual FSQ, the workspace's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:50Z (RFD66606-2235) 'standard
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:51Z (RFD66606-2235) 'codebook, so the model's path
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:52Z (RFD66606-2235) 'stays a finite, inspectable state
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:53Z (RFD66606-2235) 'sequence.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:54Z (RFD66606-2235) 'The HTN method alternatives with
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:55Z (RFD66606-2235) 'their `check` guards are the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:56Z (RFD66606-2235) 'branches, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:57Z (RFD66606-2235) 'the planner's explain tree is the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:58Z (RFD66606-2235) 'route taken. The world state is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:01:59Z (RFD66606-2235) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:00Z (RFD66606-2235) 'domain's typed variables and
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:01Z (RFD66606-2235) 'every transition is a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:02Z (RFD66606-2235) '`pointer_set` in an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:03Z (RFD66606-2235) 'action body; the session store is
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:04Z (RFD66606-2235) 'the trace. The plan is a DSL term
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:05Z (RFD66606-2235) 'executed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:06Z (RFD66606-2235) 'as a state machine, and `/export`
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:07Z (RFD66606-2235) 'decompiles it: a SafeGDScript
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:08Z (RFD66606-2235) 'program for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:09Z (RFD66606-2235) 'Godot Sandbox whose guest holds
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:10Z (RFD66606-2235) 'the plan and the state machine
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:11Z (RFD66606-2235) 'and cannot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:12Z (RFD66606-2235) 'run a command or open a file,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:13Z (RFD66606-2235) 'while the host scene shipped
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:14Z (RFD66606-2235) 'beside it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:15Z (RFD66606-2235) 'performs each step the guest asks
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:16Z (RFD66606-2235) 'for and reports the exit code
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:17Z (RFD66606-2235) 'back.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:18Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:19Z (RFD66606-2235) 'Why no model, and the open item
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:20Z (RFD66606-2235) 'The operator asked for a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:21Z (RFD66606-2235) 'taskweft-only agent with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:22Z (RFD66606-2235) 'agentic feel of an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:23Z (RFD66606-2235) 'editor session, and then asked
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:24Z (RFD66606-2235) 'whether the smallest Gemma 4
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:25Z (RFD66606-2235) 'model should be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:26Z (RFD66606-2235) 'trained on the taskweft DSL. Keep
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:27Z (RFD66606-2235) 'it code: a model would sit at the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:28Z (RFD66606-2235) 'front
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:29Z (RFD66606-2235) 'door only, translating typed text
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:30Z (RFD66606-2235) 'into a domain or goal, which is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:31Z (RFD66606-2235) 'exactly
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:32Z (RFD66606-2235) 'the part that stops being
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:33Z (RFD66606-2235) 'reproducible once a model does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:34Z (RFD66606-2235) 'it. The slash
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:35Z (RFD66606-2235) 'grammar plus the planner's own
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:36Z (RFD66606-2235) 'diagnostics cover what someone
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:37Z (RFD66606-2235) 'types in an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:38Z (RFD66606-2235) 'editor and fail with a line and
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:39Z (RFD66606-2235) 'column instead of a guess. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:40Z (RFD66606-2235) 'training case
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:41Z (RFD66606-2235) 'also does not stand yet: three
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:42Z (RFD66606-2235) 'DSL domains exist, so a corpus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:43Z (RFD66606-2235) 'would be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:44Z (RFD66606-2235) 'constructed, and the validator
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:45Z (RFD66606-2235) 'that would label it (compile,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:46Z (RFD66606-2235) 'plan, goal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:47Z (RFD66606-2235) 'reached) is the validator the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:48Z (RFD66606-2235) 'deterministic agent needs anyway.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:49Z (RFD66606-2235) 'If the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:50Z (RFD66606-2235) 'grammar proves too narrow, Gemma
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:51Z (RFD66606-2235) '4 E2B is the allowlisted size,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:52Z (RFD66606-2235) 'the corpus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:53Z (RFD66606-2235) 'generator exists by then, the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:54Z (RFD66606-2235) 'latent goes through residual FSQ,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:55Z (RFD66606-2235) 'and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:56Z (RFD66606-2235) 'grammar is the baseline it has to
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:57Z (RFD66606-2235) 'beat.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:58Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:02:59Z (RFD66606-2235) 'The session store
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:00Z (RFD66606-2235) 'The store is the session, not a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:01Z (RFD66606-2235) 'summary beside it. Every JSON-RPC
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:02Z (RFD66606-2235) 'message
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:03Z (RFD66606-2235) 'that belongs to a session is
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:04Z (RFD66606-2235) 'appended before it is acted on:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:05Z (RFD66606-2235) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:06Z (RFD66606-2235) '`session/new` params, each
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:07Z (RFD66606-2235) 'prompt, every `session/update`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:08Z (RFD66606-2235) 'the agent emits,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:09Z (RFD66606-2235) 'every request to the client and
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:10Z (RFD66606-2235) 'its answer, each permission
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:11Z (RFD66606-2235) 'decision, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:12Z (RFD66606-2235) 'the stop reason. The in-memory
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:13Z (RFD66606-2235) 'session is what replaying that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:14Z (RFD66606-2235) 'log yields;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:15Z (RFD66606-2235) '`session/load` and
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:16Z (RFD66606-2235) '`session/resume` are replays,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:17Z (RFD66606-2235) '`session/list` is a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:18Z (RFD66606-2235) 'registry query. One `weft_fdb`
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:19Z (RFD66606-2235) 'database per session and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:20Z (RFD66606-2235) 'registry
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:21Z (RFD66606-2235) 'database, fabric-store's own
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:22Z (RFD66606-2235) 'parallel-commit protocol across
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:23Z (RFD66606-2235) 'the two, one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:24Z (RFD66606-2235) 'fenced writer per database: the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:25Z (RFD66606-2235) 'hosted process that owns the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:26Z (RFD66606-2235) 'session.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:27Z (RFD66606-2235) 'Taking a session over raises the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:28Z (RFD66606-2235) 'fence and a stale writer's next
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:29Z (RFD66606-2235) 'write is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:30Z (RFD66606-2235) 'refused visibly. The primary
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:31Z (RFD66606-2235) 'adapter drives a helper built
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:32Z (RFD66606-2235) 'from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:33Z (RFD66606-2235) 'fabric-store's `sqlrun.c` over a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:34Z (RFD66606-2235) 'Port with a line protocol (plain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:35Z (RFD66606-2235) 'SQLite
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:36Z (RFD66606-2235) 'files on a desk and in CI,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:37Z (RFD66606-2235) '`weft_fdb` databases on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:38Z (RFD66606-2235) 'cluster); the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:39Z (RFD66606-2235) 'fallback adapter reaches the same
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:40Z (RFD66606-2235) 'tables through OpenBao's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:41Z (RFD66606-2235) 'sqlite-fdb
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:42Z (RFD66606-2235) 'engine once it carries a catalog
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:43Z (RFD66606-2235) 'write path, and the switch is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:44Z (RFD66606-2235) 'written
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:45Z (RFD66606-2235) 'through the fallback first so the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:46Z (RFD66606-2235) 'log says why. The operator chose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:47Z (RFD66606-2235) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:48Z (RFD66606-2235) 'primary for latency: one
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:49Z (RFD66606-2235) 'FoundationDB commit per step from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:50Z (RFD66606-2235) 'the machine in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:51Z (RFD66606-2235) 'the cluster's region, no HTTP
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:52Z (RFD66606-2235) 'hop.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:53Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:54Z (RFD66606-2235) 'Executor sides
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:55Z (RFD66606-2235) 'ACP's client owns files and
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:56Z (RFD66606-2235) 'terminals. Hosted, the bridge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:57Z (RFD66606-2235) 'would be that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:58Z (RFD66606-2235) 'client and steps would run on
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:03:59Z (RFD66606-2235) 'Fly; executors sit behind NAT, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:00Z (RFD66606-2235) 'Fly cannot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:01Z (RFD66606-2235) 'dial them. Executors dial in
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:02Z (RFD66606-2235) 'instead and answer the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:03Z (RFD66606-2235) 'client-side requests of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:04Z (RFD66606-2235) 'their sessions: a headless desk
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:05Z (RFD66606-2235) 'or build box runs files and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:06Z (RFD66606-2235) 'terminals in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:07Z (RFD66606-2235) 'BEAM and answers permissions from
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:08Z (RFD66606-2235) 'the `taskweft_acp_policy` field
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:09Z (RFD66606-2235) 'of its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:10Z (RFD66606-2235) '`agents/<cn>` secret in OpenBao,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:11Z (RFD66606-2235) 'overridden key by key by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:12Z (RFD66606-2235) '`.taskweft-acp/policy.exs`; the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:13Z (RFD66606-2235) 'answer is produced where the cost
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:14Z (RFD66606-2235) 'lands and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:15Z (RFD66606-2235) 'the hosted side records it. A
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:16Z (RFD66606-2235) 'session binds to a connected
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:17Z (RFD66606-2235) 'executor by name
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:18Z (RFD66606-2235) 'at `acp_new_session`; a prompt on
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:19Z (RFD66606-2235) 'a session whose executor is gone
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:20Z (RFD66606-2235) 'fails
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:21Z (RFD66606-2235) 'with the name. The Fly machine is
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:22Z (RFD66606-2235) 'itself an executor called `fly`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:23Z (RFD66606-2235) 'for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:24Z (RFD66606-2235) 'CI-runner case, chosen
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:25Z (RFD66606-2235) 'explicitly, never by default. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:26Z (RFD66606-2235) 'bearer on `/mcp`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:27Z (RFD66606-2235) 'and on `/executor` is an OpenBao
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:28Z (RFD66606-2235) 'token validated by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:29Z (RFD66606-2235) '`auth/token/lookup-self`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:30Z (RFD66606-2235) 'and admitted by policy; a bao
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:31Z (RFD66606-2235) 'outage is 503, never an open
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:32Z (RFD66606-2235) 'door.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:33Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:34Z (RFD66606-2235) 'What was measured
+ # tags: rfd:details-heading
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:35Z (RFD66606-2235) 'Forty-one tests drive the agent
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:36Z (RFD66606-2235) 'over ex_mcp's memory transport
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:37Z (RFD66606-2235) 'with a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:38Z (RFD66606-2235) 'scripted editor: the grammar, the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:39Z (RFD66606-2235) 'domain loader and its literal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:40Z (RFD66606-2235) '`@exec`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:41Z (RFD66606-2235) 'walk, the planner (build then
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:42Z (RFD66606-2235) 'test; the five-step commit;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:43Z (RFD66606-2235) 'replan taking the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:44Z (RFD66606-2235) 'other decomposition on the failed
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:45Z (RFD66606-2235) 'action; no recovery when none
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:46Z (RFD66606-2235) 'exists),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:47Z (RFD66606-2235) 'the end-to-end run with a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:48Z (RFD66606-2235) 'permission per step, rejection
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:49Z (RFD66606-2235) 'and refusal, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:50Z (RFD66606-2235) 'replan budget, load and list from
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:51Z (RFD66606-2235) 'the store, the export, the store
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:52Z (RFD66606-2235) 'adapter
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:53Z (RFD66606-2235) 'through the real helper, the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:54Z (RFD66606-2235) 'fallback adapter through a fake
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:55Z (RFD66606-2235) 'mount (the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:56Z (RFD66606-2235) 'switch is written through the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:57Z (RFD66606-2235) 'fallback before the retried
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:58Z (RFD66606-2235) 'write, a plain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:04:59Z (RFD66606-2235) 'SQL error does not switch, and a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:00Z (RFD66606-2235) 'degraded boot names its reason on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:01Z (RFD66606-2235) 'every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:02Z (RFD66606-2235) 'call), and the bridge running
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:03Z (RFD66606-2235) 'real commands. Dialyzer runs on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:04Z (RFD66606-2235) 'the whole
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:05Z (RFD66606-2235) 'application as a gate.
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:06Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:07Z (RFD66606-2235) '`mix taskweft_acp.bench` drives a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:08Z (RFD66606-2235) 'ten-step plan through the agent
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:09Z (RFD66606-2235) 'with an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:10Z (RFD66606-2235) 'editor that answers instantly,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:11Z (RFD66606-2235) 'five runs of ten steps, on this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:12Z (RFD66606-2235) 'desk on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:13Z (RFD66606-2235) '2026-09-07:
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:14Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:15Z (RFD66606-2235) '| store mode, on this desk | p50
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:16Z (RFD66606-2235) 'ms/step | p95 ms/step |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:17Z (RFD66606-2235) '| ------------------------ |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:18Z (RFD66606-2235) '----------- | ----------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:19Z (RFD66606-2235) '| floor (memory store)     | 0.31        |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:20Z (RFD66606-2235) '0.41        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:21Z (RFD66606-2235) '| plain (helper + SQLite)  | 1.64        |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:22Z (RFD66606-2235) '1.95        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:23Z (RFD66606-2235) '| fabric (weft_fdb)        | not
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:24Z (RFD66606-2235) 'run     | not run     |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:25Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:26Z (RFD66606-2235) 'The cluster is 6PN-only, so the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:27Z (RFD66606-2235) 'fabric row is measured from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:28Z (RFD66606-2235) 'Fly
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:29Z (RFD66606-2235) 'machine (`shared-cpu-1x`, 512 MB,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:30Z (RFD66606-2235) 'sjc) once its credentials exist,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:31Z (RFD66606-2235) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:32Z (RFD66606-2235) 'same five runs through
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:33Z (RFD66606-2235) '`bin/taskweft_acp_deploy rpc`:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:34Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:35Z (RFD66606-2235) '| store mode, on the Fly machine
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:36Z (RFD66606-2235) '| p50 ms/step | p95 ms/step |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:37Z (RFD66606-2235) '| ------------------------------
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:38Z (RFD66606-2235) '| ----------- | ----------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:39Z (RFD66606-2235) '| floor (memory store)           |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:40Z (RFD66606-2235) '0.31        | 0.46        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:41Z (RFD66606-2235) '| plain (helper + SQLite)        |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:42Z (RFD66606-2235) '26.43       | 29.38       |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:43Z (RFD66606-2235) '| fabric (weft_fdb)              |
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:44Z (RFD66606-2235) '27.20       | 32.21       |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:45Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:46Z (RFD66606-2235) 'On the machine the cluster costs
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:47Z (RFD66606-2235) 'what the machine's own disk
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:48Z (RFD66606-2235) 'costs: a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:49Z (RFD66606-2235) 'step is several appended events,
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:50Z (RFD66606-2235) 'each one commit, and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:51Z (RFD66606-2235) 'machine's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:52Z (RFD66606-2235) 'root disk syncs about as slowly
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:53Z (RFD66606-2235) 'as the cluster answers. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:54Z (RFD66606-2235) 'desk's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:55Z (RFD66606-2235) 'plain row is the same helper on a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:56Z (RFD66606-2235) 'local NVMe. The bench leaves its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:57Z (RFD66606-2235) '`bench_<stamp>_*` databases in
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:58Z (RFD66606-2235) 'the cluster; `fdbcli` clears
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:05:59Z (RFD66606-2235) 'them.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:00Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:01Z (RFD66606-2235) 'Reaching the cluster exposed two
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:02Z (RFD66606-2235) 'packaging defects the plain mode
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:03Z (RFD66606-2235) 'never
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:04Z (RFD66606-2235) 'could: the migrations directory
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:05Z (RFD66606-2235) 'and the built-in domain path were
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:06Z (RFD66606-2235) 'resolved at compile time into the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:07Z (RFD66606-2235) 'build tree, so the first boot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:08Z (RFD66606-2235) 'that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:09Z (RFD66606-2235) 'connected crashed and Fly stopped
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:10Z (RFD66606-2235) 'the machine after ten restarts.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:11Z (RFD66606-2235) 'Both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:12Z (RFD66606-2235) 'are runtime lookups now, and a
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:13Z (RFD66606-2235) 'defect while opening the store
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:14Z (RFD66606-2235) 'faults the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:15Z (RFD66606-2235) 'release (operator: "it must
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:16Z (RFD66606-2235) 'fault"); only an unreachable
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:17Z (RFD66606-2235) 'cluster degrades.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:18Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:19Z (RFD66606-2235) 'The client certificate is
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:20Z (RFD66606-2235) '`fdb-taskweft-acp.chibifire.com`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:21Z (RFD66606-2235) 'issued by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:22Z (RFD66606-2235) 'bao's PKI role `fdb-server` for
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:23Z (RFD66606-2235) '90 days (RFD66606-2145) and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:24Z (RFD66606-2235) 'placed as the four
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:25Z (RFD66606-2235) 'secrets of RFD66606-2134 by
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:26Z (RFD66606-2235) '`scripts/issue_cluster_credentials.sh`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:27Z (RFD66606-2235) 'which is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:28Z (RFD66606-2235) 'written as a state machine over
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:29Z (RFD66606-2235) 'observed states (PITFALLS 12). On
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:30Z (RFD66606-2235) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:31Z (RFD66606-2235) 'desk the taskweft NIF and the
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:32Z (RFD66606-2235) 'helper build with llvm-mingw
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:33Z (RFD66606-2235) '(operator
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:34Z (RFD66606-2235) 'directive: not Visual Studio),
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:35Z (RFD66606-2235) 'and the stdio bridge answers
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:36Z (RFD66606-2235) '`initialize`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:37Z (RFD66606-2235) 'two seconds after launch. The
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:38Z (RFD66606-2235) 'fabric build needs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:39Z (RFD66606-2235) '`FDB_API_VERSION=730`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:40Z (RFD66606-2235) 'defined, as the bao plugin's cgo
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:41Z (RFD66606-2235) 'flags do; the first Fly build
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:42Z (RFD66606-2235) 'failed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:43Z (RFD66606-2235) 'without it.
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written
+
+2026-09-07T00:06:44Z (RFD66606-2235) '
+ # tags: rfd:details
+ Text:RFD2235  1 LINE
+ Text:Written

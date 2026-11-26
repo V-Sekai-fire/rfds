@@ -1,0 +1,1240 @@
+2026-08-25T00:00:00Z (RFD66606-2028) 'Hexagonal core ports adapters
+ # uuid: 407c89a9-9921-5f5a-a601-f1637c68bc90
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:01Z (RFD66606-2028) 'Each component takes an entities,
+ # tags: rfd:hook
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-2028) 'repositories and datasources
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-2028) 'layout.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-2028) '
+ # tags: rfd:hook
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-2028) 'Components in the stack span
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-2028) 'several languages (C, C++,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-2028) 'Python,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-2028) 'Elixir, GDScript), run as
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-2028) 'separate processes, and each
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-2028) 'binds to
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-2028) 'hardware, a GPU, the network, or
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-2028) 'an engine runtime. A component
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-2028) 'has to
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-2028) 'stay testable without its device,
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-2028) 'replaceable without a rewrite of
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-2028) 'its
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-2028) 'callers, and composable with
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-2028) 'components written in another
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-2028) 'language.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-2028) '
+ # tags: rfd:intrigue
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-2028) 'Read RFD66606-2111 next, which
+ # tags: rfd:exit
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-2028) 'defines the service that
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-2028) 'components compose into.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-2028) '
+ # tags: rfd:exit
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-2028) 'Hexagonal core ports adapters
+ # tags: rfd:details-title
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-2028) 'See `DETAILS.md` for the full
+ # tags: rfd:decision
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-2028) 'argument.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-2028) '
+ # tags: rfd:decision
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-2028) 'See `DETAILS.md` for the full
+ # tags: rfd:related
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-2028) 'argument.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-2028) '
+ # tags: rfd:related
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-2028) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-2028) 'A
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-2028) 'shared monolith or a single
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-2028) 'in-memory object model does not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-2028) 'hold
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-2028) 'across those boundaries.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-2028) 'Context and problem statement
+ # tags: rfd:madr-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-2028) 'Components in the stack span
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-2028) 'several languages (C, C++,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-2028) 'Python,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-2028) 'Elixir, GDScript), run as
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-2028) 'separate processes, and each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-2028) 'binds to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-2028) 'hardware, a GPU, the network, or
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-2028) 'an engine runtime. A component
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-2028) 'has to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-2028) 'stay testable without its device,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-2028) 'replaceable without a rewrite of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-2028) 'its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-2028) 'callers, and composable with
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-2028) 'components written in another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-2028) 'language.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-2028) 'A shared monolith or a single
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-2028) 'in-memory object model does not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-2028) 'hold
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-2028) 'across those boundaries.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-2028) 'Decision drivers
+ # tags: rfd:madr-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-2028) '- Real-time and pipeline paths
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-2028) 'cross process and language
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-2028) 'boundaries
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-2028) '  with no shared object model.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-2028) '- Hardware, OS, GPU, network, and
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-2028) 'engine concerns have to stay out
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-2028) 'of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-2028) '  the entities and the
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-2028) 'interactors, or they become
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-2028) 'untestable away
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-2028) '  from the live system.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-2028) '- CI runs the interactors against
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-2028) 'recorded data, without the device
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-2028) 'or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-2028) '  the runtime.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-2028) '- One computed result often feeds
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-2028) 'several outputs from a single
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-2028) 'pass.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-2028) 'Decision outcome
+ # tags: rfd:madr-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-2028) 'Each component takes a uniform
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-2028) '`entities/` + `repositories/` +
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-2028) '`datasources/` layout, in the
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-2028) 'Netflix formulation of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-2028) 'pattern.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-2028) 'Components compose into a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-2028) 'service, as RFD66606-2111 defines
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-2028) 'a service.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-2028) '### entities/: the objects, and
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-2028) 'the interactors that act on them
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-2028) 'An entity is an object the
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-2028) 'component works on, and it knows
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-2028) 'nothing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-2028) 'about where it is stored. An
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-2028) 'interactor performs the actions
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-2028) 'on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-2028) 'entities. Together they open no
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-2028) 'socket, read no device, and link
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-2028) 'no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-2028) 'framework. They carry their own
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-2028) '`entities/spec/` of tests that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-2028) 'run in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-2028) 'isolation against recorded data.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-2028) 'A transport layer never reaches
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-2028) 'inside them.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-2028) '### repositories/: interfaces to
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-2028) 'the entities
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-2028) 'A repository is an interface that
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-2028) 'gets, creates, and changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-2028) 'entities.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-2028) 'The interactor declares it and a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-2028) 'data source implements it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-2028) 'A repository stays at the lowest
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-2028) 'common denominator every binding
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-2028) 'language can implement: a C-ABI
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-2028) 'struct of function pointers where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-2028) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-2028) 'service crosses languages, a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-2028) 'language-native interface where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-2028) 'it does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-2028) 'not. One header then binds C,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-2028) 'C++, and Python data sources
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-2028) 'alike.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-2028) '### datasources/: the
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-2028) 'implementations, outside the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-2028) 'interactor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-2028) 'A data source implements a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-2028) 'repository against the real
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-2028) 'world: a serial
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-2028) 'device, a UDP socket, a recorded
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-2028) 'fixture for CI, a GPU compute
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-2028) 'host, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-2028) 'renderer, an engine runtime. One
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-2028) 'repository admits many data
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-2028) 'sources,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-2028) 'so one pass of an interactor
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-2028) 'reaches several destinations, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-2028) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-2028) 'recorded fixture stands in for
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-2028) 'live hardware under CI.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-2028) '### The transport layer, and
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-2028) 'composition across the seam
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-2028) 'A transport layer is the input
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-2028) 'that triggers an interactor. All
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-2028) 'dependencies point inward, so the
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-2028) 'transport layer depends on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-2028) 'interactor and never the reverse.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-2028) 'Components compose when a data
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-2028) 'source of one component is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-2028) 'transport layer of another. An
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-2028) 'in-process dependency links the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-2028) 'sibling
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-2028) 'directly. A cross-process
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-2028) 'dependency meets on a wire, which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-2028) 'is a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-2028) 'protocol the two ends share. The
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-2028) 'wire is the integration contract,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-2028) 'so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-2028) 'a producer in one language and a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-2028) 'consumer in another share no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-2028) 'code,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-2028) 'only the message format. Each
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-2028) 'component declares its sibling
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-2028) 'wiring
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-2028) 'beside its repositories.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-2028) 'Consequences
+ # tags: rfd:madr-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-2028) '- Entities and interactors with
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-2028) 'no dependencies let CI replay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-2028) 'recorded
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-2028) '  data through them with no
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-2028) 'device and no runtime.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-2028) '- The wire seam decouples
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-2028) 'languages and processes, so any
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-2028) 'component is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-2028) '  rewritable or replaceable as
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-2028) 'long as it keeps the message
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-2028) 'contract.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-2028) '- A new output is a new data
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-2028) 'source, with no change to the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-2028) 'interactor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-2028) '  that produced the data.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-2028) '- All dependencies point inward,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-2028) 'so a data source depends on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-2028) '  interactor through a
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-2028) 'repository, and the interactor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-2028) 'depends on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-2028) '  nothing.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-2028) '- The convention costs interface
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-2028) 'boilerplate, and across a process
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-2028) '  boundary it adds a serialize
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-2028) 'and parse step the in-process
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-2028) 'link
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-2028) '  avoids. That cost buys
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-2028) 'cross-language, cross-process
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-2028) 'composition.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-2028) 'More information
+ # tags: rfd:madr-heading
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-2028) 'The `sinew-mocap` components
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-2028) 'apply the pattern end to end.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-2028) 'Each git
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-2028) 'repository (`driver`,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-2028) '`mount_drift`, `solve`, `viewer`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-2028) '`vr_bridge`)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-2028) 'carries the triad. The interfaces
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-2028) 'are header-only C struct vtables
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-2028) '(FrameSource, TrackerSink,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-2028) 'PoseSink, HmdSource). The data
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-2028) 'sources bind
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-2028) 'the serial dongle, a recorded
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-2028) '`.rawlog`, UDP, polyscope,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-2028) 'SteamVR,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-2028) 'OpenVR, and Vulkan. The
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-2028) 'components compose over the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-2028) '`/sinew` OSC wire
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-2028) '(UDP 39539), and each
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-2028) '`sibling-repos.txt` declares the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-2028) 'wiring. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-2028) 'synthetic-data branch in
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-2028) '`sinew-vrdance/pose_distill`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-2028) 'applies the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-2028) 'triad in Python: geometry and
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-2028) 'label cleaning inside, interfaces
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-2028) 'for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-2028) 'teacher pose model, the renderer,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-2028) 'and the dataset, and data sources
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-2028) 'for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-2028) 'the model, the Godot renderer,
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-2028) 'and the COCO output.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-2028) 'Those files still carry the older
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-2028) 'names on disk, and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (RFD66606-2028) '`*_source.h` /
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (RFD66606-2028) '`*_sink.h` spelling with them.
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (RFD66606-2028) 'RFD66606-2111 holds the rename
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (RFD66606-2028) 'list.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2028  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (RFD66606-2028) '
+ # tags: rfd:details
+ Text:RFD2028  1 LINE
+ Text:Written

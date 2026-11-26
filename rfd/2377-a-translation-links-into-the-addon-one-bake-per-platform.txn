@@ -1,0 +1,420 @@
+2026-10-31T00:00:00Z (RFD66606-2377) 'a translation links into the addon, one bake per platform
+ # uuid: 35acd8ad-a897-5f52-a178-c7f912914534
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2377) 'linking a translation into the
+ # tags: rfd:scope
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2377) 'addon, and baking its C once per
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2377) 'platform.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2377) 'Each platform links its own baked
+ # tags: rfd:hook
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2377) 'translation into the addon, so
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2377) 'the web game loads.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2377) '
+ # tags: rfd:hook
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2377) 'Chrome refuses to compile a
+ # tags: rfd:intrigue
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2377) 'WebAssembly module larger than 8
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2377) 'MB on the main thread, and a
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2377) 'game's translation is larger. C
+ # tags: rfd:intrigue
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2377) 'baked on one platform does not
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2377) 'match on another.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2377) '
+ # tags: rfd:intrigue
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2377) 'Bake the C of a platform by
+ # tags: rfd:exit
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2377) 'running the game once on that
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2377) 'platform with the emitter on,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2377) 'then compile the emitted C for
+ # tags: rfd:exit
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2377) 'that platform.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2377) '
+ # tags: rfd:exit
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2377) 'a translation links into the
+ # tags: rfd:details-title
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2377) 'addon, one bake per platform
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2377) '- A translation can be compiled
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2377) 'into the addon library of its
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2377) 'platform instead of being
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2377) '  loaded as a library at run
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2377) 'time. On the web this is the only
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2377) 'route that works. The
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2377) '  desktop builds of the same game
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2377) 'use the same route.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2377) '- Each platform bakes its own C.
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2377) 'The game runs once on that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2377) 'platform with the emitter on,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2377) '  and the emitted C is compiled
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2377) 'for that platform.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2377) '
+ # tags: rfd:decision
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2377) '- RFD66606-2294, where this rule
+ # tags: rfd:related
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2377) 'lived before the split.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2377) '
+ # tags: rfd:related
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2377) 'Where the objects live
+ # tags: rfd:details-heading
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2377) 'The addon keeps each platform's
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2377) 'translation objects in a folder
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2377) 'of their own,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2377) '`src/bintr/<platform>.<arch>/`.
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2377) 'Why each platform bakes
+ # tags: rfd:details-heading
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2377) 'The program hash covers the
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2377) 'machine layout as well as the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2377) 'program, so C baked on one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2377) 'platform does not match on
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2377) 'another. Windows and Linux on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2377) 'x86_64 share a layout and a hash,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2377) 'and each still compiles its own
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2377) 'copy. One bake of the SolidCraft
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2377) 'guest is 32 C files, 336
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2377) 'MB of C for 16.2 MB of RISC-V
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2377) 'code.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2377) 'A change to the host's system
+ # tags: rfd:details-heading
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2377) 'calls
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2377) 'A change to the host's system
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2377) 'calls leaves the guest's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2377) 'translation as it was, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2377) 'compiled objects and the hash
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2377) 'stay valid and only a relink is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2377) 'needed.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2377) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:11Z (RFD66606-2377) 'Chrome refuses to compile a
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:12Z (RFD66606-2377) 'WebAssembly module larger than 8
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:13Z (RFD66606-2377) 'MB on the main thread, and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:14Z (RFD66606-2377) 'game's translation is larger.
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:15Z (RFD66606-2377) '
+ # tags: rfd:details
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:16Z (RFD66606-2377) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:17Z (RFD66606-2377) 'rfd-2377 provides
+ # tags: rebac:relate
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:18Z (RFD66606-2377) 'per-platform-baked-translation
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:19Z (RFD66606-2377) 'rfd-2377 spends
+ # tags: rebac:relate
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:20Z (RFD66606-2377) 'elf-guest-native-translation
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:21Z (RFD66606-2377) 'rfd-2377 spends
+ # tags: rebac:relate
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:22Z (RFD66606-2377) 'sandbox-addon-double-pinned
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2377  1 LINE
+ Text:Written
+
+2026-10-31T00:01:23Z (RFD66606-2377) 'rfd-2377 is_a guest-runtime
+ # tags: rebac:relate
+ Text:RFD2377  1 LINE
+ Text:Written

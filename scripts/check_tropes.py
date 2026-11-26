@@ -7,6 +7,8 @@
     python scripts/check_tropes.py --self-test
 """
 import argparse
+import json
+import pathlib
 import os
 import re
 import subprocess
@@ -76,8 +78,41 @@ TELLS = {
     ),
 }
 
+
+_RFD_TEXTS = {}
+
+
+def _rfd_fetch(rev, paths):
+    args = ["mix", "rfd.text"] + (["--rev", rev] if rev else []) + paths
+    out = subprocess.run(args, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    if out.returncode != 0:
+        raise SystemExit(f"FAIL mix rfd.text: {out.stderr.strip()[-300:]}")
+    rows = (json.loads(l) for l in out.stdout.splitlines() if l.startswith("{"))
+    return {r["path"]: r for r in rows}
+
+
+def rfd_text(rev, path):
+    """An RFD journal as the prose gates read it; one `mix rfd.text` per revision."""
+    if rev not in _RFD_TEXTS:
+        every = sorted(str(p.relative_to(ROOT)) for p in pathlib.Path(ROOT).glob("rfd/[0-9][0-9][0-9][0-9]-*.txn"))
+        _RFD_TEXTS[rev] = _rfd_fetch(rev, every)
+    path = str(path).replace("\\", "/")
+    if path not in _RFD_TEXTS[rev]:
+        _RFD_TEXTS[rev].update(_rfd_fetch(rev, [path]))
+    return _RFD_TEXTS[rev][path]
+
+
+def rfd_markdown(rev, path):
+    t = rfd_text(rev, path)
+    return t["markdown"] if t.get("found") else None
+
+
+def is_journal(path):
+    return re.match(r"^rfd/[0-9]{4}-[^/]+\.txn$", str(path).replace("\\", "/")) is not None
+
+
 FILE_PATTERNS = (
-    re.compile(r"^rfd/[0-9]{4}-[^/]+\.exs$"),
+    re.compile(r"^rfd/[0-9]{4}-[^/]+\.(exs|txn)$"),
     re.compile(r"^rfd/[^/]+/(README|DETAILS)\.md$"),
     re.compile(r"^logbook/.+\.md$"),
 )
@@ -125,7 +160,8 @@ def git_show(ref: str, path: str) -> str | None:
 
 def rendered(path: str) -> bool:
     m = re.match(r"^rfd/([0-9]{4}-[^/]+)/(README|DETAILS)\.md$", path.replace("\\", "/"))
-    return bool(m) and os.path.isfile(os.path.join(ROOT, "rfd", m.group(1) + ".exs"))
+    return bool(m) and any(os.path.isfile(os.path.join(ROOT, "rfd", m.group(1) + x))
+                           for x in (".exs", ".txn"))
 
 
 def prior_text(base: str, path: str) -> str:
@@ -161,11 +197,17 @@ def gate(base: str) -> int:
         full = os.path.join(ROOT, path)
         if not os.path.isfile(full):
             continue
-        after = open(full, encoding="utf-8").read()
-        before = prior_text(base, path)
+        if is_journal(path):
+            d_now = density(rfd_markdown(None, path) or "")
+            d_was = density(rfd_markdown(base, path) or "")
+        else:
+            d_now = d_was = None
+        after = "" if is_journal(path) else open(full, encoding="utf-8").read()
+        before = "" if is_journal(path) else prior_text(base, path)
         exs = path.endswith(".exs")
-        d_now = density(after, exs)
-        d_was = density(before, exs and bool(md_ast.HEREDOC.search(before)))
+        if d_now is None:
+            d_now = density(after, exs)
+            d_was = density(before, exs and bool(md_ast.HEREDOC.search(before)))
         if d_now > d_was + 0.001:
             hits, per = count_tropes(after)
             top = ", ".join(f"{k}={v}" for k, v in per.items() if v)

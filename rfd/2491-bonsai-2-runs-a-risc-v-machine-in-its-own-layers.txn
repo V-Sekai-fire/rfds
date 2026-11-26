@@ -1,0 +1,2105 @@
+2026-11-13T00:00:00Z (RFD66606-2491) 'Bonsai 2 runs a RISC-V machine in its own layers
+ # uuid: 3f72a7a1-31f8-5d47-a8d4-67fb928abcd8
+ # tags: rfd:title
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-13T00:00:01Z (RFD66606-2491) 'a Bonsai 2 server answers a calc
+ # tags: rfd:feature
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:02Z (RFD66606-2491) 'tool call from inside its own
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:03Z (RFD66606-2491) 'artifact: eleven Gated
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:04Z (RFD66606-2491) 'DeltaNet layers hold a 32-bit
+ # tags: rfd:feature
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:05Z (RFD66606-2491) 'RISC-V processor, and the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:06Z (RFD66606-2491) 'server's recurrent state is its
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:07Z (RFD66606-2491) 'memory
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:08Z (RFD66606-2491) 'the chip tower as a component of
+ # tags: rfd:scope
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:09Z (RFD66606-2491) 'the Bonsai 2 `.ninfer` artifact,
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:10Z (RFD66606-2491) 'the qwenputer compiler
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:11Z (RFD66606-2491) 'that writes it, the ninfer-all
+ # tags: rfd:scope
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:12Z (RFD66606-2491) 'converter and engine that store
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:13Z (RFD66606-2491) 'and run it, and the calc firmware
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:14Z (RFD66606-2491) 'Can Bonsai 2 answer an arithmetic
+ # tags: rfd:hook
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:15Z (RFD66606-2491) 'tool call with no program outside
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:16Z (RFD66606-2491) 'its own weights?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:17Z (RFD66606-2491) '
+ # tags: rfd:hook
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:18Z (RFD66606-2491) 'A tool call leaves the model: the
+ # tags: rfd:intrigue
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:19Z (RFD66606-2491) 'host parses it, runs a program
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:20Z (RFD66606-2491) 'and writes the answer back.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:21Z (RFD66606-2491) 'A compiler can instead write a
+ # tags: rfd:intrigue
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:22Z (RFD66606-2491) 'processor as transformer layers,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:23Z (RFD66606-2491) 'and then no host runs anything.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:24Z (RFD66606-2491) '
+ # tags: rfd:intrigue
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:25Z (RFD66606-2491) 'Export the tower, check it
+ # tags: rfd:exit
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:26Z (RFD66606-2491) 'against the reference machine,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:27Z (RFD66606-2491) 'convert, then run the witnesses.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:28Z (RFD66606-2491) '
+ # tags: rfd:exit
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:29Z (RFD66606-2491) 'Bonsai 2 runs a RISC-V machine in
+ # tags: rfd:details-title
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:30Z (RFD66606-2491) 'its own layers
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:31Z (RFD66606-2491) 'The Bonsai 2 artifact carries a
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:32Z (RFD66606-2491) 'chip tower: an RV32IM processor
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:33Z (RFD66606-2491) 'with the Zba extension, compiled
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:34Z (RFD66606-2491) 'by qwenputer into eleven Gated
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:35Z (RFD66606-2491) 'DeltaNet layers of Bonsai 2's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:36Z (RFD66606-2491) 'head geometry. The tower is its
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:37Z (RFD66606-2491) 'own
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:38Z (RFD66606-2491) 'component beside the text tower.
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:39Z (RFD66606-2491) 'The ternary body is stored
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:40Z (RFD66606-2491) 'unchanged, object for object.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:41Z (RFD66606-2491) '
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:42Z (RFD66606-2491) 'The server runs every token
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:43Z (RFD66606-2491) 'through the tower. The tower
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:44Z (RFD66606-2491) 'names the next token where it
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:45Z (RFD66606-2491) 'owns the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:46Z (RFD66606-2491) 'position, and the body names it
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:47Z (RFD66606-2491) 'everywhere else. A firmware is a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:48Z (RFD66606-2491) 'recurrent state the server
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:49Z (RFD66606-2491) 'loads, selected with `--chip`.
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:50Z (RFD66606-2491) 'The first firmware is the calc
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:51Z (RFD66606-2491) 'tool (operator, 2026-11-13).
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:52Z (RFD66606-2491) '
+ # tags: rfd:decision
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:53Z (RFD66606-2491) '- RFD66606-2311 (Bonsai 2
+ # tags: rfd:related
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:54Z (RFD66606-2491) 'serving), whose artifact and
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:55Z (RFD66606-2491) 'server this extends.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:56Z (RFD66606-2491) '- RFD66606-2462 (the prism
+ # tags: rfd:related
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:57Z (RFD66606-2491) 'llama.cpp branch), a second
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:58Z (RFD66606-2491) 'runtime the same export can feed.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:00:59Z (RFD66606-2491) '
+ # tags: rfd:related
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:00Z (RFD66606-2491) 'How the machine sits in the model
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:01Z (RFD66606-2491) 'qwenputer (MIT) compiles a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:02Z (RFD66606-2491) 'circuit into the two sublayers of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:03Z (RFD66606-2491) 'a Gated DeltaNet layer. An MLP
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:04Z (RFD66606-2491) 'unit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:05Z (RFD66606-2491) 'is a lookup, and a recurrent head
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:06Z (RFD66606-2491) 'is a table whose rows a one-hot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:07Z (RFD66606-2491) 'key overwrites. No weight is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:08Z (RFD66606-2491) 'trained. The processor's
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:09Z (RFD66606-2491) 'registers, ROM and RAM are the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:10Z (RFD66606-2491) 'heads' state rows.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:11Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:12Z (RFD66606-2491) 'A run looks like this in the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:13Z (RFD66606-2491) 'token stream. The body writes a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:14Z (RFD66606-2491) 'tool call in its own syntax. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:15Z (RFD66606-2491) 'tower copies each token of the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:16Z (RFD66606-2491) 'call into a text buffer. At the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:17Z (RFD66606-2491) 'closing tag the tower takes over
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:18Z (RFD66606-2491) 'and emits chip tokens, one record
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:19Z (RFD66606-2491) 'per instruction. Each byte the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:20Z (RFD66606-2491) 'firmware prints comes back as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:21Z (RFD66606-2491) 'the body's own token for that
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:22Z (RFD66606-2491) 'byte, so the body reads a tool
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:23Z (RFD66606-2491) 'response it wrote itself. Chip
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:24Z (RFD66606-2491) 'tokens run through the tower
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:25Z (RFD66606-2491) 'only. The body's layers, cache
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:26Z (RFD66606-2491) 'and positions see the text alone.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:27Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:28Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:29Z (RFD66606-2491) 'Why the tower is a separate
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:30Z (RFD66606-2491) 'component
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:31Z (RFD66606-2491) 'Upstream widens the host model
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:32Z (RFD66606-2491) 'and puts the processor in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:33Z (RFD66606-2491) 'added residual dims. Bonsai 2
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:34Z (RFD66606-2491) 'cannot take that route:
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:35Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:36Z (RFD66606-2491) '- The body is Hadamard-rotated
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:37Z (RFD66606-2491) 'ternary in 1024-column blocks.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:38Z (RFD66606-2491) 'Zero padding, mute columns and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:39Z (RFD66606-2491) '  rescaled norm gains do not
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:40Z (RFD66606-2491) 'survive that packing word for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:41Z (RFD66606-2491) 'word.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:42Z (RFD66606-2491) '- The engine's kernels are
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:43Z (RFD66606-2491) 'registered for the body's hidden
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:44Z (RFD66606-2491) 'size.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:45Z (RFD66606-2491) '- The chip token rows hold values
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:46Z (RFD66606-2491) 'such as 2^40, which are not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:47Z (RFD66606-2491) 'ternary.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:48Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:49Z (RFD66606-2491) 'So the tower keeps its own
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:50Z (RFD66606-2491) 'residual stream of 1280 dims, its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:51Z (RFD66606-2491) 'own token table and its own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:52Z (RFD66606-2491) 'states, and the body stays
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:53Z (RFD66606-2491) 'byte-identical. This is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:54Z (RFD66606-2491) 'upstream's own fast decoding
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:55Z (RFD66606-2491) 'path, which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:56Z (RFD66606-2491) 'already runs the chip layers as a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:57Z (RFD66606-2491) 'second view with a second cache.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:58Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:01:59Z (RFD66606-2491) 'The circuit is compiled for
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:00Z (RFD66606-2491) 'Bonsai 2's head geometry (16 key
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:01Z (RFD66606-2491) 'heads, 48 value heads, head
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:02Z (RFD66606-2491) 'dim 128, conv kernel 4), so the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:03Z (RFD66606-2491) 'engine's recurrent kernels run
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:04Z (RFD66606-2491) 'it. The MLP is cut from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:05Z (RFD66606-2491) 'body's 17408 units to the 8576
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:06Z (RFD66606-2491) 'the circuit uses.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:07Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:08Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:09Z (RFD66606-2491) 'The tower export
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:10Z (RFD66606-2491) '`chipformer.rv.export_tower` in
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:11Z (RFD66606-2491) 'the qwenputer fork reads the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:12Z (RFD66606-2491) 'host's config and tokenizer and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:13Z (RFD66606-2491) 'writes a directory: `config.json`
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:14Z (RFD66606-2491) 'with architecture `ChipTower`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:15Z (RFD66606-2491) 'and `model.safetensors` with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:16Z (RFD66606-2491) 'the eleven layers under their
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:17Z (RFD66606-2491) 'usual names, the token table and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:18Z (RFD66606-2491) 'each firmware's parked state.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:19Z (RFD66606-2491) 'A host token keeps its id and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:20Z (RFD66606-2491) 'chip token t has id 248320 + t.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:21Z (RFD66606-2491) 'Every tensor passes the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:22Z (RFD66606-2491) 'compiler's bf16 check on the way
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:23Z (RFD66606-2491) 'out.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:24Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:25Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:26Z (RFD66606-2491) 'The converter
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:27Z (RFD66606-2491) '`--source chip=DIR` and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:28Z (RFD66606-2491) '`--components ...,chip` add the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:29Z (RFD66606-2491) 'tower to recipe
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:30Z (RFD66606-2491) '`bonsai2_27b_ternary`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:31Z (RFD66606-2491) 'Tower parameters are stored in
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:32Z (RFD66606-2491) 'direct formats (bf16, and fp32
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:33Z (RFD66606-2491) 'for the states and the decay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:34Z (RFD66606-2491) 'constants) by method
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:35Z (RFD66606-2491) '`exact_direct`, which refuses a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:36Z (RFD66606-2491) 'value the format would round.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:37Z (RFD66606-2491) 'Each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:38Z (RFD66606-2491) 'parameter is its own object. The
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:39Z (RFD66606-2491) 'converter refuses a tower whose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:40Z (RFD66606-2491) 'head geometry or token offset
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:41Z (RFD66606-2491) 'differs from the text model's.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:42Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:43Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:44Z (RFD66606-2491) 'The published artifact
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:45Z (RFD66606-2491) 'The artifact with the tower is
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:46Z (RFD66606-2491) '`models/chip/bonsai2-27b-heretic-chip.ninfer`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:47Z (RFD66606-2491) 'in the public
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:48Z (RFD66606-2491) 'dataset that holds the artifact
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:49Z (RFD66606-2491) 'of RFD66606-2311. Its SHA-256 is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:50Z (RFD66606-2491) 'in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:51Z (RFD66606-2491) '`models/chip/SHA256SUMS` beside
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:52Z (RFD66606-2491) 'it. The tower's source and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:53Z (RFD66606-2491) 'golden stream are in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:54Z (RFD66606-2491) '`sources/tower-27b/`. The
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:55Z (RFD66606-2491) 'dataset's `NOTICE` names
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:56Z (RFD66606-2491) 'qwenputer and the libraries
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:57Z (RFD66606-2491) 'the calc firmware is linked with.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:58Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:02:59Z (RFD66606-2491) 'The conversion reads the tower
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:00Z (RFD66606-2491) 'from a path inside the checkout,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:01Z (RFD66606-2491) 'so the artifact and its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:02Z (RFD66606-2491) 'report name no host directory,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:03Z (RFD66606-2491) 'and the job that publishes them
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:04Z (RFD66606-2491) 'stops if one does. Every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:05Z (RFD66606-2491) 'object of the published file
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:06Z (RFD66606-2491) 'equals the object of the file the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:07Z (RFD66606-2491) 'served witness ran on.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:08Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:09Z (RFD66606-2491) 'The steps an operator follows are
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:10Z (RFD66606-2491) '`v-sekai/chip-tower-sop.md` in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:11Z (RFD66606-2491) 'the ninfer-all fork, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:12Z (RFD66606-2491) 'repository
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:13Z (RFD66606-2491) 'interactor-language-ninfer.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:14Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:15Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:16Z (RFD66606-2491) 'Ternary planes
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:17Z (RFD66606-2491) 'Every tower matrix is a sum of
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:18Z (RFD66606-2491) 'ternary planes: weights in {-1,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:19Z (RFD66606-2491) '0, +1} with one scale per
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:20Z (RFD66606-2491) 'row and group of 128 columns, or
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:21Z (RFD66606-2491) 'per column and group of 128 rows
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:22Z (RFD66606-2491) 'where that needs fewer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:23Z (RFD66606-2491) 'planes. Each weight sits in one
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:24Z (RFD66606-2491) 'plane, so the sum equals the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:25Z (RFD66606-2491) 'matrix bit for bit. Of the 89
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:26Z (RFD66606-2491) 'matrices, 82 need at most two
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:27Z (RFD66606-2491) 'planes and none needs more than
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:28Z (RFD66606-2491) 'seven.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:29Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:30Z (RFD66606-2491) 'The scales are not binary16
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:31Z (RFD66606-2491) 'values: they range from 2^-41 to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:32Z (RFD66606-2491) '2^125. A ternary tower therefore
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:33Z (RFD66606-2491) 'needs a plane format with bf16
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:34Z (RFD66606-2491) 'scales and no Hadamard rotation,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:35Z (RFD66606-2491) 'which the artifact container
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:36Z (RFD66606-2491) 'does not have yet. Until it does,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:37Z (RFD66606-2491) 'the tower is stored dense.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:38Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:39Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:40Z (RFD66606-2491) 'Witnesses
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:41Z (RFD66606-2491) 'Each one carries a control that
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:42Z (RFD66606-2491) 'must fail.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:43Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:44Z (RFD66606-2491) '- **Compiled.** The circuit for
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:45Z (RFD66606-2491) 'Bonsai 2's geometry has eleven
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:46Z (RFD66606-2491) 'layers, and every emitted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:47Z (RFD66606-2491) '  tensor is a bf16 value.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:48Z (RFD66606-2491) 'Control: a weight that is not a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:49Z (RFD66606-2491) 'bf16 value raises.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:50Z (RFD66606-2491) '- **Reference tower.** In stock
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:51Z (RFD66606-2491) 'Qwen3.5 modules, the residual
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:52Z (RFD66606-2491) 'after the chip layers equals the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:53Z (RFD66606-2491) '  circuit evaluator's on every
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:54Z (RFD66606-2491) 'kept dim at every position, token
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:55Z (RFD66606-2491) 'by token and as a chunked
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:56Z (RFD66606-2491) '  prefill, with the firmware
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:57Z (RFD66606-2491) 'state loaded after the prompt as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:58Z (RFD66606-2491) 'a server loads it. The output
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:03:59Z (RFD66606-2491) '  code names the reference
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:00Z (RFD66606-2491) 'machine's next token wherever the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:01Z (RFD66606-2491) 'machine owns the position.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:02Z (RFD66606-2491) '  Measured with the calc
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:03Z (RFD66606-2491) 'firmware: 17,387 positions token
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:04Z (RFD66606-2491) 'by token and 261,213 positions as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:05Z (RFD66606-2491) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:06Z (RFD66606-2491) '  prefill, each with no inexact
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:07Z (RFD66606-2491) 'position and no wrong token.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:08Z (RFD66606-2491) '  Controls: one flipped ROM word,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:09Z (RFD66606-2491) 'one flipped MLP weight, and fp16
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:10Z (RFD66606-2491) 'recurrent state each fail.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:11Z (RFD66606-2491) '- **Planes.** The planes of every
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:12Z (RFD66606-2491) 'matrix sum back bit for bit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:13Z (RFD66606-2491) 'Control: one flipped sign fails.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:14Z (RFD66606-2491) '- **Converted.** Every tower
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:15Z (RFD66606-2491) 'object reads back word for word,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:16Z (RFD66606-2491) 'and every text, vision, MTP
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:17Z (RFD66606-2491) '  and DFlash2 object hash equals
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:18Z (RFD66606-2491) 'the one in an artifact converted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:19Z (RFD66606-2491) 'without the tower. Measured:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:20Z (RFD66606-2491) '  1,513 parameters compared and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:21Z (RFD66606-2491) 'none differs, and all 178 tower
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:22Z (RFD66606-2491) 'parameters hold their source's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:23Z (RFD66606-2491) '  words. Control: one planted bit
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:24Z (RFD66606-2491) 'in a text object fails.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:25Z (RFD66606-2491) '- **Engine ops.** One token at a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:26Z (RFD66606-2491) 'time through the engine's public
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:27Z (RFD66606-2491) 'ops, the kept dims equal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:28Z (RFD66606-2491) '  the golden file bit for bit
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:29Z (RFD66606-2491) 'over 17,792 positions. Controls:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:30Z (RFD66606-2491) 'fp16 tower state fails, and one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:31Z (RFD66606-2491) '  flipped weight bit fails.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:32Z (RFD66606-2491) '- **Engine runtime.** The tower
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:33Z (RFD66606-2491) 'loaded from the converted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:34Z (RFD66606-2491) 'artifact by the engine's own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:35Z (RFD66606-2491) 'loader
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:36Z (RFD66606-2491) '  gives the same result: no
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:37Z (RFD66606-2491) 'inexact position, 17,104 owned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:38Z (RFD66606-2491) 'positions, no wrong token. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:39Z (RFD66606-2491) 'same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:40Z (RFD66606-2491) '  two controls fail.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:41Z (RFD66606-2491) '- **Served.** `ninfer-serve
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:42Z (RFD66606-2491) '--chip calc-bridge` at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:43Z (RFD66606-2491) 'temperature 0, twelve arithmetic
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:44Z (RFD66606-2491) 'prompts:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:45Z (RFD66606-2491) '  21 bursts and 80,468 chip
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:46Z (RFD66606-2491) 'tokens, each served token equal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:47Z (RFD66606-2491) 'to the reference machine's when
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:48Z (RFD66606-2491) 'it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:49Z (RFD66606-2491) '  is fed the model's own call
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:50Z (RFD66606-2491) 'tokens. All twelve values equal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:51Z (RFD66606-2491) 'Python's, and a power too large
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:52Z (RFD66606-2491) '  for the firmware returns its
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:53Z (RFD66606-2491) '`error`. Controls: without
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:54Z (RFD66606-2491) '`--chip` the call comes back
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:55Z (RFD66606-2491) '  unanswered, and with the ROM
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:56Z (RFD66606-2491) 'word the parked machine runs next
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:57Z (RFD66606-2491) 'spoiled in a copy of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:58Z (RFD66606-2491) '  artifact, every burst differs
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:04:59Z (RFD66606-2491) 'from the reference.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:00Z (RFD66606-2491) '- **Body unchanged.** A prompt
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:01Z (RFD66606-2491) 'with no tool call gives the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:02Z (RFD66606-2491) 'temperature-0 answer hash
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:03Z (RFD66606-2491) '  with `--chip`, without it, and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:04Z (RFD66606-2491) 'on the engine before this work,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:05Z (RFD66606-2491) 'for the same prompt text.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:06Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:07Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:08Z (RFD66606-2491) 'Serving
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:09Z (RFD66606-2491) '`--chip NAME` selects a firmware
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:10Z (RFD66606-2491) 'and adds the calc tool to a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:11Z (RFD66606-2491) 'request that declares none. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:12Z (RFD66606-2491) 'answered call is returned inline
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:13Z (RFD66606-2491) 'in the content: the call, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:14Z (RFD66606-2491) 'tool response the firmware
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:15Z (RFD66606-2491) 'printed, then the model's answer.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:16Z (RFD66606-2491) '`--chip-trace FILE` writes each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:17Z (RFD66606-2491) 'burst's tokens.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:18Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:19Z (RFD66606-2491) 'A `--chip` server has one request
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:20Z (RFD66606-2491) 'lane and one device. It runs with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:21Z (RFD66606-2491) 'no drafter or with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:22Z (RFD66606-2491) 'DFlash2 drafter at up to 11 draft
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:23Z (RFD66606-2491) 'tokens. Any other combination
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:24Z (RFD66606-2491) 'stops at startup. A request
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:25Z (RFD66606-2491) 'whose echo is cut by the output
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:26Z (RFD66606-2491) 'limit ends with the limit reason.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:27Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:28Z (RFD66606-2491) 'On one RTX 4090 a burst runs at
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:29Z (RFD66606-2491) '500 chip tokens per second. Text
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:30Z (RFD66606-2491) 'decodes at 93 to 99 tokens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:31Z (RFD66606-2491) 'per second with `--chip` and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:32Z (RFD66606-2491) 'DFlash2 at five draft tokens, at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:33Z (RFD66606-2491) '69 to 71 with `--chip` and no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:34Z (RFD66606-2491) 'drafter, and at 171 to 190 on the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:35Z (RFD66606-2491) 'server of RFD66606-2311 without
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:36Z (RFD66606-2491) 'the tower.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:37Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:38Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:39Z (RFD66606-2491) 'Drafting beside the tower
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:40Z (RFD66606-2491) 'A DFlash2 round commits at most
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:41Z (RFD66606-2491) 'one token more than its draft
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:42Z (RFD66606-2491) 'tokens. While a tool call is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:43Z (RFD66606-2491) 'open, the server gives a round a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:44Z (RFD66606-2491) 'budget of one token, so the round
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:45Z (RFD66606-2491) 'carries no draft and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:46Z (RFD66606-2491) 'closing tag is the last token of
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:47Z (RFD66606-2491) 'its round. The burst starts
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:48Z (RFD66606-2491) 'there. The echo is forced
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:49Z (RFD66606-2491) 'through the text model by the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:50Z (RFD66606-2491) 'path the thinking-budget close
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:51Z (RFD66606-2491) 'uses, and that path also
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:52Z (RFD66606-2491) 'appends the drafter's context.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:53Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:54Z (RFD66606-2491) 'The budget of one starts in the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:55Z (RFD66606-2491) 'round after the opening tag. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:56Z (RFD66606-2491) 'round that held the opening
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:57Z (RFD66606-2491) 'tag, the closing tag and one more
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:58Z (RFD66606-2491) 'token would commit text before
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:05:59Z (RFD66606-2491) 'the echo. The shortest
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:00Z (RFD66606-2491) 'well-formed call is 12 tokens,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:01Z (RFD66606-2491) 'and a round at 11 draft tokens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:02Z (RFD66606-2491) 'holds 12, so no well-formed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:03Z (RFD66606-2491) 'call fits. A malformed call
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:04Z (RFD66606-2491) 'shorter than a round is detected
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:05Z (RFD66606-2491) 'and counted, not prevented.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:06Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:07Z (RFD66606-2491) 'Served with DFlash2 at five draft
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:08Z (RFD66606-2491) 'tokens, 47 bursts and 121,346
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:09Z (RFD66606-2491) 'chip tokens equal the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:10Z (RFD66606-2491) 'reference machine's, 34 of 34
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:11Z (RFD66606-2491) 'prompts equal Python, no round
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:12Z (RFD66606-2491) 'commits more than one token
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:13Z (RFD66606-2491) 'while a call is open, and no
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:14Z (RFD66606-2491) 'owned position is skipped.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:15Z (RFD66606-2491) 'Controls: with the budget of one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:16Z (RFD66606-2491) 'switched off by a test option,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:17Z (RFD66606-2491) '234 rounds commit more than one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:18Z (RFD66606-2491) 'token while a call is open,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:19Z (RFD66606-2491) 'and with the ROM word spoiled
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:20Z (RFD66606-2491) 'every burst differs.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:21Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:22Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:23Z (RFD66606-2491) 'Open questions
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:24Z (RFD66606-2491) '- The n-gram drafter, MTP and
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:25Z (RFD66606-2491) 'DFlash are refused beside the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:26Z (RFD66606-2491) 'tower. The n-gram drafter is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:27Z (RFD66606-2491) '  larger part of the speed that a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:28Z (RFD66606-2491) '`--chip` server still gives up.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:29Z (RFD66606-2491) '- A malformed call shorter than a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:30Z (RFD66606-2491) 'round can pass its closing tag.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:31Z (RFD66606-2491) 'Preventing it needs a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:32Z (RFD66606-2491) '  partial commit of a round,
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:33Z (RFD66606-2491) 'which the engine does not have.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:34Z (RFD66606-2491) '- Each prompt token and each
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:35Z (RFD66606-2491) 'decoded token steps the tower by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:36Z (RFD66606-2491) 'itself, also on a prefix-cache
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:37Z (RFD66606-2491) '  hit. Chunked calls would cost
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:38Z (RFD66606-2491) 'less, and whether the chunked ops
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:39Z (RFD66606-2491) 'are bit-exact on the tower is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:40Z (RFD66606-2491) '  unmeasured.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:41Z (RFD66606-2491) '- A burst runs inside one engine
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:42Z (RFD66606-2491) 'unit, so a cancel is seen only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:43Z (RFD66606-2491) 'after it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:44Z (RFD66606-2491) '- Thinking mode, streaming, the
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:45Z (RFD66606-2491) 'other endpoints, structured
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:46Z (RFD66606-2491) 'output and histories that hold
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:47Z (RFD66606-2491) '  earlier calls have not run with
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:48Z (RFD66606-2491) '`--chip`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:49Z (RFD66606-2491) '- How often Bonsai 2 writes a
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:50Z (RFD66606-2491) 'well-formed calc call on its own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:51Z (RFD66606-2491) 'is unmeasured.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:52Z (RFD66606-2491) '- The tower is stored dense. The
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:53Z (RFD66606-2491) 'plane format above is not built.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:54Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:55Z (RFD66606-2491) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:56Z (RFD66606-2491) 'Bonsai 2 cannot do exact
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:57Z (RFD66606-2491) 'arithmetic on its own, and a host
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:58Z (RFD66606-2491) 'tool adds a round trip and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:06:59Z (RFD66606-2491) 'second program to trust.
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written
+
+2026-11-13T00:07:00Z (RFD66606-2491) '
+ # tags: rfd:details
+ Text:RFD2491  1 LINE
+ Text:Written

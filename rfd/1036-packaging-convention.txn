@@ -1,0 +1,1215 @@
+2026-08-25T00:00:00Z (RFD66606-1036) 'Model packaging convention
+ # uuid: eaf67d10-188f-5f60-a022-c26711c6973f
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Committed  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1036) 'model packaging
+ # tags: rfd:feature
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1036) 'Each model ships as a plain
+ # tags: rfd:hook
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1036) 'Docker image that serves HTTP,
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1036) 'and never as a Cog package.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1036) '
+ # tags: rfd:hook
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1036) 'The DGX API ran each model
+ # tags: rfd:intrigue
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1036) 'through its own adapter, each
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1036) 'with its own weight loader, CUDA
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1036) 'pin, and output writer.
+ # tags: rfd:intrigue
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1036) '
+ # tags: rfd:intrigue
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1036) 'Check a new model image against
+ # tags: rfd:exit
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1036) 'the rule above before you merge
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1036) 'it: a plain Docker image
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1036) 'that serves HTTP, with a
+ # tags: rfd:exit
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1036) '`Dockerfile`, a `server.py`, and
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1036) 'a `test_input.json`.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1036) '
+ # tags: rfd:exit
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1036) 'Model packaging convention
+ # tags: rfd:details-title
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1036) 'Package each model as a plain
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1036) 'Docker image that serves HTTP.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1036) '
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1036) 'No Cog. Cog wraps a `Predictor`
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1036) 'class and builds an image around
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1036) 'it,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1036) 'and that image expects
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1036) 'Replicate's own runtime. The
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1036) 'local worker
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1036) 'starts a container and maps a
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1036) 'port, and nothing more.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1036) '
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1036) 'Each model gets a standalone
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1036) 'repo, and each repo holds a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1036) '`Dockerfile`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1036) 'a `server.py`, and a
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1036) '`test_input.json`. The RFD stays
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1036) 'here.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1036) '
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1036) 'Name the repo for its model, and
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1036) 'never for a package format. A
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1036) 'format is a decision this RFD
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1036) 'already changed once. A folder
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1036) 'name
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1036) 'that carries one goes stale on
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1036) 'the next change.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1036) '
+ # tags: rfd:decision
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1036) 'RFD66606-1016 lists the models.
+ # tags: rfd:related
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1036) 'RFD66606-1025 gives the memory.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1036) 'RFD66606-1027 the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1036) 'GPU tier. RFD66606-1037 the
+ # tags: rfd:related
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1036) 'composite convention.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1036) 'RFD66606-1053 the asset
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1036) 'format. RFD66606-1028 gates the
+ # tags: rfd:related
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1036) 'license.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1036) '
+ # tags: rfd:related
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1036) 'Retracted: Replicate Cog as the
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1036) 'package format
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1036) 'This RFD first selected Replicate
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1036) 'Cog. Cog is a good package
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1036) 'format,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1036) 'and it targets one host.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1036) 'RFD66606-1055 now runs the worker
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1036) 'on this box's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1036) 'own 4090 first, plain Docker, no
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1036) 'rental. vast.ai stays priced for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1036) 'later, the same plain-Docker
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1036) 'shape once this box is not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1036) 'enough.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1036) 'The rule that replaced it is in
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1036) 'the README, and the reason Cog
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1036) 'does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1036) 'not fit either host is beside it.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1036) 'This entry stays so a reader who
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1036) 'finds a Cog reference elsewhere
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1036) 'knows which way the decision
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1036) 'went.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1036) 'The target
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1036) 'The local desktop GPU is the only
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1036) 'compute (CLAUDE.md hard
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1036) 'constraint). Rented GPU providers
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1036) 'are blocklisted (RunPod, Vast.ai
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1036) 'rows). The convention still
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1036) 'targets a 24 GB card so an image
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1036) 'built
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1036) 'here runs unchanged if the
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1036) 'operator later stands up a peer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1036) 'machine
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1036) 'with equivalent hardware;
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1036) 'RFD66606-1027 records that every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1036) 'model in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1036) 'catalog reaches a 24 GB card.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1036) 'An earlier draft named "RTX 4090
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1036) 'with 24 GB, at about 0.35 to 0.37
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1036) 'US dollars per hour on demand,
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1036) 'and 0.13 interruptible" as the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1036) 'target
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1036) 'and Vast.ai as a future host.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1036) 'Retracted: no budget for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1036) 'per-hour/per-invocation billing
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1036) 'this cycle.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1036) 'The rules
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1036) '- One model per image. An image
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1036) 'that holds two cannot scale one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1036) '  without the other.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1036) '- Load the weights at start, and
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1036) 'not per request. Whether the host
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1036) '  is this box or a rented
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1036) 'instance, a load per request buys
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1036) 'nothing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1036) '  and costs every response.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1036) '- Serve `/health` and `/predict`.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1036) 'Neither this box's own worker nor
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1036) '  vast.ai runs a health probe of
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1036) 'its own, thus a caller polls
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1036) '  `/health` until the instance is
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1036) 'ready.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1036) '- Download the weights at build
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1036) 'time. A cold start that pulls 24
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1036) 'GB is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1036) '  a cold start that times out.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1036) '- Pin every version, and pin the
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1036) 'upstream commit. A moved tag
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1036) 'changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1036) '  the output with no build change
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1036) 'to show for it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1036) '- Return 400 for a bad request,
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1036) 'and not 500. A 500 sends a caller
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1036) 'to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1036) '  retry a request that can never
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1036) 'work.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1036) '- Return a USD layer beside the
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1036) 'transmission file. RFD66606-1053
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1036) 'gives that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1036) '  rule.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1036) '- Name the license. RFD66606-1028
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1036) 'gates what ships.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1036) 'Two stages in one Dockerfile
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1036) 'The `contract` stage carries the
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1036) 'server and `usd-core`, and no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1036) 'model.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1036) 'It builds in seconds on any
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1036) 'machine, and `WEFTSPUN_STUB=1`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1036) 'makes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1036) '`/predict` answer with the real
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1036) 'shape and no GPU.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1036) 'The `worker` stage is the real
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1036) 'image. It carries CUDA, the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1036) 'upstream
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1036) 'source, and the weights.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1036) 'That split makes the contract
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1036) 'testable. RFD66606-1040 records a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1036) 'run
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1036) 'of it in Docker on a machine with
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1036) 'no NVIDIA device.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1036) 'Files in each folder
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1036) '| File            | Holds                                       |
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1036) '| --------------- |
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1036) '-------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1036) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1036) '| README.md       | The RFD. Why
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1036) 'this model, and what it costs. |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1036) '| Dockerfile      | Both stages,
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1036) 'the CUDA version, the weights. |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1036) '| server.py       | `/health`,
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1036) '`/predict`, and the type schema.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1036) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1036) '| test_input.json | One request
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1036) 'body, for the contract stage.   |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1036) '| domain.ex       | A composite
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1036) 'model only. See RFD66606-1037.  |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1036) '| problem.ex      | A composite
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1036) 'model only. See RFD66606-1037.  |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1036) '| plan.ex         | The solved
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1036) 'plan. The planner writes it.     |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1036) 'What a composite model does
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1036) 'Five models in the catalog run
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1036) 'more than one network.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1036) 'RFD66606-1037 models
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1036) 'each one as a taskweft domain,
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1036) 'and not as a Python script. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1036) 'server
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1036) 'then calls the plan, and each
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1036) 'step is one action.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1036) 'The other folders are not
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1036) 'converted yet
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1036) 'RFD66606-1040 is the worked
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1036) 'example. It carries a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1036) '`Dockerfile`, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-1036) '`server.py`, and a
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-1036) '`test_input.json`, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-1036) 'RFD66606-1040 records a run of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-1036) 'the contract stage in Docker.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-1036) 'Fourteen model folders still
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-1036) 'carry a `cog.yaml` and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-1036) '`predict.py`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-1036) 'This folder carries a fifteenth
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-1036) '`cog.yaml`, the template the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-1036) 'other
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-1036) 'fourteen copied. They describe
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-1036) 'the same models, and they name a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-1036) 'package format this RFD no longer
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-1036) 'selects.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-1036) 'The folder names no longer carry
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-1036) 'that format. Each folder is now
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-1036) 'named for its model alone.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-1036) 'Convert one when the model is
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-1036) 'next worked on, and not in a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-1036) 'sweep. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-1036) 'folder converted without a build
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-1036) 'produces a `server.py` that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-1036) 'nobody
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-1036) 'ran, which is what the Cog files
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-1036) 'already are.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-1036) 'When it was committed
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-1036) 'Committed 2026-09-02: the
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-1036) 'convention has been in force for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-1036) 'months;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-1036) 'CLAUDE.md closes compute (local
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-1036) 'desktop GPU only; RunPod/Vast.ai
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-1036) 'blocklisted). Earlier
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-1036) 'rental-target framing retracted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-1036) 'in DETAILS.md.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-1036) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-1036) 'There is no DGX now.
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-1036) 'This RFD first selected Cog;
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-1036) '`DETAILS.md` records why it was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-1036) 'withdrawn.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1036  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-1036) '
+ # tags: rfd:details
+ Text:RFD1036  1 LINE
+ Text:Written

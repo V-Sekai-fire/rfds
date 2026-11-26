@@ -4,6 +4,51 @@
 #     elixir scripts/check_rfd_literals.exs --base <ref>
 #     elixir scripts/check_rfd_literals.exs --self-test
 
+defmodule RfdText do
+  @moduledoc false
+  # An RFD journal's text as the prose gates read it, from `mix rfd.text`.
+  # The first lookup at a revision reads every RFD journal in one `mix rfd.text`.
+  def get(repo, rev, path) do
+    key = {__MODULE__, repo, rev}
+
+    texts =
+      Process.get(key) ||
+        (fn ->
+           t = fetch(repo, rev, Path.wildcard(Path.join(repo, "rfd/[0-9][0-9][0-9][0-9]-*.txn")))
+           Process.put(key, t)
+           t
+         end).()
+
+    Map.get(texts, path) || fetch(repo, rev, [Path.join(repo, path)]) |> Map.get(path)
+  end
+
+  defp fetch(repo, rev, fulls) do
+    paths = Enum.map(fulls, &Path.relative_to(&1, repo))
+    args = ["rfd.text"] ++ if(rev, do: ["--rev", rev], else: []) ++ paths
+
+    case System.cmd("mix", args, cd: repo) do
+      {out, 0} ->
+        for line <- String.split(out, "\n", trim: true),
+            String.starts_with?(line, "{"),
+            t = JSON.decode!(line),
+            into: %{},
+            do: {t["path"], t}
+
+      {out, _} ->
+        raise "mix rfd.text failed: #{out}"
+    end
+  end
+
+  def rfd?(path), do: path =~ ~r"^rfd/[0-9]{4}-[^/]+[.]txn$"
+
+  def markdown(repo, rev, path) do
+    case get(repo, rev, path) do
+      %{"found" => true, "markdown" => md} -> md
+      _ -> nil
+    end
+  end
+end
+
 defmodule Literals do
   @side "transport|contract|interactor|entities|repository|datasource|service"
   @kinds [
@@ -75,16 +120,22 @@ defmodule Literals do
         for line <- String.split(names, "\n", trim: true),
             [_ | paths] = String.split(line, "\t"),
             path = List.last(paths),
-            path =~ ~r"^rfd/[0-9]{4}-[^/]+[.]exs$",
+            path =~ ~r"^rfd/[0-9]{4}-[^/]+[.](exs|txn)$",
             do: {hd(paths), path}
 
       bad =
         for {old, path} <- files, reduce: 0 do
           acc ->
-            before =
-              with {:ok, t} <- git(repo, ["show", "#{mb}:#{old}"]), do: t, else: (_ -> nil)
+            {before, now} =
+              if RfdText.rfd?(path) do
+                prev = RfdText.get(repo, mb, old)
+                {prev["found"] && prev["raw"], RfdText.get(repo, nil, path)["raw"]}
+              else
+                {with({:ok, t} <- git(repo, ["show", "#{mb}:#{old}"]), do: t, else: (_ -> nil)),
+                 File.read!(Path.join(repo, path))}
+              end
 
-            {verdict, reasons, fenced} = judge(before, File.read!(Path.join(repo, path)))
+            {verdict, reasons, fenced} = judge(before, now)
             if fenced > 0, do: IO.puts("  #{path}: #{fenced} in fences, unchecked")
 
             if verdict == :fail do

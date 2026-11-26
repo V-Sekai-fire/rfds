@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 defmodule Mix.Tasks.Rfd.Import do
-  @shortdoc "Write rfd/NNNN-slug.exs from an RFD directory's README.md and DETAILS.md"
+  @shortdoc "Write rfd/NNNN-slug.txn from an RFD directory's README.md and DETAILS.md"
   @moduledoc """
       mix rfd.import [--force] [NAME ...]
 
@@ -66,7 +66,7 @@ defmodule RFD.Import do
       not File.exists?(readme) ->
         {:failed, dir, "no README.md"}
 
-      File.exists?(source) and !opts[:force] ->
+      File.exists?(dir <> ".txn") and !opts[:force] ->
         {:skipped, dir, "source exists"}
 
       true ->
@@ -74,6 +74,11 @@ defmodule RFD.Import do
           doc = parse(dir)
           File.write!(source, emit(doc, dir))
           rendered = RFD.Source.load(source)
+          raw = RFD.DSL.unexpanded(fn -> RFD.Source.load(source) end)
+          {today, 0} = System.cmd("date", ["+%F"])
+          site = if div(raw.serial, 1000) == 1, do: "Weftspun", else: "VSekaiFabric"
+          File.write!(dir <> ".txn", RFD.Txn.write(raw, day: String.trim(today), site: site))
+          File.rm!(source)
           missing = lost_lines(dir, rendered)
 
           if missing == [] do

@@ -1,0 +1,675 @@
+2026-11-07T00:00:00Z (RFD66606-2470) 'MiniZinc Challenge: blocks-world on the GTN blocks methods, climbing from small instances
+ # uuid: 839fdecb-429c-511d-b795-d9a70a029805
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2470) 'the ported blocks-world GTN
+ # tags: rfd:feature
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2470) 'climbs from small instances to
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2470) 'the five official ones.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2470) 'the blocks_gtn domain, its
+ # tags: rfd:scope
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2470) 'frontier harness, and the
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2470) 'MiniZinc checker that grades it.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2470) 'Can a plan the GTN (goal-task
+ # tags: rfd:hook
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2470) 'network) finds for the
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2470) 'Challenge's blocks-world also be
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2470) 'the
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2470) 'minimum, checked by the
+ # tags: rfd:hook
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2470) 'Challenge's own tool, climbing
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2470) 'from the smallest instance up?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2470) '
+ # tags: rfd:hook
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2470) 'GTPyhop's blocks_gtn is already
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2470) 'ported, with take, put and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2470) 'moveblocks as a KHR_interactivity
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2470) 'graph, and shortestOf already
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2470) 'finds the optimal six actions for
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2470) 'the Sussman anomaly. A
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2470) 'separate reference tool already
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2470) 'matched a breadth-first minimum
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2470) 'for n = 3 to 7 on 3 piles, in
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2470) 'times climbing from about 15 ms
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2470) 'to about 4 s, but the domain
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2470) 'still has no pile limit, no
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2470) 'climbing harness and no run
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2470) 'against the real checker.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2470) '
+ # tags: rfd:intrigue
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2470) 'Install MiniZinc, replay a solved
+ # tags: rfd:exit
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2470) 'instance through it, and confirm
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2470) 'the checker accepts the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2470) 'plan as valid and minimum; a plan
+ # tags: rfd:exit
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2470) 'with one move removed must be
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2470) 'refused by the same checker.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2470) '
+ # tags: rfd:exit
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2470) 'MiniZinc Challenge: blocks-world
+ # tags: rfd:details-title
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2470) 'on the GTN blocks methods
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2470) 'Encode the model's pile limit, k
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2470) 'piles with at most k cubes on the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2470) 'table, in the GTN domain,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2470) 'then climb: generate instances at
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2470) 'n = 3, 4, 5 and up with the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2470) 'model's k, record solve time at
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2470) 'each step, and stop at the
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2470) 'frontier where the time makes the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2470) 'next step not worth running yet.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2470) 'Add a heuristic lower bound, for
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2470) 'instance the count of cubes
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2470) 'already out of place, to prune
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2470) 'the five official instances (16
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2470) 'cubes on 4 piles), which are far
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2470) 'past what iterative deepening
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2470) 'alone can reach. Validate every
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2470) 'plan against MiniZinc itself,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2470) 'installed locally, rather than
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2470) 'against the reference tool alone.
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2470) '
+ # tags: rfd:decision
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2470) '- RFD66606-2339, where a persona
+ # tags: rfd:related
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2470) 'answers from a goal-task network
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2470) 'and exports a plan.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2470) '- RFD66606-2292, the
+ # tags: rfd:related
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:03Z (RFD66606-2470) 'organization's own RECTGTN (Lean
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:04Z (RFD66606-2470) 'goal-task network) domain that
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:05Z (RFD66606-2470) 'renders
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:06Z (RFD66606-2470) '  this register.
+ # tags: rfd:related
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:07Z (RFD66606-2470) '
+ # tags: rfd:related
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:08Z (RFD66606-2470) 'Already in place
+ # tags: rfd:details-heading
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:09Z (RFD66606-2470) '- tests/gtpyhop/blocks_gtn/ ports
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:10Z (RFD66606-2470) 'GTPyhop's blocks_gtn: actions
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:11Z (RFD66606-2470) 'take, put and moveblocks as a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:12Z (RFD66606-2470) '  KHR_interactivity (the Khronos
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:13Z (RFD66606-2470) 'node-graph behaviour format)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:14Z (RFD66606-2470) 'graph.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:15Z (RFD66606-2470) '- shortestOf, iterative deepening
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:16Z (RFD66606-2470) 'over the backtracking
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:17Z (RFD66606-2470) 'decomposition and exported as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:18Z (RFD66606-2470) '  persona_plan_shortest, finds
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:19Z (RFD66606-2470) 'the optimal six actions for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:20Z (RFD66606-2470) 'Sussman anomaly, and refuses a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:21Z (RFD66606-2470) '  smaller bound by name as limit.
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:22Z (RFD66606-2470) '- On branch
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:23Z (RFD66606-2470) 'parked/minizinc-blocks-frontier,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:24Z (RFD66606-2470) 'tools/minizinc/ holds an instance
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:25Z (RFD66606-2470) 'generator, an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:26Z (RFD66606-2470) '  independent breadth-first
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:27Z (RFD66606-2470) 'minimum, and a replay against the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:28Z (RFD66606-2470) 'model's rules. For n = 3 to 7 on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:29Z (RFD66606-2470) '  3 piles, 20 random instances
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:30Z (RFD66606-2470) 'each matched the minimum and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:31Z (RFD66606-2470) 'replayed validly, at a cost
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:32Z (RFD66606-2470) '  climbing from about 15 ms at n
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:33Z (RFD66606-2470) '= 5 to about 4 s at n = 7.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:34Z (RFD66606-2470) '
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:35Z (RFD66606-2470) '
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:36Z (RFD66606-2470) 'What still has to land
+ # tags: rfd:details-heading
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:37Z (RFD66606-2470) '- The model's pile limit, k piles
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:38Z (RFD66606-2470) 'and at most k cubes on the table,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:39Z (RFD66606-2470) 'encoded in the GTN domain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:40Z (RFD66606-2470) '  itself rather than assumed.
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:41Z (RFD66606-2470) '- The climbing harness: generate
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:42Z (RFD66606-2470) 'n = 3, 4, 5 and up at the model's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:43Z (RFD66606-2470) 'k, record solve time, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:44Z (RFD66606-2470) '  stop at the frontier; the
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:45Z (RFD66606-2470) 'stopping point teaches which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:46Z (RFD66606-2470) 'bound or heuristic to add next.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:47Z (RFD66606-2470) '- A heuristic bound, such as a
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:48Z (RFD66606-2470) 'lower bound on cubes out of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:49Z (RFD66606-2470) 'place, to prune the rising search
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:50Z (RFD66606-2470) '  enough to reach the five
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:51Z (RFD66606-2470) 'official instances, each 16 cubes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:52Z (RFD66606-2470) 'on 4 piles.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:53Z (RFD66606-2470) '- MiniZinc itself, installed
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:54Z (RFD66606-2470) 'locally (brew install minizinc;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:55Z (RFD66606-2470) 'there is no cask by that name,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:56Z (RFD66606-2470) '  and minizincide is the IDE, not
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:57Z (RFD66606-2470) 'the checker) so a plan is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:58Z (RFD66606-2470) 'validated for real, not only by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:01:59Z (RFD66606-2470) '  the independent breadth-first
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:00Z (RFD66606-2470) 'tool.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:01Z (RFD66606-2470) '- A local clone of the
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:02Z (RFD66606-2470) 'MiniZinc/mzn-challenge archive,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:03Z (RFD66606-2470) 'about 570 MB at depth 1, to read
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:04Z (RFD66606-2470) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:05Z (RFD66606-2470) '  2022 blocks.mzn model this
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:06Z (RFD66606-2470) 'domain targets.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:07Z (RFD66606-2470) '
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:08Z (RFD66606-2470) '
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:09Z (RFD66606-2470) 'Source
+ # tags: rfd:details-heading
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:10Z (RFD66606-2470) 'MiniZinc/mzn-challenge,
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:11Z (RFD66606-2470) '2022/blocks-world/blocks.mzn: n
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:12Z (RFD66606-2470) 'cubes, at most k piles, minimise
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:13Z (RFD66606-2470) 'moves.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2470  1 LINE
+ Text:Written
+
+2026-11-07T00:02:14Z (RFD66606-2470) '
+ # tags: rfd:details
+ Text:RFD2470  1 LINE
+ Text:Written

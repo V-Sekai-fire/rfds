@@ -1,0 +1,525 @@
+2026-11-07T00:00:00Z (RFD66606-2469) 'StableHLO: match XLA CPU's summation order in reduce and dot_general
+ # uuid: 99ebb9a5-1b65-5381-911b-fb76fab64743
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2469) 'reduce and dot_general reproduce
+ # tags: rfd:feature
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2469) 'XLA CPU's own order of summation,
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2469) 'not only its sum.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2469) 'the StableHLO lowering in
+ # tags: rfd:scope
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2469) 'guest/pjrt-rd/stablehlo.cpp and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2469) 'its generated test cases.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2469) 'Can the lowering reproduce XLA
+ # tags: rfd:hook
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2469) 'CPU's own order of adding floats,
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2469) 'not only the value that order
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2469) 'happens to land on?
+ # tags: rfd:hook
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2469) '
+ # tags: rfd:hook
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2469) 'Eight cases are not bit-equal on
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2469) 'the RTX 4090 today: dot_batched,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2469) 'mlp_pre, mlp_f32,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2469) 'reduce_sum_random, mean_last,
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2469) 'softmax_f32, rms_norm_f32 and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2469) 'causal_attention. Each stays
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2469) 'within
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2469) 'the functional bar, a rel-L2
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2469) 'around 1e-7 and at most a few
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2469) 'dozen ulp, but none is bit-equal.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2469) 'reduce with add sums in an
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2469) 'irregular tree that changes with
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2469) 'the shape, and dot_general runs
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2469) 'as
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2469) 'a fusion whose accumulation tree
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2469) 'also depends on the shape; cases
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2469) 'with the order written out,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2469) 'or whose partial sums are exact,
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2469) 'are already bit-equal, so the gap
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2469) 'is the order, not the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2469) 'arithmetic.
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2469) '
+ # tags: rfd:intrigue
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2469) 'Reveal one new shape's tree, add
+ # tags: rfd:exit
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2469) 'it to the table, confirm that
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2469) 'shape's case turns bit-equal,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2469) 'and confirm removing the table
+ # tags: rfd:exit
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2469) 'brings the old difference back.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2469) '
+ # tags: rfd:exit
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2469) 'StableHLO: match XLA CPU's
+ # tags: rfd:details-title
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2469) 'summation order in reduce and
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2469) 'dot_general
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2469) 'Reveal XLA's accumulation tree
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2469) 'for each reduce and dot shape the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2469) 'five graphs use, on the Zen 2
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2469) 'desk with this jax build, and
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2469) 'record the trees in a table keyed
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2469) 'by shape. Emit each tree as a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2469) 'sequence of slices and adds, or
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2469) 'as a kernel that takes the tree
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2469) 'as data, and fall back to
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2469) 'today's order, with the case kept
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2469) 'in XFAIL, for any shape the table
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2469) 'does not cover. The table
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2469) 'is tied to one CPU and one XLA
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2469) 'build, the way rsqrt_zen2 already
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:57Z (RFD66606-2469) 'is, so it records both.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:58Z (RFD66606-2469) '
+ # tags: rfd:decision
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:00:59Z (RFD66606-2469) 'The eight cases
+ # tags: rfd:details-heading
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:00Z (RFD66606-2469) 'dot_batched, mlp_pre, mlp_f32,
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:01Z (RFD66606-2469) 'reduce_sum_random, mean_last,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:02Z (RFD66606-2469) 'softmax_f32, rms_norm_f32 and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:03Z (RFD66606-2469) 'causal_attention: each is within
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:04Z (RFD66606-2469) 'the functional bar today, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:05Z (RFD66606-2469) 'rel-L2 around 1e-7 and at most a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:06Z (RFD66606-2469) 'few dozen ulp, but not bit-equal.
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:07Z (RFD66606-2469) 'pinned_sum_tree, softmax_pinned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:08Z (RFD66606-2469) 'and causal_softmax_pinned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:09Z (RFD66606-2469) 'already pin the order and are
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:10Z (RFD66606-2469) 'already bit-equal, which is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:11Z (RFD66606-2469) 'evidence that order, not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:12Z (RFD66606-2469) 'arithmetic, is the whole gap.
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:13Z (RFD66606-2469) '
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:14Z (RFD66606-2469) '
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:15Z (RFD66606-2469) 'The two trees to reveal
+ # tags: rfd:details-heading
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:16Z (RFD66606-2469) '- reduce with add: an irregular
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:17Z (RFD66606-2469) 'summation tree that changes with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:18Z (RFD66606-2469) 'the shape, matching an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:19Z (RFD66606-2469) '  unrolled chain of adds
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:20Z (RFD66606-2469) 'reassociated by LLVM.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:21Z (RFD66606-2469) 'tools/reveal_sum_order and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:22Z (RFD66606-2469) 'notes in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:23Z (RFD66606-2469) '  STABLEHLO.md describe how it is
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:24Z (RFD66606-2469) 'read back out.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:25Z (RFD66606-2469) '- dot_general: a fusion whose
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:26Z (RFD66606-2469) 'accumulation tree also depends on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:27Z (RFD66606-2469) 'the shape, revealed the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:28Z (RFD66606-2469) '  way, on the same desk and jax
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:29Z (RFD66606-2469) 'build.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:30Z (RFD66606-2469) '
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:31Z (RFD66606-2469) '
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:32Z (RFD66606-2469) 'Acceptance
+ # tags: rfd:details-heading
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:33Z (RFD66606-2469) '- The eight cases above are
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:34Z (RFD66606-2469) 'bit-equal on the GPU, or each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:35Z (RFD66606-2469) 'keeps a measured reason in XFAIL.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:36Z (RFD66606-2469) '- Removing the table brings back
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:37Z (RFD66606-2469) 'the old differences; that is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:38Z (RFD66606-2469) 'control this decision must
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:39Z (RFD66606-2469) '  fail without.
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:40Z (RFD66606-2469) '- The added cost in dispatches
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:41Z (RFD66606-2469) 'and time for the five graphs is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:42Z (RFD66606-2469) 'measured and written down.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:43Z (RFD66606-2469) '- All 11 desk gates still pass.
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written
+
+2026-11-07T00:01:44Z (RFD66606-2469) '
+ # tags: rfd:details
+ Text:RFD2469  1 LINE
+ Text:Written

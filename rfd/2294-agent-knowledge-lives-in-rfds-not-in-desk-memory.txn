@@ -1,0 +1,2785 @@
+2026-10-01T00:00:00Z (RFD66606-2294) 'agent knowledge lives in RFDs, not in desk memory
+ # uuid: cb6f3dc5-d8fc-51ca-8e2d-533f2d7cb805
+ # tags: rfd:title, rfd:flight-level:l2
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-01T00:00:01Z (RFD66606-2294) 'where an agent session keeps what
+ # tags: rfd:feature
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:02Z (RFD66606-2294) 'it learns about V-Sekai-fire and
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:03Z (RFD66606-2294) 'chibifire-stages, and the
+ # tags: rfd:feature
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:04Z (RFD66606-2294) 'operator's rules that lived in
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:05Z (RFD66606-2294) 'one desk's memory, written down
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:06Z (RFD66606-2294) 'this repository, `CLAUDE.md`,
+ # tags: rfd:scope
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:07Z (RFD66606-2294) 'every agent session's local
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:08Z (RFD66606-2294) 'memory, and the
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:09Z (RFD66606-2294) 'rules below
+ # tags: rfd:scope
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:10Z (RFD66606-2294) 'What any agent learns about
+ # tags: rfd:hook
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:11Z (RFD66606-2294) 'V-Sekai-fire and chibifire-stages
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:12Z (RFD66606-2294) 'lives in an RFD, not a desk.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:13Z (RFD66606-2294) '
+ # tags: rfd:hook
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:14Z (RFD66606-2294) 'An agent session's memory is a
+ # tags: rfd:intrigue
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:15Z (RFD66606-2294) 'directory on one desk, so no
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:16Z (RFD66606-2294) 'session sees every rule.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:17Z (RFD66606-2294) '
+ # tags: rfd:intrigue
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:18Z (RFD66606-2294) 'Write a generic rule into its RFD
+ # tags: rfd:exit
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:19Z (RFD66606-2294) 'in the same session; the sections
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:20Z (RFD66606-2294) 'below hold the steps.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:21Z (RFD66606-2294) '
+ # tags: rfd:exit
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:22Z (RFD66606-2294) 'agent knowledge lives in RFDs,
+ # tags: rfd:details-title
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:23Z (RFD66606-2294) 'not in desk memory
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:24Z (RFD66606-2294) 'What any agent needs to know
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:25Z (RFD66606-2294) 'about V-Sekai-fire and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:26Z (RFD66606-2294) 'chibifire-stages, their
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:27Z (RFD66606-2294) 'repositories, the headset and the
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:28Z (RFD66606-2294) 'services lives in an RFD in this
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:29Z (RFD66606-2294) 'repository:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:30Z (RFD66606-2294) 'the RFD that owns the topic, or
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:31Z (RFD66606-2294) 'this one when none does. A desk's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:32Z (RFD66606-2294) 'local memory
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:33Z (RFD66606-2294) 'keeps only what is true of that
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:34Z (RFD66606-2294) 'desk alone, such as its paths,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:35Z (RFD66606-2294) 'its identities
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:36Z (RFD66606-2294) 'and its tools. A local note about
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:37Z (RFD66606-2294) 'a generic rule names the RFD that
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:38Z (RFD66606-2294) 'states it.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:39Z (RFD66606-2294) '
+ # tags: rfd:decision
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:40Z (RFD66606-2294) '- RFD66606-2200, the desk agent's
+ # tags: rfd:related
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:41Z (RFD66606-2294) 'ReBAC rows.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:42Z (RFD66606-2294) '- RFD66606-2363 to RFD66606-2381
+ # tags: rfd:related
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:43Z (RFD66606-2294) 'and RFD66606-2413 to
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:44Z (RFD66606-2294) 'RFD66606-2419, the rules this RFD
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:45Z (RFD66606-2294) 'held
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:46Z (RFD66606-2294) '  before the split, one RFD each.
+ # tags: rfd:related
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:47Z (RFD66606-2294) '
+ # tags: rfd:related
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:48Z (RFD66606-2294) 'Writing a generic rule down
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:49Z (RFD66606-2294) 'An agent that learns a generic
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:50Z (RFD66606-2294) 'rule writes it into the RFD in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:51Z (RFD66606-2294) 'the same session,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:52Z (RFD66606-2294) 'through a pull request like any
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:53Z (RFD66606-2294) 'other change.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:54Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:55Z (RFD66606-2294) 'What lived on one desk
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:56Z (RFD66606-2294) 'On 2026-10-01 the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:57Z (RFD66606-2294) 'operator's rules for locomotion,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:58Z (RFD66606-2294) 'offline deployment, video and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:00:59Z (RFD66606-2294) 'station
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:00Z (RFD66606-2294) 'lived only on the Mac desk, and
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:01Z (RFD66606-2294) 'those for where compute runs and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:02Z (RFD66606-2294) 'for binary
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:03Z (RFD66606-2294) 'translation only on the Windows
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:04Z (RFD66606-2294) 'desks, so no session saw all of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:05Z (RFD66606-2294) 'them.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:06Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:07Z (RFD66606-2294) 'Starting out in the workspace
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:08Z (RFD66606-2294) 'A new agent, a small local model
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:09Z (RFD66606-2294) 'included, starts here and does
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:10Z (RFD66606-2294) 'one step at a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:11Z (RFD66606-2294) 'time. It begins right after the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:12Z (RFD66606-2294) 'bootstrap script has run.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:13Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:14Z (RFD66606-2294) '0. The bootstrap leaves a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:15Z (RFD66606-2294) 'workspace root holding `.repo/`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:16Z (RFD66606-2294) '`AGENTS.md` and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:17Z (RFD66606-2294) '   placed projects. Every path
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:18Z (RFD66606-2294) 'below is relative to that root.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:19Z (RFD66606-2294) '`ls .repo` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:20Z (RFD66606-2294) '   `repo list` confirm it. If
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:21Z (RFD66606-2294) '`repo`, `elixir`, `mix` or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:22Z (RFD66606-2294) '`python` is missing,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:23Z (RFD66606-2294) '   ask the operator; don't
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:24Z (RFD66606-2294) 'install tools yourself.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:25Z (RFD66606-2294) '1. Read `AGENTS.md` at the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:26Z (RFD66606-2294) 'workspace root, then this RFD.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:27Z (RFD66606-2294) '2. The workspace is a `repo`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:28Z (RFD66606-2294) 'client.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:29Z (RFD66606-2294) '`.repo/manifests/default.xml`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:30Z (RFD66606-2294) '(the taskweft
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:31Z (RFD66606-2294) '   manifest repository) places
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:32Z (RFD66606-2294) 'every project on a side of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:33Z (RFD66606-2294) '   hexagon: `2-contract/`,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:34Z (RFD66606-2294) '`3-interactor/`, `4-entities/`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:35Z (RFD66606-2294) '`5-repository/`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:36Z (RFD66606-2294) '   `6-datasource/`, `7-service/`.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:37Z (RFD66606-2294) '`repo list` shows what is placed.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:38Z (RFD66606-2294) '3. Sync with `elixir
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:39Z (RFD66606-2294) '.repo/manifests/sync.exs .
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:40Z (RFD66606-2294) '--preflight` first, then
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:41Z (RFD66606-2294) '   `elixir
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:42Z (RFD66606-2294) '.repo/manifests/sync.exs .`. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:43Z (RFD66606-2294) 'project the preflight names as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:44Z (RFD66606-2294) '   blocking gets a decision from
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:45Z (RFD66606-2294) 'the operator, not a guess. One
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:46Z (RFD66606-2294) 'that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:47Z (RFD66606-2294) '   blocks because another session
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:48Z (RFD66606-2294) 'works in it moves its branch to a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:49Z (RFD66606-2294) '   worktree, uncommitted edits
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:50Z (RFD66606-2294) 'carried by `git stash`, and then
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:51Z (RFD66606-2294) 'syncs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:52Z (RFD66606-2294) '   (operator, 2026-10-18).
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:53Z (RFD66606-2294) '4. Never edit a placed checkout
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:54Z (RFD66606-2294) 'in place. Make a worktree in a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:55Z (RFD66606-2294) 'scratch
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:56Z (RFD66606-2294) '   directory on a new
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:57Z (RFD66606-2294) '`dev/<topic>` branch:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:58Z (RFD66606-2294) '   `git -C <project> worktree add
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:01:59Z (RFD66606-2294) '<scratch>/<name> -b dev/<topic>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:00Z (RFD66606-2294) '<remote>/main`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:01Z (RFD66606-2294) '   using the project's own remote
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:02Z (RFD66606-2294) 'and default branch.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:03Z (RFD66606-2294) '5. Commit subjects are
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:04Z (RFD66606-2294) 'sentence-case prose with no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:05Z (RFD66606-2294) '`feat:` prefix and no trailing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:06Z (RFD66606-2294) '   period, forks included
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:07Z (RFD66606-2294) '(RFD66606-2026). Commits and pull
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:08Z (RFD66606-2294) 'requests carry no Claude
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:09Z (RFD66606-2294) '   attribution: no
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:10Z (RFD66606-2294) '`Co-Authored-By: Claude` trailer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:11Z (RFD66606-2294) 'and no "Generated with Claude
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:12Z (RFD66606-2294) 'Code" line.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:13Z (RFD66606-2294) '   Credit to people stays, such
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:14Z (RFD66606-2294) 'as a co-author trailer for the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:15Z (RFD66606-2294) 'person whose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:16Z (RFD66606-2294) '   work a commit carries.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:17Z (RFD66606-2294) '"Interchangeable sessions" below
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:18Z (RFD66606-2294) 'names the commit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:19Z (RFD66606-2294) '   author and how to strip a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:20Z (RFD66606-2294) 'footer a tool appends. Push only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:21Z (RFD66606-2294) 'the feature
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:22Z (RFD66606-2294) '   branch, and open the pull
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:23Z (RFD66606-2294) 'request in V-Sekai-fire or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:24Z (RFD66606-2294) 'chibifire-stages,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:25Z (RFD66606-2294) '   where the operator merges it.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:26Z (RFD66606-2294) '6. Remove the worktree when the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:27Z (RFD66606-2294) 'pull request is open.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:28Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:29Z (RFD66606-2294) 'An RFD is amended in
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:30Z (RFD66606-2294) '`rfd/NNNN-slug.exs` of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:31Z (RFD66606-2294) '&{repo("manuals-weftspun")},
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:32Z (RFD66606-2294) 'never in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:33Z (RFD66606-2294) 'the rendered Markdown, which is a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:34Z (RFD66606-2294) 'build artifact:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:35Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:36Z (RFD66606-2294) '1. Find the RFD that owns the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:37Z (RFD66606-2294) 'topic with `grep -l <word>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:38Z (RFD66606-2294) 'rfd/*.exs`. Use this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:39Z (RFD66606-2294) '   one when none does.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:40Z (RFD66606-2294) '2. Edit its `decision` or one of
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:41Z (RFD66606-2294) 'its `details` blocks in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:42Z (RFD66606-2294) '   tenseless present
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:43Z (RFD66606-2294) '(RFD66606-2172). A statement that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:44Z (RFD66606-2294) 'is no longer true is deleted,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:45Z (RFD66606-2294) '   not retracted. Name the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:46Z (RFD66606-2294) 'operator and date for an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:47Z (RFD66606-2294) 'operator's decision.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:48Z (RFD66606-2294) '3. A new RFD takes the next
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:49Z (RFD66606-2294) 'serial in `SERIALS.exs` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:50Z (RFD66606-2294) 'carries the sentence
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:51Z (RFD66606-2294) '   "This RFD was drafted by an AI
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:52Z (RFD66606-2294) 'and read by a human before it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:53Z (RFD66606-2294) 'shipped."
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:54Z (RFD66606-2294) '4. Run `mix rfd.render`, `python
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:55Z (RFD66606-2294) 'scripts/check_tropes.py --base
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:56Z (RFD66606-2294) '<remote>/main`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:57Z (RFD66606-2294) '   and `python
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:58Z (RFD66606-2294) 'scripts/check-rfd-structure.py`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:02:59Z (RFD66606-2294) 'All three pass before the push.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:00Z (RFD66606-2294) '5. Keep product names and other
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:01Z (RFD66606-2294) 'organisations' issue or PR
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:02Z (RFD66606-2294) 'references out of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:03Z (RFD66606-2294) '   the text, and cite an upstream
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:04Z (RFD66606-2294) 'change by its bare commit SHA.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:05Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:06Z (RFD66606-2294) 'A worked example, typed into Git
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:07Z (RFD66606-2294) 'Bash on the Windows desk. It adds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:08Z (RFD66606-2294) 'a sentence to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:09Z (RFD66606-2294) 'this RFD:
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:10Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:11Z (RFD66606-2294) '    cd <workspace
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:12Z (RFD66606-2294) 'root>/2-contract/manuals-weftspun
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:13Z (RFD66606-2294) '    git fetch v-sekai-fire main
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:14Z (RFD66606-2294) '    git worktree add
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:15Z (RFD66606-2294) '"$TEMP/rfd-edit" -b
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:16Z (RFD66606-2294) 'dev/rfd-my-topic
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:17Z (RFD66606-2294) 'v-sekai-fire/main
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:18Z (RFD66606-2294) '    cd "$TEMP/rfd-edit"
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:19Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:20Z (RFD66606-2294) 'Open
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:21Z (RFD66606-2294) '`rfd/2294-agent-knowledge-lives-in-rfds-not-in-desk-memory.exs`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:22Z (RFD66606-2294) 'add the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:23Z (RFD66606-2294) 'sentence inside the right
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:24Z (RFD66606-2294) '`details` block, and save. Then:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:25Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:26Z (RFD66606-2294) '    mix rfd.render
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:27Z (RFD66606-2294) '    python
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:28Z (RFD66606-2294) 'scripts/check_tropes.py --base
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:29Z (RFD66606-2294) 'v-sekai-fire/main
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:30Z (RFD66606-2294) '    python
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:31Z (RFD66606-2294) 'scripts/check-rfd-structure.py
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:32Z (RFD66606-2294) '    git commit -am "RFD 2294: say
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:33Z (RFD66606-2294) 'what the sentence makes true"
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:34Z (RFD66606-2294) '    git -c \
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:35Z (RFD66606-2294) '      core.hooksPath="<workspace
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:36Z (RFD66606-2294) 'root>/.repo/projects/2-contract/manuals-weftspun.git/hooks"
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:37Z (RFD66606-2294) '\
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:38Z (RFD66606-2294) '      push v-sekai-fire
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:39Z (RFD66606-2294) 'dev/rfd-my-topic
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:40Z (RFD66606-2294) '    gh pr create -R
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:41Z (RFD66606-2294) 'V-Sekai-fire/manuals-weftspun
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:42Z (RFD66606-2294) '--base main --fill
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:43Z (RFD66606-2294) '    cd <workspace
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:44Z (RFD66606-2294) 'root>/2-contract/manuals-weftspun
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:45Z (RFD66606-2294) '    git worktree remove
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:46Z (RFD66606-2294) '"$TEMP/rfd-edit"
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:47Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:48Z (RFD66606-2294) 'The push names the hooks
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:49Z (RFD66606-2294) 'directory by absolute path
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:50Z (RFD66606-2294) 'because a placed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:51Z (RFD66606-2294) 'checkout's `.git` is a link into
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:52Z (RFD66606-2294) '`.repo/projects/`, which Git Bash
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:53Z (RFD66606-2294) 'cannot follow.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:54Z (RFD66606-2294) 'Given the relative path, the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:55Z (RFD66606-2294) 'pre-push hook dies before running
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:56Z (RFD66606-2294) 'its gates. Never
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:57Z (RFD66606-2294) 'skip the hook with `--no-verify`.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:58Z (RFD66606-2294) 'With no GitHub credentials, stop
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:03:59Z (RFD66606-2294) 'after the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:00Z (RFD66606-2294) 'commit and give the operator the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:01Z (RFD66606-2294) 'branch name. When any step fails,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:02Z (RFD66606-2294) 'stop and ask the operator rather
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:03Z (RFD66606-2294) 'than guess.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:04Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:05Z (RFD66606-2294) 'The work queue
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:06Z (RFD66606-2294) 'The agent sessions share one
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:07Z (RFD66606-2294) 'work-stealing queue, the issues
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:08Z (RFD66606-2294) 'labelled
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:09Z (RFD66606-2294) '`worksteal` on
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:10Z (RFD66606-2294) '&{repo("contract-zone-backend")}.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:11Z (RFD66606-2294) 'Its protocol is pinned there as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:12Z (RFD66606-2294) '#58. An
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:13Z (RFD66606-2294) 'agent works its own queue newest
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:14Z (RFD66606-2294) 'first, and with nothing unclaimed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:15Z (RFD66606-2294) 'steals the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:16Z (RFD66606-2294) 'oldest unclaimed, unpinned issue
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:17Z (RFD66606-2294) 'from the fullest queue. A pinned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:18Z (RFD66606-2294) 'issue needs one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:19Z (RFD66606-2294) 'desk's hardware or credentials
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:20Z (RFD66606-2294) 'and is never stolen. The queue
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:21Z (RFD66606-2294) 'applies
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:22Z (RFD66606-2294) 'backpressure: a queue holding
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:23Z (RFD66606-2294) 'three or more open issues, pinned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:24Z (RFD66606-2294) 'ones included,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:25Z (RFD66606-2294) 'is full, its agent files nothing
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:26Z (RFD66606-2294) 'new and finishes first, a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:27Z (RFD66606-2294) 'follow-up found
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:28Z (RFD66606-2294) 'mid-task becomes a checklist line
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:29Z (RFD66606-2294) 'in the issue that found it, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:30Z (RFD66606-2294) 'an operator
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:31Z (RFD66606-2294) 'request is still filed, with the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:32Z (RFD66606-2294) 'queue's depth reported back so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:33Z (RFD66606-2294) 'the operator can
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:34Z (RFD66606-2294) 'say what waits.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:35Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:36Z (RFD66606-2294) 'Interchangeable sessions
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:37Z (RFD66606-2294) 'Any agent session, on a desk or
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:38Z (RFD66606-2294) 'in the cloud, can pick up any
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:39Z (RFD66606-2294) 'task another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:40Z (RFD66606-2294) 'session started, because each
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:41Z (RFD66606-2294) 'follows the practices below and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:42Z (RFD66606-2294) 'reads them here
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:43Z (RFD66606-2294) 'rather than from its own memory.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:44Z (RFD66606-2294) 'A practice another RFD owns is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:45Z (RFD66606-2294) 'named here and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:46Z (RFD66606-2294) 'stated there. A desk's memory, a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:47Z (RFD66606-2294) 'project's instructions, a skill
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:48Z (RFD66606-2294) 'or `CLAUDE.md`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:49Z (RFD66606-2294) 'points at this section instead of
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:50Z (RFD66606-2294) 'restating it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:51Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:52Z (RFD66606-2294) '- Attribution. Commits, pull
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:53Z (RFD66606-2294) 'requests, issue comments and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:54Z (RFD66606-2294) 'reviews carry no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:55Z (RFD66606-2294) '  agent credit: no agent
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:56Z (RFD66606-2294) '`Co-Authored-By` trailer, no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:57Z (RFD66606-2294) 'session link and no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:58Z (RFD66606-2294) '  "Generated with" or "Generated
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:04:59Z (RFD66606-2294) 'by" footer. Commits are authored
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:00Z (RFD66606-2294) 'as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:01Z (RFD66606-2294) '  `K. S. Ernest (iFire) Lee
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:02Z (RFD66606-2294) '<32321+fire@users.noreply.github.com>`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:03Z (RFD66606-2294) 'The GitHub
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:04Z (RFD66606-2294) '  connector and `gh` append a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:05Z (RFD66606-2294) 'footer on create, so each body is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:06Z (RFD66606-2294) 'rewritten with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:07Z (RFD66606-2294) '  an update call and read back
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:08Z (RFD66606-2294) 'before the task moves on, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:09Z (RFD66606-2294) '`dot-claude`'s
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:10Z (RFD66606-2294) '  `hooks/strip_claude_footer.py`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:11Z (RFD66606-2294) 'prompts that rewrite after every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:12Z (RFD66606-2294) 'create
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:13Z (RFD66606-2294) '  (operator, 2026-10-02).
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:14Z (RFD66606-2294) '- Where a session posts. Pull
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:15Z (RFD66606-2294) 'requests, issues, comments,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:16Z (RFD66606-2294) 'reviews and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:17Z (RFD66606-2294) '  discussions go only to
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:18Z (RFD66606-2294) 'repositories in V-Sekai-fire and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:19Z (RFD66606-2294) 'chibifire-stages.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:20Z (RFD66606-2294) '  A fix to a fork lands in our
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:21Z (RFD66606-2294) 'fork, and nothing is sent
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:22Z (RFD66606-2294) 'upstream. Reading
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:23Z (RFD66606-2294) '  another organisation's code is
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:24Z (RFD66606-2294) 'fine (operator, 2026-10-05).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:25Z (RFD66606-2294) '- Automation. A new driver, gate
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:26Z (RFD66606-2294) 'or sheet builder is a plain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:27Z (RFD66606-2294) 'Elixir script
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:28Z (RFD66606-2294) '  (`.exs`). Python appears only
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:29Z (RFD66606-2294) 'as a thin worker where a library
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:30Z (RFD66606-2294) 'has no other
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:31Z (RFD66606-2294) '  binding, such as Mitsuba's
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:32Z (RFD66606-2294) 'renderer. A cloud session runs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:33Z (RFD66606-2294) 'the Elixir gates on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:34Z (RFD66606-2294) '  CI's pinned toolchain, OTP 29
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:35Z (RFD66606-2294) 'and Elixir 1.20.4 through
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:36Z (RFD66606-2294) '`erlef/setup-beam`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:37Z (RFD66606-2294) '  never on a distribution's
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:38Z (RFD66606-2294) 'packaged Elixir (operator,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:39Z (RFD66606-2294) '2026-10-02).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:40Z (RFD66606-2294) '- Where work runs. A cloud
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:41Z (RFD66606-2294) 'session has no GPU and takes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:42Z (RFD66606-2294) 'CPU-only work:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:43Z (RFD66606-2294) '  headless Godot gates, the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:44Z (RFD66606-2294) 'godot-sandbox tests, CPU Mitsuba
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:45Z (RFD66606-2294) '(`llvm_ad_rgb`),
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:46Z (RFD66606-2294) '  the cloth fit on its CPU
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:47Z (RFD66606-2294) 'backend, and blend-shape matching
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:48Z (RFD66606-2294) 'through
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:49Z (RFD66606-2294) '  &{repo("contract-lbfgsb")}. Its
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:50Z (RFD66606-2294) 'testing blocklists software GPU
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:51Z (RFD66606-2294) 'emulators: lavapipe
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:52Z (RFD66606-2294) '  and llvmpipe, SwiftShader,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:53Z (RFD66606-2294) 'WARP, and Vulkan or Metal
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:54Z (RFD66606-2294) 'emulation. Work that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:55Z (RFD66606-2294) '  needs a GPU (the persona, XR
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:56Z (RFD66606-2294) 'and headset runs, compute-rd and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:57Z (RFD66606-2294) 'ggml runs, GPU
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:58Z (RFD66606-2294) '  sheet renders, macOS binaries)
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:05:59Z (RFD66606-2294) 'goes to the GPU desk rather than
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:00Z (RFD66606-2294) 'to an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:01Z (RFD66606-2294) '  emulator. Timings are reported
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:02Z (RFD66606-2294) 'with milliseconds per frame
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:03Z (RFD66606-2294) '(operator,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:04Z (RFD66606-2294) '  2026-10-02).
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:05Z (RFD66606-2294) '- GPU Cloud and GPU-Free Cloud.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:06Z (RFD66606-2294) 'Work split between the GPU desk's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:07Z (RFD66606-2294) 'session
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:08Z (RFD66606-2294) '  ("GPU Cloud") and a cloud
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:09Z (RFD66606-2294) 'session ("GPU-Free Cloud") is one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:10Z (RFD66606-2294) 'checklist in one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:11Z (RFD66606-2294) '  issue, as on
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:12Z (RFD66606-2294) '`contract-zone-backend#114`. Each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:13Z (RFD66606-2294) 'session ticks only its own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:14Z (RFD66606-2294) '  items and comments when it
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:15Z (RFD66606-2294) 'starts, finishes or is blocked on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:16Z (RFD66606-2294) 'one, with times
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:17Z (RFD66606-2294) '  in RFD66606-2295's form.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:18Z (RFD66606-2294) 'Neither takes the other's items.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:19Z (RFD66606-2294) '- Branches. Every branch a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:20Z (RFD66606-2294) 'session works on starts with a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:21Z (RFD66606-2294) 'stage: `dev/`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:22Z (RFD66606-2294) '  `beta/`, `rc/` or `release/`,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:23Z (RFD66606-2294) 'and `archived/` once its work is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:24Z (RFD66606-2294) 'parked or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:25Z (RFD66606-2294) '  superseded, whatever name the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:26Z (RFD66606-2294) 'session was handed (operator,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:27Z (RFD66606-2294) '2026-10-12).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:28Z (RFD66606-2294) '  No `feat/`, `fix/`, `wip/`,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:29Z (RFD66606-2294) '`main/` or bare names.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:30Z (RFD66606-2294) '- Capability-scoped workers. A
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:31Z (RFD66606-2294) 'worker session holds the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:32Z (RFD66606-2294) 'capabilities its task
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:33Z (RFD66606-2294) '  needs as RFD66606-2200 tuples,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:34Z (RFD66606-2294) 'and default deny covers the rest.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:35Z (RFD66606-2294) 'A peer's request
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:36Z (RFD66606-2294) '  never widens a worker's rows.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:37Z (RFD66606-2294) '- Contact sheets. Release contact
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:38Z (RFD66606-2294) 'sheets are videos: the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:39Z (RFD66606-2294) '  `sphere_hammersley_sequence`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:40Z (RFD66606-2294) 'views are the columns and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:41Z (RFD66606-2294) 'fitting sequence
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:42Z (RFD66606-2294) '  is the frames. A CI job that
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:43Z (RFD66606-2294) 'shows a sheet renders it in that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:44Z (RFD66606-2294) 'job and uploads
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:45Z (RFD66606-2294) '  it with
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:46Z (RFD66606-2294) '`actions/upload-artifact`, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:47Z (RFD66606-2294) 'sheet belongs to the run and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:48Z (RFD66606-2294) '  commit that made it. The colour
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:49Z (RFD66606-2294) 'reference is the lookdev-24
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:50Z (RFD66606-2294) 'chart,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:51Z (RFD66606-2294) '  &{repo("entities-sakuragaoka-station")}'s
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:52Z (RFD66606-2294) '`tools/calib/chart24.json`, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:53Z (RFD66606-2294) 'no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:54Z (RFD66606-2294) '  commercial chart's trademark
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:55Z (RFD66606-2294) 'appears in code or documents.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:56Z (RFD66606-2294) 'RFD66606-2370 holds the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:57Z (RFD66606-2294) '  cell layout.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:58Z (RFD66606-2294) '- Characters. A garment is fitted
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:06:59Z (RFD66606-2294) 'to a character's body meshes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:00Z (RFD66606-2294) 'only, and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:01Z (RFD66606-2294) '  character's own clothing is not
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:02Z (RFD66606-2294) 'loaded beneath it unless the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:03Z (RFD66606-2294) 'operator asks
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:04Z (RFD66606-2294) '  for layering. Maro is the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:05Z (RFD66606-2294) 'dress-on statue a garment is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:06Z (RFD66606-2294) 'drawn onto. Mire is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:07Z (RFD66606-2294) '  the avatar (operator,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:08Z (RFD66606-2294) '2026-10-02).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:09Z (RFD66606-2294) '- Replies. RFD66606-2295 owns
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:10Z (RFD66606-2294) 'their form: the calibrated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:11Z (RFD66606-2294) 'confidence tag, ISO 8601
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:12Z (RFD66606-2294) '  times and intervals, and the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:13Z (RFD66606-2294) 'known-unknown questions that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:14Z (RFD66606-2294) 'close a plan.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:15Z (RFD66606-2294) '- Outcomes. Every script, gate
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:16Z (RFD66606-2294) 'and helper reports each outcome
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:17Z (RFD66606-2294) 'as an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:18Z (RFD66606-2294) '  Elixir-shaped term on a line of
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:19Z (RFD66606-2294) 'its own: `{:ok, %{...}}`, or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:20Z (RFD66606-2294) '  `{:error, :reason_atom,
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:21Z (RFD66606-2294) '%{...}}` with the facts a reader
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:22Z (RFD66606-2294) 'needs to act.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:23Z (RFD66606-2294) '  Nothing exits silently: a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:24Z (RFD66606-2294) 'non-zero exit with no term is a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:25Z (RFD66606-2294) 'defect, and so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:26Z (RFD66606-2294) '  is an `:ok` path that prints
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:27Z (RFD66606-2294) 'nothing. Machine output a caller
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:28Z (RFD66606-2294) 'parses (a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:29Z (RFD66606-2294) '  host name, a token) goes to
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:30Z (RFD66606-2294) 'stdout bare and the term goes to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:31Z (RFD66606-2294) 'stderr
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:32Z (RFD66606-2294) '  (operator, 2026-10-16). On
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:33Z (RFD66606-2294) '2026-10-16 `bao-active-host`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:34Z (RFD66606-2294) 'exited 1 with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:35Z (RFD66606-2294) '  no output when every tailnet
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:36Z (RFD66606-2294) 'instance was a standby, which hid
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:37Z (RFD66606-2294) 'where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:38Z (RFD66606-2294) '  the leader was.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:39Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:40Z (RFD66606-2294) '`scripts/check_practices.exs`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:41Z (RFD66606-2294) 'checks what a file or the GitHub
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:42Z (RFD66606-2294) 'API can show: a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:43Z (RFD66606-2294) 'commit authored or committed as
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:44Z (RFD66606-2294) 'the agent identity, a commit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:45Z (RFD66606-2294) 'subject that is not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:46Z (RFD66606-2294) 'sentence-case prose
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:47Z (RFD66606-2294) '(RFD66606-2026), agent credit in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:48Z (RFD66606-2294) 'a commit message, a pull request
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:49Z (RFD66606-2294) 'body, a comment or a review, a
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:50Z (RFD66606-2294) 'software GPU emulator in a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:51Z (RFD66606-2294) 'workflow, a workflow that renders
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:52Z (RFD66606-2294) 'a contact sheet without uploading
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:53Z (RFD66606-2294) 'an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:54Z (RFD66606-2294) 'artifact, and a branch that does
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:55Z (RFD66606-2294) 'not start with a stage. Its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:56Z (RFD66606-2294) 'self-test
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:57Z (RFD66606-2294) 'carries a control in each
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:58Z (RFD66606-2294) 'direction for each check. It is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:07:59Z (RFD66606-2294) 'defined once, as
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:00Z (RFD66606-2294) 'the `practices` hook in this
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:01Z (RFD66606-2294) 'repository's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:02Z (RFD66606-2294) '`.pre-commit-hooks.yaml`. Another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:03Z (RFD66606-2294) 'repository lists that hook in its
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:04Z (RFD66606-2294) '`.pre-commit-config.yaml`, where
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:05Z (RFD66606-2294) 'it runs on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:06Z (RFD66606-2294) 'push, and its CI calls
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:07Z (RFD66606-2294) '`.github/workflows/practices.yml`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:08Z (RFD66606-2294) 'from here, which runs the same
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:09Z (RFD66606-2294) 'hook. Both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:10Z (RFD66606-2294) 'pin a commit of this repository.
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:11Z (RFD66606-2294) 'This repository runs it as the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:12Z (RFD66606-2294) '`ci-practices` hook. Comments
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:13Z (RFD66606-2294) 'posted after the last run are
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:14Z (RFD66606-2294) 'seen at the next
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:15Z (RFD66606-2294) 'push or edit. The other practices
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:16Z (RFD66606-2294) 'hold by agreement.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:17Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:18Z (RFD66606-2294) 'Merging
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:19Z (RFD66606-2294) 'An agent merges its own pull
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:20Z (RFD66606-2294) 'requests on V-Sekai-fire once
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:21Z (RFD66606-2294) 'they are green,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:22Z (RFD66606-2294) 'through the merge queue where the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:23Z (RFD66606-2294) 'repository has one. Where a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:24Z (RFD66606-2294) 'repository
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:25Z (RFD66606-2294) 'requires no checks, `--auto`
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:26Z (RFD66606-2294) 'merges at once with its checks
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:27Z (RFD66606-2294) 'red, so there the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:28Z (RFD66606-2294) 'agent waits for green and merges
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:29Z (RFD66606-2294) 'by hand. An agent may merge with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:30Z (RFD66606-2294) 'the admin
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:31Z (RFD66606-2294) 'override (operator, 2026-10-30).
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:32Z (RFD66606-2294) 'The ban on it is rescinded.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:33Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:34Z (RFD66606-2294) 'Bao and the tokens it mints
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:35Z (RFD66606-2294) 'Bao runs as tailnet nodes named
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:36Z (RFD66606-2294) '`weftspun-bao-N`, and a desk uses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:37Z (RFD66606-2294) 'whichever is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:38Z (RFD66606-2294) 'online, keeping
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:39Z (RFD66606-2294) '`weftspun-bao.internal` as the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:40Z (RFD66606-2294) 'TLS server name. A desk logs in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:41Z (RFD66606-2294) 'with its certificate, passing no
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:42Z (RFD66606-2294) 'role `name`, so the certificate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:43Z (RFD66606-2294) 'selects the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:44Z (RFD66606-2294) 'role. The login token is reused
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:45Z (RFD66606-2294) 'until its TTL lapses.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:46Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:47Z (RFD66606-2294) 'A GitHub token is minted from
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:48Z (RFD66606-2294) '`github/token` by the desk's git
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:49Z (RFD66606-2294) 'credential
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:50Z (RFD66606-2294) 'helper on each request, never
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:51Z (RFD66606-2294) 'printed or stored. No token is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:52Z (RFD66606-2294) 'revoked: each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:53Z (RFD66606-2294) 'one expires on its own within the
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:54Z (RFD66606-2294) 'hour (operator, 2026-10-03).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:55Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:56Z (RFD66606-2294) 'Agents may use Bao to pass data
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:57Z (RFD66606-2294) 'to each other. What is written
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:58Z (RFD66606-2294) 'there is stored
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:08:59Z (RFD66606-2294) 'in S3 for 30 days and then rolled
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:00Z (RFD66606-2294) 'over (operator, 2026-10-01):
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:01Z (RFD66606-2294) 'Bao's storage is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:02Z (RFD66606-2294) 'FoundationDB, whose backup goes
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:03Z (RFD66606-2294) 'to R2 (RFD66606-2143). An entry
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:04Z (RFD66606-2294) 'deleted from Bao
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:05Z (RFD66606-2294) 'stays in that copy until it rolls
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:06Z (RFD66606-2294) 'over.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:07Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:08Z (RFD66606-2294) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:09Z (RFD66606-2294) 'A rule changed on one desk
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:10Z (RFD66606-2294) 'disagreed with the others without
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:11Z (RFD66606-2294) 'anyone being told.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:12Z (RFD66606-2294) '
+ # tags: rfd:details
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:13Z (RFD66606-2294) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:14Z (RFD66606-2294) 'rfd-2294 provides
+ # tags: rebac:relate
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:15Z (RFD66606-2294) 'agent-knowledge-in-rfds
+ # tags: rebac:relate, rfd:wrap
+ Text:RFD2294  1 LINE
+ Text:Written
+
+2026-10-01T00:09:16Z (RFD66606-2294) 'rfd-2294 is_a workspace-policy
+ # tags: rebac:relate
+ Text:RFD2294  1 LINE
+ Text:Written

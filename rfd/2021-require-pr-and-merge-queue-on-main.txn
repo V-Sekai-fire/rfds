@@ -1,0 +1,2125 @@
+2026-08-25T00:00:00Z (RFD66606-2021) 'Require pr and merge queue on main
+ # uuid: 373158c9-19e5-5f28-b348-0b8e6e247a20
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:01Z (RFD66606-2021) 'Every change to `main` arrives
+ # tags: rfd:hook
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-2021) 'through a pull request tested
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-2021) 'against the tip it joins.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-2021) '
+ # tags: rfd:hook
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-2021) 'The `manuals` repo had no branch
+ # tags: rfd:intrigue
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-2021) 'protection on `main`. Changes
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-2021) 'landed by pushing directly
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-2021) 'or by manually merging pull
+ # tags: rfd:intrigue
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-2021) 'requests, with no guarantee that
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-2021) 'a PR's checks ran against the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-2021) 'tip it was about to join.
+ # tags: rfd:intrigue
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-2021) '
+ # tags: rfd:intrigue
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-2021) 'Run `gh api
+ # tags: rfd:exit
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-2021) '--jq '.rules[].type'` to confirm
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-2021) 'the rule list
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-2021) 'carries no `merge_queue` entry,
+ # tags: rfd:exit
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-2021) 'and read below for the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-2021) 'merge-method argument.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-2021) '
+ # tags: rfd:exit
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-2021) 'Require pr and merge queue on
+ # tags: rfd:details-title
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-2021) 'main
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-2021) 'See `DETAILS.md` for the full
+ # tags: rfd:decision
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-2021) 'argument.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-2021) '
+ # tags: rfd:decision
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-2021) 'See `DETAILS.md` for the full
+ # tags: rfd:related
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-2021) 'argument.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-2021) '
+ # tags: rfd:related
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-2021) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-2021) 'Two PRs can each pass against an
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-2021) 'older `main` and then conflict or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-2021) 'break the Quarto build once both
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-2021) 'land. How should changes reach
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-2021) '`main`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-2021) 'so that every merge is reviewable
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-2021) 'and tested against the tip it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-2021) 'will
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-2021) 'actually join?
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-2021) 'Context and problem statement
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-2021) 'The `manuals` repo had no branch
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-2021) 'protection on `main`. Changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-2021) 'landed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-2021) 'by pushing directly or by
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-2021) 'manually merging pull requests,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-2021) 'with no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-2021) 'guarantee that a PR's checks ran
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-2021) 'against the tip it was about to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-2021) 'join. Two PRs can each pass
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-2021) 'against an older `main` and then
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-2021) 'conflict
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-2021) 'or break the Quarto build once
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-2021) 'both land. How should changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-2021) 'reach
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-2021) '`main` so that every merge is
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-2021) 'reviewable and tested against the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-2021) 'tip it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-2021) 'will actually join?
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-2021) 'Decision drivers
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-2021) '- Every change to `main` should
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-2021) 'arrive through a pull request,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-2021) 'not a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-2021) '  direct push.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-2021) '- A PR should be validated
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-2021) 'against the latest `main` before
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-2021) 'it lands.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-2021) '- The team is small, so the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-2021) 'process should add little
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-2021) 'ceremony (no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-2021) '  mandatory second reviewer, no
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-2021) 'enqueue step).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-2021) '- The setting should be
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-2021) 'declarative and recorded, not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-2021) 'click-ops
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-2021) '  folklore.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-2021) 'Considered options
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-2021) '- Leave `main` unprotected
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-2021) '(status quo).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-2021) '- Branch protection requiring a
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-2021) 'pull request only.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-2021) '- A repository ruleset requiring
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-2021) 'a pull request plus a merge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-2021) 'queue.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-2021) '- A repository ruleset requiring
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-2021) 'a pull request plus strict
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-2021) 'required
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-2021) '  status checks.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-2021) 'Decision outcome
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-2021) 'Chosen option: a repository
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-2021) 'ruleset requiring a pull request
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-2021) 'plus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-2021) 'strict required status checks,
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-2021) 'because it keeps `main` PR-only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-2021) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-2021) 'tests each change against the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-2021) 'current tip without forcing a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-2021) 'second
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-2021) 'reviewer or an enqueue step.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-2021) 'The ruleset targets the default
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-2021) 'branch with these rules:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-2021) '- Block branch deletion and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-2021) 'non-fast-forward pushes.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-2021) '- Require a pull request, with
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-2021) '`0` required approvals (review is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-2021) '  allowed, not mandated).
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-2021) '- Require status check `prek`,
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-2021) 'with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-2021) '  `strict_required_status_checks_policy`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-2021) 'set to `true`, so a PR whose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-2021) '  branch is behind `main` updates
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-2021) 'and re-runs its checks before it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-2021) '  merges.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-2021) 'Alongside the ruleset, the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-2021) 'repository sets
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-2021) '`delete_branch_on_merge`, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-2021) 'a merged PR's source branch is
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-2021) 'removed automatically.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-2021) '### The merge method
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-2021) '`allow_squash_merge` and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-2021) '`allow_rebase_merge` are both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-2021) '`false`, leaving
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-2021) '`allow_merge_commit` as the only
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-2021) 'way a pull request can land.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-2021) 'Auto-merge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-2021) 'stays enabled; with the other two
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-2021) 'off it can only produce a merge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-2021) 'commit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-2021) 'This is not a preference for more
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-2021) 'commits. A split costs CI
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-2021) 'linearly:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-2021) 'every commit must pass on its
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-2021) 'own, so a branch of `n` commits
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-2021) 'is `n`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-2021) 'verifications and not one, paid
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-2021) 'again on every push while the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-2021) 'branch
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-2021) 'lives. Against that a split buys
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-2021) 'understandability, review reads
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-2021) 'one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-2021) 'idea at a time, and `git bisect`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-2021) 'lands on a change small enough to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-2021) 'read
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-2021) 'rather than on a whole feature.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-2021) 'The trade is real in both
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-2021) 'directions and it is decided per
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-2021) 'branch. Most
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-2021) 'branches are one idea and should
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-2021) 'be squashed locally before the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-2021) 'pull
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-2021) 'request is final; the doc-gate
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-2021) 'port in `fabric#52` was collapsed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-2021) 'from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-2021) 'four commits to one for exactly
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-2021) 'that reason. A split earns its
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-2021) 'keep only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-2021) 'when the concerns are
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-2021) 'independent, as in `fabric#54`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-2021) 'where a new gate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-2021) 'and a documentation correction
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-2021) 'had nothing to do with each other
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-2021) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-2021) 'each passed alone.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-2021) 'So the question the setting
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-2021) 'answers is not how many commits a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-2021) 'branch
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-2021) 'should have. It is who decides,
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-2021) 'and when:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-2021) '- Squashing at merge time decides
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-2021) 'for every branch, after review,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-2021) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-2021) '  collapses the series that was
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-2021) 'deliberately kept along with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-2021) 'ones
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-2021) '  that were not. The author
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-2021) 'already had the cheaper option,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-2021) '`git rebase
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-2021) '-i` before marking the PR ready,
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-2021) 'and it costs the same CI either
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-2021) 'way,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-2021) '  because the squashed branch is
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-2021) 'verified once as one commit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-2021) '- A squash or a rebase also gives
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-2021) 'the merge a new SHA, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-2021) 'branch tip
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-2021) '  is not an ancestor of the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (RFD66606-2021) 'default branch afterwards. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (RFD66606-2021) 'documented
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (RFD66606-2021) '  post-merge check reads exactly
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (RFD66606-2021) 'that, and reported three complete
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (RFD66606-2021) 'merges
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (RFD66606-2021) '  as unmerged in a single day.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (RFD66606-2021) 'The second could be answered by
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (RFD66606-2021) 'comparing trees instead of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (RFD66606-2021) 'commits, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (RFD66606-2021) 'that change is worth making
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (RFD66606-2021) 'anyway because history already
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (RFD66606-2021) 'holds squashed
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (RFD66606-2021) 'merges. It does not answer the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (RFD66606-2021) 'first.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (RFD66606-2021) '### Why not a merge queue
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (RFD66606-2021) 'The earlier form of this decision
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (RFD66606-2021) 'required a `merge_queue` rule.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (RFD66606-2021) 'The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (RFD66606-2021) 'queue serializes entries and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (RFD66606-2021) 'builds each against the branch
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (RFD66606-2021) 'tip, which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (RFD66606-2021) 'is worth its cost on a repo with
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (RFD66606-2021) 'enough concurrent PRs that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (RFD66606-2021) 'rebasing by
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (RFD66606-2021) 'hand becomes the bottleneck. This
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (RFD66606-2021) 'repo merges documentation changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (RFD66606-2021) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (RFD66606-2021) 'few at a time, and the queue
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (RFD66606-2021) 'charged for capacity it never
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (RFD66606-2021) 'used:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (RFD66606-2021) '- Every merge needs an explicit
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (RFD66606-2021) 'enqueue step, and the queue
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (RFD66606-2021) 'snapshots
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (RFD66606-2021) '  the PR head at enqueue time, so
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (RFD66606-2021) 'a late fix races the merge and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (RFD66606-2021) 'can be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (RFD66606-2021) '  orphaned.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (RFD66606-2021) '- `gh pr merge --delete-branch`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (RFD66606-2021) 'fails while a queue is enabled
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (RFD66606-2021) '  ("Cannot use `-d` or
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (RFD66606-2021) '`--delete-branch` when merge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (RFD66606-2021) 'queue enabled"), so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (RFD66606-2021) '  branch cleanup has to move to
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (RFD66606-2021) 'the repo-level
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (RFD66606-2021) '  `delete_branch_on_merge`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (RFD66606-2021) 'setting.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:08Z (RFD66606-2021) '- The `merge_queue` rule names no
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:09Z (RFD66606-2021) 'CI job on its own. A ruleset
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:10Z (RFD66606-2021) 'carrying
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:11Z (RFD66606-2021) '  `pull_request` + `merge_queue`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:12Z (RFD66606-2021) 'and no `required_status_checks`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:13Z (RFD66606-2021) 'rule
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:14Z (RFD66606-2021) '  merges a PR through the queue
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:15Z (RFD66606-2021) 'even when every check on it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:16Z (RFD66606-2021) 'failed.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:17Z (RFD66606-2021) '  This bit two dependent repos
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:18Z (RFD66606-2021) '(`taskweft/taskweft`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:19Z (RFD66606-2021) '`taskweft/nif`).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:20Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:21Z (RFD66606-2021) 'The strict
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:22Z (RFD66606-2021) '`required_status_checks` policy
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:23Z (RFD66606-2021) 'keeps the property the queue
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:24Z (RFD66606-2021) 'was there for, a change is tested
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:25Z (RFD66606-2021) 'against the tip it joins, and the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:26Z (RFD66606-2021) 'enqueue discipline goes away with
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:27Z (RFD66606-2021) 'it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:28Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:29Z (RFD66606-2021) 'Consequences
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:30Z (RFD66606-2021) '- Good: `main` only changes
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:31Z (RFD66606-2021) 'through PRs, and a PR behind the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:32Z (RFD66606-2021) 'tip
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:33Z (RFD66606-2021) '  updates and re-runs its checks
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:34Z (RFD66606-2021) 'before it lands.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:35Z (RFD66606-2021) '- Good: the configuration is
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:36Z (RFD66606-2021) 'captured here and reproducible
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:37Z (RFD66606-2021) 'from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:38Z (RFD66606-2021) '  ruleset JSON.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:39Z (RFD66606-2021) '- Good: merging is a single `gh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:40Z (RFD66606-2021) 'pr merge` with no enqueue step
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:41Z (RFD66606-2021) 'and no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:42Z (RFD66606-2021) '  dequeue-to-fix dance.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:43Z (RFD66606-2021) '- Bad: solo edits still need a
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:44Z (RFD66606-2021) 'PR.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:45Z (RFD66606-2021) '- Bad: with `0` required
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:46Z (RFD66606-2021) 'approvals, the rule enforces
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:47Z (RFD66606-2021) 'process but not
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:48Z (RFD66606-2021) '  review, so an unreviewed PR can
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:49Z (RFD66606-2021) 'still merge.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:50Z (RFD66606-2021) '- Bad: strict checks re-run on
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:51Z (RFD66606-2021) 'update, so a burst of concurrent
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:52Z (RFD66606-2021) 'PRs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:53Z (RFD66606-2021) '  costs one extra CI round per PR
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:54Z (RFD66606-2021) 'that falls behind, with no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:55Z (RFD66606-2021) 'batching.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:56Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:57Z (RFD66606-2021) 'Confirmation
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:58Z (RFD66606-2021) 'The ruleset is active (id
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:04:59Z (RFD66606-2021) '`17352485`). `gh api
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:00Z (RFD66606-2021) 'repos/v-sekai-multiplayer-fabric/multiplayer-fabric-manuals/rulesets`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:01Z (RFD66606-2021) 'lists it, a direct
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:02Z (RFD66606-2021) 'push to `main` is rejected, and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:03Z (RFD66606-2021) 'the rule list carries no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:04Z (RFD66606-2021) '`merge_queue`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:05Z (RFD66606-2021) 'entry:
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:06Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:07Z (RFD66606-2021) '```sh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:08Z (RFD66606-2021) 'gh api
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:09Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:10Z (RFD66606-2021) '--jq '.rules[].type'
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:11Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:12Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:13Z (RFD66606-2021) '`gh api
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:14Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:15Z (RFD66606-2021) '--jq '.rules[] | select(.type
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:16Z (RFD66606-2021) '== "required_status_checks")'`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:17Z (RFD66606-2021) 'returns the rule with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:18Z (RFD66606-2021) 'expected job
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:19Z (RFD66606-2021) 'names and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:20Z (RFD66606-2021) '`strict_required_status_checks_policy:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:21Z (RFD66606-2021) 'true`, and a PR with a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:22Z (RFD66606-2021) 'failing check cannot merge.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:23Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:24Z (RFD66606-2021) '`gh api
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:25Z (RFD66606-2021) 'repos/v-sekai-multiplayer-fabric/<repo>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:26Z (RFD66606-2021) '--jq
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:27Z (RFD66606-2021) '.delete_branch_on_merge` returns
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:28Z (RFD66606-2021) '`true`, and the source branch of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:29Z (RFD66606-2021) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:30Z (RFD66606-2021) 'merged PR no longer exists.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:31Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:32Z (RFD66606-2021) 'In the RFD repository, ruleset
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:33Z (RFD66606-2021) '`23145233` carries `deletion`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:34Z (RFD66606-2021) '`pull_request` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:35Z (RFD66606-2021) '`merge_queue`, and no
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:36Z (RFD66606-2021) '`required_status_checks` rule
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:37Z (RFD66606-2021) '(operator, 2026-11-13). As the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:38Z (RFD66606-2021) 'section
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:39Z (RFD66606-2021) 'on the merge queue says of such a
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:40Z (RFD66606-2021) 'ruleset, the queue merges a pull
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:41Z (RFD66606-2021) 'request whatever `prek`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:42Z (RFD66606-2021) 'reports. The gate is run on the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:43Z (RFD66606-2021) 'desk before a pull request is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:44Z (RFD66606-2021) 'enqueued: both steps of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:45Z (RFD66606-2021) '`prek` job, on the Erlang/OTP and
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:46Z (RFD66606-2021) 'Elixir versions the workflow
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:47Z (RFD66606-2021) 'pins.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:48Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:49Z (RFD66606-2021) 'The rule was removed while a
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:50Z (RFD66606-2021) '`prek` job sat queued for 26
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:51Z (RFD66606-2021) 'minutes with no runner to take
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:52Z (RFD66606-2021) 'it. The command is the one under
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:53Z (RFD66606-2021) 'More information, sent with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:54Z (RFD66606-2021) 'rule left out:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:55Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:56Z (RFD66606-2021) '```sh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:57Z (RFD66606-2021) 'gh api
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:58Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:05:59Z (RFD66606-2021) '--jq '.rules[].type'
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:00Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:01Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:02Z (RFD66606-2021) 'prints `deletion`, `pull_request`
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:03Z (RFD66606-2021) 'and `merge_queue`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:04Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:05Z (RFD66606-2021) 'More information
+ # tags: rfd:madr-heading
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:06Z (RFD66606-2021) 'The ruleset is edited with `gh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:07Z (RFD66606-2021) 'api -X PUT
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:08Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:09Z (RFD66606-2021) '--input ruleset.json`. The API
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:10Z (RFD66606-2021) 'replaces the whole rule array, so
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:11Z (RFD66606-2021) 'read the current rules first and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:12Z (RFD66606-2021) 'send
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:13Z (RFD66606-2021) 'back every rule to keep, not only
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:14Z (RFD66606-2021) 'the one being changed:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:15Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:16Z (RFD66606-2021) '```sh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:17Z (RFD66606-2021) 'gh api
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:18Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:19Z (RFD66606-2021) '--jq '.rules'
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:20Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:21Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:22Z (RFD66606-2021) 'Job names to require come from a
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:23Z (RFD66606-2021) 'real PR's checks:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:24Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:25Z (RFD66606-2021) '```sh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:26Z (RFD66606-2021) 'gh pr checks <PR-number> --repo
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:27Z (RFD66606-2021) '<org>/<repo>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:28Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:29Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:30Z (RFD66606-2021) 'and the status-check rule takes
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:31Z (RFD66606-2021) 'the shape:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:32Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:33Z (RFD66606-2021) '```json
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:34Z (RFD66606-2021) '{
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:35Z (RFD66606-2021) '  "type":
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:36Z (RFD66606-2021) '"required_status_checks",
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:37Z (RFD66606-2021) '  "parameters": {
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:38Z (RFD66606-2021) '    "strict_required_status_checks_policy":
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:39Z (RFD66606-2021) 'true,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:40Z (RFD66606-2021) '    "required_status_checks": [{
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:41Z (RFD66606-2021) '"context": "<job name from gh pr
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:42Z (RFD66606-2021) 'checks>" }]
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:43Z (RFD66606-2021) '  }
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:44Z (RFD66606-2021) '}
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:45Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:46Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:47Z (RFD66606-2021) 'Change the policy by editing the
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:48Z (RFD66606-2021) 'ruleset rather than protecting
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:49Z (RFD66606-2021) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:50Z (RFD66606-2021) 'branch through the classic
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:51Z (RFD66606-2021) 'branch-protection API, so the two
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:52Z (RFD66606-2021) 'mechanisms
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:53Z (RFD66606-2021) 'do not overlap.
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:54Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:55Z (RFD66606-2021) 'Apply the branch-cleanup setting
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:56Z (RFD66606-2021) 'declaratively:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:57Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:58Z (RFD66606-2021) '```sh
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:06:59Z (RFD66606-2021) 'gh api -X PATCH
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:07:00Z (RFD66606-2021) 'repos/v-sekai-multiplayer-fabric/<repo>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:07:01Z (RFD66606-2021) '\
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:07:02Z (RFD66606-2021) '  -F delete_branch_on_merge=true
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:07:03Z (RFD66606-2021) '```
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written
+
+2026-08-25T00:07:04Z (RFD66606-2021) '
+ # tags: rfd:details
+ Text:RFD2021  1 LINE
+ Text:Written

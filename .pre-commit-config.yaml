@@ -184,14 +184,14 @@ repos:
       # artifact the authority for the vocabulary; RFD66606-2291 made it a declaration instead.
       - id: rebac
         name: the rebac block in AGENTS.md uses only the verbs RFD66606-2200 declares
-        entry: elixir scripts/check_rebac.exs
+        entry: mix run scripts/check_rebac.exs
         language: system
-        files: ^(AGENTS\.md|rfd/2200-rebac-agent-roles\.exs|scripts/check_rebac\.exs|lib/rfd/rebac\.ex)$
+        files: ^(AGENTS\.md|rfd/2200-rebac-agent-roles\.txn|scripts/check_rebac\.exs|lib/rfd/rebac\.ex)$
         pass_filenames: false
 
       - id: rebac-self-test
         name: the rebac gate still fails on known-broken rows
-        entry: elixir scripts/check_rebac.exs --self-test
+        entry: mix run scripts/check_rebac.exs --self-test
         language: system
         files: ^(scripts/check_rebac\.exs|lib/rfd/rebac\.ex)$
         pass_filenames: false
@@ -278,7 +278,7 @@ repos:
         name: trope density (report mode; self-test does the gating)
         entry: python scripts/check_tropes.py
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|rfd/[^/]+/(README|DETAILS)\.md|logbook/.*\.md|scripts/(check_tropes|trope_nlp)\.py)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|rfd/[^/]+/(README|DETAILS)\.md|logbook/.*\.md|scripts/(check_tropes|trope_nlp)\.py)$'
         pass_filenames: false
 
       - id: trope-density-self-test
@@ -299,14 +299,14 @@ repos:
         name: every confidence tag's word and p agree with RFD66606-2295's scale
         entry: python scripts/check_confidence_tags.py
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|logbook/.*\.md|scripts/check_confidence_tags\.py)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|logbook/.*\.md|scripts/check_confidence_tags\.py)$'
         pass_filenames: false
 
       - id: confidence-tags-self-test
         name: the confidence-tag gate still fails on planted-broken tags
         entry: python scripts/check_confidence_tags.py --self-test
         language: system
-        files: '^(rfd/2295-[^/]+\.exs|scripts/check_confidence_tags\.py)$'
+        files: '^(rfd/2295-[^/]+\.txn|scripts/check_confidence_tags\.py)$'
         pass_filenames: false
 
       # THE M&M'S CLAUSE. A new RFD README that ships without the canary sentence is one
@@ -354,7 +354,7 @@ repos:
           Elixir, thus the formatter is the first check it passes.
         entry: mix format --check-formatted
         language: system
-        files: '^([0-9]{4}-.*\.exs?|rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^([0-9]{4}-.*\.exs?|rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       # RFD66606-2232: every RFD is rfd/NNNN-slug.exs and every register is SERIALS*.exs;
@@ -364,7 +364,7 @@ repos:
         name: render the RFD and register sources
         entry: mix rfd.render
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: rfd-dates
@@ -378,21 +378,21 @@ repos:
         name: every RFD and register source compiles inside RFD66606-1000's shape
         entry: mix rfd.check
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: rfd-dsl-serials
         name: the registers agree with the sources on disk
         entry: mix rfd.serials
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: rfd-dsl-rectgtn
         name: every RFD's rectgtn problem matches its source
         entry: mix rfd.rectgtn --check
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|rectgtn/.*|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|rectgtn/.*|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: static-site-self-test
@@ -414,7 +414,7 @@ repos:
         name: every rebac block states tuples over verbs an RFD declares
         entry: mix rfd.rebac
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|AGENTS\.md|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|AGENTS\.md|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       # The DSL's own controls: six known-broken documents must be refused.
@@ -462,7 +462,7 @@ repos:
         entry: python scripts/check-rfd-structure.py
         language: python
         additional_dependencies: [markdown-it-py==3.0.0, usd-core==26.8]
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|rfd/[0-9]{4}-[^/]+/(README|DETAILS)\.md|apparatus/[0-9]{4}-[^/]+/SKILL\.md)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|rfd/[0-9]{4}-[^/]+/(README|DETAILS)\.md|apparatus/[0-9]{4}-[^/]+/SKILL\.md)$'
         pass_filenames: false
 
       # RFD66606-1000 owns numbering. The script scans the tree rather than a
@@ -476,7 +476,7 @@ repos:
           gives the rule.
         entry: python scripts/check-rfd-numbers.py
         language: python
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|[0-9]{4}-.*|scripts/check-rfd-numbers\.py)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|[0-9]{4}-.*|scripts/check-rfd-numbers\.py)$'
         pass_filenames: false
 
       - id: rfd-numbers-self-test
@@ -495,7 +495,7 @@ repos:
         entry: python scripts/check-rfd-serials.py
         language: python
         additional_dependencies: [usd-core==26.8]
-        files: '^(rfd/[0-9]{4}-[^/]+\.exs|SERIALS[^/]*\.exs|[0-9]{4}-.*|SERIALS\.usda)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|[0-9]{4}-.*|SERIALS\.usda)$'
         pass_filenames: false
 
       - id: dockerfile-and-server

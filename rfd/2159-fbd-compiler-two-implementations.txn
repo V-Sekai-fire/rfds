@@ -1,0 +1,505 @@
+2026-09-01T00:00:00Z (RFD66606-2159) 'Two `.elf` implementations of the Lean 4 FBD spec
+ # uuid: 777afd51-91a4-5947-b071-71f66bc14393
+ # tags: rfd:title, rfd:compact-head:true
+ RFD:Committed  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:01Z (RFD66606-2159) 'ship two independent RISC-V ELF
+ # tags: rfd:feature
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:02Z (RFD66606-2159) 'implementations of the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:03Z (RFD66606-2159) 'compiler RFD66606-2157 formalises
+ # tags: rfd:feature
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:04Z (RFD66606-2159) 'in Lean 4. Outputs cross-check on
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:05Z (RFD66606-2159) 'the
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:06Z (RFD66606-2159) 'same fixtures; both are graded
+ # tags: rfd:feature
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:07Z (RFD66606-2159) 'against the spec.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:08Z (RFD66606-2159) 'two sibling repos + a
+ # tags: rfd:scope
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:09Z (RFD66606-2159) 'differential harness
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:10Z (RFD66606-2159) 'Two independent .elf compilers
+ # tags: rfd:hook
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:11Z (RFD66606-2159) 'cross-check each other against
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:12Z (RFD66606-2159) 'the Lean spec.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:13Z (RFD66606-2159) '
+ # tags: rfd:hook
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:14Z (RFD66606-2159) 'RFD66606-2157's Lean
+ # tags: rfd:intrigue
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:15Z (RFD66606-2159) 'formalisation is the ground
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:16Z (RFD66606-2159) 'truth. RFD66606-2158 blocks
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:17Z (RFD66606-2159) 'Lean-emitted ELF today (upstream
+ # tags: rfd:intrigue
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:18Z (RFD66606-2159) 'RFC 12655 open).
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:19Z (RFD66606-2159) '
+ # tags: rfd:intrigue
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:20Z (RFD66606-2159) 'Run both `.elf` implementations
+ # tags: rfd:exit
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:21Z (RFD66606-2159) 'on the RFD66606-2157 fixture set
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:22Z (RFD66606-2159) 'and check that they agree
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:23Z (RFD66606-2159) 'byte-for-byte.
+ # tags: rfd:exit
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:24Z (RFD66606-2159) '
+ # tags: rfd:exit
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:25Z (RFD66606-2159) 'Two `.elf` implementations of the
+ # tags: rfd:details-title
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:26Z (RFD66606-2159) 'Lean 4 FBD spec
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:27Z (RFD66606-2159) 'Green-lit; C++ and Rust both to
+ # tags: rfd:decision
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:28Z (RFD66606-2159) 'ship.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:29Z (RFD66606-2159) '
+ # tags: rfd:decision
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:30Z (RFD66606-2159) '`DETAILS.md` carries the full
+ # tags: rfd:decision
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:31Z (RFD66606-2159) 'text of this RFD.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:32Z (RFD66606-2159) '
+ # tags: rfd:decision
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:33Z (RFD66606-2159) '1. RFD66606-2157 (Lean spec),
+ # tags: rfd:references
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:34Z (RFD66606-2159) 'RFD66606-2158 (self-host
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:35Z (RFD66606-2159) 'blockers)
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:36Z (RFD66606-2159) '2. godot-sandbox CI:
+ # tags: rfd:references
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:37Z (RFD66606-2159) '  `libriscv/godot-sandbox/.github/workflows/build_gdscript_elf.yml`
+ # tags: rfd:references
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:38Z (RFD66606-2159) '3. Rust riscv64 target:
+ # tags: rfd:references
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:39Z (RFD66606-2159) 'platform-support docs
+ # tags: rfd:references, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:40Z (RFD66606-2159) '
+ # tags: rfd:references
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:41Z (RFD66606-2159) 'Decision
+ # tags: rfd:details-heading
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:42Z (RFD66606-2159) 'Green-lit; C++ and Rust both to
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:43Z (RFD66606-2159) 'ship.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:44Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:45Z (RFD66606-2159) 'Ship two `.elf` implementations,
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:46Z (RFD66606-2159) 'both cross-compiling today, both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:47Z (RFD66606-2159) 'loading into godot-sandbox
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:48Z (RFD66606-2159) 'unchanged.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:49Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:50Z (RFD66606-2159) '1. **C++**; reuses
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:51Z (RFD66606-2159) 'godot-sandbox's SafeGDScript
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:52Z (RFD66606-2159) 'build recipe.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:53Z (RFD66606-2159) '2. **Rust**; `cargo build
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:54Z (RFD66606-2159) '--target
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:55Z (RFD66606-2159) 'riscv64gc-unknown-linux-gnu`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:56Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:57Z (RFD66606-2159) 'Different type systems, different
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:58Z (RFD66606-2159) 'memory models, different codegen
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:00:59Z (RFD66606-2159) ';
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:00Z (RFD66606-2159) 'bugs don't correlate. Both must
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:01Z (RFD66606-2159) 'agree on RFD66606-2157's fixture
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:02Z (RFD66606-2159) 'set
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:03Z (RFD66606-2159) 'byte-for-byte; disagreement is a
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:04Z (RFD66606-2159) 'soundness bug flagged against
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:05Z (RFD66606-2159) 'whichever impl differs from the
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:06Z (RFD66606-2159) 'Lean spec's reference output.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:07Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:08Z (RFD66606-2159) '`DETAILS.md` carries the
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:09Z (RFD66606-2159) 'differential harness, fixture
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:10Z (RFD66606-2159) 'format, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:11Z (RFD66606-2159) 'the spec-to-impl obligation
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:12Z (RFD66606-2159) 'table.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:13Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:14Z (RFD66606-2159) 'Problem
+ # tags: rfd:details-heading
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:15Z (RFD66606-2159) 'RFD66606-2157's Lean
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:16Z (RFD66606-2159) 'formalisation is the ground
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:17Z (RFD66606-2159) 'truth. RFD66606-2158 blocks
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:18Z (RFD66606-2159) 'Lean-emitted ELF today (upstream
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:19Z (RFD66606-2159) 'RFC 12655 open). Trusting one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:20Z (RFD66606-2159) 'backend makes soundness a hope;
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:21Z (RFD66606-2159) 'two agreeing backends give the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:22Z (RFD66606-2159) 'property `compile_correct` alone
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:23Z (RFD66606-2159) 'cannot.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:24Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:25Z (RFD66606-2159) 'References
+ # tags: rfd:details-heading
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:26Z (RFD66606-2159) '1. RFD66606-2157 (Lean spec),
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:27Z (RFD66606-2159) 'RFD66606-2158 (self-host
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:28Z (RFD66606-2159) 'blockers)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:29Z (RFD66606-2159) '2. godot-sandbox CI:
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:30Z (RFD66606-2159) '  `libriscv/godot-sandbox/.github/workflows/build_gdscript_elf.yml`
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:31Z (RFD66606-2159) '3. Rust riscv64 target:
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:32Z (RFD66606-2159) 'platform-support docs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:33Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:34Z (RFD66606-2159) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:35Z (RFD66606-2159) 'Trusting one
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:36Z (RFD66606-2159) 'backend makes soundness a hope;
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:37Z (RFD66606-2159) 'two agreeing backends give the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:38Z (RFD66606-2159) 'property `compile_correct` alone
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:39Z (RFD66606-2159) 'cannot.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2159  1 LINE
+ Text:Written
+
+2026-09-01T00:01:40Z (RFD66606-2159) '
+ # tags: rfd:details
+ Text:RFD2159  1 LINE
+ Text:Written

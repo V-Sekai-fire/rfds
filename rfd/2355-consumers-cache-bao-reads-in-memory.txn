@@ -1,0 +1,355 @@
+2026-10-31T00:00:00Z (RFD66606-2355) 'Consumers cache Bao reads in memory
+ # uuid: 03404e12-566e-53b8-9977-f78bbdb22ecf
+ # tags: rfd:title, rfd:attest-in:details
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-31T00:00:01Z (RFD66606-2355) 'every consumer of Bao: DNS, R2
+ # tags: rfd:scope
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:02Z (RFD66606-2355) 'writes, FDB coordinator lookup.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:03Z (RFD66606-2355) 'A consumer that holds a bearer
+ # tags: rfd:hook
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2355) 'for a few minutes keeps Bao out
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2355) 'of its critical path.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2355) '
+ # tags: rfd:hook
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2355) 'Every read against Bao is a Bao
+ # tags: rfd:intrigue
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2355) 'dependency, and DNS, R2 writes
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:09Z (RFD66606-2355) 'and the FDB coordinator
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:10Z (RFD66606-2355) 'lookup all read from it.
+ # tags: rfd:intrigue
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:11Z (RFD66606-2355) '
+ # tags: rfd:intrigue
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:12Z (RFD66606-2355) 'Check a consumer that reads Bao
+ # tags: rfd:exit
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:13Z (RFD66606-2355) 'against the rule above: it caches
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:14Z (RFD66606-2355) 'the value in its own
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2355) 'memory for less time than the
+ # tags: rfd:exit
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:16Z (RFD66606-2355) 'value protects, and on a Bao
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:17Z (RFD66606-2355) 'error it retries rather than
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2355) 'holding the stale value.
+ # tags: rfd:exit
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2355) '
+ # tags: rfd:exit
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2355) 'Consumers cache Bao reads in
+ # tags: rfd:details-title
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2355) 'memory
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2355) 'Consumers cache what they can. A
+ # tags: rfd:decision
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2355) 'bearer held for a few minutes
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2355) 'puts Bao in the critical
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2355) 'path only at cache expiry.
+ # tags: rfd:decision
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2355) '
+ # tags: rfd:decision
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2355) 'RFD66606-2145, RFD66606-2146.
+ # tags: rfd:related
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2355) 'Split from the old RFD66606-2147:
+ # tags: rfd:related
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2355) 'RFD66606-2353 (replicas), 2354
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2355) '(unseal), 2356 (no CDN proxy).
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2355) '
+ # tags: rfd:related
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2355) 'Consumer-side cache: what and for
+ # tags: rfd:details-heading
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:33Z (RFD66606-2355) 'how long
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2355) 'Every read against Bao is a Bao
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2355) 'dependency. Two ends of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2355) 'spectrum:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2355) '
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2355) '- Never cache. Simple, correct,
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2355) 'hot dependency on Bao.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2355) '- Cache forever. Wrong for
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:41Z (RFD66606-2355) 'rotating secrets (RFD66606-2145
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:42Z (RFD66606-2355) 'leaves at
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:43Z (RFD66606-2355) '  90 days; a hot bearer at hour
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:44Z (RFD66606-2355) '720 leaks past its rotation).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:45Z (RFD66606-2355) '
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:46Z (RFD66606-2355) 'The middle: cache for a duration
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:47Z (RFD66606-2355) 'shorter than the shortest thing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:48Z (RFD66606-2355) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:49Z (RFD66606-2355) 'cached value protects. For a DNS
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:50Z (RFD66606-2355) 'bearer that itself has a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:51Z (RFD66606-2355) 'Cloudflare
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:52Z (RFD66606-2355) 'API-token lifetime,
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:53Z (RFD66606-2355) 'minutes-to-an-hour is safe. For
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:54Z (RFD66606-2355) 'an FDB cluster
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:55Z (RFD66606-2355) 'file that changes only on a scale
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:56Z (RFD66606-2355) 'event, an hour is safe. Cache
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:57Z (RFD66606-2355) 'should live in the CONSUMER's
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:58Z (RFD66606-2355) 'memory, not on disk, and it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:00:59Z (RFD66606-2355) 'should
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:00Z (RFD66606-2355) 'refresh on a Bao error by simply
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:01Z (RFD66606-2355) 'retrying rather than by holding
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:02Z (RFD66606-2355) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:03Z (RFD66606-2355) 'stale value.
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:04Z (RFD66606-2355) '
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:05Z (RFD66606-2355) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:06Z (RFD66606-2355) 'RFD66606-2146 moved every routine
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:07Z (RFD66606-2355) 'credential read onto Bao, so
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:08Z (RFD66606-2355) 'every consumer now depends on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:09Z (RFD66606-2355) 'Bao being up.
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written
+
+2026-10-31T00:01:10Z (RFD66606-2355) '
+ # tags: rfd:details
+ Text:RFD2355  1 LINE
+ Text:Written

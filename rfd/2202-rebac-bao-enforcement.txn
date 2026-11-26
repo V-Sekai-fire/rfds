@@ -1,0 +1,1865 @@
+2026-09-04T00:00:00Z (RFD66606-2202) 'ReBAC role tuples enforced via Bao identity groups
+ # uuid: 3e5b1608-d83b-50ae-8b10-960fab58355a
+ # tags: rfd:title
+ RFD:Committed  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-04T00:00:01Z (RFD66606-2202) 'wire `relationships/*--role--*`
+ # tags: rfd:feature
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:02Z (RFD66606-2202) 'tuples to Bao identity groups so
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:03Z (RFD66606-2202) 'role capabilities are gated at
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:04Z (RFD66606-2202) 'the API, not just documented
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:05Z (RFD66606-2202) 'Bao coordination store, mps-admin
+ # tags: rfd:scope
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:06Z (RFD66606-2202) 'policy, all live agent identities
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:07Z (RFD66606-2202) 'A role change is one tuple write
+ # tags: rfd:hook
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:08Z (RFD66606-2202) 'and one reconciler run, enforced
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:09Z (RFD66606-2202) 'by Bao.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:10Z (RFD66606-2202) '
+ # tags: rfd:hook
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:11Z (RFD66606-2202) 'RFD66606-2200 shipped the role
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:12Z (RFD66606-2202) 'tuples as data and named
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:13Z (RFD66606-2202) 'enforcement as a separate RFD.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:14Z (RFD66606-2202) 'Today's provisioning cycles bit
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:15Z (RFD66606-2202) 'twice on the gap: MPS had to
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:16Z (RFD66606-2202) 'hand-attach an `agents-rw`
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:17Z (RFD66606-2202) 'policy to HAILO's entity to
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:18Z (RFD66606-2202) 'unblock a 403 (documented in
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:19Z (RFD66606-2202) 'RFD66606-2195's cert-auth-swap
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:20Z (RFD66606-2202) 'gotcha), and the "assist" role
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:21Z (RFD66606-2202) 'change for HAILO landed as a
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:22Z (RFD66606-2202) 'tuple update with no mechanical
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:23Z (RFD66606-2202) 'effect on what capabilities
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:24Z (RFD66606-2202) 'HAILO's token actually carried.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:25Z (RFD66606-2202) '
+ # tags: rfd:intrigue
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:26Z (RFD66606-2202) 'Run `python
+ # tags: rfd:exit
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:27Z (RFD66606-2202) 'scripts/sync_rebac_groups.py` for
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:28Z (RFD66606-2202) 'a dry-run that exits 1 on drift.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:29Z (RFD66606-2202) '
+ # tags: rfd:exit
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:30Z (RFD66606-2202) 'ReBAC role tuples enforced via
+ # tags: rfd:details-title
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:31Z (RFD66606-2202) 'Bao identity groups
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:32Z (RFD66606-2202) 'Bao **identity groups** enforce
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:33Z (RFD66606-2202) 'the ReBAC role tuples
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:34Z (RFD66606-2202) 'RFD66606-2200
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:35Z (RFD66606-2202) 'landed. One group per role, each
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:36Z (RFD66606-2202) 'carrying role-scoped policies;
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:37Z (RFD66606-2202) 'agent entities as members.
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:38Z (RFD66606-2202) '`scripts/sync_rebac_groups.py`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:39Z (RFD66606-2202) 'reads
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:40Z (RFD66606-2202) '`relationships/<agent>--role--<role>`
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:41Z (RFD66606-2202) 'and reconciles group
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:42Z (RFD66606-2202) 'memberships. See `DETAILS.md` for
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:43Z (RFD66606-2202) 'the mapping, reconciler contract,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:44Z (RFD66606-2202) 'and non-enforcement scope for
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:45Z (RFD66606-2202) 'hardware `may-use` tuples.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:46Z (RFD66606-2202) '
+ # tags: rfd:decision
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:47Z (RFD66606-2202) 'RFD66606-2200 (tuples as data),
+ # tags: rfd:related
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:48Z (RFD66606-2202) 'RFD66606-2195 (PKI + cert-auth),
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:49Z (RFD66606-2202) 'RFD66606-2201
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:50Z (RFD66606-2202) '(coordinate-agents ceremony).
+ # tags: rfd:related
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:51Z (RFD66606-2202) '
+ # tags: rfd:related
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:52Z (RFD66606-2202) 'Non-goals
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:53Z (RFD66606-2202) '`may-use--<device>` tuples stay
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:54Z (RFD66606-2202) 'documentation; Bao does not gate
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:55Z (RFD66606-2202) 'GPU/NPU access. Future
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:56Z (RFD66606-2202) 'compute-lease broker consults
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:57Z (RFD66606-2202) 'them, out of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:58Z (RFD66606-2202) 'scope here.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:00:59Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:00Z (RFD66606-2202) 'Role → group → policy mapping
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:01Z (RFD66606-2202) 'One group per role in
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:02Z (RFD66606-2202) 'RFD66606-2200's vocabulary. Group
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:03Z (RFD66606-2202) 'names are
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:04Z (RFD66606-2202) '`agents-<role>` for greppability.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:05Z (RFD66606-2202) 'Policies are what each role's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:06Z (RFD66606-2202) 'capabilities require.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:07Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:08Z (RFD66606-2202) '| role                  | Bao
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:09Z (RFD66606-2202) 'group                    |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:10Z (RFD66606-2202) 'policies attached      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:11Z (RFD66606-2202) '|-----------------------|------------------------------|------------------------|
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:12Z (RFD66606-2202) '| `coordinator`         |
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:13Z (RFD66606-2202) '`agents-coordinator`         |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:14Z (RFD66606-2202) '`mps-admin`            |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:15Z (RFD66606-2202) '| `gpu-experimenter`    |
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:16Z (RFD66606-2202) '`agents-gpu-experimenter`    |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:17Z (RFD66606-2202) '`agents-rw`            |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:18Z (RFD66606-2202) '| `edge-qat-specialist` |
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:19Z (RFD66606-2202) '`agents-edge-qat-specialist` |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:20Z (RFD66606-2202) '`agents-rw`            |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:21Z (RFD66606-2202) '| `assist`              |
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:22Z (RFD66606-2202) '`agents-assist`              |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:23Z (RFD66606-2202) '`agents-rw`            |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:24Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:25Z (RFD66606-2202) 'Today `gpu-experimenter`,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:26Z (RFD66606-2202) '`edge-qat-specialist`, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:27Z (RFD66606-2202) '`assist` all
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:28Z (RFD66606-2202) 'carry the same `agents-rw`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:29Z (RFD66606-2202) 'policy. The role distinction is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:30Z (RFD66606-2202) 'semantic, carried by the tuple,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:31Z (RFD66606-2202) 'consumed by the coordinator's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:32Z (RFD66606-2202) 'task-picking, and visible in the
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:33Z (RFD66606-2202) 'store's `role` field on the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:34Z (RFD66606-2202) 'agent's row. When the workspace
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:35Z (RFD66606-2202) 'grows a policy shape that scopes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:36Z (RFD66606-2202) 'to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:37Z (RFD66606-2202) 'a specific role (say,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:38Z (RFD66606-2202) '`gpu-experimenter` needs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:39Z (RFD66606-2202) '`pki/sign/experiment-*`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:40Z (RFD66606-2202) 'grants the others do not),
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:41Z (RFD66606-2202) 'extending this table is the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:42Z (RFD66606-2202) 'change; the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:43Z (RFD66606-2202) 'reconciler picks it up on the
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:44Z (RFD66606-2202) 'next run.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:45Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:46Z (RFD66606-2202) 'Reconciler contract
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:47Z (RFD66606-2202) '`scripts/sync_rebac_groups.py`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:48Z (RFD66606-2202) 'reconciles:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:49Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:50Z (RFD66606-2202) '1. Reads every
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:51Z (RFD66606-2202) '`relationships/<agent>--role--<role>`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:52Z (RFD66606-2202) 'tuple.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:53Z (RFD66606-2202) '2. Resolves each `<agent>` to its
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:54Z (RFD66606-2202) 'Bao entity id by scanning
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:55Z (RFD66606-2202) '   `identity/entity/id/*` for an
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:56Z (RFD66606-2202) 'alias whose name is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:57Z (RFD66606-2202) '   `<agent>.agents.weftspun`.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:58Z (RFD66606-2202) '3. Groups entities by role,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:01:59Z (RFD66606-2202) 'compares to current
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:00Z (RFD66606-2202) '   `identity/group/name/agents-<role>`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:01Z (RFD66606-2202) 'membership, computes diff.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:02Z (RFD66606-2202) '4. Reports drift; with `--apply`,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:03Z (RFD66606-2202) 'writes the new membership +
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:04Z (RFD66606-2202) '   policies via `bao write
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:05Z (RFD66606-2202) 'identity/group/name/agents-<role>
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:06Z (RFD66606-2202) '   policies=...
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:07Z (RFD66606-2202) 'member_entity_ids=...`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:08Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:09Z (RFD66606-2202) 'Idempotent, re-running with no
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:10Z (RFD66606-2202) 'tuple changes produces `no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:11Z (RFD66606-2202) 'change`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:12Z (RFD66606-2202) 'on every group.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:13Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:14Z (RFD66606-2202) 'The script carries:
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:15Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:16Z (RFD66606-2202) '- A `ROLE_POLICIES` table
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:17Z (RFD66606-2202) 'mirroring the mapping above.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:18Z (RFD66606-2202) 'Adding a role
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:19Z (RFD66606-2202) '  means adding a row here and
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:20Z (RFD66606-2202) 'running with `--apply`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:21Z (RFD66606-2202) '- A self-test with three
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:22Z (RFD66606-2202) 'tuple-parse controls and four
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:23Z (RFD66606-2202) '  role-mapping controls, both
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:24Z (RFD66606-2202) 'directions.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:25Z (RFD66606-2202) '- Explicit `UNKNOWN ROLES` and
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:26Z (RFD66606-2202) '`UNRESOLVED AGENTS` surfaces when
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:27Z (RFD66606-2202) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:28Z (RFD66606-2202) '  tuple points at a role not in
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:29Z (RFD66606-2202) 'the table or an agent whose
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:30Z (RFD66606-2202) 'entity
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:31Z (RFD66606-2202) '  cannot be found.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:32Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:33Z (RFD66606-2202) 'Usage:
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:34Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:35Z (RFD66606-2202) '    python
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:36Z (RFD66606-2202) 'scripts/sync_rebac_groups.py            #
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:37Z (RFD66606-2202) 'dry-run, exit 1 on drift
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:38Z (RFD66606-2202) '    python
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:39Z (RFD66606-2202) 'scripts/sync_rebac_groups.py
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:40Z (RFD66606-2202) '--apply    # write the changes
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:41Z (RFD66606-2202) '    python
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:42Z (RFD66606-2202) 'scripts/sync_rebac_groups.py
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:43Z (RFD66606-2202) '--self-test
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:44Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:45Z (RFD66606-2202) 'What Bao enforces after this RFD
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:46Z (RFD66606-2202) 'lands
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:47Z (RFD66606-2202) 'Any capability grant expressible
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:48Z (RFD66606-2202) 'as a Bao policy is enforced
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:49Z (RFD66606-2202) 'through
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:50Z (RFD66606-2202) 'group membership. That covers:
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:51Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:52Z (RFD66606-2202) '- KV read/write on `agents/`,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:53Z (RFD66606-2202) '`certs/`, `relationships/`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:54Z (RFD66606-2202) '- PKI operations (sign, issue,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:55Z (RFD66606-2202) 'revoke)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:56Z (RFD66606-2202) '- Cert-auth entry management
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:57Z (RFD66606-2202) '- Policy management (mps-admin
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:58Z (RFD66606-2202) 'only)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:02:59Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:00Z (RFD66606-2202) 'Templated policies like
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:01Z (RFD66606-2202) '`agents-rw`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:02Z (RFD66606-2202) '(`{{identity.entity.aliases.<accessor>.name}}`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:03Z (RFD66606-2202) 'scoping writes to own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:04Z (RFD66606-2202) 'row) continue to work; adding an
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:05Z (RFD66606-2202) 'entity to a group does not change
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:06Z (RFD66606-2202) 'the entity's alias set, so the
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:07Z (RFD66606-2202) 'template resolution is unchanged.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:08Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:09Z (RFD66606-2202) 'What Bao does not enforce
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:10Z (RFD66606-2202) '**Hardware `may-use--<device>`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:11Z (RFD66606-2202) 'tuples are documentation.** Bao's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:12Z (RFD66606-2202) 'API
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:13Z (RFD66606-2202) 'surface has no relationship to
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:14Z (RFD66606-2202) 'GPU or NPU compute, those live in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:15Z (RFD66606-2202) 'CUDA drivers, Metal, HailoRT,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:16Z (RFD66606-2202) 'whatever. A
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:17Z (RFD66606-2202) '`hailo-552dfa--may-use--cpu`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:18Z (RFD66606-2202) 'tuple describes the workspace's
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:19Z (RFD66606-2202) 'expectation of HAILO's behaviour;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:20Z (RFD66606-2202) 'it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:21Z (RFD66606-2202) 'does not stop HAILO's Python
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:22Z (RFD66606-2202) 'process from importing `torch`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:23Z (RFD66606-2202) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:24Z (RFD66606-2202) 'grabbing a CUDA device.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:25Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:26Z (RFD66606-2202) 'Two options for future
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:27Z (RFD66606-2202) 'enforcement of the hardware
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:28Z (RFD66606-2202) 'constraint, both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:29Z (RFD66606-2202) 'out of scope for this RFD:
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:30Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:31Z (RFD66606-2202) '1. **Compute-lease broker.** A
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:32Z (RFD66606-2202) 'service that hands out
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:33Z (RFD66606-2202) 'time-bounded
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:34Z (RFD66606-2202) '   GPU / NPU access grants;
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:35Z (RFD66606-2202) 'consults the tuples; refuses
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:36Z (RFD66606-2202) 'HAILO if
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:37Z (RFD66606-2202) '   it asks for a 3090 lease.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:38Z (RFD66606-2202) 'Requires the broker be the only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:39Z (RFD66606-2202) 'path
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:40Z (RFD66606-2202) '   to compute (no bare
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:41Z (RFD66606-2202) '`torch.cuda.set_device()`).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:42Z (RFD66606-2202) '2. **Convention + review.** Peer
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:43Z (RFD66606-2202) 'coordination messages flag when a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:44Z (RFD66606-2202) '   role tries to use compute
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:45Z (RFD66606-2202) 'outside its `may-use` set. Cheap;
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:46Z (RFD66606-2202) 'only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:47Z (RFD66606-2202) '   as strong as agent
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:48Z (RFD66606-2202) 'cooperation.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:49Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:50Z (RFD66606-2202) 'Convention + review is what the
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:51Z (RFD66606-2202) 'workspace does today.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:52Z (RFD66606-2202) 'RFD66606-2200's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:53Z (RFD66606-2202) 'non-enforcement stance covers
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:54Z (RFD66606-2202) 'this.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:55Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:56Z (RFD66606-2202) 'Membership provisioning +
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:57Z (RFD66606-2202) 'revocation lifecycle
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:58Z (RFD66606-2202) '**Provisioning** (adding a new
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:03:59Z (RFD66606-2202) 'agent):
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:00Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:01Z (RFD66606-2202) '1. Operator authorises identity
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:02Z (RFD66606-2202) 'per RFD66606-2195 rule zero.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:03Z (RFD66606-2202) '2. MPS mints cert, publishes
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:04Z (RFD66606-2202) 'bundle to `certs/<cn>`, adds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:05Z (RFD66606-2202) '   `runs-on` + `role` tuples to
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:06Z (RFD66606-2202) '`relationships/`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:07Z (RFD66606-2202) '3. Reconciler picks up the new
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:08Z (RFD66606-2202) '`role` tuple on next run, adds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:09Z (RFD66606-2202) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:10Z (RFD66606-2202) '   new entity to the appropriate
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:11Z (RFD66606-2202) 'group, entity's next token
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:12Z (RFD66606-2202) '   inherits the group's policies.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:13Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:14Z (RFD66606-2202) '**Revocation** (removing an
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:15Z (RFD66606-2202) 'agent):
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:16Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:17Z (RFD66606-2202) '1. MPS revokes cert per
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:18Z (RFD66606-2202) 'RFD66606-2195 Revocation section
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:19Z (RFD66606-2202) '(CN narrowing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:20Z (RFD66606-2202) '   or cert-auth entry delete).
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:21Z (RFD66606-2202) '2. MPS deletes
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:22Z (RFD66606-2202) '`relationships/<agent>--role--*`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:23Z (RFD66606-2202) 'tuples so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:24Z (RFD66606-2202) '   reconciler removes the entity
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:25Z (RFD66606-2202) 'from its group on the next run.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:26Z (RFD66606-2202) '3. MPS deletes
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:27Z (RFD66606-2202) '`agents/<agent>.agents.weftspun`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:28Z (RFD66606-2202) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:29Z (RFD66606-2202) '   `certs/<agent>.agents.weftspun`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:30Z (RFD66606-2202) 'KV rows.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:31Z (RFD66606-2202) '4. Optionally delete the stale
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:32Z (RFD66606-2202) 'entity via
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:33Z (RFD66606-2202) '   `bao delete
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:34Z (RFD66606-2202) 'identity/entity/id/<eid>` if it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:35Z (RFD66606-2202) 'will not be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:36Z (RFD66606-2202) '   re-provisioned (2026-09-04:
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:37Z (RFD66606-2202) 'mps-dataset-68764 entity deleted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:38Z (RFD66606-2202) '   this way).
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:39Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:40Z (RFD66606-2202) 'Bootstrap that landed with this
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:41Z (RFD66606-2202) 'RFD
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:42Z (RFD66606-2202) 'Three groups created 2026-09-04,
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:43Z (RFD66606-2202) 'one member each:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:44Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:45Z (RFD66606-2202) '    agents-coordinator      ->
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:46Z (RFD66606-2202) 'entity 714065ee (mps-45994b)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:47Z (RFD66606-2202) '    agents-gpu-experimenter ->
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:48Z (RFD66606-2202) 'entity 17b34a2f (cuda-a63415)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:49Z (RFD66606-2202) '    agents-assist           ->
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:50Z (RFD66606-2202) 'entity f92af0c7 (hailo-552dfa)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:51Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:52Z (RFD66606-2202) '`agents-edge-qat-specialist`
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:53Z (RFD66606-2202) 'group is not created; no live
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:54Z (RFD66606-2202) 'agent
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:55Z (RFD66606-2202) 'holds that role after HAILO's
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:56Z (RFD66606-2202) '2026-09-04 reassignment. It
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:57Z (RFD66606-2202) 'exists
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:58Z (RFD66606-2202) 'in `ROLE_POLICIES` so a future
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:04:59Z (RFD66606-2202) 'role restoration is one tuple
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:00Z (RFD66606-2202) 'write
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:01Z (RFD66606-2202) 'away.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:02Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:03Z (RFD66606-2202) 'The stale
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:04Z (RFD66606-2202) '`entity_policies=[agents-rw]` on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:05Z (RFD66606-2202) 'HAILO's entity from the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:06Z (RFD66606-2202) 'earlier debug session was left in
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:07Z (RFD66606-2202) 'place; the group grant covers it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:08Z (RFD66606-2202) 'redundantly. Not blocking; can be
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:09Z (RFD66606-2202) 'cleaned up by future reconciler
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:10Z (RFD66606-2202) 'mode that strips redundant
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:11Z (RFD66606-2202) 'entity-level policies where a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:12Z (RFD66606-2202) 'group
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:13Z (RFD66606-2202) 'grant covers them. Not scoped
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:14Z (RFD66606-2202) 'here.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:15Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:16Z (RFD66606-2202) 'Idempotency and the reconciler as
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:17Z (RFD66606-2202) 'anti-entropy
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:18Z (RFD66606-2202) 'Running the reconciler with no
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:19Z (RFD66606-2202) 'changes prints
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:20Z (RFD66606-2202) '`ok  <group>: N member(s), no
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:21Z (RFD66606-2202) 'change` per group. Any drift
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:22Z (RFD66606-2202) 'between
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:23Z (RFD66606-2202) 'tuples and group memberships
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:24Z (RFD66606-2202) 'surfaces as `DRIFT` with the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:25Z (RFD66606-2202) 'specific
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:26Z (RFD66606-2202) '`+` / `-` entity ids. Running
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:27Z (RFD66606-2202) 'with `--apply` fixes the drift.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:28Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:29Z (RFD66606-2202) 'Suitable for periodic invocation
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:30Z (RFD66606-2202) 'from the coordinate-agents skill
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:31Z (RFD66606-2202) '(RFD66606-2201) as a step-8
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:32Z (RFD66606-2202) 'addition, reconcile before
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:33Z (RFD66606-2202) 'closing the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:34Z (RFD66606-2202) 'pass. Not adding to that skill in
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:35Z (RFD66606-2202) 'this RFD; the skill's seven-step
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:36Z (RFD66606-2202) 'scope lands separately when this
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:37Z (RFD66606-2202) 'is proven idempotent over a few
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:38Z (RFD66606-2202) 'cycles.
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:39Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:40Z (RFD66606-2202) 'Reference invocation
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:41Z (RFD66606-2202) '    export
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:42Z (RFD66606-2202) 'BAO_ADDR=https://weftspun-bao.stonecat-ratio.ts.net:8200
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:43Z (RFD66606-2202) '    export
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:44Z (RFD66606-2202) 'BAO_CACERT=~/.bao-creds/ca-chain.pem
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:45Z (RFD66606-2202) '    export
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:46Z (RFD66606-2202) 'BAO_CLIENT_CERT=~/.bao-creds/mps-admin/cert-fullchain.pem
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:47Z (RFD66606-2202) '    export
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:48Z (RFD66606-2202) 'BAO_CLIENT_KEY=~/.bao-creds/mps-admin/key.pem
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:49Z (RFD66606-2202) '    export BAO_TOKEN=$(cat
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:50Z (RFD66606-2202) '~/.bao-creds/cert-session-token)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:51Z (RFD66606-2202) '    python
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:52Z (RFD66606-2202) 'scripts/sync_rebac_groups.py
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:53Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:54Z (RFD66606-2202) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:55Z (RFD66606-2202) 'Groups close that gap: a role
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:56Z (RFD66606-2202) 'change is one tuple write and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:57Z (RFD66606-2202) 'one reconciler run, and the
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:58Z (RFD66606-2202) 'token's next login reflects the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:05:59Z (RFD66606-2202) 'new
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:00Z (RFD66606-2202) 'policies through group
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:01Z (RFD66606-2202) 'membership.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:02Z (RFD66606-2202) '
+ # tags: rfd:details
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:03Z (RFD66606-2202) '2200
+ # tags: rebac:verbs-from
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:04Z (RFD66606-2202) 'mps-45994b role coordinator
+ # tags: rebac:relate
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:05Z (RFD66606-2202) 'entity 714065ee, group
+ # tags: rebac:reason
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:06Z (RFD66606-2202) 'agents-coordinator
+ # tags: rebac:reason, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:07Z (RFD66606-2202) 'cuda-a63415 role gpu-experimenter
+ # tags: rebac:relate
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:08Z (RFD66606-2202) 'entity 17b34a2f, group
+ # tags: rebac:reason
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:09Z (RFD66606-2202) 'agents-gpu-experimenter
+ # tags: rebac:reason, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:10Z (RFD66606-2202) 'hailo-552dfa role assist
+ # tags: rebac:relate
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:11Z (RFD66606-2202) 'entity f92af0c7, group
+ # tags: rebac:reason
+ Text:RFD2202  1 LINE
+ Text:Written
+
+2026-09-04T00:06:12Z (RFD66606-2202) 'agents-assist
+ # tags: rebac:reason, rfd:wrap
+ Text:RFD2202  1 LINE
+ Text:Written

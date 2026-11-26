@@ -1,0 +1,860 @@
+2026-08-25T00:00:00Z (RFD66606-1054) 'The planner inside the studio core
+ # uuid: 3db5b352-5ed1-5b50-a24c-2334da9db1d9
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Published  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1054) '`weftspun_studio/`
+ # tags: rfd:scope
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1054) 'The planner lives inside the
+ # tags: rfd:hook
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1054) 'studio core, and `extension/` is
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1054) 'deleted.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1054) '
+ # tags: rfd:hook
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1054) '`extension/` ran Elixir in an
+ # tags: rfd:intrigue
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1054) 'editor panel, through Popcorn and
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1054) 'AtomVM. It proved the
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1054) 'pipeline, and it could not ship.
+ # tags: rfd:intrigue
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1054) '
+ # tags: rfd:intrigue
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1054) 'Run `pipeline_test.exs`, which
+ # tags: rfd:exit
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1054) 'mocks nothing and runs the real
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1054) 'planner over the real
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1054) 'planning documents, before you
+ # tags: rfd:exit
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1054) 'merge a change to the planner.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1054) '
+ # tags: rfd:exit
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1054) 'The planner inside the studio
+ # tags: rfd:details-title
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1054) 'core
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1054) 'Delete `extension/`. Put the
+ # tags: rfd:decision
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1054) 'planner inside `weftspun_studio`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1054) 'which
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1054) 'RFD66606-1019 already makes the
+ # tags: rfd:decision
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1054) 'API server.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1054) '
+ # tags: rfd:decision
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1054) 'RFD66606-1023 gives the shape,
+ # tags: rfd:decision
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1054) 'and this RFD does not restate it.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1054) '
+ # tags: rfd:decision
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1054) 'RFD66606-1019 makes this the API
+ # tags: rfd:related
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1054) 'server. RFD66606-1023 gives the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1054) 'shape. RFD66606-1037
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1054) 'gives the composite convention.
+ # tags: rfd:related
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1054) 'RFD66606-1055 selects the worker
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1054) 'host.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1054) '
+ # tags: rfd:related
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1054) 'A second application was the
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1054) 'wrong answer first
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1054) 'This RFD first built `cms/`, a
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1054) 'new Elixir application. That was
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1054) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1054) 'mistake, and the record of it
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1054) 'matters more than the correction.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1054) '`weftspun_studio` already held
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1054) 'ports, adapters, an HTTP router,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1054) 'Ecto,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1054) 'and CockroachDB. RFD66606-1019
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1054) 'and RFD66606-1020 record it. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1054) 'second
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1054) 'application duplicated every one
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1054) 'of those.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1054) 'Three parts were new, and only
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1054) 'those moved:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1054) '| Part               | Where it
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1054) 'lives now              |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1054) '| ------------------ |
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1054) '------------------------------- |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1054) '| Planning documents |
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1054) '`priv/domains`, `priv/problems` |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1054) '| `Ports.Planner`    | Beside the
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1054) 'other ports          |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1054) '| `TaskweftPlanner`  | Beside the
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1054) 'other adapters       |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1054) '`cms/` is deleted. That also
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1054) 'settles the overlap with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1054) 'RFD66606-1023, which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1054) 'this RFD carried while it
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1054) 'described a parallel application.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1054) 'Mock every port, and keep the
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1054) 'documents real
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1054) 'Every port is a `Mox` mock. A
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1054) 'mock derives from the behavior,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1054) 'thus a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1054) 'port that gains a callback breaks
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1054) 'its mock when it compiles.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1054) 'The planning documents are the
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1054) 'exception. A mocked domain proves
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1054) 'nothing about the pipeline,
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1054) 'because the domains are the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1054) 'pipeline.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1054) '`pipeline_test.exs` mocks
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1054) 'nothing, and it runs the real
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1054) 'planner over
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1054) 'the real documents.
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1054) 'The measured plans
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1054) '| Pipeline     | Steps | Composes                                   |
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1054) '| ------------ | ----: |
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1054) '------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1054) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1054) '| content_only |     3 | the base
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1054) 'alone                             |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1054) '| mesh         |     7 | base and
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1054) 'stage_mesh                        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1054) '| avatar       |    10 | base,
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1054) 'stage_mesh, stage_rig, and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1054) 'problem |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1054) 'The avatar plan is the evidence.
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1054) '`stage_rig` calls
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1054) '`a_generate_mesh`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1054) 'which `stage_mesh` defines, and
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1054) 'that resolves only because the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1054) 'merge
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1054) 'unions the actions of every
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1054) 'document first.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1054) 'Three faults came out of this
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1054) 'The work needed three fixes to
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1054) 'taskweft, and each came from use
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1054) 'and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1054) 'not from reading. Each one
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1054) 'answered `no_plan`, which names
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1054) 'nothing.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1054) '- Composition did not exist.
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1054) '`merge/2` was private to the CLI,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1054) 'and it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1054) '  took one domain and one
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1054) 'problem. PR 207.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1054) '- A shared variable replaced
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1054) 'instead of merging its keys, thus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1054) 'the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1054) '  base lost the keys its own
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1054) 'guards read. PR 208.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1054) '- A goal serialized `eq: true` as
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1054) 'the string `"true"`, thus it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1054) 'never
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1054) '  matched a boolean in state. PR
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1054) '209.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1054) 'PR 207 also rewrote the DSL
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1054) 'diagnostics. A domain written
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1054) 'against an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1054) 'API that does not exist compiled
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1054) 'without complaint, and returned
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1054) 'an
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1054) 'empty document.
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1054) 'Two routes
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1054) '`/api/v1/pipelines` lists what
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1054) 'this deployment knows.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1054) '`/api/v1/pipelines/:name/plan`
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1054) 'solves one and runs nothing, thus
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1054) 'a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1054) 'caller sees the plan before it
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1054) 'pays for the models.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1054) '`Pipeline.parse/1` takes
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1054) '`String.to_existing_atom/1`. An
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1054) 'HTTP caller
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1054) 'must not fill the atom table,
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1054) 'which never shrinks.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1054) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1054) 'AtomVM needs `SharedArrayBuffer`,
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1054) 'thus the page must be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1054) 'cross-origin
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1054) 'isolated. An editor webview is
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1054) 'not isolated, and an extension
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1054) 'cannot
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1054) 'set the headers. The panel worked
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1054) 'only with `codium --enable-coi`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1054) 'The proof stands, and the vehicle
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1054) 'does not.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1054  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1054) '
+ # tags: rfd:details
+ Text:RFD1054  1 LINE
+ Text:Written

@@ -1,0 +1,285 @@
+2026-11-07T00:00:00Z (RFD66606-2466) 'StableHLO: lower convolution
+ # uuid: 8ea8847e-c585-52eb-bfa3-027437efb494
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2466) 'the StableHLO lowering accepts
+ # tags: rfd:feature
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2466) 'convolution for the sconv and dit
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2466) 'graphs.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2466) 'the convolution case in
+ # tags: rfd:scope
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2466) 'guest/pjrt-rd/stablehlo.cpp and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2466) 'its generated test cases.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2466) 'Can `stablehlo.convolution` map
+ # tags: rfd:hook
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2466) 'onto ggml-rd's existing conv
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2466) 'kernels for the dimension
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2466) 'numbers the sconv and dit graphs
+ # tags: rfd:hook
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2466) 'actually use?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2466) '
+ # tags: rfd:hook
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2466) 'sconv and dit need
+ # tags: rfd:intrigue
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2466) '`stablehlo.convolution`. ggml-rd
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2466) 'has `conv2d`, `conv_2d_dw`,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2466) '`conv_transpose_2d` and an im2col
+ # tags: rfd:intrigue
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2466) 'path, but none of them is wired
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2466) 'to the dimension numbers,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2466) 'padding, strides, dilation and
+ # tags: rfd:intrigue
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2466) 'feature groups those graphs use.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2466) '
+ # tags: rfd:intrigue
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2466) 'Cases in
+ # tags: rfd:exit
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2466) '`tools/gen_stablehlo_cases.py`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2466) 'cover convolution, including
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2466) 'zeros of both signs,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2466) 'infinities, NaN and denormals,
+ # tags: rfd:exit
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2466) 'compared bit for bit against XLA
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2466) 'CPU's output from the Zen 2
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2466) 'desk.
+ # tags: rfd:exit
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2466) '
+ # tags: rfd:exit
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2466) '- Map the dimension numbers,
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2466) 'padding, strides, dilation and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2466) 'feature groups that sconv and dit
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2466) '  use onto `conv2d`,
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2466) '`conv_2d_dw`, `conv_transpose_2d`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2466) 'or the im2col path, and refuse
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2466) 'the rest.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2466) '- Treat the functional bar as the
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2466) 'first target, since bit-equality
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2466) 'likely meets the same
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2466) '  summation-order question
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2466) '`dot_general` already met.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2466) '- Add convolution cases to
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2466) '`tools/gen_stablehlo_cases.py`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2466) 'with the special values above; a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2466) '  case that cannot reach
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2466) 'bit-equality carries a measured
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2466) 'reason in `XFAIL`.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2466) '- A planted control case must
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2466) 'fail its gate, and all 11 desk
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2466) 'gates still pass.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2466) '
+ # tags: rfd:decision
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2466) '- RFD66606-2372, the guest ELF
+ # tags: rfd:related
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2466) 'and ggml-rd compute route this
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2466) 'kernel runs on.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2466  1 LINE
+ Text:Written
+
+2026-11-07T00:00:56Z (RFD66606-2466) '
+ # tags: rfd:related
+ Text:RFD2466  1 LINE
+ Text:Written

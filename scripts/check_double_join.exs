@@ -76,6 +76,51 @@
 #
 # Exit codes: 0 nothing joined twice, 1 one or more found, 2 bad usage.
 
+defmodule RfdText do
+  @moduledoc false
+  # An RFD journal's text as the prose gates read it, from `mix rfd.text`.
+  # The first lookup at a revision reads every RFD journal in one `mix rfd.text`.
+  def get(repo, rev, path) do
+    key = {__MODULE__, repo, rev}
+
+    texts =
+      Process.get(key) ||
+        (fn ->
+           t = fetch(repo, rev, Path.wildcard(Path.join(repo, "rfd/[0-9][0-9][0-9][0-9]-*.txn")))
+           Process.put(key, t)
+           t
+         end).()
+
+    Map.get(texts, path) || fetch(repo, rev, [Path.join(repo, path)]) |> Map.get(path)
+  end
+
+  defp fetch(repo, rev, fulls) do
+    paths = Enum.map(fulls, &Path.relative_to(&1, repo))
+    args = ["rfd.text"] ++ if(rev, do: ["--rev", rev], else: []) ++ paths
+
+    case System.cmd("mix", args, cd: repo) do
+      {out, 0} ->
+        for line <- String.split(out, "\n", trim: true),
+            String.starts_with?(line, "{"),
+            t = JSON.decode!(line),
+            into: %{},
+            do: {t["path"], t}
+
+      {out, _} ->
+        raise "mix rfd.text failed: #{out}"
+    end
+  end
+
+  def rfd?(path), do: path =~ ~r"^rfd/[0-9]{4}-[^/]+[.]txn$"
+
+  def markdown(repo, rev, path) do
+    case get(repo, rev, path) do
+      %{"found" => true, "markdown" => md} -> md
+      _ -> nil
+    end
+  end
+end
+
 defmodule DoubleJoin do
   # "and" glued to a comparison word whose object is a number.
   #
@@ -108,7 +153,7 @@ defmodule DoubleJoin do
 
   @quoted ~r/"[^"\n]*"/
 
-  @exts [".md", ".py", ".ex", ".exs", ".usda", ".txt"]
+  @exts [".md", ".py", ".ex", ".exs", ".usda", ".txt", ".txn"]
 
   @doc """
   Sentences joined twice: `{line_number, matched_phrase}` for each one.
@@ -176,11 +221,16 @@ defmodule DoubleJoin do
     end
   end
 
+  @doc "A file's prose: an RFD journal as its rendered Markdown, anything else as it is."
+  def read(repo, path, full) do
+    if RfdText.rfd?(path), do: RfdText.markdown(repo, nil, path), else: File.read!(full)
+  end
+
   defp score(repo, path) do
     full = Path.join(repo, path)
 
     if File.exists?(full) do
-      case joined_twice(File.read!(full)) do
+      case joined_twice(read(repo, path, full)) do
         [] ->
           IO.puts("  ok   #{path}")
           0
@@ -246,8 +296,8 @@ defmodule DoubleJoin do
       # Use, not mention.
       {"a quoted specimen does not count",
        ~s(The broken form reads "the axis and against three and a half" and is fixed above.), 0},
-      {"versus inside a word is not a comparison word",
-       "the adversus branch and the other one", 0}
+      {"versus inside a word is not a comparison word", "the adversus branch and the other one",
+       0}
     ]
 
     IO.puts("controls:")
@@ -266,8 +316,15 @@ defmodule DoubleJoin do
     # same use-not-mention problem the docs above solve by quoting, solved here by splitting.
     line_case = ~s(a "quoted and against five" span here
 the axis ) <> "and against" <> " three across it."
-    line_bad = if joined_twice(line_case) == [{2, "and against three"}], do: [], else: ["blanking keeps line numbers"]
-    IO.puts("  #{if line_bad == [], do: "ok  ", else: "BAD "} blanking a quote keeps the line number of the next line")
+
+    line_bad =
+      if joined_twice(line_case) == [{2, "and against three"}],
+        do: [],
+        else: ["blanking keeps line numbers"]
+
+    IO.puts(
+      "  #{if line_bad == [], do: "ok  ", else: "BAD "} blanking a quote keeps the line number of the next line"
+    )
 
     bad = bad ++ line_bad
 
@@ -290,7 +347,7 @@ case System.argv() do
   ["--file" | paths] when paths != [] ->
     bad =
       Enum.reduce(paths, 0, fn path, acc ->
-        case DoubleJoin.joined_twice(File.read!(path)) do
+        case DoubleJoin.joined_twice(DoubleJoin.read(".", path, path)) do
           [] ->
             acc
 

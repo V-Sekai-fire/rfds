@@ -174,6 +174,42 @@ defmodule RFD.Txn do
   defp instant(%{timestamp: <<_::binary-10>> = day}), do: day <> "T00:00:00Z"
   defp instant(%{timestamp: ts}), do: ts
 
+  @doc "The doc with `&{...}` references as written, not expanded."
+  def parse_raw!(text), do: RFD.DSL.unexpanded(fn -> parse!(text) end)
+
+  @doc "Every text of a doc, joined: what `&{...}` references and prose checks read."
+  def prose(%RFD.Doc{} = d) do
+    pairs = Enum.flat_map(d.details ++ d.sections, fn {h, b} -> [h, b] end)
+
+    rebac =
+      if d.rebac,
+        do: Enum.flat_map(d.rebac.tuples, &[&1.reason]) ++ Enum.map(d.rebac.verbs, & &1.meaning),
+        else: []
+
+    (Enum.map(@text ++ @spine, &Map.get(d, &1)) ++ [d.title | pairs] ++ rebac)
+    |> Enum.filter(&is_binary/1)
+    |> Enum.join("\n")
+  end
+
+  @doc "The day an RFD's serial was registered: its title transaction's date."
+  def registered_on(text) do
+    case Parser.parse(text) do
+      {:ok, txns} ->
+        txns |> Enum.min_by(&instant/1) |> Map.fetch!(:timestamp) |> String.slice(0, 10)
+
+      {:error, {line, col, msg}} ->
+        raise ArgumentError, "line #{line}, column #{col}: #{msg}"
+    end
+  end
+
+  @doc "The journal in its written form: what `write/2` gives for the doc it holds."
+  def canonical(text) do
+    d = parse_raw!(text)
+    site = if div(d.serial, 1000) == 1, do: "Weftspun", else: "VSekaiFabric"
+    madr? = String.contains?(text, "# tags: rfd:madr-heading")
+    write(d, day: registered_on(text), site: site, madr: madr?)
+  end
+
   def parse!(text) do
     case parse(text) do
       {:ok, d} -> d
@@ -336,17 +372,19 @@ defmodule RFD.Txn do
     if atom in @states, do: atom, else: raise(ArgumentError, "unknown state #{s}")
   end
 
+  @scalar_values %{
+    flight_level: ~w(l1 l2 l3)a,
+    attest_in: ~w(readme details none)a,
+    drafted_by: ~w(ai human)a,
+    details_pointer: [true, false],
+    compact_head: [true, false]
+  }
+
   defp scalar("rfd:" <> rest) do
     [key, value] = String.split(rest, ":", parts: 2)
     k = known!(key, @scalars, "unknown title tag rfd:#{key}")
-
-    v =
-      case value do
-        "true" -> true
-        "false" -> false
-        other -> String.to_existing_atom(other)
-      end
-
+    v = Enum.find(Map.fetch!(@scalar_values, k), &(to_string(&1) == value))
+    if v == nil, do: raise(ArgumentError, "title tag rfd:#{key} has no value #{value}")
     {k, v}
   end
 

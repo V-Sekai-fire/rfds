@@ -1,0 +1,990 @@
+2026-08-25T00:00:00Z (RFD66606-1120) 'Split apps/ into their own repos
+ # uuid: 365dc672-7847-558c-9360-c9d0e4d567e8
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Committed  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1120) '`weftspun-3d-studio`'s `apps/`,
+ # tags: rfd:scope
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1120) '`deploy/`, `scripts/`, and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1120) '`thirdparty/`
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1120) 'Each app lives in its own
+ # tags: rfd:hook
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1120) 'repository, with its history
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1120) 'carried over.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1120) '
+ # tags: rfd:hook
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1120) 'Three apps with separate Fly
+ # tags: rfd:intrigue
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1120) 'deploy targets shared one
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1120) 'monorepo checkout, one
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1120) '`scripts/ci.sh` building all
+ # tags: rfd:intrigue
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1120) 'three, and one self-hosted deploy
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1120) 'script.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1120) '
+ # tags: rfd:intrigue
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1120) 'Check a deploy against the
+ # tags: rfd:exit
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1120) '`/opt/weftspun/<repo>/`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1120) 'convention, one directory per
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1120) 'repo, before
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1120) 'you run it. The sections below
+ # tags: rfd:exit
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1120) 'hold the path changes and open
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1120) 'follow-up work.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1120) '
+ # tags: rfd:exit
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1120) 'Split apps/ into their own repos
+ # tags: rfd:details-title
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1120) 'Each app moved to its own
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1120) 'repository, with history
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1120) 'preserved by
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1120) '`git subtree split
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1120) '--prefix=apps/<app>`, then pushed
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1120) 'as that repo's
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1120) '`main`:
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1120) '`weftspun/weftspun-studio`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1120) '`weftspun/weftspun-character-taxonomy`,
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1120) 'and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1120) '`weftspun/weftspun-usd-viewer`.
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1120) '`deploy/`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1120) '`.github/workflows/deploy-fly.yml`,
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1120) 'and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1120) '`scripts/deploy-weftspun-quadlet.sh`
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1120) 'moved into `weftspun-studio`,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1120) 'the one app that requires the
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1120) 'other two reachable.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1120) '`thirdparty/3d_studio/` and
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1120) '`thirdparty/android-xr-face-bridge/`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1120) 'moved to `weftspun-3d-studio`'s
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1120) 'own repo root, leaving that repo
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1120) 'the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1120) 'browser client and the companion
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1120) 'APK only.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1120) '
+ # tags: rfd:decision
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1120) 'RFD66606-1058 gives the Quadlet
+ # tags: rfd:related
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1120) 'deploy this split's `deploy/`
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1120) 'move
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1120) 'adapts. RFD66606-1060 and
+ # tags: rfd:related
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1120) 'RFD66606-1076 give the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1120) 'repo-layout history this RFD
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1120) 'continues.
+ # tags: rfd:related
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1120) '
+ # tags: rfd:related
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1120) 'Repo map
+ # tags: rfd:details-heading
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1120) '| Old path (in
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1120) '`weftspun-3d-studio`)   | New
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1120) 'repo                                                        |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1120) '|
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1120) '------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1120) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1120) '---------------------------------------------------------------
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1120) '|
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1120) '| `apps/weftspun_studio/`              |
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1120) '`weftspun/weftspun-studio`                                      |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1120) '| `apps/character_taxonomy/`           |
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1120) '`weftspun/weftspun-character-taxonomy`                          |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1120) '| `apps/usd_viewer_app/`               |
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1120) '`weftspun/weftspun-usd-viewer`                                  |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1120) '| `thirdparty/3d_studio/`              |
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1120) '`weftspun-3d-studio`'s own repo
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1120) 'root, `3d_studio/`              |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1120) '|
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1120) '`thirdparty/android-xr-face-bridge/`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1120) '| `weftspun-3d-studio`'s own repo
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1120) 'root, `android-xr-face-bridge/` |
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1120) '`git subtree split
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1120) '--prefix=apps/<app>` only carries
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1120) 'history for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1120) 'commits where that content
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1120) 'already lived under
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1120) '`apps/<app>/`. Each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1120) 'new repo's history starts at
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1120) 'RFD66606-1076's move into
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1120) '`apps/`, not the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1120) 'project's full history; the
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1120) 'fuller history stays in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1120) '`weftspun-3d-studio`'s own git
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1120) 'log.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1120) 'The `/opt/weftspun/<repo>/`
+ # tags: rfd:details-heading
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1120) 'convention
+ # tags: rfd:details-heading, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1120) 'The self-hosted Quadlet deploy
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1120) '(RFD66606-1058) used to `rsync`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1120) 'one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1120) 'monorepo checkout to
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1120) '`/opt/weftspun/src`, and every
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1120) '`.build` unit's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1120) '`File=` path pointed inside it.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1120) 'With three repos,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1120) '`weftspun-studio`'s
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1120) 'own
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1120) '`scripts/deploy-weftspun-quadlet.sh`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1120) 'now:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1120) '1. Syncs itself to
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1120) '`/opt/weftspun/weftspun-studio`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1120) '(an `rsync` of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1120) '   working copy, as before).
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1120) '2. Clones or `git pull
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1120) '--ff-only`s
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1120) '`weftspun/weftspun-usd-viewer`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1120) '   directly from GitHub to
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1120) '`/opt/weftspun/weftspun-usd-viewer`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1120) '3. Installs `weftspun.network`
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1120) '(from `weftspun-studio`'s own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1120) '   `deploy/quadlet/`) plus every
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1120) '`.build`/`.container`/`.volume`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1120) 'unit
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1120) '   found under either app's own
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1120) '`deploy/quadlet/`.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1120) 'Each `.build` unit's `File=` path
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1120) 'now reads
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1120) '`/opt/weftspun/<repo-name>/...`,
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1120) 'one directory per repo instead of
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1120) 'one path inside a monorepo.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1120) '`character_taxonomy` needs no
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1120) 'quadlet
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1120) 'entry here; it deploys to Fly
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1120) 'alone, with no self-hosted or
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1120) 'cross-app dependency.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1120) 'Removed, not moved
+ # tags: rfd:details-heading
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1120) '`apps/`, `scripts/ci.sh`, and
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1120) '`scripts/studio-test.sh` were
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1120) 'removed from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (RFD66606-1120) '`weftspun-3d-studio`, since none
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (RFD66606-1120) 'apply to a repo with no app code
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (RFD66606-1120) 'left.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (RFD66606-1120) '- `scripts/ci.sh`: built the JS
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (RFD66606-1120) 'suite, the Elixir suite, and both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (RFD66606-1120) '  container images from one
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (RFD66606-1120) 'checkout. No longer applies with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (RFD66606-1120) 'three
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (RFD66606-1120) '  separate repos.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (RFD66606-1120) '- `scripts/studio-test.sh`, and
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (RFD66606-1120) 'its `.pre-commit-config.yaml`
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (RFD66606-1120) 'hook:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (RFD66606-1120) '  ran `weftspun_studio`'s own
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (RFD66606-1120) '`mix test`. Removed from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (RFD66606-1120) '  `weftspun-3d-studio` along with
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (RFD66606-1120) 'the last hook that file had; each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (RFD66606-1120) '  split repo needs its own CI,
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (RFD66606-1120) 'not yet built.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (RFD66606-1120) '-
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (RFD66606-1120) '`scripts/push_gallery_to_vgw.exs`:
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (RFD66606-1120) 'pushed proof assets to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (RFD66606-1120) '  versitygw's S3 API. Already
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (RFD66606-1120) 'dead before this split, since
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (RFD66606-1120) 'RFD66606-1079
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (RFD66606-1120) '  removed versitygw.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (RFD66606-1120) 'Open work
+ # tags: rfd:details-heading
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (RFD66606-1120) 'Each split repo needs its own CI
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (RFD66606-1120) '(JS test and build for
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (RFD66606-1120) '`weftspun-usd-viewer`, `mix test`
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (RFD66606-1120) 'for `weftspun-studio` and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (RFD66606-1120) '`weftspun-character-taxonomy`),
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (RFD66606-1120) 'not yet built. The self-hosted
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (RFD66606-1120) 'Quadlet deploy script is updated
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (RFD66606-1120) 'but not re-run against a live
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (RFD66606-1120) 'host
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (RFD66606-1120) 'since this split; a first run
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (RFD66606-1120) 'after this change should be
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (RFD66606-1120) 'treated
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (RFD66606-1120) 'as a fresh deploy, not an
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (RFD66606-1120) 'incremental one.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (RFD66606-1120) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (RFD66606-1120) '`weftspun-3d-studio` held three
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (RFD66606-1120) 'independently deployed apps
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (RFD66606-1120) '(`weftspun_studio`,
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (RFD66606-1120) '`character_taxonomy`,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (RFD66606-1120) '`usd_viewer_app`) under one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (RFD66606-1120) '`apps/` directory
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (RFD66606-1120) '(RFD66606-1076), plus a large
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (RFD66606-1120) 'vendored browser client
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (RFD66606-1120) 'and a companion APK under
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (RFD66606-1120) '`thirdparty/`. The three apps had
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (RFD66606-1120) 'no code
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (RFD66606-1120) 'sharing between them.
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (RFD66606-1120) '
+ # tags: rfd:details
+ Text:RFD1120  1 LINE
+ Text:Written

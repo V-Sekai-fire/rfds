@@ -1,0 +1,1025 @@
+2026-11-08T00:00:00Z (RFD66606-2486) 'Tri2d cli shared algorithm repo
+ # uuid: ff7748c9-16e7-57be-82e3-0323b81ccffe
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-08T00:00:01Z (RFD66606-2486) 'A validated 2D
+ # tags: rfd:hook
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:02Z (RFD66606-2486) 'constrained-Delaunay
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:03Z (RFD66606-2486) 'triangulation already backs a
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:04Z (RFD66606-2486) 'Python dataset pipeline and a
+ # tags: rfd:hook
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:05Z (RFD66606-2486) 'godot-sandbox guest. Which repo
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:06Z (RFD66606-2486) 'should
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:07Z (RFD66606-2486) 'carry it?
+ # tags: rfd:hook
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:08Z (RFD66606-2486) '
+ # tags: rfd:hook
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:09Z (RFD66606-2486) 'tri2d_cli wraps Geogram's real
+ # tags: rfd:intrigue
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:10Z (RFD66606-2486) 'CDT2d behind a JSON stdin/stdout
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:11Z (RFD66606-2486) 'contract. GarmentCodeData v2's
+ # tags: rfd:intrigue
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:12Z (RFD66606-2486) 'orig_lens pipeline (Python,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:13Z (RFD66606-2486) 'replacing
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:14Z (RFD66606-2486) 'CGAL) shells out to it, and the
+ # tags: rfd:intrigue
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:15Z (RFD66606-2486) 'sketch-mesh guest ported the same
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:16Z (RFD66606-2486) 'call sequence into its own
+ # tags: rfd:intrigue
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:17Z (RFD66606-2486) 'curvenet guest as a native
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:18Z (RFD66606-2486) 'function.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:19Z (RFD66606-2486) '
+ # tags: rfd:intrigue
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:20Z (RFD66606-2486) 'Check that the new repo exists,
+ # tags: rfd:exit
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:21Z (RFD66606-2486) 'builds standalone with plain
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:22Z (RFD66606-2486) 'cmake . && make, and that neither
+ # tags: rfd:exit
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:23Z (RFD66606-2486) 'GarmentCodeData nor the
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:24Z (RFD66606-2486) 'sketch-mesh guest vendors its own
+ # tags: rfd:exit
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:25Z (RFD66606-2486) 'copy of the CLI source.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:26Z (RFD66606-2486) '
+ # tags: rfd:exit
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:27Z (RFD66606-2486) 'Tri2d cli shared algorithm repo
+ # tags: rfd:details-title
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:28Z (RFD66606-2486) 'See DETAILS.md for the full
+ # tags: rfd:decision
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:29Z (RFD66606-2486) 'argument.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:30Z (RFD66606-2486) '
+ # tags: rfd:decision
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:31Z (RFD66606-2486) 'See DETAILS.md for the full
+ # tags: rfd:related
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:32Z (RFD66606-2486) 'argument.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:33Z (RFD66606-2486) '
+ # tags: rfd:related
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:34Z (RFD66606-2486) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:35Z (RFD66606-2486) 'Where does a triangulation two
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:36Z (RFD66606-2486) 'unrelated consumers share live?
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:37Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:38Z (RFD66606-2486) 'Context and problem statement
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:39Z (RFD66606-2486) 'tri2d_cli existed only as scratch
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:40Z (RFD66606-2486) 'files on two machines, this
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:41Z (RFD66606-2486) 'Mac's local port and the Windows
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:42Z (RFD66606-2486) 'desk's build, never committed to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:43Z (RFD66606-2486) 'a repo. It wraps Geogram's real
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:44Z (RFD66606-2486) 'CDT2d (constrained Delaunay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:45Z (RFD66606-2486) 'triangulation with hole removal)
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:46Z (RFD66606-2486) 'behind a small
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:47Z (RFD66606-2486) 'JSON-over-stdin/stdout CLI,
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:48Z (RFD66606-2486) 'validated against a known-area
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:49Z (RFD66606-2486) 'control
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:50Z (RFD66606-2486) 'case (see confirmation below).
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:51Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:52Z (RFD66606-2486) 'It has two independent consumers.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:53Z (RFD66606-2486) 'GarmentCodeData v2's orig_lens
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:54Z (RFD66606-2486) 'regeneration pipeline (Python)
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:55Z (RFD66606-2486) 'shells out to the built binary in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:56Z (RFD66606-2486) 'place of CGAL. The sketch-mesh
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:57Z (RFD66606-2486) 'repo's curvenet godot-sandbox
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:58Z (RFD66606-2486) 'guest
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:00:59Z (RFD66606-2486) 'ported the same point-flattening,
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:00Z (RFD66606-2486) 'constraint-insertion and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:01Z (RFD66606-2486) 'hole-removal sequence into C++ as
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:02Z (RFD66606-2486) 'a native guest function,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:03Z (RFD66606-2486) 'vmcall-verified on the Windows
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:04Z (RFD66606-2486) 'desk, reading native float
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:05Z (RFD66606-2486) 'vectors
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:06Z (RFD66606-2486) 'instead of JSON. Each consumer's
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:07Z (RFD66606-2486) 'repo serves a different domain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:08Z (RFD66606-2486) 'from the algorithm itself.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:09Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:10Z (RFD66606-2486) 'Decision drivers
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:11Z (RFD66606-2486) '- The validation is the control
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:12Z (RFD66606-2486) 'case checked in confirmation. It
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:13Z (RFD66606-2486) '  should be proven once, in one
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:14Z (RFD66606-2486) 'repo, not re-proven inside each
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:15Z (RFD66606-2486) '  consumer.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:16Z (RFD66606-2486) '- GarmentCodeData is a Python
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:17Z (RFD66606-2486) 'dataset-generation repo. Its only
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:18Z (RFD66606-2486) '  other caller is a Godot guest
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:19Z (RFD66606-2486) 'ELF, so a C++ triangulation
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:20Z (RFD66606-2486) '  library sits outside its
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:21Z (RFD66606-2486) 'domain.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:22Z (RFD66606-2486) '- The sketch-mesh repo is a
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:23Z (RFD66606-2486) 'godot-sandbox guest repo. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:24Z (RFD66606-2486) '  standalone-CLI build path
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:25Z (RFD66606-2486) '(cmake . && make,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:26Z (RFD66606-2486) 'JSON-over-stdio)
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:27Z (RFD66606-2486) '  serves only the Python side, so
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:28Z (RFD66606-2486) 'it sits outside that repo's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:29Z (RFD66606-2486) '  domain too.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:30Z (RFD66606-2486) '- The vendored Geogram subset
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:31Z (RFD66606-2486) '(BSD-3-Clause, Inria) needs to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:32Z (RFD66606-2486) 'stay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:33Z (RFD66606-2486) '  distinct from our own MIT code
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:34Z (RFD66606-2486) 'wherever it lands. Vendoring it
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:35Z (RFD66606-2486) '  twice doubles the licensing
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:36Z (RFD66606-2486) 'surface for no benefit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:37Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:38Z (RFD66606-2486) 'Considered options
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:39Z (RFD66606-2486) '- Commit tri2d_cli into
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:40Z (RFD66606-2486) 'GarmentCodeData's own repo, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:41Z (RFD66606-2486) 'have the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:42Z (RFD66606-2486) '  sketch-mesh guest re-derive its
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:43Z (RFD66606-2486) 'native function from scratch
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:44Z (RFD66606-2486) '  each time it drifts.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:45Z (RFD66606-2486) '- Commit the CLI into the
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:46Z (RFD66606-2486) 'sketch-mesh repo and have
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:47Z (RFD66606-2486) 'GarmentCodeData's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:48Z (RFD66606-2486) '  pipeline depend on that repo as
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:49Z (RFD66606-2486) 'a submodule.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:50Z (RFD66606-2486) '- Place it as its own repo: the
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:51Z (RFD66606-2486) 'validated CLI, its vendored
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:52Z (RFD66606-2486) '  geogram-subset subtree, and the
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:53Z (RFD66606-2486) 'control test, with both
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:54Z (RFD66606-2486) '  consumers treating it as an
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:55Z (RFD66606-2486) 'external, versioned tool.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:56Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:57Z (RFD66606-2486) 'Decision outcome
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:58Z (RFD66606-2486) 'Chosen option: its own new repo.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:01:59Z (RFD66606-2486) 'The algorithm and its validation
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:00Z (RFD66606-2486) 'belong to neither consumer, and a
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:01Z (RFD66606-2486) 'shared repo lets both read the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:02Z (RFD66606-2486) 'same validated source instead of
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:03Z (RFD66606-2486) 'two copies drifting apart.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:04Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:05Z (RFD66606-2486) 'The new repo carries:
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:06Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:07Z (RFD66606-2486) '- tri2d_cli.cpp and
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:08Z (RFD66606-2486) 'boolean_expression.cpp (MIT,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:09Z (RFD66606-2486) 'ours).
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:10Z (RFD66606-2486) '- a vendored geogram-subset tree
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:11Z (RFD66606-2486) '(Geogram 1.9.9, BSD-3-Clause,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:12Z (RFD66606-2486) '  Inria), with its own LICENSE
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:13Z (RFD66606-2486) 'and CITATION.cff kept inside that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:14Z (RFD66606-2486) '  subtree.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:15Z (RFD66606-2486) '- A CMakeLists.txt that builds
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:16Z (RFD66606-2486) 'standalone with plain
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:17Z (RFD66606-2486) '  cmake . && make, no GarmentCode
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:18Z (RFD66606-2486) 'or Windows-desk directory
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:19Z (RFD66606-2486) '  assumptions.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:20Z (RFD66606-2486) '- A README stating the JSON
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:21Z (RFD66606-2486) 'contract and the control case
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:22Z (RFD66606-2486) 'from
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:23Z (RFD66606-2486) '  confirmation as its smoke test.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:24Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:25Z (RFD66606-2486) 'GarmentCodeData's pipeline and
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:26Z (RFD66606-2486) 'the sketch-mesh guest keep their
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:27Z (RFD66606-2486) 'own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:28Z (RFD66606-2486) 'ports of the call sequence, a
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:29Z (RFD66606-2486) 'Python subprocess call and a
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:30Z (RFD66606-2486) 'native
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:31Z (RFD66606-2486) 'C++ guest function. This repo is
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:32Z (RFD66606-2486) 'where the algorithm itself is
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:33Z (RFD66606-2486) 'proven once.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:34Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:35Z (RFD66606-2486) 'Consequences
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:36Z (RFD66606-2486) '- Good: one validated
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:37Z (RFD66606-2486) 'triangulation, read by two
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:38Z (RFD66606-2486) 'consumers, instead
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:39Z (RFD66606-2486) '  of two copies that can silently
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:40Z (RFD66606-2486) 'diverge.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:41Z (RFD66606-2486) '- Good: the BSD-3-Clause vendor
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:42Z (RFD66606-2486) 'subtree is licensed once,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:43Z (RFD66606-2486) 'correctly
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:44Z (RFD66606-2486) '  scoped, instead of twice.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:45Z (RFD66606-2486) '- Good: GarmentCodeData and the
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:46Z (RFD66606-2486) 'sketch-mesh guest each stay
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:47Z (RFD66606-2486) 'focused
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:48Z (RFD66606-2486) '  on their own domain. Neither
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:49Z (RFD66606-2486) 'carries the other's build path.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:50Z (RFD66606-2486) '- Bad: a third consumer, or a fix
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:51Z (RFD66606-2486) 'found in one port, still has to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:52Z (RFD66606-2486) '  be manually checked against
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:53Z (RFD66606-2486) 'this repo's tri2d_cli.cpp. The
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:54Z (RFD66606-2486) '  guest's C++ port is a separate
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:55Z (RFD66606-2486) 'translation, not a build
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:56Z (RFD66606-2486) '  dependency on this repo.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:57Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:58Z (RFD66606-2486) 'Confirmation
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:02:59Z (RFD66606-2486) '- The new repo exists, public,
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:00Z (RFD66606-2486) 'MIT-licensed for its own code,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:01Z (RFD66606-2486) 'with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:02Z (RFD66606-2486) '  the vendored geogram-subset
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:03Z (RFD66606-2486) 'tree kept under Geogram's
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:04Z (RFD66606-2486) '  BSD-3-Clause.
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:05Z (RFD66606-2486) '- cmake . && make on a clean
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:06Z (RFD66606-2486) 'macOS or Linux checkout builds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:07Z (RFD66606-2486) '  tri2d_cli with no other
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:08Z (RFD66606-2486) 'directories present.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:09Z (RFD66606-2486) '- The control case: a 10x10
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:10Z (RFD66606-2486) 'square boundary, a 2x2 hole, and
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:11Z (RFD66606-2486) '2
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:12Z (RFD66606-2486) '  interior points, piped into the
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:13Z (RFD66606-2486) 'built binary, sums to area
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:14Z (RFD66606-2486) '  96.0, with no triangle centroid
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:15Z (RFD66606-2486) 'landing inside the hole.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:16Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:17Z (RFD66606-2486) 'More information
+ # tags: rfd:madr-heading
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:18Z (RFD66606-2486) 'Relates to the sketch-mesh repo's
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:19Z (RFD66606-2486) 'guest port of this same call
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:20Z (RFD66606-2486) 'sequence, and to GarmentCodeData
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:21Z (RFD66606-2486) 'v2's orig_lens regeneration
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:22Z (RFD66606-2486) 'pipeline, the Python consumer
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:23Z (RFD66606-2486) 'this CLI replaces CGAL for.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2486  1 LINE
+ Text:Written
+
+2026-11-08T00:03:24Z (RFD66606-2486) '
+ # tags: rfd:details
+ Text:RFD2486  1 LINE
+ Text:Written

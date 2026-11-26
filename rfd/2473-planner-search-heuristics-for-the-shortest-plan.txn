@@ -1,0 +1,280 @@
+2026-11-07T00:00:00Z (RFD66606-2473) 'Planner search: heuristics for the shortest plan
+ # uuid: cb587afc-ea43-529e-8115-b395a016fbbb
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2473) 'the planner's backtracking search
+ # tags: rfd:feature
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2473) 'finds the shortest plan without
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2473) 'an exhaustive scan.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2473) 'the planner's bound-raising
+ # tags: rfd:scope
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2473) 'search and the domains it solves.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2473) 'Can the planner find the shortest
+ # tags: rfd:hook
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2473) 'plan for 16 cubes without
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2473) 'scanning every bound in turn?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2473) '
+ # tags: rfd:hook
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2473) '`shortestOf` raises a bound on
+ # tags: rfd:intrigue
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2473) 'the number of actions until a
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2473) 'plan reaches its goals, through
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2473) 'a backtracking decomposition.
+ # tags: rfd:intrigue
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2473) 'That search is exhaustive at each
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2473) 'bound, so the whole search is
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2473) 'exponential: fine for the Sussman
+ # tags: rfd:intrigue
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2473) 'anomaly at six actions, too slow
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2473) 'for 16 cubes.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2473) '
+ # tags: rfd:intrigue
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2473) 'Run the blocks-world domain at 16
+ # tags: rfd:exit
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2473) 'cubes under a wall-clock budget.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2473) 'A plan that returns within
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2473) 'budget, at the same length an
+ # tags: rfd:exit
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2473) 'exhaustive search would find,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2473) 'passes.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2473) '
+ # tags: rfd:exit
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2473) 'Add three heuristics to the
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2473) 'bound-raising search, each kept
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2473) 'only if it holds plan length
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2473) 'unchanged while cutting search
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2473) 'time:
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2473) '- A lower bound supplied by the
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2473) 'domain (admissible, so the rising
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2473) 'bound starts higher and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2473) '  prunes branches that cannot
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2473) 'reach a shorter plan).
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2473) '- Memoising failed (state, bound)
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2473) 'pairs, so a branch already shown
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2473) 'to fail at a bound is never
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2473) '  re-explored at that bound.
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2473) '- Ordering alternatives by a
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2473) 'heuristic, so the search tries
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2473) 'the branch most likely to reach
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2473) 'the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2473) '  goal first, before the branches
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2473) 'it would otherwise explore in
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2473) 'declaration order.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2473) 'Each heuristic ships behind its
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2473) 'own control: a planted domain
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2473) 'that breaks admissibility, a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2473) 'planted stale memo entry, and a
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2473) 'planted heuristic that always
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:53Z (RFD66606-2473) 'ranks last, each of which must
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:54Z (RFD66606-2473) 'make its gate fail.
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written
+
+2026-11-07T00:00:55Z (RFD66606-2473) '
+ # tags: rfd:decision
+ Text:RFD2473  1 LINE
+ Text:Written

@@ -7,20 +7,31 @@
 # this script is the CLAUDE.md half, which a prek hook runs on its own.
 #
 # Usage:
-#     elixir scripts/check_rebac.exs [--doc CLAUDE.md] [--rfd rfd/2200-rebac-agent-roles.exs]
-#     elixir scripts/check_rebac.exs --self-test
+#     mix run scripts/check_rebac.exs [--doc CLAUDE.md] [--rfd rfd/2200-rebac-agent-roles.txn]
+#     mix run scripts/check_rebac.exs --self-test
 #
 # Exit codes: 0 every row is well formed, 1 a row is not or a precondition is unmet, 2 bad usage.
 
-for f <- ~w(lib/rfd/rebac.ex lib/rfd/ref.ex lib/rfd/rectgtn.ex lib/rfd/hide.ex lib/rfd/doc.ex
-         lib/rfd/dsl.ex),
-    do: Code.require_file(f)
+unless Code.ensure_loaded?(RFD.Txn) do
+  for f <- ~w(lib/rfd/rebac.ex lib/rfd/ref.ex lib/rfd/rectgtn.ex lib/rfd/hide.ex lib/rfd/doc.ex
+           lib/rfd/dsl.ex),
+      do: Code.require_file(f)
+end
 
 defmodule ReBACGate do
-  @rfd "rfd/2200-rebac-agent-roles.exs"
+  @rfd "rfd/2200-rebac-agent-roles.txn"
 
   @doc "The verbs an RFD source declares, as a set of atoms."
   def verbs(path) do
+    if String.ends_with?(path, ".txn"),
+      do: doc_verbs(RFD.Source.load(path)),
+      else: compiled_verbs(path)
+  end
+
+  defp doc_verbs(%{rebac: nil}), do: MapSet.new()
+  defp doc_verbs(%{rebac: rebac}), do: MapSet.new(RFD.ReBAC.verb_names(rebac))
+
+  defp compiled_verbs(path) do
     Code.compiler_options(ignore_module_conflict: true)
 
     case Code.compile_file(path) do

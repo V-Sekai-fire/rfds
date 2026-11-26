@@ -1,0 +1,450 @@
+2026-08-25T00:00:00Z (RFD66606-1135) 'One Python environment per Elixir app
+ # uuid: bb344dcb-142d-5708-9ea3-1627dd838ec8
+ # tags: rfd:title, rfd:attest-in:none
+ RFD:Discussion  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:01Z (RFD66606-1135) 'how an Elixir app reaches Python
+ # tags: rfd:feature
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (RFD66606-1135) '`7-service/service-livebook`
+ # tags: rfd:scope
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (RFD66606-1135) 'An Elixir app reaches Python one
+ # tags: rfd:hook
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (RFD66606-1135) 'way, and a gate keeps it that
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1135) 'way.
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1135) '
+ # tags: rfd:hook
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1135) 'A notebook named three packages
+ # tags: rfd:intrigue
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1135) 'while the loop depended on five
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1135) 'environments it never
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (RFD66606-1135) 'named, so it ran on one desk and
+ # tags: rfd:intrigue
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (RFD66606-1135) 'nowhere else.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (RFD66606-1135) '
+ # tags: rfd:intrigue
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (RFD66606-1135) 'Run
+ # tags: rfd:exit
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (RFD66606-1135) '`priv/python/check_pixi_free.py`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (RFD66606-1135) 'before you merge, then read
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (RFD66606-1135) 'RFD66606-1134.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (RFD66606-1135) '
+ # tags: rfd:exit
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (RFD66606-1135) 'One Python environment per Elixir
+ # tags: rfd:details-title
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (RFD66606-1135) 'app
+ # tags: rfd:details-title, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (RFD66606-1135) 'An Elixir app reaches Python
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (RFD66606-1135) 'through pythonx and through
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1135) 'nothing else.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1135) '`priv/python/check_pixi_free.py`
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1135) 'fails the build on a call to the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1135) 'other
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1135) 'environment manager, and it reads
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1135) 'prose without complaining, so the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1135) 'rule
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1135) 'stays writable.
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1135) '
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1135) 'An embedded interpreter starts
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1135) 'once, with one dependency set. So
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1135) 'a second
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1135) 'dependency set is a second app:
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1135) 'its own mix project, its own
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1135) 'setup cell,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1135) 'its own runtime. The gate holds
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1135) 'that too. It reads the
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1135) '`pyproject.toml`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1135) 'cell of every notebook in an app
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1135) 'and fails when two of them
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1135) 'differ.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1135) '
+ # tags: rfd:decision
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1135) 'RFD66606-1134 tests these
+ # tags: rfd:related
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1135) 'notebooks in the browser.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1135) '
+ # tags: rfd:related
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1135) 'Where the separation went
+ # tags: rfd:details-heading
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1135) 'This is what the corpus
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1135) 'repository's environments were
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1135) 'for. OmniGen2 pins
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1135) 'torch 2.6.0+cu124 and EditScore
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1135) 'pins cu128, and no interpreter
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1135) 'holds
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1135) 'both. That separation stays, as
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1135) 'apps beside each other rather
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1135) 'than
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1135) 'environments inside one app. The
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1135) 'corpus repository keeps its own
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1135) 'environments, and what is
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1135) 'forbidden is this app calling
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1135) 'into them.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1135) '
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1135) 'The failure was not theoretical
+ # tags: rfd:details-heading
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1135) 'RFD66606-1134 tests these
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1135) 'notebooks in the browser, which
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1135) 'is how the missing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1135) 'renderer was found.
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1135) '
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1135) 'The failure was not theoretical.
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1135) 'Loop 1 stopped with `No module
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1135) 'named
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1135) ''drjit'`, because it called the
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1135) '`anny` environment for a renderer
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1135) 'that
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1135) 'only the default environment
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1135) 'carries. The notebook cannot show
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1135) 'that.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1135) '
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1135) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1135) '`service-livebook` embeds a
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1135) 'Python interpreter with
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1135) '`pythonx`. Its setup
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1135) 'cell names the packages and the
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1135) 'pins travel in the notebook file.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1135) 'Beside
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1135) 'that, a helper shelled into five
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1135) 'environments in another
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1135) 'repository.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD1135  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1135) '
+ # tags: rfd:details
+ Text:RFD1135  1 LINE
+ Text:Written

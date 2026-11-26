@@ -15,12 +15,12 @@
 # Exit codes: 0 every rendered solution is the planner's, 1 one is not, 2 bad usage.
 
 for f <- [
-          "lib/rfd/rebac.ex",
-          "lib/rfd/rectgtn.ex",
-          "lib/rfd/hide.ex",
-          "lib/rfd/doc.ex",
-          "lib/rfd/dsl.ex"
-        ],
+      "lib/rfd/rebac.ex",
+      "lib/rfd/rectgtn.ex",
+      "lib/rfd/hide.ex",
+      "lib/rfd/doc.ex",
+      "lib/rfd/dsl.ex"
+    ],
     do: Code.require_file(f)
 
 defmodule RectgtnPlanGate do
@@ -47,6 +47,7 @@ defmodule RectgtnPlanGate do
       :stderr,
       "usage: elixir scripts/check_rectgtn_plan.exs [--taskweft DIR] | --self-test"
     )
+
     System.halt(2)
   end
 
@@ -54,9 +55,8 @@ defmodule RectgtnPlanGate do
   def rendered do
     Code.compiler_options(ignore_module_conflict: true)
 
-    for path <- Path.wildcard("rfd/[0-9][0-9][0-9][0-9]-*.exs"),
-        [{module, _} | _] = Code.compile_file(path),
-        doc = module.__rfd__(),
+    for path <- Path.wildcard("rfd/[0-9][0-9][0-9][0-9]-*.txn"),
+        doc = RFD.Source.load(path),
         doc.steps != [] do
       {doc, RFD.RECTGTN.plan(doc)}
     end
@@ -93,6 +93,7 @@ defmodule RectgtnPlanGate do
                 "  FAIL RFD #{doc.serial}: rendered #{length(want)} steps, " <>
                   "planner #{length(got)}"
               )
+
               IO.puts("       rendered: #{inspect(want)}")
               IO.puts("       planner:  #{inspect(got)}")
               [doc.serial | acc]
@@ -207,8 +208,7 @@ defmodule RectgtnPlanGate do
       {"a parked step that names nothing missing is refused",
        RFD.RECTGTN.problems(%{
          steps: [%RFD.Step{name: "s", repos: ["r"], check: "c", state: :parked}]
-       }),
-       ["step \"s\" is parked and names nothing missing"]},
+       }), ["step \"s\" is parked and names nothing missing"]},
       {"a step naming no repository is refused",
        RFD.RECTGTN.problems(%{steps: [%RFD.Step{name: "s", repos: [], check: "c"}]}),
        ["step \"s\" names no repository"]},

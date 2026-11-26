@@ -281,6 +281,22 @@ defmodule RFD.DSL do
   end
 
   defp expand(%RFD.Doc{} = d) do
+    if Application.get_env(:rfd, :expand_refs, true), do: expand_refs(d), else: d
+  end
+
+  @doc "Run `fun` with `&{...}` references kept as written, for conversion and refs."
+  def unexpanded(fun) do
+    before = Application.get_env(:rfd, :expand_refs, true)
+    Application.put_env(:rfd, :expand_refs, false)
+
+    try do
+      fun.()
+    after
+      Application.put_env(:rfd, :expand_refs, before)
+    end
+  end
+
+  defp expand_refs(%RFD.Doc{} = d) do
     pair = fn {h, b} -> {RFD.Ref.expand!(h), RFD.Ref.expand!(b)} end
 
     d

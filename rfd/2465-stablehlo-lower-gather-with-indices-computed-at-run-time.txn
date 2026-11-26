@@ -1,0 +1,265 @@
+2026-11-07T00:00:00Z (RFD66606-2465) 'StableHLO: lower gather with indices computed at run time
+ # uuid: 784d53dd-9d31-5716-a977-d154366edb83
+ # tags: rfd:title
+ RFD:Prediscussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-07T00:00:01Z (RFD66606-2465) 'the StableHLO lowering accepts
+ # tags: rfd:feature
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:02Z (RFD66606-2465) 'gather with run-time i32 index
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:03Z (RFD66606-2465) 'arithmetic.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:04Z (RFD66606-2465) 'the gather case in
+ # tags: rfd:scope
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:05Z (RFD66606-2465) 'guest/pjrt-rd/stablehlo.cpp and
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2465) 'its generated test cases.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2465) 'Can an embedding lookup's
+ # tags: rfd:hook
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2465) '`stablehlo.gather` run with its
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2465) 'i32 indices computed at run time,
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2465) 'not only known at compile time?
+ # tags: rfd:hook
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2465) '
+ # tags: rfd:hook
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2465) 'An embedding lookup (`w[i]`)
+ # tags: rfd:intrigue
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2465) 'emits `stablehlo.gather` with i32
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2465) 'index arithmetic (add, compare,
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2465) 'select, clamp) on values that
+ # tags: rfd:intrigue
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2465) 'arrive as arguments, but today
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2465) 'i32 values are only accepted when
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2465) 'they are known at compile time.
+ # tags: rfd:intrigue
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2465) '
+ # tags: rfd:intrigue
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:20Z (RFD66606-2465) 'Cases in
+ # tags: rfd:exit
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:21Z (RFD66606-2465) '`tools/gen_stablehlo_cases.py`
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:22Z (RFD66606-2465) 'cover gather, including zeros of
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:23Z (RFD66606-2465) 'both signs,
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:24Z (RFD66606-2465) 'infinities, NaN and denormals,
+ # tags: rfd:exit
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:25Z (RFD66606-2465) 'compared bit for bit against XLA
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:26Z (RFD66606-2465) 'CPU's output from the Zen 2
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:27Z (RFD66606-2465) 'desk.
+ # tags: rfd:exit
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:28Z (RFD66606-2465) '
+ # tags: rfd:exit
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:29Z (RFD66606-2465) '- Carry run-time i32 values on
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:30Z (RFD66606-2465) 'the device once run-time i32
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:31Z (RFD66606-2465) 'arithmetic lands, rather than
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:32Z (RFD66606-2465) 'only
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:33Z (RFD66606-2465) '  compile-time-known values.
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:34Z (RFD66606-2465) '- Reduce the common gather forms,
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:35Z (RFD66606-2465) 'a row lookup and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:36Z (RFD66606-2465) '`take_along_axis`, to
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:37Z (RFD66606-2465) '`ggml_get_rows`.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:38Z (RFD66606-2465) '- Refuse the general gather form
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:39Z (RFD66606-2465) 'with `UNIMPLEMENTED` rather than
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:40Z (RFD66606-2465) 'approximate it.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:41Z (RFD66606-2465) '- Add gather cases to
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:42Z (RFD66606-2465) '`tools/gen_stablehlo_cases.py`
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:43Z (RFD66606-2465) 'with the special values above; a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:44Z (RFD66606-2465) 'planted
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:45Z (RFD66606-2465) '  control case must fail its
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:46Z (RFD66606-2465) 'gate, and all 11 desk gates still
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:47Z (RFD66606-2465) 'pass.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:48Z (RFD66606-2465) '
+ # tags: rfd:decision
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:49Z (RFD66606-2465) '- RFD66606-2372, the guest ELF
+ # tags: rfd:related
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:50Z (RFD66606-2465) 'and ggml-rd compute route this
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:51Z (RFD66606-2465) 'kernel runs on.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2465  1 LINE
+ Text:Written
+
+2026-11-07T00:00:52Z (RFD66606-2465) '
+ # tags: rfd:related
+ Text:RFD2465  1 LINE
+ Text:Written

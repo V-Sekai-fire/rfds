@@ -1,0 +1,600 @@
+2026-11-14T00:00:00Z (RFD66606-2494) 'mojo builds to a risc-v guest elf
+ # uuid: e232c12d-2d58-527d-a4dd-7bdde87fe89e
+ # tags: rfd:title
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-14T00:00:01Z (RFD66606-2494) 'a Mojo program with its standard
+ # tags: rfd:feature
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:02Z (RFD66606-2494) 'library runs as a sandbox guest.
+ # tags: rfd:feature, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:03Z (RFD66606-2494) 'the Mojo guest sample: build,
+ # tags: rfd:scope
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:04Z (RFD66606-2494) 'runtime stand-ins, public
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:05Z (RFD66606-2494) 'function and limits.
+ # tags: rfd:scope, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:06Z (RFD66606-2494) 'Can Mojo be a guest language
+ # tags: rfd:hook
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:07Z (RFD66606-2494) 'here, with its standard library
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:08Z (RFD66606-2494) 'and async tasks, when Modular
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:09Z (RFD66606-2494) 'ships no RISC-V build of the
+ # tags: rfd:hook
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:10Z (RFD66606-2494) 'runtime Mojo's startup calls?
+ # tags: rfd:hook, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:11Z (RFD66606-2494) '
+ # tags: rfd:hook
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:12Z (RFD66606-2494) 'Mojo emits a RISC-V object and
+ # tags: rfd:intrigue
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:13Z (RFD66606-2494) 'links no cross-compiled
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:14Z (RFD66606-2494) 'executable. Its startup calls 28
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:15Z (RFD66606-2494) 'runtime entry points. Modular
+ # tags: rfd:intrigue
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:16Z (RFD66606-2494) 'publishes those sources, but some
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:17Z (RFD66606-2494) 'headers they include are
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:18Z (RFD66606-2494) 'missing from the tree. The
+ # tags: rfd:intrigue
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:19Z (RFD66606-2494) 'sandbox host also refuses an ELF
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:20Z (RFD66606-2494) 'that does not name its Variant
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:21Z (RFD66606-2494) 'size.
+ # tags: rfd:intrigue, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:22Z (RFD66606-2494) '
+ # tags: rfd:intrigue
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:23Z (RFD66606-2494) 'Run the sample in the engine's
+ # tags: rfd:exit
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:24Z (RFD66606-2494) 'Sandbox build. It prints through
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:25Z (RFD66606-2494) 'the standard library, adds up
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:26Z (RFD66606-2494) 'three async tasks and answers a
+ # tags: rfd:exit
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:27Z (RFD66606-2494) 'vmcall for add_numbers(3, 4) with
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:28Z (RFD66606-2494) '7. Then run the limits tests.
+ # tags: rfd:exit, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:29Z (RFD66606-2494) '
+ # tags: rfd:exit
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:30Z (RFD66606-2494) 'mojo builds to a risc-v guest elf
+ # tags: rfd:details-title
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:31Z (RFD66606-2494) '- A Mojo guest is an object
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:32Z (RFD66606-2494) 'linked statically by clang and
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:33Z (RFD66606-2494) 'lld against the committed riscv64
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:34Z (RFD66606-2494) '  sysroot (operator, 2026-11-14).
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:35Z (RFD66606-2494) '- Modular's runtime is forked,
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:36Z (RFD66606-2494) 'not rewritten: one file is used
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:37Z (RFD66606-2494) 'as published over stand-ins for
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:38Z (RFD66606-2494) '  its unpublished headers, and
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:39Z (RFD66606-2494) 'the async runtime is its thread
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:40Z (RFD66606-2494) 'pool with one worker (operator,
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:41Z (RFD66606-2494) '  2026-11-14).
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:42Z (RFD66606-2494) '- The guest names its Variant
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:43Z (RFD66606-2494) 'size, 40 bytes for a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:44Z (RFD66606-2494) 'double-precision host, in its own
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:45Z (RFD66606-2494) 'section.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:46Z (RFD66606-2494) '- The public function is
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:47Z (RFD66606-2494) 'registered while main runs. The
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:48Z (RFD66606-2494) 'Variant glue is C, the logic
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:49Z (RFD66606-2494) 'Mojo.
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:50Z (RFD66606-2494) '- Each limit of the guest is a
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:51Z (RFD66606-2494) 'witness property that is red
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:52Z (RFD66606-2494) 'until the limit is lifted, with a
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:53Z (RFD66606-2494) '  control that stays green
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:54Z (RFD66606-2494) '(operator, 2026-11-14).
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:55Z (RFD66606-2494) '- Mojo is a guest language beside
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:56Z (RFD66606-2494) 'SafeGDScript, which stays first
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:57Z (RFD66606-2494) 'for new guest code
+ # tags: rfd:decision, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:58Z (RFD66606-2494) '  (operator, 2026-11-14).
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:00:59Z (RFD66606-2494) '
+ # tags: rfd:decision
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:00Z (RFD66606-2494) '- RFD66606-2391, guests are built
+ # tags: rfd:related
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:01Z (RFD66606-2494) 'at double precision, which the
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:02Z (RFD66606-2494) 'Variant size follows.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:03Z (RFD66606-2494) '- RFD66606-2492, whose session
+ # tags: rfd:related
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:04Z (RFD66606-2494) 'rules name the guest languages.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:05Z (RFD66606-2494) '- RFD66606-2420, C guests built
+ # tags: rfd:related
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:06Z (RFD66606-2494) 'at double and tested with Lean.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:07Z (RFD66606-2494) '- RFD66606-2372, heavy compute
+ # tags: rfd:related
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:08Z (RFD66606-2494) 'runs in a sandbox guest.
+ # tags: rfd:related, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:09Z (RFD66606-2494) '
+ # tags: rfd:related
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:10Z (RFD66606-2494) 'What was run
+ # tags: rfd:details-heading
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:11Z (RFD66606-2494) 'The sample is its own repository
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:12Z (RFD66606-2494) 'in our organisation, started on
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:13Z (RFD66606-2494) '2026-11-14.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:14Z (RFD66606-2494) '- The Mojo compiler is pinned to
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:15Z (RFD66606-2494) 'a 1.3.0 nightly. RISC-V emission
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:16Z (RFD66606-2494) 'was missing from nightlies
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:17Z (RFD66606-2494) '  after 1.0.0b3.dev2026071006 and
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:18Z (RFD66606-2494) 'through at least
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:19Z (RFD66606-2494) '1.1.0.dev2026081505, and works in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:20Z (RFD66606-2494) 'the pin.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:21Z (RFD66606-2494) '- It ran in the engine's
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:22Z (RFD66606-2494) 'double-precision Sandbox build in
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:23Z (RFD66606-2494) 'a real window, and in the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:24Z (RFD66606-2494) 'safe-Rust
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:25Z (RFD66606-2494) '  libriscv port, which has no
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:26Z (RFD66606-2494) 'Sandbox host. A Godot build
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:27Z (RFD66606-2494) 'without the Sandbox class fails
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:28Z (RFD66606-2494) 'it.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:29Z (RFD66606-2494) '
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:30Z (RFD66606-2494) 'The limits
+ # tags: rfd:details-heading
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:31Z (RFD66606-2494) 'The tests are in its tests
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:32Z (RFD66606-2494) 'directory. They run in the Rust
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:33Z (RFD66606-2494) 'port, and the string test also
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:34Z (RFD66606-2494) 'runs
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:35Z (RFD66606-2494) 'in the engine, because a string
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:36Z (RFD66606-2494) 'lives in the host. Every property
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:37Z (RFD66606-2494) 'holds today: int, bool, float,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:38Z (RFD66606-2494) 'string and object Variants, one
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:39Z (RFD66606-2494) 'worker, parallelize on one
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:40Z (RFD66606-2494) 'worker, and a spin lock under
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:41Z (RFD66606-2494) 'tasks.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:42Z (RFD66606-2494) 'The Wait_Timeout test passes in
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:43Z (RFD66606-2494) 'the engine, where the guest reads
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:44Z (RFD66606-2494) 'Godot's clock, and is skipped
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:45Z (RFD66606-2494) 'in the Rust port, which has no
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:46Z (RFD66606-2494) 'host clock. A vmcall of an echo
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:47Z (RFD66606-2494) 'function returns each of the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:48Z (RFD66606-2494) 'five types unchanged in the
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:49Z (RFD66606-2494) 'engine. A host that passes native
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:50Z (RFD66606-2494) 'arguments gets its own function,
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:51Z (RFD66606-2494) 'add_numbers_native, which returns
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:52Z (RFD66606-2494) '7 for 3 and 4. Only that function
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:53Z (RFD66606-2494) 'has a native form. Nothing
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:54Z (RFD66606-2494) 'is red. A timed wait polls the
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:55Z (RFD66606-2494) 'clock and each poll is charged to
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:56Z (RFD66606-2494) 'the instruction budget, so the
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:57Z (RFD66606-2494) 'engine test sets the budget to no
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:58Z (RFD66606-2494) 'limit.
+ # tags: rfd:details, rfd:wrap
+ Text:RFD2494  1 LINE
+ Text:Written
+
+2026-11-14T00:01:59Z (RFD66606-2494) '
+ # tags: rfd:details
+ Text:RFD2494  1 LINE
+ Text:Written

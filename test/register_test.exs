@@ -99,10 +99,10 @@ defmodule RegisterTest do
 
   test "the tree check names a source with no row, a slug mismatch and a deleted serial with a source" do
     sources = [
-      "rfd/9000-conventions.exs",
-      "rfd/9001-other-slug.exs",
-      "rfd/9003-gone.exs",
-      "rfd/9005-new.exs"
+      "rfd/9000-conventions.txn",
+      "rfd/9001-other-slug.txn",
+      "rfd/9003-gone.txn",
+      "rfd/9005-new.txn"
     ]
 
     problems = RFD.Serials.tree_problems(reg(@good), sources)
@@ -116,8 +116,8 @@ defmodule RegisterTest do
     assert Enum.any?(problems, &(&1 =~ "serial 9003 is listed as deleted and has a source"))
 
     assert RFD.Serials.tree_problems(reg(@good), [
-             "rfd/9000-conventions.exs",
-             "rfd/9001-a-slug.exs"
+             "rfd/9000-conventions.txn",
+             "rfd/9001-a-slug.txn"
            ]) == []
   end
 

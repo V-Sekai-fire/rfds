@@ -104,6 +104,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
+      actions: read
       packages: read
       pages: write
       id-token: write
@@ -128,5 +129,17 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: pulled/site
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          url="repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages"
+          for i in $(seq 1 24); do
+            n=$(gh api "$url" --jq .total_count)
+            [ "$n" -ge 1 ] && { echo "github-pages listed after $i check(s)"; exit 0; }
+            sleep 5
+          done
+          echo "github-pages was uploaded but never listed" >&2
+          exit 1
       - id: deployment
         uses: actions/deploy-pages@v4

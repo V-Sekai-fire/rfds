@@ -503,7 +503,8 @@ defmodule Plan.FourloopsEtnf do
         ])
       ]),
       scope("LoopInputs", [
-        attr("sectionNote", "string", "What each loop adds to the schema. The loops themselves are in fourloops-plan.exs."),
+        attr("sectionNote", "string", "What each loop adds to the schema. " <>
+          "The loops themselves are in fourloops-plan.exs."),
         prim("L1KeypointsToAnny", [
           attr("order", "int", 1),
           attr("state", "token", "build", [uniform: true]),
@@ -550,7 +551,8 @@ defmodule Plan.FourloopsEtnf do
         ])
       ]),
       scope("StageWrites", [
-        attr("sectionNote", "string", "Every relation is written by one stage. The ten are the ten in fourloops-plan.exs."),
+        attr("sectionNote", "string", "Every relation is written by one stage. " <>
+          "The ten are the ten in fourloops-plan.exs."),
         prim("Keypoints", [
           attr("state", "token", "blocked", [uniform: true]),
           attr("blockedOn", "string[]", [
@@ -564,7 +566,9 @@ defmodule Plan.FourloopsEtnf do
         ]),
         prim("AnnyFit", [
           attr("state", "token", "exists", [uniform: true]),
-          attr("note", "string", "The round trip that measures this stage is stated once, in fourloops-plan.exs under Stages/AnnyFit. Restating it here was a second place for one fact to live."),
+          attr("note", "string", "The round trip that measures this stage is stated once, in " <>
+            "fourloops-plan.exs under Stages/AnnyFit. Restating it here was a second " <>
+            "place for one fact to live."),
           rel("writes", "/FourLoopsEtnf/Measured/Fits")
         ]),
         prim("Render", [

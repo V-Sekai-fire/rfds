@@ -15,7 +15,13 @@ defmodule Plan.Pen66606 do
     string("holder", "iFire")
     string("pen", "urn:oid:1.3.6.1.4.1.66606")
     string("rule", "rfd/1000-conventions/DETAILS.md")
-    string("scope", "Its one sublayer is journal/serials.txn, which with the rfd/*.txn journals builds sites 1 and 2's registers; `mix rfd.serials` holds them. Site 3's register lives in the private manuals. Nothing renders or composes this plan since 2026-11-26; `mix rfd.plan` checks its shape.")
+    string(
+      "scope",
+      "Its one sublayer is journal/serials.txn, which with the rfd/*.txn journals " <>
+        "builds sites 1 and 2's registers; `mix rfd.serials` holds them. Site 3's " <>
+        "register lives in the private manuals. Nothing renders or composes this plan " <>
+        "since 2026-11-26; `mix rfd.plan` checks its shape."
+    )
     string_list("sites", [
       "1 weftspun request-for-discussion urn:oid:1.3.6.1.4.1.66606.1.1 decommissioned",
       "2 v-sekai-fabric request-for-discussion urn:oid:1.3.6.1.4.1.66606.1.2",
@@ -34,7 +40,12 @@ defmodule Plan.Pen66606 do
 
     over("Serials", [
       attr("thesis", "string", "The composed view of every serial the PEN has issued under category 1. It stores none of them. Each site keeps its own register and this layer sublayers them, so a serial is authored once and read everywhere. A site that copied another's rows would be a second record of one fact, and the first copy edited would win by accident."),
-      attr("howToAddASite", "string", "Add the site's register to subLayers above, and add its row to the sites list. The site keeps authoring its own serials. Nothing is copied here.")
+      attr(
+        "howToAddASite",
+        "string",
+        "Add the site's register to subLayers above, and add its row to the sites " <>
+          "list. The site keeps authoring its own serials. Nothing is copied here."
+      )
     ])
 
   end

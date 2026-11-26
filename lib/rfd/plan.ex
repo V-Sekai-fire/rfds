@@ -5,10 +5,8 @@ defmodule RFD.Plan do
   @moduledoc """
   An apparatus plan as Elixir data, checked for its shape while it compiles.
 
-  Modelled on `RFD.Register`. Holds the subset the apparatus uses: layer metadata with
-  sublayers and `customLayerData`, `def` / `def Scope` / `over` prims nested arbitrarily,
-  typed attributes, and relationships to prim paths. The source is the plan and nothing is
-  rendered from it (operator, 2026-11-26).
+  Layer metadata, sublayers, `customLayerData`, nested prims, typed attributes and
+  relationships. Nothing is rendered from it (operator, 2026-11-26).
   """
 
   @enforce_keys [:name]
@@ -32,7 +30,6 @@ defmodule RFD.Plan do
   end
 
   @doc false
-  # A do-block becomes a list before it is evaluated, which is what lets prims nest.
   def collect({:__block__, _, stmts}), do: {:__block__, [], []} |> with_list(stmts)
   def collect(nil), do: []
   def collect(stmt), do: with_list(nil, [stmt])
@@ -53,8 +50,6 @@ defmodule RFD.Plan do
 
   defp flat_opts(entries, tag), do: for({^tag, kw} <- entries, kw <- kw, do: kw)
   defp flat_list(entries, tag), do: for({^tag, xs} <- entries, x <- xs, do: x)
-
-  # --- the DSL surface ------------------------------------------------------------------
 
   defmodule Fields do
     @moduledoc false
@@ -103,8 +98,6 @@ defmodule RFD.Plan do
 
   defp unblock([{:do, inner}]), do: inner
   defp unblock(other), do: other
-
-  # --- validation -----------------------------------------------------------------------
 
   @doc "Every rule a plan has to meet, as the list of reasons it does not."
   def problems(%__MODULE__{} = p) do

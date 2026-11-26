@@ -68,7 +68,8 @@ defmodule RFD.Corpora do
     hits =
       Enum.flat_map(files(root), fn path ->
         if kind_of(path) == :serials do
-          for r <- RFD.Register.from_journals(root), RFD.Register.usda(r) =~ needle do
+          for r <- RFD.Register.from_journals(root),
+              inspect(r, limit: :infinity, printable_limit: :infinity) =~ needle do
             %{path: path, kind: :serials, name: r.name}
           end
         else

@@ -257,11 +257,11 @@ repos:
         pass_filenames: false
 
       # RFD66606-2232: every RFD is rfd/NNNN-slug.txn, and the registers are built from
-      # those journals and journal/serials.txn (operator, 2026-11-26); the Markdown and
-      # the .usda are rendered from them and untracked, so the hooks below that read the
-      # tree read a fresh rendering.
+      # those journals and journal/serials.txn (operator, 2026-11-26); the Markdown is
+      # rendered from them and untracked, so the hooks below that read the tree read a
+      # fresh rendering. The registers render nothing.
       - id: rfd-dsl-render
-        name: render the RFD and register sources
+        name: render the RFD sources
         entry: mix rfd.render
         language: system
         files: '^(rfd/[0-9]{4}-[^/]+\.txn|journal/serials\.txn|lib/.*|test/.*|mix\.exs)$'
@@ -363,8 +363,8 @@ repos:
           RFD66606-1124 gives the rules and how each was measured.
         entry: python scripts/check-rfd-structure.py
         language: python
-        additional_dependencies: [markdown-it-py==3.0.0, usd-core==26.8]
-        files: '^(rfd/[0-9]{4}-[^/]+\.txn|rfd/[0-9]{4}-[^/]+/(README|DETAILS)\.md|apparatus/[0-9]{4}-[^/]+/SKILL\.md)$'
+        additional_dependencies: [markdown-it-py==3.0.0]
+        files: '^(journal/serials\.txn|rfd/[0-9]{4}-[^/]+\.txn|rfd/[0-9]{4}-[^/]+/(README|DETAILS)\.md|apparatus/[0-9]{4}-[^/]+/SKILL\.md)$'
         pass_filenames: false
 
       # RFD66606-1000 owns numbering. The script scans the tree rather than a

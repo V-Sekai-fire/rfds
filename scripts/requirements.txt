@@ -9,8 +9,6 @@
 # Pinned rather than floated. A parser change would move what the gate sees,
 # and a gate that changes verdict without a diff is not a gate.
 markdown-it-py==3.0.0
-# The serial register is USD, so both gates read it with pxr.
-usd-core==26.8
 # `check_lottie_spec.py` validates the animation against the vendored Lottie 1.0
 # schema. Without this the gate cannot run at all, which is how it came to sit
 # unrun while the writer kept emitting the extension it refuses.

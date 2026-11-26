@@ -3,7 +3,7 @@
 
 defmodule RFD.Register do
   @moduledoc """
-  One site's serial register as data, and the `SERIALS*.usda` layer rendered from it.
+  One site's serial register as data. Nothing is rendered from it.
   The journals are its source (operator, 2026-11-26): `from_journals/1` builds every
   site's register from the RFD journals and `journal/serials.txn`, as
   `RFD.Register.Journal` describes. The `register` DSL stays to read a base revision
@@ -101,12 +101,6 @@ defmodule RFD.Register do
   @doc "Every site's register, built from the journals under `root`."
   def from_journals(root \\ RFD.Source.repo_root()), do: RFD.Register.Journal.registers(root)
 
-  # The names the layers had beside their SERIALS*.exs sources; pen-66606 sublayers them.
-  @usda %{1 => "SERIALS.usda", 2 => "SERIALS-vsekai-fabric.usda"}
-
-  @doc "The file a register's `.usda` layer is rendered to."
-  def usda_name(%__MODULE__{layer: l}), do: @usda[l.site] || "SERIALS-#{l.site_name}.usda"
-
   @doc "The register as an `RFD.Corpus` corpus."
   def corpus(%__MODULE__{} = r), do: %{kind: :serials, name: r.name, entries: r.rows}
 
@@ -198,7 +192,7 @@ defmodule RFD.Register do
     end
   end
 
-  @doc "`{allocated, deleted}` as serial -> slug, the view `check-rfd-serials.py` reads."
+  @doc "`{allocated, deleted}` as serial -> slug, the view `mix rfd.serials` holds and prints."
   def tables(%__MODULE__{} = r) do
     a = for {:allocated, s, slug, _} <- r.rows, into: %{}, do: {s, slug}
 
@@ -209,117 +203,4 @@ defmodule RFD.Register do
 
     {a, d}
   end
-
-  @doc "The register as a `.usda` layer, the shape the Python gates and pen-66606.usda read."
-  def usda(%__MODULE__{} = r) do
-    l = r.layer
-    {note_key, note} = l[:note] || {nil, nil}
-
-    data =
-      [
-        {"arc", l[:arc]},
-        note_key && {Atom.to_string(note_key), note},
-        {"category", to_string(l[:category])},
-        {"categoryName", l[:category_name]},
-        {"pen", l[:pen]},
-        {:list, "relationKindVocabulary", ["spine", "satellite"]},
-        {"rule", l[:rule]},
-        {"site", to_string(l[:site])},
-        {"siteName", l[:site_name]}
-      ]
-      |> Enum.reject(&(&1 in [nil, false]))
-      |> Enum.map_join("\n", fn
-        {:list, k, vs} -> "        string[] #{k} = [#{Enum.map_join(vs, ", ", &q/1)}]"
-        {k, v} -> "        string #{k} = #{q(v)}"
-      end)
-
-    header =
-      [
-        "#usda 1.0",
-        "(",
-        "    customLayerData = {",
-        data,
-        "    }",
-        "    defaultPrim = \"Serials\"",
-        "    metersPerUnit = 1",
-        "    upAxis = \"Z\"",
-        ")",
-        ""
-      ]
-      |> Enum.join("\n")
-
-    scopes =
-      Enum.map(r.sections, fn
-        {:allocated, _} -> scope("Allocated", nil, [relation(r, :allocated)])
-        {:unused, note} -> scope("Unused", note, [relation(r, :never_written)])
-        {:deleted, note} -> scope("Deleted", note, [relation(r, :retired), relation(r, :deleted)])
-      end)
-
-    site =
-      [
-        "    def Scope #{q(r.name)}",
-        "    {",
-        "        custom string thesis = #{q(r.thesis)}",
-        ""
-      ] ++
-        (scopes |> Enum.intersperse([""]) |> List.flatten()) ++ ["    }"]
-
-    header <> "\ndef Scope \"Serials\"\n{\n" <> Enum.join(site, "\n") <> "\n}\n"
-  end
-
-  defp scope(name, note, relations) do
-    note_lines =
-      if note, do: ["            custom string sectionNote = #{q(note)}", ""], else: []
-
-    body = relations |> Enum.reject(&is_nil/1) |> Enum.intersperse([""]) |> List.flatten()
-    ["        def Scope #{q(name)}", "        {"] ++ note_lines ++ body ++ ["        }"]
-  end
-
-  @relations %{
-    allocated: {"Rfd", ["serial int16 PK", "slug string"], "spine"},
-    deleted: {"Rfd", ["serial int16 PK", "slug string"], "spine"},
-    retired: {"Retired", ["serial int16 PK", "recorded_in int16 FK"], "satellite"},
-    never_written: {"NeverWritten", ["serial int16 PK"], "satellite"}
-  }
-
-  # The Retired satellite renders only when it carries a row; the spine relations always.
-  defp relation(r, table) do
-    rows = for {^table, s, slug, opts} <- r.rows, do: {s, slug, opts}
-    {prim, columns, kind} = @relations[table]
-
-    if rows == [] and table == :retired do
-      nil
-    else
-      head = [
-        "            def #{q(prim)}",
-        "            {",
-        "                custom string[] columns = [#{Enum.map_join(columns, ", ", &q/1)}]",
-        "                custom uniform token kind = #{q(kind)}",
-        "                custom string primaryKey = \"serial\"",
-        ""
-      ]
-
-      body =
-        Enum.flat_map(rows, fn {s, slug, opts} ->
-          attrs =
-            [
-              slug && "                    custom string slug = #{q(slug)}",
-              opts[:flight_level] &&
-                "                    custom string flight_level = #{q(level(opts[:flight_level]))}",
-              opts[:recorded_in] &&
-                "                    custom int recorded_in = #{opts[:recorded_in]}"
-            ]
-            |> Enum.reject(&(&1 in [nil, false]))
-
-          ["                def \"S#{s}\"", "                {"] ++ attrs ++ ["                }"]
-        end)
-
-      head ++ body ++ ["            }"]
-    end
-  end
-
-  defp level(l), do: l |> Atom.to_string() |> String.upcase()
-
-  defp q(s) when is_binary(s),
-    do: "\"" <> String.replace(s, ~r/["\\]/, fn c -> "\\" <> c end) <> "\""
 end

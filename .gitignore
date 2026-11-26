@@ -7,14 +7,12 @@ erl_crash.dump
 /_build/
 /deps/
 
-# RFD66606-2232: README.md, DETAILS.md and the serial registers are rendered from the
-# .exs sources by `mix rfd.render`; the sources are what is tracked. Nothing else
+# RFD66606-2232: README.md and DETAILS.md are rendered from the rfd/*.txn journals by
+# `mix rfd.render`; the journals are what is tracked. Nothing else
 # belongs under rfd/NNNN-slug/ -- apparatus lives in apparatus/NNNN-slug/, and
 # check_rfd_dirs_rendered_only.py fails a tracked file that lands there.
 rfd/[0-9][0-9][0-9][0-9]-*/README.md
 rfd/[0-9][0-9][0-9][0-9]-*/DETAILS.md
-/SERIALS.usda
-/SERIALS-*.usda
 
 # Artifacts the apparatus writes where it runs. The sources beside them -- the
 # scripts, pixi.toml, pixi.lock and the exported chain data -- are tracked.

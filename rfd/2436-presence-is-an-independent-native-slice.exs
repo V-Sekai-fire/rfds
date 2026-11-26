@@ -24,9 +24,9 @@ rfd 2436, "presence is an independent native slice", :discussion do
   - Native means a riscv64 guest ELF for the sandbox, run binary-translated (operator,
     2026-11-01). Its gates run on the CPU guest as the parity oracle (RFD66606-2374,
     RFD66606-2390).
-  - The host is the win64 build of RFD66606-2360 or its NixOS flake, and both work (operator,
-    2026-11-25). It is built natively for the Steam Frame and the Steam Deck, and the slice's
-    gates run there too (operator, 2026-11-12).
+  - The host is the win64 build of RFD66606-2360 (operator, 2026-11-26). It is built natively
+    for the Steam Frame and the Steam Deck, and the slice's gates run there too (operator,
+    2026-11-12).
   - An avatar is ANNY on the MS-Human-700 muscle skeleton, sent as 21 entity Packets of 100
     bytes. The zone only routes and four parties judge each sender (operator, 2026-11-13).
   - Melatonin is optional content, loaded onto the same guest with logic. ANNY is the beta

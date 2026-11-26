@@ -293,6 +293,7 @@ defmodule Serials.VSekaiFabric do
       serial 2498, "zfs-pool-written-raw-to-bdxl-disc"
       serial 2499, "portraits-to-hair-card-vrm"
       serial 2500, "presence-face-tracker"
+      serial 2501, "binaries-come-from-each-repositorys-flake"
     end
 
     deleted do

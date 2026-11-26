@@ -26,7 +26,7 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   desktop, which is win64 (operator, 2026-11-26). The fabric is an open,
   remixable, self-hosted collaborative space built on Godot. The beta is one
   platform, one guest host with one message shape and one build path,
-  shipped as a NixOS flake and as win64.
+  shipped as win64 (operator, 2026-11-26).
   The board-wide non-goals below bind every RFD on this board
   (operator, 2026-11-11). The details say how the board picks its work.
   :: related

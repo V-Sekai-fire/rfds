@@ -4,12 +4,12 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-09-07T00:00:01Z (RFD66606-2232) 'one `rfd/NNNN-slug.exs` per RFD and one `SERIALS*.exs` per site, compiled by `rfd_dsl`; the Markdown and the `.usda` registers are renderings of them and are not tracked
+2026-09-07T00:00:01Z (RFD66606-2232) 'one tackler journal `rfd/NNNN-slug.txn` per RFD and `journal/serials.txn` for the serials no RFD holds, read by `RFD.Txn` through `RFD.DSL`; the Markdown is a rendering of them and is not tracked
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2232  1 LINE
  Text:Written
 
-2026-09-07T00:00:02Z (RFD66606-2232) 'the Mix project at the repository root, every `rfd/*.exs`, `SERIALS.exs` and `SERIALS-vsekai-fabric.exs`
+2026-09-07T00:00:02Z (RFD66606-2232) 'the Mix project at the repository root, every `rfd/*.txn` and `journal/serials.txn`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2232  1 LINE
  Text:Written
@@ -24,7 +24,7 @@
  Text:RFD2232  1 LINE
  Text:Written
 
-2026-09-07T00:00:05Z (RFD66606-2232) 'Add a new RFD as `rfd/NNNN-slug.exs` plus a `serial` line, then run `mix rfd.serials`.
+2026-09-07T00:00:05Z (RFD66606-2232) 'Add a new RFD as `rfd/NNNN-slug.txn`, starting from the title transaction `mix rfd.next` prints, then run `mix rfd.serials`.
  # tags: rfd:exit
  Text:RFD2232  1 LINE
  Text:Written
@@ -54,7 +54,7 @@
  Text:RFD2232  1 LINE
  Text:Written
 
-2026-09-07T00:00:11Z (RFD66606-2232) 'A site's serial register is a module that uses `RFD.Register`: `allocated`, `unused` and `deleted` blocks of `serial`, `never_written` and `retired` rows. `mix rfd.render` writes README.md, DETAILS.md and `SERIALS*.usda`, the shape the gates and `pen-66606.usda` read, and those files are ignored by git.
+2026-09-07T00:00:11Z (RFD66606-2232) 'A site's serial register is built from the journals (operator, 2026-11-26): an allocated serial is its RFD journal, and `journal/serials.txn` holds each site, its sections and order, and the deleted, retired and never-written rows. `RFD.Register.from_journals/1` builds the `RFD.Register` the gates read. `mix rfd.render` writes README.md and DETAILS.md, which are ignored by git.
  # tags: rfd:details
  Text:RFD2232  1 LINE
  Text:Written
@@ -84,7 +84,7 @@
  Text:RFD2232  1 LINE
  Text:Written
 
-2026-09-07T00:00:17Z (RFD66606-2232) 'One file per RFD, `rfd/NNNN-slug.exs`, rendered into `rfd/NNNN-slug/`. A directory exists in git only when it carries apparatus beside the document (a USD layer, a skill, a script); README.md, DETAILS.md and `index.md` under `rfd/` are build artifacts and `.gitignore` names them. The registers are `SERIALS.exs` (site 1, frozen) and `SERIALS-vsekai-fabric.exs` (site 2, where new serials come from), rendered to the `.usda` beside them. A new RFD is a new `.exs` and a new `serial` line in the site's `allocated` block; `mix rfd.serials` refuses a source with no row, a row with no source, a slug that disagrees with the file name, and a deleted serial that has a source.
+2026-09-07T00:00:17Z (RFD66606-2232) 'One tackler journal per RFD, `rfd/NNNN-slug.txn`, rendered into `rfd/NNNN-slug/` (operator, 2026-11-26). A directory exists in git only when it carries apparatus beside the document (a USD layer, a skill, a script); README.md, DETAILS.md and `index.md` under `rfd/` are build artifacts and `.gitignore` names them. The registers are site 1 (frozen) and site 2 (where new serials come from), both built from the journals. A new RFD is a new journal whose title transaction registers its serial; `mix rfd.serials` refuses a source with no row, a row with no source, a slug that disagrees with the file name, and a deleted serial that has a source.
  # tags: rfd:details
  Text:RFD2232  1 LINE
  Text:Written

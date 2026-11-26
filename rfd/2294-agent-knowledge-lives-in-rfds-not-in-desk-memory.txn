@@ -114,12 +114,12 @@
  Text:RFD2294  1 LINE
  Text:Written
 
-2026-10-01T00:00:23Z (RFD66606-2294) 'An RFD is amended in `rfd/NNNN-slug.exs` of &{repo("manuals-weftspun")}, never in the rendered Markdown, which is a build artifact:
+2026-10-01T00:00:23Z (RFD66606-2294) 'An RFD is amended in its journal `rfd/NNNN-slug.txn` of &{repo("manuals-weftspun")}, never in the rendered Markdown, which is a build artifact:
  # tags: rfd:details
  Text:RFD2294  1 LINE
  Text:Written
 
-2026-10-01T00:00:24Z (RFD66606-2294) '1. Find the RFD that owns the topic with `grep -l <word> rfd/*.exs`. Use this one when none does.
+2026-10-01T00:00:24Z (RFD66606-2294) '1. Find the RFD that owns the topic with `grep -l <word> rfd/*.txn`. Use this one when none does.
  # tags: rfd:details
  Text:RFD2294  1 LINE
  Text:Written
@@ -129,7 +129,7 @@
  Text:RFD2294  1 LINE
  Text:Written
 
-2026-10-01T00:00:26Z (RFD66606-2294) '3. A new RFD takes the next serial in `SERIALS.exs` and carries the sentence "This RFD was drafted by an AI and read by a human before it shipped."
+2026-10-01T00:00:26Z (RFD66606-2294) '3. A new RFD takes the next serial `mix rfd.next` prints and carries the sentence "This RFD was drafted by an AI and read by a human before it shipped."
  # tags: rfd:details
  Text:RFD2294  1 LINE
  Text:Written
@@ -169,7 +169,7 @@
  Text:RFD2294  1 LINE
  Text:Written
 
-2026-10-01T00:00:34Z (RFD66606-2294) 'Open `rfd/2294-agent-knowledge-lives-in-rfds-not-in-desk-memory.exs`, add the sentence inside the right `details` block, and save. Then:
+2026-10-01T00:00:34Z (RFD66606-2294) 'Open `rfd/2294-agent-knowledge-lives-in-rfds-not-in-desk-memory.txn`, add the sentence as a transaction tagged `rfd:details` under the right `rfd:details-heading`, and run `mix rfd.txn --write` to put the journal in written form (operator, 2026-11-26). Then:
  # tags: rfd:details
  Text:RFD2294  1 LINE
  Text:Written

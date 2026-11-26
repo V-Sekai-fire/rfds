@@ -54,7 +54,7 @@
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1000) '- Numbering rule and OID arc: `DETAILS.md`. Serials in use: `SERIALS.usda`
+2026-08-25T00:00:11Z (RFD66606-1000) '- Numbering rule and OID arc: `DETAILS.md`. Serials in use: the RFD journals and `journal/serials.txn`
  # tags: rfd:references
  Text:RFD1000  1 LINE
  Text:Written
@@ -204,7 +204,7 @@
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1000) 'Site 1 was decommissioned on 2026-08-31. `SERIALS.usda` at arc 66606.1.1 is frozen: existing 1NNN serials stay in place and stay citable, and no new serial is allocated there. New RFDs in this repository take the next unused 2NNN serial from `SERIALS-vsekai-fabric.usda` at arc 66606.1.2, whose site was decommissioned on 2026-08-29 and reactivated on 2026-08-31 for that purpose. The full argument, and the retraction of the 2026-08-29 sentence that promised no further allocations under 66606.1.2, is in `pen-66606.usda` `sitesDecommissioned`. When site 2 fills up, site 5 opens at arc 66606.1.5 under this rule; site 4 stays reserved for a date-named register.
+2026-08-25T00:00:41Z (RFD66606-1000) 'Site 1 was decommissioned on 2026-08-31. The site 1 register at arc 66606.1.1 is frozen: existing 1NNN serials stay in place and stay citable, and no new serial is allocated there. New RFDs in this repository take the next unused 2NNN serial from the site 2 register at arc 66606.1.2, whose site was decommissioned on 2026-08-29 and reactivated on 2026-08-31 for that purpose. The full argument, and the retraction of the 2026-08-29 sentence that promised no further allocations under 66606.1.2, is in `pen-66606.usda` `sitesDecommissioned`. When site 2 fills up, site 5 opens at arc 66606.1.5 under this rule; site 4 stays reserved for a date-named register.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
@@ -224,7 +224,7 @@
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1000) 'Two rules carry to whatever takes the next category. It keeps a register of what it allocates, in the way `SERIALS.usda` does. A kind of thing gets an arc of its own rather than a neighbouring parent number, because `<thing>.1.<id>` and `<thing>.2.<id>` say which kind they are and `<thing>` beside `<thing+1>` does not.
+2026-08-25T00:00:45Z (RFD66606-1000) 'Two rules carry to whatever takes the next category. It keeps a register of what it allocates, in the way the serial registers do. Since 2026-11-26 both registers are built from the RFD journals and `journal/serials.txn` (operator, 2026-11-26). A kind of thing gets an arc of its own rather than a neighbouring parent number, because `<thing>.1.<id>` and `<thing>.2.<id>` say which kind they are and `<thing>` beside `<thing+1>` does not.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written

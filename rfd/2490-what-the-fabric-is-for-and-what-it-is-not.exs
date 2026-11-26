@@ -23,15 +23,15 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   tools (operator, 2026-11-25). Today the important problem is the first
   beta (RFD66606-2360): two people in one campus zone see each other's
   avatars, one on the Steam Frame or the Steam Deck and one on the
-  desktop. The fabric is an open, remixable, self-hosted collaborative
-  space built on Godot. The beta is one platform, one guest host with one
-  message shape and one build path, shipped as a NixOS flake and as win64.
+  desktop, which is win64 (operator, 2026-11-26). The fabric is an open,
+  remixable, self-hosted collaborative space built on Godot. The beta is one
+  platform, one guest host with one message shape and one build path,
+  shipped as a NixOS flake and as win64.
   The board-wide non-goals below bind every RFD on this board
   (operator, 2026-11-11). The details say how the board picks its work.
   :: related
   - RFD66606-2360, the campus beta, which points here for its
     non-goals.
-  - RFD66606-2447, beta 1: see each other.
   - RFD66606-2146, bao is the secret store.
   - RFD66606-2202, ReBAC role tuples enforced via Bao identity groups.
   - The 2020-06-08 V-Sekai charter, at
@@ -58,8 +58,9 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - Kept: a neutral host for events, and for business meetings where
     privacy matters.
   - Superseded: Windows SteamVR and Oculus Quest as targets. The
-    targets are the Mac, the Steam Frame and the Steam Deck. The Frame and the Deck build
-    natively (operator, 2026-11-12). The Mac's native build is unknown.
+    targets are win64 on Windows, the Steam Frame and the Steam Deck. The
+    Frame and the Deck build natively (operator, 2026-11-12). The Mac is
+    not a target (operator, 2026-11-26).
   - Superseded: decentralized authentication through a GPG web of
     trust. OpenBao is the identity and secret store (operator,
     2026-11-11; see RFD66606-2146 and RFD66606-2202).
@@ -81,6 +82,8 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - FEX, the x86 emulation layer, as a runtime for any build (operator, 2026-11-12).
   - Proton, the third-party compatibility layer (operator, 2026-11-12).
 
+  The beta's own non-goals are listed once, in RFD66606-2360.
+
   :: details How the board picks its work
   The board picks work the way Hamming's "You and Your Research" (1986,
   https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) says a researcher does
@@ -97,14 +100,5 @@ rfd 2490, "What the fabric is for, and what it is not", :discussion do
   - Unknowns stay on the page. Each RFD's "What is not known" and each planted-defect control is
     the list of evidence against the work.
   - Work is done so that others can build on it. A document comes before the code.
-
-  :: details Beta-only non-goals in RFD66606-2360
-  These stay beta-only non-goals in RFD66606-2360 (operator, 2026-11-11).
-  They are not on the board-wide list.
-  - Real-money purchases.
-  - A leaderboard or achievements.
-  - Campuses or worlds built by players. This pulls against the
-    remixable intent in the charter.
-  - Moderation, reporting and blocking tools.
   """
 end

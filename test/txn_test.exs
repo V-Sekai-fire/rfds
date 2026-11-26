@@ -120,6 +120,30 @@ defmodule RFD.TxnTest do
     assert_raise ArgumentError, ~r/unknown property/, fn -> RFD.Txn.parse(text) end
   end
 
+  test "keeping references as written in one process leaves the others expanded" do
+    [path] = Path.wildcard("rfd/2229-*.txn")
+    text = File.read!(path)
+    raw = RFD.Txn.parse_raw!(text)
+    expanded = RFD.Txn.parse!(text)
+    assert raw != expanded
+
+    results =
+      1..64
+      |> Task.async_stream(
+        fn i ->
+          if rem(i, 2) == 0,
+            do: {:raw, RFD.Txn.parse_raw!(text)},
+            else: {:expanded, RFD.Txn.parse!(text)}
+        end,
+        max_concurrency: 16
+      )
+      |> Enum.map(fn {:ok, r} -> r end)
+
+    for {kind, d} <- results do
+      assert d == if(kind == :raw, do: raw, else: expanded)
+    end
+  end
+
   test "lines keep their order when read back sorted, as tackler sorts" do
     d = RFD.Source.load(hd(Path.wildcard("rfd/2360-*.txn")))
     text = RFD.Txn.write(d, day: "2026-01-01", site: "VSekaiFabric")

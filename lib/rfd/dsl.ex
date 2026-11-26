@@ -281,18 +281,22 @@ defmodule RFD.DSL do
   end
 
   defp expand(%RFD.Doc{} = d) do
-    if Application.get_env(:rfd, :expand_refs, true), do: expand_refs(d), else: d
+    if Process.get(:rfd_expand_refs, true), do: expand_refs(d), else: d
   end
 
-  @doc "Run `fun` with `&{...}` references kept as written, for conversion and refs."
+  @doc """
+  Run `fun` with `&{...}` references kept as written, for conversion and
+  refs. The switch is the calling process's own, so a doc built at the
+  same moment in another process is still expanded.
+  """
   def unexpanded(fun) do
-    before = Application.get_env(:rfd, :expand_refs, true)
-    Application.put_env(:rfd, :expand_refs, false)
+    before = Process.get(:rfd_expand_refs, true)
+    Process.put(:rfd_expand_refs, false)
 
     try do
       fun.()
     after
-      Application.put_env(:rfd, :expand_refs, before)
+      Process.put(:rfd_expand_refs, before)
     end
   end
 

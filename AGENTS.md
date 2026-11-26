@@ -323,8 +323,8 @@ RFD66606-2245 landed with six of nine checks red and stopped
 
 A session bundle is a set of changes that carry each other's
 reasoning: three RFDs whose bodies cite each other, a blocklist
-row plus its BLOCKLIST.md section, a SERIALS backfill for the
-RFDs added in the same session. Landing them separately means
+row plus its BLOCKLIST.md section, a `journal/serials.txn` row
+for the RFDs deleted in the same session. Landing them separately means
 one PR lands the row while another lands the section, and the
 `check_blocklist_detail.py` gate is red for the interval between.
 Bundling puts them on one PR that lands together or not at all.
@@ -475,7 +475,7 @@ since merged away. Git history preserves every dropped paragraph, and
 the successor RFD's `## Related` section preserves the "why".
 
 A retracted RFD topic deletes its body. The file stays on disk because
-its SERIALS entry names it; it shrinks to title, `:abandoned` and
+it is its serial's register row; it shrinks to title, `:abandoned` and
 `abandoned_at "<sha>"`, the full 40-character SHA of the last commit
 holding its full source. The DSL renders the stub and refuses any other
 field, a hand-written decision included. Rendering needs no history: a

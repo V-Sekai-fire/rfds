@@ -2,12 +2,14 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 defmodule Mix.Tasks.Rfd.Render do
-  @shortdoc "Render rfd/NNNN-slug.exs into rfd/NNNN-slug/ and SERIALS*.exs into SERIALS*.usda"
+  @shortdoc "Render rfd/NNNN-slug.txn into rfd/NNNN-slug/ and the registers into SERIALS*.usda"
   @moduledoc """
       mix rfd.render [--check] [NAME ...]
 
-  NAME is `NNNN-slug`, `rfd/NNNN-slug.exs`, a directory or `SERIALS*.exs`; with none,
-  every source is rendered. `--check` writes nothing and fails on drift.
+  NAME is `NNNN-slug`, `rfd/NNNN-slug.txn`, a directory or `journal/serials.txn`; with
+  none, every source is rendered. The registers are built from the journals, so
+  `journal/serials.txn` renders every `SERIALS*.usda`. `--check` writes nothing and
+  fails on drift.
   """
   use Mix.Task
 
@@ -20,7 +22,7 @@ defmodule Mix.Tasks.Rfd.Render do
         do: RFD.Source.all() ++ RFD.Source.registers(),
         else: Enum.map(names, &RFD.Source.at/1)
 
-    if sources == [], do: Mix.raise("no rfd/*.exs found")
+    if sources == [], do: Mix.raise("no rfd/*.txn found")
 
     results = Enum.map(sources, &RFD.Source.render(&1, opts))
     bad = Enum.filter(results, &match?({:drift, _, _}, &1))
@@ -171,16 +173,33 @@ defmodule Mix.Tasks.Rfd.Rectgtn do
 end
 
 defmodule Mix.Tasks.Rfd.Usda do
-  @shortdoc "Print the .usda rendering of one register source to stdout"
-  @moduledoc false
+  @shortdoc "Print the .usda rendering of one register to stdout"
+  @moduledoc """
+      mix rfd.usda NAME
+
+  NAME is a register's name (`Weftspun`), its layer (`SERIALS.usda`), or a legacy
+  `SERIALS*.exs` file, which is compiled as it was before the journals.
+  """
   use Mix.Task
 
   @impl true
-  def run([path]) do
-    Mix.shell().info(path |> RFD.Source.load() |> RFD.Register.usda())
+  def run([name]) do
+    registers =
+      if String.ends_with?(name, ".exs"),
+        do: [RFD.Source.load(name)],
+        else:
+          Enum.filter(
+            RFD.Register.from_journals(),
+            &(name in [&1.name, RFD.Register.usda_name(&1)])
+          )
+
+    case registers do
+      [r] -> Mix.shell().info(RFD.Register.usda(r))
+      _ -> Mix.raise("no register #{name}")
+    end
   end
 
-  def run(_), do: Mix.raise("usage: mix rfd.usda PATH")
+  def run(_), do: Mix.raise("usage: mix rfd.usda NAME")
 end
 
 defmodule Mix.Tasks.Rfd.Serials do
@@ -188,58 +207,49 @@ defmodule Mix.Tasks.Rfd.Serials do
   @moduledoc """
       mix rfd.serials [--base REF]
 
-  The registers against the sources on disk and, with `--base`, against a revision:
-  no serial gone, none revived. A missing base register fails unless it is new here.
+  The registers, built from the journals, against the sources on disk and, with
+  `--base`, against a revision: no serial gone, none revived. A base revision may
+  hold its registers as journals or as the `SERIALS*.exs` that came before them. A
+  base with no register fails unless this change adds `journal/serials.txn`.
+  `journal/serials.txn` must also be in its written form.
   """
   use Mix.Task
 
   @impl true
   def run(args) do
     {opts, _, _} = OptionParser.parse(args, strict: [base: :string])
-    registers = RFD.Source.registers()
-    if registers == [], do: Mix.raise("no SERIALS*.exs at the repository root")
+    root = RFD.Source.repo_root()
+    journal = Path.join(root, RFD.Register.Journal.path())
+    unless File.exists?(journal), do: Mix.raise("no #{RFD.Register.Journal.path()}")
 
-    problems =
-      Enum.flat_map(registers, fn path ->
-        r = RFD.Source.load(path)
-        name = Path.basename(path)
+    text = File.read!(journal)
+    registers = RFD.Register.from_journals(root)
 
-        tree = Enum.map(RFD.Serials.tree_problems(r, RFD.Source.all()), &"#{name}: #{&1}")
+    form =
+      if RFD.Register.Journal.canonical(text) == text,
+        do: [],
+        else: ["#{RFD.Register.Journal.path()} is not in the form RFD.Register.Journal writes"]
 
-        base =
-          case opts[:base] do
-            nil -> []
-            ref -> Enum.map(base_problems(path, ref), &"#{name}: #{&1}")
-          end
+    tree =
+      for r <- registers,
+          p <- RFD.Serials.tree_problems(r, RFD.Source.all()),
+          do: "#{r.name}: #{p}"
 
-        {a, d} = RFD.Register.tables(r)
-        Mix.shell().info("#{name}: #{map_size(a)} allocated, #{map_size(d)} deleted")
-        tree ++ base
-      end)
+    base =
+      case opts[:base] do
+        nil -> []
+        ref -> RFD.Serials.against_base(registers, ref, root)
+      end
 
+    for r <- registers do
+      {a, d} = RFD.Register.tables(r)
+      Mix.shell().info("#{r.name}: #{map_size(a)} allocated, #{map_size(d)} deleted")
+    end
+
+    problems = form ++ tree ++ base
     for p <- problems, do: Mix.shell().error(p)
     Mix.shell().info("#{length(problems)} problem(s)")
     if problems != [], do: Mix.raise("the register and the tree disagree")
-  end
-
-  defp base_problems(path, ref) do
-    rel = Path.relative_to(path, RFD.Source.repo_root())
-
-    case System.cmd("git", ["show", "#{ref}:#{rel}"],
-           cd: RFD.Source.repo_root(),
-           stderr_to_stdout: true
-         ) do
-      {text, 0} ->
-        RFD.Serials.base_problems(RFD.Source.load_string(text, rel), RFD.Source.load(path))
-
-      _ ->
-        case System.cmd("git", ["diff", "--name-status", "#{ref}...HEAD", "--", rel],
-               cd: RFD.Source.repo_root()
-             ) do
-          {"A" <> _, 0} -> []
-          _ -> ["no #{rel} at #{ref}, so nothing held the register in place"]
-        end
-    end
   end
 end
 
@@ -304,6 +314,94 @@ defmodule RFD.Serials do
 
     gone ++ revived
   end
+
+  @doc "Every register held against the registers at `ref`, matched by name."
+  def against_base(registers, ref, root) do
+    case base_registers(ref, root) do
+      {:ok, was} ->
+        now = Map.new(registers, &{&1.name, &1})
+        sites = MapSet.new(was, & &1.layer[:site])
+
+        gone =
+          Enum.flat_map(was, fn w ->
+            case now[w.name] do
+              nil -> ["#{w.name}: the register was at #{ref} and is gone"]
+              r -> for p <- base_problems(w, r), do: "#{w.name}: #{p}"
+            end
+          end)
+
+        unheld =
+          for r <- registers,
+              not Enum.any?(was, &(&1.name == r.name)),
+              MapSet.member?(sites, r.layer[:site]),
+              do: "#{r.name}: no register #{r.name} at #{ref}, so nothing held it in place"
+
+        gone ++ unheld
+
+      :none ->
+        if added?(ref, root),
+          do: [],
+          else: ["no register at #{ref}, so nothing held the registers in place"]
+    end
+  end
+
+  @doc "The registers at `ref`: from its journals, or from the `SERIALS*.exs` before them."
+  def base_registers(ref, root) do
+    journal = RFD.Register.Journal.path()
+
+    case System.cmd("git", ["cat-file", "-e", "#{ref}:#{journal}"],
+           cd: root,
+           stderr_to_stdout: true
+         ) do
+      {_, 0} -> {:ok, journal_registers(ref, root)}
+      _ -> legacy_registers(ref, root)
+    end
+  end
+
+  defp journal_registers(ref, root) do
+    tmp = Path.join(System.tmp_dir!(), "rfd-serials-#{System.unique_integer([:positive])}")
+    File.mkdir_p!(tmp)
+
+    try do
+      script = ~s(git archive "$1" journal rfd | tar -x -C "$2")
+
+      case System.cmd("sh", ["-c", script, "sh", ref, tmp], cd: root, stderr_to_stdout: true) do
+        {_, 0} -> RFD.Register.from_journals(tmp)
+        {out, _} -> raise ArgumentError, "cannot read the journals at #{ref}: #{out}"
+      end
+    after
+      File.rm_rf!(tmp)
+    end
+  end
+
+  defp legacy_registers(ref, root) do
+    case System.cmd("git", ["ls-tree", "--name-only", ref], cd: root, stderr_to_stdout: true) do
+      {out, 0} ->
+        files = for f <- String.split(out, "\n", trim: true), f =~ ~r/^SERIALS[^\/]*\.exs$/, do: f
+
+        if files == [] do
+          :none
+        else
+          {:ok,
+           for f <- files do
+             {text, 0} = System.cmd("git", ["show", "#{ref}:#{f}"], cd: root)
+             RFD.Source.load_string(text, f)
+           end}
+        end
+
+      {out, _} ->
+        raise ArgumentError, "cannot read #{ref}: #{String.trim(out)}"
+    end
+  end
+
+  defp added?(ref, root) do
+    journal = RFD.Register.Journal.path()
+
+    match?(
+      {"A" <> _, 0},
+      System.cmd("git", ["diff", "--name-status", "#{ref}...HEAD", "--", journal], cd: root)
+    )
+  end
 end
 
 defmodule RFD.Source do
@@ -316,11 +414,13 @@ defmodule RFD.Source do
     rfd_root() |> Path.join("[0-9][0-9][0-9][0-9]-*.txn") |> Path.wildcard() |> Enum.sort()
   end
 
+  @doc "The registers' source: `journal/serials.txn`, read with the RFD journals."
   def registers do
-    repo_root() |> Path.join("SERIALS*.exs") |> Path.wildcard() |> Enum.sort()
+    path = Path.join(repo_root(), RFD.Register.Journal.path())
+    if File.exists?(path), do: [path], else: []
   end
 
-  @doc "Resolve `NNNN-slug`, `rfd/NNNN-slug.txn`, a directory, or `SERIALS*.exs` to a source path."
+  @doc "Resolve `NNNN-slug`, `rfd/NNNN-slug.txn`, a directory, or `journal/serials.txn` to a source path."
   def at(name) do
     base =
       name
@@ -328,20 +428,27 @@ defmodule RFD.Source do
       |> String.replace_suffix(".exs", "")
       |> String.replace_suffix(".txn", "")
 
-    if String.starts_with?(base, "SERIALS"),
-      do: Path.join(repo_root(), base <> ".exs"),
+    if base == "serials" or String.starts_with?(base, "SERIALS"),
+      do: Path.join(repo_root(), RFD.Register.Journal.path()),
       else: Path.join(rfd_root(), base <> ".txn")
   end
 
-  def register?(path), do: path |> Path.basename() |> String.starts_with?("SERIALS")
+  def register?(path), do: Path.basename(path) == "serials.txn"
 
   @doc "The directory an RFD rendering goes to."
   def dir_of(path),
     do: path |> String.replace_suffix(".txn", "") |> String.replace_suffix(".exs", "")
 
-  @doc "Compile one source and return its document; the compile itself validates it."
+  @doc """
+  Compile one source and return its document; the compile itself validates it.
+  `journal/serials.txn` gives every register, built and validated with the RFD journals.
+  """
   def load(path) do
-    if String.ends_with?(path, ".txn"), do: load_txn(File.read!(path), path), else: compile(path)
+    cond do
+      register?(path) -> RFD.Register.from_journals(Path.dirname(Path.dirname(path)))
+      String.ends_with?(path, ".txn") -> load_txn(File.read!(path), path)
+      true -> compile(path)
+    end
   end
 
   defp load_txn(text, path) do
@@ -388,10 +495,8 @@ defmodule RFD.Source do
   end
 
   defp render_register(path, opts) do
-    name = Path.basename(path, ".exs")
-    out = String.replace_suffix(path, ".exs", ".usda")
-    body = path |> load() |> RFD.Register.usda()
-    write(name, Path.dirname(path), [{Path.basename(out), body}], opts)
+    wanted = for r <- load(path), do: {RFD.Register.usda_name(r), RFD.Register.usda(r)}
+    write("serials", repo_root(), wanted, opts)
   end
 
   defp render_rfd(path, opts) do

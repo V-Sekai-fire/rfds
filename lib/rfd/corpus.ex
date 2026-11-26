@@ -6,8 +6,8 @@ defmodule RFD.Corpus do
   Every RFD, register, logbook entry and agreement document, loaded once and held in
   `:persistent_term`.
 
-  Also the mixin contract that register-like corpora implement — `SERIALS.exs`,
-  `SERIALS-vsekai-fabric.exs`, `ESCAPES.exs` — so `RFD.Corpora` can answer questions
+  Also the mixin contract that register-like corpora implement — `ESCAPES.exs`, and
+  the serial registers through `RFD.Register.corpus/1` — so `RFD.Corpora` can answer questions
   across all of them without a caller picking a single file. A single module
   because splitting the aggregate loader and the register contract into two
   modules once already produced the outage this file exists to prevent: the
@@ -79,8 +79,9 @@ defmodule RFD.Corpus do
       end
 
     registers =
-      for path <- Path.wildcard(Path.join(root, "SERIALS*.exs")),
-          do: {Path.basename(path, ".exs"), RFD.Source.load(path)}
+      if File.exists?(Path.join(root, RFD.Register.Journal.path())),
+        do: for(r <- RFD.Register.from_journals(root), do: {r.name, r}),
+        else: []
 
     logbook =
       for path <- Path.wildcard(Path.join(root, "logbook/*.md")) |> Enum.sort(),

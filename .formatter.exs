@@ -8,11 +8,10 @@
     "{mix,.formatter}.exs",
     "{config,lib,test}/**/*.{ex,exs}",
     "[0-9][0-9][0-9][0-9]-*/*.{ex,exs}",
-    "rfd/*.exs",
-    "SERIALS*.exs"
+    "rfd/*.exs"
   ],
   line_length: 98,
-  # RFD.DSL and RFD.Register fields read as
+  # RFD.DSL and RFD.Register fields (the latter for a base revision's SERIALS*.exs) read as
   # declarations: `state :discussion`, not `state(:discussion)`.
   locals_without_parens: [
     rfd: 3,

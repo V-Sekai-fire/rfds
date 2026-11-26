@@ -305,16 +305,14 @@ defmodule RFD.Import do
   defp blank_to_nil(""), do: nil
   defp blank_to_nil(s), do: s
 
+  # The register's flight level for the serial, read from the journals.
   defp flight_level(serial, dir) do
     root = dir |> Path.dirname() |> Path.dirname()
 
-    Path.wildcard(Path.join(root, "SERIALS*.usda"))
-    |> Enum.find_value(fn f ->
-      case Regex.run(~r/def "S#{serial}"\s*\{[^}]*?flight_level = "(L[123])"/s, File.read!(f)) do
-        [_, level] -> level |> String.downcase() |> String.to_atom()
-        nil -> nil
-      end
-    end)
+    for r <- RFD.Register.from_journals(root), {_, ^serial, _, opts} <- r.rows do
+      opts[:flight_level]
+    end
+    |> Enum.find(& &1)
   end
 
   # -- emitting -------------------------------------------------------------------

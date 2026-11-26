@@ -1,6 +1,6 @@
 name: Render the RFD sources
 description: >-
-  Install the BEAM and render rfd/*.exs, SERIALS*.exs and the apparatus plan
+  Install the BEAM and render rfd/*.txn, the registers built from the journals, and the apparatus plan
   sources into the Markdown and .usda files the gates read. Those files are build
   artifacts (RFD66606-2232), so every job that reads the tree renders first.
 runs:

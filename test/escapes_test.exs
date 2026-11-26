@@ -51,15 +51,19 @@ defmodule EscapesTest do
     assert {:ok, _} = require_file("present", "mix.exs")
   end
 
-  test "require_corpus searches every register, not the first one" do
-    # the escape itself: 2235 is absent from SERIALS.exs and present in the other
-    assert {:ok, %{searched: 2, hits: hits}} =
-             require_corpus("serial 2235", "2235", ["SERIALS.exs", "SERIALS-vsekai-fabric.exs"])
+  test "require_corpus searches every register source, not the first one" do
+    # The escape searched SERIALS.exs and missed 2235 in SERIALS-vsekai-fabric.exs. The
+    # registers are journals now (operator, 2026-11-26), and the same trap is open:
+    # an allocated serial is its RFD journal, so journal/serials.txn does not name 2235.
+    sources = ["journal/serials.txn", "rfd/2235-taskweft-acp-agent.txn"]
+    assert {:ok, %{searched: 2, hits: hits}} = require_corpus("serial 2235", "2235", sources)
 
-    assert hits == ["SERIALS-vsekai-fabric.exs"],
-           "searching one register would have concluded no register names it"
+    assert hits == ["rfd/2235-taskweft-acp-agent.txn"],
+           "searching the serials journal alone would have concluded no register names it"
 
-    assert {:error, _} = require_corpus("partial", "2235", ["SERIALS.exs", "SERIALS-absent.exs"])
+    assert {:error, _} =
+             require_corpus("partial", "2235", ["journal/serials.txn", "rfd/2235-absent.txn"])
+
     assert {:error, _} = require_corpus("empty", "2235", [])
   end
 
@@ -92,13 +96,13 @@ defmodule EscapesTest do
     test "mentions/1 answers across every corpus, so one-file grep is not expressible" do
       {"2235", hits} = RFD.Corpora.mentions("2235")
 
-      serials = hits |> Enum.filter(&(&1.kind == :serials)) |> Enum.map(& &1.path)
+      serials = hits |> Enum.filter(&(&1.kind == :serials)) |> Enum.map(& &1.name)
 
-      assert serials == ["SERIALS-vsekai-fabric.exs"],
+      assert serials == ["VSekaiFabric"],
              "the serial is in the second register; grepping the first returned nothing"
 
-      refute "SERIALS.exs" in Enum.map(hits, & &1.path),
-             "SERIALS.exs is exactly the file the original check searched, and it does not name 2235"
+      refute "Weftspun" in serials,
+             "Weftspun is the register the original check searched, and it does not name 2235"
 
       assert RFD.Corpora.names?("2235"),
              "the original escape concluded the opposite from one file"
@@ -106,9 +110,9 @@ defmodule EscapesTest do
 
     test "discovery finds every corpus, and an empty set raises rather than answering not-found" do
       files = RFD.Corpora.files()
-      assert "SERIALS.exs" in files
-      assert "SERIALS-vsekai-fabric.exs" in files
+      assert "journal/serials.txn" in files
       assert "ESCAPES.exs" in files
+      refute Enum.any?(files, &String.starts_with?(&1, "SERIALS")), "the registers are journals"
 
       assert_raise RuntimeError, ~r/no corpus files/, fn ->
         RFD.Corpora.files(System.tmp_dir!())

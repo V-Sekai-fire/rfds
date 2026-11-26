@@ -1,0 +1,4362 @@
+2026-08-25T00:00:00Z (SITE66606-1) 'Weftspun
+ # uuid: d4918b07-4e4a-5135-98c8-511260cc1ab4
+ # tags: site:title, site:category:1
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:01Z (SITE66606-1) 'urn:oid:1.3.6.1.4.1.66606.1.1
+ # tags: site:arc
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (SITE66606-1) 'weftspun
+ # tags: site:site-name
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (SITE66606-1) 'documents
+ # tags: site:category-name
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (SITE66606-1) 'urn:oid:1.3.6.1.4.1.66606
+ # tags: site:pen
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (SITE66606-1) 'rfd/1000-conventions/DETAILS.md
+ # tags: site:rule
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (SITE66606-1) 'Frozen 2026-08-31. No new serial is allocated under arc 66606.1.1. Existing serials stay in place and stay citable; slug edits are fine, because renaming a document does not renumber it. New RFDs in this repository take the next unused serial under site 2 (arc 66606.1.2) from SERIALS-vsekai-fabric.usda, whose 2026-08-29 decommission was reactivated on 2026-08-31 for this purpose. When site 2 fills up, RFD 1000 opens site 5 at arc 66606.1.5. See pen-66606.usda sitesDecommissioned for the full argument.
+ # tags: site:note:decommissioned
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (SITE66606-1) 'Every serial this site has allocated, and every one it has retired. A serial is appended once. It is never removed and never reused, because it is the last arc of an OID and an arc names one document for as long as it exists. A slug follows its directory, because a retitle renames a document and does not renumber it.
+ # tags: site:thesis
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (SITE66606-1) 'allocated
+ # tags: site:section
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (SITE66606-1) 'unused
+ # tags: site:section
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (SITE66606-1) 'A serial nothing was ever written under. These three sat in neither register: not allocated to a document, and not retired from one, so a reader counting the live rows saw a gap and had nothing telling them what it meant. Recorded so the gap reads as a decision rather than as a loss. A satellite relation rather than an empty slug on the spine, because a serial with no document is a different fact from a serial with one, and CLAUDE.md's normal form takes satellites over nullable columns. NOTE THE LIMIT: `check-rfd-serials.py` keys on the scope names Allocated and Deleted and skips this one, so nothing enforces these. What prevents reuse is RFD 1000's rule that a new serial is the next unused one, which is max plus one and never a gap.
+ # tags: site:section-note
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (SITE66606-1) 'RFD66606-1081
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (SITE66606-1) 'RFD66606-1097
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (SITE66606-1) 'RFD66606-1127
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (SITE66606-1) 'deleted
+ # tags: site:section
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (SITE66606-1) 'A deleted serial keeps its row. The RFDs above still cite it, and deleting a directory does not delete a citation.
+ # tags: site:section-note
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (SITE66606-1) 'RFD66606-1001
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (SITE66606-1) 'RFD66606-1002
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (SITE66606-1) 'RFD66606-1003
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (SITE66606-1) 'RFD66606-1005
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (SITE66606-1) 'RFD66606-1006
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (SITE66606-1) 'RFD66606-1008
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (SITE66606-1) 'RFD66606-1010
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (SITE66606-1) 'RFD66606-1013
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (SITE66606-1) 'RFD66606-1014
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (SITE66606-1) 'RFD66606-1022
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (SITE66606-1) 'RFD66606-1023
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (SITE66606-1) 'RFD66606-1024
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (SITE66606-1) 'RFD66606-1026
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (SITE66606-1) 'RFD66606-1031
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (SITE66606-1) 'RFD66606-1032
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (SITE66606-1) 'RFD66606-1034
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (SITE66606-1) 'RFD66606-1042
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (SITE66606-1) 'RFD66606-1043
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (SITE66606-1) 'RFD66606-1056
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (SITE66606-1) 'RFD66606-1061
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (SITE66606-1) 'RFD66606-1068
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (SITE66606-1) 'RFD66606-1069
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (SITE66606-1) 'RFD66606-1071
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (SITE66606-1) 'RFD66606-1072
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (SITE66606-1) 'RFD66606-1004
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (SITE66606-1) 'RFD66606-1009
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (SITE66606-1) 'RFD66606-1012
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (SITE66606-1) 'RFD66606-1015
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (SITE66606-1) 'RFD66606-1016
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (SITE66606-1) 'RFD66606-1019
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (SITE66606-1) 'RFD66606-1049
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (SITE66606-1) 'RFD66606-1050
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (SITE66606-1) 'RFD66606-1051
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (SITE66606-1) 'RFD66606-1052
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (SITE66606-1) 'RFD66606-1062
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (SITE66606-1) 'RFD66606-1066
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (SITE66606-1) 'RFD66606-1067
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (SITE66606-1) 'RFD66606-1074
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (SITE66606-1) 'RFD66606-1075
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (SITE66606-1) 'RFD66606-1077
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (SITE66606-1) 'RFD66606-1078
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (SITE66606-1) 'RFD66606-1082
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (SITE66606-1) 'RFD66606-1083
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (SITE66606-1) 'RFD66606-1084
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (SITE66606-1) 'RFD66606-1085
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (SITE66606-1) 'RFD66606-1086
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (SITE66606-1) 'RFD66606-1087
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (SITE66606-1) 'RFD66606-1088
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (SITE66606-1) 'RFD66606-1089
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (SITE66606-1) 'RFD66606-1090
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (SITE66606-1) 'RFD66606-1091
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (SITE66606-1) 'RFD66606-1093
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (SITE66606-1) 'RFD66606-1094
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (SITE66606-1) 'RFD66606-1095
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (SITE66606-1) 'RFD66606-1096
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (SITE66606-1) 'RFD66606-1098
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (SITE66606-1) 'RFD66606-1099
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (SITE66606-1) 'RFD66606-1100
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (SITE66606-1) 'RFD66606-1101
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (SITE66606-1) 'RFD66606-1103
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (SITE66606-1) 'RFD66606-1104
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (SITE66606-1) 'RFD66606-1105
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (SITE66606-1) 'RFD66606-1107
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (SITE66606-1) 'RFD66606-1108
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (SITE66606-1) 'RFD66606-1109
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (SITE66606-1) 'RFD66606-1111
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (SITE66606-1) 'RFD66606-1112
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (SITE66606-1) 'RFD66606-1113
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (SITE66606-1) 'RFD66606-1114
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (SITE66606-1) 'RFD66606-1115
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (SITE66606-1) 'RFD66606-1116
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (SITE66606-1) 'RFD66606-1117
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (SITE66606-1) 'RFD66606-1118
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (SITE66606-1) 'RFD66606-1119
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (SITE66606-1) 'RFD66606-1122
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (SITE66606-1) 'RFD66606-1132
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (SITE66606-1) 'RFD66606-1140
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (SITE66606-1) 'RFD66606-1148
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (SITE66606-1) 'RFD66606-1154
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (SITE66606-1) 'RFD66606-1155
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (SITE66606-1) 'RFD66606-1156
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (SITE66606-1) 'RFD66606-1158
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (SITE66606-1) 'RFD66606-1159
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (SITE66606-1) 'RFD66606-1160
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (SITE66606-1) 'RFD66606-1162
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (SITE66606-1) 'RFD66606-1163
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (SITE66606-1) 'RFD66606-1166
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (SITE66606-1) 'RFD66606-1007
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (SITE66606-1) 'RFD66606-1018
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (SITE66606-1) 'RFD66606-1037
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (SITE66606-1) 'RFD66606-1038
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (SITE66606-1) 'RFD66606-1039
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (SITE66606-1) 'RFD66606-1040
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (SITE66606-1) 'RFD66606-1041
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (SITE66606-1) 'RFD66606-1044
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (SITE66606-1) 'RFD66606-1045
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (SITE66606-1) 'RFD66606-1046
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (SITE66606-1) 'RFD66606-1047
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (SITE66606-1) 'RFD66606-1048
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (SITE66606-1) 'RFD66606-1055
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (SITE66606-1) 'RFD66606-1064
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (SITE66606-1) 'RFD66606-1065
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (SITE66606-1) 'RFD66606-1073
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (SITE66606-1) 'RFD66606-1076
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (SITE66606-1) 'RFD66606-1121
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (SITE66606-1) 'RFD66606-1123
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (SITE66606-1) 'RFD66606-1126
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (SITE66606-1) 'RFD66606-1128
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (SITE66606-1) 'RFD66606-1129
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (SITE66606-1) 'RFD66606-1130
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (SITE66606-1) 'RFD66606-1131
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (SITE66606-1) 'RFD66606-1133
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (SITE66606-1) 'RFD66606-1134
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (SITE66606-1) 'RFD66606-1136
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (SITE66606-1) 'RFD66606-1137
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (SITE66606-1) 'RFD66606-1138
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (SITE66606-1) 'RFD66606-1142
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (SITE66606-1) 'RFD66606-1149
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (SITE66606-1) 'RFD66606-1150
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (SITE66606-1) 'RFD66606-1151
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (SITE66606-1) 'RFD66606-1157
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (SITE66606-1) 'RFD66606-1161
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (SITE66606-1) 'RFD66606-1164
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (SITE66606-1) 'RFD66606-1165
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (SITE66606-1) 'RFD66606-1167
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (SITE66606-1) 'RFD66606-1168
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (SITE66606-1) 'RFD66606-1169
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (SITE66606-1) 'RFD66606-1170
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (SITE66606-1) 'RFD66606-1171
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (SITE66606-1) 'RFD66606-1172
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (SITE66606-1) 'RFD66606-1173
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (SITE66606-1) 'RFD66606-1174
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (SITE66606-1) 'RFD66606-1175
+ # tags: site:row
+ Text:Site1  1 LINE
+ Text:Written
+
+2026-08-25T00:00:00Z (SITE66606-2) 'VSekaiFabric
+ # uuid: 07ffaa7b-7c86-5afe-97cf-5c110abbd50e
+ # tags: site:title, site:category:1
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:01Z (SITE66606-2) 'urn:oid:1.3.6.1.4.1.66606.1.2
+ # tags: site:arc
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:02Z (SITE66606-2) 'v-sekai-fabric
+ # tags: site:site-name
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:03Z (SITE66606-2) 'documents
+ # tags: site:category-name
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:04Z (SITE66606-2) 'urn:oid:1.3.6.1.4.1.66606
+ # tags: site:pen
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (SITE66606-2) 'rfd/2000-conventions/index.md
+ # tags: site:rule
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (SITE66606-2) 'Reactivated 2026-08-31 when site 1 was frozen. The site was decommissioned on 2026-08-29 and moved into request-for-discussion, which is where its register now lives; the 2026-08-29 sentence promising no new allocations was retracted in pen-66606.usda sitesDecommissioned. From 2026-08-31 forward this is the workspace source of new RFD serials -- new RFDs get 2NNN numbers here.
+ # tags: site:note:reactivated
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (SITE66606-2) 'Every serial this site has allocated. A serial is appended once. It is never removed and never reused, because it is the last arc of an OID and an arc names one document for as long as it exists. A slug follows its directory, because a retitle renames a document and does not renumber it.
+ # tags: site:thesis
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (SITE66606-2) 'allocated
+ # tags: site:section
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (SITE66606-2) 'deleted
+ # tags: site:section
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:10Z (SITE66606-2) 'RFD66606-2000
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:11Z (SITE66606-2) 'RFD66606-2001
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:12Z (SITE66606-2) 'RFD66606-2002
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:13Z (SITE66606-2) 'RFD66606-2003
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:14Z (SITE66606-2) 'RFD66606-2004
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:15Z (SITE66606-2) 'RFD66606-2005
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:16Z (SITE66606-2) 'RFD66606-2006
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:17Z (SITE66606-2) 'RFD66606-2007
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:18Z (SITE66606-2) 'RFD66606-2010
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:19Z (SITE66606-2) 'RFD66606-2014
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:20Z (SITE66606-2) 'RFD66606-2022
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:21Z (SITE66606-2) 'RFD66606-2025
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (SITE66606-2) 'RFD66606-2029
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (SITE66606-2) 'RFD66606-2031
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (SITE66606-2) 'RFD66606-2034
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (SITE66606-2) 'RFD66606-2035
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (SITE66606-2) 'RFD66606-2037
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (SITE66606-2) 'RFD66606-2038
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (SITE66606-2) 'RFD66606-2039
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (SITE66606-2) 'RFD66606-2041
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (SITE66606-2) 'RFD66606-2042
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (SITE66606-2) 'RFD66606-2043
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (SITE66606-2) 'RFD66606-2045
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (SITE66606-2) 'RFD66606-2046
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (SITE66606-2) 'RFD66606-2047
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (SITE66606-2) 'RFD66606-2048
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (SITE66606-2) 'RFD66606-2049
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (SITE66606-2) 'RFD66606-2050
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (SITE66606-2) 'RFD66606-2054
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (SITE66606-2) 'RFD66606-2055
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (SITE66606-2) 'RFD66606-2056
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (SITE66606-2) 'RFD66606-2057
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (SITE66606-2) 'RFD66606-2062
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (SITE66606-2) 'RFD66606-2063
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (SITE66606-2) 'RFD66606-2066
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (SITE66606-2) 'RFD66606-2067
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (SITE66606-2) 'RFD66606-2069
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (SITE66606-2) 'RFD66606-2070
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (SITE66606-2) 'RFD66606-2071
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (SITE66606-2) 'RFD66606-2072
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (SITE66606-2) 'RFD66606-2073
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (SITE66606-2) 'RFD66606-2074
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (SITE66606-2) 'RFD66606-2075
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (SITE66606-2) 'RFD66606-2076
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (SITE66606-2) 'RFD66606-2077
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (SITE66606-2) 'RFD66606-2078
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (SITE66606-2) 'RFD66606-2079
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (SITE66606-2) 'RFD66606-2080
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (SITE66606-2) 'RFD66606-2081
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (SITE66606-2) 'RFD66606-2082
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (SITE66606-2) 'RFD66606-2083
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (SITE66606-2) 'RFD66606-2084
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (SITE66606-2) 'RFD66606-2085
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (SITE66606-2) 'RFD66606-2086
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (SITE66606-2) 'RFD66606-2087
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (SITE66606-2) 'RFD66606-2088
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (SITE66606-2) 'RFD66606-2089
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (SITE66606-2) 'RFD66606-2090
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (SITE66606-2) 'RFD66606-2091
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (SITE66606-2) 'RFD66606-2092
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (SITE66606-2) 'RFD66606-2094
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (SITE66606-2) 'RFD66606-2095
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (SITE66606-2) 'RFD66606-2099
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (SITE66606-2) 'RFD66606-2100
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (SITE66606-2) 'RFD66606-2102
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (SITE66606-2) 'RFD66606-2105
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (SITE66606-2) 'RFD66606-2107
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (SITE66606-2) 'RFD66606-2108
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (SITE66606-2) 'RFD66606-2110
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (SITE66606-2) 'RFD66606-2112
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (SITE66606-2) 'RFD66606-2116
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (SITE66606-2) 'RFD66606-2120
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (SITE66606-2) 'RFD66606-2122
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (SITE66606-2) 'RFD66606-2123
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (SITE66606-2) 'RFD66606-2124
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (SITE66606-2) 'RFD66606-2125
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (SITE66606-2) 'RFD66606-2126
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (SITE66606-2) 'RFD66606-2127
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (SITE66606-2) 'RFD66606-2128
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (SITE66606-2) 'RFD66606-2129
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (SITE66606-2) 'RFD66606-2130
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (SITE66606-2) 'RFD66606-2132
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (SITE66606-2) 'RFD66606-2133
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (SITE66606-2) 'RFD66606-2138
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (SITE66606-2) 'RFD66606-2139
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (SITE66606-2) 'RFD66606-2147
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (SITE66606-2) 'RFD66606-2151
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (SITE66606-2) 'RFD66606-2158
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (SITE66606-2) 'RFD66606-2163
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (SITE66606-2) 'RFD66606-2186
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (SITE66606-2) 'RFD66606-2187
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (SITE66606-2) 'RFD66606-2194
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (SITE66606-2) 'RFD66606-2208
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (SITE66606-2) 'RFD66606-2211
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (SITE66606-2) 'RFD66606-2212
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (SITE66606-2) 'RFD66606-2214
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (SITE66606-2) 'RFD66606-2217
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (SITE66606-2) 'RFD66606-2218
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (SITE66606-2) 'RFD66606-2227
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (SITE66606-2) 'RFD66606-2228
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (SITE66606-2) 'RFD66606-2230
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (SITE66606-2) 'RFD66606-2231
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (SITE66606-2) 'RFD66606-2008
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (SITE66606-2) 'RFD66606-2015
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (SITE66606-2) 'RFD66606-2017
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (SITE66606-2) 'RFD66606-2018
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (SITE66606-2) 'RFD66606-2019
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (SITE66606-2) 'RFD66606-2020
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (SITE66606-2) 'RFD66606-2023
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (SITE66606-2) 'RFD66606-2024
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (SITE66606-2) 'RFD66606-2027
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (SITE66606-2) 'RFD66606-2030
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (SITE66606-2) 'RFD66606-2032
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (SITE66606-2) 'RFD66606-2033
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (SITE66606-2) 'RFD66606-2036
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (SITE66606-2) 'RFD66606-2040
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (SITE66606-2) 'RFD66606-2044
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (SITE66606-2) 'RFD66606-2051
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (SITE66606-2) 'RFD66606-2052
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (SITE66606-2) 'RFD66606-2053
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (SITE66606-2) 'RFD66606-2058
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (SITE66606-2) 'RFD66606-2060
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (SITE66606-2) 'RFD66606-2065
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (SITE66606-2) 'RFD66606-2068
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (SITE66606-2) 'RFD66606-2093
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (SITE66606-2) 'RFD66606-2096
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (SITE66606-2) 'RFD66606-2097
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (SITE66606-2) 'RFD66606-2098
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (SITE66606-2) 'RFD66606-2101
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (SITE66606-2) 'RFD66606-2103
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (SITE66606-2) 'RFD66606-2106
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (SITE66606-2) 'RFD66606-2109
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:22Z (SITE66606-2) 'RFD66606-2111
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:23Z (SITE66606-2) 'RFD66606-2113
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:24Z (SITE66606-2) 'RFD66606-2114
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:25Z (SITE66606-2) 'RFD66606-2115
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:26Z (SITE66606-2) 'RFD66606-2117
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:27Z (SITE66606-2) 'RFD66606-2118
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:28Z (SITE66606-2) 'RFD66606-2119
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:29Z (SITE66606-2) 'RFD66606-2121
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:30Z (SITE66606-2) 'RFD66606-2135
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:31Z (SITE66606-2) 'RFD66606-2136
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:32Z (SITE66606-2) 'RFD66606-2141
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:33Z (SITE66606-2) 'RFD66606-2148
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:34Z (SITE66606-2) 'RFD66606-2149
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:35Z (SITE66606-2) 'RFD66606-2150
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:36Z (SITE66606-2) 'RFD66606-2152
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:37Z (SITE66606-2) 'RFD66606-2153
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:38Z (SITE66606-2) 'RFD66606-2154
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:39Z (SITE66606-2) 'RFD66606-2155
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:40Z (SITE66606-2) 'RFD66606-2156
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:41Z (SITE66606-2) 'RFD66606-2157
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:42Z (SITE66606-2) 'RFD66606-2160
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:43Z (SITE66606-2) 'RFD66606-2161
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:44Z (SITE66606-2) 'RFD66606-2162
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:45Z (SITE66606-2) 'RFD66606-2164
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:46Z (SITE66606-2) 'RFD66606-2165
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:47Z (SITE66606-2) 'RFD66606-2166
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:48Z (SITE66606-2) 'RFD66606-2167
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:49Z (SITE66606-2) 'RFD66606-2178
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:50Z (SITE66606-2) 'RFD66606-2183
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:51Z (SITE66606-2) 'RFD66606-2184
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:52Z (SITE66606-2) 'RFD66606-2188
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:53Z (SITE66606-2) 'RFD66606-2189
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:54Z (SITE66606-2) 'RFD66606-2190
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:55Z (SITE66606-2) 'RFD66606-2191
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:56Z (SITE66606-2) 'RFD66606-2192
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:57Z (SITE66606-2) 'RFD66606-2193
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:58Z (SITE66606-2) 'RFD66606-2197
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:02:59Z (SITE66606-2) 'RFD66606-2198
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:00Z (SITE66606-2) 'RFD66606-2199
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:01Z (SITE66606-2) 'RFD66606-2203
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:02Z (SITE66606-2) 'RFD66606-2204
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:03Z (SITE66606-2) 'RFD66606-2205
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:04Z (SITE66606-2) 'RFD66606-2206
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:05Z (SITE66606-2) 'RFD66606-2207
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:06Z (SITE66606-2) 'RFD66606-2210
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:07Z (SITE66606-2) 'RFD66606-2213
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:08Z (SITE66606-2) 'RFD66606-2215
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:09Z (SITE66606-2) 'RFD66606-2234
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:10Z (SITE66606-2) 'RFD66606-2236
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:11Z (SITE66606-2) 'RFD66606-2237
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:12Z (SITE66606-2) 'RFD66606-2238
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:13Z (SITE66606-2) 'RFD66606-2239
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:14Z (SITE66606-2) 'RFD66606-2241
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:15Z (SITE66606-2) 'RFD66606-2242
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:16Z (SITE66606-2) 'RFD66606-2243
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:17Z (SITE66606-2) 'RFD66606-2244
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:18Z (SITE66606-2) 'RFD66606-2245
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:19Z (SITE66606-2) 'RFD66606-2246
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:20Z (SITE66606-2) 'RFD66606-2248
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:21Z (SITE66606-2) 'RFD66606-2249
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:22Z (SITE66606-2) 'RFD66606-2250
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:23Z (SITE66606-2) 'RFD66606-2251
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:24Z (SITE66606-2) 'RFD66606-2252
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:25Z (SITE66606-2) 'RFD66606-2253
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:26Z (SITE66606-2) 'RFD66606-2254
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:27Z (SITE66606-2) 'RFD66606-2264
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:28Z (SITE66606-2) 'RFD66606-2265
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:29Z (SITE66606-2) 'RFD66606-2266
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:30Z (SITE66606-2) 'RFD66606-2267
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:31Z (SITE66606-2) 'RFD66606-2268
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:32Z (SITE66606-2) 'RFD66606-2269
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:33Z (SITE66606-2) 'RFD66606-2271
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:34Z (SITE66606-2) 'RFD66606-2272
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:35Z (SITE66606-2) 'RFD66606-2273
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:36Z (SITE66606-2) 'RFD66606-2274
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:37Z (SITE66606-2) 'RFD66606-2275
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:38Z (SITE66606-2) 'RFD66606-2276
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:39Z (SITE66606-2) 'RFD66606-2277
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:40Z (SITE66606-2) 'RFD66606-2278
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:41Z (SITE66606-2) 'RFD66606-2279
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:42Z (SITE66606-2) 'RFD66606-2280
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:43Z (SITE66606-2) 'RFD66606-2281
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:44Z (SITE66606-2) 'RFD66606-2282
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:45Z (SITE66606-2) 'RFD66606-2283
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:46Z (SITE66606-2) 'RFD66606-2284
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:47Z (SITE66606-2) 'RFD66606-2285
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:48Z (SITE66606-2) 'RFD66606-2286
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:49Z (SITE66606-2) 'RFD66606-2290
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:50Z (SITE66606-2) 'RFD66606-2300
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:51Z (SITE66606-2) 'RFD66606-2301
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:52Z (SITE66606-2) 'RFD66606-2303
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:53Z (SITE66606-2) 'RFD66606-2304
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:54Z (SITE66606-2) 'RFD66606-2305
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:55Z (SITE66606-2) 'RFD66606-2308
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:56Z (SITE66606-2) 'RFD66606-2309
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:57Z (SITE66606-2) 'RFD66606-2310
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:58Z (SITE66606-2) 'RFD66606-2313
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:03:59Z (SITE66606-2) 'RFD66606-2314
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:00Z (SITE66606-2) 'RFD66606-2315
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:01Z (SITE66606-2) 'RFD66606-2317
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:02Z (SITE66606-2) 'RFD66606-2318
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:03Z (SITE66606-2) 'RFD66606-2322
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:04Z (SITE66606-2) 'RFD66606-2323
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:05Z (SITE66606-2) 'RFD66606-2324
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:06Z (SITE66606-2) 'RFD66606-2325
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:07Z (SITE66606-2) 'RFD66606-2326
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:08Z (SITE66606-2) 'RFD66606-2327
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:09Z (SITE66606-2) 'RFD66606-2328
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:10Z (SITE66606-2) 'RFD66606-2329
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:11Z (SITE66606-2) 'RFD66606-2330
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:12Z (SITE66606-2) 'RFD66606-2331
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:13Z (SITE66606-2) 'RFD66606-2332
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:14Z (SITE66606-2) 'RFD66606-2334
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:15Z (SITE66606-2) 'RFD66606-2335
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:16Z (SITE66606-2) 'RFD66606-2336
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:17Z (SITE66606-2) 'RFD66606-2338
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:18Z (SITE66606-2) 'RFD66606-2350
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:04:19Z (SITE66606-2) 'RFD66606-2352
+ # tags: site:row
+ Text:Site2  1 LINE
+ Text:Written
+
+2026-08-25T00:00:00Z (RFD66606-1081)
+ # uuid: 5c73f1a6-85d1-58cc-803e-f501690f498d
+ # tags: serial:row
+ Serials:Weftspun:NeverWritten  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1097)
+ # uuid: 6a3a6442-b749-5cb5-b956-c71f15072cf6
+ # tags: serial:row
+ Serials:Weftspun:NeverWritten  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1127)
+ # uuid: 8ab5e9fe-dd17-59a8-918f-fdf69489a1b0
+ # tags: serial:row
+ Serials:Weftspun:NeverWritten  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1001) 'app-shell-and-routing
+ # uuid: 11f2b31b-bea2-5872-a6b9-360abb3fc34d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1002) 'studio-pipeline-graph
+ # uuid: 4041f4a5-26cc-513e-a45a-6c274039956e
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1003) 'task-manager-job-lifecycle
+ # uuid: 266f8aef-9a82-585f-877d-fdebbd054adb
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1005) 'avatar-and-vrm-pipeline
+ # uuid: 07b1329f-bb97-5723-8259-2b0019acf1a6
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1006) 'layer-decomposition-see-through
+ # uuid: 80fc887f-ab3f-502a-8f3c-8a54dcf81390
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1008) 'appearance-trait-extraction-and-remix
+ # uuid: 5a048bfc-c894-5744-b51e-bbf3ded51c0f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1010) 'webxr-and-iwsdk-lab
+ # uuid: 95080ac6-fd74-5c63-be4e-93ed14ecfbef
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1013) 'public-demo-deploy
+ # uuid: 4df4f1b5-0b7f-5f67-a84c-3d2ff212396f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1014) 'batch-processing
+ # uuid: c2a00e64-dd65-57f7-8519-ccad5c726858
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1022) 'hexagonal-client
+ # uuid: fb812876-6b0a-5287-86cd-9803078f1a08
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1023) 'ports-and-adapters-with-headless-cms-style
+ # uuid: 9503c184-99b7-5827-993a-7b0baba88609
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1024)
+ # uuid: 6ffed203-7a87-5a8b-99d5-136f7c3a14d0
+ # tags: serial:row, serial:recorded-in:1070
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1026) 'bf16-memory-per-model
+ # uuid: 7ceee96e-312b-5253-a40b-cf1cf92dbbb7
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1031) 'geometry-refinement-and-alpha-wrap
+ # uuid: d4f7b502-e2ee-55a8-aa67-bf8349f333c7
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1032)
+ # uuid: b8f5f662-3fde-5e1e-970f-3d06ef2238bf
+ # tags: serial:row, serial:recorded-in:1070
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1034) 'krea-memory-cross-check
+ # uuid: 8fb707b0-12a0-5079-a75f-48ff98fba011
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1042) 'krea2-turbo-text-to-image
+ # uuid: 683c45eb-eb00-5b2b-8682-0fa1f97e8e89
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1043) 'qwen-image-edit
+ # uuid: 920a6fb7-da62-559a-939f-789bef406fd8
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1056) 'develop-in-a-dev-container
+ # uuid: db55a4ce-563c-562c-ada9-5541ba381bb5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1061) 'glb-upload-prep-via-idtx-core
+ # uuid: f9553835-bca2-5b11-a0c2-0b3a3c3867d3
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1068)
+ # uuid: bc4b2582-4c90-5eaa-8a51-1c97b8022c84
+ # tags: serial:row, serial:recorded-in:1070
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1069)
+ # uuid: 3ef7388c-b517-5715-9554-d191749e13d9
+ # tags: serial:row, serial:recorded-in:1064
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1071)
+ # uuid: 8d374366-1f2d-58f2-a314-3c59ea3d3bc0
+ # tags: serial:row, serial:recorded-in:1064
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1072)
+ # uuid: f409ee79-8bde-543b-9ba0-cfa8fb0d8f50
+ # tags: serial:row, serial:recorded-in:1064
+ Serials:Weftspun:Retired  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1004) 'aigc-task-catalog
+ # uuid: 64e3650f-fad3-571f-9f01-b9bb76c75b9a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1009) 'viewport-and-scene-rendering
+ # uuid: b1c12f2a-4e83-5b6f-a20b-0863fe295002
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1012) 'wallet-minting-and-x402
+ # uuid: 66d5f54d-7a66-5e25-8a6c-2bcc569c269d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1015) 'phygital-passport
+ # uuid: 410666ce-8938-5d92-9a96-7bfb61b0f997
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1016) 'deep-learning-model-inventory
+ # uuid: 6a941748-26ef-53c2-bb0e-f1159fbe6a8c
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1019) 'strangler-fig-studio-core
+ # uuid: 603df5af-fe8d-5777-9e36-306cffac6f3a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1049) 'weftspun-image-to-world
+ # uuid: 036087f6-14f2-59bc-ad15-8dccb07ab8f3
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1050) 'lingbot-map-environment-scan
+ # uuid: c4775b64-03e1-54e6-9f31-58d86ab4e11b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1051) 'worldmirror2-reconstruct
+ # uuid: 3ef73188-d630-571b-a0df-43bb79feaeb5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1052) 'triposplat-image-to-splat
+ # uuid: 8743ebf1-6656-54d3-ae9c-d431ef256d45
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1062) 'flyio-toplevel-4090-worker-split
+ # uuid: dc339984-52a9-5e3e-9c87-1c50f8e3bc49
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1066) 'differential-mamba-for-caption-encoding
+ # uuid: bfd5ac44-4fd0-5e3b-be0a-eb5f28f31101
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1067) 'cockroachdb-reranked-against-foundationdb
+ # uuid: 2ce18206-1fcb-5a2b-a668-7fd1e6f31248
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1074) '3d-billboard-labels
+ # uuid: d4687615-9d66-522b-b484-bf8a4294e4d2
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1075) 'github-oauth-admin-login
+ # uuid: d8f44b67-e5bf-544b-8ef8-5466000ded9f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1077) 'h2o-edge-cdn
+ # uuid: 475fdd37-69b1-529b-9f33-bd8e85f5b9a4
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1078) 'h2o-fdb-game-state-server
+ # uuid: 075b685b-fbbc-5660-b28f-268215d04a69
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1082) 'android-studio-ai-brief
+ # uuid: 50a9a618-c4f1-5eff-9048-a26ece1ee2eb
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1083) 'api-avatar-rig-contract
+ # uuid: 74382347-42da-57ce-bb0e-9211556db30b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1084) 'avatar-pipeline
+ # uuid: d2a9d6a9-a031-5503-ab07-535c85fac9e8
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1085) 'code-map
+ # uuid: b0373641-9332-577a-bc84-514d873a34c9
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1086) 'dev-machine-topology
+ # uuid: 75963726-f3cd-5b0c-8ae2-bdc9feed0cb5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1087) 'gemini
+ # uuid: d2db2432-73b6-57f5-aa43-1b62dbd6afb8
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1088) 'https-setup
+ # uuid: d31696b0-f877-5437-be95-50a708430c6a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1089) 'hyworld-image-to-world-scope
+ # uuid: 1fd1740a-baab-52e5-aaa1-f71504e1c7ce
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1090) 'iwsdk-integration
+ # uuid: 7539afaa-9c99-56f4-81de-ea9733aa89f3
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1091) 'iwsdk-local-fork
+ # uuid: 57d9d68a-7008-5660-8b68-a8b18a66e2b0
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1093) 'loot-assets-setup
+ # uuid: 19b83019-9f66-52c2-8b3f-6a6eb7d5f6db
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1094) 'multi-image-splat-roadmap
+ # uuid: d8cd4994-13a9-5964-87bf-f26cea25ab24
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1095) 'nvidia-xr-ai-integration
+ # uuid: 369a548f-aedf-5bc7-a644-c49fb8e09dfa
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1096) 'openxr-face-tracking-android-xr
+ # uuid: 23b6eee6-244a-5300-992e-a5d98b2c9b3b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1098) 'public-deploy
+ # uuid: 871ac28a-268b-524a-93fd-6a598d0e8138
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1099) 'scripts-cheatsheet
+ # uuid: be0c3d97-4d60-5e7d-90da-3e008dcd044b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1100) 'spatial-fabric-integration
+ # uuid: 2e73960a-febc-59b5-800a-f4e79348034d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1101) 'ssh-host-names
+ # uuid: cf5f2c73-86a6-5516-845b-855404bb7a01
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1103) 'vercel-loot-assets
+ # uuid: d0976c43-61a1-5931-9ac0-496c6c4f1c73
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1104) 'vrm-upload-display-export
+ # uuid: 4604a5ea-4b01-5e06-aacc-c77ff625e484
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1105) 'webcam-avatar-control
+ # uuid: bc1f4b2a-d79b-5078-a212-395f85722baf
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1107) 'world-package
+ # uuid: e7464536-dacc-5501-84c9-19219eaea8e1
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1108) 'xr-mode-floor-anchoring-and-backgrounds
+ # uuid: 2fb03509-b55f-512a-98ee-dfd5b48e57bf
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1109) 'moat-payment-rails-and-phygital-registry
+ # uuid: bfbf6566-d47e-57c2-8565-e8dd32fdc70b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1111) '3daigc-api-reference-not-restated
+ # uuid: b94bfdab-67ac-554f-9d21-ba481fa3f99b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1112) 'cursor-rules-kept-in-the-open
+ # uuid: c86a4c63-f8a8-555a-ac53-d3d718729b86
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1113) 'image-preview-vs-expand-sizing
+ # uuid: f5195a1f-36dd-527e-aa2b-7ecac8ef373c
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1114) 'app-chrome-layout-invariants
+ # uuid: d6d6a66e-78b6-5b90-bd87-7cafa7f81809
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1115) 'vrm-animation-playback-invariants
+ # uuid: ecb40f8e-ebd9-5c69-82ce-a12eb5b101e6
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1116) 'tasks-panel-clear-and-collapse
+ # uuid: 35e40881-f2e6-5e69-a8bb-54f422c3af9c
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1117) 'text-to-image-to-3d-chain
+ # uuid: 4abd4eae-a6ec-525d-8446-6553736b79d8
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1118) 'xr-embody-locomotion-and-menu
+ # uuid: 60a12552-8006-5070-971b-fd52480f345d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1119) 'generic-hardware-not-dgx-or-android-xr-specific
+ # uuid: 56843665-1640-5897-94ce-4269c5b4914a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1122) 'the-wholebody-gap
+ # uuid: 395523a1-7ee8-54b9-8b54-dcea945b74d1
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1132) 'priority-list-of-converted-models
+ # uuid: 5a0a6524-c464-54ec-80cf-0edddc864f62
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1140) 'rented-gpus-on-runpod
+ # uuid: f28c59e7-1497-5f3b-a913-028808093fc6
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-26T00:00:00Z (RFD66606-1148) 'the-runtime-that-reaches-the-device
+ # uuid: 09deb5a1-2ca2-5912-87b8-f3aebac04d2d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1154) 'pixal3d-at-four-bits
+ # uuid: 30f2dc90-5abb-5db1-aaf5-7d9fed98de76
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1155) 'gemma4-towers-not-decoder
+ # uuid: 82ed087f-dfcc-5529-be3b-1a0bb8a55f28
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1156) 'omnigen2-staged-residency
+ # uuid: a0f291c5-7413-56a6-a059-e4471cdf922a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1158) 'seethrough-layer-decomposition-edge
+ # uuid: bd08027c-7706-5ec6-bcf7-adf17fe37409
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1159) 'trellis2-at-the-ceiling
+ # uuid: 20d9bb17-3e7c-5d0d-8d0e-9ba045b82141
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1160) 'skintokens-edge-fit
+ # uuid: 92b4611f-d2b2-5bc1-bd27-91983e956644
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1162) 'voxhammer-zero-weights
+ # uuid: 264ca639-b0d8-5741-8f8a-532154e119c2
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1163) 'the-accelerator-in-the-loops
+ # uuid: 15470a8e-d611-514b-89c1-695ebccdc3dd
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1166) 'scoring-the-accelerator-candidates
+ # uuid: be073169-e446-5252-a090-1910145d66c5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1007) 'motion-validation-kimodo
+ # uuid: 0f180e75-74cd-5d5c-adb6-b1edce9aa9b9
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1018) 'm3-documentation-removal
+ # uuid: 0a38a418-a686-5538-a5b6-d3de7a934567
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1037) 'composite-models-as-taskweft-domains
+ # uuid: fd8cf00d-3014-5030-bebf-64c682f0b3b1
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1038) 'trellis2-image-to-textured-mesh
+ # uuid: 57458344-4a56-55b2-86ea-2e030b505658
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1039) 'trellis2-image-mesh-painting
+ # uuid: 83e9ef04-fee2-525e-a75f-5343e42b583b
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1040) 'pixal3d-image-to-textured-mesh
+ # uuid: 15a46bd6-706a-5b31-8233-dce81fd2a87f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1041) 'p3sam-mesh-segmentation
+ # uuid: 6b09d178-8fcb-5811-bd7a-439c29d7cc35
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1044) 'seethrough-layer-decomposition
+ # uuid: 5494e790-9f71-5580-a35a-a860402fcedd
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1045) 'kimodo-text-to-motion
+ # uuid: ff431501-e53c-50f5-a332-b7c5fa0f3652
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1046) 'skintokens-auto-rig
+ # uuid: cee53329-da56-589c-8f15-6f63b4853297
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1047) 'voxhammer-text-mesh-editing
+ # uuid: 242d2d8b-27d7-5609-8bf3-77d2261fba8f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1048) 'voxhammer-image-mesh-editing
+ # uuid: 46b20ea5-9bb6-5714-8b07-5272c6737be6
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1055) 'beam-workers-local-first
+ # uuid: 9b614c06-c829-5a3c-91a1-e4a6065c8772
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1064) 'character-concept-generator
+ # uuid: f785888d-0e98-51be-a707-ecf0990c6534
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1065) 'taskweft-domain-schema-in-etnf
+ # uuid: 52912927-aa7f-526b-a0f3-414e4367aada
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1073) 'dataset-billboard-gallery
+ # uuid: c9427600-a860-5055-be24-cbf3dc31d569
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1076) 'usd-viewer-app-build-integration
+ # uuid: a4c53b29-bfad-5d36-848c-c9c4bfb23839
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1121) 'layers-from-geometry-and-the-missing-categories
+ # uuid: 565b9738-90a4-50cc-b72c-0b83021038ca
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1123) 'cineform-in-godot
+ # uuid: 1368deab-97d2-5771-b31f-2907618475d2
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1126) 'feed-forward-for-the-edge
+ # uuid: 712da501-454f-574e-b292-0b200ba8f437
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1128) 'four-bit-tolerance
+ # uuid: 3de8409c-cc89-50d4-9462-f7cd4465798d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1129) 'hailo-operator-coverage
+ # uuid: 18894116-d57a-566b-8b33-402486992fdf
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1130) 'ugen300-throughput
+ # uuid: 0df84b65-9b7e-5699-804d-a8864bf895cd
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1131) 'operator-emulation-for-the-accelerator
+ # uuid: a57a8ab2-e265-5e53-a12f-1131a83b45fd
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1133) 'models-excluded-from-conversion
+ # uuid: 75dba950-a901-5b84-9b18-655ee185e5e0
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1134) 'notebooks-tested-in-the-browser
+ # uuid: 2c5e1fa1-16bc-51e9-9d3e-e27e5d56a98d
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1136) 'camera-vocabulary-and-the-96-pose-grid
+ # uuid: ccf2a649-d489-5869-b6e5-7cbc09bcf4fa
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1137) 'encoding-a-frame-set
+ # uuid: 4fcb3865-7ea8-5719-afdc-26ccd255da7f
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1138) 'where-range-of-motion-comes-from
+ # uuid: 67e394ef-a6d8-54db-8dd3-186065195da5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-1142) 'the-mac-against-the-ugen300
+ # uuid: f6788ac0-75ad-550c-afb0-20292f8814c1
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-26T00:00:00Z (RFD66606-1149) 'mtoon-shades-against-the-key-light
+ # uuid: b300fb05-ae35-5caf-99eb-fae36af31330
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-26T00:00:00Z (RFD66606-1150) 'shade-colour-solved-per-tone
+ # uuid: 97433624-65a9-5efe-b8e0-3219708b3069
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-26T00:00:00Z (RFD66606-1151) 'which-axes-the-survey-weights
+ # uuid: 5872ceb0-0b77-506d-a553-29d2d386233a
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1157) 'editscore-merger-lora
+ # uuid: fa1177bf-321a-5eb6-949a-2949801543a7
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-28T00:00:00Z (RFD66606-1161) 'kimodo-edge-fit
+ # uuid: aaf54829-0940-55cb-bb39-155adbc30e06
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1164) 'calibration-is-training-data
+ # uuid: 7f5a0380-22d2-5d68-881b-d297d68ecff3
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1165) 'finetuning-exhausts-the-desk-card
+ # uuid: 88a0c304-b33d-5f26-8ba1-02b4962e4a04
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1167) 'the-ladder-and-where-each-model-stands
+ # uuid: c2e5878b-42a2-504f-9836-1943282e7912
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1168) 'segmenting-the-3d-latent-with-rf-detr
+ # uuid: df9c84e5-3082-5f5c-b001-59b30b1adeb5
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1169) 'the-audio-tower-for-qwen3-vl
+ # uuid: 13adf327-9827-5a2b-b5b8-5170bbce6558
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1170) 'a-cleanroom-presence-loop
+ # uuid: 34e0dd0c-2fd4-5b48-8326-aebbf0bfbdb0
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-29T00:00:00Z (RFD66606-1171) 'the-presence-loop-and-every-role-in-it
+ # uuid: dc3f0221-726b-5ed6-822a-01bda6c188e0
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-31T00:00:00Z (RFD66606-1172) 'a-diffusion-lm-does-not-land-on-the-npu
+ # uuid: 01f24ded-9875-52cc-8730-af462873d2df
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-31T00:00:00Z (RFD66606-1173) 'a-multimodal-diffusion-pipeline
+ # uuid: 97b19bf5-0511-568e-972d-5fc24ce6a638
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-31T00:00:00Z (RFD66606-1174) 'publish-the-security-rules-against-soc2-and-iso27001
+ # uuid: f0a97c5c-8d85-5354-b398-d4d86d39088c
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-09-05T00:00:00Z (RFD66606-1175) 'game
+ # uuid: 5a3e6490-5721-5982-bfbd-d3feeed88514
+ # tags: serial:row
+ Serials:Weftspun:Deleted  1 RFD
+ Serials:Weftspun
+
+2026-08-25T00:00:00Z (RFD66606-2000) 'conventions
+ # uuid: 16c3d8a5-d681-5202-a68e-f5dd525dae4e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2001) 'zonefabric-roadmap-vs-mas-bandwidth-fps
+ # uuid: 15ddf0ef-698a-5ad4-919e-1493989cbb9a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2002) 'taskweft-value-narrowing-primitives-and-refs
+ # uuid: dd031194-67ff-579e-bec3-59d3cbb801ea
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2003) 'castspell-sandbox-package-and-manifest-encoding
+ # uuid: cf51a41e-a85b-518a-9223-ec8e4678163d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2004) 'castspell-libgodot-sandbox-runtime-scope
+ # uuid: f8e86ef6-d730-5482-913b-fac4baab2633
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2005) 'gltf-interactivity-value-type-taxonomy-correction
+ # uuid: 3634fccf-e161-54af-bf40-3f2f2df7a3d9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2006) 'cockroachdb-with-mtls-role-separation
+ # uuid: 3429e85f-c681-58ce-99a5-af1c037455a4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2007) 'godot-double-precision-template-release-for-zone
+ # uuid: 295d967b-a154-55ba-862a-4b3dfa0ef6b0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2010) 'maglev-cycle-1-gateway-handshake
+ # uuid: 90f015f0-44b5-5ec6-bd5f-bc85c6e447a0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2014) 'art-game-loop-steel-thread
+ # uuid: c742dd1b-4339-58f1-8933-d14784f175cc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2022) 'spatial-audio-patched-resonance-audio
+ # uuid: 95c4e7ae-4fc8-5723-8a38-4acce003dd27
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2025) 'tenseless-continuous-present-voice
+ # uuid: 3ff354c8-7156-5105-b86f-fc640b6d88ac
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2029) 'cassie-desktop-curvenet-authoring
+ # uuid: 7074a622-0317-59af-9c02-82a9b51fc098
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2031) 'content-build-merged-double-precision-mcp
+ # uuid: 9da6c383-c9e8-595d-9088-a84592cdd02b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2034) 'deterministic-cores-integer-seeded-rng
+ # uuid: 071989b0-e6d0-5b53-8871-3e724a4dddd7
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2035) 'first-party-curated-content-zone-baker-budgets
+ # uuid: 03df2517-46fd-522a-94d4-210fc337e4c8
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2037) 'generated-behavior-sandboxed-riscv
+ # uuid: 43e47a5f-fc97-5b92-af8c-ecad626f53ed
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2038) 'genre-generic-naming-no-trademarks
+ # uuid: 6d0b2f56-4893-5503-a0d2-1b3aee9767af
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2039) 'hexagon-budgeter-core
+ # uuid: 2e9d2153-9d85-5a84-93b0-fc8d282ec752
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2041) 'hexagon-loot-core
+ # uuid: eee954df-df7a-5c4c-b927-9bf9bc9b4f03
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2042) 'hexagon-presence-core
+ # uuid: 3e566806-f359-583e-9d23-2dfb20ad0286
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2043) 'hexagon-progression-core
+ # uuid: 8200a29f-998a-5836-ac72-36da61a8bbad
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2045) 'loot-action-core-loop-mvp-vertical-slice
+ # uuid: f6e5d655-5ec6-5c13-9e3f-b46e7ea232a6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2046) 'server-authoritative-simulation-deferred-rollback
+ # uuid: b484a74e-a472-585f-ba7f-78381c2f8af5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2047) 'webtransportd-core-transport-adapter
+ # uuid: f7ec0686-c096-55dc-a8ff-5b20dfd36d51
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2048) 'android-template-temurin-jdk21
+ # uuid: a55847f8-614f-5b73-b998-4cb17b4c9372
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2049) 'fabric-channels-as-reliability-classes
+ # uuid: 30d8d668-0889-5fdd-ad45-4afaf92062b7
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2050) 'five-second-transaction-limit
+ # uuid: 14b11217-4700-5d70-9da4-ba5e06a278e1
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2054) 'mcp-runtime-bridge-deployed-builds
+ # uuid: 35bffc27-482b-5705-aa2a-fb3c5fbe0b6f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2055) 'r128-fixed-point-as-lean-library
+ # uuid: 0c8efda4-7c7a-57e9-a8a0-fbb0a73c8ca2
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2056) 'systemd-quadlet-verification-queue
+ # uuid: 9a2f36e8-8225-5d6b-aeee-685aa83d5b41
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2057) 'vertical-slice-repository-map
+ # uuid: ecf77e6a-99a9-58cb-adfc-fb03b7c11044
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2062) 'repository-and-capability-inventory
+ # uuid: 296c1dce-7262-5e56-b8ac-095ec3898962
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2063) 'repo-markdown-single-source-of-truth-for-project-state
+ # uuid: dcfd214c-58b9-5d2b-a4c8-be0956574ba6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2066) 'game-loop-cluster-sequence
+ # uuid: 48de354f-2a4c-528c-8000-eb221460df3f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2067) 'release-tag-progression-dev-beta-rc
+ # uuid: e7d3ca7b-5827-539c-9371-0e8797f63ccb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2069) 'defer-loot-slice-hardening-until-needed
+ # uuid: eb0f8e54-177d-5cf8-9715-f4f0774c2dfc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2070) 'loop-slice-telemetry-to-the-observability-collector
+ # uuid: adc49442-de5c-5fd2-80c2-94b735bd1c5f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2071) 'yagni-times-structure-to-need
+ # uuid: 2d511232-808a-5e10-b8b9-05dceced51d0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2072) 'actor-lite-worker-pool
+ # uuid: 910d5935-8517-57a3-9e10-06ece86f85d1
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2073) 'async-fdb-callback-chain
+ # uuid: b9feec60-b822-511b-a814-70d960de28f3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2074) 'binary-value-encoding-for-fdb
+ # uuid: e770c42a-e703-5045-8f34-de98b61c3b55
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2075) 'fdb-over-cockroachdb-for-zone-state
+ # uuid: 1d22e9da-905d-58ae-92b9-217aae6996cd
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2076) 'macaroon-xdp-security
+ # uuid: 476b8a5f-5f9c-5ec3-b6e4-058064b0f215
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2077) 'pert-critical-path-zonefabric
+ # uuid: 71012e0f-a40e-5c87-9e5c-fcae81c5ffa6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2078) 'plausible-witness-dag-feature-ablation
+ # uuid: 271aa529-925a-5560-9ddd-50930373017f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2079) 'sandboxed-godot-in-zone-server-h2o-via-raw-libriscv
+ # uuid: 147eb354-36d2-5f44-b535-09292ad384cc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2080) 'slotmap-entity-storage
+ # uuid: e0fbbe7d-1e70-54d1-a668-942101e1ed6b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2081) 'three-layer-verification-strategy
+ # uuid: 5054990c-ef5f-5c88-ab93-8e8ae7eb6129
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2082) 'zonefabric-scaling
+ # uuid: 8abdd28f-b123-55fa-9d77-9557ebf0ad25
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2083) 'zone-server-h2o-replaces-godot-fabriczone
+ # uuid: eadd6f25-6b1f-5fbf-bce3-e930f116213c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2084) 'zstd-compression-for-zone-state
+ # uuid: 724ac7b5-5e0c-5201-8337-caad2fa8da03
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2085) 'the-gyre-mud-setting-on-the-loot-action-shell
+ # uuid: 02d71d67-8ce9-5758-993c-c90dc879a43d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2086) 'defer-nogod-gossip-zone-authority
+ # uuid: babb2ff6-587d-5099-b67b-3ce0fe40d48a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2087) 'avatar-ik-sinew-mocap-align-over-mink
+ # uuid: 6b00a1ae-cc9e-5fa5-8dce-76440d57e056
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2088) 'picoquic-picotls-transport-for-zone-server-h2o
+ # uuid: 71e95c29-a3a7-5b5e-93b0-f6d99047bfc4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2089) 'flyio-over-podman-quadlets
+ # uuid: 76997a06-e2c5-53f1-93c6-0b1214289069
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2090) 'uro-burrito-release
+ # uuid: 5c5b5f35-43e6-596e-8b32-54ed9cfef7b3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2091) 'the-gyre-mud-domain-and-mode-selector
+ # uuid: b2e22824-c73a-5bc9-8b1b-7995e4aac448
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2092) 'rebac-gates-libriscv-guest-access
+ # uuid: 9d36b80f-bb33-5d0b-9808-aa3d428e5d99
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2094) 'minimum-ugc-game-loop-guest-composition
+ # uuid: 8626d0b8-3fd0-5779-a31f-2864f051d166
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2095) 'two-guest-classes-domain-abi-and-bubblewrap
+ # uuid: 6bfd82e3-02e2-5376-8369-16d67ab6bcaa
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2099) 'server-authority-on-fly
+ # uuid: f7bde28c-c906-5bc2-a27a-e947fe6b8668
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2100) 'tick-rate-send-rate-and-the-bone-budget
+ # uuid: 24b10c23-f48d-5b16-9211-cf266383789c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2102) 'the-whole-deployment-on-15-usd
+ # uuid: e32b5408-7ee4-58f6-8269-e2f9d94b5e36
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2105) 'archive-self-host-era-support-repos
+ # uuid: fd840f3e-7845-5af6-a90b-d75a8115bf8a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2107) 'janet-scripting-over-a-c-taskweft-core
+ # uuid: 26b93e11-982c-5d2a-8ad1-fd49f600a86c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2108) 'local-cabi-guests-and-in-tick-fanout
+ # uuid: b19eb36f-199d-5e5b-a6b7-576f7cfc7e47
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2110) 'h2o-libriscv-as-a-rivet-actor
+ # uuid: 0f5fbe05-d852-505a-a408-299f91a3efc6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2112) 'lexical-for-the-slash-command-interface
+ # uuid: b2a96f7d-18d8-562b-a4e3-0a428906d45d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2116) 'elixir-epoll-zone-server-in-the-h2o-style
+ # uuid: cc10a99e-e745-5399-a6b5-00b2f4330ce6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2120) 'the-gyre-became-a-settlement-game
+ # uuid: 95055057-636c-50f9-8713-1431e95823c0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2122) 'the-client-is-native
+ # uuid: 690401c3-0c9b-5b1b-9f08-79d355815fa6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2123) 'a-second-webtransport-implementation
+ # uuid: 1425b482-d693-59a0-904c-b2239ee54cdb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2124) 'elixir-error-tuples-in-every-reply
+ # uuid: f65bbb0d-a68b-516e-b992-f7871d388cf5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2125) 'an-interactor-in-another-process
+ # uuid: 045f5916-37d8-536a-b20c-c140ac32ad74
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2126) 'two-see-through-interactors
+ # uuid: 57da01ae-4743-522f-8c9f-08f62ca8d46b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2127) 'a-service-is-not-a-side
+ # uuid: 022d3190-89a7-52ad-9944-2e3aecd2248c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2128) 'the-release-ladder-is-not-automated
+ # uuid: ea200d55-8be6-5637-bf98-f92e7ce7c239
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2129) 'cost-and-latency-are-two-budgets
+ # uuid: fe767f42-bfaa-5593-8534-1f29e0fc4c4c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2130) 'state-what-a-repository-is-made-of
+ # uuid: 301c806b-ecb7-5d3d-a773-6dd3b948fae6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2132) 'a-permission-cannot-be-granted-sideways
+ # uuid: 4ee8084c-4ac5-5a80-9c8e-1ce5dd24048f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-30T00:00:00Z (RFD66606-2133) 'the-pool-rents-from-the-spot-book
+ # uuid: 2d7d6c58-2529-54d7-84ad-8b778522f327
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-30T00:00:00Z (RFD66606-2138) 'interactor-shuttle-merges-spot-broker-and-uro
+ # uuid: 669df590-e59a-5d53-9655-22fb7ed12419
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-31T00:00:00Z (RFD66606-2139) 'maskscore-qaft-budget
+ # uuid: e516a45a-69e3-5102-a198-e88862e3a47e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2147) 'bao-is-critical-infrastructure
+ # uuid: b76c5743-4955-5f3a-898c-4345b20108e2
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2151) 'coap-oscore-nif-for-taskweft
+ # uuid: 45d00f57-e2df-59f1-aca8-3f2410ec8791
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2158) 'lean4-fbd-compiler-self-hosted-on-riscv
+ # uuid: 2917d7ca-ce49-58f0-87ef-3be3e35c9053
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2163) 'maskscore-text-stub-gemma-vlm
+ # uuid: 5a13c9b9-9ba4-542d-907b-4c0acd483d27
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2186) 'omnigen2-to-lumina2-lora-transfer-qaft
+ # uuid: fc616428-5877-5735-b34e-c0bcd84e699d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2187) 'identity-anny-via-omnigen2
+ # uuid: 381e88c0-d654-5d12-8136-ce9f5d094b05
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2194) 'atelier-shuttle-portfolio-widget
+ # uuid: 63213fa9-c40d-5aff-8758-62de252caed1
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2208) 'decision-point-control-surface
+ # uuid: 4b44fef7-abfa-562a-847e-3ef7dc5c6208
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2211) 'base-tree-entities-godot-sandbox
+ # uuid: d4641bb0-c31f-5895-b9e8-345ec40de789
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2212) 'motion-bricks-as-native-godot-module
+ # uuid: b343658d-5ddf-5e9e-a455-0111f087dc1a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2214) 'model-bundle-sqlite-range-fetch-zstd
+ # uuid: a6b71343-94f9-5e1a-9e07-b6275b968ddc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2217) 'ggml-webgl2-backend-evaluation
+ # uuid: 0f6ba59d-a681-5588-a6cc-23aff1658ae5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2218) 'ggml-webgpu-backend
+ # uuid: 5a6f9e4d-7c90-5b24-aac4-b03329e1ca0b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2227) 'workspace-ggml-models-on-platform-web-webgpu
+ # uuid: 8c16f8c9-9f79-517a-9b17-fd7d58904ce9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2228) 'webgpu-native-drop-platform-web
+ # uuid: 539f7d68-b654-57f5-bdd7-fbe6f69d6565
+ # tags: serial:row, serial:flight-level:l2
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2230) 'ggml-adapters-in-godot-sandbox
+ # uuid: 3efe742d-590d-5dba-96a9-4b0c580f6f35
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2231) 'drop-webgpu-use-vulkan
+ # uuid: 55a074fe-c1e2-5d2a-8d64-be117f2438ff
+ # tags: serial:row, serial:flight-level:l2
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2008) 'webtransport-over-quic-for-game-traffic
+ # uuid: 21b85c32-e4cb-55eb-a465-02259c4715e5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2015) 'bounded-llm-steering-queue
+ # uuid: ccb656de-ce5d-5b88-8c04-3990044bed31
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2017) 'compiling-godot-engine
+ # uuid: f122b4f5-c3a2-5bc1-8c0b-29810f1ae21b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2018) 'feature-classification-poc-baseline-stretch
+ # uuid: e9021683-ca82-51ed-adea-20a230f2dc84
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2019) 'gitassembly-tag-release
+ # uuid: 84b1bafc-8ebb-52de-9224-571da1c4176d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2020) 'pin-engine-to-frozen-godot-4-7
+ # uuid: e43c3224-d23a-5241-a957-b5b49dc5c6bc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2023) 'webtransport-http3-transport
+ # uuid: ee81dd67-7b5c-5054-86c0-454af447d0d3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2024) 'windows-background-services-nssm
+ # uuid: d6ce6fd9-68e0-5cc2-b359-f4c0a797c04d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2027) 'umbrella-package-installs-all-components
+ # uuid: 33944795-5bb3-56bc-8adb-aa9c9a31f031
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2030) 'cicd-runners-as-queueing-system
+ # uuid: 397079e8-7837-5ef6-be41-6af137e993e9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2032) 'core-codegen-lean-slang
+ # uuid: 6822b61e-7821-577e-a53b-12779594dec6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2033) 'core-contract-pure-reducer-byte-state
+ # uuid: ed2a13cb-75d6-5941-8235-9a576621544b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2036) 'forward-renderer-baked-light
+ # uuid: 0d899ab4-a659-5db5-b504-2e9a181095c9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2040) 'hexagon-combat-core
+ # uuid: 7232df7a-1bf8-59fe-9d3c-c11ec208627e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2044) 'lean4-kernel-cores-flat-c-host-adapters
+ # uuid: 98995bde-3333-526b-b45f-3fdcea134c20
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2051) 'headless-openxr-testing-with-monado
+ # uuid: 9eb3e55d-3880-5a40-95a0-ee35233ccc4b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2052) 'http3-listener-session-findings
+ # uuid: 4a43c26d-4781-5a47-8ae7-d3f74c8fe4b8
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2053) 'integral-entity-transform-wire
+ # uuid: c34f6f0e-c5b5-579b-a744-cdd55ccebe54
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2058) 'webtransport-persistent-framed-stream
+ # uuid: aa8f625c-e497-5b4b-b5f2-e1d9612933a9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2060) 'org-scoped-github-app-token-for-gh-access
+ # uuid: c8c97492-ce50-5967-bcc7-0bd10039de6c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2065) 'fabric-platform-central-elixir-burrito-casync
+ # uuid: 66f82ac2-76ed-567c-a472-d57ee4a9dd47
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2068) 'sccache-github-actions-cache-for-godot-builds
+ # uuid: 9979cfb2-bf9f-552f-8ab5-7d9e6d919a99
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2093) 'compile-taskweft-to-linear-automata
+ # uuid: d5981248-9c65-5769-8a00-d326a19e504a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2096) 'guest-transport-measured-on-fly
+ # uuid: f4096351-56fd-5727-9210-e4dc8cef0f8b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2097) 'pubsub-belongs-in-userspace
+ # uuid: 9eeea329-913e-5de6-b641-a8bec38d21ab
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2098) 'rollback-snapshot-budget
+ # uuid: 53e2c75a-94cd-580a-8a18-f35096609a71
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2101) 'zstd-delta-on-the-wire
+ # uuid: 59cf2baa-53ef-5199-8e8e-6c0cd4063369
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2103) 'uro-on-ecto-foundationdb
+ # uuid: 07bcb61a-4283-5e78-aca3-b9cce95855a2
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2106) 'split-the-archive-into-its-own-repo
+ # uuid: b069191e-994a-5539-833b-b37f13afa896
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2109) 'two-tiers-with-foundationdb-as-the-store
+ # uuid: 16822467-5fac-5af5-975a-3978e45ce595
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2111) 'convert-the-deployment-words
+ # uuid: 8e129154-503e-58e6-820b-e6354545ad9c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2113) 'foundationdb-on-windows-built-from-source
+ # uuid: e98aa9d1-7cd5-5413-b9b3-c86dd6aa80a9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2114) 'prove-the-store-by-breaking-it
+ # uuid: b434ceac-551c-5058-8f92-5745133db64e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2115) 'a-planner-domain-document-is-a-cheap-layer-surface
+ # uuid: 2620a8c9-68ad-59df-8b41-bff0c89849f0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2117) 'retire-the-h2o-tier-record-set
+ # uuid: 756a1cd8-70a0-5cd4-9633-027ff1d526f6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2118) 'a-baker-replaces-the-godot-editor
+ # uuid: f9025ee6-bf23-5c12-9669-7679ef44f914
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2119) 'salvage-you-can-hold
+ # uuid: 106fff6f-df68-5837-9545-a8732d931903
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-25T00:00:00Z (RFD66606-2121) 'amend-rfd-2111-against-the-tree
+ # uuid: 435d668f-28c1-5827-8487-514baf2b4892
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-30T00:00:00Z (RFD66606-2135) 'checks-run-where-the-credentials-already-are
+ # uuid: ae7a1335-e5e1-570f-a1fc-68a1c548494d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-30T00:00:00Z (RFD66606-2136) 'the-gacha-critical-path
+ # uuid: 2972bc41-1684-54a2-a536-494c33055ad6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-08-31T00:00:00Z (RFD66606-2141) 'fdb-tls-rotation-without-data-loss
+ # uuid: 135f87d2-32d9-52b9-9859-9dfcf6a10ffb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2148) 'grafcet-as-taskwefts-authoring-surface
+ # uuid: b62cdf94-5b34-5b6a-99ba-fe38384294aa
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2149) 'grafcet-static-analysis-in-lean4
+ # uuid: b035f781-41b1-5041-8112-0cef1132a707
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2150) 'rectgtn-on-openplc4-over-coap-oscore
+ # uuid: 7883c965-b82d-55b8-ada4-61b792d49df3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2152) 'or-divergence-plcopen-emit
+ # uuid: c257ec01-39ab-5231-a1f3-46783b8ba4e5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2153) 'fbd-to-nodegraph-converters
+ # uuid: a24a7a72-6977-5054-9a45-ce5ee464955e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2154) 'openplc4-to-godot-sandbox
+ # uuid: ef6aeaff-ad98-5a4a-9c25-82333131dc85
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2155) 'gdscript-fbd-transpiler
+ # uuid: 609bca25-9101-5763-b518-023a6f3d9bc9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2156) 'safegdscript-compile-step
+ # uuid: a2791509-e327-577b-aae1-2ef10aaebf7c
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2157) 'fbd-to-elf-compiler-in-lean4
+ # uuid: b007892b-ed56-5eb3-b677-72b3eaf9d087
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2160) 'openusd-as-taskweft-intermediate
+ # uuid: d1ee14ba-34f9-56bd-8bd4-f828a37616bf
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-01T00:00:00Z (RFD66606-2161) 'vn-avatar-cleanroom-on-maskscore
+ # uuid: 220fe416-be1a-5542-8b4b-5b585bd7d8cf
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2162) 'maskscore-usdz-skinning-and-15-edit-emit
+ # uuid: 3000189c-7905-57a3-b370-2ae582be9a56
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2164) 'maskscore-speech-stub-panel-and-cloning
+ # uuid: 8114590e-92c1-5aa9-b49e-04effb01d80d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2165) 'maskscore-unified-8-stub-emit
+ # uuid: 48ad8aff-8e69-5e83-a0b7-b754eb06b20b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2166) 'maskscore-cineform-mkv-bundle
+ # uuid: 660dd718-9469-52ff-aff8-9198c7f8fe3e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2167) 'maskscore-voice-reward-distillation
+ # uuid: 409779b5-4baf-5b07-8868-b3c176ca9ba4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2178) 'qaft-4bit-across-the-stack
+ # uuid: b5c868b0-c25f-5a08-9a2d-eba4b1a42122
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2183) 'retrain-omnigen-for-layer-decomposition
+ # uuid: 7eadbd81-683c-5756-92a9-ce95ea676760
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-02T00:00:00Z (RFD66606-2184) 'omnigen2-sdcpp-port-lean4-verified
+ # uuid: 7a950d03-b498-5908-be9d-621b539732f0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2188) 'one-ggml-across-workspace
+ # uuid: 90641d5b-03b9-52fb-b940-dde14c1b613d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2189) 'stick-figure-sanity-check-for-pose-corpus
+ # uuid: aae007f2-d1d8-5015-ad17-f5fdf50848e1
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2190) 'multi-camera-rig-extrinsics-calibration
+ # uuid: 50c88212-fd91-54ef-a579-1753ee2513f4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2191) 'unrolled-solver-residual-measurement
+ # uuid: 5b9ba78e-e4b7-56bb-a2b5-a5887d50cede
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2192) 'rfdetr-keypoint-weights-licence-verification
+ # uuid: aba7acf4-d6ed-5517-aa75-fa87b12ba850
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2193) 'editscore-as-constructed-synthetic-reproducibility-bar
+ # uuid: 3a8e931a-cdb9-51a9-ae06-5e10900be0e6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-03T00:00:00Z (RFD66606-2197) 'maskscore-rung-1-bootstrap-hf-restructure
+ # uuid: 71f8b8dc-6502-59e6-9146-14b09af86abb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2198) 'lladao-speed-work-for-dressing-overlay
+ # uuid: 73873cef-9a9c-580a-9798-0fd28cf2026e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2199) 'hailo-real-4bit-qat
+ # uuid: 29b3008b-6856-5f19-bf25-380ea355cda7
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-04T00:00:00Z (RFD66606-2203) 'anny-soma-first-subset-corpus-shape
+ # uuid: 91630ee7-5a44-5c65-ba79-111b37575253
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2204) 'rectgtn-fleet-coordination
+ # uuid: 6a6badf6-e092-5762-88b9-6b45a5449cc5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2205) 'taskweft-in-bao
+ # uuid: 0106cc71-3233-5713-8ef5-6d51ac4af0cb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2206) 'video-call-vrm-portrait
+ # uuid: e342af85-c51e-56dd-be60-f609cbb83f63
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2207) 'nord-palette-for-demos
+ # uuid: b6dcbb80-a61d-5b8f-95c2-79593189daab
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2210) 'atelier-godot-web-shipping-surface
+ # uuid: a5967cc5-ad61-5432-a730-6d58e5f85bbb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2213) 'vrm-via-godot-sandbox-elf
+ # uuid: 3affb190-edb1-57a4-b666-c391a389a83a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-05T00:00:00Z (RFD66606-2215) 'one-binary-two-heads
+ # uuid: 05eea521-fb61-54be-a235-18526d906967
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-07T00:00:00Z (RFD66606-2234) 'dress-on-pipeline
+ # uuid: bbb6fb16-7730-5c82-853f-442936120903
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-07T00:00:00Z (RFD66606-2236) 'fbd-teacher-in-three-steps
+ # uuid: 269e3e82-ab5a-57f6-abde-98a07b6b36f9
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-07T00:00:00Z (RFD66606-2237) 'body-scan-controller
+ # uuid: d51c2a62-e80e-50bc-8590-62ee815c6758
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-08T00:00:00Z (RFD66606-2238) 'g1-sim-to-real-environment
+ # uuid: 3372c387-2dd0-5759-bf83-78cb62a9f2a3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-08T00:00:00Z (RFD66606-2239) 'traits-and-one-binary
+ # uuid: 3288dad6-1e1e-5cb5-ad44-b00b05f8d5a4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-09T00:00:00Z (RFD66606-2241) 'audio-pose-from-speaking-faces
+ # uuid: 702a2c1d-b658-531e-b986-ef03c1107ee1
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-09T00:00:00Z (RFD66606-2242) 'ggml-consumers-as-native-godot-modules
+ # uuid: fa74bfd8-fba6-5737-b37f-089a129e67cc
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-10T00:00:00Z (RFD66606-2243) 'assembly-one-cycle-blockers
+ # uuid: 651b2b35-6416-50e9-95e8-818991014940
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-10T00:00:00Z (RFD66606-2244) 'one-deformation-operator
+ # uuid: 5828ddab-ec45-5956-be96-6c800af56b28
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-11T00:00:00Z (RFD66606-2245) 'webgpu-allowed-inside-godot-engine
+ # uuid: cc31d14f-6758-5bb3-9171-cffa64a53785
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-11T00:00:00Z (RFD66606-2246) 'editscore-omnigen-bootstrap-for-unmapped-parts
+ # uuid: c7f9c2a5-b93e-5635-90d3-35f7137316f6
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-12T00:00:00Z (RFD66606-2248) 'the-avatar-body-is-a-closed-solid
+ # uuid: 0e8f6840-0bf0-531b-912f-821838d099d3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-12T00:00:00Z (RFD66606-2249) 'cloth-by-vertex-block-descent
+ # uuid: 669b4429-d4a2-51f6-92c0-2c3ed42fcc3e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-12T00:00:00Z (RFD66606-2250) 'cloth-fit-as-one-burrito-binary
+ # uuid: f9e143a0-2f9a-5186-b5db-6e083f0ba864
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-13T00:00:00Z (RFD66606-2251) 'image-to-godot-character-as-an-fbd
+ # uuid: d95beb96-820a-578b-a3e1-164f63563da5
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-15T00:00:00Z (RFD66606-2252) 'llm-module-splits-and-drafts
+ # uuid: 5e879833-872b-5496-a25d-4c28154acfdf
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-15T00:00:00Z (RFD66606-2253) 'a-character-creator-on-anny
+ # uuid: 7c3a2730-3a8f-5ea2-8476-ee23191fea2d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-16T00:00:00Z (RFD66606-2254) 'order-independent-transparency-for-cad
+ # uuid: 6753fac9-9a6a-53e7-b9e0-b6f0a35aed5b
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-26T00:00:00Z (RFD66606-2264) 'mesh-repair-by-voxel-remesh
+ # uuid: 019d97bc-88f4-5cff-9ce1-9aa2897db645
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-26T00:00:00Z (RFD66606-2265) 'curvenet-on-compute-rd
+ # uuid: fa4a6fe0-8c86-5444-bcb2-1091a890a1bd
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-26T00:00:00Z (RFD66606-2266) 'simulator-runtime-on-linux
+ # uuid: 5ae8c952-1a3c-5c8d-9e65-413f9257e00e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-26T00:00:00Z (RFD66606-2267) 'persona-npcs-in-ported-scenes
+ # uuid: 60e0770b-39d8-5d07-998d-ee170582c75f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-26T00:00:00Z (RFD66606-2268) 'the-recommender-is-a-decision-model
+ # uuid: 95203042-67f3-5d3a-ba7e-73ee963194ae
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-27T00:00:00Z (RFD66606-2269) 'curvenet-parity-gate-is-interval-arithmetic
+ # uuid: 3b3760fe-c3e7-5499-9582-e0ed2720df4e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-27T00:00:00Z (RFD66606-2271) 'headset-eye-tracking-to-social-vr-without-a-bridge
+ # uuid: 2f476f5e-3796-5870-8299-ff3485f9fc02
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-27T00:00:00Z (RFD66606-2272) 'rf-detr-segmentation-as-a-sandbox-guest-on-ggml-rd
+ # uuid: 0c47aafc-8383-5481-a70f-fc07c7abb251
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-27T00:00:00Z (RFD66606-2273) 'accepting-person-masks-depth-before-judge
+ # uuid: d7b953d1-5cff-5b4d-9390-4264eaf6f3f8
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-27T00:00:00Z (RFD66606-2274) 'curvenet-crossings-via-mujoco-guest
+ # uuid: a9507c5b-2463-54f8-a3be-2d4605ebd629
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2275) 'unified-expressions-by-fitting-a-parametric-head
+ # uuid: e7740fcd-f109-5325-b6dd-200d82a571db
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2276) 'kusudama-governs-a-ggml-rd-persona-policy
+ # uuid: 08497418-c2fd-50d0-8756-0979137701d0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2277) 'curvenet-cage-refit-and-unified-expressions-in-modular-avatar
+ # uuid: 4717ba9e-c8e0-5fe7-9509-4f327dd28ef0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2278) 'voxel-remeshing-for-cages-and-solids
+ # uuid: ebda2f4f-150f-5b7c-8c20-33a4650c85a8
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2279) 'one-deform-surface-over-curvenets
+ # uuid: 85ef4595-0743-569a-b278-4108dcaa8095
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2280) 'pixal3d-latents-as-mesh-tokens
+ # uuid: 5016306c-c31a-5ef8-b258-9bdc46461c3d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-29T00:00:00Z (RFD66606-2281) 'face-shapes-from-three-sources
+ # uuid: e9223e7b-751e-5fe1-b529-73aa6b25333d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-29T00:00:00Z (RFD66606-2282) 'pose-correctives-as-bones
+ # uuid: a1f82d80-e9d7-5d0b-ad9e-62dd47c38211
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-29T00:00:00Z (RFD66606-2283) 'play-mode-verification-by-recording
+ # uuid: 0b4401d1-b25c-54ac-a1e6-50547d2c6160
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-28T00:00:00Z (RFD66606-2284) 'a-quest-variant-by-sandbox-guests
+ # uuid: 084ca120-18d0-5f0c-807a-f1f6110fe912
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-29T00:00:00Z (RFD66606-2285) 'unship-the-web-demo-and-xr-paths
+ # uuid: ffcd17d6-65a9-548d-8aff-2c5dbe612e3a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-29T00:00:00Z (RFD66606-2286) 'a-phone-face-bridge-to-social-vr
+ # uuid: fd48f575-4490-5571-a491-9bc57de95a64
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-09-30T00:00:00Z (RFD66606-2290) 'trim-the-independent-ggml-runtimes
+ # uuid: 6e47ab33-f651-596d-a927-76c1f8a63654
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-03T00:00:00Z (RFD66606-2300) 'sinew-sim-rung-ladder
+ # uuid: e718da44-6fc8-58cd-bc88-d5c28a0071f8
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-03T00:00:00Z (RFD66606-2301) 'sinew-sim-dev4-kimodo-soma-motion
+ # uuid: 5bc0296a-c459-55bf-b175-d3d47f6dec35
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-04T00:00:00Z (RFD66606-2303) 'xr-technical-requirements-checklist
+ # uuid: 30b317d9-121b-5143-b2b2-2f2b89d05b2d
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-05T00:00:00Z (RFD66606-2304) 'one-lean-4-rectgtn-library-generates-the-planner
+ # uuid: f0c906fa-5830-5186-aee0-188833091138
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-09T00:00:00Z (RFD66606-2305) 'one-credit-system-with-ports-and-adapters
+ # uuid: bbcee34d-18b1-5ac8-90bb-0d0dee48769e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-10T00:00:00Z (RFD66606-2308) 'ninfer-kernels-in-slang-inside-mlx
+ # uuid: 7f87eb53-d6f2-565d-845a-24317b5ad14f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-11T00:00:00Z (RFD66606-2309) 'frontier-learning-for-the-alyx-planner
+ # uuid: 04ed43f3-1f80-5a8d-9260-ca38103cae6a
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-12T00:00:00Z (RFD66606-2310) 'eye-landmarks-from-a-frontier-learned-render-domain
+ # uuid: 8b1eb7b1-6036-5d3c-9740-b32fad73aaa3
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-13T00:00:00Z (RFD66606-2313) 'the-full-loop-over-colour-passthrough
+ # uuid: e3c0d6a5-16d8-598e-b94f-ff8a376ddea2
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-13T00:00:00Z (RFD66606-2314) 'the-skintokens-space-viewer-runs-as-sandbox-guests
+ # uuid: 6ecc74b7-97fc-5f41-95b8-dad085e273ef
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-13T00:00:00Z (RFD66606-2315) 'web-shaders-are-baked-by-the-browser-that-runs-them
+ # uuid: ad53e913-1e90-51af-80dc-3af96075e577
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-13T00:00:00Z (RFD66606-2317) 'a-browser-joins-a-webtransport-server-with-a-bao-ticket
+ # uuid: 5f06ae19-048c-5221-a3d4-8adfcf4930bb
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-13T00:00:00Z (RFD66606-2318) 'the-avatar-space-is-built-smallest-joy-first
+ # uuid: 531587c0-5337-5d5f-b67a-cb977d82bc04
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-17T00:00:00Z (RFD66606-2322) 'a-mac-dashboard-and-theatre-mode
+ # uuid: 0b1b0b00-2847-58f8-97b7-05860ba09ac0
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-18T00:00:00Z (RFD66606-2323) 'frontier-learning-picks-the-stores-adversarial-runs
+ # uuid: bb78bb26-1a19-5149-b1bf-a59222d40ee4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-18T00:00:00Z (RFD66606-2324) 'omnigen2-editscore-desktop-offline-small-fast
+ # uuid: fb5d7418-9763-5fc2-b142-06a9c88dfbda
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-19T00:00:00Z (RFD66606-2325) 'second-hand-garments-for-the-avatar
+ # uuid: 71737ef2-d660-569b-8a58-a9912ab63eac
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-19T00:00:00Z (RFD66606-2326) 'the-zone-sends-every-entity-in-view-under-a-byte-budget
+ # uuid: 4d35614c-291f-5acf-9224-0ebb2fbb6069
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-19T00:00:00Z (RFD66606-2327) 'keypoints-supports-and-contacts
+ # uuid: 10ce40e1-c3e1-5d39-a97e-07f9f03bfa81
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-19T00:00:00Z (RFD66606-2328) 'finger-skin-weights-from-a-fitted-anny-hand
+ # uuid: 9309729e-fabf-517f-9e67-cce21b79ba52
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-20T00:00:00Z (RFD66606-2329) 'learned-gait-phase
+ # uuid: 42216fc2-7ef4-5dfa-9ec8-46755d08e25e
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-20T00:00:00Z (RFD66606-2330) 'elixir-on-a-guest-through-a-small-beam
+ # uuid: a7bcc157-b460-5034-b089-720fce546a38
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-22T00:00:00Z (RFD66606-2331) 'flex-20-min-2026-10-21
+ # uuid: 999d3b79-398a-545a-adb8-e7165b1e6eb7
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-22T00:00:00Z (RFD66606-2332) 'a-marker-suit-measures-the-skin-soma-x-predicts
+ # uuid: 709df3e4-454d-5182-9ee0-94d8699f591f
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-25T00:00:00Z (RFD66606-2334) 'decider-examples-from-traces
+ # uuid: c0beb860-0dbb-59e5-a3dd-b2602cd34298
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-25T00:00:00Z (RFD66606-2335) 'ggml-stablehlo-bit-exact-on-pjrt
+ # uuid: 5aa1c0a3-517c-5f0b-83c9-6a40c20ef0f4
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-26T00:00:00Z (RFD66606-2336) 'pixal3d-as-a-ggml-rd-guest
+ # uuid: 84b263d6-64ee-5f73-8fc1-9cb08fa56a14
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-29T00:00:00Z (RFD66606-2338) 'a-skin-fit-to-four-influences-on-the-gpu-l-bfgs-b
+ # uuid: 816aa0d2-24b3-5e88-bc51-fd5e838c6c37
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-30T00:00:00Z (RFD66606-2350) 'inventory-in-a-private-journal
+ # uuid: 00c84544-d4fb-5257-a304-a21f6e3fa4d7
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric
+
+2026-10-30T00:00:00Z (RFD66606-2352) 'second-hand-garments-for-the-avatar
+ # uuid: bcac6748-a49c-592c-b65f-11314e399381
+ # tags: serial:row
+ Serials:VSekaiFabric:Deleted  1 RFD
+ Serials:VSekaiFabric

@@ -4,807 +4,352 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2484) 'the challenge seed loads once
+2026-11-07T00:00:01Z (RFD66606-2484) 'the challenge seed loads once into a SQLite-on-FoundationDB store through the VFS, with its row counts and content hashes checked against the seed file.
  # tags: rfd:feature
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2484) 'into a SQLite-on-FoundationDB
- # tags: rfd:feature, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2484) 'store through the VFS, with its
- # tags: rfd:feature, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2484) 'row counts and content hashes
- # tags: rfd:feature, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2484) 'checked against the seed file.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2484) 'the import path for
+2026-11-07T00:00:02Z (RFD66606-2484) 'the import path for `seed/feed.db` into one store, and the counts, hashes and integrity check that verify the import.
  # tags: rfd:scope
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2484) '`seed/feed.db` into one store,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2484) 'and the counts, hashes and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2484) 'integrity check that verify the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2484) 'import.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2484) 'Can the challenge seed be loaded
+2026-11-07T00:00:03Z (RFD66606-2484) 'Can the challenge seed be loaded once into a store through the VFS, and verified?
  # tags: rfd:hook
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2484) 'once into a store through the
- # tags: rfd:hook, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2484) 'VFS, and verified?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2484) '
+2026-11-07T00:00:04Z (RFD66606-2484) '
  # tags: rfd:hook
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2484) 'The seed file `seed/feed.db` is
+2026-11-07T00:00:05Z (RFD66606-2484) 'The seed file `seed/feed.db` is 238 MB: 50,000 users, 500,000 posts, and 2,016,005 likes,
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2484) '238 MB: 50,000 users, 500,000
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2484) 'posts, and 2,016,005 likes,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2484) 'with its schema fixed by
+2026-11-07T00:00:06Z (RFD66606-2484) 'with its schema fixed by `schema.sql`. This table is also the 50 MB to 200 MB table that a
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2484) '`schema.sql`. This table is also
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2484) 'the 50 MB to 200 MB table that a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2484) 'sibling measurement needs. The
+2026-11-07T00:00:07Z (RFD66606-2484) 'sibling measurement needs. The seed is in WAL mode, but the VFS (the SQLite-on-FoundationDB
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2484) 'seed is in WAL mode, but the VFS
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2484) '(the SQLite-on-FoundationDB
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2484) 'virtual file system) needs
+2026-11-07T00:00:08Z (RFD66606-2484) 'virtual file system) needs `journal_mode=MEMORY` and `locking_mode=EXCLUSIVE`, and a 4 KiB
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2484) '`journal_mode=MEMORY` and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2484) '`locking_mode=EXCLUSIVE`, and a 4
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2484) 'KiB
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2484) 'page size, so the import cannot
+2026-11-07T00:00:09Z (RFD66606-2484) 'page size, so the import cannot simply reopen the seed file as-is. The VFS already stages a
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2484) 'simply reopen the seed file
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2484) 'as-is. The VFS already stages a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2484) 'commit too large for one
+2026-11-07T00:00:10Z (RFD66606-2484) 'commit too large for one FoundationDB transaction, which bounds one transaction to 10 MB,
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2484) 'FoundationDB transaction, which
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2484) 'bounds one transaction to 10 MB,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2484) 'so SQLite's backup API or `VACUUM
+2026-11-07T00:00:11Z (RFD66606-2484) 'so SQLite's backup API or `VACUUM INTO` through the VFS may do the job without hand-chunking.
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2484) 'INTO` through the VFS may do the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2484) 'job without hand-chunking.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2484) '
+2026-11-07T00:00:12Z (RFD66606-2484) '
  # tags: rfd:intrigue
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2484) 'Row counts per table match the
+2026-11-07T00:00:13Z (RFD66606-2484) 'Row counts per table match the file seed, a per-table content hash over an ordered `SELECT`
  # tags: rfd:exit
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2484) 'file seed, a per-table content
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2484) 'hash over an ordered `SELECT`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2484) 'matches the file seed, and
+2026-11-07T00:00:14Z (RFD66606-2484) 'matches the file seed, and `PRAGMA integrity_check` passes. A planted control, 1,000 posts
  # tags: rfd:exit
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2484) '`PRAGMA integrity_check` passes.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2484) 'A planted control, 1,000 posts
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2484) 'dropped from the store after
+2026-11-07T00:00:15Z (RFD66606-2484) 'dropped from the store after import, must be caught by the hash and the count.
  # tags: rfd:exit
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2484) 'import, must be caught by the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2484) 'hash and the count.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2484) '
+2026-11-07T00:00:16Z (RFD66606-2484) '
  # tags: rfd:exit
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:48Z (RFD66606-2484) 'Load the challenge seed into a
+2026-11-07T00:00:17Z (RFD66606-2484) 'Load the challenge seed into a store once, verified by counts and hashes
  # tags: rfd:details-title
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2484) 'store once, verified by counts
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2484) 'and hashes
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:51Z (RFD66606-2484) '- Look first for an existing
+2026-11-07T00:00:18Z (RFD66606-2484) '- Look first for an existing import path in &{repo("datasource-store")}: `prove_big_commit.c`,
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2484) 'import path in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2484) '&{repo("datasource-store")}:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2484) '`prove_big_commit.c`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2484) '  `sqlrun.c`, `weft_sql.c`,
+2026-11-07T00:00:19Z (RFD66606-2484) '  `sqlrun.c`, `weft_sql.c`, `tpcc.c`, and `fly/backup-fresh.sh`; try SQLite's backup API or
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2484) '`tpcc.c`, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2484) '`fly/backup-fresh.sh`; try
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2484) 'SQLite's backup API or
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2484) '  `VACUUM INTO` through the VFS
+2026-11-07T00:00:20Z (RFD66606-2484) '  `VACUUM INTO` through the VFS before hand-chunking with `ATTACH` and rowid-ranged
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2484) 'before hand-chunking with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2484) '`ATTACH` and rowid-ranged
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2484) '  `INSERT ... SELECT` sized well
+2026-11-07T00:00:21Z (RFD66606-2484) '  `INSERT ... SELECT` sized well under 10 MB.
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2484) 'under 10 MB.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2484) '- Import the seed once, not at
+2026-11-07T00:00:22Z (RFD66606-2484) '- Import the seed once, not at server start, with `journal_mode=MEMORY` and
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:05Z (RFD66606-2484) 'server start, with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2484) '`journal_mode=MEMORY` and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2484) '  `locking_mode=EXCLUSIVE` set
+2026-11-07T00:00:23Z (RFD66606-2484) '  `locking_mode=EXCLUSIVE` set and a 4 KiB page size; record which path ran.
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:08Z (RFD66606-2484) 'and a 4 KiB page size; record
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:09Z (RFD66606-2484) 'which path ran.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:10Z (RFD66606-2484) '- Verify with row counts per
+2026-11-07T00:00:24Z (RFD66606-2484) '- Verify with row counts per table against the file seed, a per-table content hash over an
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:11Z (RFD66606-2484) 'table against the file seed, a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:12Z (RFD66606-2484) 'per-table content hash over an
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:13Z (RFD66606-2484) '  ordered `SELECT` compared with
+2026-11-07T00:00:25Z (RFD66606-2484) '  ordered `SELECT` compared with the file seed (reusing the content sha256 that
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:14Z (RFD66606-2484) 'the file seed (reusing the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:15Z (RFD66606-2484) 'content sha256 that
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:16Z (RFD66606-2484) '  `seed/make-seed.sh` prints, if
+2026-11-07T00:00:26Z (RFD66606-2484) '  `seed/make-seed.sh` prints, if it exposes one), and `PRAGMA integrity_check`.
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:17Z (RFD66606-2484) 'it exposes one), and `PRAGMA
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:18Z (RFD66606-2484) 'integrity_check`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:19Z (RFD66606-2484) '- Run the control: drop 1,000
+2026-11-07T00:00:27Z (RFD66606-2484) '- Run the control: drop 1,000 posts from the store after import and confirm the hash and
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:20Z (RFD66606-2484) 'posts from the store after import
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:21Z (RFD66606-2484) 'and confirm the hash and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:22Z (RFD66606-2484) '  the count both catch it; record
+2026-11-07T00:00:28Z (RFD66606-2484) '  the count both catch it; record import wall time, bytes in the store, and
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:23Z (RFD66606-2484) 'import wall time, bytes in the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:24Z (RFD66606-2484) 'store, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:25Z (RFD66606-2484) '  `cluster.data.partitions_count`
+2026-11-07T00:00:29Z (RFD66606-2484) '  `cluster.data.partitions_count` afterwards.
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:26Z (RFD66606-2484) 'afterwards.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:27Z (RFD66606-2484) '
+2026-11-07T00:00:30Z (RFD66606-2484) '
  # tags: rfd:decision
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:28Z (RFD66606-2484) '- RFD66606-2382, the skateboard's
+2026-11-07T00:00:31Z (RFD66606-2484) '- RFD66606-2382, the skateboard's manifest, which names datasource-store's SQLite VFS over
  # tags: rfd:related
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:29Z (RFD66606-2484) 'manifest, which names
- # tags: rfd:related, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:30Z (RFD66606-2484) 'datasource-store's SQLite VFS
- # tags: rfd:related, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:31Z (RFD66606-2484) 'over
- # tags: rfd:related, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:32Z (RFD66606-2484) '  FoundationDB as the store this
+2026-11-07T00:00:32Z (RFD66606-2484) '  FoundationDB as the store this seed loads into.
  # tags: rfd:related
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:33Z (RFD66606-2484) 'seed loads into.
- # tags: rfd:related, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:34Z (RFD66606-2484) '
+2026-11-07T00:00:33Z (RFD66606-2484) '
  # tags: rfd:related
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:35Z (RFD66606-2484) 'Look first for an existing path
+2026-11-07T00:00:34Z (RFD66606-2484) 'Look first for an existing path
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:36Z (RFD66606-2484) 'Candidates in
+2026-11-07T00:00:35Z (RFD66606-2484) 'Candidates in &{repo("datasource-store")}: `prove_big_commit.c`, `sqlrun.c`, `weft_sql.c`,
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:37Z (RFD66606-2484) '&{repo("datasource-store")}:
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:38Z (RFD66606-2484) '`prove_big_commit.c`, `sqlrun.c`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:39Z (RFD66606-2484) '`weft_sql.c`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:40Z (RFD66606-2484) '`tpcc.c`,
+2026-11-07T00:00:36Z (RFD66606-2484) '`tpcc.c`,
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:41Z (RFD66606-2484) '`fly/backup-fresh.sh`. The VFS
+2026-11-07T00:00:37Z (RFD66606-2484) '`fly/backup-fresh.sh`. The VFS already stages a commit too large for one FoundationDB
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:42Z (RFD66606-2484) 'already stages a commit too large
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:43Z (RFD66606-2484) 'for one FoundationDB
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:44Z (RFD66606-2484) 'transaction (the 10 MB limit), so
+2026-11-07T00:00:38Z (RFD66606-2484) 'transaction (the 10 MB limit), so SQLite's backup API or `VACUUM INTO` through the VFS may
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:45Z (RFD66606-2484) 'SQLite's backup API or `VACUUM
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:46Z (RFD66606-2484) 'INTO` through the VFS may
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:47Z (RFD66606-2484) 'do the job. Hand-chunk only if
+2026-11-07T00:00:39Z (RFD66606-2484) 'do the job. Hand-chunk only if nothing exists.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:48Z (RFD66606-2484) 'nothing exists.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:49Z (RFD66606-2484) '
+2026-11-07T00:00:40Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:50Z (RFD66606-2484) '
+2026-11-07T00:00:41Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:51Z (RFD66606-2484) 'Method notes
+2026-11-07T00:00:42Z (RFD66606-2484) 'Method notes
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:52Z (RFD66606-2484) '- The seed is in WAL mode. The
+2026-11-07T00:00:43Z (RFD66606-2484) '- The seed is in WAL mode. The VFS needs `journal_mode=MEMORY` and
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:53Z (RFD66606-2484) 'VFS needs `journal_mode=MEMORY`
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:54Z (RFD66606-2484) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:55Z (RFD66606-2484) '  `locking_mode=EXCLUSIVE`, and
+2026-11-07T00:00:44Z (RFD66606-2484) '  `locking_mode=EXCLUSIVE`, and the page size must be 4 KiB.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:56Z (RFD66606-2484) 'the page size must be 4 KiB.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:57Z (RFD66606-2484) '- Import once, not at server
+2026-11-07T00:00:45Z (RFD66606-2484) '- Import once, not at server start.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:01:58Z (RFD66606-2484) 'start.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:01:59Z (RFD66606-2484) '- If hand-chunking: `ATTACH` the
+2026-11-07T00:00:46Z (RFD66606-2484) '- If hand-chunking: `ATTACH` the file seed and `INSERT ... SELECT` in rowid ranges sized
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:00Z (RFD66606-2484) 'file seed and `INSERT ... SELECT`
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:01Z (RFD66606-2484) 'in rowid ranges sized
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:02Z (RFD66606-2484) '  well under 10 MB, or rely on
+2026-11-07T00:00:47Z (RFD66606-2484) '  well under 10 MB, or rely on staging, and record which path ran.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:03Z (RFD66606-2484) 'staging, and record which path
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:04Z (RFD66606-2484) 'ran.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:05Z (RFD66606-2484) '
+2026-11-07T00:00:48Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:06Z (RFD66606-2484) '
+2026-11-07T00:00:49Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:07Z (RFD66606-2484) 'Verification
+2026-11-07T00:00:50Z (RFD66606-2484) 'Verification
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:08Z (RFD66606-2484) '- Row counts per table against
+2026-11-07T00:00:51Z (RFD66606-2484) '- Row counts per table against the file seed.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:09Z (RFD66606-2484) 'the file seed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:10Z (RFD66606-2484) '- A per-table content hash over
+2026-11-07T00:00:52Z (RFD66606-2484) '- A per-table content hash over an ordered `SELECT`, compared with the file seed. Reuse
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:11Z (RFD66606-2484) 'an ordered `SELECT`, compared
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:12Z (RFD66606-2484) 'with the file seed. Reuse
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:13Z (RFD66606-2484) '  the content sha256 that
+2026-11-07T00:00:53Z (RFD66606-2484) '  the content sha256 that `seed/make-seed.sh` prints if it exposes one.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:14Z (RFD66606-2484) '`seed/make-seed.sh` prints if it
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:15Z (RFD66606-2484) 'exposes one.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:16Z (RFD66606-2484) '- `PRAGMA integrity_check`.
+2026-11-07T00:00:54Z (RFD66606-2484) '- `PRAGMA integrity_check`.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:17Z (RFD66606-2484) '
+2026-11-07T00:00:55Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:18Z (RFD66606-2484) '
+2026-11-07T00:00:56Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:19Z (RFD66606-2484) 'Control that must be able to fail
+2026-11-07T00:00:57Z (RFD66606-2484) 'Control that must be able to fail
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:20Z (RFD66606-2484) 'A planted missing batch (drop
+2026-11-07T00:00:58Z (RFD66606-2484) 'A planted missing batch (drop 1,000 posts from the store after import) must be caught by
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:21Z (RFD66606-2484) '1,000 posts from the store after
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:22Z (RFD66606-2484) 'import) must be caught by
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:23Z (RFD66606-2484) 'the hash and the count.
+2026-11-07T00:00:59Z (RFD66606-2484) 'the hash and the count.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:24Z (RFD66606-2484) '
+2026-11-07T00:01:00Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:25Z (RFD66606-2484) '
+2026-11-07T00:01:01Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:26Z (RFD66606-2484) 'Record
+2026-11-07T00:01:02Z (RFD66606-2484) 'Record
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:27Z (RFD66606-2484) 'Import wall time, bytes in the
+2026-11-07T00:01:03Z (RFD66606-2484) 'Import wall time, bytes in the store, `cluster.data.partitions_count` afterwards, and
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:28Z (RFD66606-2484) 'store,
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:29Z (RFD66606-2484) '`cluster.data.partitions_count`
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:30Z (RFD66606-2484) 'afterwards, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:31Z (RFD66606-2484) 'which path was taken.
+2026-11-07T00:01:04Z (RFD66606-2484) 'which path was taken.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:32Z (RFD66606-2484) '
+2026-11-07T00:01:05Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:33Z (RFD66606-2484) '
+2026-11-07T00:01:06Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:34Z (RFD66606-2484) 'Acceptance
+2026-11-07T00:01:07Z (RFD66606-2484) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:35Z (RFD66606-2484) 'Counts and hashes match, the
+2026-11-07T00:01:08Z (RFD66606-2484) 'Counts and hashes match, the planted control fails, the numbers are committed, and the
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:36Z (RFD66606-2484) 'planted control fails, the
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:37Z (RFD66606-2484) 'numbers are committed, and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:38Z (RFD66606-2484) 'sibling measurement that needs
+2026-11-07T00:01:09Z (RFD66606-2484) 'sibling measurement that needs this table is told it now has a table to use.
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written
 
-2026-11-07T00:02:39Z (RFD66606-2484) 'this table is told it now has a
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:40Z (RFD66606-2484) 'table to use.
- # tags: rfd:details, rfd:wrap
- Text:RFD2484  1 LINE
- Text:Written
-
-2026-11-07T00:02:41Z (RFD66606-2484) '
+2026-11-07T00:01:10Z (RFD66606-2484) '
  # tags: rfd:details
  Text:RFD2484  1 LINE
  Text:Written

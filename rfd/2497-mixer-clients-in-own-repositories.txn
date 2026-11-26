@@ -4,702 +4,302 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-17T00:00:01Z (RFD66606-2497) 'the relay stays small and each
+2026-11-17T00:00:01Z (RFD66606-2497) 'the relay stays small and each client, bridge and contract gets a repository.
  # tags: rfd:feature
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:02Z (RFD66606-2497) 'client, bridge and contract gets
- # tags: rfd:feature, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:03Z (RFD66606-2497) 'a repository.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:04Z (RFD66606-2497) 'the mixer relay repository and
+2026-11-17T00:00:02Z (RFD66606-2497) 'the mixer relay repository and every client, bridge and contract around it.
  # tags: rfd:scope
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:05Z (RFD66606-2497) 'every client, bridge and contract
- # tags: rfd:scope, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:06Z (RFD66606-2497) 'around it.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:07Z (RFD66606-2497) 'Can the mixer relay take a web
+2026-11-17T00:00:03Z (RFD66606-2497) 'Can the mixer relay take a web viewer, a modeller plugin, a native engine client, a
  # tags: rfd:hook
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:08Z (RFD66606-2497) 'viewer, a modeller plugin, a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:09Z (RFD66606-2497) 'native engine client, a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:10Z (RFD66606-2497) 'path-tracer bridge and a CPU
+2026-11-17T00:00:04Z (RFD66606-2497) 'path-tracer bridge and a CPU render without one repository becoming everyone's copy?
  # tags: rfd:hook
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:11Z (RFD66606-2497) 'render without one repository
- # tags: rfd:hook, rfd:wrap
+2026-11-17T00:00:05Z (RFD66606-2497) '
+ # tags: rfd:hook
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:12Z (RFD66606-2497) 'becoming everyone's copy?
- # tags: rfd:hook, rfd:wrap
+2026-11-17T00:00:06Z (RFD66606-2497) 'The relay repository already carries a subtree of the zone relay, 145 files that nothing in
+ # tags: rfd:intrigue
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:07Z (RFD66606-2497) 'its build reads. The work queued for it is larger: an Erlang modeller, a Rust engine, a
+ # tags: rfd:intrigue
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:08Z (RFD66606-2497) 'renderer that builds from source and an OpenUSD stack. Taking each as a subtree would bury
+ # tags: rfd:intrigue
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:09Z (RFD66606-2497) 'a wire contract of a few files under code that is not ours.
+ # tags: rfd:intrigue
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:10Z (RFD66606-2497) '
+ # tags: rfd:intrigue
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:11Z (RFD66606-2497) 'Build the relay and run the Python client's tests from a manifest workspace, with the wire
+ # tags: rfd:exit
+ Text:RFD2497  1 LINE
+ Text:Written
+
+2026-11-17T00:00:12Z (RFD66606-2497) 'contract at a pinned ref and the zone relay subtree deleted. It passes when no result changes.
+ # tags: rfd:exit
  Text:RFD2497  1 LINE
  Text:Written
 
 2026-11-17T00:00:13Z (RFD66606-2497) '
- # tags: rfd:hook
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:14Z (RFD66606-2497) 'The relay repository already
- # tags: rfd:intrigue
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:15Z (RFD66606-2497) 'carries a subtree of the zone
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:16Z (RFD66606-2497) 'relay, 145 files that nothing in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:17Z (RFD66606-2497) 'its build reads. The work queued
- # tags: rfd:intrigue
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:18Z (RFD66606-2497) 'for it is larger: an Erlang
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:19Z (RFD66606-2497) 'modeller, a Rust engine, a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:20Z (RFD66606-2497) 'renderer that builds from source
- # tags: rfd:intrigue
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:21Z (RFD66606-2497) 'and an OpenUSD stack. Taking each
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:22Z (RFD66606-2497) 'as a subtree would bury
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:23Z (RFD66606-2497) 'a wire contract of a few files
- # tags: rfd:intrigue
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:24Z (RFD66606-2497) 'under code that is not ours.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:25Z (RFD66606-2497) '
- # tags: rfd:intrigue
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:26Z (RFD66606-2497) 'Build the relay and run the
  # tags: rfd:exit
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:27Z (RFD66606-2497) 'Python client's tests from a
- # tags: rfd:exit, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:28Z (RFD66606-2497) 'manifest workspace, with the wire
- # tags: rfd:exit, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:29Z (RFD66606-2497) 'contract at a pinned ref and the
- # tags: rfd:exit
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:30Z (RFD66606-2497) 'zone relay subtree deleted. It
- # tags: rfd:exit, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:31Z (RFD66606-2497) 'passes when no result changes.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:32Z (RFD66606-2497) '
- # tags: rfd:exit
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:33Z (RFD66606-2497) 'mixer clients live in
+2026-11-17T00:00:14Z (RFD66606-2497) 'mixer clients live in repositories of their own
  # tags: rfd:details-title
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:34Z (RFD66606-2497) 'repositories of their own
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:35Z (RFD66606-2497) '- Big and third-party code is a
+2026-11-17T00:00:15Z (RFD66606-2497) '- Big and third-party code is a sibling checkout placed by a manifest row. A subtree is only
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:36Z (RFD66606-2497) 'sibling checkout placed by a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:37Z (RFD66606-2497) 'manifest row. A subtree is only
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:38Z (RFD66606-2497) '  for small shared source that
+2026-11-17T00:00:16Z (RFD66606-2497) '  for small shared source that one repository's own CI must build alone (operator, 2026-11-17).
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:39Z (RFD66606-2497) 'one repository's own CI must
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:40Z (RFD66606-2497) 'build alone (operator,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:41Z (RFD66606-2497) '2026-11-17).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:42Z (RFD66606-2497) '- Client repositories are named
+2026-11-17T00:00:17Z (RFD66606-2497) '- Client repositories are named transport-mixer-x, with x the client (operator, 2026-11-17).
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:43Z (RFD66606-2497) 'transport-mixer-x, with x the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:44Z (RFD66606-2497) 'client (operator, 2026-11-17).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:45Z (RFD66606-2497) '- The wire spec and its golden
+2026-11-17T00:00:18Z (RFD66606-2497) '- The wire spec and its golden packets become the contract repository contract-mixer-wire.
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:46Z (RFD66606-2497) 'packets become the contract
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:47Z (RFD66606-2497) 'repository contract-mixer-wire.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:48Z (RFD66606-2497) '  Each client's CI checks it out
+2026-11-17T00:00:19Z (RFD66606-2497) '  Each client's CI checks it out at a pinned ref, so there is one source and no copy.
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:49Z (RFD66606-2497) 'at a pinned ref, so there is one
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:50Z (RFD66606-2497) 'source and no copy.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:51Z (RFD66606-2497) '- The relay serves a viewer from
+2026-11-17T00:00:20Z (RFD66606-2497) '- The relay serves a viewer from a configured directory that the viewer's repository fills.
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:52Z (RFD66606-2497) 'a configured directory that the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:53Z (RFD66606-2497) 'viewer's repository fills.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:54Z (RFD66606-2497) '- The cross-client interop suite
+2026-11-17T00:00:21Z (RFD66606-2497) '- The cross-client interop suite is a CI job in the relay repository, which checks out the
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:55Z (RFD66606-2497) 'is a CI job in the relay
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:56Z (RFD66606-2497) 'repository, which checks out the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:57Z (RFD66606-2497) '  clients through the manifest
+2026-11-17T00:00:22Z (RFD66606-2497) '  clients through the manifest (operator, 2026-11-17).
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:00:58Z (RFD66606-2497) '(operator, 2026-11-17).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:00:59Z (RFD66606-2497) '
+2026-11-17T00:00:23Z (RFD66606-2497) '
  # tags: rfd:decision
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:00Z (RFD66606-2497) '- RFD66606-2493, the zone relay
+2026-11-17T00:00:24Z (RFD66606-2497) '- RFD66606-2493, the zone relay that the relay repository vendors today.
  # tags: rfd:related
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:01Z (RFD66606-2497) 'that the relay repository vendors
- # tags: rfd:related, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:02Z (RFD66606-2497) 'today.
- # tags: rfd:related, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:03Z (RFD66606-2497) '- RFD66606-2294, where the rules
+2026-11-17T00:00:25Z (RFD66606-2497) '- RFD66606-2294, where the rules behind a placement live.
  # tags: rfd:related
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:04Z (RFD66606-2497) 'behind a placement live.
- # tags: rfd:related, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:05Z (RFD66606-2497) '
+2026-11-17T00:00:26Z (RFD66606-2497) '
  # tags: rfd:related
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:06Z (RFD66606-2497) 'What is where today
+2026-11-17T00:00:27Z (RFD66606-2497) 'What is where today
  # tags: rfd:details-heading
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:07Z (RFD66606-2497) '- The relay repository holds the
+2026-11-17T00:00:28Z (RFD66606-2497) '- The relay repository holds the Elixir relay, its tests, the wire spec, a three.js demo, the
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:08Z (RFD66606-2497) 'Elixir relay, its tests, the wire
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:09Z (RFD66606-2497) 'spec, a three.js demo, the
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:10Z (RFD66606-2497) '  Python client with its
+2026-11-17T00:00:29Z (RFD66606-2497) '  Python client with its Hypothesis tests, the Godot client and the zone relay subtree.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:11Z (RFD66606-2497) 'Hypothesis tests, the Godot
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:12Z (RFD66606-2497) 'client and the zone relay
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:13Z (RFD66606-2497) 'subtree.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:14Z (RFD66606-2497) '- The enrollment guest and the
+2026-11-17T00:00:30Z (RFD66606-2497) '- The enrollment guest and the SolidCraft guest are repositories already. The old GPL
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:15Z (RFD66606-2497) 'SolidCraft guest are repositories
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:16Z (RFD66606-2497) 'already. The old GPL
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:17Z (RFD66606-2497) '  add-on repository is archived.
+2026-11-17T00:00:31Z (RFD66606-2497) '  add-on repository is archived.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:18Z (RFD66606-2497) '
+2026-11-17T00:00:32Z (RFD66606-2497) '
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:19Z (RFD66606-2497) 'What gets its own repository
+2026-11-17T00:00:33Z (RFD66606-2497) 'What gets its own repository
  # tags: rfd:details-heading
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:20Z (RFD66606-2497) '- The Python client and the
+2026-11-17T00:00:34Z (RFD66606-2497) '- The Python client and the headless reference that renders through OpenUSD and Mitsuba 3.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:21Z (RFD66606-2497) 'headless reference that renders
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:22Z (RFD66606-2497) 'through OpenUSD and Mitsuba 3.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:23Z (RFD66606-2497) '- The Godot client, which also
+2026-11-17T00:00:35Z (RFD66606-2497) '- The Godot client, which also hosts the SolidCraft guest.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:24Z (RFD66606-2497) 'hosts the SolidCraft guest.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:25Z (RFD66606-2497) '- The Babylon.js viewer, with
+2026-11-17T00:00:36Z (RFD66606-2497) '- The Babylon.js viewer, with WebXR.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:26Z (RFD66606-2497) 'WebXR.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:27Z (RFD66606-2497) '- The Wings3D plugin, which
+2026-11-17T00:00:37Z (RFD66606-2497) '- The Wings3D plugin, which replaces the Blender add-on.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:28Z (RFD66606-2497) 'replaces the Blender add-on.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:29Z (RFD66606-2497) '- A native Rust engine client on
+2026-11-17T00:00:38Z (RFD66606-2497) '- A native Rust engine client on Bevy. Fyrox is the alternative and is not planned.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:30Z (RFD66606-2497) 'Bevy. Fyrox is the alternative
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:31Z (RFD66606-2497) 'and is not planned.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:32Z (RFD66606-2497) '- The bridge that writes one glTF
+2026-11-17T00:00:39Z (RFD66606-2497) '- The bridge that writes one glTF 2.1 file per zone for the vk_gltf_renderer path tracer.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:33Z (RFD66606-2497) '2.1 file per zone for the
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:34Z (RFD66606-2497) 'vk_gltf_renderer path tracer.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:35Z (RFD66606-2497) '
+2026-11-17T00:00:40Z (RFD66606-2497) '
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:36Z (RFD66606-2497) 'Manifest rows
+2026-11-17T00:00:41Z (RFD66606-2497) 'Manifest rows
  # tags: rfd:details-heading
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:37Z (RFD66606-2497) '- A new manifest repository holds
+2026-11-17T00:00:42Z (RFD66606-2497) '- A new manifest repository holds the rows, one variant file per stack.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:38Z (RFD66606-2497) 'the rows, one variant file per
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:39Z (RFD66606-2497) 'stack.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:40Z (RFD66606-2497) '- Third-party rows are Wings3D,
+2026-11-17T00:00:43Z (RFD66606-2497) '- Third-party rows are Wings3D, vk_gltf_renderer with nvpro_core2, Mitsuba 3, hdmitsuba and
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:41Z (RFD66606-2497) 'vk_gltf_renderer with
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:42Z (RFD66606-2497) 'nvpro_core2, Mitsuba 3, hdmitsuba
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:43Z (RFD66606-2497) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:44Z (RFD66606-2497) '  the zone relay. The Python
+2026-11-17T00:00:44Z (RFD66606-2497) '  the zone relay. The Python environment comes from pixi.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:45Z (RFD66606-2497) 'environment comes from pixi.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:46Z (RFD66606-2497) '- hdmitsuba needs the Mitsuba
+2026-11-17T00:00:45Z (RFD66606-2497) '- hdmitsuba needs the Mitsuba commit its CI validates and does not support the PyPI wheel.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:47Z (RFD66606-2497) 'commit its CI validates and does
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:48Z (RFD66606-2497) 'not support the PyPI wheel.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:49Z (RFD66606-2497) '  That pin gets a branch of our
+2026-11-17T00:00:46Z (RFD66606-2497) '  That pin gets a branch of our own at that commit, so the row still follows a branch.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:50Z (RFD66606-2497) 'own at that commit, so the row
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:51Z (RFD66606-2497) 'still follows a branch.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:52Z (RFD66606-2497) '- hdmitsuba is tested on Linux
+2026-11-17T00:00:47Z (RFD66606-2497) '- hdmitsuba is tested on Linux and macOS only, so the render variant is limited to those.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:53Z (RFD66606-2497) 'and macOS only, so the render
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:54Z (RFD66606-2497) 'variant is limited to those.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:55Z (RFD66606-2497) '
+2026-11-17T00:00:48Z (RFD66606-2497) '
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:56Z (RFD66606-2497) 'Order of work
+2026-11-17T00:00:49Z (RFD66606-2497) 'Order of work
  # tags: rfd:details-heading
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:57Z (RFD66606-2497) '- Finish the open Python client
+2026-11-17T00:00:50Z (RFD66606-2497) '- Finish the open Python client pull request first, because it is mid-flight on that code.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:01:58Z (RFD66606-2497) 'pull request first, because it is
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:01:59Z (RFD66606-2497) 'mid-flight on that code.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:00Z (RFD66606-2497) '- Confirm nothing reads the
+2026-11-17T00:00:51Z (RFD66606-2497) '- Confirm nothing reads the vendored zone relay, then replace it with a row.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:01Z (RFD66606-2497) 'vendored zone relay, then replace
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:02Z (RFD66606-2497) 'it with a row.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:03Z (RFD66606-2497) '- Create the manifest repository
+2026-11-17T00:00:52Z (RFD66606-2497) '- Create the manifest repository and the contract repository.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:04Z (RFD66606-2497) 'and the contract repository.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:05Z (RFD66606-2497) '- Split the Python and Godot
+2026-11-17T00:00:53Z (RFD66606-2497) '- Split the Python and Godot clients with their history, then start the new clients as
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:06Z (RFD66606-2497) 'clients with their history, then
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:07Z (RFD66606-2497) 'start the new clients as
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:08Z (RFD66606-2497) '  repositories of their own and
+2026-11-17T00:00:54Z (RFD66606-2497) '  repositories of their own and retarget their tracker issues.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:09Z (RFD66606-2497) 'retarget their tracker issues.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:10Z (RFD66606-2497) '
+2026-11-17T00:00:55Z (RFD66606-2497) '
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:11Z (RFD66606-2497) 'Not checked
+2026-11-17T00:00:56Z (RFD66606-2497) 'Not checked
  # tags: rfd:details-heading
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:12Z (RFD66606-2497) '- Whether the docs and scripts of
+2026-11-17T00:00:57Z (RFD66606-2497) '- Whether the docs and scripts of the relay repository read the vendored zone relay.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:13Z (RFD66606-2497) 'the relay repository read the
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:14Z (RFD66606-2497) 'vendored zone relay.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:15Z (RFD66606-2497) '- Whether Mitsuba 3 carries
+2026-11-17T00:00:58Z (RFD66606-2497) '- Whether Mitsuba 3 carries submodules of its own.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:16Z (RFD66606-2497) 'submodules of its own.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:17Z (RFD66606-2497) '- Whether the Wings3D licence,
+2026-11-17T00:00:59Z (RFD66606-2497) '- Whether the Wings3D licence, listed as other on GitHub, is compatible with the licence gate.
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written
 
-2026-11-17T00:02:18Z (RFD66606-2497) 'listed as other on GitHub, is
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:19Z (RFD66606-2497) 'compatible with the licence gate.
- # tags: rfd:details, rfd:wrap
- Text:RFD2497  1 LINE
- Text:Written
-
-2026-11-17T00:02:20Z (RFD66606-2497) '
+2026-11-17T00:01:00Z (RFD66606-2497) '
  # tags: rfd:details
  Text:RFD2497  1 LINE
  Text:Written

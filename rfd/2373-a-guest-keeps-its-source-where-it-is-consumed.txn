@@ -4,307 +4,147 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2373) 'where a guest's source lives and
+2026-10-31T00:00:01Z (RFD66606-2373) 'where a guest's source lives and where its stages went.
  # tags: rfd:scope
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2373) 'where its stages went.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2373) 'A guest's source lives in the
+2026-10-31T00:00:02Z (RFD66606-2373) 'A guest's source lives in the repository that consumes it, split the way curvenet splits it.
  # tags: rfd:hook
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2373) 'repository that consumes it,
- # tags: rfd:hook, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2373) 'split the way curvenet splits it.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2373) '
+2026-10-31T00:00:03Z (RFD66606-2373) '
  # tags: rfd:hook
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2373) 'A vmcall takes at most seven
+2026-10-31T00:00:04Z (RFD66606-2373) 'A vmcall takes at most seven arguments, an eighth failing with a register overflow.
  # tags: rfd:intrigue
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2373) 'arguments, an eighth failing with
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2373) 'a register overflow.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2373) '
+2026-10-31T00:00:05Z (RFD66606-2373) '
  # tags: rfd:intrigue
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2373) 'Check a new guest against the
+2026-10-31T00:00:06Z (RFD66606-2373) 'Check a new guest against the rule: `main.cpp` marshals and sees only `api.hpp`, and
  # tags: rfd:exit
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2373) 'rule: `main.cpp` marshals and
- # tags: rfd:exit, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2373) 'sees only `api.hpp`, and
- # tags: rfd:exit, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2373) '`*_api.cpp` sees the library.
+2026-10-31T00:00:07Z (RFD66606-2373) '`*_api.cpp` sees the library.
  # tags: rfd:exit
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2373) '
+2026-10-31T00:00:08Z (RFD66606-2373) '
  # tags: rfd:exit
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2373) 'a guest keeps its source where it
+2026-10-31T00:00:09Z (RFD66606-2373) 'a guest keeps its source where it is consumed
  # tags: rfd:details-title
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2373) 'is consumed
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2373) '- A guest's source lives in the
+2026-10-31T00:00:10Z (RFD66606-2373) '- A guest's source lives in the repository that consumes it and follows curvenet's split:
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2373) 'repository that consumes it and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2373) 'follows curvenet's split:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2373) '  `main.cpp` marshals and sees
+2026-10-31T00:00:11Z (RFD66606-2373) '  `main.cpp` marshals and sees only `api.hpp`, and `*_api.cpp` sees the library.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2373) 'only `api.hpp`, and `*_api.cpp`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2373) 'sees the library.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2373) '- Mesh arrays cross in the layout
+2026-10-31T00:00:12Z (RFD66606-2373) '- Mesh arrays cross in the layout of &{repo("contract-guest-common")}'s `mesh_wire.h`.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2373) 'of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2373) '&{repo("contract-guest-common")}'s
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2373) '`mesh_wire.h`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2373) '- A vmcall takes at most seven
+2026-10-31T00:00:13Z (RFD66606-2373) '- A vmcall takes at most seven arguments, an eighth failing with a register overflow, and each
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2373) 'arguments, an eighth failing with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2373) 'a register overflow, and each
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2373) '  call returns inside the
+2026-10-31T00:00:14Z (RFD66606-2373) '  call returns inside the sandbox's `execution_timeout`.
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2373) 'sandbox's `execution_timeout`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2373) '
+2026-10-31T00:00:15Z (RFD66606-2373) '
  # tags: rfd:decision
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2373) '- RFD66606-2294, where this rule
+2026-10-31T00:00:16Z (RFD66606-2373) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2373) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2373) '
+2026-10-31T00:00:17Z (RFD66606-2373) '
  # tags: rfd:related
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2373) 'Where interactor-dress-on went
+2026-10-31T00:00:18Z (RFD66606-2373) 'Where interactor-dress-on went
  # tags: rfd:details-heading
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2373) 'The stages of the archived
+2026-10-31T00:00:19Z (RFD66606-2373) 'The stages of the archived interactor-dress-on live in their own repositories:
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2373) 'interactor-dress-on live in their
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2373) 'own repositories:
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2373) '&{repo("contract-guest-runtime")},
+2026-10-31T00:00:20Z (RFD66606-2373) '&{repo("contract-guest-runtime")}, &{repo("contract-guest-common")},
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2373) '&{repo("contract-guest-common")},
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2373) '&{repo("contract-ggml-rd")},
+2026-10-31T00:00:21Z (RFD66606-2373) '&{repo("contract-ggml-rd")}, &{repo("contract-lbfgsb")},
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2373) '&{repo("contract-lbfgsb")},
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2373) '&{repo("contract-anny-kernels")},
+2026-10-31T00:00:22Z (RFD66606-2373) '&{repo("contract-anny-kernels")}, &{repo("contract-sinew-align")}, and
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2373) '&{repo("contract-sinew-align")},
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2373) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2373) '&{repo("interactor-drape")},
+2026-10-31T00:00:23Z (RFD66606-2373) '&{repo("interactor-drape")}, `-curvenet`, `-garment-fit`, `-cage`, `-headfit`,
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2373) '`-curvenet`, `-garment-fit`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2373) '`-cage`, `-headfit`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2373) '`-lasso`, `-motion-guest`,
+2026-10-31T00:00:24Z (RFD66606-2373) '`-lasso`, `-motion-guest`, `-rfdetr-seg-guest`, `-usd-guest`, `-av1mkv`.
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2373) '`-rfdetr-seg-guest`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2373) '`-usd-guest`, `-av1mkv`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2373) '&{repo("transport-meshing-pen")}
+2026-10-31T00:00:25Z (RFD66606-2373) '&{repo("transport-meshing-pen")} builds the guest ELFs from those sibling checkouts.
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2373) 'builds the guest ELFs from those
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2373) 'sibling checkouts.
- # tags: rfd:details, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2373) '
+2026-10-31T00:00:26Z (RFD66606-2373) '
  # tags: rfd:details
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2373) '2351
+2026-10-31T00:00:27Z (RFD66606-2373) '2351
  # tags: rebac:verbs-from
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2373) 'rfd-2373 provides
+2026-10-31T00:00:28Z (RFD66606-2373) 'rfd-2373 provides guest-source-at-consumer
  # tags: rebac:relate
  Text:RFD2373  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2373) 'guest-source-at-consumer
- # tags: rebac:relate, rfd:wrap
- Text:RFD2373  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2373) 'rfd-2373 is_a guest-runtime
+2026-10-31T00:00:29Z (RFD66606-2373) 'rfd-2373 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2373  1 LINE
  Text:Written

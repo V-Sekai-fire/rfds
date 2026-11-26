@@ -4,807 +4,367 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-30T00:00:01Z (RFD66606-2349) 'one way to record a run where a
+2026-10-30T00:00:01Z (RFD66606-2349) 'one way to record a run where a live model plays
  # tags: rfd:feature
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:02Z (RFD66606-2349) 'live model plays
- # tags: rfd:feature, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:03Z (RFD66606-2349) 'every recording of a live run in
+2026-10-30T00:00:02Z (RFD66606-2349) 'every recording of a live run in the workspace, first the decider games
  # tags: rfd:scope
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:04Z (RFD66606-2349) 'the workspace, first the decider
- # tags: rfd:scope, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:05Z (RFD66606-2349) 'games
- # tags: rfd:scope, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:06Z (RFD66606-2349) 'A live run is recorded at 4K, in
+2026-10-30T00:00:03Z (RFD66606-2349) 'A live run is recorded at 4K, in CineForm, with the house recorder.
  # tags: rfd:hook
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2349) 'CineForm, with the house
- # tags: rfd:hook, rfd:wrap
+2026-10-30T00:00:04Z (RFD66606-2349) '
+ # tags: rfd:hook
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2349) 'recorder.
- # tags: rfd:hook, rfd:wrap
+2026-10-30T00:00:05Z (RFD66606-2349) 'Movie Maker renders at a fixed frame rate, so the game waits for the model and the video
+ # tags: rfd:intrigue
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:06Z (RFD66606-2349) 'hides its latency. A video of a live model must show the latency it has.
+ # tags: rfd:intrigue
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:07Z (RFD66606-2349) '
+ # tags: rfd:intrigue
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:08Z (RFD66606-2349) 'Read RFD66606-2345 for the format this RFD amends.
+ # tags: rfd:exit
  Text:RFD2349  1 LINE
  Text:Written
 
 2026-10-30T00:00:09Z (RFD66606-2349) '
- # tags: rfd:hook
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:10Z (RFD66606-2349) 'Movie Maker renders at a fixed
- # tags: rfd:intrigue
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:11Z (RFD66606-2349) 'frame rate, so the game waits for
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2349) 'the model and the video
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2349) 'hides its latency. A video of a
- # tags: rfd:intrigue
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:14Z (RFD66606-2349) 'live model must show the latency
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:15Z (RFD66606-2349) 'it has.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:16Z (RFD66606-2349) '
- # tags: rfd:intrigue
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:17Z (RFD66606-2349) 'Read RFD66606-2345 for the format
  # tags: rfd:exit
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2349) 'this RFD amends.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:19Z (RFD66606-2349) '
- # tags: rfd:exit
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:20Z (RFD66606-2349) 'The recorder, the codec, the
+2026-10-30T00:00:10Z (RFD66606-2349) 'The recorder, the codec, the check and what is open
  # tags: rfd:details-title
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2349) 'check and what is open
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:22Z (RFD66606-2349) 'A live run is recorded with the
+2026-10-30T00:00:11Z (RFD66606-2349) 'A live run is recorded with the house recorder on the Mac at a
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2349) 'house recorder on the Mac at a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:24Z (RFD66606-2349) '3840x2160 canvas. The recorder
+2026-10-30T00:00:12Z (RFD66606-2349) '3840x2160 canvas. The recorder writes CineForm video and FLAC audio in
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2349) 'writes CineForm video and FLAC
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:26Z (RFD66606-2349) 'audio in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:27Z (RFD66606-2349) 'Matroska through its custom
+2026-10-30T00:00:13Z (RFD66606-2349) 'Matroska through its custom output. The game runs on the wall clock
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2349) 'output. The game runs on the wall
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:29Z (RFD66606-2349) 'clock
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:30Z (RFD66606-2349) 'and never waits for the model.
+2026-10-30T00:00:14Z (RFD66606-2349) 'and never waits for the model. Godot Movie Maker is blocklisted.
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2349) 'Godot Movie Maker is blocklisted.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:32Z (RFD66606-2349) 'FFmpeg never runs as a tool.
+2026-10-30T00:00:15Z (RFD66606-2349) 'FFmpeg never runs as a tool. RFD66606-2345's format stands; this RFD
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2349) 'RFD66606-2345's format stands;
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:34Z (RFD66606-2349) 'this RFD
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:35Z (RFD66606-2349) 'replaces its encoder, its live
+2026-10-30T00:00:16Z (RFD66606-2349) 'replaces its encoder, its live recorder and its file check.
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2349) 'recorder and its file check.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:37Z (RFD66606-2349) '
+2026-10-30T00:00:17Z (RFD66606-2349) '
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2349) '- RFD66606-2345, the video
+2026-10-30T00:00:18Z (RFD66606-2349) '- RFD66606-2345, the video format, which this RFD amends;
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2349) 'format, which this RFD amends;
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:40Z (RFD66606-2349) '  RFD66606-2347, the decider-pong
+2026-10-30T00:00:19Z (RFD66606-2349) '  RFD66606-2347, the decider-pong review.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:41Z (RFD66606-2349) 'review.
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:42Z (RFD66606-2349) '- The private blocklist, which
+2026-10-30T00:00:20Z (RFD66606-2349) '- The private blocklist, which lists Movie Maker and FFmpeg as a tool.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2349) 'lists Movie Maker and FFmpeg as a
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:44Z (RFD66606-2349) 'tool.
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:45Z (RFD66606-2349) '- The private manifest's issue on
+2026-10-30T00:00:21Z (RFD66606-2349) '- The private manifest's issue on the parked Snake video, which
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2349) 'the parked Snake video, which
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:47Z (RFD66606-2349) '  records the rulings and the
+2026-10-30T00:00:22Z (RFD66606-2349) '  records the rulings and the house recorder test.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2349) 'house recorder test.
- # tags: rfd:related, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:49Z (RFD66606-2349) '
+2026-10-30T00:00:23Z (RFD66606-2349) '
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2349) 'The operator's rulings,
+2026-10-30T00:00:24Z (RFD66606-2349) 'The operator's rulings, 2026-10-09 and 2026-10-10
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:51Z (RFD66606-2349) '2026-10-09 and 2026-10-10
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:52Z (RFD66606-2349) '- The recorder is the house
+2026-10-30T00:00:25Z (RFD66606-2349) '- The recorder is the house recorder. Movie Maker is blocklisted.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2349) 'recorder. Movie Maker is
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:54Z (RFD66606-2349) 'blocklisted.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:55Z (RFD66606-2349) '- The video is 3840x2160. 2K is
+2026-10-30T00:00:26Z (RFD66606-2349) '- The video is 3840x2160. 2K is denied.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2349) 'denied.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2349) '- A video holds at least 2
+2026-10-30T00:00:27Z (RFD66606-2349) '- A video holds at least 2 minutes of real run time. A short run is
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:58Z (RFD66606-2349) 'minutes of real run time. A short
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:59Z (RFD66606-2349) 'run is
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:00Z (RFD66606-2349) '  made longer by running longer,
+2026-10-30T00:00:28Z (RFD66606-2349) '  made longer by running longer, never by holding or repeating frames.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2349) 'never by holding or repeating
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:02Z (RFD66606-2349) 'frames.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:03Z (RFD66606-2349) '- The game ticks on the wall
+2026-10-30T00:00:29Z (RFD66606-2349) '- The game ticks on the wall clock. A late reply applies at the next
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:04Z (RFD66606-2349) 'clock. A late reply applies at
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:05Z (RFD66606-2349) 'the next
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:06Z (RFD66606-2349) '  tick. With no reply the game
+2026-10-30T00:00:30Z (RFD66606-2349) '  tick. With no reply the game takes its default move.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2349) 'takes its default move.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:08Z (RFD66606-2349) '- CineForm everywhere. No ProRes
+2026-10-30T00:00:31Z (RFD66606-2349) '- CineForm everywhere. No ProRes is written and converted to CineForm.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:09Z (RFD66606-2349) 'is written and converted to
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:10Z (RFD66606-2349) 'CineForm.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:11Z (RFD66606-2349) '- FFmpeg never runs as a tool,
+2026-10-30T00:00:32Z (RFD66606-2349) '- FFmpeg never runs as a tool, and headless Godot never runs.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:12Z (RFD66606-2349) 'and headless Godot never runs.
- # tags: rfd:details, rfd:wrap
+2026-10-30T00:00:33Z (RFD66606-2349) '
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:34Z (RFD66606-2349) 'How the house recorder writes CineForm
+ # tags: rfd:details-heading
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:35Z (RFD66606-2349) 'The house recorder's current release ships the `cfhd` CineForm
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:36Z (RFD66606-2349) 'encoder. Its custom output, built on FFmpeg, is set to Matroska with
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:37Z (RFD66606-2349) '`cfhd` video and FLAC audio. In a still-frame test every frame decoded
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:38Z (RFD66606-2349) 'through the CineForm SDK at 39.4 dB against the input. The control,
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:39Z (RFD66606-2349) 'the same input shifted 40 px, scored 16.3 dB.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:40Z (RFD66606-2349) '
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:41Z (RFD66606-2349) 'Encoding outside the house recorder
+ # tags: rfd:details-heading
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:42Z (RFD66606-2349) 'A render that is not a live capture encodes with the CineForm SDK
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:43Z (RFD66606-2349) 'through the engine's CineForm module or the CineForm interactor.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:44Z (RFD66606-2349) 'Delivery uses the AV1-in-Matroska interactor's `deliver.exs`. It
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:45Z (RFD66606-2349) 'rewraps the frames byte for byte and checks every frame and sample.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:46Z (RFD66606-2349) '- A render reel records through the engine's movie writer straight to
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:47Z (RFD66606-2349) '  CineForm. It writes no PNG frames to encode later (operator,
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:48Z (RFD66606-2349) '  2026-10-17).
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:49Z (RFD66606-2349) '- Large media and videos are kept on the Windows desk, not on the
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:50Z (RFD66606-2349) '  Mac mini, which sits on a remote network (operator, 2026-10-17). A
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:51Z (RFD66606-2349) '  render made on the Mac is copied to the desk, its size is read back
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:52Z (RFD66606-2349) '  there, and only then is the Mac copy deleted.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:53Z (RFD66606-2349) '
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:54Z (RFD66606-2349) 'How a file is checked
+ # tags: rfd:details-heading
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:55Z (RFD66606-2349) '`deliver.exs` checks every frame and every sample. `av1mkv dump-frame`
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:56Z (RFD66606-2349) 'pulls frames, and a person looks at them. The run's length is gated
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:57Z (RFD66606-2349) 'from the frames' own timestamps, and a short frame set is the control
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:58Z (RFD66606-2349) 'that must fail. The frames and samples are the check, whatever exit
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:00:59Z (RFD66606-2349) 'code the recorder returns.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:00Z (RFD66606-2349) '
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:01Z (RFD66606-2349) 'Still open
+ # tags: rfd:details-heading
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:02Z (RFD66606-2349) '- The house recorder's custom output uses FFmpeg's encoder inside the
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:03Z (RFD66606-2349) '  recorder. The ruling bans FFmpeg as a tool, and the Snake video
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:04Z (RFD66606-2349) '  issue records the house recorder as the route. The operator has not
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:05Z (RFD66606-2349) '  ruled on whether the licence reason reaches the house recorder.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:06Z (RFD66606-2349) '- The decider-pong recorders named in RFD66606-2345 still call
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:07Z (RFD66606-2349) '  `ffmpeg`. They move to the house recorder or the SDK route when that
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:08Z (RFD66606-2349) '  project is next worked on.
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:09Z (RFD66606-2349) '
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:10Z (RFD66606-2349) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:11Z (RFD66606-2349) 'RFD66606-2345 encodes with the homebrew `ffmpeg` and checks files with
+ # tags: rfd:details
+ Text:RFD2349  1 LINE
+ Text:Written
+
+2026-10-30T00:01:12Z (RFD66606-2349) '`ffprobe`. FFmpeg as a tool is now banned.
+ # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
 2026-10-30T00:01:13Z (RFD66606-2349) '
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:14Z (RFD66606-2349) 'How the house recorder writes
- # tags: rfd:details-heading
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:15Z (RFD66606-2349) 'CineForm
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:16Z (RFD66606-2349) 'The house recorder's current
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:17Z (RFD66606-2349) 'release ships the `cfhd` CineForm
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:18Z (RFD66606-2349) 'encoder. Its custom output, built
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:19Z (RFD66606-2349) 'on FFmpeg, is set to Matroska
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:20Z (RFD66606-2349) 'with
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:21Z (RFD66606-2349) '`cfhd` video and FLAC audio. In a
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:22Z (RFD66606-2349) 'still-frame test every frame
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:23Z (RFD66606-2349) 'decoded
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:24Z (RFD66606-2349) 'through the CineForm SDK at 39.4
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:25Z (RFD66606-2349) 'dB against the input. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:26Z (RFD66606-2349) 'control,
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:27Z (RFD66606-2349) 'the same input shifted 40 px,
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:28Z (RFD66606-2349) 'scored 16.3 dB.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:29Z (RFD66606-2349) '
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:30Z (RFD66606-2349) 'Encoding outside the house
- # tags: rfd:details-heading
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:31Z (RFD66606-2349) 'recorder
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:32Z (RFD66606-2349) 'A render that is not a live
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:33Z (RFD66606-2349) 'capture encodes with the CineForm
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:34Z (RFD66606-2349) 'SDK
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:35Z (RFD66606-2349) 'through the engine's CineForm
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:36Z (RFD66606-2349) 'module or the CineForm
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:37Z (RFD66606-2349) 'interactor.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:38Z (RFD66606-2349) 'Delivery uses the AV1-in-Matroska
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:39Z (RFD66606-2349) 'interactor's `deliver.exs`. It
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:40Z (RFD66606-2349) 'rewraps the frames byte for byte
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:41Z (RFD66606-2349) 'and checks every frame and
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:42Z (RFD66606-2349) 'sample.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:43Z (RFD66606-2349) '- A render reel records through
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:44Z (RFD66606-2349) 'the engine's movie writer
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:45Z (RFD66606-2349) 'straight to
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:46Z (RFD66606-2349) '  CineForm. It writes no PNG
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:47Z (RFD66606-2349) 'frames to encode later (operator,
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:48Z (RFD66606-2349) '  2026-10-17).
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:49Z (RFD66606-2349) '- Large media and videos are kept
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:50Z (RFD66606-2349) 'on the Windows desk, not on the
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:51Z (RFD66606-2349) '  Mac mini, which sits on a
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:52Z (RFD66606-2349) 'remote network (operator,
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:53Z (RFD66606-2349) '2026-10-17). A
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:54Z (RFD66606-2349) '  render made on the Mac is
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:55Z (RFD66606-2349) 'copied to the desk, its size is
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:56Z (RFD66606-2349) 'read back
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:57Z (RFD66606-2349) '  there, and only then is the Mac
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:58Z (RFD66606-2349) 'copy deleted.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:59Z (RFD66606-2349) '
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:00Z (RFD66606-2349) 'How a file is checked
- # tags: rfd:details-heading
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:01Z (RFD66606-2349) '`deliver.exs` checks every frame
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:02Z (RFD66606-2349) 'and every sample. `av1mkv
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:03Z (RFD66606-2349) 'dump-frame`
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:04Z (RFD66606-2349) 'pulls frames, and a person looks
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:05Z (RFD66606-2349) 'at them. The run's length is
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:06Z (RFD66606-2349) 'gated
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:07Z (RFD66606-2349) 'from the frames' own timestamps,
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:08Z (RFD66606-2349) 'and a short frame set is the
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:09Z (RFD66606-2349) 'control
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:10Z (RFD66606-2349) 'that must fail. The frames and
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:11Z (RFD66606-2349) 'samples are the check, whatever
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:12Z (RFD66606-2349) 'exit
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:13Z (RFD66606-2349) 'code the recorder returns.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:14Z (RFD66606-2349) '
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:15Z (RFD66606-2349) 'Still open
- # tags: rfd:details-heading
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:16Z (RFD66606-2349) '- The house recorder's custom
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:17Z (RFD66606-2349) 'output uses FFmpeg's encoder
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:18Z (RFD66606-2349) 'inside the
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:19Z (RFD66606-2349) '  recorder. The ruling bans
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:20Z (RFD66606-2349) 'FFmpeg as a tool, and the Snake
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:21Z (RFD66606-2349) 'video
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:22Z (RFD66606-2349) '  issue records the house
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:23Z (RFD66606-2349) 'recorder as the route. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:24Z (RFD66606-2349) 'operator has not
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:25Z (RFD66606-2349) '  ruled on whether the licence
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:26Z (RFD66606-2349) 'reason reaches the house
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:27Z (RFD66606-2349) 'recorder.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:28Z (RFD66606-2349) '- The decider-pong recorders
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:29Z (RFD66606-2349) 'named in RFD66606-2345 still call
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:30Z (RFD66606-2349) '  `ffmpeg`. They move to the
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:31Z (RFD66606-2349) 'house recorder or the SDK route
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:32Z (RFD66606-2349) 'when that
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:33Z (RFD66606-2349) '  project is next worked on.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:34Z (RFD66606-2349) '
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:35Z (RFD66606-2349) 'The problem
- # tags: rfd:details-heading
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:36Z (RFD66606-2349) 'RFD66606-2345 encodes with the
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:37Z (RFD66606-2349) 'homebrew `ffmpeg` and checks
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:38Z (RFD66606-2349) 'files with
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:39Z (RFD66606-2349) '`ffprobe`. FFmpeg as a tool is
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:40Z (RFD66606-2349) 'now banned.
- # tags: rfd:details, rfd:wrap
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:02:41Z (RFD66606-2349) '
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written

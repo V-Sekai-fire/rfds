@@ -4,342 +4,167 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2376) 'when anything may run, restart or
+2026-10-31T00:00:01Z (RFD66606-2376) 'when anything may run, restart or capture in the headset the operator wears.
  # tags: rfd:scope
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2376) 'capture in the headset the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2376) 'operator wears.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2376) 'Nothing runs, restarts or
+2026-10-31T00:00:02Z (RFD66606-2376) 'Nothing runs, restarts or captures in the headset unless the operator asks for that run.
  # tags: rfd:hook
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2376) 'captures in the headset unless
- # tags: rfd:hook, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2376) 'the operator asks for that run.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2376) '
+2026-10-31T00:00:03Z (RFD66606-2376) '
  # tags: rfd:hook
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2376) 'Nothing may capture the headset
+2026-10-31T00:00:04Z (RFD66606-2376) 'Nothing may capture the headset view while the operator is in a social session. X11 capture
  # tags: rfd:intrigue
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2376) 'view while the operator is in a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2376) 'social session. X11 capture
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2376) 'cannot see it, so a capture
+2026-10-31T00:00:05Z (RFD66606-2376) 'cannot see it, so a capture attempt there shows nothing.
  # tags: rfd:intrigue
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2376) 'attempt there shows nothing.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2376) '
+2026-10-31T00:00:06Z (RFD66606-2376) '
  # tags: rfd:intrigue
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2376) 'Before a run, a runtime restart
+2026-10-31T00:00:07Z (RFD66606-2376) 'Before a run, a runtime restart or a capture in the headset, check that the operator asked for
  # tags: rfd:exit
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2376) 'or a capture in the headset,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2376) 'check that the operator asked for
- # tags: rfd:exit, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2376) 'that run, and run tests and gates
+2026-10-31T00:00:08Z (RFD66606-2376) 'that run, and run tests and gates on the Windows desk or as renders on the Mac instead.
  # tags: rfd:exit
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2376) 'on the Windows desk or as renders
- # tags: rfd:exit, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2376) 'on the Mac instead.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2376) '
+2026-10-31T00:00:09Z (RFD66606-2376) '
  # tags: rfd:exit
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2376) 'nothing runs in the headset
+2026-10-31T00:00:10Z (RFD66606-2376) 'nothing runs in the headset unless the operator asks
  # tags: rfd:details-title
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2376) 'unless the operator asks
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2376) '- Tests and gates run on the
+2026-10-31T00:00:11Z (RFD66606-2376) '- Tests and gates run on the Windows desk or as renders on the Mac, not in the headset the
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2376) 'Windows desk or as renders on the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2376) 'Mac, not in the headset the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2376) '  operator wears.
+2026-10-31T00:00:12Z (RFD66606-2376) '  operator wears.
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2376) '- A run, a runtime restart or a
+2026-10-31T00:00:13Z (RFD66606-2376) '- A run, a runtime restart or a capture in the headset happens only when the operator asks for
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2376) 'capture in the headset happens
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2376) 'only when the operator asks for
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2376) '  that run, and nothing captures
+2026-10-31T00:00:14Z (RFD66606-2376) '  that run, and nothing captures the headset view while the operator is in a social session.
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2376) 'the headset view while the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2376) 'operator is in a social session.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2376) '- The headset view comes from the
+2026-10-31T00:00:15Z (RFD66606-2376) '- The headset view comes from the compositor mirror (`/dev/video99`) with screen sharing on.
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2376) 'compositor mirror
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2376) '(`/dev/video99`) with screen
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2376) 'sharing on.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2376) '  X11 capture cannot see it.
+2026-10-31T00:00:16Z (RFD66606-2376) '  X11 capture cannot see it.
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2376) '
+2026-10-31T00:00:17Z (RFD66606-2376) '
  # tags: rfd:decision
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2376) '- RFD66606-2294, where this rule
+2026-10-31T00:00:18Z (RFD66606-2376) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2376) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2376) '
+2026-10-31T00:00:19Z (RFD66606-2376) '
  # tags: rfd:related
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2376) 'Asleep
+2026-10-31T00:00:20Z (RFD66606-2376) 'Asleep
  # tags: rfd:details-heading
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2376) 'Asleep, the headset drops off the
+2026-10-31T00:00:21Z (RFD66606-2376) 'Asleep, the headset drops off the LAN entirely, answering neither mDNS nor
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2376) 'LAN entirely, answering neither
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2376) 'mDNS nor
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2376) 'ARP, so a name that does not
+2026-10-31T00:00:22Z (RFD66606-2376) 'ARP, so a name that does not resolve means it is asleep, not broken.
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2376) 'resolve means it is asleep, not
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2376) 'broken.
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2376) '
+2026-10-31T00:00:23Z (RFD66606-2376) '
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2376) '
+2026-10-31T00:00:24Z (RFD66606-2376) '
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2376) 'Whose it is in the queue and the
+2026-10-31T00:00:25Z (RFD66606-2376) 'Whose it is in the queue and the key
  # tags: rfd:details-heading
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2376) 'key
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2376) 'The headset is the Mac desk's in
+2026-10-31T00:00:26Z (RFD66606-2376) 'The headset is the Mac desk's in the queue, so another desk coordinates with
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2376) 'the queue, so another desk
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2376) 'coordinates with
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2376) 'the Mac before touching it. A key
+2026-10-31T00:00:27Z (RFD66606-2376) 'the Mac before touching it. A key appended to its `authorized_keys` starts on a
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2376) 'appended to its `authorized_keys`
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2376) 'starts on a
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2376) 'new line with carriage returns
+2026-10-31T00:00:28Z (RFD66606-2376) 'new line with carriage returns stripped, because the file may end without a
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2376) 'stripped, because the file may
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2376) 'end without a
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2376) 'newline and a `.pub` written on
+2026-10-31T00:00:29Z (RFD66606-2376) 'newline and a `.pub` written on Windows ends its lines with CRLF.
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2376) 'Windows ends its lines with CRLF.
- # tags: rfd:details, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2376) '
+2026-10-31T00:00:30Z (RFD66606-2376) '
  # tags: rfd:details
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2376) '2351
+2026-10-31T00:00:31Z (RFD66606-2376) '2351
  # tags: rebac:verbs-from
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2376) 'rfd-2376 provides
+2026-10-31T00:00:32Z (RFD66606-2376) 'rfd-2376 provides headset-runs-operator-gated
  # tags: rebac:relate
  Text:RFD2376  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2376) 'headset-runs-operator-gated
- # tags: rebac:relate, rfd:wrap
- Text:RFD2376  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2376) 'rfd-2376 is_a workspace-policy
+2026-10-31T00:00:33Z (RFD66606-2376) 'rfd-2376 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2376  1 LINE
  Text:Written

@@ -9,668 +9,668 @@
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1060) 'Two moves make the browser client
+2026-08-25T00:00:02Z (RFD66606-1060) 'Two moves make the browser client a dependency and the API server the repository root.
  # tags: rfd:hook
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1060) 'a dependency and the API server
- # tags: rfd:hook, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1060) 'the repository root.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1060) '
+2026-08-25T00:00:03Z (RFD66606-1060) '
  # tags: rfd:hook
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1060) '108 files outside `src/library/`
+2026-08-25T00:00:04Z (RFD66606-1060) '108 files outside `src/library/` still imported from it, and RFD66606-1023's per-file
  # tags: rfd:intrigue
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1060) 'still imported from it, and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1060) 'RFD66606-1023's per-file
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1060) 'move rule gave no place to put
+2026-08-25T00:00:05Z (RFD66606-1060) 'move rule gave no place to put those files a port did not cover yet.
  # tags: rfd:intrigue
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1060) 'those files a port did not cover
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1060) 'yet.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1060) '
+2026-08-25T00:00:06Z (RFD66606-1060) '
  # tags: rfd:intrigue
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1060) 'Put new work at the repository
+2026-08-25T00:00:07Z (RFD66606-1060) 'Put new work at the repository root, and compose with `thirdparty/3d_studio/` through a port
  # tags: rfd:exit
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1060) 'root, and compose with
- # tags: rfd:exit, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1060) '`thirdparty/3d_studio/` through a
- # tags: rfd:exit, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1060) 'port
- # tags: rfd:exit, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1060) 'per RFD66606-1023, or leave it
+2026-08-25T00:00:08Z (RFD66606-1060) 'per RFD66606-1023, or leave it alone.
  # tags: rfd:exit
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1060) 'alone.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1060) '
+2026-08-25T00:00:09Z (RFD66606-1060) '
  # tags: rfd:exit
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1060) 'A thirdparty/ reset
+2026-08-25T00:00:10Z (RFD66606-1060) 'A thirdparty/ reset
  # tags: rfd:details-title
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1060) 'Two moves, one after the other.
+2026-08-25T00:00:11Z (RFD66606-1060) 'Two moves, one after the other. First, `src/library/` to
  # tags: rfd:decision
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1060) 'First, `src/library/` to
- # tags: rfd:decision, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1060) '`thirdparty/library/`, as real
+2026-08-25T00:00:12Z (RFD66606-1060) '`thirdparty/library/`, as real files and not a symlink. Second,
  # tags: rfd:decision
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1060) 'files and not a symlink. Second,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1060) '`weftspun_studio/` becomes the
+2026-08-25T00:00:13Z (RFD66606-1060) '`weftspun_studio/` becomes the repository root, and everything that
  # tags: rfd:decision
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1060) 'repository root, and everything
- # tags: rfd:decision, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1060) 'that
- # tags: rfd:decision, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1060) 'was at the root moves to
+2026-08-25T00:00:14Z (RFD66606-1060) 'was at the root moves to `thirdparty/3d_studio/` instead.
  # tags: rfd:decision
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1060) '`thirdparty/3d_studio/` instead.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1060) '
+2026-08-25T00:00:15Z (RFD66606-1060) '
  # tags: rfd:decision
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1060) 'RFD66606-1019 gives the strangler
+2026-08-25T00:00:16Z (RFD66606-1060) 'RFD66606-1019 gives the strangler fig this reset makes room for. RFD66606-1023
  # tags: rfd:related
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1060) 'fig this reset makes room for.
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1060) 'RFD66606-1023
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1060) 'gives the per-file move rule this
+2026-08-25T00:00:17Z (RFD66606-1060) 'gives the per-file move rule this RFD does not replace. RFD66606-1057
  # tags: rfd:related
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1060) 'RFD does not replace.
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1060) 'RFD66606-1057
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1060) 'tracks two items this move left
+2026-08-25T00:00:18Z (RFD66606-1060) 'tracks two items this move left open. RFD66606-1058 gives the Quadlet
  # tags: rfd:related
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1060) 'open. RFD66606-1058 gives the
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1060) 'Quadlet
- # tags: rfd:related, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1060) 'paths this RFD updates.
+2026-08-25T00:00:19Z (RFD66606-1060) 'paths this RFD updates.
  # tags: rfd:related
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1060) '
+2026-08-25T00:00:20Z (RFD66606-1060) '
  # tags: rfd:related
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1060) 'Why a dependency directory
+2026-08-25T00:00:21Z (RFD66606-1060) 'Why a dependency directory
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1060) 'Gall's law: a complex system that
+2026-08-25T00:00:22Z (RFD66606-1060) 'Gall's law: a complex system that works grew from a simple system
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1060) 'works grew from a simple system
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1060) 'that worked. Moving the browser
+2026-08-25T00:00:23Z (RFD66606-1060) 'that worked. Moving the browser client to `thirdparty/` marks it a
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1060) 'client to `thirdparty/` marks it
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1060) 'a
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1060) 'dependency, not the workspace.
+2026-08-25T00:00:24Z (RFD66606-1060) 'dependency, not the workspace.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1060) '
+2026-08-25T00:00:25Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1060) 'The symlink attempt, and why it
+2026-08-25T00:00:26Z (RFD66606-1060) 'The symlink attempt, and why it failed
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1060) 'failed
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1060) 'The first attempt at moving
+2026-08-25T00:00:27Z (RFD66606-1060) 'The first attempt at moving `src/library/` left a symlink at
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1060) '`src/library/` left a symlink at
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1060) '`src/library`. A working session
+2026-08-25T00:00:28Z (RFD66606-1060) '`src/library`. A working session found that symlink broke relative
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1060) 'found that symlink broke relative
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1060) 'imports inside the moved files.
+2026-08-25T00:00:29Z (RFD66606-1060) 'imports inside the moved files. Vite resolves a symlink to its real
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1060) 'Vite resolves a symlink to its
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1060) 'real
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1060) 'path before applying a relative
+2026-08-25T00:00:30Z (RFD66606-1060) 'path before applying a relative import. So
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1060) 'import. So
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1060) '`thirdparty/library/aiModelsCatalog.js`'s
+2026-08-25T00:00:31Z (RFD66606-1060) '`thirdparty/library/aiModelsCatalog.js`'s `import '../core/domain/catalog.js'`
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1060) '`import
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1060) ''../core/domain/catalog.js'`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1060) 'resolved against
+2026-08-25T00:00:32Z (RFD66606-1060) 'resolved against `thirdparty/core/`, which does not exist, instead
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1060) '`thirdparty/core/`, which does
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1060) 'not exist, instead
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1060) 'of `src/core/`, which does.
+2026-08-25T00:00:33Z (RFD66606-1060) 'of `src/core/`, which does. `resolve.preserveSymlinks: true` in
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1060) '`resolve.preserveSymlinks: true`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1060) 'in
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1060) '`vite.config.js` and
+2026-08-25T00:00:34Z (RFD66606-1060) '`vite.config.js` and `vitest.config.js` fixed it once. Then a direct
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1060) '`vitest.config.js` fixed it once.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1060) 'Then a direct
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1060) 'instruction reversed the symlink
+2026-08-25T00:00:35Z (RFD66606-1060) 'instruction reversed the symlink call: move the real files.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1060) 'call: move the real files.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1060) '
+2026-08-25T00:00:36Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1060) 'The second move, in full
+2026-08-25T00:00:37Z (RFD66606-1060) 'The second move, in full
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1060) '`weftspun_studio/` becomes the
+2026-08-25T00:00:38Z (RFD66606-1060) '`weftspun_studio/` becomes the repository root. Everything that was
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1060) 'repository root. Everything that
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1060) 'was
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1060) 'at the root, `src/`,
+2026-08-25T00:00:39Z (RFD66606-1060) 'at the root, `src/`, `package.json`, `vite.config.js`, `index.html`,
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1060) '`package.json`, `vite.config.js`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1060) '`index.html`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1060) '`public/`, `native/`, `tests/`,
+2026-08-25T00:00:40Z (RFD66606-1060) '`public/`, `native/`, `tests/`, and the JS toolchain's own
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1060) 'and the JS toolchain's own
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1060) '`scripts/*.mjs` files, moves to
+2026-08-25T00:00:41Z (RFD66606-1060) '`scripts/*.mjs` files, moves to `thirdparty/3d_studio/`.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1060) '`thirdparty/3d_studio/`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1060) '`decisions/`, `.github/`, and a
+2026-08-25T00:00:42Z (RFD66606-1060) '`decisions/`, `.github/`, and a small, named set of root-level
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1060) 'small, named set of root-level
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1060) '`scripts/` stay at the root,
+2026-08-25T00:00:43Z (RFD66606-1060) '`scripts/` stay at the root, alongside `weftspun_studio/`'s promoted
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-1060) 'alongside `weftspun_studio/`'s
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1060) 'promoted
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1060) '`lib/`, `test/`, `config/`,
+2026-08-25T00:00:44Z (RFD66606-1060) '`lib/`, `test/`, `config/`, `mix.exs`, `Dockerfile`, and `deploy/`.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-1060) '`mix.exs`, `Dockerfile`, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1060) '`deploy/`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1060) '
+2026-08-25T00:00:45Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-1060) 'New work happens at the root: in
+2026-08-25T00:00:46Z (RFD66606-1060) 'New work happens at the root: in `lib/`, in
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-1060) '`lib/`, in
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1060) '`thirdparty/3d_studio/src/core/`,
+2026-08-25T00:00:47Z (RFD66606-1060) '`thirdparty/3d_studio/src/core/`, or in
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-1060) 'or in
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1060) '`thirdparty/3d_studio/src/chain/`.
+2026-08-25T00:00:48Z (RFD66606-1060) '`thirdparty/3d_studio/src/chain/`. It composes with
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-1060) 'It composes with
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1060) '`thirdparty/3d_studio/` through a
+2026-08-25T00:00:49Z (RFD66606-1060) '`thirdparty/3d_studio/` through a port, per RFD66606-1023, or it does not
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-1060) 'port, per RFD66606-1023, or it
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-1060) 'does not
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1060) 'touch it.
+2026-08-25T00:00:50Z (RFD66606-1060) 'touch it.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-1060) '
+2026-08-25T00:00:51Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:47Z (RFD66606-1060) 'Why a real move, not a rewrite of
+2026-08-25T00:00:52Z (RFD66606-1060) 'Why a real move, not a rewrite of every import
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:48Z (RFD66606-1060) 'every import
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:49Z (RFD66606-1060) 'RFD66606-1057 says a sweep is the
+2026-08-25T00:00:53Z (RFD66606-1060) 'RFD66606-1057 says a sweep is the wrong shape for a large, low-value
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:50Z (RFD66606-1060) 'wrong shape for a large,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-1060) 'low-value
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:52Z (RFD66606-1060) 'change. "Convert one when its
+2026-08-25T00:00:54Z (RFD66606-1060) 'change. "Convert one when its model is next worked on, and not in a
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:53Z (RFD66606-1060) 'model is next worked on, and not
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-1060) 'in a
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-1060) 'sweep," in RFD66606-1057's own
+2026-08-25T00:00:55Z (RFD66606-1060) 'sweep," in RFD66606-1057's own words. RFD66606-1023 says the same rule for
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:56Z (RFD66606-1060) 'words. RFD66606-1023 says the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1060) 'same rule for
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:01:58Z (RFD66606-1060) '`src/library/`. "A module moves
+2026-08-25T00:00:56Z (RFD66606-1060) '`src/library/`. "A module moves when a port covers it, and not
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:01:59Z (RFD66606-1060) 'when a port covers it, and not
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:00Z (RFD66606-1060) 'before."
+2026-08-25T00:00:57Z (RFD66606-1060) 'before."
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:01Z (RFD66606-1060) '
+2026-08-25T00:00:58Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-1060) 'Neither RFD66606-1023's per-file
+2026-08-25T00:00:59Z (RFD66606-1060) 'Neither RFD66606-1023's per-file rule, nor RFD66606-1057's no-sweep rule,
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:03Z (RFD66606-1060) 'rule, nor RFD66606-1057's
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:04Z (RFD66606-1060) 'no-sweep rule,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1060) 'required rewriting relative
+2026-08-25T00:01:00Z (RFD66606-1060) 'required rewriting relative imports inside the moved trees. `git mv`
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:06Z (RFD66606-1060) 'imports inside the moved trees.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-1060) '`git mv`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1060) 'preserves history. Every existing
+2026-08-25T00:01:01Z (RFD66606-1060) 'preserves history. Every existing import between files that moved
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:09Z (RFD66606-1060) 'import between files that moved
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:10Z (RFD66606-1060) 'together keeps its shape. Those
+2026-08-25T00:01:02Z (RFD66606-1060) 'together keeps its shape. Those files moved as one tree, not as 139
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1060) 'files moved as one tree, not as
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:12Z (RFD66606-1060) '139
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:13Z (RFD66606-1060) 'and then several hundred
+2026-08-25T00:01:03Z (RFD66606-1060) 'and then several hundred independent edits.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:14Z (RFD66606-1060) 'independent edits.
- # tags: rfd:details, rfd:wrap
+2026-08-25T00:01:04Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1060) 'What stays at the root, and why
+ # tags: rfd:details-heading
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1060) '**`decisions/`**, direct instruction. The RFD index documents both
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1060) '`weftspun_studio` and the browser client. Splitting it would break
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1060) 'RFD66606-1000's DRY policy.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1060) '**`.github/`**, GitHub Actions only discovers workflows at the true
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1060) 'repository root. It cannot move.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1060) '**`.devcontainer/`**, RFD66606-1056's dev container, for the Elixir
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1060) 'side. `devcontainer.json` sets `privileged: true` and
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1060) '`--cgroupns=host` specifically so Quadlet units can start inside it.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1060) 'Removed in this session, ahead of a rebuild.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1060) '**Six `scripts/` files, at the time of this move**, `ci.sh`,
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1060) '`deploy-weftspun-quadlet.sh`, `studio-test.sh`,
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:20Z (RFD66606-1060) '`check-elixir-parses.exs`, `ste-lint-decisions.py`,
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:21Z (RFD66606-1060) '`check-model-images.py`. `.pre-commit-config.yaml` named four of
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:22Z (RFD66606-1060) 'these by path, and pre-commit hooks run from the repository root.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:23Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:24Z (RFD66606-1060) 'Every other file under the old `scripts/` moved to
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:25Z (RFD66606-1060) '`thirdparty/3d_studio/scripts/` instead. That set is the JS build
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:26Z (RFD66606-1060) 'helpers, the DGX sync scripts, and the XR proxies. Those files read
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:27Z (RFD66606-1060) 'and write that tree, not this one. RFD66606-1063 later deleted
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:28Z (RFD66606-1060) '`ste-lint-decisions.py`, leaving five.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:29Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:30Z (RFD66606-1060) '**`LICENSE`, `TRADEMARKS`, `.formatter.exs`, `.gitattributes`,
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:31Z (RFD66606-1060) '`.pre-commit-config.yaml`**, repository-wide, not app-specific.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:32Z (RFD66606-1060) '`.formatter.exs` now merges two input globs that used to be two
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:33Z (RFD66606-1060) 'files: `decisions/**/*.{ex,exs}` (from the root's old file) and
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:34Z (RFD66606-1060) '`{mix,.formatter}.exs`, `{config,lib,test}/**/*.{ex,exs}` (from
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:35Z (RFD66606-1060) '`weftspun_studio/`'s).
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:36Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:37Z (RFD66606-1060) 'Paths this move touched
+ # tags: rfd:details-heading
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:38Z (RFD66606-1060) '`WeftspunStudio.JsCatalog.@default_path`,
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:39Z (RFD66606-1060) '`test/catalog_parity_test.exs`, and `test/fact_store_test.exs` read
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:40Z (RFD66606-1060) '`thirdparty/3d_studio/src/library/aiModelsCatalog.js` now, in place
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:41Z (RFD66606-1060) 'of `../src/library/aiModelsCatalog.js`.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:42Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:43Z (RFD66606-1060) '`deploy/quadlet/weftspun.build` and `weftspun-crdb.build` read
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:44Z (RFD66606-1060) '`/opt/weftspun/src/Dockerfile` and
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:45Z (RFD66606-1060) '`/opt/weftspun/src/deploy/Dockerfile.crdb` now, in place of the
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:46Z (RFD66606-1060) '`weftspun_studio/` prefix RFD66606-1058 wrote. `scripts/deploy-weftspun-quadlet.sh`
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:47Z (RFD66606-1060) 'still syncs the whole repository to `/opt/weftspun/src`, and that
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:48Z (RFD66606-1060) 'tree's root is this repository's root.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:49Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:50Z (RFD66606-1060) '`package.json`'s `lint:ste` script read `../../scripts/ste-lint-decisions.py`
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:51Z (RFD66606-1060) 'and `../../decisions/0*/README.md` at the time of this move, because
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:52Z (RFD66606-1060) '`package.json` lives two levels under the tree those two paths were
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:53Z (RFD66606-1060) 'actually in. RFD66606-1063 later deleted that script and that npm entry.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:54Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:55Z (RFD66606-1060) '`.pre-commit-config.yaml`'s `studio-test` hook matches
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:56Z (RFD66606-1060) '`^(lib|test|config)/.*\.exs?$|^mix\.exs$` now, in place of
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:57Z (RFD66606-1060) '`^weftspun_studio/.*\.exs?$`.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:58Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1060) 'Verified
+ # tags: rfd:details-heading
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1060) '`mix compile` and `mix test` ran clean from the new root, at the
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1060) 'time of this move: 100 of 105 tests passed, 5 excluded. The 5
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1060) 'failures were a pre-existing architecture mismatch, unrelated to
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1060) 'this move. `deps/taskweft_nif/priv/libtaskweft_nif.so` was an ARM
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1060) 'aarch64 binary, and this box is x86_64. `file` on the `.so`
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:05Z (RFD66606-1060) 'confirmed it, and the failure was identical with or without the
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:06Z (RFD66606-1060) 'swap. RFD66606-1057 records the later fix. All 105 tests pass now.
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:07Z (RFD66606-1060) '
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:08Z (RFD66606-1060) '`npx vitest run` from `thirdparty/3d_studio/` resolves
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:09Z (RFD66606-1060) '`src/library/aiModelsCatalog.js`'s `import '../core/domain/catalog.js'`
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:10Z (RFD66606-1060) 'correctly, now that `library/` is a real directory under `src/`
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:11Z (RFD66606-1060) 'again, and not a symlink elsewhere. `src/core` and
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:12Z (RFD66606-1060) '`prepareGlbForApiUpload.test.js` together: 54 passed, the same 5
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1060) 'pre-existing `glbCompress.js` export failures RFD66606-1023 already
+ # tags: rfd:details
+ Text:RFD1060  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1060) 'records, and no import-resolution failure.
+ # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
@@ -679,907 +679,102 @@
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:16Z (RFD66606-1060) 'What stays at the root, and why
+2026-08-25T00:02:16Z (RFD66606-1060) 'What this does not do
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:17Z (RFD66606-1060) '**`decisions/`**, direct
+2026-08-25T00:02:17Z (RFD66606-1060) 'It does not fix the `prepareGlbForApiUpload` gap RFD66606-1023 already
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:18Z (RFD66606-1060) 'instruction. The RFD index
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:19Z (RFD66606-1060) 'documents both
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1060) '`weftspun_studio` and the browser
+2026-08-25T00:02:18Z (RFD66606-1060) 'records. That gap sits inside
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:21Z (RFD66606-1060) 'client. Splitting it would break
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:22Z (RFD66606-1060) 'RFD66606-1000's DRY policy.
+2026-08-25T00:02:19Z (RFD66606-1060) '`thirdparty/3d_studio/src/library/glbCompress.js` now, the same as
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:23Z (RFD66606-1060) '
+2026-08-25T00:02:20Z (RFD66606-1060) 'it sat inside `src/library/glbCompress.js` before.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:24Z (RFD66606-1060) '**`.github/`**, GitHub Actions
+2026-08-25T00:02:21Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:25Z (RFD66606-1060) 'only discovers workflows at the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-1060) 'true
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:27Z (RFD66606-1060) 'repository root. It cannot move.
+2026-08-25T00:02:22Z (RFD66606-1060) 'It does not touch RFD66606-1023's `src/core/` / `src/chain/` split. Both
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:28Z (RFD66606-1060) '
+2026-08-25T00:02:23Z (RFD66606-1060) 'trees moved together, under `thirdparty/3d_studio/src/`, with every
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:29Z (RFD66606-1060) '**`.devcontainer/`**,
+2026-08-25T00:02:24Z (RFD66606-1060) 'import between them intact.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:30Z (RFD66606-1060) 'RFD66606-1056's dev container,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:31Z (RFD66606-1060) 'for the Elixir
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:32Z (RFD66606-1060) 'side. `devcontainer.json` sets
+2026-08-25T00:02:25Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:02:33Z (RFD66606-1060) '`privileged: true` and
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-1060) '`--cgroupns=host` specifically so
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-1060) 'Quadlet units can start inside
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:36Z (RFD66606-1060) 'it.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-1060) 'Removed in this session, ahead of
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:38Z (RFD66606-1060) 'a rebuild.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:39Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:40Z (RFD66606-1060) '**Six `scripts/` files, at the
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-1060) 'time of this move**, `ci.sh`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:42Z (RFD66606-1060) '`deploy-weftspun-quadlet.sh`,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:43Z (RFD66606-1060) '`studio-test.sh`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:44Z (RFD66606-1060) '`check-elixir-parses.exs`,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:45Z (RFD66606-1060) '`ste-lint-decisions.py`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:46Z (RFD66606-1060) '`check-model-images.py`.
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:47Z (RFD66606-1060) '`.pre-commit-config.yaml` named
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:48Z (RFD66606-1060) 'four of
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:49Z (RFD66606-1060) 'these by path, and pre-commit
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:50Z (RFD66606-1060) 'hooks run from the repository
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:51Z (RFD66606-1060) 'root.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:52Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:53Z (RFD66606-1060) 'Every other file under the old
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:54Z (RFD66606-1060) '`scripts/` moved to
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:55Z (RFD66606-1060) '`thirdparty/3d_studio/scripts/`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:56Z (RFD66606-1060) 'instead. That set is the JS build
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:57Z (RFD66606-1060) 'helpers, the DGX sync scripts,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:58Z (RFD66606-1060) 'and the XR proxies. Those files
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:02:59Z (RFD66606-1060) 'read
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:00Z (RFD66606-1060) 'and write that tree, not this
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:01Z (RFD66606-1060) 'one. RFD66606-1063 later deleted
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:02Z (RFD66606-1060) '`ste-lint-decisions.py`, leaving
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:03Z (RFD66606-1060) 'five.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:04Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:05Z (RFD66606-1060) '**`LICENSE`, `TRADEMARKS`,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:06Z (RFD66606-1060) '`.formatter.exs`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:07Z (RFD66606-1060) '`.gitattributes`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:08Z (RFD66606-1060) '`.pre-commit-config.yaml`**,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:09Z (RFD66606-1060) 'repository-wide, not
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:10Z (RFD66606-1060) 'app-specific.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:11Z (RFD66606-1060) '`.formatter.exs` now merges two
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:12Z (RFD66606-1060) 'input globs that used to be two
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:13Z (RFD66606-1060) 'files: `decisions/**/*.{ex,exs}`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:14Z (RFD66606-1060) '(from the root's old file) and
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:15Z (RFD66606-1060) '`{mix,.formatter}.exs`,
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:16Z (RFD66606-1060) '`{config,lib,test}/**/*.{ex,exs}`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:17Z (RFD66606-1060) '(from
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:18Z (RFD66606-1060) '`weftspun_studio/`'s).
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:19Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:20Z (RFD66606-1060) 'Paths this move touched
+2026-08-25T00:02:26Z (RFD66606-1060) 'The problem
  # tags: rfd:details-heading
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:21Z (RFD66606-1060) '`WeftspunStudio.JsCatalog.@default_path`,
+2026-08-25T00:02:27Z (RFD66606-1060) '`src/library/` held 139 files and 56,376 lines. It predates
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:22Z (RFD66606-1060) '`test/catalog_parity_test.exs`,
+2026-08-25T00:02:28Z (RFD66606-1060) 'RFD66606-1019's strangler fig and RFD66606-1023's `src/core/` split.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:23Z (RFD66606-1060) 'and `test/fact_store_test.exs`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:24Z (RFD66606-1060) 'read
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:25Z (RFD66606-1060) '`thirdparty/3d_studio/src/library/aiModelsCatalog.js`
+2026-08-25T00:02:29Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:26Z (RFD66606-1060) 'now, in place
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:27Z (RFD66606-1060) 'of
+2026-08-25T00:02:30Z (RFD66606-1060) 'The repository root carried the same problem at a larger scale.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:28Z (RFD66606-1060) '`../src/library/aiModelsCatalog.js`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:29Z (RFD66606-1060) '
+2026-08-25T00:02:31Z (RFD66606-1060) '`weftspun_studio/` sat as a subdirectory of the browser client's
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:30Z (RFD66606-1060) '`deploy/quadlet/weftspun.build`
+2026-08-25T00:02:32Z (RFD66606-1060) 'tree, even though RFD66606-1019 makes it the API server the client is one
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:31Z (RFD66606-1060) 'and `weftspun-crdb.build` read
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:32Z (RFD66606-1060) '`/opt/weftspun/src/Dockerfile`
+2026-08-25T00:02:33Z (RFD66606-1060) 'consumer of. The end-shape system was the guest. The system it
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:33Z (RFD66606-1060) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:34Z (RFD66606-1060) '`/opt/weftspun/src/deploy/Dockerfile.crdb`
+2026-08-25T00:02:34Z (RFD66606-1060) 'replaces was the host.
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written
 
-2026-08-25T00:03:35Z (RFD66606-1060) 'now, in place of the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:36Z (RFD66606-1060) '`weftspun_studio/` prefix
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:37Z (RFD66606-1060) 'RFD66606-1058 wrote.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:38Z (RFD66606-1060) '`scripts/deploy-weftspun-quadlet.sh`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:39Z (RFD66606-1060) 'still syncs the whole repository
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:40Z (RFD66606-1060) 'to `/opt/weftspun/src`, and that
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:41Z (RFD66606-1060) 'tree's root is this repository's
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:42Z (RFD66606-1060) 'root.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:43Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:44Z (RFD66606-1060) '`package.json`'s `lint:ste`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:45Z (RFD66606-1060) 'script read
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:46Z (RFD66606-1060) '`../../scripts/ste-lint-decisions.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:47Z (RFD66606-1060) 'and
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:48Z (RFD66606-1060) '`../../decisions/0*/README.md` at
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:49Z (RFD66606-1060) 'the time of this move, because
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:50Z (RFD66606-1060) '`package.json` lives two levels
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:51Z (RFD66606-1060) 'under the tree those two paths
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:52Z (RFD66606-1060) 'were
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:53Z (RFD66606-1060) 'actually in. RFD66606-1063 later
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:54Z (RFD66606-1060) 'deleted that script and that npm
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:55Z (RFD66606-1060) 'entry.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:56Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:57Z (RFD66606-1060) '`.pre-commit-config.yaml`'s
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:58Z (RFD66606-1060) '`studio-test` hook matches
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:03:59Z (RFD66606-1060) '`^(lib|test|config)/.*\.exs?$|^mix\.exs$`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:00Z (RFD66606-1060) 'now, in place of
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:01Z (RFD66606-1060) '`^weftspun_studio/.*\.exs?$`.
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:02Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:03Z (RFD66606-1060) 'Verified
- # tags: rfd:details-heading
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:04Z (RFD66606-1060) '`mix compile` and `mix test` ran
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:05Z (RFD66606-1060) 'clean from the new root, at the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:06Z (RFD66606-1060) 'time of this move: 100 of 105
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:07Z (RFD66606-1060) 'tests passed, 5 excluded. The 5
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:08Z (RFD66606-1060) 'failures were a pre-existing
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:09Z (RFD66606-1060) 'architecture mismatch, unrelated
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:10Z (RFD66606-1060) 'to
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:11Z (RFD66606-1060) 'this move.
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:12Z (RFD66606-1060) '`deps/taskweft_nif/priv/libtaskweft_nif.so`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:13Z (RFD66606-1060) 'was an ARM
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:14Z (RFD66606-1060) 'aarch64 binary, and this box is
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:15Z (RFD66606-1060) 'x86_64. `file` on the `.so`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:16Z (RFD66606-1060) 'confirmed it, and the failure was
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:17Z (RFD66606-1060) 'identical with or without the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:18Z (RFD66606-1060) 'swap. RFD66606-1057 records the
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:19Z (RFD66606-1060) 'later fix. All 105 tests pass
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:20Z (RFD66606-1060) 'now.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:21Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:22Z (RFD66606-1060) '`npx vitest run` from
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:23Z (RFD66606-1060) '`thirdparty/3d_studio/` resolves
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:24Z (RFD66606-1060) '`src/library/aiModelsCatalog.js`'s
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:25Z (RFD66606-1060) '`import
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:26Z (RFD66606-1060) ''../core/domain/catalog.js'`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:27Z (RFD66606-1060) 'correctly, now that `library/` is
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:28Z (RFD66606-1060) 'a real directory under `src/`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:29Z (RFD66606-1060) 'again, and not a symlink
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:30Z (RFD66606-1060) 'elsewhere. `src/core` and
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:31Z (RFD66606-1060) '`prepareGlbForApiUpload.test.js`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:32Z (RFD66606-1060) 'together: 54 passed, the same 5
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:33Z (RFD66606-1060) 'pre-existing `glbCompress.js`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:34Z (RFD66606-1060) 'export failures RFD66606-1023
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:35Z (RFD66606-1060) 'already
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:36Z (RFD66606-1060) 'records, and no import-resolution
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:37Z (RFD66606-1060) 'failure.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:38Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:39Z (RFD66606-1060) 'What this does not do
- # tags: rfd:details-heading
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:40Z (RFD66606-1060) 'It does not fix the
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:41Z (RFD66606-1060) '`prepareGlbForApiUpload` gap
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:42Z (RFD66606-1060) 'RFD66606-1023 already
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:43Z (RFD66606-1060) 'records. That gap sits inside
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:44Z (RFD66606-1060) '`thirdparty/3d_studio/src/library/glbCompress.js`
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:45Z (RFD66606-1060) 'now, the same as
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:46Z (RFD66606-1060) 'it sat inside
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:47Z (RFD66606-1060) '`src/library/glbCompress.js`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:48Z (RFD66606-1060) 'before.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:49Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:50Z (RFD66606-1060) 'It does not touch RFD66606-1023's
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:51Z (RFD66606-1060) '`src/core/` / `src/chain/` split.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:52Z (RFD66606-1060) 'Both
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:53Z (RFD66606-1060) 'trees moved together, under
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:54Z (RFD66606-1060) '`thirdparty/3d_studio/src/`, with
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:55Z (RFD66606-1060) 'every
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:56Z (RFD66606-1060) 'import between them intact.
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:57Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:58Z (RFD66606-1060) 'The problem
- # tags: rfd:details-heading
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:04:59Z (RFD66606-1060) '`src/library/` held 139 files and
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:00Z (RFD66606-1060) '56,376 lines. It predates
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:01Z (RFD66606-1060) 'RFD66606-1019's strangler fig and
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:02Z (RFD66606-1060) 'RFD66606-1023's `src/core/`
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:03Z (RFD66606-1060) 'split.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:04Z (RFD66606-1060) '
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:05Z (RFD66606-1060) 'The repository root carried the
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:06Z (RFD66606-1060) 'same problem at a larger scale.
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:07Z (RFD66606-1060) '`weftspun_studio/` sat as a
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:08Z (RFD66606-1060) 'subdirectory of the browser
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:09Z (RFD66606-1060) 'client's
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:10Z (RFD66606-1060) 'tree, even though RFD66606-1019
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:11Z (RFD66606-1060) 'makes it the API server the
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:12Z (RFD66606-1060) 'client is one
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:13Z (RFD66606-1060) 'consumer of. The end-shape system
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:14Z (RFD66606-1060) 'was the guest. The system it
- # tags: rfd:details, rfd:wrap
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:15Z (RFD66606-1060) 'replaces was the host.
- # tags: rfd:details
- Text:RFD1060  1 LINE
- Text:Written
-
-2026-08-25T00:05:16Z (RFD66606-1060) '
+2026-08-25T00:02:35Z (RFD66606-1060) '
  # tags: rfd:details
  Text:RFD1060  1 LINE
  Text:Written

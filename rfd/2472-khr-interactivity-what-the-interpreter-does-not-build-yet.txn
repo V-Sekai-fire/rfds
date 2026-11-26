@@ -4,717 +4,317 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2472) 'the Lean KHR_interactivity
+2026-11-07T00:00:01Z (RFD66606-2472) 'the Lean KHR_interactivity interpreter's gap against the extension's own text.
  # tags: rfd:feature
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2472) 'interpreter's gap against the
- # tags: rfd:feature, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2472) 'extension's own text.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2472) 'Persona/Khr.lean, the Lean module
+2026-11-07T00:00:02Z (RFD66606-2472) 'Persona/Khr.lean, the Lean module that builds and runs a KHR_interactivity graph.
  # tags: rfd:scope
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2472) 'that builds and runs a
- # tags: rfd:scope, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2472) 'KHR_interactivity graph.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2472) 'Which of the extension's own
+2026-11-07T00:00:03Z (RFD66606-2472) 'Which of the extension's own nodes and types does the interpreter not build yet, and which
  # tags: rfd:hook
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2472) 'nodes and types does the
- # tags: rfd:hook, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2472) 'interpreter not build yet, and
- # tags: rfd:hook, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2472) 'which
- # tags: rfd:hook, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2472) 'checks does it only do while a
+2026-11-07T00:00:04Z (RFD66606-2472) 'checks does it only do while a graph runs rather than before it starts?
  # tags: rfd:hook
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2472) 'graph runs rather than before it
- # tags: rfd:hook, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2472) 'starts?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2472) '
+2026-11-07T00:00:05Z (RFD66606-2472) '
  # tags: rfd:hook
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2472) 'Persona/Khr.lean already follows
+2026-11-07T00:00:06Z (RFD66606-2472) 'Persona/Khr.lean already follows the extension's text for typed int and bool, 32-bit wrap,
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2472) 'the extension's text for typed
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2472) 'int and bool, 32-bit wrap,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2472) 'flow/for re-reading endIndex,
+2026-11-07T00:00:07Z (RFD66606-2472) 'flow/for re-reading endIndex, socket order by string, variable/set with index-named sockets,
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2472) 'socket order by string,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2472) 'variable/set with index-named
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2472) 'sockets,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2472) 'pointer/get with isValid, and
+2026-11-07T00:00:08Z (RFD66606-2472) 'pointer/get with isValid, and math/switch. Floats, float vectors, matrices and quaternions are
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2472) 'math/switch. Floats, float
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2472) 'vectors, matrices and quaternions
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2472) 'are
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2472) 'not built at all, a float type
+2026-11-07T00:00:09Z (RFD66606-2472) 'not built at all, a float type simply rejects the graph, and a long list of nodes, reference
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2472) 'simply rejects the graph, and a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2472) 'long list of nodes, reference
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2472) 'template parameters and static
+2026-11-07T00:00:10Z (RFD66606-2472) 'template parameters and static type checking are missing too. A plan or a goal from elsewhere
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2472) 'type checking are missing too. A
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2472) 'plan or a goal from elsewhere
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2472) 'in this workspace can carry an
+2026-11-07T00:00:11Z (RFD66606-2472) 'in this workspace can carry an unbounded integer; the extension's own integers are 32-bit
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2472) 'unbounded integer; the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2472) 'extension's own integers are
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2472) '32-bit
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2472) 'two's complement, and that gap
+2026-11-07T00:00:12Z (RFD66606-2472) 'two's complement, and that gap sits underneath every node listed here.
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2472) 'sits underneath every node listed
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2472) 'here.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2472) '
+2026-11-07T00:00:13Z (RFD66606-2472) '
  # tags: rfd:intrigue
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:40Z (RFD66606-2472) 'Build one missing node, give it a
+2026-11-07T00:00:14Z (RFD66606-2472) 'Build one missing node, give it a positive and a negative control, and confirm a graph that
  # tags: rfd:exit
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2472) 'positive and a negative control,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:42Z (RFD66606-2472) 'and confirm a graph that
- # tags: rfd:exit, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2472) 'used to reject it now runs it,
+2026-11-07T00:00:15Z (RFD66606-2472) 'used to reject it now runs it, while a graph with the wrong socket type for it still refuses.
  # tags: rfd:exit
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:44Z (RFD66606-2472) 'while a graph with the wrong
- # tags: rfd:exit, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2472) 'socket type for it still refuses.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2472) '
+2026-11-07T00:00:16Z (RFD66606-2472) '
  # tags: rfd:exit
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:47Z (RFD66606-2472) 'KHR_interactivity: what the
+2026-11-07T00:00:17Z (RFD66606-2472) 'KHR_interactivity: what the interpreter does not build yet
  # tags: rfd:details-title
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:48Z (RFD66606-2472) 'interpreter does not build yet
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:49Z (RFD66606-2472) 'Build the missing pieces in the
+2026-11-07T00:00:18Z (RFD66606-2472) 'Build the missing pieces in the order they block a real graph: first the float and float
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2472) 'order they block a real graph:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:51Z (RFD66606-2472) 'first the float and float
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2472) 'vector types (so a float type
+2026-11-07T00:00:19Z (RFD66606-2472) 'vector types (so a float type stops rejecting the whole graph), then flow/doN, multiGate,
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2472) 'stops rejecting the whole graph),
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2472) 'then flow/doN, multiGate,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2472) 'waitAll, throttle, setDelay and
+2026-11-07T00:00:20Z (RFD66606-2472) 'waitAll, throttle, setDelay and cancelDelay, then the remaining events beyond event/onStart,
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2472) 'cancelDelay, then the remaining
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2472) 'events beyond event/onStart,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2472) 'then variable/interpolate and
+2026-11-07T00:00:21Z (RFD66606-2472) 'then variable/interpolate and pointer/interpolate, then the integer operations div, rem, sign,
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:00:59Z (RFD66606-2472) 'pointer/interpolate, then the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:00Z (RFD66606-2472) 'integer operations div, rem,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2472) 'sign,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2472) 'clamp, the shifts, clz, ctz and
+2026-11-07T00:00:22Z (RFD66606-2472) 'clamp, the shifts, clz, ctz and popcnt, then pointer/set's err flow, matrices and quaternions,
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2472) 'popcnt, then pointer/set's err
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2472) 'flow, matrices and quaternions,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:05Z (RFD66606-2472) 'and reference template parameters
+2026-11-07T00:00:23Z (RFD66606-2472) 'and reference template parameters including the doubled-bracket escape for a literal bracket.
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:06Z (RFD66606-2472) 'including the doubled-bracket
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2472) 'escape for a literal bracket.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:08Z (RFD66606-2472) 'Move every socket type check that
+2026-11-07T00:00:24Z (RFD66606-2472) 'Move every socket type check that runs today only while a node executes to a static pass
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:09Z (RFD66606-2472) 'runs today only while a node
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:10Z (RFD66606-2472) 'executes to a static pass
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:11Z (RFD66606-2472) 'before the run starts, so a
+2026-11-07T00:00:25Z (RFD66606-2472) 'before the run starts, so a mistyped graph is refused before any node fires.
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:12Z (RFD66606-2472) 'mistyped graph is refused before
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:13Z (RFD66606-2472) 'any node fires.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:14Z (RFD66606-2472) '
+2026-11-07T00:00:26Z (RFD66606-2472) '
  # tags: rfd:decision
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:15Z (RFD66606-2472) '- RFD66606-2339, where a persona
+2026-11-07T00:00:27Z (RFD66606-2472) '- RFD66606-2339, where a persona answers from a goal-task network and exports a plan as a
  # tags: rfd:related
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:16Z (RFD66606-2472) 'answers from a goal-task network
- # tags: rfd:related, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:17Z (RFD66606-2472) 'and exports a plan as a
- # tags: rfd:related, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:18Z (RFD66606-2472) '  KHR_interactivity graph.
+2026-11-07T00:00:28Z (RFD66606-2472) '  KHR_interactivity graph.
  # tags: rfd:related
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:19Z (RFD66606-2472) '- RFD66606-2292, the
+2026-11-07T00:00:29Z (RFD66606-2472) '- RFD66606-2292, the organization's own RECTGTN (Lean goal-task network) domain this
  # tags: rfd:related
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:20Z (RFD66606-2472) 'organization's own RECTGTN (Lean
- # tags: rfd:related, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:21Z (RFD66606-2472) 'goal-task network) domain this
- # tags: rfd:related, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:22Z (RFD66606-2472) '  interpreter's planner side
+2026-11-07T00:00:30Z (RFD66606-2472) '  interpreter's planner side composes in.
  # tags: rfd:related
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:23Z (RFD66606-2472) 'composes in.
- # tags: rfd:related, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:24Z (RFD66606-2472) '
+2026-11-07T00:00:31Z (RFD66606-2472) '
  # tags: rfd:related
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:25Z (RFD66606-2472) 'Already built
+2026-11-07T00:00:32Z (RFD66606-2472) 'Already built
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:26Z (RFD66606-2472) 'Typed int and bool, 32-bit wrap,
+2026-11-07T00:00:33Z (RFD66606-2472) 'Typed int and bool, 32-bit wrap, flow/for re-reading endIndex, socket order by string,
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:27Z (RFD66606-2472) 'flow/for re-reading endIndex,
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:28Z (RFD66606-2472) 'socket order by string,
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:29Z (RFD66606-2472) 'variable/set with index-named
+2026-11-07T00:00:34Z (RFD66606-2472) 'variable/set with index-named sockets, pointer/get with isValid, and math/switch, each
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:30Z (RFD66606-2472) 'sockets, pointer/get with
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:31Z (RFD66606-2472) 'isValid, and math/switch, each
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:32Z (RFD66606-2472) 'following the extension's own
+2026-11-07T00:00:35Z (RFD66606-2472) 'following the extension's own text.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:33Z (RFD66606-2472) 'text.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:34Z (RFD66606-2472) '
+2026-11-07T00:00:36Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:35Z (RFD66606-2472) '
+2026-11-07T00:00:37Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:36Z (RFD66606-2472) 'Types not built
+2026-11-07T00:00:38Z (RFD66606-2472) 'Types not built
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:37Z (RFD66606-2472) 'Floats and float vectors,
+2026-11-07T00:00:39Z (RFD66606-2472) 'Floats and float vectors, matrices and quaternions; a graph that declares a float type is
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:38Z (RFD66606-2472) 'matrices and quaternions; a graph
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:39Z (RFD66606-2472) 'that declares a float type is
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:40Z (RFD66606-2472) 'rejected outright today rather
+2026-11-07T00:00:40Z (RFD66606-2472) 'rejected outright today rather than run.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:41Z (RFD66606-2472) 'than run.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:42Z (RFD66606-2472) '
+2026-11-07T00:00:41Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:43Z (RFD66606-2472) '
+2026-11-07T00:00:42Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:44Z (RFD66606-2472) 'Nodes not built
+2026-11-07T00:00:43Z (RFD66606-2472) 'Nodes not built
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:45Z (RFD66606-2472) 'flow/doN, multiGate, waitAll,
+2026-11-07T00:00:44Z (RFD66606-2472) 'flow/doN, multiGate, waitAll, throttle, setDelay, cancelDelay; every event other than
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:46Z (RFD66606-2472) 'throttle, setDelay, cancelDelay;
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:47Z (RFD66606-2472) 'every event other than
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:48Z (RFD66606-2472) 'event/onStart;
+2026-11-07T00:00:45Z (RFD66606-2472) 'event/onStart; variable/interpolate and pointer/interpolate; the integer operations div, rem,
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:49Z (RFD66606-2472) 'variable/interpolate and
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:50Z (RFD66606-2472) 'pointer/interpolate; the integer
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:51Z (RFD66606-2472) 'operations div, rem,
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:52Z (RFD66606-2472) 'sign, clamp, the shifts, clz, ctz
+2026-11-07T00:00:46Z (RFD66606-2472) 'sign, clamp, the shifts, clz, ctz and popcnt; and pointer/set's err flow.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:53Z (RFD66606-2472) 'and popcnt; and pointer/set's err
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:54Z (RFD66606-2472) 'flow.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:01:55Z (RFD66606-2472) '
+2026-11-07T00:00:47Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:56Z (RFD66606-2472) '
+2026-11-07T00:00:48Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:57Z (RFD66606-2472) 'Syntax not built
+2026-11-07T00:00:49Z (RFD66606-2472) 'Syntax not built
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:58Z (RFD66606-2472) 'Reference template parameters
+2026-11-07T00:00:50Z (RFD66606-2472) 'Reference template parameters written as {name}, and the doubled-bracket escape used for a
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:01:59Z (RFD66606-2472) 'written as {name}, and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:00Z (RFD66606-2472) 'doubled-bracket escape used for a
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:01Z (RFD66606-2472) 'literal bracket inside a pointer
+2026-11-07T00:00:51Z (RFD66606-2472) 'literal bracket inside a pointer template.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:02Z (RFD66606-2472) 'template.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:03Z (RFD66606-2472) '
+2026-11-07T00:00:52Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:04Z (RFD66606-2472) '
+2026-11-07T00:00:53Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:05Z (RFD66606-2472) 'Checking that runs too late
+2026-11-07T00:00:54Z (RFD66606-2472) 'Checking that runs too late
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:06Z (RFD66606-2472) 'Every socket's type is checked
+2026-11-07T00:00:55Z (RFD66606-2472) 'Every socket's type is checked only while a node runs, not before the run starts, so a
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:07Z (RFD66606-2472) 'only while a node runs, not
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:08Z (RFD66606-2472) 'before the run starts, so a
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:09Z (RFD66606-2472) 'mistyped graph can run partway
+2026-11-07T00:00:56Z (RFD66606-2472) 'mistyped graph can run partway before it is caught.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:10Z (RFD66606-2472) 'before it is caught.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:11Z (RFD66606-2472) '
+2026-11-07T00:00:57Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:12Z (RFD66606-2472) '
+2026-11-07T00:00:58Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:13Z (RFD66606-2472) 'The integer width gap underneath
+2026-11-07T00:00:59Z (RFD66606-2472) 'The integer width gap underneath
  # tags: rfd:details-heading
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:14Z (RFD66606-2472) 'The planner's own integers,
+2026-11-07T00:01:00Z (RFD66606-2472) 'The planner's own integers, outside a KHR_interactivity graph, are unbounded. The extension's
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:15Z (RFD66606-2472) 'outside a KHR_interactivity
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:16Z (RFD66606-2472) 'graph, are unbounded. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:17Z (RFD66606-2472) 'extension's
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:18Z (RFD66606-2472) 'own integers are 32-bit two's
+2026-11-07T00:01:01Z (RFD66606-2472) 'own integers are 32-bit two's complement. Every node above inherits this gap until it is
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:19Z (RFD66606-2472) 'complement. Every node above
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:20Z (RFD66606-2472) 'inherits this gap until it is
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:21Z (RFD66606-2472) 'closed once, at the boundary,
+2026-11-07T00:01:02Z (RFD66606-2472) 'closed once, at the boundary, rather than node by node.
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written
 
-2026-11-07T00:02:22Z (RFD66606-2472) 'rather than node by node.
- # tags: rfd:details, rfd:wrap
- Text:RFD2472  1 LINE
- Text:Written
-
-2026-11-07T00:02:23Z (RFD66606-2472) '
+2026-11-07T00:01:03Z (RFD66606-2472) '
  # tags: rfd:details
  Text:RFD2472  1 LINE
  Text:Written

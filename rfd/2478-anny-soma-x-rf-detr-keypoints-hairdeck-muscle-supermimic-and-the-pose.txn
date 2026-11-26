@@ -4,572 +4,217 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2478) 'ANNY-soma-x gains a keypoint
+2026-11-07T00:00:01Z (RFD66606-2478) 'ANNY-soma-x gains a keypoint head, a hair occluder and muscle-driven motion.
  # tags: rfd:feature
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2478) 'head, a hair occluder and
- # tags: rfd:feature, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2478) 'muscle-driven motion.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2478) 'the ANNY-soma-x mesh and dataset
+2026-11-07T00:00:02Z (RFD66606-2478) 'the ANNY-soma-x mesh and dataset pipeline on the Windows desk's RTX 4090.
  # tags: rfd:scope
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2478) 'pipeline on the Windows desk's
- # tags: rfd:scope, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2478) 'RTX 4090.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2478) 'Can ANNY-soma-x (the reference
+2026-11-07T00:00:03Z (RFD66606-2478) 'Can ANNY-soma-x (the reference rig's SOMA-X variant) read a keypoint head, a hair occluder
  # tags: rfd:hook
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2478) 'rig's SOMA-X variant) read a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2478) 'keypoint head, a hair occluder
- # tags: rfd:hook, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2478) 'and a muscle-driven motion source
+2026-11-07T00:00:04Z (RFD66606-2478) 'and a muscle-driven motion source without crossing a licence line?
  # tags: rfd:hook
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2478) 'without crossing a licence line?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2478) '
+2026-11-07T00:00:05Z (RFD66606-2478) '
  # tags: rfd:hook
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2478) 'Nothing is started yet. RF-DETR
+2026-11-07T00:00:06Z (RFD66606-2478) 'Nothing is started yet. RF-DETR Keypoint (Preview, 576 px, Apache-2.0) runs on the Windows
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2478) 'Keypoint (Preview, 576 px,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2478) 'Apache-2.0) runs on the Windows
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2478) 'desk, a pixi env with Python 3.12
+2026-11-07T00:00:07Z (RFD66606-2478) 'desk, a pixi env with Python 3.12 and CUDA PyTorch; depth from it is ground truth only, never
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2478) 'and CUDA PyTorch; depth from it
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2478) 'is ground truth only, never
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2478) 'training data. HairDeck covers
+2026-11-07T00:00:08Z (RFD66606-2478) 'training data. HairDeck covers hair as both an occluder and an avatar part on CUDA.
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2478) 'hair as both an occluder and an
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2478) 'avatar part on CUDA.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2478) 'muscle-supermimic's MyoFullBody
+2026-11-07T00:00:09Z (RFD66606-2478) 'muscle-supermimic's MyoFullBody (24 GB) and the entities-model-explorer motion clips are the
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2478) '(24 GB) and the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2478) 'entities-model-explorer motion
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2478) 'clips are the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2478) 'motion sources, retargeted to the
+2026-11-07T00:00:10Z (RFD66606-2478) 'motion sources, retargeted to the 78 ANNY joints with rotation-star. The licences read on
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2478) '78 ANNY joints with
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2478) 'rotation-star. The licences read
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2478) 'on
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2478) '2026-11-02: SOMA-X and ANNY code
+2026-11-07T00:00:11Z (RFD66606-2478) '2026-11-02: SOMA-X and ANNY code are Apache-2.0, ANNY data is CC0, so ANNY-soma-x meshes and
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2478) 'are Apache-2.0, ANNY data is CC0,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2478) 'so ANNY-soma-x meshes and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2478) 'datasets can be published with
+2026-11-07T00:00:12Z (RFD66606-2478) 'datasets can be published with attribution; AMASS clips are SMPL-derived and are not used;
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2478) 'attribution; AMASS clips are
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2478) 'SMPL-derived and are not used;
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2478) 'HairDeck's code and weights are
+2026-11-07T00:00:13Z (RFD66606-2478) 'HairDeck's code and weights are Apache-2.0, and its DINOv3 encoder carries the DINOv3 License.
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2478) 'Apache-2.0, and its DINOv3
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2478) 'encoder carries the DINOv3
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2478) 'License.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2478) '
+2026-11-07T00:00:14Z (RFD66606-2478) '
  # tags: rfd:intrigue
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2478) 'A keypoint head, a hair occluder
+2026-11-07T00:00:15Z (RFD66606-2478) 'A keypoint head, a hair occluder pass and one retargeted muscle-driven clip each run end to
  # tags: rfd:exit
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2478) 'pass and one retargeted
- # tags: rfd:exit, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2478) 'muscle-driven clip each run end
- # tags: rfd:exit, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2478) 'to
- # tags: rfd:exit, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2478) 'end on the desk, and the publish
+2026-11-07T00:00:16Z (RFD66606-2478) 'end on the desk, and the publish manifest lists every asset's licence class.
  # tags: rfd:exit
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2478) 'manifest lists every asset's
- # tags: rfd:exit, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2478) 'licence class.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2478) '
+2026-11-07T00:00:17Z (RFD66606-2478) '
  # tags: rfd:exit
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2478) 'ANNY-soma-x: RF-DETR keypoints,
+2026-11-07T00:00:18Z (RFD66606-2478) 'ANNY-soma-x: RF-DETR keypoints, HairDeck, muscle-supermimic and the pose and shape sweep
  # tags: rfd:details-title
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2478) 'HairDeck, muscle-supermimic and
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:51Z (RFD66606-2478) 'the pose and shape sweep
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2478) '- Run RF-DETR Keypoint on the
+2026-11-07T00:00:19Z (RFD66606-2478) '- Run RF-DETR Keypoint on the Windows desk's RTX 4090 pixi env (Python 3.12, CUDA PyTorch).
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2478) 'Windows desk's RTX 4090 pixi env
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2478) '(Python 3.12, CUDA PyTorch).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2478) '  Its depth output is ground
+2026-11-07T00:00:20Z (RFD66606-2478) '  Its depth output is ground truth for evaluation only and is never folded into training data.
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2478) 'truth for evaluation only and is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2478) 'never folded into training data.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2478) '- Add HairDeck on CUDA for two
+2026-11-07T00:00:21Z (RFD66606-2478) '- Add HairDeck on CUDA for two roles: hair as an occluder in the keypoint pass, and hair as an
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:00:59Z (RFD66606-2478) 'roles: hair as an occluder in the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:00Z (RFD66606-2478) 'keypoint pass, and hair as an
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2478) '  avatar part on the published
+2026-11-07T00:00:22Z (RFD66606-2478) '  avatar part on the published mesh.
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:02Z (RFD66606-2478) 'mesh.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:03Z (RFD66606-2478) '- Retarget muscle-supermimic's
+2026-11-07T00:00:23Z (RFD66606-2478) '- Retarget muscle-supermimic's MyoFullBody (24 GB) and the entities-model-explorer motion
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:04Z (RFD66606-2478) 'MyoFullBody (24 GB) and the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:05Z (RFD66606-2478) 'entities-model-explorer motion
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2478) '  clips to the 78 ANNY joints
+2026-11-07T00:00:24Z (RFD66606-2478) '  clips to the 78 ANNY joints with rotation-star as the motion source for muscle-driven poses.
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:07Z (RFD66606-2478) 'with rotation-star as the motion
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:08Z (RFD66606-2478) 'source for muscle-driven poses.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:09Z (RFD66606-2478) '- Clear each asset against its
+2026-11-07T00:00:25Z (RFD66606-2478) '- Clear each asset against its licence before publish: SOMA-X and ANNY code (Apache-2.0) and
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:10Z (RFD66606-2478) 'licence before publish: SOMA-X
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:11Z (RFD66606-2478) 'and ANNY code (Apache-2.0) and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:12Z (RFD66606-2478) '  ANNY data (CC0) clear
+2026-11-07T00:00:26Z (RFD66606-2478) '  ANNY data (CC0) clear ANNY-soma-x meshes and datasets for publication with attribution.
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:13Z (RFD66606-2478) 'ANNY-soma-x meshes and datasets
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:14Z (RFD66606-2478) 'for publication with attribution.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:15Z (RFD66606-2478) '  No AMASS clip is used,
+2026-11-07T00:00:27Z (RFD66606-2478) '  No AMASS clip is used, published or unpublished: the blocklist's SMPL row covers internal
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:16Z (RFD66606-2478) 'published or unpublished: the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:17Z (RFD66606-2478) 'blocklist's SMPL row covers
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:18Z (RFD66606-2478) 'internal
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:19Z (RFD66606-2478) '  research too. HairDeck hair
+2026-11-07T00:00:28Z (RFD66606-2478) '  research too. HairDeck hair enters a publish manifest with the DINOv3 License named beside it.
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:20Z (RFD66606-2478) 'enters a publish manifest with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:21Z (RFD66606-2478) 'the DINOv3 License named beside
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:22Z (RFD66606-2478) 'it.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:23Z (RFD66606-2478) '
+2026-11-07T00:00:29Z (RFD66606-2478) '
  # tags: rfd:decision
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:24Z (RFD66606-2478) 'The pose and shape sweep
+2026-11-07T00:00:30Z (RFD66606-2478) 'The pose and shape sweep
  # tags: rfd:details-heading
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:25Z (RFD66606-2478) 'The sweep covers the pose and
+2026-11-07T00:00:31Z (RFD66606-2478) 'The sweep covers the pose and shape space ANNY-soma-x must cover: a grid of body shapes
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:26Z (RFD66606-2478) 'shape space ANNY-soma-x must
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:27Z (RFD66606-2478) 'cover: a grid of body shapes
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:28Z (RFD66606-2478) 'crossed with a set of
+2026-11-07T00:00:32Z (RFD66606-2478) 'crossed with a set of muscle-driven poses from the retargeted motion clips, each rendered
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:29Z (RFD66606-2478) 'muscle-driven poses from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:30Z (RFD66606-2478) 'retargeted motion clips, each
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:31Z (RFD66606-2478) 'rendered
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:32Z (RFD66606-2478) 'through the RF-DETR keypoint head
+2026-11-07T00:00:33Z (RFD66606-2478) 'through the RF-DETR keypoint head with HairDeck's occluder active.
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:33Z (RFD66606-2478) 'with HairDeck's occluder active.
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:34Z (RFD66606-2478) '
+2026-11-07T00:00:34Z (RFD66606-2478) '
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:35Z (RFD66606-2478) '
+2026-11-07T00:00:35Z (RFD66606-2478) '
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:36Z (RFD66606-2478) 'Open questions
+2026-11-07T00:00:36Z (RFD66606-2478) 'Open questions
  # tags: rfd:details-heading
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:37Z (RFD66606-2478) '- Whether rotation-star
+2026-11-07T00:00:37Z (RFD66606-2478) '- Whether rotation-star retargeting onto the 78 ANNY joints preserves muscle-supermimic's
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:38Z (RFD66606-2478) 'retargeting onto the 78 ANNY
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:39Z (RFD66606-2478) 'joints preserves
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:40Z (RFD66606-2478) 'muscle-supermimic's
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:41Z (RFD66606-2478) '  joint limits, or needs a clamp
+2026-11-07T00:00:38Z (RFD66606-2478) '  joint limits, or needs a clamp pass.
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:42Z (RFD66606-2478) 'pass.
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:43Z (RFD66606-2478) '- Which MyoFullBody and
+2026-11-07T00:00:39Z (RFD66606-2478) '- Which MyoFullBody and entities-model-explorer clips have no SMPL in their history. A clip
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:44Z (RFD66606-2478) 'entities-model-explorer clips
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:45Z (RFD66606-2478) 'have no SMPL in their history. A
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:46Z (RFD66606-2478) 'clip
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:47Z (RFD66606-2478) '  that cannot show it is left out
+2026-11-07T00:00:40Z (RFD66606-2478) '  that cannot show it is left out of the sweep.
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:48Z (RFD66606-2478) 'of the sweep.
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:49Z (RFD66606-2478) '- Whether RF-DETR's 576 px input
+2026-11-07T00:00:41Z (RFD66606-2478) '- Whether RF-DETR's 576 px input resolution undersamples the hand and face keypoints ANNY
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:50Z (RFD66606-2478) 'resolution undersamples the hand
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:51Z (RFD66606-2478) 'and face keypoints ANNY
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:52Z (RFD66606-2478) '  needs, or a crop-and-rerun pass
+2026-11-07T00:00:42Z (RFD66606-2478) '  needs, or a crop-and-rerun pass is required.
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written
 
-2026-11-07T00:01:53Z (RFD66606-2478) 'is required.
- # tags: rfd:details, rfd:wrap
- Text:RFD2478  1 LINE
- Text:Written
-
-2026-11-07T00:01:54Z (RFD66606-2478) '
+2026-11-07T00:00:43Z (RFD66606-2478) '
  # tags: rfd:details
  Text:RFD2478  1 LINE
  Text:Written

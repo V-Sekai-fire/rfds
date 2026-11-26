@@ -4,392 +4,392 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-12T00:00:01Z (RFD66606-2312) 'a release tag is the Go
+2026-10-12T00:00:01Z (RFD66606-2312) 'a release tag is the Go pseudo-version of the commit it points at, so every tag sorts
  # tags: rfd:feature
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:02Z (RFD66606-2312) 'pseudo-version of the commit it
- # tags: rfd:feature, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:03Z (RFD66606-2312) 'points at, so every tag sorts
- # tags: rfd:feature, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:04Z (RFD66606-2312) 'by time in a file listing and
+2026-10-12T00:00:02Z (RFD66606-2312) 'by time in a file listing and parses as a version in every package tool
  # tags: rfd:feature
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:05Z (RFD66606-2312) 'parses as a version in every
- # tags: rfd:feature, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:06Z (RFD66606-2312) 'package tool
- # tags: rfd:feature, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:07Z (RFD66606-2312) 'release tags in the V-Sekai-fire
+2026-10-12T00:00:03Z (RFD66606-2312) 'release tags in the V-Sekai-fire and chibifire-stages repositories, cut from
  # tags: rfd:scope
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:08Z (RFD66606-2312) 'and chibifire-stages
- # tags: rfd:scope, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:09Z (RFD66606-2312) 'repositories, cut from
- # tags: rfd:scope, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:10Z (RFD66606-2312) '2026-10-13 on, and
+2026-10-12T00:00:04Z (RFD66606-2312) '2026-10-13 on, and `scripts/check_release_tags.exs`
  # tags: rfd:scope
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:11Z (RFD66606-2312) '`scripts/check_release_tags.exs`
- # tags: rfd:scope, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:12Z (RFD66606-2312) 'A release tag is computed from
+2026-10-12T00:00:05Z (RFD66606-2312) 'A release tag is computed from its commit, so it sorts by time and parses everywhere.
  # tags: rfd:hook
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:13Z (RFD66606-2312) 'its commit, so it sorts by time
- # tags: rfd:hook, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:14Z (RFD66606-2312) 'and parses everywhere.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:15Z (RFD66606-2312) '
+2026-10-12T00:00:06Z (RFD66606-2312) '
  # tags: rfd:hook
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:16Z (RFD66606-2312) 'The orgs' releases carry four
+2026-10-12T00:00:07Z (RFD66606-2312) 'The orgs' releases carry four naming schemes and no rule. No single scheme among them
  # tags: rfd:intrigue
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:17Z (RFD66606-2312) 'naming schemes and no rule. No
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:18Z (RFD66606-2312) 'single scheme among them
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:19Z (RFD66606-2312) 'sorts by time in a file listing
+2026-10-12T00:00:08Z (RFD66606-2312) 'sorts by time in a file listing and also parses as a version in Mix, Cargo, npm and Go.
  # tags: rfd:intrigue
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:20Z (RFD66606-2312) 'and also parses as a version in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:21Z (RFD66606-2312) 'Mix, Cargo, npm and Go.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:22Z (RFD66606-2312) '
+2026-10-12T00:00:09Z (RFD66606-2312) '
  # tags: rfd:intrigue
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:23Z (RFD66606-2312) 'Run `elixir
+2026-10-12T00:00:10Z (RFD66606-2312) 'Run `elixir scripts/check_release_tags.exs` to recompute every tag, and read below for the later
  # tags: rfd:exit
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:24Z (RFD66606-2312) 'scripts/check_release_tags.exs`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:25Z (RFD66606-2312) 'to recompute every tag, and read
- # tags: rfd:exit, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:26Z (RFD66606-2312) 'below for the later
- # tags: rfd:exit, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:27Z (RFD66606-2312) 'parts.
+2026-10-12T00:00:11Z (RFD66606-2312) 'parts.
  # tags: rfd:exit
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:28Z (RFD66606-2312) '
+2026-10-12T00:00:12Z (RFD66606-2312) '
  # tags: rfd:exit
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:29Z (RFD66606-2312) 'release tags are go
+2026-10-12T00:00:13Z (RFD66606-2312) 'release tags are go pseudo-versions
  # tags: rfd:details-title
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:30Z (RFD66606-2312) 'pseudo-versions
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:31Z (RFD66606-2312) 'A release tag is
+2026-10-12T00:00:14Z (RFD66606-2312) 'A release tag is `v0.0.0-<time>-<hash>`: the tagged commit's committer
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:32Z (RFD66606-2312) '`v0.0.0-<time>-<hash>`: the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:33Z (RFD66606-2312) 'tagged commit's committer
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:34Z (RFD66606-2312) 'time in UTC as `YYYYMMDDhhmmss`,
+2026-10-12T00:00:15Z (RFD66606-2312) 'time in UTC as `YYYYMMDDhhmmss`, then the first 12 hex digits of the
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:35Z (RFD66606-2312) 'then the first 12 hex digits of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:36Z (RFD66606-2312) 'the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:37Z (RFD66606-2312) 'commit. It is the shape of a Go
+2026-10-12T00:00:16Z (RFD66606-2312) 'commit. It is the shape of a Go pseudo-version, and it is computed from
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:38Z (RFD66606-2312) 'pseudo-version, and it is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:39Z (RFD66606-2312) 'computed from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:40Z (RFD66606-2312) 'the commit, never typed. The core
+2026-10-12T00:00:17Z (RFD66606-2312) 'the commit, never typed. The core stays `v0.0.0`. A stage, a rung name or
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:41Z (RFD66606-2312) 'stays `v0.0.0`. A stage, a rung
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:42Z (RFD66606-2312) 'name or
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:43Z (RFD66606-2312) 'a "1.0" goes in the release title
+2026-10-12T00:00:18Z (RFD66606-2312) 'a "1.0" goes in the release title and the stage branch, not in the tag.
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:44Z (RFD66606-2312) 'and the stage branch, not in the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:45Z (RFD66606-2312) 'tag.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:00:46Z (RFD66606-2312) 'The operator chose the form on
+2026-10-12T00:00:19Z (RFD66606-2312) 'The operator chose the form on 2026-10-12 ("I like go's").
  # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:47Z (RFD66606-2312) '2026-10-12 ("I like go's").
- # tags: rfd:decision, rfd:wrap
+2026-10-12T00:00:20Z (RFD66606-2312) '
+ # tags: rfd:decision
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:48Z (RFD66606-2312) '
+2026-10-12T00:00:21Z (RFD66606-2312) '
  # tags: rfd:decision
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:22Z (RFD66606-2312) '- RFD66606-2294, interchangeable sessions: the stage branches this RFD leaves
+ # tags: rfd:related
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:23Z (RFD66606-2312) '  the stage to.
+ # tags: rfd:related
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:24Z (RFD66606-2312) '- RFD66606-2295, calibrated replies: the times here are UTC, as there.
+ # tags: rfd:related
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:25Z (RFD66606-2312) '
+ # tags: rfd:related
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:26Z (RFD66606-2312) 'The three parts
+ # tags: rfd:details-heading
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:27Z (RFD66606-2312) 'The tag is the first of three parts of one release system. Each part does
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:28Z (RFD66606-2312) 'one job: identity is a hash, order is a fixed-width UTC time, stage is a
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:29Z (RFD66606-2312) 'pointer that moves, and compatibility is a version on the interface that
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:30Z (RFD66606-2312) 'breaks. The details give the later parts.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:31Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:32Z (RFD66606-2312) 'Sources
+ # tags: rfd:details-heading
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:33Z (RFD66606-2312) 'Drafted on 2026-10-12 from the release inventory, the sort runs and the
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:34Z (RFD66606-2312) 'parser runs below, all taken the same day. The form and the "everywhere"
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:35Z (RFD66606-2312) 'bar are the operator's.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:36Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:37Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:38Z (RFD66606-2312) 'What a tag has to satisfy
+ # tags: rfd:details-heading
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:39Z (RFD66606-2312) 'The operator's bar: a tag sorts in filesystem order, and the same string
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:40Z (RFD66606-2312) 'works everywhere a version is read. Measured on 2026-10-12, each candidate
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:41Z (RFD66606-2312) 'through each tool's own parser:
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:42Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:43Z (RFD66606-2312) '| Candidate | `ls` order | Mix | Cargo | npm | Go |
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:44Z (RFD66606-2312) '| --- | --- | --- | --- | --- | --- |
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:45Z (RFD66606-2312) '| `v2026.01.05`, padded calendar date | yes | no | no | no | no |
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:46Z (RFD66606-2312) '| `v2026.1.5`, unpadded calendar date | no | yes | yes | yes | yes |
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:47Z (RFD66606-2312) '| `v1.0.0-beta.1` and `v1.0.0` | no | yes | yes | yes | yes |
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:48Z (RFD66606-2312) '| `v0.0.0-20261012203512-50cc405a1b2c` | yes | yes | yes | yes | yes |
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
 2026-10-12T00:00:49Z (RFD66606-2312) '
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:50Z (RFD66606-2312) '- RFD66606-2294, interchangeable
- # tags: rfd:related
+2026-10-12T00:00:50Z (RFD66606-2312) '- SemVer forbids a leading zero in a number, so a padded month fails every
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:51Z (RFD66606-2312) 'sessions: the stage branches this
- # tags: rfd:related, rfd:wrap
+2026-10-12T00:00:51Z (RFD66606-2312) '  package tool. Unpadded, `2026.10.12` sorts before `2026.9.1`.
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:52Z (RFD66606-2312) 'RFD leaves
- # tags: rfd:related, rfd:wrap
+2026-10-12T00:00:52Z (RFD66606-2312) '- No file listing puts a release after its own pre-releases: `ls`, `sort
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:53Z (RFD66606-2312) '  the stage to.
- # tags: rfd:related
+2026-10-12T00:00:53Z (RFD66606-2312) '  -V` and Finder all list `v1.0.0` before `v1.0.0-beta.1`.
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:54Z (RFD66606-2312) '- RFD66606-2295, calibrated
- # tags: rfd:related
+2026-10-12T00:00:54Z (RFD66606-2312) '- The Go form carries the date inside one alphanumeric pre-release field,
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:55Z (RFD66606-2312) 'replies: the times here are UTC,
- # tags: rfd:related, rfd:wrap
+2026-10-12T00:00:55Z (RFD66606-2312) '  where SemVer allows the zeros. `ls`, `sort -V` and Finder each put
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:56Z (RFD66606-2312) 'as there.
- # tags: rfd:related, rfd:wrap
+2026-10-12T00:00:56Z (RFD66606-2312) '  samples from January, October, the next day and the next year in time
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:57Z (RFD66606-2312) '
- # tags: rfd:related
+2026-10-12T00:00:57Z (RFD66606-2312) '  order.
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:58Z (RFD66606-2312) 'The three parts
+2026-10-12T00:00:58Z (RFD66606-2312) '- Python's PEP 440 rejects the Go form. A Python package from the same
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:00:59Z (RFD66606-2312) '  commit is `0.0.0.devYYYYMMDDhhmmss`. Docker's tag grammar admits the form;
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:00Z (RFD66606-2312) '  no Docker daemon ran in the measurement.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:01Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:02Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:03Z (RFD66606-2312) 'What others do
  # tags: rfd:details-heading
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:00:59Z (RFD66606-2312) 'The tag is the first of three
+2026-10-12T00:01:04Z (RFD66606-2312) 'Read off the live registries on 2026-10-12. Builds between releases put an
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:00Z (RFD66606-2312) 'parts of one release system. Each
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:01Z (RFD66606-2312) 'part does
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:02Z (RFD66606-2312) 'one job: identity is a hash,
+2026-10-12T00:01:05Z (RFD66606-2312) 'ISO basic date inside the pre-release: TypeScript `7.1.0-dev.20261012.1`,
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:03Z (RFD66606-2312) 'order is a fixed-width UTC time,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:04Z (RFD66606-2312) 'stage is a
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:05Z (RFD66606-2312) 'pointer that moves, and
+2026-10-12T00:01:06Z (RFD66606-2312) 'React `19.3.0-canary-9f2e1f88-20261012`, Node.js
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:06Z (RFD66606-2312) 'compatibility is a version on the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:07Z (RFD66606-2312) 'interface that
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:08Z (RFD66606-2312) 'breaks. The details give the
+2026-10-12T00:01:07Z (RFD66606-2312) '`v27.0.0-nightly202610123b639be3a4`, Go `v0.0.0-20261011100332-faecfb24eb49`.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:09Z (RFD66606-2312) 'later parts.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:10Z (RFD66606-2312) '
+2026-10-12T00:01:08Z (RFD66606-2312) 'Calendar versions that must stay SemVer drop the padding: pip `26.2.1`,
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:11Z (RFD66606-2312) 'Sources
+2026-10-12T00:01:09Z (RFD66606-2312) 'Home Assistant `2026.10.1`. Projects that list versions as strings pad
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:10Z (RFD66606-2312) 'instead: the Arch Linux ISOs, `YYYY.0M.0D` since 2012. Only Go's form,
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:11Z (RFD66606-2312) 'whose core never moves, sorts as plain bytes and parses as SemVer at once.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:12Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:13Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:14Z (RFD66606-2312) 'The check
  # tags: rfd:details-heading
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:12Z (RFD66606-2312) 'Drafted on 2026-10-12 from the
+2026-10-12T00:01:15Z (RFD66606-2312) '`scripts/check_release_tags.exs` recomputes every tag from its commit:
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:13Z (RFD66606-2312) 'release inventory, the sort runs
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:14Z (RFD66606-2312) 'and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:15Z (RFD66606-2312) 'parser runs below, all taken the
+2026-10-12T00:01:16Z (RFD66606-2312) '
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:16Z (RFD66606-2312) 'same day. The form and the
- # tags: rfd:details, rfd:wrap
+2026-10-12T00:01:17Z (RFD66606-2312) '    elixir scripts/check_release_tags.exs [<repo>]
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:17Z (RFD66606-2312) '"everywhere"
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:18Z (RFD66606-2312) 'bar are the operator's.
+2026-10-12T00:01:18Z (RFD66606-2312) '    elixir scripts/check_release_tags.exs --self-test
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
@@ -399,47 +399,47 @@
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:20Z (RFD66606-2312) '
+2026-10-12T00:01:20Z (RFD66606-2312) 'A tag on a commit from before 2026-10-13 is legacy, counted and named
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:21Z (RFD66606-2312) 'What a tag has to satisfy
- # tags: rfd:details-heading
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:22Z (RFD66606-2312) 'The operator's bar: a tag sorts
+2026-10-12T00:01:21Z (RFD66606-2312) 'rather than failed; renaming a published tag breaks whatever points at it.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:23Z (RFD66606-2312) 'in filesystem order, and the same
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:24Z (RFD66606-2312) 'string
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:25Z (RFD66606-2312) 'works everywhere a version is
+2026-10-12T00:01:22Z (RFD66606-2312) 'The self-test plants six tags in a scratch repository. The commit's own
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:26Z (RFD66606-2312) 'read. Measured on 2026-10-12,
- # tags: rfd:details, rfd:wrap
+2026-10-12T00:01:23Z (RFD66606-2312) 'pseudo-version passes; a seven-digit hash, a local-time stamp, a `v1.0.0`
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:27Z (RFD66606-2312) 'each candidate
- # tags: rfd:details, rfd:wrap
+2026-10-12T00:01:24Z (RFD66606-2312) 'core, a padded calendar date and a stage-suffixed date each fail by name;
+ # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:28Z (RFD66606-2312) 'through each tool's own parser:
+2026-10-12T00:01:25Z (RFD66606-2312) 'a pre-cutover tag reads as legacy. Go's own `module.IsPseudoVersion`
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:26Z (RFD66606-2312) 'accepts a seven-digit hash, so the 12-digit rule is this check's, not
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:27Z (RFD66606-2312) 'Go's. Go does hold a pseudo-version to its commit's time and hash, which is
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:28Z (RFD66606-2312) 'why the tag is computed:
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
@@ -449,1022 +449,212 @@
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:30Z (RFD66606-2312) '| Candidate | `ls` order | Mix |
+2026-10-12T00:01:30Z (RFD66606-2312) '    TZ=UTC git log -1 --format='v0.0.0-%cd-%h' \
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:31Z (RFD66606-2312) 'Cargo | npm | Go |
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:32Z (RFD66606-2312) '| --- | --- | --- | --- | --- |
+2026-10-12T00:01:31Z (RFD66606-2312) '      --date=format-local:%Y%m%d%H%M%S --abbrev=12
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:33Z (RFD66606-2312) '--- |
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:34Z (RFD66606-2312) '| `v2026.01.05`, padded calendar
+2026-10-12T00:01:32Z (RFD66606-2312) '
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:35Z (RFD66606-2312) 'date | yes | no | no | no | no |
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:36Z (RFD66606-2312) '| `v2026.1.5`, unpadded calendar
+2026-10-12T00:01:33Z (RFD66606-2312) '
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:01:37Z (RFD66606-2312) 'date | no | yes | yes | yes | yes
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:38Z (RFD66606-2312) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:39Z (RFD66606-2312) '| `v1.0.0-beta.1` and `v1.0.0` |
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:40Z (RFD66606-2312) 'no | yes | yes | yes | yes |
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:41Z (RFD66606-2312) '|
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:42Z (RFD66606-2312) '`v0.0.0-20261012203512-50cc405a1b2c`
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:43Z (RFD66606-2312) '| yes | yes | yes | yes | yes |
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:44Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:45Z (RFD66606-2312) '- SemVer forbids a leading zero
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:46Z (RFD66606-2312) 'in a number, so a padded month
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:47Z (RFD66606-2312) 'fails every
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:48Z (RFD66606-2312) '  package tool. Unpadded,
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:49Z (RFD66606-2312) '`2026.10.12` sorts before
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:50Z (RFD66606-2312) '`2026.9.1`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:51Z (RFD66606-2312) '- No file listing puts a release
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:52Z (RFD66606-2312) 'after its own pre-releases: `ls`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:53Z (RFD66606-2312) '`sort
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:54Z (RFD66606-2312) '  -V` and Finder all list
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:55Z (RFD66606-2312) '`v1.0.0` before `v1.0.0-beta.1`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:56Z (RFD66606-2312) '- The Go form carries the date
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:57Z (RFD66606-2312) 'inside one alphanumeric
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:58Z (RFD66606-2312) 'pre-release field,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:01:59Z (RFD66606-2312) '  where SemVer allows the zeros.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:00Z (RFD66606-2312) '`ls`, `sort -V` and Finder each
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:01Z (RFD66606-2312) 'put
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:02Z (RFD66606-2312) '  samples from January, October,
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:03Z (RFD66606-2312) 'the next day and the next year in
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:04Z (RFD66606-2312) 'time
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:05Z (RFD66606-2312) '  order.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:06Z (RFD66606-2312) '- Python's PEP 440 rejects the Go
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:07Z (RFD66606-2312) 'form. A Python package from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:08Z (RFD66606-2312) 'same
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:09Z (RFD66606-2312) '  commit is
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:10Z (RFD66606-2312) '`0.0.0.devYYYYMMDDhhmmss`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:11Z (RFD66606-2312) 'Docker's tag grammar admits the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:12Z (RFD66606-2312) 'form;
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:13Z (RFD66606-2312) '  no Docker daemon ran in the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:14Z (RFD66606-2312) 'measurement.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:15Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:16Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:17Z (RFD66606-2312) 'What others do
+2026-10-12T00:01:34Z (RFD66606-2312) 'The later parts
  # tags: rfd:details-heading
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:18Z (RFD66606-2312) 'Read off the live registries on
+2026-10-12T00:01:35Z (RFD66606-2312) 'Each part starts once the one before it runs.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:19Z (RFD66606-2312) '2026-10-12. Builds between
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:20Z (RFD66606-2312) 'releases put an
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:21Z (RFD66606-2312) 'ISO basic date inside the
+2026-10-12T00:01:36Z (RFD66606-2312) '
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:22Z (RFD66606-2312) 'pre-release: TypeScript
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:23Z (RFD66606-2312) '`7.1.0-dev.20261012.1`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:24Z (RFD66606-2312) 'React
+2026-10-12T00:01:37Z (RFD66606-2312) '1. The tag, this RFD.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:25Z (RFD66606-2312) '`19.3.0-canary-9f2e1f88-20261012`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:26Z (RFD66606-2312) 'Node.js
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:27Z (RFD66606-2312) '`v27.0.0-nightly202610123b639be3a4`,
+2026-10-12T00:01:38Z (RFD66606-2312) '2. The stage is a pointer. A moving tag per stage (`dev`, `beta`, `rc`,
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:28Z (RFD66606-2312) 'Go
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:29Z (RFD66606-2312) '`v0.0.0-20261011100332-faecfb24eb49`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:30Z (RFD66606-2312) 'Calendar versions that must stay
+2026-10-12T00:01:39Z (RFD66606-2312) '   `release`) names the build that stage holds. Promotion moves the
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:31Z (RFD66606-2312) 'SemVer drop the padding: pip
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:32Z (RFD66606-2312) '`26.2.1`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:33Z (RFD66606-2312) 'Home Assistant `2026.10.1`.
+2026-10-12T00:01:40Z (RFD66606-2312) '   pointer to the same commit; nothing is rebuilt or renamed. The GitHub
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:34Z (RFD66606-2312) 'Projects that list versions as
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:35Z (RFD66606-2312) 'strings pad
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:36Z (RFD66606-2312) 'instead: the Arch Linux ISOs,
+2026-10-12T00:01:41Z (RFD66606-2312) '   pre-release flag follows the pointer.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:37Z (RFD66606-2312) '`YYYY.0M.0D` since 2012. Only
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:38Z (RFD66606-2312) 'Go's form,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:39Z (RFD66606-2312) 'whose core never moves, sorts as
+2026-10-12T00:01:42Z (RFD66606-2312) '3. One release record per repository, and every other format derived from
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:40Z (RFD66606-2312) 'plain bytes and parses as SemVer
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:41Z (RFD66606-2312) 'at once.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:42Z (RFD66606-2312) '
+2026-10-12T00:01:43Z (RFD66606-2312) '   it. The Godot engine already works this way: `version.py` holds major,
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:43Z (RFD66606-2312) '
+2026-10-12T00:01:44Z (RFD66606-2312) '   minor, patch and status; the build adds the commit hash and committer
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:44Z (RFD66606-2312) 'The check
+2026-10-12T00:01:45Z (RFD66606-2312) '   timestamp from git; the Windows resource takes `FILEVERSION` from the
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:46Z (RFD66606-2312) '   numbers; the Android build turns the status into a digit of
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:47Z (RFD66606-2312) '   `versionCode` (dev 1, alpha 2, beta 3). Here the record is the
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:48Z (RFD66606-2312) '   repository's `CITATION.cff` (operator, 2026-10-12), in two halves. The
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:49Z (RFD66606-2312) '   committed file holds what does not change per build: title, authors,
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:50Z (RFD66606-2312) '   licence, the interface versions. A commit cannot carry its own hash, so
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:51Z (RFD66606-2312) '   the release step writes the per-build half into the copy that ships
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:52Z (RFD66606-2312) '   with the artifact: `version` is the tag, `commit` the full hash,
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:53Z (RFD66606-2312) '   `date-released` the UTC date. CFF 1.2.0 admits no other top-level key;
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:54Z (RFD66606-2312) '   a `status` key fails its schema. The stage, the derived forms and the
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:55Z (RFD66606-2312) '   artifact digests ride as `identifiers` of type `other`: `stage:dev`,
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:56Z (RFD66606-2312) '   `windows:YYYY.MMDD.hhmm.0`, `android:<versionCode>`,
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:57Z (RFD66606-2312) '   `pep440:0.0.0.devYYYYMMDDhhmmss`, `sha256:<digest>`. A sample of that
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:58Z (RFD66606-2312) '   shape validates against the CFF 1.2.0 JSON schema. The check recomputes
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:01:59Z (RFD66606-2312) '   every derived value from the `commit` field.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:00Z (RFD66606-2312) '4. Compatibility rides on the interface that breaks: a protocol, ABI or
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:01Z (RFD66606-2312) '   save-format version that moves only when that interface does, as Go
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:02Z (RFD66606-2312) '   moves a module path to `/v2`.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:03Z (RFD66606-2312) '5. A signed attestation binds the record to the artifact's digest.
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:04Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:05Z (RFD66606-2312) '
+ # tags: rfd:details
+ Text:RFD2312  1 LINE
+ Text:Written
+
+2026-10-12T00:02:06Z (RFD66606-2312) 'The problem
  # tags: rfd:details-heading
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:45Z (RFD66606-2312) '`scripts/check_release_tags.exs`
+2026-10-12T00:02:07Z (RFD66606-2312) 'Of 60 GitHub
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:46Z (RFD66606-2312) 'recomputes every tag from its
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:47Z (RFD66606-2312) 'commit:
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:48Z (RFD66606-2312) '
+2026-10-12T00:02:08Z (RFD66606-2312) 'releases in repositories pushed since 2026-06-01, 33 are SemVer
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:49Z (RFD66606-2312) '    elixir
+2026-10-12T00:02:09Z (RFD66606-2312) 'pre-releases in at least four spellings, 7 are dates, 2 are plain SemVer
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:50Z (RFD66606-2312) 'scripts/check_release_tags.exs
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:51Z (RFD66606-2312) '[<repo>]
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:52Z (RFD66606-2312) '    elixir
+2026-10-12T00:02:10Z (RFD66606-2312) 'and 18 are free names.
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written
 
-2026-10-12T00:02:53Z (RFD66606-2312) 'scripts/check_release_tags.exs
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:54Z (RFD66606-2312) '--self-test
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:55Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:56Z (RFD66606-2312) 'A tag on a commit from before
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:57Z (RFD66606-2312) '2026-10-13 is legacy, counted and
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:58Z (RFD66606-2312) 'named
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:02:59Z (RFD66606-2312) 'rather than failed; renaming a
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:00Z (RFD66606-2312) 'published tag breaks whatever
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:01Z (RFD66606-2312) 'points at it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:02Z (RFD66606-2312) 'The self-test plants six tags in
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:03Z (RFD66606-2312) 'a scratch repository. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:04Z (RFD66606-2312) 'commit's own
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:05Z (RFD66606-2312) 'pseudo-version passes; a
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:06Z (RFD66606-2312) 'seven-digit hash, a local-time
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:07Z (RFD66606-2312) 'stamp, a `v1.0.0`
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:08Z (RFD66606-2312) 'core, a padded calendar date and
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:09Z (RFD66606-2312) 'a stage-suffixed date each fail
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:10Z (RFD66606-2312) 'by name;
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:11Z (RFD66606-2312) 'a pre-cutover tag reads as
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:12Z (RFD66606-2312) 'legacy. Go's own
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:13Z (RFD66606-2312) '`module.IsPseudoVersion`
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:14Z (RFD66606-2312) 'accepts a seven-digit hash, so
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:15Z (RFD66606-2312) 'the 12-digit rule is this
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:16Z (RFD66606-2312) 'check's, not
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:17Z (RFD66606-2312) 'Go's. Go does hold a
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:18Z (RFD66606-2312) 'pseudo-version to its commit's
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:19Z (RFD66606-2312) 'time and hash, which is
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:20Z (RFD66606-2312) 'why the tag is computed:
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:21Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:22Z (RFD66606-2312) '    TZ=UTC git log -1
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:23Z (RFD66606-2312) '--format='v0.0.0-%cd-%h' \
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:24Z (RFD66606-2312) '      --date=format-local:%Y%m%d%H%M%S
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:25Z (RFD66606-2312) '--abbrev=12
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:26Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:27Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:28Z (RFD66606-2312) 'The later parts
- # tags: rfd:details-heading
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:29Z (RFD66606-2312) 'Each part starts once the one
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:30Z (RFD66606-2312) 'before it runs.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:31Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:32Z (RFD66606-2312) '1. The tag, this RFD.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:33Z (RFD66606-2312) '2. The stage is a pointer. A
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:34Z (RFD66606-2312) 'moving tag per stage (`dev`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:35Z (RFD66606-2312) '`beta`, `rc`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:36Z (RFD66606-2312) '   `release`) names the build
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:37Z (RFD66606-2312) 'that stage holds. Promotion moves
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:38Z (RFD66606-2312) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:39Z (RFD66606-2312) '   pointer to the same commit;
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:40Z (RFD66606-2312) 'nothing is rebuilt or renamed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:41Z (RFD66606-2312) 'The GitHub
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:42Z (RFD66606-2312) '   pre-release flag follows the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:43Z (RFD66606-2312) 'pointer.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:44Z (RFD66606-2312) '3. One release record per
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:45Z (RFD66606-2312) 'repository, and every other
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:46Z (RFD66606-2312) 'format derived from
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:47Z (RFD66606-2312) '   it. The Godot engine already
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:48Z (RFD66606-2312) 'works this way: `version.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:49Z (RFD66606-2312) 'holds major,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:50Z (RFD66606-2312) '   minor, patch and status; the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:51Z (RFD66606-2312) 'build adds the commit hash and
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:52Z (RFD66606-2312) 'committer
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:53Z (RFD66606-2312) '   timestamp from git; the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:54Z (RFD66606-2312) 'Windows resource takes
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:55Z (RFD66606-2312) '`FILEVERSION` from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:56Z (RFD66606-2312) '   numbers; the Android build
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:57Z (RFD66606-2312) 'turns the status into a digit of
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:58Z (RFD66606-2312) '   `versionCode` (dev 1, alpha 2,
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:03:59Z (RFD66606-2312) 'beta 3). Here the record is the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:00Z (RFD66606-2312) '   repository's `CITATION.cff`
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:01Z (RFD66606-2312) '(operator, 2026-10-12), in two
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:02Z (RFD66606-2312) 'halves. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:03Z (RFD66606-2312) '   committed file holds what does
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:04Z (RFD66606-2312) 'not change per build: title,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:05Z (RFD66606-2312) 'authors,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:06Z (RFD66606-2312) '   licence, the interface
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:07Z (RFD66606-2312) 'versions. A commit cannot carry
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:08Z (RFD66606-2312) 'its own hash, so
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:09Z (RFD66606-2312) '   the release step writes the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:10Z (RFD66606-2312) 'per-build half into the copy that
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:11Z (RFD66606-2312) 'ships
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:12Z (RFD66606-2312) '   with the artifact: `version`
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:13Z (RFD66606-2312) 'is the tag, `commit` the full
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:14Z (RFD66606-2312) 'hash,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:15Z (RFD66606-2312) '   `date-released` the UTC date.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:16Z (RFD66606-2312) 'CFF 1.2.0 admits no other
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:17Z (RFD66606-2312) 'top-level key;
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:18Z (RFD66606-2312) '   a `status` key fails its
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:19Z (RFD66606-2312) 'schema. The stage, the derived
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:20Z (RFD66606-2312) 'forms and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:21Z (RFD66606-2312) '   artifact digests ride as
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:22Z (RFD66606-2312) '`identifiers` of type `other`:
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:23Z (RFD66606-2312) '`stage:dev`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:24Z (RFD66606-2312) '   `windows:YYYY.MMDD.hhmm.0`,
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:25Z (RFD66606-2312) '`android:<versionCode>`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:26Z (RFD66606-2312) '   `pep440:0.0.0.devYYYYMMDDhhmmss`,
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:27Z (RFD66606-2312) '`sha256:<digest>`. A sample of
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:28Z (RFD66606-2312) 'that
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:29Z (RFD66606-2312) '   shape validates against the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:30Z (RFD66606-2312) 'CFF 1.2.0 JSON schema. The check
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:31Z (RFD66606-2312) 'recomputes
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:32Z (RFD66606-2312) '   every derived value from the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:33Z (RFD66606-2312) '`commit` field.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:34Z (RFD66606-2312) '4. Compatibility rides on the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:35Z (RFD66606-2312) 'interface that breaks: a
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:36Z (RFD66606-2312) 'protocol, ABI or
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:37Z (RFD66606-2312) '   save-format version that moves
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:38Z (RFD66606-2312) 'only when that interface does, as
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:39Z (RFD66606-2312) 'Go
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:40Z (RFD66606-2312) '   moves a module path to `/v2`.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:41Z (RFD66606-2312) '5. A signed attestation binds the
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:42Z (RFD66606-2312) 'record to the artifact's digest.
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:43Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:44Z (RFD66606-2312) '
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:45Z (RFD66606-2312) 'The problem
- # tags: rfd:details-heading
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:46Z (RFD66606-2312) 'Of 60 GitHub
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:47Z (RFD66606-2312) 'releases in repositories pushed
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:48Z (RFD66606-2312) 'since 2026-06-01, 33 are SemVer
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:49Z (RFD66606-2312) 'pre-releases in at least four
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:50Z (RFD66606-2312) 'spellings, 7 are dates, 2 are
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:51Z (RFD66606-2312) 'plain SemVer
- # tags: rfd:details, rfd:wrap
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:52Z (RFD66606-2312) 'and 18 are free names.
- # tags: rfd:details
- Text:RFD2312  1 LINE
- Text:Written
-
-2026-10-12T00:04:53Z (RFD66606-2312) '
+2026-10-12T00:02:11Z (RFD66606-2312) '
  # tags: rfd:details
  Text:RFD2312  1 LINE
  Text:Written

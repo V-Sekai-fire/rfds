@@ -9,492 +9,252 @@
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1070) 'Wait for a commitment before
+2026-08-25T00:00:02Z (RFD66606-1070) 'Wait for a commitment before opening an RFD; waiting holds an asset.
  # tags: rfd:hook
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1070) 'opening an RFD; waiting holds an
- # tags: rfd:hook, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1070) 'asset.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1070) '
+2026-08-25T00:00:03Z (RFD66606-1070) '
  # tags: rfd:hook
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1070) 'This repository wrote down three
+2026-08-25T00:00:04Z (RFD66606-1070) 'This repository wrote down three RFDs for a build nobody started. Each carried a reading
  # tags: rfd:intrigue
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1070) 'RFDs for a build nobody started.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1070) 'Each carried a reading
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1070) 'cost, a cross-reference to keep
+2026-08-25T00:00:05Z (RFD66606-1070) 'cost, a cross-reference to keep current, and an index row, for an option nobody had
  # tags: rfd:intrigue
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1070) 'current, and an index row, for an
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1070) 'option nobody had
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1070) 'exercised.
+2026-08-25T00:00:06Z (RFD66606-1070) 'exercised.
  # tags: rfd:intrigue
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1070) '
+2026-08-25T00:00:07Z (RFD66606-1070) '
  # tags: rfd:intrigue
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1070) 'Check a new RFD against the rule
+2026-08-25T00:00:08Z (RFD66606-1070) 'Check a new RFD against the rule above before you open it: the project must have
  # tags: rfd:exit
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1070) 'above before you open it: the
- # tags: rfd:exit, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1070) 'project must have
- # tags: rfd:exit, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1070) 'committed to the build.
+2026-08-25T00:00:09Z (RFD66606-1070) 'committed to the build.
  # tags: rfd:exit
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1070) '
+2026-08-25T00:00:10Z (RFD66606-1070) '
  # tags: rfd:exit
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1070) 'Keep options open
+2026-08-25T00:00:11Z (RFD66606-1070) 'Keep options open
  # tags: rfd:details-title
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1070) 'Do not open an RFD for a build
+2026-08-25T00:00:12Z (RFD66606-1070) 'Do not open an RFD for a build this project has not committed to.
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1070) 'this project has not committed
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1070) 'to.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1070) '
+2026-08-25T00:00:13Z (RFD66606-1070) '
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1070) 'Kent Beck's price-theory reading
+2026-08-25T00:00:14Z (RFD66606-1070) 'Kent Beck's price-theory reading of YAGNI names the cost: an
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1070) 'of YAGNI names the cost: an
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1070) 'unexercised option costs twice if
+2026-08-25T00:00:15Z (RFD66606-1070) 'unexercised option costs twice if the guess is wrong, so a thing not
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1070) 'the guess is wrong, so a thing
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1070) 'not
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1070) 'yet committed to is worth more
+2026-08-25T00:00:16Z (RFD66606-1070) 'yet committed to is worth more left unbuilt. Waiting holds an asset.
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1070) 'left unbuilt. Waiting holds an
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1070) 'asset.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1070) 'It does not delay work.
+2026-08-25T00:00:17Z (RFD66606-1070) 'It does not delay work.
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1070) '
+2026-08-25T00:00:18Z (RFD66606-1070) '
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1070) 'The rule stops a new RFD from
+2026-08-25T00:00:19Z (RFD66606-1070) 'The rule stops a new RFD from opening before commitment. It does not
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1070) 'opening before commitment. It
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1070) 'does not
- # tags: rfd:decision, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1070) 'reach back into one already
+2026-08-25T00:00:20Z (RFD66606-1070) 'reach back into one already running.
  # tags: rfd:decision
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1070) 'running.
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:00:21Z (RFD66606-1070) '
+ # tags: rfd:decision
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:22Z (RFD66606-1070) '- Kent Beck, "The Cost YAGNI Was Never About":
+ # tags: rfd:references
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:23Z (RFD66606-1070) '  https://newsletter.kentbeck.com/p/the-cost-yagni-was-never-about
+ # tags: rfd:references
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:24Z (RFD66606-1070) '
+ # tags: rfd:references
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1070) 'RFD66606-1000 gives the state ladder a speculative RFD would otherwise
+ # tags: rfd:related
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1070) 'sit on. RFD66606-1031 keeps the fallback RFD66606-1032 would have replaced.
+ # tags: rfd:related
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1070) '
+ # tags: rfd:related
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1070) 'What each one was
+ # tags: rfd:details-heading
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1070) 'RFD66606-1024 picked nx-ggml, and RFD66606-1019 replaced it, yet RFD66606-1024
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1070) 'stayed in the index as a live decision. RFD66606-1032 sketched a
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1070) 'clean-room alpha wrap algorithm RFD66606-1031's fallback already made
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1070) 'unneeded. RFD66606-1068 picked a training approach for a model that needs
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1070) 'data RFD66606-1064 has not finished producing.
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1070) '
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1070) 'What the rule left in place
+ # tags: rfd:details-heading
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1070) 'This session deleted RFD66606-1024, RFD66606-1032, and RFD66606-1068 under this
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1070) 'rule. RFD66606-1031 keeps its existing fallback, with no successor RFD
+ # tags: rfd:details
+ Text:RFD1070  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1070) 'promised.
+ # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
 2026-08-25T00:00:39Z (RFD66606-1070) '
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1070) '- Kent Beck, "The Cost YAGNI Was
- # tags: rfd:references
+2026-08-25T00:00:40Z (RFD66606-1070) 'Committed work already under way, such as RFD66606-1064 and RFD66606-1065, is
+ # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1070) 'Never About":
- # tags: rfd:references, rfd:wrap
+2026-08-25T00:00:41Z (RFD66606-1070) 'not this rule's target.
+ # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1070) '  https://newsletter.kentbeck.com/p/the-cost-yagni-was-never-about
- # tags: rfd:references
+2026-08-25T00:00:42Z (RFD66606-1070) '
+ # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1070) '
- # tags: rfd:references
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1070) 'RFD66606-1000 gives the state
- # tags: rfd:related
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1070) 'ladder a speculative RFD would
- # tags: rfd:related, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1070) 'otherwise
- # tags: rfd:related, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1070) 'sit on. RFD66606-1031 keeps the
- # tags: rfd:related
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1070) 'fallback RFD66606-1032 would have
- # tags: rfd:related, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1070) 'replaced.
- # tags: rfd:related, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1070) '
- # tags: rfd:related
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1070) 'What each one was
+2026-08-25T00:00:43Z (RFD66606-1070) 'The register of deleted numbers
  # tags: rfd:details-heading
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1070) 'RFD66606-1024 picked nx-ggml, and
+2026-08-25T00:00:44Z (RFD66606-1070) 'A later session deleted RFD66606-1069, RFD66606-1071, and RFD66606-1072 under this
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1070) 'RFD66606-1019 replaced it, yet
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-1070) 'RFD66606-1024
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1070) 'stayed in the index as a live
+2026-08-25T00:00:45Z (RFD66606-1070) 'rule. RFD66606-1064 records the bar each one failed.
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1070) 'decision. RFD66606-1032 sketched
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1070) 'a
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1070) 'clean-room alpha wrap algorithm
+2026-08-25T00:00:46Z (RFD66606-1070) '
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1070) 'RFD66606-1031's fallback already
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1070) 'made
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1070) 'unneeded. RFD66606-1068 picked a
+2026-08-25T00:00:47Z (RFD66606-1070) 'A deleted number is not reused, and the RFDs above still cite it.
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1070) 'training approach for a model
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1070) 'that needs
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1070) 'data RFD66606-1064 has not
+2026-08-25T00:00:48Z (RFD66606-1070) 'Deleting a directory does not delete a citation. `SERIALS.usda` keeps a
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1070) 'finished producing.
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1070) '
+2026-08-25T00:00:49Z (RFD66606-1070) 'row for each of the six, and RFD66606-1124's gate reads that file when it
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1070) 'What the rule left in place
- # tags: rfd:details-heading
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1070) 'This session deleted
+2026-08-25T00:00:50Z (RFD66606-1070) 'checks that a citation resolves. RFD66606-1000 gives the register's rule.
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1070) 'RFD66606-1024, RFD66606-1032, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1070) 'RFD66606-1068 under this
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1070) 'rule. RFD66606-1031 keeps its
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1070) 'existing fallback, with no
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1070) 'successor RFD
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-1070) 'promised.
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1070) '
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1070) 'Committed work already under way,
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1070) 'such as RFD66606-1064 and
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1070) 'RFD66606-1065, is
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1070) 'not this rule's target.
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1070) '
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1070) 'The register of deleted numbers
- # tags: rfd:details-heading
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1070) 'A later session deleted
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1070) 'RFD66606-1069, RFD66606-1071, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1070) 'RFD66606-1072 under this
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1070) 'rule. RFD66606-1064 records the
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1070) 'bar each one failed.
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1070) '
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-1070) 'A deleted number is not reused,
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1070) 'and the RFDs above still cite it.
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1070) 'Deleting a directory does not
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1070) 'delete a citation. `SERIALS.usda`
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1070) 'keeps a
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1070) 'row for each of the six, and
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1070) 'RFD66606-1124's gate reads that
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1070) 'file when it
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1070) 'checks that a citation resolves.
- # tags: rfd:details
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1070) 'RFD66606-1000 gives the
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1070) 'register's rule.
- # tags: rfd:details, rfd:wrap
- Text:RFD1070  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-1070) '
+2026-08-25T00:00:51Z (RFD66606-1070) '
  # tags: rfd:details
  Text:RFD1070  1 LINE
  Text:Written

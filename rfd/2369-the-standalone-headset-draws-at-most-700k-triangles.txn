@@ -4,307 +4,152 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2369) 'the triangle budget for the
+2026-10-31T00:00:01Z (RFD66606-2369) 'the triangle budget for the standalone headset and how it is enforced.
  # tags: rfd:scope
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2369) 'standalone headset and how it is
- # tags: rfd:scope, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2369) 'enforced.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2369) 'The standalone headset draws at
+2026-10-31T00:00:02Z (RFD66606-2369) 'The standalone headset draws at most 700k triangles in view per frame, split between world and
  # tags: rfd:hook
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2369) 'most 700k triangles in view per
- # tags: rfd:hook, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2369) 'frame, split between world and
- # tags: rfd:hook, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2369) 'characters.
+2026-10-31T00:00:03Z (RFD66606-2369) 'characters.
  # tags: rfd:hook
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2369) '
+2026-10-31T00:00:04Z (RFD66606-2369) '
  # tags: rfd:hook
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2369) 'Past 700k triangles in view the
+2026-10-31T00:00:05Z (RFD66606-2369) 'Past 700k triangles in view the frame is over the operator's budget, and the crowd of
  # tags: rfd:intrigue
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2369) 'frame is over the operator's
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2369) 'budget, and the crowd of
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2369) 'non-player characters is the
+2026-10-31T00:00:06Z (RFD66606-2369) 'non-player characters is the first to drop to impostors.
  # tags: rfd:intrigue
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2369) 'first to drop to impostors.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2369) '
+2026-10-31T00:00:07Z (RFD66606-2369) '
  # tags: rfd:intrigue
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2369) 'Check a scene against the budget:
+2026-10-31T00:00:08Z (RFD66606-2369) 'Check a scene against the budget: at most 700k triangles in view per frame, 250k for world
  # tags: rfd:exit
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2369) 'at most 700k triangles in view
- # tags: rfd:exit, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2369) 'per frame, 250k for world
- # tags: rfd:exit, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2369) 'geometry and 450k for characters.
+2026-10-31T00:00:09Z (RFD66606-2369) 'geometry and 450k for characters.
  # tags: rfd:exit
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2369) '
+2026-10-31T00:00:10Z (RFD66606-2369) '
  # tags: rfd:exit
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2369) 'the standalone headset draws at
+2026-10-31T00:00:11Z (RFD66606-2369) 'the standalone headset draws at most 700k triangles
  # tags: rfd:details-title
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2369) 'most 700k triangles
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2369) 'The operator's budget for the
+2026-10-31T00:00:12Z (RFD66606-2369) 'The operator's budget for the standalone headset: at most 700k triangles in
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2369) 'standalone headset: at most 700k
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2369) 'triangles in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2369) 'view per frame, of which world
+2026-10-31T00:00:13Z (RFD66606-2369) 'view per frame, of which world geometry gets 250k (400k at most) and characters
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2369) 'geometry gets 250k (400k at most)
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2369) 'and characters
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2369) '450k. A crowd of non-player
+2026-10-31T00:00:14Z (RFD66606-2369) '450k. A crowd of non-player characters holds 150k of the character share and
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2369) 'characters holds 150k of the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2369) 'character share and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2369) 'drops to impostors first. One
+2026-10-31T00:00:15Z (RFD66606-2369) 'drops to impostors first. One equal-error LOD threshold over the frame enforces
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2369) 'equal-error LOD threshold over
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2369) 'the frame enforces
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2369) 'it, and the LODs come from
+2026-10-31T00:00:16Z (RFD66606-2369) 'it, and the LODs come from Godot's own `generate_lods` on welded meshes, except
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2369) 'Godot's own `generate_lods` on
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2369) 'welded meshes, except
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2369) 'the blossom cards, whose levels
+2026-10-31T00:00:17Z (RFD66606-2369) 'the blossom cards, whose levels are the cluster LOD DAGs of RFD66606-2367.
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2369) 'are the cluster LOD DAGs of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2369) 'RFD66606-2367.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2369) '
+2026-10-31T00:00:18Z (RFD66606-2369) '
  # tags: rfd:decision
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2369) '- RFD66606-2294, where this rule
+2026-10-31T00:00:19Z (RFD66606-2369) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2369) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2369) '- RFD66606-2367, the cluster LOD
+2026-10-31T00:00:20Z (RFD66606-2369) '- RFD66606-2367, the cluster LOD DAGs of the blossom cards.
  # tags: rfd:related
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2369) 'DAGs of the blossom cards.
- # tags: rfd:related, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2369) '
+2026-10-31T00:00:21Z (RFD66606-2369) '
  # tags: rfd:related
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2369) 'Shadows
+2026-10-31T00:00:22Z (RFD66606-2369) 'Shadows
  # tags: rfd:details-heading
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2369) 'Avatars and characters cast their
+2026-10-31T00:00:23Z (RFD66606-2369) 'Avatars and characters cast their shadows from tapered capsules fitted per
  # tags: rfd:details
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2369) 'shadows from tapered capsules
- # tags: rfd:details, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2369) 'fitted per
- # tags: rfd:details, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2369) 'skeleton (issue 110), not from
+2026-10-31T00:00:24Z (RFD66606-2369) 'skeleton (issue 110), not from the shadow map. An untapered capsule keeps stock
  # tags: rfd:details
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2369) 'the shadow map. An untapered
- # tags: rfd:details, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2369) 'capsule keeps stock
- # tags: rfd:details, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2369) 'Godot's height and radius
+2026-10-31T00:00:25Z (RFD66606-2369) 'Godot's height and radius behaviour.
  # tags: rfd:details
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2369) 'behaviour.
- # tags: rfd:details, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2369) '
+2026-10-31T00:00:26Z (RFD66606-2369) '
  # tags: rfd:details
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2369) '2351
+2026-10-31T00:00:27Z (RFD66606-2369) '2351
  # tags: rebac:verbs-from
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2369) 'rfd-2369 provides
+2026-10-31T00:00:28Z (RFD66606-2369) 'rfd-2369 provides headset-700k-triangle-budget
  # tags: rebac:relate
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2369) 'headset-700k-triangle-budget
- # tags: rebac:relate, rfd:wrap
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2369) 'rfd-2369 is_a workspace-policy
+2026-10-31T00:00:29Z (RFD66606-2369) 'rfd-2369 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2369  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2369) 'rfd-2369 spends
+2026-10-31T00:00:30Z (RFD66606-2369) 'rfd-2369 spends station-csg-baked-mesh-render
  # tags: rebac:relate
- Text:RFD2369  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2369) 'station-csg-baked-mesh-render
- # tags: rebac:relate, rfd:wrap
  Text:RFD2369  1 LINE
  Text:Written

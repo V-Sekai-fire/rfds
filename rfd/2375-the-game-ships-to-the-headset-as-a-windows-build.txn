@@ -4,472 +4,222 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2375) 'the Windows build that ships to
+2026-10-31T00:00:01Z (RFD66606-2375) 'the Windows build that ships to the headset, and how it is exported and pulled.
  # tags: rfd:scope
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2375) 'the headset, and how it is
- # tags: rfd:scope, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2375) 'exported and pulled.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2375) 'The game reaches the headset as a
+2026-10-31T00:00:02Z (RFD66606-2375) 'The game reaches the headset as a Windows build, exported on the desk and pulled as a casync
  # tags: rfd:hook
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2375) 'Windows build, exported on the
- # tags: rfd:hook, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2375) 'desk and pulled as a casync
- # tags: rfd:hook, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2375) 'repository.
+2026-10-31T00:00:03Z (RFD66606-2375) 'repository.
  # tags: rfd:hook
+ Text:RFD2375  1 LINE
+ Text:Written
+
+2026-10-31T00:00:04Z (RFD66606-2375) '
+ # tags: rfd:hook
+ Text:RFD2375  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2375) 'A translation generated at run time into writable executable memory does not load under the
+ # tags: rfd:intrigue
+ Text:RFD2375  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2375) 'headset's compatibility layer. A service-mode CI runner runs in session 0, which has no
+ # tags: rfd:intrigue
+ Text:RFD2375  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2375) 'desktop, so it cannot export.
+ # tags: rfd:intrigue
  Text:RFD2375  1 LINE
  Text:Written
 
 2026-10-31T00:00:08Z (RFD66606-2375) '
- # tags: rfd:hook
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2375) 'A translation generated at run
  # tags: rfd:intrigue
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2375) 'time into writable executable
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2375) 'memory does not load under the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2375) 'headset's compatibility layer. A
- # tags: rfd:intrigue
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2375) 'service-mode CI runner runs in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2375) 'session 0, which has no
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2375) 'desktop, so it cannot export.
- # tags: rfd:intrigue
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2375) '
- # tags: rfd:intrigue
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2375) 'Check a new translation against
+2026-10-31T00:00:09Z (RFD66606-2375) 'Check a new translation against the rule: it is a precompiled Windows library linked against
  # tags: rfd:exit
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2375) 'the rule: it is a precompiled
- # tags: rfd:exit, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2375) 'Windows library linked against
- # tags: rfd:exit, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2375) 'the universal C runtime, tested
+2026-10-31T00:00:10Z (RFD66606-2375) 'the universal C runtime, tested on the Windows desk.
  # tags: rfd:exit
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2375) 'on the Windows desk.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2375) '
+2026-10-31T00:00:11Z (RFD66606-2375) '
  # tags: rfd:exit
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2375) 'the game ships to the headset as
+2026-10-31T00:00:12Z (RFD66606-2375) 'the game ships to the headset as a Windows build
  # tags: rfd:details-title
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2375) 'a Windows build
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2375) '- The game ships as a Windows
+2026-10-31T00:00:13Z (RFD66606-2375) '- The game ships as a Windows build, run natively and through the headset's compatibility
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2375) 'build, run natively and through
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2375) 'the headset's compatibility
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2375) '  layer, so a translation is a
+2026-10-31T00:00:14Z (RFD66606-2375) '  layer, so a translation is a precompiled Windows library linked against the universal C
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2375) 'precompiled Windows library
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2375) 'linked against the universal C
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2375) '  runtime that loads under that
+2026-10-31T00:00:15Z (RFD66606-2375) '  runtime that loads under that layer, never code generated at run time into writable
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2375) 'layer, never code generated at
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2375) 'run time into writable
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2375) '  executable memory.
+2026-10-31T00:00:16Z (RFD66606-2375) '  executable memory.
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2375) '- A Linux `.so` serves the Linux
+2026-10-31T00:00:17Z (RFD66606-2375) '- A Linux `.so` serves the Linux zone servers and never reaches the headset. The compatibility
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2375) 'zone servers and never reaches
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2375) 'the headset. The compatibility
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2375) '  layer runs that same Windows
+2026-10-31T00:00:18Z (RFD66606-2375) '  layer runs that same Windows build, so the Windows desk is where it is tested. RFD66606-2390
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2375) 'build, so the Windows desk is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2375) 'where it is tested. RFD66606-2390
- # tags: rfd:decision, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2375) '  builds the libraries.
+2026-10-31T00:00:19Z (RFD66606-2375) '  builds the libraries.
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2375) '
+2026-10-31T00:00:20Z (RFD66606-2375) '
  # tags: rfd:decision
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2375) '- RFD66606-2294, where this rule
+2026-10-31T00:00:21Z (RFD66606-2375) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2375) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2375) '- RFD66606-2390, which builds the
+2026-10-31T00:00:22Z (RFD66606-2375) '- RFD66606-2390, which builds the translated libraries.
  # tags: rfd:related
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2375) 'translated libraries.
- # tags: rfd:related, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2375) '
+2026-10-31T00:00:23Z (RFD66606-2375) '
  # tags: rfd:related
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2375) 'How the station ships to the
+2026-10-31T00:00:24Z (RFD66606-2375) 'How the station ships to the headset
  # tags: rfd:details-heading
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2375) 'headset
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2375) 'The station ships to the headset
+2026-10-31T00:00:25Z (RFD66606-2375) 'The station ships to the headset as the Windows x86_64 build, run through the
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2375) 'as the Windows x86_64 build, run
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2375) 'through the
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2375) 'headset's compatibility layer, on
+2026-10-31T00:00:26Z (RFD66606-2375) 'headset's compatibility layer, on single-precision Godot 4.7.2 until the
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2375) 'single-precision Godot 4.7.2
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2375) 'until the
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2375) 'station's double-precision guests
+2026-10-31T00:00:27Z (RFD66606-2375) 'station's double-precision guests are verified (operator, 2026-10-01). The
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2375) 'are verified (operator,
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2375) '2026-10-01). The
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2375) 'export uses an export template
+2026-10-31T00:00:28Z (RFD66606-2375) 'export uses an export template and a real rendering device, so it runs in the
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2375) 'and a real rendering device, so
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2375) 'it runs in the
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2375) 'Windows desk's interactive
+2026-10-31T00:00:29Z (RFD66606-2375) 'Windows desk's interactive session: Windows OpenSSH and a service-mode CI runner
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2375) 'session: Windows OpenSSH and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2375) 'service-mode CI runner
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2375) 'both run in session 0, which has
+2026-10-31T00:00:30Z (RFD66606-2375) 'both run in session 0, which has no desktop. A session drives the Godot editor
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2375) 'no desktop. A session drives the
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2375) 'Godot editor
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2375) 'there through the computer-use
+2026-10-31T00:00:31Z (RFD66606-2375) 'there through the computer-use driver, or starts the export from SSH as a
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2375) 'driver, or starts the export from
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2375) 'SSH as a
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2375) 'scheduled task with `/it`. No
+2026-10-31T00:00:32Z (RFD66606-2375) 'scheduled task with `/it`. No GitHub Actions runner does it.
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2375) 'GitHub Actions runner does it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2375) '
+2026-10-31T00:00:33Z (RFD66606-2375) '
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2375) '
+2026-10-31T00:00:34Z (RFD66606-2375) '
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2375) 'The casync repository
+2026-10-31T00:00:35Z (RFD66606-2375) 'The casync repository
  # tags: rfd:details-heading
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:16Z (RFD66606-2375) 'The build ships as a casync
+2026-10-31T00:00:36Z (RFD66606-2375) 'The build ships as a casync repository: desync, the Go implementation of
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2375) 'repository: desync, the Go
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2375) 'implementation of
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2375) 'casync, makes the index and chunk
+2026-10-31T00:00:37Z (RFD66606-2375) 'casync, makes the index and chunk store, and they go into a V-Sekai-fire
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:20Z (RFD66606-2375) 'store, and they go into a
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:21Z (RFD66606-2375) 'V-Sekai-fire
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2375) 'repository of their own. The
+2026-10-31T00:00:38Z (RFD66606-2375) 'repository of their own. The headset pulls the title with desync's arm64 build,
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:23Z (RFD66606-2375) 'headset pulls the title with
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:24Z (RFD66606-2375) 'desync's arm64 build,
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2375) 'or takes it over SSH as user
+2026-10-31T00:00:39Z (RFD66606-2375) 'or takes it over SSH as user `deck` with the desk's key, as a dev title.
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2375) '`deck` with the desk's key, as a
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:27Z (RFD66606-2375) 'dev title.
- # tags: rfd:details, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:28Z (RFD66606-2375) '
+2026-10-31T00:00:40Z (RFD66606-2375) '
  # tags: rfd:details
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:29Z (RFD66606-2375) '2351
+2026-10-31T00:00:41Z (RFD66606-2375) '2351
  # tags: rebac:verbs-from
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2375) 'rfd-2375 provides
+2026-10-31T00:00:42Z (RFD66606-2375) 'rfd-2375 provides windows-headset-game-build
  # tags: rebac:relate
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2375) 'windows-headset-game-build
- # tags: rebac:relate, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:32Z (RFD66606-2375) 'rfd-2375 spends
+2026-10-31T00:00:43Z (RFD66606-2375) 'rfd-2375 spends elf-guest-native-translation
  # tags: rebac:relate
  Text:RFD2375  1 LINE
  Text:Written
 
-2026-10-31T00:01:33Z (RFD66606-2375) 'elf-guest-native-translation
- # tags: rebac:relate, rfd:wrap
- Text:RFD2375  1 LINE
- Text:Written
-
-2026-10-31T00:01:34Z (RFD66606-2375) 'rfd-2375 is_a deployment
+2026-10-31T00:00:44Z (RFD66606-2375) 'rfd-2375 is_a deployment
  # tags: rebac:relate
  Text:RFD2375  1 LINE
  Text:Written

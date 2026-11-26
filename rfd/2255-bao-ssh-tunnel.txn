@@ -4,682 +4,367 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-25T00:00:01Z (RFD66606-2255) 'A desk with no tailnet and no
+2026-09-25T00:00:01Z (RFD66606-2255) 'A desk with no tailnet and no private-network peer reaches
  # tags: rfd:feature
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:02Z (RFD66606-2255) 'private-network peer reaches
- # tags: rfd:feature, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:03Z (RFD66606-2255) 'Bao's listener through sshd on
+2026-09-25T00:00:02Z (RFD66606-2255) 'Bao's listener through sshd on the Bao machine, using a
  # tags: rfd:feature
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:04Z (RFD66606-2255) 'the Bao machine, using a
- # tags: rfd:feature, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:05Z (RFD66606-2255) 'one-hour SSH certificate that Bao
+2026-09-25T00:00:03Z (RFD66606-2255) 'one-hour SSH certificate that Bao itself signs
  # tags: rfd:feature
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:06Z (RFD66606-2255) 'itself signs
- # tags: rfd:feature, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:07Z (RFD66606-2255) '`service-openbao` (`sshd_config`,
+2026-09-25T00:00:04Z (RFD66606-2255) '`service-openbao` (`sshd_config`, `Dockerfile.fdb`,
  # tags: rfd:scope
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:08Z (RFD66606-2255) '`Dockerfile.fdb`,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:09Z (RFD66606-2255) '`entrypoint-fdb.sh`, `fly.toml`),
+2026-09-25T00:00:05Z (RFD66606-2255) '`entrypoint-fdb.sh`, `fly.toml`), and Bao's `ssh/` mount,
  # tags: rfd:scope
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:10Z (RFD66606-2255) 'and Bao's `ssh/` mount,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:11Z (RFD66606-2255) '`ssh/roles/bao-tunnel` and the
+2026-09-25T00:00:06Z (RFD66606-2255) '`ssh/roles/bao-tunnel` and the `ssh-bao-tunnel` policy
  # tags: rfd:scope
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:12Z (RFD66606-2255) '`ssh-bao-tunnel` policy
- # tags: rfd:scope, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:13Z (RFD66606-2255) 'A desk with no tailnet reaches
+2026-09-25T00:00:07Z (RFD66606-2255) 'A desk with no tailnet reaches Bao through sshd, with a one-hour certificate Bao signs.
  # tags: rfd:hook
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:14Z (RFD66606-2255) 'Bao through sshd, with a one-hour
- # tags: rfd:hook, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:15Z (RFD66606-2255) 'certificate Bao signs.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:16Z (RFD66606-2255) '
+2026-09-25T00:00:08Z (RFD66606-2255) '
  # tags: rfd:hook
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:17Z (RFD66606-2255) 'Bao is reached over the tailnet
+2026-09-25T00:00:09Z (RFD66606-2255) 'Bao is reached over the tailnet or the private network, and a desk can lack both: a WSL
  # tags: rfd:intrigue
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:18Z (RFD66606-2255) 'or the private network, and a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:19Z (RFD66606-2255) 'desk can lack both: a WSL
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:20Z (RFD66606-2255) 'distro is on neither, and its
+2026-09-25T00:00:10Z (RFD66606-2255) 'distro is on neither, and its WireGuard peer fails to add its route.
  # tags: rfd:intrigue
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:21Z (RFD66606-2255) 'WireGuard peer fails to add its
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:22Z (RFD66606-2255) 'route.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:23Z (RFD66606-2255) '
+2026-09-25T00:00:11Z (RFD66606-2255) '
  # tags: rfd:intrigue
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:24Z (RFD66606-2255) 'Follow the steps under Using it
+2026-09-25T00:00:12Z (RFD66606-2255) 'Follow the steps under Using it below to open the tunnel.
  # tags: rfd:exit
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:25Z (RFD66606-2255) 'below to open the tunnel.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:26Z (RFD66606-2255) '
+2026-09-25T00:00:13Z (RFD66606-2255) '
  # tags: rfd:exit
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:27Z (RFD66606-2255) 'an SSH tunnel to Bao for
+2026-09-25T00:00:14Z (RFD66606-2255) 'an SSH tunnel to Bao for Bao-signed certificates
  # tags: rfd:details-title
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:28Z (RFD66606-2255) 'Bao-signed certificates
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:29Z (RFD66606-2255) 'The Bao machine runs sshd on port
+2026-09-25T00:00:15Z (RFD66606-2255) 'The Bao machine runs sshd on port 2222. It trusts one user CA,
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:30Z (RFD66606-2255) '2222. It trusts one user CA,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:31Z (RFD66606-2255) 'the key of Bao's own `ssh/`
+2026-09-25T00:00:16Z (RFD66606-2255) 'the key of Bao's own `ssh/` engine, and accepts one principal,
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:32Z (RFD66606-2255) 'engine, and accepts one
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:33Z (RFD66606-2255) 'principal,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:34Z (RFD66606-2255) '`tunnel`. That user has no shell
+2026-09-25T00:00:17Z (RFD66606-2255) '`tunnel`. That user has no shell and may forward only to
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:35Z (RFD66606-2255) 'and may forward only to
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:36Z (RFD66606-2255) '`127.0.0.1:8200`. An agent signs
+2026-09-25T00:00:18Z (RFD66606-2255) '`127.0.0.1:8200`. An agent signs its SSH key with its Bao token
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:37Z (RFD66606-2255) 'its SSH key with its Bao token
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:38Z (RFD66606-2255) 'at `ssh/sign/bao-tunnel`, gets a
+2026-09-25T00:00:19Z (RFD66606-2255) 'at `ssh/sign/bao-tunnel`, gets a certificate valid for an hour,
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:39Z (RFD66606-2255) 'certificate valid for an hour,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:40Z (RFD66606-2255) 'and runs `ssh -N -L` to the
+2026-09-25T00:00:20Z (RFD66606-2255) 'and runs `ssh -N -L` to the listener. The listener's mTLS stays
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:41Z (RFD66606-2255) 'listener. The listener's mTLS
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:42Z (RFD66606-2255) 'stays
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:43Z (RFD66606-2255) 'the second factor: the tunnel
+2026-09-25T00:00:21Z (RFD66606-2255) 'the second factor: the tunnel carries TLS, it does not replace
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:44Z (RFD66606-2255) 'carries TLS, it does not replace
- # tags: rfd:decision, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:45Z (RFD66606-2255) 'it.
+2026-09-25T00:00:22Z (RFD66606-2255) 'it.
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:46Z (RFD66606-2255) '
+2026-09-25T00:00:23Z (RFD66606-2255) '
  # tags: rfd:decision
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:47Z (RFD66606-2255) '- RFD66606-2195 (Bao over the
+2026-09-25T00:00:24Z (RFD66606-2255) '- RFD66606-2195 (Bao over the tailnet), the path this complements.
  # tags: rfd:related
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:48Z (RFD66606-2255) 'tailnet), the path this
- # tags: rfd:related, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:49Z (RFD66606-2255) 'complements.
- # tags: rfd:related, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:50Z (RFD66606-2255) '
+2026-09-25T00:00:25Z (RFD66606-2255) '
  # tags: rfd:related
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:51Z (RFD66606-2255) 'Related RFDs
+2026-09-25T00:00:26Z (RFD66606-2255) 'Related RFDs
  # tags: rfd:details-heading
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:52Z (RFD66606-2255) '- RFD66606-2146 (Bao is the
+2026-09-25T00:00:27Z (RFD66606-2255) '- RFD66606-2146 (Bao is the secret store), the cert-auth identities
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:53Z (RFD66606-2255) 'secret store), the cert-auth
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:54Z (RFD66606-2255) 'identities
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:55Z (RFD66606-2255) '  that sign here.
+2026-09-25T00:00:28Z (RFD66606-2255) '  that sign here.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:56Z (RFD66606-2255) '- RFD66606-2142 (Bao PKI), the
+2026-09-25T00:00:29Z (RFD66606-2255) '- RFD66606-2142 (Bao PKI), the root the agent certificates chain to.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:00:57Z (RFD66606-2255) 'root the agent certificates chain
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:58Z (RFD66606-2255) 'to.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:00:59Z (RFD66606-2255) '
+2026-09-25T00:00:30Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:00Z (RFD66606-2255) 'Using it
+2026-09-25T00:00:31Z (RFD66606-2255) 'Using it
  # tags: rfd:details-heading
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:01Z (RFD66606-2255) 'With a Bao token from cert login
+2026-09-25T00:00:32Z (RFD66606-2255) 'With a Bao token from cert login (RFD66606-2195's four variables):
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:02Z (RFD66606-2255) '(RFD66606-2195's four variables):
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:03Z (RFD66606-2255) '
+2026-09-25T00:00:33Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:04Z (RFD66606-2255) '    ssh-keygen -y -f key.pem >
+2026-09-25T00:00:34Z (RFD66606-2255) '    ssh-keygen -y -f key.pem > key.pub
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:05Z (RFD66606-2255) 'key.pub
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:06Z (RFD66606-2255) '    bao write -field=signed_key
+2026-09-25T00:00:35Z (RFD66606-2255) '    bao write -field=signed_key ssh/sign/bao-tunnel \
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:07Z (RFD66606-2255) 'ssh/sign/bao-tunnel \
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:08Z (RFD66606-2255) '        public_key=@key.pub
+2026-09-25T00:00:36Z (RFD66606-2255) '        public_key=@key.pub valid_principals=tunnel > key-cert.pub
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:09Z (RFD66606-2255) 'valid_principals=tunnel >
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:10Z (RFD66606-2255) 'key-cert.pub
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:11Z (RFD66606-2255) '    ssh -N -L
+2026-09-25T00:00:37Z (RFD66606-2255) '    ssh -N -L 18200:127.0.0.1:8200 -p 2222 \
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:12Z (RFD66606-2255) '18200:127.0.0.1:8200 -p 2222 \
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:13Z (RFD66606-2255) '        -i key.pem -o
+2026-09-25T00:00:38Z (RFD66606-2255) '        -i key.pem -o CertificateFile=key-cert.pub tunnel@<bao address>
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:14Z (RFD66606-2255) 'CertificateFile=key-cert.pub
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:15Z (RFD66606-2255) 'tunnel@<bao address>
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:16Z (RFD66606-2255) '    export
+2026-09-25T00:00:39Z (RFD66606-2255) '    export BAO_ADDR=https://127.0.0.1:18200
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:17Z (RFD66606-2255) 'BAO_ADDR=https://127.0.0.1:18200
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:18Z (RFD66606-2255) '    export
+2026-09-25T00:00:40Z (RFD66606-2255) '    export BAO_TLS_SERVER_NAME=weftspun-bao.internal
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:19Z (RFD66606-2255) 'BAO_TLS_SERVER_NAME=weftspun-bao.internal
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:20Z (RFD66606-2255) '
+2026-09-25T00:00:41Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:21Z (RFD66606-2255) 'The key can be the same P-256 key
+2026-09-25T00:00:42Z (RFD66606-2255) 'The key can be the same P-256 key as the agent's cert-auth
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:22Z (RFD66606-2255) 'as the agent's cert-auth
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:23Z (RFD66606-2255) 'identity, converted to PKCS#8, so
+2026-09-25T00:00:43Z (RFD66606-2255) 'identity, converted to PKCS#8, so a desk holds one private key.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:24Z (RFD66606-2255) 'a desk holds one private key.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:25Z (RFD66606-2255) '
+2026-09-25T00:00:44Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:26Z (RFD66606-2255) 'What is measured
+2026-09-25T00:00:45Z (RFD66606-2255) 'What is measured
  # tags: rfd:details-heading
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:27Z (RFD66606-2255) 'Run against the deployed image
+2026-09-25T00:00:46Z (RFD66606-2255) 'Run against the deployed image through a proxy to port 2222,
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:28Z (RFD66606-2255) 'through a proxy to port 2222,
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:29Z (RFD66606-2255) 'and before that against a local
+2026-09-25T00:00:47Z (RFD66606-2255) 'and before that against a local sshd with the same config:
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:30Z (RFD66606-2255) 'sshd with the same config:
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:31Z (RFD66606-2255) '
+2026-09-25T00:00:48Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:32Z (RFD66606-2255) '| case | expected | deployed |
+2026-09-25T00:00:49Z (RFD66606-2255) '| case | expected | deployed |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:33Z (RFD66606-2255) '| --- | --- | --- |
+2026-09-25T00:00:50Z (RFD66606-2255) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:34Z (RFD66606-2255) '| Bao-signed cert, forward to
+2026-09-25T00:00:51Z (RFD66606-2255) '| Bao-signed cert, forward to 8200 | Bao answers | `cert-fedora-cad853` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:35Z (RFD66606-2255) '8200 | Bao answers |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:36Z (RFD66606-2255) '`cert-fedora-cad853` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:37Z (RFD66606-2255) '| plain key, no certificate |
+2026-09-25T00:00:52Z (RFD66606-2255) '| plain key, no certificate | refused | `Permission denied (publickey)` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:38Z (RFD66606-2255) 'refused | `Permission denied
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:39Z (RFD66606-2255) '(publickey)` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:40Z (RFD66606-2255) '| cert, user `root` | refused |
+2026-09-25T00:00:53Z (RFD66606-2255) '| cert, user `root` | refused | `Permission denied (publickey)` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:41Z (RFD66606-2255) '`Permission denied (publickey)` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:42Z (RFD66606-2255) '| cert, a shell command | refused
+2026-09-25T00:00:54Z (RFD66606-2255) '| cert, a shell command | refused | `This account is currently not available.` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:43Z (RFD66606-2255) '| `This account is currently not
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:44Z (RFD66606-2255) 'available.` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:45Z (RFD66606-2255) '| cert, forward to 8201 | refused
+2026-09-25T00:00:55Z (RFD66606-2255) '| cert, forward to 8201 | refused | `administratively prohibited` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:46Z (RFD66606-2255) '| `administratively prohibited` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:47Z (RFD66606-2255) '| sign for principal `root` |
+2026-09-25T00:00:56Z (RFD66606-2255) '| sign for principal `root` | refused | `root is not a valid value for valid_principals` |
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:48Z (RFD66606-2255) 'refused | `root is not a valid
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:49Z (RFD66606-2255) 'value for valid_principals` |
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:50Z (RFD66606-2255) '
+2026-09-25T00:00:57Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:51Z (RFD66606-2255) 'The public address is IPv6 only,
+2026-09-25T00:00:58Z (RFD66606-2255) 'The public address is IPv6 only, and it is untested from this
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:52Z (RFD66606-2255) 'and it is untested from this
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:53Z (RFD66606-2255) 'desk: WSL here has no IPv6 route.
+2026-09-25T00:00:59Z (RFD66606-2255) 'desk: WSL here has no IPv6 route.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:54Z (RFD66606-2255) '
+2026-09-25T00:01:00Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:55Z (RFD66606-2255) 'What it costs
+2026-09-25T00:01:01Z (RFD66606-2255) 'What it costs
  # tags: rfd:details-heading
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:56Z (RFD66606-2255) 'A redeploy restarts Bao, and Bao
+2026-09-25T00:01:02Z (RFD66606-2255) 'A redeploy restarts Bao, and Bao comes back sealed; the rollout
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:57Z (RFD66606-2255) 'comes back sealed; the rollout
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:01:58Z (RFD66606-2255) 'that shipped this needed one
+2026-09-25T00:01:03Z (RFD66606-2255) 'that shipped this needed one unseal. The image rebuild also
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:01:59Z (RFD66606-2255) 'unseal. The image rebuild also
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:00Z (RFD66606-2255) 're-clones the OpenBao fork at its
+2026-09-25T00:01:04Z (RFD66606-2255) 're-clones the OpenBao fork at its branch head, so a rebuild for
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:01Z (RFD66606-2255) 'branch head, so a rebuild for
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:02Z (RFD66606-2255) 'sshd can change the Bao binary
+2026-09-25T00:01:05Z (RFD66606-2255) 'sshd can change the Bao binary too. The public 8200 service is
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:03Z (RFD66606-2255) 'too. The public 8200 service is
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:04Z (RFD66606-2255) 'gone from `fly.toml`, so the only
+2026-09-25T00:01:06Z (RFD66606-2255) 'gone from `fly.toml`, so the only public port is 2222.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:05Z (RFD66606-2255) 'public port is 2222.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:06Z (RFD66606-2255) '
+2026-09-25T00:01:07Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:07Z (RFD66606-2255) 'The host key sits on the data
+2026-09-25T00:01:08Z (RFD66606-2255) 'The host key sits on the data volume and survives a redeploy.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:08Z (RFD66606-2255) 'volume and survives a redeploy.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:09Z (RFD66606-2255) 'Its fingerprint is
+2026-09-25T00:01:09Z (RFD66606-2255) 'Its fingerprint is `SHA256:6xkNw5/8n/fRVyYU9SC0/ON+qRh+WSfVCYp8CCeuaXg`.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:10Z (RFD66606-2255) '`SHA256:6xkNw5/8n/fRVyYU9SC0/ON+qRh+WSfVCYp8CCeuaXg`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:11Z (RFD66606-2255) '
+2026-09-25T00:01:10Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:12Z (RFD66606-2255) 'The problem
+2026-09-25T00:01:11Z (RFD66606-2255) 'The problem
  # tags: rfd:details-heading
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:13Z (RFD66606-2255) 'Every other route in use was an
+2026-09-25T00:01:12Z (RFD66606-2255) 'Every other route in use was an operator-held proxy, which is a person, not a path.
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written
 
-2026-09-25T00:02:14Z (RFD66606-2255) 'operator-held proxy, which is a
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:15Z (RFD66606-2255) 'person, not a path.
- # tags: rfd:details, rfd:wrap
- Text:RFD2255  1 LINE
- Text:Written
-
-2026-09-25T00:02:16Z (RFD66606-2255) '
+2026-09-25T00:01:13Z (RFD66606-2255) '
  # tags: rfd:details
  Text:RFD2255  1 LINE
  Text:Written

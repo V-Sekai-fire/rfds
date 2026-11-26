@@ -4,437 +4,187 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2474) 'the dead-on gate reads every
+2026-11-07T00:00:01Z (RFD66606-2474) 'the dead-on gate reads every painted marker in perfect conditions, with no exceptions.
  # tags: rfd:feature
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2474) 'painted marker in perfect
- # tags: rfd:feature, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2474) 'conditions, with no exceptions.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2474) '`dead_on.py`,
+2026-11-07T00:00:02Z (RFD66606-2474) '`dead_on.py`, `texture_markers.py`, and the placed-marker set they score.
  # tags: rfd:scope
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2474) '`texture_markers.py`, and the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2474) 'placed-marker set they score.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2474) 'Does every marker we paint scan
+2026-11-07T00:00:03Z (RFD66606-2474) 'Does every marker we paint scan dead on, with the camera square on and nothing in the way?
  # tags: rfd:hook
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2474) 'dead on, with the camera square
- # tags: rfd:hook, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2474) 'on and nothing in the way?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2474) '
+2026-11-07T00:00:04Z (RFD66606-2474) '
  # tags: rfd:hook
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2474) 'Today the gate fails: 276 of 280
+2026-11-07T00:00:05Z (RFD66606-2474) 'Today the gate fails: 276 of 280 visible markers read (98.57%) with the original ids, 278 of
  # tags: rfd:intrigue
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2474) 'visible markers read (98.57%)
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2474) 'with the original ids, 278 of
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2474) '280 (99.29%) with the ids moved.
+2026-11-07T00:00:06Z (RFD66606-2474) '280 (99.29%) with the ids moved. Camera 74 fails with two different ids at the same spot, so
  # tags: rfd:intrigue
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2474) 'Camera 74 fails with two
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2474) 'different ids at the same spot,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2474) 'so
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2474) 'that is a position fault: a
+2026-11-07T00:00:07Z (RFD66606-2474) 'that is a position fault: a sharply tilted surface strip sits beside the marker. Ids 664, 703,
  # tags: rfd:intrigue
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2474) 'sharply tilted surface strip sits
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2474) 'beside the marker. Ids 664, 703,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2474) '1973 and 1268 fail only at some
+2026-11-07T00:00:08Z (RFD66606-2474) '1973 and 1268 fail only at some positions, so those are pattern faults, not position faults.
  # tags: rfd:intrigue
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2474) 'positions, so those are pattern
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2474) 'faults, not position faults.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2474) '
+2026-11-07T00:00:09Z (RFD66606-2474) '
  # tags: rfd:intrigue
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2474) 'Run the full pass over all 2,600
+2026-11-07T00:00:10Z (RFD66606-2474) 'Run the full pass over all 2,600 placed positions once it finishes rendering, and read the gate
  # tags: rfd:exit
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2474) 'placed positions once it finishes
- # tags: rfd:exit, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2474) 'rendering, and read the gate
- # tags: rfd:exit, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2474) 'against that pass: 100% of the
+2026-11-07T00:00:11Z (RFD66606-2474) 'against that pass: 100% of the markers left after dropping the failing ids must read.
  # tags: rfd:exit
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2474) 'markers left after dropping the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2474) 'failing ids must read.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2474) '
+2026-11-07T00:00:12Z (RFD66606-2474) '
  # tags: rfd:exit
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2474) 'Suit markers: dead-on gate must
+2026-11-07T00:00:13Z (RFD66606-2474) 'Suit markers: dead-on gate must read every marker
  # tags: rfd:details-title
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2474) 'read every marker
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2474) 'Drop every marker id that fails
+2026-11-07T00:00:14Z (RFD66606-2474) 'Drop every marker id that fails the dead-on gate (held in `DROP_IDS`) and require a 100% read
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2474) 'the dead-on gate (held in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2474) '`DROP_IDS`) and require a 100%
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2474) 'read
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2474) 'rate on the rest. A dropped id's
+2026-11-07T00:00:15Z (RFD66606-2474) 'rate on the rest. A dropped id's slot stays a hole on the garment rather than being refilled by
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2474) 'slot stays a hole on the garment
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2474) 'rather than being refilled by
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2474) 'a neighbour, so the drop list is
+2026-11-07T00:00:16Z (RFD66606-2474) 'a neighbour, so the drop list is stable across renders. Camera 74's failure is tracked and
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2474) 'stable across renders. Camera
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2474) '74's failure is tracked and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2474) 'fixed separately as a position
+2026-11-07T00:00:17Z (RFD66606-2474) 'fixed separately as a position fault, since it is a tilt problem in the surface strip, not a
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2474) 'fault, since it is a tilt problem
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2474) 'in the surface strip, not a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2474) 'marker pattern problem, and
+2026-11-07T00:00:18Z (RFD66606-2474) 'marker pattern problem, and fixing it is out of this gate's scope.
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:48Z (RFD66606-2474) 'fixing it is out of this gate's
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:49Z (RFD66606-2474) 'scope.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2474) '
+2026-11-07T00:00:19Z (RFD66606-2474) '
  # tags: rfd:decision
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2474) 'The two fault classes
+2026-11-07T00:00:20Z (RFD66606-2474) 'The two fault classes
  # tags: rfd:details-heading
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2474) '- Position fault: a marker's own
+2026-11-07T00:00:21Z (RFD66606-2474) '- Position fault: a marker's own pattern is fine, but where it sits (near a seam, a sharp
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2474) 'pattern is fine, but where it
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2474) 'sits (near a seam, a sharp
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2474) '  fold, or a tilted strip) keeps
+2026-11-07T00:00:22Z (RFD66606-2474) '  fold, or a tilted strip) keeps the camera from reading it. Camera 74's dual-id read at one
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2474) 'the camera from reading it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2474) 'Camera 74's dual-id read at one
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2474) '  spot is this class.
+2026-11-07T00:00:23Z (RFD66606-2474) '  spot is this class.
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:00:59Z (RFD66606-2474) '- Pattern fault: the marker's
+2026-11-07T00:00:24Z (RFD66606-2474) '- Pattern fault: the marker's pattern itself does not read cleanly regardless of where it
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2474) 'pattern itself does not read
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2474) 'cleanly regardless of where it
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2474) '  sits. Ids 664, 703, 1973 and
+2026-11-07T00:00:25Z (RFD66606-2474) '  sits. Ids 664, 703, 1973 and 1268, which fail only at some positions and not others, land
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2474) '1268, which fail only at some
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2474) 'positions and not others, land
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:05Z (RFD66606-2474) '  here once position is ruled
+2026-11-07T00:00:26Z (RFD66606-2474) '  here once position is ruled out.
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:06Z (RFD66606-2474) 'out.
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2474) '
+2026-11-07T00:00:27Z (RFD66606-2474) '
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:08Z (RFD66606-2474) 'Where the code lands
+2026-11-07T00:00:28Z (RFD66606-2474) 'Where the code lands
  # tags: rfd:details-heading
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:09Z (RFD66606-2474) '`dead_on.py` scores each rendered
+2026-11-07T00:00:29Z (RFD66606-2474) '`dead_on.py` scores each rendered position against the expected id, and `texture_markers.py`
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:10Z (RFD66606-2474) 'position against the expected id,
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:11Z (RFD66606-2474) 'and `texture_markers.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:12Z (RFD66606-2474) 'paints the marker set onto the
+2026-11-07T00:00:30Z (RFD66606-2474) 'paints the marker set onto the garment texture before render. Both are referenced from pull
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:13Z (RFD66606-2474) 'garment texture before render.
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:14Z (RFD66606-2474) 'Both are referenced from pull
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:15Z (RFD66606-2474) 'requests
+2026-11-07T00:00:31Z (RFD66606-2474) 'requests V-Sekai-fire/interactor-taskweft-persona#6 and #7 against
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:16Z (RFD66606-2474) 'V-Sekai-fire/interactor-taskweft-persona#6
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:17Z (RFD66606-2474) 'and #7 against
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:18Z (RFD66606-2474) 'https://github.com/V-Sekai-fire/interactor-garment-proxy.
+2026-11-07T00:00:32Z (RFD66606-2474) 'https://github.com/V-Sekai-fire/interactor-garment-proxy.
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:19Z (RFD66606-2474) '
+2026-11-07T00:00:33Z (RFD66606-2474) '
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:20Z (RFD66606-2474) 'Open
+2026-11-07T00:00:34Z (RFD66606-2474) 'Open
  # tags: rfd:details-heading
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:21Z (RFD66606-2474) 'The full 2,600-position pass was
+2026-11-07T00:00:35Z (RFD66606-2474) 'The full 2,600-position pass was still rendering at the time of this draft. `DROP_IDS` is
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:22Z (RFD66606-2474) 'still rendering at the time of
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:23Z (RFD66606-2474) 'this draft. `DROP_IDS` is
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:24Z (RFD66606-2474) 'provisional until that pass
+2026-11-07T00:00:36Z (RFD66606-2474) 'provisional until that pass completes and confirms no additional ids fail.
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written
 
-2026-11-07T00:01:25Z (RFD66606-2474) 'completes and confirms no
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:26Z (RFD66606-2474) 'additional ids fail.
- # tags: rfd:details, rfd:wrap
- Text:RFD2474  1 LINE
- Text:Written
-
-2026-11-07T00:01:27Z (RFD66606-2474) '
+2026-11-07T00:00:37Z (RFD66606-2474) '
  # tags: rfd:details
  Text:RFD2474  1 LINE
  Text:Written

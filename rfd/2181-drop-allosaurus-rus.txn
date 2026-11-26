@@ -9,377 +9,177 @@
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:02Z (RFD66606-2181) 'RFD66606-2164, RFD66606-2170;
+2026-09-02T00:00:02Z (RFD66606-2181) 'RFD66606-2164, RFD66606-2170; `emit_10track_panel.py`;
  # tags: rfd:scope
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:03Z (RFD66606-2181) '`emit_10track_panel.py`;
- # tags: rfd:scope, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:04Z (RFD66606-2181) '`add_allosaurus_control.py`;
+2026-09-02T00:00:03Z (RFD66606-2181) '`add_allosaurus_control.py`; `CITATION.cff`
  # tags: rfd:scope
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:05Z (RFD66606-2181) '`CITATION.cff`
- # tags: rfd:scope, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:06Z (RFD66606-2181) 'The ASR panel drops one control
+2026-09-02T00:00:04Z (RFD66606-2181) 'The ASR panel drops one control and keeps a language-free default.
  # tags: rfd:hook
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:07Z (RFD66606-2181) 'and keeps a language-free
- # tags: rfd:hook, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:08Z (RFD66606-2181) 'default.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:09Z (RFD66606-2181) '
+2026-09-02T00:00:05Z (RFD66606-2181) '
  # tags: rfd:hook
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2181) 'The panel runs a Russian phone
+2026-09-02T00:00:06Z (RFD66606-2181) 'The panel runs a Russian phone inventory on every clip regardless of the speaker's L1.
  # tags: rfd:intrigue
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2181) 'inventory on every clip
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2181) 'regardless of the speaker's L1.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2181) '
+2026-09-02T00:00:07Z (RFD66606-2181) '
  # tags: rfd:intrigue
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:14Z (RFD66606-2181) 'Run the panel at 7 tracks, with
+2026-09-02T00:00:08Z (RFD66606-2181) 'Run the panel at 7 tracks, with `universal` as the default and `eng` as the control. Read
  # tags: rfd:exit
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:15Z (RFD66606-2181) '`universal` as the default and
- # tags: rfd:exit, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:16Z (RFD66606-2181) '`eng` as the control. Read
- # tags: rfd:exit, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:17Z (RFD66606-2181) 'RFD66606-2179 for the Whisper
+2026-09-02T00:00:09Z (RFD66606-2181) 'RFD66606-2179 for the Whisper models the panel also drops.
  # tags: rfd:exit
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:18Z (RFD66606-2181) 'models the panel also drops.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:19Z (RFD66606-2181) '
+2026-09-02T00:00:10Z (RFD66606-2181) '
  # tags: rfd:exit
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2181) 'Drop the allosaurus-rus
+2026-09-02T00:00:11Z (RFD66606-2181) 'Drop the allosaurus-rus phone-inventory control
  # tags: rfd:details-title
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:21Z (RFD66606-2181) 'phone-inventory control
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2181) 'Drop the `allosaurus-rus`
+2026-09-02T00:00:12Z (RFD66606-2181) 'Drop the `allosaurus-rus` phone-inventory control; the panel drops from 8 tracks to 7, keeping
  # tags: rfd:decision
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:23Z (RFD66606-2181) 'phone-inventory control; the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2181) 'panel drops from 8 tracks to 7,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:25Z (RFD66606-2181) 'keeping
- # tags: rfd:decision, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2181) '`universal` as the
+2026-09-02T00:00:13Z (RFD66606-2181) '`universal` as the language-inventory-free default and `eng` as the English control.
  # tags: rfd:decision
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:27Z (RFD66606-2181) 'language-inventory-free default
- # tags: rfd:decision, rfd:wrap
+2026-09-02T00:00:14Z (RFD66606-2181) '
+ # tags: rfd:decision
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:28Z (RFD66606-2181) 'and `eng` as the English control.
- # tags: rfd:decision, rfd:wrap
+2026-09-02T00:00:15Z (RFD66606-2181) 'Extends RFD66606-2179 (Whisper drop) and RFD66606-2180 (gemma-auto drop). Amends the panel row
+ # tags: rfd:related
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:16Z (RFD66606-2181) 'in RFD66606-2170 (allosaurus language set)'s decision that named `universal + eng + rus`.
+ # tags: rfd:related
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:17Z (RFD66606-2181) '
+ # tags: rfd:related
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:18Z (RFD66606-2181) 'Panel after the drop
+ # tags: rfd:details-heading
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:19Z (RFD66606-2181) '  text-track   Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:20Z (RFD66606-2181) '  IPA-track    Voxtral-IPA, Gemma-4-12B GBNF-IPA
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:21Z (RFD66606-2181) '  phone-track  allosaurus universal + eng
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:22Z (RFD66606-2181) '
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:23Z (RFD66606-2181) 'Per-clip language inventories can be added back keyed to the speaker's L1 if a future corpus
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:24Z (RFD66606-2181) 'documents it, rather than one hard-coded language for everyone.
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:25Z (RFD66606-2181) '
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:26Z (RFD66606-2181) 'Follow-ups: `emit_10track_panel.py` and `add_allosaurus_control.py` drop the `rus` inventory;
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:27Z (RFD66606-2181) 'downstream RFDs lose their `rus` mentions; `CITATION.cff` unaffected (allosaurus itself
+ # tags: rfd:details
+ Text:RFD2181  1 LINE
+ Text:Written
+
+2026-09-02T00:00:28Z (RFD66606-2181) 'stays).
+ # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
 2026-09-02T00:00:29Z (RFD66606-2181) '
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:30Z (RFD66606-2181) 'Extends RFD66606-2179 (Whisper
- # tags: rfd:related
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:31Z (RFD66606-2181) 'drop) and RFD66606-2180
- # tags: rfd:related, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:32Z (RFD66606-2181) '(gemma-auto drop). Amends the
- # tags: rfd:related, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:33Z (RFD66606-2181) 'panel row
- # tags: rfd:related, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:34Z (RFD66606-2181) 'in RFD66606-2170 (allosaurus
- # tags: rfd:related
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:35Z (RFD66606-2181) 'language set)'s decision that
- # tags: rfd:related, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:36Z (RFD66606-2181) 'named `universal + eng + rus`.
- # tags: rfd:related, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:37Z (RFD66606-2181) '
- # tags: rfd:related
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:38Z (RFD66606-2181) 'Panel after the drop
+2026-09-02T00:00:30Z (RFD66606-2181) 'The problem
  # tags: rfd:details-heading
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:39Z (RFD66606-2181) '  text-track   Parakeet TDT 0.6B
+2026-09-02T00:00:31Z (RFD66606-2181) 'RFD66606-2164 (Rung 1 corpus) shipped allosaurus at three inventories: `universal`, `eng`,
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:40Z (RFD66606-2181) 'v3, Voxtral Mini 3B, wav2vec2
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:41Z (RFD66606-2181) '  IPA-track    Voxtral-IPA,
+2026-09-02T00:00:32Z (RFD66606-2181) '`rus`. The `rus` inventory was picked as a plausible L1 transfer partner for the first
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:42Z (RFD66606-2181) 'Gemma-4-12B GBNF-IPA
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:43Z (RFD66606-2181) '  phone-track  allosaurus
+2026-09-02T00:00:33Z (RFD66606-2181) 'SpeakingFaces subject (Kazakh L2 English speaker); RFD66606-2170 (allosaurus language set) then
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:44Z (RFD66606-2181) 'universal + eng
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:45Z (RFD66606-2181) '
+2026-09-02T00:00:34Z (RFD66606-2181) 'generalised the set. The panel's implementation still carries `rus` as a per-clip inventory and
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:46Z (RFD66606-2181) 'Per-clip language inventories can
+2026-09-02T00:00:35Z (RFD66606-2181) 'runs it on every clip regardless of the speaker's L1.
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:47Z (RFD66606-2181) 'be added back keyed to the
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:48Z (RFD66606-2181) 'speaker's L1 if a future corpus
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:49Z (RFD66606-2181) 'documents it, rather than one
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:50Z (RFD66606-2181) 'hard-coded language for everyone.
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:51Z (RFD66606-2181) '
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:52Z (RFD66606-2181) 'Follow-ups:
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:53Z (RFD66606-2181) '`emit_10track_panel.py` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:54Z (RFD66606-2181) '`add_allosaurus_control.py` drop
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:55Z (RFD66606-2181) 'the `rus` inventory;
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:56Z (RFD66606-2181) 'downstream RFDs lose their `rus`
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:57Z (RFD66606-2181) 'mentions; `CITATION.cff`
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:58Z (RFD66606-2181) 'unaffected (allosaurus itself
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:59Z (RFD66606-2181) 'stays).
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:00Z (RFD66606-2181) '
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:01Z (RFD66606-2181) 'The problem
- # tags: rfd:details-heading
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:02Z (RFD66606-2181) 'RFD66606-2164 (Rung 1 corpus)
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:03Z (RFD66606-2181) 'shipped allosaurus at three
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:04Z (RFD66606-2181) 'inventories: `universal`, `eng`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:05Z (RFD66606-2181) '`rus`. The `rus` inventory was
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:06Z (RFD66606-2181) 'picked as a plausible L1 transfer
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:07Z (RFD66606-2181) 'partner for the first
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:08Z (RFD66606-2181) 'SpeakingFaces subject (Kazakh L2
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:09Z (RFD66606-2181) 'English speaker); RFD66606-2170
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:10Z (RFD66606-2181) '(allosaurus language set) then
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:11Z (RFD66606-2181) 'generalised the set. The panel's
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:12Z (RFD66606-2181) 'implementation still carries
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:13Z (RFD66606-2181) '`rus` as a per-clip inventory and
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:14Z (RFD66606-2181) 'runs it on every clip regardless
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:15Z (RFD66606-2181) 'of the speaker's L1.
- # tags: rfd:details, rfd:wrap
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:01:16Z (RFD66606-2181) '
+2026-09-02T00:00:36Z (RFD66606-2181) '
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written

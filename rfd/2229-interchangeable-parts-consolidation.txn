@@ -4,583 +4,583 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-09-05T00:00:01Z (RFD66606-2229) 'codify the interchangeable-parts
+2026-09-05T00:00:01Z (RFD66606-2229) 'codify the interchangeable-parts directive from
  # tags: rfd:feature
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:02Z (RFD66606-2229) 'directive from
- # tags: rfd:feature, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:03Z (RFD66606-2229) '2026-09-05 as workspace policy
+2026-09-05T00:00:02Z (RFD66606-2229) '2026-09-05 as workspace policy plus name the concrete candidates
  # tags: rfd:feature
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:04Z (RFD66606-2229) 'plus name the concrete candidates
- # tags: rfd:feature, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:05Z (RFD66606-2229) 'already visible in the goal
+2026-09-05T00:00:03Z (RFD66606-2229) 'already visible in the goal manifest
  # tags: rfd:feature
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:06Z (RFD66606-2229) 'manifest
- # tags: rfd:feature, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:07Z (RFD66606-2229) '`weftspun-keypoint/default.xml`
+2026-09-05T00:00:04Z (RFD66606-2229) '`weftspun-keypoint/default.xml` (goal manifest), all
  # tags: rfd:scope
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:08Z (RFD66606-2229) '(goal manifest), all
- # tags: rfd:scope, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:09Z (RFD66606-2229) 'future RFDs that add a new module
+2026-09-05T00:00:05Z (RFD66606-2229) 'future RFDs that add a new module / fork / build fragment /
  # tags: rfd:scope
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:10Z (RFD66606-2229) '/ fork / build fragment /
- # tags: rfd:scope, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:11Z (RFD66606-2229) 'loader path, memory
+2026-09-05T00:00:06Z (RFD66606-2229) 'loader path, memory `consolidate-interchangeable-parts`
  # tags: rfd:scope
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:12Z (RFD66606-2229) '`consolidate-interchangeable-parts`
- # tags: rfd:scope, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:13Z (RFD66606-2229) 'Before a new part lands, check
+2026-09-05T00:00:07Z (RFD66606-2229) 'Before a new part lands, check whether an existing part covers the interface.
  # tags: rfd:hook
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:14Z (RFD66606-2229) 'whether an existing part covers
- # tags: rfd:hook, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:15Z (RFD66606-2229) 'the interface.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:16Z (RFD66606-2229) '
+2026-09-05T00:00:08Z (RFD66606-2229) '
  # tags: rfd:hook
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:17Z (RFD66606-2229) 'RFD66606-2188 named one ggml
+2026-09-05T00:00:09Z (RFD66606-2229) 'RFD66606-2188 named one ggml source for the whole workspace, yet the manifest still ships
  # tags: rfd:intrigue
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:18Z (RFD66606-2229) 'source for the whole workspace,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:19Z (RFD66606-2229) 'yet the manifest still ships
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:20Z (RFD66606-2229) 'three ggml checkouts.
+2026-09-05T00:00:10Z (RFD66606-2229) 'three ggml checkouts.
  # tags: rfd:intrigue
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:21Z (RFD66606-2229) '
+2026-09-05T00:00:11Z (RFD66606-2229) '
  # tags: rfd:intrigue
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:22Z (RFD66606-2229) 'Check a new module, fork or
+2026-09-05T00:00:12Z (RFD66606-2229) 'Check a new module, fork or loader path against the rule below before you land it: extend the
  # tags: rfd:exit
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:23Z (RFD66606-2229) 'loader path against the rule
- # tags: rfd:exit, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:24Z (RFD66606-2229) 'below before you land it: extend
- # tags: rfd:exit, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:25Z (RFD66606-2229) 'the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:26Z (RFD66606-2229) 'existing part, or name it and
+2026-09-05T00:00:13Z (RFD66606-2229) 'existing part, or name it and measure why it does not work.
  # tags: rfd:exit
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:27Z (RFD66606-2229) 'measure why it does not work.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:28Z (RFD66606-2229) '
+2026-09-05T00:00:14Z (RFD66606-2229) '
  # tags: rfd:exit
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:29Z (RFD66606-2229) 'interchangeable-parts
+2026-09-05T00:00:15Z (RFD66606-2229) 'interchangeable-parts consolidation as workspace policy
  # tags: rfd:details-title
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:30Z (RFD66606-2229) 'consolidation as workspace policy
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:31Z (RFD66606-2229) 'Operator directive 2026-09-05,
+2026-09-05T00:00:16Z (RFD66606-2229) 'Operator directive 2026-09-05, verbatim: *"like ford's factories
  # tags: rfd:decision
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:32Z (RFD66606-2229) 'verbatim: *"like ford's factories
- # tags: rfd:decision, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:33Z (RFD66606-2229) 'we have to conslidate our
+2026-09-05T00:00:17Z (RFD66606-2229) 'we have to conslidate our interchagable parts. we have too many
  # tags: rfd:decision
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:34Z (RFD66606-2229) 'interchagable parts. we have too
- # tags: rfd:decision, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:35Z (RFD66606-2229) 'many
- # tags: rfd:decision, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:36Z (RFD66606-2229) 'parts"* + trademark-scrub
+2026-09-05T00:00:18Z (RFD66606-2229) 'parts"* + trademark-scrub follow-up *"please avoid using the
  # tags: rfd:decision
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:37Z (RFD66606-2229) 'follow-up *"please avoid using
- # tags: rfd:decision, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:38Z (RFD66606-2229) 'the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:00:39Z (RFD66606-2229) 'company name ford as a trademark
+2026-09-05T00:00:19Z (RFD66606-2229) 'company name ford as a trademark for inventing the interchable
  # tags: rfd:decision
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:40Z (RFD66606-2229) 'for inventing the interchable
- # tags: rfd:decision, rfd:wrap
+2026-09-05T00:00:20Z (RFD66606-2229) 'parts process"*.
+ # tags: rfd:decision
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:21Z (RFD66606-2229) '
+ # tags: rfd:decision
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:22Z (RFD66606-2229) '- RFD66606-2188 (one ggml across workspace), the reference
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:23Z (RFD66606-2229) '  consolidation this RFD generalises.
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:24Z (RFD66606-2229) '- RFD66606-2210 (L3 atelier shipping surface), the arc that
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:25Z (RFD66606-2229) '  produced the directive.
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:26Z (RFD66606-2229) '- RFD66606-2211 (base tree entities-godot-sandbox), picked the tree
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:27Z (RFD66606-2229) '  the trim in `weftspun-keypoint#101` acted on.
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:28Z (RFD66606-2229) '- Memory `consolidate-interchangeable-parts`, the operator
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:29Z (RFD66606-2229) '  directive + how-to-apply, kept as the working memory next to
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:30Z (RFD66606-2229) '  this policy.
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:31Z (RFD66606-2229) '
+ # tags: rfd:related
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:32Z (RFD66606-2229) 'Related memory
+ # tags: rfd:details-heading
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:33Z (RFD66606-2229) '- Memory `coordinator-verify-before-relay`, records the earlier
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:34Z (RFD66606-2229) '  trademark violation this RFD's naming was scrubbed against.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:35Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:36Z (RFD66606-2229) 'The policy
+ # tags: rfd:details-heading
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:37Z (RFD66606-2229) 'Operator directive 2026-09-05, verbatim: *"like ford's factories
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:38Z (RFD66606-2229) 'we have to conslidate our interchagable parts. we have too many
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:39Z (RFD66606-2229) 'parts"* + trademark-scrub follow-up *"please avoid using the
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:00:40Z (RFD66606-2229) 'company name ford as a trademark for inventing the interchable
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
 2026-09-05T00:00:41Z (RFD66606-2229) 'parts process"*.
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
 2026-09-05T00:00:42Z (RFD66606-2229) '
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:43Z (RFD66606-2229) '- RFD66606-2188 (one ggml across
- # tags: rfd:related
+2026-09-05T00:00:43Z (RFD66606-2229) '**Historical note.** Interchangeable parts predate the company
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:44Z (RFD66606-2229) 'workspace), the reference
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:44Z (RFD66606-2229) 'that got named in the first draft by a century, Whitney's musket
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:45Z (RFD66606-2229) '  consolidation this RFD
- # tags: rfd:related
+2026-09-05T00:00:45Z (RFD66606-2229) 'contract 1798, the Springfield Armory / American System of
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:46Z (RFD66606-2229) 'generalises.
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:46Z (RFD66606-2229) 'manufactures through the 1820s–1850s. That company scaled
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:47Z (RFD66606-2229) '- RFD66606-2210 (L3 atelier
- # tags: rfd:related
+2026-09-05T00:00:47Z (RFD66606-2229) 'assembly-line production using interchangeable parts; it did not
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:48Z (RFD66606-2229) 'shipping surface), the arc that
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:48Z (RFD66606-2229) 'invent them. Neutral vocabulary is **interchangeable parts**,
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:49Z (RFD66606-2229) '  produced the directive.
- # tags: rfd:related
+2026-09-05T00:00:49Z (RFD66606-2229) '**standardized interfaces**, **the American System of
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:50Z (RFD66606-2229) '- RFD66606-2211 (base tree
- # tags: rfd:related
+2026-09-05T00:00:50Z (RFD66606-2229) 'manufactures** if a historical anchor is wanted.
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:51Z (RFD66606-2229) 'entities-godot-sandbox), picked
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:51Z (RFD66606-2229) '
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:52Z (RFD66606-2229) 'the tree
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:52Z (RFD66606-2229) '**The workspace rule (goes into CLAUDE.md next):**
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:53Z (RFD66606-2229) '  the trim in
- # tags: rfd:related
+2026-09-05T00:00:53Z (RFD66606-2229) '
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:54Z (RFD66606-2229) '`weftspun-keypoint#101` acted on.
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:54Z (RFD66606-2229) 'Before landing a new part, a module, a fork, a build fragment,
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:55Z (RFD66606-2229) '- Memory
- # tags: rfd:related
+2026-09-05T00:00:55Z (RFD66606-2229) 'a loader path, a bundle format, a C API extension, check whether
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:56Z (RFD66606-2229) '`consolidate-interchangeable-parts`,
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:56Z (RFD66606-2229) 'an existing part covers the interface. If yes, extend the
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:57Z (RFD66606-2229) 'the operator
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:57Z (RFD66606-2229) 'existing part rather than land a parallel one. Every RFD that
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:58Z (RFD66606-2229) '  directive + how-to-apply, kept
- # tags: rfd:related
+2026-09-05T00:00:58Z (RFD66606-2229) 'names a new component carries a sentence naming the existing
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:00:59Z (RFD66606-2229) 'as the working memory next to
- # tags: rfd:related, rfd:wrap
+2026-09-05T00:00:59Z (RFD66606-2229) 'part it substitutes for and why substituting doesn't work.
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:00Z (RFD66606-2229) '  this policy.
- # tags: rfd:related
+2026-09-05T00:01:00Z (RFD66606-2229) '"Doesn't work" is a measurement, not a preference.
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
 2026-09-05T00:01:01Z (RFD66606-2229) '
- # tags: rfd:related
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:02Z (RFD66606-2229) 'Related memory
+2026-09-05T00:01:02Z (RFD66606-2229) 'Two mechanisms already carry the rule for specific interfaces:
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:03Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:04Z (RFD66606-2229) '- &{repo("ggml")} (RFD66606-2188) as the single ggml source every
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:05Z (RFD66606-2229) '  consumer links.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:06Z (RFD66606-2229) '- &{repo("manuals-weftspun")} (this repo) as the single
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:07Z (RFD66606-2229) '  workspace-doctrine mount, reached from `weftspun-keypoint` via
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:08Z (RFD66606-2229) '  linkfile.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:09Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:10Z (RFD66606-2229) 'Live candidates in the manifest (2026-09-05 as of writing)
  # tags: rfd:details-heading
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:03Z (RFD66606-2229) '- Memory
+2026-09-05T00:01:11Z (RFD66606-2229) 'Enumerated from `weftspun-keypoint/default.xml` at 112 project
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:04Z (RFD66606-2229) '`coordinator-verify-before-relay`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:05Z (RFD66606-2229) 'records the earlier
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:06Z (RFD66606-2229) '  trademark violation this RFD's
+2026-09-05T00:01:12Z (RFD66606-2229) 'entries.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:07Z (RFD66606-2229) 'naming was scrubbed against.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:08Z (RFD66606-2229) '
+2026-09-05T00:01:13Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:09Z (RFD66606-2229) 'The policy
- # tags: rfd:details-heading
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:10Z (RFD66606-2229) 'Operator directive 2026-09-05,
+2026-09-05T00:01:14Z (RFD66606-2229) '### Three `ggml` checkouts
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:11Z (RFD66606-2229) 'verbatim: *"like ford's factories
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:12Z (RFD66606-2229) 'we have to conslidate our
+2026-09-05T00:01:15Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:13Z (RFD66606-2229) 'interchagable parts. we have too
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:14Z (RFD66606-2229) 'many
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:15Z (RFD66606-2229) 'parts"* + trademark-scrub
+2026-09-05T00:01:16Z (RFD66606-2229) '    3-interactor/trellis2cpp/ggml       remote=weftspun  rev=331b9cba
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:16Z (RFD66606-2229) 'follow-up *"please avoid using
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:17Z (RFD66606-2229) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:18Z (RFD66606-2229) 'company name ford as a trademark
+2026-09-05T00:01:17Z (RFD66606-2229) '    3-interactor/ggml-seethrough        remote=weftspun  rev=3404c951
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:19Z (RFD66606-2229) 'for inventing the interchable
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:20Z (RFD66606-2229) 'parts process"*.
+2026-09-05T00:01:18Z (RFD66606-2229) '    2-contract/ggml                     remote=weftspun  rev=weftspun-consolidated
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:21Z (RFD66606-2229) '
+2026-09-05T00:01:19Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:22Z (RFD66606-2229) '**Historical note.**
+2026-09-05T00:01:20Z (RFD66606-2229) '**RFD66606-2188 named &{repo("ggml")} as the single ggml source
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:23Z (RFD66606-2229) 'Interchangeable parts predate the
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:24Z (RFD66606-2229) 'company
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:25Z (RFD66606-2229) 'that got named in the first draft
+2026-09-05T00:01:21Z (RFD66606-2229) 'workspace-wide.** The manifest still ships three checkouts. Two
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:26Z (RFD66606-2229) 'by a century, Whitney's musket
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:27Z (RFD66606-2229) 'contract 1798, the Springfield
+2026-09-05T00:01:22Z (RFD66606-2229) 'of them (`trellis2cpp/ggml`, `ggml-seethrough`) are consumers
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:28Z (RFD66606-2229) 'Armory / American System of
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:29Z (RFD66606-2229) 'manufactures through the
+2026-09-05T00:01:23Z (RFD66606-2229) 'still pinned to their own ggml revisions rather than reading
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:30Z (RFD66606-2229) '1820s–1850s. That company scaled
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:31Z (RFD66606-2229) 'assembly-line production using
+2026-09-05T00:01:24Z (RFD66606-2229) 'through the shared source.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:32Z (RFD66606-2229) 'interchangeable parts; it did not
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:33Z (RFD66606-2229) 'invent them. Neutral vocabulary
+2026-09-05T00:01:25Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:34Z (RFD66606-2229) 'is **interchangeable parts**,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:35Z (RFD66606-2229) '**standardized interfaces**,
+2026-09-05T00:01:26Z (RFD66606-2229) '**Verification needed before trimming.** Whether each consumer
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:36Z (RFD66606-2229) '**the American System of
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:37Z (RFD66606-2229) 'manufactures** if a historical
+2026-09-05T00:01:27Z (RFD66606-2229) 'has actually migrated to &{repo("ggml")}'s API, or whether the
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:38Z (RFD66606-2229) 'anchor is wanted.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:39Z (RFD66606-2229) '
+2026-09-05T00:01:28Z (RFD66606-2229) 'pinned revision holds something the consolidated source doesn't
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:40Z (RFD66606-2229) '**The workspace rule (goes into
+2026-09-05T00:01:29Z (RFD66606-2229) 'yet cover. A CI green on `trellis2-ex` and `seethrough` against
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:41Z (RFD66606-2229) 'CLAUDE.md next):**
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:42Z (RFD66606-2229) '
+2026-09-05T00:01:30Z (RFD66606-2229) '&{repo("ggml")} is the measurement.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:43Z (RFD66606-2229) 'Before landing a new part, a
+2026-09-05T00:01:31Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:44Z (RFD66606-2229) 'module, a fork, a build fragment,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:45Z (RFD66606-2229) 'a loader path, a bundle format, a
+2026-09-05T00:01:32Z (RFD66606-2229) 'Follow-up L1 RFDs (planned in the 22xx range): one per consumer
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:46Z (RFD66606-2229) 'C API extension, check whether
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:47Z (RFD66606-2229) 'an existing part covers the
+2026-09-05T00:01:33Z (RFD66606-2229) 'scoping the migration + trim per project.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:48Z (RFD66606-2229) 'interface. If yes, extend the
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:49Z (RFD66606-2229) 'existing part rather than land a
+2026-09-05T00:01:34Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:50Z (RFD66606-2229) 'parallel one. Every RFD that
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:51Z (RFD66606-2229) 'names a new component carries a
+2026-09-05T00:01:35Z (RFD66606-2229) '### `entities-godot-main` (trimmed 2026-09-05)
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:52Z (RFD66606-2229) 'sentence naming the existing
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:53Z (RFD66606-2229) 'part it substitutes for and why
+2026-09-05T00:01:36Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:54Z (RFD66606-2229) 'substituting doesn't work.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:01:55Z (RFD66606-2229) '"Doesn't work" is a measurement,
+2026-09-05T00:01:37Z (RFD66606-2229) 'Same repo as &{repo("entities-godot-sandbox", planned: "4-entities")} at revision `main` instead
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:56Z (RFD66606-2229) 'not a preference.
- # tags: rfd:details, rfd:wrap
+2026-09-05T00:01:38Z (RFD66606-2229) 'of `feat/vsk-sandbox-4.7`. Trimmed as `weftspun-keypoint#101`.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:39Z (RFD66606-2229) 'Recorded here as the reference case that proves the pattern
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:40Z (RFD66606-2229) 'lands cleanly.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:41Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:42Z (RFD66606-2229) '### `motion-bricks-cpp` + `kimodo` + `skin-tokens-cpp`
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:43Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:44Z (RFD66606-2229) 'Three ggml-graph-in-C++ shapes with three separate build
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:45Z (RFD66606-2229) 'systems. All target the same interface: a C API that Godot's
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:46Z (RFD66606-2229) '`modules/motionbricks/` (RFD66606-2212) wraps for scene-graph access.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:47Z (RFD66606-2229) 'Consolidation candidate: one `ggml-godot-module-kit` that all
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:48Z (RFD66606-2229) 'three link, replacing three per-project CMake `if(NATIVE_WEBGPU)`
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:49Z (RFD66606-2229) 'branches with one shared fragment.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:50Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:51Z (RFD66606-2229) 'Not urgent; the three projects are early enough that their build
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:52Z (RFD66606-2229) 'systems haven't diverged much. RFD66606-2188 shared source + a small
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:53Z (RFD66606-2229) 'build-fragment consolidation covers most of it. Concrete work is
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:54Z (RFD66606-2229) 'a follow-up L2 once RFD66606-2212's `modules/motionbricks` lands.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:55Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:01:56Z (RFD66606-2229) '### Manifests-of-manifests
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
@@ -589,342 +589,342 @@
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:58Z (RFD66606-2229) 'Two mechanisms already carry the
+2026-09-05T00:01:58Z (RFD66606-2229) '**Not a candidate.** `weftspun-keypoint` is the single live goal
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:01:59Z (RFD66606-2229) 'rule for specific interfaces:
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:00Z (RFD66606-2229) '
+2026-09-05T00:01:59Z (RFD66606-2229) 'manifest per CLAUDE.md's "Sides" rule; the archived
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:01Z (RFD66606-2229) '- &{repo("ggml")} (RFD66606-2188)
+2026-09-05T00:02:00Z (RFD66606-2229) '`weftspun-mesh-latents` is placement history, not a parallel
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:02Z (RFD66606-2229) 'as the single ggml source every
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:03Z (RFD66606-2229) '  consumer links.
+2026-09-05T00:02:01Z (RFD66606-2229) 'manifest.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:04Z (RFD66606-2229) '- &{repo("manuals-weftspun")}
+2026-09-05T00:02:02Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:05Z (RFD66606-2229) '(this repo) as the single
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:06Z (RFD66606-2229) '  workspace-doctrine mount,
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:07Z (RFD66606-2229) 'reached from `weftspun-keypoint`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:08Z (RFD66606-2229) 'via
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:09Z (RFD66606-2229) '  linkfile.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:10Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:11Z (RFD66606-2229) 'Live candidates in the manifest
+2026-09-05T00:02:03Z (RFD66606-2229) 'Verification
  # tags: rfd:details-heading
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:12Z (RFD66606-2229) '(2026-09-05 as of writing)
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:13Z (RFD66606-2229) 'Enumerated from
+2026-09-05T00:02:04Z (RFD66606-2229) 'The policy is measured by:
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:14Z (RFD66606-2229) '`weftspun-keypoint/default.xml`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:15Z (RFD66606-2229) 'at 112 project
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:16Z (RFD66606-2229) 'entries.
+2026-09-05T00:02:05Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:17Z (RFD66606-2229) '
+2026-09-05T00:02:06Z (RFD66606-2229) '1. **RFD-add gate.** A new RFD that adds a component but does
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:18Z (RFD66606-2229) '### Three `ggml` checkouts
+2026-09-05T00:02:07Z (RFD66606-2229) '   not name an existing part it substitutes for is asking for a
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:19Z (RFD66606-2229) '
+2026-09-05T00:02:08Z (RFD66606-2229) '   parallel part. Add a section to `check_rfd_structure.py`
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:20Z (RFD66606-2229) '    3-interactor/trellis2cpp/ggml       remote=weftspun  rev=331b9cba
+2026-09-05T00:02:09Z (RFD66606-2229) '   requiring an "Alternatives considered" or "Substitutes for"
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:21Z (RFD66606-2229) '    3-interactor/ggml-seethrough        remote=weftspun  rev=3404c951
+2026-09-05T00:02:10Z (RFD66606-2229) '   paragraph when the RFD's frontmatter is tagged as adding a
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:22Z (RFD66606-2229) '    2-contract/ggml                     remote=weftspun  rev=weftspun-consolidated
+2026-09-05T00:02:11Z (RFD66606-2229) '   module/fork/bundle-format. Draft in a follow-up PR; RFD66606-1000
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:23Z (RFD66606-2229) '
+2026-09-05T00:02:12Z (RFD66606-2229) '   carries the structure list this gate reads from.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:24Z (RFD66606-2229) '**RFD66606-2188 named
+2026-09-05T00:02:13Z (RFD66606-2229) '2. **Manifest-scan gate.** `scripts/check_manifest_dupes.py`
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:25Z (RFD66606-2229) '&{repo("ggml")} as the single
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:26Z (RFD66606-2229) 'ggml source
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:27Z (RFD66606-2229) 'workspace-wide.** The manifest
+2026-09-05T00:02:14Z (RFD66606-2229) '   (new) reads the live goal manifest, groups by name/path/
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:28Z (RFD66606-2229) 'still ships three checkouts. Two
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:29Z (RFD66606-2229) 'of them (`trellis2cpp/ggml`,
+2026-09-05T00:02:15Z (RFD66606-2229) '   remote+rev, and reports groups of size > 1 as candidates
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:30Z (RFD66606-2229) '`ggml-seethrough`) are consumers
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:31Z (RFD66606-2229) 'still pinned to their own ggml
+2026-09-05T00:02:16Z (RFD66606-2229) '   needing a doctrine pointer (an RFD saying why both stay) or
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:32Z (RFD66606-2229) 'revisions rather than reading
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:33Z (RFD66606-2229) 'through the shared source.
+2026-09-05T00:02:17Z (RFD66606-2229) '   a trim PR (like `weftspun-keypoint#101`). Silent-skip case:
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:34Z (RFD66606-2229) '
+2026-09-05T00:02:18Z (RFD66606-2229) '   the two-manifest state that exists during a manifest cutover
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:35Z (RFD66606-2229) '**Verification needed before
+2026-09-05T00:02:19Z (RFD66606-2229) '  , the gate reports both, doesn't fail on the presence.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:36Z (RFD66606-2229) 'trimming.** Whether each consumer
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:37Z (RFD66606-2229) 'has actually migrated to
+2026-09-05T00:02:20Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:38Z (RFD66606-2229) '&{repo("ggml")}'s API, or whether
- # tags: rfd:details, rfd:wrap
+2026-09-05T00:02:21Z (RFD66606-2229) 'Related
+ # tags: rfd:details-heading
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:39Z (RFD66606-2229) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:40Z (RFD66606-2229) 'pinned revision holds something
+2026-09-05T00:02:22Z (RFD66606-2229) '- RFD66606-2188 (one ggml across workspace), the reference
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:41Z (RFD66606-2229) 'the consolidated source doesn't
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:42Z (RFD66606-2229) 'yet cover. A CI green on
+2026-09-05T00:02:23Z (RFD66606-2229) '  consolidation this RFD generalises.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:43Z (RFD66606-2229) '`trellis2-ex` and `seethrough`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:44Z (RFD66606-2229) 'against
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:45Z (RFD66606-2229) '&{repo("ggml")} is the
+2026-09-05T00:02:24Z (RFD66606-2229) '- RFD66606-2210 (L3 atelier shipping surface), the arc that
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:46Z (RFD66606-2229) 'measurement.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:47Z (RFD66606-2229) '
+2026-09-05T00:02:25Z (RFD66606-2229) '  produced the directive.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:48Z (RFD66606-2229) 'Follow-up L1 RFDs (planned in the
+2026-09-05T00:02:26Z (RFD66606-2229) '- RFD66606-2211 (base tree entities-godot-sandbox), picked the tree
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:49Z (RFD66606-2229) '22xx range): one per consumer
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:50Z (RFD66606-2229) 'scoping the migration + trim per
+2026-09-05T00:02:27Z (RFD66606-2229) '  the trim in `weftspun-keypoint#101` acted on.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:51Z (RFD66606-2229) 'project.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:52Z (RFD66606-2229) '
+2026-09-05T00:02:28Z (RFD66606-2229) '- Memory `consolidate-interchangeable-parts`, the operator
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:53Z (RFD66606-2229) '### `entities-godot-main`
+2026-09-05T00:02:29Z (RFD66606-2229) '  directive + how-to-apply, kept as the working memory next to
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:54Z (RFD66606-2229) '(trimmed 2026-09-05)
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:55Z (RFD66606-2229) '
+2026-09-05T00:02:30Z (RFD66606-2229) '  this policy.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:56Z (RFD66606-2229) 'Same repo as
+2026-09-05T00:02:31Z (RFD66606-2229) '- Memory `coordinator-verify-before-relay`, records the earlier
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:02:57Z (RFD66606-2229) '&{repo("entities-godot-sandbox",
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:58Z (RFD66606-2229) 'planned: "4-entities")} at
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:02:59Z (RFD66606-2229) 'revision `main` instead
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:00Z (RFD66606-2229) 'of `feat/vsk-sandbox-4.7`.
+2026-09-05T00:02:32Z (RFD66606-2229) '  trademark violation this RFD's naming was scrubbed against.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:01Z (RFD66606-2229) 'Trimmed as
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:02Z (RFD66606-2229) '`weftspun-keypoint#101`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:03Z (RFD66606-2229) 'Recorded here as the reference
+2026-09-05T00:02:33Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:04Z (RFD66606-2229) 'case that proves the pattern
- # tags: rfd:details, rfd:wrap
+2026-09-05T00:02:34Z (RFD66606-2229) 'Operator context 2026-09-05
+ # tags: rfd:details-heading
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:05Z (RFD66606-2229) 'lands cleanly.
+2026-09-05T00:02:35Z (RFD66606-2229) 'Two verbatim directives (paired):
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:36Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:37Z (RFD66606-2229) '> like ford's factories we have to conslidate our interchagable
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:38Z (RFD66606-2229) '> parts. we have too many parts
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:39Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:40Z (RFD66606-2229) '> please avoid using the company name ford as a trademark for
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:41Z (RFD66606-2229) '> inventing the interchable parts process
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:42Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:43Z (RFD66606-2229) 'Both applied. The first is the policy; the second is the naming.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:44Z (RFD66606-2229) 'The RFD carries neutral vocabulary from here on.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:45Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:46Z (RFD66606-2229) 'A caller is a part, and the missing one cost whole operator cycles
+ # tags: rfd:details-heading
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:47Z (RFD66606-2229) 'Operator, 2026-09-09: study how to improve the developer iteration cycle with
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:48Z (RFD66606-2229) 'interchangeable parts, then twice narrowing what that meant, ending at "developer
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:49Z (RFD66606-2229) 'cycle means operator cycles". The study is recorded in
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:50Z (RFD66606-2229) '`logbook-local-gates-before-ci.md`; the ruling it produced belongs here.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:51Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:52Z (RFD66606-2229) '**The machine loops are not the bottleneck, which is the finding that redirected
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:53Z (RFD66606-2229) 'the study.** Measured on the desk: the Elixir teacher recompiles in 1.0 s and runs
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:54Z (RFD66606-2229) 'its 21 tests in 2.1 s; a no-op `lake build` on the compiler takes 1.3 s once warm,
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:55Z (RFD66606-2229) 'against 55 s cold after a sync; prek over the assembly's 377 changed files takes
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:56Z (RFD66606-2229) '49 s; a compiler invocation costs 77 ms. Every inner loop is seconds, so tuning
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:57Z (RFD66606-2229) 'them changes nothing the operator experiences.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:58Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:02:59Z (RFD66606-2229) '**What the operator experiences is round trips, and a third of them were not
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:00Z (RFD66606-2229) 'work.** Of 14 operator turns in the session, six carried new direction and five
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:01Z (RFD66606-2229) 'were spent putting the work back on track: one question asked three times after
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:02Z (RFD66606-2229) 'it had already been answered, one correction of a result reported as clean that
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:03Z (RFD66606-2229) 'was not, and two corrections of what was being studied. One session, counted by
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:04Z (RFD66606-2229) 'the agent that caused the corrections, so it bounds an order of magnitude rather
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:05Z (RFD66606-2229) 'than a rate.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
@@ -934,88 +934,88 @@
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:07Z (RFD66606-2229) '### `motion-bricks-cpp` +
+2026-09-05T00:03:07Z (RFD66606-2229) 'Three classes, each with a part that already existed and no caller.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:08Z (RFD66606-2229) '`kimodo` + `skin-tokens-cpp`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:09Z (RFD66606-2229) '
+2026-09-05T00:03:08Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:10Z (RFD66606-2229) 'Three ggml-graph-in-C++ shapes
+2026-09-05T00:03:09Z (RFD66606-2229) '**A sweep with no control reports an empty set as clean.** `repo forall` visits
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:11Z (RFD66606-2229) 'with three separate build
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:12Z (RFD66606-2229) 'systems. All target the same
+2026-09-05T00:03:10Z (RFD66606-2229) 'zero projects on this desk and exits 0, so a workspace sweep reported 135 visited
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:13Z (RFD66606-2229) 'interface: a C API that Godot's
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:14Z (RFD66606-2229) '`modules/motionbricks/`
+2026-09-05T00:03:11Z (RFD66606-2229) 'and 0 dirty over nothing at all. The operator caught it. The part was already
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:15Z (RFD66606-2229) '(RFD66606-2212) wraps for
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:16Z (RFD66606-2229) 'scene-graph access.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:17Z (RFD66606-2229) 'Consolidation candidate: one
+2026-09-05T00:03:12Z (RFD66606-2229) 'written down: this workspace's own rule that every counter carries a planted
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:18Z (RFD66606-2229) '`ggml-godot-module-kit` that all
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:19Z (RFD66606-2229) 'three link, replacing three
+2026-09-05T00:03:13Z (RFD66606-2229) 'control, which `check_anti_entropy.py` implements. What was missing was applying
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:20Z (RFD66606-2229) 'per-project CMake
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:21Z (RFD66606-2229) '`if(NATIVE_WEBGPU)`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:22Z (RFD66606-2229) 'branches with one shared
+2026-09-05T00:03:14Z (RFD66606-2229) 'it to ad-hoc sweeps rather than only to committed gates. There is now one
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:23Z (RFD66606-2229) 'fragment.
- # tags: rfd:details, rfd:wrap
+2026-09-05T00:03:15Z (RFD66606-2229) 'enumerator, `Gate.projects/0`, parsed from the manifest and asserting a non-zero
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:16Z (RFD66606-2229) 'visit before any result is believed.
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:17Z (RFD66606-2229) '
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:18Z (RFD66606-2229) '**Defect classes were discovered one CI round trip at a time.** A push failed on
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:19Z (RFD66606-2229) 'style after 77.8 minutes, of which 76.1 were queue and 1.7 were checking; the fix
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:20Z (RFD66606-2229) 'pushed, and the next run failed on a moved header after 41.8 minutes. Two operator
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:21Z (RFD66606-2229) 'turns bought one defect class each, and both were findable on the desk in under a
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:22Z (RFD66606-2229) 'minute. So the gate runner runs every mechanism a project declares in one pass
+ # tags: rfd:details
+ Text:RFD2229  1 LINE
+ Text:Written
+
+2026-09-05T00:03:23Z (RFD66606-2229) 'rather than the operator learning them serially.
+ # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
@@ -1024,1327 +1024,137 @@
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:25Z (RFD66606-2229) 'Not urgent; the three projects
+2026-09-05T00:03:25Z (RFD66606-2229) '**The relocation class needs its own mechanism, because git reports it clean.**
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:03:26Z (RFD66606-2229) 'are early enough that their build
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:27Z (RFD66606-2229) 'systems haven't diverged much.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:28Z (RFD66606-2229) 'RFD66606-2188 shared source + a
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:29Z (RFD66606-2229) 'small
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:30Z (RFD66606-2229) 'build-fragment consolidation
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:31Z (RFD66606-2229) 'covers most of it. Concrete work
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:32Z (RFD66606-2229) 'is
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:33Z (RFD66606-2229) 'a follow-up L2 once
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:34Z (RFD66606-2229) 'RFD66606-2212's
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:35Z (RFD66606-2229) '`modules/motionbricks` lands.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:36Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:37Z (RFD66606-2229) '### Manifests-of-manifests
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:38Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:39Z (RFD66606-2229) '**Not a candidate.**
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:40Z (RFD66606-2229) '`weftspun-keypoint` is the single
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:41Z (RFD66606-2229) 'live goal
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:42Z (RFD66606-2229) 'manifest per CLAUDE.md's "Sides"
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:43Z (RFD66606-2229) 'rule; the archived
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:44Z (RFD66606-2229) '`weftspun-mesh-latents` is
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:45Z (RFD66606-2229) 'placement history, not a parallel
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:46Z (RFD66606-2229) 'manifest.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:47Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:48Z (RFD66606-2229) 'Verification
- # tags: rfd:details-heading
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:49Z (RFD66606-2229) 'The policy is measured by:
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:50Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:51Z (RFD66606-2229) '1. **RFD-add gate.** A new RFD
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:52Z (RFD66606-2229) 'that adds a component but does
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:53Z (RFD66606-2229) '   not name an existing part it
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:54Z (RFD66606-2229) 'substitutes for is asking for a
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:55Z (RFD66606-2229) '   parallel part. Add a section
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:56Z (RFD66606-2229) 'to `check_rfd_structure.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:57Z (RFD66606-2229) '   requiring an "Alternatives
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:58Z (RFD66606-2229) 'considered" or "Substitutes for"
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:03:59Z (RFD66606-2229) '   paragraph when the RFD's
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:00Z (RFD66606-2229) 'frontmatter is tagged as adding a
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:01Z (RFD66606-2229) '   module/fork/bundle-format.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:02Z (RFD66606-2229) 'Draft in a follow-up PR;
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:03Z (RFD66606-2229) 'RFD66606-1000
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:04Z (RFD66606-2229) '   carries the structure list
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:05Z (RFD66606-2229) 'this gate reads from.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:06Z (RFD66606-2229) '2. **Manifest-scan gate.**
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:07Z (RFD66606-2229) '`scripts/check_manifest_dupes.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:08Z (RFD66606-2229) '   (new) reads the live goal
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:09Z (RFD66606-2229) 'manifest, groups by name/path/
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:10Z (RFD66606-2229) '   remote+rev, and reports groups
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:11Z (RFD66606-2229) 'of size > 1 as candidates
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:12Z (RFD66606-2229) '   needing a doctrine pointer (an
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:13Z (RFD66606-2229) 'RFD saying why both stay) or
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:14Z (RFD66606-2229) '   a trim PR (like
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:15Z (RFD66606-2229) '`weftspun-keypoint#101`).
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:16Z (RFD66606-2229) 'Silent-skip case:
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:17Z (RFD66606-2229) '   the two-manifest state that
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:18Z (RFD66606-2229) 'exists during a manifest cutover
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:19Z (RFD66606-2229) '  , the gate reports both,
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:20Z (RFD66606-2229) 'doesn't fail on the presence.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:21Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:22Z (RFD66606-2229) 'Related
- # tags: rfd:details-heading
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:23Z (RFD66606-2229) '- RFD66606-2188 (one ggml across
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:24Z (RFD66606-2229) 'workspace), the reference
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:25Z (RFD66606-2229) '  consolidation this RFD
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:26Z (RFD66606-2229) 'generalises.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:27Z (RFD66606-2229) '- RFD66606-2210 (L3 atelier
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:28Z (RFD66606-2229) 'shipping surface), the arc that
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:29Z (RFD66606-2229) '  produced the directive.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:30Z (RFD66606-2229) '- RFD66606-2211 (base tree
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:31Z (RFD66606-2229) 'entities-godot-sandbox), picked
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:32Z (RFD66606-2229) 'the tree
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:33Z (RFD66606-2229) '  the trim in
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:34Z (RFD66606-2229) '`weftspun-keypoint#101` acted on.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:35Z (RFD66606-2229) '- Memory
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:36Z (RFD66606-2229) '`consolidate-interchangeable-parts`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:37Z (RFD66606-2229) 'the operator
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:38Z (RFD66606-2229) '  directive + how-to-apply, kept
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:39Z (RFD66606-2229) 'as the working memory next to
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:40Z (RFD66606-2229) '  this policy.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:41Z (RFD66606-2229) '- Memory
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:42Z (RFD66606-2229) '`coordinator-verify-before-relay`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:43Z (RFD66606-2229) 'records the earlier
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:44Z (RFD66606-2229) '  trademark violation this RFD's
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:45Z (RFD66606-2229) 'naming was scrubbed against.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:46Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:47Z (RFD66606-2229) 'Operator context 2026-09-05
- # tags: rfd:details-heading
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:48Z (RFD66606-2229) 'Two verbatim directives (paired):
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:49Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:50Z (RFD66606-2229) '> like ford's factories we have
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:51Z (RFD66606-2229) 'to conslidate our interchagable
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:52Z (RFD66606-2229) '> parts. we have too many parts
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:53Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:54Z (RFD66606-2229) '> please avoid using the company
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:55Z (RFD66606-2229) 'name ford as a trademark for
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:56Z (RFD66606-2229) '> inventing the interchable parts
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:57Z (RFD66606-2229) 'process
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:58Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:04:59Z (RFD66606-2229) 'Both applied. The first is the
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:00Z (RFD66606-2229) 'policy; the second is the naming.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:01Z (RFD66606-2229) 'The RFD carries neutral
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:02Z (RFD66606-2229) 'vocabulary from here on.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:03Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:04Z (RFD66606-2229) 'A caller is a part, and the
- # tags: rfd:details-heading
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:05Z (RFD66606-2229) 'missing one cost whole operator
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:06Z (RFD66606-2229) 'cycles
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:07Z (RFD66606-2229) 'Operator, 2026-09-09: study how
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:08Z (RFD66606-2229) 'to improve the developer
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:09Z (RFD66606-2229) 'iteration cycle with
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:10Z (RFD66606-2229) 'interchangeable parts, then twice
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:11Z (RFD66606-2229) 'narrowing what that meant, ending
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:12Z (RFD66606-2229) 'at "developer
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:13Z (RFD66606-2229) 'cycle means operator cycles". The
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:14Z (RFD66606-2229) 'study is recorded in
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:15Z (RFD66606-2229) '`logbook-local-gates-before-ci.md`;
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:16Z (RFD66606-2229) 'the ruling it produced belongs
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:17Z (RFD66606-2229) 'here.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:18Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:19Z (RFD66606-2229) '**The machine loops are not the
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:20Z (RFD66606-2229) 'bottleneck, which is the finding
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:21Z (RFD66606-2229) 'that redirected
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:22Z (RFD66606-2229) 'the study.** Measured on the
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:23Z (RFD66606-2229) 'desk: the Elixir teacher
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:24Z (RFD66606-2229) 'recompiles in 1.0 s and runs
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:25Z (RFD66606-2229) 'its 21 tests in 2.1 s; a no-op
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:26Z (RFD66606-2229) '`lake build` on the compiler
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:27Z (RFD66606-2229) 'takes 1.3 s once warm,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:28Z (RFD66606-2229) 'against 55 s cold after a sync;
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:29Z (RFD66606-2229) 'prek over the assembly's 377
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:30Z (RFD66606-2229) 'changed files takes
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:31Z (RFD66606-2229) '49 s; a compiler invocation costs
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:32Z (RFD66606-2229) '77 ms. Every inner loop is
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:33Z (RFD66606-2229) 'seconds, so tuning
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:34Z (RFD66606-2229) 'them changes nothing the operator
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:35Z (RFD66606-2229) 'experiences.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:36Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:37Z (RFD66606-2229) '**What the operator experiences
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:38Z (RFD66606-2229) 'is round trips, and a third of
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:39Z (RFD66606-2229) 'them were not
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:40Z (RFD66606-2229) 'work.** Of 14 operator turns in
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:41Z (RFD66606-2229) 'the session, six carried new
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:42Z (RFD66606-2229) 'direction and five
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:43Z (RFD66606-2229) 'were spent putting the work back
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:44Z (RFD66606-2229) 'on track: one question asked
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:45Z (RFD66606-2229) 'three times after
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:46Z (RFD66606-2229) 'it had already been answered, one
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:47Z (RFD66606-2229) 'correction of a result reported
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:48Z (RFD66606-2229) 'as clean that
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:49Z (RFD66606-2229) 'was not, and two corrections of
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:50Z (RFD66606-2229) 'what was being studied. One
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:51Z (RFD66606-2229) 'session, counted by
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:52Z (RFD66606-2229) 'the agent that caused the
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:53Z (RFD66606-2229) 'corrections, so it bounds an
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:54Z (RFD66606-2229) 'order of magnitude rather
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:55Z (RFD66606-2229) 'than a rate.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:56Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:57Z (RFD66606-2229) 'Three classes, each with a part
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:58Z (RFD66606-2229) 'that already existed and no
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:05:59Z (RFD66606-2229) 'caller.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:00Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:01Z (RFD66606-2229) '**A sweep with no control reports
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:02Z (RFD66606-2229) 'an empty set as clean.** `repo
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:03Z (RFD66606-2229) 'forall` visits
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:04Z (RFD66606-2229) 'zero projects on this desk and
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:05Z (RFD66606-2229) 'exits 0, so a workspace sweep
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:06Z (RFD66606-2229) 'reported 135 visited
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:07Z (RFD66606-2229) 'and 0 dirty over nothing at all.
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:08Z (RFD66606-2229) 'The operator caught it. The part
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:09Z (RFD66606-2229) 'was already
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:10Z (RFD66606-2229) 'written down: this workspace's
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:11Z (RFD66606-2229) 'own rule that every counter
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:12Z (RFD66606-2229) 'carries a planted
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:13Z (RFD66606-2229) 'control, which
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:14Z (RFD66606-2229) '`check_anti_entropy.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:15Z (RFD66606-2229) 'implements. What was missing was
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:16Z (RFD66606-2229) 'applying
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:17Z (RFD66606-2229) 'it to ad-hoc sweeps rather than
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:18Z (RFD66606-2229) 'only to committed gates. There is
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:19Z (RFD66606-2229) 'now one
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:20Z (RFD66606-2229) 'enumerator, `Gate.projects/0`,
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:21Z (RFD66606-2229) 'parsed from the manifest and
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:22Z (RFD66606-2229) 'asserting a non-zero
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:23Z (RFD66606-2229) 'visit before any result is
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:24Z (RFD66606-2229) 'believed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:25Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:26Z (RFD66606-2229) '**Defect classes were discovered
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:27Z (RFD66606-2229) 'one CI round trip at a time.** A
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:28Z (RFD66606-2229) 'push failed on
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:29Z (RFD66606-2229) 'style after 77.8 minutes, of
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:30Z (RFD66606-2229) 'which 76.1 were queue and 1.7
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:31Z (RFD66606-2229) 'were checking; the fix
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:32Z (RFD66606-2229) 'pushed, and the next run failed
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:33Z (RFD66606-2229) 'on a moved header after 41.8
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:34Z (RFD66606-2229) 'minutes. Two operator
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:35Z (RFD66606-2229) 'turns bought one defect class
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:36Z (RFD66606-2229) 'each, and both were findable on
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:37Z (RFD66606-2229) 'the desk in under a
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:38Z (RFD66606-2229) 'minute. So the gate runner runs
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:39Z (RFD66606-2229) 'every mechanism a project
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:40Z (RFD66606-2229) 'declares in one pass
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:41Z (RFD66606-2229) 'rather than the operator learning
+2026-09-05T00:03:26Z (RFD66606-2229) 'Where upstream moves a header rather than editing it, no merge conflicts and the
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:06:42Z (RFD66606-2229) 'them serially.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:43Z (RFD66606-2229) '
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:44Z (RFD66606-2229) '**The relocation class needs its
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:45Z (RFD66606-2229) 'own mechanism, because git
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:46Z (RFD66606-2229) 'reports it clean.**
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:47Z (RFD66606-2229) 'Where upstream moves a header
- # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:48Z (RFD66606-2229) 'rather than editing it, no merge
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:49Z (RFD66606-2229) 'conflicts and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:50Z (RFD66606-2229) 'break appears only at compile
+2026-09-05T00:03:27Z (RFD66606-2229) 'break appears only at compile time. It bit this fork four times in one session:
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:51Z (RFD66606-2229) 'time. It bit this fork four times
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:52Z (RFD66606-2229) 'in one session:
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:06:53Z (RFD66606-2229) '`audio_stream_generator.h` and
+2026-09-05T00:03:28Z (RFD66606-2229) '`audio_stream_generator.h` and `audio_stream.h` moved to `scene/resources/audio/`,
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:54Z (RFD66606-2229) '`audio_stream.h` moved to
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:06:55Z (RFD66606-2229) '`scene/resources/audio/`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:56Z (RFD66606-2229) 'and the speaker-mode and bus-type
+2026-09-05T00:03:29Z (RFD66606-2229) 'and the speaker-mode and bus-type names moved from `AudioServer` to
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:57Z (RFD66606-2229) 'names moved from `AudioServer` to
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:06:58Z (RFD66606-2229) '`AudioServerEnums`. The check is
+2026-09-05T00:03:30Z (RFD66606-2229) '`AudioServerEnums`. The check is that every engine-rooted include in a changed
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:06:59Z (RFD66606-2229) 'that every engine-rooted include
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:00Z (RFD66606-2229) 'in a changed
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:01Z (RFD66606-2229) 'source resolves to a file. On the
+2026-09-05T00:03:31Z (RFD66606-2229) 'source resolves to a file. On the assembly it runs clean over 377 files with no
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:02Z (RFD66606-2229) 'assembly it runs clean over 377
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:03Z (RFD66606-2229) 'files with no
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:04Z (RFD66606-2229) 'false alarm, and it fails on the
+2026-09-05T00:03:32Z (RFD66606-2229) 'false alarm, and it fails on the real defect naming the file and the include.
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:05Z (RFD66606-2229) 'real defect naming the file and
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:06Z (RFD66606-2229) 'the include.
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:07Z (RFD66606-2229) '
+2026-09-05T00:03:33Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:08Z (RFD66606-2229) 'Its floor is stated rather than
+2026-09-05T00:03:34Z (RFD66606-2229) 'Its floor is stated rather than implied: generated `.gen.h` headers do not exist
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:09Z (RFD66606-2229) 'implied: generated `.gen.h`
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:10Z (RFD66606-2229) 'headers do not exist
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:11Z (RFD66606-2229) 'until SCons writes them, and a
+2026-09-05T00:03:35Z (RFD66606-2229) 'until SCons writes them, and a module-relative include resolves through a CPPPATH
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:12Z (RFD66606-2229) 'module-relative include resolves
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:13Z (RFD66606-2229) 'through a CPPPATH
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:14Z (RFD66606-2229) 'the check cannot see, so both are
+2026-09-05T00:03:36Z (RFD66606-2229) 'the check cannot see, so both are excluded and only engine-rooted, non-generated
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:15Z (RFD66606-2229) 'excluded and only engine-rooted,
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:16Z (RFD66606-2229) 'non-generated
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:17Z (RFD66606-2229) 'includes are checked. A second
+2026-09-05T00:03:37Z (RFD66606-2229) 'includes are checked. A second control asserts the generated case is not flagged,
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:18Z (RFD66606-2229) 'control asserts the generated
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:19Z (RFD66606-2229) 'case is not flagged,
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:20Z (RFD66606-2229) 'because a check that fires on
+2026-09-05T00:03:38Z (RFD66606-2229) 'because a check that fires on every `.gen.h` is noise, and a noisy gate is
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:21Z (RFD66606-2229) 'every `.gen.h` is noise, and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:22Z (RFD66606-2229) 'noisy gate is
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:23Z (RFD66606-2229) 'switched off rather than fixed.
+2026-09-05T00:03:39Z (RFD66606-2229) 'switched off rather than fixed.
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:24Z (RFD66606-2229) '
+2026-09-05T00:03:40Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:25Z (RFD66606-2229) '**The ruling.** A part with no
+2026-09-05T00:03:41Z (RFD66606-2229) '**The ruling.** A part with no caller is not yet a part. Where the workspace holds
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:26Z (RFD66606-2229) 'caller is not yet a part. Where
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:27Z (RFD66606-2229) 'the workspace holds
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:28Z (RFD66606-2229) 'a mechanism on both sides of a
+2026-09-05T00:03:42Z (RFD66606-2229) 'a mechanism on both sides of a slow boundary, as prek and the 46 committed
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:29Z (RFD66606-2229) 'slow boundary, as prek and the 46
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:30Z (RFD66606-2229) 'committed
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:31Z (RFD66606-2229) '`.pre-commit-config.yaml` files
+2026-09-05T00:03:43Z (RFD66606-2229) '`.pre-commit-config.yaml` files did, the interchangeable-parts obligation is
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:32Z (RFD66606-2229) 'did, the interchangeable-parts
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:33Z (RFD66606-2229) 'obligation is
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:34Z (RFD66606-2229) 'discharged by writing the caller,
+2026-09-05T00:03:44Z (RFD66606-2229) 'discharged by writing the caller, not by writing another mechanism. And a caller
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:35Z (RFD66606-2229) 'not by writing another mechanism.
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:36Z (RFD66606-2229) 'And a caller
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:37Z (RFD66606-2229) 'ships with controls in both
+2026-09-05T00:03:45Z (RFD66606-2229) 'ships with controls in both directions like any gate: this one shipped without
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:38Z (RFD66606-2229) 'directions like any gate: this
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:39Z (RFD66606-2229) 'one shipped without
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:40Z (RFD66606-2229) 'them for one revision, passed a
+2026-09-05T00:03:46Z (RFD66606-2229) 'them for one revision, passed a working tree carrying two known defects, and was
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:41Z (RFD66606-2229) 'working tree carrying two known
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:42Z (RFD66606-2229) 'defects, and was
- # tags: rfd:details, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:43Z (RFD66606-2229) 'decoration until its own third
+2026-09-05T00:03:47Z (RFD66606-2229) 'decoration until its own third control caught it.
  # tags: rfd:details
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:44Z (RFD66606-2229) 'control caught it.
- # tags: rfd:details, rfd:wrap
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:45Z (RFD66606-2229) '
+2026-09-05T00:03:48Z (RFD66606-2229) '
  # tags: rfd:details
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:46Z (RFD66606-2229) '2351
+2026-09-05T00:03:49Z (RFD66606-2229) '2351
  # tags: rebac:verbs-from
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:47Z (RFD66606-2229) 'rfd-2229 provides
+2026-09-05T00:03:50Z (RFD66606-2229) 'rfd-2229 provides interchangeable-parts-rule
  # tags: rebac:relate
  Text:RFD2229  1 LINE
  Text:Written
 
-2026-09-05T00:07:48Z (RFD66606-2229) 'interchangeable-parts-rule
- # tags: rebac:relate, rfd:wrap
- Text:RFD2229  1 LINE
- Text:Written
-
-2026-09-05T00:07:49Z (RFD66606-2229) 'rfd-2229 is_a workspace-policy
+2026-09-05T00:03:51Z (RFD66606-2229) 'rfd-2229 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2229  1 LINE
  Text:Written

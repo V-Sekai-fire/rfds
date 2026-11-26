@@ -4,462 +4,207 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2387) 'the workflow that builds and
+2026-10-31T00:00:01Z (RFD66606-2387) 'the workflow that builds and releases the double engine binaries.
  # tags: rfd:scope
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2387) 'releases the double engine
- # tags: rfd:scope, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2387) 'binaries.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2387) 'GitHub Actions builds every
+2026-10-31T00:00:02Z (RFD66606-2387) 'GitHub Actions builds every double binary a rung runs or ships, so none of those is built by
  # tags: rfd:hook
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2387) 'double binary a rung runs or
- # tags: rfd:hook, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2387) 'ships, so none of those is built
- # tags: rfd:hook, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2387) 'by
- # tags: rfd:hook, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2387) 'hand again.
+2026-10-31T00:00:03Z (RFD66606-2387) 'hand again.
  # tags: rfd:hook
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2387) '
+2026-10-31T00:00:04Z (RFD66606-2387) '
  # tags: rfd:hook
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2387) 'The release lands on the
+2026-10-31T00:00:05Z (RFD66606-2387) 'The release lands on the assembled engine, not on a side repository, so a binary names the
  # tags: rfd:intrigue
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2387) 'assembled engine, not on a side
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2387) 'repository, so a binary names the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2387) 'exact tree it was built from.
+2026-10-31T00:00:06Z (RFD66606-2387) 'exact tree it was built from.
  # tags: rfd:intrigue
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2387) '
+2026-10-31T00:00:07Z (RFD66606-2387) '
  # tags: rfd:intrigue
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2387) 'Check a double binary that a rung
+2026-10-31T00:00:08Z (RFD66606-2387) 'Check a double binary that a rung runs or ships against the rule: it comes from a release on an
  # tags: rfd:exit
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2387) 'runs or ships against the rule:
- # tags: rfd:exit, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2387) 'it comes from a release on an
- # tags: rfd:exit, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2387) 'entities-zone release tag.
+2026-10-31T00:00:09Z (RFD66606-2387) 'entities-zone release tag.
  # tags: rfd:exit
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2387) '
+2026-10-31T00:00:10Z (RFD66606-2387) '
  # tags: rfd:exit
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2387) 'GitHub Actions builds every
+2026-10-31T00:00:11Z (RFD66606-2387) 'GitHub Actions builds every double binary
  # tags: rfd:details-title
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2387) 'double binary
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2387) '- GitHub Actions builds every
+2026-10-31T00:00:12Z (RFD66606-2387) '- GitHub Actions builds every double binary that a rung runs or ships. A build on a desk from
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2387) 'double binary that a rung runs or
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2387) 'ships. A build on a desk from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2387) '  a dev branch is not covered
+2026-10-31T00:00:13Z (RFD66606-2387) '  a dev branch is not covered (operator, 2026-11-03).
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2387) '(operator, 2026-11-03).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2387) '- Releases go on entities-zone
+2026-10-31T00:00:14Z (RFD66606-2387) '- Releases go on entities-zone (operator, 2026-11-03). The workflow lives on the
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2387) '(operator, 2026-11-03). The
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2387) 'workflow lives on the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2387) '  engine branch
+2026-10-31T00:00:15Z (RFD66606-2387) '  engine branch `dev/double-release` of &{repo("entities-godot")}, and
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2387) '`dev/double-release` of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2387) '&{repo("entities-godot")}, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2387) '  entities-assembly merges it
+2026-10-31T00:00:16Z (RFD66606-2387) '  entities-assembly merges it into `r0-base`, so every release carries it. The
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2387) 'into `r0-base`, so every release
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2387) 'carries it. The
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2387) '  workflow changes only through
+2026-10-31T00:00:17Z (RFD66606-2387) '  workflow changes only through that branch and the assembler (operator, 2026-11-03).
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2387) 'that branch and the assembler
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2387) '(operator, 2026-11-03).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2387) '- The engine fork keeps
+2026-10-31T00:00:18Z (RFD66606-2387) '- The engine fork keeps upstream's nine workflows off and pays no runner minutes for them.
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2387) 'upstream's nine workflows off and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2387) 'pays no runner minutes for them.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2387) '
+2026-10-31T00:00:19Z (RFD66606-2387) '
  # tags: rfd:decision
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2387) '- RFD66606-2293, where this rule
+2026-10-31T00:00:20Z (RFD66606-2387) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2387) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2387) '- RFD66606-2312, the release tag
+2026-10-31T00:00:21Z (RFD66606-2387) '- RFD66606-2312, the release tag the assembler computes.
  # tags: rfd:related
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2387) 'the assembler computes.
- # tags: rfd:related, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2387) '
+2026-10-31T00:00:22Z (RFD66606-2387) '
  # tags: rfd:related
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2387) 'The double.yml matrix and the
+2026-10-31T00:00:23Z (RFD66606-2387) 'The double.yml matrix and the release
  # tags: rfd:details-heading
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2387) 'release
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2387) '`.github/workflows/double.yml`
+2026-10-31T00:00:24Z (RFD66606-2387) '`.github/workflows/double.yml` runs on each `v0.0.0-<UTC time>-<commit>` tag the assembler
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2387) 'runs on each `v0.0.0-<UTC
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2387) 'time>-<commit>` tag the assembler
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2387) 'pushes to entities-zone, and on a
+2026-10-31T00:00:25Z (RFD66606-2387) 'pushes to entities-zone, and on a dispatch with `release_tag` set. It builds the
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2387) 'dispatch with `release_tag` set.
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2387) 'It builds the
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2387) 'tagged tree in a matrix of
+2026-10-31T00:00:26Z (RFD66606-2387) 'tagged tree in a matrix of `windows-x86_64` (llvm-mingw 20260922, `use_mingw=yes
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2387) '`windows-x86_64` (llvm-mingw
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2387) '20260922, `use_mingw=yes
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2387) 'use_llvm=yes`), `linux-x86_64`
+2026-10-31T00:00:27Z (RFD66606-2387) 'use_llvm=yes`), `linux-x86_64` and `macos-arm64`, each at `precision=double` for
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2387) 'and `macos-arm64`, each at
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2387) '`precision=double` for
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2387) '`target=editor` and
+2026-10-31T00:00:28Z (RFD66606-2387) '`target=editor` and `target=template_release` (`debug_symbols=yes` on the Windows template,
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2387) '`target=template_release`
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2387) '(`debug_symbols=yes` on the
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2387) 'Windows template,
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:06Z (RFD66606-2387) 'for the fault below), with
+2026-10-31T00:00:29Z (RFD66606-2387) 'for the fault below), with sccache on the runner's cache. It publishes the six binaries and
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2387) 'sccache on the runner's cache. It
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2387) 'publishes the six binaries and
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2387) 'their sha256s as a release on the
+2026-10-31T00:00:30Z (RFD66606-2387) 'their sha256s as a release on the tag.
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:10Z (RFD66606-2387) 'tag.
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2387) '
+2026-10-31T00:00:31Z (RFD66606-2387) '
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2387) 'Replaying a job on a desk
+2026-10-31T00:00:32Z (RFD66606-2387) 'Replaying a job on a desk
  # tags: rfd:details-heading
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:13Z (RFD66606-2387) 'The escript in
+2026-10-31T00:00:33Z (RFD66606-2387) 'The escript in &{repo("service-godot-build")} takes `--precision` and `--extra`, so the
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2387) '&{repo("service-godot-build")}
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:15Z (RFD66606-2387) 'takes `--precision` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2387) '`--extra`, so the
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:17Z (RFD66606-2387) 'Windows job replays on a Windows
+2026-10-31T00:00:34Z (RFD66606-2387) 'Windows job replays on a Windows desk when a runner is not at hand. The pen's `CITATION.cff`
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:18Z (RFD66606-2387) 'desk when a runner is not at
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2387) 'hand. The pen's `CITATION.cff`
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2387) 'records the engine commit, the
+2026-10-31T00:00:35Z (RFD66606-2387) 'records the engine commit, the toolchain, the flag line and each sha256. The Frame pulls the
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2387) 'toolchain, the flag line and each
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2387) 'sha256. The Frame pulls the
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2387) 'Windows release with `curl` over
+2026-10-31T00:00:36Z (RFD66606-2387) 'Windows release with `curl` over `ssh frame` into `~/rfd2287/godot-dbl`. This Mac pulls the
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2387) '`ssh frame` into
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2387) '`~/rfd2287/godot-dbl`. This Mac
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:26Z (RFD66606-2387) 'pulls the
- # tags: rfd:details, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:27Z (RFD66606-2387) 'macOS one.
+2026-10-31T00:00:37Z (RFD66606-2387) 'macOS one.
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2387) '
+2026-10-31T00:00:38Z (RFD66606-2387) '
  # tags: rfd:details
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:29Z (RFD66606-2387) '2351
+2026-10-31T00:00:39Z (RFD66606-2387) '2351
  # tags: rebac:verbs-from
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2387) 'rfd-2387 provides
+2026-10-31T00:00:40Z (RFD66606-2387) 'rfd-2387 provides actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2387  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2387) 'actions-builds-double-binaries
- # tags: rebac:relate, rfd:wrap
- Text:RFD2387  1 LINE
- Text:Written
-
-2026-10-31T00:01:32Z (RFD66606-2387) 'rfd-2387 is_a ci-gate
+2026-10-31T00:00:41Z (RFD66606-2387) 'rfd-2387 is_a ci-gate
  # tags: rebac:relate
  Text:RFD2387  1 LINE
  Text:Written

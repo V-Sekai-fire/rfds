@@ -4,467 +4,467 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-08-31T00:00:01Z (RFD66606-2140) 'FoundationDB as the storage
+2026-08-31T00:00:01Z (RFD66606-2140) 'FoundationDB as the storage backend for the secrets manager
  # tags: rfd:feature
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:02Z (RFD66606-2140) 'backend for the secrets manager
- # tags: rfd:feature, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:03Z (RFD66606-2140) 'weftspun-bao on Fly.io; the
+2026-08-31T00:00:02Z (RFD66606-2140) 'weftspun-bao on Fly.io; the OpenBao fork at weftspun/openbao
  # tags: rfd:scope
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:04Z (RFD66606-2140) 'OpenBao fork at weftspun/openbao
- # tags: rfd:scope, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:05Z (RFD66606-2140) 'OpenBao stores its data in
+2026-08-31T00:00:03Z (RFD66606-2140) 'OpenBao stores its data in FoundationDB again, restored from the Vault v1.14.8 backend.
  # tags: rfd:hook
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:06Z (RFD66606-2140) 'FoundationDB again, restored from
- # tags: rfd:hook, rfd:wrap
+2026-08-31T00:00:04Z (RFD66606-2140) '
+ # tags: rfd:hook
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:07Z (RFD66606-2140) 'the Vault v1.14.8 backend.
- # tags: rfd:hook, rfd:wrap
+2026-08-31T00:00:05Z (RFD66606-2140) 'OpenBao dropped every storage plugin when it forked from Vault v1.14.x.
+ # tags: rfd:intrigue
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:06Z (RFD66606-2140) '
+ # tags: rfd:intrigue
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:07Z (RFD66606-2140) 'Read RFD66606-2353 next for how Bao runs beside the FDB server on each machine.
+ # tags: rfd:exit
  Text:RFD2140  1 LINE
  Text:Written
 
 2026-08-31T00:00:08Z (RFD66606-2140) '
- # tags: rfd:hook
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:09Z (RFD66606-2140) 'OpenBao dropped every storage
- # tags: rfd:intrigue
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:10Z (RFD66606-2140) 'plugin when it forked from Vault
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:11Z (RFD66606-2140) 'v1.14.x.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:12Z (RFD66606-2140) '
- # tags: rfd:intrigue
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:13Z (RFD66606-2140) 'Read RFD66606-2353 next for how
  # tags: rfd:exit
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:14Z (RFD66606-2140) 'Bao runs beside the FDB server on
- # tags: rfd:exit, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:15Z (RFD66606-2140) 'each machine.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:16Z (RFD66606-2140) '
- # tags: rfd:exit
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:17Z (RFD66606-2140) 'OpenBao on FoundationDB
+2026-08-31T00:00:09Z (RFD66606-2140) 'OpenBao on FoundationDB
  # tags: rfd:details-title
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:18Z (RFD66606-2140) 'Restore the FoundationDB backend
+2026-08-31T00:00:10Z (RFD66606-2140) 'Restore the FoundationDB backend from Vault v1.14.8 (last MPL-2.0
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:19Z (RFD66606-2140) 'from Vault v1.14.8 (last MPL-2.0
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:20Z (RFD66606-2140) 'release), connecting to the
+2026-08-31T00:00:11Z (RFD66606-2140) 'release), connecting to the existing weftspun-fdb cluster over 6PN.
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:21Z (RFD66606-2140) 'existing weftspun-fdb cluster
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:22Z (RFD66606-2140) 'over 6PN.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:23Z (RFD66606-2140) 'The port rewrites three
+2026-08-31T00:00:12Z (RFD66606-2140) 'The port rewrites three interfaces that diverged after the fork:
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:24Z (RFD66606-2140) 'interfaces that diverged after
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:25Z (RFD66606-2140) 'the fork:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:26Z (RFD66606-2140) '`ListPage`, interactive
+2026-08-31T00:00:13Z (RFD66606-2140) '`ListPage`, interactive transactions (`BeginTx`/`BeginReadOnlyTx`
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:27Z (RFD66606-2140) 'transactions
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:28Z (RFD66606-2140) '(`BeginTx`/`BeginReadOnlyTx`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:29Z (RFD66606-2140) 'with Commit/Rollback), and pins
+2026-08-31T00:00:14Z (RFD66606-2140) 'with Commit/Rollback), and pins the FDB 7.3.79 Go binding
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:30Z (RFD66606-2140) 'the FDB 7.3.79 Go binding
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:31Z (RFD66606-2140) '(`headerVersion = 730`). Build
+2026-08-31T00:00:15Z (RFD66606-2140) '(`headerVersion = 730`). Build tag `foundationdb`, `CGO_ENABLED=1`.
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:32Z (RFD66606-2140) 'tag `foundationdb`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:33Z (RFD66606-2140) '`CGO_ENABLED=1`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:34Z (RFD66606-2140) '
+2026-08-31T00:00:16Z (RFD66606-2140) '
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:35Z (RFD66606-2140) 'Deployment files in
+2026-08-31T00:00:17Z (RFD66606-2140) 'Deployment files in weftspun/service-openbao. Bao runs beside the FDB
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:36Z (RFD66606-2140) 'weftspun/service-openbao. Bao
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:37Z (RFD66606-2140) 'runs beside the FDB
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:38Z (RFD66606-2140) 'server on each weftspun-fdb
+2026-08-31T00:00:18Z (RFD66606-2140) 'server on each weftspun-fdb machine (RFD66606-2353) and reaches the cluster
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:39Z (RFD66606-2140) 'machine (RFD66606-2353) and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:40Z (RFD66606-2140) 'reaches the cluster
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:41Z (RFD66606-2140) 'as a TLS client. Interface
+2026-08-31T00:00:19Z (RFD66606-2140) 'as a TLS client. Interface details and deploy measurements are in
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:42Z (RFD66606-2140) 'details and deploy measurements
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:43Z (RFD66606-2140) 'are in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:44Z (RFD66606-2140) 'DETAILS.md.
+2026-08-31T00:00:20Z (RFD66606-2140) 'DETAILS.md.
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:45Z (RFD66606-2140) '
+2026-08-31T00:00:21Z (RFD66606-2140) '
  # tags: rfd:decision
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:46Z (RFD66606-2140) 'Verification
+2026-08-31T00:00:22Z (RFD66606-2140) 'Verification
  # tags: rfd:section-heading
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:47Z (RFD66606-2140) '`bao status`: Storage
+2026-08-31T00:00:23Z (RFD66606-2140) '`bao status`: Storage foundationdb, unsealed. KV v2 at `secret/`,
  # tags: rfd:section
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:48Z (RFD66606-2140) 'foundationdb, unsealed. KV v2 at
- # tags: rfd:section, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:49Z (RFD66606-2140) '`secret/`,
- # tags: rfd:section, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:50Z (RFD66606-2140) 'anchor creds written from
+2026-08-31T00:00:24Z (RFD66606-2140) 'anchor creds written from weftspun-fdb over 6PN. Root in 1Password.
  # tags: rfd:section
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:51Z (RFD66606-2140) 'weftspun-fdb over 6PN. Root in
- # tags: rfd:section, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:52Z (RFD66606-2140) '1Password.
- # tags: rfd:section, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:53Z (RFD66606-2140) '
+2026-08-31T00:00:25Z (RFD66606-2140) '
  # tags: rfd:section
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:54Z (RFD66606-2140) 'RFD66606-2109 (FDB as the store),
+2026-08-31T00:00:26Z (RFD66606-2140) 'RFD66606-2109 (FDB as the store), RFD66606-2134 (cluster TLS).
  # tags: rfd:related
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:55Z (RFD66606-2140) 'RFD66606-2134 (cluster TLS).
- # tags: rfd:related, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:00:56Z (RFD66606-2140) '
+2026-08-31T00:00:27Z (RFD66606-2140) '
  # tags: rfd:related
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:57Z (RFD66606-2140) 'The three interface changes
+2026-08-31T00:00:28Z (RFD66606-2140) 'The three interface changes
  # tags: rfd:details-heading
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:58Z (RFD66606-2140) 'OpenBao's `physical.Backend`
+2026-08-31T00:00:29Z (RFD66606-2140) 'OpenBao's `physical.Backend` diverged from Vault's after v1.14.x.
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:00:59Z (RFD66606-2140) 'diverged from Vault's after
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:00Z (RFD66606-2140) 'v1.14.x.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:01Z (RFD66606-2140) 'The port rewrites three sites.
+2026-08-31T00:00:30Z (RFD66606-2140) 'The port rewrites three sites.
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:02Z (RFD66606-2140) '
+2026-08-31T00:00:31Z (RFD66606-2140) '
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:03Z (RFD66606-2140) '**ListPage.** Vault's
+2026-08-31T00:00:32Z (RFD66606-2140) '**ListPage.** Vault's `List(prefix)` returned all keys. OpenBao added
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:04Z (RFD66606-2140) '`List(prefix)` returned all keys.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:05Z (RFD66606-2140) 'OpenBao added
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:06Z (RFD66606-2140) '`ListPage(ctx, prefix, after,
+2026-08-31T00:00:33Z (RFD66606-2140) '`ListPage(ctx, prefix, after, limit)` to the interface. The FDB
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:07Z (RFD66606-2140) 'limit)` to the interface. The FDB
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:08Z (RFD66606-2140) 'implementation uses a range query
+2026-08-31T00:00:34Z (RFD66606-2140) 'implementation uses a range query with `after` as a begin-selector
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:09Z (RFD66606-2140) 'with `after` as a begin-selector
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:10Z (RFD66606-2140) 'offset and `limit` as the range
+2026-08-31T00:00:35Z (RFD66606-2140) 'offset and `limit` as the range option.
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:11Z (RFD66606-2140) 'option.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:12Z (RFD66606-2140) '
+2026-08-31T00:00:36Z (RFD66606-2140) '
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:13Z (RFD66606-2140) '**Interactive transactions.**
+2026-08-31T00:00:37Z (RFD66606-2140) '**Interactive transactions.** Vault used a one-shot
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:14Z (RFD66606-2140) 'Vault used a one-shot
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:15Z (RFD66606-2140) '`Transaction([]*TxnEntry)`.
+2026-08-31T00:00:38Z (RFD66606-2140) '`Transaction([]*TxnEntry)`. OpenBao replaced it with `BeginTx` and
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:16Z (RFD66606-2140) 'OpenBao replaced it with
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:17Z (RFD66606-2140) '`BeginTx` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:18Z (RFD66606-2140) '`BeginReadOnlyTx`, each returning
+2026-08-31T00:00:39Z (RFD66606-2140) '`BeginReadOnlyTx`, each returning a `physical.Transaction` carrying
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:19Z (RFD66606-2140) 'a `physical.Transaction` carrying
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:20Z (RFD66606-2140) 'Put/Get/Delete/List/ListPage/Commit/Rollback.
+2026-08-31T00:00:40Z (RFD66606-2140) 'Put/Get/Delete/List/ListPage/Commit/Rollback. The FDB port calls
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:21Z (RFD66606-2140) 'The FDB port calls
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:22Z (RFD66606-2140) '`db.CreateTransaction()` and
+2026-08-31T00:00:41Z (RFD66606-2140) '`db.CreateTransaction()` and wraps the result in a struct that tracks
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:23Z (RFD66606-2140) 'wraps the result in a struct that
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:24Z (RFD66606-2140) 'tracks
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:25Z (RFD66606-2140) 'committed/readonly state and
+2026-08-31T00:00:42Z (RFD66606-2140) 'committed/readonly state and returns the canonical error sentinels
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:26Z (RFD66606-2140) 'returns the canonical error
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:27Z (RFD66606-2140) 'sentinels
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:28Z (RFD66606-2140) '(`ErrTransactionReadOnly`,
+2026-08-31T00:00:43Z (RFD66606-2140) '(`ErrTransactionReadOnly`, `ErrTransactionAlreadyCommitted`,
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:29Z (RFD66606-2140) '`ErrTransactionAlreadyCommitted`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:30Z (RFD66606-2140) '`ErrTransactionCommitFailure`).
+2026-08-31T00:00:44Z (RFD66606-2140) '`ErrTransactionCommitFailure`). PostgreSQL's `transaction.go` was the
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:31Z (RFD66606-2140) 'PostgreSQL's `transaction.go` was
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:00:45Z (RFD66606-2140) 'reference for the shape.
+ # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:32Z (RFD66606-2140) 'the
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:00:46Z (RFD66606-2140) '
+ # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:33Z (RFD66606-2140) 'reference for the shape.
+2026-08-31T00:00:47Z (RFD66606-2140) '**Backend registry.** `internal/command/commands.go` gains one import
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:48Z (RFD66606-2140) 'and one map entry (`"foundationdb": physFDB.NewFDBBackend`), wired the
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:49Z (RFD66606-2140) 'same way file, inmem, raft, and postgresql are.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:50Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:51Z (RFD66606-2140) 'The binding version
+ # tags: rfd:details-heading
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:52Z (RFD66606-2140) 'The FDB Go binding hardcodes a `headerVersion` that must match or
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:53Z (RFD66606-2140) 'exceed the C client's API version. The 2019 binding
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:54Z (RFD66606-2140) '(`cd5c9d91fad2`, headerVersion around 520) crashed at startup with
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:55Z (RFD66606-2140) 'error 2203 against the FDB 7.3 C client. The 7.3.79 binding
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:56Z (RFD66606-2140) '(`0074653ee011`, `headerVersion := 730`) resolved it. The Go pseudo-
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:57Z (RFD66606-2140) 'version is `v0.0.0-20260715201227-0074653ee011`.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:58Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:00:59Z (RFD66606-2140) 'The deploy
+ # tags: rfd:details-heading
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:00Z (RFD66606-2140) 'Since 2026-10-13 Bao runs on the three `weftspun-fdb` machines, one HA
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:01Z (RFD66606-2140) 'instance beside each FDB server, at 512 MB each (RFD66606-2353). The image
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:02Z (RFD66606-2140) 'layers the Bao image's binaries and plugins onto the FDB server image,
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:03Z (RFD66606-2140) 'so the plugin catalog's hashes still match. Bao reads the server's own
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:04Z (RFD66606-2140) 'cluster file and presents the machine's FDB leaf as its client
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:05Z (RFD66606-2140) 'certificate, so it verifies the cluster with the rule the cluster uses.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:06Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:07Z (RFD66606-2140) 'Listener binds `[::]:8200` (dual-stack). Each instance advertises its
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:08Z (RFD66606-2140) 'machine address (`<machine-id>.vm.weftspun-fdb.internal`) as `api_addr`
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:09Z (RFD66606-2140) 'and `cluster_addr`, so standbys forward to the active instance.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:10Z (RFD66606-2140) 'Clients verify the listener as `weftspun-bao.internal`.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:11Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:12Z (RFD66606-2140) 'The first deploy was a separate `weftspun-bao` app on one machine,
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:13Z (RFD66606-2140) 'built by `Dockerfile.fdb` with only the FDB client library. That app
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:14Z (RFD66606-2140) 'is stopped and kept for rollback until the operator retires it.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:15Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:16Z (RFD66606-2140) 'What the co-located fdbserver was, and why it moved
+ # tags: rfd:details-heading
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:17Z (RFD66606-2140) 'The first deploy ran a single-node fdbserver inside the bao machine
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:18Z (RFD66606-2140) 'on the same volume. That worked for initialization but carried no
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:19Z (RFD66606-2140) 'redundancy, no backup, and no TLS. Moving to the cluster gives all
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:20Z (RFD66606-2140) 'three for free. The co-located entrypoint and the single-node config
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:21Z (RFD66606-2140) 'are kept in the repository's git history.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:22Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:23Z (RFD66606-2140) 'What the anchor creds cover
+ # tags: rfd:details-heading
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:24Z (RFD66606-2140) 'Two KV v2 paths carry the FDB cluster's identity material:
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:25Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:26Z (RFD66606-2140) '`secret/fdb/tls-anchor`: the CA certificate (base64 PEM), the
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:27Z (RFD66606-2140) 'cluster ID, and the verify-peers rule.
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:28Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:29Z (RFD66606-2140) '`secret/fdb/blobstore`: the Tigris S3 credentials used by the FDB
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:30Z (RFD66606-2140) 'backup agents (AWS key pair, endpoint, region, bucket name).
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:31Z (RFD66606-2140) '
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:32Z (RFD66606-2140) 'Both were written from a weftspun-fdb machine over 6PN, where the
+ # tags: rfd:details
+ Text:RFD2140  1 LINE
+ Text:Written
+
+2026-08-31T00:01:33Z (RFD66606-2140) 'Fly secrets are available as environment variables.
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
@@ -474,597 +474,57 @@
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:35Z (RFD66606-2140) '**Backend registry.**
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:36Z (RFD66606-2140) '`internal/command/commands.go`
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:37Z (RFD66606-2140) 'gains one import
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:38Z (RFD66606-2140) 'and one map entry
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:39Z (RFD66606-2140) '(`"foundationdb":
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:40Z (RFD66606-2140) 'physFDB.NewFDBBackend`), wired
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:41Z (RFD66606-2140) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:42Z (RFD66606-2140) 'same way file, inmem, raft, and
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:43Z (RFD66606-2140) 'postgresql are.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:44Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:45Z (RFD66606-2140) 'The binding version
+2026-08-31T00:01:35Z (RFD66606-2140) 'The problem
  # tags: rfd:details-heading
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:46Z (RFD66606-2140) 'The FDB Go binding hardcodes a
+2026-08-31T00:01:36Z (RFD66606-2140) 'The weftspun-fdb cluster already runs three machines with
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:47Z (RFD66606-2140) '`headerVersion` that must match
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:48Z (RFD66606-2140) 'or
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:49Z (RFD66606-2140) 'exceed the C client's API
+2026-08-31T00:01:37Z (RFD66606-2140) 'double redundancy, TLS, and backup, and raft on a single shared-cpu
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:50Z (RFD66606-2140) 'version. The 2019 binding
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:51Z (RFD66606-2140) '(`cd5c9d91fad2`, headerVersion
+2026-08-31T00:01:38Z (RFD66606-2140) 'machine has no replication path.
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:52Z (RFD66606-2140) 'around 520) crashed at startup
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:53Z (RFD66606-2140) 'with
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:54Z (RFD66606-2140) 'error 2203 against the FDB 7.3 C
+2026-08-31T00:01:39Z (RFD66606-2140) '
  # tags: rfd:details
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:01:55Z (RFD66606-2140) 'client. The 7.3.79 binding
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:56Z (RFD66606-2140) '(`0074653ee011`, `headerVersion
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:57Z (RFD66606-2140) ':= 730`) resolved it. The Go
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:58Z (RFD66606-2140) 'pseudo-
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:01:59Z (RFD66606-2140) 'version is
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:00Z (RFD66606-2140) '`v0.0.0-20260715201227-0074653ee011`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:01Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:02Z (RFD66606-2140) 'The deploy
- # tags: rfd:details-heading
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:03Z (RFD66606-2140) 'Since 2026-10-13 Bao runs on the
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:04Z (RFD66606-2140) 'three `weftspun-fdb` machines,
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:05Z (RFD66606-2140) 'one HA
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:06Z (RFD66606-2140) 'instance beside each FDB server,
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:07Z (RFD66606-2140) 'at 512 MB each (RFD66606-2353).
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:08Z (RFD66606-2140) 'The image
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:09Z (RFD66606-2140) 'layers the Bao image's binaries
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:10Z (RFD66606-2140) 'and plugins onto the FDB server
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:11Z (RFD66606-2140) 'image,
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:12Z (RFD66606-2140) 'so the plugin catalog's hashes
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:13Z (RFD66606-2140) 'still match. Bao reads the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:14Z (RFD66606-2140) 'server's own
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:15Z (RFD66606-2140) 'cluster file and presents the
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:16Z (RFD66606-2140) 'machine's FDB leaf as its client
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:17Z (RFD66606-2140) 'certificate, so it verifies the
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:18Z (RFD66606-2140) 'cluster with the rule the cluster
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:19Z (RFD66606-2140) 'uses.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:20Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:21Z (RFD66606-2140) 'Listener binds `[::]:8200`
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:22Z (RFD66606-2140) '(dual-stack). Each instance
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:23Z (RFD66606-2140) 'advertises its
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:24Z (RFD66606-2140) 'machine address
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:25Z (RFD66606-2140) '(`<machine-id>.vm.weftspun-fdb.internal`)
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:26Z (RFD66606-2140) 'as `api_addr`
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:27Z (RFD66606-2140) 'and `cluster_addr`, so standbys
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:28Z (RFD66606-2140) 'forward to the active instance.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:29Z (RFD66606-2140) 'Clients verify the listener as
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:30Z (RFD66606-2140) '`weftspun-bao.internal`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:31Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:32Z (RFD66606-2140) 'The first deploy was a separate
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:33Z (RFD66606-2140) '`weftspun-bao` app on one
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:34Z (RFD66606-2140) 'machine,
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:35Z (RFD66606-2140) 'built by `Dockerfile.fdb` with
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:36Z (RFD66606-2140) 'only the FDB client library. That
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:37Z (RFD66606-2140) 'app
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:38Z (RFD66606-2140) 'is stopped and kept for rollback
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:39Z (RFD66606-2140) 'until the operator retires it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:40Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:41Z (RFD66606-2140) 'What the co-located fdbserver
- # tags: rfd:details-heading
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:42Z (RFD66606-2140) 'was, and why it moved
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:43Z (RFD66606-2140) 'The first deploy ran a
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:44Z (RFD66606-2140) 'single-node fdbserver inside the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:45Z (RFD66606-2140) 'bao machine
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:46Z (RFD66606-2140) 'on the same volume. That worked
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:47Z (RFD66606-2140) 'for initialization but carried no
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:48Z (RFD66606-2140) 'redundancy, no backup, and no
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:49Z (RFD66606-2140) 'TLS. Moving to the cluster gives
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:50Z (RFD66606-2140) 'all
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:51Z (RFD66606-2140) 'three for free. The co-located
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:52Z (RFD66606-2140) 'entrypoint and the single-node
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:53Z (RFD66606-2140) 'config
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:54Z (RFD66606-2140) 'are kept in the repository's git
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:55Z (RFD66606-2140) 'history.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:56Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:57Z (RFD66606-2140) 'What the anchor creds cover
- # tags: rfd:details-heading
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:58Z (RFD66606-2140) 'Two KV v2 paths carry the FDB
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:02:59Z (RFD66606-2140) 'cluster's identity material:
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:00Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:01Z (RFD66606-2140) '`secret/fdb/tls-anchor`: the CA
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:02Z (RFD66606-2140) 'certificate (base64 PEM), the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:03Z (RFD66606-2140) 'cluster ID, and the verify-peers
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:04Z (RFD66606-2140) 'rule.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:05Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:06Z (RFD66606-2140) '`secret/fdb/blobstore`: the
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:07Z (RFD66606-2140) 'Tigris S3 credentials used by the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:08Z (RFD66606-2140) 'FDB
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:09Z (RFD66606-2140) 'backup agents (AWS key pair,
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:10Z (RFD66606-2140) 'endpoint, region, bucket name).
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:11Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:12Z (RFD66606-2140) 'Both were written from a
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:13Z (RFD66606-2140) 'weftspun-fdb machine over 6PN,
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:14Z (RFD66606-2140) 'where the
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:15Z (RFD66606-2140) 'Fly secrets are available as
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:16Z (RFD66606-2140) 'environment variables.
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:17Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:18Z (RFD66606-2140) 'The problem
- # tags: rfd:details-heading
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:19Z (RFD66606-2140) 'The weftspun-fdb cluster already
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:20Z (RFD66606-2140) 'runs three machines with
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:21Z (RFD66606-2140) 'double redundancy, TLS, and
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:22Z (RFD66606-2140) 'backup, and raft on a single
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:23Z (RFD66606-2140) 'shared-cpu
- # tags: rfd:details, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:24Z (RFD66606-2140) 'machine has no replication path.
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:25Z (RFD66606-2140) '
- # tags: rfd:details
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:26Z (RFD66606-2140) '2351
+2026-08-31T00:01:40Z (RFD66606-2140) '2351
  # tags: rebac:verbs-from
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:03:27Z (RFD66606-2140) 'rfd-2140 provides bao
+2026-08-31T00:01:41Z (RFD66606-2140) 'rfd-2140 provides bao
  # tags: rebac:relate
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:03:28Z (RFD66606-2140) 'rfd-2140 provides
+2026-08-31T00:01:42Z (RFD66606-2140) 'rfd-2140 provides bao-fdb-storage-backend
  # tags: rebac:relate
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:03:29Z (RFD66606-2140) 'bao-fdb-storage-backend
- # tags: rebac:relate, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:30Z (RFD66606-2140) 'rfd-2140 spends fdb-sqlite
+2026-08-31T00:01:43Z (RFD66606-2140) 'rfd-2140 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:03:31Z (RFD66606-2140) 'rfd-2140 spends
+2026-08-31T00:01:44Z (RFD66606-2140) 'rfd-2140 spends fdb-cluster-mutual-tls
  # tags: rebac:relate
  Text:RFD2140  1 LINE
  Text:Written
 
-2026-08-31T00:03:32Z (RFD66606-2140) 'fdb-cluster-mutual-tls
- # tags: rebac:relate, rfd:wrap
- Text:RFD2140  1 LINE
- Text:Written
-
-2026-08-31T00:03:33Z (RFD66606-2140) 'rfd-2140 is_a deployment
+2026-08-31T00:01:45Z (RFD66606-2140) 'rfd-2140 is_a deployment
  # tags: rebac:relate
  Text:RFD2140  1 LINE
  Text:Written

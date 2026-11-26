@@ -4,652 +4,312 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2367) 'how the Sakuragaoka Station port
+2026-10-31T00:00:01Z (RFD66606-2367) 'how the Sakuragaoka Station port builds, shades and renders its geometry in Godot.
  # tags: rfd:scope
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2367) 'builds, shades and renders its
- # tags: rfd:scope, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2367) 'geometry in Godot.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2367) 'The station port draws baked
+2026-10-31T00:00:02Z (RFD66606-2367) 'The station port draws baked meshes in Godot, so it renders with the runtime vector shader off.
  # tags: rfd:hook
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2367) 'meshes in Godot, so it renders
- # tags: rfd:hook, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2367) 'with the runtime vector shader
- # tags: rfd:hook, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2367) 'off.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2367) '
+2026-10-31T00:00:03Z (RFD66606-2367) '
  # tags: rfd:hook
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2367) 'CSG keeps UV and drops vertex
+2026-10-31T00:00:04Z (RFD66606-2367) 'CSG keeps UV and drops vertex colour, and it takes only manifold solids, so a geometry that
  # tags: rfd:intrigue
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2367) 'colour, and it takes only
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2367) 'manifold solids, so a geometry
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2367) 'that
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2367) 'fails the manifold check cannot
+2026-10-31T00:00:05Z (RFD66606-2367) 'fails the manifold check cannot be unioned as it is.
  # tags: rfd:intrigue
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2367) 'be unioned as it is.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2367) '
+2026-10-31T00:00:06Z (RFD66606-2367) '
  # tags: rfd:intrigue
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2367) 'Check a new station mesh against
+2026-10-31T00:00:07Z (RFD66606-2367) 'Check a new station mesh against the rule: realize each closed solid through CSG, bake vector
  # tags: rfd:exit
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2367) 'the rule: realize each closed
- # tags: rfd:exit, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2367) 'solid through CSG, bake vector
- # tags: rfd:exit, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2367) 'materials to meshes, and keep
+2026-10-31T00:00:08Z (RFD66606-2367) 'materials to meshes, and keep rasterized vector art out of the headset.
  # tags: rfd:exit
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2367) 'rasterized vector art out of the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2367) 'headset.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2367) '
+2026-10-31T00:00:09Z (RFD66606-2367) '
  # tags: rfd:exit
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2367) 'the station port renders in Godot
+2026-10-31T00:00:10Z (RFD66606-2367) 'the station port renders in Godot from baked meshes
  # tags: rfd:details-title
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2367) 'from baked meshes
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2367) 'The Sakuragaoka Station port
+2026-10-31T00:00:11Z (RFD66606-2367) 'The Sakuragaoka Station port (&{repo("entities-sakuragaoka-station")}):
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2367) '(&{repo("entities-sakuragaoka-station")}):
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2367) '
+2026-10-31T00:00:12Z (RFD66606-2367) '
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2367) '- realizes every closed solid
+2026-10-31T00:00:13Z (RFD66606-2367) '- realizes every closed solid through CSG, and carries each face's colour as a
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2367) 'through CSG, and carries each
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2367) 'face's colour as a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2367) '  palette index in UV, since CSG
+2026-10-31T00:00:14Z (RFD66606-2367) '  palette index in UV, since CSG keeps UV and drops vertex colour. CSG takes
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2367) 'keeps UV and drops vertex colour.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2367) 'CSG takes
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2367) '  only manifold solids, so a
+2026-10-31T00:00:15Z (RFD66606-2367) '  only manifold solids, so a geometry that fails the manifold check stays a
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2367) 'geometry that fails the manifold
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2367) 'check stays a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2367) '  plain surface, or goes through
+2026-10-31T00:00:16Z (RFD66606-2367) '  plain surface, or goes through `remesh.elf` when it must be unioned;
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2367) '`remesh.elf` when it must be
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2367) 'unioned;
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2367) '- shades with godot-vrm's MToon
+2026-10-31T00:00:17Z (RFD66606-2367) '- shades with godot-vrm's MToon unchanged, and a variant includes it rather than
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2367) 'unchanged, and a variant includes
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2367) 'it rather than
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2367) '  forking it;
+2026-10-31T00:00:18Z (RFD66606-2367) '  forking it;
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2367) '- renders from meshes baked from
+2026-10-31T00:00:19Z (RFD66606-2367) '- renders from meshes baked from the vector materials' data (signs, paving,
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2367) 'the vector materials' data
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2367) '(signs, paving,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2367) '  bark), coarsened by LOD when
+2026-10-31T00:00:20Z (RFD66606-2367) '  bark), coarsened by LOD when over budget, so it works with the runtime vector
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2367) 'over budget, so it works with the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2367) 'runtime vector
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2367) '  shader off. Alpha-cut foliage
+2026-10-31T00:00:21Z (RFD66606-2367) '  shader off. Alpha-cut foliage cards bake too: each blossom card is its atlas
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2367) 'cards bake too: each blossom card
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2367) 'is its atlas
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2367) '  cell's outline, baked by
+2026-10-31T00:00:22Z (RFD66606-2367) '  cell's outline, baked by `slug.elf` at 256 triangles a cell, and the cards go
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2367) '`slug.elf` at 256 triangles a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2367) 'cell, and the cards go
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2367) '  into cluster LOD DAGs built by
+2026-10-31T00:00:23Z (RFD66606-2367) '  into cluster LOD DAGs built by `remesh.elf`'s `cluster_lod` (meshoptimizer's
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2367) '`remesh.elf`'s `cluster_lod`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2367) '(meshoptimizer's
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2367) '  `clusterlod.h`), which
+2026-10-31T00:00:24Z (RFD66606-2367) '  `clusterlod.h`), which `clod_select` cuts per frame, binary-translated, on
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2367) '`clod_select` cuts per frame,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2367) 'binary-translated, on
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2367) '  both standalone headsets
+2026-10-31T00:00:25Z (RFD66606-2367) '  both standalone headsets (operator, 2026-10-10);
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2367) '(operator, 2026-10-10);
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2367) '- judges alpha on the final
+2026-10-31T00:00:26Z (RFD66606-2367) '- judges alpha on the final composite of its layers: an opaque object ends with
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2367) 'composite of its layers: an
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:06Z (RFD66606-2367) 'opaque object ends with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2367) '  no transparency, and a
+2026-10-31T00:00:27Z (RFD66606-2367) '  no transparency, and a transparent base-colour material writes alpha.
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:08Z (RFD66606-2367) 'transparent base-colour material
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2367) 'writes alpha.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2367) '
+2026-10-31T00:00:28Z (RFD66606-2367) '
  # tags: rfd:decision
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:11Z (RFD66606-2367) '- RFD66606-2294, where this rule
+2026-10-31T00:00:29Z (RFD66606-2367) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2367) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2367) '
+2026-10-31T00:00:30Z (RFD66606-2367) '
  # tags: rfd:related
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2367) 'Quality and procedural detail
+2026-10-31T00:00:31Z (RFD66606-2367) 'Quality and procedural detail
  # tags: rfd:details-heading
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2367) 'The Sakuragaoka Station port:
+2026-10-31T00:00:32Z (RFD66606-2367) 'The Sakuragaoka Station port:
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:16Z (RFD66606-2367) '
+2026-10-31T00:00:33Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2367) '- runs `slughorn`'s per-pixel
+2026-10-31T00:00:34Z (RFD66606-2367) '- runs `slughorn`'s per-pixel vector shader as a quality setting, on by default,
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:18Z (RFD66606-2367) 'vector shader as a quality
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2367) 'setting, on by default,
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2367) '  adding detail to surfaces near
+2026-10-31T00:00:35Z (RFD66606-2367) '  adding detail to surfaces near the eye within the headset's GPU budget;
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2367) 'the eye within the headset's GPU
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2367) 'budget;
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2367) '- synthesizes finer detail only
+2026-10-31T00:00:36Z (RFD66606-2367) '- synthesizes finer detail only where the source is procedural.
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2367) 'where the source is procedural.
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2367) '
+2026-10-31T00:00:37Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2367) '
+2026-10-31T00:00:38Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:27Z (RFD66606-2367) 'What stays out of the headset
+2026-10-31T00:00:39Z (RFD66606-2367) 'What stays out of the headset
  # tags: rfd:details-heading
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2367) 'No rasterized vector art or glyph
+2026-10-31T00:00:40Z (RFD66606-2367) 'No rasterized vector art or glyph outline goes into the headset. Meshes made
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:29Z (RFD66606-2367) 'outline goes into the headset.
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:30Z (RFD66606-2367) 'Meshes made
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:31Z (RFD66606-2367) 'from outlines are fine, and a
+2026-10-31T00:00:41Z (RFD66606-2367) 'from outlines are fine, and a glyph mesh goes through `remesh.elf` when its
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2367) 'glyph mesh goes through
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:33Z (RFD66606-2367) '`remesh.elf` when its
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:34Z (RFD66606-2367) 'font's winding is invalid.
+2026-10-31T00:00:42Z (RFD66606-2367) 'font's winding is invalid.
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:35Z (RFD66606-2367) '
+2026-10-31T00:00:43Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:36Z (RFD66606-2367) '
+2026-10-31T00:00:44Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:37Z (RFD66606-2367) 'The blossom cards and the cut
+2026-10-31T00:00:45Z (RFD66606-2367) 'The blossom cards and the cut
  # tags: rfd:details-heading
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:38Z (RFD66606-2367) 'Over the 48 valid orbit views,
+2026-10-31T00:00:46Z (RFD66606-2367) 'Over the 48 valid orbit views, the 53,211 cards are 13.6M triangles at full detail, and a 4 px
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:39Z (RFD66606-2367) 'the 53,211 cards are 13.6M
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:40Z (RFD66606-2367) 'triangles at full detail, and a 4
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:41Z (RFD66606-2367) 'px
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:42Z (RFD66606-2367) 'cut
+2026-10-31T00:00:47Z (RFD66606-2367) 'cut
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:43Z (RFD66606-2367) 'for a 1760 px eye at 100 degrees
+2026-10-31T00:00:48Z (RFD66606-2367) 'for a 1760 px eye at 100 degrees draws a mean of 39k and at most 122k. With
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:44Z (RFD66606-2367) 'draws a mean of 39k and at most
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:45Z (RFD66606-2367) '122k. With
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:46Z (RFD66606-2367) 'the cut, depth differs from the
+2026-10-31T00:00:49Z (RFD66606-2367) 'the cut, depth differs from the original on 0.16 % of the frame, and on
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:47Z (RFD66606-2367) 'original on 0.16 % of the frame,
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:48Z (RFD66606-2367) 'and on
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:49Z (RFD66606-2367) '2.15 % without the cards.
+2026-10-31T00:00:50Z (RFD66606-2367) '2.15 % without the cards. Translated, the cut takes a median 1.6 ms a view
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:50Z (RFD66606-2367) 'Translated, the cut takes a
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:51Z (RFD66606-2367) 'median 1.6 ms a view
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:52Z (RFD66606-2367) 'on the desk, and 4.3 ms
+2026-10-31T00:00:51Z (RFD66606-2367) 'on the desk, and 4.3 ms interpreted.
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:53Z (RFD66606-2367) 'interpreted.
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:54Z (RFD66606-2367) '
+2026-10-31T00:00:52Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:55Z (RFD66606-2367) '
+2026-10-31T00:00:53Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:56Z (RFD66606-2367) 'The outline
+2026-10-31T00:00:54Z (RFD66606-2367) 'The outline
  # tags: rfd:details-heading
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:57Z (RFD66606-2367) 'The outline reads the mesh's
+2026-10-31T00:00:55Z (RFD66606-2367) 'The outline reads the mesh's geometric normal, which the toon-ramp hook writes,
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:01:58Z (RFD66606-2367) 'geometric normal, which the
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:01:59Z (RFD66606-2367) 'toon-ramp hook writes,
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:02:00Z (RFD66606-2367) 'not MToon's bent indirect-light
+2026-10-31T00:00:56Z (RFD66606-2367) 'not MToon's bent indirect-light normal, and takes depth and normal from the
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:01Z (RFD66606-2367) 'normal, and takes depth and
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:02:02Z (RFD66606-2367) 'normal from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:02:03Z (RFD66606-2367) 'majority MSAA sample.
+2026-10-31T00:00:57Z (RFD66606-2367) 'majority MSAA sample.
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:04Z (RFD66606-2367) '
+2026-10-31T00:00:58Z (RFD66606-2367) '
  # tags: rfd:details
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:05Z (RFD66606-2367) '2351
+2026-10-31T00:00:59Z (RFD66606-2367) '2351
  # tags: rebac:verbs-from
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:06Z (RFD66606-2367) 'rfd-2367 provides
+2026-10-31T00:01:00Z (RFD66606-2367) 'rfd-2367 provides station-csg-baked-mesh-render
  # tags: rebac:relate
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:07Z (RFD66606-2367) 'station-csg-baked-mesh-render
- # tags: rebac:relate, rfd:wrap
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:02:08Z (RFD66606-2367) 'rfd-2367 is_a workspace-policy
+2026-10-31T00:01:01Z (RFD66606-2367) 'rfd-2367 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2367  1 LINE
  Text:Written
 
-2026-10-31T00:02:09Z (RFD66606-2367) 'rfd-2367 spends
+2026-10-31T00:01:02Z (RFD66606-2367) 'rfd-2367 spends sandbox-guest-heavy-compute
  # tags: rebac:relate
- Text:RFD2367  1 LINE
- Text:Written
-
-2026-10-31T00:02:10Z (RFD66606-2367) 'sandbox-guest-heavy-compute
- # tags: rebac:relate, rfd:wrap
  Text:RFD2367  1 LINE
  Text:Written

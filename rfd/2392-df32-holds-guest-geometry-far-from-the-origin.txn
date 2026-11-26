@@ -4,312 +4,172 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2392) 'the scalar for guest geometry
+2026-10-31T00:00:01Z (RFD66606-2392) 'the scalar for guest geometry that must hold far from the origin.
  # tags: rfd:scope
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2392) 'that must hold far from the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2392) 'origin.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2392) 'Can a float32 pair hold guest
+2026-10-31T00:00:02Z (RFD66606-2392) 'Can a float32 pair hold guest geometry far from the origin?
  # tags: rfd:hook
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2392) 'geometry far from the origin?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2392) '
+2026-10-31T00:00:03Z (RFD66606-2392) '
  # tags: rfd:hook
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2392) 'Can a stroke be placed 3.8e8 m
+2026-10-31T00:00:04Z (RFD66606-2392) 'Can a stroke be placed 3.8e8 m out when float32 spacing there is about 32 m?
  # tags: rfd:intrigue
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2392) 'out when float32 spacing there is
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2392) 'about 32 m?
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2392) '
+2026-10-31T00:00:05Z (RFD66606-2392) '
  # tags: rfd:intrigue
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2392) 'Check that any guest geometry far
+2026-10-31T00:00:06Z (RFD66606-2392) 'Check that any guest geometry far from the origin is held in df32, and that the canvas origin
  # tags: rfd:exit
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2392) 'from the origin is held in df32,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2392) 'and that the canvas origin
- # tags: rfd:exit, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2392) 'crosses the API boundary in df32
+2026-10-31T00:00:07Z (RFD66606-2392) 'crosses the API boundary in df32 or double.
  # tags: rfd:exit
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2392) 'or double.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2392) '
+2026-10-31T00:00:08Z (RFD66606-2392) '
  # tags: rfd:exit
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2392) 'df32 holds guest geometry far
+2026-10-31T00:00:09Z (RFD66606-2392) 'df32 holds guest geometry far from the origin
  # tags: rfd:details-title
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2392) 'from the origin
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2392) '- df32, a double-float pair of a
+2026-10-31T00:00:10Z (RFD66606-2392) '- df32, a double-float pair of a high and a low float32, is the
  # tags: rfd:decision
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2392) 'high and a low float32, is the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2392) '  scalar for guest geometry that
+2026-10-31T00:00:11Z (RFD66606-2392) '  scalar for guest geometry that must hold far from the origin,
  # tags: rfd:decision
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2392) 'must hold far from the origin,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2392) '  with `two_sum`, `quick_two_sum`
+2026-10-31T00:00:12Z (RFD66606-2392) '  with `two_sum`, `quick_two_sum` and `two_prod` as the anny Slang
  # tags: rfd:decision
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2392) 'and `two_prod` as the anny Slang
- # tags: rfd:decision, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2392) '  kernels write them.
+2026-10-31T00:00:13Z (RFD66606-2392) '  kernels write them.
  # tags: rfd:decision
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2392) '
+2026-10-31T00:00:14Z (RFD66606-2392) '
  # tags: rfd:decision
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2392) '- RFD66606-2293, where this rule
+2026-10-31T00:00:15Z (RFD66606-2392) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2392) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2392) '
+2026-10-31T00:00:16Z (RFD66606-2392) '
  # tags: rfd:related
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2392) 'Canvas-local coordinates
+2026-10-31T00:00:17Z (RFD66606-2392) 'Canvas-local coordinates
  # tags: rfd:details-heading
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2392) 'Graph math runs in
+2026-10-31T00:00:18Z (RFD66606-2392) 'Graph math runs in
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2392) 'canvas-local coordinates. The
+2026-10-31T00:00:19Z (RFD66606-2392) 'canvas-local coordinates. The canvas origin crosses the API
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2392) 'canvas origin crosses the API
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2392) 'boundary in df32 or double.
+2026-10-31T00:00:20Z (RFD66606-2392) 'boundary in df32 or double. float32 stays a one-line switch, kept
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2392) 'float32 stays a one-line switch,
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2392) 'kept
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2392) 'for comparison against float32
+2026-10-31T00:00:21Z (RFD66606-2392) 'for comparison against float32 sources.
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2392) 'sources.
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2392) '
+2026-10-31T00:00:22Z (RFD66606-2392) '
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2392) 'The problem
+2026-10-31T00:00:23Z (RFD66606-2392) 'The problem
  # tags: rfd:details-heading
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2392) 'On the Moon, about 3.8e8 m out,
+2026-10-31T00:00:24Z (RFD66606-2392) 'On the Moon, about 3.8e8 m out, float32
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2392) 'float32
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2392) 'spacing is about 32 m, some 480
+2026-10-31T00:00:25Z (RFD66606-2392) 'spacing is about 32 m, some 480 soda cans, so float32 world
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2392) 'soda cans, so float32 world
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2392) 'coordinates cannot place a stroke
+2026-10-31T00:00:26Z (RFD66606-2392) 'coordinates cannot place a stroke there.
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2392) 'there.
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2392) '- Gate evidence:
+2026-10-31T00:00:27Z (RFD66606-2392) '- Gate evidence: &{repo("contract-guest-runtime")}, guest/rd_worker/main.cpp, which
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2392) '&{repo("contract-guest-runtime")},
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2392) 'guest/rd_worker/main.cpp, which
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2392) '  runs a df32 dot over n floats
+2026-10-31T00:00:28Z (RFD66606-2392) '  runs a df32 dot over n floats with the two_sum and two_prod kernels this RFD names.
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2392) 'with the two_sum and two_prod
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2392) 'kernels this RFD names.
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2392) '  The canvas origin crossing the
+2026-10-31T00:00:29Z (RFD66606-2392) '  The canvas origin crossing the API boundary in df32 or double is not in guest-
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2392) 'API boundary in df32 or double is
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2392) 'not in guest-
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2392) '  runtime, so that acceptance is
+2026-10-31T00:00:30Z (RFD66606-2392) '  runtime, so that acceptance is unmet and stated as such.
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2392) 'unmet and stated as such.
- # tags: rfd:details, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2392) '
+2026-10-31T00:00:31Z (RFD66606-2392) '
  # tags: rfd:details
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2392) '2351
+2026-10-31T00:00:32Z (RFD66606-2392) '2351
  # tags: rebac:verbs-from
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2392) 'rfd-2392 provides
+2026-10-31T00:00:33Z (RFD66606-2392) 'rfd-2392 provides df32-far-origin-geometry
  # tags: rebac:relate
  Text:RFD2392  1 LINE
  Text:Written
 
-2026-10-31T00:01:01Z (RFD66606-2392) 'df32-far-origin-geometry
- # tags: rebac:relate, rfd:wrap
- Text:RFD2392  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2392) 'rfd-2392 is_a guest-runtime
+2026-10-31T00:00:34Z (RFD66606-2392) 'rfd-2392 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2392  1 LINE
  Text:Written

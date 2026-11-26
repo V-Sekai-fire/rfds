@@ -9,297 +9,297 @@
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1080) 'The three Fly deploys have a
+2026-08-25T00:00:02Z (RFD66606-1080) 'The three Fly deploys have a priced cost, checked live and not estimated.
  # tags: rfd:hook
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1080) 'priced cost, checked live and not
- # tags: rfd:hook, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1080) 'estimated.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1080) '
+2026-08-25T00:00:03Z (RFD66606-1080) '
  # tags: rfd:hook
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1080) '`weftspun-studio`,
+2026-08-25T00:00:04Z (RFD66606-1080) '`weftspun-studio`, `weftspun-character-taxonomy`, and `weftspun-usd-viewer` all run
  # tags: rfd:intrigue
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1080) '`weftspun-character-taxonomy`,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1080) 'and `weftspun-usd-viewer` all run
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1080) 'as real, billed Fly Machines and
+2026-08-25T00:00:05Z (RFD66606-1080) 'as real, billed Fly Machines and Volumes now, yet no record states what they cost.
  # tags: rfd:intrigue
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1080) 'Volumes now, yet no record states
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1080) 'what they cost.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1080) '
+2026-08-25T00:00:06Z (RFD66606-1080) '
  # tags: rfd:intrigue
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1080) 'Re-run `flyctl machine list` and
+2026-08-25T00:00:07Z (RFD66606-1080) 'Re-run `flyctl machine list` and `flyctl volumes list` against the three apps to check the sizes
  # tags: rfd:exit
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1080) '`flyctl volumes list` against the
- # tags: rfd:exit, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1080) 'three apps to check the sizes
- # tags: rfd:exit, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1080) 'behind the total before you cite
+2026-08-25T00:00:08Z (RFD66606-1080) 'behind the total before you cite it. The sections below hold the breakdown by app.
  # tags: rfd:exit
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1080) 'it. The sections below hold the
- # tags: rfd:exit, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1080) 'breakdown by app.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1080) '
+2026-08-25T00:00:09Z (RFD66606-1080) '
  # tags: rfd:exit
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1080) 'What the three Fly deploys cost
+2026-08-25T00:00:10Z (RFD66606-1080) 'What the three Fly deploys cost
  # tags: rfd:details-title
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1080) 'Record it, from Fly's own
+2026-08-25T00:00:11Z (RFD66606-1080) 'Record it, from Fly's own published pricing page, against this
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1080) 'published pricing page, against
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1080) 'this
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1080) 'deployment's own real machine
+2026-08-25T00:00:12Z (RFD66606-1080) 'deployment's own real machine sizes, checked live with `flyctl`, not
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1080) 'sizes, checked live with
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1080) '`flyctl`, not
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1080) 'estimated.
+2026-08-25T00:00:13Z (RFD66606-1080) 'estimated.
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1080) '
+2026-08-25T00:00:14Z (RFD66606-1080) '
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1080) '**Total: $0.012845/hour,
+2026-08-25T00:00:15Z (RFD66606-1080) '**Total: $0.012845/hour, $9.26/month, $111.12/year**, at today's
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1080) '$9.26/month, $111.12/year**, at
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1080) 'today's
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1080) 'sizes: three `shared-cpu-1x`
+2026-08-25T00:00:16Z (RFD66606-1080) 'sizes: three `shared-cpu-1x` machines (two 512MB, one 256MB, the
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1080) 'machines (two 512MB, one 256MB,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1080) 'the
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1080) 'last scaled from Fly's default
+2026-08-25T00:00:17Z (RFD66606-1080) 'last scaled from Fly's default 2-machine HA pair to one), a 3GB
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1080) '2-machine HA pair to one), a 3GB
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1080) 'Volume, and a 1GB Volume.
+2026-08-25T00:00:18Z (RFD66606-1080) 'Volume, and a 1GB Volume.
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1080) '
+2026-08-25T00:00:19Z (RFD66606-1080) '
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1080) 'Not included: outbound bandwidth
+2026-08-25T00:00:20Z (RFD66606-1080) 'Not included: outbound bandwidth (usage-based, has a free tier
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1080) '(usage-based, has a free tier
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1080) 'before per-GB billing), and any
+2026-08-25T00:00:21Z (RFD66606-1080) 'before per-GB billing), and any future Tigris usage RFD66606-1073's
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1080) 'future Tigris usage
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1080) 'RFD66606-1073's
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1080) 'still-open fetch-path work would
+2026-08-25T00:00:22Z (RFD66606-1080) 'still-open fetch-path work would add.
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1080) 'add.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1080) '
+2026-08-25T00:00:23Z (RFD66606-1080) '
  # tags: rfd:decision
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1080) 'RFD66606-1062 gives the Fly.io
+2026-08-25T00:00:24Z (RFD66606-1080) 'RFD66606-1062 gives the Fly.io toplevel. RFD66606-1076 gives the `apps/` split
  # tags: rfd:related
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1080) 'toplevel. RFD66606-1076 gives the
- # tags: rfd:related, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1080) '`apps/` split
- # tags: rfd:related, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1080) 'across three Fly apps.
+2026-08-25T00:00:25Z (RFD66606-1080) 'across three Fly apps. RFD66606-1079 gives `versitygw`'s removal, no
  # tags: rfd:related
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1080) 'RFD66606-1079 gives `versitygw`'s
- # tags: rfd:related, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1080) 'removal, no
- # tags: rfd:related, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1080) 'change to this total since it ran
+2026-08-25T00:00:26Z (RFD66606-1080) 'change to this total since it ran inside an already-billed machine.
  # tags: rfd:related
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1080) 'inside an already-billed machine.
- # tags: rfd:related, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1080) '
+2026-08-25T00:00:27Z (RFD66606-1080) '
  # tags: rfd:related
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1080) 'Source prices
+2026-08-25T00:00:28Z (RFD66606-1080) 'Source prices
  # tags: rfd:details-heading
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1080) 'From
+2026-08-25T00:00:29Z (RFD66606-1080) 'From `fly.io/docs/about/pricing/`, the published rates this
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1080) '`fly.io/docs/about/pricing/`, the
- # tags: rfd:details, rfd:wrap
+2026-08-25T00:00:30Z (RFD66606-1080) 'breakdown uses directly:
+ # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1080) 'published rates this
- # tags: rfd:details, rfd:wrap
+2026-08-25T00:00:31Z (RFD66606-1080) '
+ # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1080) 'breakdown uses directly:
+2026-08-25T00:00:32Z (RFD66606-1080) '| Resource               | Per-second  | Per-month |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1080) '| ---------------------- | ----------- | --------- |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1080) '| `shared-cpu-1x`, 256MB | $0.00000078 | $2.02     |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1080) '| `shared-cpu-1x`, 512MB | $0.00000128 | $3.32     |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1080) '| Volume storage         |,           | $0.15/GB  |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1080) '
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1080) 'Hourly = per-second × 3600. Yearly = per-month × 12, the number Fly
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1080) 'itself bills against, not hourly × 8760 (the two differ slightly
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1080) 'because a month is not exactly 730 hours; the per-month figure is
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1080) 'the one Fly actually charges).
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1080) '
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1080) 'This deployment's real sizes, checked live
+ # tags: rfd:details-heading
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1080) '`flyctl machine list` and `flyctl volumes list`, run against all
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1080) 'three apps, the same session these prices apply to:
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1080) '
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1080) '| App                           | Machine(s)                | Volume |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1080) '| ----------------------------- | ------------------------- | ------ |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1080) '| `weftspun-studio`             | 1× `shared-cpu-1x`, 512MB | 3GB    |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1080) '| `weftspun-character-taxonomy` | 1× `shared-cpu-1x`, 512MB | 1GB    |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1080) '| `weftspun-usd-viewer`         | 1× `shared-cpu-1x`, 256MB | none   |
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1080) '
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1080) '`weftspun-usd-viewer` started as Fly's default 2-machine HA pair
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1080) '(zero-downtime deploys); scaled to one (`min_machines_running = 0`
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1080) 'in its own `fly.toml`, then `flyctl scale count 1`) per the user's
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1080) 'own choice of cost over restart-window downtime.
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1080) '
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1080) 'No dedicated IPv4 anywhere (checked with `flyctl ips list` against
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1080) 'all three apps): only shared IPv4 and free dedicated IPv6, so no
+ # tags: rfd:details
+ Text:RFD1080  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1080) 'extra per-app IP charge applies.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
@@ -309,657 +309,167 @@
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1080) '| Resource               |
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1080) 'Per-second  | Per-month |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1080) '| ---------------------- |
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1080) '----------- | --------- |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1080) '| `shared-cpu-1x`, 256MB |
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1080) '$0.00000078 | $2.02     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1080) '| `shared-cpu-1x`, 512MB |
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1080) '$0.00000128 | $3.32     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1080) '| Volume storage         |,           |
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1080) '$0.15/GB  |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1080) '
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1080) 'Hourly = per-second × 3600.
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-1080) 'Yearly = per-month × 12, the
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1080) 'number Fly
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1080) 'itself bills against, not hourly
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1080) '× 8760 (the two differ slightly
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1080) 'because a month is not exactly
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1080) '730 hours; the per-month figure
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1080) 'is
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1080) 'the one Fly actually charges).
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1080) '
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1080) 'This deployment's real sizes,
+2026-08-25T00:01:02Z (RFD66606-1080) 'The breakdown, hourly / monthly / yearly
  # tags: rfd:details-heading
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1080) 'checked live
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1080) '`flyctl machine list` and `flyctl
+2026-08-25T00:01:03Z (RFD66606-1080) '| App                                        | Hourly        | Monthly   | Yearly      |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1080) 'volumes list`, run against all
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1080) 'three apps, the same session
+2026-08-25T00:01:04Z (RFD66606-1080) '| ------------------------------------------ | ------------- | --------- | ----------- |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1080) 'these prices apply to:
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1080) '
+2026-08-25T00:01:05Z (RFD66606-1080) '| `weftspun-studio` (machine)                | $0.004608     | $3.32     | $39.84      |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-1080) '| App                           |
+2026-08-25T00:01:06Z (RFD66606-1080) '| `weftspun-studio` (3GB volume)             | $0.000616     | $0.45     | $5.40       |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-1080) 'Machine(s)                |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1080) 'Volume |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1080) '| ----------------------------- |
+2026-08-25T00:01:07Z (RFD66606-1080) '| `weftspun-character-taxonomy` (machine)    | $0.004608     | $3.32     | $39.84      |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:34Z (RFD66606-1080) '------------------------- |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1080) '------ |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1080) '| `weftspun-studio`             |
+2026-08-25T00:01:08Z (RFD66606-1080) '| `weftspun-character-taxonomy` (1GB volume) | $0.000205     | $0.15     | $1.80       |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-1080) '1× `shared-cpu-1x`, 512MB | 3GB    |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1080) '| `weftspun-character-taxonomy` |
+2026-08-25T00:01:09Z (RFD66606-1080) '| `weftspun-usd-viewer` (machine)            | $0.002808     | $2.02     | $24.24      |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-1080) '1× `shared-cpu-1x`, 512MB | 1GB    |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1080) '| `weftspun-usd-viewer`         |
+2026-08-25T00:01:10Z (RFD66606-1080) '| **Total**                                  | **$0.012845** | **$9.26** | **$111.12** |
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-1080) '1× `shared-cpu-1x`, 256MB | none   |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1080) '
+2026-08-25T00:01:11Z (RFD66606-1080) '
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-1080) '`weftspun-usd-viewer` started as
+2026-08-25T00:01:12Z (RFD66606-1080) 'Volume hourly figures divide the monthly rate by 730 (Fly's own
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-1080) 'Fly's default 2-machine HA pair
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1080) '(zero-downtime deploys); scaled
+2026-08-25T00:01:13Z (RFD66606-1080) 'average hours-per-month), since Fly bills Volumes monthly, not
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-1080) 'to one (`min_machines_running =
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-1080) '0`
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:48Z (RFD66606-1080) 'in its own `fly.toml`, then
+2026-08-25T00:01:14Z (RFD66606-1080) 'per-second; machine hourly figures are the real per-second billing
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:49Z (RFD66606-1080) '`flyctl scale count 1`) per the
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:50Z (RFD66606-1080) 'user's
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-1080) 'own choice of cost over
+2026-08-25T00:01:15Z (RFD66606-1080) 'rate × 3600, both shown for a like-for-like row.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:52Z (RFD66606-1080) 'restart-window downtime.
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:53Z (RFD66606-1080) '
+2026-08-25T00:01:16Z (RFD66606-1080) '
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:01:54Z (RFD66606-1080) 'No dedicated IPv4 anywhere
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-1080) '(checked with `flyctl ips list`
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1080) 'against
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1080) 'all three apps): only shared IPv4
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:58Z (RFD66606-1080) 'and free dedicated IPv6, so no
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:01:59Z (RFD66606-1080) 'extra per-app IP charge applies.
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:00Z (RFD66606-1080) '
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:01Z (RFD66606-1080) 'The breakdown, hourly / monthly /
+2026-08-25T00:01:17Z (RFD66606-1080) 'What this excludes
  # tags: rfd:details-heading
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-1080) 'yearly
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:03Z (RFD66606-1080) '| App                                        |
+2026-08-25T00:01:18Z (RFD66606-1080) '- **Outbound bandwidth.** Usage-based, not a fixed size like a
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:04Z (RFD66606-1080) 'Hourly        | Monthly   |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1080) 'Yearly      |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:06Z (RFD66606-1080) '|
+2026-08-25T00:01:19Z (RFD66606-1080) '  Machine or a Volume. Fly's free tier covers a baseline before
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:07Z (RFD66606-1080) '------------------------------------------
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1080) '| ------------- | --------- |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:09Z (RFD66606-1080) '----------- |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:10Z (RFD66606-1080) '| `weftspun-studio` (machine)                |
+2026-08-25T00:01:20Z (RFD66606-1080) '  per-GB egress billing starts; this deployment's actual traffic
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1080) '$0.004608     | $3.32     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:12Z (RFD66606-1080) '$39.84      |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:13Z (RFD66606-1080) '| `weftspun-studio` (3GB volume)             |
+2026-08-25T00:01:21Z (RFD66606-1080) '  was not measured this session.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:14Z (RFD66606-1080) '$0.000616     | $0.45     | $5.40       |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:15Z (RFD66606-1080) '| `weftspun-character-taxonomy`
+2026-08-25T00:01:22Z (RFD66606-1080) '- **Tigris.** RFD66606-1073's still-open fetch-path work (`apps/usd_viewer_app/`
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:16Z (RFD66606-1080) '(machine)    | $0.004608     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:17Z (RFD66606-1080) '$3.32     | $39.84      |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:18Z (RFD66606-1080) '| `weftspun-character-taxonomy`
+2026-08-25T00:01:23Z (RFD66606-1080) '  fetching gallery assets from Tigris instead of baking them into
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:19Z (RFD66606-1080) '(1GB volume) | $0.000205     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1080) '$0.15     | $1.80       |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:21Z (RFD66606-1080) '| `weftspun-usd-viewer` (machine)            |
+2026-08-25T00:01:24Z (RFD66606-1080) '  its own image) would add real, usage-based storage and bandwidth
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:22Z (RFD66606-1080) '$0.002808     | $2.02     |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:23Z (RFD66606-1080) '$24.24      |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-1080) '| **Total**                                  |
+2026-08-25T00:01:25Z (RFD66606-1080) '  cost once built. Not yet built, so not yet billed, so not in this
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:25Z (RFD66606-1080) '**$0.012845** | **$9.26** |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-1080) '**$111.12** |
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:27Z (RFD66606-1080) '
+2026-08-25T00:01:26Z (RFD66606-1080) '  total.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:28Z (RFD66606-1080) 'Volume hourly figures divide the
+2026-08-25T00:01:27Z (RFD66606-1080) '- **`taskweft-mcp`**, a fourth already-deployed Fly app in the same
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:29Z (RFD66606-1080) 'monthly rate by 730 (Fly's own
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:30Z (RFD66606-1080) 'average hours-per-month), since
+2026-08-25T00:01:28Z (RFD66606-1080) '  org, unrelated to the three this RFD scopes (`weftspun-studio`,
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:31Z (RFD66606-1080) 'Fly bills Volumes monthly, not
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:32Z (RFD66606-1080) 'per-second; machine hourly
+2026-08-25T00:01:29Z (RFD66606-1080) '  `weftspun-character-taxonomy`, `weftspun-usd-viewer`). Its own
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:33Z (RFD66606-1080) 'figures are the real per-second
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-1080) 'billing
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-1080) 'rate × 3600, both shown for a
+2026-08-25T00:01:30Z (RFD66606-1080) '  cost is real but out of this RFD's scope.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:36Z (RFD66606-1080) 'like-for-like row.
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-1080) '
+2026-08-25T00:01:31Z (RFD66606-1080) '
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:38Z (RFD66606-1080) 'What this excludes
+2026-08-25T00:01:32Z (RFD66606-1080) 'The problem
  # tags: rfd:details-heading
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:39Z (RFD66606-1080) '- **Outbound bandwidth.**
+2026-08-25T00:01:33Z (RFD66606-1080) 'Fly bills Machines by the second and Volumes by the month.
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written
 
-2026-08-25T00:02:40Z (RFD66606-1080) 'Usage-based, not a fixed size
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-1080) 'like a
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:42Z (RFD66606-1080) '  Machine or a Volume. Fly's free
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:43Z (RFD66606-1080) 'tier covers a baseline before
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:44Z (RFD66606-1080) '  per-GB egress billing starts;
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:45Z (RFD66606-1080) 'this deployment's actual traffic
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:46Z (RFD66606-1080) '  was not measured this session.
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:47Z (RFD66606-1080) '- **Tigris.** RFD66606-1073's
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:48Z (RFD66606-1080) 'still-open fetch-path work
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:49Z (RFD66606-1080) '(`apps/usd_viewer_app/`
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:50Z (RFD66606-1080) '  fetching gallery assets from
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:51Z (RFD66606-1080) 'Tigris instead of baking them
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:52Z (RFD66606-1080) 'into
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:53Z (RFD66606-1080) '  its own image) would add real,
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:54Z (RFD66606-1080) 'usage-based storage and bandwidth
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:55Z (RFD66606-1080) '  cost once built. Not yet built,
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:56Z (RFD66606-1080) 'so not yet billed, so not in this
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:57Z (RFD66606-1080) '  total.
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:58Z (RFD66606-1080) '- **`taskweft-mcp`**, a fourth
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:02:59Z (RFD66606-1080) 'already-deployed Fly app in the
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:00Z (RFD66606-1080) 'same
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:01Z (RFD66606-1080) '  org, unrelated to the three
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:02Z (RFD66606-1080) 'this RFD scopes
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:03Z (RFD66606-1080) '(`weftspun-studio`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:04Z (RFD66606-1080) '  `weftspun-character-taxonomy`,
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:05Z (RFD66606-1080) '`weftspun-usd-viewer`). Its own
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:06Z (RFD66606-1080) '  cost is real but out of this
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:07Z (RFD66606-1080) 'RFD's scope.
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:08Z (RFD66606-1080) '
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:09Z (RFD66606-1080) 'The problem
- # tags: rfd:details-heading
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:10Z (RFD66606-1080) 'Fly bills Machines by the second
- # tags: rfd:details
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:11Z (RFD66606-1080) 'and Volumes by the month.
- # tags: rfd:details, rfd:wrap
- Text:RFD1080  1 LINE
- Text:Written
-
-2026-08-25T00:03:12Z (RFD66606-1080) '
+2026-08-25T00:01:34Z (RFD66606-1080) '
  # tags: rfd:details
  Text:RFD1080  1 LINE
  Text:Written

@@ -4,507 +4,227 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2391) 'the double-precision build of the
+2026-10-31T00:00:01Z (RFD66606-2391) 'the double-precision build of the guests.
  # tags: rfd:scope
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2391) 'guests.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2391) 'Guests are built at double
+2026-10-31T00:00:02Z (RFD66606-2391) 'Guests are built at double precision so they match the double host.
  # tags: rfd:hook
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2391) 'precision so they match the
- # tags: rfd:hook, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2391) 'double host.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2391) '
+2026-10-31T00:00:03Z (RFD66606-2391) '
  # tags: rfd:hook
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2391) 'A committed single-precision
+2026-10-31T00:00:04Z (RFD66606-2391) 'A committed single-precision `curvenet.elf` loaded by the check must print `RESULT: FAIL`.
  # tags: rfd:intrigue
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2391) '`curvenet.elf` loaded by the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2391) 'check must print `RESULT: FAIL`.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2391) '
+2026-10-31T00:00:05Z (RFD66606-2391) '
  # tags: rfd:intrigue
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2391) 'Run `tools/probe_load.gd` and
+2026-10-31T00:00:06Z (RFD66606-2391) 'Run `tools/probe_load.gd` and check that `variant_bytes() == 40` for curvenet and lasso when
  # tags: rfd:exit
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2391) 'check that `variant_bytes() ==
- # tags: rfd:exit, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2391) '40` for curvenet and lasso when
- # tags: rfd:exit, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2391) '`OS.has_feature("double")` holds.
+2026-10-31T00:00:07Z (RFD66606-2391) '`OS.has_feature("double")` holds.
  # tags: rfd:exit
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2391) '
+2026-10-31T00:00:08Z (RFD66606-2391) '
  # tags: rfd:exit
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2391) 'guests are built at double
+2026-10-31T00:00:09Z (RFD66606-2391) 'guests are built at double precision
  # tags: rfd:details-title
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2391) 'precision
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2391) '- Guests at double, in
+2026-10-31T00:00:10Z (RFD66606-2391) '- Guests at double, in &{repo("contract-guest-runtime")}'s vendored
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2391) '&{repo("contract-guest-runtime")}'s
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2391) 'vendored
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2391) '  sandbox-api:
+2026-10-31T00:00:11Z (RFD66606-2391) '  sandbox-api: `target_compile_definitions(sandbox_api PUBLIC
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2391) '`target_compile_definitions(sandbox_api
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2391) 'PUBLIC
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2391) '  DOUBLE_PRECISION_REAL_T)` under
+2026-10-31T00:00:12Z (RFD66606-2391) '  DOUBLE_PRECISION_REAL_T)` under the option; `node2d.cpp` returns
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2391) 'the option; `node2d.cpp` returns
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2391) '  `real_t`; `vector.cpp`'s
+2026-10-31T00:00:13Z (RFD66606-2391) '  `real_t`; `vector.cpp`'s wrappers take `real_t`, checked against
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2391) 'wrappers take `real_t`, checked
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2391) 'against
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2391) '  the host's `ECALL_VEC3_OPS`
+2026-10-31T00:00:14Z (RFD66606-2391) '  the host's `ECALL_VEC3_OPS` handler in the placed source for what
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2391) 'handler in the placed source for
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2391) 'what
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2391) '  `fa0` carries. The pen's
+2026-10-31T00:00:15Z (RFD66606-2391) '  `fa0` carries. The pen's `build.sh` passes `-DDOUBLE_PRECISION=ON`.
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2391) '`build.sh` passes
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2391) '`-DDOUBLE_PRECISION=ON`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2391) '  Xgodot_lite` stays float, since
+2026-10-31T00:00:16Z (RFD66606-2391) '  Xgodot_lite` stays float, since the host boundary is `api.hpp`'s
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2391) 'the host boundary is `api.hpp`'s
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2391) '  `Variant` and
+2026-10-31T00:00:17Z (RFD66606-2391) '  `Variant` and `PackedFloat32Array` is float either way. `lasso` and
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2391) '`PackedFloat32Array` is float
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2391) 'either way. `lasso` and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2391) '  `curvenet` export
+2026-10-31T00:00:18Z (RFD66606-2391) '  `curvenet` export `variant_bytes()`.
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2391) '`variant_bytes()`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2391) '- A Mojo guest is held to the
+2026-10-31T00:00:19Z (RFD66606-2391) '- A Mojo guest is held to the same size. It names 40 bytes in its own `.sandbox_variant`
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2391) 'same size. It names 40 bytes in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2391) 'its own `.sandbox_variant`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2391) '  section and the double host
+2026-10-31T00:00:20Z (RFD66606-2391) '  section and the double host refuses a guest that names another (RFD66606-2494, operator,
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2391) 'refuses a guest that names
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2391) 'another (RFD66606-2494, operator,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2391) '  2026-11-14).
+2026-10-31T00:00:21Z (RFD66606-2391) '  2026-11-14).
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2391) '- Superseded for the beta
+2026-10-31T00:00:22Z (RFD66606-2391) '- Superseded for the beta (operator, 2026-11-25). The beta runs on stock Godot 4.8-beta5 at
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2391) '(operator, 2026-11-25). The beta
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2391) 'runs on stock Godot 4.8-beta5 at
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2391) '  single precision with the
+2026-10-31T00:00:23Z (RFD66606-2391) '  single precision with the godot-sandbox addon, and the engine fork goes to the archive. A
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2391) 'godot-sandbox addon, and the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2391) 'engine fork goes to the archive.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2391) 'A
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2391) '  guest builds at both precisions
+2026-10-31T00:00:24Z (RFD66606-2391) '  guest builds at both precisions and releases both, and the beta loads the single ELF, whose
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2391) 'and releases both, and the beta
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2391) 'loads the single ELF, whose
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2391) '  `.sandbox_variant` names 24
+2026-10-31T00:00:25Z (RFD66606-2391) '  `.sandbox_variant` names 24 bytes. Double precision returns when a feature needs it.
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2391) 'bytes. Double precision returns
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2391) 'when a feature needs it.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2391) '
+2026-10-31T00:00:26Z (RFD66606-2391) '
  # tags: rfd:decision
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2391) '- RFD66606-2293, where this rule
+2026-10-31T00:00:27Z (RFD66606-2391) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:04Z (RFD66606-2391) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2391) '
+2026-10-31T00:00:28Z (RFD66606-2391) '
  # tags: rfd:related
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2391) 'Check and control
+2026-10-31T00:00:29Z (RFD66606-2391) 'Check and control
  # tags: rfd:details-heading
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2391) 'Check: `tools/probe_load.gd`
+2026-10-31T00:00:30Z (RFD66606-2391) 'Check: `tools/probe_load.gd` loads `lasso.elf` (seven PASS lines with
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:08Z (RFD66606-2391) 'loads `lasso.elf` (seven PASS
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2391) 'lines with
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2391) 'their controls) and asserts
+2026-10-31T00:00:31Z (RFD66606-2391) 'their controls) and asserts `OS.has_feature("double")` implies
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:11Z (RFD66606-2391) '`OS.has_feature("double")`
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:12Z (RFD66606-2391) 'implies
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2391) '`variant_bytes() == 40` for
+2026-10-31T00:00:32Z (RFD66606-2391) '`variant_bytes() == 40` for curvenet and lasso. Xtools/test.sh` and
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2391) 'curvenet and lasso.
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:15Z (RFD66606-2391) 'Xtools/test.sh` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2391) 'the replay pass on the double
+2026-10-31T00:00:33Z (RFD66606-2391) 'the replay pass on the double editor and template builds in CI on
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2391) 'editor and template builds in CI
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2391) 'on
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2391) 'linux x86_64 and on the Frame
+2026-10-31T00:00:34Z (RFD66606-2391) 'linux x86_64 and on the Frame through `run-xr.sh`. Control:
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:20Z (RFD66606-2391) 'through `run-xr.sh`. Control:
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:21Z (RFD66606-2391) '`--control=single_elf` loads a
+2026-10-31T00:00:35Z (RFD66606-2391) '`--control=single_elf` loads a committed single-precision
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:22Z (RFD66606-2391) 'committed single-precision
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2391) '`curvenet.elf` and must print
+2026-10-31T00:00:36Z (RFD66606-2391) '`curvenet.elf` and must print `RESULT: FAIL`. A Mojo guest built to name 24 bytes is refused by
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2391) '`RESULT: FAIL`. A Mojo guest
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2391) 'built to name 24 bytes is refused
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:26Z (RFD66606-2391) 'by
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:27Z (RFD66606-2391) 'the double host with "this
+2026-10-31T00:00:37Z (RFD66606-2391) 'the double host with "this program's Variant is 24 bytes, and this build's is 40".
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2391) 'program's Variant is 24 bytes,
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:29Z (RFD66606-2391) 'and this build's is 40".
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:30Z (RFD66606-2391) '`linux.yml` gains
+2026-10-31T00:00:38Z (RFD66606-2391) '`linux.yml` gains
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2391) '`feat/*` and stays as the
+2026-10-31T00:00:39Z (RFD66606-2391) '`feat/*` and stays as the single-precision arm.
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2391) 'single-precision arm.
- # tags: rfd:details, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:33Z (RFD66606-2391) '
+2026-10-31T00:00:40Z (RFD66606-2391) '
  # tags: rfd:details
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:34Z (RFD66606-2391) '2351
+2026-10-31T00:00:41Z (RFD66606-2391) '2351
  # tags: rebac:verbs-from
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:35Z (RFD66606-2391) 'rfd-2391 provides
+2026-10-31T00:00:42Z (RFD66606-2391) 'rfd-2391 provides guest-elf-double
  # tags: rebac:relate
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:36Z (RFD66606-2391) 'guest-elf-double
- # tags: rebac:relate, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:37Z (RFD66606-2391) 'rfd-2391 provides
+2026-10-31T00:00:43Z (RFD66606-2391) 'rfd-2391 provides guests-double-precision-build
  # tags: rebac:relate
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:38Z (RFD66606-2391) 'guests-double-precision-build
- # tags: rebac:relate, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:39Z (RFD66606-2391) 'rfd-2391 spends
+2026-10-31T00:00:44Z (RFD66606-2391) 'rfd-2391 spends actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2391  1 LINE
  Text:Written
 
-2026-10-31T00:01:40Z (RFD66606-2391) 'actions-builds-double-binaries
- # tags: rebac:relate, rfd:wrap
- Text:RFD2391  1 LINE
- Text:Written
-
-2026-10-31T00:01:41Z (RFD66606-2391) 'rfd-2391 is_a guest-runtime
+2026-10-31T00:00:45Z (RFD66606-2391) 'rfd-2391 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2391  1 LINE
  Text:Written

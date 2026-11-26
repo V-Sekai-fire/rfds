@@ -4,272 +4,112 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2464) 'the StableHLO lowering accepts
+2026-11-07T00:00:01Z (RFD66606-2464) 'the StableHLO lowering accepts stablehlo.erf and matches XLA CPU bit for bit.
  # tags: rfd:feature
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2464) 'stablehlo.erf and matches XLA CPU
- # tags: rfd:feature, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2464) 'bit for bit.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2464) 'the erf case in
+2026-11-07T00:00:02Z (RFD66606-2464) 'the erf case in guest/pjrt-rd/stablehlo.cpp and its generated test cases.
  # tags: rfd:scope
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2464) 'guest/pjrt-rd/stablehlo.cpp and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2464) 'its generated test cases.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2464) 'Can an erf kernel on the GPU
+2026-11-07T00:00:03Z (RFD66606-2464) 'Can an erf kernel on the GPU match XLA CPU's own approximation bit for bit, not libm's?
  # tags: rfd:hook
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2464) 'match XLA CPU's own approximation
- # tags: rfd:hook, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2464) 'bit for bit, not libm's?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2464) '
+2026-11-07T00:00:04Z (RFD66606-2464) '
  # tags: rfd:hook
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2464) 'JAX's exact GELU
+2026-11-07T00:00:05Z (RFD66606-2464) 'JAX's exact GELU (`approximate=False`) lowers through `erf`, arriving as `chlo.erf` or as an
  # tags: rfd:intrigue
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2464) '(`approximate=False`) lowers
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2464) 'through `erf`, arriving as
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2464) '`chlo.erf` or as an
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2464) 'expanded polynomial depending on
+2026-11-07T00:00:06Z (RFD66606-2464) 'expanded polynomial depending on the JAX version. ggml-rd has `gelu_erf_f32`, but it needs
  # tags: rfd:intrigue
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2464) 'the JAX version. ggml-rd has
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2464) '`gelu_erf_f32`, but it needs
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2464) 'checking against XLA's erf bit
+2026-11-07T00:00:07Z (RFD66606-2464) 'checking against XLA's erf bit for bit.
  # tags: rfd:intrigue
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2464) 'for bit.
- # tags: rfd:intrigue, rfd:wrap
+2026-11-07T00:00:08Z (RFD66606-2464) '
+ # tags: rfd:intrigue
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2464) 'Cases in `tools/gen_stablehlo_cases.py` cover erf, including zeros of both signs, infinities,
+ # tags: rfd:exit
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2464) 'NaN and denormals, compared bit for bit against XLA CPU's output from the Zen 2 desk.
+ # tags: rfd:exit
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2464) '
+ # tags: rfd:exit
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:12Z (RFD66606-2464) '- Check which form jax 0.12 emits for `approximate=False`, `chlo.erf` or an expanded
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:13Z (RFD66606-2464) '  polynomial, before choosing the lowering path.
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:14Z (RFD66606-2464) '- Model XLA's erf approximation on the host and sweep all 2^32 f32 inputs against XLA CPU, the
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:15Z (RFD66606-2464) '  same route `tanh` and `exp`/`log` already took.
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:16Z (RFD66606-2464) '- Emit the matched kernel in place of `gelu_erf_f32`, and add erf cases to
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:17Z (RFD66606-2464) '  `tools/gen_stablehlo_cases.py` with the special values above.
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:18Z (RFD66606-2464) '- A case that cannot reach bit-equality carries a measured reason in `XFAIL`, a planted control
+ # tags: rfd:decision
+ Text:RFD2464  1 LINE
+ Text:Written
+
+2026-11-07T00:00:19Z (RFD66606-2464) '  case must fail its gate, and all 11 desk gates still pass.
+ # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
 2026-11-07T00:00:20Z (RFD66606-2464) '
- # tags: rfd:intrigue
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2464) 'Cases in
- # tags: rfd:exit
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2464) '`tools/gen_stablehlo_cases.py`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2464) 'cover erf, including zeros of
- # tags: rfd:exit, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2464) 'both signs, infinities,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2464) 'NaN and denormals, compared bit
- # tags: rfd:exit
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2464) 'for bit against XLA CPU's output
- # tags: rfd:exit, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2464) 'from the Zen 2 desk.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2464) '
- # tags: rfd:exit
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2464) '- Check which form jax 0.12 emits
  # tags: rfd:decision
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2464) 'for `approximate=False`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2464) '`chlo.erf` or an expanded
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2464) '  polynomial, before choosing the
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2464) 'lowering path.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2464) '- Model XLA's erf approximation
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2464) 'on the host and sweep all 2^32
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2464) 'f32 inputs against XLA CPU, the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2464) '  same route `tanh` and
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2464) '`exp`/`log` already took.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2464) '- Emit the matched kernel in
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2464) 'place of `gelu_erf_f32`, and add
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2464) 'erf cases to
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:42Z (RFD66606-2464) '  `tools/gen_stablehlo_cases.py`
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2464) 'with the special values above.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2464) '- A case that cannot reach
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2464) 'bit-equality carries a measured
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2464) 'reason in `XFAIL`, a planted
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2464) 'control
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2464) '  case must fail its gate, and
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:49Z (RFD66606-2464) 'all 11 desk gates still pass.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2464) '
- # tags: rfd:decision
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:51Z (RFD66606-2464) '- RFD66606-2372, the guest ELF
+2026-11-07T00:00:21Z (RFD66606-2464) '- RFD66606-2372, the guest ELF and ggml-rd compute route this kernel runs on.
  # tags: rfd:related
  Text:RFD2464  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2464) 'and ggml-rd compute route this
- # tags: rfd:related, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2464) 'kernel runs on.
- # tags: rfd:related, rfd:wrap
- Text:RFD2464  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2464) '
+2026-11-07T00:00:22Z (RFD66606-2464) '
  # tags: rfd:related
  Text:RFD2464  1 LINE
  Text:Written

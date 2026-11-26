@@ -4,823 +4,823 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-09-01T00:00:01Z (RFD66606-2145) 'every private CA and leaf the
+2026-09-01T00:00:01Z (RFD66606-2145) 'every private CA and leaf the workspace issues.
  # tags: rfd:scope
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:02Z (RFD66606-2145) 'workspace issues.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:03Z (RFD66606-2145) 'Each private CA and leaf gets a
+2026-09-01T00:00:02Z (RFD66606-2145) 'Each private CA and leaf gets a lifetime and a rotation cadence set by its risk.
  # tags: rfd:hook
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:04Z (RFD66606-2145) 'lifetime and a rotation cadence
- # tags: rfd:hook, rfd:wrap
+2026-09-01T00:00:03Z (RFD66606-2145) '
+ # tags: rfd:hook
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:05Z (RFD66606-2145) 'set by its risk.
- # tags: rfd:hook, rfd:wrap
+2026-09-01T00:00:04Z (RFD66606-2145) 'RFD66606-2134, RFD66606-2141, RFD66606-2142 landed with 10-year CAs and 1-to-2-year leaves.
+ # tags: rfd:intrigue
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:00:05Z (RFD66606-2145) '2144 minted a 10-year WebTransport intermediate on the same pattern.
+ # tags: rfd:intrigue
  Text:RFD2145  1 LINE
  Text:Written
 
 2026-09-01T00:00:06Z (RFD66606-2145) '
- # tags: rfd:hook
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:07Z (RFD66606-2145) 'RFD66606-2134, RFD66606-2141,
  # tags: rfd:intrigue
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:08Z (RFD66606-2145) 'RFD66606-2142 landed with 10-year
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:09Z (RFD66606-2145) 'CAs and 1-to-2-year leaves.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:10Z (RFD66606-2145) '2144 minted a 10-year
- # tags: rfd:intrigue
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:11Z (RFD66606-2145) 'WebTransport intermediate on the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:12Z (RFD66606-2145) 'same pattern.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:13Z (RFD66606-2145) '
- # tags: rfd:intrigue
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:14Z (RFD66606-2145) 'Check a new private CA or leaf
+2026-09-01T00:00:07Z (RFD66606-2145) 'Check a new private CA or leaf against the lifetime table above before you issue it; the
  # tags: rfd:exit
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:15Z (RFD66606-2145) 'against the lifetime table above
- # tags: rfd:exit, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:16Z (RFD66606-2145) 'before you issue it; the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:17Z (RFD66606-2145) 'sections below hold the citations
+2026-09-01T00:00:08Z (RFD66606-2145) 'sections below hold the citations and the audit.
  # tags: rfd:exit
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:18Z (RFD66606-2145) 'and the audit.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:19Z (RFD66606-2145) '
+2026-09-01T00:00:09Z (RFD66606-2145) '
  # tags: rfd:exit
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:20Z (RFD66606-2145) 'Certificate lifetimes, from a
+2026-09-01T00:00:10Z (RFD66606-2145) 'Certificate lifetimes, from a risk-based ceiling
  # tags: rfd:details-title
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:21Z (RFD66606-2145) 'risk-based ceiling
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:22Z (RFD66606-2145) '    role                              notAfter       rotate
+2026-09-01T00:00:11Z (RFD66606-2145) '    role                              notAfter       rotate every
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:23Z (RFD66606-2145) 'every
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:24Z (RFD66606-2145) '    -----------------------------     ------------   ------------
+2026-09-01T00:00:12Z (RFD66606-2145) '    -----------------------------     ------------   ------------
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:25Z (RFD66606-2145) '    Root CA (private, offline
+2026-09-01T00:00:13Z (RFD66606-2145) '    Root CA (private, offline key)    25 years       5 years, policy
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:26Z (RFD66606-2145) 'key)    25 years       5 years,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:27Z (RFD66606-2145) 'policy
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:28Z (RFD66606-2145) '    Break-glass CA (in 1P)            25
+2026-09-01T00:00:14Z (RFD66606-2145) '    Break-glass CA (in 1P)            25 years       5 years, policy
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:29Z (RFD66606-2145) 'years       5 years, policy
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:30Z (RFD66606-2145) '    Intermediate CA                   3
+2026-09-01T00:00:15Z (RFD66606-2145) '    Intermediate CA                   3 years        1 year
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:31Z (RFD66606-2145) 'years        1 year
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:32Z (RFD66606-2145) '    mTLS server + client
+2026-09-01T00:00:16Z (RFD66606-2145) '    mTLS server + client (services)   90 days        <=45 days
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:33Z (RFD66606-2145) '(services)   90 days        <=45
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:34Z (RFD66606-2145) 'days
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:35Z (RFD66606-2145) '    WebTransport leaf                 14
+2026-09-01T00:00:17Z (RFD66606-2145) '    WebTransport leaf                 14 days        <=10 days
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:36Z (RFD66606-2145) 'days        <=10 days
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:37Z (RFD66606-2145) '    Break-glass leaf (rare,
+2026-09-01T00:00:18Z (RFD66606-2145) '    Break-glass leaf (rare, gated)    2 years        on use, then revoke
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:38Z (RFD66606-2145) 'gated)    2 years        on use,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:39Z (RFD66606-2145) 'then revoke
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:40Z (RFD66606-2145) '
+2026-09-01T00:00:19Z (RFD66606-2145) '
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:41Z (RFD66606-2145) 'The root's `notAfter` is 25 years
+2026-09-01T00:00:20Z (RFD66606-2145) 'The root's `notAfter` is 25 years because RFC 5280 §4.1.2.5 makes the
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:42Z (RFD66606-2145) 'because RFC 5280 §4.1.2.5 makes
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:43Z (RFD66606-2145) 'the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:44Z (RFD66606-2145) 'field MANDATORY, not because
+2026-09-01T00:00:21Z (RFD66606-2145) 'field MANDATORY, not because rotation should wait that long. Offline
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:45Z (RFD66606-2145) 'rotation should wait that long.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:46Z (RFD66606-2145) 'Offline
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:47Z (RFD66606-2145) 'root: tiny compromise surface,
+2026-09-01T00:00:22Z (RFD66606-2145) 'root: tiny compromise surface, expensive downstream re-issuance.
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:48Z (RFD66606-2145) 'expensive downstream re-issuance.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:49Z (RFD66606-2145) 'Rotation is a **5-year policy
+2026-09-01T00:00:23Z (RFD66606-2145) 'Rotation is a **5-year policy commitment**, enforced by
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:50Z (RFD66606-2145) 'commitment**, enforced by
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:51Z (RFD66606-2145) '`check_anti_entropy.py`, not by
+2026-09-01T00:00:24Z (RFD66606-2145) '`check_anti_entropy.py`, not by cert validation. Intermediates and
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:52Z (RFD66606-2145) 'cert validation. Intermediates
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:53Z (RFD66606-2145) 'and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:54Z (RFD66606-2145) 'leaves are the opposite: their
+2026-09-01T00:00:25Z (RFD66606-2145) 'leaves are the opposite: their `notAfter` IS the rotation gate.
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:55Z (RFD66606-2145) '`notAfter` IS the rotation gate.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:56Z (RFD66606-2145) '
+2026-09-01T00:00:26Z (RFD66606-2145) '
  # tags: rfd:decision
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:57Z (RFD66606-2145) 'RFD66606-2134, RFD66606-2141,
+2026-09-01T00:00:27Z (RFD66606-2145) 'RFD66606-2134, RFD66606-2141, RFD66606-2142, RFD66606-2144. Each carries a retraction pointing
  # tags: rfd:related
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:00:58Z (RFD66606-2145) 'RFD66606-2142, RFD66606-2144.
- # tags: rfd:related, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:00:59Z (RFD66606-2145) 'Each carries a retraction
- # tags: rfd:related, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:00Z (RFD66606-2145) 'pointing
- # tags: rfd:related, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:01Z (RFD66606-2145) 'here.
+2026-09-01T00:00:28Z (RFD66606-2145) 'here.
  # tags: rfd:related
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:02Z (RFD66606-2145) '
+2026-09-01T00:00:29Z (RFD66606-2145) '
  # tags: rfd:related
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:03Z (RFD66606-2145) 'The second thing the guidance
+2026-09-01T00:00:30Z (RFD66606-2145) 'The second thing the guidance predates
  # tags: rfd:details-heading
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:04Z (RFD66606-2145) 'predates
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:05Z (RFD66606-2145) 'The guidance also predates a
+2026-09-01T00:00:31Z (RFD66606-2145) 'The guidance also predates a Mozilla Root Store Policy that removes public trust
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:06Z (RFD66606-2145) 'Mozilla Root Store Policy that
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:07Z (RFD66606-2145) 'removes public trust
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:08Z (RFD66606-2145) 'after 15 years of key material.
+2026-09-01T00:00:32Z (RFD66606-2145) 'after 15 years of key material.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:09Z (RFD66606-2145) '
+2026-09-01T00:00:33Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:10Z (RFD66606-2145) 'Why the root cert has an expiry
+2026-09-01T00:00:34Z (RFD66606-2145) 'Why the root cert has an expiry at all
  # tags: rfd:details-heading
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:11Z (RFD66606-2145) 'at all
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:12Z (RFD66606-2145) 'RFC 5280 §4.1.2.5 makes
+2026-09-01T00:00:35Z (RFD66606-2145) 'RFC 5280 §4.1.2.5 makes `notAfter` a MANDATORY field on every X.509
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:13Z (RFD66606-2145) '`notAfter` a MANDATORY field on
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:14Z (RFD66606-2145) 'every X.509
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:15Z (RFD66606-2145) 'certificate. There is no valid
+2026-09-01T00:00:36Z (RFD66606-2145) 'certificate. There is no valid X.509 leaf, intermediate, or root that
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:16Z (RFD66606-2145) 'X.509 leaf, intermediate, or root
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:17Z (RFD66606-2145) 'that
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:18Z (RFD66606-2145) 'carries no expiry. So the
+2026-09-01T00:00:37Z (RFD66606-2145) 'carries no expiry. So the question is not "should the root have an
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:19Z (RFD66606-2145) 'question is not "should the root
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:20Z (RFD66606-2145) 'have an
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:21Z (RFD66606-2145) 'expiry" but "how far out do we
+2026-09-01T00:00:38Z (RFD66606-2145) 'expiry" but "how far out do we set the field that has to be there".
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:22Z (RFD66606-2145) 'set the field that has to be
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:23Z (RFD66606-2145) 'there".
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:24Z (RFD66606-2145) '
+2026-09-01T00:00:39Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:25Z (RFD66606-2145) '    The validity period for a
+2026-09-01T00:00:40Z (RFD66606-2145) '    The validity period for a certificate is the period of time from
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:26Z (RFD66606-2145) 'certificate is the period of time
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:27Z (RFD66606-2145) 'from
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:28Z (RFD66606-2145) '    notBefore through notAfter,
+2026-09-01T00:00:41Z (RFD66606-2145) '    notBefore through notAfter, inclusive. […] To indicate that a
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:29Z (RFD66606-2145) 'inclusive. […] To indicate that a
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:30Z (RFD66606-2145) '    certificate has no
+2026-09-01T00:00:42Z (RFD66606-2145) '    certificate has no well-defined expiration date, the notAfter
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:31Z (RFD66606-2145) 'well-defined expiration date, the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:32Z (RFD66606-2145) 'notAfter
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:33Z (RFD66606-2145) '    SHOULD be assigned the
+2026-09-01T00:00:43Z (RFD66606-2145) '    SHOULD be assigned the GeneralizedTime value of
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:34Z (RFD66606-2145) 'GeneralizedTime value of
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:35Z (RFD66606-2145) '    99991231235959Z.
+2026-09-01T00:00:44Z (RFD66606-2145) '    99991231235959Z.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:36Z (RFD66606-2145) '    (RFC 5280 §4.1.2.5)
+2026-09-01T00:00:45Z (RFD66606-2145) '    (RFC 5280 §4.1.2.5)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:37Z (RFD66606-2145) '
+2026-09-01T00:00:46Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:38Z (RFD66606-2145) 'RFC 5280 permits the "never
+2026-09-01T00:00:47Z (RFD66606-2145) 'RFC 5280 permits the "never expires" sentinel (`99991231235959Z`) for
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:39Z (RFD66606-2145) 'expires" sentinel
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:40Z (RFD66606-2145) '(`99991231235959Z`) for
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:41Z (RFD66606-2145) 'certs the issuer treats as having
+2026-09-01T00:00:48Z (RFD66606-2145) 'certs the issuer treats as having no defined end date. Some private
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:42Z (RFD66606-2145) 'no defined end date. Some private
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:43Z (RFD66606-2145) 'CAs use it. This RFD does not,
+2026-09-01T00:00:49Z (RFD66606-2145) 'CAs use it. This RFD does not, for the reasons below. First, OpenSSL prints
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:44Z (RFD66606-2145) 'for the reasons below. First,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:45Z (RFD66606-2145) 'OpenSSL prints
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:46Z (RFD66606-2145) '`notAfter=Dec 31 23:59:59 9999
+2026-09-01T00:00:50Z (RFD66606-2145) '`notAfter=Dec 31 23:59:59 9999 GMT` and some X.509 parsers reject the
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:47Z (RFD66606-2145) 'GMT` and some X.509 parsers
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:48Z (RFD66606-2145) 'reject the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:49Z (RFD66606-2145) 'year field as out of range: RFC
+2026-09-01T00:00:51Z (RFD66606-2145) 'year field as out of range: RFC 5280 requires UTCTime for years
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:50Z (RFD66606-2145) '5280 requires UTCTime for years
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:51Z (RFD66606-2145) '1950-2049 and GeneralizedTime
+2026-09-01T00:00:52Z (RFD66606-2145) '1950-2049 and GeneralizedTime after, so pre-1994 parsers and some
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:52Z (RFD66606-2145) 'after, so pre-1994 parsers and
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:53Z (RFD66606-2145) 'some
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:54Z (RFD66606-2145) 'embedded stacks fail. Second, the
+2026-09-01T00:00:53Z (RFD66606-2145) 'embedded stacks fail. Second, the intent ("this cert never expires,
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:55Z (RFD66606-2145) 'intent ("this cert never expires,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:56Z (RFD66606-2145) 'we rotate on schedule") is
+2026-09-01T00:00:54Z (RFD66606-2145) 'we rotate on schedule") is invisible to anyone reading the cert.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:01:57Z (RFD66606-2145) 'invisible to anyone reading the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:58Z (RFD66606-2145) 'cert.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:01:59Z (RFD66606-2145) '25 years is long enough that the
+2026-09-01T00:00:55Z (RFD66606-2145) '25 years is long enough that the field is not the rotation gate, and
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:00Z (RFD66606-2145) 'field is not the rotation gate,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:01Z (RFD66606-2145) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:02Z (RFD66606-2145) 'short enough that every stack we
+2026-09-01T00:00:56Z (RFD66606-2145) 'short enough that every stack we ship to handles it.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:03Z (RFD66606-2145) 'ship to handles it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:04Z (RFD66606-2145) '
+2026-09-01T00:00:57Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:05Z (RFD66606-2145) 'Why the ROTATION on the root is 5
+2026-09-01T00:00:58Z (RFD66606-2145) 'Why the ROTATION on the root is 5 years, not 25
  # tags: rfd:details-heading
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:06Z (RFD66606-2145) 'years, not 25
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:07Z (RFD66606-2145) 'Three converging bodies of
+2026-09-01T00:00:59Z (RFD66606-2145) 'Three converging bodies of guidance land in the same window.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:08Z (RFD66606-2145) 'guidance land in the same window.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:09Z (RFD66606-2145) '
+2026-09-01T00:01:00Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:10Z (RFD66606-2145) '**Mozilla Root Store Policy
+2026-09-01T00:01:01Z (RFD66606-2145) '**Mozilla Root Store Policy §7.1** removes public-trust for a root CA
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:11Z (RFD66606-2145) '§7.1** removes public-trust for a
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:12Z (RFD66606-2145) 'root CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:13Z (RFD66606-2145) 'whose key material is more than
+2026-09-01T00:01:02Z (RFD66606-2145) 'whose key material is more than 15 years old:
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:14Z (RFD66606-2145) '15 years old:
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:15Z (RFD66606-2145) '
+2026-09-01T00:01:03Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:16Z (RFD66606-2145) '    For a Root CA certificate
+2026-09-01T00:01:04Z (RFD66606-2145) '    For a Root CA certificate trusted for server authentication,
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:17Z (RFD66606-2145) 'trusted for server
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:18Z (RFD66606-2145) 'authentication,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:19Z (RFD66606-2145) '    Mozilla will remove the
+2026-09-01T00:01:05Z (RFD66606-2145) '    Mozilla will remove the websites trust bit when the CA key
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:20Z (RFD66606-2145) 'websites trust bit when the CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:21Z (RFD66606-2145) 'key
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:22Z (RFD66606-2145) '    material is more than 15
+2026-09-01T00:01:06Z (RFD66606-2145) '    material is more than 15 years old.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:23Z (RFD66606-2145) 'years old.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:24Z (RFD66606-2145) '    (Mozilla Root Store Policy
+2026-09-01T00:01:07Z (RFD66606-2145) '    (Mozilla Root Store Policy v2.9, 2023-09)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:25Z (RFD66606-2145) 'v2.9, 2023-09)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:26Z (RFD66606-2145) '
+2026-09-01T00:01:08Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:27Z (RFD66606-2145) 'Our root is private, so Mozilla
+2026-09-01T00:01:09Z (RFD66606-2145) 'Our root is private, so Mozilla does not force our hand. The industry
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:28Z (RFD66606-2145) 'does not force our hand. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:29Z (RFD66606-2145) 'industry
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:30Z (RFD66606-2145) 'consensus reflected in that
+2026-09-01T00:01:10Z (RFD66606-2145) 'consensus reflected in that number is that 15 years is the outer edge
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:31Z (RFD66606-2145) 'number is that 15 years is the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:32Z (RFD66606-2145) 'outer edge
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:33Z (RFD66606-2145) 'before cryptographic parameters
+2026-09-01T00:01:11Z (RFD66606-2145) 'before cryptographic parameters and operational discipline drift
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:34Z (RFD66606-2145) 'and operational discipline drift
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:35Z (RFD66606-2145) 'enough to warrant re-mint.
+2026-09-01T00:01:12Z (RFD66606-2145) 'enough to warrant re-mint.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:36Z (RFD66606-2145) '
+2026-09-01T00:01:13Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:37Z (RFD66606-2145) '**NCSC in-house PKI principles:
+2026-09-01T00:01:14Z (RFD66606-2145) '**NCSC in-house PKI principles: "keep certificate lifetimes as short
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:38Z (RFD66606-2145) '"keep certificate lifetimes as
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:39Z (RFD66606-2145) 'short
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:40Z (RFD66606-2145) 'as practical".** No fixed year on
+2026-09-01T00:01:15Z (RFD66606-2145) 'as practical".** No fixed year on the root. The phrasing is
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:41Z (RFD66606-2145) 'the root. The phrasing is
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:42Z (RFD66606-2145) 'deliberate. Short as practical,
+2026-09-01T00:01:16Z (RFD66606-2145) 'deliberate. Short as practical, taking rotation cost into account.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:43Z (RFD66606-2145) 'taking rotation cost into
- # tags: rfd:details, rfd:wrap
+2026-09-01T00:01:17Z (RFD66606-2145) '
+ # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:44Z (RFD66606-2145) 'account.
- # tags: rfd:details, rfd:wrap
+2026-09-01T00:01:18Z (RFD66606-2145) '    Certificates should have lifetimes that are as short as practical,
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:19Z (RFD66606-2145) '    while balancing the operational overhead of renewal.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:20Z (RFD66606-2145) '    (NCSC "In-house public key infrastructure, PKI principles")
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:21Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:22Z (RFD66606-2145) '**NIST SP 800-57 Part 1 §5.3.6 (key lifetimes).** Recommends both
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:23Z (RFD66606-2145) '"originator usage period" and "recipient usage period" bounded.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:24Z (RFD66606-2145) 'Public-key signing keys used to certify other keys are the highest-
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:25Z (RFD66606-2145) 'value keys in the system and thus have the tightest recommended
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:26Z (RFD66606-2145) 'cryptoperiod. Not a specific year, but a directional bound.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:27Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:28Z (RFD66606-2145) 'Five years is the smallest rotation cadence at which the CA ceremony
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:29Z (RFD66606-2145) 'is a set-piece event we prepare for rather than an emergency. Half of
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:30Z (RFD66606-2145) 'that is the "start scheduling the next ceremony" trigger.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:31Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:32Z (RFD66606-2145) 'Why the break-glass CA gets the SAME numbers as the root
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:33Z (RFD66606-2145) 'The break-glass CA sits in 1P beside the operator's other credentials
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:34Z (RFD66606-2145) 'and comes out on the day the primary root is unusable. That day is a
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:35Z (RFD66606-2145) 'disaster with a fixed script. The break-glass root immediately signs
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:36Z (RFD66606-2145) 'a new set of intermediates and every downstream leaf. If the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:37Z (RFD66606-2145) 'break-glass has less validity remaining than the primary rotation
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:38Z (RFD66606-2145) 'cadence, the swap-in re-mints twice (once to swap, once to reach the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:39Z (RFD66606-2145) 'next scheduled ceremony). That is the class of error a DR runbook
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:40Z (RFD66606-2145) 'cannot afford.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:41Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:42Z (RFD66606-2145) 'So the break-glass CA carries the SAME `notAfter` as the primary
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:43Z (RFD66606-2145) 'root (25 years) and the SAME policy rotation window (5 years). It
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:44Z (RFD66606-2145) 'also carries a bigger compromise surface than the primary root
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:45Z (RFD66606-2145) 'because 1P is warmer storage than an offline HSM ceremony. Its
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:46Z (RFD66606-2145) 'audit expectation is stricter: `op` reads are logged, the 1P item
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:47Z (RFD66606-2145) 'is CONCEALED-only (RFD66606-2144 defect #12 was moving the key from
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:48Z (RFD66606-2145) '`notesPlain` to CONCEALED), and any pull of the private key is
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:49Z (RFD66606-2145) 'followed by a `shred -u` of the scratch file.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:50Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:51Z (RFD66606-2145) 'Why the intermediates get 3 years
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:52Z (RFD66606-2145) 'An intermediate CA is online (or at least reachable) whenever it signs
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:53Z (RFD66606-2145) 'a leaf. Its compromise surface is bigger than the root's. Rotating it
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:54Z (RFD66606-2145) 'under 5 years is standard private-PKI practice. 3 years keeps the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:55Z (RFD66606-2145) 'cadence at "annual re-mint of a new one, run for a year, retire the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:56Z (RFD66606-2145) 'older one". A two-CA overlap window costs nothing and lets the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:57Z (RFD66606-2145) 'trust-store update propagate.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:58Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:01:59Z (RFD66606-2145) 'CA/B Forum's SC-081v3 vote (2025-04) sets public TLS leaf lifetimes on
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:00Z (RFD66606-2145) 'a schedule (200 days now, 100 by 2027-03, 47 by 2029-03). The root
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:01Z (RFD66606-2145) 'and intermediate lifetimes for publicly-trusted CAs are already
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:02Z (RFD66606-2145) '15 years (Mozilla). Our private intermediates run inside that number,
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:03Z (RFD66606-2145) 'at 1/5 of it, because we control the whole chain and can rotate
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:04Z (RFD66606-2145) 'cheaply.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:05Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:06Z (RFD66606-2145) 'Why the leaves get 90 days / 14 days
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:07Z (RFD66606-2145) '**mTLS server + client (services): 90 days.** Aligns with the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:08Z (RFD66606-2145) 'Let's Encrypt cadence the industry has run for a decade without
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:09Z (RFD66606-2145) 'incident. Matches CA/B Forum's 2027 target for public TLS. Short
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:10Z (RFD66606-2145) 'enough that a compromised leaf is a real cost to the attacker.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:11Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:12Z (RFD66606-2145) '**WebTransport leaf: 14 days.** Chrome enforces 14 days as the maximum
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:13Z (RFD66606-2145) 'validity for a certificate cited in `serverCertificateHashes`. Longer
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:14Z (RFD66606-2145) 'and the browser refuses the QUIC handshake. Not a policy choice on
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:15Z (RFD66606-2145) 'our side. It is what the protocol accepts.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:16Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:17Z (RFD66606-2145) 'Current state, 2026-09-01
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:18Z (RFD66606-2145) 'Every live cert in the workspace and how it stacks up against this RFD:
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:19Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:20Z (RFD66606-2145) '    cert                                          notAfter        row of table
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:21Z (RFD66606-2145) '    ------------------------------------------    -----------     -----------------
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:22Z (RFD66606-2145) '    chibifire.com Root CA                         2036-08-28      root: 10y set, 25y max. Fine, keep.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:23Z (RFD66606-2145) '    chibifire.com Intermediate CA                 2031-08-30      intermediate: 5y set, 3y max. RETRACT, rotate.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:24Z (RFD66606-2145) '    chibifire.com WebTransport Intermediate CA    2036-08-29      intermediate: 10y set, 3y max. RETRACT, re-mint at 3y.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:25Z (RFD66606-2145) '    weftspun-fdb-ca (break-glass, in 1P)          2031-08-31      break-glass CA: 5y set, 25y max. RETRACT, re-mint at 25y to match Root.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:26Z (RFD66606-2145) '    Bao listener leaf                             2028-09-01      service leaf: 2y set, 90d max. RETRACT, re-mint at 90d.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:27Z (RFD66606-2145) '    FDB machine leaves (Bao-issued)               ~2026-10-01     service leaf: 30d set, 90d max. Fine, keep.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:28Z (RFD66606-2145) '    Admin client cert (DR-time)                   2026-10-01      break-glass leaf: 30d set, 2y max. Fine (deliberately short).
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:29Z (RFD66606-2145) '    wt-control-gate-v2 (test leaf)                2026-09-11      WebTransport: 10d set, 14d max. Fine.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:30Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:31Z (RFD66606-2145) 'Five items are out of compliance with the table (three certs, two
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:32Z (RFD66606-2145) 'missing gates). Followup task 18 covers bringing them into
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:33Z (RFD66606-2145) 'compliance.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:34Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:35Z (RFD66606-2145) 'Exceptions this rule does not cover
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:36Z (RFD66606-2145) '**Cross-signed certs during CA rotation.** RFD66606-2141's phases 2-3 mint
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:37Z (RFD66606-2145) 'a leaf that chains to both the old and new intermediate for the
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:38Z (RFD66606-2145) 'rotation window. That leaf's `notAfter` is whichever chain is
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:39Z (RFD66606-2145) 'shorter. The transition window is the specific case where two CAs
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:40Z (RFD66606-2145) 'overlap for a bounded time. Not covered here. RFD66606-2141 covers it.
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:41Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:42Z (RFD66606-2145) '**External CAs.** Nothing this RFD says binds a certificate issued by
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:43Z (RFD66606-2145) 'Let's Encrypt, ZeroSSL, or a paid public CA. Those follow whatever
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:44Z (RFD66606-2145) 'their issuer says.
+ # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
@@ -829,38 +829,38 @@
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:46Z (RFD66606-2145) '    Certificates should have
+2026-09-01T00:02:46Z (RFD66606-2145) '**Client certs used only by machine identity (workload).** SPIFFE-
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:47Z (RFD66606-2145) 'lifetimes that are as short as
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:48Z (RFD66606-2145) 'practical,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:49Z (RFD66606-2145) '    while balancing the
+2026-09-01T00:02:47Z (RFD66606-2145) 'style short-lived (1 hour) X.509 SVIDs would sit under this row too
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:50Z (RFD66606-2145) 'operational overhead of renewal.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:51Z (RFD66606-2145) '    (NCSC "In-house public key
+2026-09-01T00:02:48Z (RFD66606-2145) 'if we adopted them. Today we do not, so the row is not in the table.
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:52Z (RFD66606-2145) 'infrastructure, PKI principles")
- # tags: rfd:details, rfd:wrap
+2026-09-01T00:02:49Z (RFD66606-2145) '
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:50Z (RFD66606-2145) 'Sources
+ # tags: rfd:details-heading
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:51Z (RFD66606-2145) 'Cited in `.cff` files under `apparatus/2145-certificate-lifetimes/references/`
+ # tags: rfd:details
+ Text:RFD2145  1 LINE
+ Text:Written
+
+2026-09-01T00:02:52Z (RFD66606-2145) 'so a citation gate can walk them without parsing prose:
+ # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
@@ -869,1122 +869,72 @@
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:54Z (RFD66606-2145) '**NIST SP 800-57 Part 1 §5.3.6
+2026-09-01T00:02:54Z (RFD66606-2145) '- `10-rfc5280.cff` (mandatory `notAfter`, §4.1.2.5)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:55Z (RFD66606-2145) '(key lifetimes).** Recommends
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:56Z (RFD66606-2145) 'both
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:57Z (RFD66606-2145) '"originator usage period" and
+2026-09-01T00:02:55Z (RFD66606-2145) '- `20-mozilla-root-store-policy.cff` (15-year public-trust cap)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:02:58Z (RFD66606-2145) '"recipient usage period" bounded.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:02:59Z (RFD66606-2145) 'Public-key signing keys used to
+2026-09-01T00:02:56Z (RFD66606-2145) '- `30-cabforum-sc081v3.cff` (200 → 100 → 47 day schedule)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:00Z (RFD66606-2145) 'certify other keys are the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:01Z (RFD66606-2145) 'highest-
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:02Z (RFD66606-2145) 'value keys in the system and thus
+2026-09-01T00:02:57Z (RFD66606-2145) '- `40-ncsc-pki-principles.cff` ("as short as practical")
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:03Z (RFD66606-2145) 'have the tightest recommended
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:04Z (RFD66606-2145) 'cryptoperiod. Not a specific
+2026-09-01T00:02:58Z (RFD66606-2145) '- `50-nist-sp-800-57-part1.cff` (cryptoperiod framing)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:05Z (RFD66606-2145) 'year, but a directional bound.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:06Z (RFD66606-2145) '
+2026-09-01T00:02:59Z (RFD66606-2145) '- `60-webtransport-servercerthashes.cff` (14-day WT ceiling)
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:07Z (RFD66606-2145) 'Five years is the smallest
+2026-09-01T00:03:00Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:08Z (RFD66606-2145) 'rotation cadence at which the CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:09Z (RFD66606-2145) 'ceremony
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:10Z (RFD66606-2145) 'is a set-piece event we prepare
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:11Z (RFD66606-2145) 'for rather than an emergency.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:12Z (RFD66606-2145) 'Half of
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:13Z (RFD66606-2145) 'that is the "start scheduling the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:14Z (RFD66606-2145) 'next ceremony" trigger.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:15Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:16Z (RFD66606-2145) 'Why the break-glass CA gets the
+2026-09-01T00:03:01Z (RFD66606-2145) 'The problem
  # tags: rfd:details-heading
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:03:17Z (RFD66606-2145) 'SAME numbers as the root
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:18Z (RFD66606-2145) 'The break-glass CA sits in 1P
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:19Z (RFD66606-2145) 'beside the operator's other
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:20Z (RFD66606-2145) 'credentials
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:21Z (RFD66606-2145) 'and comes out on the day the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:22Z (RFD66606-2145) 'primary root is unusable. That
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:23Z (RFD66606-2145) 'day is a
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:24Z (RFD66606-2145) 'disaster with a fixed script. The
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:25Z (RFD66606-2145) 'break-glass root immediately
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:26Z (RFD66606-2145) 'signs
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:27Z (RFD66606-2145) 'a new set of intermediates and
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:28Z (RFD66606-2145) 'every downstream leaf. If the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:29Z (RFD66606-2145) 'break-glass has less validity
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:30Z (RFD66606-2145) 'remaining than the primary
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:31Z (RFD66606-2145) 'rotation
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:32Z (RFD66606-2145) 'cadence, the swap-in re-mints
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:33Z (RFD66606-2145) 'twice (once to swap, once to
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:34Z (RFD66606-2145) 'reach the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:35Z (RFD66606-2145) 'next scheduled ceremony). That is
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:36Z (RFD66606-2145) 'the class of error a DR runbook
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:37Z (RFD66606-2145) 'cannot afford.
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:38Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:39Z (RFD66606-2145) 'So the break-glass CA carries the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:40Z (RFD66606-2145) 'SAME `notAfter` as the primary
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:41Z (RFD66606-2145) 'root (25 years) and the SAME
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:42Z (RFD66606-2145) 'policy rotation window (5 years).
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:43Z (RFD66606-2145) 'It
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:44Z (RFD66606-2145) 'also carries a bigger compromise
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:45Z (RFD66606-2145) 'surface than the primary root
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:46Z (RFD66606-2145) 'because 1P is warmer storage than
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:47Z (RFD66606-2145) 'an offline HSM ceremony. Its
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:48Z (RFD66606-2145) 'audit expectation is stricter:
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:49Z (RFD66606-2145) '`op` reads are logged, the 1P
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:50Z (RFD66606-2145) 'item
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:51Z (RFD66606-2145) 'is CONCEALED-only (RFD66606-2144
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:52Z (RFD66606-2145) 'defect #12 was moving the key
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:53Z (RFD66606-2145) 'from
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:54Z (RFD66606-2145) '`notesPlain` to CONCEALED), and
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:55Z (RFD66606-2145) 'any pull of the private key is
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:56Z (RFD66606-2145) 'followed by a `shred -u` of the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:57Z (RFD66606-2145) 'scratch file.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:58Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:03:59Z (RFD66606-2145) 'Why the intermediates get 3 years
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:00Z (RFD66606-2145) 'An intermediate CA is online (or
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:01Z (RFD66606-2145) 'at least reachable) whenever it
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:02Z (RFD66606-2145) 'signs
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:03Z (RFD66606-2145) 'a leaf. Its compromise surface is
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:04Z (RFD66606-2145) 'bigger than the root's. Rotating
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:05Z (RFD66606-2145) 'it
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:06Z (RFD66606-2145) 'under 5 years is standard
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:07Z (RFD66606-2145) 'private-PKI practice. 3 years
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:08Z (RFD66606-2145) 'keeps the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:09Z (RFD66606-2145) 'cadence at "annual re-mint of a
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:10Z (RFD66606-2145) 'new one, run for a year, retire
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:11Z (RFD66606-2145) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:12Z (RFD66606-2145) 'older one". A two-CA overlap
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:13Z (RFD66606-2145) 'window costs nothing and lets the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:14Z (RFD66606-2145) 'trust-store update propagate.
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:15Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:16Z (RFD66606-2145) 'CA/B Forum's SC-081v3 vote
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:17Z (RFD66606-2145) '(2025-04) sets public TLS leaf
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:18Z (RFD66606-2145) 'lifetimes on
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:19Z (RFD66606-2145) 'a schedule (200 days now, 100 by
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:20Z (RFD66606-2145) '2027-03, 47 by 2029-03). The root
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:21Z (RFD66606-2145) 'and intermediate lifetimes for
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:22Z (RFD66606-2145) 'publicly-trusted CAs are already
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:23Z (RFD66606-2145) '15 years (Mozilla). Our private
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:24Z (RFD66606-2145) 'intermediates run inside that
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:25Z (RFD66606-2145) 'number,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:26Z (RFD66606-2145) 'at 1/5 of it, because we control
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:27Z (RFD66606-2145) 'the whole chain and can rotate
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:28Z (RFD66606-2145) 'cheaply.
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:29Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:30Z (RFD66606-2145) 'Why the leaves get 90 days / 14
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:31Z (RFD66606-2145) 'days
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:32Z (RFD66606-2145) '**mTLS server + client
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:33Z (RFD66606-2145) '(services): 90 days.** Aligns
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:34Z (RFD66606-2145) 'with the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:35Z (RFD66606-2145) 'Let's Encrypt cadence the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:36Z (RFD66606-2145) 'industry has run for a decade
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:37Z (RFD66606-2145) 'without
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:38Z (RFD66606-2145) 'incident. Matches CA/B Forum's
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:39Z (RFD66606-2145) '2027 target for public TLS. Short
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:40Z (RFD66606-2145) 'enough that a compromised leaf is
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:41Z (RFD66606-2145) 'a real cost to the attacker.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:42Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:43Z (RFD66606-2145) '**WebTransport leaf: 14 days.**
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:44Z (RFD66606-2145) 'Chrome enforces 14 days as the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:45Z (RFD66606-2145) 'maximum
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:46Z (RFD66606-2145) 'validity for a certificate cited
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:47Z (RFD66606-2145) 'in `serverCertificateHashes`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:48Z (RFD66606-2145) 'Longer
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:49Z (RFD66606-2145) 'and the browser refuses the QUIC
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:50Z (RFD66606-2145) 'handshake. Not a policy choice on
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:51Z (RFD66606-2145) 'our side. It is what the protocol
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:52Z (RFD66606-2145) 'accepts.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:53Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:54Z (RFD66606-2145) 'Current state, 2026-09-01
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:55Z (RFD66606-2145) 'Every live cert in the workspace
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:56Z (RFD66606-2145) 'and how it stacks up against this
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:57Z (RFD66606-2145) 'RFD:
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:58Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:04:59Z (RFD66606-2145) '    cert                                          notAfter        row
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:00Z (RFD66606-2145) 'of table
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:01Z (RFD66606-2145) '    ------------------------------------------    -----------     -----------------
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:02Z (RFD66606-2145) '    chibifire.com Root CA                         2036-08-28      root:
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:03Z (RFD66606-2145) '10y set, 25y max. Fine, keep.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:04Z (RFD66606-2145) '    chibifire.com Intermediate CA                 2031-08-30      intermediate:
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:05Z (RFD66606-2145) '5y set, 3y max. RETRACT, rotate.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:06Z (RFD66606-2145) '    chibifire.com WebTransport
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:07Z (RFD66606-2145) 'Intermediate CA    2036-08-29      intermediate:
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:08Z (RFD66606-2145) '10y set, 3y max. RETRACT, re-mint
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:09Z (RFD66606-2145) 'at 3y.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:10Z (RFD66606-2145) '    weftspun-fdb-ca (break-glass,
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:11Z (RFD66606-2145) 'in 1P)          2031-08-31      break-glass
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:12Z (RFD66606-2145) 'CA: 5y set, 25y max. RETRACT,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:13Z (RFD66606-2145) 're-mint at 25y to match Root.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:14Z (RFD66606-2145) '    Bao listener leaf                             2028-09-01      service
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:15Z (RFD66606-2145) 'leaf: 2y set, 90d max. RETRACT,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:16Z (RFD66606-2145) 're-mint at 90d.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:17Z (RFD66606-2145) '    FDB machine leaves
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:18Z (RFD66606-2145) '(Bao-issued)               ~2026-10-01     service
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:19Z (RFD66606-2145) 'leaf: 30d set, 90d max. Fine,
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:20Z (RFD66606-2145) 'keep.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:21Z (RFD66606-2145) '    Admin client cert (DR-time)                   2026-10-01      break-glass
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:22Z (RFD66606-2145) 'leaf: 30d set, 2y max. Fine
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:23Z (RFD66606-2145) '(deliberately short).
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:24Z (RFD66606-2145) '    wt-control-gate-v2 (test
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:25Z (RFD66606-2145) 'leaf)                2026-09-11      WebTransport:
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:26Z (RFD66606-2145) '10d set, 14d max. Fine.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:27Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:28Z (RFD66606-2145) 'Five items are out of compliance
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:29Z (RFD66606-2145) 'with the table (three certs, two
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:30Z (RFD66606-2145) 'missing gates). Followup task 18
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:31Z (RFD66606-2145) 'covers bringing them into
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:32Z (RFD66606-2145) 'compliance.
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:33Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:34Z (RFD66606-2145) 'Exceptions this rule does not
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:35Z (RFD66606-2145) 'cover
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:36Z (RFD66606-2145) '**Cross-signed certs during CA
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:37Z (RFD66606-2145) 'rotation.** RFD66606-2141's
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:38Z (RFD66606-2145) 'phases 2-3 mint
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:39Z (RFD66606-2145) 'a leaf that chains to both the
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:40Z (RFD66606-2145) 'old and new intermediate for the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:41Z (RFD66606-2145) 'rotation window. That leaf's
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:42Z (RFD66606-2145) '`notAfter` is whichever chain is
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:43Z (RFD66606-2145) 'shorter. The transition window is
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:44Z (RFD66606-2145) 'the specific case where two CAs
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:45Z (RFD66606-2145) 'overlap for a bounded time. Not
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:46Z (RFD66606-2145) 'covered here. RFD66606-2141
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:47Z (RFD66606-2145) 'covers it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:48Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:49Z (RFD66606-2145) '**External CAs.** Nothing this
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:50Z (RFD66606-2145) 'RFD says binds a certificate
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:51Z (RFD66606-2145) 'issued by
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:52Z (RFD66606-2145) 'Let's Encrypt, ZeroSSL, or a paid
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:53Z (RFD66606-2145) 'public CA. Those follow whatever
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:54Z (RFD66606-2145) 'their issuer says.
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:55Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:56Z (RFD66606-2145) '**Client certs used only by
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:57Z (RFD66606-2145) 'machine identity (workload).**
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:58Z (RFD66606-2145) 'SPIFFE-
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:05:59Z (RFD66606-2145) 'style short-lived (1 hour) X.509
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:00Z (RFD66606-2145) 'SVIDs would sit under this row
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:01Z (RFD66606-2145) 'too
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:02Z (RFD66606-2145) 'if we adopted them. Today we do
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:03Z (RFD66606-2145) 'not, so the row is not in the
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:04Z (RFD66606-2145) 'table.
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:05Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:06Z (RFD66606-2145) 'Sources
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:07Z (RFD66606-2145) 'Cited in `.cff` files under
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:08Z (RFD66606-2145) '`apparatus/2145-certificate-lifetimes/references/`
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:09Z (RFD66606-2145) 'so a citation gate can walk them
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:10Z (RFD66606-2145) 'without parsing prose:
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:11Z (RFD66606-2145) '
+2026-09-01T00:03:02Z (RFD66606-2145) 'The guidance predates CA/Browser Forum SC-081v3 (200 days now, 47 by 2029-03).
  # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:12Z (RFD66606-2145) '- `10-rfc5280.cff` (mandatory
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:13Z (RFD66606-2145) '`notAfter`, §4.1.2.5)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:14Z (RFD66606-2145) '-
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:15Z (RFD66606-2145) '`20-mozilla-root-store-policy.cff`
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:16Z (RFD66606-2145) '(15-year public-trust cap)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:17Z (RFD66606-2145) '- `30-cabforum-sc081v3.cff` (200
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:18Z (RFD66606-2145) '→ 100 → 47 day schedule)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:19Z (RFD66606-2145) '- `40-ncsc-pki-principles.cff`
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:20Z (RFD66606-2145) '("as short as practical")
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:21Z (RFD66606-2145) '- `50-nist-sp-800-57-part1.cff`
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:22Z (RFD66606-2145) '(cryptoperiod framing)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:23Z (RFD66606-2145) '-
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:24Z (RFD66606-2145) '`60-webtransport-servercerthashes.cff`
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:25Z (RFD66606-2145) '(14-day WT ceiling)
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:26Z (RFD66606-2145) '
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:27Z (RFD66606-2145) 'The problem
- # tags: rfd:details-heading
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:28Z (RFD66606-2145) 'The guidance predates CA/Browser
- # tags: rfd:details
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:29Z (RFD66606-2145) 'Forum SC-081v3 (200 days now, 47
- # tags: rfd:details, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:30Z (RFD66606-2145) 'by 2029-03).
- # tags: rfd:details, rfd:wrap
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:06:31Z (RFD66606-2145) '
+2026-09-01T00:03:03Z (RFD66606-2145) '
  # tags: rfd:details
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:06:32Z (RFD66606-2145) '2351
+2026-09-01T00:03:04Z (RFD66606-2145) '2351
  # tags: rebac:verbs-from
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:06:33Z (RFD66606-2145) 'rfd-2145 provides
+2026-09-01T00:03:05Z (RFD66606-2145) 'rfd-2145 provides cert-lifetime-table
  # tags: rebac:relate
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:06:34Z (RFD66606-2145) 'cert-lifetime-table
- # tags: rebac:relate, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:35Z (RFD66606-2145) 'rfd-2145 spends
+2026-09-01T00:03:06Z (RFD66606-2145) 'rfd-2145 spends x509-v3-cert-profile
  # tags: rebac:relate
  Text:RFD2145  1 LINE
  Text:Written
 
-2026-09-01T00:06:36Z (RFD66606-2145) 'x509-v3-cert-profile
- # tags: rebac:relate, rfd:wrap
- Text:RFD2145  1 LINE
- Text:Written
-
-2026-09-01T00:06:37Z (RFD66606-2145) 'rfd-2145 is_a security-control
+2026-09-01T00:03:07Z (RFD66606-2145) 'rfd-2145 is_a security-control
  # tags: rebac:relate
  Text:RFD2145  1 LINE
  Text:Written

@@ -364,7 +364,7 @@
  Text:RFD1124  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1124) 'The row reading "Every citation resolves to a directory or an ALIASES.md row" now reads "to a serial `SERIALS.usda` lists", live or deleted. This gate borrows `check-rfd-serials.py`'s reader rather than parsing the register a second way, so the two cannot disagree about which numbers exist. That is the arrangement the state list and the line limit already use, one file further along.
+2026-08-25T00:01:13Z (RFD66606-1124) 'The row reading "Every citation resolves to a directory or an ALIASES.md row" now reads "to a serial the registers list", live or deleted. This gate reads the registers that `RFD.Register.from_journals/1` builds from the journals rather than parsing them a second way (operator, 2026-11-26), so the two cannot disagree about which numbers exist. That is the arrangement the state list and the line limit already use, one file further along.
  # tags: rfd:details
  Text:RFD1124  1 LINE
  Text:Written

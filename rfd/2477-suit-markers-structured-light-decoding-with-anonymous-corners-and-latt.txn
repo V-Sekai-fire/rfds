@@ -4,277 +4,117 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2477) 'corners are placed by lattice
+2026-11-07T00:00:01Z (RFD66606-2477) 'corners are placed by lattice voting, so markers read even when their id is wrong.
  # tags: rfd:feature
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2477) 'voting, so markers read even when
- # tags: rfd:feature, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2477) 'their id is wrong.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2477) '`predict_neighbours.py`, the
+2026-11-07T00:00:02Z (RFD66606-2477) '`predict_neighbours.py`, the chart's lattice, and the corner-voting gates it must pass.
  # tags: rfd:scope
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2477) 'chart's lattice, and the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2477) 'corner-voting gates it must pass.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2477) 'Can a corner be placed on the
+2026-11-07T00:00:03Z (RFD66606-2477) 'Can a corner be placed on the chart correctly even when the id painted next to it is wrong?
  # tags: rfd:hook
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2477) 'chart correctly even when the id
- # tags: rfd:hook, rfd:wrap
+2026-11-07T00:00:04Z (RFD66606-2477) '
+ # tags: rfd:hook
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2477) 'painted next to it is wrong?
- # tags: rfd:hook, rfd:wrap
+2026-11-07T00:00:05Z (RFD66606-2477) 'Treat the board as a spatially coded pattern instead of a set of independently-read tags:
+ # tags: rfd:intrigue
+ Text:RFD2477  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2477) 'detect corners without trusting their ids, place each corner on the chart by voting over
+ # tags: rfd:intrigue
+ Text:RFD2477  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2477) 'offsets, rotations and instances, and recover unread markers from their read neighbours.
+ # tags: rfd:intrigue
+ Text:RFD2477  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2477) '`predict_neighbours.py` already exists for this but was never run, and was left out of the
+ # tags: rfd:intrigue
+ Text:RFD2477  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2477) 'earlier pull requests.
+ # tags: rfd:intrigue
  Text:RFD2477  1 LINE
  Text:Written
 
 2026-11-07T00:00:10Z (RFD66606-2477) '
- # tags: rfd:hook
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2477) 'Treat the board as a spatially
  # tags: rfd:intrigue
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2477) 'coded pattern instead of a set of
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2477) 'independently-read tags:
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2477) 'detect corners without trusting
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2477) 'their ids, place each corner on
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2477) 'the chart by voting over
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2477) 'offsets, rotations and instances,
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2477) 'and recover unread markers from
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2477) 'their read neighbours.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2477) '`predict_neighbours.py` already
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2477) 'exists for this but was never
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2477) 'run, and was left out of the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2477) 'earlier pull requests.
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2477) '
- # tags: rfd:intrigue
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2477) 'Run `predict_neighbours.py`
+2026-11-07T00:00:11Z (RFD66606-2477) 'Run `predict_neighbours.py` against planted gates before trusting any measurement from it.
  # tags: rfd:exit
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2477) 'against planted gates before
- # tags: rfd:exit, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2477) 'trusting any measurement from it.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2477) '
+2026-11-07T00:00:12Z (RFD66606-2477) '
  # tags: rfd:exit
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2477) 'Ship three gates ahead of any
+2026-11-07T00:00:13Z (RFD66606-2477) 'Ship three gates ahead of any measurement, each with its own planted-defect control:
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2477) 'measurement, each with its own
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2477) 'planted-defect control:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2477) '- A planted wrong offset must
+2026-11-07T00:00:14Z (RFD66606-2477) '- A planted wrong offset must lose the vote, so one bad candidate never outvotes the
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2477) 'lose the vote, so one bad
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2477) 'candidate never outvotes the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2477) '  consistent majority.
+2026-11-07T00:00:15Z (RFD66606-2477) '  consistent majority.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2477) '- A blank pattern (no corners
+2026-11-07T00:00:16Z (RFD66606-2477) '- A blank pattern (no corners detected) gives nothing back, rather than a false placement.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2477) 'detected) gives nothing back,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2477) 'rather than a false placement.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2477) '- The UV pass marks every
+2026-11-07T00:00:17Z (RFD66606-2477) '- The UV pass marks every assignment right or wrong, with no assignment left unjudged.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:40Z (RFD66606-2477) 'assignment right or wrong, with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2477) 'no assignment left unjudged.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:42Z (RFD66606-2477) 'Once those three gates pass,
+2026-11-07T00:00:18Z (RFD66606-2477) 'Once those three gates pass, measure corners placed, wrong placements, and markers recovered
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:43Z (RFD66606-2477) 'measure corners placed, wrong
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2477) 'placements, and markers recovered
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2477) 'that tag decoding alone misses,
+2026-11-07T00:00:19Z (RFD66606-2477) 'that tag decoding alone misses, and report those three numbers together, not separately.
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2477) 'and report those three numbers
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2477) 'together, not separately.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2477) '
+2026-11-07T00:00:20Z (RFD66606-2477) '
  # tags: rfd:decision
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2477) '- RFD66606-2467, the dead-on gate
+2026-11-07T00:00:21Z (RFD66606-2477) '- RFD66606-2467, the dead-on gate this recovery path feeds markers back into.
  # tags: rfd:related
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2477) 'this recovery path feeds markers
- # tags: rfd:related, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:51Z (RFD66606-2477) 'back into.
- # tags: rfd:related, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2477) '- RFD66606-2469, island charting
+2026-11-07T00:00:22Z (RFD66606-2477) '- RFD66606-2469, island charting and the fold test that screens markers before placement.
  # tags: rfd:related
  Text:RFD2477  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2477) 'and the fold test that screens
- # tags: rfd:related, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2477) 'markers before placement.
- # tags: rfd:related, rfd:wrap
- Text:RFD2477  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2477) '
+2026-11-07T00:00:23Z (RFD66606-2477) '
  # tags: rfd:related
  Text:RFD2477  1 LINE
  Text:Written

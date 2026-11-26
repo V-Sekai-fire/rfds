@@ -9,408 +9,408 @@
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:02Z (RFD66606-1152) 'Background removal uses a
+2026-08-27T00:00:02Z (RFD66606-1152) 'Background removal uses a photo-trained matting model, not a union of part masks.
  # tags: rfd:hook
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:03Z (RFD66606-1152) 'photo-trained matting model, not
- # tags: rfd:hook, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:04Z (RFD66606-1152) 'a union of part masks.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:05Z (RFD66606-1152) '
+2026-08-27T00:00:03Z (RFD66606-1152) '
  # tags: rfd:hook
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:06Z (RFD66606-1152) 'The union of See-Through's
+2026-08-27T00:00:04Z (RFD66606-1152) 'The union of See-Through's nineteen part masks looks like an obvious foreground matte. On a
  # tags: rfd:intrigue
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:07Z (RFD66606-1152) 'nineteen part masks looks like an
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:08Z (RFD66606-1152) 'obvious foreground matte. On a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:09Z (RFD66606-1152) 'cosplay photograph it put a real
+2026-08-27T00:00:05Z (RFD66606-1152) 'cosplay photograph it put a real Santa hat in the background and deleted it.
  # tags: rfd:intrigue
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:10Z (RFD66606-1152) 'Santa hat in the background and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:11Z (RFD66606-1152) 'deleted it.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:12Z (RFD66606-1152) '
+2026-08-27T00:00:06Z (RFD66606-1152) '
  # tags: rfd:intrigue
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:13Z (RFD66606-1152) 'Adopt
+2026-08-27T00:00:07Z (RFD66606-1152) 'Adopt `ZhengPeng7/BiRefNet_HR-matting` as the default background remover, and use See-Through
  # tags: rfd:exit
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:14Z (RFD66606-1152) '`ZhengPeng7/BiRefNet_HR-matting`
- # tags: rfd:exit, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:15Z (RFD66606-1152) 'as the default background
- # tags: rfd:exit, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:16Z (RFD66606-1152) 'remover, and use See-Through
- # tags: rfd:exit, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:17Z (RFD66606-1152) 'part masks only as regions, never
+2026-08-27T00:00:08Z (RFD66606-1152) 'part masks only as regions, never as labels.
  # tags: rfd:exit
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:18Z (RFD66606-1152) 'as labels.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:19Z (RFD66606-1152) '
+2026-08-27T00:00:09Z (RFD66606-1152) '
  # tags: rfd:exit
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:20Z (RFD66606-1152) 'Background removal for
+2026-08-27T00:00:10Z (RFD66606-1152) 'Background removal for photographic corpora
  # tags: rfd:details-title
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:21Z (RFD66606-1152) 'photographic corpora
- # tags: rfd:details-title, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:22Z (RFD66606-1152) 'Background removal uses a
+2026-08-27T00:00:11Z (RFD66606-1152) 'Background removal uses a photo-trained dichotomous matting model, not a union of
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:23Z (RFD66606-1152) 'photo-trained dichotomous matting
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:24Z (RFD66606-1152) 'model, not a union of
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:25Z (RFD66606-1152) 'semantic part masks.
+2026-08-27T00:00:12Z (RFD66606-1152) 'semantic part masks. `ZhengPeng7/BiRefNet_HR-matting` is the default. It has no
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:26Z (RFD66606-1152) '`ZhengPeng7/BiRefNet_HR-matting`
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:27Z (RFD66606-1152) 'is the default. It has no
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:28Z (RFD66606-1152) 'vocabulary to fall outside of, so
+2026-08-27T00:00:13Z (RFD66606-1152) 'vocabulary to fall outside of, so it cannot lose a garment for not knowing what
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:29Z (RFD66606-1152) 'it cannot lose a garment for not
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:30Z (RFD66606-1152) 'knowing what
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:31Z (RFD66606-1152) 'the garment is.
+2026-08-27T00:00:14Z (RFD66606-1152) 'the garment is.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:32Z (RFD66606-1152) '
+2026-08-27T00:00:15Z (RFD66606-1152) '
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:33Z (RFD66606-1152) 'See-Through is retained for what
+2026-08-27T00:00:16Z (RFD66606-1152) 'See-Through is retained for what transfers (geometry) and not for what does
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:34Z (RFD66606-1152) 'transfers (geometry) and not for
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:35Z (RFD66606-1152) 'what does
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:36Z (RFD66606-1152) 'not (semantics). Its part masks
+2026-08-27T00:00:17Z (RFD66606-1152) 'not (semantics). Its part masks may be used as regions, never as labels for what
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:37Z (RFD66606-1152) 'may be used as regions, never as
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:38Z (RFD66606-1152) 'labels for what
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:39Z (RFD66606-1152) 'covers what.
+2026-08-27T00:00:18Z (RFD66606-1152) 'covers what.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:40Z (RFD66606-1152) '
+2026-08-27T00:00:19Z (RFD66606-1152) '
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:41Z (RFD66606-1152) '`DETAILS.md` carries the
+2026-08-27T00:00:20Z (RFD66606-1152) '`DETAILS.md` carries the ground-truth ranking and the dtype it depends on.
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:42Z (RFD66606-1152) 'ground-truth ranking and the
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:43Z (RFD66606-1152) 'dtype it depends on.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:44Z (RFD66606-1152) '
+2026-08-27T00:00:21Z (RFD66606-1152) '
  # tags: rfd:decision
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:45Z (RFD66606-1152) 'RFD66606-1006 covers layer
+2026-08-27T00:00:22Z (RFD66606-1152) 'RFD66606-1006 covers layer decomposition. RFD66606-1153 covers how the resulting mattes are
  # tags: rfd:related
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:46Z (RFD66606-1152) 'decomposition. RFD66606-1153
- # tags: rfd:related, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:47Z (RFD66606-1152) 'covers how the resulting mattes
- # tags: rfd:related, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:48Z (RFD66606-1152) 'are
- # tags: rfd:related, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:49Z (RFD66606-1152) 'judged. RFD66606-1030 records the
+2026-08-27T00:00:23Z (RFD66606-1152) 'judged. RFD66606-1030 records the See-Through components.
  # tags: rfd:related
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:50Z (RFD66606-1152) 'See-Through components.
- # tags: rfd:related, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:51Z (RFD66606-1152) '
+2026-08-27T00:00:24Z (RFD66606-1152) '
  # tags: rfd:related
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:52Z (RFD66606-1152) 'Why the union of part masks fails
+2026-08-27T00:00:25Z (RFD66606-1152) 'Why the union of part masks fails
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:53Z (RFD66606-1152) 'It is the wrong instrument for a
+2026-08-27T00:00:26Z (RFD66606-1152) 'It is the wrong instrument for a photographic corpus, for a structural reason
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:54Z (RFD66606-1152) 'photographic corpus, for a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:55Z (RFD66606-1152) 'structural reason
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:56Z (RFD66606-1152) 'rather than a quality one. A
+2026-08-27T00:00:27Z (RFD66606-1152) 'rather than a quality one. A union of semantic classes can only keep what it can
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:00:57Z (RFD66606-1152) 'union of semantic classes can
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:58Z (RFD66606-1152) 'only keep what it can
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:00:59Z (RFD66606-1152) 'name, and the model is trained on
+2026-08-27T00:00:28Z (RFD66606-1152) 'name, and the model is trained on anime characters. Measured on a cosplay
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:00Z (RFD66606-1152) 'anime characters. Measured on a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:01Z (RFD66606-1152) 'cosplay
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:02Z (RFD66606-1152) 'photograph, a Santa hat scored
+2026-08-27T00:00:29Z (RFD66606-1152) 'photograph, a Santa hat scored -8.38 on `headwear` (a confident negative, not a
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:03Z (RFD66606-1152) '-8.38 on `headwear` (a confident
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:04Z (RFD66606-1152) 'negative, not a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:05Z (RFD66606-1152) 'borderline miss), so the union
+2026-08-27T00:00:30Z (RFD66606-1152) 'borderline miss), so the union placed a real garment in the background and
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:06Z (RFD66606-1152) 'placed a real garment in the
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:07Z (RFD66606-1152) 'background and
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:08Z (RFD66606-1152) 'deleted it. No threshold recovers
+2026-08-27T00:00:31Z (RFD66606-1152) 'deleted it. No threshold recovers it; at a threshold low enough to matter the
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:09Z (RFD66606-1152) 'it; at a threshold low enough to
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:10Z (RFD66606-1152) 'matter the
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:11Z (RFD66606-1152) 'union grows from 0.50 to 0.56 of
+2026-08-27T00:00:32Z (RFD66606-1152) 'union grows from 0.50 to 0.56 of the frame while `headwear` stays empty.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:12Z (RFD66606-1152) 'the frame while `headwear` stays
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:13Z (RFD66606-1152) 'empty.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:14Z (RFD66606-1152) '
+2026-08-27T00:00:33Z (RFD66606-1152) '
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:15Z (RFD66606-1152) 'The same measurement showed the
+2026-08-27T00:00:34Z (RFD66606-1152) 'The same measurement showed the clothing classes fire on body region rather than
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:16Z (RFD66606-1152) 'clothing classes fire on body
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:17Z (RFD66606-1152) 'region rather than
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:18Z (RFD66606-1152) 'on cloth: a nude torso is
+2026-08-27T00:00:35Z (RFD66606-1152) 'on cloth: a nude torso is labelled `topwear`, and mask-derived coverage reads
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:19Z (RFD66606-1152) 'labelled `topwear`, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:20Z (RFD66606-1152) 'mask-derived coverage reads
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:21Z (RFD66606-1152) '0.81 to 0.93 on images that are
+2026-08-27T00:00:36Z (RFD66606-1152) '0.81 to 0.93 on images that are largely bare skin.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:22Z (RFD66606-1152) 'largely bare skin.
- # tags: rfd:details, rfd:wrap
+2026-08-27T00:00:37Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:38Z (RFD66606-1152) 'Why a matting model rather than a segmenter
+ # tags: rfd:details-heading
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:39Z (RFD66606-1152) 'A dichotomous segmenter is trained against binary ground truth, so its only soft
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:40Z (RFD66606-1152) 'pixels are silhouette antialiasing; a veil comes back either fully kept or fully
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:41Z (RFD66606-1152) 'cut. A matting model is trained against real alpha, so partial transparency is a
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:42Z (RFD66606-1152) 'value it can express.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:43Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:44Z (RFD66606-1152) 'The scale-free test is soft-alpha pixels per pixel of silhouette perimeter.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:45Z (RFD66606-1152) 'Antialiasing is a constant band along the outline, so it stays near 1 whatever
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:46Z (RFD66606-1152) 'the subject. Transparency is area with no perimeter to pay for it.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:47Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:48Z (RFD66606-1152) 'Six photographs chosen for sheer fabric, specular surfaces and wispy hair:
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:49Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:50Z (RFD66606-1152) '| source | BiRefNet | BiRefNet-matting | HR-matting (2048px) |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:51Z (RFD66606-1152) '|---|---|---|---|
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:52Z (RFD66606-1152) '| sheer lace | 4.01 | 1.58 | 2.84 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:53Z (RFD66606-1152) '| veil | 1.21 | 1.44 | 2.89 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:54Z (RFD66606-1152) '| latex | 1.02 | 2.08 | 2.61 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:55Z (RFD66606-1152) '| latex | 1.14 | 1.55 | 3.39 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:56Z (RFD66606-1152) '| wispy hair | 0.82 | 2.25 | 2.91 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:57Z (RFD66606-1152) '| missed garment | 1.85 | 2.94 |, |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:58Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:00:59Z (RFD66606-1152) 'The segmenter clusters near 1.0 as predicted. The matting variants run higher,
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:00Z (RFD66606-1152) 'and the high-resolution variant is the most consistent.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:01Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:02Z (RFD66606-1152) '**This ratio ranks model families and must not be read per image.** The 4.01 is
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:03Z (RFD66606-1152) 'the highest number in the table and is not transparency: it is a soft uncertainty
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:04Z (RFD66606-1152) 'blob. The metric conflates partial alpha with an unsure model.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:05Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:06Z (RFD66606-1152) 'Cost, and the dtype that decides it
+ # tags: rfd:details-heading
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:07Z (RFD66606-1152) 'HR-matting runs at 2048px, 5.7 s per image measured over 27 images on M2 Pro MPS,
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:08Z (RFD66606-1152) 'against ~1.2 s for the 1024px variants. Weights are 220M parameters.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:09Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:10Z (RFD66606-1152) '**Float16, not bfloat16.** BiRefNet's ASPP uses deformable convolutions, and MPS
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:11Z (RFD66606-1152) 'ships `deformable_im2col_half` but not `deformable_im2col_bfloat`, so bf16 fails
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:12Z (RFD66606-1152) 'inside the forward pass while fp16 is fine. Reading that bf16-specific error as
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:13Z (RFD66606-1152) '"no half precision available" forced fp32, and fp32 at 2048x2048 exhausts 32 GB
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:14Z (RFD66606-1152) 'of unified memory: one image per five minutes with the machine paging, which looked like the
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:15Z (RFD66606-1152) 'model being infeasible on this hardware. The model
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:16Z (RFD66606-1152) 'is feasible: the bf16 error was read as a missing precision. The dtype is
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:17Z (RFD66606-1152) 'not about the weights, which are under a gigabyte either way; it is about
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:18Z (RFD66606-1152) 'activations, where a single feature map at that resolution runs to gigabytes.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:19Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:20Z (RFD66606-1152) 'Settled by ground truth
+ # tags: rfd:details-heading
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:21Z (RFD66606-1152) 'The alphamatting.com training set has true alpha, so the ordering does not need a
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:22Z (RFD66606-1152) 'judge. On the 16 images all three backends completed (lower is better):
+ # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
@@ -419,692 +419,97 @@
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:24Z (RFD66606-1152) 'Why a matting model rather than a
+2026-08-27T00:01:24Z (RFD66606-1152) '| backend | SAD | Gradient | Connectivity |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:25Z (RFD66606-1152) '|---|---:|---:|---:|
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:26Z (RFD66606-1152) '| birefnet | 7.09 | 0.076 | 6.00 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:27Z (RFD66606-1152) '| birefnet-matting | 4.75 | 0.032 | 3.80 |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:28Z (RFD66606-1152) '| birefnet-hr-matting | **4.42** | **0.026** | **3.16** |
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:29Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:30Z (RFD66606-1152) '`hr-matting < matting < segmenter` on every metric, none dissenting. HR-matting
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:31Z (RFD66606-1152) 'separately completed all 27 images alone: SAD 4.48, MSE 1.370, gradient 0.04,
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:32Z (RFD66606-1152) 'connectivity 3.97, consistent with the subset.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:33Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:34Z (RFD66606-1152) 'This also corrects the `soft_per_perimeter` proxy, which had ranked HR-matting
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:35Z (RFD66606-1152) 'first for the right answer by an unreliable route, and RFD66606-1153's judged ordering,
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:36Z (RFD66606-1152) 'which had ranked the segmenter best on gradient, inverted, since ground truth
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:37Z (RFD66606-1152) 'puts it roughly 3x worse.
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:38Z (RFD66606-1152) '
+ # tags: rfd:details
+ Text:RFD1152  1 LINE
+ Text:Written
+
+2026-08-27T00:01:39Z (RFD66606-1152) 'The problem
  # tags: rfd:details-heading
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:25Z (RFD66606-1152) 'segmenter
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:26Z (RFD66606-1152) 'A dichotomous segmenter is
+2026-08-27T00:01:40Z (RFD66606-1152) 'The See-Through union is already in the
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:27Z (RFD66606-1152) 'trained against binary ground
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:28Z (RFD66606-1152) 'truth, so its only soft
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:29Z (RFD66606-1152) 'pixels are silhouette
+2026-08-27T00:01:41Z (RFD66606-1152) 'manifest, already loaded, and on most frames it produces a clean cutout.
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written
 
-2026-08-27T00:01:30Z (RFD66606-1152) 'antialiasing; a veil comes back
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:31Z (RFD66606-1152) 'either fully kept or fully
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:32Z (RFD66606-1152) 'cut. A matting model is trained
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:33Z (RFD66606-1152) 'against real alpha, so partial
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:34Z (RFD66606-1152) 'transparency is a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:35Z (RFD66606-1152) 'value it can express.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:36Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:37Z (RFD66606-1152) 'The scale-free test is soft-alpha
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:38Z (RFD66606-1152) 'pixels per pixel of silhouette
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:39Z (RFD66606-1152) 'perimeter.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:40Z (RFD66606-1152) 'Antialiasing is a constant band
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:41Z (RFD66606-1152) 'along the outline, so it stays
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:42Z (RFD66606-1152) 'near 1 whatever
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:43Z (RFD66606-1152) 'the subject. Transparency is area
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:44Z (RFD66606-1152) 'with no perimeter to pay for it.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:45Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:46Z (RFD66606-1152) 'Six photographs chosen for sheer
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:47Z (RFD66606-1152) 'fabric, specular surfaces and
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:48Z (RFD66606-1152) 'wispy hair:
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:49Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:50Z (RFD66606-1152) '| source | BiRefNet |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:51Z (RFD66606-1152) 'BiRefNet-matting | HR-matting
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:52Z (RFD66606-1152) '(2048px) |
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:53Z (RFD66606-1152) '|---|---|---|---|
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:54Z (RFD66606-1152) '| sheer lace | 4.01 | 1.58 | 2.84
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:55Z (RFD66606-1152) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:56Z (RFD66606-1152) '| veil | 1.21 | 1.44 | 2.89 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:57Z (RFD66606-1152) '| latex | 1.02 | 2.08 | 2.61 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:58Z (RFD66606-1152) '| latex | 1.14 | 1.55 | 3.39 |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:01:59Z (RFD66606-1152) '| wispy hair | 0.82 | 2.25 | 2.91
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:00Z (RFD66606-1152) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:01Z (RFD66606-1152) '| missed garment | 1.85 | 2.94 |,
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:02Z (RFD66606-1152) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:03Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:04Z (RFD66606-1152) 'The segmenter clusters near 1.0
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:05Z (RFD66606-1152) 'as predicted. The matting
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:06Z (RFD66606-1152) 'variants run higher,
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:07Z (RFD66606-1152) 'and the high-resolution variant
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:08Z (RFD66606-1152) 'is the most consistent.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:09Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:10Z (RFD66606-1152) '**This ratio ranks model families
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:11Z (RFD66606-1152) 'and must not be read per image.**
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:12Z (RFD66606-1152) 'The 4.01 is
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:13Z (RFD66606-1152) 'the highest number in the table
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:14Z (RFD66606-1152) 'and is not transparency: it is a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:15Z (RFD66606-1152) 'soft uncertainty
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:16Z (RFD66606-1152) 'blob. The metric conflates
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:17Z (RFD66606-1152) 'partial alpha with an unsure
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:18Z (RFD66606-1152) 'model.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:19Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:20Z (RFD66606-1152) 'Cost, and the dtype that decides
- # tags: rfd:details-heading
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:21Z (RFD66606-1152) 'it
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:22Z (RFD66606-1152) 'HR-matting runs at 2048px, 5.7 s
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:23Z (RFD66606-1152) 'per image measured over 27 images
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:24Z (RFD66606-1152) 'on M2 Pro MPS,
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:25Z (RFD66606-1152) 'against ~1.2 s for the 1024px
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:26Z (RFD66606-1152) 'variants. Weights are 220M
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:27Z (RFD66606-1152) 'parameters.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:28Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:29Z (RFD66606-1152) '**Float16, not bfloat16.**
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:30Z (RFD66606-1152) 'BiRefNet's ASPP uses deformable
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:31Z (RFD66606-1152) 'convolutions, and MPS
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:32Z (RFD66606-1152) 'ships `deformable_im2col_half`
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:33Z (RFD66606-1152) 'but not
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:34Z (RFD66606-1152) '`deformable_im2col_bfloat`, so
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:35Z (RFD66606-1152) 'bf16 fails
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:36Z (RFD66606-1152) 'inside the forward pass while
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:37Z (RFD66606-1152) 'fp16 is fine. Reading that
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:38Z (RFD66606-1152) 'bf16-specific error as
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:39Z (RFD66606-1152) '"no half precision available"
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:40Z (RFD66606-1152) 'forced fp32, and fp32 at
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:41Z (RFD66606-1152) '2048x2048 exhausts 32 GB
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:42Z (RFD66606-1152) 'of unified memory: one image per
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:43Z (RFD66606-1152) 'five minutes with the machine
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:44Z (RFD66606-1152) 'paging, which looked like the
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:45Z (RFD66606-1152) 'model being infeasible on this
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:46Z (RFD66606-1152) 'hardware. The model
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:47Z (RFD66606-1152) 'is feasible: the bf16 error was
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:48Z (RFD66606-1152) 'read as a missing precision. The
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:49Z (RFD66606-1152) 'dtype is
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:50Z (RFD66606-1152) 'not about the weights, which are
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:51Z (RFD66606-1152) 'under a gigabyte either way; it
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:52Z (RFD66606-1152) 'is about
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:53Z (RFD66606-1152) 'activations, where a single
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:54Z (RFD66606-1152) 'feature map at that resolution
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:55Z (RFD66606-1152) 'runs to gigabytes.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:56Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:57Z (RFD66606-1152) 'Settled by ground truth
- # tags: rfd:details-heading
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:58Z (RFD66606-1152) 'The alphamatting.com training set
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:02:59Z (RFD66606-1152) 'has true alpha, so the ordering
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:00Z (RFD66606-1152) 'does not need a
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:01Z (RFD66606-1152) 'judge. On the 16 images all three
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:02Z (RFD66606-1152) 'backends completed (lower is
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:03Z (RFD66606-1152) 'better):
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:04Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:05Z (RFD66606-1152) '| backend | SAD | Gradient |
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:06Z (RFD66606-1152) 'Connectivity |
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:07Z (RFD66606-1152) '|---|---:|---:|---:|
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:08Z (RFD66606-1152) '| birefnet | 7.09 | 0.076 | 6.00
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:09Z (RFD66606-1152) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:10Z (RFD66606-1152) '| birefnet-matting | 4.75 | 0.032
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:11Z (RFD66606-1152) '| 3.80 |
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:12Z (RFD66606-1152) '| birefnet-hr-matting | **4.42**
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:13Z (RFD66606-1152) '| **0.026** | **3.16** |
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:14Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:15Z (RFD66606-1152) '`hr-matting < matting <
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:16Z (RFD66606-1152) 'segmenter` on every metric, none
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:17Z (RFD66606-1152) 'dissenting. HR-matting
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:18Z (RFD66606-1152) 'separately completed all 27
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:19Z (RFD66606-1152) 'images alone: SAD 4.48, MSE
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:20Z (RFD66606-1152) '1.370, gradient 0.04,
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:21Z (RFD66606-1152) 'connectivity 3.97, consistent
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:22Z (RFD66606-1152) 'with the subset.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:23Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:24Z (RFD66606-1152) 'This also corrects the
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:25Z (RFD66606-1152) '`soft_per_perimeter` proxy, which
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:26Z (RFD66606-1152) 'had ranked HR-matting
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:27Z (RFD66606-1152) 'first for the right answer by an
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:28Z (RFD66606-1152) 'unreliable route, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:29Z (RFD66606-1152) 'RFD66606-1153's judged ordering,
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:30Z (RFD66606-1152) 'which had ranked the segmenter
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:31Z (RFD66606-1152) 'best on gradient, inverted, since
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:32Z (RFD66606-1152) 'ground truth
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:33Z (RFD66606-1152) 'puts it roughly 3x worse.
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:34Z (RFD66606-1152) '
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:35Z (RFD66606-1152) 'The problem
- # tags: rfd:details-heading
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:36Z (RFD66606-1152) 'The See-Through union is already
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:37Z (RFD66606-1152) 'in the
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:38Z (RFD66606-1152) 'manifest, already loaded, and on
- # tags: rfd:details
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:39Z (RFD66606-1152) 'most frames it produces a clean
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:40Z (RFD66606-1152) 'cutout.
- # tags: rfd:details, rfd:wrap
- Text:RFD1152  1 LINE
- Text:Written
-
-2026-08-27T00:03:41Z (RFD66606-1152) '
+2026-08-27T00:01:42Z (RFD66606-1152) '
  # tags: rfd:details
  Text:RFD1152  1 LINE
  Text:Written

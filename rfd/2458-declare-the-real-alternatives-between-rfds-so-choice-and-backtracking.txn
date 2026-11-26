@@ -4,327 +4,132 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2458) 'the RFD generator treats a
+2026-11-07T00:00:01Z (RFD66606-2458) 'the RFD generator treats a capability with several providers as a declared choice.
  # tags: rfd:feature
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2458) 'capability with several providers
- # tags: rfd:feature, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2458) 'as a declared choice.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2458) 'the rebac edge generator and the
+2026-11-07T00:00:02Z (RFD66606-2458) 'the rebac edge generator and the tuples it emits across the RFD corpus in rfd/*.exs.
  # tags: rfd:scope
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2458) 'tuples it emits across the RFD
- # tags: rfd:scope, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2458) 'corpus in rfd/*.exs.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2458) 'Does a capability that several
+2026-11-07T00:00:03Z (RFD66606-2458) 'Does a capability that several RFDs can provide ever get recorded as a real choice, with a
  # tags: rfd:hook
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2458) 'RFDs can provide ever get
- # tags: rfd:hook, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2458) 'recorded as a real choice, with a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2458) 'preferred order and a fallback
+2026-11-07T00:00:04Z (RFD66606-2458) 'preferred order and a fallback the planner can use when one provider fails?
  # tags: rfd:hook
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2458) 'the planner can use when one
- # tags: rfd:hook, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2458) 'provider fails?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2458) '
+2026-11-07T00:00:05Z (RFD66606-2458) '
  # tags: rfd:hook
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2458) 'The generator already knows how
+2026-11-07T00:00:06Z (RFD66606-2458) 'The generator already knows how to turn a capability with multiple providers into an
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2458) 'to turn a capability with
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2458) 'multiple providers into an
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2458) 'alternative set, ordered by
+2026-11-07T00:00:07Z (RFD66606-2458) 'alternative set, ordered by commit date, then publish date, then serial, and a planner that
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2458) 'commit date, then publish date,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2458) 'then serial, and a planner that
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2458) 'backtracks to the next provider
+2026-11-07T00:00:08Z (RFD66606-2458) 'backtracks to the next provider when one fails. The idea was tested on one synthetic pair, but
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2458) 'when one fails. The idea was
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2458) 'tested on one synthetic pair, but
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2458) 'no capability in the RFD corpus
+2026-11-07T00:00:09Z (RFD66606-2458) 'no capability in the RFD corpus today actually has two providers recorded, so the beta's own
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2458) 'today actually has two providers
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2458) 'recorded, so the beta's own
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2458) 'route never exercises the
+2026-11-07T00:00:10Z (RFD66606-2458) 'route never exercises the backtracking path it depends on.
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2458) 'backtracking path it depends on.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2458) '
+2026-11-07T00:00:11Z (RFD66606-2458) '
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2458) 'Run a research pass over the
+2026-11-07T00:00:12Z (RFD66606-2458) 'Run a research pass over the corpus and its neighbors, from titles and bodies only, to find
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2458) 'corpus and its neighbors, from
- # tags: rfd:exit, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2458) 'titles and bodies only, to find
- # tags: rfd:exit, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2458) 'capabilities with more than one
+2026-11-07T00:00:13Z (RFD66606-2458) 'capabilities with more than one stated provider, fallback, or rejected approach, and record
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2458) 'stated provider, fallback, or
- # tags: rfd:exit, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2458) 'rejected approach, and record
- # tags: rfd:exit, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2458) 'each as a second `provides` edge
+2026-11-07T00:00:14Z (RFD66606-2458) 'each as a second `provides` edge in preference order.
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2458) 'in preference order.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2458) '
+2026-11-07T00:00:15Z (RFD66606-2458) '
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2458) '- Treat this as a research task
+2026-11-07T00:00:16Z (RFD66606-2458) '- Treat this as a research task before a code task: read the cone of RFDs named in the issue
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2458) 'before a code task: read the cone
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2458) 'of RFDs named in the issue
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2458) '  and their neighbors for stated
+2026-11-07T00:00:17Z (RFD66606-2458) '  and their neighbors for stated alternatives, fallbacks, and rejected approaches.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2458) 'alternatives, fallbacks, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2458) 'rejected approaches.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2458) '- Where two RFDs plausibly
+2026-11-07T00:00:18Z (RFD66606-2458) '- Where two RFDs plausibly provide the same capability, add a second `provides` edge in
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2458) 'provide the same capability, add
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2458) 'a second `provides` edge in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2458) '  preference order so the
+2026-11-07T00:00:19Z (RFD66606-2458) '  preference order so the planner's backtracking has a real pair to exercise.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:48Z (RFD66606-2458) 'planner's backtracking has a real
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:49Z (RFD66606-2458) 'pair to exercise.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2458) '- Candidate pairs raised by the
+2026-11-07T00:00:20Z (RFD66606-2458) '- Candidate pairs raised by the issue, unverified until read: Tailscale versus an SSH tunnel
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2458) 'issue, unverified until read:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2458) 'Tailscale versus an SSH tunnel
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2458) '  for reaching Bao, standalone
+2026-11-07T00:00:21Z (RFD66606-2458) '  for reaching Bao, standalone versus PC VR streaming for headset rendering, WSL libraries
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:54Z (RFD66606-2458) 'versus PC VR streaming for
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2458) 'headset rendering, WSL libraries
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:56Z (RFD66606-2458) '  versus this Mac as the desktop
+2026-11-07T00:00:22Z (RFD66606-2458) '  versus this Mac as the desktop client, and two RFDs that both claimed the same guest ELF
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:57Z (RFD66606-2458) 'client, and two RFDs that both
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2458) 'claimed the same guest ELF
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2458) '  double capability in an early
+2026-11-07T00:00:23Z (RFD66606-2458) '  double capability in an early drafting pass.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2458) 'drafting pass.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2458) '- Until a pair is verified by
+2026-11-07T00:00:24Z (RFD66606-2458) '- Until a pair is verified by reading both RFDs in full, no alternative edge should be
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:01:02Z (RFD66606-2458) 'reading both RFDs in full, no
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:01:03Z (RFD66606-2458) 'alternative edge should be
- # tags: rfd:decision, rfd:wrap
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2458) '  committed.
+2026-11-07T00:00:25Z (RFD66606-2458) '  committed.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:01:05Z (RFD66606-2458) '
+2026-11-07T00:00:26Z (RFD66606-2458) '
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written

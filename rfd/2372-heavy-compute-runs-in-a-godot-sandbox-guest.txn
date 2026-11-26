@@ -9,357 +9,207 @@
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2372) 'Heavy compute runs in a
+2026-10-31T00:00:02Z (RFD66606-2372) 'Heavy compute runs in a godot-sandbox guest, never as a host pipeline or a GDScript loop.
  # tags: rfd:hook
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2372) 'godot-sandbox guest, never as a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2372) 'host pipeline or a GDScript loop.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2372) '
+2026-10-31T00:00:03Z (RFD66606-2372) '
  # tags: rfd:hook
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2372) 'A native ggml engine module, a
+2026-10-31T00:00:04Z (RFD66606-2372) 'A native ggml engine module, a GDExtension ggml API and a standalone runtime are all off the
  # tags: rfd:intrigue
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2372) 'GDExtension ggml API and a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2372) 'standalone runtime are all off
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2372) 'the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2372) 'route.
+2026-10-31T00:00:05Z (RFD66606-2372) 'route.
  # tags: rfd:intrigue
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2372) '
+2026-10-31T00:00:06Z (RFD66606-2372) '
  # tags: rfd:intrigue
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2372) 'Check a new heavy compute job
+2026-10-31T00:00:07Z (RFD66606-2372) 'Check a new heavy compute job against the rule: put it in a riscv64 guest ELF or on ggml-rd
  # tags: rfd:exit
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2372) 'against the rule: put it in a
- # tags: rfd:exit, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2372) 'riscv64 guest ELF or on ggml-rd
- # tags: rfd:exit, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2372) 'with compute-rd.
+2026-10-31T00:00:08Z (RFD66606-2372) 'with compute-rd.
  # tags: rfd:exit
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2372) '
+2026-10-31T00:00:09Z (RFD66606-2372) '
  # tags: rfd:exit
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2372) 'heavy compute runs in a
+2026-10-31T00:00:10Z (RFD66606-2372) 'heavy compute runs in a godot-sandbox guest
  # tags: rfd:details-title
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2372) 'godot-sandbox guest
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2372) '- Heavy compute runs in a
+2026-10-31T00:00:11Z (RFD66606-2372) '- Heavy compute runs in a godot-sandbox guest: a riscv64 guest ELF on the CPU, which is also the
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2372) 'godot-sandbox guest: a riscv64
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2372) 'guest ELF on the CPU, which is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2372) 'also the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2372) '  parity oracle, or kernels on
+2026-10-31T00:00:12Z (RFD66606-2372) '  parity oracle, or kernels on ggml-rd with compute-rd, authored in Lean and lowered through
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2372) 'ggml-rd with compute-rd, authored
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2372) 'in Lean and lowered through
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2372) '  Slang
+2026-10-31T00:00:13Z (RFD66606-2372) '  Slang
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2372) '  to SPIR-V (RFD66606-2265).
+2026-10-31T00:00:14Z (RFD66606-2372) '  to SPIR-V (RFD66606-2265).
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2372) '- It never runs as a host Python
+2026-10-31T00:00:15Z (RFD66606-2372) '- It never runs as a host Python or C++ pipeline or as a GDScript loop.
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2372) 'or C++ pipeline or as a GDScript
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2372) 'loop.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2372) '- ggml runs only in such a guest
+2026-10-31T00:00:16Z (RFD66606-2372) '- ggml runs only in such a guest (RFD66606-2290).
  # tags: rfd:decision
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2372) '(RFD66606-2290).
- # tags: rfd:decision, rfd:wrap
+2026-10-31T00:00:17Z (RFD66606-2372) '
+ # tags: rfd:decision
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2372) '- RFD66606-2294, where this rule lived before the split.
+ # tags: rfd:related
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2372) '- RFD66606-2265, compute-rd kernels with a CPU oracle.
+ # tags: rfd:related
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2372) '- RFD66606-2290, ggml only in guests.
+ # tags: rfd:related
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2372) '- RFD66606-2268, EditScore's decision model, which builds on ggml-rd.
+ # tags: rfd:related
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:22Z (RFD66606-2372) '
+ # tags: rfd:related
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:23Z (RFD66606-2372) 'What stays allowed
+ # tags: rfd:details-heading
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:24Z (RFD66606-2372) 'Fragment shaders that render are fine, and Python bindings serve upstream contributions and
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2372) 'their
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2372) 'tests, never a pipeline.
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2372) '
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2372) '
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2372) 'What is off the route
+ # tags: rfd:details-heading
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:30Z (RFD66606-2372) 'A native ggml engine module, a GDExtension ggml API or a standalone runtime is off the route,
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:31Z (RFD66606-2372) 'and
+ # tags: rfd:details
+ Text:RFD2372  1 LINE
+ Text:Written
+
+2026-10-31T00:00:32Z (RFD66606-2372) 'a standalone CLI may stay as a CPU oracle for a gate.
+ # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
 2026-10-31T00:00:33Z (RFD66606-2372) '
- # tags: rfd:decision
+ # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2372) '- RFD66606-2294, where this rule
- # tags: rfd:related
+2026-10-31T00:00:34Z (RFD66606-2372) '
+ # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2372) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2372) '- RFD66606-2265, compute-rd
- # tags: rfd:related
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2372) 'kernels with a CPU oracle.
- # tags: rfd:related, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2372) '- RFD66606-2290, ggml only in
- # tags: rfd:related
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2372) 'guests.
- # tags: rfd:related, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2372) '- RFD66606-2268, EditScore's
- # tags: rfd:related
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2372) 'decision model, which builds on
- # tags: rfd:related, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2372) 'ggml-rd.
- # tags: rfd:related, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2372) '
- # tags: rfd:related
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2372) 'What stays allowed
+2026-10-31T00:00:35Z (RFD66606-2372) 'Diffusion
  # tags: rfd:details-heading
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2372) 'Fragment shaders that render are
+2026-10-31T00:00:36Z (RFD66606-2372) 'Diffusion in ggml runs on ggml-rd with compute-rd as well, since EditScore's decision model
  # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2372) 'fine, and Python bindings serve
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2372) 'upstream contributions and
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2372) 'their
+2026-10-31T00:00:37Z (RFD66606-2372) 'builds
  # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2372) 'tests, never a pipeline.
+2026-10-31T00:00:38Z (RFD66606-2372) 'on it (RFD66606-2268).
  # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2372) '
+2026-10-31T00:00:39Z (RFD66606-2372) '
  # tags: rfd:details
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2372) '
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2372) 'What is off the route
- # tags: rfd:details-heading
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2372) 'A native ggml engine module, a
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2372) 'GDExtension ggml API or a
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2372) 'standalone runtime is off the
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2372) 'route,
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2372) 'and
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2372) 'a standalone CLI may stay as a
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2372) 'CPU oracle for a gate.
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:00Z (RFD66606-2372) '
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2372) '
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2372) 'Diffusion
- # tags: rfd:details-heading
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:03Z (RFD66606-2372) 'Diffusion in ggml runs on ggml-rd
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2372) 'with compute-rd as well, since
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2372) 'EditScore's decision model
- # tags: rfd:details, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:06Z (RFD66606-2372) 'builds
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2372) 'on it (RFD66606-2268).
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2372) '
- # tags: rfd:details
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2372) '2351
+2026-10-31T00:00:40Z (RFD66606-2372) '2351
  # tags: rebac:verbs-from
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:01:10Z (RFD66606-2372) 'rfd-2372 provides
+2026-10-31T00:00:41Z (RFD66606-2372) 'rfd-2372 provides sandbox-guest-heavy-compute
  # tags: rebac:relate
  Text:RFD2372  1 LINE
  Text:Written
 
-2026-10-31T00:01:11Z (RFD66606-2372) 'sandbox-guest-heavy-compute
- # tags: rebac:relate, rfd:wrap
- Text:RFD2372  1 LINE
- Text:Written
-
-2026-10-31T00:01:12Z (RFD66606-2372) 'rfd-2372 is_a guest-runtime
+2026-10-31T00:00:42Z (RFD66606-2372) 'rfd-2372 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2372  1 LINE
  Text:Written

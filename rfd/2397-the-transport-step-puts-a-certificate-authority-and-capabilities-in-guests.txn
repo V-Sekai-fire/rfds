@@ -4,712 +4,322 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2397) 'the transport and lock-down step:
+2026-10-31T00:00:01Z (RFD66606-2397) 'the transport and lock-down step: zone and voice guests, the CA and capabilities.
  # tags: rfd:scope
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2397) 'zone and voice guests, the CA and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2397) 'capabilities.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2397) 'Two guest repositories carry the
+2026-10-31T00:00:02Z (RFD66606-2397) 'Two guest repositories carry the transport, a certificate authority and capabilities for zones.
  # tags: rfd:hook
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2397) 'transport, a certificate
- # tags: rfd:hook, rfd:wrap
+2026-10-31T00:00:03Z (RFD66606-2397) '
+ # tags: rfd:hook
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2397) 'authority and capabilities for
- # tags: rfd:hook, rfd:wrap
+2026-10-31T00:00:04Z (RFD66606-2397) 'A certificate from another CA is accepted by the null verifier, and a transfer with no
+ # tags: rfd:intrigue
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2397) 'zones.
- # tags: rfd:hook, rfd:wrap
+2026-10-31T00:00:05Z (RFD66606-2397) 'capability goes through a table that skips the bit test.
+ # tags: rfd:intrigue
+ Text:RFD2397  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2397) '
+ # tags: rfd:intrigue
+ Text:RFD2397  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2397) 'Run the Lean tests over the compiled C++ with an in-memory UDP pair, and make each control fail.
+ # tags: rfd:exit
  Text:RFD2397  1 LINE
  Text:Written
 
 2026-10-31T00:00:08Z (RFD66606-2397) '
- # tags: rfd:hook
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2397) 'A certificate from another CA is
- # tags: rfd:intrigue
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2397) 'accepted by the null verifier,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2397) 'and a transfer with no
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2397) 'capability goes through a table
- # tags: rfd:intrigue
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2397) 'that skips the bit test.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2397) '
- # tags: rfd:intrigue
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2397) 'Run the Lean tests over the
  # tags: rfd:exit
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2397) 'compiled C++ with an in-memory
- # tags: rfd:exit, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2397) 'UDP pair, and make each control
- # tags: rfd:exit, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2397) 'fail.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2397) '
- # tags: rfd:exit
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2397) 'the transport step puts a
+2026-10-31T00:00:09Z (RFD66606-2397) 'the transport step puts a certificate authority and capabilities in guests
  # tags: rfd:details-title
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2397) 'certificate authority and
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2397) 'capabilities in guests
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2397) '- Two repositories shaped like
+2026-10-31T00:00:10Z (RFD66606-2397) '- Two repositories shaped like &{repo("interactor-lasso")}, placed after it:
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2397) '&{repo("interactor-lasso")},
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2397) 'placed after it:
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2397) '  &{repo("interactor-fabric-zone")}
+2026-10-31T00:00:11Z (RFD66606-2397) '  &{repo("interactor-fabric-zone")} and &{repo("interactor-voice")}.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2397) 'and &{repo("interactor-voice")}.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2397) '- `zone.elf` has a player mode,
+2026-10-31T00:00:12Z (RFD66606-2397) '- `zone.elf` has a player mode, as `FabricZone::is_player` does, so there is no `client.elf`.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2397) 'as `FabricZone::is_player` does,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2397) 'so there is no `client.elf`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2397) '- picoquic lives only in
+2026-10-31T00:00:13Z (RFD66606-2397) '- picoquic lives only in `zone.elf`. `ca.elf` carries mbedTLS only.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2397) '`zone.elf`. `ca.elf` carries
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2397) 'mbedTLS only.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2397) '
+2026-10-31T00:00:14Z (RFD66606-2397) '
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2397) '- RFD66606-2293, where this rule
+2026-10-31T00:00:15Z (RFD66606-2397) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2397) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2397) '
+2026-10-31T00:00:16Z (RFD66606-2397) '
  # tags: rfd:related
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2397) 'The guests and the host
+2026-10-31T00:00:17Z (RFD66606-2397) 'The guests and the host
  # tags: rfd:details-heading
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2397) '- `guest/transport`:
+2026-10-31T00:00:18Z (RFD66606-2397) '- `guest/transport`: `quic_picoquic_backend.cpp` rewritten without
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2397) '`quic_picoquic_backend.cpp`
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2397) 'rewritten without
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2397) '  `picoquic_packet_loop` and its
+2026-10-31T00:00:19Z (RFD66606-2397) '  `picoquic_packet_loop` and its thread: `picoquic_incoming_packet`
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2397) 'thread:
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2397) '`picoquic_incoming_packet`
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2397) '  and
+2026-10-31T00:00:20Z (RFD66606-2397) '  and `picoquic_prepare_next_packet_ex`, driven by `tick(now_us)`.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2397) '`picoquic_prepare_next_packet_ex`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2397) 'driven by `tick(now_us)`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2397) '  Entropy and clock come from the
+2026-10-31T00:00:21Z (RFD66606-2397) '  Entropy and clock come from the host (`net_seed`, `zone_tick`'s
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2397) 'host (`net_seed`, `zone_tick`'s
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2397) '  wall time). The null verifier
+2026-10-31T00:00:22Z (RFD66606-2397) '  wall time). The null verifier is replaced by
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2397) 'is replaced by
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2397) '  `ptls_mbedtls_get_certificate_verifier`
+2026-10-31T00:00:23Z (RFD66606-2397) '  `ptls_mbedtls_get_certificate_verifier` over the session root DER,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2397) 'over the session root DER,
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2397) '  `thirdparty/webtransportd/frame.c`
+2026-10-31T00:00:24Z (RFD66606-2397) '  `thirdparty/webtransportd/frame.c` verbatim.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2397) 'verbatim.
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2397) '- `guest/ca`: a root key made in
+2026-10-31T00:00:25Z (RFD66606-2397) '- `guest/ca`: a root key made in guest memory at `ca_open`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2397) 'guest memory at `ca_open`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2397) '  `ca_issue(csr, name, now)`
+2026-10-31T00:00:26Z (RFD66606-2397) '  `ca_issue(csr, name, now)` issues one-hour certificates for names
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2397) 'issues one-hour certificates for
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:00Z (RFD66606-2397) 'names
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2397) '  matching
+2026-10-31T00:00:27Z (RFD66606-2397) '  matching `^[a-z0-9-]+\\.zone\\.fabric\\.internal$`. `ca.elf` has no
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:02Z (RFD66606-2397) '`^[a-z0-9-]+\\.zone\\.fabric\\.internal$`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:03Z (RFD66606-2397) '`ca.elf` has no
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2397) '  transfer entry point at all.
+2026-10-31T00:00:28Z (RFD66606-2397) '  transfer entry point at all.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2397) '- `guest/capability`: macaroons
+2026-10-31T00:00:29Z (RFD66606-2397) '- `guest/capability`: macaroons as an HMAC-SHA256 chain with caveats
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2397) 'as an HMAC-SHA256 chain with
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2397) 'caveats
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2397) '  vm, verb, object, expires,
+2026-10-31T00:00:30Z (RFD66606-2397) '  vm, verb, object, expires, epoch. The host (`stages/capability.gd`)
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2397) 'epoch. The host
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2397) '(`stages/capability.gd`)
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2397) '  holds the root key and hands
+2026-10-31T00:00:31Z (RFD66606-2397) '  holds the root key and hands each VM a derived key, so `ca.elf`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2397) 'each VM a derived key, so
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2397) '`ca.elf`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:14Z (RFD66606-2397) '  which gets none, can verify no
+2026-10-31T00:00:32Z (RFD66606-2397) '  which gets none, can verify no transfer. The per-VM bit in the
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2397) 'transfer. The per-VM bit in the
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2397) '  godot-sandbox host-call table
+2026-10-31T00:00:33Z (RFD66606-2397) '  godot-sandbox host-call table lands in
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2397) 'lands in
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2397) '  &{repo("entities-godot-sandbox",
+2026-10-31T00:00:34Z (RFD66606-2397) '  &{repo("entities-godot-sandbox", planned: "4-entities")}.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:19Z (RFD66606-2397) 'planned: "4-entities")}.
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2397) '- Host: `stages/zone_stage.gd`
+2026-10-31T00:00:35Z (RFD66606-2397) '- Host: `stages/zone_stage.gd` owns a `PacketPeerUDP`, drains it into
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2397) 'owns a `PacketPeerUDP`, drains it
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2397) 'into
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2397) '  `net_rx`, sends `net_tx`, calls
+2026-10-31T00:00:36Z (RFD66606-2397) '  `net_rx`, sends `net_tx`, calls `zone_tick` once a frame. Enrolment
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2397) '`zone_tick` once a frame.
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2397) 'Enrolment
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:26Z (RFD66606-2397) '  is a CSR on an `ENROL` stream
+2026-10-31T00:00:37Z (RFD66606-2397) '  is a CSR on an `ENROL` stream the desktop hands to `ca_stage.gd`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:27Z (RFD66606-2397) 'the desktop hands to
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:28Z (RFD66606-2397) '`ca_stage.gd`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:29Z (RFD66606-2397) '  then a reconnect with mTLS. The
+2026-10-31T00:00:38Z (RFD66606-2397) '  then a reconnect with mTLS. The root DER passes out of band as a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2397) 'root DER passes out of band as a
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:31Z (RFD66606-2397) '  launch argument.
+2026-10-31T00:00:39Z (RFD66606-2397) '  launch argument.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2397) '- Vendored at riscv64 from the
+2026-10-31T00:00:40Z (RFD66606-2397) '- Vendored at riscv64 from the fabric tag by
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:33Z (RFD66606-2397) 'fabric tag by
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:34Z (RFD66606-2397) '  `tools/vendor/from_godot_fabric.py`:
+2026-10-31T00:00:41Z (RFD66606-2397) '  `tools/vendor/from_godot_fabric.py`: picoquic without its socket
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:35Z (RFD66606-2397) 'picoquic without its socket
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:36Z (RFD66606-2397) '  loops and other TLS backends,
+2026-10-31T00:00:42Z (RFD66606-2397) '  loops and other TLS backends, picotls's four files, mbedTLS with
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:37Z (RFD66606-2397) 'picotls's four files, mbedTLS
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:38Z (RFD66606-2397) 'with
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:39Z (RFD66606-2397) '  `FS_IO`, `THREADING`, `NET` and
+2026-10-31T00:00:43Z (RFD66606-2397) '  `FS_IO`, `THREADING`, `NET` and `SSL` off, SQLite as `OS_OTHER` on
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:40Z (RFD66606-2397) '`SSL` off, SQLite as `OS_OTHER`
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:41Z (RFD66606-2397) 'on
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:42Z (RFD66606-2397) '  `spmemvfs`, zstd's three
+2026-10-31T00:00:44Z (RFD66606-2397) '  `spmemvfs`, zstd's three directories. Each directory with a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:43Z (RFD66606-2397) 'directories. Each directory with
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:44Z (RFD66606-2397) 'a
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:45Z (RFD66606-2397) '  `CITATION.cff` naming the tag.
+2026-10-31T00:00:45Z (RFD66606-2397) '  `CITATION.cff` naming the tag.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:46Z (RFD66606-2397) '
+2026-10-31T00:00:46Z (RFD66606-2397) '
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:47Z (RFD66606-2397) '
+2026-10-31T00:00:47Z (RFD66606-2397) '
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:48Z (RFD66606-2397) 'Check and controls
+2026-10-31T00:00:48Z (RFD66606-2397) 'Check and controls
  # tags: rfd:details-heading
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:49Z (RFD66606-2397) 'Check, Lean tests over the
+2026-10-31T00:00:49Z (RFD66606-2397) 'Check, Lean tests over the compiled C++ with an in-memory UDP pair:
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:50Z (RFD66606-2397) 'compiled C++ with an in-memory
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:51Z (RFD66606-2397) 'UDP pair:
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:52Z (RFD66606-2397) 'a certificate from another CA is
+2026-10-31T00:00:50Z (RFD66606-2397) 'a certificate from another CA is refused (control: the null verifier
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:53Z (RFD66606-2397) 'refused (control: the null
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:54Z (RFD66606-2397) 'verifier
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:55Z (RFD66606-2397) 'accepts it). An expired one is
+2026-10-31T00:00:51Z (RFD66606-2397) 'accepts it). An expired one is refused (control: the clock frozen at
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:56Z (RFD66606-2397) 'refused (control: the clock
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:57Z (RFD66606-2397) 'frozen at
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:01:58Z (RFD66606-2397) 'issue accepts it). An
+2026-10-31T00:00:52Z (RFD66606-2397) 'issue accepts it). An out-of-pattern name is not issued (control: a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:59Z (RFD66606-2397) 'out-of-pattern name is not issued
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:00Z (RFD66606-2397) '(control: a
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:01Z (RFD66606-2397) 'suffix check issues
+2026-10-31T00:00:53Z (RFD66606-2397) 'suffix check issues `a.zone.fabric.internal.evil.com`). A transfer
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:02Z (RFD66606-2397) '`a.zone.fabric.internal.evil.com`).
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:03Z (RFD66606-2397) 'A transfer
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:04Z (RFD66606-2397) 'with no capability is refused and
+2026-10-31T00:00:54Z (RFD66606-2397) 'with no capability is refused and goes ahead once minted (control: a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:05Z (RFD66606-2397) 'goes ahead once minted (control:
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:06Z (RFD66606-2397) 'a
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:07Z (RFD66606-2397) 'table that skips the bit test
+2026-10-31T00:00:55Z (RFD66606-2397) 'table that skips the bit test lets it through. A macaroon with one
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:08Z (RFD66606-2397) 'lets it through. A macaroon with
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:09Z (RFD66606-2397) 'one
- # tags: rfd:details, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:10Z (RFD66606-2397) 'caveat altered still verifies).
+2026-10-31T00:00:56Z (RFD66606-2397) 'caveat altered still verifies).
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:11Z (RFD66606-2397) '
+2026-10-31T00:00:57Z (RFD66606-2397) '
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:12Z (RFD66606-2397) '2351
+2026-10-31T00:00:58Z (RFD66606-2397) '2351
  # tags: rebac:verbs-from
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:13Z (RFD66606-2397) 'rfd-2397 provides
+2026-10-31T00:00:59Z (RFD66606-2397) 'rfd-2397 provides guest-ca-capabilities-repos
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:14Z (RFD66606-2397) 'guest-ca-capabilities-repos
- # tags: rebac:relate, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:15Z (RFD66606-2397) 'rfd-2397 provides
+2026-10-31T00:01:00Z (RFD66606-2397) 'rfd-2397 provides zone-player-mode-elf
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:16Z (RFD66606-2397) 'zone-player-mode-elf
- # tags: rebac:relate, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:17Z (RFD66606-2397) 'rfd-2397 is_a guest-runtime
+2026-10-31T00:01:01Z (RFD66606-2397) 'rfd-2397 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:18Z (RFD66606-2397) 'rfd-2397 spends guest-elf-double
+2026-10-31T00:01:02Z (RFD66606-2397) 'rfd-2397 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:19Z (RFD66606-2397) 'rfd-2397 spends
+2026-10-31T00:01:03Z (RFD66606-2397) 'rfd-2397 spends webtransport-guest-signer
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:02:20Z (RFD66606-2397) 'webtransport-guest-signer
- # tags: rebac:relate, rfd:wrap
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:21Z (RFD66606-2397) 'rfd-2397 spends
+2026-10-31T00:01:04Z (RFD66606-2397) 'rfd-2397 spends guest-macaroon-capabilities
  # tags: rebac:relate
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:02:22Z (RFD66606-2397) 'guest-macaroon-capabilities
- # tags: rebac:relate, rfd:wrap
  Text:RFD2397  1 LINE
  Text:Written

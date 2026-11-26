@@ -4,952 +4,492 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-02T00:00:01Z (RFD66606-2177) 'classify every RFD by which
+2026-09-02T00:00:01Z (RFD66606-2177) 'classify every RFD by which altitude of work it describes
  # tags: rfd:feature
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:02Z (RFD66606-2177) 'altitude of work it describes
- # tags: rfd:feature, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:03Z (RFD66606-2177) '`SERIALS-*.usda` schema,
+2026-09-02T00:00:02Z (RFD66606-2177) '`SERIALS-*.usda` schema, `scripts/render_flight_level_pages.py`,
  # tags: rfd:scope
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2177) '`scripts/render_flight_level_pages.py`,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:05Z (RFD66606-2177) '`_quarto.yml` navbar,
+2026-09-02T00:00:03Z (RFD66606-2177) '`_quarto.yml` navbar, `pages/flight-level-*.qmd`
  # tags: rfd:scope
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:06Z (RFD66606-2177) '`pages/flight-level-*.qmd`
- # tags: rfd:scope, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:07Z (RFD66606-2177) '---
+2026-09-02T00:00:04Z (RFD66606-2177) '---
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:08Z (RFD66606-2177) 'name:
+2026-09-02T00:00:05Z (RFD66606-2177) 'name: rfd-2177-flight-levels-taxonomy
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:09Z (RFD66606-2177) 'rfd-2177-flight-levels-taxonomy
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:10Z (RFD66606-2177) 'description: When tagging an
+2026-09-02T00:00:06Z (RFD66606-2177) 'description: When tagging an RFD's altitude, use the flight_level field on its serial-register entry. Values are L1 (operations, single-team execution), L2 (coordination, cross-team value flow), L3 (strategy, portfolio bet). Follow Klaus Leopold's numbering (L1 = ground, L3 = altitude). Tagging is opt-in.
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2177) 'RFD's altitude, use the
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2177) 'flight_level field on its
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2177) 'serial-register entry. Values are
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:14Z (RFD66606-2177) 'L1 (operations, single-team
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:15Z (RFD66606-2177) 'execution), L2 (coordination,
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:16Z (RFD66606-2177) 'cross-team value flow), L3
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:17Z (RFD66606-2177) '(strategy, portfolio bet). Follow
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:18Z (RFD66606-2177) 'Klaus Leopold's numbering (L1 =
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:19Z (RFD66606-2177) 'ground, L3 = altitude). Tagging
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:20Z (RFD66606-2177) 'is opt-in.
- # tags: rfd:front-matter, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2177) 'tools: Read, Edit
+2026-09-02T00:00:07Z (RFD66606-2177) 'tools: Read, Edit
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:22Z (RFD66606-2177) '---
+2026-09-02T00:00:08Z (RFD66606-2177) '---
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:23Z (RFD66606-2177) '
+2026-09-02T00:00:09Z (RFD66606-2177) '
  # tags: rfd:front-matter
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:24Z (RFD66606-2177) 'Tag an RFD's altitude and find
+2026-09-02T00:00:10Z (RFD66606-2177) 'Tag an RFD's altitude and find all the strategy decisions at once.
  # tags: rfd:hook
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2177) 'all the strategy decisions at
- # tags: rfd:hook, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2177) 'once.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:27Z (RFD66606-2177) '
+2026-09-02T00:00:11Z (RFD66606-2177) '
  # tags: rfd:hook
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:28Z (RFD66606-2177) 'A reader wanting "all the
+2026-09-02T00:00:12Z (RFD66606-2177) 'A reader wanting "all the strategy decisions" must read every RFD and infer each altitude,
  # tags: rfd:intrigue
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:29Z (RFD66606-2177) 'strategy decisions" must read
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:30Z (RFD66606-2177) 'every RFD and infer each
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:31Z (RFD66606-2177) 'altitude,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:32Z (RFD66606-2177) 'because the register carries no
+2026-09-02T00:00:13Z (RFD66606-2177) 'because the register carries no field for it.
  # tags: rfd:intrigue
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:33Z (RFD66606-2177) 'field for it.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:34Z (RFD66606-2177) '
+2026-09-02T00:00:14Z (RFD66606-2177) '
  # tags: rfd:intrigue
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:35Z (RFD66606-2177) 'Run
+2026-09-02T00:00:15Z (RFD66606-2177) 'Run `scripts/render_flight_level_pages.py` after you add a `flight_level` tag, then check the
  # tags: rfd:exit
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:36Z (RFD66606-2177) '`scripts/render_flight_level_pages.py`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:37Z (RFD66606-2177) 'after you add a `flight_level`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:38Z (RFD66606-2177) 'tag, then check the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:39Z (RFD66606-2177) 'RFD appears on its per-level
+2026-09-02T00:00:16Z (RFD66606-2177) 'RFD appears on its per-level page. The sections below hold the tag schema and the citation.
  # tags: rfd:exit
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:40Z (RFD66606-2177) 'page. The sections below hold the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:41Z (RFD66606-2177) 'tag schema and the citation.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:42Z (RFD66606-2177) '
+2026-09-02T00:00:17Z (RFD66606-2177) '
  # tags: rfd:exit
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:43Z (RFD66606-2177) 'flight levels taxonomy
+2026-09-02T00:00:18Z (RFD66606-2177) 'flight levels taxonomy
  # tags: rfd:details-title
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:44Z (RFD66606-2177) 'Every RFD carries an optional
+2026-09-02T00:00:19Z (RFD66606-2177) 'Every RFD carries an optional `flight_level` tag, L1/L2/L3 (Flight Levels: execution / coordination / strategy), and three Quarto listings render from that tag; tagging is opt-in.
  # tags: rfd:decision
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:45Z (RFD66606-2177) '`flight_level` tag, L1/L2/L3
- # tags: rfd:decision, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:46Z (RFD66606-2177) '(Flight Levels: execution /
- # tags: rfd:decision, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:47Z (RFD66606-2177) 'coordination / strategy), and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:48Z (RFD66606-2177) 'three Quarto listings render from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:49Z (RFD66606-2177) 'that tag; tagging is opt-in.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:50Z (RFD66606-2177) '
+2026-09-02T00:00:20Z (RFD66606-2177) '
  # tags: rfd:decision
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:51Z (RFD66606-2177) 'RFD66606-1000 (RFD conventions),
+2026-09-02T00:00:21Z (RFD66606-2177) 'RFD66606-1000 (RFD conventions), RFD66606-1053 (OpenUSD internal format), RFD66606-2174
  # tags: rfd:related
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:52Z (RFD66606-2177) 'RFD66606-1053 (OpenUSD internal
- # tags: rfd:related, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:53Z (RFD66606-2177) 'format), RFD66606-2174
- # tags: rfd:related, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:54Z (RFD66606-2177) '(open-abandoned index) and
+2026-09-02T00:00:22Z (RFD66606-2177) '(open-abandoned index) and RFD66606-2176 (committed-terminal index): same pattern of one
  # tags: rfd:related
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:55Z (RFD66606-2177) 'RFD66606-2176 (committed-terminal
- # tags: rfd:related, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:56Z (RFD66606-2177) 'index): same pattern of one
- # tags: rfd:related, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:00:57Z (RFD66606-2177) 'document plus tag.
+2026-09-02T00:00:23Z (RFD66606-2177) 'document plus tag.
  # tags: rfd:related
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:58Z (RFD66606-2177) '
+2026-09-02T00:00:24Z (RFD66606-2177) '
  # tags: rfd:related
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:59Z (RFD66606-2177) 'Levels and rendering
+2026-09-02T00:00:25Z (RFD66606-2177) 'Levels and rendering
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:00Z (RFD66606-2177) '  L1  Operations    how a single
+2026-09-02T00:00:26Z (RFD66606-2177) '  L1  Operations    how a single team executes; fast cadence
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:01Z (RFD66606-2177) 'team executes; fast cadence
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:02Z (RFD66606-2177) '  L2  Coordination  how work
+2026-09-02T00:00:27Z (RFD66606-2177) '  L2  Coordination  how work flows across teams to deliver value
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:03Z (RFD66606-2177) 'flows across teams to deliver
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:04Z (RFD66606-2177) 'value
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:05Z (RFD66606-2177) '  L3  Strategy      portfolio
+2026-09-02T00:00:28Z (RFD66606-2177) '  L3  Strategy      portfolio decisions about where to invest
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:06Z (RFD66606-2177) 'decisions about where to invest
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:07Z (RFD66606-2177) '
+2026-09-02T00:00:29Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:08Z (RFD66606-2177) 'Numbering follows Klaus Leopold's
+2026-09-02T00:00:30Z (RFD66606-2177) 'Numbering follows Klaus Leopold's original: L1 is ground, L3 is altitude, matching the flight-altitude metaphor. The register is greenfield for this axis, so no earlier convention needs inverting.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:09Z (RFD66606-2177) 'original: L1 is ground, L3 is
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:10Z (RFD66606-2177) 'altitude, matching the
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:11Z (RFD66606-2177) 'flight-altitude metaphor. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:12Z (RFD66606-2177) 'register is greenfield for this
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:13Z (RFD66606-2177) 'axis, so no earlier convention
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:14Z (RFD66606-2177) 'needs inverting.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:15Z (RFD66606-2177) '
+2026-09-02T00:00:31Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:16Z (RFD66606-2177) '`scripts/render_flight_level_pages.py`
+2026-09-02T00:00:32Z (RFD66606-2177) '`scripts/render_flight_level_pages.py` reads the tag from every serial register and writes three Quarto listings under `pages/flight-level-{1,2,3}-*.qmd`. Navbar carries a Flight Levels dropdown. Untagged RFDs stay off the three pages.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:17Z (RFD66606-2177) 'reads the tag from every serial
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:18Z (RFD66606-2177) 'register and writes three Quarto
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:19Z (RFD66606-2177) 'listings under
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:20Z (RFD66606-2177) '`pages/flight-level-{1,2,3}-*.qmd`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:21Z (RFD66606-2177) 'Navbar carries a Flight Levels
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:22Z (RFD66606-2177) 'dropdown. Untagged RFDs stay off
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:23Z (RFD66606-2177) 'the three pages.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:24Z (RFD66606-2177) '
+2026-09-02T00:00:33Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:25Z (RFD66606-2177) 'See DETAILS.md for the tag
+2026-09-02T00:00:34Z (RFD66606-2177) 'See DETAILS.md for the tag schema, the render script's shape, and the Klaus Leopold citation.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:26Z (RFD66606-2177) 'schema, the render script's
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:27Z (RFD66606-2177) 'shape, and the Klaus Leopold
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:28Z (RFD66606-2177) 'citation.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:29Z (RFD66606-2177) '
+2026-09-02T00:00:35Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:30Z (RFD66606-2177) 'Tag schema
+2026-09-02T00:00:36Z (RFD66606-2177) 'Tag schema
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:31Z (RFD66606-2177) 'Every RFD entry in `SERIALS.usda`
+2026-09-02T00:00:37Z (RFD66606-2177) 'Every RFD entry in `SERIALS.usda` or `SERIALS-vsekai-fabric.usda` may
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:32Z (RFD66606-2177) 'or `SERIALS-vsekai-fabric.usda`
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:33Z (RFD66606-2177) 'may
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:34Z (RFD66606-2177) 'carry a `flight_level` field:
+2026-09-02T00:00:38Z (RFD66606-2177) 'carry a `flight_level` field:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:35Z (RFD66606-2177) '
+2026-09-02T00:00:39Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:36Z (RFD66606-2177) '```usda
+2026-09-02T00:00:40Z (RFD66606-2177) '```usda
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:37Z (RFD66606-2177) 'def "S2177" {
+2026-09-02T00:00:41Z (RFD66606-2177) 'def "S2177" {
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:38Z (RFD66606-2177) '    custom string slug =
+2026-09-02T00:00:42Z (RFD66606-2177) '    custom string slug = "flight-levels-taxonomy"
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:39Z (RFD66606-2177) '"flight-levels-taxonomy"
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:40Z (RFD66606-2177) '    custom string flight_level =
+2026-09-02T00:00:43Z (RFD66606-2177) '    custom string flight_level = "L3"    # optional: L1 | L2 | L3
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:41Z (RFD66606-2177) '"L3"    # optional: L1 | L2 | L3
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:42Z (RFD66606-2177) '}
+2026-09-02T00:00:44Z (RFD66606-2177) '}
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:43Z (RFD66606-2177) '```
+2026-09-02T00:00:45Z (RFD66606-2177) '```
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:44Z (RFD66606-2177) '
+2026-09-02T00:00:46Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:45Z (RFD66606-2177) 'Values are strings `"L1"`,
+2026-09-02T00:00:47Z (RFD66606-2177) 'Values are strings `"L1"`, `"L2"`, `"L3"`. Absent field means no
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:46Z (RFD66606-2177) '`"L2"`, `"L3"`. Absent field
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:47Z (RFD66606-2177) 'means no
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:48Z (RFD66606-2177) 'level classification; the RFD
+2026-09-02T00:00:48Z (RFD66606-2177) 'level classification; the RFD stays off the three per-level pages.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:49Z (RFD66606-2177) 'stays off the three per-level
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:50Z (RFD66606-2177) 'pages.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:51Z (RFD66606-2177) '
+2026-09-02T00:00:49Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:52Z (RFD66606-2177) 'Render script
+2026-09-02T00:00:50Z (RFD66606-2177) 'Render script
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:53Z (RFD66606-2177) '`scripts/render_flight_level_pages.py`
+2026-09-02T00:00:51Z (RFD66606-2177) '`scripts/render_flight_level_pages.py` reads the tag from every
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:54Z (RFD66606-2177) 'reads the tag from every
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:55Z (RFD66606-2177) 'serial register and writes three
+2026-09-02T00:00:52Z (RFD66606-2177) 'serial register and writes three files:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:56Z (RFD66606-2177) 'files:
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:01:57Z (RFD66606-2177) '
+2026-09-02T00:00:53Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:58Z (RFD66606-2177) '  pages/flight-level-1-operations.qmd
+2026-09-02T00:00:54Z (RFD66606-2177) '  pages/flight-level-1-operations.qmd
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:01:59Z (RFD66606-2177) '  pages/flight-level-2-coordination.qmd
+2026-09-02T00:00:55Z (RFD66606-2177) '  pages/flight-level-2-coordination.qmd
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:00Z (RFD66606-2177) '  pages/flight-level-3-strategy.qmd
+2026-09-02T00:00:56Z (RFD66606-2177) '  pages/flight-level-3-strategy.qmd
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:01Z (RFD66606-2177) '
+2026-09-02T00:00:57Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:02Z (RFD66606-2177) 'Each is a Quarto listing whose
+2026-09-02T00:00:58Z (RFD66606-2177) 'Each is a Quarto listing whose `contents:` names the `rfd/NNNN-slug/
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:03Z (RFD66606-2177) '`contents:` names the
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:04Z (RFD66606-2177) '`rfd/NNNN-slug/
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:05Z (RFD66606-2177) 'index.md` paths of the RFDs
+2026-09-02T00:00:59Z (RFD66606-2177) 'index.md` paths of the RFDs tagged at that level. The listing sorts
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:06Z (RFD66606-2177) 'tagged at that level. The listing
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:07Z (RFD66606-2177) 'sorts
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:08Z (RFD66606-2177) 'by RFD number descending, matches
+2026-09-02T00:01:00Z (RFD66606-2177) 'by RFD number descending, matches the format of `pages/rfd.qmd`, and
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:09Z (RFD66606-2177) 'the format of `pages/rfd.qmd`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:10Z (RFD66606-2177) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:11Z (RFD66606-2177) 'regenerates on every render pass.
+2026-09-02T00:01:01Z (RFD66606-2177) 'regenerates on every render pass.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:12Z (RFD66606-2177) '
+2026-09-02T00:01:02Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:13Z (RFD66606-2177) 'Klaus Leopold citation
+2026-09-02T00:01:03Z (RFD66606-2177) 'Klaus Leopold citation
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:14Z (RFD66606-2177) 'The Flight Levels model is Klaus
+2026-09-02T00:01:04Z (RFD66606-2177) 'The Flight Levels model is Klaus Leopold's, first published as an
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:15Z (RFD66606-2177) 'Leopold's, first published as an
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:16Z (RFD66606-2177) 'organizational-improvement
+2026-09-02T00:01:05Z (RFD66606-2177) 'organizational-improvement framework. Cite as:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:17Z (RFD66606-2177) 'framework. Cite as:
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:18Z (RFD66606-2177) '
+2026-09-02T00:01:06Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:19Z (RFD66606-2177) '```yaml
+2026-09-02T00:01:07Z (RFD66606-2177) '```yaml
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:20Z (RFD66606-2177) 'cff-version: 1.2.0
+2026-09-02T00:01:08Z (RFD66606-2177) 'cff-version: 1.2.0
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:21Z (RFD66606-2177) 'type: book
+2026-09-02T00:01:09Z (RFD66606-2177) 'type: book
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:22Z (RFD66606-2177) 'title: >-
+2026-09-02T00:01:10Z (RFD66606-2177) 'title: >-
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:23Z (RFD66606-2177) '  Rethinking Agile: Why Agile
+2026-09-02T00:01:11Z (RFD66606-2177) '  Rethinking Agile: Why Agile Teams Have Nothing To Do With Business
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:24Z (RFD66606-2177) 'Teams Have Nothing To Do With
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:25Z (RFD66606-2177) 'Business
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:26Z (RFD66606-2177) '  Agility
+2026-09-02T00:01:12Z (RFD66606-2177) '  Agility
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:27Z (RFD66606-2177) 'authors:
+2026-09-02T00:01:13Z (RFD66606-2177) 'authors:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:28Z (RFD66606-2177) ' , family-names: Leopold
+2026-09-02T00:01:14Z (RFD66606-2177) ' , family-names: Leopold
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:29Z (RFD66606-2177) '    given-names: Klaus
+2026-09-02T00:01:15Z (RFD66606-2177) '    given-names: Klaus
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:30Z (RFD66606-2177) 'year: 2018
+2026-09-02T00:01:16Z (RFD66606-2177) 'year: 2018
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:31Z (RFD66606-2177) 'publisher:
+2026-09-02T00:01:17Z (RFD66606-2177) 'publisher:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:32Z (RFD66606-2177) '  name: LEANability
+2026-09-02T00:01:18Z (RFD66606-2177) '  name: LEANability
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:33Z (RFD66606-2177) 'isbn: "978-3-903205-16-9"
+2026-09-02T00:01:19Z (RFD66606-2177) 'isbn: "978-3-903205-16-9"
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:34Z (RFD66606-2177) 'url:
+2026-09-02T00:01:20Z (RFD66606-2177) 'url: https://www.klausleopold.com/rethinking-agile
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:35Z (RFD66606-2177) 'https://www.klausleopold.com/rethinking-agile
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:36Z (RFD66606-2177) '```
+2026-09-02T00:01:21Z (RFD66606-2177) '```
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:37Z (RFD66606-2177) '
+2026-09-02T00:01:22Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:38Z (RFD66606-2177) 'Trade-offs recorded
+2026-09-02T00:01:23Z (RFD66606-2177) 'Trade-offs recorded
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:39Z (RFD66606-2177) '- **Tag, not new arc.** A
+2026-09-02T00:01:24Z (RFD66606-2177) '- **Tag, not new arc.** A structural namespace (site 5 = Level 1,
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:40Z (RFD66606-2177) 'structural namespace (site 5 =
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:41Z (RFD66606-2177) 'Level 1,
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:42Z (RFD66606-2177) '  site 6 = Level 2, site 7 =
+2026-09-02T00:01:25Z (RFD66606-2177) '  site 6 = Level 2, site 7 = Level 3) was on the table and dropped.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:43Z (RFD66606-2177) 'Level 3) was on the table and
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:44Z (RFD66606-2177) 'dropped.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:45Z (RFD66606-2177) '  A tag is a data axis; a site is
+2026-09-02T00:01:26Z (RFD66606-2177) '  A tag is a data axis; a site is a URN axis. Levels change more
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:46Z (RFD66606-2177) 'a URN axis. Levels change more
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:47Z (RFD66606-2177) '  often than URNs are allowed to,
+2026-09-02T00:01:27Z (RFD66606-2177) '  often than URNs are allowed to, so a tag fits the churn.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:48Z (RFD66606-2177) 'so a tag fits the churn.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:49Z (RFD66606-2177) '- **Optional, not required.**
+2026-09-02T00:01:28Z (RFD66606-2177) '- **Optional, not required.** Untagged RFDs stay in the register.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:50Z (RFD66606-2177) 'Untagged RFDs stay in the
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:51Z (RFD66606-2177) 'register.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:52Z (RFD66606-2177) '  Retrofitting 176 existing RFDs
+2026-09-02T00:01:29Z (RFD66606-2177) '  Retrofitting 176 existing RFDs at once loses more than it gains.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:53Z (RFD66606-2177) 'at once loses more than it gains.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:54Z (RFD66606-2177) '- **Leopold's numbering (L1 =
+2026-09-02T00:01:30Z (RFD66606-2177) '- **Leopold's numbering (L1 = ops, L3 = strategy).** Renumbering him
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:55Z (RFD66606-2177) 'ops, L3 = strategy).**
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:56Z (RFD66606-2177) 'Renumbering him
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:57Z (RFD66606-2177) '  to match
+2026-09-02T00:01:31Z (RFD66606-2177) '  to match RFD-serial-lower-is-more-foundational was proposed and
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:02:58Z (RFD66606-2177) 'RFD-serial-lower-is-more-foundational
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:02:59Z (RFD66606-2177) 'was proposed and
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:03:00Z (RFD66606-2177) '  rejected: the flight-altitude
+2026-09-02T00:01:32Z (RFD66606-2177) '  rejected: the flight-altitude metaphor is the naming, and a
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:01Z (RFD66606-2177) 'metaphor is the naming, and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:03:02Z (RFD66606-2177) '  greenfield tag has no reason to
+2026-09-02T00:01:33Z (RFD66606-2177) '  greenfield tag has no reason to invert its source.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:03Z (RFD66606-2177) 'invert its source.
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:03:04Z (RFD66606-2177) '
+2026-09-02T00:01:34Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:05Z (RFD66606-2177) 'The problem
+2026-09-02T00:01:35Z (RFD66606-2177) 'The problem
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:06Z (RFD66606-2177) 'An RFD describes a decision at
+2026-09-02T00:01:36Z (RFD66606-2177) 'An RFD describes a decision at some altitude of work (portfolio bet, cross-team coordination,
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:07Z (RFD66606-2177) 'some altitude of work (portfolio
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:03:08Z (RFD66606-2177) 'bet, cross-team coordination,
- # tags: rfd:details, rfd:wrap
- Text:RFD2177  1 LINE
- Text:Written
-
-2026-09-02T00:03:09Z (RFD66606-2177) 'or a single team's execution).
+2026-09-02T00:01:37Z (RFD66606-2177) 'or a single team's execution).
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:03:10Z (RFD66606-2177) '
+2026-09-02T00:01:38Z (RFD66606-2177) '
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written

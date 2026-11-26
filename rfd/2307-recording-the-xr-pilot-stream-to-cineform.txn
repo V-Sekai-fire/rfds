@@ -4,807 +4,382 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-09T00:00:01Z (RFD66606-2307) 'XR Pilot keeps the runtime's
+2026-10-09T00:00:01Z (RFD66606-2307) 'XR Pilot keeps the runtime's PyroWave packets as they arrive and a separate
  # tags: rfd:feature
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:02Z (RFD66606-2307) 'PyroWave packets as they arrive
- # tags: rfd:feature, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:03Z (RFD66606-2307) 'and a separate
- # tags: rfd:feature, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:04Z (RFD66606-2307) 'step decodes them on an idle GPU
+2026-10-09T00:00:02Z (RFD66606-2307) 'step decodes them on an idle GPU into a CineForm intermediate
  # tags: rfd:feature
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:05Z (RFD66606-2307) 'into a CineForm intermediate
- # tags: rfd:feature, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:06Z (RFD66606-2307) 'XR Pilot and its MCP server, the
+2026-10-09T00:00:03Z (RFD66606-2307) 'XR Pilot and its MCP server, the pyro2cfhd and frames2cfhd tools, the CineForm SDK
  # tags: rfd:scope
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:07Z (RFD66606-2307) 'pyro2cfhd and frames2cfhd tools,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:08Z (RFD66606-2307) 'the CineForm SDK
- # tags: rfd:scope, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:09Z (RFD66606-2307) 'build, and the av1mkv delivery of
+2026-10-09T00:00:04Z (RFD66606-2307) 'build, and the av1mkv delivery of a recording
  # tags: rfd:scope
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:10Z (RFD66606-2307) 'a recording
- # tags: rfd:scope, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:11Z (RFD66606-2307) 'A recording keeps the runtime's
+2026-10-09T00:00:05Z (RFD66606-2307) 'A recording keeps the runtime's own video stream and encodes it later on an idle GPU.
  # tags: rfd:hook
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:12Z (RFD66606-2307) 'own video stream and encodes it
- # tags: rfd:hook, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:13Z (RFD66606-2307) 'later on an idle GPU.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:14Z (RFD66606-2307) '
+2026-10-09T00:00:06Z (RFD66606-2307) '
  # tags: rfd:hook
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:15Z (RFD66606-2307) 'Encoding live on the VR GPU would
+2026-10-09T00:00:07Z (RFD66606-2307) 'Encoding live on the VR GPU would compete with the compositor, which an overload had
  # tags: rfd:intrigue
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:16Z (RFD66606-2307) 'compete with the compositor,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:17Z (RFD66606-2307) 'which an overload had
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:18Z (RFD66606-2307) 'already killed twice that day.
+2026-10-09T00:00:08Z (RFD66606-2307) 'already killed twice that day.
  # tags: rfd:intrigue
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:19Z (RFD66606-2307) '
+2026-10-09T00:00:09Z (RFD66606-2307) '
  # tags: rfd:intrigue
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:20Z (RFD66606-2307) 'The shared desk is run as the
+2026-10-09T00:00:10Z (RFD66606-2307) 'The shared desk is run as the open work below records.
  # tags: rfd:exit
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:21Z (RFD66606-2307) 'open work below records.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:22Z (RFD66606-2307) '
+2026-10-09T00:00:11Z (RFD66606-2307) '
  # tags: rfd:exit
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:23Z (RFD66606-2307) 'recording the xr pilot stream to
+2026-10-09T00:00:12Z (RFD66606-2307) 'recording the xr pilot stream to cineform
  # tags: rfd:details-title
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:24Z (RFD66606-2307) 'cineform
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:25Z (RFD66606-2307) 'A recording is the runtime's own
+2026-10-09T00:00:13Z (RFD66606-2307) 'A recording is the runtime's own video stream, not a screen capture. The
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:26Z (RFD66606-2307) 'video stream, not a screen
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:27Z (RFD66606-2307) 'capture. The
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:28Z (RFD66606-2307) 'pilot appends each PyroWave
+2026-10-09T00:00:14Z (RFD66606-2307) 'pilot appends each PyroWave packet to a `.pwrec` file with its presentation
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:29Z (RFD66606-2307) 'packet to a `.pwrec` file with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:30Z (RFD66606-2307) 'its presentation
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:31Z (RFD66606-2307) 'and receive times and does no
+2026-10-09T00:00:15Z (RFD66606-2307) 'and receive times and does no encoding while VR runs. A one-shot job later
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:32Z (RFD66606-2307) 'encoding while VR runs. A
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:33Z (RFD66606-2307) 'one-shot job later
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:34Z (RFD66606-2307) 'decodes the packets on the GPU
+2026-10-09T00:00:16Z (RFD66606-2307) 'decodes the packets on the GPU that is not driving VR and encodes CineForm
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:35Z (RFD66606-2307) 'that is not driving VR and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:36Z (RFD66606-2307) 'encodes CineForm
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:37Z (RFD66606-2307) 'on the CPU. The CineForm file is
+2026-10-09T00:00:17Z (RFD66606-2307) 'on the CPU. The CineForm file is the intermediate the delivery step wraps
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:38Z (RFD66606-2307) 'the intermediate the delivery
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:39Z (RFD66606-2307) 'step wraps
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:40Z (RFD66606-2307) 'as MKV with a `.cff` (operator,
+2026-10-09T00:00:18Z (RFD66606-2307) 'as MKV with a `.cff` (operator, 2026-10-09).
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:41Z (RFD66606-2307) '2026-10-09).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:42Z (RFD66606-2307) '
+2026-10-09T00:00:19Z (RFD66606-2307) '
  # tags: rfd:decision
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:43Z (RFD66606-2307) '- RFD66606-2303, the XR
+2026-10-09T00:00:20Z (RFD66606-2307) '- RFD66606-2303, the XR requirements; RFD66606-2365, the recording rules.
  # tags: rfd:related
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:44Z (RFD66606-2307) 'requirements; RFD66606-2365, the
- # tags: rfd:related, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:45Z (RFD66606-2307) 'recording rules.
- # tags: rfd:related, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:46Z (RFD66606-2307) '- RFD66606-2306, operating the
+2026-10-09T00:00:21Z (RFD66606-2307) '- RFD66606-2306, operating the shared desk; RFD66606-2302, the frame budget.
  # tags: rfd:related
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:47Z (RFD66606-2307) 'shared desk; RFD66606-2302, the
- # tags: rfd:related, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:48Z (RFD66606-2307) 'frame budget.
- # tags: rfd:related, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:49Z (RFD66606-2307) '
+2026-10-09T00:00:22Z (RFD66606-2307) '
  # tags: rfd:related
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:50Z (RFD66606-2307) 'Superseded by nut-based ffmpeg
+2026-10-09T00:00:23Z (RFD66606-2307) 'Superseded by nut-based ffmpeg recording
  # tags: rfd:details-heading
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:51Z (RFD66606-2307) 'recording
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:52Z (RFD66606-2307) 'Recording moved to nut-based
+2026-10-09T00:00:24Z (RFD66606-2307) 'Recording moved to nut-based ffmpeg and works, so this RFD is committed (operator, 2026-11-11).
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:53Z (RFD66606-2307) 'ffmpeg and works, so this RFD is
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:54Z (RFD66606-2307) 'committed (operator, 2026-11-11).
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:55Z (RFD66606-2307) 'The `.pwrec` and CineForm steps
+2026-10-09T00:00:25Z (RFD66606-2307) 'The `.pwrec` and CineForm steps below are the earlier design and stay as history.
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:56Z (RFD66606-2307) 'below are the earlier design and
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:57Z (RFD66606-2307) 'stay as history.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:00:58Z (RFD66606-2307) '
+2026-10-09T00:00:26Z (RFD66606-2307) '
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:00:59Z (RFD66606-2307) '
+2026-10-09T00:00:27Z (RFD66606-2307) '
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:00Z (RFD66606-2307) 'The packet file
+2026-10-09T00:00:28Z (RFD66606-2307) 'The packet file
  # tags: rfd:details-heading
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:01Z (RFD66606-2307) '`.pwrec` starts with the magic
+2026-10-09T00:00:29Z (RFD66606-2307) '`.pwrec` starts with the magic `PWREC`, two zero bytes and a version byte.
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:02Z (RFD66606-2307) '`PWREC`, two zero bytes and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:03Z (RFD66606-2307) 'version byte.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:04Z (RFD66606-2307) 'Each frame is a u64 presentation
+2026-10-09T00:00:30Z (RFD66606-2307) 'Each frame is a u64 presentation time in ns, a u64 receive time in ns, a u32
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:05Z (RFD66606-2307) 'time in ns, a u64 receive time in
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:06Z (RFD66606-2307) 'ns, a u32
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:07Z (RFD66606-2307) 'index, a u32 byte count and the
+2026-10-09T00:00:31Z (RFD66606-2307) 'index, a u32 byte count and the payload, at most 256 MiB. A pilot that
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:08Z (RFD66606-2307) 'payload, at most 256 MiB. A pilot
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:09Z (RFD66606-2307) 'that
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:10Z (RFD66606-2307) 'restarts writes the next file
+2026-10-09T00:00:32Z (RFD66606-2307) 'restarts writes the next file with `.1.pwrec`. `xr-pilot --record-stream`
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:11Z (RFD66606-2307) 'with `.1.pwrec`. `xr-pilot
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:12Z (RFD66606-2307) '--record-stream`
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:13Z (RFD66606-2307) 'and the MCP server's
+2026-10-09T00:00:33Z (RFD66606-2307) 'and the MCP server's `--record-stream <out>` write it.
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:14Z (RFD66606-2307) '`--record-stream <out>` write it.
- # tags: rfd:details, rfd:wrap
+2026-10-09T00:00:34Z (RFD66606-2307) '
+ # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
-2026-10-09T00:01:15Z (RFD66606-2307) '
+2026-10-09T00:00:35Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:36Z (RFD66606-2307) 'The decode step
+ # tags: rfd:details-heading
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:37Z (RFD66606-2307) '`pyro2cfhd <in.pwrec> <out.cfhd>` takes `--fps`, `--size`, `--quality` and
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:38Z (RFD66606-2307) '`--gpu` (a PCI vendor and device pair). It runs as a one-shot task on the
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:39Z (RFD66606-2307) 'GPU without VR. `frames2cfhd` does the same from PNG frames. Both share one
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:40Z (RFD66606-2307) 'fit and RIFF writer.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:41Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:42Z (RFD66606-2307) '- The CineForm RIFF file stops at 4 GB.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:43Z (RFD66606-2307) '- The MKV writer built with llvm-mingw fails past 2 GB.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:44Z (RFD66606-2307) '- Full-rate 4K therefore needs a container writer fix before it ships.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:45Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:46Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:47Z (RFD66606-2307) 'Building CineForm with MSVC
+ # tags: rfd:details-heading
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:48Z (RFD66606-2307) 'Two changes let the CineForm SDK build with MSVC on the desk:
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:49Z (RFD66606-2307) '`simd_compat.h` includes `malloc.h` for the aligned allocators, which MSVC
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:50Z (RFD66606-2307) 'has in place of `mm_malloc.h`; `lutpath.cpp` declares its registry value
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:51Z (RFD66606-2307) 'name `LPCTSTR`, so string literals assign to it under strict strings. The
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:52Z (RFD66606-2307) 'llvm-mingw build of av1mkv needs the toolchain's libc++ and libunwind DLLs
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:53Z (RFD66606-2307) 'beside it, or it exits with 0xc00004bc.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:54Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:55Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:56Z (RFD66606-2307) 'Motion that does not stutter
+ # tags: rfd:details-heading
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:57Z (RFD66606-2307) 'Walking was integrated in the 60 Hz window loop while the tracking sender ran
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:58Z (RFD66606-2307) 'at a fixed 90 Hz, so one packet in three repeated a pose. The sender now runs
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:00:59Z (RFD66606-2307) 'at the runtime's announced refresh rate, clamped to 60 to 144 Hz, and moves
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:00Z (RFD66606-2307) 'held keys by real elapsed time; the window applies mouse look only. The
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:01Z (RFD66606-2307) 'wheel scales walk speed by 1.25 per notch, from 0.25 to 8 m/s; with Shift
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:02Z (RFD66606-2307) 'it moves the hand's reach. A 3D head gizmo draws yaw and pitch as arcs, so a
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:03Z (RFD66606-2307) 'trace shows when the head looks straight up or down.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:04Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:05Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:06Z (RFD66606-2307) 'Open work
+ # tags: rfd:details-heading
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:07Z (RFD66606-2307) '- Run the `pyro2cfhd` self-test on the desk's second GPU, then record a real
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:08Z (RFD66606-2307) '  two-minute stream and deliver it.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:09Z (RFD66606-2307) '- Count compositor sync timeouts in the driver and give the sparklines fault
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:10Z (RFD66606-2307) '  thresholds, set from the sweep this RFD records.
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:11Z (RFD66606-2307) '
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:12Z (RFD66606-2307) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:13Z (RFD66606-2307) 'The first two-minute sweep was saved as left-eye PNG frames and encoded at
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:14Z (RFD66606-2307) '10 fps, because a full-rate 4K clip passes the size limits of the CineForm
+ # tags: rfd:details
+ Text:RFD2307  1 LINE
+ Text:Written
+
+2026-10-09T00:01:15Z (RFD66606-2307) 'RIFF writer and of the MKV writer built with llvm-mingw.
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written
 
 2026-10-09T00:01:16Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:17Z (RFD66606-2307) 'The decode step
- # tags: rfd:details-heading
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:18Z (RFD66606-2307) '`pyro2cfhd <in.pwrec> <out.cfhd>`
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:19Z (RFD66606-2307) 'takes `--fps`, `--size`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:20Z (RFD66606-2307) '`--quality` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:21Z (RFD66606-2307) '`--gpu` (a PCI vendor and device
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:22Z (RFD66606-2307) 'pair). It runs as a one-shot task
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:23Z (RFD66606-2307) 'on the
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:24Z (RFD66606-2307) 'GPU without VR. `frames2cfhd`
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:25Z (RFD66606-2307) 'does the same from PNG frames.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:26Z (RFD66606-2307) 'Both share one
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:27Z (RFD66606-2307) 'fit and RIFF writer.
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:28Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:29Z (RFD66606-2307) '- The CineForm RIFF file stops at
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:30Z (RFD66606-2307) '4 GB.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:31Z (RFD66606-2307) '- The MKV writer built with
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:32Z (RFD66606-2307) 'llvm-mingw fails past 2 GB.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:33Z (RFD66606-2307) '- Full-rate 4K therefore needs a
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:34Z (RFD66606-2307) 'container writer fix before it
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:35Z (RFD66606-2307) 'ships.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:36Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:37Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:38Z (RFD66606-2307) 'Building CineForm with MSVC
- # tags: rfd:details-heading
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:39Z (RFD66606-2307) 'Two changes let the CineForm SDK
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:40Z (RFD66606-2307) 'build with MSVC on the desk:
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:41Z (RFD66606-2307) '`simd_compat.h` includes
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:42Z (RFD66606-2307) '`malloc.h` for the aligned
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:43Z (RFD66606-2307) 'allocators, which MSVC
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:44Z (RFD66606-2307) 'has in place of `mm_malloc.h`;
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:45Z (RFD66606-2307) '`lutpath.cpp` declares its
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:46Z (RFD66606-2307) 'registry value
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:47Z (RFD66606-2307) 'name `LPCTSTR`, so string
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:48Z (RFD66606-2307) 'literals assign to it under
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:49Z (RFD66606-2307) 'strict strings. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:50Z (RFD66606-2307) 'llvm-mingw build of av1mkv needs
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:51Z (RFD66606-2307) 'the toolchain's libc++ and
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:52Z (RFD66606-2307) 'libunwind DLLs
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:53Z (RFD66606-2307) 'beside it, or it exits with
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:54Z (RFD66606-2307) '0xc00004bc.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:55Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:56Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:57Z (RFD66606-2307) 'Motion that does not stutter
- # tags: rfd:details-heading
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:58Z (RFD66606-2307) 'Walking was integrated in the 60
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:01:59Z (RFD66606-2307) 'Hz window loop while the tracking
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:00Z (RFD66606-2307) 'sender ran
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:01Z (RFD66606-2307) 'at a fixed 90 Hz, so one packet
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:02Z (RFD66606-2307) 'in three repeated a pose. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:03Z (RFD66606-2307) 'sender now runs
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:04Z (RFD66606-2307) 'at the runtime's announced
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:05Z (RFD66606-2307) 'refresh rate, clamped to 60 to
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:06Z (RFD66606-2307) '144 Hz, and moves
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:07Z (RFD66606-2307) 'held keys by real elapsed time;
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:08Z (RFD66606-2307) 'the window applies mouse look
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:09Z (RFD66606-2307) 'only. The
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:10Z (RFD66606-2307) 'wheel scales walk speed by 1.25
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:11Z (RFD66606-2307) 'per notch, from 0.25 to 8 m/s;
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:12Z (RFD66606-2307) 'with Shift
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:13Z (RFD66606-2307) 'it moves the hand's reach. A 3D
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:14Z (RFD66606-2307) 'head gizmo draws yaw and pitch as
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:15Z (RFD66606-2307) 'arcs, so a
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:16Z (RFD66606-2307) 'trace shows when the head looks
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:17Z (RFD66606-2307) 'straight up or down.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:18Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:19Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:20Z (RFD66606-2307) 'Open work
- # tags: rfd:details-heading
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:21Z (RFD66606-2307) '- Run the `pyro2cfhd` self-test
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:22Z (RFD66606-2307) 'on the desk's second GPU, then
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:23Z (RFD66606-2307) 'record a real
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:24Z (RFD66606-2307) '  two-minute stream and deliver
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:25Z (RFD66606-2307) 'it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:26Z (RFD66606-2307) '- Count compositor sync timeouts
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:27Z (RFD66606-2307) 'in the driver and give the
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:28Z (RFD66606-2307) 'sparklines fault
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:29Z (RFD66606-2307) '  thresholds, set from the sweep
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:30Z (RFD66606-2307) 'this RFD records.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:31Z (RFD66606-2307) '
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:32Z (RFD66606-2307) 'The problem
- # tags: rfd:details-heading
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:33Z (RFD66606-2307) 'The first two-minute sweep was
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:34Z (RFD66606-2307) 'saved as left-eye PNG frames and
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:35Z (RFD66606-2307) 'encoded at
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:36Z (RFD66606-2307) '10 fps, because a full-rate 4K
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:37Z (RFD66606-2307) 'clip passes the size limits of
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:38Z (RFD66606-2307) 'the CineForm
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:39Z (RFD66606-2307) 'RIFF writer and of the MKV writer
- # tags: rfd:details
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:40Z (RFD66606-2307) 'built with llvm-mingw.
- # tags: rfd:details, rfd:wrap
- Text:RFD2307  1 LINE
- Text:Written
-
-2026-10-09T00:02:41Z (RFD66606-2307) '
  # tags: rfd:details
  Text:RFD2307  1 LINE
  Text:Written

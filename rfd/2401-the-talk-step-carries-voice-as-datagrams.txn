@@ -4,347 +4,167 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2401) 'the talk step: voice encoded with
+2026-10-31T00:00:01Z (RFD66606-2401) 'the talk step: voice encoded with Opus and sent as datagrams.
  # tags: rfd:scope
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2401) 'Opus and sent as datagrams.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2401) 'Players hear each other at their
+2026-10-31T00:00:02Z (RFD66606-2401) 'Players hear each other at their avatars' heads through voice sent as datagrams.
  # tags: rfd:hook
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2401) 'avatars' heads through voice sent
- # tags: rfd:hook, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2401) 'as datagrams.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2401) '
+2026-10-31T00:00:03Z (RFD66606-2401) '
  # tags: rfd:hook
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2401) 'When one packet is dropped and
+2026-10-31T00:00:04Z (RFD66606-2401) 'When one packet is dropped and the expectation is kept, the result falls below the threshold.
  # tags: rfd:intrigue
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2401) 'the expectation is kept, the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2401) 'result falls below the threshold.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2401) '
+2026-10-31T00:00:05Z (RFD66606-2401) '
  # tags: rfd:intrigue
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2401) 'Run
+2026-10-31T00:00:06Z (RFD66606-2401) 'Run `tests/gate_voice_loopback.gd` and check that speech round-trips between the two clients.
  # tags: rfd:exit
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2401) '`tests/gate_voice_loopback.gd`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2401) 'and check that speech round-trips
- # tags: rfd:exit, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2401) 'between the two clients.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2401) '
+2026-10-31T00:00:07Z (RFD66606-2401) '
  # tags: rfd:exit
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2401) 'the talk step carries voice as
+2026-10-31T00:00:08Z (RFD66606-2401) 'the talk step carries voice as datagrams
  # tags: rfd:details-title
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2401) 'datagrams
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2401) '&{repo("interactor-voice")}: Opus
+2026-10-31T00:00:09Z (RFD66606-2401) '&{repo("interactor-voice")}: Opus 1.6.1 without `dnn/`, `celt/x86`, `celt/arm`,
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2401) '1.6.1 without `dnn/`, `celt/x86`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2401) '`celt/arm`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2401) 'rnnoise, AEC3 or libsamplerate,
+2026-10-31T00:00:10Z (RFD66606-2401) 'rnnoise, AEC3 or libsamplerate, with its own `opus_guest_config.h`;
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2401) 'with its own
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2401) '`opus_guest_config.h`;
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2401) '`voice_encode` on 960-sample
+2026-10-31T00:00:11Z (RFD66606-2401) '`voice_encode` on 960-sample frames at 48 kHz, `voice_push` and
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2401) 'frames at 48 kHz, `voice_push`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2401) 'and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2401) '`voice_pull` over a jitter buffer
+2026-10-31T00:00:12Z (RFD66606-2401) '`voice_pull` over a jitter buffer with packet-loss concealment, lifted
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2401) 'with packet-loss concealment,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2401) 'lifted
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2401) 'from `speech.cpp` onto std
+2026-10-31T00:00:13Z (RFD66606-2401) 'from `speech.cpp` onto std containers. The host sets
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2401) 'containers. The host sets
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2401) '`audio/driver/mix_rate=48000`,
+2026-10-31T00:00:14Z (RFD66606-2401) '`audio/driver/mix_rate=48000`, captures through `AudioEffectCapture`
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2401) 'captures through
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2401) '`AudioEffectCapture`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2401) 'on a Mic bus, sends packets as
+2026-10-31T00:00:15Z (RFD66606-2401) 'on a Mic bus, sends packets as `CH_VOICE` datagrams through the local
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2401) '`CH_VOICE` datagrams through the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2401) 'local
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2401) '`zone.elf`, and plays each remote
+2026-10-31T00:00:16Z (RFD66606-2401) '`zone.elf`, and plays each remote player at their avatar's head bone
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2401) 'player at their avatar's head
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2401) 'bone
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2401) 'through an `AudioStreamPlayer3D`
+2026-10-31T00:00:17Z (RFD66606-2401) 'through an `AudioStreamPlayer3D` fed by `voice_pull`.
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2401) 'fed by `voice_pull`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2401) '
+2026-10-31T00:00:18Z (RFD66606-2401) '
  # tags: rfd:decision
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2401) '- RFD66606-2293, where this rule
+2026-10-31T00:00:19Z (RFD66606-2401) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2401) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2401) '
+2026-10-31T00:00:20Z (RFD66606-2401) '
  # tags: rfd:related
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2401) 'Check and control
+2026-10-31T00:00:21Z (RFD66606-2401) 'Check and control
  # tags: rfd:details-heading
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2401) 'Check:
+2026-10-31T00:00:22Z (RFD66606-2401) 'Check: `tests/gate_voice_loopback.gd` round-trips speech between the
  # tags: rfd:details
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2401) '`tests/gate_voice_loopback.gd`
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2401) 'round-trips speech between the
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2401) 'two clients; the Lean property
+2026-10-31T00:00:23Z (RFD66606-2401) 'two clients; the Lean property decodes a frame and holds 15 dB SNR
  # tags: rfd:details
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2401) 'decodes a frame and holds 15 dB
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2401) 'SNR
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2401) 'against its input. Control: one
+2026-10-31T00:00:24Z (RFD66606-2401) 'against its input. Control: one packet dropped with the expectation
  # tags: rfd:details
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2401) 'packet dropped with the
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2401) 'expectation
- # tags: rfd:details, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2401) 'kept falls below the threshold.
+2026-10-31T00:00:25Z (RFD66606-2401) 'kept falls below the threshold.
  # tags: rfd:details
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2401) '
+2026-10-31T00:00:26Z (RFD66606-2401) '
  # tags: rfd:details
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2401) '2351
+2026-10-31T00:00:27Z (RFD66606-2401) '2351
  # tags: rebac:verbs-from
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2401) 'rfd-2401 provides
+2026-10-31T00:00:28Z (RFD66606-2401) 'rfd-2401 provides voice-datagram-transport
  # tags: rebac:relate
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:01Z (RFD66606-2401) 'voice-datagram-transport
- # tags: rebac:relate, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2401) 'rfd-2401 provides
+2026-10-31T00:00:29Z (RFD66606-2401) 'rfd-2401 provides spatial-voice-at-head
  # tags: rebac:relate
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2401) 'spatial-voice-at-head
- # tags: rebac:relate, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2401) 'rfd-2401 is_a guest-runtime
+2026-10-31T00:00:30Z (RFD66606-2401) 'rfd-2401 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2401) 'rfd-2401 spends guest-elf-double
+2026-10-31T00:00:31Z (RFD66606-2401) 'rfd-2401 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2401) 'rfd-2401 spends
+2026-10-31T00:00:32Z (RFD66606-2401) 'rfd-2401 spends guest-ca-capabilities-repos
  # tags: rebac:relate
  Text:RFD2401  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2401) 'guest-ca-capabilities-repos
- # tags: rebac:relate, rfd:wrap
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2401) 'rfd-2401 spends
+2026-10-31T00:00:33Z (RFD66606-2401) 'rfd-2401 spends zone-player-mode-elf
  # tags: rebac:relate
- Text:RFD2401  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2401) 'zone-player-mode-elf
- # tags: rebac:relate, rfd:wrap
  Text:RFD2401  1 LINE
  Text:Written

@@ -4,353 +4,353 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-08-31T00:00:01Z (RFD66606-2142) 'mTLS on the bao listener and
+2026-08-31T00:00:01Z (RFD66606-2142) 'mTLS on the bao listener and cert-based service auth
  # tags: rfd:feature
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:02Z (RFD66606-2142) 'cert-based service auth
- # tags: rfd:feature, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:03Z (RFD66606-2142) 'weftspun-bao, spot-broker,
+2026-08-31T00:00:02Z (RFD66606-2142) 'weftspun-bao, spot-broker, weft-warp-burrito
  # tags: rfd:scope
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:04Z (RFD66606-2142) 'weft-warp-burrito
- # tags: rfd:scope, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:05Z (RFD66606-2142) 'Services on 6PN authenticate to
+2026-08-31T00:00:03Z (RFD66606-2142) 'Services on 6PN authenticate to bao with a client certificate over TLS.
  # tags: rfd:hook
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:06Z (RFD66606-2142) 'bao with a client certificate
- # tags: rfd:hook, rfd:wrap
+2026-08-31T00:00:04Z (RFD66606-2142) '
+ # tags: rfd:hook
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:07Z (RFD66606-2142) 'over TLS.
- # tags: rfd:hook, rfd:wrap
+2026-08-31T00:00:05Z (RFD66606-2142) 'Services on 6PN read secrets from bao over plaintext HTTP. The root token in
+ # tags: rfd:intrigue
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:06Z (RFD66606-2142) '1Password is for emergencies; sharing it with services is the credential distribution
+ # tags: rfd:intrigue
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:07Z (RFD66606-2142) 'problem bao exists to solve.
+ # tags: rfd:intrigue
  Text:RFD2142  1 LINE
  Text:Written
 
 2026-08-31T00:00:08Z (RFD66606-2142) '
- # tags: rfd:hook
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:09Z (RFD66606-2142) 'Services on 6PN read secrets from
  # tags: rfd:intrigue
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:10Z (RFD66606-2142) 'bao over plaintext HTTP. The root
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:11Z (RFD66606-2142) 'token in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:12Z (RFD66606-2142) '1Password is for emergencies;
- # tags: rfd:intrigue
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:13Z (RFD66606-2142) 'sharing it with services is the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:14Z (RFD66606-2142) 'credential distribution
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:15Z (RFD66606-2142) 'problem bao exists to solve.
- # tags: rfd:intrigue
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:16Z (RFD66606-2142) '
- # tags: rfd:intrigue
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:17Z (RFD66606-2142) 'Before a service on 6PN logs in
+2026-08-31T00:00:09Z (RFD66606-2142) 'Before a service on 6PN logs in to bao, read RFD66606-2146 for the role and policy map it
  # tags: rfd:exit
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:18Z (RFD66606-2142) 'to bao, read RFD66606-2146 for
- # tags: rfd:exit, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:19Z (RFD66606-2142) 'the role and policy map it
- # tags: rfd:exit, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:20Z (RFD66606-2142) 'needs, and give it a client
+2026-08-31T00:00:10Z (RFD66606-2142) 'needs, and give it a client certificate.
  # tags: rfd:exit
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:21Z (RFD66606-2142) 'certificate.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:22Z (RFD66606-2142) '
+2026-08-31T00:00:11Z (RFD66606-2142) '
  # tags: rfd:exit
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:23Z (RFD66606-2142) 'Zero-trust service TLS via
+2026-08-31T00:00:12Z (RFD66606-2142) 'Zero-trust service TLS via OpenBao PKI
  # tags: rfd:details-title
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:24Z (RFD66606-2142) 'OpenBao PKI
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:25Z (RFD66606-2142) 'Implemented 2026-09-01; see
+2026-08-31T00:00:13Z (RFD66606-2142) 'Implemented 2026-09-01; see RFD66606-2146 for the role/policy map.
  # tags: rfd:decision
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:26Z (RFD66606-2142) 'RFD66606-2146 for the role/policy
- # tags: rfd:decision, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:27Z (RFD66606-2142) 'map.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:28Z (RFD66606-2142) '
+2026-08-31T00:00:14Z (RFD66606-2142) '
  # tags: rfd:decision
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:29Z (RFD66606-2142) '`DETAILS.md` carries the full
+2026-08-31T00:00:15Z (RFD66606-2142) '`DETAILS.md` carries the full text of this RFD.
  # tags: rfd:decision
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:30Z (RFD66606-2142) 'text of this RFD.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:31Z (RFD66606-2142) '
+2026-08-31T00:00:16Z (RFD66606-2142) '
  # tags: rfd:decision
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:32Z (RFD66606-2142) 'RFD66606-2140 (bao on FDB),
+2026-08-31T00:00:17Z (RFD66606-2142) 'RFD66606-2140 (bao on FDB), RFD66606-2141 (FDB TLS rotation).
  # tags: rfd:related
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:33Z (RFD66606-2142) 'RFD66606-2141 (FDB TLS rotation).
- # tags: rfd:related, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:34Z (RFD66606-2142) '
+2026-08-31T00:00:18Z (RFD66606-2142) '
  # tags: rfd:related
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:35Z (RFD66606-2142) 'Why a standalone root CA rather
+2026-08-31T00:00:19Z (RFD66606-2142) 'Why a standalone root CA rather than an intermediate
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:36Z (RFD66606-2142) 'than an intermediate
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:37Z (RFD66606-2142) 'The FDB root CA key
+2026-08-31T00:00:20Z (RFD66606-2142) 'The FDB root CA key (`fdb-ca.chibifire.com`, SHA-256 fingerprint
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:38Z (RFD66606-2142) '(`fdb-ca.chibifire.com`, SHA-256
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:39Z (RFD66606-2142) 'fingerprint
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:40Z (RFD66606-2142) '`89:20:69:EB:BF:AB:...`) was lost
+2026-08-31T00:00:21Z (RFD66606-2142) '`89:20:69:EB:BF:AB:...`) was lost twice. The first loss is
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:41Z (RFD66606-2142) 'twice. The first loss is
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:42Z (RFD66606-2142) 'documented in RFD66606-2141. The
+2026-08-31T00:00:22Z (RFD66606-2142) 'documented in RFD66606-2141. The second happened during this session:
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:43Z (RFD66606-2142) 'second happened during this
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:44Z (RFD66606-2142) 'session:
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:45Z (RFD66606-2142) '`op item create` returned item
+2026-08-31T00:00:23Z (RFD66606-2142) '`op item create` returned item IDs that do not correspond to any
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:46Z (RFD66606-2142) 'IDs that do not correspond to any
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:47Z (RFD66606-2142) 'persisted item. The `op item
+2026-08-31T00:00:24Z (RFD66606-2142) 'persisted item. The `op item edit` path (updating an existing item)
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:48Z (RFD66606-2142) 'edit` path (updating an existing
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:49Z (RFD66606-2142) 'item)
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:50Z (RFD66606-2142) 'did persist. The failure mode is
+2026-08-31T00:00:25Z (RFD66606-2142) 'did persist. The failure mode is a biometric timeout that `op`
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:51Z (RFD66606-2142) 'a biometric timeout that `op`
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:52Z (RFD66606-2142) 'reports as exit code 0 with an
+2026-08-31T00:00:26Z (RFD66606-2142) 'reports as exit code 0 with an item ID in stdout.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:53Z (RFD66606-2142) 'item ID in stdout.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:54Z (RFD66606-2142) '
+2026-08-31T00:00:27Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:55Z (RFD66606-2142) 'Chaining under the FDB CA would
+2026-08-31T00:00:28Z (RFD66606-2142) 'Chaining under the FDB CA would require the FDB CA key or another
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:56Z (RFD66606-2142) 'require the FDB CA key or another
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:57Z (RFD66606-2142) 'full cluster TLS rotation. Bao's
+2026-08-31T00:00:29Z (RFD66606-2142) 'full cluster TLS rotation. Bao's PKI engine generates and stores
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:00:58Z (RFD66606-2142) 'PKI engine generates and stores
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:00:59Z (RFD66606-2142) 'its own root key internally, so
+2026-08-31T00:00:30Z (RFD66606-2142) 'its own root key internally, so no external CA key is needed.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:00Z (RFD66606-2142) 'no external CA key is needed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:01Z (RFD66606-2142) '
+2026-08-31T00:00:31Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:02Z (RFD66606-2142) 'The two trust domains are
+2026-08-31T00:00:32Z (RFD66606-2142) 'The two trust domains are separate by design: the FDB CA gates
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:03Z (RFD66606-2142) 'separate by design: the FDB CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:04Z (RFD66606-2142) 'gates
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:05Z (RFD66606-2142) 'cluster membership (verify-peers
+2026-08-31T00:00:33Z (RFD66606-2142) 'cluster membership (verify-peers rule
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:06Z (RFD66606-2142) 'rule
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:07Z (RFD66606-2142) '`S.CN>=fdb-,S.CN<=.chibifire.com`),
+2026-08-31T00:00:34Z (RFD66606-2142) '`S.CN>=fdb-,S.CN<=.chibifire.com`), and bao's PKI gates service
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:08Z (RFD66606-2142) 'and bao's PKI gates service
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:09Z (RFD66606-2142) 'authentication to the secrets
+2026-08-31T00:00:35Z (RFD66606-2142) 'authentication to the secrets API.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:10Z (RFD66606-2142) 'API.
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:00:36Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:37Z (RFD66606-2142) 'Enabling the PKI secrets engine
+ # tags: rfd:details-heading
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:38Z (RFD66606-2142) 'Note: the `ttl=87600h` (10 years) and `max_ttl=8760h` (1 year) below
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:39Z (RFD66606-2142) 'were retracted by RFD66606-2145 on 2026-09-01. Current guidance:
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:40Z (RFD66606-2142) '`ttl=26280h` (3 years) on intermediates, `max_ttl=2160h` (90 days) on
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:41Z (RFD66606-2142) 'service leaves. The old values are kept where they stand so a reader
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:42Z (RFD66606-2142) 'following an older link sees the change; new deploys use RFD66606-2145's
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:43Z (RFD66606-2142) 'numbers.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:44Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:45Z (RFD66606-2142) '    bao secrets enable pki
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:46Z (RFD66606-2142) '    bao write pki/root/generate/internal \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:47Z (RFD66606-2142) '      common_name="svc-ca.chibifire.com" \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:48Z (RFD66606-2142) '      ttl=87600h   # 10 years
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:49Z (RFD66606-2142) '    bao write pki/config/urls \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:50Z (RFD66606-2142) '      issuing_certificates="https://weftspun-bao.internal:8200/v1/pki/ca" \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:51Z (RFD66606-2142) '      crl_distribution_points="https://weftspun-bao.internal:8200/v1/pki/crl"
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:52Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:53Z (RFD66606-2142) 'Issuing the bao listener cert
+ # tags: rfd:details-heading
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:54Z (RFD66606-2142) 'Create a role for the listener:
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:55Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:56Z (RFD66606-2142) '    bao write pki/roles/bao-listener \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:57Z (RFD66606-2142) '      allowed_domains="weftspun-bao.internal" \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:58Z (RFD66606-2142) '      allow_bare_domains=true \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:00:59Z (RFD66606-2142) '      max_ttl=8760h   # 1 year
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:00Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:01Z (RFD66606-2142) 'Issue the cert:
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:02Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:03Z (RFD66606-2142) '    bao write pki/issue/bao-listener \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:04Z (RFD66606-2142) '      common_name="weftspun-bao.internal" \
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:05Z (RFD66606-2142) '      ttl=8760h
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:06Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:07Z (RFD66606-2142) 'The certificate, private key, and CA chain are returned in the
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:08Z (RFD66606-2142) 'response. Store the cert and key as Fly secrets
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:09Z (RFD66606-2142) '`BAO_TLS_CERT_B64` and `BAO_TLS_KEY_B64`. Store the CA cert as
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:10Z (RFD66606-2142) '`BAO_TLS_CA_B64` (needed by clients to verify the listener).
+ # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
@@ -359,187 +359,187 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:12Z (RFD66606-2142) 'Enabling the PKI secrets engine
+2026-08-31T00:01:12Z (RFD66606-2142) 'Enabling TLS on the listener
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:13Z (RFD66606-2142) 'Note: the `ttl=87600h` (10 years)
+2026-08-31T00:01:13Z (RFD66606-2142) 'Update `config-fdb.hcl`:
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:14Z (RFD66606-2142) 'and `max_ttl=8760h` (1 year)
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:15Z (RFD66606-2142) 'below
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:16Z (RFD66606-2142) 'were retracted by RFD66606-2145
+2026-08-31T00:01:14Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:17Z (RFD66606-2142) 'on 2026-09-01. Current guidance:
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:18Z (RFD66606-2142) '`ttl=26280h` (3 years) on
+2026-08-31T00:01:15Z (RFD66606-2142) '    listener "tcp" {
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:19Z (RFD66606-2142) 'intermediates, `max_ttl=2160h`
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:20Z (RFD66606-2142) '(90 days) on
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:21Z (RFD66606-2142) 'service leaves. The old values
+2026-08-31T00:01:16Z (RFD66606-2142) '      address         = "[::]:8200"
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:22Z (RFD66606-2142) 'are kept where they stand so a
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:23Z (RFD66606-2142) 'reader
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:24Z (RFD66606-2142) 'following an older link sees the
+2026-08-31T00:01:17Z (RFD66606-2142) '      tls_disable     = false
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:25Z (RFD66606-2142) 'change; new deploys use
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:26Z (RFD66606-2142) 'RFD66606-2145's
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:27Z (RFD66606-2142) 'numbers.
+2026-08-31T00:01:18Z (RFD66606-2142) '      tls_cert_file   = "/bao/data/tls/listener-cert.pem"
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:28Z (RFD66606-2142) '
+2026-08-31T00:01:19Z (RFD66606-2142) '      tls_key_file    = "/bao/data/tls/listener-key.pem"
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:29Z (RFD66606-2142) '    bao secrets enable pki
+2026-08-31T00:01:20Z (RFD66606-2142) '      tls_client_ca_file = "/bao/data/tls/svc-ca.pem"
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:30Z (RFD66606-2142) '    bao write
+2026-08-31T00:01:21Z (RFD66606-2142) '      tls_require_and_verify_client_cert = true
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:31Z (RFD66606-2142) 'pki/root/generate/internal \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:32Z (RFD66606-2142) '      common_name="svc-ca.chibifire.com"
+2026-08-31T00:01:22Z (RFD66606-2142) '    }
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:33Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:34Z (RFD66606-2142) '      ttl=87600h   # 10 years
+2026-08-31T00:01:23Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:35Z (RFD66606-2142) '    bao write pki/config/urls \
+2026-08-31T00:01:24Z (RFD66606-2142) 'The entrypoint decodes `BAO_TLS_CERT_B64`, `BAO_TLS_KEY_B64`, and
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:36Z (RFD66606-2142) '      issuing_certificates="https://weftspun-bao.internal:8200/v1/pki/ca"
+2026-08-31T00:01:25Z (RFD66606-2142) '`BAO_TLS_CA_B64` to disk before starting bao, alongside the
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:37Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:38Z (RFD66606-2142) '      crl_distribution_points="https://weftspun-bao.internal:8200/v1/pki/crl"
+2026-08-31T00:01:26Z (RFD66606-2142) 'existing FDB client TLS material.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:39Z (RFD66606-2142) '
+2026-08-31T00:01:27Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:40Z (RFD66606-2142) 'Issuing the bao listener cert
+2026-08-31T00:01:28Z (RFD66606-2142) 'TLS cert auth backend
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:41Z (RFD66606-2142) 'Create a role for the listener:
+2026-08-31T00:01:29Z (RFD66606-2142) '    bao auth enable cert
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:42Z (RFD66606-2142) '
+2026-08-31T00:01:30Z (RFD66606-2142) '    bao write auth/cert/certs/spot-broker \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:43Z (RFD66606-2142) '    bao write
+2026-08-31T00:01:31Z (RFD66606-2142) '      display_name="spot-broker" \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:44Z (RFD66606-2142) 'pki/roles/bao-listener \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:45Z (RFD66606-2142) '      allowed_domains="weftspun-bao.internal"
+2026-08-31T00:01:32Z (RFD66606-2142) '      policies="spot-broker" \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:46Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:47Z (RFD66606-2142) '      allow_bare_domains=true \
+2026-08-31T00:01:33Z (RFD66606-2142) '      certificate=@svc-ca.pem \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:48Z (RFD66606-2142) '      max_ttl=8760h   # 1 year
+2026-08-31T00:01:34Z (RFD66606-2142) '      allowed_common_names="spot-broker.chibifire.com"
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:35Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:36Z (RFD66606-2142) 'Policy `spot-broker`:
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:37Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:38Z (RFD66606-2142) '    path "secret/data/vastai/*" {
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:39Z (RFD66606-2142) '      capabilities = ["read", "list"]
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:40Z (RFD66606-2142) '    }
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:41Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:42Z (RFD66606-2142) 'A service presenting a client cert with
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:43Z (RFD66606-2142) 'CN=spot-broker.chibifire.com signed by bao's PKI CA receives a
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:44Z (RFD66606-2142) 'token scoped to `secret/data/vastai/*` only. No root token leaves
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:45Z (RFD66606-2142) '1Password.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:46Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:47Z (RFD66606-2142) 'Service onboarding: spot-broker
+ # tags: rfd:details-heading
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:01:48Z (RFD66606-2142) '1. Issue a client cert:
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
@@ -549,172 +549,172 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:50Z (RFD66606-2142) 'Issue the cert:
+2026-08-31T00:01:50Z (RFD66606-2142) '       bao write pki/roles/spot-broker \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:51Z (RFD66606-2142) '
+2026-08-31T00:01:51Z (RFD66606-2142) '         allowed_domains="spot-broker.chibifire.com" \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:52Z (RFD66606-2142) '    bao write
+2026-08-31T00:01:52Z (RFD66606-2142) '         allow_bare_domains=true \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:53Z (RFD66606-2142) 'pki/issue/bao-listener \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:54Z (RFD66606-2142) '      common_name="weftspun-bao.internal"
+2026-08-31T00:01:53Z (RFD66606-2142) '         max_ttl=8760h
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:55Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:01:56Z (RFD66606-2142) '      ttl=8760h
+2026-08-31T00:01:54Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:57Z (RFD66606-2142) '
+2026-08-31T00:01:55Z (RFD66606-2142) '       bao write pki/issue/spot-broker \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:58Z (RFD66606-2142) 'The certificate, private key, and
+2026-08-31T00:01:56Z (RFD66606-2142) '         common_name="spot-broker.chibifire.com" \
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:01:59Z (RFD66606-2142) 'CA chain are returned in the
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:00Z (RFD66606-2142) 'response. Store the cert and key
+2026-08-31T00:01:57Z (RFD66606-2142) '         ttl=8760h
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:01Z (RFD66606-2142) 'as Fly secrets
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:02Z (RFD66606-2142) '`BAO_TLS_CERT_B64` and
+2026-08-31T00:01:58Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:03Z (RFD66606-2142) '`BAO_TLS_KEY_B64`. Store the CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:04Z (RFD66606-2142) 'cert as
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:05Z (RFD66606-2142) '`BAO_TLS_CA_B64` (needed by
+2026-08-31T00:01:59Z (RFD66606-2142) '2. Store cert/key as Fly secrets on spot-broker.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:06Z (RFD66606-2142) 'clients to verify the listener).
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:07Z (RFD66606-2142) '
+2026-08-31T00:02:00Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:08Z (RFD66606-2142) 'Enabling TLS on the listener
+2026-08-31T00:02:01Z (RFD66606-2142) '3. The entrypoint authenticates to bao via TLS cert auth, receives
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:02Z (RFD66606-2142) '   a scoped token, reads `secret/data/vastai/api`, and exports
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:03Z (RFD66606-2142) '   `VAST_API_KEY`. The Elixir code is unchanged.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:04Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:05Z (RFD66606-2142) '4. Elixir services that need dynamic secret access (lease renewal,
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:06Z (RFD66606-2142) '   cert rotation) use `libvault` (hex.pm, 14k recent downloads).
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:07Z (RFD66606-2142) '   For a static bearer token like the Vast.ai key, an entrypoint
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:08Z (RFD66606-2142) '   curl is sufficient.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:09Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:10Z (RFD66606-2142) 'The gate
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:09Z (RFD66606-2142) 'Update `config-fdb.hcl`:
+2026-08-31T00:02:11Z (RFD66606-2142) 'The gate asserts two properties:
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:10Z (RFD66606-2142) '
+2026-08-31T00:02:12Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:11Z (RFD66606-2142) '    listener "tcp" {
+2026-08-31T00:02:13Z (RFD66606-2142) '1. A plaintext HTTP request to `weftspun-bao.internal:8200` is
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:12Z (RFD66606-2142) '      address         =
+2026-08-31T00:02:14Z (RFD66606-2142) '   rejected (connection reset or TLS handshake error, not HTTP 200).
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:13Z (RFD66606-2142) '"[::]:8200"
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:14Z (RFD66606-2142) '      tls_disable     = false
+2026-08-31T00:02:15Z (RFD66606-2142) '2. A TLS request without a client cert, or with an expired cert,
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:15Z (RFD66606-2142) '      tls_cert_file   =
+2026-08-31T00:02:16Z (RFD66606-2142) '   returns 403 (not 200).
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:16Z (RFD66606-2142) '"/bao/data/tls/listener-cert.pem"
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:17Z (RFD66606-2142) '      tls_key_file    =
+2026-08-31T00:02:17Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:18Z (RFD66606-2142) '"/bao/data/tls/listener-key.pem"
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:19Z (RFD66606-2142) '      tls_client_ca_file =
+2026-08-31T00:02:18Z (RFD66606-2142) 'Both are negative controls. A gate that only checks "valid cert
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:20Z (RFD66606-2142) '"/bao/data/tls/svc-ca.pem"
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:21Z (RFD66606-2142) '      tls_require_and_verify_client_cert
+2026-08-31T00:02:19Z (RFD66606-2142) 'gets 200" passes when TLS is disabled entirely.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:22Z (RFD66606-2142) '= true
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:02:20Z (RFD66606-2142) '
+ # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:23Z (RFD66606-2142) '    }
+2026-08-31T00:02:21Z (RFD66606-2142) 'The 1Password `op item create` failure
+ # tags: rfd:details-heading
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:22Z (RFD66606-2142) 'Three `op item create` calls during this session returned exit
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:23Z (RFD66606-2142) 'code 0 and printed item IDs:
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
@@ -724,82 +724,82 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:25Z (RFD66606-2142) 'The entrypoint decodes
+2026-08-31T00:02:25Z (RFD66606-2142) '| returned ID                  | intended content         |
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:26Z (RFD66606-2142) '`BAO_TLS_CERT_B64`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:27Z (RFD66606-2142) '`BAO_TLS_KEY_B64`, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:28Z (RFD66606-2142) '`BAO_TLS_CA_B64` to disk before
+2026-08-31T00:02:26Z (RFD66606-2142) '|------------------------------|--------------------------|
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:29Z (RFD66606-2142) 'starting bao, alongside the
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:30Z (RFD66606-2142) 'existing FDB client TLS material.
+2026-08-31T00:02:27Z (RFD66606-2142) '| jw6rvt6zvfbb7hrxfkdwp5cdg4  | FDB CA private key       |
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:31Z (RFD66606-2142) '
+2026-08-31T00:02:28Z (RFD66606-2142) '| 4jzyphsx2w64gvr2m475sm4f4q  | bao KV tls-anchor backup |
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:32Z (RFD66606-2142) 'TLS cert auth backend
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:33Z (RFD66606-2142) '    bao auth enable cert
+2026-08-31T00:02:29Z (RFD66606-2142) '| honp7pukafh4g62hycaa7anddm  | bao KV blobstore backup  |
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:34Z (RFD66606-2142) '    bao write
+2026-08-31T00:02:30Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:35Z (RFD66606-2142) 'auth/cert/certs/spot-broker \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:36Z (RFD66606-2142) '      display_name="spot-broker"
+2026-08-31T00:02:31Z (RFD66606-2142) 'All three IDs return "isn't an item in any vault" on subsequent
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:37Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:38Z (RFD66606-2142) '      policies="spot-broker" \
+2026-08-31T00:02:32Z (RFD66606-2142) '`op item get`. The `op item edit` call to existing item
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:39Z (RFD66606-2142) '      certificate=@svc-ca.pem \
+2026-08-31T00:02:33Z (RFD66606-2142) '`d7fx6rayd6o43sie5joxinfyte` did persist; the difference is that
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:40Z (RFD66606-2142) '      allowed_common_names="spot-broker.chibifire.com"
+2026-08-31T00:02:34Z (RFD66606-2142) '`edit` updates an existing record while `create` allocates a new one,
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:35Z (RFD66606-2142) 'and the allocation silently fails when biometric authentication times
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:36Z (RFD66606-2142) 'out.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:37Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:38Z (RFD66606-2142) 'This is the second loss of the FDB CA key. The first (RFD66606-2141)
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:39Z (RFD66606-2142) 'was a scratchpad cleanup; the second is a credential store that
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:40Z (RFD66606-2142) 'reported success without persisting.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
@@ -809,8 +809,8 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:42Z (RFD66606-2142) 'Policy `spot-broker`:
- # tags: rfd:details
+2026-08-31T00:02:42Z (RFD66606-2142) 'From the README, moved here on 2026-09-07
+ # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
@@ -819,67 +819,67 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:44Z (RFD66606-2142) '    path "secret/data/vastai/*" {
+2026-08-31T00:02:44Z (RFD66606-2142) 'Decision
+ # tags: rfd:details-heading
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:45Z (RFD66606-2142) 'Implemented 2026-09-01; see RFD66606-2146 for the role/policy map.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:45Z (RFD66606-2142) '      capabilities = ["read",
+2026-08-31T00:02:46Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:46Z (RFD66606-2142) '"list"]
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:47Z (RFD66606-2142) '    }
+2026-08-31T00:02:47Z (RFD66606-2142) 'Bao's PKI secrets engine becomes a standalone root CA for service
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:48Z (RFD66606-2142) '
+2026-08-31T00:02:48Z (RFD66606-2142) 'auth. The FDB CA (`fdb-ca.chibifire.com`) stays separate for
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:49Z (RFD66606-2142) 'A service presenting a client
+2026-08-31T00:02:49Z (RFD66606-2142) 'cluster mutual TLS.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:50Z (RFD66606-2142) 'cert with
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:51Z (RFD66606-2142) 'CN=spot-broker.chibifire.com
+2026-08-31T00:02:50Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:52Z (RFD66606-2142) 'signed by bao's PKI CA receives a
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:02:53Z (RFD66606-2142) 'token scoped to
+2026-08-31T00:02:51Z (RFD66606-2142) '1. Mount `pki/` and generate a root CA inside bao.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:54Z (RFD66606-2142) '`secret/data/vastai/*` only. No
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:02:52Z (RFD66606-2142) '2. Issue a listener cert; enable TLS on `:8200`.
+ # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:55Z (RFD66606-2142) 'root token leaves
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:02:53Z (RFD66606-2142) '3. Enable the TLS cert auth backend. Each service presents a client
+ # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:56Z (RFD66606-2142) '1Password.
+2026-08-31T00:02:54Z (RFD66606-2142) '   cert signed by bao's PKI and receives a scoped token for its
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:55Z (RFD66606-2142) '   KV paths.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:56Z (RFD66606-2142) '4. Elixir services use `libvault` (hex.pm) as the vault client.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
@@ -889,822 +889,132 @@
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:58Z (RFD66606-2142) 'Service onboarding: spot-broker
+2026-08-31T00:02:58Z (RFD66606-2142) '**Gate:** bao rejects a plaintext request to `:8200`.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:02:59Z (RFD66606-2142) '**Negative control:** a request with no client cert, or with an
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:03:00Z (RFD66606-2142) 'expired cert, returns 403.
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:03:01Z (RFD66606-2142) '
+ # tags: rfd:details
+ Text:RFD2142  1 LINE
+ Text:Written
+
+2026-08-31T00:03:02Z (RFD66606-2142) 'Problem
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:02:59Z (RFD66606-2142) '1. Issue a client cert:
+2026-08-31T00:03:03Z (RFD66606-2142) 'Services on 6PN read secrets from bao over plaintext HTTP. The root
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:00Z (RFD66606-2142) '
+2026-08-31T00:03:04Z (RFD66606-2142) 'token in 1Password is for emergencies; sharing it with services is
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:01Z (RFD66606-2142) '       bao write
+2026-08-31T00:03:05Z (RFD66606-2142) 'the credential distribution problem bao exists to solve. Any 6PN
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:02Z (RFD66606-2142) 'pki/roles/spot-broker \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:03Z (RFD66606-2142) '         allowed_domains="spot-broker.chibifire.com"
+2026-08-31T00:03:06Z (RFD66606-2142) 'neighbor can observe or modify traffic to the listener.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:04Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:05Z (RFD66606-2142) '         allow_bare_domains=true
+2026-08-31T00:03:07Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:06Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:07Z (RFD66606-2142) '         max_ttl=8760h
+2026-08-31T00:03:08Z (RFD66606-2142) 'The FDB root CA key is lost a second time (the replacement from
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:08Z (RFD66606-2142) '
+2026-08-31T00:03:09Z (RFD66606-2142) 'RFD66606-2141 was stored via `op item create`, which returned an item ID but
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:09Z (RFD66606-2142) '       bao write
+2026-08-31T00:03:10Z (RFD66606-2142) 'did not persist the item). Chaining under that CA is not possible
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:10Z (RFD66606-2142) 'pki/issue/spot-broker \
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:11Z (RFD66606-2142) '         common_name="spot-broker.chibifire.com"
+2026-08-31T00:03:11Z (RFD66606-2142) 'without rotating FDB again.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:12Z (RFD66606-2142) '\
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:13Z (RFD66606-2142) '         ttl=8760h
+2026-08-31T00:03:12Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:14Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:15Z (RFD66606-2142) '2. Store cert/key as Fly secrets
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:16Z (RFD66606-2142) 'on spot-broker.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:17Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:18Z (RFD66606-2142) '3. The entrypoint authenticates
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:19Z (RFD66606-2142) 'to bao via TLS cert auth,
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:20Z (RFD66606-2142) 'receives
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:21Z (RFD66606-2142) '   a scoped token, reads
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:22Z (RFD66606-2142) '`secret/data/vastai/api`, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:23Z (RFD66606-2142) 'exports
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:24Z (RFD66606-2142) '   `VAST_API_KEY`. The Elixir
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:25Z (RFD66606-2142) 'code is unchanged.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:26Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:27Z (RFD66606-2142) '4. Elixir services that need
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:28Z (RFD66606-2142) 'dynamic secret access (lease
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:29Z (RFD66606-2142) 'renewal,
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:30Z (RFD66606-2142) '   cert rotation) use `libvault`
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:31Z (RFD66606-2142) '(hex.pm, 14k recent downloads).
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:32Z (RFD66606-2142) '   For a static bearer token like
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:33Z (RFD66606-2142) 'the Vast.ai key, an entrypoint
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:34Z (RFD66606-2142) '   curl is sufficient.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:35Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:36Z (RFD66606-2142) 'The gate
+2026-08-31T00:03:13Z (RFD66606-2142) 'Related
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:37Z (RFD66606-2142) 'The gate asserts two properties:
+2026-08-31T00:03:14Z (RFD66606-2142) 'RFD66606-2140 (bao on FDB), RFD66606-2141 (FDB TLS rotation).
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:38Z (RFD66606-2142) '
+2026-08-31T00:03:15Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:39Z (RFD66606-2142) '1. A plaintext HTTP request to
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:40Z (RFD66606-2142) '`weftspun-bao.internal:8200` is
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:41Z (RFD66606-2142) '   rejected (connection reset or
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:42Z (RFD66606-2142) 'TLS handshake error, not HTTP
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:43Z (RFD66606-2142) '200).
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:44Z (RFD66606-2142) '2. A TLS request without a client
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:45Z (RFD66606-2142) 'cert, or with an expired cert,
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:46Z (RFD66606-2142) '   returns 403 (not 200).
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:47Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:48Z (RFD66606-2142) 'Both are negative controls. A
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:49Z (RFD66606-2142) 'gate that only checks "valid cert
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:50Z (RFD66606-2142) 'gets 200" passes when TLS is
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:51Z (RFD66606-2142) 'disabled entirely.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:52Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:53Z (RFD66606-2142) 'The 1Password `op item create`
+2026-08-31T00:03:16Z (RFD66606-2142) 'The problem
  # tags: rfd:details-heading
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:54Z (RFD66606-2142) 'failure
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:55Z (RFD66606-2142) 'Three `op item create` calls
+2026-08-31T00:03:17Z (RFD66606-2142) 'Any 6PN neighbor can observe or modify traffic to the listener.
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:56Z (RFD66606-2142) 'during this session returned exit
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:57Z (RFD66606-2142) 'code 0 and printed item IDs:
+2026-08-31T00:03:18Z (RFD66606-2142) '
  # tags: rfd:details
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:03:58Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:03:59Z (RFD66606-2142) '| returned ID                  |
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:00Z (RFD66606-2142) 'intended content         |
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:01Z (RFD66606-2142) '|------------------------------|--------------------------|
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:02Z (RFD66606-2142) '| jw6rvt6zvfbb7hrxfkdwp5cdg4  |
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:03Z (RFD66606-2142) 'FDB CA private key       |
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:04Z (RFD66606-2142) '| 4jzyphsx2w64gvr2m475sm4f4q  |
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:05Z (RFD66606-2142) 'bao KV tls-anchor backup |
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:06Z (RFD66606-2142) '| honp7pukafh4g62hycaa7anddm  |
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:07Z (RFD66606-2142) 'bao KV blobstore backup  |
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:08Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:09Z (RFD66606-2142) 'All three IDs return "isn't an
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:10Z (RFD66606-2142) 'item in any vault" on subsequent
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:11Z (RFD66606-2142) '`op item get`. The `op item edit`
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:12Z (RFD66606-2142) 'call to existing item
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:13Z (RFD66606-2142) '`d7fx6rayd6o43sie5joxinfyte` did
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:14Z (RFD66606-2142) 'persist; the difference is that
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:15Z (RFD66606-2142) '`edit` updates an existing record
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:16Z (RFD66606-2142) 'while `create` allocates a new
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:17Z (RFD66606-2142) 'one,
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:18Z (RFD66606-2142) 'and the allocation silently fails
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:19Z (RFD66606-2142) 'when biometric authentication
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:20Z (RFD66606-2142) 'times
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:21Z (RFD66606-2142) 'out.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:22Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:23Z (RFD66606-2142) 'This is the second loss of the
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:24Z (RFD66606-2142) 'FDB CA key. The first
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:25Z (RFD66606-2142) '(RFD66606-2141)
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:26Z (RFD66606-2142) 'was a scratchpad cleanup; the
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:27Z (RFD66606-2142) 'second is a credential store that
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:28Z (RFD66606-2142) 'reported success without
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:29Z (RFD66606-2142) 'persisting.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:30Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:31Z (RFD66606-2142) 'From the README, moved here on
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:32Z (RFD66606-2142) '2026-09-07
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:33Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:34Z (RFD66606-2142) 'Decision
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:35Z (RFD66606-2142) 'Implemented 2026-09-01; see
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:36Z (RFD66606-2142) 'RFD66606-2146 for the role/policy
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:37Z (RFD66606-2142) 'map.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:38Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:39Z (RFD66606-2142) 'Bao's PKI secrets engine becomes
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:40Z (RFD66606-2142) 'a standalone root CA for service
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:41Z (RFD66606-2142) 'auth. The FDB CA
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:42Z (RFD66606-2142) '(`fdb-ca.chibifire.com`) stays
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:43Z (RFD66606-2142) 'separate for
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:44Z (RFD66606-2142) 'cluster mutual TLS.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:45Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:46Z (RFD66606-2142) '1. Mount `pki/` and generate a
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:47Z (RFD66606-2142) 'root CA inside bao.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:48Z (RFD66606-2142) '2. Issue a listener cert; enable
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:49Z (RFD66606-2142) 'TLS on `:8200`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:50Z (RFD66606-2142) '3. Enable the TLS cert auth
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:51Z (RFD66606-2142) 'backend. Each service presents a
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:52Z (RFD66606-2142) 'client
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:53Z (RFD66606-2142) '   cert signed by bao's PKI and
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:54Z (RFD66606-2142) 'receives a scoped token for its
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:55Z (RFD66606-2142) '   KV paths.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:56Z (RFD66606-2142) '4. Elixir services use `libvault`
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:57Z (RFD66606-2142) '(hex.pm) as the vault client.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:58Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:04:59Z (RFD66606-2142) '**Gate:** bao rejects a plaintext
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:00Z (RFD66606-2142) 'request to `:8200`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:01Z (RFD66606-2142) '**Negative control:** a request
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:02Z (RFD66606-2142) 'with no client cert, or with an
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:03Z (RFD66606-2142) 'expired cert, returns 403.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:04Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:05Z (RFD66606-2142) 'Problem
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:06Z (RFD66606-2142) 'Services on 6PN read secrets from
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:07Z (RFD66606-2142) 'bao over plaintext HTTP. The root
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:08Z (RFD66606-2142) 'token in 1Password is for
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:09Z (RFD66606-2142) 'emergencies; sharing it with
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:10Z (RFD66606-2142) 'services is
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:11Z (RFD66606-2142) 'the credential distribution
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:12Z (RFD66606-2142) 'problem bao exists to solve. Any
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:13Z (RFD66606-2142) '6PN
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:14Z (RFD66606-2142) 'neighbor can observe or modify
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:15Z (RFD66606-2142) 'traffic to the listener.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:16Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:17Z (RFD66606-2142) 'The FDB root CA key is lost a
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:18Z (RFD66606-2142) 'second time (the replacement from
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:19Z (RFD66606-2142) 'RFD66606-2141 was stored via `op
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:20Z (RFD66606-2142) 'item create`, which returned an
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:21Z (RFD66606-2142) 'item ID but
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:22Z (RFD66606-2142) 'did not persist the item).
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:23Z (RFD66606-2142) 'Chaining under that CA is not
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:24Z (RFD66606-2142) 'possible
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:25Z (RFD66606-2142) 'without rotating FDB again.
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:26Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:27Z (RFD66606-2142) 'Related
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:28Z (RFD66606-2142) 'RFD66606-2140 (bao on FDB),
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:29Z (RFD66606-2142) 'RFD66606-2141 (FDB TLS rotation).
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:30Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:31Z (RFD66606-2142) 'The problem
- # tags: rfd:details-heading
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:32Z (RFD66606-2142) 'Any 6PN neighbor can observe or
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:33Z (RFD66606-2142) 'modify traffic to the listener.
- # tags: rfd:details, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:34Z (RFD66606-2142) '
- # tags: rfd:details
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:35Z (RFD66606-2142) '2351
+2026-08-31T00:03:19Z (RFD66606-2142) '2351
  # tags: rebac:verbs-from
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:05:36Z (RFD66606-2142) 'rfd-2142 provides
+2026-08-31T00:03:20Z (RFD66606-2142) 'rfd-2142 provides bao-pki-service-tls
  # tags: rebac:relate
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:05:37Z (RFD66606-2142) 'bao-pki-service-tls
- # tags: rebac:relate, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:38Z (RFD66606-2142) 'rfd-2142 spends bao
+2026-08-31T00:03:21Z (RFD66606-2142) 'rfd-2142 spends bao
  # tags: rebac:relate
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:05:39Z (RFD66606-2142) 'rfd-2142 spends
+2026-08-31T00:03:22Z (RFD66606-2142) 'rfd-2142 spends x509-v3-cert-profile
  # tags: rebac:relate
  Text:RFD2142  1 LINE
  Text:Written
 
-2026-08-31T00:05:40Z (RFD66606-2142) 'x509-v3-cert-profile
- # tags: rebac:relate, rfd:wrap
- Text:RFD2142  1 LINE
- Text:Written
-
-2026-08-31T00:05:41Z (RFD66606-2142) 'rfd-2142 is_a security-control
+2026-08-31T00:03:23Z (RFD66606-2142) 'rfd-2142 is_a security-control
  # tags: rebac:relate
  Text:RFD2142  1 LINE
  Text:Written

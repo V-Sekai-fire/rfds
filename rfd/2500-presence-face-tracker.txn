@@ -4,1257 +4,492 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-21T00:00:01Z (RFD66606-2500) 'a face tracker for one wearer,
+2026-11-21T00:00:01Z (RFD66606-2500) 'a face tracker for one wearer, from a headcam and speech to Unified Expressions.
  # tags: rfd:feature
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:02Z (RFD66606-2500) 'from a headcam and speech to
- # tags: rfd:feature, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:03Z (RFD66606-2500) 'Unified Expressions.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:04Z (RFD66606-2500) 'the take format, the keypoint
+2026-11-21T00:00:02Z (RFD66606-2500) 'the take format, the keypoint head, the face policy, and the Hailo front end.
  # tags: rfd:scope
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:05Z (RFD66606-2500) 'head, the face policy, and the
- # tags: rfd:scope, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:06Z (RFD66606-2500) 'Hailo front end.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:07Z (RFD66606-2500) 'Can a muscle-driven policy track
+2026-11-21T00:00:03Z (RFD66606-2500) 'Can a muscle-driven policy track one person's face from a headcam and from speech, and also
  # tags: rfd:hook
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:08Z (RFD66606-2500) 'one person's face from a headcam
- # tags: rfd:hook, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:09Z (RFD66606-2500) 'and from speech, and also
- # tags: rfd:hook, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:10Z (RFD66606-2500) 'drive a persona that has no
+2026-11-21T00:00:04Z (RFD66606-2500) 'drive a persona that has no camera, with every model openly licensed and the face never stored?
  # tags: rfd:hook
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:11Z (RFD66606-2500) 'camera, with every model openly
- # tags: rfd:hook, rfd:wrap
+2026-11-21T00:00:05Z (RFD66606-2500) '
+ # tags: rfd:hook
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:12Z (RFD66606-2500) 'licensed and the face never
- # tags: rfd:hook, rfd:wrap
+2026-11-21T00:00:06Z (RFD66606-2500) 'The pieces now exist in parts. A skin patch under small forces responds as a membrane should.
+ # tags: rfd:intrigue
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:13Z (RFD66606-2500) 'stored?
- # tags: rfd:hook, rfd:wrap
+2026-11-21T00:00:07Z (RFD66606-2500) 'A take file written by an Elixir DSL round-trips 200 random takes exactly, and OpenUSD 0.26.5
+ # tags: rfd:intrigue
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:08Z (RFD66606-2500) 'opens it. The headcam gives an upright 768 by 1024 frame. The Hailo-10H is rated 40 TOPS at
+ # tags: rfd:intrigue
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:09Z (RFD66606-2500) 'INT4 and 20 at INT8. A keypoint head trained on synthetic renders scores 0.86 against a bar of
+ # tags: rfd:intrigue
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:10Z (RFD66606-2500) '0.80 on held-out renders, in one run. No face muscle model or policy exists yet.
+ # tags: rfd:intrigue
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:11Z (RFD66606-2500) '
+ # tags: rfd:intrigue
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:12Z (RFD66606-2500) 'Run the single build command in the take repository. It compiles, runs the tests, and has
+ # tags: rfd:exit
+ Text:RFD2500  1 LINE
+ Text:Written
+
+2026-11-21T00:00:13Z (RFD66606-2500) 'OpenUSD open a good take and refuse three broken ones.
+ # tags: rfd:exit
  Text:RFD2500  1 LINE
  Text:Written
 
 2026-11-21T00:00:14Z (RFD66606-2500) '
- # tags: rfd:hook
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:15Z (RFD66606-2500) 'The pieces now exist in parts. A
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:16Z (RFD66606-2500) 'skin patch under small forces
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:17Z (RFD66606-2500) 'responds as a membrane should.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:18Z (RFD66606-2500) 'A take file written by an Elixir
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:19Z (RFD66606-2500) 'DSL round-trips 200 random takes
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:20Z (RFD66606-2500) 'exactly, and OpenUSD 0.26.5
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:21Z (RFD66606-2500) 'opens it. The headcam gives an
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:22Z (RFD66606-2500) 'upright 768 by 1024 frame. The
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:23Z (RFD66606-2500) 'Hailo-10H is rated 40 TOPS at
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:24Z (RFD66606-2500) 'INT4 and 20 at INT8. A keypoint
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:25Z (RFD66606-2500) 'head trained on synthetic renders
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:26Z (RFD66606-2500) 'scores 0.86 against a bar of
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:27Z (RFD66606-2500) '0.80 on held-out renders, in one
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:28Z (RFD66606-2500) 'run. No face muscle model or
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:29Z (RFD66606-2500) 'policy exists yet.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:30Z (RFD66606-2500) '
- # tags: rfd:intrigue
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:31Z (RFD66606-2500) 'Run the single build command in
  # tags: rfd:exit
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:32Z (RFD66606-2500) 'the take repository. It compiles,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:33Z (RFD66606-2500) 'runs the tests, and has
- # tags: rfd:exit, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:34Z (RFD66606-2500) 'OpenUSD open a good take and
- # tags: rfd:exit
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:35Z (RFD66606-2500) 'refuse three broken ones.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:36Z (RFD66606-2500) '
- # tags: rfd:exit
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:37Z (RFD66606-2500) 'Measurements behind the face
+2026-11-21T00:00:15Z (RFD66606-2500) 'Measurements behind the face tracker plan
  # tags: rfd:details-title
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:38Z (RFD66606-2500) 'tracker plan
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:39Z (RFD66606-2500) 'The goal is a VRCFT tracker for
+2026-11-21T00:00:16Z (RFD66606-2500) 'The goal is a VRCFT tracker for the operator's own face, headcam to Unified Expressions, by a
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:40Z (RFD66606-2500) 'the operator's own face, headcam
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:41Z (RFD66606-2500) 'to Unified Expressions, by a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:42Z (RFD66606-2500) 'MuscleMimic-style policy that
+2026-11-21T00:00:17Z (RFD66606-2500) 'MuscleMimic-style policy that also runs with any input masked (operator, 2026-11-21).
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:43Z (RFD66606-2500) 'also runs with any input masked
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:44Z (RFD66606-2500) '(operator, 2026-11-21).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:45Z (RFD66606-2500) '- English comes first, and the
+2026-11-21T00:00:18Z (RFD66606-2500) '- English comes first, and the first slice is jaw and mouth from speech, driven by the TTS
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:46Z (RFD66606-2500) 'first slice is jaw and mouth from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:47Z (RFD66606-2500) 'speech, driven by the TTS
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:48Z (RFD66606-2500) '  text and timing (operator,
+2026-11-21T00:00:19Z (RFD66606-2500) '  text and timing (operator, 2026-11-21).
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:49Z (RFD66606-2500) '2026-11-21).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:50Z (RFD66606-2500) '- The operator's face is never
+2026-11-21T00:00:20Z (RFD66606-2500) '- The operator's face is never stored or trained on. It is scored live in memory, and only
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:51Z (RFD66606-2500) 'stored or trained on. It is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:52Z (RFD66606-2500) 'scored live in memory, and only
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:53Z (RFD66606-2500) '  numbers are written (operator,
+2026-11-21T00:00:21Z (RFD66606-2500) '  numbers are written (operator, 2026-11-21).
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:54Z (RFD66606-2500) '2026-11-21).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:55Z (RFD66606-2500) '- Stages exchange a take, one
+2026-11-21T00:00:22Z (RFD66606-2500) '- Stages exchange a take, one OpenUSD file. Take files are written in GDScript, C++ or an
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:56Z (RFD66606-2500) 'OpenUSD file. Take files are
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:57Z (RFD66606-2500) 'written in GDScript, C++ or an
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:00:58Z (RFD66606-2500) '  Elixir DSL, never Python
+2026-11-21T00:00:23Z (RFD66606-2500) '  Elixir DSL, never Python (operator, 2026-11-21).
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:00:59Z (RFD66606-2500) '(operator, 2026-11-21).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:00Z (RFD66606-2500) '- Data and weights are Apache,
+2026-11-21T00:00:24Z (RFD66606-2500) '- Data and weights are Apache, MIT or CC0 (operator, 2026-11-22). Training data are renders
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:01Z (RFD66606-2500) 'MIT or CC0 (operator,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:02Z (RFD66606-2500) '2026-11-22). Training data are
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:03Z (RFD66606-2500) 'renders
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:04Z (RFD66606-2500) '  and simulation.
+2026-11-21T00:00:25Z (RFD66606-2500) '  and simulation.
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:05Z (RFD66606-2500) '- The policy is a guest ELF
+2026-11-21T00:00:26Z (RFD66606-2500) '- The policy is a guest ELF trained on the RTX 4090. Reflexive networks go to the Hailo-10H
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:06Z (RFD66606-2500) 'trained on the RTX 4090.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:07Z (RFD66606-2500) 'Reflexive networks go to the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:08Z (RFD66606-2500) 'Hailo-10H
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:09Z (RFD66606-2500) '  when they fit, at 4-bit or
+2026-11-21T00:00:27Z (RFD66606-2500) '  when they fit, at 4-bit or lower, and exactness does not block them (operator, 2026-11-21).
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:10Z (RFD66606-2500) 'lower, and exactness does not
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:11Z (RFD66606-2500) 'block them (operator,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:12Z (RFD66606-2500) '2026-11-21).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:13Z (RFD66606-2500) '
+2026-11-21T00:00:28Z (RFD66606-2500) '
  # tags: rfd:decision
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:14Z (RFD66606-2500) '- RFD66606-2478 (ANNY-soma-x
+2026-11-21T00:00:29Z (RFD66606-2500) '- RFD66606-2478 (ANNY-soma-x keypoints), whose keypoint head this one extends to the face.
  # tags: rfd:related
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:15Z (RFD66606-2500) 'keypoints), whose keypoint head
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:16Z (RFD66606-2500) 'this one extends to the face.
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:17Z (RFD66606-2500) '- RFD66606-2327 (keypoints,
+2026-11-21T00:00:30Z (RFD66606-2500) '- RFD66606-2327 (keypoints, supports and contacts), the generic keypoint vocabulary.
  # tags: rfd:related
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:18Z (RFD66606-2500) 'supports and contacts), the
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:19Z (RFD66606-2500) 'generic keypoint vocabulary.
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:20Z (RFD66606-2500) '- RFD66606-2311 (serving Bonsai
+2026-11-21T00:00:31Z (RFD66606-2500) '- RFD66606-2311 (serving Bonsai 2), the quantization route for the 2-bit goal.
  # tags: rfd:related
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:21Z (RFD66606-2500) '2), the quantization route for
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:22Z (RFD66606-2500) 'the 2-bit goal.
- # tags: rfd:related, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:23Z (RFD66606-2500) '
+2026-11-21T00:00:32Z (RFD66606-2500) '
  # tags: rfd:related
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:24Z (RFD66606-2500) 'What was measured
+2026-11-21T00:00:33Z (RFD66606-2500) 'What was measured
  # tags: rfd:details-heading
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:25Z (RFD66606-2500) 'Skin patch: a 9 by 9 grid, 5
+2026-11-21T00:00:34Z (RFD66606-2500) 'Skin patch: a 9 by 9 grid, 5 millimetres apart (a little under a pencil's width) and 2 thick,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:26Z (RFD66606-2500) 'millimetres apart (a little under
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:27Z (RFD66606-2500) 'a pencil's width) and 2 thick,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:28Z (RFD66606-2500) 'border pinned, in MuJoCo 3.4.0 on
+2026-11-21T00:00:35Z (RFD66606-2500) 'border pinned, in MuJoCo 3.4.0 on CPU, stretch only. A free patch moved 6 to 23 millimetres,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:29Z (RFD66606-2500) 'CPU, stretch only. A free patch
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:30Z (RFD66606-2500) 'moved 6 to 23 millimetres,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:31Z (RFD66606-2500) 'from about a pencil's width to a
+2026-11-21T00:00:36Z (RFD66606-2500) 'from about a pencil's width to a bit more than a penny's width. At 20 kilopascals an in-plane
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:32Z (RFD66606-2500) 'bit more than a penny's width. At
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:33Z (RFD66606-2500) '20 kilopascals an in-plane
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:34Z (RFD66606-2500) 'push of 2 millinewtons moved the
+2026-11-21T00:00:37Z (RFD66606-2500) 'push of 2 millinewtons moved the centre 0.0756 millimetres (a tenth of a card's thickness),
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:35Z (RFD66606-2500) 'centre 0.0756 millimetres (a
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:36Z (RFD66606-2500) 'tenth of a card's thickness),
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:37Z (RFD66606-2500) 'and 4 millinewtons moved it twice
+2026-11-21T00:00:38Z (RFD66606-2500) 'and 4 millinewtons moved it twice as far. Ten times stiffer gave ten times less. A normal
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:38Z (RFD66606-2500) 'as far. Ten times stiffer gave
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:39Z (RFD66606-2500) 'ten times less. A normal
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:40Z (RFD66606-2500) 'push moved it 1.88 millimetres (a
+2026-11-21T00:00:39Z (RFD66606-2500) 'push moved it 1.88 millimetres (a little more than a penny's thickness), and doubling the
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:41Z (RFD66606-2500) 'little more than a penny's
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:42Z (RFD66606-2500) 'thickness), and doubling the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:43Z (RFD66606-2500) 'force gave 1.34 times that, near
+2026-11-21T00:00:40Z (RFD66606-2500) 'force gave 1.34 times that, near the 1.26 of a stretch-only membrane.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:44Z (RFD66606-2500) 'the 1.26 of a stretch-only
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:45Z (RFD66606-2500) 'membrane.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:46Z (RFD66606-2500) '
+2026-11-21T00:00:41Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:47Z (RFD66606-2500) 'Take format: 10 tests pass. 200
+2026-11-21T00:00:42Z (RFD66606-2500) 'Take format: 10 tests pass. 200 random takes, with quotes, newlines and non-Latin text,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:48Z (RFD66606-2500) 'random takes, with quotes,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:49Z (RFD66606-2500) 'newlines and non-Latin text,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:50Z (RFD66606-2500) 'decode to exactly what was
+2026-11-21T00:00:43Z (RFD66606-2500) 'decode to exactly what was written, and a writer that rounds floats fails two tests. A second
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:51Z (RFD66606-2500) 'written, and a writer that rounds
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:52Z (RFD66606-2500) 'floats fails two tests. A second
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:53Z (RFD66606-2500) 'write never replaces a file.
+2026-11-21T00:00:44Z (RFD66606-2500) 'write never replaces a file. OpenUSD 0.26.5 in the usd guest opened the good take, read its
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:54Z (RFD66606-2500) 'OpenUSD 0.26.5 in the usd guest
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:55Z (RFD66606-2500) 'opened the good take, read its
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:56Z (RFD66606-2500) 'layer data back, and refused a
+2026-11-21T00:00:45Z (RFD66606-2500) 'layer data back, and refused a missing bracket, a half file and plain text.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:01:57Z (RFD66606-2500) 'missing bracket, a half file and
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:58Z (RFD66606-2500) 'plain text.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:01:59Z (RFD66606-2500) '
+2026-11-21T00:00:46Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:00Z (RFD66606-2500) 'Hardware: the headcam opens only
+2026-11-21T00:00:47Z (RFD66606-2500) 'Hardware: the headcam opens only through the Media Foundation backend, upright, with the
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:01Z (RFD66606-2500) 'through the Media Foundation
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:02Z (RFD66606-2500) 'backend, upright, with the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:03Z (RFD66606-2500) 'right eye closing on the image's
+2026-11-21T00:00:48Z (RFD66606-2500) 'right eye closing on the image's left. Windows shows the Hailo-10H with firmware 5.5.0, and the
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:04Z (RFD66606-2500) 'left. Windows shows the Hailo-10H
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:05Z (RFD66606-2500) 'with firmware 5.5.0, and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:06Z (RFD66606-2500) 'compiler's TensorFlow and PyTorch
+2026-11-21T00:00:49Z (RFD66606-2500) 'compiler's TensorFlow and PyTorch both see the RTX 4090.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:07Z (RFD66606-2500) 'both see the RTX 4090.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:08Z (RFD66606-2500) '
+2026-11-21T00:00:50Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:09Z (RFD66606-2500) 'Keypoint head: RF-DETR's keypoint
+2026-11-21T00:00:51Z (RFD66606-2500) 'Keypoint head: RF-DETR's keypoint preview, fine-tuned for 40 epochs on 120 synthetic head
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:10Z (RFD66606-2500) 'preview, fine-tuned for 40 epochs
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:11Z (RFD66606-2500) 'on 120 synthetic head
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:12Z (RFD66606-2500) 'renders with 88 keypoints whose
+2026-11-21T00:00:52Z (RFD66606-2500) 'renders with 88 keypoints whose labels come from the mesh, seed 1, on the GPU only. A held-out
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:13Z (RFD66606-2500) 'labels come from the mesh, seed
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:14Z (RFD66606-2500) '1, on the GPU only. A held-out
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:15Z (RFD66606-2500) 'test of 24 renders (1,992 visible
+2026-11-21T00:00:53Z (RFD66606-2500) 'test of 24 renders (1,992 visible keypoints) is scored once per run, on the checkpoint that
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:16Z (RFD66606-2500) 'keypoints) is scored once per
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:17Z (RFD66606-2500) 'run, on the checkpoint that
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:18Z (RFD66606-2500) 'validation picks. PCK at 0.05
+2026-11-21T00:00:54Z (RFD66606-2500) 'validation picks. PCK at 0.05 (the share of visible keypoints within 0.05 of the face box's
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:19Z (RFD66606-2500) '(the share of visible keypoints
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:20Z (RFD66606-2500) 'within 0.05 of the face box's
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:21Z (RFD66606-2500) 'diagonal) is 0.86 overall with
+2026-11-21T00:00:55Z (RFD66606-2500) 'diagonal) is 0.86 overall with GPU image decoding, against 0.14 for a model-free control that
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:22Z (RFD66606-2500) 'GPU image decoding, against 0.14
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:23Z (RFD66606-2500) 'for a model-free control that
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:24Z (RFD66606-2500) 'places every point at its mean
+2026-11-21T00:00:56Z (RFD66606-2500) 'places every point at its mean position in the box. The four pitch bands (camera 0 to 10, 10
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:25Z (RFD66606-2500) 'position in the box. The four
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:26Z (RFD66606-2500) 'pitch bands (camera 0 to 10, 10
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:27Z (RFD66606-2500) 'to 20, 20 to 30 and 30 to 40
+2026-11-21T00:00:57Z (RFD66606-2500) 'to 20, 20 to 30 and 30 to 40 degrees below the face) score 0.72, 0.92, 0.88 and 0.88, masked
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:28Z (RFD66606-2500) 'degrees below the face) score
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:29Z (RFD66606-2500) '0.72, 0.92, 0.88 and 0.88, masked
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:30Z (RFD66606-2500) 'images 0.88 and bare ones 0.84.
+2026-11-21T00:00:58Z (RFD66606-2500) 'images 0.88 and bare ones 0.84. The same recipe with CPU image decoding scores 0.50, with
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:31Z (RFD66606-2500) 'The same recipe with CPU image
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:32Z (RFD66606-2500) 'decoding scores 0.50, with
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:33Z (RFD66606-2500) 'bands from 0.48 to 0.51. The two
+2026-11-21T00:00:59Z (RFD66606-2500) 'bands from 0.48 to 0.51. The two runs differ in the decoder. One of them was also restarted
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:34Z (RFD66606-2500) 'runs differ in the decoder. One
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:35Z (RFD66606-2500) 'of them was also restarted
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:36Z (RFD66606-2500) 'during training. The cause of the
+2026-11-21T00:01:00Z (RFD66606-2500) 'during training. The cause of the gap is unknown. The bar, set before training, is 0.80
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:37Z (RFD66606-2500) 'gap is unknown. The bar, set
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:38Z (RFD66606-2500) 'before training, is 0.80
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:39Z (RFD66606-2500) 'overall and 0.60 in every band.
+2026-11-21T00:01:01Z (RFD66606-2500) 'overall and 0.60 in every band.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:40Z (RFD66606-2500) '
+2026-11-21T00:01:02Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:41Z (RFD66606-2500) 'Label quality: a second split of
+2026-11-21T00:01:03Z (RFD66606-2500) 'Label quality: a second split of 480 renders (its own seed, sharing no image with the test,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:42Z (RFD66606-2500) '480 renders (its own seed,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:43Z (RFD66606-2500) 'sharing no image with the test,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:44Z (RFD66606-2500) 'validation or first split) has a
+2026-11-21T00:01:04Z (RFD66606-2500) 'validation or first split) has a median camera fit of 0.118 px. 22 of the 480 sit over 1 px,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:45Z (RFD66606-2500) 'median camera fit of 0.118 px. 22
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:46Z (RFD66606-2500) 'of the 480 sit over 1 px,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:47Z (RFD66606-2500) '11 over 2 px, and the worst is
+2026-11-21T00:01:05Z (RFD66606-2500) '11 over 2 px, and the worst is 4.2 px. A larger fit residual puts the label that far from the
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:48Z (RFD66606-2500) '4.2 px. A larger fit residual
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:49Z (RFD66606-2500) 'puts the label that far from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:50Z (RFD66606-2500) 'drawn feature. A 2020 study of
+2026-11-21T00:01:06Z (RFD66606-2500) 'drawn feature. A 2020 study of landmark annotation noise (arXiv 2007.15269) finds zero-mean
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:51Z (RFD66606-2500) 'landmark annotation noise (arXiv
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:52Z (RFD66606-2500) '2007.15269) finds zero-mean
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:53Z (RFD66606-2500) 'noise of up to 3 percent of the
+2026-11-21T00:01:07Z (RFD66606-2500) 'noise of up to 3 percent of the box does not lower accuracy and raises output jitter, and
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:54Z (RFD66606-2500) 'box does not lower accuracy and
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:55Z (RFD66606-2500) 'raises output jitter, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:56Z (RFD66606-2500) '4.2 px is about 1.3 percent of
+2026-11-21T00:01:08Z (RFD66606-2500) '4.2 px is about 1.3 percent of the box diagonal (an estimate). All 600 images stay in the mix
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:02:57Z (RFD66606-2500) 'the box diagonal (an estimate).
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:58Z (RFD66606-2500) 'All 600 images stay in the mix
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:02:59Z (RFD66606-2500) '(operator, 2026-11-22).
+2026-11-21T00:01:09Z (RFD66606-2500) '(operator, 2026-11-22).
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:00Z (RFD66606-2500) '
+2026-11-21T00:01:10Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:01Z (RFD66606-2500) '
+2026-11-21T00:01:11Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:02Z (RFD66606-2500) 'What was not measured
+2026-11-21T00:01:12Z (RFD66606-2500) 'What was not measured
  # tags: rfd:details-heading
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:03Z (RFD66606-2500) '- Whether any Hailo network
+2026-11-21T00:01:13Z (RFD66606-2500) '- Whether any Hailo network parses, optimizes or compiles, and its distance from float.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:04Z (RFD66606-2500) 'parses, optimizes or compiles,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:05Z (RFD66606-2500) 'and its distance from float.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:06Z (RFD66606-2500) '- The skin patch with bending, a
+2026-11-21T00:01:14Z (RFD66606-2500) '- The skin patch with bending, a solid, a jaw with muscles, or a GPU run.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:07Z (RFD66606-2500) 'solid, a jaw with muscles, or a
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:08Z (RFD66606-2500) 'GPU run.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:09Z (RFD66606-2500) '- The licence file inside the GNM
+2026-11-21T00:01:15Z (RFD66606-2500) '- The licence file inside the GNM weights, and the keypoint list.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:10Z (RFD66606-2500) 'weights, and the keypoint list.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:11Z (RFD66606-2500) '- Any policy, the residual FSQ
+2026-11-21T00:01:16Z (RFD66606-2500) '- Any policy, the residual FSQ latent, and 2-bit weights, whose recipe is undisclosed.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:12Z (RFD66606-2500) 'latent, and 2-bit weights, whose
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:13Z (RFD66606-2500) 'recipe is undisclosed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:14Z (RFD66606-2500) '- Reading the channel arrays back
+2026-11-21T00:01:17Z (RFD66606-2500) '- Reading the channel arrays back through OpenUSD. The guest reports counts and layer data.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:15Z (RFD66606-2500) 'through OpenUSD. The guest
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:16Z (RFD66606-2500) 'reports counts and layer data.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:17Z (RFD66606-2500) '- A live run on the operator's
+2026-11-21T00:01:18Z (RFD66606-2500) '- A live run on the operator's face, and the memory of the Hailo module in use.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:18Z (RFD66606-2500) 'face, and the memory of the Hailo
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:19Z (RFD66606-2500) 'module in use.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:20Z (RFD66606-2500) '- A second seed of the keypoint
+2026-11-21T00:01:19Z (RFD66606-2500) '- A second seed of the keypoint head, and any score from the 600-image mix run.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:21Z (RFD66606-2500) 'head, and any score from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:22Z (RFD66606-2500) '600-image mix run.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:23Z (RFD66606-2500) '
+2026-11-21T00:01:20Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:24Z (RFD66606-2500) 'Parked
+2026-11-21T00:01:21Z (RFD66606-2500) 'Parked
  # tags: rfd:details-heading
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:25Z (RFD66606-2500) 'Each item names why it waits and
+2026-11-21T00:01:22Z (RFD66606-2500) 'Each item names why it waits and what restarts it.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:26Z (RFD66606-2500) 'what restarts it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:27Z (RFD66606-2500) '- Mix run: training on the 600
+2026-11-21T00:01:23Z (RFD66606-2500) '- Mix run: training on the 600 renders (the first 120 plus the second split) is paused after
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:28Z (RFD66606-2500) 'renders (the first 120 plus the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:29Z (RFD66606-2500) 'second split) is paused after
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:30Z (RFD66606-2500) '  two of 40 epochs by a stop
+2026-11-21T00:01:24Z (RFD66606-2500) '  two of 40 epochs by a stop signal of unknown origin, and no score exists. It resumes when
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:31Z (RFD66606-2500) 'signal of unknown origin, and no
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:32Z (RFD66606-2500) 'score exists. It resumes when
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:33Z (RFD66606-2500) '  the operator releases it. Its
+2026-11-21T00:01:25Z (RFD66606-2500) '  the operator releases it. Its best checkpoint is then scored once on the same 24 test renders
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:34Z (RFD66606-2500) 'best checkpoint is then scored
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:35Z (RFD66606-2500) 'once on the same 24 test renders
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:36Z (RFD66606-2500) '  and compared with the 0.86
+2026-11-21T00:01:26Z (RFD66606-2500) '  and compared with the 0.86 above. More images and five times more optimizer steps change
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:37Z (RFD66606-2500) 'above. More images and five times
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:38Z (RFD66606-2500) 'more optimizer steps change
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:39Z (RFD66606-2500) '  together, so a gain cannot be
+2026-11-21T00:01:27Z (RFD66606-2500) '  together, so a gain cannot be credited to the data alone.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:40Z (RFD66606-2500) 'credited to the data alone.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:41Z (RFD66606-2500) '- Decoder gap: the 0.50 and the
+2026-11-21T00:01:28Z (RFD66606-2500) '- Decoder gap: the 0.50 and the 0.86 differ for a reason nobody has found. It resumes with a
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:42Z (RFD66606-2500) '0.86 differ for a reason nobody
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:43Z (RFD66606-2500) 'has found. It resumes with a
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:44Z (RFD66606-2500) '  clean rerun of the CPU-decoding
+2026-11-21T00:01:29Z (RFD66606-2500) '  clean rerun of the CPU-decoding recipe, with no restart.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:45Z (RFD66606-2500) 'recipe, with no restart.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:46Z (RFD66606-2500) '- Epoch timeline: AppSignal drops
+2026-11-21T00:01:30Z (RFD66606-2500) '- Epoch timeline: AppSignal drops the last epoch span of a run in three runs, though the sender
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:47Z (RFD66606-2500) 'the last epoch span of a run in
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:48Z (RFD66606-2500) 'three runs, though the sender
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:49Z (RFD66606-2500) '  reports success. It resumes
+2026-11-21T00:01:31Z (RFD66606-2500) '  reports success. It resumes when the span timeline is needed. The integrated follower sends
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:50Z (RFD66606-2500) 'when the span timeline is needed.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:51Z (RFD66606-2500) 'The integrated follower sends
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:52Z (RFD66606-2500) '  that span before the root span,
+2026-11-21T00:01:32Z (RFD66606-2500) '  that span before the root span, which tests the guess that a late arrival is dropped.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:53Z (RFD66606-2500) 'which tests the guess that a late
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:54Z (RFD66606-2500) 'arrival is dropped.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:55Z (RFD66606-2500) '- Portrait library: 1,499
+2026-11-21T00:01:33Z (RFD66606-2500) '- Portrait library: 1,499 AI-generated portraits under CC0, with a request not to redistribute
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:03:56Z (RFD66606-2500) 'AI-generated portraits under CC0,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:57Z (RFD66606-2500) 'with a request not to
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:58Z (RFD66606-2500) 'redistribute
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:03:59Z (RFD66606-2500) '  the files. Projecting one onto
+2026-11-21T00:01:34Z (RFD66606-2500) '  the files. Projecting one onto a head as a texture is refused (operator, 2026-11-22). A mesh
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:04:00Z (RFD66606-2500) 'a head as a texture is refused
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:01Z (RFD66606-2500) '(operator, 2026-11-22). A mesh
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:02Z (RFD66606-2500) '  fitted from detected landmarks
+2026-11-21T00:01:35Z (RFD66606-2500) '  fitted from detected landmarks gives labels only as good as the detector, and a photograph
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:04:03Z (RFD66606-2500) 'gives labels only as good as the
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:04Z (RFD66606-2500) 'detector, and a photograph
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:05Z (RFD66606-2500) '  has no truth to check against.
+2026-11-21T00:01:36Z (RFD66606-2500) '  has no truth to check against. It resumes after a landmark-driven fit on our own renders,
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:04:06Z (RFD66606-2500) 'It resumes after a
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:07Z (RFD66606-2500) 'landmark-driven fit on our own
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:08Z (RFD66606-2500) 'renders,
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:09Z (RFD66606-2500) '  where the truth is known,
+2026-11-21T00:01:37Z (RFD66606-2500) '  where the truth is known, scores inside the 0.05 bar.
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written
 
-2026-11-21T00:04:10Z (RFD66606-2500) 'scores inside the 0.05 bar.
- # tags: rfd:details, rfd:wrap
- Text:RFD2500  1 LINE
- Text:Written
-
-2026-11-21T00:04:11Z (RFD66606-2500) '
+2026-11-21T00:01:38Z (RFD66606-2500) '
  # tags: rfd:details
  Text:RFD2500  1 LINE
  Text:Written

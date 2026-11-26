@@ -4,377 +4,142 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2462) 'swap the vendored llama.cpp for
+2026-11-07T00:00:01Z (RFD66606-2462) 'swap the vendored llama.cpp for PrismML's prism branch to run DFlash n=6 on Heretic.
  # tags: rfd:feature
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2462) 'PrismML's prism branch to run
- # tags: rfd:feature, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2462) 'DFlash n=6 on Heretic.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2462) 'entities-godot's
+2026-11-07T00:00:02Z (RFD66606-2462) 'entities-godot's dev/language-model branch: thirdparty/llama_cpp and modules/llm.
  # tags: rfd:scope
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2462) 'dev/language-model branch:
- # tags: rfd:scope, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2462) 'thirdparty/llama_cpp and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2462) 'modules/llm.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2462) 'Can entities-godot's language
+2026-11-07T00:00:03Z (RFD66606-2462) 'Can entities-godot's language model branch adopt PrismML's prism branch whole, rather than by
  # tags: rfd:hook
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2462) 'model branch adopt PrismML's
- # tags: rfd:hook, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2462) 'prism branch whole, rather than
- # tags: rfd:hook, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2462) 'by
- # tags: rfd:hook, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2462) 'keyword-picked commits, and still
+2026-11-07T00:00:04Z (RFD66606-2462) 'keyword-picked commits, and still build and run speculative decoding end to end?
  # tags: rfd:hook
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2462) 'build and run speculative
- # tags: rfd:hook, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2462) 'decoding end to end?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2462) '
+2026-11-07T00:00:05Z (RFD66606-2462) '
  # tags: rfd:hook
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2462) 'Work already moved a vendored
+2026-11-07T00:00:06Z (RFD66606-2462) 'Work already moved a vendored llama.cpp tree onto PrismML's prism branch, which already
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2462) 'llama.cpp tree onto PrismML's
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2462) 'prism branch, which already
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2462) 'carries DFlash and DFlash2
+2026-11-07T00:00:07Z (RFD66606-2462) 'carries DFlash and DFlash2 speculative decoding plus PQ2_0 quantization and its CPU, CUDA, and
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2462) 'speculative decoding plus PQ2_0
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2462) 'quantization and its CPU, CUDA,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2462) 'and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2462) 'Metal kernels, roughly a hundred
+2026-11-07T00:00:08Z (RFD66606-2462) 'Metal kernels, roughly a hundred seventy commits behind upstream master. Picking commits by
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2462) 'seventy commits behind upstream
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2462) 'master. Picking commits by
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2462) 'keyword already failed once: it
+2026-11-07T00:00:09Z (RFD66606-2462) 'keyword already failed once: it missed the PQ2_0 repack commits, leaving a dependent AVX-512
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2462) 'missed the PQ2_0 repack commits,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2462) 'leaving a dependent AVX-512
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2462) 'kernel commit with nothing to
+2026-11-07T00:00:10Z (RFD66606-2462) 'kernel commit with nothing to apply to, which is why the whole branch is taken instead.
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2462) 'apply to, which is why the whole
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2462) 'branch is taken instead.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2462) 'TurboQuant is unshipped by
+2026-11-07T00:00:11Z (RFD66606-2462) 'TurboQuant is unshipped by operator decision, so its cache types and defaults were stripped
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2462) 'operator decision, so its cache
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2462) 'types and defaults were stripped
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2462) 'alongside the swap. None of this
+2026-11-07T00:00:12Z (RFD66606-2462) 'alongside the swap. None of this is pushed yet, and the engine's Metal build fails at the
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2462) 'is pushed yet, and the engine's
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2462) 'Metal build fails at the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2462) 'kernel embed step because the
+2026-11-07T00:00:13Z (RFD66606-2462) 'kernel embed step because the single metal file the old build step expected no longer exists.
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2462) 'single metal file the old build
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2462) 'step expected no longer exists.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2462) '
+2026-11-07T00:00:14Z (RFD66606-2462) '
  # tags: rfd:intrigue
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2462) 'Fix the Metal kernel embed step
+2026-11-07T00:00:15Z (RFD66606-2462) 'Fix the Metal kernel embed step for the new per-kernel layout, get a CPU and CUDA build green
  # tags: rfd:exit
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:43Z (RFD66606-2462) 'for the new per-kernel layout,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2462) 'get a CPU and CUDA build green
- # tags: rfd:exit, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2462) 'again, then run one end-to-end
+2026-11-07T00:00:16Z (RFD66606-2462) 'again, then run one end-to-end DFlash n=6 pass with the Heretic model on both the Mac and the
  # tags: rfd:exit
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2462) 'DFlash n=6 pass with the Heretic
- # tags: rfd:exit, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2462) 'model on both the Mac and the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2462) 'desk and record acceptance rate
+2026-11-07T00:00:17Z (RFD66606-2462) 'desk and record acceptance rate and tokens per second.
  # tags: rfd:exit
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2462) 'and tokens per second.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2462) '
+2026-11-07T00:00:18Z (RFD66606-2462) '
  # tags: rfd:exit
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2462) '- Keep the prism branch vendored
+2026-11-07T00:00:19Z (RFD66606-2462) '- Keep the prism branch vendored whole rather than cherry-picked, since a keyword-based pick
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2462) 'whole rather than cherry-picked,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2462) 'since a keyword-based pick
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2462) '  of commits already lost a
+2026-11-07T00:00:20Z (RFD66606-2462) '  of commits already lost a dependent kernel commit once.
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:55Z (RFD66606-2462) 'dependent kernel commit once.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:56Z (RFD66606-2462) '- Rework the Metal kernel build
+2026-11-07T00:00:21Z (RFD66606-2462) '- Rework the Metal kernel build step and its build script for the new per-kernel-file layout
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:00:57Z (RFD66606-2462) 'step and its build script for the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2462) 'new per-kernel-file layout
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2462) '  before attempting another Metal
+2026-11-07T00:00:22Z (RFD66606-2462) '  before attempting another Metal build, instead of patching around the missing single file.
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2462) 'build, instead of patching around
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2462) 'the missing single file.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2462) '- Run and record an end-to-end
+2026-11-07T00:00:23Z (RFD66606-2462) '- Run and record an end-to-end DFlash n=6 benchmark against Bonsai 2 Heretic on both the Metal
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2462) 'DFlash n=6 benchmark against
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2462) 'Bonsai 2 Heretic on both the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:05Z (RFD66606-2462) 'Metal
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2462) '  and CUDA paths before calling
+2026-11-07T00:00:24Z (RFD66606-2462) '  and CUDA paths before calling the migration verified, since no acceptance rate or speed
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:07Z (RFD66606-2462) 'the migration verified, since no
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:08Z (RFD66606-2462) 'acceptance rate or speed
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:09Z (RFD66606-2462) '  number exists yet.
+2026-11-07T00:00:25Z (RFD66606-2462) '  number exists yet.
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:10Z (RFD66606-2462) '- Once a build is green on all
+2026-11-07T00:00:26Z (RFD66606-2462) '- Once a build is green on all three backends, archive the prior dev/language-model tip under
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:11Z (RFD66606-2462) 'three backends, archive the prior
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:12Z (RFD66606-2462) 'dev/language-model tip under
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:13Z (RFD66606-2462) '  an archived branch name and
+2026-11-07T00:00:27Z (RFD66606-2462) '  an archived branch name and push the new tree in its place.
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written
 
-2026-11-07T00:01:14Z (RFD66606-2462) 'push the new tree in its place.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2462  1 LINE
- Text:Written
-
-2026-11-07T00:01:15Z (RFD66606-2462) '
+2026-11-07T00:00:28Z (RFD66606-2462) '
  # tags: rfd:decision
  Text:RFD2462  1 LINE
  Text:Written

@@ -4,1482 +4,762 @@
  RFD:Published  1 RFD
  Serials:Weftspun
 
-2026-08-25T00:00:01Z (RFD66606-1021) '`weftspun_studio/`,
+2026-08-25T00:00:01Z (RFD66606-1021) '`weftspun_studio/`, `weftspun/elixir-holographic-reduced-representation`
  # tags: rfd:scope
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1021) '`weftspun/elixir-holographic-reduced-representation`
- # tags: rfd:scope, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-1021) 'The studio core takes one shared
+2026-08-25T00:00:02Z (RFD66606-1021) 'The studio core takes one shared holographic algebra library as a Git dependency.
  # tags: rfd:hook
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1021) 'holographic algebra library as a
- # tags: rfd:hook, rfd:wrap
+2026-08-25T00:00:03Z (RFD66606-1021) '
+ # tags: rfd:hook
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1021) 'Git dependency.
- # tags: rfd:hook, rfd:wrap
+2026-08-25T00:00:04Z (RFD66606-1021) 'Two representations of one idea is one too many. The two also do not interoperate, because
+ # tags: rfd:intrigue
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1021) 'a vector from one carries no meaning in the other.
+ # tags: rfd:intrigue
  Text:RFD1021  1 LINE
  Text:Written
 
 2026-08-25T00:00:06Z (RFD66606-1021) '
- # tags: rfd:hook
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1021) 'Two representations of one idea
  # tags: rfd:intrigue
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1021) 'is one too many. The two also do
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1021) 'not interoperate, because
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1021) 'a vector from one carries no
- # tags: rfd:intrigue
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1021) 'meaning in the other.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1021) '
- # tags: rfd:intrigue
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1021) 'Run the golden fixture
+2026-08-25T00:00:07Z (RFD66606-1021) 'Run the golden fixture `test/fixtures/hrr_golden.json` and check parity with the Python
  # tags: rfd:exit
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1021) '`test/fixtures/hrr_golden.json`
- # tags: rfd:exit, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1021) 'and check parity with the Python
- # tags: rfd:exit, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1021) '`holographic.py` reference to
+2026-08-25T00:00:08Z (RFD66606-1021) '`holographic.py` reference to 1.0e-12. The sections below hold the rationale and the risks.
  # tags: rfd:exit
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1021) '1.0e-12. The sections below hold
- # tags: rfd:exit, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1021) 'the rationale and the risks.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1021) '
+2026-08-25T00:00:09Z (RFD66606-1021) '
  # tags: rfd:exit
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1021) 'A shared holographic algebra
+2026-08-25T00:00:10Z (RFD66606-1021) 'A shared holographic algebra library
  # tags: rfd:details-title
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1021) 'library
- # tags: rfd:details-title, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1021) '### Why the phase representation
+2026-08-25T00:00:11Z (RFD66606-1021) '### Why the phase representation wins
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1021) 'wins
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1021) '
+2026-08-25T00:00:12Z (RFD66606-1021) '
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1021) '| Point  | Phase representation                      |
+2026-08-25T00:00:13Z (RFD66606-1021) '| Point  | Phase representation                      | The earlier local module               |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1021) 'The earlier local module               |
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1021) '| ------ |
+2026-08-25T00:00:14Z (RFD66606-1021) '| ------ | ----------------------------------------- | -------------------------------------- |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1021) '-----------------------------------------
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1021) '|
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1021) '--------------------------------------
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1021) '|
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1021) '| Bind   | Adds phases. Cost is
+2026-08-25T00:00:15Z (RFD66606-1021) '| Bind   | Adds phases. Cost is linear.              | Multiplies spectra. Cost is `n log n`. |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1021) 'linear.              | Multiplies
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1021) 'spectra. Cost is `n log n`. |
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1021) '| Unbind | Subtracts phases.
+2026-08-25T00:00:16Z (RFD66606-1021) '| Unbind | Subtracts phases. Exact for every vector. | Exact only after a unitary correction. |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1021) 'Exact for every vector. | Exact
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1021) 'only after a unitary correction.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1021) '|
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1021) '| Atoms  | SHA-256 counter
+2026-08-25T00:00:17Z (RFD66606-1021) '| Atoms  | SHA-256 counter blocks.                   | A seeded normal draw.                  |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1021) 'blocks.                   | A
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1021) 'seeded normal draw.                  |
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1021) '| Parity | Matches a Python
+2026-08-25T00:00:18Z (RFD66606-1021) '| Parity | Matches a Python reference bit for bit.   | None.                                  |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1021) 'reference bit for bit.   | None.                                  |
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1021) '| Reuse  | Two repositories share
+2026-08-25T00:00:19Z (RFD66606-1021) '| Reuse  | Two repositories share it.                | One module in one repository.          |
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1021) 'it.                | One module
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1021) 'in one repository.          |
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1021) '
+2026-08-25T00:00:20Z (RFD66606-1021) '
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1021) 'The phase form is cheaper, it is
+2026-08-25T00:00:21Z (RFD66606-1021) 'The phase form is cheaper, it is exact without a correction step, and
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1021) 'exact without a correction step,
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1021) 'and
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1021) 'a second language can produce the
+2026-08-25T00:00:22Z (RFD66606-1021) 'a second language can produce the same vectors.
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1021) 'same vectors.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1021) '
+2026-08-25T00:00:23Z (RFD66606-1021) '
  # tags: rfd:details-preamble
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1021) '### What the library holds
+2026-08-25T00:00:24Z (RFD66606-1021) '### What the library holds
  # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:25Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:26Z (RFD66606-1021) '`HRR` holds `encode_atom/2`, `bind/2`, `unbind/2`, `bundle/1`,
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:27Z (RFD66606-1021) '`similarity/2`, `encode_text/2`, `to_binary/1`, `from_binary/1`, and
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:28Z (RFD66606-1021) '`snr_estimate/2`.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:29Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1021) '`HRR.Cleanup` is new. It holds the codebook and the nearest-symbol
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1021) 'lookup. Every caller of `unbind/2` needs that step, because an unbind
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1021) 'returns the filler plus superposition noise. Writing it once stops
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1021) 'three repositories from writing it again.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1021) '### What stays here
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1021) '`WeftspunStudio.FactVector` holds the part that knows what a catalog
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1021) 'fact is:
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1021) '- `encode/2` binds the id, the category, and the tags to their
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:41Z (RFD66606-1021) '  roles, then bundles the result.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:42Z (RFD66606-1021) '- `query/2` turns free text into a probe. A term may name any of
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1021) '  the three roles, so the probe binds it to all three.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1021) '- `codebook/2` and `probe/4` reach `HRR.Cleanup` with the symbols a
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1021) '  fact can resolve to.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-1021) 'The library knows nothing about catalogs. This module knows nothing
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1021) 'about phase arithmetic.
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1021) '
+ # tags: rfd:details-preamble
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1021) 'Extract the earlier port into a library, and depend on it.
+ # tags: rfd:decision
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1021) '
+ # tags: rfd:decision
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1021) 'The library is `weftspun/elixir-holographic-reduced-representation`,
+ # tags: rfd:decision
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1021) 'which supplies the `:hrr` application and the `HRR` module. The
+ # tags: rfd:decision
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1021) 'studio core takes it as a Git dependency.
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
 2026-08-25T00:00:55Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1021) '`HRR` holds `encode_atom/2`,
- # tags: rfd:details-preamble
+2026-08-25T00:00:56Z (RFD66606-1021) 'The algebra and the atom generation move over unchanged, so
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1021) '`bind/2`, `unbind/2`, `bundle/1`,
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:00:57Z (RFD66606-1021) '`test/fixtures/hrr_golden.json` still certifies parity with the
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1021) '`similarity/2`, `encode_text/2`,
- # tags: rfd:details-preamble
+2026-08-25T00:00:58Z (RFD66606-1021) 'Python `holographic.py` reference to 1.0e-12.
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1021) '`to_binary/1`, `from_binary/1`,
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:00:59Z (RFD66606-1021) '
+ # tags: rfd:decision
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1021) 'and
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:00Z (RFD66606-1021) 'Dimension
+ # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1021) '`snr_estimate/2`.
- # tags: rfd:details-preamble
+2026-08-25T00:01:01Z (RFD66606-1021) 'The library defaults to 4096. This project uses 1024.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
 2026-08-25T00:01:02Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1021) '`HRR.Cleanup` is new. It holds
- # tags: rfd:details-preamble
+2026-08-25T00:01:03Z (RFD66606-1021) 'A phase vector holds float64 values, so 4096 would take 32 kilobytes
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1021) 'the codebook and the
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:04Z (RFD66606-1021) 'a row. At 1024 a row takes 8 kilobytes. A fact bundles four parts,
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1021) 'nearest-symbol
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:05Z (RFD66606-1021) 'and the capacity at 1024 is about 32 items, so the smaller width
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1021) 'lookup. Every caller of
- # tags: rfd:details-preamble
+2026-08-25T00:01:06Z (RFD66606-1021) 'still leaves a wide margin.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1021) '`unbind/2` needs that step,
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:07Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1021) 'because an unbind
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:08Z (RFD66606-1021) 'Effects
+ # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1021) 'returns the filler plus
- # tags: rfd:details-preamble
+2026-08-25T00:01:09Z (RFD66606-1021) 'The stored vectors changed from 1024 float32 values to 1024 float64
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1021) 'superposition noise. Writing it
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:10Z (RFD66606-1021) 'phase angles. Migration `20260804010000` rewrites every row. Trust
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1021) 'once stops
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:11Z (RFD66606-1021) 'scores survive, because the vector comes from the other columns and
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1021) 'three repositories from writing
- # tags: rfd:details-preamble
+2026-08-25T00:01:12Z (RFD66606-1021) 'never from itself.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1021) 'it again.
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:13Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+2026-08-25T00:01:14Z (RFD66606-1021) '`mix ecto.migrate` starts the repository alone, so EXLA is not
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1021) '### What stays here
- # tags: rfd:details-preamble
+2026-08-25T00:01:15Z (RFD66606-1021) 'running. The migration therefore selects `Nx.BinaryBackend`. Phase
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+2026-08-25T00:01:16Z (RFD66606-1021) 'encoding uses hashing and arithmetic, so it needs no accelerator.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1021) '`WeftspunStudio.FactVector` holds
- # tags: rfd:details-preamble
+2026-08-25T00:01:17Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1021) 'the part that knows what a
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:18Z (RFD66606-1021) 'Retrieval quality held. A search for `uv_unwrapping` returns
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1021) 'catalog
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:19Z (RFD66606-1021) '`xatlas_uv_unwrapping` at 0.21, and the next result scores 0.015. A
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-1021) 'fact is:
- # tags: rfd:details-preamble
+2026-08-25T00:01:20Z (RFD66606-1021) 'probe of the `:category` role of `trellis_text_to_textured_mesh`
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+2026-08-25T00:01:21Z (RFD66606-1021) 'returns `text_to_textured_mesh` at 0.52.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1021) '- `encode/2` binds the id, the
- # tags: rfd:details-preamble
+2026-08-25T00:01:22Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1021) 'category, and the tags to their
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:23Z (RFD66606-1021) 'Risks
+ # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1021) '  roles, then bundles the result.
- # tags: rfd:details-preamble
+2026-08-25T00:01:24Z (RFD66606-1021) 'The library is a Git dependency, not a Hex package. A build therefore
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1021) '- `query/2` turns free text into
- # tags: rfd:details-preamble
+2026-08-25T00:01:25Z (RFD66606-1021) 'needs network access to GitHub. Publishing to Hex is a later step.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1021) 'a probe. A term may name any of
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:26Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-1021) '  the three roles, so the probe
- # tags: rfd:details-preamble
+2026-08-25T00:01:27Z (RFD66606-1021) 'The library stores radians, not turns. A radian phase is irrational,
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1021) 'binds it to all three.
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:28Z (RFD66606-1021) 'so the exactness result does not reach it. The measured cost is
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-1021) '- `codebook/2` and `probe/4`
- # tags: rfd:details-preamble
+2026-08-25T00:01:29Z (RFD66606-1021) '2.2e-15, which is 2.3e-11 of one grid step, and similarity after a
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-1021) 'reach `HRR.Cleanup` with the
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:30Z (RFD66606-1021) 'round trip reads 1.0. Turns would remove the gap and break the golden
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-1021) 'symbols a
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:31Z (RFD66606-1021) 'fixture, so the library keeps radians.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:32Z (RFD66606-1021) '  fact can resolve to.
- # tags: rfd:details-preamble
+2026-08-25T00:01:32Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+2026-08-25T00:01:33Z (RFD66606-1021) 'Proofs
+ # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:34Z (RFD66606-1021) 'The library knows nothing about
- # tags: rfd:details-preamble
+2026-08-25T00:01:34Z (RFD66606-1021) 'The earlier repository proved the algebra in Lean 4, then deleted the
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-1021) 'catalogs. This module knows
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:35Z (RFD66606-1021) 'proofs in commit 7303244 once the HRR code left it. The algebra now
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-1021) 'nothing
- # tags: rfd:details-preamble, rfd:wrap
+2026-08-25T00:01:36Z (RFD66606-1021) 'has a home again, so the proofs moved with it, into `formal/` of the
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-1021) 'about phase arithmetic.
- # tags: rfd:details-preamble
+2026-08-25T00:01:37Z (RFD66606-1021) 'library.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
 2026-08-25T00:01:38Z (RFD66606-1021) '
- # tags: rfd:details-preamble
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-1021) 'Extract the earlier port into a
- # tags: rfd:decision
+2026-08-25T00:01:39Z (RFD66606-1021) '`unbind_bind` and `bind_comm` transfer unchanged. `bind_assoc`,
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:40Z (RFD66606-1021) 'library, and depend on it.
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:40Z (RFD66606-1021) '`unbind_bind_left`, and the two grid bounds are new. Together they say
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-1021) '
- # tags: rfd:decision
+2026-08-25T00:01:41Z (RFD66606-1021) 'that binding is a commutative and associative group operation on
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-1021) 'The library is
- # tags: rfd:decision
+2026-08-25T00:01:42Z (RFD66606-1021) '`ℤ/65536`, and that unbinding inverts it exactly.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-1021) '`weftspun/elixir-holographic-reduced-representation`,
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:43Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-1021) 'which supplies the `:hrr`
- # tags: rfd:decision
+2026-08-25T00:01:44Z (RFD66606-1021) 'The cleanup recall walk from the same file did not move. It modelled
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:45Z (RFD66606-1021) 'application and the `HRR` module.
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:45Z (RFD66606-1021) '`Recommender.Memory.recommend`, which no longer exists, and it needed
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-1021) 'The
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:46Z (RFD66606-1021) '`fire/plausible-witness-dag`. The restored model needs no dependency,
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:47Z (RFD66606-1021) 'studio core takes it as a Git
- # tags: rfd:decision
+2026-08-25T00:01:47Z (RFD66606-1021) 'and no axiom beyond `propext` and `Quot.sound`.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:48Z (RFD66606-1021) 'dependency.
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:48Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:49Z (RFD66606-1021) '
- # tags: rfd:decision
+2026-08-25T00:01:49Z (RFD66606-1021) '`PhaseRat.lean` is new. It carries the grid result across to the
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:50Z (RFD66606-1021) 'The algebra and the atom
- # tags: rfd:decision
+2026-08-25T00:01:50Z (RFD66606-1021) 'arithmetic that runs it. A phase is a rational with a power-of-two
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:51Z (RFD66606-1021) 'generation move over unchanged,
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:51Z (RFD66606-1021) 'denominator, so component `k` stands for `k / 2^16` of a turn.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:52Z (RFD66606-1021) 'so
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:52Z (RFD66606-1021) 'Binary64 holds a value exactly while its significand stays under
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:53Z (RFD66606-1021) '`test/fixtures/hrr_golden.json`
- # tags: rfd:decision
+2026-08-25T00:01:53Z (RFD66606-1021) '`2^53`. Binding adds two numerators below `2^p`, so the exact sum
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:54Z (RFD66606-1021) 'still certifies parity with the
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:54Z (RFD66606-1021) 'needs `p + 1` bits, and `p = 16` leaves 36 bits spare. The addition
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:55Z (RFD66606-1021) 'Python `holographic.py` reference
- # tags: rfd:decision
+2026-08-25T00:01:55Z (RFD66606-1021) 'and the subtraction therefore never round.
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:56Z (RFD66606-1021) 'to 1.0e-12.
- # tags: rfd:decision, rfd:wrap
+2026-08-25T00:01:56Z (RFD66606-1021) '
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:57Z (RFD66606-1021) '
- # tags: rfd:decision
+2026-08-25T00:01:57Z (RFD66606-1021) 'Three bridge theorems tie that file to `HrrModel`, so the bounds
+ # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:58Z (RFD66606-1021) 'Dimension
+2026-08-25T00:01:58Z (RFD66606-1021) 'apply to the proved algebra and not to a lookalike.
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:01:59Z (RFD66606-1021) '
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:00Z (RFD66606-1021) 'Lean's `Float` is opaque and carries no formal semantics, so no proof
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:01Z (RFD66606-1021) 'mentions it. The theorems bound the significand, and the standard
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:02Z (RFD66606-1021) 'binary64 criterion does the rest.
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:03Z (RFD66606-1021) '
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:04Z (RFD66606-1021) 'Status
  # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:01:59Z (RFD66606-1021) 'The library defaults to 4096.
+2026-08-25T00:02:05Z (RFD66606-1021) 'Done:
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:00Z (RFD66606-1021) 'This project uses 1024.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:01Z (RFD66606-1021) '
+2026-08-25T00:02:06Z (RFD66606-1021) '
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-1021) 'A phase vector holds float64
+2026-08-25T00:02:07Z (RFD66606-1021) '- The library exists, with 22 tests. The golden parity tests pass.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:03Z (RFD66606-1021) 'values, so 4096 would take 32
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:04Z (RFD66606-1021) 'kilobytes
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1021) 'a row. At 1024 a row takes 8
+2026-08-25T00:02:08Z (RFD66606-1021) '- `WeftspunStudio.FactVector` replaces `WeftspunStudio.Hrr`.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:06Z (RFD66606-1021) 'kilobytes. A fact bundles four
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-1021) 'parts,
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1021) 'and the capacity at 1024 is about
+2026-08-25T00:02:09Z (RFD66606-1021) '- The migration rewrote all 29 rows to 8192 bytes each.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:09Z (RFD66606-1021) '32 items, so the smaller width
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:10Z (RFD66606-1021) 'still leaves a wide margin.
+2026-08-25T00:02:10Z (RFD66606-1021) '- The whole suite passes with 78 tests.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1021) '
+2026-08-25T00:02:11Z (RFD66606-1021) '- The Lean proofs build and run under Lean 4.32.2.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:12Z (RFD66606-1021) 'Effects
+2026-08-25T00:02:12Z (RFD66606-1021) '- `PhaseRat` bounds the significand, so binary64 does not round the
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:13Z (RFD66606-1021) '  algebra at this precision.
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:14Z (RFD66606-1021) '
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:15Z (RFD66606-1021) 'Open:
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:16Z (RFD66606-1021) '
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:17Z (RFD66606-1021) '- Publish the library to Hex.
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:18Z (RFD66606-1021) '- Run `lake build` in continuous integration, so a change to the
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:19Z (RFD66606-1021) '  algebra cannot pass without the proofs.
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:20Z (RFD66606-1021) '
+ # tags: rfd:details
+ Text:RFD1021  1 LINE
+ Text:Written
+
+2026-08-25T00:02:21Z (RFD66606-1021) 'The problem
  # tags: rfd:details-heading
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:13Z (RFD66606-1021) 'The stored vectors changed from
+2026-08-25T00:02:22Z (RFD66606-1021) 'RFD66606-1019 gave the studio core a local module, `WeftspunStudio.Hrr`.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:02:14Z (RFD66606-1021) '1024 float32 values to 1024
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:15Z (RFD66606-1021) 'float64
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:16Z (RFD66606-1021) 'phase angles. Migration
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:17Z (RFD66606-1021) '`20260804010000` rewrites every
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:18Z (RFD66606-1021) 'row. Trust
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:19Z (RFD66606-1021) 'scores survive, because the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1021) 'vector comes from the other
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:21Z (RFD66606-1021) 'columns and
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:22Z (RFD66606-1021) 'never from itself.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:23Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-1021) '`mix ecto.migrate` starts the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:25Z (RFD66606-1021) 'repository alone, so EXLA is not
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-1021) 'running. The migration therefore
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:27Z (RFD66606-1021) 'selects `Nx.BinaryBackend`. Phase
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:28Z (RFD66606-1021) 'encoding uses hashing and
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:29Z (RFD66606-1021) 'arithmetic, so it needs no
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:30Z (RFD66606-1021) 'accelerator.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:31Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:32Z (RFD66606-1021) 'Retrieval quality held. A search
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:33Z (RFD66606-1021) 'for `uv_unwrapping` returns
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-1021) '`xatlas_uv_unwrapping` at 0.21,
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-1021) 'and the next result scores 0.015.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:36Z (RFD66606-1021) 'A
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-1021) 'probe of the `:category` role of
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:38Z (RFD66606-1021) '`trellis_text_to_textured_mesh`
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:39Z (RFD66606-1021) 'returns `text_to_textured_mesh`
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:40Z (RFD66606-1021) 'at 0.52.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:42Z (RFD66606-1021) 'Risks
- # tags: rfd:details-heading
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:43Z (RFD66606-1021) 'The library is a Git dependency,
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:44Z (RFD66606-1021) 'not a Hex package. A build
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:45Z (RFD66606-1021) 'therefore
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:46Z (RFD66606-1021) 'needs network access to GitHub.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:47Z (RFD66606-1021) 'Publishing to Hex is a later
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:48Z (RFD66606-1021) 'step.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:49Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:50Z (RFD66606-1021) 'The library stores radians, not
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:51Z (RFD66606-1021) 'turns. A radian phase is
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:52Z (RFD66606-1021) 'irrational,
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:53Z (RFD66606-1021) 'so the exactness result does not
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:54Z (RFD66606-1021) 'reach it. The measured cost is
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:55Z (RFD66606-1021) '2.2e-15, which is 2.3e-11 of one
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:56Z (RFD66606-1021) 'grid step, and similarity after a
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:57Z (RFD66606-1021) 'round trip reads 1.0. Turns would
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:58Z (RFD66606-1021) 'remove the gap and break the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:02:59Z (RFD66606-1021) 'golden
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:00Z (RFD66606-1021) 'fixture, so the library keeps
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:01Z (RFD66606-1021) 'radians.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:02Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:03Z (RFD66606-1021) 'Proofs
- # tags: rfd:details-heading
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:04Z (RFD66606-1021) 'The earlier repository proved the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:05Z (RFD66606-1021) 'algebra in Lean 4, then deleted
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:06Z (RFD66606-1021) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:07Z (RFD66606-1021) 'proofs in commit 7303244 once the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:08Z (RFD66606-1021) 'HRR code left it. The algebra now
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:09Z (RFD66606-1021) 'has a home again, so the proofs
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:10Z (RFD66606-1021) 'moved with it, into `formal/` of
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:11Z (RFD66606-1021) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:12Z (RFD66606-1021) 'library.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:13Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:14Z (RFD66606-1021) '`unbind_bind` and `bind_comm`
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:15Z (RFD66606-1021) 'transfer unchanged. `bind_assoc`,
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:16Z (RFD66606-1021) '`unbind_bind_left`, and the two
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:17Z (RFD66606-1021) 'grid bounds are new. Together
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:18Z (RFD66606-1021) 'they say
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:19Z (RFD66606-1021) 'that binding is a commutative and
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:20Z (RFD66606-1021) 'associative group operation on
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:21Z (RFD66606-1021) '`ℤ/65536`, and that unbinding
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:22Z (RFD66606-1021) 'inverts it exactly.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:23Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:24Z (RFD66606-1021) 'The cleanup recall walk from the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:25Z (RFD66606-1021) 'same file did not move. It
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:26Z (RFD66606-1021) 'modelled
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:27Z (RFD66606-1021) '`Recommender.Memory.recommend`,
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:28Z (RFD66606-1021) 'which no longer exists, and it
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:29Z (RFD66606-1021) 'needed
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:30Z (RFD66606-1021) '`fire/plausible-witness-dag`. The
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:31Z (RFD66606-1021) 'restored model needs no
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:32Z (RFD66606-1021) 'dependency,
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:33Z (RFD66606-1021) 'and no axiom beyond `propext` and
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:34Z (RFD66606-1021) '`Quot.sound`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:35Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:36Z (RFD66606-1021) '`PhaseRat.lean` is new. It
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:37Z (RFD66606-1021) 'carries the grid result across to
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:38Z (RFD66606-1021) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:39Z (RFD66606-1021) 'arithmetic that runs it. A phase
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:40Z (RFD66606-1021) 'is a rational with a power-of-two
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:41Z (RFD66606-1021) 'denominator, so component `k`
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:42Z (RFD66606-1021) 'stands for `k / 2^16` of a turn.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:43Z (RFD66606-1021) 'Binary64 holds a value exactly
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:44Z (RFD66606-1021) 'while its significand stays under
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:45Z (RFD66606-1021) '`2^53`. Binding adds two
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:46Z (RFD66606-1021) 'numerators below `2^p`, so the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:47Z (RFD66606-1021) 'exact sum
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:48Z (RFD66606-1021) 'needs `p + 1` bits, and `p = 16`
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:49Z (RFD66606-1021) 'leaves 36 bits spare. The
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:50Z (RFD66606-1021) 'addition
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:51Z (RFD66606-1021) 'and the subtraction therefore
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:52Z (RFD66606-1021) 'never round.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:53Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:54Z (RFD66606-1021) 'Three bridge theorems tie that
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:55Z (RFD66606-1021) 'file to `HrrModel`, so the bounds
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:56Z (RFD66606-1021) 'apply to the proved algebra and
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:57Z (RFD66606-1021) 'not to a lookalike.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:58Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:03:59Z (RFD66606-1021) 'Lean's `Float` is opaque and
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:00Z (RFD66606-1021) 'carries no formal semantics, so
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:01Z (RFD66606-1021) 'no proof
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:02Z (RFD66606-1021) 'mentions it. The theorems bound
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:03Z (RFD66606-1021) 'the significand, and the standard
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:04Z (RFD66606-1021) 'binary64 criterion does the rest.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:05Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:06Z (RFD66606-1021) 'Status
- # tags: rfd:details-heading
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:07Z (RFD66606-1021) 'Done:
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:08Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:09Z (RFD66606-1021) '- The library exists, with 22
+2026-08-25T00:02:23Z (RFD66606-1021) 'It held a real-valued Holographic Reduced Representation. Binding
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:10Z (RFD66606-1021) 'tests. The golden parity tests
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:11Z (RFD66606-1021) 'pass.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:12Z (RFD66606-1021) '- `WeftspunStudio.FactVector`
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:13Z (RFD66606-1021) 'replaces `WeftspunStudio.Hrr`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:14Z (RFD66606-1021) '- The migration rewrote all 29
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:15Z (RFD66606-1021) 'rows to 8192 bytes each.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:16Z (RFD66606-1021) '- The whole suite passes with 78
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:17Z (RFD66606-1021) 'tests.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:18Z (RFD66606-1021) '- The Lean proofs build and run
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:19Z (RFD66606-1021) 'under Lean 4.32.2.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:20Z (RFD66606-1021) '- `PhaseRat` bounds the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:21Z (RFD66606-1021) 'significand, so binary64 does not
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:22Z (RFD66606-1021) 'round the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:23Z (RFD66606-1021) '  algebra at this precision.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:24Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:25Z (RFD66606-1021) 'Open:
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:26Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:27Z (RFD66606-1021) '- Publish the library to Hex.
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:28Z (RFD66606-1021) '- Run `lake build` in continuous
+2026-08-25T00:02:24Z (RFD66606-1021) 'used a Fourier transform, and the inverse worked only on unitary
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:29Z (RFD66606-1021) 'integration, so a change to the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:30Z (RFD66606-1021) '  algebra cannot pass without the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:31Z (RFD66606-1021) 'proofs.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:32Z (RFD66606-1021) '
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:33Z (RFD66606-1021) 'The problem
- # tags: rfd:details-heading
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:34Z (RFD66606-1021) 'RFD66606-1019 gave the studio
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:35Z (RFD66606-1021) 'core a local module,
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:36Z (RFD66606-1021) '`WeftspunStudio.Hrr`.
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:37Z (RFD66606-1021) 'It held a real-valued Holographic
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:38Z (RFD66606-1021) 'Reduced Representation. Binding
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:39Z (RFD66606-1021) 'used a Fourier transform, and the
- # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:40Z (RFD66606-1021) 'inverse worked only on unitary
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:41Z (RFD66606-1021) 'vectors.
+2026-08-25T00:02:25Z (RFD66606-1021) 'vectors.
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:42Z (RFD66606-1021) '
+2026-08-25T00:02:26Z (RFD66606-1021) '
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:43Z (RFD66606-1021) 'A search of the weftspun
+2026-08-25T00:02:27Z (RFD66606-1021) 'A search of the weftspun repositories found an earlier port of the
  # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:44Z (RFD66606-1021) 'repositories found an earlier
- # tags: rfd:details, rfd:wrap
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:45Z (RFD66606-1021) 'port of the
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:46Z (RFD66606-1021) 'same idea.
+2026-08-25T00:02:28Z (RFD66606-1021) 'same idea. `weftspun/residual-fsq-recommender` held `Holo.Core.HRR`,
  # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:47Z (RFD66606-1021) '`weftspun/residual-fsq-recommender`
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:48Z (RFD66606-1021) 'held `Holo.Core.HRR`,
- # tags: rfd:details, rfd:wrap
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:49Z (RFD66606-1021) 'a phase-angle representation. An
+2026-08-25T00:02:29Z (RFD66606-1021) 'a phase-angle representation. An ADR of 2026-07-14 removed it,
  # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:50Z (RFD66606-1021) 'ADR of 2026-07-14 removed it,
- # tags: rfd:details, rfd:wrap
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:51Z (RFD66606-1021) 'because a trained model replaced
+2026-08-25T00:02:30Z (RFD66606-1021) 'because a trained model replaced the training-free recommender that
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:52Z (RFD66606-1021) 'the training-free recommender
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:53Z (RFD66606-1021) 'that
- # tags: rfd:details, rfd:wrap
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:54Z (RFD66606-1021) 'used it. The algebra itself was
+2026-08-25T00:02:31Z (RFD66606-1021) 'used it. The algebra itself was never in doubt.
  # tags: rfd:details
- Text:RFD1021  1 LINE
- Text:Written
-
-2026-08-25T00:04:55Z (RFD66606-1021) 'never in doubt.
- # tags: rfd:details, rfd:wrap
  Text:RFD1021  1 LINE
  Text:Written
 
-2026-08-25T00:04:56Z (RFD66606-1021) '
+2026-08-25T00:02:32Z (RFD66606-1021) '
  # tags: rfd:details
  Text:RFD1021  1 LINE
  Text:Written

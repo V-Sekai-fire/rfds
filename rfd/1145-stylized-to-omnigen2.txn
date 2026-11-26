@@ -14,297 +14,147 @@
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1145) 'Loop 3 runs, and everything it
+2026-08-25T00:00:03Z (RFD66606-1145) 'Loop 3 runs, and everything it touches stays evaluation only.
  # tags: rfd:hook
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1145) 'touches stays evaluation only.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1145) '
+2026-08-25T00:00:04Z (RFD66606-1145) '
  # tags: rfd:hook
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1145) 'Why is loop 3 a separate loop
+2026-08-25T00:00:05Z (RFD66606-1145) 'Why is loop 3 a separate loop rather than a variant? Where its input comes from, and
  # tags: rfd:intrigue
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1145) 'rather than a variant? Where its
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1145) 'input comes from, and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1145) 'that is a licensing question
+2026-08-25T00:00:06Z (RFD66606-1145) 'that is a licensing question before it is a technical one.
  # tags: rfd:intrigue
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1145) 'before it is a technical one.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1145) '
+2026-08-25T00:00:07Z (RFD66606-1145) '
  # tags: rfd:intrigue
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1145) 'Before any loop 3 output leaves
+2026-08-25T00:00:08Z (RFD66606-1145) 'Before any loop 3 output leaves evaluation, confirm it feeds no training run. Read
  # tags: rfd:exit
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1145) 'evaluation, confirm it feeds no
- # tags: rfd:exit, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1145) 'training run. Read
- # tags: rfd:exit, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1145) 'RFD66606-1143 for the
+2026-08-25T00:00:09Z (RFD66606-1145) 'RFD66606-1143 for the keypoints-to-ANNY loop it follows.
  # tags: rfd:exit
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1145) 'keypoints-to-ANNY loop it
- # tags: rfd:exit, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1145) 'follows.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1145) '
+2026-08-25T00:00:10Z (RFD66606-1145) '
  # tags: rfd:exit
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1145) 'Run it, and treat everything it
+2026-08-25T00:00:11Z (RFD66606-1145) 'Run it, and treat everything it touches as evaluation only.
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1145) 'touches as evaluation only.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1145) '
+2026-08-25T00:00:12Z (RFD66606-1145) '
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1145) '**The hazard is the holdout.**
+2026-08-25T00:00:13Z (RFD66606-1145) '**The hazard is the holdout.** The COCO-OOD stylized sets are
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1145) 'The COCO-OOD stylized sets are
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1145) '`val2017` restyled, so they are
+2026-08-25T00:00:14Z (RFD66606-1145) '`val2017` restyled, so they are held out twice over: derived from the
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1145) 'held out twice over: derived from
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1145) 'the
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1145) 'blinded holdout, and generated.
+2026-08-25T00:00:15Z (RFD66606-1145) 'blinded holdout, and generated. CLAUDE.md states the rule this loop is
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1145) 'CLAUDE.md states the rule this
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1145) 'loop is
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1145) 'most likely to break: anything
+2026-08-25T00:00:16Z (RFD66606-1145) 'most likely to break: anything derived from `val2017` inherits its
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1145) 'derived from `val2017` inherits
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1145) 'its
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1145) 'status, and a set generated from
+2026-08-25T00:00:17Z (RFD66606-1145) 'status, and a set generated from a held-out photo carries that photo's
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1145) 'a held-out photo carries that
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1145) 'photo's
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1145) 'content wherever it goes.
+2026-08-25T00:00:18Z (RFD66606-1145) 'content wherever it goes.
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1145) '
+2026-08-25T00:00:19Z (RFD66606-1145) '
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1145) 'So loop 3 produces no training
+2026-08-25T00:00:20Z (RFD66606-1145) 'So loop 3 produces no training data, whatever it produces. A stylized
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1145) 'data, whatever it produces. A
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1145) 'stylized
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1145) 'corpus that reaches a training
+2026-08-25T00:00:21Z (RFD66606-1145) 'corpus that reaches a training run has taken the holdout with it, and
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1145) 'run has taken the holdout with
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1145) 'it, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1145) 'nothing downstream would report
+2026-08-25T00:00:22Z (RFD66606-1145) 'nothing downstream would report that it had.
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1145) 'that it had.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1145) '
+2026-08-25T00:00:23Z (RFD66606-1145) '
  # tags: rfd:decision
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1145) 'RFD66606-1143, RFD66606-1144 and
+2026-08-25T00:00:24Z (RFD66606-1145) 'RFD66606-1143, RFD66606-1144 and RFD66606-1146 are the other three loops. RFD66606-1122 is
  # tags: rfd:related
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1145) 'RFD66606-1146 are the other three
- # tags: rfd:related, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1145) 'loops. RFD66606-1122 is
- # tags: rfd:related, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1145) 'the goal that the four serve.
+2026-08-25T00:00:25Z (RFD66606-1145) 'the goal that the four serve.
  # tags: rfd:related
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1145) '
+2026-08-25T00:00:26Z (RFD66606-1145) '
  # tags: rfd:related
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1145) 'The problem
+2026-08-25T00:00:27Z (RFD66606-1145) 'The problem
  # tags: rfd:details-heading
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1145) 'Loop 3 is loop 2 with a style
+2026-08-25T00:00:28Z (RFD66606-1145) 'Loop 3 is loop 2 with a style transfer in front of it: CycleGAN
  # tags: rfd:details
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1145) 'transfer in front of it: CycleGAN
- # tags: rfd:details, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1145) 'proposes a restyled image,
+2026-08-25T00:00:29Z (RFD66606-1145) 'proposes a restyled image, OmniGen2 edits it, EditScore scores the
  # tags: rfd:details
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1145) 'OmniGen2 edits it, EditScore
- # tags: rfd:details, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1145) 'scores the
- # tags: rfd:details, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1145) 'result and OmniGen2 repairs. The
+2026-08-25T00:00:30Z (RFD66606-1145) 'result and OmniGen2 repairs. The artifact is an edited png at the size M, the same as loop 2.
  # tags: rfd:details
  Text:RFD1145  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1145) 'artifact is an edited png at the
- # tags: rfd:details, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1145) 'size M, the same as loop 2.
- # tags: rfd:details, rfd:wrap
- Text:RFD1145  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1145) '
+2026-08-25T00:00:31Z (RFD66606-1145) '
  # tags: rfd:details
  Text:RFD1145  1 LINE
  Text:Written

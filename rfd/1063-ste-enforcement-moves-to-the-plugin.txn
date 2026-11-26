@@ -4,712 +4,347 @@
  RFD:Discussion  1 RFD
  Serials:Weftspun
 
-2026-08-25T00:00:01Z (RFD66606-1063) '`decisions/`, `scripts/ci.sh`,
+2026-08-25T00:00:01Z (RFD66606-1063) '`decisions/`, `scripts/ci.sh`, `.pre-commit-config.yaml`
  # tags: rfd:scope
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1063) '`.pre-commit-config.yaml`
- # tags: rfd:scope, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-1063) 'STE enforcement runs once, in the
+2026-08-25T00:00:02Z (RFD66606-1063) 'STE enforcement runs once, in the plugin's `Stop` hook, not in three places.
  # tags: rfd:hook
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1063) 'plugin's `Stop` hook, not in
- # tags: rfd:hook, rfd:wrap
+2026-08-25T00:00:03Z (RFD66606-1063) '
+ # tags: rfd:hook
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1063) 'three places.
- # tags: rfd:hook, rfd:wrap
+2026-08-25T00:00:04Z (RFD66606-1063) 'Three places ran the same STE check on the same files: the script, its `npm run lint:ste`
+ # tags: rfd:intrigue
+ Text:RFD1063  1 LINE
+ Text:Written
+
+2026-08-25T00:00:05Z (RFD66606-1063) 'step in CI, and its `ste-lint` hook in `.pre-commit-config.yaml`.
+ # tags: rfd:intrigue
  Text:RFD1063  1 LINE
  Text:Written
 
 2026-08-25T00:00:06Z (RFD66606-1063) '
- # tags: rfd:hook
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1063) 'Three places ran the same STE
  # tags: rfd:intrigue
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1063) 'check on the same files: the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1063) 'script, its `npm run lint:ste`
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1063) 'step in CI, and its `ste-lint`
- # tags: rfd:intrigue
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1063) 'hook in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1063) '`.pre-commit-config.yaml`.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1063) '
- # tags: rfd:intrigue
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1063) 'Check that the script, its
+2026-08-25T00:00:07Z (RFD66606-1063) 'Check that the script, its `lint:ste` entry, its step in `scripts/ci.sh` and its hook in
  # tags: rfd:exit
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1063) '`lint:ste` entry, its step in
- # tags: rfd:exit, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1063) '`scripts/ci.sh` and its hook in
- # tags: rfd:exit, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1063) '`.pre-commit-config.yaml` are
+2026-08-25T00:00:08Z (RFD66606-1063) '`.pre-commit-config.yaml` are gone, so the plugin's `Stop` hook is the only STE check.
  # tags: rfd:exit
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1063) 'gone, so the plugin's `Stop` hook
- # tags: rfd:exit, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1063) 'is the only STE check.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1063) '
+2026-08-25T00:00:09Z (RFD66606-1063) '
  # tags: rfd:exit
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1063) 'STE enforcement moves to the
+2026-08-25T00:00:10Z (RFD66606-1063) 'STE enforcement moves to the plugin
  # tags: rfd:details-title
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1063) 'plugin
- # tags: rfd:details-title, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1063) 'Delete
+2026-08-25T00:00:11Z (RFD66606-1063) 'Delete `scripts/ste-lint-decisions.py`. Delete its `npm run lint:ste`
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1063) '`scripts/ste-lint-decisions.py`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1063) 'Delete its `npm run lint:ste`
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1063) 'entry in
+2026-08-25T00:00:12Z (RFD66606-1063) 'entry in `thirdparty/3d_studio/package.json`. Delete its step in
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1063) '`thirdparty/3d_studio/package.json`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1063) 'Delete its step in
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1063) '`scripts/ci.sh`, and its hook in
+2026-08-25T00:00:13Z (RFD66606-1063) '`scripts/ci.sh`, and its hook in `.pre-commit-config.yaml`. STE
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1063) '`.pre-commit-config.yaml`. STE
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1063) 'enforcement now runs once, in the
+2026-08-25T00:00:14Z (RFD66606-1063) 'enforcement now runs once, in the plugin's `Stop` hook, at write
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1063) 'plugin's `Stop` hook, at write
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1063) 'time.
+2026-08-25T00:00:15Z (RFD66606-1063) 'time.
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1063) '
+2026-08-25T00:00:16Z (RFD66606-1063) '
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1063) 'See `DETAILS.md` for what moved
+2026-08-25T00:00:17Z (RFD66606-1063) 'See `DETAILS.md` for what moved to the plugin, including three new
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1063) 'to the plugin, including three
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1063) 'new
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1063) 'checks this repository
+2026-08-25T00:00:18Z (RFD66606-1063) 'checks this repository contributed upstream. It also names what the
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1063) 'contributed upstream. It also
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1063) 'names what the
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1063) 'deleted script's aggregate score
+2026-08-25T00:00:19Z (RFD66606-1063) 'deleted script's aggregate score this repository does not gain back.
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1063) 'this repository does not gain
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1063) 'back.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1063) '
+2026-08-25T00:00:20Z (RFD66606-1063) '
  # tags: rfd:decision
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1063) 'RFD66606-1000 named the deleted
+2026-08-25T00:00:21Z (RFD66606-1063) 'RFD66606-1000 named the deleted script. RFD66606-1059 wired `npm run lint:ste`
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1063) 'script. RFD66606-1059 wired `npm
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1063) 'run lint:ste`
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1063) 'into `scripts/ci.sh`. This RFD
+2026-08-25T00:00:22Z (RFD66606-1063) 'into `scripts/ci.sh`. This RFD removes that step, and nothing
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1063) 'removes that step, and nothing
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1063) 'replaces it.
+2026-08-25T00:00:23Z (RFD66606-1063) 'replaces it. `fire/claude-ste-plugin#1` is the PR that carries this
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1063) '`fire/claude-ste-plugin#1` is the
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1063) 'PR that carries this
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1063) 'repository's contribution
+2026-08-25T00:00:24Z (RFD66606-1063) 'repository's contribution upstream.
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1063) 'upstream.
- # tags: rfd:related, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1063) '
+2026-08-25T00:00:25Z (RFD66606-1063) '
  # tags: rfd:related
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1063) 'Why the plugin checks earlier
+2026-08-25T00:00:26Z (RFD66606-1063) 'Why the plugin checks earlier
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1063) '`fire/claude-ste-plugin` is a
+2026-08-25T00:00:27Z (RFD66606-1063) '`fire/claude-ste-plugin` is a Claude Code plugin. It checks at a
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1063) 'Claude Code plugin. It checks at
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1063) 'a
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1063) 'better point in the process. It
+2026-08-25T00:00:28Z (RFD66606-1063) 'better point in the process. It lints the reply before the reply
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1063) 'lints the reply before the reply
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1063) 'reaches a file, and it asks for a
+2026-08-25T00:00:29Z (RFD66606-1063) 'reaches a file, and it asks for a rewrite. The old script
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1063) 'rewrite. The old script
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1063) 'caught a violation only after a
+2026-08-25T00:00:30Z (RFD66606-1063) 'caught a violation only after a commit already held it. Two
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1063) 'commit already held it. Two
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1063) 'enforcement points for one rule
+2026-08-25T00:00:31Z (RFD66606-1063) 'enforcement points for one rule is the DRY policy's own complaint,
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1063) 'is the DRY policy's own
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1063) 'complaint,
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1063) 'turned on this repository's own
+2026-08-25T00:00:32Z (RFD66606-1063) 'turned on this repository's own tooling.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1063) 'tooling.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1063) '
+2026-08-25T00:00:33Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1063) 'What moved where
+2026-08-25T00:00:34Z (RFD66606-1063) 'What moved where
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1063) 'Several checks the deleted script
+2026-08-25T00:00:35Z (RFD66606-1063) 'Several checks the deleted script hand-wrote already existed in the
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1063) 'hand-wrote already existed in the
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1063) 'plugin, and more precisely. The
+2026-08-25T00:00:36Z (RFD66606-1063) 'plugin, and more precisely. The plugin cites an ASD-STE100 Part 1
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1063) 'plugin cites an ASD-STE100 Part 1
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1063) 'rule number for each one. Its
+2026-08-25T00:00:37Z (RFD66606-1063) 'rule number for each one. Its sentence splitter and word counter
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1063) 'sentence splitter and word
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1063) 'counter
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1063) 'follow CommonMark structure, not
+2026-08-25T00:00:38Z (RFD66606-1063) 'follow CommonMark structure, not a line-based heuristic.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1063) 'a line-based heuristic.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1063) '
+2026-08-25T00:00:39Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1063) 'Three checks were new. Each one
+2026-08-25T00:00:40Z (RFD66606-1063) 'Three checks were new. Each one went upstream instead of staying
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1063) 'went upstream instead of staying
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1063) 'local, in
+2026-08-25T00:00:41Z (RFD66606-1063) 'local, in `fire/claude-ste-plugin#1`:
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1063) '`fire/claude-ste-plugin#1`:
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1063) '
+2026-08-25T00:00:42Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1063) '- `style.bloat`, for an inflated
+2026-08-25T00:00:43Z (RFD66606-1063) '- `style.bloat`, for an inflated word such as "utilize"
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-1063) 'word such as "utilize"
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1063) '- `style.marketing`, for a
+2026-08-25T00:00:44Z (RFD66606-1063) '- `style.marketing`, for a marketing word such as "seamless"
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-1063) 'marketing word such as "seamless"
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1063) '- `style.dash`, for an em dash
+2026-08-25T00:00:45Z (RFD66606-1063) '- `style.dash`, for an em dash that joins two clauses
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-1063) 'that joins two clauses
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1063) '
+2026-08-25T00:00:46Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-1063) 'This repository's own
+2026-08-25T00:00:47Z (RFD66606-1063) 'This repository's own `decisions/` tree is the prose the PR tested
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-1063) '`decisions/` tree is the prose
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1063) 'the PR tested
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1063) 'them against. The plugin checks
+2026-08-25T00:00:48Z (RFD66606-1063) 'them against. The plugin checks all three now, in every project it
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-1063) 'all three now, in every project
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1063) 'it
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-1063) 'installs into, not only this one.
+2026-08-25T00:00:49Z (RFD66606-1063) 'installs into, not only this one.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-1063) '
+2026-08-25T00:00:50Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-1063) 'What this repository does not
+2026-08-25T00:00:51Z (RFD66606-1063) 'What this repository does not gain back
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-1063) 'gain back
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1063) 'The deleted script scored a whole
+2026-08-25T00:00:52Z (RFD66606-1063) 'The deleted script scored a whole document, at violations per 100
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-1063) 'document, at violations per 100
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-1063) 'words. It also read many files at
+2026-08-25T00:00:53Z (RFD66606-1063) 'words. It also read many files at once and printed one pass or fail
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:48Z (RFD66606-1063) 'once and printed one pass or fail
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:49Z (RFD66606-1063) 'line per file. The plugin has no
+2026-08-25T00:00:54Z (RFD66606-1063) 'line per file. The plugin has no equivalent to either. It reports one
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:50Z (RFD66606-1063) 'equivalent to either. It reports
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-1063) 'one
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:52Z (RFD66606-1063) 'finding per line, for one file at
+2026-08-25T00:00:55Z (RFD66606-1063) 'finding per line, for one file at a time, and it does not score a
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:53Z (RFD66606-1063) 'a time, and it does not score a
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-1063) 'document as a whole. A CI run
+2026-08-25T00:00:56Z (RFD66606-1063) 'document as a whole. A CI run that wants one pass/fail number across
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:55Z (RFD66606-1063) 'that wants one pass/fail number
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1063) 'across
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1063) 'every RFD does not have that
+2026-08-25T00:00:57Z (RFD66606-1063) 'every RFD does not have that number anymore.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:01:58Z (RFD66606-1063) 'number anymore.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:01:59Z (RFD66606-1063) '
+2026-08-25T00:00:58Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:00Z (RFD66606-1063) 'This RFD accepts that loss.
+2026-08-25T00:00:59Z (RFD66606-1063) 'This RFD accepts that loss. `decisions/README.md`'s STE policy never
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:01Z (RFD66606-1063) '`decisions/README.md`'s STE
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:02Z (RFD66606-1063) 'policy never
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:03Z (RFD66606-1063) 'asked for a score. It asked for
+2026-08-25T00:01:00Z (RFD66606-1063) 'asked for a score. It asked for STE prose. The `Stop` hook catches a
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:04Z (RFD66606-1063) 'STE prose. The `Stop` hook
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1063) 'catches a
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:06Z (RFD66606-1063) 'violation earlier than a CI gate
+2026-08-25T00:01:01Z (RFD66606-1063) 'violation earlier than a CI gate can, on every reply that touches
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:07Z (RFD66606-1063) 'can, on every reply that touches
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1063) 'this repository, not only on a
+2026-08-25T00:01:02Z (RFD66606-1063) 'this repository, not only on a push.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:09Z (RFD66606-1063) 'push.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:10Z (RFD66606-1063) '
+2026-08-25T00:01:03Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1063) 'The problem
+2026-08-25T00:01:04Z (RFD66606-1063) 'The problem
  # tags: rfd:details-heading
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:12Z (RFD66606-1063) 'RFD66606-1000 named
+2026-08-25T00:01:05Z (RFD66606-1063) 'RFD66606-1000 named `scripts/ste-lint-decisions.py` as this repository's
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:13Z (RFD66606-1063) '`scripts/ste-lint-decisions.py`
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:14Z (RFD66606-1063) 'as this repository's
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:15Z (RFD66606-1063) 'STE linter. It scored each RFD's
+2026-08-25T00:01:06Z (RFD66606-1063) 'STE linter. It scored each RFD's prose at violations per 100 words.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:16Z (RFD66606-1063) 'prose at violations per 100
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:17Z (RFD66606-1063) 'words.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:18Z (RFD66606-1063) 'It ran in CI, through `npm run
+2026-08-25T00:01:07Z (RFD66606-1063) 'It ran in CI, through `npm run lint:ste`. It ran again in
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:19Z (RFD66606-1063) 'lint:ste`. It ran again in
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1063) '`.pre-commit-config.yaml`'s
+2026-08-25T00:01:08Z (RFD66606-1063) '`.pre-commit-config.yaml`'s `ste-lint` hook.
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written
 
-2026-08-25T00:02:21Z (RFD66606-1063) '`ste-lint` hook.
- # tags: rfd:details, rfd:wrap
- Text:RFD1063  1 LINE
- Text:Written
-
-2026-08-25T00:02:22Z (RFD66606-1063) '
+2026-08-25T00:01:09Z (RFD66606-1063) '
  # tags: rfd:details
  Text:RFD1063  1 LINE
  Text:Written

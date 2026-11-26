@@ -4,477 +4,237 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2427) 'how the garment handover timing
+2026-10-31T00:00:01Z (RFD66606-2427) 'how the garment handover timing runs are chosen as levels, with a planted defect each.
  # tags: rfd:scope
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2427) 'runs are chosen as levels, with a
- # tags: rfd:scope, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2427) 'planted defect each.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2427) 'Each timing level runs clean and
+2026-10-31T00:00:02Z (RFD66606-2427) 'Each timing level runs clean and with its defect planted, so a pass means something.
  # tags: rfd:hook
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2427) 'with its defect planted, so a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2427) 'pass means something.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2427) '
+2026-10-31T00:00:03Z (RFD66606-2427) '
  # tags: rfd:hook
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2427) 'A level that finds its planted
+2026-10-31T00:00:04Z (RFD66606-2427) 'A level that finds its planted defect only some of the time has a result that is luck.
  # tags: rfd:intrigue
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2427) 'defect only some of the time has
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2427) 'a result that is luck.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2427) '
+2026-10-31T00:00:05Z (RFD66606-2427) '
  # tags: rfd:intrigue
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2427) 'Check a new timing level against
+2026-10-31T00:00:06Z (RFD66606-2427) 'Check a new timing level against the rule. Run it on the rung as it is, then on the rung
  # tags: rfd:exit
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2427) 'the rule. Run it on the rung as
- # tags: rfd:exit, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2427) 'it is, then on the rung
- # tags: rfd:exit, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2427) 'with that level's defect planted.
+2026-10-31T00:00:07Z (RFD66606-2427) 'with that level's defect planted.
  # tags: rfd:exit
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2427) '
+2026-10-31T00:00:08Z (RFD66606-2427) '
  # tags: rfd:exit
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2427) 'frontier learning picks the
+2026-10-31T00:00:09Z (RFD66606-2427) 'frontier learning picks the garment handover timing runs
  # tags: rfd:details-title
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2427) 'garment handover timing runs
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2427) '- The timing runs are levels in
+2026-10-31T00:00:10Z (RFD66606-2427) '- The timing runs are levels in RFD66606-2309's sense, scheduled the way RFD66606-2323
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2427) 'RFD66606-2309's sense, scheduled
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2427) 'the way RFD66606-2323
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2427) '  schedules the store's attacks.
+2026-10-31T00:00:11Z (RFD66606-2427) '  schedules the store's attacks.
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2427) '- Each level runs on the rung as
+2026-10-31T00:00:12Z (RFD66606-2427) '- Each level runs on the rung as it is and on the rung with that level's defect planted.
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2427) 'it is and on the rung with that
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2427) 'level's defect planted.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2427) '- A clean run on the real rung
+2026-10-31T00:00:13Z (RFD66606-2427) '- A clean run on the real rung counts only after its level found the planted defect in each of
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2427) 'counts only after its level found
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2427) 'the planted defect in each of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2427) '  its last eight runs.
+2026-10-31T00:00:14Z (RFD66606-2427) '  its last eight runs.
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2427) '- A finding on the real rung is
+2026-10-31T00:00:15Z (RFD66606-2427) '- A finding on the real rung is never averaged into a rate: it stops the lane and becomes a
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2427) 'never averaged into a rate: it
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2427) 'stops the lane and becomes a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2427) '  level that runs every time.
+2026-10-31T00:00:16Z (RFD66606-2427) '  level that runs every time.
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2427) '- The percentiles the pass limits
+2026-10-31T00:00:17Z (RFD66606-2427) '- The percentiles the pass limits come from are read only from calibrated levels, so a limit is
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2427) 'come from are read only from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2427) 'calibrated levels, so a limit is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2427) '  never set from a load that
+2026-10-31T00:00:18Z (RFD66606-2427) '  never set from a load that could not see a slow leg.
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2427) 'could not see a slow leg.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2427) '
+2026-10-31T00:00:19Z (RFD66606-2427) '
  # tags: rfd:decision
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2427) '- RFD66606-2287, where this rule
+2026-10-31T00:00:20Z (RFD66606-2427) '- RFD66606-2287, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2427) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2427) '- RFD66606-2309, the sense of a
+2026-10-31T00:00:21Z (RFD66606-2427) '- RFD66606-2309, the sense of a level. RFD66606-2323, how the store's attacks are scheduled.
  # tags: rfd:related
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2427) 'level. RFD66606-2323, how the
- # tags: rfd:related, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2427) 'store's attacks are scheduled.
- # tags: rfd:related, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2427) '
+2026-10-31T00:00:22Z (RFD66606-2427) '
  # tags: rfd:related
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2427) 'Levels and problems
+2026-10-31T00:00:23Z (RFD66606-2427) 'Levels and problems
  # tags: rfd:details-heading
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2427) 'A level is a load template with
+2026-10-31T00:00:24Z (RFD66606-2427) 'A level is a load template with fixed attributes: players, the recorded replay, the zone's
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2427) 'fixed attributes: players, the
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2427) 'recorded replay, the zone's
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2427) 'distance from the store, the
+2026-10-31T00:00:25Z (RFD66606-2427) 'distance from the store, the commit group size, and the injected round trip and loss.
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2427) 'commit group size, and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2427) 'injected round trip and loss.
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2427) 'A problem is one 5 minute run
+2026-10-31T00:00:26Z (RFD66606-2427) 'A problem is one 5 minute run with a drawn seed and replay offset.
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2427) 'with a drawn seed and replay
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2427) 'offset.
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2427) '
+2026-10-31T00:00:27Z (RFD66606-2427) '
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2427) '
+2026-10-31T00:00:28Z (RFD66606-2427) '
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2427) 'The planted defects
+2026-10-31T00:00:29Z (RFD66606-2427) 'The planted defects
  # tags: rfd:details-heading
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2427) '| Level | Planted defect | Found
+2026-10-31T00:00:30Z (RFD66606-2427) '| Level | Planted defect | Found when |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2427) 'when |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2427) '| --- | --- | --- |
+2026-10-31T00:00:31Z (RFD66606-2427) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:02Z (RFD66606-2427) '| store commit leg | a delay
+2026-10-31T00:00:32Z (RFD66606-2427) '| store commit leg | a delay added to each commit | that leg's 95th percentile moves |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2427) 'added to each commit | that leg's
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2427) '95th percentile moves |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2427) '| confirm order | confirm sent
+2026-10-31T00:00:33Z (RFD66606-2427) '| confirm order | confirm sent before the commit | a garment seen before its commit |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2427) 'before the commit | a garment
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2427) 'seen before its commit |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2427) '| tick isolation | the tick waits
+2026-10-31T00:00:34Z (RFD66606-2427) '| tick isolation | the tick waits on the store | a tick over its budget |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2427) 'on the store | a tick over its
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2427) 'budget |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2427) '| paused players | a short idle
+2026-10-31T00:00:35Z (RFD66606-2427) '| paused players | a short idle timeout | a reconnect during a pause |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2427) 'timeout | a reconnect during a
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2427) 'pause |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:14Z (RFD66606-2427) '| replay limit | the replay host
+2026-10-31T00:00:36Z (RFD66606-2427) '| replay limit | the replay host throttled | the replay named as the limit |
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2427) 'throttled | the replay named as
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2427) 'the limit |
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:17Z (RFD66606-2427) '
+2026-10-31T00:00:37Z (RFD66606-2427) '
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:18Z (RFD66606-2427) '
+2026-10-31T00:00:38Z (RFD66606-2427) '
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:19Z (RFD66606-2427) 'Success, regret and mutation
+2026-10-31T00:00:39Z (RFD66606-2427) 'Success, regret and mutation
  # tags: rfd:details-heading
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:20Z (RFD66606-2427) 'On the planted target, success is
+2026-10-31T00:00:40Z (RFD66606-2427) 'On the planted target, success is the defect found. Regret `1[s ≥ 1] − s/n` over the last eight
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2427) 'the defect found. Regret `1[s ≥
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2427) '1] − s/n` over the last eight
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2427) 'runs is high when the level finds
+2026-10-31T00:00:41Z (RFD66606-2427) 'runs is high when the level finds its defect only some of the time, so its result is luck.
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2427) 'its defect only some of the time,
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:25Z (RFD66606-2427) 'so its result is luck.
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:26Z (RFD66606-2427) 'Mutation moves one attribute,
+2026-10-31T00:00:42Z (RFD66606-2427) 'Mutation moves one attribute, kept only when the planted find rate rises.
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:27Z (RFD66606-2427) 'kept only when the planted find
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:28Z (RFD66606-2427) 'rate rises.
- # tags: rfd:details, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:29Z (RFD66606-2427) '
+2026-10-31T00:00:43Z (RFD66606-2427) '
  # tags: rfd:details
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2427) '2351
+2026-10-31T00:00:44Z (RFD66606-2427) '2351
  # tags: rebac:verbs-from
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2427) 'rfd-2427 provides
+2026-10-31T00:00:45Z (RFD66606-2427) 'rfd-2427 provides handover-timing-planted-levels
  # tags: rebac:relate
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2427) 'handover-timing-planted-levels
- # tags: rebac:relate, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:33Z (RFD66606-2427) 'rfd-2427 spends
+2026-10-31T00:00:46Z (RFD66606-2427) 'rfd-2427 spends per-leg-handover-timing
  # tags: rebac:relate
  Text:RFD2427  1 LINE
  Text:Written
 
-2026-10-31T00:01:34Z (RFD66606-2427) 'per-leg-handover-timing
- # tags: rebac:relate, rfd:wrap
- Text:RFD2427  1 LINE
- Text:Written
-
-2026-10-31T00:01:35Z (RFD66606-2427) 'rfd-2427 is_a experiment-record
+2026-10-31T00:00:47Z (RFD66606-2427) 'rfd-2427 is_a experiment-record
  # tags: rebac:relate
  Text:RFD2427  1 LINE
  Text:Written

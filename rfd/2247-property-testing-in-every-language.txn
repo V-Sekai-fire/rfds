@@ -4,1202 +4,512 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-09-12T00:00:01Z (RFD66606-2247) 'every test suite in the workspace
+2026-09-12T00:00:01Z (RFD66606-2247) 'every test suite in the workspace states invariants a generator searches, and ships the negative control that must fail
  # tags: rfd:feature
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:02Z (RFD66606-2247) 'states invariants a generator
- # tags: rfd:feature, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:03Z (RFD66606-2247) 'searches, and ships the negative
- # tags: rfd:feature, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:04Z (RFD66606-2247) 'control that must fail
- # tags: rfd:feature, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:05Z (RFD66606-2247) 'every language in the workspace:
+2026-09-12T00:00:02Z (RFD66606-2247) 'every language in the workspace: Elixir (StreamData), Python (Hypothesis), C++ (RapidCheck), Rust (proptest), Go (testing/quick, rapid), GDScript/C# (FsCheck where hosted)
  # tags: rfd:scope
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:06Z (RFD66606-2247) 'Elixir (StreamData), Python
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:07Z (RFD66606-2247) '(Hypothesis), C++ (RapidCheck),
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:08Z (RFD66606-2247) 'Rust (proptest), Go
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:09Z (RFD66606-2247) '(testing/quick, rapid),
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:10Z (RFD66606-2247) 'GDScript/C# (FsCheck where
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:11Z (RFD66606-2247) 'hosted)
- # tags: rfd:scope, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:12Z (RFD66606-2247) 'Every test states an invariant a
+2026-09-12T00:00:03Z (RFD66606-2247) 'Every test states an invariant a generator searches, with a control that must fail.
  # tags: rfd:hook
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:13Z (RFD66606-2247) 'generator searches, with a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:14Z (RFD66606-2247) 'control that must fail.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:15Z (RFD66606-2247) '
+2026-09-12T00:00:04Z (RFD66606-2247) '
  # tags: rfd:hook
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:16Z (RFD66606-2247) 'Example-based tests pass by
+2026-09-12T00:00:05Z (RFD66606-2247) 'Example-based tests pass by construction. The author picks inputs they already believe
  # tags: rfd:intrigue
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:17Z (RFD66606-2247) 'construction. The author picks
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:18Z (RFD66606-2247) 'inputs they already believe
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:19Z (RFD66606-2247) 'work, so the suite encodes the
+2026-09-12T00:00:06Z (RFD66606-2247) 'work, so the suite encodes the author's assumptions rather than testing them, and it goes
  # tags: rfd:intrigue
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:20Z (RFD66606-2247) 'author's assumptions rather than
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:21Z (RFD66606-2247) 'testing them, and it goes
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:22Z (RFD66606-2247) 'green over a harness that
+2026-09-12T00:00:07Z (RFD66606-2247) 'green over a harness that measures nothing.
  # tags: rfd:intrigue
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:23Z (RFD66606-2247) 'measures nothing.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:24Z (RFD66606-2247) '
+2026-09-12T00:00:08Z (RFD66606-2247) '
  # tags: rfd:intrigue
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:25Z (RFD66606-2247) 'Pair each new property with its
+2026-09-12T00:00:09Z (RFD66606-2247) 'Pair each new property with its negative control: the input that should violate it, with the
  # tags: rfd:exit
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:26Z (RFD66606-2247) 'negative control: the input that
- # tags: rfd:exit, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:27Z (RFD66606-2247) 'should violate it, with the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:28Z (RFD66606-2247) 'test failing if the violation
+2026-09-12T00:00:10Z (RFD66606-2247) 'test failing if the violation goes undetected. The sections below list the property shapes.
  # tags: rfd:exit
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:29Z (RFD66606-2247) 'goes undetected. The sections
- # tags: rfd:exit, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:30Z (RFD66606-2247) 'below list the property shapes.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:31Z (RFD66606-2247) '
+2026-09-12T00:00:11Z (RFD66606-2247) '
  # tags: rfd:exit
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:32Z (RFD66606-2247) 'Properties worth stating, and how
+2026-09-12T00:00:12Z (RFD66606-2247) 'Properties worth stating, and how falsification pairs with them
  # tags: rfd:details-title
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:33Z (RFD66606-2247) 'falsification pairs with them
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:34Z (RFD66606-2247) 'The useful properties are the
+2026-09-12T00:00:13Z (RFD66606-2247) 'The useful properties are the ones that hold for every input rather than the
  # tags: rfd:details-preamble
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:35Z (RFD66606-2247) 'ones that hold for every input
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:36Z (RFD66606-2247) 'rather than the
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:37Z (RFD66606-2247) 'ones convenient to write down.
+2026-09-12T00:00:14Z (RFD66606-2247) 'ones convenient to write down. Below are the recurring shapes, each with the
  # tags: rfd:details-preamble
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:38Z (RFD66606-2247) 'Below are the recurring shapes,
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:39Z (RFD66606-2247) 'each with the
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:40Z (RFD66606-2247) 'negative control that gives it
+2026-09-12T00:00:15Z (RFD66606-2247) 'negative control that gives it teeth, drawn from work already in the
  # tags: rfd:details-preamble
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:41Z (RFD66606-2247) 'teeth, drawn from work already in
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:42Z (RFD66606-2247) 'the
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:43Z (RFD66606-2247) 'workspace.
+2026-09-12T00:00:16Z (RFD66606-2247) 'workspace.
  # tags: rfd:details-preamble
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:44Z (RFD66606-2247) '
+2026-09-12T00:00:17Z (RFD66606-2247) '
  # tags: rfd:details-preamble
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:45Z (RFD66606-2247) 'A test asserts an invariant over
+2026-09-12T00:00:18Z (RFD66606-2247) 'A test asserts an invariant over generated input, not an outcome for one
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:46Z (RFD66606-2247) 'generated input, not an outcome
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:47Z (RFD66606-2247) 'for one
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:48Z (RFD66606-2247) 'hand-chosen input. Every language
+2026-09-12T00:00:19Z (RFD66606-2247) 'hand-chosen input. Every language the workspace builds in uses its
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:49Z (RFD66606-2247) 'the workspace builds in uses its
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:50Z (RFD66606-2247) 'property-testing library. On top
+2026-09-12T00:00:20Z (RFD66606-2247) 'property-testing library. On top of that, every property ships its
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:51Z (RFD66606-2247) 'of that, every property ships its
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:52Z (RFD66606-2247) 'falsification: the input that
+2026-09-12T00:00:21Z (RFD66606-2247) 'falsification: the input that SHOULD violate it, with the test failing if
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:53Z (RFD66606-2247) 'SHOULD violate it, with the test
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:54Z (RFD66606-2247) 'failing if
- # tags: rfd:decision, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:55Z (RFD66606-2247) 'the violation goes undetected.
+2026-09-12T00:00:22Z (RFD66606-2247) 'the violation goes undetected.
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:56Z (RFD66606-2247) '
+2026-09-12T00:00:23Z (RFD66606-2247) '
  # tags: rfd:decision
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:57Z (RFD66606-2247) 'RFD66606-2234 (dress-on pipeline;
+2026-09-12T00:00:24Z (RFD66606-2247) 'RFD66606-2234 (dress-on pipeline; the "every gate ships with its negative
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:00:58Z (RFD66606-2247) 'the "every gate ships with its
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:00:59Z (RFD66606-2247) 'negative
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:00Z (RFD66606-2247) 'control" discipline this
+2026-09-12T00:00:25Z (RFD66606-2247) 'control" discipline this generalises, and the springbone follow-on whose
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:01Z (RFD66606-2247) 'generalises, and the springbone
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:02Z (RFD66606-2247) 'follow-on whose
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:03Z (RFD66606-2247) 'harness bug motivated it),
+2026-09-12T00:00:26Z (RFD66606-2247) 'harness bug motivated it), RFD66606-2232 (Markdown as build artifact),
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:04Z (RFD66606-2247) 'RFD66606-2232 (Markdown as build
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:05Z (RFD66606-2247) 'artifact),
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:06Z (RFD66606-2247) '`2-contract/manuals-weftspun/apparatus/springbone_mujoco.py`
+2026-09-12T00:00:27Z (RFD66606-2247) '`2-contract/manuals-weftspun/apparatus/springbone_mujoco.py` and its test
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:07Z (RFD66606-2247) 'and its test
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:08Z (RFD66606-2247) 'suite,
+2026-09-12T00:00:28Z (RFD66606-2247) 'suite, `3-interactor/g1-sim-to-real/` (add_cloth_chains.py,
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:09Z (RFD66606-2247) '`3-interactor/g1-sim-to-real/`
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:10Z (RFD66606-2247) '(add_cloth_chains.py,
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:11Z (RFD66606-2247) 'bench_silhouette.py,
+2026-09-12T00:00:29Z (RFD66606-2247) 'bench_silhouette.py, coacd_calibrate.py).
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:12Z (RFD66606-2247) 'coacd_calibrate.py).
- # tags: rfd:related, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:13Z (RFD66606-2247) '
+2026-09-12T00:00:30Z (RFD66606-2247) '
  # tags: rfd:related
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:14Z (RFD66606-2247) 'Property shapes
+2026-09-12T00:00:31Z (RFD66606-2247) 'Property shapes
  # tags: rfd:details-heading
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:15Z (RFD66606-2247) '- **Monotonicity.** Raising a
+2026-09-12T00:00:32Z (RFD66606-2247) '- **Monotonicity.** Raising a parameter moves the result one way. Raising
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:16Z (RFD66606-2247) 'parameter moves the result one
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:17Z (RFD66606-2247) 'way. Raising
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:18Z (RFD66606-2247) '  spring-bone `pull` must not
+2026-09-12T00:00:33Z (RFD66606-2247) '  spring-bone `pull` must not increase deflection; keeping every 4th bone must
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:19Z (RFD66606-2247) 'increase deflection; keeping
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:20Z (RFD66606-2247) 'every 4th bone must
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:21Z (RFD66606-2247) '  not score better than keeping
+2026-09-12T00:00:34Z (RFD66606-2247) '  not score better than keeping every 2nd. Falsification: assert the
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:22Z (RFD66606-2247) 'every 2nd. Falsification: assert
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:23Z (RFD66606-2247) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:24Z (RFD66606-2247) '  comparison is strict where the
+2026-09-12T00:00:35Z (RFD66606-2247) '  comparison is strict where the model says it must be, so an implementation
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:25Z (RFD66606-2247) 'model says it must be, so an
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:26Z (RFD66606-2247) 'implementation
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:27Z (RFD66606-2247) '  that ignores the parameter
+2026-09-12T00:00:36Z (RFD66606-2247) '  that ignores the parameter entirely fails instead of tying.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:28Z (RFD66606-2247) 'entirely fails instead of tying.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:29Z (RFD66606-2247) '- **Conservation.** A
+2026-09-12T00:00:37Z (RFD66606-2247) '- **Conservation.** A transformation preserves a quantity it must not
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:30Z (RFD66606-2247) 'transformation preserves a
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:31Z (RFD66606-2247) 'quantity it must not
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:32Z (RFD66606-2247) '  change. Merging
+2026-09-12T00:00:38Z (RFD66606-2247) '  change. Merging parameter-identical springbone chains changes the
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:33Z (RFD66606-2247) 'parameter-identical springbone
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:34Z (RFD66606-2247) 'chains changes the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:35Z (RFD66606-2247) '  component count and nothing
+2026-09-12T00:00:39Z (RFD66606-2247) '  component count and nothing else: transform count before equals after.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:36Z (RFD66606-2247) 'else: transform count before
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:37Z (RFD66606-2247) 'equals after.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:38Z (RFD66606-2247) '  Falsification: a merge that
+2026-09-12T00:00:40Z (RFD66606-2247) '  Falsification: a merge that drops a transform must fail the test.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:39Z (RFD66606-2247) 'drops a transform must fail the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:40Z (RFD66606-2247) 'test.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:41Z (RFD66606-2247) '- **Round-trip identity.** Export
+2026-09-12T00:00:41Z (RFD66606-2247) '- **Round-trip identity.** Export then import returns the input. The engine's
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:42Z (RFD66606-2247) 'then import returns the input.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:43Z (RFD66606-2247) 'The engine's
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:44Z (RFD66606-2247) '  USD adapter carried blend
+2026-09-12T00:00:42Z (RFD66606-2247) '  USD adapter carried blend shapes out and silently dropped every one on the
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:45Z (RFD66606-2247) 'shapes out and silently dropped
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:46Z (RFD66606-2247) 'every one on the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:47Z (RFD66606-2247) '  way back in, because no test
+2026-09-12T00:00:43Z (RFD66606-2247) '  way back in, because no test round-tripped a mesh that had any.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:48Z (RFD66606-2247) 'round-tripped a mesh that had
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:49Z (RFD66606-2247) 'any.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:50Z (RFD66606-2247) '  Falsification: perturb one
+2026-09-12T00:00:44Z (RFD66606-2247) '  Falsification: perturb one shape's deltas and assert the round trip
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:51Z (RFD66606-2247) 'shape's deltas and assert the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:52Z (RFD66606-2247) 'round trip
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:53Z (RFD66606-2247) '  detects the difference, so an
+2026-09-12T00:00:45Z (RFD66606-2247) '  detects the difference, so an importer returning the ORIGINAL mesh
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:54Z (RFD66606-2247) 'importer returning the ORIGINAL
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:55Z (RFD66606-2247) 'mesh
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:56Z (RFD66606-2247) '  unchanged cannot pass.
+2026-09-12T00:00:46Z (RFD66606-2247) '  unchanged cannot pass.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:57Z (RFD66606-2247) '- **Invariance.** An irrelevant
+2026-09-12T00:00:47Z (RFD66606-2247) '- **Invariance.** An irrelevant change does not alter the result.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:01:58Z (RFD66606-2247) 'change does not alter the result.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:01:59Z (RFD66606-2247) '  Arclength-resampling a curve is
+2026-09-12T00:00:48Z (RFD66606-2247) '  Arclength-resampling a curve is invariant to how finely it was
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:00Z (RFD66606-2247) 'invariant to how finely it was
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:01Z (RFD66606-2247) '  discretised. Falsification: a
+2026-09-12T00:00:49Z (RFD66606-2247) '  discretised. Falsification: a genuinely different curve must NOT compare
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:02Z (RFD66606-2247) 'genuinely different curve must
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:03Z (RFD66606-2247) 'NOT compare
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:04Z (RFD66606-2247) '  equal, or the metric has
+2026-09-12T00:00:50Z (RFD66606-2247) '  equal, or the metric has flattened everything to zero and approves any
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:05Z (RFD66606-2247) 'flattened everything to zero and
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:06Z (RFD66606-2247) 'approves any
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:07Z (RFD66606-2247) '  reduction.
+2026-09-12T00:00:51Z (RFD66606-2247) '  reduction.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:08Z (RFD66606-2247) '- **Ordering and idempotence.**
+2026-09-12T00:00:52Z (RFD66606-2247) '- **Ordering and idempotence.** Applying a reduction twice equals applying
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:09Z (RFD66606-2247) 'Applying a reduction twice equals
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:10Z (RFD66606-2247) 'applying
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:11Z (RFD66606-2247) '  it once; grouping is
+2026-09-12T00:00:53Z (RFD66606-2247) '  it once; grouping is independent of input order.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:12Z (RFD66606-2247) 'independent of input order.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:13Z (RFD66606-2247) '
+2026-09-12T00:00:54Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:14Z (RFD66606-2247) 'Pin regressions as explicit
+2026-09-12T00:00:55Z (RFD66606-2247) 'Pin regressions as explicit examples on top of the generator (Hypothesis
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:15Z (RFD66606-2247) 'examples on top of the generator
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:16Z (RFD66606-2247) '(Hypothesis
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:17Z (RFD66606-2247) '`@example`, proptest's
+2026-09-12T00:00:56Z (RFD66606-2247) '`@example`, proptest's `.regressions` file). The generator finds the class;
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:18Z (RFD66606-2247) '`.regressions` file). The
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:19Z (RFD66606-2247) 'generator finds the class;
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:20Z (RFD66606-2247) 'the pinned case proves the
+2026-09-12T00:00:57Z (RFD66606-2247) 'the pinned case proves the specific bug stays dead.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:21Z (RFD66606-2247) 'specific bug stays dead.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:22Z (RFD66606-2247) '
+2026-09-12T00:00:58Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:23Z (RFD66606-2247) 'The harness bug that motivated
+2026-09-12T00:00:59Z (RFD66606-2247) 'The harness bug that motivated this
  # tags: rfd:details-heading
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:24Z (RFD66606-2247) 'this
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:25Z (RFD66606-2247) 'The springbone chain-reduction
+2026-09-12T00:01:00Z (RFD66606-2247) 'The springbone chain-reduction harness reported a tidy set of numbers: 61
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:26Z (RFD66606-2247) 'harness reported a tidy set of
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:27Z (RFD66606-2247) 'numbers: 61
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:28Z (RFD66606-2247) 'spring-bone components reduced to
+2026-09-12T00:01:01Z (RFD66606-2247) 'spring-bone components reduced to 19, collision checks 1233 to 512. Twelve
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:29Z (RFD66606-2247) '19, collision checks 1233 to 512.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:30Z (RFD66606-2247) 'Twelve
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:31Z (RFD66606-2247) 'example-based tests passed.
+2026-09-12T00:01:02Z (RFD66606-2247) 'example-based tests passed.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:32Z (RFD66606-2247) '
+2026-09-12T00:01:03Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:33Z (RFD66606-2247) 'Two negative controls (a frozen
+2026-09-12T00:01:04Z (RFD66606-2247) 'Two negative controls (a frozen chain that must NOT register motion, and a
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:34Z (RFD66606-2247) 'chain that must NOT register
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:35Z (RFD66606-2247) 'motion, and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:36Z (RFD66606-2247) 'stiff chain that must deflect
+2026-09-12T00:01:05Z (RFD66606-2247) 'stiff chain that must deflect less than a soft one) failed with the same
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:37Z (RFD66606-2247) 'less than a soft one) failed with
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:38Z (RFD66606-2247) 'the same
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:39Z (RFD66606-2247) 'number, 0.2017 m, for every
+2026-09-12T00:01:06Z (RFD66606-2247) 'number, 0.2017 m, for every parameter setting. The harness was measuring the
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:40Z (RFD66606-2247) 'parameter setting. The harness
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:41Z (RFD66606-2247) 'was measuring the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:42Z (RFD66606-2247) 'carrier translating the chains
+2026-09-12T00:01:07Z (RFD66606-2247) 'carrier translating the chains rigidly, never their articulation: `qpos`
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:43Z (RFD66606-2247) 'rigidly, never their
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:44Z (RFD66606-2247) 'articulation: `qpos`
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:45Z (RFD66606-2247) 'written each step teleports the
+2026-09-12T00:01:08Z (RFD66606-2247) 'written each step teleports the carrier and imparts no velocity, so nothing
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:46Z (RFD66606-2247) 'carrier and imparts no velocity,
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:47Z (RFD66606-2247) 'so nothing
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:48Z (RFD66606-2247) 'swung.
+2026-09-12T00:01:09Z (RFD66606-2247) 'swung.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:49Z (RFD66606-2247) '
+2026-09-12T00:01:10Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:50Z (RFD66606-2247) 'The component result survived,
+2026-09-12T00:01:11Z (RFD66606-2247) 'The component result survived, being pure combinatorics on parameter
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:51Z (RFD66606-2247) 'being pure combinatorics on
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:52Z (RFD66606-2247) 'parameter
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:53Z (RFD66606-2247) 'identity with no simulation
+2026-09-12T00:01:12Z (RFD66606-2247) 'identity with no simulation involved. The collision result did not, and it
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:54Z (RFD66606-2247) 'involved. The collision result
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:55Z (RFD66606-2247) 'did not, and it
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:56Z (RFD66606-2247) 'was biased toward over-pruning,
+2026-09-12T00:01:13Z (RFD66606-2247) 'was biased toward over-pruning, because a chain that never swings never
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:02:57Z (RFD66606-2247) 'because a chain that never swings
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:58Z (RFD66606-2247) 'never
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:02:59Z (RFD66606-2247) 'approaches a collider it would
+2026-09-12T00:01:14Z (RFD66606-2247) 'approaches a collider it would really have hit.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:00Z (RFD66606-2247) 'really have hit.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:01Z (RFD66606-2247) '
+2026-09-12T00:01:15Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:02Z (RFD66606-2247) 'The falsification cases caught it
+2026-09-12T00:01:16Z (RFD66606-2247) 'The falsification cases caught it and the twelve examples did not. A
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:03Z (RFD66606-2247) 'and the twelve examples did not.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:04Z (RFD66606-2247) 'A
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:05Z (RFD66606-2247) 'generator would have caught it
+2026-09-12T00:01:17Z (RFD66606-2247) 'generator would have caught it faster and smaller: "deflection is monotone
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:06Z (RFD66606-2247) 'faster and smaller: "deflection
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:07Z (RFD66606-2247) 'is monotone
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:08Z (RFD66606-2247) 'in pull" is one property over
+2026-09-12T00:01:18Z (RFD66606-2247) 'in pull" is one property over generated parameters, and it shrinks to a
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:09Z (RFD66606-2247) 'generated parameters, and it
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:10Z (RFD66606-2247) 'shrinks to a
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:11Z (RFD66606-2247) 'minimal counterexample instead of
+2026-09-12T00:01:19Z (RFD66606-2247) 'minimal counterexample instead of needing a human to guess which two
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:12Z (RFD66606-2247) 'needing a human to guess which
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:13Z (RFD66606-2247) 'two
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:14Z (RFD66606-2247) 'settings to compare. That is the
+2026-09-12T00:01:20Z (RFD66606-2247) 'settings to compare. That is the argument for both halves of this rule.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:15Z (RFD66606-2247) 'argument for both halves of this
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:16Z (RFD66606-2247) 'rule.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:17Z (RFD66606-2247) '
+2026-09-12T00:01:21Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:18Z (RFD66606-2247) 'The workspace already believes
+2026-09-12T00:01:22Z (RFD66606-2247) 'The workspace already believes half of it. RFD66606-2234's gates each read
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:19Z (RFD66606-2247) 'half of it. RFD66606-2234's gates
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:20Z (RFD66606-2247) 'each read
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:21Z (RFD66606-2247) '"every gate ships with its
+2026-09-12T00:01:23Z (RFD66606-2247) '"every gate ships with its negative control". That discipline was written
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:22Z (RFD66606-2247) 'negative control". That
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:23Z (RFD66606-2247) 'discipline was written
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:24Z (RFD66606-2247) 'down for data gates and practised
+2026-09-12T00:01:24Z (RFD66606-2247) 'down for data gates and practised nowhere else; this RFD generalises it to
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:25Z (RFD66606-2247) 'nowhere else; this RFD
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:26Z (RFD66606-2247) 'generalises it to
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:27Z (RFD66606-2247) 'code and adds the generator.
+2026-09-12T00:01:25Z (RFD66606-2247) 'code and adds the generator.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:28Z (RFD66606-2247) '
+2026-09-12T00:01:26Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:29Z (RFD66606-2247) 'Determinism
+2026-09-12T00:01:27Z (RFD66606-2247) 'Determinism
  # tags: rfd:details-heading
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:30Z (RFD66606-2247) 'Anything touching a simulator, a
+2026-09-12T00:01:28Z (RFD66606-2247) 'Anything touching a simulator, a GPU or a sampler fixes its seed, and the
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:31Z (RFD66606-2247) 'GPU or a sampler fixes its seed,
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:32Z (RFD66606-2247) 'and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:33Z (RFD66606-2247) 'seed is part of the recorded
+2026-09-12T00:01:29Z (RFD66606-2247) 'seed is part of the recorded failure. A property test that cannot reproduce
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:34Z (RFD66606-2247) 'failure. A property test that
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:35Z (RFD66606-2247) 'cannot reproduce
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:36Z (RFD66606-2247) 'its own counterexample is a flake
+2026-09-12T00:01:30Z (RFD66606-2247) 'its own counterexample is a flake generator. MuJoCo, CoACD and EditScore
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:37Z (RFD66606-2247) 'generator. MuJoCo, CoACD and
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:38Z (RFD66606-2247) 'EditScore
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:39Z (RFD66606-2247) 'runs all fall under this.
+2026-09-12T00:01:31Z (RFD66606-2247) 'runs all fall under this.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:40Z (RFD66606-2247) '
+2026-09-12T00:01:32Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:41Z (RFD66606-2247) 'What this does not ask for
+2026-09-12T00:01:33Z (RFD66606-2247) 'What this does not ask for
  # tags: rfd:details-heading
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:42Z (RFD66606-2247) 'Not every test becomes a property
+2026-09-12T00:01:34Z (RFD66606-2247) 'Not every test becomes a property test. Wiring checks (does this menu item
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:43Z (RFD66606-2247) 'test. Wiring checks (does this
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:44Z (RFD66606-2247) 'menu item
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:45Z (RFD66606-2247) 'exist, does this file parse) stay
+2026-09-12T00:01:35Z (RFD66606-2247) 'exist, does this file parse) stay as examples; there is no invariant to
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:46Z (RFD66606-2247) 'as examples; there is no
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:47Z (RFD66606-2247) 'invariant to
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:48Z (RFD66606-2247) 'generalise. The rule binds where
+2026-09-12T00:01:36Z (RFD66606-2247) 'generalise. The rule binds where there is a claim about behaviour over a
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:49Z (RFD66606-2247) 'there is a claim about behaviour
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:50Z (RFD66606-2247) 'over a
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:51Z (RFD66606-2247) 'domain of inputs, which is where
+2026-09-12T00:01:37Z (RFD66606-2247) 'domain of inputs, which is where the interesting bugs are.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:52Z (RFD66606-2247) 'the interesting bugs are.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:53Z (RFD66606-2247) '
+2026-09-12T00:01:38Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:54Z (RFD66606-2247) 'The problem
+2026-09-12T00:01:39Z (RFD66606-2247) 'The problem
  # tags: rfd:details-heading
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:55Z (RFD66606-2247) 'A property without a negative
+2026-09-12T00:01:40Z (RFD66606-2247) 'A property without a negative control is barely better: it establishes that
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:56Z (RFD66606-2247) 'control is barely better: it
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:57Z (RFD66606-2247) 'establishes that
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:03:58Z (RFD66606-2247) 'the assertion is reachable, not
+2026-09-12T00:01:41Z (RFD66606-2247) 'the assertion is reachable, not that it discriminates.
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written
 
-2026-09-12T00:03:59Z (RFD66606-2247) 'that it discriminates.
- # tags: rfd:details, rfd:wrap
- Text:RFD2247  1 LINE
- Text:Written
-
-2026-09-12T00:04:00Z (RFD66606-2247) '
+2026-09-12T00:01:42Z (RFD66606-2247) '
  # tags: rfd:details
  Text:RFD2247  1 LINE
  Text:Written

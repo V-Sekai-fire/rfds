@@ -9,427 +9,202 @@
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1079) 'AppSignal traces every
+2026-08-25T00:00:02Z (RFD66606-1079) 'AppSignal traces every `weftspun_studio` request, and `versitygw` leaves the image.
  # tags: rfd:hook
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1079) '`weftspun_studio` request, and
- # tags: rfd:hook, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1079) '`versitygw` leaves the image.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1079) '
+2026-08-25T00:00:03Z (RFD66606-1079) '
  # tags: rfd:hook
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1079) '`weftspun_studio` ran with no
+2026-08-25T00:00:04Z (RFD66606-1079) '`weftspun_studio` ran with no request tracing or error reporting at all. A failing deploy,
  # tags: rfd:intrigue
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1079) 'request tracing or error
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1079) 'reporting at all. A failing
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1079) 'deploy,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1079) 'or a slow request, left no trail
+2026-08-25T00:00:05Z (RFD66606-1079) 'or a slow request, left no trail beyond `flyctl logs`.
  # tags: rfd:intrigue
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1079) 'beyond `flyctl logs`.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1079) '
+2026-08-25T00:00:06Z (RFD66606-1079) '
  # tags: rfd:intrigue
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1079) 'Read RFD66606-1073 next for why
+2026-08-25T00:00:07Z (RFD66606-1079) 'Read RFD66606-1073 next for why Tigris replaces `versitygw`.
  # tags: rfd:exit
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1079) 'Tigris replaces `versitygw`.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1079) '
+2026-08-25T00:00:08Z (RFD66606-1079) '
  # tags: rfd:exit
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1079) 'AppSignal observability, and
+2026-08-25T00:00:09Z (RFD66606-1079) 'AppSignal observability, and versitygw's removal
  # tags: rfd:details-title
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1079) 'versitygw's removal
- # tags: rfd:details-title, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1079) '`Appsignal.Plug`, not raw
+2026-08-25T00:00:10Z (RFD66606-1079) '`Appsignal.Plug`, not raw OpenTelemetry, per the user's own
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1079) 'OpenTelemetry, per the user's own
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1079) 'direction. `use Appsignal.Plug`
+2026-08-25T00:00:11Z (RFD66606-1079) 'direction. `use Appsignal.Plug` in `router.ex`, before `:match`, so
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1079) 'in `router.ex`, before `:match`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1079) 'so
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1079) 'it wraps every request. Config is
+2026-08-25T00:00:12Z (RFD66606-1079) 'it wraps every request. Config is entirely env-var driven
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1079) 'entirely env-var driven
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1079) '(`APPSIGNAL_ACTIVE`,
+2026-08-25T00:00:13Z (RFD66606-1079) '(`APPSIGNAL_ACTIVE`, `APPSIGNAL_APP_NAME`, `APPSIGNAL_APP_ENV`,
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1079) '`APPSIGNAL_APP_NAME`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1079) '`APPSIGNAL_APP_ENV`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1079) '`APPSIGNAL_OTP_APP`), matching
+2026-08-25T00:00:14Z (RFD66606-1079) '`APPSIGNAL_OTP_APP`), matching this project's existing pattern, no
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1079) 'this project's existing pattern,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-1079) 'no
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1079) '`config.exs` entry needed.
+2026-08-25T00:00:15Z (RFD66606-1079) '`config.exs` entry needed. `APPSIGNAL_PUSH_API_KEY` is a secret, in
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1079) '`APPSIGNAL_PUSH_API_KEY` is a
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1079) 'secret, in
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1079) 'two places: the
+2026-08-25T00:00:16Z (RFD66606-1079) 'two places: the `APPSIGNAL_PUSH_API_KEY` GitHub Actions secret (the
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1079) '`APPSIGNAL_PUSH_API_KEY` GitHub
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1079) 'Actions secret (the
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1079) 'source of record), and a Fly
+2026-08-25T00:00:17Z (RFD66606-1079) 'source of record), and a Fly secret the deploy workflow now
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1079) 'secret the deploy workflow now
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1079) '`flyctl secrets set --stage`s
+2026-08-25T00:00:18Z (RFD66606-1079) '`flyctl secrets set --stage`s from that GitHub secret on every run,
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1079) 'from that GitHub secret on every
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1079) 'run,
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1079) 'not only the one time this
+2026-08-25T00:00:19Z (RFD66606-1079) 'not only the one time this session set it by hand.
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1079) 'session set it by hand.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1079) '
+2026-08-25T00:00:20Z (RFD66606-1079) '
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1079) '`versitygw` is removed outright,
+2026-08-25T00:00:21Z (RFD66606-1079) '`versitygw` is removed outright, not deferred: no more build stage
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1079) 'not deferred: no more build stage
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1079) 'in `Dockerfile.fly`, no more
+2026-08-25T00:00:22Z (RFD66606-1079) 'in `Dockerfile.fly`, no more process in
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1079) 'process in
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1079) '`deploy/docker-entrypoint-fly.sh`,
+2026-08-25T00:00:23Z (RFD66606-1079) '`deploy/docker-entrypoint-fly.sh`, `VGW_ACCESS_KEY`/`VGW_SECRET_KEY`
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1079) '`VGW_ACCESS_KEY`/`VGW_SECRET_KEY`
- # tags: rfd:decision, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1079) 'unset as Fly secrets.
+2026-08-25T00:00:24Z (RFD66606-1079) 'unset as Fly secrets.
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1079) '
+2026-08-25T00:00:25Z (RFD66606-1079) '
  # tags: rfd:decision
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1079) 'RFD66606-1073 and RFD66606-1077
+2026-08-25T00:00:26Z (RFD66606-1079) 'RFD66606-1073 and RFD66606-1077 (both weftspun/request-for-discussion) decide
  # tags: rfd:related
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1079) '(both
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-1079) 'weftspun/request-for-discussion)
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1079) 'decide
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1079) 'Tigris over `versitygw`.
+2026-08-25T00:00:27Z (RFD66606-1079) 'Tigris over `versitygw`. RFD66606-1076 gives the `apps/` split that made
  # tags: rfd:related
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1079) 'RFD66606-1076 gives the `apps/`
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1079) 'split that made
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1079) '`versitygw` unreachable from
+2026-08-25T00:00:28Z (RFD66606-1079) '`versitygw` unreachable from `usd_viewer_app` in the first place.
  # tags: rfd:related
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1079) '`usd_viewer_app` in the first
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1079) 'place.
- # tags: rfd:related, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1079) '
+2026-08-25T00:00:29Z (RFD66606-1079) '
  # tags: rfd:related
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1079) 'What removal costs
+2026-08-25T00:00:30Z (RFD66606-1079) 'What removal costs
  # tags: rfd:details-heading
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1079) 'It cost nothing extra to run,
+2026-08-25T00:00:31Z (RFD66606-1079) 'It cost nothing extra to run, colocated inside
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1079) 'colocated inside
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1079) 'the already-billed machine, so
+2026-08-25T00:00:32Z (RFD66606-1079) 'the already-billed machine, so removing it changes no bill, only
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1079) 'removing it changes no bill, only
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1079) 'dead code and a credential
+2026-08-25T00:00:33Z (RFD66606-1079) 'dead code and a credential surface nothing reads anymore.
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1079) 'surface nothing reads anymore.
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1079) '
+2026-08-25T00:00:34Z (RFD66606-1079) '
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1079) 'Why versitygw goes
+2026-08-25T00:00:35Z (RFD66606-1079) 'Why versitygw goes
  # tags: rfd:details-heading
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1079) 'Separately, RFD66606-1073's
+2026-08-25T00:00:36Z (RFD66606-1079) 'Separately, RFD66606-1073's `versitygw` (RFD66606-1058's
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1079) '`versitygw` (RFD66606-1058's
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1079) 'S3-API gateway) sat unused:
+2026-08-25T00:00:37Z (RFD66606-1079) 'S3-API gateway) sat unused: RFD66606-1073 (weftspun/request-for-discussion)
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1079) 'RFD66606-1073
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1079) '(weftspun/request-for-discussion)
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1079) 'and RFD66606-1077 already decided
+2026-08-25T00:00:38Z (RFD66606-1079) 'and RFD66606-1077 already decided Tigris replaces it, and RFD66606-1076 split
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1079) 'Tigris replaces it, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1079) 'RFD66606-1076 split
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1079) '`apps/usd_viewer_app/` onto its
+2026-08-25T00:00:39Z (RFD66606-1079) '`apps/usd_viewer_app/` onto its own Fly machine, which cannot reach
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1079) 'own Fly machine, which cannot
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1079) 'reach
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1079) '`versitygw`'s loopback-only bind
+2026-08-25T00:00:40Z (RFD66606-1079) '`versitygw`'s loopback-only bind at all.
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1079) 'at all.
- # tags: rfd:details, rfd:wrap
- Text:RFD1079  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1079) '
+2026-08-25T00:00:41Z (RFD66606-1079) '
  # tags: rfd:details
  Text:RFD1079  1 LINE
  Text:Written

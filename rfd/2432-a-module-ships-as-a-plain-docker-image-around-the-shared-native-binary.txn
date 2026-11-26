@@ -4,267 +4,122 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2432) 'how a module is packaged as a
+2026-10-31T00:00:01Z (RFD66606-2432) 'how a module is packaged as a Docker image.
  # tags: rfd:scope
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2432) 'Docker image.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2432) 'A module ships as a plain Docker
+2026-10-31T00:00:02Z (RFD66606-2432) 'A module ships as a plain Docker image that wraps the one shared native Godot binary.
  # tags: rfd:hook
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2432) 'image that wraps the one shared
- # tags: rfd:hook, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2432) 'native Godot binary.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2432) '
+2026-10-31T00:00:03Z (RFD66606-2432) '
  # tags: rfd:hook
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2432) 'What does one image hold when the
+2026-10-31T00:00:04Z (RFD66606-2432) 'What does one image hold when the weights arrive at build time and the card is 24 GB?
  # tags: rfd:intrigue
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2432) 'weights arrive at build time and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2432) 'the card is 24 GB?
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2432) '
+2026-10-31T00:00:05Z (RFD66606-2432) '
  # tags: rfd:intrigue
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2432) 'Check a new image against
+2026-10-31T00:00:06Z (RFD66606-2432) 'Check a new image against RFD66606-1036: plain Docker, `/health` + `/predict`, weights at
  # tags: rfd:exit
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2432) 'RFD66606-1036: plain Docker,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2432) '`/health` + `/predict`, weights
- # tags: rfd:exit, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2432) 'at
- # tags: rfd:exit, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2432) 'build time, a two-stage
+2026-10-31T00:00:07Z (RFD66606-2432) 'build time, a two-stage Dockerfile and one model per image.
  # tags: rfd:exit
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2432) 'Dockerfile and one model per
- # tags: rfd:exit, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2432) 'image.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2432) '
+2026-10-31T00:00:08Z (RFD66606-2432) '
  # tags: rfd:exit
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2432) 'a module ships as a plain Docker
+2026-10-31T00:00:09Z (RFD66606-2432) 'a module ships as a plain Docker image around the shared native binary
  # tags: rfd:details-title
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2432) 'image around the shared native
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2432) 'binary
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2432) '- Per RFD66606-1036
+2026-10-31T00:00:10Z (RFD66606-2432) '- Per RFD66606-1036 (`committed`): plain Docker, `/health` + `/predict`, weights at build time,
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2432) '(`committed`): plain Docker,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2432) '`/health` + `/predict`, weights
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2432) 'at build time,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2432) '  two-stage Dockerfile
+2026-10-31T00:00:11Z (RFD66606-2432) '  two-stage Dockerfile (`contract` + `worker`), one model per image.
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2432) '(`contract` + `worker`), one
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2432) 'model per image.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2432) '- The container's inference
+2026-10-31T00:00:12Z (RFD66606-2432) '- The container's inference binary is the shared native Godot binary from
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2432) 'binary is the shared native Godot
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2432) 'binary from
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2432) '  &{repo("entities-godot-sandbox",
+2026-10-31T00:00:13Z (RFD66606-2432) '  &{repo("entities-godot-sandbox", planned: "4-entities")} (RFD66606-2210) with the per-model
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2432) 'planned: "4-entities")}
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2432) '(RFD66606-2210) with the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2432) 'per-model
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2432) '  adapter mounted. The runtime is
+2026-10-31T00:00:14Z (RFD66606-2432) '  adapter mounted. The runtime is
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2432) '  ggml with the Vulkan backend
+2026-10-31T00:00:15Z (RFD66606-2432) '  ggml with the Vulkan backend per RFD66606-2231's substitute (Vulkan on native).
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2432) 'per RFD66606-2231's substitute
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2432) '(Vulkan on native).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2432) '
+2026-10-31T00:00:16Z (RFD66606-2432) '
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2432) '- RFD66606-1102, where this rule
+2026-10-31T00:00:17Z (RFD66606-2432) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2432) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2432) '- RFD66606-1036, the plain Docker
+2026-10-31T00:00:18Z (RFD66606-2432) '- RFD66606-1036, the plain Docker packaging.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2432) 'packaging.
- # tags: rfd:related, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2432) '- RFD66606-2210, the shared
+2026-10-31T00:00:19Z (RFD66606-2432) '- RFD66606-2210, the shared native Godot binary.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2432) 'native Godot binary.
- # tags: rfd:related, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2432) '- RFD66606-2231, the Vulkan
+2026-10-31T00:00:20Z (RFD66606-2432) '- RFD66606-2231, the Vulkan substitute.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2432) 'substitute.
- # tags: rfd:related, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2432) '
+2026-10-31T00:00:21Z (RFD66606-2432) '
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2432) 'Target card
+2026-10-31T00:00:22Z (RFD66606-2432) 'Target card
  # tags: rfd:details-heading
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2432) 'Target 24 GB card (local desktop
+2026-10-31T00:00:23Z (RFD66606-2432) 'Target 24 GB card (local desktop GPU per CLAUDE.md).
  # tags: rfd:details
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2432) 'GPU per CLAUDE.md).
- # tags: rfd:details, rfd:wrap
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2432) '
+2026-10-31T00:00:24Z (RFD66606-2432) '
  # tags: rfd:details
  Text:RFD2432  1 LINE
  Text:Written

@@ -4,422 +4,202 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2374) 'binary translation in
+2026-10-31T00:00:01Z (RFD66606-2374) 'binary translation in godot-sandbox and the timings that justify it.
  # tags: rfd:scope
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2374) 'godot-sandbox and the timings
- # tags: rfd:scope, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2374) 'that justify it.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2374) 'Everything in a godot-sandbox
+2026-10-31T00:00:02Z (RFD66606-2374) 'Everything in a godot-sandbox runs binary-translated, and only translated timings are reported.
  # tags: rfd:hook
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2374) 'runs binary-translated, and only
- # tags: rfd:hook, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2374) 'translated timings are reported.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2374) '
+2026-10-31T00:00:03Z (RFD66606-2374) '
  # tags: rfd:hook
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2374) 'An interpreted timing reported as
+2026-10-31T00:00:04Z (RFD66606-2374) 'An interpreted timing reported as the result would hide the translated speed. A script that
  # tags: rfd:intrigue
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2374) 'the result would hide the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2374) 'translated speed. A script that
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2374) 'does not compile has no fallback
+2026-10-31T00:00:05Z (RFD66606-2374) 'does not compile has no fallback to hide behind.
  # tags: rfd:intrigue
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2374) 'to hide behind.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2374) '
+2026-10-31T00:00:06Z (RFD66606-2374) '
  # tags: rfd:intrigue
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2374) 'Check a new script against the
+2026-10-31T00:00:07Z (RFD66606-2374) 'Check a new script against the rule: ship it compiled as `.sgd` with its translation, and
  # tags: rfd:exit
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2374) 'rule: ship it compiled as `.sgd`
- # tags: rfd:exit, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2374) 'with its translation, and
- # tags: rfd:exit, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2374) 'count a script that does not
+2026-10-31T00:00:08Z (RFD66606-2374) 'count a script that does not compile as a FAIL.
  # tags: rfd:exit
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2374) 'compile as a FAIL.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2374) '
+2026-10-31T00:00:09Z (RFD66606-2374) '
  # tags: rfd:exit
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2374) 'everything in a godot-sandbox
+2026-10-31T00:00:10Z (RFD66606-2374) 'everything in a godot-sandbox runs binary-translated
  # tags: rfd:details-title
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2374) 'runs binary-translated
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2374) '- Everything that runs in
+2026-10-31T00:00:11Z (RFD66606-2374) '- Everything that runs in godot-sandbox is binary-translated, guest ELFs and SafeGDScript
  # tags: rfd:decision
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2374) 'godot-sandbox is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2374) 'binary-translated, guest ELFs and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2374) 'SafeGDScript
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2374) '  alike, and an interpreted
+2026-10-31T00:00:12Z (RFD66606-2374) '  alike, and an interpreted timing is never the one reported.
  # tags: rfd:decision
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2374) 'timing is never the one reported.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2374) '- No `.gd` ships: every script,
+2026-10-31T00:00:13Z (RFD66606-2374) '- No `.gd` ships: every script, third-party ones included, ships compiled as `.sgd` with its
  # tags: rfd:decision
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2374) 'third-party ones included, ships
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2374) 'compiled as `.sgd` with its
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2374) '  translation, and a script that
+2026-10-31T00:00:14Z (RFD66606-2374) '  translation, and a script that does not compile is a counted FAIL, not a fallback.
  # tags: rfd:decision
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2374) 'does not compile is a counted
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2374) 'FAIL, not a fallback.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2374) '
+2026-10-31T00:00:15Z (RFD66606-2374) '
  # tags: rfd:decision
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2374) '- RFD66606-2294, where this rule
+2026-10-31T00:00:16Z (RFD66606-2374) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2374) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2374) '- RFD66606-2390, which builds the
+2026-10-31T00:00:17Z (RFD66606-2374) '- RFD66606-2390, which builds the translated libraries.
  # tags: rfd:related
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2374) 'translated libraries.
- # tags: rfd:related, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2374) '
+2026-10-31T00:00:18Z (RFD66606-2374) '
  # tags: rfd:related
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2374) 'What was measured
+2026-10-31T00:00:19Z (RFD66606-2374) 'What was measured
  # tags: rfd:details-heading
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2374) 'Each target built one sphere of
+2026-10-31T00:00:20Z (RFD66606-2374) 'Each target built one sphere of 672 triangles in the guest's self-test, with the
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2374) '672 triangles in the guest's
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2374) 'self-test, with the
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2374) 'translated and the interpreted
+2026-10-31T00:00:21Z (RFD66606-2374) 'translated and the interpreted build started one after the other, twice, on a
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2374) 'build started one after the
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2374) 'other, twice, on a
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2374) 'machine with no other load
+2026-10-31T00:00:22Z (RFD66606-2374) 'machine with no other load (2026-10-17). Times are in milliseconds.
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2374) '(2026-10-17). Times are in
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2374) 'milliseconds.
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2374) '
+2026-10-31T00:00:23Z (RFD66606-2374) '
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2374) '| target | translated |
+2026-10-31T00:00:24Z (RFD66606-2374) '| target | translated | interpreted |
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2374) 'interpreted |
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2374) '|---|---|---|
+2026-10-31T00:00:25Z (RFD66606-2374) '|---|---|---|
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2374) '| macOS arm64, Mac mini, osxcross
+2026-10-31T00:00:26Z (RFD66606-2374) '| macOS arm64, Mac mini, osxcross build | 40.3 to 42.0 | 214.7 to 293.5 |
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2374) 'build | 40.3 to 42.0 | 214.7 to
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2374) '293.5 |
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2374) '| Windows x86_64, the desk | 61.2
+2026-10-31T00:00:27Z (RFD66606-2374) '| Windows x86_64, the desk | 61.2 to 62.0 | 454.2 to 491.7 |
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2374) 'to 62.0 | 454.2 to 491.7 |
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2374) '| Linux x86_64, WSL on the same
+2026-10-31T00:00:28Z (RFD66606-2374) '| Linux x86_64, WSL on the same desk | 114.4 to 131.9 | 583.8 to 595.3 |
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2374) 'desk | 114.4 to 131.9 | 583.8 to
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2374) '595.3 |
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2374) '| web, Chrome on the Mac, tab in
+2026-10-31T00:00:29Z (RFD66606-2374) '| web, Chrome on the Mac, tab in front | 79 to 110 | 442 to 472 |
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2374) 'front | 79 to 110 | 442 to 472 |
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2374) '
+2026-10-31T00:00:30Z (RFD66606-2374) '
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2374) 'The same macOS translation built
+2026-10-31T00:00:31Z (RFD66606-2374) 'The same macOS translation built with Apple clang took 69.5 to 72.4 ms against
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2374) 'with Apple clang took 69.5 to
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2374) '72.4 ms against
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2374) '37.7 to 38.4 ms from osxcross
+2026-10-31T00:00:32Z (RFD66606-2374) '37.7 to 38.4 ms from osxcross with clang 18, so the osxcross build is the one that
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2374) 'with clang 18, so the osxcross
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2374) 'build is the one that
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2374) 'ships. The cause of that
+2026-10-31T00:00:33Z (RFD66606-2374) 'ships. The cause of that difference is not measured. Readings taken while another
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2374) 'difference is not measured.
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2374) 'Readings taken while another
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:14Z (RFD66606-2374) 'build ran on the same machine
+2026-10-31T00:00:34Z (RFD66606-2374) 'build ran on the same machine overstated the gap: Windows interpreted read 848 to
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2374) 'overstated the gap: Windows
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2374) 'interpreted read 848 to
- # tags: rfd:details, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:17Z (RFD66606-2374) '907 ms then.
+2026-10-31T00:00:35Z (RFD66606-2374) '907 ms then.
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:18Z (RFD66606-2374) '
+2026-10-31T00:00:36Z (RFD66606-2374) '
  # tags: rfd:details
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:19Z (RFD66606-2374) '2351
+2026-10-31T00:00:37Z (RFD66606-2374) '2351
  # tags: rebac:verbs-from
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:20Z (RFD66606-2374) 'rfd-2374 provides
+2026-10-31T00:00:38Z (RFD66606-2374) 'rfd-2374 provides binary-translated-only-timings
  # tags: rebac:relate
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2374) 'binary-translated-only-timings
- # tags: rebac:relate, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2374) 'rfd-2374 provides
+2026-10-31T00:00:39Z (RFD66606-2374) 'rfd-2374 provides sgd-compiled-scripts-only
  # tags: rebac:relate
  Text:RFD2374  1 LINE
  Text:Written
 
-2026-10-31T00:01:23Z (RFD66606-2374) 'sgd-compiled-scripts-only
- # tags: rebac:relate, rfd:wrap
- Text:RFD2374  1 LINE
- Text:Written
-
-2026-10-31T00:01:24Z (RFD66606-2374) 'rfd-2374 is_a guest-runtime
+2026-10-31T00:00:40Z (RFD66606-2374) 'rfd-2374 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2374  1 LINE
  Text:Written

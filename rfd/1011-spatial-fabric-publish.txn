@@ -9,232 +9,137 @@
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1011) 'A completed mesh task publishes
+2026-08-25T00:00:02Z (RFD66606-1011) 'A completed mesh task publishes to the spatial fabric in one flow.
  # tags: rfd:hook
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1011) 'to the spatial fabric in one
- # tags: rfd:hook, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1011) 'flow.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1011) '
+2026-08-25T00:00:03Z (RFD66606-1011) '
  # tags: rfd:hook
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1011) 'A completed mesh task should
+2026-08-25T00:00:04Z (RFD66606-1011) 'A completed mesh task should reach shared worlds, and the app has no publish path to
  # tags: rfd:intrigue
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1011) 'reach shared worlds, and the app
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1011) 'has no publish path to
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-1011) 'the spatial fabric.
+2026-08-25T00:00:05Z (RFD66606-1011) 'the spatial fabric.
  # tags: rfd:intrigue
+ Text:RFD1011  1 LINE
+ Text:Written
+
+2026-08-25T00:00:06Z (RFD66606-1011) '
+ # tags: rfd:intrigue
+ Text:RFD1011  1 LINE
+ Text:Written
+
+2026-08-25T00:00:07Z (RFD66606-1011) 'Read `docs/SPATIAL_FABRIC_INTEGRATION.md` for the integration.
+ # tags: rfd:exit
+ Text:RFD1011  1 LINE
+ Text:Written
+
+2026-08-25T00:00:08Z (RFD66606-1011) '
+ # tags: rfd:exit
+ Text:RFD1011  1 LINE
+ Text:Written
+
+2026-08-25T00:00:09Z (RFD66606-1011) 'Add a publish flow for completed tasks.
+ # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
 2026-08-25T00:00:10Z (RFD66606-1011) '
- # tags: rfd:intrigue
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1011) 'Read
- # tags: rfd:exit
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1011) '`docs/SPATIAL_FABRIC_INTEGRATION.md`
- # tags: rfd:exit, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1011) 'for the integration.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1011) '
- # tags: rfd:exit
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1011) 'Add a publish flow for completed
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1011) 'tasks.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1011) '
+2026-08-25T00:00:11Z (RFD66606-1011) '- Publish RP1 sends the completed mesh to the spatial fabric.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1011) '- Publish RP1 sends the completed
+2026-08-25T00:00:12Z (RFD66606-1011) '- Validate OMB tier checks the GLB export against the fabric.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1011) 'mesh to the spatial fabric.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1011) '- Validate OMB tier checks the
+2026-08-25T00:00:13Z (RFD66606-1011) '
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1011) 'GLB export against the fabric.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1011) '
+2026-08-25T00:00:14Z (RFD66606-1011) 'The flow opens the Scene Assembler in a new tab. The spatial
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1011) 'The flow opens the Scene
+2026-08-25T00:00:15Z (RFD66606-1011) 'fabric adapter checks the manifest and the tier presets.
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1011) 'Assembler in a new tab. The
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1011) 'spatial
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1011) 'fabric adapter checks the
+2026-08-25T00:00:16Z (RFD66606-1011) '
  # tags: rfd:decision
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1011) 'manifest and the tier presets.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1011) '
- # tags: rfd:decision
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1011) '- Adapter:
+2026-08-25T00:00:17Z (RFD66606-1011) '- Adapter: `src/library/spatialFabricAdapter.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1011) '`src/library/spatialFabricAdapter.js`
- # tags: rfd:references, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1011) '- Hook:
+2026-08-25T00:00:18Z (RFD66606-1011) '- Hook: `src/hooks/useSpatialFabric.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1011) '`src/hooks/useSpatialFabric.js`
- # tags: rfd:references, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1011) '- Presets:
+2026-08-25T00:00:19Z (RFD66606-1011) '- Presets: `src/library/ombExportPresets.js`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1011) '`src/library/ombExportPresets.js`
- # tags: rfd:references, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1011) '- Docs:
+2026-08-25T00:00:20Z (RFD66606-1011) '- Docs: `docs/SPATIAL_FABRIC_INTEGRATION.md`
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1011) '`docs/SPATIAL_FABRIC_INTEGRATION.md`
- # tags: rfd:references, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1011) '
+2026-08-25T00:00:21Z (RFD66606-1011) '
  # tags: rfd:references
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1011) 'RFD66606-1007 replaces the
+2026-08-25T00:00:22Z (RFD66606-1011) 'RFD66606-1007 replaces the publish terminal validation with motion
  # tags: rfd:related
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1011) 'publish terminal validation with
- # tags: rfd:related, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1011) 'motion
- # tags: rfd:related, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1011) 'validation in the Studio
+2026-08-25T00:00:23Z (RFD66606-1011) 'validation in the Studio pipeline.
  # tags: rfd:related
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1011) 'pipeline.
- # tags: rfd:related, rfd:wrap
- Text:RFD1011  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1011) '
+2026-08-25T00:00:24Z (RFD66606-1011) '
  # tags: rfd:related
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1011) 'The problem
+2026-08-25T00:00:25Z (RFD66606-1011) 'The problem
  # tags: rfd:details-heading
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1011) 'The fabric needs a valid
+2026-08-25T00:00:26Z (RFD66606-1011) 'The fabric needs a valid
  # tags: rfd:details
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1011) 'manifest and a scene assembler.
+2026-08-25T00:00:27Z (RFD66606-1011) 'manifest and a scene assembler.
  # tags: rfd:details
  Text:RFD1011  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1011) '
+2026-08-25T00:00:28Z (RFD66606-1011) '
  # tags: rfd:details
  Text:RFD1011  1 LINE
  Text:Written

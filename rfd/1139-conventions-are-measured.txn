@@ -4,397 +4,192 @@
  RFD:Discussion  1 RFD
  Serials:Weftspun
 
-2026-08-25T00:00:01Z (RFD66606-1139) 'checking rig conventions before
+2026-08-25T00:00:01Z (RFD66606-1139) 'checking rig conventions before they are used
  # tags: rfd:feature
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1139) 'they are used
- # tags: rfd:feature, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-1139) '`6-datasource/anny-render-corpus/check_conventions.py`
+2026-08-25T00:00:02Z (RFD66606-1139) '`6-datasource/anny-render-corpus/check_conventions.py`
  # tags: rfd:scope
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1139) 'Four rig conventions are measured
+2026-08-25T00:00:03Z (RFD66606-1139) 'Four rig conventions are measured off the geometry, and a mismatch stops the render.
  # tags: rfd:hook
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1139) 'off the geometry, and a mismatch
- # tags: rfd:hook, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1139) 'stops the render.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1139) '
+2026-08-25T00:00:04Z (RFD66606-1139) '
  # tags: rfd:hook
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1139) 'Three defects came from assuming
+2026-08-25T00:00:05Z (RFD66606-1139) 'Three defects came from assuming a convention, each producing a result that looked correct.
  # tags: rfd:intrigue
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1139) 'a convention, each producing a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1139) 'result that looked correct.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1139) '
+2026-08-25T00:00:06Z (RFD66606-1139) '
  # tags: rfd:intrigue
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1139) 'Read `SKILL.md` for the order of
+2026-08-25T00:00:07Z (RFD66606-1139) 'Read `SKILL.md` for the order of the checks and the traps.
  # tags: rfd:exit
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1139) 'the checks and the traps.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1139) '
+2026-08-25T00:00:08Z (RFD66606-1139) '
  # tags: rfd:exit
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1139) 'Scale, up, forward and handedness
+2026-08-25T00:00:09Z (RFD66606-1139) 'Scale, up, forward and handedness are measured
  # tags: rfd:details-title
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1139) 'are measured
- # tags: rfd:details-title, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1139) '`check_conventions.py` measures
+2026-08-25T00:00:10Z (RFD66606-1139) '`check_conventions.py` measures four properties off the geometry and
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1139) 'four properties off the geometry
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1139) 'and
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1139) 'refuses on a mismatch.
+2026-08-25T00:00:11Z (RFD66606-1139) 'refuses on a mismatch. `render_grid.py` runs it before rendering a
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1139) '`render_grid.py` runs it before
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1139) 'rendering a
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1139) 'frame, and reports which checks
+2026-08-25T00:00:12Z (RFD66606-1139) 'frame, and reports which checks could not run rather than passing over
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1139) 'could not run rather than passing
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1139) 'over
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1139) 'them. `SKILL.md` gives the order
+2026-08-25T00:00:13Z (RFD66606-1139) 'them. `SKILL.md` gives the order and the traps.
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1139) 'and the traps.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1139) '
+2026-08-25T00:00:14Z (RFD66606-1139) '
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1139) 'Forward is the chest, the normal
+2026-08-25T00:00:15Z (RFD66606-1139) 'Forward is the chest, the normal to the shoulder line. Gaze and feet are
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1139) 'to the shoulder line. Gaze and
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1139) 'feet are
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1139) 'secondary: on the hv_1 fit the
+2026-08-25T00:00:16Z (RFD66606-1139) 'secondary: on the hv_1 fit the chest and gaze agree to 2.8 degrees while
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1139) 'chest and gaze agree to 2.8
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1139) 'degrees while
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1139) 'the feet sit 55.3 degrees away,
+2026-08-25T00:00:17Z (RFD66606-1139) 'the feet sit 55.3 degrees away, so a stance is not a defect.
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1139) 'so a stance is not a defect.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1139) '
+2026-08-25T00:00:18Z (RFD66606-1139) '
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1139) 'Handedness takes three witnesses.
+2026-08-25T00:00:19Z (RFD66606-1139) 'Handedness takes three witnesses. The `.R` against `.L` split cannot
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1139) 'The `.R` against `.L` split
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1139) 'cannot
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1139) 'catch a mirror alone, since
+2026-08-25T00:00:20Z (RFD66606-1139) 'catch a mirror alone, since `right` comes from the chest and the chest
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1139) '`right` comes from the chest and
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1139) 'the chest
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1139) 'mirrors with the body. Signed
+2026-08-25T00:00:21Z (RFD66606-1139) 'mirrors with the body. Signed mesh volume and basis determinants do.
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1139) 'mesh volume and basis
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1139) 'determinants do.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1139) '
+2026-08-25T00:00:22Z (RFD66606-1139) '
  # tags: rfd:decision
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1139) 'RFD66606-1134 records the fits
+2026-08-25T00:00:23Z (RFD66606-1139) 'RFD66606-1134 records the fits these were written against. RFD66606-1137 encodes
  # tags: rfd:related
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1139) 'these were written against.
- # tags: rfd:related, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1139) 'RFD66606-1137 encodes
- # tags: rfd:related, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-1139) 'the render order they guard.
+2026-08-25T00:00:24Z (RFD66606-1139) 'the render order they guard.
  # tags: rfd:related
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1139) '
+2026-08-25T00:00:25Z (RFD66606-1139) '
  # tags: rfd:related
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1139) 'The three defects
+2026-08-25T00:00:26Z (RFD66606-1139) 'The three defects
  # tags: rfd:details-heading
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1139) 'The 2D fit projected components 0
+2026-08-25T00:00:27Z (RFD66606-1139) 'The 2D fit projected components 0 and 1 while the rig is Z-up, so the
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1139) 'and 1 while the rig is Z-up, so
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1139) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1139) 'solver rotated every body ninety
+2026-08-25T00:00:28Z (RFD66606-1139) 'solver rotated every body ninety degrees and reported 0.022% of stature.
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1139) 'degrees and reported 0.022% of
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1139) 'stature.
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1139) '`stature` measured the body's
+2026-08-25T00:00:29Z (RFD66606-1139) '`stature` measured the body's depth for the same reason, normalising by
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1139) 'depth for the same reason,
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1139) 'normalising by
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1139) '0.434 where 1.660 belonged. The
+2026-08-25T00:00:30Z (RFD66606-1139) '0.434 where 1.660 belonged. The camera grid placed cameras at world
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1139) 'camera grid placed cameras at
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1139) 'world
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1139) 'azimuth while its phrases claim a
+2026-08-25T00:00:31Z (RFD66606-1139) 'azimuth while its phrases claim a subject's front, so 96 frames labelled
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1139) 'subject's front, so 96 frames
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1139) 'labelled
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1139) '"front view" were profiles.
+2026-08-25T00:00:32Z (RFD66606-1139) '"front view" were profiles.
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1139) '
+2026-08-25T00:00:33Z (RFD66606-1139) '
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1139) 'The problem
+2026-08-25T00:00:34Z (RFD66606-1139) 'The problem
  # tags: rfd:details-heading
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1139) 'None raised anything. A
+2026-08-25T00:00:35Z (RFD66606-1139) 'None raised anything. A left-right swap is worse: it reprojects onto the
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1139) 'left-right swap is worse: it
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-1139) 'reprojects onto the
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1139) 'same pixels, reports the same
+2026-08-25T00:00:36Z (RFD66606-1139) 'same pixels, reports the same residual and passes the referee, because
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1139) 'residual and passes the referee,
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1139) 'because
- # tags: rfd:details, rfd:wrap
- Text:RFD1139  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1139) 'both measure reprojection.
+2026-08-25T00:00:37Z (RFD66606-1139) 'both measure reprojection.
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1139) '
+2026-08-25T00:00:38Z (RFD66606-1139) '
  # tags: rfd:details
  Text:RFD1139  1 LINE
  Text:Written

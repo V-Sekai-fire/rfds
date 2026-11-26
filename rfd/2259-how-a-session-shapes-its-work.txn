@@ -4,862 +4,407 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-25T00:00:01Z (RFD66606-2259) 'A coding session names branches,
+2026-09-25T00:00:01Z (RFD66606-2259) 'A coding session names branches, commits RFDs, spends its
  # tags: rfd:feature
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:02Z (RFD66606-2259) 'commits RFDs, spends its
- # tags: rfd:feature, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:03Z (RFD66606-2259) 'budget and parks work the same
+2026-09-25T00:00:02Z (RFD66606-2259) 'budget and parks work the same way every time
  # tags: rfd:feature
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:04Z (RFD66606-2259) 'way every time
- # tags: rfd:feature, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:05Z (RFD66606-2259) 'every repository in the goal
+2026-09-25T00:00:03Z (RFD66606-2259) 'every repository in the goal manifest and every agent session
  # tags: rfd:scope
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:06Z (RFD66606-2259) 'manifest and every agent session
- # tags: rfd:scope, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:07Z (RFD66606-2259) 'that works in them
+2026-09-25T00:00:04Z (RFD66606-2259) 'that works in them
  # tags: rfd:scope
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:08Z (RFD66606-2259) 'A coding session names branches,
+2026-09-25T00:00:05Z (RFD66606-2259) 'A coding session names branches, commits RFDs, spends its budget and parks work one way.
  # tags: rfd:hook
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:09Z (RFD66606-2259) 'commits RFDs, spends its budget
- # tags: rfd:hook, rfd:wrap
+2026-09-25T00:00:06Z (RFD66606-2259) '
+ # tags: rfd:hook
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:10Z (RFD66606-2259) 'and parks work one way.
- # tags: rfd:hook, rfd:wrap
+2026-09-25T00:00:07Z (RFD66606-2259) '`head/*` and bare branch names, RFDs spread over three commits, and a feature branch left
+ # tags: rfd:intrigue
+ Text:RFD2259  1 LINE
+ Text:Written
+
+2026-09-25T00:00:08Z (RFD66606-2259) 'checked out that `repo sync` rebased into conflict markers all happened in one session.
+ # tags: rfd:intrigue
+ Text:RFD2259  1 LINE
+ Text:Written
+
+2026-09-25T00:00:09Z (RFD66606-2259) '
+ # tags: rfd:intrigue
+ Text:RFD2259  1 LINE
+ Text:Written
+
+2026-09-25T00:00:10Z (RFD66606-2259) 'Read RFD66606-2258 next, the gates each pushed branch runs.
+ # tags: rfd:exit
  Text:RFD2259  1 LINE
  Text:Written
 
 2026-09-25T00:00:11Z (RFD66606-2259) '
- # tags: rfd:hook
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:12Z (RFD66606-2259) '`head/*` and bare branch names,
- # tags: rfd:intrigue
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:13Z (RFD66606-2259) 'RFDs spread over three commits,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:14Z (RFD66606-2259) 'and a feature branch left
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:15Z (RFD66606-2259) 'checked out that `repo sync`
- # tags: rfd:intrigue
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:16Z (RFD66606-2259) 'rebased into conflict markers all
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:17Z (RFD66606-2259) 'happened in one session.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:18Z (RFD66606-2259) '
- # tags: rfd:intrigue
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:19Z (RFD66606-2259) 'Read RFD66606-2258 next, the
  # tags: rfd:exit
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:20Z (RFD66606-2259) 'gates each pushed branch runs.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:21Z (RFD66606-2259) '
- # tags: rfd:exit
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:22Z (RFD66606-2259) 'how a session shapes its work
+2026-09-25T00:00:12Z (RFD66606-2259) 'how a session shapes its work
  # tags: rfd:details-title
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:23Z (RFD66606-2259) '- Branches start with a stage:
+2026-09-25T00:00:13Z (RFD66606-2259) '- Branches start with a stage: `dev/`, `beta/`, `rc/`, `release/` or
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:24Z (RFD66606-2259) '`dev/`, `beta/`, `rc/`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:25Z (RFD66606-2259) '`release/` or
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:26Z (RFD66606-2259) '  `archived/` (operator,
+2026-09-25T00:00:14Z (RFD66606-2259) '  `archived/` (operator, 2026-10-12). A pushed branch is renamed
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:27Z (RFD66606-2259) '2026-10-12). A pushed branch is
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:28Z (RFD66606-2259) 'renamed
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:29Z (RFD66606-2259) '  through the code host's rename
+2026-09-25T00:00:15Z (RFD66606-2259) '  through the code host's rename call, which keeps its pull request.
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:30Z (RFD66606-2259) 'call, which keeps its pull
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:31Z (RFD66606-2259) 'request.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:32Z (RFD66606-2259) '- After the stage, a name says
+2026-09-25T00:00:16Z (RFD66606-2259) '- After the stage, a name says what the work is: no `module-`,
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:33Z (RFD66606-2259) 'what the work is: no `module-`,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:34Z (RFD66606-2259) '  `godot-` or `vendor-`
+2026-09-25T00:00:17Z (RFD66606-2259) '  `godot-` or `vendor-` (operator, 2026-10-13).
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:35Z (RFD66606-2259) '(operator, 2026-10-13).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:36Z (RFD66606-2259) '- `dev/` becomes `beta/` once
+2026-09-25T00:00:18Z (RFD66606-2259) '- `dev/` becomes `beta/` once every latest check on the tip passed,
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:37Z (RFD66606-2259) 'every latest check on the tip
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:38Z (RFD66606-2259) 'passed,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:39Z (RFD66606-2259) '  the minimum bar (operator,
+2026-09-25T00:00:19Z (RFD66606-2259) '  the minimum bar (operator, 2026-10-13).
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:40Z (RFD66606-2259) '2026-10-13).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:41Z (RFD66606-2259) '- A `dev/` branch ends as a pull
+2026-09-25T00:00:20Z (RFD66606-2259) '- A `dev/` branch ends as a pull request or in `archived/`; a fork keeps its
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:42Z (RFD66606-2259) 'request or in `archived/`; a fork
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:43Z (RFD66606-2259) 'keeps its
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:44Z (RFD66606-2259) '  `dev/`, `beta/`, `rc/` and
+2026-09-25T00:00:21Z (RFD66606-2259) '  `dev/`, `beta/`, `rc/` and `release/` branches (operator, 2026-10-17).
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:45Z (RFD66606-2259) '`release/` branches (operator,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:46Z (RFD66606-2259) '2026-10-17).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:47Z (RFD66606-2259) '- Each RFD lands as one commit; a
+2026-09-25T00:00:22Z (RFD66606-2259) '- Each RFD lands as one commit; a revision amends it before merge.
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:48Z (RFD66606-2259) 'revision amends it before merge.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:49Z (RFD66606-2259) '- Maintenance takes at most a
+2026-09-25T00:00:23Z (RFD66606-2259) '- Maintenance takes at most a tenth of a session's budget.
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:50Z (RFD66606-2259) 'tenth of a session's budget.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:51Z (RFD66606-2259) '
+2026-09-25T00:00:24Z (RFD66606-2259) '
  # tags: rfd:decision
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:52Z (RFD66606-2259) '- RFD66606-2026 (commit
+2026-09-25T00:00:25Z (RFD66606-2259) '- RFD66606-2026 (commit messages), the subject line these commits use.
  # tags: rfd:related
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:53Z (RFD66606-2259) 'messages), the subject line these
- # tags: rfd:related, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:54Z (RFD66606-2259) 'commits use.
- # tags: rfd:related, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:55Z (RFD66606-2259) '- RFD66606-2258, the gates each
+2026-09-25T00:00:26Z (RFD66606-2259) '- RFD66606-2258, the gates each pushed branch runs.
  # tags: rfd:related
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:56Z (RFD66606-2259) 'pushed branch runs.
- # tags: rfd:related, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:00:57Z (RFD66606-2259) '
+2026-09-25T00:00:27Z (RFD66606-2259) '
  # tags: rfd:related
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:58Z (RFD66606-2259) 'Parked work
+2026-09-25T00:00:28Z (RFD66606-2259) 'Parked work
  # tags: rfd:details-heading
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:00:59Z (RFD66606-2259) 'Parked work is committed and
+2026-09-25T00:00:29Z (RFD66606-2259) 'Parked work is committed and pushed with its known defects
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:00Z (RFD66606-2259) 'pushed with its known defects
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:01Z (RFD66606-2259) 'named in the message, and the
+2026-09-25T00:00:30Z (RFD66606-2259) 'named in the message, and the checkout is detached so
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:02Z (RFD66606-2259) 'checkout is detached so
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:03Z (RFD66606-2259) '`repo sync` cannot rebase it.
+2026-09-25T00:00:31Z (RFD66606-2259) '`repo sync` cannot rebase it.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:04Z (RFD66606-2259) '
+2026-09-25T00:00:32Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:05Z (RFD66606-2259) 'Why the checkout is detached
+2026-09-25T00:00:33Z (RFD66606-2259) 'Why the checkout is detached
  # tags: rfd:details-heading
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:06Z (RFD66606-2259) '`repo sync` rebases a local
+2026-09-25T00:00:34Z (RFD66606-2259) '`repo sync` rebases a local branch that tracks the manifest's
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:07Z (RFD66606-2259) 'branch that tracks the manifest's
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:08Z (RFD66606-2259) 'revision. A pushed branch loses
+2026-09-25T00:00:35Z (RFD66606-2259) 'revision. A pushed branch loses nothing by being detached, and the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:09Z (RFD66606-2259) 'nothing by being detached, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:10Z (RFD66606-2259) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:11Z (RFD66606-2259) 'next sync then leaves the project
+2026-09-25T00:00:36Z (RFD66606-2259) 'next sync then leaves the project alone.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:12Z (RFD66606-2259) 'alone.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:13Z (RFD66606-2259) '
+2026-09-25T00:00:37Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:14Z (RFD66606-2259) 'When two names collide
+2026-09-25T00:00:38Z (RFD66606-2259) 'When two names collide
  # tags: rfd:details-heading
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:15Z (RFD66606-2259) 'Dropping a prefix can land on a
+2026-09-25T00:00:39Z (RFD66606-2259) 'Dropping a prefix can land on a name that is already taken. Compare
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:16Z (RFD66606-2259) 'name that is already taken.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:17Z (RFD66606-2259) 'Compare
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:18Z (RFD66606-2259) 'the two branches with `git
+2026-09-25T00:00:40Z (RFD66606-2259) 'the two branches with `git cherry` both ways and `git diff --stat`.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:19Z (RFD66606-2259) 'cherry` both ways and `git diff
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:20Z (RFD66606-2259) '--stat`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:21Z (RFD66606-2259) 'If one branch holds every patch
+2026-09-25T00:00:41Z (RFD66606-2259) 'If one branch holds every patch of the other, keep it and delete the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:22Z (RFD66606-2259) 'of the other, keep it and delete
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:23Z (RFD66606-2259) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:24Z (RFD66606-2259) 'other; record the deleted tip in
+2026-09-25T00:00:42Z (RFD66606-2259) 'other; record the deleted tip in the report so it can be restored. If
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:25Z (RFD66606-2259) 'the report so it can be restored.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:26Z (RFD66606-2259) 'If
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:27Z (RFD66606-2259) 'each holds work the other lacks,
+2026-09-25T00:00:43Z (RFD66606-2259) 'each holds work the other lacks, ask the operator: they may move the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:28Z (RFD66606-2259) 'ask the operator: they may move
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:29Z (RFD66606-2259) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:30Z (RFD66606-2259) 'missing commits onto one branch
+2026-09-25T00:00:44Z (RFD66606-2259) 'missing commits onto one branch and archive the other. A consumer
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:31Z (RFD66606-2259) 'and archive the other. A consumer
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:32Z (RFD66606-2259) 'that names branches, such as the
+2026-09-25T00:00:45Z (RFD66606-2259) 'that names branches, such as the assembly config, is updated in the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:33Z (RFD66606-2259) 'assembly config, is updated in
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:34Z (RFD66606-2259) 'the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:35Z (RFD66606-2259) 'same session, because the code
+2026-09-25T00:00:46Z (RFD66606-2259) 'same session, because the code host redirects a renamed branch's
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:36Z (RFD66606-2259) 'host redirects a renamed branch's
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:37Z (RFD66606-2259) 'web links but not a `git fetch`
+2026-09-25T00:00:47Z (RFD66606-2259) 'web links but not a `git fetch` of the old name.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:38Z (RFD66606-2259) 'of the old name.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:39Z (RFD66606-2259) '
+2026-09-25T00:00:48Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:40Z (RFD66606-2259) 'How a dev branch ends
+2026-09-25T00:00:49Z (RFD66606-2259) 'How a dev branch ends
  # tags: rfd:details-heading
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:41Z (RFD66606-2259) 'Sort each `dev/` branch by what
+2026-09-25T00:00:50Z (RFD66606-2259) 'Sort each `dev/` branch by what it holds that the default branch
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:42Z (RFD66606-2259) 'it holds that the default branch
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:43Z (RFD66606-2259) 'lacks: `git cherry -v` against
+2026-09-25T00:00:51Z (RFD66606-2259) 'lacks: `git cherry -v` against the default branch, and a trial merge
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:44Z (RFD66606-2259) 'the default branch, and a trial
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:45Z (RFD66606-2259) 'merge
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:46Z (RFD66606-2259) 'with `git merge-tree
+2026-09-25T00:00:52Z (RFD66606-2259) 'with `git merge-tree --write-tree`.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:47Z (RFD66606-2259) '--write-tree`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:48Z (RFD66606-2259) '
+2026-09-25T00:00:53Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:49Z (RFD66606-2259) '- Work the default branch lacks
+2026-09-25T00:00:54Z (RFD66606-2259) '- Work the default branch lacks that merges cleanly goes to a pull
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:50Z (RFD66606-2259) 'that merges cleanly goes to a
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:51Z (RFD66606-2259) 'pull
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:52Z (RFD66606-2259) '  request as it stands.
+2026-09-25T00:00:55Z (RFD66606-2259) '  request as it stands.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:53Z (RFD66606-2259) '- A branch whose commits the
+2026-09-25T00:00:56Z (RFD66606-2259) '- A branch whose commits the default branch mostly holds keeps only
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:54Z (RFD66606-2259) 'default branch mostly holds keeps
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:55Z (RFD66606-2259) 'only
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:56Z (RFD66606-2259) '  its `+` commits. They are
+2026-09-25T00:00:57Z (RFD66606-2259) '  its `+` commits. They are cherry-picked onto a new `dev/<x>` off the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:01:57Z (RFD66606-2259) 'cherry-picked onto a new
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:58Z (RFD66606-2259) '`dev/<x>` off the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:01:59Z (RFD66606-2259) '  default branch for a pull
+2026-09-25T00:00:58Z (RFD66606-2259) '  default branch for a pull request, and the old branch is renamed to
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:00Z (RFD66606-2259) 'request, and the old branch is
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:01Z (RFD66606-2259) 'renamed to
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:02Z (RFD66606-2259) '  `archived/`, since a merge from
+2026-09-25T00:00:59Z (RFD66606-2259) '  `archived/`, since a merge from a stale base conflicts.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:03Z (RFD66606-2259) 'a stale base conflicts.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:04Z (RFD66606-2259) '- Work in progress that was never
+2026-09-25T00:01:00Z (RFD66606-2259) '- Work in progress that was never built is renamed to `archived/`.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:05Z (RFD66606-2259) 'built is renamed to `archived/`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:06Z (RFD66606-2259) '  A pull request would ask CI to
+2026-09-25T00:01:01Z (RFD66606-2259) '  A pull request would ask CI to judge code its author has not run.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:07Z (RFD66606-2259) 'judge code its author has not
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:08Z (RFD66606-2259) 'run.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:09Z (RFD66606-2259) '
+2026-09-25T00:01:02Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:10Z (RFD66606-2259) 'A fork keeps every `dev/`,
+2026-09-25T00:01:03Z (RFD66606-2259) 'A fork keeps every `dev/`, `beta/`, `rc/` and `release/` branch: its
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:11Z (RFD66606-2259) '`beta/`, `rc/` and `release/`
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:12Z (RFD66606-2259) 'branch: its
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:13Z (RFD66606-2259) 'work still goes to a pull
+2026-09-25T00:01:04Z (RFD66606-2259) 'work still goes to a pull request, but the branch is neither renamed
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:14Z (RFD66606-2259) 'request, but the branch is
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:15Z (RFD66606-2259) 'neither renamed
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:16Z (RFD66606-2259) 'to `archived/` nor deleted when
+2026-09-25T00:01:05Z (RFD66606-2259) 'to `archived/` nor deleted when the pull request merges.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:17Z (RFD66606-2259) 'the pull request merges.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:18Z (RFD66606-2259) '
+2026-09-25T00:01:06Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:19Z (RFD66606-2259) 'Before renaming, check that the
+2026-09-25T00:01:07Z (RFD66606-2259) 'Before renaming, check that the `archived/` name is free and that no
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:20Z (RFD66606-2259) '`archived/` name is free and that
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:21Z (RFD66606-2259) 'no
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:22Z (RFD66606-2259) 'pull request has the branch as
+2026-09-25T00:01:08Z (RFD66606-2259) 'pull request has the branch as its head. After a pull request merges,
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:23Z (RFD66606-2259) 'its head. After a pull request
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:24Z (RFD66606-2259) 'merges,
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:25Z (RFD66606-2259) 'cancel the merged branch's queued
+2026-09-25T00:01:09Z (RFD66606-2259) 'cancel the merged branch's queued runs: they hold runners that the
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:26Z (RFD66606-2259) 'runs: they hold runners that the
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:27Z (RFD66606-2259) 'default branch's own run needs.
+2026-09-25T00:01:10Z (RFD66606-2259) 'default branch's own run needs.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:28Z (RFD66606-2259) '
+2026-09-25T00:01:11Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:29Z (RFD66606-2259) 'How a branch is promoted
+2026-09-25T00:01:12Z (RFD66606-2259) 'How a branch is promoted
  # tags: rfd:details-heading
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:30Z (RFD66606-2259) 'Read the check runs of the branch
+2026-09-25T00:01:13Z (RFD66606-2259) 'Read the check runs of the branch tip with only the latest run of each
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:31Z (RFD66606-2259) 'tip with only the latest run of
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:32Z (RFD66606-2259) 'each
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:33Z (RFD66606-2259) 'check kept, so a superseded or
+2026-09-25T00:01:14Z (RFD66606-2259) 'check kept, so a superseded or cancelled run does not count against
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:34Z (RFD66606-2259) 'cancelled run does not count
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:35Z (RFD66606-2259) 'against
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:36Z (RFD66606-2259) 'it. Promote only when nothing is
+2026-09-25T00:01:15Z (RFD66606-2259) 'it. Promote only when nothing is queued or running, nothing failed,
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:37Z (RFD66606-2259) 'queued or running, nothing
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:38Z (RFD66606-2259) 'failed,
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:39Z (RFD66606-2259) 'and the set of check names equals
+2026-09-25T00:01:16Z (RFD66606-2259) 'and the set of check names equals the default branch's. A run that
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:40Z (RFD66606-2259) 'the default branch's. A run that
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:41Z (RFD66606-2259) 'passed on a base far behind the
+2026-09-25T00:01:17Z (RFD66606-2259) 'passed on a base far behind the default branch passed against code
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:42Z (RFD66606-2259) 'default branch passed against
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:43Z (RFD66606-2259) 'code
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:44Z (RFD66606-2259) 'that is no longer there, so the
+2026-09-25T00:01:18Z (RFD66606-2259) 'that is no longer there, so the operator decides those case by case.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:45Z (RFD66606-2259) 'operator decides those case by
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:46Z (RFD66606-2259) 'case.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:47Z (RFD66606-2259) 'A branch whose checks are still
+2026-09-25T00:01:19Z (RFD66606-2259) 'A branch whose checks are still queued is promoted by a bounded
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:48Z (RFD66606-2259) 'queued is promoted by a bounded
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:49Z (RFD66606-2259) 'watcher that re-reads the tip
+2026-09-25T00:01:20Z (RFD66606-2259) 'watcher that re-reads the tip first and skips it if the tip moved.
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written
 
-2026-09-25T00:02:50Z (RFD66606-2259) 'first and skips it if the tip
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:51Z (RFD66606-2259) 'moved.
- # tags: rfd:details, rfd:wrap
- Text:RFD2259  1 LINE
- Text:Written
-
-2026-09-25T00:02:52Z (RFD66606-2259) '
+2026-09-25T00:01:21Z (RFD66606-2259) '
  # tags: rfd:details
  Text:RFD2259  1 LINE
  Text:Written

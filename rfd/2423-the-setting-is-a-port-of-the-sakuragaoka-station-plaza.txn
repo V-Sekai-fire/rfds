@@ -4,297 +4,147 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2423) 'the train-station plaza the two
+2026-10-31T00:00:01Z (RFD66606-2423) 'the train-station plaza the two players stand in, and how its port is vendored.
  # tags: rfd:scope
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2423) 'players stand in, and how its
- # tags: rfd:scope, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2423) 'port is vendored.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2423) 'The two players stand in a
+2026-10-31T00:00:02Z (RFD66606-2423) 'The two players stand in a station plaza that is a port, vendored by one script.
  # tags: rfd:hook
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2423) 'station plaza that is a port,
- # tags: rfd:hook, rfd:wrap
+2026-10-31T00:00:03Z (RFD66606-2423) '
+ # tags: rfd:hook
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2423) 'vendored by one script.
- # tags: rfd:hook, rfd:wrap
+2026-10-31T00:00:04Z (RFD66606-2423) 'The source scene generates every texture in code and keeps no mesh on disk.
+ # tags: rfd:intrigue
+ Text:RFD2423  1 LINE
+ Text:Written
+
+2026-10-31T00:00:05Z (RFD66606-2423) '
+ # tags: rfd:intrigue
+ Text:RFD2423  1 LINE
+ Text:Written
+
+2026-10-31T00:00:06Z (RFD66606-2423) 'Run `tools/vendor_station.sh <commit>` with a commit some remote branch contains.
+ # tags: rfd:exit
  Text:RFD2423  1 LINE
  Text:Written
 
 2026-10-31T00:00:07Z (RFD66606-2423) '
- # tags: rfd:hook
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2423) 'The source scene generates every
- # tags: rfd:intrigue
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2423) 'texture in code and keeps no mesh
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2423) 'on disk.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2423) '
- # tags: rfd:intrigue
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2423) 'Run `tools/vendor_station.sh
  # tags: rfd:exit
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2423) '<commit>` with a commit some
- # tags: rfd:exit, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2423) 'remote branch contains.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2423) '
- # tags: rfd:exit
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2423) 'the setting is a port of the
+2026-10-31T00:00:08Z (RFD66606-2423) 'the setting is a port of the Sakuragaoka station plaza
  # tags: rfd:details-title
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2423) 'Sakuragaoka station plaza
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2423) 'The two players stand in a
+2026-10-31T00:00:09Z (RFD66606-2423) 'The two players stand in a train-station plaza, a port of the MIT-licensed procedural three.js
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2423) 'train-station plaza, a port of
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2423) 'the MIT-licensed procedural
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2423) 'three.js
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2423) 'scene `sakuragaoka-station`,
+2026-10-31T00:00:10Z (RFD66606-2423) 'scene `sakuragaoka-station`, placed at &{repo("sakuragaoka-station")}
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2423) 'placed at
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2423) '&{repo("sakuragaoka-station")}
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2423) '(&{pin("sakuragaoka-station")}).
+2026-10-31T00:00:11Z (RFD66606-2423) '(&{pin("sakuragaoka-station")}). The port lives in
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2423) 'The port lives in
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2423) '&{repo("entities-sakuragaoka-station")},
+2026-10-31T00:00:12Z (RFD66606-2423) '&{repo("entities-sakuragaoka-station")}, and the pen vendors it with
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2423) 'and the pen vendors it with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2423) '`tools/vendor_station.sh
+2026-10-31T00:00:13Z (RFD66606-2423) '`tools/vendor_station.sh <commit>`, which takes only a commit some remote branch contains.
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2423) '<commit>`, which takes only a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2423) 'commit some remote branch
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2423) 'contains.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2423) '
+2026-10-31T00:00:14Z (RFD66606-2423) '
  # tags: rfd:decision
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2423) '- RFD66606-2287, where this rule
+2026-10-31T00:00:15Z (RFD66606-2423) '- RFD66606-2287, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2423) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2423) '
+2026-10-31T00:00:16Z (RFD66606-2423) '
  # tags: rfd:related
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2423) 'The station port is abandoned
+2026-10-31T00:00:17Z (RFD66606-2423) 'The station port is abandoned
  # tags: rfd:details-heading
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2423) 'RFD66606-2384, the
+2026-10-31T00:00:18Z (RFD66606-2423) 'RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2423) 'module-by-module port, is
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2423) 'abandoned (operator, 2026-11-11).
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2423) 'The plaza's
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2423) 'assets and tech stay in use, and
+2026-10-31T00:00:19Z (RFD66606-2423) 'assets and tech stay in use, and baking goes through slughorn.
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2423) 'baking goes through slughorn.
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2423) '
+2026-10-31T00:00:20Z (RFD66606-2423) '
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2423) '
+2026-10-31T00:00:21Z (RFD66606-2423) '
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2423) 'Why the port rebuilds the scene
+2026-10-31T00:00:22Z (RFD66606-2423) 'Why the port rebuilds the scene
  # tags: rfd:details-heading
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2423) 'Its 43,727 lines of JavaScript
+2026-10-31T00:00:23Z (RFD66606-2423) 'Its 43,727 lines of JavaScript under `src/` generate every texture in code and keep no mesh on
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2423) 'under `src/` generate every
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2423) 'texture in code and keep no mesh
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2423) 'on
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2423) 'disk, so the port rebuilds the
+2026-10-31T00:00:24Z (RFD66606-2423) 'disk, so the port rebuilds the scene in the engine with MToon materials rather than importing
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2423) 'scene in the engine with MToon
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2423) 'materials rather than importing
- # tags: rfd:details, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2423) 'it.
+2026-10-31T00:00:25Z (RFD66606-2423) 'it.
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2423) '
+2026-10-31T00:00:26Z (RFD66606-2423) '
  # tags: rfd:details
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2423) '2351
+2026-10-31T00:00:27Z (RFD66606-2423) '2351
  # tags: rebac:verbs-from
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2423) 'rfd-2423 provides
+2026-10-31T00:00:28Z (RFD66606-2423) 'rfd-2423 provides sakuragaoka-plaza-setting
  # tags: rebac:relate
  Text:RFD2423  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2423) 'sakuragaoka-plaza-setting
- # tags: rebac:relate, rfd:wrap
- Text:RFD2423  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2423) 'rfd-2423 is_a asset-port
+2026-10-31T00:00:29Z (RFD66606-2423) 'rfd-2423 is_a asset-port
  # tags: rebac:relate
  Text:RFD2423  1 LINE
  Text:Written

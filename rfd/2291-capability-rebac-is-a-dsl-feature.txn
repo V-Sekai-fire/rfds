@@ -4,293 +4,293 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-30T00:00:01Z (RFD66606-2291) 'verbs, tuples and capabilities
+2026-09-30T00:00:01Z (RFD66606-2291) 'verbs, tuples and capabilities are declarations in a `rebac` block,
  # tags: rfd:feature
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:02Z (RFD66606-2291) 'are declarations in a `rebac`
- # tags: rfd:feature, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:03Z (RFD66606-2291) 'block,
- # tags: rfd:feature, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:04Z (RFD66606-2291) 'and the tables and the fenced
+2026-09-30T00:00:02Z (RFD66606-2291) 'and the tables and the fenced block render from them
  # tags: rfd:feature
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:05Z (RFD66606-2291) 'block render from them
- # tags: rfd:feature, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:06Z (RFD66606-2291) '`RFD.DSL`, `RFD.Doc`, the new
+2026-09-30T00:00:03Z (RFD66606-2291) '`RFD.DSL`, `RFD.Doc`, the new `RFD.ReBAC`, `mix rfd.rebac`,
  # tags: rfd:scope
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:07Z (RFD66606-2291) '`RFD.ReBAC`, `mix rfd.rebac`,
- # tags: rfd:scope, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:08Z (RFD66606-2291) '`scripts/check_rebac.exs`, and
+2026-09-30T00:00:04Z (RFD66606-2291) '`scripts/check_rebac.exs`, and RFD66606-2200, RFD66606-2202 and RFD66606-2288
  # tags: rfd:scope
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:09Z (RFD66606-2291) 'RFD66606-2200, RFD66606-2202 and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:10Z (RFD66606-2291) 'RFD66606-2288
- # tags: rfd:scope, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:11Z (RFD66606-2291) 'Capability ReBAC is declared once
+2026-09-30T00:00:05Z (RFD66606-2291) 'Capability ReBAC is declared once in a `rebac` block, and the tables render from it.
  # tags: rfd:hook
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:12Z (RFD66606-2291) 'in a `rebac` block, and the
- # tags: rfd:hook, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:13Z (RFD66606-2291) 'tables render from it.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:14Z (RFD66606-2291) '
+2026-09-30T00:00:06Z (RFD66606-2291) '
  # tags: rfd:hook
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:15Z (RFD66606-2291) 'The authority for what verbs
+2026-09-30T00:00:07Z (RFD66606-2291) 'The authority for what verbs exist was a table layout in a generated file, read by matching
  # tags: rfd:intrigue
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:16Z (RFD66606-2291) 'exist was a table layout in a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:17Z (RFD66606-2291) 'generated file, read by matching
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:18Z (RFD66606-2291) 'pipes in RFD66606-2200's rendered
+2026-09-30T00:00:08Z (RFD66606-2291) 'pipes in RFD66606-2200's rendered Markdown table.
  # tags: rfd:intrigue
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:19Z (RFD66606-2291) 'Markdown table.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:20Z (RFD66606-2291) '
+2026-09-30T00:00:09Z (RFD66606-2291) '
  # tags: rfd:intrigue
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:21Z (RFD66606-2291) 'Run `mix rfd.rebac` to hold every
+2026-09-30T00:00:10Z (RFD66606-2291) 'Run `mix rfd.rebac` to hold every block against the verbs the corpus declares.
  # tags: rfd:exit
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:22Z (RFD66606-2291) 'block against the verbs the
- # tags: rfd:exit, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:23Z (RFD66606-2291) 'corpus declares.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:24Z (RFD66606-2291) '
+2026-09-30T00:00:11Z (RFD66606-2291) '
  # tags: rfd:exit
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:25Z (RFD66606-2291) 'capability ReBAC is a DSL feature
+2026-09-30T00:00:12Z (RFD66606-2291) 'capability ReBAC is a DSL feature
  # tags: rfd:details-title
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:26Z (RFD66606-2291) 'Capability ReBAC is declared, not
+2026-09-30T00:00:13Z (RFD66606-2291) 'Capability ReBAC is declared, not written twice. A `rebac` block inside
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:27Z (RFD66606-2291) 'written twice. A `rebac` block
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:28Z (RFD66606-2291) 'inside
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:29Z (RFD66606-2291) 'an `rfd` block carries `verb`,
+2026-09-30T00:00:14Z (RFD66606-2291) 'an `rfd` block carries `verb`, `relate`, `deny` and `capability` lines;
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:30Z (RFD66606-2291) '`relate`, `deny` and `capability`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:31Z (RFD66606-2291) 'lines;
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:32Z (RFD66606-2291) '`RFD.ReBAC` holds the model and
+2026-09-30T00:00:15Z (RFD66606-2291) '`RFD.ReBAC` holds the model and every rule; the verb table, the
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:33Z (RFD66606-2291) 'every rule; the verb table, the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:34Z (RFD66606-2291) 'capability table and the fenced
+2026-09-30T00:00:16Z (RFD66606-2291) 'capability table and the fenced `rebac` block render from the
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:35Z (RFD66606-2291) '`rebac` block render from the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:36Z (RFD66606-2291) 'declarations. `verbs_from` states
+2026-09-30T00:00:17Z (RFD66606-2291) 'declarations. `verbs_from` states tuples over another RFD's vocabulary,
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:37Z (RFD66606-2291) 'tuples over another RFD's
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:38Z (RFD66606-2291) 'vocabulary,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:39Z (RFD66606-2291) 'which `mix rfd.rebac` resolves
+2026-09-30T00:00:18Z (RFD66606-2291) 'which `mix rfd.rebac` resolves across the corpus, and `renders_into`
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:40Z (RFD66606-2291) 'across the corpus, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:41Z (RFD66606-2291) '`renders_into`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:42Z (RFD66606-2291) 'gives an RFD the fenced block of
+2026-09-30T00:00:19Z (RFD66606-2291) 'gives an RFD the fenced block of a document outside `rfd/`.
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:43Z (RFD66606-2291) 'a document outside `rfd/`.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:44Z (RFD66606-2291) '
+2026-09-30T00:00:20Z (RFD66606-2291) '
  # tags: rfd:decision
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:45Z (RFD66606-2291) 'RFD66606-2200 (the verbs and the
+2026-09-30T00:00:21Z (RFD66606-2291) 'RFD66606-2200 (the verbs and the tuples) declares them here; RFD66606-2232 (RFD
  # tags: rfd:related
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:46Z (RFD66606-2291) 'tuples) declares them here;
- # tags: rfd:related, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:47Z (RFD66606-2291) 'RFD66606-2232 (RFD
- # tags: rfd:related, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:48Z (RFD66606-2291) 'authoring as an Elixir DSL) gives
+2026-09-30T00:00:22Z (RFD66606-2291) 'authoring as an Elixir DSL) gives the build-artifact rule this follows.
  # tags: rfd:related
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:49Z (RFD66606-2291) 'the build-artifact rule this
- # tags: rfd:related, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:50Z (RFD66606-2291) 'follows.
- # tags: rfd:related, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:51Z (RFD66606-2291) '
+2026-09-30T00:00:23Z (RFD66606-2291) '
  # tags: rfd:related
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:52Z (RFD66606-2291) 'The old problem
+2026-09-30T00:00:24Z (RFD66606-2291) 'The old problem
  # tags: rfd:details-heading
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:53Z (RFD66606-2291) 'A second copy of the rows sat in
+2026-09-30T00:00:25Z (RFD66606-2291) 'A second copy of the rows sat in
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:54Z (RFD66606-2291) '`CLAUDE.md` by hand. Two RFDs use
+2026-09-30T00:00:26Z (RFD66606-2291) '`CLAUDE.md` by hand. Two RFDs use verbs RFD66606-2200 never named and nothing
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:55Z (RFD66606-2291) 'verbs RFD66606-2200 never named
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:56Z (RFD66606-2291) 'and nothing
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:00:57Z (RFD66606-2291) 'reports it, because the rows the
+2026-09-30T00:00:27Z (RFD66606-2291) 'reports it, because the rows the gate reads avoid them.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:00:58Z (RFD66606-2291) 'gate reads avoid them.
- # tags: rfd:details, rfd:wrap
+2026-09-30T00:00:28Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:29Z (RFD66606-2291) 'Who else declares
+ # tags: rfd:details-heading
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:30Z (RFD66606-2291) 'RFD66606-2288 (guest capabilities as macaroons) and RFD66606-2202 (role tuples
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:31Z (RFD66606-2291) 'through Bao groups) carry their capabilities and role rows as
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:32Z (RFD66606-2291) 'declarations.
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:33Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:34Z (RFD66606-2291) 'The surface
+ # tags: rfd:details-heading
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:35Z (RFD66606-2291) 'One block per RFD, inside the `rfd` block:
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:36Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:37Z (RFD66606-2291) '    rebac do
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:38Z (RFD66606-2291) '      verb :owns, "the subject holds and operates the object as hardware"
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:39Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:40Z (RFD66606-2291) '      relate "cuda-a63415", :owns, "desktop-3090"
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:41Z (RFD66606-2291) '      deny "hailo-552dfa", :owns, "desktop-3090", "CUDA holds the cards"
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:42Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:43Z (RFD66606-2291) '      capability :transfer, object: "vm", caveats: [:vm, :expires, :epoch]
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:44Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:45Z (RFD66606-2291) '      verbs_from 2200
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:46Z (RFD66606-2291) '      renders_into "CLAUDE.md", subject: "desk-agent"
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:47Z (RFD66606-2291) '    end
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:48Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:49Z (RFD66606-2291) 'A verb is an atom and its row text is kebab, so `:may_use` reads as
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:50Z (RFD66606-2291) '`may-use` in a row and in a table. `capability` defaults its verb to its
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:51Z (RFD66606-2291) 'own name and takes `object:` and `caveats:`. `relate` takes an optional
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:52Z (RFD66606-2291) 'note, which renders after `#` the way a denial's reason does.
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:53Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:54Z (RFD66606-2291) 'What is checked, and when
+ # tags: rfd:details-heading
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:55Z (RFD66606-2291) '`RFD.ReBAC.problems/2` is the one implementation of every rule, and both
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:56Z (RFD66606-2291) 'the DSL and the gate call it. A block's shape is checked while its
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:57Z (RFD66606-2291) 'source compiles, so a bad declaration is a compile error that names the
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:00:58Z (RFD66606-2291) 'rule:
+ # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
@@ -299,157 +299,157 @@
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:00Z (RFD66606-2291) 'Who else declares
+2026-09-30T00:01:00Z (RFD66606-2291) '- each segment is lowercase kebab, and each verb is declared once with a
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:01Z (RFD66606-2291) '  meaning
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:02Z (RFD66606-2291) '- a denial carries its reason
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:03Z (RFD66606-2291) '- no row repeats, and no relation is both granted and denied
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:04Z (RFD66606-2291) '- a capability names one verb on one object and states its caveats once
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:05Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:06Z (RFD66606-2291) 'The vocabulary is the exception. A `verbs_from` resolves only once every
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:07Z (RFD66606-2291) 'source is loaded, so `mix rfd.rebac` holds every block and every fenced
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:08Z (RFD66606-2291) 'document block against the verbs the corpus declares. The two halves
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:09Z (RFD66606-2291) 'together are what the regex read before.
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:10Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:11Z (RFD66606-2291) 'The rendering is the evidence
  # tags: rfd:details-heading
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:01Z (RFD66606-2291) 'RFD66606-2288 (guest capabilities
+2026-09-30T00:01:12Z (RFD66606-2291) 'The fenced block rendered into `CLAUDE.md` from RFD66606-2200's nine rows
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:02Z (RFD66606-2291) 'as macaroons) and RFD66606-2202
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:03Z (RFD66606-2291) '(role tuples
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:04Z (RFD66606-2291) 'through Bao groups) carry their
+2026-09-30T00:01:13Z (RFD66606-2291) 'came out byte for byte the block that was there, reasons aligned in
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:05Z (RFD66606-2291) 'capabilities and role rows as
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:06Z (RFD66606-2291) 'declarations.
+2026-09-30T00:01:14Z (RFD66606-2291) 'their column included. A rendering that differs from the prose it
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:07Z (RFD66606-2291) '
+2026-09-30T00:01:15Z (RFD66606-2291) 'replaces means the declarations are wrong, not the prose, and that is
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:08Z (RFD66606-2291) 'The surface
+2026-09-30T00:01:16Z (RFD66606-2291) 'the check worth running on each further migration.
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:17Z (RFD66606-2291) '
+ # tags: rfd:details
+ Text:RFD2291  1 LINE
+ Text:Written
+
+2026-09-30T00:01:18Z (RFD66606-2291) 'What the migration found
  # tags: rfd:details-heading
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:09Z (RFD66606-2291) 'One block per RFD, inside the
+2026-09-30T00:01:19Z (RFD66606-2291) 'Two verbs are used by RFDs that RFD66606-2200 never named, which a vocabulary
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:10Z (RFD66606-2291) '`rfd` block:
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:11Z (RFD66606-2291) '
+2026-09-30T00:01:20Z (RFD66606-2291) 'read out of one table could not report:
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:12Z (RFD66606-2291) '    rebac do
+2026-09-30T00:01:21Z (RFD66606-2291) '
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:13Z (RFD66606-2291) '      verb :owns, "the subject
+2026-09-30T00:01:22Z (RFD66606-2291) '- `trusts`, which RFD66606-2239 (traits and one binary) states as an
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:14Z (RFD66606-2291) 'holds and operates the object as
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:15Z (RFD66606-2291) 'hardware"
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:16Z (RFD66606-2291) '
+2026-09-30T00:01:23Z (RFD66606-2291) '  amendment to RFD66606-2200.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:17Z (RFD66606-2291) '      relate "cuda-a63415",
+2026-09-30T00:01:24Z (RFD66606-2291) '- `role` and `may-use`, which RFD66606-2202 and `rectgtn/fleet.jsonld` both
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:18Z (RFD66606-2291) ':owns, "desktop-3090"
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:19Z (RFD66606-2291) '      deny "hailo-552dfa", :owns,
+2026-09-30T00:01:25Z (RFD66606-2291) '  use. `CLAUDE.md` happens to use neither, so the gate never looked at
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:20Z (RFD66606-2291) '"desktop-3090", "CUDA holds the
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:21Z (RFD66606-2291) 'cards"
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:22Z (RFD66606-2291) '
+2026-09-30T00:01:26Z (RFD66606-2291) '  a row carrying one.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:23Z (RFD66606-2291) '      capability :transfer,
+2026-09-30T00:01:27Z (RFD66606-2291) '
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:24Z (RFD66606-2291) 'object: "vm", caveats: [:vm,
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:25Z (RFD66606-2291) ':expires, :epoch]
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:26Z (RFD66606-2291) '
+2026-09-30T00:01:28Z (RFD66606-2291) 'All three are `verb` lines in RFD66606-2200 now, which is what RFD66606-2200's own
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:27Z (RFD66606-2291) '      verbs_from 2200
+2026-09-30T00:01:29Z (RFD66606-2291) 'rule asks for: a new verb is an amendment to that RFD before it is a row
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:28Z (RFD66606-2291) '      renders_into "CLAUDE.md",
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:29Z (RFD66606-2291) 'subject: "desk-agent"
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:30Z (RFD66606-2291) '    end
+2026-09-30T00:01:30Z (RFD66606-2291) 'anywhere.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
@@ -459,612 +459,77 @@
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:32Z (RFD66606-2291) 'A verb is an atom and its row
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:33Z (RFD66606-2291) 'text is kebab, so `:may_use`
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:34Z (RFD66606-2291) 'reads as
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:35Z (RFD66606-2291) '`may-use` in a row and in a
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:36Z (RFD66606-2291) 'table. `capability` defaults its
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:37Z (RFD66606-2291) 'verb to its
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:38Z (RFD66606-2291) 'own name and takes `object:` and
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:39Z (RFD66606-2291) '`caveats:`. `relate` takes an
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:40Z (RFD66606-2291) 'optional
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:41Z (RFD66606-2291) 'note, which renders after `#` the
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:42Z (RFD66606-2291) 'way a denial's reason does.
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:43Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:44Z (RFD66606-2291) 'What is checked, and when
+2026-09-30T00:01:32Z (RFD66606-2291) 'What this does not do
  # tags: rfd:details-heading
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:45Z (RFD66606-2291) '`RFD.ReBAC.problems/2` is the one
+2026-09-30T00:01:33Z (RFD66606-2291) 'Enforcement is unchanged. RFD66606-2200's tuples are still data, Bao identity
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:46Z (RFD66606-2291) 'implementation of every rule, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:47Z (RFD66606-2291) 'both
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:48Z (RFD66606-2291) 'the DSL and the gate call it. A
+2026-09-30T00:01:34Z (RFD66606-2291) 'groups still enforce the role rows (RFD66606-2202), and the macaroons of
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:49Z (RFD66606-2291) 'block's shape is checked while
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:50Z (RFD66606-2291) 'its
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:51Z (RFD66606-2291) 'source compiles, so a bad
+2026-09-30T00:01:35Z (RFD66606-2291) 'RFD66606-2288 are still a design. The live tuples are Bao KV rows under
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:52Z (RFD66606-2291) 'declaration is a compile error
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:53Z (RFD66606-2291) 'that names the
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:54Z (RFD66606-2291) 'rule:
+2026-09-30T00:01:36Z (RFD66606-2291) '`relationships/`, and an RFD declares only the rows it states itself.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:55Z (RFD66606-2291) '
+2026-09-30T00:01:37Z (RFD66606-2291) '
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:56Z (RFD66606-2291) '- each segment is lowercase
+2026-09-30T00:01:38Z (RFD66606-2291) 'The planner's own ReBAC engine is untouched: `tw_rebac.hpp`'s relation
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:01:57Z (RFD66606-2291) 'kebab, and each verb is declared
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:58Z (RFD66606-2291) 'once with a
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:01:59Z (RFD66606-2291) '  meaning
+2026-09-30T00:01:39Z (RFD66606-2291) 'types, the Lean specification over them and `capabilities` in a RECTGTN
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:00Z (RFD66606-2291) '- a denial carries its reason
+2026-09-30T00:01:40Z (RFD66606-2291) 'domain are a separate vocabulary with a separate check.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:01Z (RFD66606-2291) '- no row repeats, and no relation
+2026-09-30T00:01:41Z (RFD66606-2291) '
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:02Z (RFD66606-2291) 'is both granted and denied
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:03Z (RFD66606-2291) '- a capability names one verb on
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:04Z (RFD66606-2291) 'one object and states its caveats
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:05Z (RFD66606-2291) 'once
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:06Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:07Z (RFD66606-2291) 'The vocabulary is the exception.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:08Z (RFD66606-2291) 'A `verbs_from` resolves only once
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:09Z (RFD66606-2291) 'every
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:10Z (RFD66606-2291) 'source is loaded, so `mix
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:11Z (RFD66606-2291) 'rfd.rebac` holds every block and
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:12Z (RFD66606-2291) 'every fenced
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:13Z (RFD66606-2291) 'document block against the verbs
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:14Z (RFD66606-2291) 'the corpus declares. The two
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:15Z (RFD66606-2291) 'halves
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:16Z (RFD66606-2291) 'together are what the regex read
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:17Z (RFD66606-2291) 'before.
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:18Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:19Z (RFD66606-2291) 'The rendering is the evidence
+2026-09-30T00:01:42Z (RFD66606-2291) 'The problem
  # tags: rfd:details-heading
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:20Z (RFD66606-2291) 'The fenced block rendered into
+2026-09-30T00:01:43Z (RFD66606-2291) '`scripts/check_rebac.exs` read its verb vocabulary by matching pipes in
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:21Z (RFD66606-2291) '`CLAUDE.md` from RFD66606-2200's
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:22Z (RFD66606-2291) 'nine rows
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:23Z (RFD66606-2291) 'came out byte for byte the block
+2026-09-30T00:01:44Z (RFD66606-2291) 'RFD66606-2200's rendered Markdown table, and RFD66606-2232 (the RFD DSL) makes
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:24Z (RFD66606-2291) 'that was there, reasons aligned
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:25Z (RFD66606-2291) 'in
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:26Z (RFD66606-2291) 'their column included. A
+2026-09-30T00:01:45Z (RFD66606-2291) 'that Markdown a build artifact.
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written
 
-2026-09-30T00:02:27Z (RFD66606-2291) 'rendering that differs from the
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:28Z (RFD66606-2291) 'prose it
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:29Z (RFD66606-2291) 'replaces means the declarations
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:30Z (RFD66606-2291) 'are wrong, not the prose, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:31Z (RFD66606-2291) 'that is
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:32Z (RFD66606-2291) 'the check worth running on each
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:33Z (RFD66606-2291) 'further migration.
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:34Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:35Z (RFD66606-2291) 'What the migration found
- # tags: rfd:details-heading
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:36Z (RFD66606-2291) 'Two verbs are used by RFDs that
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:37Z (RFD66606-2291) 'RFD66606-2200 never named, which
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:38Z (RFD66606-2291) 'a vocabulary
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:39Z (RFD66606-2291) 'read out of one table could not
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:40Z (RFD66606-2291) 'report:
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:41Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:42Z (RFD66606-2291) '- `trusts`, which RFD66606-2239
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:43Z (RFD66606-2291) '(traits and one binary) states as
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:44Z (RFD66606-2291) 'an
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:45Z (RFD66606-2291) '  amendment to RFD66606-2200.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:46Z (RFD66606-2291) '- `role` and `may-use`, which
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:47Z (RFD66606-2291) 'RFD66606-2202 and
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:48Z (RFD66606-2291) '`rectgtn/fleet.jsonld` both
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:49Z (RFD66606-2291) '  use. `CLAUDE.md` happens to use
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:50Z (RFD66606-2291) 'neither, so the gate never looked
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:51Z (RFD66606-2291) 'at
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:52Z (RFD66606-2291) '  a row carrying one.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:53Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:54Z (RFD66606-2291) 'All three are `verb` lines in
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:55Z (RFD66606-2291) 'RFD66606-2200 now, which is what
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:56Z (RFD66606-2291) 'RFD66606-2200's own
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:57Z (RFD66606-2291) 'rule asks for: a new verb is an
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:58Z (RFD66606-2291) 'amendment to that RFD before it
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:02:59Z (RFD66606-2291) 'is a row
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:00Z (RFD66606-2291) 'anywhere.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:01Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:02Z (RFD66606-2291) 'What this does not do
- # tags: rfd:details-heading
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:03Z (RFD66606-2291) 'Enforcement is unchanged.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:04Z (RFD66606-2291) 'RFD66606-2200's tuples are still
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:05Z (RFD66606-2291) 'data, Bao identity
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:06Z (RFD66606-2291) 'groups still enforce the role
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:07Z (RFD66606-2291) 'rows (RFD66606-2202), and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:08Z (RFD66606-2291) 'macaroons of
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:09Z (RFD66606-2291) 'RFD66606-2288 are still a design.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:10Z (RFD66606-2291) 'The live tuples are Bao KV rows
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:11Z (RFD66606-2291) 'under
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:12Z (RFD66606-2291) '`relationships/`, and an RFD
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:13Z (RFD66606-2291) 'declares only the rows it states
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:14Z (RFD66606-2291) 'itself.
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:15Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:16Z (RFD66606-2291) 'The planner's own ReBAC engine is
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:17Z (RFD66606-2291) 'untouched: `tw_rebac.hpp`'s
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:18Z (RFD66606-2291) 'relation
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:19Z (RFD66606-2291) 'types, the Lean specification
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:20Z (RFD66606-2291) 'over them and `capabilities` in a
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:21Z (RFD66606-2291) 'RECTGTN
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:22Z (RFD66606-2291) 'domain are a separate vocabulary
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:23Z (RFD66606-2291) 'with a separate check.
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:24Z (RFD66606-2291) '
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:25Z (RFD66606-2291) 'The problem
- # tags: rfd:details-heading
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:26Z (RFD66606-2291) '`scripts/check_rebac.exs` read
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:27Z (RFD66606-2291) 'its verb vocabulary by matching
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:28Z (RFD66606-2291) 'pipes in
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:29Z (RFD66606-2291) 'RFD66606-2200's rendered Markdown
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:30Z (RFD66606-2291) 'table, and RFD66606-2232 (the RFD
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:31Z (RFD66606-2291) 'DSL) makes
- # tags: rfd:details, rfd:wrap
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:32Z (RFD66606-2291) 'that Markdown a build artifact.
- # tags: rfd:details
- Text:RFD2291  1 LINE
- Text:Written
-
-2026-09-30T00:03:33Z (RFD66606-2291) '
+2026-09-30T00:01:46Z (RFD66606-2291) '
  # tags: rfd:details
  Text:RFD2291  1 LINE
  Text:Written

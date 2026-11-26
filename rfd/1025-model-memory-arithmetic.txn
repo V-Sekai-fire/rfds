@@ -9,392 +9,392 @@
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1025) 'Size a machine from a model's
+2026-08-25T00:00:02Z (RFD66606-1025) 'Size a machine from a model's parameter count.
  # tags: rfd:hook
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1025) 'parameter count.
- # tags: rfd:hook, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1025) '
+2026-08-25T00:00:03Z (RFD66606-1025) '
  # tags: rfd:hook
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1025) 'RFD66606-1016 says what each
+2026-08-25T00:00:04Z (RFD66606-1025) 'RFD66606-1016 says what each model is. It does not say what each model costs.
  # tags: rfd:intrigue
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1025) 'model is. It does not say what
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1025) 'each model costs.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1025) '
+2026-08-25T00:00:05Z (RFD66606-1025) '
  # tags: rfd:intrigue
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1025) 'Look up the model below, then
+2026-08-25T00:00:06Z (RFD66606-1025) 'Look up the model below, then apply the safe rule for one resident model.
  # tags: rfd:exit
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1025) 'apply the safe rule for one
- # tags: rfd:exit, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1025) 'resident model.
- # tags: rfd:exit, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1025) '
+2026-08-25T00:00:07Z (RFD66606-1025) '
  # tags: rfd:exit
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1025) 'Model memory arithmetic
+2026-08-25T00:00:08Z (RFD66606-1025) 'Model memory arithmetic
  # tags: rfd:details-title
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1025) '- The load transient. A loader
+2026-08-25T00:00:09Z (RFD66606-1025) '- The load transient. A loader that reads the file into host memory,
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1025) 'that reads the file into host
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1025) 'memory,
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1025) '  and then copies to the device,
+2026-08-25T00:00:10Z (RFD66606-1025) '  and then copies to the device, holds two copies. A loader that maps
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1025) 'holds two copies. A loader that
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1025) 'maps
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1025) '  the file, and copies direct to
+2026-08-25T00:00:11Z (RFD66606-1025) '  the file, and copies direct to the device, holds one copy.
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1025) 'the device, holds one copy.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1025) '- The runtime overhead. A CUDA
+2026-08-25T00:00:12Z (RFD66606-1025) '- The runtime overhead. A CUDA context, the allocator, and the
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1025) 'context, the allocator, and the
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1025) '  fragmentation add about 10
+2026-08-25T00:00:13Z (RFD66606-1025) '  fragmentation add about 10 percent above the weights.
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1025) 'percent above the weights.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1025) '- The activation peak. This
+2026-08-25T00:00:14Z (RFD66606-1025) '- The activation peak. This depends on the batch size, the resolution,
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1025) 'depends on the batch size, the
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1025) 'resolution,
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1025) '  and the step count. It does not
+2026-08-25T00:00:15Z (RFD66606-1025) '  and the step count. It does not depend on the parameter count.
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1025) 'depend on the parameter count.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-1025) '
+2026-08-25T00:00:16Z (RFD66606-1025) '
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1025) 'The safe rule for one resident
+2026-08-25T00:00:17Z (RFD66606-1025) 'The safe rule for one resident model is below.
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1025) 'model is below.
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1025) '
+2026-08-25T00:00:18Z (RFD66606-1025) '
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1025) '```
+2026-08-25T00:00:19Z (RFD66606-1025) '```
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1025) 'device memory = weight GB x 1.1 +
+2026-08-25T00:00:20Z (RFD66606-1025) 'device memory = weight GB x 1.1 + activation peak
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1025) 'activation peak
- # tags: rfd:details-preamble, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1025) '```
+2026-08-25T00:00:21Z (RFD66606-1025) '```
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1025) '
+2026-08-25T00:00:22Z (RFD66606-1025) '
  # tags: rfd:details-preamble
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1025) 'Compute the memory from the
+2026-08-25T00:00:23Z (RFD66606-1025) 'Compute the memory from the parameter count. Apply the rule to each catalog model, and
  # tags: rfd:decision
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1025) 'parameter count. Apply the rule
- # tags: rfd:decision, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1025) 'to each catalog model, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1025) 'treat the estimated rows as an
+2026-08-25T00:00:24Z (RFD66606-1025) 'treat the estimated rows as an upper bound for planning.
  # tags: rfd:decision
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1025) 'upper bound for planning.
- # tags: rfd:decision, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1025) '
+2026-08-25T00:00:25Z (RFD66606-1025) '
  # tags: rfd:decision
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1025) 'The rule
+2026-08-25T00:00:26Z (RFD66606-1025) 'The rule
  # tags: rfd:section-heading
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1025) 'bf16 holds one parameter in 2
+2026-08-25T00:00:27Z (RFD66606-1025) 'bf16 holds one parameter in 2 bytes. The weight bytes are therefore
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1025) 'bytes. The weight bytes are
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1025) 'therefore
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1025) 'the parameter count multiplied by
+2026-08-25T00:00:28Z (RFD66606-1025) 'the parameter count multiplied by 2.
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1025) '2.
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-1025) '
+2026-08-25T00:00:29Z (RFD66606-1025) '
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1025) '```
+2026-08-25T00:00:30Z (RFD66606-1025) '```
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1025) 'weight bytes = parameters x 2
+2026-08-25T00:00:31Z (RFD66606-1025) 'weight bytes = parameters x 2
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1025) 'weight GB    = parameters in
+2026-08-25T00:00:32Z (RFD66606-1025) 'weight GB    = parameters in billions x 2
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1025) 'billions x 2
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-1025) '```
+2026-08-25T00:00:33Z (RFD66606-1025) '```
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1025) '
+2026-08-25T00:00:34Z (RFD66606-1025) '
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1025) 'This document counts 1 GB as
+2026-08-25T00:00:35Z (RFD66606-1025) 'This document counts 1 GB as 1,000,000,000 bytes. The GiB figure is
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1025) '1,000,000,000 bytes. The GiB
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1025) 'figure is
- # tags: rfd:section, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1025) 'smaller by 7 percent.
+2026-08-25T00:00:36Z (RFD66606-1025) 'smaller by 7 percent.
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1025) '
+2026-08-25T00:00:37Z (RFD66606-1025) '
  # tags: rfd:section
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1025) 'RFD66606-1016 lists the models.
+2026-08-25T00:00:38Z (RFD66606-1025) 'RFD66606-1016 lists the models. RFD66606-1027 gives the totals and the consequence.
  # tags: rfd:related
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1025) 'RFD66606-1027 gives the totals
- # tags: rfd:related, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1025) 'and the consequence.
- # tags: rfd:related, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1025) 'RFD66606-1030 breaks down the
+2026-08-25T00:00:39Z (RFD66606-1025) 'RFD66606-1030 breaks down the See-Through row. RFD66606-1034 checks the rule against a
  # tags: rfd:related
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1025) 'See-Through row. RFD66606-1034
- # tags: rfd:related, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1025) 'checks the rule against a
- # tags: rfd:related, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1025) 'measured model.
+2026-08-25T00:00:40Z (RFD66606-1025) 'measured model.
  # tags: rfd:related
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1025) '
+2026-08-25T00:00:41Z (RFD66606-1025) '
  # tags: rfd:related
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1025) 'bf16 memory per model
+2026-08-25T00:00:42Z (RFD66606-1025) 'bf16 memory per model
  # tags: rfd:details-heading
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1025) 'Prefer `measured` over every
+2026-08-25T00:00:43Z (RFD66606-1025) 'Prefer `measured` over every other source, and prefer bf16 over fp16 where a checkpoint
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1025) 'other source, and prefer bf16
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-1025) 'over fp16 where a checkpoint
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1025) 'offers both. The two formats cost
+2026-08-25T00:00:44Z (RFD66606-1025) 'offers both. The two formats cost the same memory, and bf16 carries the wider exponent
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1025) 'the same memory, and bf16 carries
- # tags: rfd:details, rfd:wrap
+2026-08-25T00:00:45Z (RFD66606-1025) 'range.
+ # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1025) 'the wider exponent
- # tags: rfd:details, rfd:wrap
+2026-08-25T00:00:46Z (RFD66606-1025) '
+ # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1025) 'range.
+2026-08-25T00:00:47Z (RFD66606-1025) 'RFD66606-1027 permits two formats. bf16 holds one parameter in 2 bytes, and
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:48Z (RFD66606-1025) 'Q4_K_M holds one in about 0.55 bytes. The table gives both, per model.
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:49Z (RFD66606-1025) '
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:50Z (RFD66606-1025) 'The Source column says where each number comes from. `published` means
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:51Z (RFD66606-1025) 'the model card states the count. `measured` means this document read
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:52Z (RFD66606-1025) 'the checkpoint sizes. `estimated` means this document derives the
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:53Z (RFD66606-1025) 'count from the architecture. `unknown` means no count is available
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1025) 'yet.
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1025) '
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1025) '| Model id                        | Parameters |     bf16 |   Q4_K_M | Source    |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1025) '| ------------------------------- | ---------: | -------: | -------: | --------- |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1025) '| qwen_q4_k_m_image_edit          |     27.0 B |  54.0 GB | 14.85 GB | published |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1025) '| krea2_turbo_text_to_image       |     16.9 B |  33.8 GB |  9.30 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1025) '| pixal3d_image_to_textured_mesh  |    12.02 B | 24.05 GB |  6.61 GB | measured  |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:01Z (RFD66606-1025) '| seethrough_layer_decomposition  |      4.9 B |   9.8 GB |  2.70 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:02Z (RFD66606-1025) '| trellis2_image_to_textured_mesh |      4.0 B |   8.0 GB |  2.20 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1025) '| trellis_image_to_textured_mesh  |      1.8 B |   3.6 GB |  0.99 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1025) '| worldmirror2_reconstruct        |      1.2 B |   2.4 GB |  0.66 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:05Z (RFD66606-1025) '| triposplat_image_to_splat       |      1.1 B |   2.2 GB |  0.61 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:06Z (RFD66606-1025) '| skintokens_auto_rig             |      0.5 B |   1.0 GB |  0.28 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:07Z (RFD66606-1025) '| p3sam_mesh_segmentation         |      0.4 B |   0.8 GB |  0.22 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:08Z (RFD66606-1025) '| kimodo_text_to_motion           |      0.3 B |   0.6 GB |  0.17 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:09Z (RFD66606-1025) '| unirig_auto_rig                 |    0.125 B |  0.25 GB |  0.07 GB | estimated |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:10Z (RFD66606-1025) '| lingbot_map_environment_scan    |    unknown |  unknown |  unknown | unknown   |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:11Z (RFD66606-1025) '| voxhammer_text_mesh_editing     |          0 |        0 |        0 | published |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:12Z (RFD66606-1025) '| voxhammer_image_mesh_editing    |          0 |        0 |        0 | published |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:13Z (RFD66606-1025) '| weftspun_image_to_world         |          0 |        0 |        0 | composite |
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:14Z (RFD66606-1025) '
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:15Z (RFD66606-1025) 'VoxHammer carries no weights of its own. It edits with the TRELLIS.2
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:16Z (RFD66606-1025) 'backbone, thus its cost is the TRELLIS.2 cost.
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:17Z (RFD66606-1025) '`weftspun_image_to_world` runs TripoSplat and then TRELLIS.2. Its cost
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:18Z (RFD66606-1025) 'is the sum of those two. RFD66606-1033 covers the geometric algorithms,
+ # tags: rfd:details
+ Text:RFD1025  1 LINE
+ Text:Written
+
+2026-08-25T00:01:19Z (RFD66606-1025) 'which hold no weights at all.
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
@@ -404,507 +404,42 @@
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1025) 'RFD66606-1027 permits two
+2026-08-25T00:01:21Z (RFD66606-1025) 'The blocklisted Hunyuan models add 9.2 GB. The shape model holds
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1025) 'formats. bf16 holds one parameter
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1025) 'in 2 bytes, and
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1025) 'Q4_K_M holds one in about 0.55
+2026-08-25T00:01:22Z (RFD66606-1025) '3.3 B parameters, which is 6.6 GB. The paint model holds 1.3 B
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1025) 'bytes. The table gives both, per
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1025) 'model.
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1025) '
+2026-08-25T00:01:23Z (RFD66606-1025) 'parameters, which is 2.6 GB.
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1025) 'The Source column says where each
+2026-08-25T00:01:24Z (RFD66606-1025) '
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-1025) 'number comes from. `published`
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1025) 'means
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1025) 'the model card states the count.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1025) '`measured` means this document
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1025) 'read
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1025) 'the checkpoint sizes. `estimated`
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1025) 'means this document derives the
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1025) 'count from the architecture.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1025) '`unknown` means no count is
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1025) 'available
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-1025) 'yet.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1025) '
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-1025) '| Model id                        |
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1025) 'Parameters |     bf16 |   Q4_K_M
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:43Z (RFD66606-1025) '| Source    |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-1025) '| -------------------------------
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1025) '| ---------: | -------: |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:46Z (RFD66606-1025) '-------: | --------- |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-1025) '| qwen_q4_k_m_image_edit          |     27.0
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:48Z (RFD66606-1025) 'B |  54.0 GB | 14.85 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:49Z (RFD66606-1025) 'published |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:50Z (RFD66606-1025) '| krea2_turbo_text_to_image       |     16.9
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-1025) 'B |  33.8 GB |  9.30 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:52Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:53Z (RFD66606-1025) '| pixal3d_image_to_textured_mesh  |    12.02
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-1025) 'B | 24.05 GB |  6.61 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-1025) 'measured  |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1025) '| seethrough_layer_decomposition  |      4.9
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1025) 'B |   9.8 GB |  2.70 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:58Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:01:59Z (RFD66606-1025) '| trellis2_image_to_textured_mesh
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:00Z (RFD66606-1025) '|      4.0 B |   8.0 GB |  2.20
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:01Z (RFD66606-1025) 'GB | estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:02Z (RFD66606-1025) '| trellis_image_to_textured_mesh  |      1.8
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:03Z (RFD66606-1025) 'B |   3.6 GB |  0.99 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:04Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1025) '| worldmirror2_reconstruct        |      1.2
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:06Z (RFD66606-1025) 'B |   2.4 GB |  0.66 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1025) '| triposplat_image_to_splat       |      1.1
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:09Z (RFD66606-1025) 'B |   2.2 GB |  0.61 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:10Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:11Z (RFD66606-1025) '| skintokens_auto_rig             |      0.5
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:12Z (RFD66606-1025) 'B |   1.0 GB |  0.28 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:13Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:14Z (RFD66606-1025) '| p3sam_mesh_segmentation         |      0.4
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:15Z (RFD66606-1025) 'B |   0.8 GB |  0.22 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:16Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:17Z (RFD66606-1025) '| kimodo_text_to_motion           |      0.3
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:18Z (RFD66606-1025) 'B |   0.6 GB |  0.17 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:19Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1025) '| unirig_auto_rig                 |    0.125
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:21Z (RFD66606-1025) 'B |  0.25 GB |  0.07 GB |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:22Z (RFD66606-1025) 'estimated |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:23Z (RFD66606-1025) '| lingbot_map_environment_scan    |    unknown
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-1025) '|  unknown |  unknown | unknown   |
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:25Z (RFD66606-1025) '| voxhammer_text_mesh_editing     |          0
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-1025) '|        0 |        0 | published
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:27Z (RFD66606-1025) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:28Z (RFD66606-1025) '| voxhammer_image_mesh_editing    |          0
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:29Z (RFD66606-1025) '|        0 |        0 | published
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:30Z (RFD66606-1025) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:31Z (RFD66606-1025) '| weftspun_image_to_world         |          0
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:32Z (RFD66606-1025) '|        0 |        0 | composite
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:33Z (RFD66606-1025) '|
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-1025) '
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-1025) 'VoxHammer carries no weights of
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:36Z (RFD66606-1025) 'its own. It edits with the
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-1025) 'TRELLIS.2
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:38Z (RFD66606-1025) 'backbone, thus its cost is the
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:39Z (RFD66606-1025) 'TRELLIS.2 cost.
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:40Z (RFD66606-1025) '`weftspun_image_to_world` runs
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-1025) 'TripoSplat and then TRELLIS.2.
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:42Z (RFD66606-1025) 'Its cost
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:43Z (RFD66606-1025) 'is the sum of those two.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:44Z (RFD66606-1025) 'RFD66606-1033 covers the
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:45Z (RFD66606-1025) 'geometric algorithms,
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:46Z (RFD66606-1025) 'which hold no weights at all.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:47Z (RFD66606-1025) '
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:48Z (RFD66606-1025) 'The blocklisted Hunyuan models
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:49Z (RFD66606-1025) 'add 9.2 GB. The shape model holds
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:50Z (RFD66606-1025) '3.3 B parameters, which is 6.6
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:51Z (RFD66606-1025) 'GB. The paint model holds 1.3 B
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:52Z (RFD66606-1025) 'parameters, which is 2.6 GB.
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:53Z (RFD66606-1025) '
- # tags: rfd:details
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:54Z (RFD66606-1025) 'The problem
+2026-08-25T00:01:25Z (RFD66606-1025) 'The problem
  # tags: rfd:details-heading
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:02:55Z (RFD66606-1025) 'A reader cannot size a machine
+2026-08-25T00:01:26Z (RFD66606-1025) 'A reader cannot size a machine from the inventory alone. The backend must decide which
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:02:56Z (RFD66606-1025) 'from the inventory alone. The
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:57Z (RFD66606-1025) 'backend must decide which
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:02:58Z (RFD66606-1025) 'models stay resident, and that
+2026-08-25T00:01:27Z (RFD66606-1025) 'models stay resident, and that decision needs a number per model.
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written
 
-2026-08-25T00:02:59Z (RFD66606-1025) 'decision needs a number per
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:03:00Z (RFD66606-1025) 'model.
- # tags: rfd:details, rfd:wrap
- Text:RFD1025  1 LINE
- Text:Written
-
-2026-08-25T00:03:01Z (RFD66606-1025) '
+2026-08-25T00:01:28Z (RFD66606-1025) '
  # tags: rfd:details
  Text:RFD1025  1 LINE
  Text:Written

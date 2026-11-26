@@ -4,452 +4,452 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-08-31T00:00:01Z (RFD66606-2143) 'the `dr` tag writes the off-Fly
+2026-08-31T00:00:01Z (RFD66606-2143) 'the `dr` tag writes the off-Fly copy to R2 IA, beside the main backup on Tigris
  # tags: rfd:feature
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:02Z (RFD66606-2143) 'copy to R2 IA, beside the main
- # tags: rfd:feature, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:03Z (RFD66606-2143) 'backup on Tigris
- # tags: rfd:feature, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:04Z (RFD66606-2143) 'weftspun-fdb (one machine)
+2026-08-31T00:00:02Z (RFD66606-2143) 'weftspun-fdb (one machine)
  # tags: rfd:scope
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:05Z (RFD66606-2143) 'Where does a copy of the FDB
+2026-08-31T00:00:03Z (RFD66606-2143) 'Where does a copy of the FDB backup live that an all-Fly disaster cannot reach?
  # tags: rfd:hook
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:06Z (RFD66606-2143) 'backup live that an all-Fly
- # tags: rfd:hook, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:07Z (RFD66606-2143) 'disaster cannot reach?
- # tags: rfd:hook, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:08Z (RFD66606-2143) '
+2026-08-31T00:00:04Z (RFD66606-2143) '
  # tags: rfd:hook
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:09Z (RFD66606-2143) 'A backup on Fly's own object
+2026-08-31T00:00:05Z (RFD66606-2143) 'A backup on Fly's own object storage goes with the cluster in a disaster naming "all Fly
  # tags: rfd:intrigue
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:10Z (RFD66606-2143) 'storage goes with the cluster in
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:11Z (RFD66606-2143) 'a disaster naming "all Fly
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:12Z (RFD66606-2143) 'infra gone".
+2026-08-31T00:00:06Z (RFD66606-2143) 'infra gone".
  # tags: rfd:intrigue
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:13Z (RFD66606-2143) '
+2026-08-31T00:00:07Z (RFD66606-2143) '
  # tags: rfd:intrigue
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:14Z (RFD66606-2143) 'Read the DR runbook below, and
+2026-08-31T00:00:08Z (RFD66606-2143) 'Read the DR runbook below, and run `fdbbackup status -t dr` to check the tag.
  # tags: rfd:exit
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:15Z (RFD66606-2143) 'run `fdbbackup status -t dr` to
- # tags: rfd:exit, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:16Z (RFD66606-2143) 'check the tag.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:17Z (RFD66606-2143) '
+2026-08-31T00:00:09Z (RFD66606-2143) '
  # tags: rfd:exit
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:18Z (RFD66606-2143) 'FDB backup fans out to R2 for
+2026-08-31T00:00:10Z (RFD66606-2143) 'FDB backup fans out to R2 for off-Fly durability
  # tags: rfd:details-title
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:19Z (RFD66606-2143) 'off-Fly durability
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:20Z (RFD66606-2143) 'Two `fdbbackup` tags run. The
+2026-08-31T00:00:11Z (RFD66606-2143) 'Two `fdbbackup` tags run. The `default` tag writes to Tigris on Fly and is the main backup.
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:21Z (RFD66606-2143) '`default` tag writes to Tigris on
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:22Z (RFD66606-2143) 'Fly and is the main backup.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:23Z (RFD66606-2143) 'The `dr` tag writes to R2 IA
+2026-08-31T00:00:12Z (RFD66606-2143) 'The `dr` tag writes to R2 IA (`weftspun-fdb-dr`) and is the off-Fly second copy, reached
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:24Z (RFD66606-2143) '(`weftspun-fdb-dr`) and is the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:25Z (RFD66606-2143) 'off-Fly second copy, reached
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:26Z (RFD66606-2143) 'via a stunnel loopback listener
+2026-08-31T00:00:13Z (RFD66606-2143) 'via a stunnel loopback listener that adds the SNI FoundationDB does
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:27Z (RFD66606-2143) 'that adds the SNI FoundationDB
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:28Z (RFD66606-2143) 'does
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:29Z (RFD66606-2143) 'not send. R2 IA carries a 30-day
+2026-08-31T00:00:14Z (RFD66606-2143) 'not send. R2 IA carries a 30-day minimum storage duration and free
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:30Z (RFD66606-2143) 'minimum storage duration and free
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:31Z (RFD66606-2143) 'egress. Since 2026-11-01 the
+2026-08-31T00:00:15Z (RFD66606-2143) 'egress. Since 2026-11-01 the cluster runs as one machine on Fly again, and Tigris is the
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:32Z (RFD66606-2143) 'cluster runs as one machine on
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:33Z (RFD66606-2143) 'Fly again, and Tigris is the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:34Z (RFD66606-2143) 'main backup again (operator,
+2026-08-31T00:00:16Z (RFD66606-2143) 'main backup again (operator, 2026-11-01). Tigris and R2 stay as the hosted S3 destinations,
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:35Z (RFD66606-2143) '2026-11-01). Tigris and R2 stay
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:36Z (RFD66606-2143) 'as the hosted S3 destinations,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:37Z (RFD66606-2143) 'and the self-hosted S3 server is
+2026-08-31T00:00:17Z (RFD66606-2143) 'and the self-hosted S3 server is SeaweedFS (operator, 2026-11-16, RFD66606-2364).
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:38Z (RFD66606-2143) 'SeaweedFS (operator, 2026-11-16,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:39Z (RFD66606-2143) 'RFD66606-2364).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:40Z (RFD66606-2143) '
+2026-08-31T00:00:18Z (RFD66606-2143) '
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:41Z (RFD66606-2143) '**Gate:** `fdbbackup status -t
+2026-08-31T00:00:19Z (RFD66606-2143) '**Gate:** `fdbbackup status -t dr` reports the tag restorable and its
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:42Z (RFD66606-2143) 'dr` reports the tag restorable
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:43Z (RFD66606-2143) 'and its
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:44Z (RFD66606-2143) 'newest complete log within
+2026-08-31T00:00:20Z (RFD66606-2143) 'newest complete log within `WEFT_BACKUP_MAX_BEHIND`, read by
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:45Z (RFD66606-2143) '`WEFT_BACKUP_MAX_BEHIND`, read by
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:46Z (RFD66606-2143) '`backup-fresh.sh --tag dr` and
+2026-08-31T00:00:21Z (RFD66606-2143) '`backup-fresh.sh --tag dr` and published as `/dr` for the
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:47Z (RFD66606-2143) 'published as `/dr` for the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:48Z (RFD66606-2143) '`backup_fresh_dr` machine check.
+2026-08-31T00:00:22Z (RFD66606-2143) '`backup_fresh_dr` machine check.
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:49Z (RFD66606-2143) '
+2026-08-31T00:00:23Z (RFD66606-2143) '
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:50Z (RFD66606-2143) '**Negative control:** a machine
+2026-08-31T00:00:24Z (RFD66606-2143) '**Negative control:** a machine started without `R2_ACCESS_KEY_ID`
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:51Z (RFD66606-2143) 'started without
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:52Z (RFD66606-2143) '`R2_ACCESS_KEY_ID`
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:53Z (RFD66606-2143) 'writes no `/dr`, and the `dr`
+2026-08-31T00:00:25Z (RFD66606-2143) 'writes no `/dr`, and the `dr` check reports critical rather than
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:54Z (RFD66606-2143) 'check reports critical rather
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:55Z (RFD66606-2143) 'than
- # tags: rfd:decision, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:00:56Z (RFD66606-2143) 'passing on nothing.
+2026-08-31T00:00:26Z (RFD66606-2143) 'passing on nothing.
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:57Z (RFD66606-2143) '
+2026-08-31T00:00:27Z (RFD66606-2143) '
  # tags: rfd:decision
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:58Z (RFD66606-2143) 'RFD66606-2134, RFD66606-2140,
+2026-08-31T00:00:28Z (RFD66606-2143) 'RFD66606-2134, RFD66606-2140, RFD66606-2141, RFD66606-2135. DR runbook in DETAILS.md.
  # tags: rfd:related
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:00:59Z (RFD66606-2143) 'RFD66606-2141, RFD66606-2135. DR
- # tags: rfd:related, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:00Z (RFD66606-2143) 'runbook in DETAILS.md.
- # tags: rfd:related, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:01Z (RFD66606-2143) '
+2026-08-31T00:00:29Z (RFD66606-2143) '
  # tags: rfd:related
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:02Z (RFD66606-2143) 'Where the S3 keys live
+2026-08-31T00:00:30Z (RFD66606-2143) 'Where the S3 keys live
  # tags: rfd:details-heading
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:03Z (RFD66606-2143) 'R2 S3 credentials live in Bao at
+2026-08-31T00:00:31Z (RFD66606-2143) 'R2 S3 credentials live in Bao at `secret/data/weftspun-fdb/r2-dr`,
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:04Z (RFD66606-2143) '`secret/data/weftspun-fdb/r2-dr`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:05Z (RFD66606-2143) 'cached as Fly secrets on
+2026-08-31T00:00:32Z (RFD66606-2143) 'cached as Fly secrets on `weftspun-fdb` because Bao's storage is FDB
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:06Z (RFD66606-2143) '`weftspun-fdb` because Bao's
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:07Z (RFD66606-2143) 'storage is FDB
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:08Z (RFD66606-2143) 'and FDB cannot read Bao at boot.
+2026-08-31T00:00:33Z (RFD66606-2143) 'and FDB cannot read Bao at boot. The Cloudflare API bearer token
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:09Z (RFD66606-2143) 'The Cloudflare API bearer token
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:10Z (RFD66606-2143) 'stays in 1Password. The S3 keys
+2026-08-31T00:00:34Z (RFD66606-2143) 'stays in 1Password. The S3 keys are regenerated from it at DR time
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:11Z (RFD66606-2143) 'are regenerated from it at DR
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:12Z (RFD66606-2143) 'time
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:13Z (RFD66606-2143) 'rather than restored, so no
+2026-08-31T00:00:35Z (RFD66606-2143) 'rather than restored, so no long-lived material sits outside Bao.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:14Z (RFD66606-2143) 'long-lived material sits outside
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:15Z (RFD66606-2143) 'Bao.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:16Z (RFD66606-2143) '
+2026-08-31T00:00:36Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:17Z (RFD66606-2143) '
+2026-08-31T00:00:37Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:18Z (RFD66606-2143) '
+2026-08-31T00:00:38Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:19Z (RFD66606-2143) 'What was measured on 2026-08-31
+2026-08-31T00:00:39Z (RFD66606-2143) 'What was measured on 2026-08-31
  # tags: rfd:details-heading
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:20Z (RFD66606-2143) '`fdbbackup status` on
+2026-08-31T00:00:40Z (RFD66606-2143) '`fdbbackup status` on `84e69ef2251558` reported the `default` tag
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:21Z (RFD66606-2143) '`84e69ef2251558` reported the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:22Z (RFD66606-2143) '`default` tag
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:23Z (RFD66606-2143) 'restorable and continuing to
+2026-08-31T00:00:41Z (RFD66606-2143) 'restorable and continuing to
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:24Z (RFD66606-2143) '`blobstore://...@fly.storage.tigris.dev:8443/weft?bucket=weftspun-fdb-blob`.
+2026-08-31T00:00:42Z (RFD66606-2143) '`blobstore://...@fly.storage.tigris.dev:8443/weft?bucket=weftspun-fdb-blob`.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:25Z (RFD66606-2143) 'The cluster's `Sum of key-value
+2026-08-31T00:00:43Z (RFD66606-2143) 'The cluster's `Sum of key-value sizes` was 0 MB, so the whole 944 MB
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:26Z (RFD66606-2143) 'sizes` was 0 MB, so the whole 944
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:27Z (RFD66606-2143) 'MB
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:28Z (RFD66606-2143) 'of FDB disk use is empty pages,
+2026-08-31T00:00:44Z (RFD66606-2143) 'of FDB disk use is empty pages, the safest possible moment to
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:29Z (RFD66606-2143) 'the safest possible moment to
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:00:45Z (RFD66606-2143) 'introduce a second backup tag.
+ # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:30Z (RFD66606-2143) 'introduce a second backup tag.
+2026-08-31T00:00:46Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:47Z (RFD66606-2143) 'Bao's PKI mount was queried with the root token: `pki/keys` lists
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:48Z (RFD66606-2143) 'two RSA keys, neither with exported material, and the intermediate
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:49Z (RFD66606-2143) 'issuer's `key_id` is `a15acb18-...`. The CA key is not readable
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:50Z (RFD66606-2143) 'outside Bao. The DR chain therefore relies on FDB backup + Bao
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:51Z (RFD66606-2143) 'restore-in-place (Bao's storage is FDB), and the R2 destination is
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:52Z (RFD66606-2143) 'what protects that chain from single-provider loss.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:53Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:54Z (RFD66606-2143) '`Bao's storage_type` returned `foundationdb`. `fdbcli status` under
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:55Z (RFD66606-2143) 'mTLS from an SSH console needed the four env vars the entrypoint
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:56Z (RFD66606-2143) 'sets around fdbserver (`FDB_TLS_{CERTIFICATE,KEY,CA}_FILE` and
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:57Z (RFD66606-2143) '`FDB_TLS_VERIFY_PEERS`), which had to be set by hand in the shell.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:58Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:00:59Z (RFD66606-2143) 'Credentials, and why they live where they do
+ # tags: rfd:details-heading
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:00Z (RFD66606-2143) 'Bao holds the source of truth for the R2 access key and secret at
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:01Z (RFD66606-2143) '`secret/data/weftspun-fdb/r2-dr` (KV v2). `weftspun-fdb`'s Fly
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:02Z (RFD66606-2143) 'secrets `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_ENDPOINT_URL`,
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:03Z (RFD66606-2143) '`R2_BUCKET`, `R2_REGION` are the bootstrap cache the entrypoint reads
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:04Z (RFD66606-2143) 'before Bao can serve.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:05Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:06Z (RFD66606-2143) 'The layering forces this. Bao's storage backend is FDB. If the FDB
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:07Z (RFD66606-2143) 'entrypoint tried to read Bao at boot to get its R2 creds, Bao would
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:08Z (RFD66606-2143) 'not answer, Bao needs FDB up first. So the entrypoint reads Fly
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:09Z (RFD66606-2143) 'env, and rotation is a two-step: write the new secret to Bao, then
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:10Z (RFD66606-2143) '`flyctl secrets set` from Bao and roll the deploy. Bao stays the
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:11Z (RFD66606-2143) 'source, Fly is the cache, and the two are in sync when the deploy
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:12Z (RFD66606-2143) 'completes.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:13Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:14Z (RFD66606-2143) 'The Cloudflare API bearer token stays in 1Password
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:15Z (RFD66606-2143) '(`Cloudflare R2 weftspun DR`), because that is the identity you use
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:16Z (RFD66606-2143) 'to mint new S3 keys at DR time. The S3 keys themselves are
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:17Z (RFD66606-2143) 'regenerable from the bearer token, so no copy of them needs to sit
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:18Z (RFD66606-2143) 'outside Bao waiting for a disaster.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:19Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:20Z (RFD66606-2143) 'Entrypoint change
+ # tags: rfd:details-heading
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:21Z (RFD66606-2143) 'The Tigris destination's `AWS_*` variables, when set, drive the `default`
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:22Z (RFD66606-2143) 'tag. Five variables drive the R2 destination:
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:23Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:24Z (RFD66606-2143) '    R2_ACCESS_KEY_ID
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:25Z (RFD66606-2143) '    R2_SECRET_ACCESS_KEY
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:26Z (RFD66606-2143) '    R2_ENDPOINT_URL       # https://<account>.r2.cloudflarestorage.com
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:27Z (RFD66606-2143) '    R2_BUCKET             # weftspun-fdb-dr
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:28Z (RFD66606-2143) '    R2_REGION             # auto
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:29Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:30Z (RFD66606-2143) 'The entrypoint, when all five are set:
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
@@ -459,143 +459,143 @@
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:32Z (RFD66606-2143) 'Bao's PKI mount was queried with
+2026-08-31T00:01:32Z (RFD66606-2143) '1. Writes `/etc/foundationdb/blob-credentials-r2.json` at mode 0600.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:33Z (RFD66606-2143) 'the root token: `pki/keys` lists
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:34Z (RFD66606-2143) 'two RSA keys, neither with
+2026-08-31T00:01:33Z (RFD66606-2143) '   `FDB_BLOB_CREDENTIALS` becomes `default_creds:r2_creds` so both
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:35Z (RFD66606-2143) 'exported material, and the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:36Z (RFD66606-2143) 'intermediate
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:37Z (RFD66606-2143) 'issuer's `key_id` is
+2026-08-31T00:01:34Z (RFD66606-2143) '   destinations authenticate from one env var.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:38Z (RFD66606-2143) '`a15acb18-...`. The CA key is not
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:39Z (RFD66606-2143) 'readable
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:40Z (RFD66606-2143) 'outside Bao. The DR chain
+2026-08-31T00:01:35Z (RFD66606-2143) '2. Resolves the R2 endpoint host once, writes a second stunnel
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:41Z (RFD66606-2143) 'therefore relies on FDB backup +
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:42Z (RFD66606-2143) 'Bao
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:43Z (RFD66606-2143) 'restore-in-place (Bao's storage
+2026-08-31T00:01:36Z (RFD66606-2143) '   config listening on `127.0.0.1:8444` with the R2 hostname as SNI,
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:44Z (RFD66606-2143) 'is FDB), and the R2 destination
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:45Z (RFD66606-2143) 'is
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:46Z (RFD66606-2143) 'what protects that chain from
+2026-08-31T00:01:37Z (RFD66606-2143) '   and appends the loopback line to `/etc/hosts` (a syscall away, so
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:47Z (RFD66606-2143) 'single-provider loss.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:48Z (RFD66606-2143) '
+2026-08-31T00:01:38Z (RFD66606-2143) '   the loopback traffic stays plaintext and the public-chain check
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:49Z (RFD66606-2143) '`Bao's storage_type` returned
+2026-08-31T00:01:39Z (RFD66606-2143) '   is stunnel's).
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:50Z (RFD66606-2143) '`foundationdb`. `fdbcli status`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:51Z (RFD66606-2143) 'under
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:52Z (RFD66606-2143) 'mTLS from an SSH console needed
+2026-08-31T00:01:40Z (RFD66606-2143) '3. Writes `/etc/foundationdb/backup-url-r2` pointing at
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:53Z (RFD66606-2143) 'the four env vars the entrypoint
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:54Z (RFD66606-2143) 'sets around fdbserver
+2026-08-31T00:01:41Z (RFD66606-2143) '   `127.0.0.1:8444`, `sc=0`, `region=auto`,
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:55Z (RFD66606-2143) '(`FDB_TLS_{CERTIFICATE,KEY,CA}_FILE`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:56Z (RFD66606-2143) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:01:57Z (RFD66606-2143) '`FDB_TLS_VERIFY_PEERS`), which
+2026-08-31T00:01:42Z (RFD66606-2143) '   `knob_http_request_aws_v4_header=true`. R2 refuses SigV2 the way
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:58Z (RFD66606-2143) 'had to be set by hand in the
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:01:43Z (RFD66606-2143) '   Tigris does.
+ # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:01:59Z (RFD66606-2143) 'shell.
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:01:44Z (RFD66606-2143) '4. Registers `[backup_agent.1]` in `foundationdb.conf` whenever
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:45Z (RFD66606-2143) '   either destination is configured, so an R2-only machine still has
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:46Z (RFD66606-2143) '   a worker (RFD66606-2144); `[backup_agent.2]` only when both are.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:47Z (RFD66606-2143) '5. Once `fdbcli status minimal` reports the database available and
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:48Z (RFD66606-2143) '   `fdbbackup status -t dr` reports no previous backup, runs
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:49Z (RFD66606-2143) '   `fdbbackup start -t dr -z -d "$(cat backup-url-r2)"` once.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:50Z (RFD66606-2143) '   Restarting a running tag makes a second start abort as
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:51Z (RFD66606-2143) '   "already exists" without naming which tag, so the guard fires on
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:52Z (RFD66606-2143) '   the state that the start call actually needs.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:53Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:54Z (RFD66606-2143) '`backup-fresh.sh --tag dr` starts in the same block, so it runs
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:55Z (RFD66606-2143) 'whenever R2 is configured. It parses `fdbbackup status -t dr` for
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:56Z (RFD66606-2143) '`restorable` and the last-complete log timestamp, and writes
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:57Z (RFD66606-2143) '`/run/backup-fresh/dr`, which `fdb.toml`'s `[checks.backup_fresh_dr]`
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:58Z (RFD66606-2143) 'polls. Every tag reads its own status, because the cluster-wide
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:01:59Z (RFD66606-2143) '`status json` cannot tell tags apart.
+ # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
@@ -604,292 +604,292 @@
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:01Z (RFD66606-2143) 'Credentials, and why they live
+2026-08-31T00:02:01Z (RFD66606-2143) 'The DR runbook (restore from R2, all Fly infra gone)
  # tags: rfd:details-heading
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:02Z (RFD66606-2143) 'where they do
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:03Z (RFD66606-2143) 'Bao holds the source of truth for
+2026-08-31T00:02:02Z (RFD66606-2143) 'The premise: `weftspun-fdb`, `weftspun-bao`, `spot-broker`, and
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:04Z (RFD66606-2143) 'the R2 access key and secret at
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:05Z (RFD66606-2143) '`secret/data/weftspun-fdb/r2-dr`
+2026-08-31T00:02:03Z (RFD66606-2143) '`chibifire-com` no longer exist. 1Password holds the Bao unseal key,
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:06Z (RFD66606-2143) '(KV v2). `weftspun-fdb`'s Fly
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:07Z (RFD66606-2143) 'secrets `R2_ACCESS_KEY_ID`,
+2026-08-31T00:02:04Z (RFD66606-2143) 'the Bao root token, and the Cloudflare API bearer token. R2 holds
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:08Z (RFD66606-2143) '`R2_SECRET_ACCESS_KEY`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:09Z (RFD66606-2143) '`R2_ENDPOINT_URL`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:10Z (RFD66606-2143) '`R2_BUCKET`, `R2_REGION` are the
+2026-08-31T00:02:05Z (RFD66606-2143) 'the last complete FDB backup, including Bao's PKI mount (Bao stores
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:11Z (RFD66606-2143) 'bootstrap cache the entrypoint
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:12Z (RFD66606-2143) 'reads
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:13Z (RFD66606-2143) 'before Bao can serve.
+2026-08-31T00:02:06Z (RFD66606-2143) 'in FDB).
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:14Z (RFD66606-2143) '
+2026-08-31T00:02:07Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:15Z (RFD66606-2143) 'The layering forces this. Bao's
+2026-08-31T00:02:08Z (RFD66606-2143) '1. In the Cloudflare dashboard, use the bearer token in 1P to mint
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:16Z (RFD66606-2143) 'storage backend is FDB. If the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:17Z (RFD66606-2143) 'FDB
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:18Z (RFD66606-2143) 'entrypoint tried to read Bao at
+2026-08-31T00:02:09Z (RFD66606-2143) '   a fresh R2 S3 access key/secret against the surviving
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:19Z (RFD66606-2143) 'boot to get its R2 creds, Bao
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:20Z (RFD66606-2143) 'would
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:21Z (RFD66606-2143) 'not answer, Bao needs FDB up
+2026-08-31T00:02:10Z (RFD66606-2143) '   `weftspun-fdb-dr` bucket. Copy both to a scratch note; do not put
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:22Z (RFD66606-2143) 'first. So the entrypoint reads
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:23Z (RFD66606-2143) 'Fly
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:24Z (RFD66606-2143) 'env, and rotation is a two-step:
+2026-08-31T00:02:11Z (RFD66606-2143) '   them back in 1P.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:25Z (RFD66606-2143) 'write the new secret to Bao, then
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:26Z (RFD66606-2143) '`flyctl secrets set` from Bao and
+2026-08-31T00:02:12Z (RFD66606-2143) '2. `flyctl apps create weftspun-fdb --org personal` and set:
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:27Z (RFD66606-2143) 'roll the deploy. Bao stays the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:28Z (RFD66606-2143) 'source, Fly is the cache, and the
+2026-08-31T00:02:13Z (RFD66606-2143) '   * no `AWS_*`: Tigris went with Fly in this disaster
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:29Z (RFD66606-2143) 'two are in sync when the deploy
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:30Z (RFD66606-2143) 'completes.
+2026-08-31T00:02:14Z (RFD66606-2143) '   * `R2_*` from step 1
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:31Z (RFD66606-2143) '
+2026-08-31T00:02:15Z (RFD66606-2143) '   * `WEFT_FDB_CLUSTER_ID` to the value in the archived `fdb.toml`;
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:32Z (RFD66606-2143) 'The Cloudflare API bearer token
+2026-08-31T00:02:16Z (RFD66606-2143) '     coordinator addresses change, cluster identity does not.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:33Z (RFD66606-2143) 'stays in 1Password
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:34Z (RFD66606-2143) '(`Cloudflare R2 weftspun DR`),
+2026-08-31T00:02:17Z (RFD66606-2143) '3. Deploy `fdb.toml` with `WEFT_FDB_MACHINES = "1"` and
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:35Z (RFD66606-2143) 'because that is the identity you
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:36Z (RFD66606-2143) 'use
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:37Z (RFD66606-2143) 'to mint new S3 keys at DR time.
+2026-08-31T00:02:18Z (RFD66606-2143) '   `WEFT_FDB_RESET = "1"`. The single machine forms a `single`
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:38Z (RFD66606-2143) 'The S3 keys themselves are
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:39Z (RFD66606-2143) 'regenerable from the bearer
+2026-08-31T00:02:19Z (RFD66606-2143) '   redundancy cluster to receive the restore into.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:40Z (RFD66606-2143) 'token, so no copy of them needs
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:41Z (RFD66606-2143) 'to sit
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:42Z (RFD66606-2143) 'outside Bao waiting for a
+2026-08-31T00:02:20Z (RFD66606-2143) '4. Bootstrap a fresh CA whose key stays outside Bao, because the CA
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:43Z (RFD66606-2143) 'disaster.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:44Z (RFD66606-2143) '
+2026-08-31T00:02:21Z (RFD66606-2143) '   inside Bao is unreachable until Bao is up. Issue the machine leaf,
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:45Z (RFD66606-2143) 'Entrypoint change
+2026-08-31T00:02:22Z (RFD66606-2143) '   set it as `FDB_TLS_CERT_<mid>_B64` / `FDB_TLS_KEY_<mid>_B64`.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:23Z (RFD66606-2143) '5. `fdbrestore start -r "$(cat /etc/foundationdb/backup-url-r2)" -w`:
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:24Z (RFD66606-2143) '   wait, because a background restore that fails on a
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:25Z (RFD66606-2143) '   loopback-broken stunnel does not surface until the next check.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:26Z (RFD66606-2143) '6. When restore finishes, `fdbcli status` reports the restored key
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:27Z (RFD66606-2143) '   ranges and Bao's mount metadata is visible in FDB. Recreate
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:28Z (RFD66606-2143) '   `weftspun-bao` with its unseal key; Bao unseals against its
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:29Z (RFD66606-2143) '   restored FDB backend and its PKI mount reappears with the
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:30Z (RFD66606-2143) '   original CA usable again.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:31Z (RFD66606-2143) '7. Rotate the machine leaf to one signed by the restored CA
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:32Z (RFD66606-2143) '   (RFD66606-2141 phases 2-3), then scale to three machines with
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:33Z (RFD66606-2143) '   `WEFT_FDB_MACHINES = "3"` and `WEFT_FDB_REDUNDANCY = "double"`.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:34Z (RFD66606-2143) '8. Move the fresh R2 access key from the scratch note into Bao at
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:35Z (RFD66606-2143) '   `secret/data/weftspun-fdb/r2-dr`; revoke the old key from
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:36Z (RFD66606-2143) '   Cloudflare so no key material predating the DR still exists.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:37Z (RFD66606-2143) '9. Recreate `spot-broker` and `chibifire-com` from their `fly.toml`
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:38Z (RFD66606-2143) '   files, deploy, verify checks.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:39Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:40Z (RFD66606-2143) 'Break-glass CA note
  # tags: rfd:details-heading
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:46Z (RFD66606-2143) 'The Tigris destination's `AWS_*`
+2026-08-31T00:02:41Z (RFD66606-2143) 'Step 4 needs a CA whose private key is not inside Bao, because Bao
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:47Z (RFD66606-2143) 'variables, when set, drive the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:48Z (RFD66606-2143) '`default`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:49Z (RFD66606-2143) 'tag. Five variables drive the R2
+2026-08-31T00:02:42Z (RFD66606-2143) 'is what step 6 restores. RFD66606-2141's rotation writes the intermediate
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:50Z (RFD66606-2143) 'destination:
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:51Z (RFD66606-2143) '
+2026-08-31T00:02:43Z (RFD66606-2143) 'key into `op://Personal/FDB-CA/{cert,key}` as part of that phase.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:52Z (RFD66606-2143) '    R2_ACCESS_KEY_ID
+2026-08-31T00:02:44Z (RFD66606-2143) 'Until that RFD lands, this runbook is theatre: the DR bucket has the
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:53Z (RFD66606-2143) '    R2_SECRET_ACCESS_KEY
+2026-08-31T00:02:45Z (RFD66606-2143) 'data but the cluster cannot come up to accept it.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:54Z (RFD66606-2143) '    R2_ENDPOINT_URL       #
+2026-08-31T00:02:46Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:55Z (RFD66606-2143) 'https://<account>.r2.cloudflarestorage.com
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:02:56Z (RFD66606-2143) '    R2_BUCKET             #
+2026-08-31T00:02:47Z (RFD66606-2143) 'The measurement on 2026-08-31: the CA key is not yet in 1Password.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:57Z (RFD66606-2143) 'weftspun-fdb-dr
- # tags: rfd:details, rfd:wrap
+2026-08-31T00:02:48Z (RFD66606-2143) 'That is the first followup, and RFD66606-2141 is where it happens.
+ # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:02:58Z (RFD66606-2143) '    R2_REGION             # auto
+2026-08-31T00:02:49Z (RFD66606-2143) '
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:50Z (RFD66606-2143) 'What this RFD does not cover
+ # tags: rfd:details-heading
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:51Z (RFD66606-2143) '- **Cross-region.** R2 IA in one region is one regional outage away
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:52Z (RFD66606-2143) '  from no backup at all. A second R2 region is a later change.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:53Z (RFD66606-2143) '- **Backup encryption at rest.** FDB does not encrypt backup
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:54Z (RFD66606-2143) '  payloads. If R2 is compromised, the attacker has the database.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:55Z (RFD66606-2143) '  `fdbbackup --encryption-key-file` is the fix; it needs its own
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:56Z (RFD66606-2143) '  key management story.
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:57Z (RFD66606-2143) '- **PITR window.** The `dr` tag keeps 10-day snapshots
+ # tags: rfd:details
+ Text:RFD2143  1 LINE
+ Text:Written
+
+2026-08-31T00:02:58Z (RFD66606-2143) '  (`Snapshot interval is 864000 seconds`), at IA rates.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
@@ -899,1072 +899,57 @@
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:03:00Z (RFD66606-2143) 'The entrypoint, when all five are
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:01Z (RFD66606-2143) 'set:
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:02Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:03Z (RFD66606-2143) '1. Writes
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:04Z (RFD66606-2143) '`/etc/foundationdb/blob-credentials-r2.json`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:05Z (RFD66606-2143) 'at mode 0600.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:06Z (RFD66606-2143) '   `FDB_BLOB_CREDENTIALS` becomes
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:07Z (RFD66606-2143) '`default_creds:r2_creds` so both
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:08Z (RFD66606-2143) '   destinations authenticate from
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:09Z (RFD66606-2143) 'one env var.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:10Z (RFD66606-2143) '2. Resolves the R2 endpoint host
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:11Z (RFD66606-2143) 'once, writes a second stunnel
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:12Z (RFD66606-2143) '   config listening on
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:13Z (RFD66606-2143) '`127.0.0.1:8444` with the R2
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:14Z (RFD66606-2143) 'hostname as SNI,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:15Z (RFD66606-2143) '   and appends the loopback line
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:16Z (RFD66606-2143) 'to `/etc/hosts` (a syscall away,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:17Z (RFD66606-2143) 'so
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:18Z (RFD66606-2143) '   the loopback traffic stays
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:19Z (RFD66606-2143) 'plaintext and the public-chain
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:20Z (RFD66606-2143) 'check
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:21Z (RFD66606-2143) '   is stunnel's).
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:22Z (RFD66606-2143) '3. Writes
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:23Z (RFD66606-2143) '`/etc/foundationdb/backup-url-r2`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:24Z (RFD66606-2143) 'pointing at
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:25Z (RFD66606-2143) '   `127.0.0.1:8444`, `sc=0`,
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:26Z (RFD66606-2143) '`region=auto`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:27Z (RFD66606-2143) '   `knob_http_request_aws_v4_header=true`.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:28Z (RFD66606-2143) 'R2 refuses SigV2 the way
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:29Z (RFD66606-2143) '   Tigris does.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:30Z (RFD66606-2143) '4. Registers `[backup_agent.1]`
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:31Z (RFD66606-2143) 'in `foundationdb.conf` whenever
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:32Z (RFD66606-2143) '   either destination is
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:33Z (RFD66606-2143) 'configured, so an R2-only machine
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:34Z (RFD66606-2143) 'still has
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:35Z (RFD66606-2143) '   a worker (RFD66606-2144);
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:36Z (RFD66606-2143) '`[backup_agent.2]` only when both
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:37Z (RFD66606-2143) 'are.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:38Z (RFD66606-2143) '5. Once `fdbcli status minimal`
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:39Z (RFD66606-2143) 'reports the database available
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:40Z (RFD66606-2143) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:41Z (RFD66606-2143) '   `fdbbackup status -t dr`
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:42Z (RFD66606-2143) 'reports no previous backup, runs
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:43Z (RFD66606-2143) '   `fdbbackup start -t dr -z -d
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:44Z (RFD66606-2143) '"$(cat backup-url-r2)"` once.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:45Z (RFD66606-2143) '   Restarting a running tag makes
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:46Z (RFD66606-2143) 'a second start abort as
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:47Z (RFD66606-2143) '   "already exists" without
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:48Z (RFD66606-2143) 'naming which tag, so the guard
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:49Z (RFD66606-2143) 'fires on
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:50Z (RFD66606-2143) '   the state that the start call
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:51Z (RFD66606-2143) 'actually needs.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:52Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:53Z (RFD66606-2143) '`backup-fresh.sh --tag dr` starts
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:54Z (RFD66606-2143) 'in the same block, so it runs
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:55Z (RFD66606-2143) 'whenever R2 is configured. It
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:56Z (RFD66606-2143) 'parses `fdbbackup status -t dr`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:57Z (RFD66606-2143) 'for
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:58Z (RFD66606-2143) '`restorable` and the
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:03:59Z (RFD66606-2143) 'last-complete log timestamp, and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:00Z (RFD66606-2143) 'writes
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:01Z (RFD66606-2143) '`/run/backup-fresh/dr`, which
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:02Z (RFD66606-2143) '`fdb.toml`'s
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:03Z (RFD66606-2143) '`[checks.backup_fresh_dr]`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:04Z (RFD66606-2143) 'polls. Every tag reads its own
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:05Z (RFD66606-2143) 'status, because the cluster-wide
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:06Z (RFD66606-2143) '`status json` cannot tell tags
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:07Z (RFD66606-2143) 'apart.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:08Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:09Z (RFD66606-2143) 'The DR runbook (restore from R2,
+2026-08-31T00:03:00Z (RFD66606-2143) 'The problem
  # tags: rfd:details-heading
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:10Z (RFD66606-2143) 'all Fly infra gone)
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:11Z (RFD66606-2143) 'The premise: `weftspun-fdb`,
+2026-08-31T00:03:01Z (RFD66606-2143) 'Beside it: Bao holds the FDB CA key as
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:12Z (RFD66606-2143) '`weftspun-bao`, `spot-broker`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:13Z (RFD66606-2143) 'and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:14Z (RFD66606-2143) '`chibifire-com` no longer exist.
+2026-08-31T00:03:02Z (RFD66606-2143) '`type=internal`, and Bao's storage backend is FDB, so the CA rides
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:15Z (RFD66606-2143) '1Password holds the Bao unseal
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:16Z (RFD66606-2143) 'key,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:17Z (RFD66606-2143) 'the Bao root token, and the
+2026-08-31T00:03:03Z (RFD66606-2143) 'FDB backups. A restore that cannot read the backup cannot issue the
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:18Z (RFD66606-2143) 'Cloudflare API bearer token. R2
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:19Z (RFD66606-2143) 'holds
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:20Z (RFD66606-2143) 'the last complete FDB backup,
+2026-08-31T00:03:04Z (RFD66606-2143) 'machine leaves the restored cluster needs.
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:21Z (RFD66606-2143) 'including Bao's PKI mount (Bao
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:22Z (RFD66606-2143) 'stores
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:23Z (RFD66606-2143) 'in FDB).
+2026-08-31T00:03:05Z (RFD66606-2143) '
  # tags: rfd:details
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:04:24Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:25Z (RFD66606-2143) '1. In the Cloudflare dashboard,
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:26Z (RFD66606-2143) 'use the bearer token in 1P to
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:27Z (RFD66606-2143) 'mint
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:28Z (RFD66606-2143) '   a fresh R2 S3 access
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:29Z (RFD66606-2143) 'key/secret against the surviving
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:30Z (RFD66606-2143) '   `weftspun-fdb-dr` bucket. Copy
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:31Z (RFD66606-2143) 'both to a scratch note; do not
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:32Z (RFD66606-2143) 'put
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:33Z (RFD66606-2143) '   them back in 1P.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:34Z (RFD66606-2143) '2. `flyctl apps create
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:35Z (RFD66606-2143) 'weftspun-fdb --org personal` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:36Z (RFD66606-2143) 'set:
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:37Z (RFD66606-2143) '   * no `AWS_*`: Tigris went with
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:38Z (RFD66606-2143) 'Fly in this disaster
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:39Z (RFD66606-2143) '   * `R2_*` from step 1
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:40Z (RFD66606-2143) '   * `WEFT_FDB_CLUSTER_ID` to the
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:41Z (RFD66606-2143) 'value in the archived `fdb.toml`;
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:42Z (RFD66606-2143) '     coordinator addresses
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:43Z (RFD66606-2143) 'change, cluster identity does
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:44Z (RFD66606-2143) 'not.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:45Z (RFD66606-2143) '3. Deploy `fdb.toml` with
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:46Z (RFD66606-2143) '`WEFT_FDB_MACHINES = "1"` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:47Z (RFD66606-2143) '   `WEFT_FDB_RESET = "1"`. The
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:48Z (RFD66606-2143) 'single machine forms a `single`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:49Z (RFD66606-2143) '   redundancy cluster to receive
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:50Z (RFD66606-2143) 'the restore into.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:51Z (RFD66606-2143) '4. Bootstrap a fresh CA whose key
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:52Z (RFD66606-2143) 'stays outside Bao, because the CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:53Z (RFD66606-2143) '   inside Bao is unreachable
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:54Z (RFD66606-2143) 'until Bao is up. Issue the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:55Z (RFD66606-2143) 'machine leaf,
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:56Z (RFD66606-2143) '   set it as
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:57Z (RFD66606-2143) '`FDB_TLS_CERT_<mid>_B64` /
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:58Z (RFD66606-2143) '`FDB_TLS_KEY_<mid>_B64`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:04:59Z (RFD66606-2143) '5. `fdbrestore start -r "$(cat
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:00Z (RFD66606-2143) '/etc/foundationdb/backup-url-r2)"
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:01Z (RFD66606-2143) '-w`:
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:02Z (RFD66606-2143) '   wait, because a background
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:03Z (RFD66606-2143) 'restore that fails on a
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:04Z (RFD66606-2143) '   loopback-broken stunnel does
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:05Z (RFD66606-2143) 'not surface until the next check.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:06Z (RFD66606-2143) '6. When restore finishes, `fdbcli
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:07Z (RFD66606-2143) 'status` reports the restored key
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:08Z (RFD66606-2143) '   ranges and Bao's mount
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:09Z (RFD66606-2143) 'metadata is visible in FDB.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:10Z (RFD66606-2143) 'Recreate
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:11Z (RFD66606-2143) '   `weftspun-bao` with its unseal
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:12Z (RFD66606-2143) 'key; Bao unseals against its
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:13Z (RFD66606-2143) '   restored FDB backend and its
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:14Z (RFD66606-2143) 'PKI mount reappears with the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:15Z (RFD66606-2143) '   original CA usable again.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:16Z (RFD66606-2143) '7. Rotate the machine leaf to one
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:17Z (RFD66606-2143) 'signed by the restored CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:18Z (RFD66606-2143) '   (RFD66606-2141 phases 2-3),
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:19Z (RFD66606-2143) 'then scale to three machines with
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:20Z (RFD66606-2143) '   `WEFT_FDB_MACHINES = "3"` and
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:21Z (RFD66606-2143) '`WEFT_FDB_REDUNDANCY = "double"`.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:22Z (RFD66606-2143) '8. Move the fresh R2 access key
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:23Z (RFD66606-2143) 'from the scratch note into Bao at
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:24Z (RFD66606-2143) '   `secret/data/weftspun-fdb/r2-dr`;
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:25Z (RFD66606-2143) 'revoke the old key from
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:26Z (RFD66606-2143) '   Cloudflare so no key material
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:27Z (RFD66606-2143) 'predating the DR still exists.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:28Z (RFD66606-2143) '9. Recreate `spot-broker` and
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:29Z (RFD66606-2143) '`chibifire-com` from their
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:30Z (RFD66606-2143) '`fly.toml`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:31Z (RFD66606-2143) '   files, deploy, verify checks.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:32Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:33Z (RFD66606-2143) 'Break-glass CA note
- # tags: rfd:details-heading
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:34Z (RFD66606-2143) 'Step 4 needs a CA whose private
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:35Z (RFD66606-2143) 'key is not inside Bao, because
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:36Z (RFD66606-2143) 'Bao
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:37Z (RFD66606-2143) 'is what step 6 restores.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:38Z (RFD66606-2143) 'RFD66606-2141's rotation writes
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:39Z (RFD66606-2143) 'the intermediate
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:40Z (RFD66606-2143) 'key into
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:41Z (RFD66606-2143) '`op://Personal/FDB-CA/{cert,key}`
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:42Z (RFD66606-2143) 'as part of that phase.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:43Z (RFD66606-2143) 'Until that RFD lands, this
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:44Z (RFD66606-2143) 'runbook is theatre: the DR bucket
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:45Z (RFD66606-2143) 'has the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:46Z (RFD66606-2143) 'data but the cluster cannot come
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:47Z (RFD66606-2143) 'up to accept it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:48Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:49Z (RFD66606-2143) 'The measurement on 2026-08-31:
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:50Z (RFD66606-2143) 'the CA key is not yet in
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:51Z (RFD66606-2143) '1Password.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:52Z (RFD66606-2143) 'That is the first followup, and
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:53Z (RFD66606-2143) 'RFD66606-2141 is where it
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:54Z (RFD66606-2143) 'happens.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:55Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:56Z (RFD66606-2143) 'What this RFD does not cover
- # tags: rfd:details-heading
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:57Z (RFD66606-2143) '- **Cross-region.** R2 IA in one
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:58Z (RFD66606-2143) 'region is one regional outage
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:05:59Z (RFD66606-2143) 'away
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:00Z (RFD66606-2143) '  from no backup at all. A second
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:01Z (RFD66606-2143) 'R2 region is a later change.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:02Z (RFD66606-2143) '- **Backup encryption at rest.**
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:03Z (RFD66606-2143) 'FDB does not encrypt backup
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:04Z (RFD66606-2143) '  payloads. If R2 is compromised,
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:05Z (RFD66606-2143) 'the attacker has the database.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:06Z (RFD66606-2143) '  `fdbbackup
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:07Z (RFD66606-2143) '--encryption-key-file` is the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:08Z (RFD66606-2143) 'fix; it needs its own
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:09Z (RFD66606-2143) '  key management story.
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:10Z (RFD66606-2143) '- **PITR window.** The `dr` tag
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:11Z (RFD66606-2143) 'keeps 10-day snapshots
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:12Z (RFD66606-2143) '  (`Snapshot interval is 864000
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:13Z (RFD66606-2143) 'seconds`), at IA rates.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:14Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:15Z (RFD66606-2143) 'The problem
- # tags: rfd:details-heading
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:16Z (RFD66606-2143) 'Beside it: Bao holds the FDB CA
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:17Z (RFD66606-2143) 'key as
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:18Z (RFD66606-2143) '`type=internal`, and Bao's
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:19Z (RFD66606-2143) 'storage backend is FDB, so the CA
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:20Z (RFD66606-2143) 'rides
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:21Z (RFD66606-2143) 'FDB backups. A restore that
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:22Z (RFD66606-2143) 'cannot read the backup cannot
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:23Z (RFD66606-2143) 'issue the
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:24Z (RFD66606-2143) 'machine leaves the restored
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:25Z (RFD66606-2143) 'cluster needs.
- # tags: rfd:details, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:26Z (RFD66606-2143) '
- # tags: rfd:details
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:27Z (RFD66606-2143) '2351
+2026-08-31T00:03:06Z (RFD66606-2143) '2351
  # tags: rebac:verbs-from
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:06:28Z (RFD66606-2143) 'rfd-2143 provides
+2026-08-31T00:03:07Z (RFD66606-2143) 'rfd-2143 provides fdb-backup-r2-dr-tag
  # tags: rebac:relate
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:06:29Z (RFD66606-2143) 'fdb-backup-r2-dr-tag
- # tags: rebac:relate, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:30Z (RFD66606-2143) 'rfd-2143 spends fdb-sqlite
+2026-08-31T00:03:08Z (RFD66606-2143) 'rfd-2143 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:06:31Z (RFD66606-2143) 'rfd-2143 spends
+2026-08-31T00:03:09Z (RFD66606-2143) 'rfd-2143 spends fdb-cluster-mutual-tls
  # tags: rebac:relate
  Text:RFD2143  1 LINE
  Text:Written
 
-2026-08-31T00:06:32Z (RFD66606-2143) 'fdb-cluster-mutual-tls
- # tags: rebac:relate, rfd:wrap
- Text:RFD2143  1 LINE
- Text:Written
-
-2026-08-31T00:06:33Z (RFD66606-2143) 'rfd-2143 is_a deployment
+2026-08-31T00:03:10Z (RFD66606-2143) 'rfd-2143 is_a deployment
  # tags: rebac:relate
  Text:RFD2143  1 LINE
  Text:Written

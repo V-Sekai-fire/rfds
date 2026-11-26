@@ -4,557 +4,267 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2471) 'the temporal plan expresses the
+2026-11-07T00:00:01Z (RFD66606-2471) 'the temporal plan expresses the Challenge's precedence-only scheduling problems.
  # tags: rfd:feature
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2471) 'Challenge's precedence-only
- # tags: rfd:feature, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2471) 'scheduling problems.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2471) 'the persona's temporal plan
+2026-11-07T00:00:02Z (RFD66606-2471) 'the persona's temporal plan representation, read against four candidate problem sets.
  # tags: rfd:scope
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2471) 'representation, read against four
- # tags: rfd:scope, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2471) 'candidate problem sets.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2471) 'After the planning puzzles, can
+2026-11-07T00:00:03Z (RFD66606-2471) 'After the planning puzzles, can the same temporal plan express a problem that needs only
  # tags: rfd:hook
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2471) 'the same temporal plan express a
- # tags: rfd:hook, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2471) 'problem that needs only
- # tags: rfd:hook, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2471) 'precedence and durations, with no
+2026-11-07T00:00:04Z (RFD66606-2471) 'precedence and durations, with no resources at all?
  # tags: rfd:hook
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2471) 'resources at all?
- # tags: rfd:hook, rfd:wrap
+2026-11-07T00:00:05Z (RFD66606-2471) '
+ # tags: rfd:hook
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:06Z (RFD66606-2471) 'Four problem families on the Challenge's list look like a fit by name alone: project-planning
+ # tags: rfd:intrigue
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:07Z (RFD66606-2471) '(2012, 2015), road_construction (2014, 2017), ship-schedule (2011, 2012, 2014) and
+ # tags: rfd:intrigue
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:08Z (RFD66606-2471) 'train-scheduling (2024). None of their models has been read yet, so fit is a guess today. The
+ # tags: rfd:intrigue
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:09Z (RFD66606-2471) 'temporal plan already carries start, end and duration per step, release times and deadlines,
+ # tags: rfd:intrigue
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:10Z (RFD66606-2471) 'and a critical-path total, but it has no resources, so any model with a cumulative constraint
+ # tags: rfd:intrigue
+ Text:RFD2471  1 LINE
+ Text:Written
+
+2026-11-07T00:00:11Z (RFD66606-2471) 'is out of reach before a single model is read.
+ # tags: rfd:intrigue
  Text:RFD2471  1 LINE
  Text:Written
 
 2026-11-07T00:00:12Z (RFD66606-2471) '
- # tags: rfd:hook
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2471) 'Four problem families on the
  # tags: rfd:intrigue
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2471) 'Challenge's list look like a fit
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2471) 'by name alone: project-planning
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2471) '(2012, 2015), road_construction
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2471) '(2014, 2017), ship-schedule
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2471) '(2011, 2012, 2014) and
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2471) 'train-scheduling (2024). None of
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2471) 'their models has been read yet,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2471) 'so fit is a guess today. The
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2471) 'temporal plan already carries
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2471) 'start, end and duration per step,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2471) 'release times and deadlines,
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2471) 'and a critical-path total, but it
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2471) 'has no resources, so any model
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2471) 'with a cumulative constraint
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2471) 'is out of reach before a single
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2471) 'model is read.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2471) '
- # tags: rfd:intrigue
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:31Z (RFD66606-2471) 'Read one family's model in full
+2026-11-07T00:00:13Z (RFD66606-2471) 'Read one family's model in full and classify it: expressible on the temporal plan as is, or
  # tags: rfd:exit
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2471) 'and classify it: expressible on
- # tags: rfd:exit, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2471) 'the temporal plan as is, or
- # tags: rfd:exit, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:34Z (RFD66606-2471) 'out of reach because it needs a
+2026-11-07T00:00:14Z (RFD66606-2471) 'out of reach because it needs a resource, an all-different, a cumulative or a packing
  # tags: rfd:exit
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2471) 'resource, an all-different, a
- # tags: rfd:exit, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2471) 'cumulative or a packing
- # tags: rfd:exit, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:37Z (RFD66606-2471) 'constraint the plan does not
+2026-11-07T00:00:15Z (RFD66606-2471) 'constraint the plan does not carry.
  # tags: rfd:exit
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2471) 'carry.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2471) '
+2026-11-07T00:00:16Z (RFD66606-2471) '
  # tags: rfd:exit
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:40Z (RFD66606-2471) 'MiniZinc Challenge:
+2026-11-07T00:00:17Z (RFD66606-2471) 'MiniZinc Challenge: precedence-scheduling problems on the temporal plan
  # tags: rfd:details-title
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2471) 'precedence-scheduling problems on
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:42Z (RFD66606-2471) 'the temporal plan
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2471) 'Read each of the four candidate
+2026-11-07T00:00:18Z (RFD66606-2471) 'Read each of the four candidate families' models, starting with the smallest, and classify
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:44Z (RFD66606-2471) 'families' models, starting with
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2471) 'the smallest, and classify
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2471) 'each as expressible or out of
+2026-11-07T00:00:19Z (RFD66606-2471) 'each as expressible or out of reach by the same rule the planning puzzles used. For a family
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:47Z (RFD66606-2471) 'reach by the same rule the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2471) 'planning puzzles used. For a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:49Z (RFD66606-2471) 'family
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2471) 'that is expressible, climb from
+2026-11-07T00:00:20Z (RFD66606-2471) 'that is expressible, climb from its smallest instance, validate every plan against MiniZinc
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2471) 'its smallest instance, validate
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2471) 'every plan against MiniZinc
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2471) 'itself, and accept only a plan
+2026-11-07T00:00:21Z (RFD66606-2471) 'itself, and accept only a plan that is both valid and optimal. A family that needs a resource,
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:54Z (RFD66606-2471) 'that is both valid and optimal. A
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:55Z (RFD66606-2471) 'family that needs a resource,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:56Z (RFD66606-2471) 'an all-different, a cumulative or
+2026-11-07T00:00:22Z (RFD66606-2471) 'an all-different, a cumulative or a packing constraint is set aside rather than forced onto a
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:00:57Z (RFD66606-2471) 'a packing constraint is set aside
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2471) 'rather than forced onto a
- # tags: rfd:decision, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2471) 'plan that cannot carry it.
+2026-11-07T00:00:23Z (RFD66606-2471) 'plan that cannot carry it.
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2471) '
+2026-11-07T00:00:24Z (RFD66606-2471) '
  # tags: rfd:decision
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:01Z (RFD66606-2471) '- RFD66606-2339, where a persona
+2026-11-07T00:00:25Z (RFD66606-2471) '- RFD66606-2339, where a persona answers from a goal-task network and exports a plan.
  # tags: rfd:related
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:02Z (RFD66606-2471) 'answers from a goal-task network
- # tags: rfd:related, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:03Z (RFD66606-2471) 'and exports a plan.
- # tags: rfd:related, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:04Z (RFD66606-2471) '- RFD66606-2292, the
+2026-11-07T00:00:26Z (RFD66606-2471) '- RFD66606-2292, the organization's own RECTGTN (Lean goal-task network) domain that renders
  # tags: rfd:related
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:05Z (RFD66606-2471) 'organization's own RECTGTN (Lean
- # tags: rfd:related, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2471) 'goal-task network) domain that
- # tags: rfd:related, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2471) 'renders
- # tags: rfd:related, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:08Z (RFD66606-2471) '  this register.
+2026-11-07T00:00:27Z (RFD66606-2471) '  this register.
  # tags: rfd:related
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:09Z (RFD66606-2471) '
+2026-11-07T00:00:28Z (RFD66606-2471) '
  # tags: rfd:related
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:10Z (RFD66606-2471) 'The candidate families
+2026-11-07T00:00:29Z (RFD66606-2471) 'The candidate families
  # tags: rfd:details-heading
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:11Z (RFD66606-2471) '- project-planning (2012, 2015)
+2026-11-07T00:00:30Z (RFD66606-2471) '- project-planning (2012, 2015)
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:12Z (RFD66606-2471) '- road_construction (2014, 2017)
+2026-11-07T00:00:31Z (RFD66606-2471) '- road_construction (2014, 2017)
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:13Z (RFD66606-2471) '- ship-schedule (2011, 2012,
+2026-11-07T00:00:32Z (RFD66606-2471) '- ship-schedule (2011, 2012, 2014)
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:14Z (RFD66606-2471) '2014)
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:15Z (RFD66606-2471) '- train-scheduling (2024)
+2026-11-07T00:00:33Z (RFD66606-2471) '- train-scheduling (2024)
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:16Z (RFD66606-2471) '
+2026-11-07T00:00:34Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:17Z (RFD66606-2471) 'None of their models has been
+2026-11-07T00:00:35Z (RFD66606-2471) 'None of their models has been read yet; whether each is expressible on the temporal plan is a
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:18Z (RFD66606-2471) 'read yet; whether each is
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:19Z (RFD66606-2471) 'expressible on the temporal plan
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:20Z (RFD66606-2471) 'is a
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:21Z (RFD66606-2471) 'guess from the name alone, not
+2026-11-07T00:00:36Z (RFD66606-2471) 'guess from the name alone, not yet a finding.
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:22Z (RFD66606-2471) 'yet a finding.
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:23Z (RFD66606-2471) '
+2026-11-07T00:00:37Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:24Z (RFD66606-2471) '
+2026-11-07T00:00:38Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:25Z (RFD66606-2471) 'What the temporal plan already
+2026-11-07T00:00:39Z (RFD66606-2471) 'What the temporal plan already carries
  # tags: rfd:details-heading
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:26Z (RFD66606-2471) 'carries
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:27Z (RFD66606-2471) 'Start, end and duration per step
+2026-11-07T00:00:40Z (RFD66606-2471) 'Start, end and duration per step (an unspecified start and end are left out of a problem; a
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:28Z (RFD66606-2471) '(an unspecified start and end are
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:29Z (RFD66606-2471) 'left out of a problem; a
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:30Z (RFD66606-2471) 'missing duration means the step
+2026-11-07T00:00:41Z (RFD66606-2471) 'missing duration means the step is instantaneous), release times and deadlines, and a
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:31Z (RFD66606-2471) 'is instantaneous), release times
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:32Z (RFD66606-2471) 'and deadlines, and a
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:33Z (RFD66606-2471) 'critical-path total. It carries
+2026-11-07T00:00:42Z (RFD66606-2471) 'critical-path total. It carries no resources, so a model with a cumulative constraint cannot
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:34Z (RFD66606-2471) 'no resources, so a model with a
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:35Z (RFD66606-2471) 'cumulative constraint cannot
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:36Z (RFD66606-2471) 'be expressed on it as it stands.
+2026-11-07T00:00:43Z (RFD66606-2471) 'be expressed on it as it stands.
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:37Z (RFD66606-2471) '
+2026-11-07T00:00:44Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:38Z (RFD66606-2471) '
+2026-11-07T00:00:45Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:39Z (RFD66606-2471) 'Acceptance
+2026-11-07T00:00:46Z (RFD66606-2471) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:40Z (RFD66606-2471) 'The same rule the planning
+2026-11-07T00:00:47Z (RFD66606-2471) 'The same rule the planning puzzles used: valid and optimal, checked against MiniZinc itself,
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:41Z (RFD66606-2471) 'puzzles used: valid and optimal,
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:42Z (RFD66606-2471) 'checked against MiniZinc itself,
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:43Z (RFD66606-2471) 'climbing from the smallest
+2026-11-07T00:00:48Z (RFD66606-2471) 'climbing from the smallest instance of a family up, never starting at the largest.
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:44Z (RFD66606-2471) 'instance of a family up, never
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:45Z (RFD66606-2471) 'starting at the largest.
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:46Z (RFD66606-2471) '
+2026-11-07T00:00:49Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:47Z (RFD66606-2471) '
+2026-11-07T00:00:50Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:48Z (RFD66606-2471) 'Source
+2026-11-07T00:00:51Z (RFD66606-2471) 'Source
  # tags: rfd:details-heading
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:49Z (RFD66606-2471) 'The problem list is at
+2026-11-07T00:00:52Z (RFD66606-2471) 'The problem list is at minizinc.org/challenge/globals/.
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written
 
-2026-11-07T00:01:50Z (RFD66606-2471) 'minizinc.org/challenge/globals/.
- # tags: rfd:details, rfd:wrap
- Text:RFD2471  1 LINE
- Text:Written
-
-2026-11-07T00:01:51Z (RFD66606-2471) '
+2026-11-07T00:00:53Z (RFD66606-2471) '
  # tags: rfd:details
  Text:RFD2471  1 LINE
  Text:Written

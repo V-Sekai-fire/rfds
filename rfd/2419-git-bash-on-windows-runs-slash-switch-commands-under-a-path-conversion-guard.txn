@@ -4,242 +4,117 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-10-31T00:00:01Z (RFD66606-2419) 'how a desk runs slash-switch
+2026-10-31T00:00:01Z (RFD66606-2419) 'how a desk runs slash-switch commands from Git Bash on Windows.
  # tags: rfd:scope
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:02Z (RFD66606-2419) 'commands from Git Bash on
- # tags: rfd:scope, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:03Z (RFD66606-2419) 'Windows.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2419) 'Run slash-switch commands from
+2026-10-31T00:00:02Z (RFD66606-2419) 'Run slash-switch commands from Git Bash on Windows under a guard so switches stay switches.
  # tags: rfd:hook
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2419) 'Git Bash on Windows under a guard
- # tags: rfd:hook, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2419) 'so switches stay switches.
- # tags: rfd:hook, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2419) '
+2026-10-31T00:00:03Z (RFD66606-2419) '
  # tags: rfd:hook
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2419) 'What happens when Git Bash
+2026-10-31T00:00:04Z (RFD66606-2419) 'What happens when Git Bash rewrites your switches into paths? And when an empty title arrives as
  # tags: rfd:intrigue
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2419) 'rewrites your switches into
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2419) 'paths? And when an empty title
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2419) 'arrives as
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2419) '`\"\"` and `start` tries to run
+2026-10-31T00:00:05Z (RFD66606-2419) '`\"\"` and `start` tries to run `\`?
  # tags: rfd:intrigue
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2419) '`\`?
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2419) '
+2026-10-31T00:00:06Z (RFD66606-2419) '
  # tags: rfd:intrigue
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2419) 'Run your next slash-switch
+2026-10-31T00:00:07Z (RFD66606-2419) 'Run your next slash-switch command from Git Bash under
  # tags: rfd:exit
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2419) 'command from Git Bash under
- # tags: rfd:exit, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1
+2026-10-31T00:00:08Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`.
  # tags: rfd:exit
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2419) 'MSYS2_ARG_CONV_EXCL='*'`.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2419) '
+2026-10-31T00:00:09Z (RFD66606-2419) '
  # tags: rfd:exit
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2419) 'Git Bash on Windows runs
+2026-10-31T00:00:10Z (RFD66606-2419) 'Git Bash on Windows runs slash-switch commands under a path-conversion guard
  # tags: rfd:details-title
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2419) 'slash-switch commands under a
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2419) 'path-conversion guard
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2419) 'From Git Bash on Windows, a
+2026-10-31T00:00:11Z (RFD66606-2419) 'From Git Bash on Windows, a command with `/`-switches runs under
  # tags: rfd:decision
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2419) 'command with `/`-switches runs
- # tags: rfd:decision, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2419) 'under
- # tags: rfd:decision, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1
+2026-10-31T00:00:12Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`, so the switches are not rewritten into paths.
  # tags: rfd:decision
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2419) 'MSYS2_ARG_CONV_EXCL='*'`, so the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2419) 'switches are not rewritten into
- # tags: rfd:decision, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2419) 'paths.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2419) '
+2026-10-31T00:00:13Z (RFD66606-2419) '
  # tags: rfd:decision
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2419) '- RFD66606-2294, where this rule
+2026-10-31T00:00:14Z (RFD66606-2419) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2419) 'lived before the split.
- # tags: rfd:related, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2419) '
+2026-10-31T00:00:15Z (RFD66606-2419) '
  # tags: rfd:related
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2419) 'The start command and Godot
+2026-10-31T00:00:16Z (RFD66606-2419) 'The start command and Godot priority
  # tags: rfd:details-heading
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2419) 'priority
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2419) '`start "" ...` goes in a `.cmd`
+2026-10-31T00:00:17Z (RFD66606-2419) '`start "" ...` goes in a `.cmd` file: passed inline, the empty title arrives as `\"\"` and
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2419) 'file: passed inline, the empty
- # tags: rfd:details, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2419) 'title arrives as `\"\"` and
- # tags: rfd:details, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2419) '`start` tries to run `\`. Godot
+2026-10-31T00:00:18Z (RFD66606-2419) '`start` tries to run `\`. Godot raises its own process to above-normal priority, so a desk run
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2419) 'raises its own process to
- # tags: rfd:details, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2419) 'above-normal priority, so a desk
- # tags: rfd:details, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2419) 'run
- # tags: rfd:details, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2419) 'lowers it by PID once started.
+2026-10-31T00:00:19Z (RFD66606-2419) 'lowers it by PID once started.
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2419) '
+2026-10-31T00:00:20Z (RFD66606-2419) '
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2419) '2351
+2026-10-31T00:00:21Z (RFD66606-2419) '2351
  # tags: rebac:verbs-from
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2419) 'rfd-2419 provides
+2026-10-31T00:00:22Z (RFD66606-2419) 'rfd-2419 provides gitbash-pathconv-guard
  # tags: rebac:relate
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2419) 'gitbash-pathconv-guard
- # tags: rebac:relate, rfd:wrap
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2419) 'rfd-2419 is_a workspace-policy
+2026-10-31T00:00:23Z (RFD66606-2419) 'rfd-2419 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2419  1 LINE
  Text:Written

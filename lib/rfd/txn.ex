@@ -8,8 +8,7 @@ defmodule RFD.Txn do
   title: it moves the serial from its site into its state. Each line of
   a property is one more transaction, its description the line and its
   tag the property, so a property's metadata runs and only the text
-  changes. A line too long for the headroom goes on in the next
-  transaction, tagged `rfd:wrap` too, and joins back with one space.
+  changes. A line is one transaction, however long.
 
   `write/2` writes a `%RFD.Doc{}` out; `parse/1` reads one back through
   `RFD.DSL.build/6`, so every check of the DSL runs on it.
@@ -22,7 +21,6 @@ defmodule RFD.Txn do
            details_title details_preamble abandoned_at)a
   @spine ~w(decision related references)a
   @scalars ~w(flight_level attest_in details_pointer compact_head drafted_by)a
-  @width 72
   @ns <<0x6BA7B811::32, 0x9DAD::16, 0x11D1::16, 0x80B4::16, 0x00C04FD430C8::48>>
   @base "https://github.com/V-Sekai-fire/rfds/"
 
@@ -119,31 +117,7 @@ defmodule RFD.Txn do
       raise ArgumentError, "#{t.code} #{tag}: a line ends in whitespace"
     end
 
-    width = @width - byte_size(header(at(t.day, 0), t.code, ""))
-
-    s
-    |> chunks(width)
-    |> Enum.with_index()
-    |> Enum.map(fn {c, i} ->
-      %{desc: c, tags: if(i == 0, do: tag, else: tag <> ", rfd:wrap")}
-    end)
-  end
-
-  defp chunks(s, width) do
-    s
-    |> String.split(" ")
-    |> Enum.reduce([], fn
-      w, [] ->
-        [w]
-
-      w, [cur | done] ->
-        fits? = String.length(cur) + 1 + String.length(w) <= width
-
-        if fits? or cur == "" or String.ends_with?(cur, " ") or w == "",
-          do: [cur <> " " <> w | done],
-          else: [w, cur | done]
-    end)
-    |> Enum.reverse()
+    [%{desc: s, tags: tag}]
   end
 
   defp header(ts, code, desc), do: "#{ts} (#{code}) '#{desc}\n"
@@ -227,7 +201,6 @@ defmodule RFD.Txn do
 
     acc =
       rest
-      |> join_wraps()
       |> Enum.reduce(empty(), &step/2)
 
     fields =
@@ -255,20 +228,6 @@ defmodule RFD.Txn do
   end
 
   defp build(_, _), do: {:error, "the first transaction is not an RFD title"}
-
-  defp join_wraps(txns) do
-    txns
-    |> Enum.reduce([], fn t, acc ->
-      case {List.delete(t.tags, "rfd:wrap") != t.tags, acc} do
-        {true, [prev | done]} ->
-          [%{prev | description: prev.description <> " " <> t.description} | done]
-
-        _ ->
-          [t | acc]
-      end
-    end)
-    |> Enum.reverse()
-  end
 
   defp empty do
     %{text: %{}, order: [], details: [], sections: [], madr: []}

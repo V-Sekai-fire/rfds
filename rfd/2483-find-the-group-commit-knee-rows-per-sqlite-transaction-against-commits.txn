@@ -4,812 +4,342 @@
  RFD:Prediscussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-07T00:00:01Z (RFD66606-2483) 'a benchmark measures how many
+2026-11-07T00:00:01Z (RFD66606-2483) 'a benchmark measures how many rows one SQLite transaction must carry to keep a FoundationDB-backed store at the challenge's write rate.
  # tags: rfd:feature
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:02Z (RFD66606-2483) 'rows one SQLite transaction must
- # tags: rfd:feature, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:03Z (RFD66606-2483) 'carry to keep a
- # tags: rfd:feature, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:04Z (RFD66606-2483) 'FoundationDB-backed store at the
- # tags: rfd:feature, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2483) 'challenge's write rate.
- # tags: rfd:feature, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2483) 'the 4-process scratch cluster's
+2026-11-07T00:00:02Z (RFD66606-2483) 'the 4-process scratch cluster's writer loop, its batch sizes, and the commit-rate table the run produces.
  # tags: rfd:scope
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2483) 'writer loop, its batch sizes, and
- # tags: rfd:scope, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2483) 'the commit-rate table the run
- # tags: rfd:scope, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2483) 'produces.
- # tags: rfd:scope, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2483) 'How many requests must one SQLite
+2026-11-07T00:00:03Z (RFD66606-2483) 'How many requests must one SQLite transaction carry so a server on this store keeps up
  # tags: rfd:hook
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2483) 'transaction carry so a server on
- # tags: rfd:hook, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2483) 'this store keeps up
- # tags: rfd:hook, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2483) 'with the challenge's write rate?
+2026-11-07T00:00:04Z (RFD66606-2483) 'with the challenge's write rate?
  # tags: rfd:hook
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2483) '
+2026-11-07T00:00:05Z (RFD66606-2483) '
  # tags: rfd:hook
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2483) 'One SQLite transaction is one
+2026-11-07T00:00:06Z (RFD66606-2483) 'One SQLite transaction is one FoundationDB transaction, and a commit costs a median of
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2483) 'FoundationDB transaction, and a
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2483) 'commit costs a median of
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2483) 'about 8.4 ms, so a server that
+2026-11-07T00:00:07Z (RFD66606-2483) 'about 8.4 ms, so a server that commits per request caps near 100 writes/s per store. A
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2483) 'commits per request caps near 100
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2483) 'writes/s per store. A
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2483) 'lone writer through the VFS (the
+2026-11-07T00:00:08Z (RFD66606-2483) 'lone writer through the VFS (the SQLite-on-FoundationDB virtual file system) measured
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2483) 'SQLite-on-FoundationDB virtual
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2483) 'file system) measured
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2483) 'from 89.7 commits/s to 106.9
+2026-11-07T00:00:09Z (RFD66606-2483) 'from 89.7 commits/s to 106.9 commits/s, and a bare libfdb_c loop with no SQLite and no
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2483) 'commits/s, and a bare libfdb_c
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2483) 'loop with no SQLite and no
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2483) 'VFS measured from 106.5 commits/s
+2026-11-07T00:00:10Z (RFD66606-2483) 'VFS measured from 106.5 commits/s to 113.5 commits/s per process at N=1. The challenge's
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2483) 'to 113.5 commits/s per process at
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2483) 'N=1. The challenge's
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2483) 'user model is derived, not
+2026-11-07T00:00:11Z (RFD66606-2483) 'user model is derived, not measured on this server, at about 165 writes/s at 20,000 users
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2483) 'measured on this server, at about
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2483) '165 writes/s at 20,000 users
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2483) 'and about 830 writes/s at 100,000
+2026-11-07T00:00:12Z (RFD66606-2483) 'and about 830 writes/s at 100,000 users; re-derive from `bench/load.js` before quoting.
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2483) 'users; re-derive from
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2483) '`bench/load.js` before quoting.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:36Z (RFD66606-2483) '
+2026-11-07T00:00:13Z (RFD66606-2483) '
  # tags: rfd:intrigue
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2483) 'Run a writer that carries K
+2026-11-07T00:00:14Z (RFD66606-2483) 'Run a writer that carries K row-writes in one SQLite transaction, for K = 1, 4, 16, 64,
  # tags: rfd:exit
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2483) 'row-writes in one SQLite
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2483) 'transaction, for K = 1, 4, 16,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2483) '64,
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2483) '256, three repeats, in
+2026-11-07T00:00:15Z (RFD66606-2483) '256, three repeats, in closed-loop and fixed-arrival-rate modes. K=1 must reproduce about
  # tags: rfd:exit
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2483) 'closed-loop and
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2483) 'fixed-arrival-rate modes. K=1
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2483) 'must reproduce about
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2483) '100 commits/s or the probe is
+2026-11-07T00:00:16Z (RFD66606-2483) '100 commits/s or the probe is wrong. Rows/s must grow close to linearly in K until commit
  # tags: rfd:exit
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2483) 'wrong. Rows/s must grow close to
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2483) 'linearly in K until commit
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2483) 'latency rises; that point is the
+2026-11-07T00:00:17Z (RFD66606-2483) 'latency rises; that point is the knee.
  # tags: rfd:exit
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2483) 'knee.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:50Z (RFD66606-2483) '
+2026-11-07T00:00:18Z (RFD66606-2483) '
  # tags: rfd:exit
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2483) 'Find the group-commit knee: rows
+2026-11-07T00:00:19Z (RFD66606-2483) 'Find the group-commit knee: rows per SQLite transaction against commits and p99
  # tags: rfd:details-title
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2483) 'per SQLite transaction against
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:53Z (RFD66606-2483) 'commits and p99
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:54Z (RFD66606-2483) '- Run the writer on the 4-process
+2026-11-07T00:00:20Z (RFD66606-2483) '- Run the writer on the 4-process scratch cluster (never port 4700), through the VFS, at
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:55Z (RFD66606-2483) 'scratch cluster (never port
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:56Z (RFD66606-2483) '4700), through the VFS, at
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2483) '  K = 1, 4, 16, 64, 256, three
+2026-11-07T00:00:21Z (RFD66606-2483) '  K = 1, 4, 16, 64, 256, three repeats, in closed-loop and fixed-arrival-rate modes, and
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:00:58Z (RFD66606-2483) 'repeats, in closed-loop and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2483) 'fixed-arrival-rate modes, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:00Z (RFD66606-2483) '  record whether any batch's
+2026-11-07T00:00:22Z (RFD66606-2483) '  record whether any batch's dirty pages crossed into the VFS's staging path (FoundationDB
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:01Z (RFD66606-2483) 'dirty pages crossed into the
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2483) 'VFS's staging path (FoundationDB
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:03Z (RFD66606-2483) '  bounds one transaction to 10 MB
+2026-11-07T00:00:23Z (RFD66606-2483) '  bounds one transaction to 10 MB and 5 s).
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:04Z (RFD66606-2483) 'and 5 s).
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:05Z (RFD66606-2483) '- Build a table from the log
+2026-11-07T00:00:24Z (RFD66606-2483) '- Build a table from the log files with min, mean and max over the repeats; report rows/s,
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:06Z (RFD66606-2483) 'files with min, mean and max over
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2483) 'the repeats; report rows/s,
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:08Z (RFD66606-2483) '  per-row p99 acknowledge
+2026-11-07T00:00:25Z (RFD66606-2483) '  per-row p99 acknowledge latency, commits over 100 ms, and conflicted delta; name the knee
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:09Z (RFD66606-2483) 'latency, commits over 100 ms, and
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:10Z (RFD66606-2483) 'conflicted delta; name the knee
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:11Z (RFD66606-2483) '  batch size and amend
+2026-11-07T00:00:26Z (RFD66606-2483) '  batch size and amend `PROTOCOL.md` with the chosen batch window and size.
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:12Z (RFD66606-2483) '`PROTOCOL.md` with the chosen
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:13Z (RFD66606-2483) 'batch window and size.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:14Z (RFD66606-2483) '- Run the crash-check control: a
+2026-11-07T00:00:27Z (RFD66606-2483) '- Run the crash-check control: a planted variant that acknowledges before the commit must
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:15Z (RFD66606-2483) 'planted variant that acknowledges
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:16Z (RFD66606-2483) 'before the commit must
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:17Z (RFD66606-2483) '  show higher throughput and then
+2026-11-07T00:00:28Z (RFD66606-2483) '  show higher throughput and then fail the check; `kill -9` right after an acknowledgement
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:18Z (RFD66606-2483) 'fail the check; `kill -9` right
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:19Z (RFD66606-2483) 'after an acknowledgement
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:20Z (RFD66606-2483) '  must still find every
+2026-11-07T00:00:29Z (RFD66606-2483) '  must still find every acknowledged row in the store.
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:21Z (RFD66606-2483) 'acknowledged row in the store.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:22Z (RFD66606-2483) '
+2026-11-07T00:00:30Z (RFD66606-2483) '
  # tags: rfd:decision
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:23Z (RFD66606-2483) '- RFD66606-2382, the skateboard's
+2026-11-07T00:00:31Z (RFD66606-2483) '- RFD66606-2382, the skateboard's manifest, which names datasource-store's SQLite VFS over
  # tags: rfd:related
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:24Z (RFD66606-2483) 'manifest, which names
- # tags: rfd:related, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:25Z (RFD66606-2483) 'datasource-store's SQLite VFS
- # tags: rfd:related, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:26Z (RFD66606-2483) 'over
- # tags: rfd:related, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:27Z (RFD66606-2483) '  FoundationDB as the store this
+2026-11-07T00:00:32Z (RFD66606-2483) '  FoundationDB as the store this benchmark measures.
  # tags: rfd:related
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:28Z (RFD66606-2483) 'benchmark measures.
- # tags: rfd:related, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:29Z (RFD66606-2483) '
+2026-11-07T00:00:33Z (RFD66606-2483) '
  # tags: rfd:related
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:30Z (RFD66606-2483) 'Data so far
+2026-11-07T00:00:34Z (RFD66606-2483) 'Data so far
  # tags: rfd:details-heading
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:31Z (RFD66606-2483) '- Lone writer through the VFS:
+2026-11-07T00:00:35Z (RFD66606-2483) '- Lone writer through the VFS: from 89.7 commits/s to 106.9 commits/s
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:32Z (RFD66606-2483) 'from 89.7 commits/s to 106.9
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:33Z (RFD66606-2483) 'commits/s
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:34Z (RFD66606-2483) '  (`results-contention-matrix2.log`,
+2026-11-07T00:00:36Z (RFD66606-2483) '  (`results-contention-matrix2.log`, `results-contention-matrix3.log`, commit 482974a).
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:35Z (RFD66606-2483) '`results-contention-matrix3.log`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:36Z (RFD66606-2483) 'commit 482974a).
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:37Z (RFD66606-2483) '- Bare libfdb_c loop, no SQLite,
+2026-11-07T00:00:37Z (RFD66606-2483) '- Bare libfdb_c loop, no SQLite, no VFS: from 106.5 commits/s to 113.5 commits/s per
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:38Z (RFD66606-2483) 'no VFS: from 106.5 commits/s to
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:39Z (RFD66606-2483) '113.5 commits/s per
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:40Z (RFD66606-2483) '  process at N=1, median commit
+2026-11-07T00:00:38Z (RFD66606-2483) '  process at N=1, median commit about 8.4 ms (`results-contention-matrix5.log`, commit
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:41Z (RFD66606-2483) 'about 8.4 ms
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:42Z (RFD66606-2483) '(`results-contention-matrix5.log`,
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:43Z (RFD66606-2483) 'commit
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:44Z (RFD66606-2483) '  6be7ddb).
+2026-11-07T00:00:39Z (RFD66606-2483) '  6be7ddb).
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:45Z (RFD66606-2483) '- Derived, not measured on this
+2026-11-07T00:00:40Z (RFD66606-2483) '- Derived, not measured on this server: the user model does a like with probability 0.15
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:46Z (RFD66606-2483) 'server: the user model does a
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:47Z (RFD66606-2483) 'like with probability 0.15
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:48Z (RFD66606-2483) '  and a post with probability
+2026-11-07T00:00:41Z (RFD66606-2483) '  and a post with probability 0.02 per iteration of roughly 21 s of think time (think-time
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:49Z (RFD66606-2483) '0.02 per iteration of roughly 21
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:50Z (RFD66606-2483) 's of think time (think-time
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:51Z (RFD66606-2483) '  bands of 3 s to 7 s, 3 s to 8
+2026-11-07T00:00:42Z (RFD66606-2483) '  bands of 3 s to 7 s, 3 s to 8 s, and 5 s to 15 s). That is about 0.008 writes/s per user,
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:52Z (RFD66606-2483) 's, and 5 s to 15 s). That is
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:53Z (RFD66606-2483) 'about 0.008 writes/s per user,
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:54Z (RFD66606-2483) '  so about 165 writes/s at 20,000
+2026-11-07T00:00:43Z (RFD66606-2483) '  so about 165 writes/s at 20,000 users and about 830 writes/s at 100,000. Re-derive from
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:55Z (RFD66606-2483) 'users and about 830 writes/s at
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:56Z (RFD66606-2483) '100,000. Re-derive from
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:01:57Z (RFD66606-2483) '  `bench/load.js` before quoting.
+2026-11-07T00:00:44Z (RFD66606-2483) '  `bench/load.js` before quoting.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:58Z (RFD66606-2483) '- The C leader already
+2026-11-07T00:00:45Z (RFD66606-2483) '- The C leader already group-commits; this store's writer must too.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:01:59Z (RFD66606-2483) 'group-commits; this store's
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:00Z (RFD66606-2483) 'writer must too.
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:01Z (RFD66606-2483) '
+2026-11-07T00:00:46Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:02Z (RFD66606-2483) '
+2026-11-07T00:00:47Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:03Z (RFD66606-2483) 'Reading rule, fixed before the
+2026-11-07T00:00:48Z (RFD66606-2483) 'Reading rule, fixed before the run
  # tags: rfd:details-heading
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:04Z (RFD66606-2483) 'run
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:05Z (RFD66606-2483) '- K=1 must reproduce about 100
+2026-11-07T00:00:49Z (RFD66606-2483) '- K=1 must reproduce about 100 commits/s. If it does not, the probe is wrong.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:06Z (RFD66606-2483) 'commits/s. If it does not, the
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:07Z (RFD66606-2483) 'probe is wrong.
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:08Z (RFD66606-2483) '- Rows/s should grow close to
+2026-11-07T00:00:50Z (RFD66606-2483) '- Rows/s should grow close to linearly in K until commit latency rises. The knee is the
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:09Z (RFD66606-2483) 'linearly in K until commit
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:10Z (RFD66606-2483) 'latency rises. The knee is the
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:11Z (RFD66606-2483) '  batch size the server uses.
+2026-11-07T00:00:51Z (RFD66606-2483) '  batch size the server uses.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:12Z (RFD66606-2483) '- Report rows/s, per-row p99
+2026-11-07T00:00:52Z (RFD66606-2483) '- Report rows/s, per-row p99 acknowledge latency, commits over 100 ms, and conflicted
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:13Z (RFD66606-2483) 'acknowledge latency, commits over
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:14Z (RFD66606-2483) '100 ms, and conflicted
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:15Z (RFD66606-2483) '  delta.
+2026-11-07T00:00:53Z (RFD66606-2483) '  delta.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:16Z (RFD66606-2483) '
+2026-11-07T00:00:54Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:17Z (RFD66606-2483) '
+2026-11-07T00:00:55Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:18Z (RFD66606-2483) 'Controls that must be able to
+2026-11-07T00:00:56Z (RFD66606-2483) 'Controls that must be able to fail
  # tags: rfd:details-heading
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:19Z (RFD66606-2483) 'fail
- # tags: rfd:details-heading, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:20Z (RFD66606-2483) '- A planted variant that
+2026-11-07T00:00:57Z (RFD66606-2483) '- A planted variant that acknowledges before the commit must show higher throughput and
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:21Z (RFD66606-2483) 'acknowledges before the commit
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:22Z (RFD66606-2483) 'must show higher throughput and
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:23Z (RFD66606-2483) '  then fail the crash check.
+2026-11-07T00:00:58Z (RFD66606-2483) '  then fail the crash check.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:24Z (RFD66606-2483) '- Crash check: `kill -9` the
+2026-11-07T00:00:59Z (RFD66606-2483) '- Crash check: `kill -9` the writer right after an acknowledgement and confirm every
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:25Z (RFD66606-2483) 'writer right after an
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:26Z (RFD66606-2483) 'acknowledgement and confirm every
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:27Z (RFD66606-2483) '  acknowledged row is in the
+2026-11-07T00:01:00Z (RFD66606-2483) '  acknowledged row is in the store. An earlier measurement found a store that acknowledged
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:28Z (RFD66606-2483) 'store. An earlier measurement
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:29Z (RFD66606-2483) 'found a store that acknowledged
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:30Z (RFD66606-2483) '  before durable, and this is the
+2026-11-07T00:01:01Z (RFD66606-2483) '  before durable, and this is the failure that catches it.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:31Z (RFD66606-2483) 'failure that catches it.
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:32Z (RFD66606-2483) '
+2026-11-07T00:01:02Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:33Z (RFD66606-2483) '
+2026-11-07T00:01:03Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:34Z (RFD66606-2483) 'Acceptance
+2026-11-07T00:01:04Z (RFD66606-2483) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:35Z (RFD66606-2483) 'A table built from the log files,
+2026-11-07T00:01:05Z (RFD66606-2483) 'A table built from the log files, with min, mean and max over the repeats; the knee named;
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:36Z (RFD66606-2483) 'with min, mean and max over the
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:37Z (RFD66606-2483) 'repeats; the knee named;
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:38Z (RFD66606-2483) 'and a one-line `PROTOCOL.md`
+2026-11-07T00:01:06Z (RFD66606-2483) 'and a one-line `PROTOCOL.md` amendment stating the batch window and size the benchmark
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:39Z (RFD66606-2483) 'amendment stating the batch
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:40Z (RFD66606-2483) 'window and size the benchmark
- # tags: rfd:details, rfd:wrap
- Text:RFD2483  1 LINE
- Text:Written
-
-2026-11-07T00:02:41Z (RFD66606-2483) 'server will use.
+2026-11-07T00:01:07Z (RFD66606-2483) 'server will use.
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written
 
-2026-11-07T00:02:42Z (RFD66606-2483) '
+2026-11-07T00:01:08Z (RFD66606-2483) '
  # tags: rfd:details
  Text:RFD2483  1 LINE
  Text:Written

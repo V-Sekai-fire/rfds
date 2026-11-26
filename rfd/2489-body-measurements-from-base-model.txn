@@ -4,422 +4,187 @@
  RFD:Ideation  1 RFD
  Serials:VSekaiFabric
 
-2026-11-10T00:00:01Z (RFD66606-2489) 'body measurements are re-readable
+2026-11-10T00:00:01Z (RFD66606-2489) 'body measurements are re-readable from the base model mesh along labeled loops
  # tags: rfd:feature
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:02Z (RFD66606-2489) 'from the base model mesh along
- # tags: rfd:feature, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:03Z (RFD66606-2489) 'labeled loops
- # tags: rfd:feature, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:04Z (RFD66606-2489) 'base model mesh, waist and collar
+2026-11-10T00:00:02Z (RFD66606-2489) 'base model mesh, waist and collar vertex labels, geodesic measurement
  # tags: rfd:scope
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:05Z (RFD66606-2489) 'vertex labels, geodesic
- # tags: rfd:scope, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:06Z (RFD66606-2489) 'measurement
- # tags: rfd:scope, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:07Z (RFD66606-2489) 'What numbers should the base
+2026-11-10T00:00:03Z (RFD66606-2489) 'What numbers should the base model's body carry so clothing fits and the net can be checked?
  # tags: rfd:hook
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:08Z (RFD66606-2489) 'model's body carry so clothing
- # tags: rfd:hook, rfd:wrap
+2026-11-10T00:00:04Z (RFD66606-2489) '
+ # tags: rfd:hook
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:09Z (RFD66606-2489) 'fits and the net can be checked?
- # tags: rfd:hook, rfd:wrap
+2026-11-10T00:00:05Z (RFD66606-2489) 'The base model is the body base (the reference rig everything else hangs from).
+ # tags: rfd:intrigue
+ Text:RFD2489  1 LINE
+ Text:Written
+
+2026-11-10T00:00:06Z (RFD66606-2489) 'GarmentCodeData v2 (the CC BY 4.0 garment dataset) stores body measurements
+ # tags: rfd:intrigue
+ Text:RFD2489  1 LINE
+ Text:Written
+
+2026-11-10T00:00:07Z (RFD66606-2489) 'beside the waist and collar vertex labels.
+ # tags: rfd:intrigue
+ Text:RFD2489  1 LINE
+ Text:Written
+
+2026-11-10T00:00:08Z (RFD66606-2489) 'Those labels plus the mesh are all a garment needs to sit on the body.
+ # tags: rfd:intrigue
+ Text:RFD2489  1 LINE
+ Text:Written
+
+2026-11-10T00:00:09Z (RFD66606-2489) 'So the measurements must be re-readable from the base model alone.
+ # tags: rfd:intrigue
  Text:RFD2489  1 LINE
  Text:Written
 
 2026-11-10T00:00:10Z (RFD66606-2489) '
- # tags: rfd:hook
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:11Z (RFD66606-2489) 'The base model is the body base
  # tags: rfd:intrigue
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:12Z (RFD66606-2489) '(the reference rig everything
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:13Z (RFD66606-2489) 'else hangs from).
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:14Z (RFD66606-2489) 'GarmentCodeData v2 (the CC BY 4.0
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:15Z (RFD66606-2489) 'garment dataset) stores body
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:16Z (RFD66606-2489) 'measurements
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:17Z (RFD66606-2489) 'beside the waist and collar
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:18Z (RFD66606-2489) 'vertex labels.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:19Z (RFD66606-2489) 'Those labels plus the mesh are
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:20Z (RFD66606-2489) 'all a garment needs to sit on the
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:21Z (RFD66606-2489) 'body.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:22Z (RFD66606-2489) 'So the measurements must be
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:23Z (RFD66606-2489) 're-readable from the base model
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:24Z (RFD66606-2489) 'alone.
- # tags: rfd:intrigue, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:25Z (RFD66606-2489) '
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:26Z (RFD66606-2489) 'Read DETAILS for the loop
+2026-11-10T00:00:11Z (RFD66606-2489) 'Read DETAILS for the loop definitions and the first gate.
  # tags: rfd:exit
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:27Z (RFD66606-2489) 'definitions and the first gate.
- # tags: rfd:exit, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:28Z (RFD66606-2489) '
+2026-11-10T00:00:12Z (RFD66606-2489) '
  # tags: rfd:exit
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:29Z (RFD66606-2489) 'Extracting body measurements from
+2026-11-10T00:00:13Z (RFD66606-2489) 'Extracting body measurements from the base model
  # tags: rfd:details-title
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:30Z (RFD66606-2489) 'the base model
- # tags: rfd:details-title, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:31Z (RFD66606-2489) 'The base model's body
+2026-11-10T00:00:14Z (RFD66606-2489) 'The base model's body measurements come from the mesh itself.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:32Z (RFD66606-2489) 'measurements come from the mesh
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:33Z (RFD66606-2489) 'itself.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:34Z (RFD66606-2489) 'Circumference is the perimeter of
+2026-11-10T00:00:15Z (RFD66606-2489) 'Circumference is the perimeter of a labeled cross-section loop.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:35Z (RFD66606-2489) 'a labeled cross-section loop.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:36Z (RFD66606-2489) 'Length is a geodesic distance
+2026-11-10T00:00:16Z (RFD66606-2489) 'Length is a geodesic distance between two landmarks.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:37Z (RFD66606-2489) 'between two landmarks.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:38Z (RFD66606-2489) 'GarmentCodeData v2 supplies the
+2026-11-10T00:00:17Z (RFD66606-2489) 'GarmentCodeData v2 supplies the waist and collar vertex labels that anchor them.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:39Z (RFD66606-2489) 'waist and collar vertex labels
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:40Z (RFD66606-2489) 'that anchor them.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:41Z (RFD66606-2489) 'RFD66606-2488 (cage-wrapped
+2026-11-10T00:00:18Z (RFD66606-2489) 'RFD66606-2488 (cage-wrapped surface net) reproduces those same labels.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:42Z (RFD66606-2489) 'surface net) reproduces those
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:43Z (RFD66606-2489) 'same labels.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:44Z (RFD66606-2489) 'So measuring the base model is
+2026-11-10T00:00:19Z (RFD66606-2489) 'So measuring the base model is also a check that the net read the parts correctly.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:45Z (RFD66606-2489) 'also a check that the net read
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:46Z (RFD66606-2489) 'the parts correctly.
- # tags: rfd:decision, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:47Z (RFD66606-2489) '
+2026-11-10T00:00:20Z (RFD66606-2489) '
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:48Z (RFD66606-2489) '- RFD66606-2488, the cage-wrapped
+2026-11-10T00:00:21Z (RFD66606-2489) '- RFD66606-2488, the cage-wrapped surface net whose part labels this RFD reads.
  # tags: rfd:related
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:49Z (RFD66606-2489) 'surface net whose part labels
- # tags: rfd:related, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:50Z (RFD66606-2489) 'this RFD reads.
- # tags: rfd:related, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:51Z (RFD66606-2489) '- RFD66606-2424, the
+2026-11-10T00:00:22Z (RFD66606-2489) '- RFD66606-2424, the anthropometric keypoint fit whose landmark vocabulary this inherits.
  # tags: rfd:related
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:52Z (RFD66606-2489) 'anthropometric keypoint fit whose
- # tags: rfd:related, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:53Z (RFD66606-2489) 'landmark vocabulary this
- # tags: rfd:related, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:54Z (RFD66606-2489) 'inherits.
- # tags: rfd:related, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:55Z (RFD66606-2489) '
+2026-11-10T00:00:23Z (RFD66606-2489) '
  # tags: rfd:related
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:56Z (RFD66606-2489) 'The problem
+2026-11-10T00:00:24Z (RFD66606-2489) 'The problem
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:57Z (RFD66606-2489) 'The base model is the reference
+2026-11-10T00:00:25Z (RFD66606-2489) 'The base model is the reference body mesh, the static rig everything hangs from.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:58Z (RFD66606-2489) 'body mesh, the static rig
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:59Z (RFD66606-2489) 'everything hangs from.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:00Z (RFD66606-2489) 'It must be measured so garments
+2026-11-10T00:00:26Z (RFD66606-2489) 'It must be measured so garments fit it and the net can be checked.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:01Z (RFD66606-2489) 'fit it and the net can be
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:02Z (RFD66606-2489) 'checked.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:03Z (RFD66606-2489) 'Hand-measured numbers are the
+2026-11-10T00:00:27Z (RFD66606-2489) 'Hand-measured numbers are the only source today and they do not round-trip to the mesh.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:04Z (RFD66606-2489) 'only source today and they do not
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:05Z (RFD66606-2489) 'round-trip to the mesh.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:06Z (RFD66606-2489) '
+2026-11-10T00:00:28Z (RFD66606-2489) '
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:07Z (RFD66606-2489) 'How measurement is made
+2026-11-10T00:00:29Z (RFD66606-2489) 'How measurement is made
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:08Z (RFD66606-2489) '- Circumference is the perimeter
+2026-11-10T00:00:30Z (RFD66606-2489) '- Circumference is the perimeter of a labeled cross-section loop.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:09Z (RFD66606-2489) 'of a labeled cross-section loop.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:10Z (RFD66606-2489) '- Waist and collar are the loops
+2026-11-10T00:00:31Z (RFD66606-2489) '- Waist and collar are the loops GarmentCodeData v2 already labels.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:11Z (RFD66606-2489) 'GarmentCodeData v2 already
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:12Z (RFD66606-2489) 'labels.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:13Z (RFD66606-2489) '- Length is a geodesic distance
+2026-11-10T00:00:32Z (RFD66606-2489) '- Length is a geodesic distance between two landmarks.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:14Z (RFD66606-2489) 'between two landmarks.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:15Z (RFD66606-2489) '
+2026-11-10T00:00:33Z (RFD66606-2489) '
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:16Z (RFD66606-2489) 'First gate
+2026-11-10T00:00:34Z (RFD66606-2489) 'First gate
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:17Z (RFD66606-2489) 'Re-derive the stored body
+2026-11-10T00:00:35Z (RFD66606-2489) 'Re-derive the stored body measurements from the base model mesh alone.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:18Z (RFD66606-2489) 'measurements from the base model
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:19Z (RFD66606-2489) 'mesh alone.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:20Z (RFD66606-2489) 'The recovered numbers agree with
+2026-11-10T00:00:36Z (RFD66606-2489) 'The recovered numbers agree with GarmentCodeData v2 within tolerance in the model-explorer viewer.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:01:21Z (RFD66606-2489) 'GarmentCodeData v2 within
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:22Z (RFD66606-2489) 'tolerance in the model-explorer
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:23Z (RFD66606-2489) 'viewer.
- # tags: rfd:details, rfd:wrap
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:01:24Z (RFD66606-2489) '
+2026-11-10T00:00:37Z (RFD66606-2489) '
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written

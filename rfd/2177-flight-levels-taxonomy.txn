@@ -104,172 +104,177 @@
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:21Z (RFD66606-2177) '```usda
+2026-09-02T00:00:21Z (RFD66606-2177) '```
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:22Z (RFD66606-2177) 'def "S2177" {
+2026-09-02T00:00:22Z (RFD66606-2177) '2026-09-05T00:00:00Z (RFD66606-2229) 'interchangeable-parts consolidation as workspace policy
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:23Z (RFD66606-2177) '    custom string slug = "flight-levels-taxonomy"
+2026-09-02T00:00:23Z (RFD66606-2177) ' # uuid: f5d7b5f6-fcee-50df-9183-b12bcb1fb4da
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:24Z (RFD66606-2177) '    custom string flight_level = "L3"    # optional: L1 | L2 | L3
+2026-09-02T00:00:24Z (RFD66606-2177) ' # tags: rfd:title, rfd:flight-level:l3, rfd:compact-head:true
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2177) '}
+2026-09-02T00:00:25Z (RFD66606-2177) ' RFD:Discussion  1 RFD
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:26Z (RFD66606-2177) '```
+2026-09-02T00:00:26Z (RFD66606-2177) ' Serials:VSekaiFabric
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:27Z (RFD66606-2177) 'Values are strings `"L1"`, `"L2"`, `"L3"`. Absent field means no level classification; the RFD stays off the three per-level pages.
+2026-09-02T00:00:27Z (RFD66606-2177) '```
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:28Z (RFD66606-2177) 'Render script
+2026-09-02T00:00:28Z (RFD66606-2177) 'The tag is `rfd:flight-level:l1`, `l2` or `l3`, as RFD66606-2229 carries `l3` above. With no tag the RFD has no level; the RFD stays off the three per-level pages.
+ # tags: rfd:details
+ Text:RFD2177  1 LINE
+ Text:Written
+
+2026-09-02T00:00:29Z (RFD66606-2177) 'Render script
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:29Z (RFD66606-2177) '`scripts/render_flight_level_pages.py` reads the tag from every serial register and writes three files:
+2026-09-02T00:00:30Z (RFD66606-2177) '`scripts/render_flight_level_pages.py` reads the tag from every serial register and writes three files:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:30Z (RFD66606-2177) '  pages/flight-level-1-operations.qmd pages/flight-level-2-coordination.qmd pages/flight-level-3-strategy.qmd
+2026-09-02T00:00:31Z (RFD66606-2177) '  pages/flight-level-1-operations.qmd pages/flight-level-2-coordination.qmd pages/flight-level-3-strategy.qmd
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:31Z (RFD66606-2177) 'Each is a Quarto listing whose `contents:` names the `rfd/NNNN-slug/ index.md` paths of the RFDs tagged at that level. The listing sorts by RFD number descending, matches the format of `pages/rfd.qmd`, and regenerates on every render pass.
+2026-09-02T00:00:32Z (RFD66606-2177) 'Each is a Quarto listing whose `contents:` names the `rfd/NNNN-slug/ index.md` paths of the RFDs tagged at that level. The listing sorts by RFD number descending, matches the format of `pages/rfd.qmd`, and regenerates on every render pass.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:32Z (RFD66606-2177) 'Klaus Leopold citation
+2026-09-02T00:00:33Z (RFD66606-2177) 'Klaus Leopold citation
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:33Z (RFD66606-2177) 'The Flight Levels model is Klaus Leopold's, first published as an organizational-improvement framework. Cite as:
+2026-09-02T00:00:34Z (RFD66606-2177) 'The Flight Levels model is Klaus Leopold's, first published as an organizational-improvement framework. Cite as:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:34Z (RFD66606-2177) '```yaml
+2026-09-02T00:00:35Z (RFD66606-2177) '```yaml
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:35Z (RFD66606-2177) 'cff-version: 1.2.0
+2026-09-02T00:00:36Z (RFD66606-2177) 'cff-version: 1.2.0
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:36Z (RFD66606-2177) 'type: book
+2026-09-02T00:00:37Z (RFD66606-2177) 'type: book
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:37Z (RFD66606-2177) 'title: >-
+2026-09-02T00:00:38Z (RFD66606-2177) 'title: >-
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:38Z (RFD66606-2177) '  Rethinking Agile: Why Agile Teams Have Nothing To Do With Business
+2026-09-02T00:00:39Z (RFD66606-2177) '  Rethinking Agile: Why Agile Teams Have Nothing To Do With Business
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:39Z (RFD66606-2177) '  Agility
+2026-09-02T00:00:40Z (RFD66606-2177) '  Agility
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:40Z (RFD66606-2177) 'authors:
+2026-09-02T00:00:41Z (RFD66606-2177) 'authors:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:41Z (RFD66606-2177) ' , family-names: Leopold
+2026-09-02T00:00:42Z (RFD66606-2177) ' , family-names: Leopold
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:42Z (RFD66606-2177) '    given-names: Klaus
+2026-09-02T00:00:43Z (RFD66606-2177) '    given-names: Klaus
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:43Z (RFD66606-2177) 'year: 2018
+2026-09-02T00:00:44Z (RFD66606-2177) 'year: 2018
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:44Z (RFD66606-2177) 'publisher:
+2026-09-02T00:00:45Z (RFD66606-2177) 'publisher:
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:45Z (RFD66606-2177) '  name: LEANability
+2026-09-02T00:00:46Z (RFD66606-2177) '  name: LEANability
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:46Z (RFD66606-2177) 'isbn: "978-3-903205-16-9"
+2026-09-02T00:00:47Z (RFD66606-2177) 'isbn: "978-3-903205-16-9"
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:47Z (RFD66606-2177) 'url: https://www.klausleopold.com/rethinking-agile
+2026-09-02T00:00:48Z (RFD66606-2177) 'url: https://www.klausleopold.com/rethinking-agile
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:48Z (RFD66606-2177) '```
+2026-09-02T00:00:49Z (RFD66606-2177) '```
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:49Z (RFD66606-2177) 'Trade-offs recorded
+2026-09-02T00:00:50Z (RFD66606-2177) 'Trade-offs recorded
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:50Z (RFD66606-2177) '- **Tag, not new arc.** A structural namespace (site 5 = Level 1, site 6 = Level 2, site 7 = Level 3) was on the table and dropped. A tag is a data axis; a site is a URN axis. Levels change more often than URNs are allowed to, so a tag fits the churn.
+2026-09-02T00:00:51Z (RFD66606-2177) '- **Tag, not new arc.** A structural namespace (site 5 = Level 1, site 6 = Level 2, site 7 = Level 3) was on the table and dropped. A tag is a data axis; a site is a URN axis. Levels change more often than URNs are allowed to, so a tag fits the churn.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:51Z (RFD66606-2177) '- **Optional, not required.** Untagged RFDs stay in the register. Retrofitting 176 existing RFDs at once loses more than it gains.
+2026-09-02T00:00:52Z (RFD66606-2177) '- **Optional, not required.** Untagged RFDs stay in the register. Retrofitting 176 existing RFDs at once loses more than it gains.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:52Z (RFD66606-2177) '- **Leopold's numbering (L1 = ops, L3 = strategy).** Renumbering him to match RFD-serial-lower-is-more-foundational was proposed and rejected: the flight-altitude metaphor is the naming, and a greenfield tag has no reason to invert its source.
+2026-09-02T00:00:53Z (RFD66606-2177) '- **Leopold's numbering (L1 = ops, L3 = strategy).** Renumbering him to match RFD-serial-lower-is-more-foundational was proposed and rejected: the flight-altitude metaphor is the naming, and a greenfield tag has no reason to invert its source.
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:53Z (RFD66606-2177) 'The problem
+2026-09-02T00:00:54Z (RFD66606-2177) 'The problem
  # tags: rfd:details-heading
  Text:RFD2177  1 LINE
  Text:Written
 
-2026-09-02T00:00:54Z (RFD66606-2177) 'An RFD describes a decision at some altitude of work (portfolio bet, cross-team coordination, or a single team's execution).
+2026-09-02T00:00:55Z (RFD66606-2177) 'An RFD describes a decision at some altitude of work (portfolio bet, cross-team coordination, or a single team's execution).
  # tags: rfd:details
  Text:RFD2177  1 LINE
  Text:Written

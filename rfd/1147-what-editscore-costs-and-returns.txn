@@ -9,7 +9,7 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1147) '`fourloops-plan.usda`
+2026-08-25T00:00:02Z (RFD66606-1147) '`fourloops-plan.exs`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1147  1 LINE
  Text:Written
@@ -44,7 +44,7 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1147) '`DETAILS.md` holds what it costs and what it returns: peak memory at 512 and at 1024 square, the overall score for an instruction the edit matched, and the two-axis spread behind that overall. Both `fourloops-plan.usda` and `fourloops-etnf.usda` name it as a source, so a quantity in either layer resolves against the scorer's own document.
+2026-08-25T00:00:09Z (RFD66606-1147) '`DETAILS.md` holds what it costs and what it returns: peak memory at 512 and at 1024 square, the overall score for an instruction the edit matched, and the two-axis spread behind that overall. Both `fourloops-plan.exs` and `fourloops-etnf.exs` name it as a source, so a quantity in either layer resolves against the scorer's own document.
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
@@ -84,7 +84,7 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1147) '**The negative control.** A nonsense instruction returns 0.0 overall. That makes 4.29 a measurement rather than an impression: a scorer that cannot return 0.0 for nonsense is not discriminating, and every score it gives is consistent with it having read nothing. `editscoreNonsenseOverall = 0.0` in `fourloops-plan.usda` carries that control beside the quantity it validates.
+2026-08-25T00:00:17Z (RFD66606-1147) '**The negative control.** A nonsense instruction returns 0.0 overall. That makes 4.29 a measurement rather than an impression: a scorer that cannot return 0.0 for nonsense is not discriminating, and every score it gives is consistent with it having read nothing. `editscoreNonsenseOverall = 0.0` in `fourloops-plan.exs` carries that control beside the quantity it validates.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
@@ -149,7 +149,7 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1147) 'Every loop in `fourloops-plan.usda` names EditScore as its `score` stage, and loop 1 pairs it with the Referee because an image scorer and a body scorer answer different questions. A figure that four loops depend on belongs beside none of them in particular.
+2026-08-25T00:00:30Z (RFD66606-1147) 'Every loop in `fourloops-plan.exs` names EditScore as its `score` stage, and loop 1 pairs it with the Referee because an image scorer and a body scorer answer different questions. A figure that four loops depend on belongs beside none of them in particular.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
@@ -164,7 +164,7 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1147) 'EditScore is the `score` stage of every loop in `fourloops-plan.usda`. Loops 1 through 4 each name it, and loop 1 pairs it with the Referee.
+2026-08-25T00:00:33Z (RFD66606-1147) 'EditScore is the `score` stage of every loop in `fourloops-plan.exs`. Loops 1 through 4 each name it, and loop 1 pairs it with the Referee.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written

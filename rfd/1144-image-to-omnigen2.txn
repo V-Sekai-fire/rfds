@@ -9,7 +9,7 @@
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-1144) '`fourloops-plan.usda`
+2026-08-25T00:00:02Z (RFD66606-1144) '`fourloops-plan.exs`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1144  1 LINE
  Text:Written
@@ -24,7 +24,7 @@
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1144) 'Check each quantity in `fourloops-plan.usda` against the measurements below.
+2026-08-25T00:00:05Z (RFD66606-1144) 'Check each quantity in `fourloops-plan.exs` against the measurements below.
  # tags: rfd:exit
  Text:RFD1144  1 LINE
  Text:Written
@@ -34,7 +34,7 @@
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1144) 'Loop 2 exercises OmniGen2 and EditScore with nothing else in the way, so its numbers are the ones the plan layers check their quantities against. Both `fourloops-plan.usda` and `fourloops-etnf.usda` name this file as a source.
+2026-08-25T00:00:07Z (RFD66606-1144) 'Loop 2 exercises OmniGen2 and EditScore with nothing else in the way, so its numbers are the ones the plan layers check their quantities against. Both `fourloops-plan.exs` and `fourloops-etnf.exs` name this file as a source.
  # tags: rfd:details-preamble
  Text:RFD1144  1 LINE
  Text:Written
@@ -54,7 +54,7 @@
  Text:RFD1144  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1144) '`DETAILS.md` holds what the first runs measured: what OmniGen2 costs at bf16 and at four bits, what EditScore costs, and what EditScore returns for an instruction the edit actually matched. `fourloops-plan.usda` and `fourloops-etnf.usda` both name that file as a source, so a quantity in either layer is checked against a measurement rather than against a recollection.
+2026-08-25T00:00:11Z (RFD66606-1144) '`DETAILS.md` holds what the first runs measured: what OmniGen2 costs at bf16 and at four bits, what EditScore costs, and what EditScore returns for an instruction the edit actually matched. `fourloops-plan.exs` and `fourloops-etnf.exs` both name that file as a source, so a quantity in either layer is checked against a measurement rather than against a recollection.
  # tags: rfd:decision
  Text:RFD1144  1 LINE
  Text:Written

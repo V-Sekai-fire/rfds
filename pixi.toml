@@ -39,7 +39,6 @@ spacy-model-en_core_web_sm = "==3.8.0"
 
 [feature.gate.pypi-dependencies]
 jsonschema = "==4.23.0"
-usd-core = "==26.8"
 # RFD66606-1166 ranks by STAR, and a hand-rolled runoff is a claim about STAR rather
 # than STAR. `check_rfd1166_rank.py` recomputes the table against the reference
 # implementation, so the document and the method cannot disagree.

@@ -41,8 +41,8 @@ jobs:
           locked: true
           cache: true
       # The double-join hook is `language: system` and shells out to elixir, so the runner
-      # needs a BEAM before prek starts. Pinned rather than floated for the same reason
-      # `usd-core` is: a toolchain bump should arrive as a diff somebody approves.
+      # needs a BEAM before prek starts. Pinned rather than floated: a toolchain bump
+      # should arrive as a diff somebody approves.
       - uses: erlef/setup-beam@v1
         with:
           otp-version: "29"

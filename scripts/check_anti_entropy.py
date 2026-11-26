@@ -191,8 +191,7 @@ check(f"every README <= {limit} lines", not over, f"{len(rendered)} READMEs, ove
 # Enumerating rather than sampling is also what CLAUDE.md rule 5 asks for: this population
 # is fixed and countable, so a sample would see only defects larger than about 3/n while
 # costing nearly as much.
-EXPENSIVE = ["check_fourloops_plan", "check_fourloops_etnf", "check_rfd1122_plan",
-             "check_usd_valid", "check_pen_66606", "check_blocklist_detail",
+EXPENSIVE = ["check_rfd1122_plan", "check_blocklist_detail",
              "check_goal_manifests", "check-rfd-structure",
              ("check_comment_ladder", ("--self-test",)),
              ("check_rfd_canary", ("--self-test",)),

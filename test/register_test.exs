@@ -37,38 +37,11 @@ defmodule RegisterTest do
     {:deleted, 9003, "gone", []}
   ]
 
-  test "a well-formed register renders the layer the Python gate reads" do
+  test "a well-formed register has no problems and gives its two tables" do
     assert RFD.Register.problems(reg(@good)) == []
-    usda = RFD.Register.usda(reg(@good))
-
-    assert String.starts_with?(
-             usda,
-             "#usda 1.0\n(\n    customLayerData = {\n        string arc = "
-           )
-
-    assert usda =~ "def Scope \"Test\"\n    {\n        custom string thesis = "
-    assert usda =~ "def Scope \"Allocated\"\n        {\n            def \"Rfd\"\n"
-
-    assert usda =~
-             "def \"S9001\"\n                {\n                    custom string slug = \"a-slug\"\n                    custom string flight_level = \"L2\"\n"
-
-    assert usda =~ "def \"Retired\"\n" and usda =~ "custom int recorded_in = 9000"
-    assert usda =~ "custom string sectionNote = \"A deleted serial keeps its row.\""
 
     assert {%{9000 => "conventions", 9001 => "a-slug"}, %{9002 => 9000, 9003 => "gone"}} =
              RFD.Register.tables(reg(@good))
-  end
-
-  test "the Retired satellite is omitted when empty and the note is escaped" do
-    usda =
-      RFD.Register.usda(
-        reg(Enum.reject(@good, &(elem(&1, 0) == :retired)),
-          sections: [{:allocated, nil}, {:deleted, "say \"why\""}]
-        )
-      )
-
-    refute usda =~ "Retired"
-    assert usda =~ "sectionNote = \"say \\\"why\\\"\""
   end
 
   # Negative controls: each must be refused, or the register certifies the defect.

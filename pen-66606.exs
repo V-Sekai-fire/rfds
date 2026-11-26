@@ -1,21 +1,21 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
 #
-# `mix rfd.plan` renders pen-66606.usda from this file; the layer is a
-# build artifact (RFD66606-2232, extended to the apparatus plans).
+# This file is the plan. `mix rfd.plan` validates its shape and renders nothing
+# (operator, 2026-11-26).
 defmodule Plan.Pen66606 do
   use RFD.Plan
 
   plan "Pen66606" do
     meta(metersPerUnit: 1, upAxis: "Z", defaultPrim: "Serials")
-    sublayers(["./SERIALS.usda", "./SERIALS-vsekai-fabric.usda"])
+    sublayers(["./journal/serials.txn"])
 
     string("category", "1")
     string("categoryName", "documents")
     string("holder", "iFire")
     string("pen", "urn:oid:1.3.6.1.4.1.66606")
     string("rule", "rfd/1000-conventions/DETAILS.md")
-    string("scope", "This layer resolves only in a repo workspace, because its sublayers are other repositories. check_pen_66606.py reads it there, at the manual stage. A single-repository checkout cannot, which is why .pre-commit-config.yaml excludes it from usd-valid by name.")
+    string("scope", "Its one sublayer is journal/serials.txn, which with the rfd/*.txn journals builds sites 1 and 2's registers; `mix rfd.serials` holds them. Site 3's register lives in the private manuals. Nothing renders or composes this plan since 2026-11-26; `mix rfd.plan` checks its shape.")
     string_list("sites", [
       "1 weftspun request-for-discussion urn:oid:1.3.6.1.4.1.66606.1.1 decommissioned",
       "2 v-sekai-fabric request-for-discussion urn:oid:1.3.6.1.4.1.66606.1.2",
@@ -34,7 +34,7 @@ defmodule Plan.Pen66606 do
 
     over("Serials", [
       attr("thesis", "string", "The composed view of every serial the PEN has issued under category 1. It stores none of them. Each site keeps its own register and this layer sublayers them, so a serial is authored once and read everywhere. A site that copied another's rows would be a second record of one fact, and the first copy edited would win by accident."),
-      attr("howToAddASite", "string", "Add the site's SERIALS.usda to subLayers above, and add its row to the sites list. The site keeps authoring its own serials. Nothing is copied here, and check_pen_66606.py fails if two sites author the same one.")
+      attr("howToAddASite", "string", "Add the site's register to subLayers above, and add its row to the sites list. The site keeps authoring its own serials. Nothing is copied here.")
     ])
 
   end

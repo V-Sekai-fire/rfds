@@ -1,8 +1,8 @@
 # Copyright (c) 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
 #
-# `mix rfd.plan` renders rfd1122-t01-pose-check.usda from this file; the layer is a
-# build artifact (RFD66606-2232, extended to the apparatus plans).
+# This file is the plan. `mix rfd.plan` validates its shape and renders nothing
+# (operator, 2026-11-26).
 defmodule Plan.Rfd1122T01PoseCheck do
   use RFD.Plan
 

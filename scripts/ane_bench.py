@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 """What the Apple Neural Engine can address, and what precision buys once it can.
 
-WHY THIS EXISTS. `rfd1122-plan.usda`'s M2Pro scope ends in two booleans:
+WHY THIS EXISTS. `rfd1122-plan.exs`'s M2Pro scope ends in two booleans:
 
-    custom bool neuralEngineReachableViaOnnx = 1
-    custom bool neuralEngineUsefulForBackbone = 0
+    attr("neuralEngineReachableViaOnnx", "bool", true),
+    attr("neuralEngineUsefulForBackbone", "bool", false),
 
 The second is backed by 1685.1 ms at 576 against the CPU's 476.4, measured through ONNX
 Runtime's CoreML execution provider. That provider PARTITIONS a graph and falls back

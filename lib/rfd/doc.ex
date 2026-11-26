@@ -280,17 +280,6 @@ defmodule RFD.Doc do
     Enum.map_join(Enum.reject(parts, &(&1 in [nil, false])), "\n\n", & &1) <> "\n"
   end
 
-  @doc "The register row fragment for SERIALS-*.usda, for a human to paste or a tool to insert."
-  def register_row(%__MODULE__{} = d, slug) do
-    level =
-      if d.flight_level,
-        do:
-          "\n    custom string flight_level = \"#{d.flight_level |> Atom.to_string() |> String.upcase()}\"",
-        else: ""
-
-    "def \"S#{d.serial}\"\n{\n    custom string slug = \"#{slug}\"#{level}\n}\n"
-  end
-
   defp delivery(%__MODULE__{hook: nil, intrigue: nil, exit: nil} = d),
     do: section("Decision", decision_text(d) <> details_pointer(d))
 

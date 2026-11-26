@@ -60,7 +60,7 @@ def _self_test() -> int:
     assert scan(clean) == [], scan(clean)
 
     for planted in (
-        "rfd/1143-keypoints-to-anny/fourloops-etnf.usda",
+        "rfd/1143-keypoints-to-anny/fourloops-etnf.exs",
         "rfd/1128-four-bit-tolerance/SKILL.md",
         "rfd/2145-certificate-lifetimes/references/10-rfc5280.cff",
         "rfd/1047-voxhammer-text-mesh-editing/domain.ex",

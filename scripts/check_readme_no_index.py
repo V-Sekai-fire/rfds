@@ -56,7 +56,7 @@ MD = MarkdownIt("commonmark").enable("table")
 # happens to contain a dot -- `foot.R`, `spine02.L`, `v1.0` -- and not a file.
 EXTENSIONS = {
     "md", "rst", "txt", "py", "ex", "exs", "eex", "sh", "bash", "ps1",
-    "usda", "usdc", "usdz", "json", "toml", "lock", "xml", "yaml", "yml", "cff",
+    "usdc", "usdz", "json", "toml", "lock", "xml", "yaml", "yml", "cff",
     "parquet", "csv", "png", "jpg", "jpeg", "exr", "psb", "psd", "svg", "glb", "gltf",
     "bvh", "pt", "pth", "safetensors", "gguf", "so", "dll", "cpp", "h", "hpp", "rs", "go",
 }
@@ -150,8 +150,8 @@ def self_test():
         ("a bone name is not a file", "| `foot.R` | 5.8 mm | 4 |\n| --- | --- | --- |\n", 0),
         ("a version is not a file", "| `v1.0` | shipped |\n| --- | --- |\n", 0),
         ("a filename in a later column is legal",
-         "| target | file |\n| --- | --- |\n| root | `plan.usda` |\n", 0),
-        ("prose naming a file is legal", "An entry records what `check_usd_valid.py` measures.\n", 0),
+         "| target | file |\n| --- | --- |\n| root | `plan.exs` |\n", 0),
+        ("prose naming a file is legal", "An entry records what `check_rfd1122_plan.exs` measures.\n", 0),
         ("a measurement row is legal", "| `spine02` | 45.9 mm | 30 |\n| --- | --- | --- |\n", 0),
         # `head/neck` names a region of the body, and the earlier pattern read its slash as a
         # path separator -- the same false accusation `foot.R` produced one rewrite ago.

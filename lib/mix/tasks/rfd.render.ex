@@ -2,14 +2,14 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 defmodule Mix.Tasks.Rfd.Render do
-  @shortdoc "Render rfd/NNNN-slug.txn into rfd/NNNN-slug/ and the registers into SERIALS*.usda"
+  @shortdoc "Render rfd/NNNN-slug.txn into rfd/NNNN-slug/"
   @moduledoc """
       mix rfd.render [--check] [NAME ...]
 
-  NAME is `NNNN-slug`, `rfd/NNNN-slug.txn`, a directory or `journal/serials.txn`; with
-  none, every source is rendered. The registers are built from the journals, so
-  `journal/serials.txn` renders every `SERIALS*.usda`. `--check` writes nothing and
-  fails on drift.
+  NAME is `NNNN-slug`, `rfd/NNNN-slug.txn` or a directory; with none, every RFD is
+  rendered. The registers render nothing: they are built from the journals, and
+  `mix rfd.check` and `mix rfd.serials` validate them (operator, 2026-11-26).
+  `--check` writes nothing and fails on drift.
   """
   use Mix.Task
 
@@ -17,12 +17,15 @@ defmodule Mix.Tasks.Rfd.Render do
   def run(args) do
     {opts, names, _} = OptionParser.parse(args, strict: [check: :boolean])
 
-    sources =
-      if names == [],
-        do: RFD.Source.all() ++ RFD.Source.registers(),
-        else: Enum.map(names, &RFD.Source.at/1)
+    sources = if names == [], do: RFD.Source.all(), else: Enum.map(names, &RFD.Source.at/1)
 
     if sources == [], do: Mix.raise("no rfd/*.txn found")
+
+    if Enum.any?(sources, &RFD.Source.register?/1) do
+      Mix.raise(
+        "the registers render nothing; `mix rfd.check` and `mix rfd.serials` validate them"
+      )
+    end
 
     results = Enum.map(sources, &RFD.Source.render(&1, opts))
     bad = Enum.filter(results, &match?({:drift, _, _}, &1))
@@ -172,59 +175,45 @@ defmodule Mix.Tasks.Rfd.Rectgtn do
   end
 end
 
-defmodule Mix.Tasks.Rfd.Usda do
-  @shortdoc "Print the .usda rendering of one register to stdout"
-  @moduledoc """
-      mix rfd.usda NAME
-
-  NAME is a register's name (`Weftspun`), its layer (`SERIALS.usda`), or a legacy
-  `SERIALS*.exs` file, which is compiled as it was before the journals.
-  """
-  use Mix.Task
-
-  @impl true
-  def run([name]) do
-    registers =
-      if String.ends_with?(name, ".exs"),
-        do: [RFD.Source.load(name)],
-        else:
-          Enum.filter(
-            RFD.Register.from_journals(),
-            &(name in [&1.name, RFD.Register.usda_name(&1)])
-          )
-
-    case registers do
-      [r] -> Mix.shell().info(RFD.Register.usda(r))
-      _ -> Mix.raise("no register #{name}")
-    end
-  end
-
-  def run(_), do: Mix.raise("usage: mix rfd.usda NAME")
-end
-
 defmodule Mix.Tasks.Rfd.Serials do
   @shortdoc "Hold every register against the tree, and against a base revision"
   @moduledoc """
       mix rfd.serials [--base REF]
+      mix rfd.serials --json
+
 
   The registers, built from the journals, against the sources on disk and, with
   `--base`, against a revision: no serial gone, none revived. A base revision may
   hold its registers as journals or as the `SERIALS*.exs` that came before them. A
   base with no register fails unless this change adds `journal/serials.txn`.
   `journal/serials.txn` must also be in its written form.
+
+  `--json` checks nothing. It prints one JSON object per register, with its name and
+  its allocated and deleted serials, which is what `check-rfd-structure.py` resolves
+  citations against.
   """
   use Mix.Task
 
   @impl true
   def run(args) do
-    {opts, _, _} = OptionParser.parse(args, strict: [base: :string])
+    {opts, _, _} = OptionParser.parse(args, strict: [base: :string, json: :boolean])
     root = RFD.Source.repo_root()
     journal = Path.join(root, RFD.Register.Journal.path())
     unless File.exists?(journal), do: Mix.raise("no #{RFD.Register.Journal.path()}")
 
-    text = File.read!(journal)
     registers = RFD.Register.from_journals(root)
+    if opts[:json], do: json(registers), else: hold(registers, File.read!(journal), opts, root)
+  end
 
+  defp json(registers) do
+    for r <- registers do
+      {a, d} = RFD.Register.tables(r)
+      ids = fn t -> t |> Map.keys() |> Enum.sort() |> Enum.map(&Integer.to_string/1) end
+      IO.puts(JSON.encode!(%{name: r.name, allocated: ids.(a), deleted: ids.(d)}))
+    end
+  end
+
+  defp hold(registers, text, opts, root) do
     form =
       if RFD.Register.Journal.canonical(text) == text,
         do: [],
@@ -491,15 +480,6 @@ defmodule RFD.Source do
   end
 
   def render(path, opts) do
-    if register?(path), do: render_register(path, opts), else: render_rfd(path, opts)
-  end
-
-  defp render_register(path, opts) do
-    wanted = for r <- load(path), do: {RFD.Register.usda_name(r), RFD.Register.usda(r)}
-    write("serials", repo_root(), wanted, opts)
-  end
-
-  defp render_rfd(path, opts) do
     dir = dir_of(path)
     name = Path.basename(dir)
     doc = load(path)

@@ -153,7 +153,7 @@ defmodule DoubleJoin do
 
   @quoted ~r/"[^"\n]*"/
 
-  @exts [".md", ".py", ".ex", ".exs", ".usda", ".txt", ".txn"]
+  @exts [".md", ".py", ".ex", ".exs", ".txt", ".txn"]
 
   @doc """
   Sentences joined twice: `{line_number, matched_phrase}` for each one.

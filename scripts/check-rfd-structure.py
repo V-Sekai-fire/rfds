@@ -44,83 +44,21 @@ HEX_CITE_RE = re.compile(r"\bRFD\s+([1-9][0-9a-f]{0,2}[a-f][0-9a-f]*)\b")
 CITE_RE = re.compile(r"\bRFD(?:\s+|66606-)([0-9]{4})\b")
 BARE_RE = re.compile(r"\bRFDs?\s+([0-9]{4})\b")
 QUOTED_RE = re.compile(r'"[^"]*"|“[^”]*”')
-# The registers are built from the journals and rendered to SERIALS*.usda by
-# `mix rfd.render`; `mix rfd.serials` holds them against the tree (operator,
-# 2026-11-26). This gate reads the rendered layer. A deleted serial stays
-# citable, so both tables count.
-from pxr import Sdf, Usd
-
-ROW_RE = re.compile(r"^S(\d+)$")
-
-
-def table_rows(prim, names):
-    """Rows of one relation, in whichever of the two shapes the layer uses.
-
-    ROW FORM is one prim per tuple, the primary key in the prim name. USD refuses
-    two siblings with one name, so a duplicate key cannot be authored and there is
-    no second array to fall out of step with the first.
-
-    ARRAY FORM is parallel `int[]`/`string[]`, which is what this register held
-    until the row form replaced it and what other sites still author. It is read
-    because `pen-66606.usda` sublayers those registers, and a reader that
-    understood only the new shape would compose them to nothing -- which reads
-    exactly like a site with no serials.
-    """
-    children = [(m.group(1), c) for c in prim.GetChildren()
-                if (m := ROW_RE.match(c.GetName()))]
-    if children:
-        other = [n for n in names if n != "serial"]
-        rows = []
-        for key, child in children:
-            value = key
-            for name in other:
-                a = child.GetAttribute(name)
-                if a and a.HasAuthoredValue():
-                    value = a.Get()
-            rows.append((int(key), value))
-        return rows
-
-    arrays = {}
-    for name in names:
-        a = prim.GetAttribute(name)
-        arrays[name] = list(a.Get()) if a and a.HasAuthoredValue() else None
-    if arrays.get("serial") is None:
-        return []
-    other = "slug" if "slug" in names else "recorded_in"
-    values = arrays.get(other)
-    if values is None or len(values) != len(arrays["serial"]):
-        return []
-    return list(zip(arrays["serial"], values))
-
-
-def read(text):
-    """(allocated, deleted) as serial -> value, read off the composed stage.
-
-    A relation is any prim declaring `columns`, and the scope above it says
-    which table it is. Reading the declaration rather than a fixed prim path
-    means a site can name its own scope after itself.
-    """
-    layer = Sdf.Layer.CreateAnonymous(".usda")
-    if not layer.ImportFromString(text):
-        raise ValueError("a SERIALS*.usda register does not parse as USD")
-    stage = Usd.Stage.Open(layer)
-    allocated, deleted = {}, {}
-    for prim in stage.Traverse():
-        cols = prim.GetAttribute("columns")
-        if not (cols and cols.HasAuthoredValue()):
-            continue
-        names = [str(c).split()[0] for c in cols.Get() if str(c).strip()]
-        table = None
-        for ancestor in str(prim.GetPath()).split("/"):
-            if ancestor == "Allocated":
-                table = allocated
-            elif ancestor == "Deleted":
-                table = deleted
-        if table is None:
-            continue
-        for serial, value in table_rows(prim, names):
-            table[f"{serial}"] = str(value)
-    return allocated, deleted
+# The registers are built from the journals (operator, 2026-11-26). `mix rfd.serials
+# --json` prints each one's allocated and deleted serials, and `mix rfd.serials` holds
+# them against the tree. A deleted serial stays citable, so both tables count.
+def register_numbers(root):
+    """Every serial a register lists, allocated or deleted, as four-digit strings."""
+    import json
+    import subprocess
+    out = subprocess.run(["mix", "rfd.serials", "--json"], cwd=root,
+                         capture_output=True, text=True, encoding="utf-8")
+    if out.returncode != 0:
+        raise SystemExit(f"FAIL mix rfd.serials --json: {out.stderr.strip()[-300:]}")
+    rows = [json.loads(l) for l in out.stdout.splitlines() if l.startswith("{")]
+    if not rows:
+        raise SystemExit("FAIL mix rfd.serials --json printed no register")
+    return {n for r in rows for n in r["allocated"] + r["deleted"]}
 
 # The order these carry when present. Extra headings may sit between them.
 SPINE = ("Decision", "References", "Related")
@@ -198,28 +136,22 @@ def parse_limit(root):
     return int(m.group(1)) if m else None
 
 
-def known_numbers(root, dirs):
+def known_numbers(root, dirs, serials=None):
     """A citation resolves to a serial the register lists.
 
     The deleted serials matter. RFD66606-1070 and RFD66606-1064 removed six speculative
     RFDs and still cite them by number. Requiring a directory would reject the
     citation that records the deletion.
 
-    The SERIALS*.usda layers carry those numbers, rendered from the journals,
-    and `mix rfd.serials` holds the registers against the tree. This gate reads
-    the rendered layer, so it reads the numbers the registers hold.
+    The registers carry those numbers, built from the journals, and
+    `mix rfd.serials` holds them against the tree. This gate asks the same code
+    for them, so it reads the numbers the registers hold. Every site's register
+    contributes: site 1 holds the 1xxx series and site 2 the 2xxx series.
+    `serials` stands in for the registers in the self-test, whose fixture tree
+    has no journals.
     """
     nums = {d[:4] for d in dirs}
-    # Every SERIALS*.usda register in the repo root contributes: SERIALS.usda
-    # holds the site-1 (documents) 1xxx series, SERIALS-vsekai-fabric.usda
-    # holds the site-2 2xxx series reactivated 2026-08-31 per CLAUDE.md.
-    for entry in sorted(os.listdir(root)):
-        if not (entry == "SERIALS.usda" or (entry.startswith("SERIALS-")
-                                             and entry.endswith(".usda"))):
-            continue
-        with open(os.path.join(root, entry), encoding="utf-8") as fh:
-            allocated, deleted = read(fh.read())
-        nums |= set(allocated) | set(deleted)
+    nums |= register_numbers(root) if serials is None else set(serials)
     return nums
 
 
@@ -361,7 +293,6 @@ def check_citations(name, tokens, nums):
                 # Another site's number. This gate owns this site's serials, and
                 # the composed layer that holds every site's is workspace-scoped,
                 # so resolving it here is not possible from one checkout.
-                # `check_pen_66606.py` is where cross-site numbers are held.
                 continue
             if n not in nums:
                 problems.append(
@@ -404,7 +335,7 @@ def check_skill(name, source):
     return problems
 
 
-def check(root):
+def check(root, serials=None):
     problems = []
     dirs = sorted(
         d for d in os.listdir(os.path.join(root, "rfd"))
@@ -424,7 +355,7 @@ def check(root):
         problems.append(
             "RFD 1000 no longer states its README line limit, so this gate cannot read it"
         )
-    nums = known_numbers(root, dirs)
+    nums = known_numbers(root, dirs, serials)
 
     for d in dirs:
         num = DIR_RE.match(d).group(1)
@@ -512,39 +443,10 @@ A decision. RFD66606-1002 is the neighbour.
 See `DETAILS.md` for the rest.
 """
 GOOD_DETAILS = "# RFD66606-1001 details: the rest\n\nProse.\n"
-# The gate reads the citable numbers out of the register, so the fixture tree
-# carries one. RFD66606-1002 is deleted here, and the good README cites it.
-REGISTER = """#usda 1.0
-(
-    defaultPrim = "Serials"
-)
-
-def Scope "Serials"
-{
-    def Scope "Weftspun"
-    {
-        def Scope "Allocated"
-        {
-            def "Rfd"
-            {
-                custom string[] columns = ["serial int16 PK", "slug string"]
-                custom int[] serial = [1000, 1001]
-                custom string[] slug = ["conventions", "a-slug"]
-            }
-        }
-
-        def Scope "Deleted"
-        {
-            def "Retired"
-            {
-                custom string[] columns = ["serial int16 PK", "recorded_in int16 FK"]
-                custom int[] serial = [1002]
-                custom int[] recorded_in = [1070]
-            }
-        }
-    }
-}
-"""
+# The gate reads the citable numbers out of the registers. The fixture tree has no
+# journals, so the self-test hands it the numbers: RFD66606-1002 is deleted here, and
+# the good README cites it.
+REGISTER = {"1000", "1001", "1002"}
 GOOD_CONVENTIONS = """# RFD66606-1000: Conventions
 
 **State:** published
@@ -563,7 +465,7 @@ def self_test():
     import shutil
     import tempfile
 
-    def build(tmp, readme=GOOD_README, details=GOOD_DETAILS, deleted=None, skill=None):
+    def build(tmp, readme=GOOD_README, details=GOOD_DETAILS, skill=None):
         for n, body in (("1000-conventions", GOOD_CONVENTIONS), ("1001-a-slug", readme)):
             os.makedirs(os.path.join(tmp, "rfd", n))
             with open(os.path.join(tmp, "rfd", n, "README.md"), "w", encoding="utf-8") as fh:
@@ -575,8 +477,6 @@ def self_test():
             os.makedirs(os.path.join(tmp, "apparatus", "1001-a-slug"))
             with open(os.path.join(tmp, "apparatus", "1001-a-slug", "SKILL.md"), "w", encoding="utf-8") as fh:
                 fh.write(skill)
-        with open(os.path.join(tmp, "SERIALS.usda"), "w", encoding="utf-8") as fh:
-            fh.write(deleted if deleted is not None else REGISTER)
 
     wrapped = GOOD_README.replace("RFD66606-1002 is the neighbour.", "RFD\n0001 is the neighbour.")
     cases = [
@@ -616,8 +516,7 @@ def self_test():
         ("a hex citation, which is the withdrawn form",
          {"readme": GOOD_README.replace("RFD66606-1002", "RFD 100a")}, True),
         ("a number the register does not list",
-         {"deleted": REGISTER.replace("custom int[] serial = [1002]",
-                                      "custom int[] serial = [1003]")}, True),
+         {"serials": {"1000", "1001", "1003"}}, True),
         ("a DETAILS.md the README does not name is accepted",
          {"readme": GOOD_README.replace("See `DETAILS.md` for the rest.", "Nothing here.")}, False),
         ("a DETAILS.md titled for another RFD",
@@ -636,8 +535,10 @@ def self_test():
     for label, kw, should_fail in cases:
         tmp = tempfile.mkdtemp()
         try:
+            kw = dict(kw)
+            serials = kw.pop("serials", REGISTER)
             build(tmp, **kw)
-            failed = bool(check(tmp))
+            failed = bool(check(tmp, serials))
             if failed != should_fail:
                 ok = False
             mark = "ok " if failed == should_fail else "BAD"

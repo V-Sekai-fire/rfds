@@ -3,11 +3,12 @@
 
 defmodule RFD.Plan do
   @moduledoc """
-  An apparatus plan as Elixir data, and the `.usda` layer rendered from it.
+  An apparatus plan as Elixir data, checked for its shape while it compiles.
 
-  Modelled on `RFD.Register`. Renders the subset the apparatus uses: layer metadata with
+  Modelled on `RFD.Register`. Holds the subset the apparatus uses: layer metadata with
   sublayers and `customLayerData`, `def` / `def Scope` / `over` prims nested arbitrarily,
-  typed attributes, and relationships to prim paths.
+  typed attributes, and relationships to prim paths. The source is the plan and nothing is
+  rendered from it (operator, 2026-11-26).
   """
 
   @enforce_keys [:name]
@@ -109,7 +110,7 @@ defmodule RFD.Plan do
   def problems(%__MODULE__{} = p) do
     []
     |> check(is_binary(p.name) and p.name =~ ~r/^[A-Za-z][A-Za-z0-9_]*$/, "prim-safe name")
-    |> check(p.prims != [], "a plan with no prim renders an empty layer")
+    |> check(p.prims != [], "a plan with no prim is empty")
     |> check(
       p.meta[:defaultPrim] in [nil | Enum.map(p.prims, & &1.name)],
       "defaultPrim #{inspect(p.meta[:defaultPrim])} names no prim in this layer"
@@ -144,108 +145,5 @@ defmodule RFD.Plan do
       ps ->
         raise ArgumentError, "plan #{p.name} is outside its shape:\n  " <> Enum.join(ps, "\n  ")
     end
-  end
-
-  # --- rendering ------------------------------------------------------------------------
-
-  @doc "The plan as a `.usda` layer."
-  def usda(%__MODULE__{} = p) do
-    meta =
-      for({k, v} <- p.meta, do: "    #{k} = #{lit(v)}") ++
-        sublayer_lines(p.sublayers) ++ data_lines(p.data)
-
-    header = ["#usda 1.0", "("] ++ meta ++ [")", ""]
-    body = p.prims |> Enum.map(&prim_lines(&1, 0)) |> Enum.intersperse([""]) |> List.flatten()
-    Enum.join(header ++ body, "\n") <> "\n"
-  end
-
-  defp sublayer_lines([]), do: []
-
-  defp sublayer_lines(paths) do
-    last = length(paths) - 1
-
-    rows =
-      paths
-      |> Enum.with_index()
-      |> Enum.map(fn {p, i} -> "        @#{p}@" <> if(i == last, do: "", else: ",") end)
-
-    ["    subLayers = ["] ++ rows ++ ["    ]"]
-  end
-
-  defp data_lines([]), do: []
-
-  defp data_lines(data) do
-    ["    customLayerData = {"] ++
-      Enum.flat_map(data, fn {k, t, v} -> value_lines("        ", "#{t} #{k}", t, v) end) ++
-      ["    }"]
-  end
-
-  defp prim_lines(prim, depth) do
-    pad = String.duplicate("    ", depth)
-    schema = if prim.schema, do: " #{prim.schema}", else: ""
-
-    head =
-      case prim[:doc] do
-        nil ->
-          ["#{pad}#{prim.kind}#{schema} #{q(prim.name)}"]
-
-        d ->
-          [
-            "#{pad}#{prim.kind}#{schema} #{q(prim.name)} (",
-            "#{pad}    doc = #{lit(d)}",
-            "#{pad})"
-          ]
-      end
-
-    attrs =
-      Enum.flat_map(prim.attrs, fn {k, t, v, o} ->
-        quals = [o[:custom] != false && "custom", o[:uniform] && "uniform"]
-        decl = Enum.join(Enum.reject(quals, &(&1 in [nil, false])) ++ ["#{t} #{k}"], " ")
-        value_lines(pad <> "    ", decl, t, v)
-      end)
-
-    rels = Enum.flat_map(prim.rels, &rel_lines(&1, pad <> "    "))
-
-    kids =
-      prim.children
-      |> Enum.map(&prim_lines(&1, depth + 1))
-      |> Enum.intersperse([""])
-      |> List.flatten()
-
-    sep = if attrs != [] and (rels != [] or kids != []), do: [""], else: []
-    head ++ ["#{pad}{"] ++ attrs ++ sep ++ rels ++ kids ++ ["#{pad}}"]
-  end
-
-  defp rel_lines({name, [one]}, pad), do: ["#{pad}rel #{name} = <#{one}>"]
-
-  defp rel_lines({name, many}, pad) do
-    ["#{pad}rel #{name} = ["] ++ Enum.map(many, &"#{pad}    <#{&1}>,") ++ ["#{pad}]"]
-  end
-
-  defp value_lines(pad, decl, type, value) do
-    cond do
-      not String.ends_with?(type, "[]") -> ["#{pad}#{decl} = #{lit(value)}"]
-      value in [nil, []] -> ["#{pad}#{decl} = []"]
-      true -> ["#{pad}#{decl} = ["] ++ items(pad, List.wrap(value)) ++ ["#{pad}]"]
-    end
-  end
-
-  defp items(pad, vs), do: Enum.map(vs, &"#{pad}    #{lit(&1)},")
-
-  defp lit(true), do: "1"
-  defp lit(false), do: "0"
-  defp lit(v) when is_integer(v) or is_float(v), do: to_string(v)
-  # A newline cannot survive a single-quoted USD string, so a multi-line value takes the
-  # triple-quoted form and its lines are emitted raw: indenting them would change the value.
-  defp lit(v) when is_binary(v) do
-    if String.contains?(v, "\n"), do: block(v), else: q(v)
-  end
-
-  defp lit(v) when is_list(v), do: "(" <> Enum.map_join(v, ", ", &lit/1) <> ")"
-
-  defp q(s), do: "\"" <> String.replace(s, ~r/["\\]/, fn c -> "\\" <> c end) <> "\""
-
-  defp block(s) do
-    ~s(""") <> String.replace(s, "\\", "\\\\") <> ~s(""")
   end
 end

@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2356) 'the DNS records of every workspace service.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2356  1 LINE
  Text:Written
 
@@ -14,182 +14,147 @@
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2356) '
- # tags: rfd:hook
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2356) 'A proxied record puts Cloudflare between a client and the service for every request.
+2026-10-31T00:00:03Z (RFD66606-2356) 'A proxied record puts Cloudflare between a client and the service for every request.
  # tags: rfd:intrigue
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2356) '
- # tags: rfd:intrigue
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2356) 'If a workspace service lands under a proxied subdomain, take the proxy flag off before it
+2026-10-31T00:00:04Z (RFD66606-2356) 'If a workspace service lands under a proxied subdomain, take the proxy flag off before it
  # tags: rfd:exit
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2356) 'serves requests.
+2026-10-31T00:00:05Z (RFD66606-2356) 'serves requests.
  # tags: rfd:exit
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2356) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2356) 'Workspace services stay DNS-only
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2356) 'Workspace services stay DNS-only
- # tags: rfd:details-title
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2356) 'CF-proxied records have Cloudflare terminating TLS at its edge, every byte plaintext at
+2026-10-31T00:00:07Z (RFD66606-2356) 'CF-proxied records have Cloudflare terminating TLS at its edge, every byte plaintext at
  # tags: rfd:decision
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2356) 'CF for the round trip. Workspace services stay DNS-only; edge cache, if needed, is
+2026-10-31T00:00:08Z (RFD66606-2356) 'CF for the round trip. Workspace services stay DNS-only; edge cache, if needed, is
  # tags: rfd:decision
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2356) 'Fly-side or origin-side.
+2026-10-31T00:00:09Z (RFD66606-2356) 'Fly-side or origin-side.
  # tags: rfd:decision
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2356) '
- # tags: rfd:decision
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2356) 'RFD66606-2146.
+2026-10-31T00:00:10Z (RFD66606-2356) 'RFD66606-2146.
  # tags: rfd:related
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2356) 'Split from the old RFD66606-2147: RFD66606-2353 (replicas), 2354 (unseal), 2355 (cache).
+2026-10-31T00:00:11Z (RFD66606-2356) 'Split from the old RFD66606-2147: RFD66606-2353 (replicas), 2354 (unseal), 2355 (cache).
  # tags: rfd:related
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2356) '
- # tags: rfd:related
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2356) 'No CDN proxy in front of workspace services
+2026-10-31T00:00:12Z (RFD66606-2356) 'No CDN proxy in front of workspace services
  # tags: rfd:details-heading
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2356) 'Cloudflare's `proxied: true` mode has CF terminating TLS at its edge
+2026-10-31T00:00:13Z (RFD66606-2356) 'Cloudflare's `proxied: true` mode has CF terminating TLS at its edge
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2356) 'using its Universal SSL cert and re-encrypting to origin. Every byte
+2026-10-31T00:00:14Z (RFD66606-2356) 'using its Universal SSL cert and re-encrypting to origin. Every byte
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2356) 'of the request headers and body is plaintext at CF for the round
+2026-10-31T00:00:15Z (RFD66606-2356) 'of the request headers and body is plaintext at CF for the round
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2356) 'trip. CF is not the workspace's tenant. That is a MITM regardless of
+2026-10-31T00:00:16Z (RFD66606-2356) 'trip. CF is not the workspace's tenant. That is a MITM regardless of
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2356) 'intent, and it is not compatible with services that carry auth
+2026-10-31T00:00:17Z (RFD66606-2356) 'intent, and it is not compatible with services that carry auth
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2356) 'tokens or hostname-bound credentials.
+2026-10-31T00:00:18Z (RFD66606-2356) 'tokens or hostname-bound credentials.
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2356) '
+2026-10-31T00:00:19Z (RFD66606-2356) '
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2356) 'Records for services this workspace runs stay `proxied: false`. Edge
+2026-10-31T00:00:20Z (RFD66606-2356) 'Records for services this workspace runs stay `proxied: false`. Edge
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2356) 'caching, if it is ever needed, lives Fly-side (Fly's own Anycast +
+2026-10-31T00:00:21Z (RFD66606-2356) 'caching, if it is ever needed, lives Fly-side (Fly's own Anycast +
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2356) 'edge) or origin-side (an in-process cache).
+2026-10-31T00:00:22Z (RFD66606-2356) 'edge) or origin-side (an in-process cache).
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2356) '
+2026-10-31T00:00:23Z (RFD66606-2356) '
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2356) 'One record in the `chibifire.com` zone as of 2026-09-01 is
+2026-10-31T00:00:24Z (RFD66606-2356) 'One record in the `chibifire.com` zone as of 2026-09-01 is
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2356) 'CF-proxied: `hub-700a.chibifire.com`, pointing at
+2026-10-31T00:00:25Z (RFD66606-2356) 'CF-proxied: `hub-700a.chibifire.com`, pointing at
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2356) '`173.180.240.105 / 2001:569:7e58:dd00:...`. That is a personal home
+2026-10-31T00:00:26Z (RFD66606-2356) '`173.180.240.105 / 2001:569:7e58:dd00:...`. That is a personal home
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2356) 'network endpoint, outside this workspace's scope. If a workspace
+2026-10-31T00:00:27Z (RFD66606-2356) 'network endpoint, outside this workspace's scope. If a workspace
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2356) 'service ever lands under a subdomain that is currently proxied, the
+2026-10-31T00:00:28Z (RFD66606-2356) 'service ever lands under a subdomain that is currently proxied, the
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2356) 'proxy flag comes off before the service starts serving requests.
+2026-10-31T00:00:29Z (RFD66606-2356) 'proxy flag comes off before the service starts serving requests.
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2356) '
- # tags: rfd:details
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2356) 'The problem
+2026-10-31T00:00:30Z (RFD66606-2356) 'The problem
  # tags: rfd:details-heading
  Text:RFD2356  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2356) 'Services here carry auth tokens and hostname-bound credentials.
- # tags: rfd:details
- Text:RFD2356  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2356) '
+2026-10-31T00:00:31Z (RFD66606-2356) 'Services here carry auth tokens and hostname-bound credentials.
  # tags: rfd:details
  Text:RFD2356  1 LINE
  Text:Written

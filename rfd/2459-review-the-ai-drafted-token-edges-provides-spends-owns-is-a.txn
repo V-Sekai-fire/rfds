@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2459) 'an AI pass drafted provides/spends/owns/is_a edges for all open RFDs, unverified.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2459  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2459) 'the rebac tuples embedded in rfd/*.exs and the ownership facts in RFD66606-2351.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2459  1 LINE
  Text:Written
 
@@ -24,122 +24,97 @@
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2459) '
- # tags: rfd:hook
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2459) 'Two agent passes produced provides, spends, owns, and one is_a edge for each of the
+2026-11-07T00:00:05Z (RFD66606-2459) 'Two agent passes produced provides, spends, owns, and one is_a edge for each of the
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2459) 'ninety-nine open RFDs: a hundred seventeen provides edges, a hundred fifty-six spends edges,
+2026-11-07T00:00:06Z (RFD66606-2459) 'ninety-nine open RFDs: a hundred seventeen provides edges, a hundred fifty-six spends edges,
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2459) 'and thirty-three owns edges. Those edges already pass checks for cycles, provider conflicts,
+2026-11-07T00:00:07Z (RFD66606-2459) 'and thirty-three owns edges. Those edges already pass checks for cycles, provider conflicts,
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2459) 'and owner consistency, but passing a structural check is not the same as being true to the
+2026-11-07T00:00:08Z (RFD66606-2459) 'and owner consistency, but passing a structural check is not the same as being true to the
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2459) 'source text. About a dozen RFDs spend nothing at all, which likely means the agent could not
+2026-11-07T00:00:09Z (RFD66606-2459) 'source text. About a dozen RFDs spend nothing at all, which likely means the agent could not
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2459) 'pin down a real prerequisite rather than that the RFD truly has none, and a short route
+2026-11-07T00:00:10Z (RFD66606-2459) 'pin down a real prerequisite rather than that the RFD truly has none, and a short route
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2459) 'through the planner can hide a dependency that should have slowed it down.
+2026-11-07T00:00:11Z (RFD66606-2459) 'through the planner can hide a dependency that should have slowed it down.
  # tags: rfd:intrigue
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2459) '
- # tags: rfd:intrigue
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2459) 'Read each of the roughly twelve RFDs that spend nothing and decide, by hand, whether a real
+2026-11-07T00:00:12Z (RFD66606-2459) 'Read each of the roughly twelve RFDs that spend nothing and decide, by hand, whether a real
  # tags: rfd:exit
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2459) 'prerequisite is missing; where one is found, add the spends edge and re-run the cycle and
+2026-11-07T00:00:13Z (RFD66606-2459) 'prerequisite is missing; where one is found, add the spends edge and re-run the cycle and
  # tags: rfd:exit
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2459) 'provider checks.
+2026-11-07T00:00:14Z (RFD66606-2459) 'provider checks.
  # tags: rfd:exit
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2459) '
- # tags: rfd:exit
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2459) '- Review the drafted edges RFD by RFD rather than trusting the structural checks alone,
+2026-11-07T00:00:15Z (RFD66606-2459) '- Review the drafted edges RFD by RFD rather than trusting the structural checks alone,
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2459) '  starting with the dozen that spend nothing, since an empty spends list is the likeliest
+2026-11-07T00:00:16Z (RFD66606-2459) '  starting with the dozen that spend nothing, since an empty spends list is the likeliest
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2459) '  sign of a missed dependency.
+2026-11-07T00:00:17Z (RFD66606-2459) '  sign of a missed dependency.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2459) '- Re-check the ownership and access facts recorded for RFD66606-2351, including the claim
+2026-11-07T00:00:18Z (RFD66606-2459) '- Re-check the ownership and access facts recorded for RFD66606-2351, including the claim
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2459) '  that it owns the store, fex, and the guest ELF double capability, since those facts were
+2026-11-07T00:00:19Z (RFD66606-2459) '  that it owns the store, fex, and the guest ELF double capability, since those facts were
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2459) '  guessed rather than sourced.
+2026-11-07T00:00:20Z (RFD66606-2459) '  guessed rather than sourced.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2459) '- Decide, separately, whether the bare repository name used for the private lab should become
+2026-11-07T00:00:21Z (RFD66606-2459) '- Decide, separately, whether the bare repository name used for the private lab should become
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2459) '  public, and record that decision once made.
+2026-11-07T00:00:22Z (RFD66606-2459) '  public, and record that decision once made.
  # tags: rfd:decision
  Text:RFD2459  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2459) '
- # tags: rfd:decision
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2459) '- RFD66606-2351, the ownership and access facts under review.
- # tags: rfd:related
- Text:RFD2459  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2459) '
+2026-11-07T00:00:23Z (RFD66606-2459) '- RFD66606-2351, the ownership and access facts under review.
  # tags: rfd:related
  Text:RFD2459  1 LINE
  Text:Written

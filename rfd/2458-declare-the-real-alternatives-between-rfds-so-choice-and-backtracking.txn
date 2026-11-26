@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2458) 'the RFD generator treats a capability with several providers as a declared choice.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2458  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2458) 'the rebac edge generator and the tuples it emits across the RFD corpus in rfd/*.exs.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2458  1 LINE
  Text:Written
 
@@ -24,112 +24,92 @@
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2458) '
- # tags: rfd:hook
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2458) 'The generator already knows how to turn a capability with multiple providers into an
+2026-11-07T00:00:05Z (RFD66606-2458) 'The generator already knows how to turn a capability with multiple providers into an
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2458) 'alternative set, ordered by commit date, then publish date, then serial, and a planner that
+2026-11-07T00:00:06Z (RFD66606-2458) 'alternative set, ordered by commit date, then publish date, then serial, and a planner that
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2458) 'backtracks to the next provider when one fails. The idea was tested on one synthetic pair, but
+2026-11-07T00:00:07Z (RFD66606-2458) 'backtracks to the next provider when one fails. The idea was tested on one synthetic pair, but
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2458) 'no capability in the RFD corpus today actually has two providers recorded, so the beta's own
+2026-11-07T00:00:08Z (RFD66606-2458) 'no capability in the RFD corpus today actually has two providers recorded, so the beta's own
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2458) 'route never exercises the backtracking path it depends on.
+2026-11-07T00:00:09Z (RFD66606-2458) 'route never exercises the backtracking path it depends on.
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2458) '
- # tags: rfd:intrigue
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2458) 'Run a research pass over the corpus and its neighbors, from titles and bodies only, to find
+2026-11-07T00:00:10Z (RFD66606-2458) 'Run a research pass over the corpus and its neighbors, from titles and bodies only, to find
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2458) 'capabilities with more than one stated provider, fallback, or rejected approach, and record
+2026-11-07T00:00:11Z (RFD66606-2458) 'capabilities with more than one stated provider, fallback, or rejected approach, and record
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2458) 'each as a second `provides` edge in preference order.
+2026-11-07T00:00:12Z (RFD66606-2458) 'each as a second `provides` edge in preference order.
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2458) '
- # tags: rfd:exit
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2458) '- Treat this as a research task before a code task: read the cone of RFDs named in the issue
+2026-11-07T00:00:13Z (RFD66606-2458) '- Treat this as a research task before a code task: read the cone of RFDs named in the issue
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2458) '  and their neighbors for stated alternatives, fallbacks, and rejected approaches.
+2026-11-07T00:00:14Z (RFD66606-2458) '  and their neighbors for stated alternatives, fallbacks, and rejected approaches.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2458) '- Where two RFDs plausibly provide the same capability, add a second `provides` edge in
+2026-11-07T00:00:15Z (RFD66606-2458) '- Where two RFDs plausibly provide the same capability, add a second `provides` edge in
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2458) '  preference order so the planner's backtracking has a real pair to exercise.
+2026-11-07T00:00:16Z (RFD66606-2458) '  preference order so the planner's backtracking has a real pair to exercise.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2458) '- Candidate pairs raised by the issue, unverified until read: Tailscale versus an SSH tunnel
+2026-11-07T00:00:17Z (RFD66606-2458) '- Candidate pairs raised by the issue, unverified until read: Tailscale versus an SSH tunnel
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2458) '  for reaching Bao, standalone versus PC VR streaming for headset rendering, WSL libraries
+2026-11-07T00:00:18Z (RFD66606-2458) '  for reaching Bao, standalone versus PC VR streaming for headset rendering, WSL libraries
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2458) '  versus this Mac as the desktop client, and two RFDs that both claimed the same guest ELF
+2026-11-07T00:00:19Z (RFD66606-2458) '  versus this Mac as the desktop client, and two RFDs that both claimed the same guest ELF
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2458) '  double capability in an early drafting pass.
+2026-11-07T00:00:20Z (RFD66606-2458) '  double capability in an early drafting pass.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2458) '- Until a pair is verified by reading both RFDs in full, no alternative edge should be
+2026-11-07T00:00:21Z (RFD66606-2458) '- Until a pair is verified by reading both RFDs in full, no alternative edge should be
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2458) '  committed.
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2458) '
+2026-11-07T00:00:22Z (RFD66606-2458) '  committed.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written

@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2389) 'the double-precision sandbox addon build, its release and its vendoring.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2389  1 LINE
  Text:Written
 
@@ -14,127 +14,97 @@
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2389) '
- # tags: rfd:hook
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2389) 'Which double binaries can be trusted when some in taskweft-godot-sandbox are unrecorded?
+2026-10-31T00:00:03Z (RFD66606-2389) 'Which double binaries can be trusted when some in taskweft-godot-sandbox are unrecorded?
  # tags: rfd:intrigue
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2389) '
- # tags: rfd:intrigue
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2389) 'Check the addon's commit, flags and sha256 in `CITATION.cff` against the build command in
+2026-10-31T00:00:04Z (RFD66606-2389) 'Check the addon's commit, flags and sha256 in `CITATION.cff` against the build command in
  # tags: rfd:exit
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2389) 'RFD66606-2389.
+2026-10-31T00:00:05Z (RFD66606-2389) 'RFD66606-2389.
  # tags: rfd:exit
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2389) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2389) 'the sandbox addon is built at double
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2389) 'the sandbox addon is built at double
- # tags: rfd:details-title
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2389) 'The addon at double is built from &{repo("entities-godot-sandbox", planned: "4-entities")} at
+2026-10-31T00:00:07Z (RFD66606-2389) 'The addon at double is built from &{repo("entities-godot-sandbox", planned: "4-entities")} at
  # tags: rfd:decision
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2389) '`b1118e` plus its binary-translation emitter, by `addon.yml` in the same workflows' home. It is
+2026-10-31T00:00:08Z (RFD66606-2389) '`b1118e` plus its binary-translation emitter, by `addon.yml` in the same workflows' home. It is
  # tags: rfd:decision
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2389) 'released on a tag and vendored into `addons/godot_sandbox/bin` under the names the
+2026-10-31T00:00:09Z (RFD66606-2389) 'released on a tag and vendored into `addons/godot_sandbox/bin` under the names the
  # tags: rfd:decision
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2389) '`.gdextension` already maps, with commit, flags and sha256 in `CITATION.cff`.
+2026-10-31T00:00:10Z (RFD66606-2389) '`.gdextension` already maps, with commit, flags and sha256 in `CITATION.cff`.
  # tags: rfd:decision
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2389) '
- # tags: rfd:decision
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2389) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:11Z (RFD66606-2389) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2389) '
- # tags: rfd:related
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2389) 'The build command and the unrecorded binaries
+2026-10-31T00:00:12Z (RFD66606-2389) 'The build command and the unrecorded binaries
  # tags: rfd:details-heading
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2389) 'The build is
+2026-10-31T00:00:13Z (RFD66606-2389) 'The build is
  # tags: rfd:details
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2389) '`scons platform=windows arch=x86_64 target=template_release precision=double use_mingw=yes
+2026-10-31T00:00:14Z (RFD66606-2389) '`scons platform=windows arch=x86_64 target=template_release precision=double use_mingw=yes
  # tags: rfd:details
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2389) 'use_llvm=yes`,
+2026-10-31T00:00:15Z (RFD66606-2389) 'use_llvm=yes`,
  # tags: rfd:details
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2389) 'the linux x86_64 and macos arm64 twins. The unrecorded double binaries in
+2026-10-31T00:00:16Z (RFD66606-2389) 'the linux x86_64 and macos arm64 twins. The unrecorded double binaries in
  # tags: rfd:details
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2389) '`taskweft-godot-sandbox` are not copied.
+2026-10-31T00:00:17Z (RFD66606-2389) '`taskweft-godot-sandbox` are not copied.
  # tags: rfd:details
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2389) '
- # tags: rfd:details
- Text:RFD2389  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2389) '2351
+2026-10-31T00:00:18Z (RFD66606-2389) '2351
  # tags: rebac:verbs-from
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2389) 'rfd-2389 provides sandbox-addon-double-pinned
+2026-10-31T00:00:19Z (RFD66606-2389) 'rfd-2389 provides sandbox-addon-double-pinned
  # tags: rebac:relate
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2389) 'rfd-2389 spends actions-builds-double-binaries
+2026-10-31T00:00:20Z (RFD66606-2389) 'rfd-2389 spends actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2389  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2389) 'rfd-2389 is_a ci-gate
+2026-10-31T00:00:21Z (RFD66606-2389) 'rfd-2389 is_a ci-gate
  # tags: rebac:relate
  Text:RFD2389  1 LINE
  Text:Written

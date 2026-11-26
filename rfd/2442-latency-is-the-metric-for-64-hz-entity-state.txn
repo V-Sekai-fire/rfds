@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2442) 'a 64 Hz 3D state server is judged by tick-to-send time at a held user count.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2442  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2442) 'the metric, budget, sweep and pass rule for the entity server on one droplet.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2442  1 LINE
  Text:Written
 
@@ -24,282 +24,237 @@
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2442) '
- # tags: rfd:hook
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2442) 'A feed server that holds 295,000 readers at a p99 of 117 ms spends about seven and a half ticks
+2026-11-07T00:00:05Z (RFD66606-2442) 'A feed server that holds 295,000 readers at a p99 of 117 ms spends about seven and a half ticks
  # tags: rfd:intrigue
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2442) 'on its tail. It serves reads, so neither its user count nor its latency says anything about a
+2026-11-07T00:00:06Z (RFD66606-2442) 'on its tail. It serves reads, so neither its user count nor its latency says anything about a
  # tags: rfd:intrigue
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2442) 'tick.
+2026-11-07T00:00:07Z (RFD66606-2442) 'tick.
  # tags: rfd:intrigue
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2442) '
- # tags: rfd:intrigue
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2442) 'The first gate: a load generator holds a fixed user count for 5 minutes and prints server-side
+2026-11-07T00:00:08Z (RFD66606-2442) 'The first gate: a load generator holds a fixed user count for 5 minutes and prints server-side
  # tags: rfd:exit
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2442) 'tick-to-send p50, p95 and p99, and a planted slow handler pushes p99 over budget and fails the
+2026-11-07T00:00:09Z (RFD66606-2442) 'tick-to-send p50, p95 and p99, and a planted slow handler pushes p99 over budget and fails the
  # tags: rfd:exit
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2442) 'run.
+2026-11-07T00:00:10Z (RFD66606-2442) 'run.
  # tags: rfd:exit
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2442) '
- # tags: rfd:exit
+2026-11-07T00:00:11Z (RFD66606-2442) 'latency is the metric for 64 Hz entity state
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2442) 'latency is the metric for 64 Hz entity state
- # tags: rfd:details-title
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2442) 'The user count is whatever 64 Hz allows. Latency is the metric (operator, 2026-11-07).
+2026-11-07T00:00:12Z (RFD66606-2442) 'The user count is whatever 64 Hz allows. Latency is the metric (operator, 2026-11-07).
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2442) '- The tick is fixed at 64 Hz, 15,625,000 ns.
+2026-11-07T00:00:13Z (RFD66606-2442) '- The tick is fixed at 64 Hz, 15,625,000 ns.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2442) '- The primary figure is server-side tick-to-send time, from packet received to batched datagram
+2026-11-07T00:00:14Z (RFD66606-2442) '- The primary figure is server-side tick-to-send time, from packet received to batched datagram
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2442) '  handed to the kernel, at p50, p95 and p99. The proposed budget is p99 under 4 ms, a quarter of
+2026-11-07T00:00:15Z (RFD66606-2442) '  handed to the kernel, at p50, p95 and p99. The proposed budget is p99 under 4 ms, a quarter of
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2442) '  a tick.
+2026-11-07T00:00:16Z (RFD66606-2442) '  a tick.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2442) '- Tick overruns, missed deadlines and steal time from the host's CPU counters are recorded
+2026-11-07T00:00:17Z (RFD66606-2442) '- Tick overruns, missed deadlines and steal time from the host's CPU counters are recorded
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2442) '  beside it, so a hypervisor stall is attributed and not blamed on the code.
+2026-11-07T00:00:18Z (RFD66606-2442) '  beside it, so a hypervisor stall is attributed and not blamed on the code.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2442) '- The rule is pass or fail, not rank. Raise users in a sweep to the knee where p99 crosses the
+2026-11-07T00:00:19Z (RFD66606-2442) '- The rule is pass or fail, not rank. Raise users in a sweep to the knee where p99 crosses the
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2442) '  budget. A run passes with 0% errors over a 5 minute hold.
+2026-11-07T00:00:20Z (RFD66606-2442) '  budget. A run passes with 0% errors over a 5 minute hold.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2442) '- Only bytes derived from the code are stated, and no network figure is measured.
+2026-11-07T00:00:21Z (RFD66606-2442) '- Only bytes derived from the code are stated, and no network figure is measured.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2442) '- A figure stays labelled derived until a measured one replaces it.
+2026-11-07T00:00:22Z (RFD66606-2442) '- A figure stays labelled derived until a measured one replaces it.
  # tags: rfd:decision
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2442) '
- # tags: rfd:decision
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2442) '- RFD66606-2443, the server that this metric judges.
+2026-11-07T00:00:23Z (RFD66606-2442) '- RFD66606-2443, the server that this metric judges.
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2442) '- The droplet here is the benchmark host. Where the ghost servers run is open:
+2026-11-07T00:00:24Z (RFD66606-2442) '- The droplet here is the benchmark host. Where the ghost servers run is open:
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2442) '  Fly is a non-goal (RFD66606-2490, operator, 2026-11-12).
+2026-11-07T00:00:25Z (RFD66606-2442) '  Fly is a non-goal (RFD66606-2490, operator, 2026-11-12).
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2442) '- Gate evidence: the feed server, CI run 42417791013, job
+2026-11-07T00:00:26Z (RFD66606-2442) '- Gate evidence: the feed server, CI run 42417791013, job
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2442) '  tick-budget (success). It proves a p99 under 4 ms budget on a 64-tick loopback check. The
+2026-11-07T00:00:27Z (RFD66606-2442) '  tick-budget (success). It proves a p99 under 4 ms budget on a 64-tick loopback check. The
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2442) '  5-minute hold at fixed user counts and the sweep to the knee are not run yet, so the gate is
+2026-11-07T00:00:28Z (RFD66606-2442) '  5-minute hold at fixed user counts and the sweep to the knee are not run yet, so the gate is
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2442) '  unproven.
+2026-11-07T00:00:29Z (RFD66606-2442) '  unproven.
  # tags: rfd:related
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2442) '
- # tags: rfd:related
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:35Z (RFD66606-2442) 'The problem
+2026-11-07T00:00:30Z (RFD66606-2442) 'The problem
  # tags: rfd:details-heading
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2442) 'The only public reference is a read-heavy feed benchmark that reports users held and request
+2026-11-07T00:00:31Z (RFD66606-2442) 'The only public reference is a read-heavy feed benchmark that reports users held and request
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2442) 'rate. Neither says whether a 15.625 ms tick completes in time.
+2026-11-07T00:00:32Z (RFD66606-2442) 'rate. Neither says whether a 15.625 ms tick completes in time.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2442) '
- # tags: rfd:details
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:39Z (RFD66606-2442) 'Derived figures
+2026-11-07T00:00:33Z (RFD66606-2442) 'Derived figures
  # tags: rfd:details-heading
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:40Z (RFD66606-2442) 'All of these are arithmetic on the reference cost of 26 microseconds per operation, not
+2026-11-07T00:00:34Z (RFD66606-2442) 'All of these are arithmetic on the reference cost of 26 microseconds per operation, not
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2442) 'measurements.
+2026-11-07T00:00:35Z (RFD66606-2442) 'measurements.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2442) '- Operations per second are 128 times the user count: 64 inbound and 64 batched outbound per
+2026-11-07T00:00:36Z (RFD66606-2442) '- Operations per second are 128 times the user count: 64 inbound and 64 batched outbound per
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:43Z (RFD66606-2442) '  user.
+2026-11-07T00:00:37Z (RFD66606-2442) '  user.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:44Z (RFD66606-2442) '- One core at 100% does 38,461 operations per second. At 128 users that is 16,384, about 42.6%
+2026-11-07T00:00:38Z (RFD66606-2442) '- One core at 100% does 38,461 operations per second. At 128 users that is 16,384, about 42.6%
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2442) '  busy. At 150 users it is 49.9%, the floor with tail headroom. At 300 users it is 99.8%.
+2026-11-07T00:00:39Z (RFD66606-2442) '  busy. At 150 users it is 49.9%, the floor with tail headroom. At 300 users it is 99.8%.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2442) '- The 26 microseconds include HTTP parsing and SQLite reads, which the tick path drops.
+2026-11-07T00:00:40Z (RFD66606-2442) '- The 26 microseconds include HTTP parsing and SQLite reads, which the tick path drops.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:47Z (RFD66606-2442) '
- # tags: rfd:details
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2442) 'Bytes
+2026-11-07T00:00:41Z (RFD66606-2442) 'Bytes
  # tags: rfd:details-heading
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2442) '- An entity packet is 100 bytes, so inbound is 6,400 bytes per second per user.
+2026-11-07T00:00:42Z (RFD66606-2442) '- An entity packet is 100 bytes, so inbound is 6,400 bytes per second per user.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2442) '- Twelve entities in view make 1,200 bytes of data and 1,248 bytes with IP and UDP headers,
+2026-11-07T00:00:43Z (RFD66606-2442) '- Twelve entities in view make 1,200 bytes of data and 1,248 bytes with IP and UDP headers,
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2442) '  under the 1,280 byte IPv6 minimum. Sixteen make 1,600 bytes and fragment, so more datagrams
+2026-11-07T00:00:44Z (RFD66606-2442) '  under the 1,280 byte IPv6 minimum. Sixteen make 1,600 bytes and fragment, so more datagrams
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2442) '  split them.
+2026-11-07T00:00:45Z (RFD66606-2442) '  split them.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2442) '- Outbound is users times entities times 6,400. At 128 users and 12 entities that is 9,830,400
+2026-11-07T00:00:46Z (RFD66606-2442) '- Outbound is users times entities times 6,400. At 128 users and 12 entities that is 9,830,400
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:54Z (RFD66606-2442) '  bytes per second, about 25.5 TB in 30 days. The droplet's transfer allowance is not verified,
+2026-11-07T00:00:47Z (RFD66606-2442) '  bytes per second, about 25.5 TB in 30 days. The droplet's transfer allowance is not verified,
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:55Z (RFD66606-2442) '  so egress may bind before the CPU, and the entities in view are the main lever.
+2026-11-07T00:00:48Z (RFD66606-2442) '  so egress may bind before the CPU, and the entities in view are the main lever.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2442) '
- # tags: rfd:details
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:00:57Z (RFD66606-2442) 'Steal time
+2026-11-07T00:00:49Z (RFD66606-2442) 'Steal time
  # tags: rfd:details-heading
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:58Z (RFD66606-2442) 'A shared vCPU can lose a few milliseconds to the hypervisor, a large share of a tick. Whether
+2026-11-07T00:00:50Z (RFD66606-2442) 'A shared vCPU can lose a few milliseconds to the hypervisor, a large share of a tick. Whether
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written
 
-2026-11-07T00:00:59Z (RFD66606-2442) 'the droplet is one shared vCPU is assumed and not verified.
- # tags: rfd:details
- Text:RFD2442  1 LINE
- Text:Written
-
-2026-11-07T00:01:00Z (RFD66606-2442) '
+2026-11-07T00:00:51Z (RFD66606-2442) 'the droplet is one shared vCPU is assumed and not verified.
  # tags: rfd:details
  Text:RFD2442  1 LINE
  Text:Written

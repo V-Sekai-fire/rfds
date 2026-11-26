@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2433) 'the catalog as the backend API, and its GPU independence.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2433  1 LINE
  Text:Written
 
@@ -14,107 +14,77 @@
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2433) '
- # tags: rfd:hook
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2433) 'What if the backend depended on one GPU vendor? A module would then run on that vendor only.
+2026-10-31T00:00:03Z (RFD66606-2433) 'What if the backend depended on one GPU vendor? A module would then run on that vendor only.
  # tags: rfd:intrigue
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2433) '
- # tags: rfd:intrigue
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2433) 'Reach a module from the native shell over plain HTTP at `/health` and `/predict`, or in
+2026-10-31T00:00:04Z (RFD66606-2433) 'Reach a module from the native shell over plain HTTP at `/health` and `/predict`, or in
  # tags: rfd:exit
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2433) 'process with `Ggml.run_inference()` when its adapter is loaded in the binary.
+2026-10-31T00:00:05Z (RFD66606-2433) 'process with `Ggml.run_inference()` when its adapter is loaded in the binary.
  # tags: rfd:exit
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2433) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2433) 'the catalog is the backend API and runs on any RenderingDevice GPU
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2433) 'the catalog is the backend API and runs on any RenderingDevice GPU
- # tags: rfd:details-title
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2433) '- This catalog is the backend API. The native shell (RFD66606-2215) calls
+2026-10-31T00:00:07Z (RFD66606-2433) '- This catalog is the backend API. The native shell (RFD66606-2215) calls
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2433) '  each module's `/health` and `/predict` over plain HTTP, or `Ggml.run_inference()` in process
+2026-10-31T00:00:08Z (RFD66606-2433) '  each module's `/health` and `/predict` over plain HTTP, or `Ggml.run_inference()` in process
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2433) '  for an adapter loaded in the binary.
+2026-10-31T00:00:09Z (RFD66606-2433) '  for an adapter loaded in the binary.
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2433) '- The backend does not depend on one GPU vendor. Inference runs on ggml-rd and other kernels on
+2026-10-31T00:00:10Z (RFD66606-2433) '- The backend does not depend on one GPU vendor. Inference runs on ggml-rd and other kernels on
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2433) '  compute-rd, both dispatched through Godot's RenderingDevice, so a module runs on any GPU the
+2026-10-31T00:00:11Z (RFD66606-2433) '  compute-rd, both dispatched through Godot's RenderingDevice, so a module runs on any GPU the
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2433) '  RenderingDevice drives (RFD66606-2272, RFD66606-2265).
+2026-10-31T00:00:12Z (RFD66606-2433) '  RenderingDevice drives (RFD66606-2272, RFD66606-2265).
  # tags: rfd:decision
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2433) '
- # tags: rfd:decision
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2433) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:13Z (RFD66606-2433) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2433) '- RFD66606-2215, the native shell.
+2026-10-31T00:00:14Z (RFD66606-2433) '- RFD66606-2215, the native shell.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2433) '- RFD66606-2272, RFD66606-2265, the RenderingDevice dispatch.
+2026-10-31T00:00:15Z (RFD66606-2433) '- RFD66606-2272, RFD66606-2265, the RenderingDevice dispatch.
  # tags: rfd:related
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2433) '
- # tags: rfd:related
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2433) 'The endpoint reference
+2026-10-31T00:00:16Z (RFD66606-2433) 'The endpoint reference
  # tags: rfd:details-heading
  Text:RFD2433  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2433) 'The per-task table in RFD66606-1102 is the endpoint reference.
- # tags: rfd:details
- Text:RFD2433  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2433) '
+2026-10-31T00:00:17Z (RFD66606-2433) 'The per-task table in RFD66606-1102 is the endpoint reference.
  # tags: rfd:details
  Text:RFD2433  1 LINE
  Text:Written

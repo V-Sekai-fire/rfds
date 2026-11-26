@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2428) 'the six steps that move one model onto the shared ggml runtime.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2428  1 LINE
  Text:Written
 
@@ -14,242 +14,212 @@
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2428) '
- # tags: rfd:hook
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2428) 'Which quantization does a vision model get? Q4_K_M only if it produces a measurable EditScore
+2026-10-31T00:00:03Z (RFD66606-2428) 'Which quantization does a vision model get? Q4_K_M only if it produces a measurable EditScore
  # tags: rfd:intrigue
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2428) 'win over Q4_0 on held-out inputs.
+2026-10-31T00:00:04Z (RFD66606-2428) 'win over Q4_0 on held-out inputs.
  # tags: rfd:intrigue
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2428) '
- # tags: rfd:intrigue
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2428) 'Run the six steps in order for each new model, from the Q4 quantize to its Docker image. Mark
+2026-10-31T00:00:05Z (RFD66606-2428) 'Run the six steps in order for each new model, from the Q4 quantize to its Docker image. Mark
  # tags: rfd:exit
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2428) 'the model "port needed" in RFD66606-1102 when upstream has no GGUF conversion.
+2026-10-31T00:00:06Z (RFD66606-2428) 'the model "port needed" in RFD66606-1102 when upstream has no GGUF conversion.
  # tags: rfd:exit
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2428) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2428) 'every model follows a six-step migration recipe
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2428) 'every model follows a six-step migration recipe
- # tags: rfd:details-title
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2428) '- Every model follows the recipe RFD66606-2229 named as the interchangeable-parts consolidation
+2026-10-31T00:00:08Z (RFD66606-2428) '- Every model follows the recipe RFD66606-2229 named as the interchangeable-parts consolidation
  # tags: rfd:decision
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2428) '  shape, one row per consumer.
+2026-10-31T00:00:09Z (RFD66606-2428) '  shape, one row per consumer.
  # tags: rfd:decision
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2428) '- The six steps are Q4 quantize, GGUF conversion, ZSTD-SQLite bundle, the `Ggml.load_model()`
+2026-10-31T00:00:10Z (RFD66606-2428) '- The six steps are Q4 quantize, GGUF conversion, ZSTD-SQLite bundle, the `Ggml.load_model()`
  # tags: rfd:decision
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2428) '  GDExtension call, GDScript adapter, and Docker image.
+2026-10-31T00:00:11Z (RFD66606-2428) '  GDExtension call, GDScript adapter, and Docker image.
  # tags: rfd:decision
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2428) '
- # tags: rfd:decision
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2428) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:12Z (RFD66606-2428) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2428) '- RFD66606-2229, the interchangeable-parts consolidation shape.
+2026-10-31T00:00:13Z (RFD66606-2428) '- RFD66606-2229, the interchangeable-parts consolidation shape.
  # tags: rfd:related
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2428) '- RFD66606-2214, the ZSTD-SQLite bundle shape.
+2026-10-31T00:00:14Z (RFD66606-2428) '- RFD66606-2214, the ZSTD-SQLite bundle shape.
  # tags: rfd:related
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2428) '- RFD66606-2230, the `Ggml.load_model()` surface.
+2026-10-31T00:00:15Z (RFD66606-2428) '- RFD66606-2230, the `Ggml.load_model()` surface.
  # tags: rfd:related
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2428) '- RFD66606-1036, the `/health` + `/predict` packaging shape.
+2026-10-31T00:00:16Z (RFD66606-2428) '- RFD66606-1036, the `/health` + `/predict` packaging shape.
  # tags: rfd:related
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2428) '
- # tags: rfd:related
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2428) 'Migration recipe (per model)
+2026-10-31T00:00:17Z (RFD66606-2428) 'Migration recipe (per model)
  # tags: rfd:details-heading
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2428) 'Same recipe RFD66606-2229 named as the interchangeable-parts consolidation
+2026-10-31T00:00:18Z (RFD66606-2428) 'Same recipe RFD66606-2229 named as the interchangeable-parts consolidation
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2428) 'shape, one row per consumer:
+2026-10-31T00:00:19Z (RFD66606-2428) 'shape, one row per consumer:
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2428) '
+2026-10-31T00:00:20Z (RFD66606-2428) '
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2428) '1. **Q4 quantize**, QAT if we train the model, PTQ per the CLAUDE.md
+2026-10-31T00:00:21Z (RFD66606-2428) '1. **Q4 quantize**, QAT if we train the model, PTQ per the CLAUDE.md
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2428) '   Post-training-quantization blocklist exemption (a vendor's own
+2026-10-31T00:00:22Z (RFD66606-2428) '   Post-training-quantization blocklist exemption (a vendor's own
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2428) '   runtime is exempt from the QAT-only rule) otherwise. Target Q4_0
+2026-10-31T00:00:23Z (RFD66606-2428) '   runtime is exempt from the QAT-only rule) otherwise. Target Q4_0
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2428) '   for text models, Q4_K_M for vision if the K-quant produces a
+2026-10-31T00:00:24Z (RFD66606-2428) '   for text models, Q4_K_M for vision if the K-quant produces a
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2428) '   measurable EditScore win over Q4_0 on held-out inputs.
+2026-10-31T00:00:25Z (RFD66606-2428) '   measurable EditScore win over Q4_0 on held-out inputs.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2428) '2. **GGUF conversion**, via llama.cpp's `convert_hf_to_gguf.py` for
+2026-10-31T00:00:26Z (RFD66606-2428) '2. **GGUF conversion**, via llama.cpp's `convert_hf_to_gguf.py` for
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2428) '   HF-hosted models, per-model script for non-HF checkpoints. Ports
+2026-10-31T00:00:27Z (RFD66606-2428) '   HF-hosted models, per-model script for non-HF checkpoints. Ports
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2428) '   for `Wan-VACE`, `Pixal3D`, `MoGe-3`, `rf-detr-Seg`, `LaMa`,
+2026-10-31T00:00:28Z (RFD66606-2428) '   for `Wan-VACE`, `Pixal3D`, `MoGe-3`, `rf-detr-Seg`, `LaMa`,
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2428) '   `Qwen3-TTS`, `Parakeet`, `Voxtral`, `wav2vec2`, `allosaurus`,
+2026-10-31T00:00:29Z (RFD66606-2428) '   `Qwen3-TTS`, `Parakeet`, `Voxtral`, `wav2vec2`, `allosaurus`,
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2428) '   `WavLM` all follow this step.
+2026-10-31T00:00:30Z (RFD66606-2428) '   `WavLM` all follow this step.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2428) '3. **ZSTD-SQLite bundle**, RFD66606-2214 shape, `sqlite3_open()` on
+2026-10-31T00:00:31Z (RFD66606-2428) '3. **ZSTD-SQLite bundle**, RFD66606-2214 shape, `sqlite3_open()` on
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2428) '   local disk. One `.zstd.sqlite` per model bundle, install-time
+2026-10-31T00:00:32Z (RFD66606-2428) '   local disk. One `.zstd.sqlite` per model bundle, install-time
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2428) '   download via the release channel.
+2026-10-31T00:00:33Z (RFD66606-2428) '   download via the release channel.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2428) '4. **`Ggml.load_model()` GDExtension call**, RFD66606-2230 surface, the
+2026-10-31T00:00:34Z (RFD66606-2428) '4. **`Ggml.load_model()` GDExtension call**, RFD66606-2230 surface, the
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2428) '   native `modules/ggml/` module hands bytes to ggml.
+2026-10-31T00:00:35Z (RFD66606-2428) '   native `modules/ggml/` module hands bytes to ggml.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2428) '5. **GDScript adapter**, per-model `.gd` file at
+2026-10-31T00:00:36Z (RFD66606-2428) '5. **GDScript adapter**, per-model `.gd` file at
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2428) '   `res://adapters/<name>.gd`, extends `GgmlAdapter`, defines
+2026-10-31T00:00:37Z (RFD66606-2428) '   `res://adapters/<name>.gd`, extends `GgmlAdapter`, defines
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2428) '   `format_prompt` / `decode_output` / `apply_lora` per model
+2026-10-31T00:00:38Z (RFD66606-2428) '   `format_prompt` / `decode_output` / `apply_lora` per model
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2428) '   quirks.
+2026-10-31T00:00:39Z (RFD66606-2428) '   quirks.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2428) '6. **Docker image**, per RFD66606-1036 `/health` + `/predict` shape
+2026-10-31T00:00:40Z (RFD66606-2428) '6. **Docker image**, per RFD66606-1036 `/health` + `/predict` shape
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2428) '   still applies, the container binary is now the native Godot
+2026-10-31T00:00:41Z (RFD66606-2428) '   still applies, the container binary is now the native Godot
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2428) '   binary + shared `modules/ggml/` + the model's ZSTD-SQLite
+2026-10-31T00:00:42Z (RFD66606-2428) '   binary + shared `modules/ggml/` + the model's ZSTD-SQLite
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2428) '   bundle + adapter `.gd`. One model per image (packaging stays
+2026-10-31T00:00:43Z (RFD66606-2428) '   bundle + adapter `.gd`. One model per image (packaging stays
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2428) '   RFD66606-1036), one runtime across images.
- # tags: rfd:details
- Text:RFD2428  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2428) '
+2026-10-31T00:00:44Z (RFD66606-2428) '   RFD66606-1036), one runtime across images.
  # tags: rfd:details
  Text:RFD2428  1 LINE
  Text:Written

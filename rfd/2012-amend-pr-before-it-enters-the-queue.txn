@@ -9,302 +9,242 @@
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2012) '
- # tags: rfd:hook
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-2012) 'A correction pushed seconds after enqueueing was orphaned, because the queue had already
+2026-08-25T00:00:02Z (RFD66606-2012) 'A correction pushed seconds after enqueueing was orphaned, because the queue had already
  # tags: rfd:intrigue
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-2012) 'snapshotted the earlier commit.
+2026-08-25T00:00:03Z (RFD66606-2012) 'snapshotted the earlier commit.
  # tags: rfd:intrigue
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-2012) '
- # tags: rfd:intrigue
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-2012) 'Confirm the PR is still `OPEN` after a corrective push, or dequeue it before you push the fix.
+2026-08-25T00:00:04Z (RFD66606-2012) 'Confirm the PR is still `OPEN` after a corrective push, or dequeue it before you push the fix.
  # tags: rfd:exit
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-2012) '
- # tags: rfd:exit
+2026-08-25T00:00:05Z (RFD66606-2012) 'Amend pr before it enters the queue
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2012) 'Amend pr before it enters the queue
- # tags: rfd:details-title
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-2012) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2012) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2012) '
- # tags: rfd:decision
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-2012) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:07Z (RFD66606-2012) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2012) '
- # tags: rfd:related
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-2012) 'Context and Problem Statement
+2026-08-25T00:00:08Z (RFD66606-2012) 'Context and Problem Statement
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-2012) 'The merge queue captures a PR's head commit the moment its checks pass
+2026-08-25T00:00:09Z (RFD66606-2012) 'The merge queue captures a PR's head commit the moment its checks pass
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-2012) 'and it is enqueued. While drafting the gitassembly tag MADR, a
+2026-08-25T00:00:10Z (RFD66606-2012) 'and it is enqueued. While drafting the gitassembly tag MADR, a
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-2012) 'correction was pushed to the PR branch seconds after enqueueing; the
+2026-08-25T00:00:11Z (RFD66606-2012) 'correction was pushed to the PR branch seconds after enqueueing; the
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2012) 'queue had already snapshotted the earlier commit, so it merged the draft
+2026-08-25T00:00:12Z (RFD66606-2012) 'queue had already snapshotted the earlier commit, so it merged the draft
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-2012) 'and orphaned the fix. The correction had to land as a second PR. How
+2026-08-25T00:00:13Z (RFD66606-2012) 'and orphaned the fix. The correction had to land as a second PR. How
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-2012) 'should a late fix to an in-flight PR be sequenced so it is not lost to
+2026-08-25T00:00:14Z (RFD66606-2012) 'should a late fix to an in-flight PR be sequenced so it is not lost to
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-2012) 'the queue?
+2026-08-25T00:00:15Z (RFD66606-2012) 'the queue?
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-2012) 'Decision Drivers
+2026-08-25T00:00:16Z (RFD66606-2012) 'Decision Drivers
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-2012) '- A pushed correction must be the commit that actually merges.
+2026-08-25T00:00:17Z (RFD66606-2012) '- A pushed correction must be the commit that actually merges.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2012) '- Avoid a follow-up PR that exists only to redo a missed fix.
+2026-08-25T00:00:18Z (RFD66606-2012) '- Avoid a follow-up PR that exists only to redo a missed fix.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2012) '- Keep the cost of the rule near zero for the common case (no late fix).
+2026-08-25T00:00:19Z (RFD66606-2012) '- Keep the cost of the rule near zero for the common case (no late fix).
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-2012) 'Considered Options
+2026-08-25T00:00:20Z (RFD66606-2012) 'Considered Options
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2012) '- Push the fix and assume the queue picks up the new tip (status quo
+2026-08-25T00:00:21Z (RFD66606-2012) '- Push the fix and assume the queue picks up the new tip (status quo
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-2012) '  that failed).
+2026-08-25T00:00:22Z (RFD66606-2012) '  that failed).
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-2012) '- Confirm the PR is still `OPEN` after the corrective push, before
+2026-08-25T00:00:23Z (RFD66606-2012) '- Confirm the PR is still `OPEN` after the corrective push, before
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-2012) '  relying on it.
+2026-08-25T00:00:24Z (RFD66606-2012) '  relying on it.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2012) '- Dequeue the PR, push the fix, then re-enqueue.
+2026-08-25T00:00:25Z (RFD66606-2012) '- Dequeue the PR, push the fix, then re-enqueue.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-2012) 'Consequences
+2026-08-25T00:00:26Z (RFD66606-2012) 'Consequences
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2012) '- Good: the commit that merges is the one intended, with no orphaned
+2026-08-25T00:00:27Z (RFD66606-2012) '- Good: the commit that merges is the one intended, with no orphaned
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2012) '  fixes.
+2026-08-25T00:00:28Z (RFD66606-2012) '  fixes.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-2012) '- Good: no redundant follow-up PRs to reapply a missed correction.
+2026-08-25T00:00:29Z (RFD66606-2012) '- Good: no redundant follow-up PRs to reapply a missed correction.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2012) '- Bad: a small habit of checking state or dequeuing adds a step when
+2026-08-25T00:00:30Z (RFD66606-2012) '- Bad: a small habit of checking state or dequeuing adds a step when
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2012) '  editing a PR that is already in flight.
+2026-08-25T00:00:31Z (RFD66606-2012) '  editing a PR that is already in flight.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-2012) 'Confirmation
+2026-08-25T00:00:32Z (RFD66606-2012) 'Confirmation
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2012) 'A late fix to an enqueued PR is preceded by a dequeue or followed by an
+2026-08-25T00:00:33Z (RFD66606-2012) 'A late fix to an enqueued PR is preceded by a dequeue or followed by an
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2012) '`OPEN` state check; the merged commit on `main` contains the fix, with
+2026-08-25T00:00:34Z (RFD66606-2012) '`OPEN` state check; the merged commit on `main` contains the fix, with
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2012) 'no follow-up PR that only reapplies it.
+2026-08-25T00:00:35Z (RFD66606-2012) 'no follow-up PR that only reapplies it.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-2012) 'More Information
+2026-08-25T00:00:36Z (RFD66606-2012) 'More Information
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-2012) 'This refines the merge queue policy
+2026-08-25T00:00:37Z (RFD66606-2012) 'This refines the merge queue policy
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-2012) '(`decisions/20260606-require-pr-and-merge-queue-on-main.md`) and is the
+2026-08-25T00:00:38Z (RFD66606-2012) '(`decisions/20260606-require-pr-and-merge-queue-on-main.md`) and is the
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-2012) 'work-in-progress discipline the bounded steering queue
+2026-08-25T00:00:39Z (RFD66606-2012) 'work-in-progress discipline the bounded steering queue
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-2012) '(`decisions/20260606-bounded-llm-steering-queue.md`) relies on: one
+2026-08-25T00:00:40Z (RFD66606-2012) '(`decisions/20260606-bounded-llm-steering-queue.md`) relies on: one
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-2012) 'finished concern per PR, merged before the next.
+2026-08-25T00:00:41Z (RFD66606-2012) 'finished concern per PR, merged before the next.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-2012) '
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-2012) 'The problem
+2026-08-25T00:00:42Z (RFD66606-2012) 'The problem
  # tags: rfd:details-heading
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-2012) 'The merge queue captures a PR's head commit the moment its checks pass
+2026-08-25T00:00:43Z (RFD66606-2012) 'The merge queue captures a PR's head commit the moment its checks pass
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-2012) 'and it is enqueued. While drafting the gitassembly tag MADR, a
+2026-08-25T00:00:44Z (RFD66606-2012) 'and it is enqueued. While drafting the gitassembly tag MADR, a
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-2012) 'correction was pushed to the PR branch seconds after enqueueing; the
+2026-08-25T00:00:45Z (RFD66606-2012) 'correction was pushed to the PR branch seconds after enqueueing; the
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-2012) 'queue had already snapshotted the earlier commit, so it merged the
+2026-08-25T00:00:46Z (RFD66606-2012) 'queue had already snapshotted the earlier commit, so it merged the
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-2012) 'draft and orphaned the fix. The correction had to land as a second PR.
+2026-08-25T00:00:47Z (RFD66606-2012) 'draft and orphaned the fix. The correction had to land as a second PR.
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-2012) 'How should a late fix to an in-flight PR be sequenced so it is not
+2026-08-25T00:00:48Z (RFD66606-2012) 'How should a late fix to an in-flight PR be sequenced so it is not
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-2012) 'lost to the queue?
- # tags: rfd:details
- Text:RFD2012  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-2012) '
+2026-08-25T00:00:49Z (RFD66606-2012) 'lost to the queue?
  # tags: rfd:details
  Text:RFD2012  1 LINE
  Text:Written

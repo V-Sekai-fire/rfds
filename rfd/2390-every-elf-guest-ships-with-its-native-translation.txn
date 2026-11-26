@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2390) 'native binary translation of every ELF guest on every platform.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2390  1 LINE
  Text:Written
 
@@ -14,137 +14,137 @@
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2390) '
- # tags: rfd:hook
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2390) 'What happens when the setting is on and no library is present? On Windows it segfaulted on
+2026-10-31T00:00:03Z (RFD66606-2390) 'What happens when the setting is on and no library is present? On Windows it segfaulted on
  # tags: rfd:intrigue
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2390) '2026-09-23.
+2026-10-31T00:00:04Z (RFD66606-2390) '2026-09-23.
  # tags: rfd:intrigue
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2390) '
- # tags: rfd:intrigue
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2390) 'Run `probe_load.gd` and check that `Sandbox.is_binary_translated()` holds for every ELF on the
+2026-10-31T00:00:05Z (RFD66606-2390) 'Run `probe_load.gd` and check that `Sandbox.is_binary_translated()` holds for every ELF on the
  # tags: rfd:exit
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2390) 'Frame, the desktop and the Fly image.
+2026-10-31T00:00:06Z (RFD66606-2390) 'Frame, the desktop and the Fly image.
  # tags: rfd:exit
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2390) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2390) 'every ELF guest ships with its native translation
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2390) 'every ELF guest ships with its native translation
- # tags: rfd:details-title
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2390) '- Native binary translation, required, interpretation never: every ELF guest we author ships
+2026-10-31T00:00:08Z (RFD66606-2390) '- Native binary translation, required, interpretation never: every ELF guest we author ships
  # tags: rfd:decision
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2390) '  with its translation on every platform it ships to, Windows, Linux and macOS alike.
+2026-10-31T00:00:09Z (RFD66606-2390) '  with its translation on every platform it ships to, Windows, Linux and macOS alike.
  # tags: rfd:decision
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2390) '- `stages/sandbox_util.gd`'s `enable_native_translation` drops its Linux-only guard and turns
+2026-10-31T00:00:10Z (RFD66606-2390) '- `stages/sandbox_util.gd`'s `enable_native_translation` drops its Linux-only guard and turns
  # tags: rfd:decision
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2390) '  the setting on wherever a library for the platform is shipped.
+2026-10-31T00:00:11Z (RFD66606-2390) '  the setting on wherever a library for the platform is shipped.
  # tags: rfd:decision
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2390) '
- # tags: rfd:decision
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2390) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:12Z (RFD66606-2390) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2390) '
- # tags: rfd:related
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2390) 'Build
+2026-10-31T00:00:13Z (RFD66606-2390) 'Build
  # tags: rfd:details-heading
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2390) 'The addon is built with the emitter (`GODOT_SANDBOX_BINTR_EMIT=<dir>` writes each program's
+2026-10-31T00:00:14Z (RFD66606-2390) 'The addon is built with the emitter (`GODOT_SANDBOX_BINTR_EMIT=<dir>` writes each program's
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2390) 'translation as C99, `RISCV_ASMJIT=OFF`, no JIT), and the pen's `guests.yml` emits each
+2026-10-31T00:00:15Z (RFD66606-2390) 'translation as C99, `RISCV_ASMJIT=OFF`, no JIT), and the pen's `guests.yml` emits each
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2390) 'program's C99 on the linux runner and compiles one library per program hash,
+2026-10-31T00:00:16Z (RFD66606-2390) 'program's C99 on the linux runner and compiles one library per program hash,
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2390) '`res://bintr/bintr-<HASH>.so` for linux x86_64, `.dll` for windows x86_64 through LLVM's clang
+2026-10-31T00:00:17Z (RFD66606-2390) '`res://bintr/bintr-<HASH>.so` for linux x86_64, `.dll` for windows x86_64 through LLVM's clang
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2390) '(`clang-cl` on a desk, the llvm-mingw clang on the runner), and `.dylib` for macos arm64, at
+2026-10-31T00:00:18Z (RFD66606-2390) '(`clang-cl` on a desk, the llvm-mingw clang on the runner), and `.dylib` for macos arm64, at
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2390) 'double. Xtools/build.exs` does the same on a desk. The Windows leg is in progress. Until its
+2026-10-31T00:00:19Z (RFD66606-2390) 'double. Xtools/build.exs` does the same on a desk. The Windows leg is in progress. Until its
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2390) '`.dll` loads, a Windows guest is untranslated and the gate below names it.
+2026-10-31T00:00:20Z (RFD66606-2390) '`.dll` loads, a Windows guest is untranslated and the gate below names it.
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2390) '
+2026-10-31T00:00:21Z (RFD66606-2390) '
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2390) 'The Windows segfault of 2026-09-23 (the setting on with no library present) is reproduced on
+2026-10-31T00:00:22Z (RFD66606-2390) 'The Windows segfault of 2026-09-23 (the setting on with no library present) is reproduced on
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2390) 'the double build, its backtrace logged, and fixed in the placed addon source, not avoided.
+2026-10-31T00:00:23Z (RFD66606-2390) 'the double build, its backtrace logged, and fixed in the placed addon source, not avoided.
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2390) '`guests.yml` and the release carry the libraries beside the ELFs with their sha256s.
+2026-10-31T00:00:24Z (RFD66606-2390) '`guests.yml` and the release carry the libraries beside the ELFs with their sha256s.
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:25Z (RFD66606-2390) '
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:26Z (RFD66606-2390) 'Check and control
+ # tags: rfd:details-heading
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:27Z (RFD66606-2390) 'Check: `probe_load.gd` asserts `Sandbox.is_binary_translated()` for every ELF on the Frame, the
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:28Z (RFD66606-2390) 'desktop and the Fly image, and the logbook records each ELF's instructions per second
+ # tags: rfd:details
+ Text:RFD2390  1 LINE
+ Text:Written
+
+2026-10-31T00:00:29Z (RFD66606-2390) 'translated against interpreted.
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
@@ -154,62 +154,27 @@
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2390) '
+2026-10-31T00:00:31Z (RFD66606-2390) 'Control: an ELF whose hash has no library reports untranslated and the gate fails by name.
  # tags: rfd:details
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2390) 'Check and control
- # tags: rfd:details-heading
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2390) 'Check: `probe_load.gd` asserts `Sandbox.is_binary_translated()` for every ELF on the Frame, the
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2390) 'desktop and the Fly image, and the logbook records each ELF's instructions per second
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2390) 'translated against interpreted.
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2390) '
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2390) 'Control: an ELF whose hash has no library reports untranslated and the gate fails by name.
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2390) '
- # tags: rfd:details
- Text:RFD2390  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2390) '2351
+2026-10-31T00:00:32Z (RFD66606-2390) '2351
  # tags: rebac:verbs-from
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2390) 'rfd-2390 provides elf-guest-native-translation
+2026-10-31T00:00:33Z (RFD66606-2390) 'rfd-2390 provides elf-guest-native-translation
  # tags: rebac:relate
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2390) 'rfd-2390 spends sandbox-addon-double-pinned
+2026-10-31T00:00:34Z (RFD66606-2390) 'rfd-2390 spends sandbox-addon-double-pinned
  # tags: rebac:relate
  Text:RFD2390  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2390) 'rfd-2390 is_a guest-runtime
+2026-10-31T00:00:35Z (RFD66606-2390) 'rfd-2390 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2390  1 LINE
  Text:Written

@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2353) 'weftspun-bao and the weftspun-fdb machines it runs on.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2353  1 LINE
  Text:Written
 
@@ -14,192 +14,192 @@
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2353) '
- # tags: rfd:hook
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2353) 'Bao was one machine, and every consumer now depends on it: every routine credential read,
+2026-10-31T00:00:03Z (RFD66606-2353) 'Bao was one machine, and every consumer now depends on it: every routine credential read,
  # tags: rfd:intrigue
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2353) 'coordination write and policy check routes through Bao, so one outage stops them all.
+2026-10-31T00:00:04Z (RFD66606-2353) 'coordination write and policy check routes through Bao, so one outage stops them all.
  # tags: rfd:intrigue
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2353) '
- # tags: rfd:intrigue
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2353) 'Deploy the image to the three weftspun-fdb machines one at a time and unseal each, then
+2026-10-31T00:00:05Z (RFD66606-2353) 'Deploy the image to the three weftspun-fdb machines one at a time and unseal each, then
  # tags: rfd:exit
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2353) 'destroy the `weftspun-bao` app once the three serve.
+2026-10-31T00:00:06Z (RFD66606-2353) 'destroy the `weftspun-bao` app once the three serve.
  # tags: rfd:exit
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2353) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2353) 'Bao runs three replicas on the FDB machines
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2353) 'Bao runs three replicas on the FDB machines
- # tags: rfd:details-title
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2353) '`ha_enabled = true`, coordinated over FDB (operator, 2026-10-13). The `weftspun-bao`
+2026-10-31T00:00:08Z (RFD66606-2353) '`ha_enabled = true`, coordinated over FDB (operator, 2026-10-13). The `weftspun-bao`
  # tags: rfd:decision
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2353) 'app retires once the three instances serve. Superseded on 2026-11-01: Bao runs as one
+2026-10-31T00:00:09Z (RFD66606-2353) 'app retires once the three instances serve. Superseded on 2026-11-01: Bao runs as one
  # tags: rfd:decision
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2353) 'instance beside a single-node FDB cluster on one Fly machine, restored from the R2
+2026-10-31T00:00:10Z (RFD66606-2353) 'instance beside a single-node FDB cluster on one Fly machine, restored from the R2
  # tags: rfd:decision
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2353) 'backup, with `ha_enabled = false` (operator, 2026-11-01).
+2026-10-31T00:00:11Z (RFD66606-2353) 'backup, with `ha_enabled = false` (operator, 2026-11-01).
  # tags: rfd:decision
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2353) '
- # tags: rfd:decision
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2353) 'RFD66606-2140, RFD66606-2144, RFD66606-2145, RFD66606-2146.
+2026-10-31T00:00:12Z (RFD66606-2353) 'RFD66606-2140, RFD66606-2144, RFD66606-2145, RFD66606-2146.
  # tags: rfd:related
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2353) 'Split from the old RFD66606-2147: RFD66606-2354 (unseal), 2355 (cache), 2356 (no CDN proxy).
+2026-10-31T00:00:13Z (RFD66606-2353) 'Split from the old RFD66606-2147: RFD66606-2354 (unseal), 2355 (cache), 2356 (no CDN proxy).
  # tags: rfd:related
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2353) '
- # tags: rfd:related
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2353) 'Why HA now, not before
+2026-10-31T00:00:14Z (RFD66606-2353) 'Why HA now, not before
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2353) 'RFD66606-2140 chose `ha_enabled = "false"` when Bao was one machine and one
+2026-10-31T00:00:15Z (RFD66606-2353) 'RFD66606-2140 chose `ha_enabled = "false"` when Bao was one machine and one
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2353) 'operator. Under that arrangement, Bao being down meant one thing was
+2026-10-31T00:00:16Z (RFD66606-2353) 'operator. Under that arrangement, Bao being down meant one thing was
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2353) 'down: the Bao API. Everything else routed around Bao by holding its
+2026-10-31T00:00:17Z (RFD66606-2353) 'down: the Bao API. Everything else routed around Bao by holding its
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2353) 'credentials in Fly secrets or 1P.
+2026-10-31T00:00:18Z (RFD66606-2353) 'credentials in Fly secrets or 1P.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2353) '
+2026-10-31T00:00:19Z (RFD66606-2353) '
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2353) 'RFD66606-2146 turned that inside out. Every consumer now authenticates to
+2026-10-31T00:00:20Z (RFD66606-2353) 'RFD66606-2146 turned that inside out. Every consumer now authenticates to
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2353) 'Bao with its per-service cert, reads its credentials from Bao at
+2026-10-31T00:00:21Z (RFD66606-2353) 'Bao with its per-service cert, reads its credentials from Bao at
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2353) 'runtime, and coordinates state through Bao's KV. When Bao goes down,
+2026-10-31T00:00:22Z (RFD66606-2353) 'runtime, and coordinates state through Bao's KV. When Bao goes down,
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2353) 'the DNS-editing path goes down, the R2-write path goes down, the FDB
+2026-10-31T00:00:23Z (RFD66606-2353) 'the DNS-editing path goes down, the R2-write path goes down, the FDB
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2353) 'coordinator info lookup goes down, and any new spend gate that
+2026-10-31T00:00:24Z (RFD66606-2353) 'coordinator info lookup goes down, and any new spend gate that
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2353) 'follows the same pattern goes down with them. The single-machine
+2026-10-31T00:00:25Z (RFD66606-2353) 'follows the same pattern goes down with them. The single-machine
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2353) 'posture that was fine as a convenience store is not fine as the
+2026-10-31T00:00:26Z (RFD66606-2353) 'posture that was fine as a convenience store is not fine as the
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2353) 'switchboard.
+2026-10-31T00:00:27Z (RFD66606-2353) 'switchboard.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2353) 'Colocated on the FDB machines
+2026-10-31T00:00:28Z (RFD66606-2353) 'Colocated on the FDB machines
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2353) 'The operator chose on 2026-10-13 to run Bao on the three weftspun-fdb
+2026-10-31T00:00:29Z (RFD66606-2353) 'The operator chose on 2026-10-13 to run Bao on the three weftspun-fdb
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2353) 'machines instead of in its own app. The Fly plan in use includes
+2026-10-31T00:00:30Z (RFD66606-2353) 'machines instead of in its own app. The Fly plan in use includes
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2353) 'three `shared-cpu-1x` 256 MB machines and 3 GB of volumes; three FDB
+2026-10-31T00:00:31Z (RFD66606-2353) 'three `shared-cpu-1x` 256 MB machines and 3 GB of volumes; three FDB
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2353) 'machines plus a separate Bao machine overran both, and the separate
+2026-10-31T00:00:32Z (RFD66606-2353) 'machines plus a separate Bao machine overran both, and the separate
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2353) 'machine bought no redundancy. FDB keeps `double` redundancy and three
+2026-10-31T00:00:33Z (RFD66606-2353) 'machine bought no redundancy. FDB keeps `double` redundancy and three
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2353) 'coordinators, so one machine may still be lost.
+2026-10-31T00:00:34Z (RFD66606-2353) 'coordinators, so one machine may still be lost.
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2353) '
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2353) 'Each machine runs fdbserver, the backup agent, Bao, tailscaled and
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2353) 'sshd, at 512 MB. Measured on 2026-10-13 at 256 MB: an FDB machine used
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2353) 'about 130 MB, and the Bao machine about 130 MB, of which Bao was 77 MB,
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2353) 'tailscaled 26 MB and the plugin 18 MB. The two together do not fit in
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2353) 'the 207 MB a 256 MB machine leaves usable.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
@@ -209,227 +209,227 @@
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2353) 'Each machine runs fdbserver, the backup agent, Bao, tailscaled and
+2026-10-31T00:00:42Z (RFD66606-2353) '- The `weftspun-bao` app retires once the three instances serve. Its
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2353) 'sshd, at 512 MB. Measured on 2026-10-13 at 256 MB: an FDB machine used
+2026-10-31T00:00:43Z (RFD66606-2353) '  volume held no secrets: Bao's storage is FDB, and the volume kept the
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2353) 'about 130 MB, and the Bao machine about 130 MB, of which Bao was 77 MB,
+2026-10-31T00:00:44Z (RFD66606-2353) '  tailnet identity, the SSH host key and renewed listener certificates.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2353) 'tailscaled 26 MB and the plugin 18 MB. The two together do not fit in
+2026-10-31T00:00:45Z (RFD66606-2353) '- Each instance advertises its own machine address as `api_addr` and
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2353) 'the 207 MB a 256 MB machine leaves usable.
+2026-10-31T00:00:46Z (RFD66606-2353) '  `cluster_addr`, so standbys forward to the active instance. Standbys
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2353) '
+2026-10-31T00:00:47Z (RFD66606-2353) '  forward every read to the active instance.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2353) '- The `weftspun-bao` app retires once the three instances serve. Its
+2026-10-31T00:00:48Z (RFD66606-2353) '- Clients keep verifying the listener as `weftspun-bao.internal`; the
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2353) '  volume held no secrets: Bao's storage is FDB, and the volume kept the
+2026-10-31T00:00:49Z (RFD66606-2353) '  name in the certificate does not move with the app.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2353) '  tailnet identity, the SSH host key and renewed listener certificates.
+2026-10-31T00:00:50Z (RFD66606-2353) '- One machine carries the existing tailnet state and keeps the
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2353) '- Each instance advertises its own machine address as `api_addr` and
+2026-10-31T00:00:51Z (RFD66606-2353) '  `weftspun-bao` node; the others join under their own names.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2353) '  `cluster_addr`, so standbys forward to the active instance. Standbys
+2026-10-31T00:00:52Z (RFD66606-2353) '- The SSH tunnel port is balanced across all three machines, so they
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2353) '  forward every read to the active instance.
+2026-10-31T00:00:53Z (RFD66606-2353) '  share one host key, held as a secret rather than generated per
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2353) '- Clients keep verifying the listener as `weftspun-bao.internal`; the
+2026-10-31T00:00:54Z (RFD66606-2353) '  volume.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2353) '  name in the certificate does not move with the app.
+2026-10-31T00:00:55Z (RFD66606-2353) '- The change is proved on a throwaway three-machine app before
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2353) '- One machine carries the existing tailnet state and keeps the
+2026-10-31T00:00:56Z (RFD66606-2353) '  weftspun-fdb is touched: an initialised test Bao, a secret written
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2353) '  `weftspun-bao` node; the others join under their own names.
+2026-10-31T00:00:57Z (RFD66606-2353) '  and read back, one machine restarted and unsealed while the others
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2353) '- The SSH tunnel port is balanced across all three machines, so they
+2026-10-31T00:00:58Z (RFD66606-2353) '  keep serving.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2353) '  share one host key, held as a secret rather than generated per
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:00Z (RFD66606-2353) '  volume.
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2353) '- The change is proved on a throwaway three-machine app before
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2353) '  weftspun-fdb is touched: an initialised test Bao, a secret written
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:03Z (RFD66606-2353) '  and read back, one machine restarted and unsealed while the others
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2353) '  keep serving.
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:06Z (RFD66606-2353) 'Replicas: 3 in sjc, coordinated over FDB
+2026-10-31T00:00:59Z (RFD66606-2353) 'Replicas: 3 in sjc, coordinated over FDB
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2353) 'OpenBao's FDB backend supports HA by leader election over the same
+2026-10-31T00:01:00Z (RFD66606-2353) 'OpenBao's FDB backend supports HA by leader election over the same
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:08Z (RFD66606-2353) 'storage the writes go to. One instance runs on each FDB machine, so
+2026-10-31T00:01:01Z (RFD66606-2353) 'storage the writes go to. One instance runs on each FDB machine, so
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2353) 'Bao spreads across the same three zones FDB does.
+2026-10-31T00:01:02Z (RFD66606-2353) 'Bao spreads across the same three zones FDB does.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:10Z (RFD66606-2353) '
+2026-10-31T00:01:03Z (RFD66606-2353) '
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:11Z (RFD66606-2353) 'Standby replicas can either serve reads directly or forward every
+2026-10-31T00:01:04Z (RFD66606-2353) 'Standby replicas can either serve reads directly or forward every
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2353) 'request to the leader. Read-serving standbys would suit the read/write
+2026-10-31T00:01:05Z (RFD66606-2353) 'request to the leader. Read-serving standbys would suit the read/write
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:13Z (RFD66606-2353) 'ratio the cert-auth path establishes (many reads per one write); until
+2026-10-31T00:01:06Z (RFD66606-2353) 'ratio the cert-auth path establishes (many reads per one write); until
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2353) 'the fork is shown to serve reads from a standby, standbys forward.
+2026-10-31T00:01:07Z (RFD66606-2353) 'the fork is shown to serve reads from a standby, standbys forward.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2353) '
+2026-10-31T00:01:08Z (RFD66606-2353) '
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:16Z (RFD66606-2353) 'The 3-machine scale exposes one wrinkle: three machines mean three
+2026-10-31T00:01:09Z (RFD66606-2353) 'The 3-machine scale exposes one wrinkle: three machines mean three
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2353) 'seal states, three unseal calls per fleet restart. This is the reason
+2026-10-31T00:01:10Z (RFD66606-2353) 'seal states, three unseal calls per fleet restart. This is the reason
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:18Z (RFD66606-2353) 'auto-unseal stays the goal.
+2026-10-31T00:01:11Z (RFD66606-2353) 'auto-unseal stays the goal.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:19Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2353) 'Migration path
+2026-10-31T00:01:12Z (RFD66606-2353) 'Migration path
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2353) 'Enabling the replicas on the live cluster is:
+2026-10-31T00:01:13Z (RFD66606-2353) 'Enabling the replicas on the live cluster is:
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:22Z (RFD66606-2353) '
+2026-10-31T00:01:14Z (RFD66606-2353) '
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:23Z (RFD66606-2353) '1. Update `service-openbao/config-fdb.hcl`: `ha_enabled = "true"`.
+2026-10-31T00:01:15Z (RFD66606-2353) '1. Update `service-openbao/config-fdb.hcl`: `ha_enabled = "true"`.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2353) '2. Build one image carrying the FDB server and Bao, and deploy it to
+2026-10-31T00:01:16Z (RFD66606-2353) '2. Build one image carrying the FDB server and Bao, and deploy it to
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:25Z (RFD66606-2353) '   the three weftspun-fdb machines one at a time, unsealing each.
+2026-10-31T00:01:17Z (RFD66606-2353) '   the three weftspun-fdb machines one at a time, unsealing each.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2353) '3. Stop the `weftspun-bao` app, then destroy it once the three serve.
+2026-10-31T00:01:18Z (RFD66606-2353) '3. Stop the `weftspun-bao` app, then destroy it once the three serve.
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:19Z (RFD66606-2353) 'A desk reaches the active instance
+ # tags: rfd:details-heading
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:20Z (RFD66606-2353) 'Read on 2026-10-16. The three instances elect one leader, and only the
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:21Z (RFD66606-2353) 'leader answers a login; a standby redirects to the leader's
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:22Z (RFD66606-2353) '`<machine>.vm.weftspun-fdb.internal` address, which no desk resolves.
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:23Z (RFD66606-2353) 'Two of the three carried tailnet names that day (`weftspun-bao-3`,
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:24Z (RFD66606-2353) '`weftspun-bao-4`), both unsealed standbys, and the leader, the third
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:25Z (RFD66606-2353) 'machine, had none, so a desk asking the tailnet found no
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:26Z (RFD66606-2353) 'leader and the desk helper exited without a word.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
@@ -439,42 +439,42 @@
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2353) 'A desk reaches the active instance
- # tags: rfd:details-heading
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:29Z (RFD66606-2353) 'Read on 2026-10-16. The three instances elect one leader, and only the
+2026-10-31T00:01:28Z (RFD66606-2353) 'The route that worked: read `sys/leader` from any instance (no token,
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2353) 'leader answers a login; a standby redirects to the leader's
+2026-10-31T00:01:29Z (RFD66606-2353) 'mTLS only), take the machine id out of `leader_address`, and run
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2353) '`<machine>.vm.weftspun-fdb.internal` address, which no desk resolves.
+2026-10-31T00:01:30Z (RFD66606-2353) '`fly proxy 8200:8200 <id>.vm.weftspun-fdb.internal -a weftspun-fdb` as a
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2353) 'Two of the three carried tailnet names that day (`weftspun-bao-3`,
+2026-10-31T00:01:31Z (RFD66606-2353) 'background process. The desk then uses `BAO_ADDR=https://127.0.0.1:8200`
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:33Z (RFD66606-2353) '`weftspun-bao-4`), both unsealed standbys, and the leader, the third
+2026-10-31T00:01:32Z (RFD66606-2353) 'with `BAO_TLS_SERVER_NAME=weftspun-bao.internal` and its agent
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:34Z (RFD66606-2353) 'machine, had none, so a desk asking the tailnet found no
+2026-10-31T00:01:33Z (RFD66606-2353) 'certificate. The proxy exits on its own after some minutes; a
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:35Z (RFD66606-2353) 'leader and the desk helper exited without a word.
+2026-10-31T00:01:34Z (RFD66606-2353) '`connection refused` on 127.0.0.1:8200 means restart it, not that Bao
+ # tags: rfd:details
+ Text:RFD2353  1 LINE
+ Text:Written
+
+2026-10-31T00:01:35Z (RFD66606-2353) 'is down.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
@@ -484,247 +484,182 @@
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:37Z (RFD66606-2353) 'The route that worked: read `sys/leader` from any instance (no token,
+2026-10-31T00:01:37Z (RFD66606-2353) 'The retired `weftspun-bao` app still exists, stopped. `fly proxy -a
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:38Z (RFD66606-2353) 'mTLS only), take the machine id out of `leader_address`, and run
+2026-10-31T00:01:38Z (RFD66606-2353) 'weftspun-bao` fails with `host was not found in DNS` because nothing
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:39Z (RFD66606-2353) '`fly proxy 8200:8200 <id>.vm.weftspun-fdb.internal -a weftspun-fdb` as a
+2026-10-31T00:01:39Z (RFD66606-2353) 'runs there, and starting its machine brings up a second Bao against the
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:40Z (RFD66606-2353) 'background process. The desk then uses `BAO_ADDR=https://127.0.0.1:8200`
+2026-10-31T00:01:40Z (RFD66606-2353) 'same FDB storage, which stops again within a minute. It was started
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:41Z (RFD66606-2353) 'with `BAO_TLS_SERVER_NAME=weftspun-bao.internal` and its agent
+2026-10-31T00:01:41Z (RFD66606-2353) 'twice that day by mistake before the route above was found; it is not
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:42Z (RFD66606-2353) 'certificate. The proxy exits on its own after some minutes; a
+2026-10-31T00:01:42Z (RFD66606-2353) 'started again, and its deletion is an open item.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:43Z (RFD66606-2353) '`connection refused` on 127.0.0.1:8200 means restart it, not that Bao
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:44Z (RFD66606-2353) 'is down.
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:45Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:46Z (RFD66606-2353) 'The retired `weftspun-bao` app still exists, stopped. `fly proxy -a
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:47Z (RFD66606-2353) 'weftspun-bao` fails with `host was not found in DNS` because nothing
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:48Z (RFD66606-2353) 'runs there, and starting its machine brings up a second Bao against the
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:49Z (RFD66606-2353) 'same FDB storage, which stops again within a minute. It was started
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:50Z (RFD66606-2353) 'twice that day by mistake before the route above was found; it is not
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:51Z (RFD66606-2353) 'started again, and its deletion is an open item.
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:52Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:01:53Z (RFD66606-2353) 'Sub-decisions open
+2026-10-31T00:01:43Z (RFD66606-2353) 'Sub-decisions open
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:54Z (RFD66606-2353) '- Delete the retired `weftspun-bao` app and its volume, so a desk
+2026-10-31T00:01:44Z (RFD66606-2353) '- Delete the retired `weftspun-bao` app and its volume, so a desk
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:55Z (RFD66606-2353) '  cannot start a second Bao by mistake.
+2026-10-31T00:01:45Z (RFD66606-2353) '  cannot start a second Bao by mistake.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:56Z (RFD66606-2353) '- Every instance joins the tailnet under its own name, or the leader's
+2026-10-31T00:01:46Z (RFD66606-2353) '- Every instance joins the tailnet under its own name, or the leader's
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:57Z (RFD66606-2353) '  name is published where a desk can read it without a Fly login.
+2026-10-31T00:01:47Z (RFD66606-2353) '  name is published where a desk can read it without a Fly login.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:58Z (RFD66606-2353) '- 3 replicas, one per FDB machine (operator, 2026-10-13).
+2026-10-31T00:01:48Z (RFD66606-2353) '- 3 replicas, one per FDB machine (operator, 2026-10-13).
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:01:59Z (RFD66606-2353) '- Standbys serve reads (`disable_performance_standby = false`) vs
+2026-10-31T00:01:49Z (RFD66606-2353) '- Standbys serve reads (`disable_performance_standby = false`) vs
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:00Z (RFD66606-2353) '  forward to leader. Read-heavy workload argues for serving.
+2026-10-31T00:01:50Z (RFD66606-2353) '  forward to leader. Read-heavy workload argues for serving.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:01Z (RFD66606-2353) '- The FDB and Bao data machines run as one machine or as an HA set; the one-machine form
+2026-10-31T00:01:51Z (RFD66606-2353) '- The FDB and Bao data machines run as one machine or as an HA set; the one-machine form
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:02Z (RFD66606-2353) '  relies on tested backups (operator, 2026-10-30).
+2026-10-31T00:01:52Z (RFD66606-2353) '  relies on tested backups (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:03Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:02:04Z (RFD66606-2353) 'Sources
+2026-10-31T00:01:53Z (RFD66606-2353) 'Sources
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:05Z (RFD66606-2353) '- OpenBao HA storage docs (FDB backend supports HA via leader
+2026-10-31T00:01:54Z (RFD66606-2353) '- OpenBao HA storage docs (FDB backend supports HA via leader
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:06Z (RFD66606-2353) '  election on the shared FDB cluster).
+2026-10-31T00:01:55Z (RFD66606-2353) '  election on the shared FDB cluster).
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:07Z (RFD66606-2353) '- RFD66606-2140 (Bao on FDB, this raises its ambition), 2145 (leaf and CA
+2026-10-31T00:01:56Z (RFD66606-2353) '- RFD66606-2140 (Bao on FDB, this raises its ambition), 2145 (leaf and CA
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:08Z (RFD66606-2353) '  rotation cadence this HA has to survive), 2146 (the capability
+2026-10-31T00:01:57Z (RFD66606-2353) '  rotation cadence this HA has to survive), 2146 (the capability
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:09Z (RFD66606-2353) '  topology this now underwrites).
+2026-10-31T00:01:58Z (RFD66606-2353) '  topology this now underwrites).
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:10Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:02:11Z (RFD66606-2353) 'The problem
+2026-10-31T00:01:59Z (RFD66606-2353) 'The problem
  # tags: rfd:details-heading
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:12Z (RFD66606-2353) 'RFD66606-2140's `ha_enabled = "false"` fit that framing. RFD66606-2146 then moved every
+2026-10-31T00:02:00Z (RFD66606-2353) 'RFD66606-2140's `ha_enabled = "false"` fit that framing. RFD66606-2146 then moved every
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:13Z (RFD66606-2353) 'routine credential read, coordination write, and policy check onto Bao. Every consumer now
+2026-10-31T00:02:01Z (RFD66606-2353) 'routine credential read, coordination write, and policy check onto Bao. Every consumer now
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:14Z (RFD66606-2353) 'depends on Bao being up, and RFD66606-2140's reliability budget is smaller than what routes
+2026-10-31T00:02:02Z (RFD66606-2353) 'depends on Bao being up, and RFD66606-2140's reliability budget is smaller than what routes
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:15Z (RFD66606-2353) 'through Bao now needs.
+2026-10-31T00:02:03Z (RFD66606-2353) 'through Bao now needs.
  # tags: rfd:details
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:16Z (RFD66606-2353) '
- # tags: rfd:details
- Text:RFD2353  1 LINE
- Text:Written
-
-2026-10-31T00:02:17Z (RFD66606-2353) '2351
+2026-10-31T00:02:04Z (RFD66606-2353) '2351
  # tags: rebac:verbs-from
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:18Z (RFD66606-2353) 'rfd-2353 provides bao-single-fly-instance
+2026-10-31T00:02:05Z (RFD66606-2353) 'rfd-2353 provides bao-single-fly-instance
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:19Z (RFD66606-2353) 'rfd-2353 is_a deployment
+2026-10-31T00:02:06Z (RFD66606-2353) 'rfd-2353 is_a deployment
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:20Z (RFD66606-2353) 'rfd-2353 spends bao
+2026-10-31T00:02:07Z (RFD66606-2353) 'rfd-2353 spends bao
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:21Z (RFD66606-2353) 'rfd-2353 spends bao-fdb-storage-backend
+2026-10-31T00:02:08Z (RFD66606-2353) 'rfd-2353 spends bao-fdb-storage-backend
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:22Z (RFD66606-2353) 'rfd-2353 spends bao-cert-auth-role-map
+2026-10-31T00:02:09Z (RFD66606-2353) 'rfd-2353 spends bao-cert-auth-role-map
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:23Z (RFD66606-2353) 'rfd-2353 spends fdb-backup-r2-dr-tag
+2026-10-31T00:02:10Z (RFD66606-2353) 'rfd-2353 spends fdb-backup-r2-dr-tag
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:24Z (RFD66606-2353) 'rfd-2353 spends fly
+2026-10-31T00:02:11Z (RFD66606-2353) 'rfd-2353 spends fly
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written
 
-2026-10-31T00:02:25Z (RFD66606-2353) 'rfd-2353 spends tailscale
+2026-10-31T00:02:12Z (RFD66606-2353) 'rfd-2353 spends tailscale
  # tags: rebac:relate
  Text:RFD2353  1 LINE
  Text:Written

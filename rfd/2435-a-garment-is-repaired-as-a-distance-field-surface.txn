@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-01T00:00:01Z (RFD66606-2435) 'a garment that crosses itself starts the cloth-fit solve as one clean surface.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2435  1 LINE
  Text:Written
 
 2026-11-01T00:00:02Z (RFD66606-2435) 'the proxy garment that the cloth-fit solve fits, and how its result returns.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2435  1 LINE
  Text:Written
 
@@ -19,132 +19,132 @@
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:04Z (RFD66606-2435) '
- # tags: rfd:hook
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:05Z (RFD66606-2435) 'The pants cross themselves 1316 times across 53 shells. The solver takes one connected
+2026-11-01T00:00:04Z (RFD66606-2435) 'The pants cross themselves 1316 times across 53 shells. The solver takes one connected
  # tags: rfd:intrigue
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:06Z (RFD66606-2435) 'manifold mesh with no crossings, and a union of those shells did not give one. A surface
+2026-11-01T00:00:05Z (RFD66606-2435) 'manifold mesh with no crossings, and a union of those shells did not give one. A surface
  # tags: rfd:intrigue
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:07Z (RFD66606-2435) 'of the garment's distance field might.
+2026-11-01T00:00:06Z (RFD66606-2435) 'of the garment's distance field might.
  # tags: rfd:intrigue
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:08Z (RFD66606-2435) '
- # tags: rfd:intrigue
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:09Z (RFD66606-2435) 'Count the crossing pairs and the shells of the proxy. The solve takes it when they read 0 and
+2026-11-01T00:00:07Z (RFD66606-2435) 'Count the crossing pairs and the shells of the proxy. The solve takes it when they read 0 and
  # tags: rfd:exit
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:10Z (RFD66606-2435) '1, and a planted second shell must read 2.
+2026-11-01T00:00:08Z (RFD66606-2435) '1, and a planted second shell must read 2.
  # tags: rfd:exit
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:11Z (RFD66606-2435) '
- # tags: rfd:exit
+2026-11-01T00:00:09Z (RFD66606-2435) 'a garment is repaired as a distance-field surface
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:12Z (RFD66606-2435) 'a garment is repaired as a distance-field surface
- # tags: rfd:details-title
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:13Z (RFD66606-2435) '- The garment is repaired as a proxy. The original keeps its UVs, skin weights and materials.
+2026-11-01T00:00:10Z (RFD66606-2435) '- The garment is repaired as a proxy. The original keeps its UVs, skin weights and materials.
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:14Z (RFD66606-2435) '- The proxy is a level surface of the unsigned distance to the garment. Open edges close
+2026-11-01T00:00:11Z (RFD66606-2435) '- The proxy is a level surface of the unsigned distance to the garment. Open edges close
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:15Z (RFD66606-2435) '  and layers closer than the distance merge (operator, 2026-11-01).
+2026-11-01T00:00:12Z (RFD66606-2435) '  and layers closer than the distance merge (operator, 2026-11-01).
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:16Z (RFD66606-2435) '- The proxy takes skin weights from the garment through the robust weight transfer guest.
+2026-11-01T00:00:13Z (RFD66606-2435) '- The proxy takes skin weights from the garment through the robust weight transfer guest.
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:17Z (RFD66606-2435) '  The fitted displacement returns to the original through the cage stage.
+2026-11-01T00:00:14Z (RFD66606-2435) '  The fitted displacement returns to the original through the cage stage.
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:18Z (RFD66606-2435) '- The repair uses no CoACD hulls and no CSG union of the shells (operator, 2026-11-01).
+2026-11-01T00:00:15Z (RFD66606-2435) '- The repair uses no CoACD hulls and no CSG union of the shells (operator, 2026-11-01).
  # tags: rfd:decision
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:19Z (RFD66606-2435) '
- # tags: rfd:decision
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:20Z (RFD66606-2435) '- RFD66606-2424, where a sketch is placed on the avatar before any fit.
+2026-11-01T00:00:16Z (RFD66606-2435) '- RFD66606-2424, where a sketch is placed on the avatar before any fit.
  # tags: rfd:related
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:21Z (RFD66606-2435) '
- # tags: rfd:related
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:22Z (RFD66606-2435) 'What the solver takes
+2026-11-01T00:00:17Z (RFD66606-2435) 'What the solver takes
  # tags: rfd:details-heading
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:23Z (RFD66606-2435) 'The cloth-fit solver's input spec asks for an avatar of one or more closed surfaces, because
+2026-11-01T00:00:18Z (RFD66606-2435) 'The cloth-fit solver's input spec asks for an avatar of one or more closed surfaces, because
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:24Z (RFD66606-2435) 'the avatar becomes a signed distance field. It asks for a garment that is a connected
+2026-11-01T00:00:19Z (RFD66606-2435) 'the avatar becomes a signed distance field. It asks for a garment that is a connected
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:25Z (RFD66606-2435) 'manifold triangle mesh. The solver also refuses a start where the garment crosses itself.
+2026-11-01T00:00:20Z (RFD66606-2435) 'manifold triangle mesh. The solver also refuses a start where the garment crosses itself.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:26Z (RFD66606-2435) '
+2026-11-01T00:00:21Z (RFD66606-2435) '
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:27Z (RFD66606-2435) 'The solver's own example solves. Its garment is one shell with no non-manifold edge, 144 open
+2026-11-01T00:00:22Z (RFD66606-2435) 'The solver's own example solves. Its garment is one shell with no non-manifold edge, 144 open
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:28Z (RFD66606-2435) 'edges (a hem and a waist) and 0 crossing pairs. Its avatar is 32 shells that cross each other
+2026-11-01T00:00:23Z (RFD66606-2435) 'edges (a hem and a waist) and 0 crossing pairs. Its avatar is 32 shells that cross each other
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:29Z (RFD66606-2435) '1394 times between shells. So the body may overlap itself, and the garment may not.
+2026-11-01T00:00:24Z (RFD66606-2435) '1394 times between shells. So the body may overlap itself, and the garment may not.
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:25Z (RFD66606-2435) '
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:26Z (RFD66606-2435) 'What an outfit piece looks like
+ # tags: rfd:details-heading
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:27Z (RFD66606-2435) 'Measured with a throwaway script that welds at one hundred-thousandth of the bounding box and
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:28Z (RFD66606-2435) 'tests each edge against each triangle that shares no vertex. A planted crossing reads 1 and a
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:29Z (RFD66606-2435) 'planted separate pair reads 0.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
@@ -154,27 +154,27 @@
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:31Z (RFD66606-2435) '
+2026-11-01T00:00:31Z (RFD66606-2435) '- The pants have 53 shells, no non-manifold edge, 399 open edges and 1316 crossing pairs. Of
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:32Z (RFD66606-2435) 'What an outfit piece looks like
- # tags: rfd:details-heading
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:33Z (RFD66606-2435) 'Measured with a throwaway script that welds at one hundred-thousandth of the bounding box and
+2026-11-01T00:00:32Z (RFD66606-2435) '  those, 1300 are between shells and 16 are inside one shell.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:34Z (RFD66606-2435) 'tests each edge against each triangle that shares no vertex. A planted crossing reads 1 and a
+2026-11-01T00:00:33Z (RFD66606-2435) '- The skirt has 43 shells and 12 open loops.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:35Z (RFD66606-2435) 'planted separate pair reads 0.
+2026-11-01T00:00:34Z (RFD66606-2435) '- The kimono has 346 shells, 128 open loops and 77 non-manifold edges.
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:00:35Z (RFD66606-2435) '- The pants have 982 vertices that sit twice at one position, and no triangle collapses.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
@@ -184,157 +184,157 @@
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:37Z (RFD66606-2435) '- The pants have 53 shells, no non-manifold edge, 399 open edges and 1316 crossing pairs. Of
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:38Z (RFD66606-2435) '  those, 1300 are between shells and 16 are inside one shell.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:39Z (RFD66606-2435) '- The skirt has 43 shells and 12 open loops.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:40Z (RFD66606-2435) '- The kimono has 346 shells, 128 open loops and 77 non-manifold edges.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:41Z (RFD66606-2435) '- The pants have 982 vertices that sit twice at one position, and no triangle collapses.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:42Z (RFD66606-2435) '
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:43Z (RFD66606-2435) '
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:44Z (RFD66606-2435) 'What did not work
+2026-11-01T00:00:37Z (RFD66606-2435) 'What did not work
  # tags: rfd:details-heading
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:45Z (RFD66606-2435) 'A union of the shells did not give a clean surface. Each shell became a solid: an inner copy
+2026-11-01T00:00:38Z (RFD66606-2435) 'A union of the shells did not give a clean surface. Each shell became a solid: an inner copy
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:46Z (RFD66606-2435) 'offset along the vertex normals, joined to the shell by a strip on every open edge. A stock
+2026-11-01T00:00:39Z (RFD66606-2435) 'offset along the vertex normals, joined to the shell by a strip on every open edge. A stock
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:47Z (RFD66606-2435) 'CSG union then ran on all 53 solids.
+2026-11-01T00:00:40Z (RFD66606-2435) 'CSG union then ran on all 53 solids.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:48Z (RFD66606-2435) '
+2026-11-01T00:00:41Z (RFD66606-2435) '
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:49Z (RFD66606-2435) '- At 4 mm, about five credit cards stacked, 24 of the 53 solids came out inside out, because
+2026-11-01T00:00:42Z (RFD66606-2435) '- At 4 mm, about five credit cards stacked, 24 of the 53 solids came out inside out, because
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:50Z (RFD66606-2435) '  the small shells are thinner than the offset.
+2026-11-01T00:00:43Z (RFD66606-2435) '  the small shells are thinner than the offset.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:51Z (RFD66606-2435) '- At 1 mm, about one credit card, all solids were valid. The union still had 295 non-manifold
+2026-11-01T00:00:44Z (RFD66606-2435) '- At 1 mm, about one credit card, all solids were valid. The union still had 295 non-manifold
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:52Z (RFD66606-2435) '  edges and 30969 crossing pairs, against 1316 before.
+2026-11-01T00:00:45Z (RFD66606-2435) '  edges and 30969 crossing pairs, against 1316 before.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:53Z (RFD66606-2435) '
+2026-11-01T00:00:46Z (RFD66606-2435) '
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:54Z (RFD66606-2435) 'Convex hulls from CoACD are closed and cover the garment, but the operator ruled them out for
+2026-11-01T00:00:47Z (RFD66606-2435) 'Convex hulls from CoACD are closed and cover the garment, but the operator ruled them out for
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:55Z (RFD66606-2435) 'the repair. The pants gave 9 hulls in 6 seconds.
+2026-11-01T00:00:48Z (RFD66606-2435) 'the repair. The pants gave 9 hulls in 6 seconds.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:56Z (RFD66606-2435) '
+2026-11-01T00:00:49Z (RFD66606-2435) '
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:57Z (RFD66606-2435) '
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:00:58Z (RFD66606-2435) 'The distance field
+2026-11-01T00:00:50Z (RFD66606-2435) 'The distance field
  # tags: rfd:details-heading
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:00:59Z (RFD66606-2435) 'MuJoCo's mesh compiler builds an octree of signed distances. It finds the closest triangle
+2026-11-01T00:00:51Z (RFD66606-2435) 'MuJoCo's mesh compiler builds an octree of signed distances. It finds the closest triangle
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:00Z (RFD66606-2435) 'through a bounding-volume hierarchy. It takes the sign from the angle-weighted pseudonormal of
+2026-11-01T00:00:52Z (RFD66606-2435) 'through a bounding-volume hierarchy. It takes the sign from the angle-weighted pseudonormal of
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:01Z (RFD66606-2435) 'the closest vertex, edge or face, so it casts no rays and counts no windings. MuJoCo's GPU
+2026-11-01T00:00:53Z (RFD66606-2435) 'the closest vertex, edge or face, so it casts no rays and counts no windings. MuJoCo's GPU
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:02Z (RFD66606-2435) 'port only evaluates that field.
+2026-11-01T00:00:54Z (RFD66606-2435) 'port only evaluates that field.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:03Z (RFD66606-2435) '
+2026-11-01T00:00:55Z (RFD66606-2435) '
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:04Z (RFD66606-2435) 'The proxy uses the unsigned distance, so the sign never decides the surface. A level surface of
+2026-11-01T00:00:56Z (RFD66606-2435) 'The proxy uses the unsigned distance, so the sign never decides the surface. A level surface of
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:05Z (RFD66606-2435) 'it wraps every open edge and cannot cross itself. The distance is an argument that the operator
+2026-11-01T00:00:57Z (RFD66606-2435) 'it wraps every open edge and cannot cross itself. The distance is an argument that the operator
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:06Z (RFD66606-2435) 'picks. The solver's contact distance is 2 mm, about three credit cards stacked.
+2026-11-01T00:00:58Z (RFD66606-2435) 'picks. The solver's contact distance is 2 mm, about three credit cards stacked.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:07Z (RFD66606-2435) '
+2026-11-01T00:00:59Z (RFD66606-2435) '
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:00Z (RFD66606-2435) 'Rigging and carrying back
+ # tags: rfd:details-heading
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:01Z (RFD66606-2435) 'The robust weight transfer guest takes the garment as source and the proxy as target. Its
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:02Z (RFD66606-2435) 'arrays are bone-major. It builds its Laplacian with intrinsic mollification (operator,
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:03Z (RFD66606-2435) '2026-11-01). With two vertices at one position, a plain cotangent Laplacian gave non-finite
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:04Z (RFD66606-2435) 'weights for 480 of 484 outputs on a test grid, and the mollified one stayed finite.
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:05Z (RFD66606-2435) '
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:06Z (RFD66606-2435) 'The cage stage binds the original to a cage and moves it with the fitted proxy. That gives a
+ # tags: rfd:details
+ Text:RFD2435  1 LINE
+ Text:Written
+
+2026-11-01T00:01:07Z (RFD66606-2435) 'smooth field. Copying the nearest vertex's displacement does not.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
@@ -344,92 +344,37 @@
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:09Z (RFD66606-2435) 'Rigging and carrying back
+2026-11-01T00:01:09Z (RFD66606-2435) 'What is not known
  # tags: rfd:details-heading
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:10Z (RFD66606-2435) 'The robust weight transfer guest takes the garment as source and the proxy as target. Its
+2026-11-01T00:01:10Z (RFD66606-2435) '- Whether a level surface at the contact distance keeps the garment's folds.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:11Z (RFD66606-2435) 'arrays are bone-major. It builds its Laplacian with intrinsic mollification (operator,
+2026-11-01T00:01:11Z (RFD66606-2435) '- Whether it is one shell. The first step counts shells on the pants.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:12Z (RFD66606-2435) '2026-11-01). With two vertices at one position, a plain cotangent Laplacian gave non-finite
+2026-11-01T00:01:12Z (RFD66606-2435) '- Whether the solver takes a garment of several shells. That needs the solver build on the
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:13Z (RFD66606-2435) 'weights for 480 of 484 outputs on a test grid, and the mollified one stayed finite.
+2026-11-01T00:01:13Z (RFD66606-2435) '  Windows desk.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:14Z (RFD66606-2435) '
+2026-11-01T00:01:14Z (RFD66606-2435) '- Whether the garments wind consistently. The unsigned field does not need it.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written
 
-2026-11-01T00:01:15Z (RFD66606-2435) 'The cage stage binds the original to a cage and moves it with the fitted proxy. That gives a
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:16Z (RFD66606-2435) 'smooth field. Copying the nearest vertex's displacement does not.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:17Z (RFD66606-2435) '
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:18Z (RFD66606-2435) '
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:19Z (RFD66606-2435) 'What is not known
- # tags: rfd:details-heading
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:20Z (RFD66606-2435) '- Whether a level surface at the contact distance keeps the garment's folds.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:21Z (RFD66606-2435) '- Whether it is one shell. The first step counts shells on the pants.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:22Z (RFD66606-2435) '- Whether the solver takes a garment of several shells. That needs the solver build on the
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:23Z (RFD66606-2435) '  Windows desk.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:24Z (RFD66606-2435) '- Whether the garments wind consistently. The unsigned field does not need it.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:25Z (RFD66606-2435) '- Where the nearest-triangle query runs as a guest, and its speed on a 54000-vertex piece.
- # tags: rfd:details
- Text:RFD2435  1 LINE
- Text:Written
-
-2026-11-01T00:01:26Z (RFD66606-2435) '
+2026-11-01T00:01:15Z (RFD66606-2435) '- Where the nearest-triangle query runs as a guest, and its speed on a 54000-vertex piece.
  # tags: rfd:details
  Text:RFD2435  1 LINE
  Text:Written

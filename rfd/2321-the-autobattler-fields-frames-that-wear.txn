@@ -10,12 +10,12 @@
  Text:Written
 
 2026-10-17T00:00:02Z (RFD66606-2321) 'solids, rolled on survey tables, and it carries wear from round to round
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2321  1 LINE
  Text:Written
 
 2026-10-17T00:00:03Z (RFD66606-2321) 'the SolidCraft autobattler: its game script, its page and its zone version
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2321  1 LINE
  Text:Written
 
@@ -24,162 +24,162 @@
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:05Z (RFD66606-2321) '
- # tags: rfd:hook
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:06Z (RFD66606-2321) 'Each unit was one bare solid with no identity, and every round started from zero.
+2026-10-17T00:00:05Z (RFD66606-2321) 'Each unit was one bare solid with no identity, and every round started from zero.
  # tags: rfd:intrigue
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:07Z (RFD66606-2321) 'Nothing on screen said which unit was hurt or why a round ended.
+2026-10-17T00:00:06Z (RFD66606-2321) 'Nothing on screen said which unit was hurt or why a round ended.
  # tags: rfd:intrigue
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:08Z (RFD66606-2321) '
- # tags: rfd:intrigue
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:09Z (RFD66606-2321) 'Run the game script with `--selftest` and `--rounds=N` to read a sim of the rounds.
+2026-10-17T00:00:07Z (RFD66606-2321) 'Run the game script with `--selftest` and `--rounds=N` to read a sim of the rounds.
  # tags: rfd:exit
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:10Z (RFD66606-2321) '
- # tags: rfd:exit
+2026-10-17T00:00:08Z (RFD66606-2321) 'the autobattler fields Frames that wear
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:11Z (RFD66606-2321) 'the autobattler fields Frames that wear
- # tags: rfd:details-title
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:12Z (RFD66606-2321) 'Each squad in the SolidCraft autobattler fields five Frames. A Frame's body is
+2026-10-17T00:00:09Z (RFD66606-2321) 'Each squad in the SolidCraft autobattler fields five Frames. A Frame's body is
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:13Z (RFD66606-2321) 'put together from solids the guest kernel builds, and its species, presentation
+2026-10-17T00:00:10Z (RFD66606-2321) 'put together from solids the guest kernel builds, and its species, presentation
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:14Z (RFD66606-2321) 'and age come from three d100 rolls on the population survey tables of our
+2026-10-17T00:00:11Z (RFD66606-2321) 'and age come from three d100 rolls on the population survey tables of our
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:15Z (RFD66606-2321) 'appendix-E dataset. A Frame that survives a round stays with wear and leaves
+2026-10-17T00:00:12Z (RFD66606-2321) 'appendix-E dataset. A Frame that survives a round stays with wear and leaves
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:16Z (RFD66606-2321) 'after five rounds, and each side earns scrip per round, as in the Gyre setting.
+2026-10-17T00:00:13Z (RFD66606-2321) 'after five rounds, and each side earns scrip per round, as in the Gyre setting.
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:17Z (RFD66606-2321) 'The operator asked for more Frames, game feel, the Gyre flavour and readability
+2026-10-17T00:00:14Z (RFD66606-2321) 'The operator asked for more Frames, game feel, the Gyre flavour and readability
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:18Z (RFD66606-2321) 'on 2026-10-17.
+2026-10-17T00:00:15Z (RFD66606-2321) 'on 2026-10-17.
  # tags: rfd:decision
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:19Z (RFD66606-2321) '
- # tags: rfd:decision
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:20Z (RFD66606-2321) '- RFD66606-2379, where the desktop builds ship: the release that carries this game.
+2026-10-17T00:00:16Z (RFD66606-2321) '- RFD66606-2379, where the desktop builds ship: the release that carries this game.
  # tags: rfd:related
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:21Z (RFD66606-2321) '- RFD66606-2085, RFD66606-2091 and RFD66606-2120, the Gyre setting (abandoned): the source of
+2026-10-17T00:00:17Z (RFD66606-2321) '- RFD66606-2085, RFD66606-2091 and RFD66606-2120, the Gyre setting (abandoned): the source of
  # tags: rfd:related
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:22Z (RFD66606-2321) '  Frames, wear and scrip.
+2026-10-17T00:00:18Z (RFD66606-2321) '  Frames, wear and scrip.
  # tags: rfd:related
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:23Z (RFD66606-2321) '
- # tags: rfd:related
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:24Z (RFD66606-2321) 'Roles, props and the zone as requested
+2026-10-17T00:00:19Z (RFD66606-2321) 'Roles, props and the zone as requested
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:25Z (RFD66606-2321) 'Each Frame also has one of three roles, melee, range or cyber, that beat each
+2026-10-17T00:00:20Z (RFD66606-2321) 'Each Frame also has one of three roles, melee, range or cyber, that beat each
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:26Z (RFD66606-2321) 'other as in rock, paper, scissors. The operator requested the roles on
+2026-10-17T00:00:21Z (RFD66606-2321) 'other as in rock, paper, scissors. The operator requested the roles on
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:27Z (RFD66606-2321) '2026-10-18. Each role and the plant also need a prop in a mirrored arena:
+2026-10-17T00:00:22Z (RFD66606-2321) '2026-10-18. Each role and the plant also need a prop in a mirrored arena:
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:28Z (RFD66606-2321) 'cover, a relay per side or soil. The operator requested them the same day.
+2026-10-17T00:00:23Z (RFD66606-2321) 'cover, a relay per side or soil. The operator requested them the same day.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:29Z (RFD66606-2321) 'On 2026-10-19 the operator requested that the game also run as a fabric zone
+2026-10-17T00:00:24Z (RFD66606-2321) 'On 2026-10-19 the operator requested that the game also run as a fabric zone
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:30Z (RFD66606-2321) 'that headsets join, with the store kept off every frame and every tick.
+2026-10-17T00:00:25Z (RFD66606-2321) 'that headsets join, with the store kept off every frame and every tick.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:31Z (RFD66606-2321) '
+2026-10-17T00:00:26Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:32Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:33Z (RFD66606-2321) 'Sources
+2026-10-17T00:00:27Z (RFD66606-2321) 'Sources
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:34Z (RFD66606-2321) 'Drafted on 2026-10-17 from the game script as shipped, its self-test logs on
+2026-10-17T00:00:28Z (RFD66606-2321) 'Drafted on 2026-10-17 from the game script as shipped, its self-test logs on
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:35Z (RFD66606-2321) 'each system and the operator's requests of the same day.
+2026-10-17T00:00:29Z (RFD66606-2321) 'each system and the operator's requests of the same day.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:36Z (RFD66606-2321) '
+2026-10-17T00:00:30Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:31Z (RFD66606-2321) 'What a Frame is
+ # tags: rfd:details-heading
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:32Z (RFD66606-2321) 'The guest builds 18 solids while the game loads: 12 whole solids and six parts
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:33Z (RFD66606-2321) '(a head, a limb, a torso, a ring, a cube and a base). A Frame places parts by
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:34Z (RFD66606-2321) 'species and merges them into one mesh, so a Frame is one draw call. The parts
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:35Z (RFD66606-2321) 'become separate pieces only when it breaks. The bounds of the parts set health,
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:36Z (RFD66606-2321) 'damage, speed and reach, as the single solid did before.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
@@ -189,387 +189,387 @@
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:38Z (RFD66606-2321) 'What a Frame is
+2026-10-17T00:00:38Z (RFD66606-2321) '- Species: humanoid 1-50, semi-humanoid 51-88, synthetic 89-94, uplifted
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:39Z (RFD66606-2321) '  animal 95-96, plant 97-98, exotic 99-100.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:40Z (RFD66606-2321) '- Presentation: feminine 1-71, masculine 72-89, other 90-100.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:41Z (RFD66606-2321) '- Age: youth 1-58, juvenile 59-75, adult 76-87, no age 88-99, infant 100.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:42Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:43Z (RFD66606-2321) 'The bands are the raw survey distribution, tables E.8 to E.10. Age scales the
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:44Z (RFD66606-2321) 'body and the head. Each species but humanoid adds one trait: semi-humanoid is
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:45Z (RFD66606-2321) 'fast, uplifted animal is very fast with less health, synthetic is plated and
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:46Z (RFD66606-2321) 'slower, plant regrows and is slow, and exotic is one bare whole solid that hits
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:47Z (RFD66606-2321) 'hard.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:48Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:00:49Z (RFD66606-2321) 'Wear and scrip
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:39Z (RFD66606-2321) 'The guest builds 18 solids while the game loads: 12 whole solids and six parts
+2026-10-17T00:00:50Z (RFD66606-2321) 'A Frame that survives a round gains one point of wear, and its maximum health
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:40Z (RFD66606-2321) '(a head, a limb, a torso, a ring, a cube and a base). A Frame places parts by
+2026-10-17T00:00:51Z (RFD66606-2321) 'drops by a tenth of its base for each point. At five points it leaves. New
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:41Z (RFD66606-2321) 'species and merges them into one mesh, so a Frame is one draw call. The parts
+2026-10-17T00:00:52Z (RFD66606-2321) 'drafts fill the empty places. Each side earns two scrip per round plus one per
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:42Z (RFD66606-2321) 'become separate pieces only when it breaks. The bounds of the parts set health,
+2026-10-17T00:00:53Z (RFD66606-2321) 'Frame left, and the winner three more.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:43Z (RFD66606-2321) 'damage, speed and reach, as the single solid did before.
+2026-10-17T00:00:54Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:44Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:45Z (RFD66606-2321) '- Species: humanoid 1-50, semi-humanoid 51-88, synthetic 89-94, uplifted
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:46Z (RFD66606-2321) '  animal 95-96, plant 97-98, exotic 99-100.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:47Z (RFD66606-2321) '- Presentation: feminine 1-71, masculine 72-89, other 90-100.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:48Z (RFD66606-2321) '- Age: youth 1-58, juvenile 59-75, adult 76-87, no age 88-99, infant 100.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:49Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:50Z (RFD66606-2321) 'The bands are the raw survey distribution, tables E.8 to E.10. Age scales the
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:51Z (RFD66606-2321) 'body and the head. Each species but humanoid adds one trait: semi-humanoid is
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:52Z (RFD66606-2321) 'fast, uplifted animal is very fast with less health, synthetic is plated and
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:53Z (RFD66606-2321) 'slower, plant regrows and is slow, and exotic is one bare whole solid that hits
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:54Z (RFD66606-2321) 'hard.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:55Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:56Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:00:57Z (RFD66606-2321) 'Wear and scrip
+2026-10-17T00:00:55Z (RFD66606-2321) 'Feel and readability
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:58Z (RFD66606-2321) 'A Frame that survives a round gains one point of wear, and its maximum health
+2026-10-17T00:00:56Z (RFD66606-2321) 'A hit flashes the Frame and plays a short generated sound. A Frame that breaks
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:00:59Z (RFD66606-2321) 'drops by a tenth of its base for each point. At five points it leaves. New
+2026-10-17T00:00:57Z (RFD66606-2321) 'throws its parts and shakes the camera. Each Frame has a health bar and a name
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:00Z (RFD66606-2321) 'drafts fill the empty places. Each side earns two scrip per round plus one per
+2026-10-17T00:00:58Z (RFD66606-2321) 'tag, a little of its side's colour shows even in shade, and the end of a round
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:01Z (RFD66606-2321) 'Frame left, and the winner three more.
+2026-10-17T00:00:59Z (RFD66606-2321) 'shows the Frames left and the scrip earned.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:02Z (RFD66606-2321) '
+2026-10-17T00:01:00Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:03Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:04Z (RFD66606-2321) 'Feel and readability
+2026-10-17T00:01:01Z (RFD66606-2321) 'Roles
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:05Z (RFD66606-2321) 'A hit flashes the Frame and plays a short generated sound. A Frame that breaks
+2026-10-17T00:01:02Z (RFD66606-2321) 'Melee beats range, range beats cyber and cyber beats melee. A hit on the role
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:06Z (RFD66606-2321) 'throws its parts and shakes the camera. Each Frame has a health bar and a name
+2026-10-17T00:01:03Z (RFD66606-2321) 'the attacker beats does 1.6 times its damage, a hit on the role that beats it
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:07Z (RFD66606-2321) 'tag, a little of its side's colour shows even in shade, and the end of a round
+2026-10-17T00:01:04Z (RFD66606-2321) 'does 0.6 times, and a hit on the same role does its normal damage. Reach puts
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:08Z (RFD66606-2321) 'shows the Frames left and the scrip earned.
+2026-10-17T00:01:05Z (RFD66606-2321) 'the roles in order: melee hits at the reach of its body, cyber at 3.8 m and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:09Z (RFD66606-2321) '
+2026-10-17T00:01:06Z (RFD66606-2321) 'range at 7 m, so a range Frame shoots a cyber Frame before the cyber Frame can
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:10Z (RFD66606-2321) '
+2026-10-17T00:01:07Z (RFD66606-2321) 'answer, and a melee Frame has to close the gap to a range Frame.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:11Z (RFD66606-2321) 'Roles
+2026-10-17T00:01:08Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:09Z (RFD66606-2321) '- Melee: 1.25 times the health, 1.15 times the speed, an attack every 0.8 s,
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:10Z (RFD66606-2321) '  and a shield in front. Its hits push the target back.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:11Z (RFD66606-2321) '- Range: 0.75 times the health, 0.8 times the damage, 0.9 times the speed, an
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:12Z (RFD66606-2321) '  attack every 1.1 s, and a barrel at the shoulder. Each shot is a small
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:13Z (RFD66606-2321) '  sphere that flies to the target.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:14Z (RFD66606-2321) '- Cyber: 0.95 times the health, 0.7 times the damage, an attack every 1.0 s,
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:15Z (RFD66606-2321) '  and a dish on top. Each hit adds 0.7 s to the target's next attack and shows
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:16Z (RFD66606-2321) '  a ring that spreads over the target.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:17Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:18Z (RFD66606-2321) 'The role's parts come from the same catalog of guest solids and merge into the
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:19Z (RFD66606-2321) 'Frame's one mesh, but they do not count toward its health, damage or reach.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:20Z (RFD66606-2321) 'Each squad's draft holds every role at least once, so every round shows the
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:21Z (RFD66606-2321) 'triangle. The other two places draw a role at random from the round's seed.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:22Z (RFD66606-2321) 'The name tag shows the role before the species.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:23Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:01:24Z (RFD66606-2321) 'What the world gives each role
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:12Z (RFD66606-2321) 'Melee beats range, range beats cyber and cyber beats melee. A hit on the role
+2026-10-17T00:01:25Z (RFD66606-2321) 'Each role and the plant now need something in the arena, so a sim shows
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:13Z (RFD66606-2321) 'the attacker beats does 1.6 times its damage, a hit on the role that beats it
+2026-10-17T00:01:26Z (RFD66606-2321) 'what the world adds and what it takes away. The operator requested these
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:14Z (RFD66606-2321) 'does 0.6 times, and a hit on the same role does its normal damage. Reach puts
+2026-10-17T00:01:27Z (RFD66606-2321) 'props on 2026-10-18, for every role at once so that no role is the only one
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:15Z (RFD66606-2321) 'the roles in order: melee hits at the reach of its body, cyber at 3.8 m and
+2026-10-17T00:01:28Z (RFD66606-2321) 'that depends on the world.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:16Z (RFD66606-2321) 'range at 7 m, so a range Frame shoots a cyber Frame before the cyber Frame can
+2026-10-17T00:01:29Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:17Z (RFD66606-2321) 'answer, and a melee Frame has to close the gap to a range Frame.
+2026-10-17T00:01:30Z (RFD66606-2321) '- Range needs a clear line. Five cover blocks stand in the middle. A range
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:18Z (RFD66606-2321) '
+2026-10-17T00:01:31Z (RFD66606-2321) '  Frame does not shoot through cover. It walks around the block until the
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:19Z (RFD66606-2321) '- Melee: 1.25 times the health, 1.15 times the speed, an attack every 0.8 s,
+2026-10-17T00:01:32Z (RFD66606-2321) '  line is clear. Every Frame walks around cover, not through it.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:20Z (RFD66606-2321) '  and a shield in front. Its hits push the target back.
+2026-10-17T00:01:33Z (RFD66606-2321) '- Cyber needs its relay. Each side has a relay mast, with its reach drawn as
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:21Z (RFD66606-2321) '- Range: 0.75 times the health, 0.8 times the damage, 0.9 times the speed, an
+2026-10-17T00:01:34Z (RFD66606-2321) '  a faint disc on the floor. A cyber Frame jams only within 6.5 m of its own
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:22Z (RFD66606-2321) '  attack every 1.1 s, and a barrel at the shoulder. Each shot is a small
+2026-10-17T00:01:35Z (RFD66606-2321) '  standing relay; away from it, the hit does half damage and no jam. A cyber
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:23Z (RFD66606-2321) '  sphere that flies to the target.
+2026-10-17T00:01:36Z (RFD66606-2321) '  Frame waits at the edge of the disc while friends who are not cyber still
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:24Z (RFD66606-2321) '- Cyber: 0.95 times the health, 0.7 times the damage, an attack every 1.0 s,
+2026-10-17T00:01:37Z (RFD66606-2321) '  fight. Any Frame can attack the enemy relay (160 health). A relay that goes
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:25Z (RFD66606-2321) '  and a dish on top. Each hit adds 0.7 s to the target's next attack and shows
+2026-10-17T00:01:38Z (RFD66606-2321) '  down stays down until the next round.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:26Z (RFD66606-2321) '  a ring that spreads over the target.
+2026-10-17T00:01:39Z (RFD66606-2321) '- Melee needs open ground. Within 0.9 m of cover a melee Frame moves at 0.6
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:27Z (RFD66606-2321) '
+2026-10-17T00:01:40Z (RFD66606-2321) '  times its speed and its hits do not push the target back.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:28Z (RFD66606-2321) 'The role's parts come from the same catalog of guest solids and merge into the
+2026-10-17T00:01:41Z (RFD66606-2321) '- A plant needs soil. It regrows (4 health per second) only on one of four
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:29Z (RFD66606-2321) 'Frame's one mesh, but they do not count toward its health, damage or reach.
+2026-10-17T00:01:42Z (RFD66606-2321) '  soil patches. Below half health it walks to the nearest patch and stays
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:30Z (RFD66606-2321) 'Each squad's draft holds every role at least once, so every round shows the
+2026-10-17T00:01:43Z (RFD66606-2321) '  until it is nearly whole.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:31Z (RFD66606-2321) 'triangle. The other two places draw a role at random from the round's seed.
+2026-10-17T00:01:44Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:32Z (RFD66606-2321) 'The name tag shows the role before the species.
+2026-10-17T00:01:45Z (RFD66606-2321) 'Equity is a property of the layout: each prop has a twin of the same shape at
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:33Z (RFD66606-2321) '
+2026-10-17T00:01:46Z (RFD66606-2321) 'the mirror place across the middle line, side 0's relay is on side 0's half,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:34Z (RFD66606-2321) '
+2026-10-17T00:01:47Z (RFD66606-2321) 'and a tie in which way to walk round cover goes the same way for both
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:35Z (RFD66606-2321) 'What the world gives each role
- # tags: rfd:details-heading
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:36Z (RFD66606-2321) 'Each role and the plant now need something in the arena, so a sim shows
+2026-10-17T00:01:48Z (RFD66606-2321) 'sides. The self-test checks the mirror and fails when one block is moved
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:37Z (RFD66606-2321) 'what the world adds and what it takes away. The operator requested these
+2026-10-17T00:01:49Z (RFD66606-2321) '0.5 m (the control). It also checks that a line through the middle block is
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:38Z (RFD66606-2321) 'props on 2026-10-18, for every role at once so that no role is the only one
+2026-10-17T00:01:50Z (RFD66606-2321) 'blocked and a line past the blocks is clear. Each round prints a `WORLD`
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:39Z (RFD66606-2321) 'that depends on the world.
+2026-10-17T00:01:51Z (RFD66606-2321) 'line: seconds range Frames spent with no clear line, cyber hits with and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:40Z (RFD66606-2321) '
+2026-10-17T00:01:52Z (RFD66606-2321) 'without the relay, seconds melee Frames spent beside cover, seconds plants
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:41Z (RFD66606-2321) '- Range needs a clear line. Five cover blocks stand in the middle. A range
+2026-10-17T00:01:53Z (RFD66606-2321) 'spent on soil, and each relay's health. `--rounds=N` with `--selftest` runs
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:42Z (RFD66606-2321) '  Frame does not shoot through cover. It walks around the block until the
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:43Z (RFD66606-2321) '  line is clear. Every Frame walks around cover, not through it.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:44Z (RFD66606-2321) '- Cyber needs its relay. Each side has a relay mast, with its reach drawn as
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:45Z (RFD66606-2321) '  a faint disc on the floor. A cyber Frame jams only within 6.5 m of its own
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:46Z (RFD66606-2321) '  standing relay; away from it, the hit does half damage and no jam. A cyber
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:47Z (RFD66606-2321) '  Frame waits at the edge of the disc while friends who are not cyber still
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:48Z (RFD66606-2321) '  fight. Any Frame can attack the enemy relay (160 health). A relay that goes
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:49Z (RFD66606-2321) '  down stays down until the next round.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:50Z (RFD66606-2321) '- Melee needs open ground. Within 0.9 m of cover a melee Frame moves at 0.6
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:51Z (RFD66606-2321) '  times its speed and its hits do not push the target back.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:52Z (RFD66606-2321) '- A plant needs soil. It regrows (4 health per second) only on one of four
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:53Z (RFD66606-2321) '  soil patches. Below half health it walks to the nearest patch and stays
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:54Z (RFD66606-2321) '  until it is nearly whole.
+2026-10-17T00:01:54Z (RFD66606-2321) 'N rounds for a longer sim.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
@@ -579,282 +579,282 @@
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:01:56Z (RFD66606-2321) 'Equity is a property of the layout: each prop has a twin of the same shape at
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:57Z (RFD66606-2321) 'the mirror place across the middle line, side 0's relay is on side 0's half,
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:58Z (RFD66606-2321) 'and a tie in which way to walk round cover goes the same way for both
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:01:59Z (RFD66606-2321) 'sides. The self-test checks the mirror and fails when one block is moved
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:00Z (RFD66606-2321) '0.5 m (the control). It also checks that a line through the middle block is
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:01Z (RFD66606-2321) 'blocked and a line past the blocks is clear. Each round prints a `WORLD`
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:02Z (RFD66606-2321) 'line: seconds range Frames spent with no clear line, cyber hits with and
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:03Z (RFD66606-2321) 'without the relay, seconds melee Frames spent beside cover, seconds plants
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:04Z (RFD66606-2321) 'spent on soil, and each relay's health. `--rounds=N` with `--selftest` runs
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:05Z (RFD66606-2321) 'N rounds for a longer sim.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:06Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:07Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:02:08Z (RFD66606-2321) 'Zone server and VR mode
+2026-10-17T00:01:56Z (RFD66606-2321) 'Zone server and VR mode
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:09Z (RFD66606-2321) 'The round is deterministic: one seed gives the same `ROUND`, `DAMAGE` and
+2026-10-17T00:01:57Z (RFD66606-2321) 'The round is deterministic: one seed gives the same `ROUND`, `DAMAGE` and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:10Z (RFD66606-2321) '`WORLD` lines on the web and on the three desktop systems. That makes the game
+2026-10-17T00:01:58Z (RFD66606-2321) '`WORLD` lines on the web and on the three desktop systems. That makes the game
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:11Z (RFD66606-2321) 'a fit for an authoritative zone. The zone server runs the round headless, and
+2026-10-17T00:01:59Z (RFD66606-2321) 'a fit for an authoritative zone. The zone server runs the round headless, and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:12Z (RFD66606-2321) 'every client shows the same round.
+2026-10-17T00:02:00Z (RFD66606-2321) 'every client shows the same round.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:13Z (RFD66606-2321) '
+2026-10-17T00:02:01Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:14Z (RFD66606-2321) 'Three loops run at three rates, and only the last touches the store.
+2026-10-17T00:02:02Z (RFD66606-2321) 'Three loops run at three rates, and only the last touches the store.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:15Z (RFD66606-2321) '
+2026-10-17T00:02:03Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:16Z (RFD66606-2321) '- The headset renders at 144 Hz, a frame every 6.9 ms. It predicts poses
+2026-10-17T00:02:04Z (RFD66606-2321) '- The headset renders at 144 Hz, a frame every 6.9 ms. It predicts poses
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:17Z (RFD66606-2321) '  locally and never waits on the network or on a commit.
+2026-10-17T00:02:05Z (RFD66606-2321) '  locally and never waits on the network or on a commit.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:18Z (RFD66606-2321) '- The zone runs the round at a fixed tick. At the start of a round it sends
+2026-10-17T00:02:06Z (RFD66606-2321) '- The zone runs the round at a fixed tick. At the start of a round it sends
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:19Z (RFD66606-2321) '  the seed and both drafts on a reliable stream. Each tick it sends every
+2026-10-17T00:02:07Z (RFD66606-2321) '  the seed and both drafts on a reliable stream. Each tick it sends every
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:20Z (RFD66606-2321) '  Frame's place and health as datagrams, where the next tick replaces a lost
+2026-10-17T00:02:08Z (RFD66606-2321) '  Frame's place and health as datagrams, where the next tick replaces a lost
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:21Z (RFD66606-2321) '  one, and hits, breaks and the round's end on the reliable stream. The zone
+2026-10-17T00:02:09Z (RFD66606-2321) '  one, and hits, breaks and the round's end on the reliable stream. The zone
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:22Z (RFD66606-2321) '  and transport are those of &{repo("interactor-fabric-zone")}.
+2026-10-17T00:02:10Z (RFD66606-2321) '  and transport are those of &{repo("interactor-fabric-zone")}.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:23Z (RFD66606-2321) '- After a tick, the zone hands its SQLite journal image to a save thread if
+2026-10-17T00:02:11Z (RFD66606-2321) '- After a tick, the zone hands its SQLite journal image to a save thread if
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:24Z (RFD66606-2321) '  it changed. The save thread writes the image to SQLite on FoundationDB
+2026-10-17T00:02:12Z (RFD66606-2321) '  it changed. The save thread writes the image to SQLite on FoundationDB
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:25Z (RFD66606-2321) '  (&{repo("datasource-store")}) and keeps only the newest one: a save that is
+2026-10-17T00:02:13Z (RFD66606-2321) '  (&{repo("datasource-store")}) and keeps only the newest one: a save that is
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:26Z (RFD66606-2321) '  still in flight when the next is ready is replaced, not queued. A slow
+2026-10-17T00:02:14Z (RFD66606-2321) '  still in flight when the next is ready is replaced, not queued. A slow
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:27Z (RFD66606-2321) '  commit makes the stored image older. It never holds a tick or a frame.
+2026-10-17T00:02:15Z (RFD66606-2321) '  commit makes the stored image older. It never holds a tick or a frame.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:28Z (RFD66606-2321) '
+2026-10-17T00:02:16Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:29Z (RFD66606-2321) 'The store's place in the third loop comes from a measurement. On 2026-10-19,
+2026-10-17T00:02:17Z (RFD66606-2321) 'The store's place in the third loop comes from a measurement. On 2026-10-19,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:30Z (RFD66606-2321) 'sixteen players committing one row 20 times a second waited 5.5 to 6.0 ms
+2026-10-17T00:02:18Z (RFD66606-2321) 'sixteen players committing one row 20 times a second waited 5.5 to 6.0 ms
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:31Z (RFD66606-2321) 'for the median commit on the Windows desk's FoundationDB under WSL, and over
+2026-10-17T00:02:19Z (RFD66606-2321) 'for the median commit on the Windows desk's FoundationDB under WSL, and over
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:32Z (RFD66606-2321) 'one player-day the worst waits reached 3.3 to 4.7 s. A typical commit is
+2026-10-17T00:02:20Z (RFD66606-2321) 'one player-day the worst waits reached 3.3 to 4.7 s. A typical commit is
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:33Z (RFD66606-2321) 'already a whole frame at 144 Hz, and the worst is hundreds of frames.
+2026-10-17T00:02:21Z (RFD66606-2321) 'already a whole frame at 144 Hz, and the worst is hundreds of frames.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:34Z (RFD66606-2321) '
+2026-10-17T00:02:22Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:35Z (RFD66606-2321) 'The zone version lives in a new interactor repository, named
+2026-10-17T00:02:23Z (RFD66606-2321) 'The zone version lives in a new interactor repository, named
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:36Z (RFD66606-2321) 'interactor-solidcraft-zone and placed in the goal manifest when it is made. The
+2026-10-17T00:02:24Z (RFD66606-2321) 'interactor-solidcraft-zone and placed in the goal manifest when it is made. The
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:37Z (RFD66606-2321) 'game's Godot project moves there as the one source, with a zone-server mode
+2026-10-17T00:02:25Z (RFD66606-2321) 'game's Godot project moves there as the one source, with a zone-server mode
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:38Z (RFD66606-2321) 'and a headset mode. The Space keeps the web build and the downloads, built
+2026-10-17T00:02:26Z (RFD66606-2321) 'and a headset mode. The Space keeps the web build and the downloads, built
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:39Z (RFD66606-2321) 'from that repository. The guest kernel and the zone repository stay as they
+2026-10-17T00:02:27Z (RFD66606-2321) 'from that repository. The guest kernel and the zone repository stay as they
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:40Z (RFD66606-2321) 'are and are used as dependencies.
+2026-10-17T00:02:28Z (RFD66606-2321) 'are and are used as dependencies.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:41Z (RFD66606-2321) '
+2026-10-17T00:02:29Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:42Z (RFD66606-2321) 'Each step has a check, and each check has a control.
+2026-10-17T00:02:30Z (RFD66606-2321) 'Each step has a check, and each check has a control.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:43Z (RFD66606-2321) '
+2026-10-17T00:02:31Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:44Z (RFD66606-2321) '- The Space's web build prints the same lines after the move as before it.
+2026-10-17T00:02:32Z (RFD66606-2321) '- The Space's web build prints the same lines after the move as before it.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:45Z (RFD66606-2321) '- Two headless clients beside a zone server print the server's `ROUND`,
+2026-10-17T00:02:33Z (RFD66606-2321) '- Two headless clients beside a zone server print the server's `ROUND`,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:46Z (RFD66606-2321) '  `DAMAGE` and `WORLD` lines. A client given another seed must differ.
+2026-10-17T00:02:34Z (RFD66606-2321) '  `DAMAGE` and `WORLD` lines. A client given another seed must differ.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:47Z (RFD66606-2321) '- The headset mode runs under the XR Pilot desktop runtime, which an agent
+2026-10-17T00:02:35Z (RFD66606-2321) '- The headset mode runs under the XR Pilot desktop runtime, which an agent
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:48Z (RFD66606-2321) '  drives with no person in a headset.
+2026-10-17T00:02:36Z (RFD66606-2321) '  drives with no person in a headset.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:49Z (RFD66606-2321) '- The save thread reports the age of the newest stored image over a
+2026-10-17T00:02:37Z (RFD66606-2321) '- The save thread reports the age of the newest stored image over a
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:50Z (RFD66606-2321) '  player-day: its worst and how often it passes 1, 2 and 5 s. The planted
+2026-10-17T00:02:38Z (RFD66606-2321) '  player-day: its worst and how often it passes 1, 2 and 5 s. The planted
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:51Z (RFD66606-2321) '  slow commit must raise it.
+2026-10-17T00:02:39Z (RFD66606-2321) '  slow commit must raise it.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:40Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:41Z (RFD66606-2321) 'The zone simulates at 60 Hz and sends rows under RFD66606-2326's byte budget.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:42Z (RFD66606-2321) 'Two choices are open: whether the headset client is the V-Sekai client or a
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:43Z (RFD66606-2321) 'scene in the game's own project, and which host runs FoundationDB in
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:44Z (RFD66606-2321) 'production. A run on a plain Linux runner, pending on 2026-10-19, says
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:45Z (RFD66606-2321) 'whether the multi-second waits come from the WSL host.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:46Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:47Z (RFD66606-2321) 'The autobattler is the network test bench
+ # tags: rfd:details-heading
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:48Z (RFD66606-2321) 'RFD66606-2326's numbers so far come from walkers generated for the test, whose
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:49Z (RFD66606-2321) 'rows never repeat. The autobattler gives real traffic with an answer key.
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:50Z (RFD66606-2321) 'One seed fixes every round, so the server's replay of a seed is the truth
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:02:51Z (RFD66606-2321) 'for every row a client receives, at every tick.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
@@ -864,227 +864,227 @@
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:53Z (RFD66606-2321) 'The zone simulates at 60 Hz and sends rows under RFD66606-2326's byte budget.
+2026-10-17T00:02:53Z (RFD66606-2321) '- Scale. One zone runs many arenas side by side, from one to a few hundred,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:54Z (RFD66606-2321) 'Two choices are open: whether the headset client is the V-Sekai client or a
+2026-10-17T00:02:54Z (RFD66606-2321) '  each a round of ten Frames on its own seed, with headless players placed
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:55Z (RFD66606-2321) 'scene in the game's own project, and which host runs FoundationDB in
+2026-10-17T00:02:55Z (RFD66606-2321) '  so their view holds from tens to thousands of Frames. Arenas start a few
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:56Z (RFD66606-2321) 'production. A run on a plain Linux runner, pending on 2026-10-19, says
+2026-10-17T00:02:56Z (RFD66606-2321) '  ticks apart, so hits, breaks and round ends spread over time.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:57Z (RFD66606-2321) 'whether the multi-second waits come from the WSL host.
+2026-10-17T00:02:57Z (RFD66606-2321) '- Classes. The zone carries what the game carries, not one kind of mover:
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:58Z (RFD66606-2321) '
+2026-10-17T00:02:58Z (RFD66606-2321) '  Frames on scripted moves, players' tracked heads and hands, props at
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:02:59Z (RFD66606-2321) '
+2026-10-17T00:02:59Z (RFD66606-2321) '  rest that change only when touched, and crowds of pedestrians who stop,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:00Z (RFD66606-2321) 'The autobattler is the network test bench
- # tags: rfd:details-heading
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:01Z (RFD66606-2321) 'RFD66606-2326's numbers so far come from walkers generated for the test, whose
+2026-10-17T00:03:00Z (RFD66606-2321) '  start and walk in pairs. Headless
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:02Z (RFD66606-2321) 'rows never repeat. The autobattler gives real traffic with an answer key.
+2026-10-17T00:03:01Z (RFD66606-2321) '  players replay recorded head and hand tracks, since tracked motion has
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:03Z (RFD66606-2321) 'One seed fixes every round, so the server's replay of a seed is the truth
+2026-10-17T00:03:02Z (RFD66606-2321) '  sensor jitter a script lacks. Every report is split by class.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:04Z (RFD66606-2321) 'for every row a client receives, at every tick.
+2026-10-17T00:03:03Z (RFD66606-2321) '- Scenes. Crowds come as the scenes people make: a shopping street, a
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:05Z (RFD66606-2321) '
+2026-10-17T00:03:04Z (RFD66606-2321) '  standing concert, a seated stadium with a wave, a queue, a scramble
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:06Z (RFD66606-2321) '- Scale. One zone runs many arenas side by side, from one to a few hundred,
+2026-10-17T00:03:05Z (RFD66606-2321) '  crossing, a dance floor, a parade, a festival plaza, a theatre, a picnic
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:07Z (RFD66606-2321) '  each a round of ten Frames on its own seed, with headless players placed
+2026-10-17T00:03:06Z (RFD66606-2321) '  lawn, an exit through one door, and a ring of players talking. Each
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:08Z (RFD66606-2321) '  so their view holds from tens to thousands of Frames. Arenas start a few
+2026-10-17T00:03:07Z (RFD66606-2321) '  scene's density and pace come from footage counted the way the
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:09Z (RFD66606-2321) '  ticks apart, so hits, breaks and round ends spread over time.
+2026-10-17T00:03:08Z (RFD66606-2321) '  blue-hour street walk was, and in social scenes most of the crowd is
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:10Z (RFD66606-2321) '- Classes. The zone carries what the game carries, not one kind of mover:
+2026-10-17T00:03:09Z (RFD66606-2321) '  tracked players.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:11Z (RFD66606-2321) '  Frames on scripted moves, players' tracked heads and hands, props at
+2026-10-17T00:03:10Z (RFD66606-2321) '- Oracle. Each headless client decodes its rows, moves Frames along their
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:12Z (RFD66606-2321) '  rest that change only when touched, and crowds of pedestrians who stop,
+2026-10-17T00:03:11Z (RFD66606-2321) '  sent velocity between rows, and compares what it holds with the server's
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:13Z (RFD66606-2321) '  start and walk in pairs. Headless
+2026-10-17T00:03:12Z (RFD66606-2321) '  replay of the same seeds. It reports the worst position error and how
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:14Z (RFD66606-2321) '  players replay recorded head and hand tracks, since tracked motion has
+2026-10-17T00:03:13Z (RFD66606-2321) '  long a Frame stayed wrong. A client must never hold a Frame the replay
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:15Z (RFD66606-2321) '  sensor jitter a script lacks. Every report is split by class.
+2026-10-17T00:03:14Z (RFD66606-2321) '  says has left, or a value that was never sent.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:16Z (RFD66606-2321) '- Scenes. Crowds come as the scenes people make: a shopping street, a
+2026-10-17T00:03:15Z (RFD66606-2321) '- Link. Between server and clients sits a relay that drops and delays
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:17Z (RFD66606-2321) '  standing concert, a seated stadium with a wave, a queue, a scramble
+2026-10-17T00:03:16Z (RFD66606-2321) '  datagrams: no loss, 1% and 5%, at 50, 100 and 200 ms of round trip.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:18Z (RFD66606-2321) '  crossing, a dance floor, a parade, a festival plaza, a theatre, a picnic
+2026-10-17T00:03:17Z (RFD66606-2321) '- Record. The relay writes every message it passes. The recordings are
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:19Z (RFD66606-2321) '  lawn, an exit through one door, and a ring of players talking. Each
+2026-10-17T00:03:18Z (RFD66606-2321) '  the corpus for the static zstd dictionary: dictionaries built from them
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:20Z (RFD66606-2321) '  scene's density and pace come from footage counted the way the
+2026-10-17T00:03:19Z (RFD66606-2321) '  at 1, 8, 64, 256 and 1024 MB are measured on held-out recordings in
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:21Z (RFD66606-2321) '  blue-hour street walk was, and in social scenes most of the crowd is
+2026-10-17T00:03:20Z (RFD66606-2321) '  bytes per row, and the size stops growing where the gain flattens.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:22Z (RFD66606-2321) '  tracked players.
+2026-10-17T00:03:21Z (RFD66606-2321) '- Report. Bytes per player per second against the budget, bytes per row
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:23Z (RFD66606-2321) '- Oracle. Each headless client decodes its rows, moves Frames along their
+2026-10-17T00:03:22Z (RFD66606-2321) '  for plain zstd, for patch-from against the last row the client
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:24Z (RFD66606-2321) '  sent velocity between rows, and compares what it holds with the server's
+2026-10-17T00:03:23Z (RFD66606-2321) '  acknowledged, and for each dictionary size, and the oracle's errors.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:25Z (RFD66606-2321) '  replay of the same seeds. It reports the worst position error and how
+2026-10-17T00:03:24Z (RFD66606-2321) '  Saves go through the store's latest-wins thread and report save age.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:26Z (RFD66606-2321) '  long a Frame stayed wrong. A client must never hold a Frame the replay
+2026-10-17T00:03:25Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:27Z (RFD66606-2321) '  says has left, or a value that was never sent.
+2026-10-17T00:03:26Z (RFD66606-2321) 'On rows generated for the test, sent as the gap from the client's own
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:28Z (RFD66606-2321) '- Link. Between server and clients sits a relay that drops and delays
+2026-10-17T00:03:27Z (RFD66606-2321) 'prediction, props at rest cost 0.31 bytes a row, pedestrians 2.16 and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:29Z (RFD66606-2321) '  datagrams: no loss, 1% and 5%, at 50, 100 and 200 ms of round trip.
+2026-10-17T00:03:28Z (RFD66606-2321) 'tracked points 3.96. Walkers that never stop cost 0.47, which flatters
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:30Z (RFD66606-2321) '- Record. The relay writes every message it passes. The recordings are
+2026-10-17T00:03:29Z (RFD66606-2321) 'prediction, so the bench uses pedestrians and never zombies. Scripted
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:31Z (RFD66606-2321) '  the corpus for the static zstd dictionary: dictionaries built from them
+2026-10-17T00:03:30Z (RFD66606-2321) 'scenes flatter it the same way: a scripted queue, wave or crossing cost
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:32Z (RFD66606-2321) '  at 1, 8, 64, 256 and 1024 MB are measured on held-out recordings in
+2026-10-17T00:03:31Z (RFD66606-2321) '0.31 to 0.34, the price of a prop at rest, and a scripted concert 2.04.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:33Z (RFD66606-2321) '  bytes per row, and the size stops growing where the gain flattens.
+2026-10-17T00:03:32Z (RFD66606-2321) 'Scenes are replayed from recorded motion where a licence allows, and a
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:34Z (RFD66606-2321) '- Report. Bytes per player per second against the budget, bytes per row
+2026-10-17T00:03:33Z (RFD66606-2321) 'scene full of players costs what their tracked heads and hands cost. The budget
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:35Z (RFD66606-2321) '  for plain zstd, for patch-from against the last row the client
+2026-10-17T00:03:34Z (RFD66606-2321) 'gives players near each other the first share, and the bench sets the split
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:36Z (RFD66606-2321) '  acknowledged, and for each dictionary size, and the oracle's errors.
+2026-10-17T00:03:35Z (RFD66606-2321) 'from recorded traffic.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:37Z (RFD66606-2321) '  Saves go through the store's latest-wins thread and report save age.
+2026-10-17T00:03:36Z (RFD66606-2321) '
+ # tags: rfd:details
+ Text:RFD2321  1 LINE
+ Text:Written
+
+2026-10-17T00:03:37Z (RFD66606-2321) 'Each measurement has a planted defect that must show in the report:
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
@@ -1094,322 +1094,242 @@
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:39Z (RFD66606-2321) 'On rows generated for the test, sent as the gap from the client's own
+2026-10-17T00:03:39Z (RFD66606-2321) '- the budget ignored, which must push bytes per second over it;
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:40Z (RFD66606-2321) 'prediction, props at rest cost 0.31 bytes a row, pedestrians 2.16 and
+2026-10-17T00:03:40Z (RFD66606-2321) '- a client holding another dictionary version, which must fail to
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:41Z (RFD66606-2321) 'tracked points 3.96. Walkers that never stop cost 0.47, which flatters
+2026-10-17T00:03:41Z (RFD66606-2321) '  decode and never decode wrong values;
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:42Z (RFD66606-2321) 'prediction, so the bench uses pedestrians and never zombies. Scripted
+2026-10-17T00:03:42Z (RFD66606-2321) '- the clock counter per row, which must make a client order rows wrong
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:43Z (RFD66606-2321) 'scenes flatter it the same way: a scripted queue, wave or crossing cost
+2026-10-17T00:03:43Z (RFD66606-2321) '  past 256 rows in a tick;
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:44Z (RFD66606-2321) '0.31 to 0.34, the price of a prop at rest, and a scripted concert 2.04.
+2026-10-17T00:03:44Z (RFD66606-2321) '- the velocity scale read per tick, which must raise position error;
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:45Z (RFD66606-2321) 'Scenes are replayed from recorded motion where a licence allows, and a
+2026-10-17T00:03:45Z (RFD66606-2321) '- a dropped leave message, which must leave a Frame the replay has
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:46Z (RFD66606-2321) 'scene full of players costs what their tracked heads and hands cost. The budget
+2026-10-17T00:03:46Z (RFD66606-2321) '  removed;
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:47Z (RFD66606-2321) 'gives players near each other the first share, and the bench sets the split
+2026-10-17T00:03:47Z (RFD66606-2321) '- the store's slow commit, which must raise save age and nothing else.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:48Z (RFD66606-2321) 'from recorded traffic.
+2026-10-17T00:03:48Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:03:49Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:50Z (RFD66606-2321) 'Each measurement has a planted defect that must show in the report:
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:51Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:52Z (RFD66606-2321) '- the budget ignored, which must push bytes per second over it;
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:53Z (RFD66606-2321) '- a client holding another dictionary version, which must fail to
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:54Z (RFD66606-2321) '  decode and never decode wrong values;
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:55Z (RFD66606-2321) '- the clock counter per row, which must make a client order rows wrong
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:56Z (RFD66606-2321) '  past 256 rows in a tick;
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:57Z (RFD66606-2321) '- the velocity scale read per tick, which must raise position error;
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:58Z (RFD66606-2321) '- a dropped leave message, which must leave a Frame the replay has
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:03:59Z (RFD66606-2321) '  removed;
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:00Z (RFD66606-2321) '- the store's slow commit, which must raise save age and nothing else.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:01Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:02Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:03Z (RFD66606-2321) 'What was measured
+2026-10-17T00:03:49Z (RFD66606-2321) 'What was measured
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:04Z (RFD66606-2321) 'The change is in the game script only, so the guest and every translation hash
+2026-10-17T00:03:50Z (RFD66606-2321) 'The change is in the game script only, so the guest and every translation hash
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:05Z (RFD66606-2321) 'stayed valid. On 2026-10-17 the web build and the macOS, Windows and Linux zips
+2026-10-17T00:03:51Z (RFD66606-2321) 'stayed valid. On 2026-10-17 the web build and the macOS, Windows and Linux zips
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:06Z (RFD66606-2321) 'each started translated, built 18 solids and printed `RESULT PASS`. The script
+2026-10-17T00:03:52Z (RFD66606-2321) 'each started translated, built 18 solids and printed `RESULT PASS`. The script
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:07Z (RFD66606-2321) 'cost per physics frame rose from about 0.23 ms to about 0.3 ms on the Mac. The
+2026-10-17T00:03:53Z (RFD66606-2321) 'cost per physics frame rose from about 0.23 ms to about 0.3 ms on the Mac. The
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:08Z (RFD66606-2321) 'web game's slowest frame in the first round read 139 to 145 ms before and
+2026-10-17T00:03:54Z (RFD66606-2321) 'web game's slowest frame in the first round read 139 to 145 ms before and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:09Z (RFD66606-2321) 'after. Native frame times on the Mac were not compared: other jobs on the same
+2026-10-17T00:03:55Z (RFD66606-2321) 'after. Native frame times on the Mac were not compared: other jobs on the same
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:10Z (RFD66606-2321) 'machine made them vary more than the change.
+2026-10-17T00:03:56Z (RFD66606-2321) 'machine made them vary more than the change.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:11Z (RFD66606-2321) '
+2026-10-17T00:03:57Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:12Z (RFD66606-2321) 'On 2026-10-18 the roles changed the game script only, again. The self-test
+2026-10-17T00:03:58Z (RFD66606-2321) 'On 2026-10-18 the roles changed the game script only, again. The self-test
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:13Z (RFD66606-2321) 'first checks the triangle: every role beats exactly one other and loses to
+2026-10-17T00:03:59Z (RFD66606-2321) 'first checks the triangle: every role beats exactly one other and loses to
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:14Z (RFD66606-2321) 'exactly one. A control table in which melee loses to both others must fail
+2026-10-17T00:04:00Z (RFD66606-2321) 'exactly one. A control table in which melee loses to both others must fail
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:15Z (RFD66606-2321) 'the same check, and it does. The macOS, Windows and Linux zips and the web
+2026-10-17T00:04:01Z (RFD66606-2321) 'the same check, and it does. The macOS, Windows and Linux zips and the web
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:16Z (RFD66606-2321) 'build in a desktop browser then printed the same two rounds, with the same
+2026-10-17T00:04:02Z (RFD66606-2321) 'build in a desktop browser then printed the same two rounds, with the same
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:17Z (RFD66606-2321) 'winners and the same damage per pair of roles, and `RESULT PASS`. In round 1,
+2026-10-17T00:04:03Z (RFD66606-2321) 'winners and the same damage per pair of roles, and `RESULT PASS`. In round 1,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:18Z (RFD66606-2321) 'range did 303 damage to cyber and cyber did 57 to range. The web game's
+2026-10-17T00:04:04Z (RFD66606-2321) 'range did 303 damage to cyber and cyber did 57 to range. The web game's
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:19Z (RFD66606-2321) 'slowest frame in round 1 read 150 ms with the roles and 134 ms without them,
+2026-10-17T00:04:05Z (RFD66606-2321) 'slowest frame in round 1 read 150 ms with the roles and 134 ms without them,
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:20Z (RFD66606-2321) 'one run each in the same browser, so the difference is not measured past
+2026-10-17T00:04:06Z (RFD66606-2321) 'one run each in the same browser, so the difference is not measured past
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:21Z (RFD66606-2321) 'noise. The release kept its tag, because the guest did not change. Its zips
+2026-10-17T00:04:07Z (RFD66606-2321) 'noise. The release kept its tag, because the guest did not change. Its zips
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:22Z (RFD66606-2321) 'and SHA256SUMS were replaced.
+2026-10-17T00:04:08Z (RFD66606-2321) 'and SHA256SUMS were replaced.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:23Z (RFD66606-2321) '
+2026-10-17T00:04:09Z (RFD66606-2321) '
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:24Z (RFD66606-2321) 'On 2026-10-18 the world props changed the game script only, a third time.
+2026-10-17T00:04:10Z (RFD66606-2321) 'On 2026-10-18 the world props changed the game script only, a third time.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:25Z (RFD66606-2321) 'The self-test printed `WORLD mirror=true control=false line_through=false
+2026-10-17T00:04:11Z (RFD66606-2321) 'The self-test printed `WORLD mirror=true control=false line_through=false
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:26Z (RFD66606-2321) 'line_beside=true` on each system. The macOS, Windows and Linux zips and the
+2026-10-17T00:04:12Z (RFD66606-2321) 'line_beside=true` on each system. The macOS, Windows and Linux zips and the
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:27Z (RFD66606-2321) 'web build in a desktop browser printed the same `ROUND`, `DAMAGE` and
+2026-10-17T00:04:13Z (RFD66606-2321) 'web build in a desktop browser printed the same `ROUND`, `DAMAGE` and
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:28Z (RFD66606-2321) '`WORLD` lines for the four rounds they share. The web run went on to nine
+2026-10-17T00:04:14Z (RFD66606-2321) '`WORLD` lines for the four rounds they share. The web run went on to nine
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:29Z (RFD66606-2321) 'rounds and the macOS run to twelve. Over the twelve rounds each side won
+2026-10-17T00:04:15Z (RFD66606-2321) 'rounds and the macOS run to twelve. Over the twelve rounds each side won
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:30Z (RFD66606-2321) 'six. Per round, range Frames spent 0.3 to 3.0 s with no clear line, melee
+2026-10-17T00:04:16Z (RFD66606-2321) 'six. Per round, range Frames spent 0.3 to 3.0 s with no clear line, melee
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:31Z (RFD66606-2321) 'Frames spent 1.2 to 9.0 s beside cover, and cyber Frames landed 1 to 17 hits
+2026-10-17T00:04:17Z (RFD66606-2321) 'Frames spent 1.2 to 9.0 s beside cover, and cyber Frames landed 1 to 17 hits
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:32Z (RFD66606-2321) 'with the relay and 0 to 13 without it. Plants stood on soil in four of the
+2026-10-17T00:04:18Z (RFD66606-2321) 'with the relay and 0 to 13 without it. Plants stood on soil in four of the
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:33Z (RFD66606-2321) 'twelve rounds, for up to 8.0 s. Plants are 2 in 100 of the species rolls, so
+2026-10-17T00:04:19Z (RFD66606-2321) 'twelve rounds, for up to 8.0 s. Plants are 2 in 100 of the species rolls, so
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:34Z (RFD66606-2321) 'a sim that wants to read the soil rule needs many rounds. No relay went down
+2026-10-17T00:04:20Z (RFD66606-2321) 'a sim that wants to read the soil rule needs many rounds. No relay went down
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:35Z (RFD66606-2321) 'in the twelve rounds (the lowest read 103 of 160). The first version moved a blocked range
+2026-10-17T00:04:21Z (RFD66606-2321) 'in the twelve rounds (the lowest read 103 of 160). The first version moved a blocked range
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:36Z (RFD66606-2321) 'Frame sideways only, and in one round two range Frames stayed blocked for
+2026-10-17T00:04:22Z (RFD66606-2321) 'Frame sideways only, and in one round two range Frames stayed blocked for
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:37Z (RFD66606-2321) '34 s until the 45 s limit ended it. A blocked range Frame now walks around
+2026-10-17T00:04:23Z (RFD66606-2321) '34 s until the 45 s limit ended it. A blocked range Frame now walks around
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:38Z (RFD66606-2321) 'the block, and no round of the twelve reached the limit.
+2026-10-17T00:04:24Z (RFD66606-2321) 'the block, and no round of the twelve reached the limit.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:39Z (RFD66606-2321) '
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:40Z (RFD66606-2321) 'The problem
+2026-10-17T00:04:25Z (RFD66606-2321) 'The problem
  # tags: rfd:details-heading
  Text:RFD2321  1 LINE
  Text:Written
 
-2026-10-17T00:04:41Z (RFD66606-2321) 'Each unit was one solid: a box, a cylinder, a sphere or a torus.
- # tags: rfd:details
- Text:RFD2321  1 LINE
- Text:Written
-
-2026-10-17T00:04:42Z (RFD66606-2321) '
+2026-10-17T00:04:26Z (RFD66606-2321) 'Each unit was one solid: a box, a cylinder, a sphere or a torus.
  # tags: rfd:details
  Text:RFD2321  1 LINE
  Text:Written

@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2361) 'which rule reads which section
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2361  1 LINE
  Text:Written
 
 2026-10-31T00:00:02Z (RFD66606-2361) 'the HTML comment under a section heading, in every RFD README and DETAILS file.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2361  1 LINE
  Text:Written
 
@@ -19,167 +19,127 @@
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2361) '
- # tags: rfd:hook
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2361) 'A `DETAILS.md` carries a measurement beside the reasoning that motivates it, so neither
+2026-10-31T00:00:04Z (RFD66606-2361) 'A `DETAILS.md` carries a measurement beside the reasoning that motivates it, so neither
  # tags: rfd:intrigue
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2361) 'kind of writing owns a whole file.
+2026-10-31T00:00:05Z (RFD66606-2361) 'kind of writing owns a whole file.
  # tags: rfd:intrigue
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2361) '
- # tags: rfd:intrigue
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2361) 'Put `<!-- gate: tropes -->` or `<!-- gate: ste100 -->` under each heading.
+2026-10-31T00:00:06Z (RFD66606-2361) 'Put `<!-- gate: tropes -->` or `<!-- gate: ste100 -->` under each heading.
  # tags: rfd:exit
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2361) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2361) 'A section names its own gate
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2361) 'A section names its own gate
- # tags: rfd:details-title
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2361) '**A section names its own gate, in an HTML comment under its heading.** These
+2026-10-31T00:00:08Z (RFD66606-2361) '**A section names its own gate, in an HTML comment under its heading.** These
  # tags: rfd:decision
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2361) 'gates read a CommonMark AST, so the mark is a block token they see already.
+2026-10-31T00:00:09Z (RFD66606-2361) 'gates read a CommonMark AST, so the mark is a block token they see already.
  # tags: rfd:decision
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2361) '
+2026-10-31T00:00:10Z (RFD66606-2361) '
  # tags: rfd:decision
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2361) '**An unmarked section fails.** A silent skip reads exactly like a pass.
+2026-10-31T00:00:11Z (RFD66606-2361) '**An unmarked section fails.** A silent skip reads exactly like a pass.
  # tags: rfd:decision
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2361) '
- # tags: rfd:decision
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2361) 'RFD66606-1125 splits the two gates by kind of writing. RFD66606-2362 measures the
+2026-10-31T00:00:12Z (RFD66606-2361) 'RFD66606-1125 splits the two gates by kind of writing. RFD66606-2362 measures the
  # tags: rfd:related
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2361) 'AI-trope table. RFD66606-1124 gives the reason these gates read an AST.
+2026-10-31T00:00:13Z (RFD66606-2361) 'AI-trope table. RFD66606-1124 gives the reason these gates read an AST.
  # tags: rfd:related
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2361) '
- # tags: rfd:related
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2361) 'How a section names its gate
+2026-10-31T00:00:14Z (RFD66606-2361) 'How a section names its gate
  # tags: rfd:details-heading
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2361) '<!-- gate: tropes -->
+2026-10-31T00:00:15Z (RFD66606-2361) '<!-- gate: tropes -->
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2361) '
+2026-10-31T00:00:16Z (RFD66606-2361) '
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2361) 'Every section below names its gate in an HTML comment under its heading. That
+2026-10-31T00:00:17Z (RFD66606-2361) 'Every section below names its gate in an HTML comment under its heading. That
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2361) 'mark is the mechanism this RFD adds, so this file is also its first example.
+2026-10-31T00:00:18Z (RFD66606-2361) 'mark is the mechanism this RFD adds, so this file is also its first example.
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2361) '
+2026-10-31T00:00:19Z (RFD66606-2361) '
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2361) '
- # tags: rfd:details
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2361) 'Why the mark is per section
+2026-10-31T00:00:20Z (RFD66606-2361) 'Why the mark is per section
  # tags: rfd:details-heading
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2361) '<!-- gate: tropes -->
+2026-10-31T00:00:21Z (RFD66606-2361) '<!-- gate: tropes -->
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2361) '
+2026-10-31T00:00:22Z (RFD66606-2361) '
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2361) 'The per-section mark follows from a fact about this repository rather than a
+2026-10-31T00:00:23Z (RFD66606-2361) 'The per-section mark follows from a fact about this repository rather than a
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2361) 'preference. A `DETAILS.md` is where a measurement lands, and it is also where
+2026-10-31T00:00:24Z (RFD66606-2361) 'preference. A `DETAILS.md` is where a measurement lands, and it is also where
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2361) 'the reasoning that motivates the measurement lands. Those are two kinds of
+2026-10-31T00:00:25Z (RFD66606-2361) 'the reasoning that motivates the measurement lands. Those are two kinds of
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2361) 'writing in one file, and any file-level rule has to be wrong about one of them.
+2026-10-31T00:00:26Z (RFD66606-2361) 'writing in one file, and any file-level rule has to be wrong about one of them.
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2361) '
- # tags: rfd:details
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2361) 'The problem
+2026-10-31T00:00:27Z (RFD66606-2361) 'The problem
  # tags: rfd:details-heading
  Text:RFD2361  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2361) 'Any file-level rule has to be wrong about one of the two kinds of writing.
- # tags: rfd:details
- Text:RFD2361  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2361) '
+2026-10-31T00:00:28Z (RFD66606-2361) 'Any file-level rule has to be wrong about one of the two kinds of writing.
  # tags: rfd:details
  Text:RFD2361  1 LINE
  Text:Written

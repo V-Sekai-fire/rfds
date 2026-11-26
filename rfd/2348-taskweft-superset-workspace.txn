@@ -10,7 +10,7 @@
  Text:Written
 
 2026-10-30T00:00:02Z (RFD66606-2348) 'opts in
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2348  1 LINE
  Text:Written
 
@@ -20,7 +20,7 @@
  Text:Written
 
 2026-10-30T00:00:04Z (RFD66606-2348) '`bootstrap.sh` and `bootstrap.ps1`, and the private working agreements
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2348  1 LINE
  Text:Written
 
@@ -29,327 +29,277 @@
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:06Z (RFD66606-2348) '
- # tags: rfd:hook
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:07Z (RFD66606-2348) 'The taskweft workspace and this one were two clients of two manifests. Work that needed
+2026-10-30T00:00:06Z (RFD66606-2348) 'The taskweft workspace and this one were two clients of two manifests. Work that needed
  # tags: rfd:intrigue
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2348) 'both had no single checkout.
+2026-10-30T00:00:07Z (RFD66606-2348) 'both had no single checkout.
  # tags: rfd:intrigue
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2348) '
- # tags: rfd:intrigue
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:10Z (RFD66606-2348) 'Read below for the checks that passed and the work still open.
+2026-10-30T00:00:08Z (RFD66606-2348) 'Read below for the checks that passed and the work still open.
  # tags: rfd:exit
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:11Z (RFD66606-2348) '
- # tags: rfd:exit
+2026-10-30T00:00:09Z (RFD66606-2348) 'What was decided, how it was checked, and what is still open
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:12Z (RFD66606-2348) 'What was decided, how it was checked, and what is still open
- # tags: rfd:details-title
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2348) 'The workspace manifest is a superset of the taskweft manifest, by path.
+2026-10-30T00:00:10Z (RFD66606-2348) 'The workspace manifest is a superset of the taskweft manifest, by path.
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:14Z (RFD66606-2348) 'Where both place a path, this workspace's row wins, so rung pins never
+2026-10-30T00:00:11Z (RFD66606-2348) 'Where both place a path, this workspace's row wins, so rung pins never
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2348) 'move through the merge. Every other taskweft row is added with
+2026-10-30T00:00:12Z (RFD66606-2348) 'move through the merge. Every other taskweft row is added with
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2348) '`groups="notdefault,taskweft"`, pinned to the commit its branch or tag
+2026-10-30T00:00:13Z (RFD66606-2348) '`groups="notdefault,taskweft"`, pinned to the commit its branch or tag
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:17Z (RFD66606-2348) 'had on the day it was added, with `upstream` naming that ref. The
+2026-10-30T00:00:14Z (RFD66606-2348) 'had on the day it was added, with `upstream` naming that ref. The
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2348) 'bootstrap runs `repo init -g default,taskweft`, so a new workspace
+2026-10-30T00:00:15Z (RFD66606-2348) 'bootstrap runs `repo init -g default,taskweft`, so a new workspace
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2348) 'syncs both sets. A plain `repo init` still syncs the workspace's own
+2026-10-30T00:00:16Z (RFD66606-2348) 'syncs both sets. A plain `repo init` still syncs the workspace's own
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:20Z (RFD66606-2348) 'rows only.
+2026-10-30T00:00:17Z (RFD66606-2348) 'rows only.
  # tags: rfd:decision
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2348) '
- # tags: rfd:decision
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:22Z (RFD66606-2348) '- RFD66606-2346, the last change that added manifest rows;
+2026-10-30T00:00:18Z (RFD66606-2348) '- RFD66606-2346, the last change that added manifest rows;
  # tags: rfd:related
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2348) '  RFD66606-2341, dev.next.
+2026-10-30T00:00:19Z (RFD66606-2348) '  RFD66606-2341, dev.next.
  # tags: rfd:related
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2348) '- The private working agreements' languages section, which now names
+2026-10-30T00:00:20Z (RFD66606-2348) '- The private working agreements' languages section, which now names
  # tags: rfd:related
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2348) '  the bootstrap's group change; the private blocklist.
+2026-10-30T00:00:21Z (RFD66606-2348) '  the bootstrap's group change; the private blocklist.
  # tags: rfd:related
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2348) '
- # tags: rfd:related
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:27Z (RFD66606-2348) 'The operator's decisions
+2026-10-30T00:00:22Z (RFD66606-2348) 'The operator's decisions
  # tags: rfd:details-heading
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2348) '1. The taskweft rows the blocklist names (the OpenBao service and the
+2026-10-30T00:00:23Z (RFD66606-2348) '1. The taskweft rows the blocklist names (the OpenBao service and the
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:29Z (RFD66606-2348) '   Bao on SQLite and FoundationDB service) and `iceoryx2` are added as
+2026-10-30T00:00:24Z (RFD66606-2348) '   Bao on SQLite and FoundationDB service) and `iceoryx2` are added as
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2348) '   they are. They are placed for study. No workspace repo depends on
+2026-10-30T00:00:25Z (RFD66606-2348) '   they are. They are placed for study. No workspace repo depends on
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2348) '   them.
+2026-10-30T00:00:26Z (RFD66606-2348) '   them.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:32Z (RFD66606-2348) '2. New rows are pinned to a commit, as every upstream row here is.
+2026-10-30T00:00:27Z (RFD66606-2348) '2. New rows are pinned to a commit, as every upstream row here is.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2348) '3. The rows are an opt-in group. The bootstrap opts in.
+2026-10-30T00:00:28Z (RFD66606-2348) '3. The rows are an opt-in group. The bootstrap opts in.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:34Z (RFD66606-2348) '   `WEFTSPUN_GROUPS=default` gives the workspace's own rows alone.
+2026-10-30T00:00:29Z (RFD66606-2348) '   `WEFTSPUN_GROUPS=default` gives the workspace's own rows alone.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2348) '
- # tags: rfd:details
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:36Z (RFD66606-2348) 'Why a plain copy fails
+2026-10-30T00:00:30Z (RFD66606-2348) 'Why a plain copy fails
  # tags: rfd:details-heading
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2348) 'Taskweft rows track
+2026-10-30T00:00:31Z (RFD66606-2348) 'Taskweft rows track
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2348) 'branches and include rows this org blocks, so a plain copy would have
+2026-10-30T00:00:32Z (RFD66606-2348) 'branches and include rows this org blocks, so a plain copy would have
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2348) 'broken the pin rule and put blocked repos in every default sync.
+2026-10-30T00:00:33Z (RFD66606-2348) 'broken the pin rule and put blocked repos in every default sync.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:40Z (RFD66606-2348) '
- # tags: rfd:details
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:41Z (RFD66606-2348) 'The merge rules
+2026-10-30T00:00:34Z (RFD66606-2348) 'The merge rules
  # tags: rfd:details-heading
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2348) 'The comparison is by path, because a path is what `repo` collides on.
+2026-10-30T00:00:35Z (RFD66606-2348) 'The comparison is by path, because a path is what `repo` collides on.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2348) '11 paths are in both manifests. At the bootstrap path the two rows
+2026-10-30T00:00:36Z (RFD66606-2348) '11 paths are in both manifests. At the bootstrap path the two rows
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:44Z (RFD66606-2348) 'name different repos, and the private fork stays. The datasource
+2026-10-30T00:00:37Z (RFD66606-2348) 'name different repos, and the private fork stays. The datasource
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:45Z (RFD66606-2348) 'store keeps this workspace's row, so taskweft's two linkfiles into
+2026-10-30T00:00:38Z (RFD66606-2348) 'store keeps this workspace's row, so taskweft's two linkfiles into
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2348) 'the Bao on SQLite and FoundationDB service are not placed. GitHub
+2026-10-30T00:00:39Z (RFD66606-2348) 'the Bao on SQLite and FoundationDB service are not placed. GitHub
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2348) 'rows use the one `origin` remote with an org-qualified name. The nine
+2026-10-30T00:00:40Z (RFD66606-2348) 'rows use the one `origin` remote with an org-qualified name. The nine
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2348) 'Hugging Face rows need two absolute remotes, `huggingface` and
+2026-10-30T00:00:41Z (RFD66606-2348) 'Hugging Face rows need two absolute remotes, `huggingface` and
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:49Z (RFD66606-2348) '`huggingface-datasets`.
+2026-10-30T00:00:42Z (RFD66606-2348) '`huggingface-datasets`.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2348) '
- # tags: rfd:details
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:00:51Z (RFD66606-2348) 'Numbers and checks
+2026-10-30T00:00:43Z (RFD66606-2348) 'Numbers and checks
  # tags: rfd:details-heading
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:52Z (RFD66606-2348) 'taskweft had 180 rows: 169 added, 21 of them already pinned by commit.
+2026-10-30T00:00:44Z (RFD66606-2348) 'taskweft had 180 rows: 169 added, 21 of them already pinned by commit.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2348) 'The manifest went from 20 to 189 rows. Every branch and tag resolved
+2026-10-30T00:00:45Z (RFD66606-2348) 'The manifest went from 20 to 189 rows. Every branch and tag resolved
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2348) 'with `git ls-remote`, with 0 failures. The four manifest gates passed
+2026-10-30T00:00:46Z (RFD66606-2348) 'with `git ls-remote`, with 0 failures. The four manifest gates passed
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2348) 'locally, each after its self-test, and the five CI jobs passed on the
+2026-10-30T00:00:47Z (RFD66606-2348) 'locally, each after its self-test, and the five CI jobs passed on the
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2348) 'pull request and on `main` after the merge. A scratch `repo init`
+2026-10-30T00:00:48Z (RFD66606-2348) 'pull request and on `main` after the merge. A scratch `repo init`
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:57Z (RFD66606-2348) 'listed 189 rows with the group and 20 with `-g default`, which is the
+2026-10-30T00:00:49Z (RFD66606-2348) 'listed 189 rows with the group and 20 with `-g default`, which is the
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:58Z (RFD66606-2348) 'control. `repo list` without `-a` shows 0 rows before a sync, so it
+2026-10-30T00:00:50Z (RFD66606-2348) 'control. `repo list` without `-a` shows 0 rows before a sync, so it
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:00:59Z (RFD66606-2348) 'proves nothing about a fresh client.
+2026-10-30T00:00:51Z (RFD66606-2348) 'proves nothing about a fresh client.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:00Z (RFD66606-2348) '
- # tags: rfd:details
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:01:01Z (RFD66606-2348) 'Still open
+2026-10-30T00:00:52Z (RFD66606-2348) 'Still open
  # tags: rfd:details-heading
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2348) 'Nothing keeps the superset true as taskweft moves: a new taskweft row
+2026-10-30T00:00:53Z (RFD66606-2348) 'Nothing keeps the superset true as taskweft moves: a new taskweft row
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:03Z (RFD66606-2348) 'is absent here until someone adds it. The bootstrap repo's workflow is
+2026-10-30T00:00:54Z (RFD66606-2348) 'is absent here until someone adds it. The bootstrap repo's workflow is
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:04Z (RFD66606-2348) 'active but has never run, and this repo has no workflow, so neither
+2026-10-30T00:00:55Z (RFD66606-2348) 'active but has never run, and this repo has no workflow, so neither
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:05Z (RFD66606-2348) 'change was checked in CI. No `pwsh` was available, so the PowerShell
+2026-10-30T00:00:56Z (RFD66606-2348) 'change was checked in CI. No `pwsh` was available, so the PowerShell
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2348) 'change was not parsed. The private org is invisible to the `gh`
+2026-10-30T00:00:57Z (RFD66606-2348) 'change was not parsed. The private org is invisible to the `gh`
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2348) 'wrapper; its pull requests go through the REST API with a
+2026-10-30T00:00:58Z (RFD66606-2348) 'wrapper; its pull requests go through the REST API with a
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:08Z (RFD66606-2348) '`bao-mint-github` token, which prints the token and its expiry on one
+2026-10-30T00:00:59Z (RFD66606-2348) '`bao-mint-github` token, which prints the token and its expiry on one
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written
 
-2026-10-30T00:01:09Z (RFD66606-2348) 'line.
- # tags: rfd:details
- Text:RFD2348  1 LINE
- Text:Written
-
-2026-10-30T00:01:10Z (RFD66606-2348) '
+2026-10-30T00:01:00Z (RFD66606-2348) 'line.
  # tags: rfd:details
  Text:RFD2348  1 LINE
  Text:Written

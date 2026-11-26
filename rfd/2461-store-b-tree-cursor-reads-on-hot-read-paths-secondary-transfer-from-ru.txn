@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2461) 'hot store reads would skip SQLite's bytecode engine via direct B-tree cursor walks.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2461  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2461) 'the store's read paths over the weft_fdb VFS, with a SQL fallback kept.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2461  1 LINE
  Text:Written
 
@@ -24,127 +24,107 @@
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2461) '
- # tags: rfd:hook
- Text:RFD2461  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2461) 'The same outside challenge entry that inspired the compaction thread also walks SQLite's
+2026-11-07T00:00:05Z (RFD66606-2461) 'The same outside challenge entry that inspired the compaction thread also walks SQLite's
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2461) 'B-tree cursors directly inside a read transaction, skipping the SQL engine and its column
+2026-11-07T00:00:06Z (RFD66606-2461) 'B-tree cursors directly inside a read transaction, skipping the SQL engine and its column
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2461) 'copies, and decoding record bytes by hand with a SQL fallback kept for safety. The store's
+2026-11-07T00:00:07Z (RFD66606-2461) 'copies, and decoding record bytes by hand with a SQL fallback kept for safety. The store's
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2461) 'reads already go through prepare and step today. The honest read is that this is a
+2026-11-07T00:00:08Z (RFD66606-2461) 'reads already go through prepare and step today. The honest read is that this is a
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2461) 'constant-factor win, not a network round-trip win: the store's existing speculative reads and
+2026-11-07T00:00:09Z (RFD66606-2461) 'constant-factor win, not a network round-trip win: the store's existing speculative reads and
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2461) 'read-ahead already save roughly a round trip per read and turn two hundred fifty six pages
+2026-11-07T00:00:10Z (RFD66606-2461) 'read-ahead already save roughly a round trip per read and turn two hundred fifty six pages
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2461) 'into about two round trips, so the entry's trick can add at most something like five to
+2026-11-07T00:00:11Z (RFD66606-2461) 'into about two round trips, so the entry's trick can add at most something like five to
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2461) 'fifteen percent, and only if profiling shows the SQL engine's overhead is real.
+2026-11-07T00:00:12Z (RFD66606-2461) 'fifteen percent, and only if profiling shows the SQL engine's overhead is real.
  # tags: rfd:intrigue
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2461) '
- # tags: rfd:intrigue
- Text:RFD2461  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2461) 'Profile the hot read paths first; only build the cursor-based reader if profiling shows
+2026-11-07T00:00:13Z (RFD66606-2461) 'Profile the hot read paths first; only build the cursor-based reader if profiling shows
  # tags: rfd:exit
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2461) 'engine overhead worth the complexity, and keep the existing speculative read and read-ahead
+2026-11-07T00:00:14Z (RFD66606-2461) 'engine overhead worth the complexity, and keep the existing speculative read and read-ahead
  # tags: rfd:exit
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2461) 'engineering untouched either way.
+2026-11-07T00:00:15Z (RFD66606-2461) 'engineering untouched either way.
  # tags: rfd:exit
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2461) '
- # tags: rfd:exit
- Text:RFD2461  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2461) '- Profile the store's hot read paths before writing any cursor-reading code, to confirm
+2026-11-07T00:00:16Z (RFD66606-2461) '- Profile the store's hot read paths before writing any cursor-reading code, to confirm
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2461) '  whether the SQL engine's prepare and step overhead is actually a measurable share of read
+2026-11-07T00:00:17Z (RFD66606-2461) '  whether the SQL engine's prepare and step overhead is actually a measurable share of read
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2461) '  latency.
+2026-11-07T00:00:18Z (RFD66606-2461) '  latency.
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2461) '- If profiling supports it, add a cursor-based reader that walks the B-tree directly inside a
+2026-11-07T00:00:19Z (RFD66606-2461) '- If profiling supports it, add a cursor-based reader that walks the B-tree directly inside a
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2461) '  read transaction and decodes record bytes by hand, with the existing SQL path kept as a
+2026-11-07T00:00:20Z (RFD66606-2461) '  read transaction and decodes record bytes by hand, with the existing SQL path kept as a
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2461) '  fallback rather than removed.
+2026-11-07T00:00:21Z (RFD66606-2461) '  fallback rather than removed.
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2461) '- Treat any win here as a constant-factor improvement on top of the already network-bound
+2026-11-07T00:00:22Z (RFD66606-2461) '- Treat any win here as a constant-factor improvement on top of the already network-bound
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2461) '  read path, not a replacement for the speculative-read and read-ahead work already in place.
+2026-11-07T00:00:23Z (RFD66606-2461) '  read path, not a replacement for the speculative-read and read-ahead work already in place.
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2461) '- Do not spend further effort on this transfer unless the profiling step above actually shows
+2026-11-07T00:00:24Z (RFD66606-2461) '- Do not spend further effort on this transfer unless the profiling step above actually shows
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2461) '  engine overhead large enough to matter.
- # tags: rfd:decision
- Text:RFD2461  1 LINE
- Text:Written
-
-2026-11-07T00:00:29Z (RFD66606-2461) '
+2026-11-07T00:00:25Z (RFD66606-2461) '  engine overhead large enough to matter.
  # tags: rfd:decision
  Text:RFD2461  1 LINE
  Text:Written

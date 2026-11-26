@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2408) 'the dev.1 prerelease, where one person walks the ported station.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2408  1 LINE
  Text:Written
 
@@ -14,282 +14,237 @@
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2408) '
- # tags: rfd:hook
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2408) 'The persona did not reach the platform or climb the stairs, and past the four modules the
+2026-10-31T00:00:03Z (RFD66606-2408) 'The persona did not reach the platform or climb the stairs, and past the four modules the
  # tags: rfd:intrigue
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2408) 'terrain is open.
+2026-10-31T00:00:04Z (RFD66606-2408) 'terrain is open.
  # tags: rfd:intrigue
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2408) '
- # tags: rfd:intrigue
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2408) 'Run `gate_locomotion` in the pen's `double.yml` and check that each control fails.
+2026-10-31T00:00:05Z (RFD66606-2408) 'Run `gate_locomotion` in the pen's `double.yml` and check that each control fails.
  # tags: rfd:exit
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2408) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2408) 'dev.1: one person visits the station
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2408) 'dev.1: one person visits the station
- # tags: rfd:details-title
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2408) '- The pen's `v20261001-dev.1` tag marks dev.1, and the prerelease carries the double engine
+2026-10-31T00:00:07Z (RFD66606-2408) '- The pen's `v20261001-dev.1` tag marks dev.1, and the prerelease carries the double engine
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2408) '  `v20260930-double.1`, the addon `v20260930-addon.1` and the five guest ELFs, each against
+2026-10-31T00:00:08Z (RFD66606-2408) '  `v20260930-double.1`, the addon `v20260930-addon.1` and the five guest ELFs, each against
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2408) '  `SHA256SUMS`.
+2026-10-31T00:00:09Z (RFD66606-2408) '  `SHA256SUMS`.
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2408) '- The four ported modules (`environment`, `station`, `plaza`, `sakura`), each a faithful port of
+2026-10-31T00:00:10Z (RFD66606-2408) '- The four ported modules (`environment`, `station`, `plaza`, `sakura`), each a faithful port of
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2408) '  the pinned original, send their 1089 primitive colliders and the terrain height field to the
+2026-10-31T00:00:11Z (RFD66606-2408) '  the pinned original, send their 1089 primitive colliders and the terrain height field to the
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2408) '  MuJoCo guest as the original's `physics.js` calls make them.
+2026-10-31T00:00:12Z (RFD66606-2408) '  MuJoCo guest as the original's `physics.js` calls make them.
  # tags: rfd:decision
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2408) '
- # tags: rfd:decision
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2408) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:13Z (RFD66606-2408) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2408) '- RFD66606-2262, the release ladder this rung follows.
+2026-10-31T00:00:14Z (RFD66606-2408) '- RFD66606-2262, the release ladder this rung follows.
  # tags: rfd:related
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2408) '
- # tags: rfd:related
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2408) 'The station port is abandoned
+2026-10-31T00:00:15Z (RFD66606-2408) 'The station port is abandoned
  # tags: rfd:details-heading
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2408) 'RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
+2026-10-31T00:00:16Z (RFD66606-2408) 'RFD66606-2384, the module-by-module port, is abandoned (operator, 2026-11-11). The plaza's
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2408) 'assets and tech stay in use, and baking goes through slughorn.
+2026-10-31T00:00:17Z (RFD66606-2408) 'assets and tech stay in use, and baking goes through slughorn.
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2408) '
+2026-10-31T00:00:18Z (RFD66606-2408) '
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2408) '
- # tags: rfd:details
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2408) 'The walker and world grab
+2026-10-31T00:00:19Z (RFD66606-2408) 'The walker and world grab
  # tags: rfd:details-heading
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2408) 'A walker ported from the original's `player.js` (radius 0.3 m, height 1.7 m, step 0.45 m) runs
+2026-10-31T00:00:20Z (RFD66606-2408) 'A walker ported from the original's `player.js` (radius 0.3 m, height 1.7 m, step 0.45 m) runs
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2408) 'on
+2026-10-31T00:00:21Z (RFD66606-2408) 'on
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2408) 'the guest's ray and contact queries, read through rx's stick movement and rotation components,
+2026-10-31T00:00:22Z (RFD66606-2408) 'the guest's ray and contact queries, read through rx's stick movement and rotation components,
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2408) 'with a 30 degree snap turn and teleport; there is no jump. World grab is off by default and sits
+2026-10-31T00:00:23Z (RFD66606-2408) 'with a 30 degree snap turn and teleport; there is no jump. World grab is off by default and sits
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2408) 'in a three-wedge radial (hold B or Y, tilt, release: world grab, recentre, exit).
+2026-10-31T00:00:24Z (RFD66606-2408) 'in a three-wedge radial (hold B or Y, tilt, release: world grab, recentre, exit).
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2408) '
+2026-10-31T00:00:25Z (RFD66606-2408) '
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2408) '
- # tags: rfd:details
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2408) 'Gates
+2026-10-31T00:00:26Z (RFD66606-2408) 'Gates
  # tags: rfd:details-heading
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2408) 'Gates: `gate_colliders` in &{repo("entities-sakuragaoka-station")} (every collider matches the
+2026-10-31T00:00:27Z (RFD66606-2408) 'Gates: `gate_colliders` in &{repo("entities-sakuragaoka-station")} (every collider matches the
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2408) 'original's, with `drop_one` and `shift` as controls), run by hand because that repository has no
+2026-10-31T00:00:28Z (RFD66606-2408) 'original's, with `drop_one` and `shift` as controls), run by hand because that repository has no
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2408) 'CI. And `gate_locomotion` in the pen's `double.yml` (walk, step-up and the refused 1.25 m ledge,
+2026-10-31T00:00:29Z (RFD66606-2408) 'CI. And `gate_locomotion` in the pen's `double.yml` (walk, step-up and the refused 1.25 m ledge,
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2408) 'the handrail stopping the walker, snap turn, teleport landing and refused, and bit-identical
+2026-10-31T00:00:30Z (RFD66606-2408) 'the handrail stopping the walker, snap turn, teleport landing and refused, and bit-identical
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2408) 'poses across two runs), with the controls `step_high`, `no_resolve`, `solid_land` and `ulp`,
+2026-10-31T00:00:31Z (RFD66606-2408) 'poses across two runs), with the controls `step_high`, `no_resolve`, `solid_land` and `ulp`,
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2408) 'each
+2026-10-31T00:00:32Z (RFD66606-2408) 'each
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2408) 'of which must fail.
+2026-10-31T00:00:33Z (RFD66606-2408) 'of which must fail.
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2408) '
+2026-10-31T00:00:34Z (RFD66606-2408) '
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2408) '
- # tags: rfd:details
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2408) 'Playable, and the gap
+2026-10-31T00:00:35Z (RFD66606-2408) 'Playable, and the gap
  # tags: rfd:details-heading
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2408) 'Playable, as the persona run on 2026-10-02 showed: walk from the plaza toward the station, snap
+2026-10-31T00:00:36Z (RFD66606-2408) 'Playable, as the persona run on 2026-10-02 showed: walk from the plaza toward the station, snap
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2408) 'turn, teleport, reach the forecourt, and toggle world grab from the radial. The persona did not
+2026-10-31T00:00:37Z (RFD66606-2408) 'turn, teleport, reach the forecourt, and toggle world grab from the radial. The persona did not
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2408) 'reach the platform or climb the stairs. The locomotion gate climbs the six treads headless. Past
+2026-10-31T00:00:38Z (RFD66606-2408) 'reach the platform or climb the stairs. The locomotion gate climbs the six treads headless. Past
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2408) 'the four modules the terrain is open where the town's houses and shops stand in the original.
+2026-10-31T00:00:39Z (RFD66606-2408) 'the four modules the terrain is open where the town's houses and shops stand in the original.
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2408) 'The
+2026-10-31T00:00:40Z (RFD66606-2408) 'The
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2408) 'logbook names that gap and counts five others.
+2026-10-31T00:00:41Z (RFD66606-2408) 'logbook names that gap and counts five others.
  # tags: rfd:details
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2408) '
- # tags: rfd:details
- Text:RFD2408  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2408) '2351
+2026-10-31T00:00:42Z (RFD66606-2408) '2351
  # tags: rebac:verbs-from
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2408) 'rfd-2408 provides dev1-station-visit
+2026-10-31T00:00:43Z (RFD66606-2408) 'rfd-2408 provides dev1-station-visit
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2408) 'rfd-2408 is_a dev-rung
+2026-10-31T00:00:44Z (RFD66606-2408) 'rfd-2408 is_a dev-rung
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2408) 'rfd-2408 spends sakuragaoka-plaza-setting
+2026-10-31T00:00:45Z (RFD66606-2408) 'rfd-2408 spends sakuragaoka-plaza-setting
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2408) 'rfd-2408 spends macos-oxrsys-dev-play
+2026-10-31T00:00:46Z (RFD66606-2408) 'rfd-2408 spends macos-oxrsys-dev-play
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2408) 'rfd-2408 spends guest-elf-double
+2026-10-31T00:00:47Z (RFD66606-2408) 'rfd-2408 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2408) 'rfd-2408 spends actions-builds-double-binaries
+2026-10-31T00:00:48Z (RFD66606-2408) 'rfd-2408 spends actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2408) 'rfd-2408 spends xr-world-grab-locomotion
+2026-10-31T00:00:49Z (RFD66606-2408) 'rfd-2408 spends xr-world-grab-locomotion
  # tags: rebac:relate
  Text:RFD2408  1 LINE
  Text:Written

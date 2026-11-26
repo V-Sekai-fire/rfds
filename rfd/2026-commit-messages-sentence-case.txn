@@ -9,527 +9,457 @@
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2026) '
- # tags: rfd:hook
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-2026) 'A commit subject is the first line a reader meets in `git log`, a blame, or a release note.
+2026-08-25T00:00:02Z (RFD66606-2026) 'A commit subject is the first line a reader meets in `git log`, a blame, or a release note.
  # tags: rfd:intrigue
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-2026) 'Two conventions compete for how it reads.
+2026-08-25T00:00:03Z (RFD66606-2026) 'Two conventions compete for how it reads.
  # tags: rfd:intrigue
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-2026) '
- # tags: rfd:intrigue
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-2026) 'Run `python scripts/check_commit_style.py --base origin/main` before you push.
+2026-08-25T00:00:04Z (RFD66606-2026) 'Run `python scripts/check_commit_style.py --base origin/main` before you push.
  # tags: rfd:exit
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-2026) '
- # tags: rfd:exit
+2026-08-25T00:00:05Z (RFD66606-2026) 'Commit messages sentence case
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2026) 'Commit messages sentence case
- # tags: rfd:details-title
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:09Z (RFD66606-2026) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2026) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2026) '
- # tags: rfd:decision
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-2026) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:07Z (RFD66606-2026) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2026) '
- # tags: rfd:related
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-2026) 'Context and problem statement
+2026-08-25T00:00:08Z (RFD66606-2026) 'Context and problem statement
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-2026) 'A commit subject is the first line a reader meets in `git log`, a
+2026-08-25T00:00:09Z (RFD66606-2026) 'A commit subject is the first line a reader meets in `git log`, a
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-2026) 'blame, or a release note. Two conventions compete for how it reads.
+2026-08-25T00:00:10Z (RFD66606-2026) 'blame, or a release note. Two conventions compete for how it reads.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-2026) 'Conventional Commits prefixes each subject with a machine-readable
+2026-08-25T00:00:11Z (RFD66606-2026) 'Conventional Commits prefixes each subject with a machine-readable
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2026) 'type and optional scope, such as `feat:` or `fix(parser):`, and
+2026-08-25T00:00:12Z (RFD66606-2026) 'type and optional scope, such as `feat:` or `fix(parser):`, and
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-2026) 'lower-cases the summary that follows. Plain prose writes the subject
+2026-08-25T00:00:13Z (RFD66606-2026) 'lower-cases the summary that follows. Plain prose writes the subject
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-2026) 'as an ordinary capitalised sentence. How should a commit subject in
+2026-08-25T00:00:14Z (RFD66606-2026) 'as an ordinary capitalised sentence. How should a commit subject in
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-2026) 'this repo read?
+2026-08-25T00:00:15Z (RFD66606-2026) 'this repo read?
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-2026) 'Decision drivers
+2026-08-25T00:00:16Z (RFD66606-2026) 'Decision drivers
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-2026) '- A reader scans the subject as a sentence first, and the meaning sits
+2026-08-25T00:00:17Z (RFD66606-2026) '- A reader scans the subject as a sentence first, and the meaning sits
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2026) '  at the front rather than after a colon.
+2026-08-25T00:00:18Z (RFD66606-2026) '  at the front rather than after a colon.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2026) '- The repos here run no tooling that consumes a commit type: no
+2026-08-25T00:00:19Z (RFD66606-2026) '- The repos here run no tooling that consumes a commit type: no
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2026) '  semantic-release, no changelog keyed on `feat` or `fix`.
+2026-08-25T00:00:20Z (RFD66606-2026) '  semantic-release, no changelog keyed on `feat` or `fix`.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-2026) '- One rule covers every commit, so review needs no judgement about
+2026-08-25T00:00:21Z (RFD66606-2026) '- One rule covers every commit, so review needs no judgement about
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2026) '  which type applies.
+2026-08-25T00:00:22Z (RFD66606-2026) '  which type applies.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-2026) 'Considered options
+2026-08-25T00:00:23Z (RFD66606-2026) 'Considered options
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-2026) '- Conventional Commits, with a `type(scope):` prefix on every subject.
+2026-08-25T00:00:24Z (RFD66606-2026) '- Conventional Commits, with a `type(scope):` prefix on every subject.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2026) '- Sentence-case prose subjects with no prefix.
+2026-08-25T00:00:25Z (RFD66606-2026) '- Sentence-case prose subjects with no prefix.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2026) '- Free choice of style per author.
+2026-08-25T00:00:26Z (RFD66606-2026) '- Free choice of style per author.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-2026) 'Decision outcome
+2026-08-25T00:00:27Z (RFD66606-2026) 'Decision outcome
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2026) 'Chosen option: sentence-case prose with no prefix, because the
+2026-08-25T00:00:28Z (RFD66606-2026) 'Chosen option: sentence-case prose with no prefix, because the
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-2026) 'subject stays a sentence a reader understands on sight, and the repos
+2026-08-25T00:00:29Z (RFD66606-2026) 'subject stays a sentence a reader understands on sight, and the repos
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2026) 'gain nothing from a commit type that no tool reads.
+2026-08-25T00:00:30Z (RFD66606-2026) 'gain nothing from a commit type that no tool reads.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2026) '
+2026-08-25T00:00:31Z (RFD66606-2026) '
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2026) 'A commit subject opens with a capital letter and reads as a plain
+2026-08-25T00:00:32Z (RFD66606-2026) 'A commit subject opens with a capital letter and reads as a plain
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2026) 'sentence, such as `Add the macOS and Windows release workflows`. It
+2026-08-25T00:00:33Z (RFD66606-2026) 'sentence, such as `Add the macOS and Windows release workflows`. It
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2026) 'carries no `feat:`, `fix:`, `chore:`, or `type(scope):` prefix, and no
+2026-08-25T00:00:34Z (RFD66606-2026) 'carries no `feat:`, `fix:`, `chore:`, or `type(scope):` prefix, and no
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2026) 'trailing period. The body, where present, states what the change
+2026-08-25T00:00:35Z (RFD66606-2026) 'trailing period. The body, where present, states what the change
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2026) 'makes true of the system and why.
+2026-08-25T00:00:36Z (RFD66606-2026) 'makes true of the system and why.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-2026) 'Consequences
+2026-08-25T00:00:37Z (RFD66606-2026) 'Consequences
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-2026) '- Good, because the subject reads as a summary on its own, with
+2026-08-25T00:00:38Z (RFD66606-2026) '- Good, because the subject reads as a summary on its own, with
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-2026) '  nothing to strip before the meaning.
+2026-08-25T00:00:39Z (RFD66606-2026) '  nothing to strip before the meaning.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-2026) '- Good, because the rule holds for every commit, so no author weighs
+2026-08-25T00:00:40Z (RFD66606-2026) '- Good, because the rule holds for every commit, so no author weighs
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-2026) '  whether a change counts as a `feat` or a `fix`.
+2026-08-25T00:00:41Z (RFD66606-2026) '  whether a change counts as a `feat` or a `fix`.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-2026) '- Bad, because a changelog tool that groups commits by type finds no
+2026-08-25T00:00:42Z (RFD66606-2026) '- Bad, because a changelog tool that groups commits by type finds no
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-2026) '  signal here, so adopting one later needs a different marker or a
+2026-08-25T00:00:43Z (RFD66606-2026) '  signal here, so adopting one later needs a different marker or a
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-2026) '  history rewrite.
+2026-08-25T00:00:44Z (RFD66606-2026) '  history rewrite.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-2026) 'Scope
+2026-08-25T00:00:45Z (RFD66606-2026) 'Scope
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-2026) 'The rule holds on every repository this workspace commits to, forks
+2026-08-25T00:00:46Z (RFD66606-2026) 'The rule holds on every repository this workspace commits to, forks
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-2026) 'included. A fix to a fork lands in our fork and nothing is sent
+2026-08-25T00:00:47Z (RFD66606-2026) 'included. A fix to a fork lands in our fork and nothing is sent
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-2026) 'upstream (RFD66606-2294, "Where a session posts"), so a fork's history
+2026-08-25T00:00:48Z (RFD66606-2026) 'upstream (RFD66606-2294, "Where a session posts"), so a fork's history
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-2026) 'past the upstream commit is ours and reads like the rest. A fork of
+2026-08-25T00:00:49Z (RFD66606-2026) 'past the upstream commit is ours and reads like the rest. A fork of
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-2026) 'a Conventional-Commits upstream carries sentence-case subjects on top
+2026-08-25T00:00:50Z (RFD66606-2026) 'a Conventional-Commits upstream carries sentence-case subjects on top
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-2026) 'of the upstream's prefixed ones. A branch that merges the upstream
+2026-08-25T00:00:51Z (RFD66606-2026) 'of the upstream's prefixed ones. A branch that merges the upstream
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-2026) 'passes the upstream ref to the gate with `--exclude`, so only our
+2026-08-25T00:00:52Z (RFD66606-2026) 'passes the upstream ref to the gate with `--exclude`, so only our
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-2026) 'commits are read.
+2026-08-25T00:00:53Z (RFD66606-2026) 'commits are read.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-2026) 'Confirmation
+2026-08-25T00:00:54Z (RFD66606-2026) 'Confirmation
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-2026) 'The rule is machine-checked by the `practices` hook
+2026-08-25T00:00:55Z (RFD66606-2026) 'The rule is machine-checked by the `practices` hook
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-2026) '(`scripts/check_practices.exs`, RFD66606-2294), on push and in CI in every
+2026-08-25T00:00:56Z (RFD66606-2026) '(`scripts/check_practices.exs`, RFD66606-2294), on push and in CI in every
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-2026) 'repository that takes the hook, and by `scripts/check_commit_style.py`
+2026-08-25T00:00:57Z (RFD66606-2026) 'repository that takes the hook, and by `scripts/check_commit_style.py`
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-2026) 'on its own. Each reads the commits reachable from `HEAD` and from
+2026-08-25T00:00:58Z (RFD66606-2026) 'on its own. Each reads the commits reachable from `HEAD` and from
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-2026) 'neither `<base>` nor any `--exclude` ref, for three properties:
+2026-08-25T00:00:59Z (RFD66606-2026) 'neither `<base>` nor any `--exclude` ref, for three properties:
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-2026) '
+2026-08-25T00:01:00Z (RFD66606-2026) '
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-2026) '1. No Conventional-Commits `type:` or `type(scope):` prefix on the
+2026-08-25T00:01:01Z (RFD66606-2026) '1. No Conventional-Commits `type:` or `type(scope):` prefix on the
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-2026) '   subject.
+2026-08-25T00:01:02Z (RFD66606-2026) '   subject.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-2026) '2. Subject opens with an uppercase letter, digit, or bracket.
+2026-08-25T00:01:03Z (RFD66606-2026) '2. Subject opens with an uppercase letter, digit, or bracket.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-2026) '3. Subject does not end with a trailing period.
+2026-08-25T00:01:04Z (RFD66606-2026) '3. Subject does not end with a trailing period.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-2026) '
+2026-08-25T00:01:05Z (RFD66606-2026) '
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-2026) 'Neither gate reads a remote, so a fork is held to the same three
+2026-08-25T00:01:06Z (RFD66606-2026) 'Neither gate reads a remote, so a fork is held to the same three
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-2026) 'properties. The Python gate's self-test carries six subject controls
+2026-08-25T00:01:07Z (RFD66606-2026) 'properties. The Python gate's self-test carries six subject controls
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-2026) '(three that pass, three that fail), four that run the script itself
+2026-08-25T00:01:08Z (RFD66606-2026) '(three that pass, three that fail), four that run the script itself
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-2026) 'on a prefixed and a sentence-case commit in a scratch repository, once
+2026-08-25T00:01:09Z (RFD66606-2026) 'on a prefixed and a sentence-case commit in a scratch repository, once
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-2026) 'behind a V-Sekai-fire remote and once behind a fork remote, and two
+2026-08-25T00:01:10Z (RFD66606-2026) 'behind a V-Sekai-fire remote and once behind a fork remote, and two
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-2026) 'on a merged upstream commit with a prefixed subject, which fails when
+2026-08-25T00:01:11Z (RFD66606-2026) 'on a merged upstream commit with a prefixed subject, which fails when
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-2026) 'read and passes once its ref is excluded. The practices self-test
+2026-08-25T00:01:12Z (RFD66606-2026) 'read and passes once its ref is excluded. The practices self-test
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-2026) 'carries the same rules in both directions.
+2026-08-25T00:01:13Z (RFD66606-2026) 'carries the same rules in both directions.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-2026) '
+2026-08-25T00:01:14Z (RFD66606-2026) '
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-2026) '    python scripts/check_commit_style.py --base origin/main
+2026-08-25T00:01:15Z (RFD66606-2026) '    python scripts/check_commit_style.py --base origin/main
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-2026) '    python scripts/check_commit_style.py --base origin/main --exclude upstream/master
+2026-08-25T00:01:16Z (RFD66606-2026) '    python scripts/check_commit_style.py --base origin/main --exclude upstream/master
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-2026) '    python scripts/check_commit_style.py --self-test
+2026-08-25T00:01:17Z (RFD66606-2026) '    python scripts/check_commit_style.py --self-test
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-2026) '
+2026-08-25T00:01:18Z (RFD66606-2026) '
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-2026) 'Review reads each subject as a capitalised sentence with no type
+2026-08-25T00:01:19Z (RFD66606-2026) 'Review reads each subject as a capitalised sentence with no type
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-2026) 'prefix and no trailing period. The history after this decision shows
+2026-08-25T00:01:20Z (RFD66606-2026) 'prefix and no trailing period. The history after this decision shows
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:32Z (RFD66606-2026) 'subjects in that form.
+2026-08-25T00:01:21Z (RFD66606-2026) 'subjects in that form.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-2026) 'More information
+2026-08-25T00:01:22Z (RFD66606-2026) 'More information
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-2026) 'This pairs with the tenseless continuous-present voice
+2026-08-25T00:01:23Z (RFD66606-2026) 'This pairs with the tenseless continuous-present voice
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-2026) '(`rfd/2025-tenseless-continuous-present-voice`): a commit body states
+2026-08-25T00:01:24Z (RFD66606-2026) '(`rfd/2025-tenseless-continuous-present-voice`): a commit body states
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-2026) 'what the change makes true of the system, the same way comments and
+2026-08-25T00:01:25Z (RFD66606-2026) 'what the change makes true of the system, the same way comments and
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:38Z (RFD66606-2026) 'docs do.
+2026-08-25T00:01:26Z (RFD66606-2026) 'docs do.
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-2026) '
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-2026) 'The problem
+2026-08-25T00:01:27Z (RFD66606-2026) 'The problem
  # tags: rfd:details-heading
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-2026) 'Conventional Commits prefixes each subject with a machine-readable
+2026-08-25T00:01:28Z (RFD66606-2026) 'Conventional Commits prefixes each subject with a machine-readable
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-2026) 'type and optional scope, such as `feat:` or `fix(parser):`, and
+2026-08-25T00:01:29Z (RFD66606-2026) 'type and optional scope, such as `feat:` or `fix(parser):`, and
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-2026) 'lower-cases the summary that follows. Plain prose writes the subject
+2026-08-25T00:01:30Z (RFD66606-2026) 'lower-cases the summary that follows. Plain prose writes the subject
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-2026) 'as an ordinary capitalised sentence. How should a commit subject in
+2026-08-25T00:01:31Z (RFD66606-2026) 'as an ordinary capitalised sentence. How should a commit subject in
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written
 
-2026-08-25T00:01:45Z (RFD66606-2026) 'this repo read?
- # tags: rfd:details
- Text:RFD2026  1 LINE
- Text:Written
-
-2026-08-25T00:01:46Z (RFD66606-2026) '
+2026-08-25T00:01:32Z (RFD66606-2026) 'this repo read?
  # tags: rfd:details
  Text:RFD2026  1 LINE
  Text:Written

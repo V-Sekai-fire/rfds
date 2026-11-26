@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2365) 'the format a video ships in and how it is recorded.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2365  1 LINE
  Text:Written
 
@@ -14,132 +14,97 @@
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2365) '
- # tags: rfd:hook
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2365) 'A WebM does not play on every desk, and no master is MJPEG.
+2026-10-31T00:00:03Z (RFD66606-2365) 'A WebM does not play on every desk, and no master is MJPEG.
  # tags: rfd:intrigue
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2365) '
- # tags: rfd:intrigue
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2365) 'Check a new recording against the rule: it is CineForm with FLAC in Matroska with its `.cff`,
+2026-10-31T00:00:04Z (RFD66606-2365) 'Check a new recording against the rule: it is CineForm with FLAC in Matroska with its `.cff`,
  # tags: rfd:exit
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2365) 'and no WebM.
+2026-10-31T00:00:05Z (RFD66606-2365) 'and no WebM.
  # tags: rfd:exit
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2365) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2365) 'every video ships as CineForm in Matroska
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2365) 'every video ships as CineForm in Matroska
- # tags: rfd:details-title
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2365) 'Every video ships as CineForm with FLAC in Matroska, with its `.cff`, and no
+2026-10-31T00:00:07Z (RFD66606-2365) 'Every video ships as CineForm with FLAC in Matroska, with its `.cff`, and no
  # tags: rfd:decision
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2365) 'WebM is made.
+2026-10-31T00:00:08Z (RFD66606-2365) 'WebM is made.
  # tags: rfd:decision
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2365) '
- # tags: rfd:decision
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2365) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2365) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2365) '
- # tags: rfd:related
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2365) 'Recording and delivery
+2026-10-31T00:00:10Z (RFD66606-2365) 'Recording and delivery
  # tags: rfd:details-heading
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2365) 'It is recorded as `.cfhd` through &{repo("contract-cineform-movie-writer")} at double
+2026-10-31T00:00:11Z (RFD66606-2365) 'It is recorded as `.cfhd` through &{repo("contract-cineform-movie-writer")} at double
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2365) 'precision and delivered by &{repo("interactor-av1mkv")}'s `deliver.exs`, which writes
+2026-10-31T00:00:12Z (RFD66606-2365) 'precision and delivered by &{repo("interactor-av1mkv")}'s `deliver.exs`, which writes
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2365) 'only those two files. No master is MJPEG. Nothing records
+2026-10-31T00:00:13Z (RFD66606-2365) 'only those two files. No master is MJPEG. Nothing records
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2365) 'through the encoder BLOCKLIST.md bars or through the desktop driver's own
+2026-10-31T00:00:14Z (RFD66606-2365) 'through the encoder BLOCKLIST.md bars or through the desktop driver's own
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2365) 'recorder: recordings are CineForm, the live stream is PyroWave, and the headset
+2026-10-31T00:00:15Z (RFD66606-2365) 'recorder: recordings are CineForm, the live stream is PyroWave, and the headset
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2365) 'view comes from the compositor mirror.
+2026-10-31T00:00:16Z (RFD66606-2365) 'view comes from the compositor mirror.
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2365) '
- # tags: rfd:details
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2365) 'The problem
+2026-10-31T00:00:17Z (RFD66606-2365) 'The problem
  # tags: rfd:details-heading
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2365) 'Videos are uploaded by hand, and a WebM does not play on every desk.
+2026-10-31T00:00:18Z (RFD66606-2365) 'Videos are uploaded by hand, and a WebM does not play on every desk.
  # tags: rfd:details
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2365) '
- # tags: rfd:details
- Text:RFD2365  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2365) '2351
+2026-10-31T00:00:19Z (RFD66606-2365) '2351
  # tags: rebac:verbs-from
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2365) 'rfd-2365 provides cineform-matroska-video
+2026-10-31T00:00:20Z (RFD66606-2365) 'rfd-2365 provides cineform-matroska-video
  # tags: rebac:relate
  Text:RFD2365  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2365) 'rfd-2365 is_a workspace-policy
+2026-10-31T00:00:21Z (RFD66606-2365) 'rfd-2365 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2365  1 LINE
  Text:Written

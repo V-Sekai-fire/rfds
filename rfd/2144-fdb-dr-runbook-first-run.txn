@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-09-01T00:00:01Z (RFD66606-2144) 'weftspun-fdb, weftspun-bao, Personal 1Password vault
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2144  1 LINE
  Text:Written
 
@@ -14,342 +14,342 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:03Z (RFD66606-2144) '
- # tags: rfd:hook
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:04Z (RFD66606-2144) 'RFD66606-2143 called its own DR runbook theatre because RFD66606-2141's break-glass
+2026-09-01T00:00:03Z (RFD66606-2144) 'RFD66606-2143 called its own DR runbook theatre because RFD66606-2141's break-glass
  # tags: rfd:intrigue
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:05Z (RFD66606-2144) 'CA was not in 1Password. On 2026-09-01, `weftspun-fdb`, `weftspun-bao`,
+2026-09-01T00:00:04Z (RFD66606-2144) 'CA was not in 1Password. On 2026-09-01, `weftspun-fdb`, `weftspun-bao`,
  # tags: rfd:intrigue
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:06Z (RFD66606-2144) '`spot-broker` and `chibifire-com` were gone from Fly.
+2026-09-01T00:00:05Z (RFD66606-2144) '`spot-broker` and `chibifire-com` were gone from Fly.
  # tags: rfd:intrigue
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:07Z (RFD66606-2144) '
- # tags: rfd:intrigue
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:08Z (RFD66606-2144) 'Check that `fdbbackup describe` reports `Restorable: true` for the R2 bucket before you rely on
+2026-09-01T00:00:06Z (RFD66606-2144) 'Check that `fdbbackup describe` reports `Restorable: true` for the R2 bucket before you rely on
  # tags: rfd:exit
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:09Z (RFD66606-2144) 'the restore, then read below for the `fdbrestore` timings.
+2026-09-01T00:00:07Z (RFD66606-2144) 'the restore, then read below for the `fdbrestore` timings.
  # tags: rfd:exit
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:10Z (RFD66606-2144) '
- # tags: rfd:exit
+2026-09-01T00:00:08Z (RFD66606-2144) 'The DR runbook runs, and the CA it needed lands
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:11Z (RFD66606-2144) 'The DR runbook runs, and the CA it needed lands
- # tags: rfd:details-title
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:12Z (RFD66606-2144) 'Mint the break-glass CA at DR-time, stash to `op://Personal/FDB-CA/`,
+2026-09-01T00:00:09Z (RFD66606-2144) 'Mint the break-glass CA at DR-time, stash to `op://Personal/FDB-CA/`,
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:13Z (RFD66606-2144) 'execute the R2-primary restore, and land the follow-ups the run surfaces:
+2026-09-01T00:00:10Z (RFD66606-2144) 'execute the R2-primary restore, and land the follow-ups the run surfaces:
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:14Z (RFD66606-2144) 'Bao secret hygiene, R2 key rotation, Tigris fan-out refresh, scale to
+2026-09-01T00:00:11Z (RFD66606-2144) 'Bao secret hygiene, R2 key rotation, Tigris fan-out refresh, scale to
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:15Z (RFD66606-2144) 'three at `double` redundancy. The CA in 1P closes RFD66606-2141's prereq; the
+2026-09-01T00:00:12Z (RFD66606-2144) 'three at `double` redundancy. The CA in 1P closes RFD66606-2141's prereq; the
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:16Z (RFD66606-2144) 'runbook stops being theatre.
+2026-09-01T00:00:13Z (RFD66606-2144) 'runbook stops being theatre.
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:17Z (RFD66606-2144) '
+2026-09-01T00:00:14Z (RFD66606-2144) '
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:18Z (RFD66606-2144) 'RFD66606-2141's phases 2–3 rotate the machine leaves to certificates the
+2026-09-01T00:00:15Z (RFD66606-2144) 'RFD66606-2141's phases 2–3 rotate the machine leaves to certificates the
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:19Z (RFD66606-2144) 'restored Bao PKI mount signs, once Bao is unsealed against the restored
+2026-09-01T00:00:16Z (RFD66606-2144) 'restored Bao PKI mount signs, once Bao is unsealed against the restored
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:20Z (RFD66606-2144) 'FDB. Until then, the cluster runs on the break-glass CA.
+2026-09-01T00:00:17Z (RFD66606-2144) 'FDB. Until then, the cluster runs on the break-glass CA.
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:21Z (RFD66606-2144) '
+2026-09-01T00:00:18Z (RFD66606-2144) '
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:22Z (RFD66606-2144) '`logbook-rfd2144-dr-runbook-first-run.md` records what was measured
+2026-09-01T00:00:19Z (RFD66606-2144) '`logbook-rfd2144-dr-runbook-first-run.md` records what was measured
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:23Z (RFD66606-2144) 'during the run itself.
+2026-09-01T00:00:20Z (RFD66606-2144) 'during the run itself.
  # tags: rfd:decision
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:24Z (RFD66606-2144) '
- # tags: rfd:decision
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:25Z (RFD66606-2144) 'RFD66606-2134, RFD66606-2135, RFD66606-2140, RFD66606-2141 (prereq landed here), 2143 (runbook
+2026-09-01T00:00:21Z (RFD66606-2144) 'RFD66606-2134, RFD66606-2135, RFD66606-2140, RFD66606-2141 (prereq landed here), 2143 (runbook
  # tags: rfd:related
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:26Z (RFD66606-2144) 'executed).
+2026-09-01T00:00:22Z (RFD66606-2144) 'executed).
  # tags: rfd:related
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:27Z (RFD66606-2144) '
- # tags: rfd:related
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:28Z (RFD66606-2144) 'The cluster id
+2026-09-01T00:00:23Z (RFD66606-2144) 'The cluster id
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:29Z (RFD66606-2144) '`WEFT_FDB_CLUSTER_ID` was not stored, so a fresh one was minted and
+2026-09-01T00:00:24Z (RFD66606-2144) '`WEFT_FDB_CLUSTER_ID` was not stored, so a fresh one was minted and
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:30Z (RFD66606-2144) 'written to 1P as `weftspun-fdb cluster id`. Coordinator addresses
+2026-09-01T00:00:25Z (RFD66606-2144) 'written to 1P as `weftspun-fdb cluster id`. Coordinator addresses
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:31Z (RFD66606-2144) 'change on a rebuild anyway, so the identity change rides along.
+2026-09-01T00:00:26Z (RFD66606-2144) 'change on a rebuild anyway, so the identity change rides along.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:32Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:33Z (RFD66606-2144) 'The disaster
+2026-09-01T00:00:27Z (RFD66606-2144) 'The disaster
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:34Z (RFD66606-2144) 'On 2026-09-01, `fly apps list` for `personal` returned one row:
+2026-09-01T00:00:28Z (RFD66606-2144) 'On 2026-09-01, `fly apps list` for `personal` returned one row:
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:35Z (RFD66606-2144) '`artifacts-mmo-mcp`. The four apps the working agreements name as
+2026-09-01T00:00:29Z (RFD66606-2144) '`artifacts-mmo-mcp`. The four apps the working agreements name as
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:36Z (RFD66606-2144) 'placed (`weftspun-fdb`, `weftspun-bao`, `spot-broker`, `chibifire-com`)
+2026-09-01T00:00:30Z (RFD66606-2144) 'placed (`weftspun-fdb`, `weftspun-bao`, `spot-broker`, `chibifire-com`)
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:37Z (RFD66606-2144) 'were gone. Tigris `weftspun-fdb-blob` and R2 `weftspun-fdb-dr` both
+2026-09-01T00:00:31Z (RFD66606-2144) 'were gone. Tigris `weftspun-fdb-blob` and R2 `weftspun-fdb-dr` both
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:38Z (RFD66606-2144) 'survived, so the disaster matched RFD66606-2143's premise partially: compute
+2026-09-01T00:00:32Z (RFD66606-2144) 'survived, so the disaster matched RFD66606-2143's premise partially: compute
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:39Z (RFD66606-2144) 'lost, object storage kept. The `personal` org's `weftspun-fdb-blob` bucket
+2026-09-01T00:00:33Z (RFD66606-2144) 'lost, object storage kept. The `personal` org's `weftspun-fdb-blob` bucket
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:40Z (RFD66606-2144) 'showed in `fly storage list`; the R2 bucket showed as `Restorable: true`
+2026-09-01T00:00:34Z (RFD66606-2144) 'showed in `fly storage list`; the R2 bucket showed as `Restorable: true`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:41Z (RFD66606-2144) 'under `fdbbackup describe`.
+2026-09-01T00:00:35Z (RFD66606-2144) 'under `fdbbackup describe`.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:42Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:43Z (RFD66606-2144) 'The R2 snapshot, described from the recovered machine
+2026-09-01T00:00:36Z (RFD66606-2144) 'The R2 snapshot, described from the recovered machine
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:44Z (RFD66606-2144) '    URL: blobstore://<key>@814b5215273d5479adb116d1fe1af696.r2.cloudflarestorage.com:8444/weft?bucket=weftspun-fdb-dr&region=auto&sc=0
+2026-09-01T00:00:37Z (RFD66606-2144) '    URL: blobstore://<key>@814b5215273d5479adb116d1fe1af696.r2.cloudflarestorage.com:8444/weft?bucket=weftspun-fdb-dr&region=auto&sc=0
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:45Z (RFD66606-2144) '    Restorable: true
+2026-09-01T00:00:38Z (RFD66606-2144) '    Restorable: true
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:46Z (RFD66606-2144) '    Snapshot:  startVersion=102067065919 (maxLogEnd -0.19 days)
+2026-09-01T00:00:39Z (RFD66606-2144) '    Snapshot:  startVersion=102067065919 (maxLogEnd -0.19 days)
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:47Z (RFD66606-2144) '               endVersion=102067092357  (maxLogEnd -0.19 days)
+2026-09-01T00:00:40Z (RFD66606-2144) '               endVersion=102067092357  (maxLogEnd -0.19 days)
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:48Z (RFD66606-2144) '               totalBytes=99644  restorable=true  expiredPct=0.00
+2026-09-01T00:00:41Z (RFD66606-2144) '               totalBytes=99644  restorable=true  expiredPct=0.00
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:49Z (RFD66606-2144) '    ContiguousLogEndVersion: 118325089882 (maxLogEnd -0.00 days)
+2026-09-01T00:00:42Z (RFD66606-2144) '    ContiguousLogEndVersion: 118325089882 (maxLogEnd -0.00 days)
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:50Z (RFD66606-2144) '    MaxRestorableVersion:    118325089881 (maxLogEnd -0.00 days)
+2026-09-01T00:00:43Z (RFD66606-2144) '    MaxRestorableVersion:    118325089881 (maxLogEnd -0.00 days)
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:51Z (RFD66606-2144) '
+2026-09-01T00:00:44Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:52Z (RFD66606-2144) '99 644 bytes of snapshot. RFD66606-2143's measurement on 2026-08-31 was
+2026-09-01T00:00:45Z (RFD66606-2144) '99 644 bytes of snapshot. RFD66606-2143's measurement on 2026-08-31 was
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:53Z (RFD66606-2144) '`Sum of key-value sizes = 0 MB`, and this snapshot's size agrees: the
+2026-09-01T00:00:46Z (RFD66606-2144) '`Sum of key-value sizes = 0 MB`, and this snapshot's size agrees: the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:54Z (RFD66606-2144) 'cluster held Bao's PKI mount metadata and little else. The recovered
+2026-09-01T00:00:47Z (RFD66606-2144) 'cluster held Bao's PKI mount metadata and little else. The recovered
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:55Z (RFD66606-2144) 'data is Bao's state at the moment the last log flushed, 0.19 days
+2026-09-01T00:00:48Z (RFD66606-2144) 'data is Bao's state at the moment the last log flushed, 0.19 days
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:56Z (RFD66606-2144) 'before the describe (about four and a half hours before the run).
+2026-09-01T00:00:49Z (RFD66606-2144) 'before the describe (about four and a half hours before the run).
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:57Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:00:58Z (RFD66606-2144) 'The runbook and what it hid
+2026-09-01T00:00:50Z (RFD66606-2144) 'The runbook and what it hid
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:00:59Z (RFD66606-2144) 'Twelve defects surfaced during the run that the RFD66606-2143 runbook did
+2026-09-01T00:00:51Z (RFD66606-2144) 'Twelve defects surfaced during the run that the RFD66606-2143 runbook did
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:00Z (RFD66606-2144) 'not name. They are named here so a second run does not rediscover
+2026-09-01T00:00:52Z (RFD66606-2144) 'not name. They are named here so a second run does not rediscover
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:01Z (RFD66606-2144) 'them.
+2026-09-01T00:00:53Z (RFD66606-2144) 'them.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:02Z (RFD66606-2144) '
+2026-09-01T00:00:54Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:03Z (RFD66606-2144) '**1. `WEFT_FDB_CLUSTER_ID` had no home.** The entrypoint requires it,
+2026-09-01T00:00:55Z (RFD66606-2144) '**1. `WEFT_FDB_CLUSTER_ID` had no home.** The entrypoint requires it,
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:04Z (RFD66606-2144) 'the fly.toml deliberately does not default it, and no 1P item held it.
+2026-09-01T00:00:56Z (RFD66606-2144) 'the fly.toml deliberately does not default it, and no 1P item held it.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:05Z (RFD66606-2144) 'A fresh one was minted (`openssl rand -hex 8`) and stored to 1P as
+2026-09-01T00:00:57Z (RFD66606-2144) 'A fresh one was minted (`openssl rand -hex 8`) and stored to 1P as
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:06Z (RFD66606-2144) '`weftspun-fdb cluster id`. Clients' cluster files change to the new
+2026-09-01T00:00:58Z (RFD66606-2144) '`weftspun-fdb cluster id`. Clients' cluster files change to the new
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:07Z (RFD66606-2144) '`weft:<newid>@<newcoords>`, because coordinator addresses change on a
+2026-09-01T00:00:59Z (RFD66606-2144) '`weft:<newid>@<newcoords>`, because coordinator addresses change on a
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:08Z (RFD66606-2144) 'rebuild anyway, the identity change costs nothing extra. Every future
+2026-09-01T00:01:00Z (RFD66606-2144) 'rebuild anyway, the identity change costs nothing extra. Every future
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:09Z (RFD66606-2144) 'DR needs to either mint fresh or restore this from somewhere, and the
+2026-09-01T00:01:01Z (RFD66606-2144) 'DR needs to either mint fresh or restore this from somewhere, and the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:10Z (RFD66606-2144) 'runbook is now updated to say so.
+2026-09-01T00:01:02Z (RFD66606-2144) 'runbook is now updated to say so.
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:03Z (RFD66606-2144) '
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:04Z (RFD66606-2144) '**2. Bao root token and unseal key were in `notesPlain`.** The
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:05Z (RFD66606-2144) '`weftspun-bao root` login item stored both as free-text notes rather
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:06Z (RFD66606-2144) 'than in CONCEALED fields. A routine `op item get --format=json` walk
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:07Z (RFD66606-2144) 'that concealed only `CONCEALED`-typed fields printed both into the DR
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:08Z (RFD66606-2144) 'session's transcript. Rotation moved to end-of-DR (`bao token
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:09Z (RFD66606-2144) 'revoke -self`, `bao operator rekey`), and the notes field is empty
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:01:10Z (RFD66606-2144) 'afterward.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
@@ -359,37 +359,37 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:12Z (RFD66606-2144) '**2. Bao root token and unseal key were in `notesPlain`.** The
+2026-09-01T00:01:12Z (RFD66606-2144) '**3. `fly storage create --name <existing>` refuses to reattach.** The
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:13Z (RFD66606-2144) '`weftspun-bao root` login item stored both as free-text notes rather
+2026-09-01T00:01:13Z (RFD66606-2144) 'error is `Name has already been taken`. There is no CLI flag for the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:14Z (RFD66606-2144) 'than in CONCEALED fields. A routine `op item get --format=json` walk
+2026-09-01T00:01:14Z (RFD66606-2144) 'attach case, and no other subcommand does it. The recovery got its
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:15Z (RFD66606-2144) 'that concealed only `CONCEALED`-typed fields printed both into the DR
+2026-09-01T00:01:15Z (RFD66606-2144) 'Tigris keys by way of the Tigris console (`fly storage dashboard
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:16Z (RFD66606-2144) 'session's transcript. Rotation moved to end-of-DR (`bao token
+2026-09-01T00:01:16Z (RFD66606-2144) 'weftspun-fdb-blob`) and pasted them into `fly secrets set --stage`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:17Z (RFD66606-2144) 'revoke -self`, `bao operator rekey`), and the notes field is empty
+2026-09-01T00:01:17Z (RFD66606-2144) 'from the operator's own terminal. A followup is a script that walks
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:18Z (RFD66606-2144) 'afterward.
+2026-09-01T00:01:18Z (RFD66606-2144) 'this dance rather than a paragraph in the runbook.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
@@ -399,37 +399,37 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:20Z (RFD66606-2144) '**3. `fly storage create --name <existing>` refuses to reattach.** The
+2026-09-01T00:01:20Z (RFD66606-2144) '**4. Health checks fail closed during initial deploy.** `backup_fresh`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:21Z (RFD66606-2144) 'error is `Name has already been taken`. There is no CLI flag for the
+2026-09-01T00:01:21Z (RFD66606-2144) 'and `backup_fresh_dr` publish a file only when the backup agents are
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:22Z (RFD66606-2144) 'attach case, and no other subcommand does it. The recovery got its
+2026-09-01T00:01:22Z (RFD66606-2144) 'running and their newest object is fresh. On a fresh cluster with no
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:23Z (RFD66606-2144) 'Tigris keys by way of the Tigris console (`fly storage dashboard
+2026-09-01T00:01:23Z (RFD66606-2144) 'backup started, the files never appear, and the checks stay critical
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:24Z (RFD66606-2144) 'weftspun-fdb-blob`) and pasted them into `fly secrets set --stage`
+2026-09-01T00:01:24Z (RFD66606-2144) 'past their grace periods. `--strategy immediate` makes the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:25Z (RFD66606-2144) 'from the operator's own terminal. A followup is a script that walks
+2026-09-01T00:01:25Z (RFD66606-2144) 'deploy return anyway. Once the cluster is up and the DR-tag backup
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:26Z (RFD66606-2144) 'this dance rather than a paragraph in the runbook.
+2026-09-01T00:01:26Z (RFD66606-2144) 'starts, the checks recover on the next poll.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
@@ -439,37 +439,37 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:28Z (RFD66606-2144) '**4. Health checks fail closed during initial deploy.** `backup_fresh`
+2026-09-01T00:01:28Z (RFD66606-2144) '**5. `zsh` `read -p` never fires in the AI session's `!` context.**
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:29Z (RFD66606-2144) 'and `backup_fresh_dr` publish a file only when the backup agents are
+2026-09-01T00:01:29Z (RFD66606-2144) 'The prompt is written to `/dev/tty` and the tool captures stdout, so
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:30Z (RFD66606-2144) 'running and their newest object is fresh. On a fresh cluster with no
+2026-09-01T00:01:30Z (RFD66606-2144) 'the user sees nothing, `read` returns an empty string, and the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:31Z (RFD66606-2144) 'backup started, the files never appear, and the checks stay critical
+2026-09-01T00:01:31Z (RFD66606-2144) 'following `fly secrets set` runs with empty values and rejects them.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:32Z (RFD66606-2144) 'past their grace periods. `--strategy immediate` makes the
+2026-09-01T00:01:32Z (RFD66606-2144) 'The credentials pipeline switched to `op read | fly secrets set` via
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:33Z (RFD66606-2144) 'deploy return anyway. Once the cluster is up and the DR-tag backup
+2026-09-01T00:01:33Z (RFD66606-2144) 'shell substitution, which puts no value in the transcript regardless
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:34Z (RFD66606-2144) 'starts, the checks recover on the next poll.
+2026-09-01T00:01:34Z (RFD66606-2144) 'of the shell.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
@@ -479,467 +479,467 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:36Z (RFD66606-2144) '**5. `zsh` `read -p` never fires in the AI session's `!` context.**
+2026-09-01T00:01:36Z (RFD66606-2144) '**6. The entrypoint spawns no `backup_agent` for R2-only setups.**
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:37Z (RFD66606-2144) 'The prompt is written to `/dev/tty` and the tool captures stdout, so
+2026-09-01T00:01:37Z (RFD66606-2144) '`fdb-entrypoint.sh` gates the `[backup_agent]` config block on
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:38Z (RFD66606-2144) 'the user sees nothing, `read` returns an empty string, and the
+2026-09-01T00:01:38Z (RFD66606-2144) '`$backup = 1`, which is set only inside the AWS/Tigris credentials
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:39Z (RFD66606-2144) 'following `fly secrets set` runs with empty values and rejects them.
+2026-09-01T00:01:39Z (RFD66606-2144) 'block. R2-only bring-up, which is precisely the DR case, writes an
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:40Z (RFD66606-2144) 'The credentials pipeline switched to `op read | fly secrets set` via
+2026-09-01T00:01:40Z (RFD66606-2144) '`fdbmonitor` config with no agents, and `fdbrestore` queues with no
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:41Z (RFD66606-2144) 'shell substitution, which puts no value in the transcript regardless
+2026-09-01T00:01:41Z (RFD66606-2144) 'worker to pick it up. The DR run's restore stayed in state `queued`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:42Z (RFD66606-2144) 'of the shell.
+2026-09-01T00:01:42Z (RFD66606-2144) 'with 0 blocks progressing over twenty polls before the cause was
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:43Z (RFD66606-2144) '
+2026-09-01T00:01:43Z (RFD66606-2144) 'found. Workaround: start `backup_agent` by hand over SSH under mTLS.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:44Z (RFD66606-2144) '**6. The entrypoint spawns no `backup_agent` for R2-only setups.**
+2026-09-01T00:01:44Z (RFD66606-2144) 'Filed as followup: gate the block on `$backup = 1 || $backup_r2 = 1`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:45Z (RFD66606-2144) '`fdb-entrypoint.sh` gates the `[backup_agent]` config block on
+2026-09-01T00:01:45Z (RFD66606-2144) 'and pick `blob_credentials` from whichever file exists.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:46Z (RFD66606-2144) '`$backup = 1`, which is set only inside the AWS/Tigris credentials
+2026-09-01T00:01:46Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:47Z (RFD66606-2144) 'block. R2-only bring-up, which is precisely the DR case, writes an
+2026-09-01T00:01:47Z (RFD66606-2144) '**7. `weftspun/service-openbao` is not in `default.xml`.** The DR
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:48Z (RFD66606-2144) '`fdbmonitor` config with no agents, and `fdbrestore` queues with no
+2026-09-01T00:01:48Z (RFD66606-2144) 'runbook needs the deployment config for `weftspun-bao`, and the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:49Z (RFD66606-2144) 'worker to pick it up. The DR run's restore stayed in state `queued`
+2026-09-01T00:01:49Z (RFD66606-2144) 'config lives in a repo that is not one of the manifest's 135
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:50Z (RFD66606-2144) 'with 0 blocks progressing over twenty polls before the cause was
+2026-09-01T00:01:50Z (RFD66606-2144) 'projects. The run cloned the repo by hand into scratchpad. Add it to
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:51Z (RFD66606-2144) 'found. Workaround: start `backup_agent` by hand over SSH under mTLS.
+2026-09-01T00:01:51Z (RFD66606-2144) 'the goal manifest, or the next DR discovers this the same way.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:52Z (RFD66606-2144) 'Filed as followup: gate the block on `$backup = 1 || $backup_r2 = 1`
+2026-09-01T00:01:52Z (RFD66606-2144) 'RFD66606-2140 references the repo but does not require it to be checked out.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:53Z (RFD66606-2144) 'and pick `blob_credentials` from whichever file exists.
+2026-09-01T00:01:53Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:54Z (RFD66606-2144) '
+2026-09-01T00:01:54Z (RFD66606-2144) '**8. `openssl genpkey -algorithm EC` produces params Go rejects.**
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:55Z (RFD66606-2144) '**7. `weftspun/service-openbao` is not in `default.xml`.** The DR
+2026-09-01T00:01:55Z (RFD66606-2144) 'The Bao listener refused to start with `x509: invalid ECDSA
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:56Z (RFD66606-2144) 'runbook needs the deployment config for `weftspun-bao`, and the
+2026-09-01T00:01:56Z (RFD66606-2144) 'parameters`. `openssl genpkey` with `-pkeyopt ec_paramgen_curve:P-256`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:57Z (RFD66606-2144) 'config lives in a repo that is not one of the manifest's 135
+2026-09-01T00:01:57Z (RFD66606-2144) 'default-encodes the key in PKCS#8 with explicit ECDSA parameters,
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:58Z (RFD66606-2144) 'projects. The run cloned the repo by hand into scratchpad. Add it to
+2026-09-01T00:01:58Z (RFD66606-2144) 'which OpenSSL and CGO consumers (including the FoundationDB Go
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:01:59Z (RFD66606-2144) 'the goal manifest, or the next DR discovers this the same way.
+2026-09-01T00:01:59Z (RFD66606-2144) 'binding) accept but Go's stdlib `crypto/x509` refuses. The fix is
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:00Z (RFD66606-2144) 'RFD66606-2140 references the repo but does not require it to be checked out.
+2026-09-01T00:02:00Z (RFD66606-2144) '`openssl ecparam -name prime256v1 -genkey -noout`, which writes the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:01Z (RFD66606-2144) '
+2026-09-01T00:02:01Z (RFD66606-2144) 'traditional SEC1 `EC PRIVATE KEY` PEM with a named-curve OID that Go
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:02Z (RFD66606-2144) '**8. `openssl genpkey -algorithm EC` produces params Go rejects.**
+2026-09-01T00:02:02Z (RFD66606-2144) 'accepts. `mint-fdb-leaf.sh` used the failing form and stayed that way
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:03Z (RFD66606-2144) 'The Bao listener refused to start with `x509: invalid ECDSA
+2026-09-01T00:02:03Z (RFD66606-2144) 'because its consumers are all CGO. Any key destined for a Go stdlib
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:04Z (RFD66606-2144) 'parameters`. `openssl genpkey` with `-pkeyopt ec_paramgen_curve:P-256`
+2026-09-01T00:02:04Z (RFD66606-2144) 'TLS listener needs the SEC1 form. The break-glass CA generator has
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:05Z (RFD66606-2144) 'default-encodes the key in PKCS#8 with explicit ECDSA parameters,
+2026-09-01T00:02:05Z (RFD66606-2144) 'the same defect on P-384; the Bao boot CA had to be minted in a
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:06Z (RFD66606-2144) 'which OpenSSL and CGO consumers (including the FoundationDB Go
+2026-09-01T00:02:06Z (RFD66606-2144) 'second scratchpad slot rather than reusing the FDB CA.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:07Z (RFD66606-2144) 'binding) accept but Go's stdlib `crypto/x509` refuses. The fix is
+2026-09-01T00:02:07Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:08Z (RFD66606-2144) '`openssl ecparam -name prime256v1 -genkey -noout`, which writes the
+2026-09-01T00:02:08Z (RFD66606-2144) '**9. Three different unseal keys in 1P, only one worked.** The
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:09Z (RFD66606-2144) 'traditional SEC1 `EC PRIVATE KEY` PEM with a named-curve OID that Go
+2026-09-01T00:02:09Z (RFD66606-2144) 'canonical `openbao-fdb-ca-init.json` in the OpenBao document, the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:10Z (RFD66606-2144) 'accepts. `mint-fdb-leaf.sh` used the failing form and stayed that way
+2026-09-01T00:02:10Z (RFD66606-2144) '`unseal_key` CONCEALED field on the `weftspun-bao root` login, and
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:11Z (RFD66606-2144) 'because its consumers are all CGO. Any key destined for a Go stdlib
+2026-09-01T00:02:11Z (RFD66606-2144) 'the base64 line under `Unseal key (base64):` in that login's
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:12Z (RFD66606-2144) 'TLS listener needs the SEC1 form. The break-glass CA generator has
+2026-09-01T00:02:12Z (RFD66606-2144) '`notesPlain` all held different 44-character strings. The first two
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:13Z (RFD66606-2144) 'the same defect on P-384; the Bao boot CA had to be minted in a
+2026-09-01T00:02:13Z (RFD66606-2144) 'failed unseal with `cipher: message authentication failed`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:14Z (RFD66606-2144) 'second scratchpad slot rather than reusing the FDB CA.
+2026-09-01T00:02:14Z (RFD66606-2144) '(AES-GCM auth tag mismatch = wrong key); the notes value succeeded.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:15Z (RFD66606-2144) '
+2026-09-01T00:02:15Z (RFD66606-2144) 'The rekey history clearly outran the 1P hygiene, every rekey wrote
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:16Z (RFD66606-2144) '**9. Three different unseal keys in 1P, only one worked.** The
+2026-09-01T00:02:16Z (RFD66606-2144) 'one place, and the two other slots kept their pre-rekey values. The
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:17Z (RFD66606-2144) 'canonical `openbao-fdb-ca-init.json` in the OpenBao document, the
+2026-09-01T00:02:17Z (RFD66606-2144) 'end-of-DR pass rewrote `unseal_key` (CONCEALED) with the working
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:18Z (RFD66606-2144) '`unseal_key` CONCEALED field on the `weftspun-bao root` login, and
+2026-09-01T00:02:18Z (RFD66606-2144) 'value, cleared `notesPlain` of the leaked keys, and left a note
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:19Z (RFD66606-2144) 'the base64 line under `Unseal key (base64):` in that login's
+2026-09-01T00:02:19Z (RFD66606-2144) 'naming the stale init doc, the source of truth is now one field.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:20Z (RFD66606-2144) '`notesPlain` all held different 44-character strings. The first two
+2026-09-01T00:02:20Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:21Z (RFD66606-2144) 'failed unseal with `cipher: message authentication failed`
+2026-09-01T00:02:21Z (RFD66606-2144) '**10. OpenBao's `sys/rekey/init` returns 405 unsupported operation,
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:22Z (RFD66606-2144) '(AES-GCM auth tag mismatch = wrong key); the notes value succeeded.
+2026-09-01T00:02:22Z (RFD66606-2144) 'until enabled by a listener flag.** Vault registers the unauthenticated
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:23Z (RFD66606-2144) 'The rekey history clearly outran the 1P hygiene, every rekey wrote
+2026-09-01T00:02:23Z (RFD66606-2144) 'Shamir rekey endpoints by default; OpenBao gates them on
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:24Z (RFD66606-2144) 'one place, and the two other slots kept their pre-rekey values. The
+2026-09-01T00:02:24Z (RFD66606-2144) '`disable_unauthed_rekey_endpoints = false` inside the `listener "tcp"`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:25Z (RFD66606-2144) 'end-of-DR pass rewrote `unseal_key` (CONCEALED) with the working
+2026-09-01T00:02:25Z (RFD66606-2144) 'block. Without the flag, `internal/http/handler.go` skips
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:26Z (RFD66606-2144) 'value, cleared `notesPlain` of the leaked keys, and left a note
+2026-09-01T00:02:26Z (RFD66606-2144) '`mux.Handle("/v1/sys/rekey/init", ...)` and the endpoint returns 405.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:27Z (RFD66606-2144) 'naming the stale init doc, the source of truth is now one field.
+2026-09-01T00:02:27Z (RFD66606-2144) 'The fix landed in `service-openbao/config-fdb.hcl` during the DR;
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:28Z (RFD66606-2144) '
+2026-09-01T00:02:28Z (RFD66606-2144) '`bao operator rekey` then completed and the new unseal key is what
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:29Z (RFD66606-2144) '**10. OpenBao's `sys/rekey/init` returns 405 unsupported operation,
+2026-09-01T00:02:29Z (RFD66606-2144) '`op://Personal/weftspun-bao root/unseal_key` holds. **Verified:**
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:30Z (RFD66606-2144) 'until enabled by a listener flag.** Vault registers the unauthenticated
+2026-09-01T00:02:30Z (RFD66606-2144) '`bao operator seal` followed by `bao operator unseal <new-key>` cycles
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:31Z (RFD66606-2144) 'Shamir rekey endpoints by default; OpenBao gates them on
+2026-09-01T00:02:31Z (RFD66606-2144) 'without error.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:32Z (RFD66606-2144) '`disable_unauthed_rekey_endpoints = false` inside the `listener "tcp"`
+2026-09-01T00:02:32Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:33Z (RFD66606-2144) 'block. Without the flag, `internal/http/handler.go` skips
+2026-09-01T00:02:33Z (RFD66606-2144) '**11. `sys/generate-root-token/attempt` returns 403; the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:34Z (RFD66606-2144) '`mux.Handle("/v1/sys/rekey/init", ...)` and the endpoint returns 405.
+2026-09-01T00:02:34Z (RFD66606-2144) 'unauthenticated `sys/generate-root/attempt` is behind the same
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:35Z (RFD66606-2144) 'The fix landed in `service-openbao/config-fdb.hcl` during the DR;
+2026-09-01T00:02:35Z (RFD66606-2144) 'listener flag.** OpenBao's authenticated variant (with `-token` in the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:36Z (RFD66606-2144) '`bao operator rekey` then completed and the new unseal key is what
+2026-09-01T00:02:36Z (RFD66606-2144) 'path) always returns `permission denied` to callers presenting a
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:37Z (RFD66606-2144) '`op://Personal/weftspun-bao root/unseal_key` holds. **Verified:**
+2026-09-01T00:02:37Z (RFD66606-2144) 'client cert; the CLI hits this one by default. The unauthenticated
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:38Z (RFD66606-2144) '`bao operator seal` followed by `bao operator unseal <new-key>` cycles
+2026-09-01T00:02:38Z (RFD66606-2144) 'variant (Vault's original path, without `-token`) is only registered
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:39Z (RFD66606-2144) 'without error.
+2026-09-01T00:02:39Z (RFD66606-2144) 'when `disable_unauthed_generate_root_endpoints = false`. Same flag as
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:40Z (RFD66606-2144) '
+2026-09-01T00:02:40Z (RFD66606-2144) '#10, filed the same way. The CLI's `-decode` operation itself calls
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:41Z (RFD66606-2144) '**11. `sys/generate-root-token/attempt` returns 403; the
+2026-09-01T00:02:41Z (RFD66606-2144) 'the authenticated status endpoint before decoding, so on this build
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:42Z (RFD66606-2144) 'unauthenticated `sys/generate-root/attempt` is behind the same
+2026-09-01T00:02:42Z (RFD66606-2144) 'the decode step fails even after the endpoint is enabled, decode was
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:43Z (RFD66606-2144) 'listener flag.** OpenBao's authenticated variant (with `-token` in the
+2026-09-01T00:02:43Z (RFD66606-2144) 'done locally in Python (XOR of the OTP against `base64.RawStdEncoding`
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:44Z (RFD66606-2144) 'path) always returns `permission denied` to callers presenting a
+2026-09-01T00:02:44Z (RFD66606-2144) 'of the encoded token, per `sdk/helper/roottoken/decode.go`). The
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:45Z (RFD66606-2144) 'client cert; the CLI hits this one by default. The unauthenticated
+2026-09-01T00:02:45Z (RFD66606-2144) 'recovered token was used to revoke three orphan root accessors this
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:46Z (RFD66606-2144) 'variant (Vault's original path, without `-token`) is only registered
+2026-09-01T00:02:46Z (RFD66606-2144) 'DR had accumulated during rotation attempts; the new root token is
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:47Z (RFD66606-2144) 'when `disable_unauthed_generate_root_endpoints = false`. Same flag as
+2026-09-01T00:02:47Z (RFD66606-2144) 'what `op://Personal/weftspun-bao root/password` holds. **Verified:**
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:48Z (RFD66606-2144) '#10, filed the same way. The CLI's `-decode` operation itself calls
+2026-09-01T00:02:48Z (RFD66606-2144) '`bao token lookup` under the new token reports `policies=[root]`,
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:49Z (RFD66606-2144) 'the authenticated status endpoint before decoding, so on this build
+2026-09-01T00:02:49Z (RFD66606-2144) '`orphan=true`; only three accessors remain (was five).
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:50Z (RFD66606-2144) 'the decode step fails even after the endpoint is enabled, decode was
+2026-09-01T00:02:50Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:51Z (RFD66606-2144) 'done locally in Python (XOR of the OTP against `base64.RawStdEncoding`
+2026-09-01T00:02:51Z (RFD66606-2144) '**12. `awk -F=` truncates the trailing `=` in base64 values.** A
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:52Z (RFD66606-2144) 'of the encoded token, per `sdk/helper/roottoken/decode.go`). The
+2026-09-01T00:02:52Z (RFD66606-2144) '44-char base64-encoded 32-byte unseal key stored as 43 chars in 1P
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:53Z (RFD66606-2144) 'recovered token was used to revoke three orphan root accessors this
+2026-09-01T00:02:53Z (RFD66606-2144) 'during rekey capture, because `awk -F= '/^uk=/{print $2}'` splits
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:54Z (RFD66606-2144) 'DR had accumulated during rotation attempts; the new root token is
+2026-09-01T00:02:54Z (RFD66606-2144) 'on `=` characters and returns only the field between the first two,
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:55Z (RFD66606-2144) 'what `op://Personal/weftspun-bao root/password` holds. **Verified:**
+2026-09-01T00:02:55Z (RFD66606-2144) 'dropping any padding `=` at the end. Base64 decode of the 43-char
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:56Z (RFD66606-2144) '`bao token lookup` under the new token reports `policies=[root]`,
+2026-09-01T00:02:56Z (RFD66606-2144) 'form still gave the correct 32 bytes (padding is optional in
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:57Z (RFD66606-2144) '`orphan=true`; only three accessors remain (was five).
+2026-09-01T00:02:57Z (RFD66606-2144) '`RawStdEncoding` and forgiving in most decoders), so the cluster
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:58Z (RFD66606-2144) '
+2026-09-01T00:02:58Z (RFD66606-2144) 'survived; the stored value was rewritten with the padding restored
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:02:59Z (RFD66606-2144) '**12. `awk -F=` truncates the trailing `=` in base64 values.** A
+2026-09-01T00:02:59Z (RFD66606-2144) 'for canonical hygiene. Fix: use `cut -d= -f2-` (which keeps
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:00Z (RFD66606-2144) '44-char base64-encoded 32-byte unseal key stored as 43 chars in 1P
+2026-09-01T00:03:00Z (RFD66606-2144) 'everything after the first `=`) or `sed 's/^uk=//'`.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:01Z (RFD66606-2144) 'during rekey capture, because `awk -F= '/^uk=/{print $2}'` splits
- # tags: rfd:details
+2026-09-01T00:03:01Z (RFD66606-2144) 'The break-glass CA
+ # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:02Z (RFD66606-2144) 'on `=` characters and returns only the field between the first two,
+2026-09-01T00:03:02Z (RFD66606-2144) 'The 5-year break-glass CA and 2-year machine leaves below are the
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:03Z (RFD66606-2144) 'dropping any padding `=` at the end. Base64 decode of the 43-char
+2026-09-01T00:03:03Z (RFD66606-2144) '"break-glass" row in RFD66606-2145's table. The 10-year Bao WebTransport
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:04Z (RFD66606-2144) 'form still gave the correct 32 bytes (padding is optional in
+2026-09-01T00:03:04Z (RFD66606-2144) 'intermediate this DR also minted (`pki-wt/`) is now RETRACTED by
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:05Z (RFD66606-2144) '`RawStdEncoding` and forgiving in most decoders), so the cluster
+2026-09-01T00:03:05Z (RFD66606-2144) 'RFD66606-2145 down to 3 years; re-mint before its `notAfter` and rotate at
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:06Z (RFD66606-2144) 'survived; the stored value was rewritten with the padding restored
+2026-09-01T00:03:06Z (RFD66606-2144) 'year 1. See RFD66606-2145's `references/` for the CFF citations.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:07Z (RFD66606-2144) 'for canonical hygiene. Fix: use `cut -d= -f2-` (which keeps
+2026-09-01T00:03:07Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:08Z (RFD66606-2144) 'everything after the first `=`) or `sed 's/^uk=//'`.
+2026-09-01T00:03:08Z (RFD66606-2144) 'Minted P-384 self-signed root, five-year validity:
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
@@ -949,302 +949,237 @@
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:10Z (RFD66606-2144) 'The break-glass CA
+2026-09-01T00:03:10Z (RFD66606-2144) '    fingerprint  71:D6:EE:B6:E1:93:78:F6:70:05:72:1D:F4:BD:24:3A:B7:C3:9A:91:28:FE:A2:D2:60:E5:B8:8F:0F:1E:0F:15
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:11Z (RFD66606-2144) '    subject      CN=weftspun-fdb-ca, O=chibifire
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:12Z (RFD66606-2144) '    algorithm    ECDSA P-384
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:13Z (RFD66606-2144) '
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:14Z (RFD66606-2144) 'Stored to 1Password: `FDB-CA cert` (uuid
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:15Z (RFD66606-2144) '`iwkxxgvlszvnidwfscr6asctpm`), `FDB-CA key` (uuid
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:16Z (RFD66606-2144) '`nkrahus5ruqycjqa2i3jsswd5y`). The leaves the run mints are P-256,
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:17Z (RFD66606-2144) 'two-year, CN `fdb-<machine_id>.chibifire.com`, matching
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:18Z (RFD66606-2144) '`WEFT_FDB_TLS_VERIFY` (`S.CN>=fdb-,S.CN<=.chibifire.com`).
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:19Z (RFD66606-2144) '
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:20Z (RFD66606-2144) 'The break-glass CA does not become the cluster CA. Once Bao is
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:21Z (RFD66606-2144) 'unsealed against the restored FDB, RFD66606-2141's phases 2–3 rotate every
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:22Z (RFD66606-2144) 'leaf to a certificate signed by the CA Bao's PKI mount holds, and
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:23Z (RFD66606-2144) '`FDB_TLS_CA_B64` drops the break-glass anchor. The break-glass CA in
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:24Z (RFD66606-2144) '1P stays as a break-glass CA, for the next DR.
+ # tags: rfd:details
+ Text:RFD2144  1 LINE
+ Text:Written
+
+2026-09-01T00:03:25Z (RFD66606-2144) 'The recovery, step by step
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:11Z (RFD66606-2144) 'The 5-year break-glass CA and 2-year machine leaves below are the
+2026-09-01T00:03:26Z (RFD66606-2144) '    T+0     fly apps create weftspun-fdb --org personal
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:12Z (RFD66606-2144) '"break-glass" row in RFD66606-2145's table. The 10-year Bao WebTransport
+2026-09-01T00:03:27Z (RFD66606-2144) '    T+2m    fly secrets set --stage: R2_* (from op://), WEFT_FDB_CLUSTER_ID
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:13Z (RFD66606-2144) 'intermediate this DR also minted (`pki-wt/`) is now RETRACTED by
+2026-09-01T00:03:28Z (RFD66606-2144) '    T+3m    First deploy: WEFT_FDB_MACHINES=1, WEFT_FDB_RESET=1, no TLS
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:14Z (RFD66606-2144) 'RFD66606-2145 down to 3 years; re-mint before its `notAfter` and rotate at
+2026-09-01T00:03:29Z (RFD66606-2144) '            → machine 8d1d2ebed71158 allocated
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:15Z (RFD66606-2144) 'year 1. See RFD66606-2145's `references/` for the CFF citations.
+2026-09-01T00:03:30Z (RFD66606-2144) '    T+8m    Mint leaf for 8d1d2ebed71158 under break-glass CA
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:16Z (RFD66606-2144) '
+2026-09-01T00:03:31Z (RFD66606-2144) '            fly secrets set --stage: FDB_TLS_CA_B64, FDB_TLS_CERT_*, FDB_TLS_KEY_*
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:17Z (RFD66606-2144) 'Minted P-384 self-signed root, five-year validity:
+2026-09-01T00:03:32Z (RFD66606-2144) '            Second deploy: same env, TLS secrets active → cluster reforms mTLS
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:18Z (RFD66606-2144) '
+2026-09-01T00:03:33Z (RFD66606-2144) '    T+9m    fdbcli status: "The database is available."
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:19Z (RFD66606-2144) '    fingerprint  71:D6:EE:B6:E1:93:78:F6:70:05:72:1D:F4:BD:24:3A:B7:C3:9A:91:28:FE:A2:D2:60:E5:B8:8F:0F:1E:0F:15
+2026-09-01T00:03:34Z (RFD66606-2144) '    T+10m   fdbbackup describe -d $R2_URL: Restorable: true
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:20Z (RFD66606-2144) '    subject      CN=weftspun-fdb-ca, O=chibifire
+2026-09-01T00:03:35Z (RFD66606-2144) '    T+10m   fdbrestore start -w -r $R2_URL
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:21Z (RFD66606-2144) '    algorithm    ECDSA P-384
+2026-09-01T00:03:36Z (RFD66606-2144) '
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:22Z (RFD66606-2144) '
+2026-09-01T00:03:37Z (RFD66606-2144) 'The full T+ timeline for the rest, Bao restore, cert rotation, scale
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:23Z (RFD66606-2144) 'Stored to 1Password: `FDB-CA cert` (uuid
+2026-09-01T00:03:38Z (RFD66606-2144) 'to three, key rotation, lands as it happens in
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:24Z (RFD66606-2144) '`iwkxxgvlszvnidwfscr6asctpm`), `FDB-CA key` (uuid
+2026-09-01T00:03:39Z (RFD66606-2144) '`logbook-rfd2144-dr-runbook-first-run.md`.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:25Z (RFD66606-2144) '`nkrahus5ruqycjqa2i3jsswd5y`). The leaves the run mints are P-256,
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:26Z (RFD66606-2144) 'two-year, CN `fdb-<machine_id>.chibifire.com`, matching
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:27Z (RFD66606-2144) '`WEFT_FDB_TLS_VERIFY` (`S.CN>=fdb-,S.CN<=.chibifire.com`).
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:28Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:29Z (RFD66606-2144) 'The break-glass CA does not become the cluster CA. Once Bao is
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:30Z (RFD66606-2144) 'unsealed against the restored FDB, RFD66606-2141's phases 2–3 rotate every
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:31Z (RFD66606-2144) 'leaf to a certificate signed by the CA Bao's PKI mount holds, and
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:32Z (RFD66606-2144) '`FDB_TLS_CA_B64` drops the break-glass anchor. The break-glass CA in
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:33Z (RFD66606-2144) '1P stays as a break-glass CA, for the next DR.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:34Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:35Z (RFD66606-2144) 'The recovery, step by step
+2026-09-01T00:03:40Z (RFD66606-2144) 'What this RFD does not cover
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:36Z (RFD66606-2144) '    T+0     fly apps create weftspun-fdb --org personal
+2026-09-01T00:03:41Z (RFD66606-2144) '- **A second DR without a running desk.** This run had a laptop with
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:37Z (RFD66606-2144) '    T+2m    fly secrets set --stage: R2_* (from op://), WEFT_FDB_CLUSTER_ID
+2026-09-01T00:03:42Z (RFD66606-2144) '  `op`, `fly`, and `openssl`. A DR where the laptop is also gone needs
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:38Z (RFD66606-2144) '    T+3m    First deploy: WEFT_FDB_MACHINES=1, WEFT_FDB_RESET=1, no TLS
+2026-09-01T00:03:43Z (RFD66606-2144) '  a break-glass laptop image, and RFD66606-2143's cross-region point holds.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:39Z (RFD66606-2144) '            → machine 8d1d2ebed71158 allocated
+2026-09-01T00:03:44Z (RFD66606-2144) '- **Backup encryption at rest.** RFD66606-2143 named this as future work
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:40Z (RFD66606-2144) '    T+8m    Mint leaf for 8d1d2ebed71158 under break-glass CA
+2026-09-01T00:03:45Z (RFD66606-2144) '  and it stays so. R2's copy of Bao's mount metadata is unencrypted.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:41Z (RFD66606-2144) '            fly secrets set --stage: FDB_TLS_CA_B64, FDB_TLS_CERT_*, FDB_TLS_KEY_*
+2026-09-01T00:03:46Z (RFD66606-2144) '- **Recovering `chibifire-com`.** The domain and cert setup was not
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:42Z (RFD66606-2144) '            Second deploy: same env, TLS secrets active → cluster reforms mTLS
+2026-09-01T00:03:47Z (RFD66606-2144) '  part of this run; recreating it is a separate task.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:43Z (RFD66606-2144) '    T+9m    fdbcli status: "The database is available."
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:44Z (RFD66606-2144) '    T+10m   fdbbackup describe -d $R2_URL: Restorable: true
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:45Z (RFD66606-2144) '    T+10m   fdbrestore start -w -r $R2_URL
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:46Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:47Z (RFD66606-2144) 'The full T+ timeline for the rest, Bao restore, cert rotation, scale
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:48Z (RFD66606-2144) 'to three, key rotation, lands as it happens in
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:49Z (RFD66606-2144) '`logbook-rfd2144-dr-runbook-first-run.md`.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:50Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:51Z (RFD66606-2144) 'What this RFD does not cover
+2026-09-01T00:03:48Z (RFD66606-2144) 'The problem
  # tags: rfd:details-heading
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:52Z (RFD66606-2144) '- **A second DR without a running desk.** This run had a laptop with
+2026-09-01T00:03:49Z (RFD66606-2144) 'Tigris and R2 both
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:53Z (RFD66606-2144) '  `op`, `fly`, and `openssl`. A DR where the laptop is also gone needs
+2026-09-01T00:03:50Z (RFD66606-2144) 'survived (compute lost, storage kept), so the runbook had to run.
  # tags: rfd:details
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:03:54Z (RFD66606-2144) '  a break-glass laptop image, and RFD66606-2143's cross-region point holds.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:55Z (RFD66606-2144) '- **Backup encryption at rest.** RFD66606-2143 named this as future work
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:56Z (RFD66606-2144) '  and it stays so. R2's copy of Bao's mount metadata is unencrypted.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:57Z (RFD66606-2144) '- **Recovering `chibifire-com`.** The domain and cert setup was not
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:58Z (RFD66606-2144) '  part of this run; recreating it is a separate task.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:03:59Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:04:00Z (RFD66606-2144) 'The problem
- # tags: rfd:details-heading
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:04:01Z (RFD66606-2144) 'Tigris and R2 both
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:04:02Z (RFD66606-2144) 'survived (compute lost, storage kept), so the runbook had to run.
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:04:03Z (RFD66606-2144) '
- # tags: rfd:details
- Text:RFD2144  1 LINE
- Text:Written
-
-2026-09-01T00:04:04Z (RFD66606-2144) '2351
+2026-09-01T00:03:51Z (RFD66606-2144) '2351
  # tags: rebac:verbs-from
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:04:05Z (RFD66606-2144) 'rfd-2144 provides fdb-dr-restore-proven
+2026-09-01T00:03:52Z (RFD66606-2144) 'rfd-2144 provides fdb-dr-restore-proven
  # tags: rebac:relate
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:04:06Z (RFD66606-2144) 'rfd-2144 provides break-glass-ca-in-1password
+2026-09-01T00:03:53Z (RFD66606-2144) 'rfd-2144 provides break-glass-ca-in-1password
  # tags: rebac:relate
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:04:07Z (RFD66606-2144) 'rfd-2144 spends fdb-backup-r2-dr-tag
+2026-09-01T00:03:54Z (RFD66606-2144) 'rfd-2144 spends fdb-backup-r2-dr-tag
  # tags: rebac:relate
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:04:08Z (RFD66606-2144) 'rfd-2144 spends bao
+2026-09-01T00:03:55Z (RFD66606-2144) 'rfd-2144 spends bao
  # tags: rebac:relate
  Text:RFD2144  1 LINE
  Text:Written
 
-2026-09-01T00:04:09Z (RFD66606-2144) 'rfd-2144 is_a experiment-record
+2026-09-01T00:03:56Z (RFD66606-2144) 'rfd-2144 is_a experiment-record
  # tags: rebac:relate
  Text:RFD2144  1 LINE
  Text:Written

@@ -8,7 +8,8 @@ defmodule RFD.Txn do
   title: it moves the serial from its site into its state. Each line of
   a property is one more transaction, its description the line and its
   tag the property, so a property's metadata runs and only the text
-  changes. A line is one transaction, however long.
+  changes. A line is one transaction, however long. A value ends in a
+  newline unless its last line is also tagged `rfd:no-final-newline`.
 
   `write/2` writes a `%RFD.Doc{}` out; `parse/1` reads one back through
   `RFD.DSL.build/6`, so every check of the DSL runs on it.
@@ -121,7 +122,19 @@ defmodule RFD.Txn do
   defp text(_t, _tag, nil), do: []
 
   defp text(t, tag, s) when is_binary(s) do
-    s |> String.split("\n") |> Enum.flat_map(&line(t, tag, &1))
+    {body, open?} =
+      if String.ends_with?(s, "\n"),
+        do: {String.replace_suffix(s, "\n", ""), false},
+        else: {s, true}
+
+    lines = String.split(body, "\n")
+    last = length(lines)
+
+    lines
+    |> Enum.with_index(1)
+    |> Enum.flat_map(fn {l, i} ->
+      line(t, if(open? and i == last, do: tag <> ", rfd:no-final-newline", else: tag), l)
+    end)
   end
 
   defp line(t, tag, s) do
@@ -246,8 +259,22 @@ defmodule RFD.Txn do
     |> Map.merge(%{rebac: [], steps: [], at: nil, state: nil})
   end
 
-  defp step(%{tags: [tag]} = t, acc), do: put(tag, t.description || "", acc)
+  @text_tags ~w(rfd:section rfd:details rebac:meaning rebac:reason)
+
+  defp step(%{tags: [tag, "rfd:no-final-newline"]} = t, acc),
+    do: put(tag, t.description || "", acc)
+
+  defp step(%{tags: [tag]} = t, acc) do
+    s = t.description || ""
+    if text_tag?(tag), do: put(tag, s <> "\n", acc), else: put(tag, s, acc)
+  end
+
   defp step(%{tags: tags}, _acc), do: raise(ArgumentError, "tags #{inspect(tags)} on a line")
+
+  defp text_tag?(tag) do
+    tag in @text_tags or
+      Enum.any?(@text ++ @spine, &("rfd:" <> dash(&1) == tag))
+  end
 
   defp put("rfd:state", s, acc), do: %{acc | state: state(s), at: nil}
 
@@ -319,7 +346,7 @@ defmodule RFD.Txn do
     k = known!(key, @text ++ @spine, "unknown property rfd:#{key}")
 
     order = if k in @spine and not Map.has_key?(acc.text, k), do: [k | acc.order], else: acc.order
-    %{acc | text: Map.update(acc.text, k, s, &(&1 <> "\n" <> s)), order: order, at: k}
+    %{acc | text: Map.update(acc.text, k, s, &(&1 <> s)), order: order, at: k}
   end
 
   defp put(tag, _s, _acc), do: raise(ArgumentError, "unknown property #{tag}")
@@ -330,7 +357,7 @@ defmodule RFD.Txn do
   defp add([{h, body} | rest], s), do: [{h, append(body, s)} | rest]
 
   defp append(nil, s), do: s
-  defp append(body, s), do: body <> "\n" <> s
+  defp append(body, s), do: body <> s
 
   defp row(s, deny) do
     [subject, verb, object] = String.split(s, " ")

@@ -5,7 +5,7 @@
  Serials:Weftspun
 
 2026-08-25T00:00:01Z (RFD66606-1027) 'capacity planning
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD1027  1 LINE
  Text:Written
 
@@ -14,187 +14,187 @@
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1027) '
- # tags: rfd:hook
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1027) 'Does every model fit one device at once? This RFD first summed 116.45 GB against a
+2026-08-25T00:00:03Z (RFD66606-1027) 'Does every model fit one device at once? This RFD first summed 116.45 GB against a
  # tags: rfd:intrigue
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1027) '128 GB DGX Spark, found about 10 GB of headroom, and called the margin too small.
+2026-08-25T00:00:04Z (RFD66606-1027) '128 GB DGX Spark, found about 10 GB of headroom, and called the margin too small.
  # tags: rfd:intrigue
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1027) '
- # tags: rfd:intrigue
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1027) 'Size a new model alone against the weights RFD66606-1025 gives and its activation peak, then
+2026-08-25T00:00:05Z (RFD66606-1027) 'Size a new model alone against the weights RFD66606-1025 gives and its activation peak, then
  # tags: rfd:exit
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1027) 'place it in the tier table below.
+2026-08-25T00:00:06Z (RFD66606-1027) 'place it in the tier table below.
  # tags: rfd:exit
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1027) '
- # tags: rfd:exit
+2026-08-25T00:00:07Z (RFD66606-1027) 'GPU tier per model
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1027) 'GPU tier per model
- # tags: rfd:details-title
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1027) 'Size each model on its own. The question is which GPU tier one model
+2026-08-25T00:00:08Z (RFD66606-1027) 'Size each model on its own. The question is which GPU tier one model
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1027) 'needs, and not whether a set of models co-resides.
+2026-08-25T00:00:09Z (RFD66606-1027) 'needs, and not whether a set of models co-resides.
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1027) '
+2026-08-25T00:00:10Z (RFD66606-1027) '
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1027) 'Two numbers decide the tier: the weights RFD66606-1025 gives per model,
+2026-08-25T00:00:11Z (RFD66606-1027) 'Two numbers decide the tier: the weights RFD66606-1025 gives per model,
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1027) 'and the activation peak, which depends on the resolution and the
+2026-08-25T00:00:12Z (RFD66606-1027) 'and the activation peak, which depends on the resolution and the
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1027) 'batch size.
+2026-08-25T00:00:13Z (RFD66606-1027) 'batch size.
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1027) '
+2026-08-25T00:00:14Z (RFD66606-1027) '
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1027) 'Every model in the catalog reaches a 24 GB card. The workspace
+2026-08-25T00:00:15Z (RFD66606-1027) 'Every model in the catalog reaches a 24 GB card. The workspace
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1027) 'standardizes on **QAFT 4-bit** as the default weights format where
+2026-08-25T00:00:16Z (RFD66606-1027) 'standardizes on **QAFT 4-bit** as the default weights format where
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1027) 'upstream ships one (Gemma-4-12B QAT Q4_0 is the canonical example
+2026-08-25T00:00:17Z (RFD66606-1027) 'upstream ships one (Gemma-4-12B QAT Q4_0 is the canonical example
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1027) 'and reasoning core per RFD66606-2169). Models without a QAFT release run
+2026-08-25T00:00:18Z (RFD66606-1027) 'and reasoning core per RFD66606-2169). Models without a QAFT release run
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1027) 'at published precision (bf16) with staged loading.
+2026-08-25T00:00:19Z (RFD66606-1027) 'at published precision (bf16) with staged loading.
  # tags: rfd:decision
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1027) '
- # tags: rfd:decision
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1027) 'RFD66606-1025 gives the arithmetic and the memory per model.
+2026-08-25T00:00:20Z (RFD66606-1027) 'RFD66606-1025 gives the arithmetic and the memory per model.
  # tags: rfd:related
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1027) 'RFD66606-1036 gives the packaging that sets the tier.
+2026-08-25T00:00:21Z (RFD66606-1027) 'RFD66606-1036 gives the packaging that sets the tier.
  # tags: rfd:related
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1027) '
- # tags: rfd:related
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-1027) 'Tier per model
+2026-08-25T00:00:22Z (RFD66606-1027) 'Tier per model
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1027) 'A tier must hold the weights and the activations together. Format is
+2026-08-25T00:00:23Z (RFD66606-1027) 'A tier must hold the weights and the activations together. Format is
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1027) 'QAFT 4-bit where upstream ships one; bf16 otherwise. Peak is the
+2026-08-25T00:00:24Z (RFD66606-1027) 'QAFT 4-bit where upstream ships one; bf16 otherwise. Peak is the
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1027) 'resident weight set, smaller than total for staged models.
+2026-08-25T00:00:25Z (RFD66606-1027) 'resident weight set, smaller than total for staged models.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1027) '
+2026-08-25T00:00:26Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1027) '### Reasoning + generation
+2026-08-25T00:00:27Z (RFD66606-1027) '### Reasoning + generation
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1027) '
+2026-08-25T00:00:28Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1027) '| Model                            | Format | Weights |    Peak | Tier  |
+2026-08-25T00:00:29Z (RFD66606-1027) '| Model                            | Format | Weights |    Peak | Tier  |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1027) '| -------------------------------- | :----: | ------: | ------: | ----- |
+2026-08-25T00:00:30Z (RFD66606-1027) '| -------------------------------- | :----: | ------: | ------: | ----- |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1027) '| Gemma-4-12B (reasoning core)     |  Q4_0  |   ~7 GB |   ~7 GB | 24 GB |
+2026-08-25T00:00:31Z (RFD66606-1027) '| Gemma-4-12B (reasoning core)     |  Q4_0  |   ~7 GB |   ~7 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1027) '| Qwen3-VL-4B (EditScore base)     |  bf16  |  ~9 GB  |  ~9 GB  | 24 GB |
+2026-08-25T00:00:32Z (RFD66606-1027) '| Qwen3-VL-4B (EditScore base)     |  bf16  |  ~9 GB  |  ~9 GB  | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1027) '| Wan-VACE 14B (image + video gen) |  bf16  |  ~28 GB |  ~8 GB  | 24 GB* |
+2026-08-25T00:00:33Z (RFD66606-1027) '| Wan-VACE 14B (image + video gen) |  bf16  |  ~28 GB |  ~8 GB  | 24 GB* |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1027) '| OmniGen2                         |  bf16  |   ~4 GB |   ~4 GB | 24 GB |
+2026-08-25T00:00:34Z (RFD66606-1027) '| OmniGen2                         |  bf16  |   ~4 GB |   ~4 GB | 24 GB |
+ # tags: rfd:details
+ Text:RFD1027  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1027) '
+ # tags: rfd:details
+ Text:RFD1027  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1027) '*Wan-VACE at bf16 exceeds 24 GB total; runs staged (encoder/UNet/decoder freed in turn) with
+ # tags: rfd:details
+ Text:RFD1027  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1027) 'peak ~8 GB. No QAFT release upstream (RFD66606-2139 survey).
+ # tags: rfd:details
+ Text:RFD1027  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1027) '
+ # tags: rfd:details
+ Text:RFD1027  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1027) '### 3D + rigging
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
@@ -204,67 +204,67 @@
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1027) '*Wan-VACE at bf16 exceeds 24 GB total; runs staged (encoder/UNet/decoder freed in turn) with
+2026-08-25T00:00:41Z (RFD66606-1027) '| Model                            | Format | Weights |    Peak | Tier  |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1027) 'peak ~8 GB. No QAFT release upstream (RFD66606-2139 survey).
+2026-08-25T00:00:42Z (RFD66606-1027) '| -------------------------------- | :----: | ------: | ------: | ----- |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1027) '
+2026-08-25T00:00:43Z (RFD66606-1027) '| Pixal3D (image -> textured mesh) |  bf16  | 24.0 GB |  6.5 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1027) '### 3D + rigging
+2026-08-25T00:00:44Z (RFD66606-1027) '| TRELLIS.2                        |  bf16  |  8.0 GB |  8.0 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1027) '
+2026-08-25T00:00:45Z (RFD66606-1027) '| VoxHammer (image -> mesh edit)   |  n/a   |  0.0 GB |  0.0 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1027) '| Model                            | Format | Weights |    Peak | Tier  |
+2026-08-25T00:00:46Z (RFD66606-1027) '| MoGe-3 (metric depth)            |  bf16  |   ~1 GB |   ~1 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1027) '| -------------------------------- | :----: | ------: | ------: | ----- |
+2026-08-25T00:00:47Z (RFD66606-1027) '| SkinTokens (auto rig)            |  bf16  |  1.0 GB |  1.0 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1027) '| Pixal3D (image -> textured mesh) |  bf16  | 24.0 GB |  6.5 GB | 24 GB |
+2026-08-25T00:00:48Z (RFD66606-1027) '| Kimodo (text -> motion)          |  bf16  |  0.6 GB |  0.6 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1027) '| TRELLIS.2                        |  bf16  |  8.0 GB |  8.0 GB | 24 GB |
+2026-08-25T00:00:49Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1027) '| VoxHammer (image -> mesh edit)   |  n/a   |  0.0 GB |  0.0 GB | 24 GB |
+2026-08-25T00:00:50Z (RFD66606-1027) 'VoxHammer's 0.0 GB row is per RFD66606-1162, it holds no weights and
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1027) '| MoGe-3 (metric depth)            |  bf16  |   ~1 GB |   ~1 GB | 24 GB |
+2026-08-25T00:00:51Z (RFD66606-1027) 'inherits placement.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1027) '| SkinTokens (auto rig)            |  bf16  |  1.0 GB |  1.0 GB | 24 GB |
+2026-08-25T00:00:52Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1027) '| Kimodo (text -> motion)          |  bf16  |  0.6 GB |  0.6 GB | 24 GB |
+2026-08-25T00:00:53Z (RFD66606-1027) '### Vision heads
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
@@ -274,22 +274,22 @@
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1027) 'VoxHammer's 0.0 GB row is per RFD66606-1162, it holds no weights and
+2026-08-25T00:00:55Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1027) 'inherits placement.
+2026-08-25T00:00:56Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1027) '
+2026-08-25T00:00:57Z (RFD66606-1027) '| rf-detr / rf-detr-Seg          |  bf16  |  ~0.2 GB| ~0.2 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1027) '### Vision heads
+2026-08-25T00:00:58Z (RFD66606-1027) '| LaMa (AnimeMangaInpainting)    |  bf16  |  ~0.2 GB| ~0.2 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
@@ -299,62 +299,62 @@
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
+2026-08-25T00:01:00Z (RFD66606-1027) '### Voice (TTS)
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
+2026-08-25T00:01:01Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1027) '| rf-detr / rf-detr-Seg          |  bf16  |  ~0.2 GB| ~0.2 GB | 24 GB |
+2026-08-25T00:01:02Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1027) '| LaMa (AnimeMangaInpainting)    |  bf16  |  ~0.2 GB| ~0.2 GB | 24 GB |
+2026-08-25T00:01:03Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1027) '
+2026-08-25T00:01:04Z (RFD66606-1027) '| Qwen3-TTS-12Hz-1.7B-Base       |  bf16  |  ~3.4 GB| ~3.4 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1027) '### Voice (TTS)
+2026-08-25T00:01:05Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1027) '
+2026-08-25T00:01:06Z (RFD66606-1027) '### ASR panel VRAM (panel definition per RFD66606-1102 catalog)
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
+2026-08-25T00:01:07Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
+2026-08-25T00:01:08Z (RFD66606-1027) 'Rows carry per-track VRAM only; the panel roster is RFD66606-1102's job.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1027) '| Qwen3-TTS-12Hz-1.7B-Base       |  bf16  |  ~3.4 GB| ~3.4 GB | 24 GB |
+2026-08-25T00:01:09Z (RFD66606-1027) 'The panel narrowed from twelve tracks per RFD66606-2179 (Whisper drop),
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1027) '
+2026-08-25T00:01:10Z (RFD66606-1027) 'RFD66606-2180 (gemma-auto drop), RFD66606-2181 (allosaurus-rus drop);
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1027) '### ASR panel VRAM (panel definition per RFD66606-1102 catalog)
+2026-08-25T00:01:11Z (RFD66606-1027) 'Whisper, ipa-whisper and allosaurus-rus rows are gone with them.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
@@ -364,387 +364,327 @@
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1027) 'Rows carry per-track VRAM only; the panel roster is RFD66606-1102's job.
+2026-08-25T00:01:13Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1027) 'The panel narrowed from twelve tracks per RFD66606-2179 (Whisper drop),
+2026-08-25T00:01:14Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1027) 'RFD66606-2180 (gemma-auto drop), RFD66606-2181 (allosaurus-rus drop);
+2026-08-25T00:01:15Z (RFD66606-1027) '| Voxtral Mini 3B (2507)         |  bf16  |  ~6.0 GB| ~6.0 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1027) 'Whisper, ipa-whisper and allosaurus-rus rows are gone with them.
+2026-08-25T00:01:16Z (RFD66606-1027) '| Parakeet TDT 0.6B v3           |  bf16  |  ~1.2 GB| ~1.2 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1027) '
+2026-08-25T00:01:17Z (RFD66606-1027) '| wav2vec2-large-960h-lv60-self  |  bf16  |  ~1.3 GB| ~1.3 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1027) '| Model                          | Format | Weights | Peak    | Tier  |
+2026-08-25T00:01:18Z (RFD66606-1027) '| WavLM Base+ SV                 |  bf16  |  ~0.1 GB| ~0.1 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1027) '| ------------------------------ | :----: | ------: | ------: | ----- |
+2026-08-25T00:01:19Z (RFD66606-1027) '| allosaurus (universal + eng)   |  bf16  |  ~0.1 GB| ~0.1 GB | 24 GB |
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-1027) '| Voxtral Mini 3B (2507)         |  bf16  |  ~6.0 GB| ~6.0 GB | 24 GB |
+2026-08-25T00:01:20Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1027) '| Parakeet TDT 0.6B v3           |  bf16  |  ~1.2 GB| ~1.2 GB | 24 GB |
+2026-08-25T00:01:21Z (RFD66606-1027) 'Panel runs in one container that loads/frees each track in turn per
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1027) '| wav2vec2-large-960h-lv60-self  |  bf16  |  ~1.3 GB| ~1.3 GB | 24 GB |
+2026-08-25T00:01:22Z (RFD66606-1027) 'RFD66606-1036's staging rule; peak is the largest single track (~6 GB).
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1027) '| WavLM Base+ SV                 |  bf16  |  ~0.1 GB| ~0.1 GB | 24 GB |
+2026-08-25T00:01:23Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1027) '| allosaurus (universal + eng)   |  bf16  |  ~0.1 GB| ~0.1 GB | 24 GB |
+2026-08-25T00:01:24Z (RFD66606-1027) 'Removed rows relative to the earlier draft: `qwen_q4_k_m_image_edit`
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1027) '
+2026-08-25T00:01:25Z (RFD66606-1027) '(Qwen-Image-Edit blocklisted); `krea2_turbo_text_to_image` (Krea 2
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-1027) 'Panel runs in one container that loads/frees each track in turn per
+2026-08-25T00:01:26Z (RFD66606-1027) 'blocklisted); `seethrough_layer_decomposition` (See-Through checkpoints
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-1027) 'RFD66606-1036's staging rule; peak is the largest single track (~6 GB).
+2026-08-25T00:01:27Z (RFD66606-1027) 'blocklisted); `worldmirror2_reconstruct` + `triposplat_image_to_splat`
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-1027) '
+2026-08-25T00:01:28Z (RFD66606-1027) '(RFD66606-1051/1052 abandoned); `p3sam_mesh_segmentation` (P3-SAM
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-1027) 'Removed rows relative to the earlier draft: `qwen_q4_k_m_image_edit`
+2026-08-25T00:01:29Z (RFD66606-1027) 'blocklisted, replaced by rf-detr-Seg per RFD66606-1168).
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-1027) '(Qwen-Image-Edit blocklisted); `krea2_turbo_text_to_image` (Krea 2
+2026-08-25T00:01:30Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-1027) 'blocklisted); `seethrough_layer_decomposition` (See-Through checkpoints
+2026-08-25T00:01:31Z (RFD66606-1027) 'Every surviving model reaches a 24 GB card. Wan-VACE reaches it
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:32Z (RFD66606-1027) 'blocklisted); `worldmirror2_reconstruct` + `triposplat_image_to_splat`
+2026-08-25T00:01:32Z (RFD66606-1027) 'staged; every other model reaches it flat.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-1027) '(RFD66606-1051/1052 abandoned); `p3sam_mesh_segmentation` (P3-SAM
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1027) 'blocklisted, replaced by rf-detr-Seg per RFD66606-1168).
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1027) 'Every surviving model reaches a 24 GB card. Wan-VACE reaches it
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1027) 'staged; every other model reaches it flat.
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-1027) 'Commitment
+2026-08-25T00:01:33Z (RFD66606-1027) 'Commitment
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:40Z (RFD66606-1027) 'Committed 2026-09-02: 24-GB tier and QAFT-first rule settled.
+2026-08-25T00:01:34Z (RFD66606-1027) 'Committed 2026-09-02: 24-GB tier and QAFT-first rule settled.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-1027) 'CLAUDE.md retracted Condition 5 the same day (precision is not a
+2026-08-25T00:01:35Z (RFD66606-1027) 'CLAUDE.md retracted Condition 5 the same day (precision is not a
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-1027) 'corpus hazard), so quantised weights are permitted for corpus
+2026-08-25T00:01:36Z (RFD66606-1027) 'corpus hazard), so quantised weights are permitted for corpus
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-1027) 'generation, not only inference.
+2026-08-25T00:01:37Z (RFD66606-1027) 'generation, not only inference.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1027) 'QAFT-first is the rule
+2026-08-25T00:01:38Z (RFD66606-1027) 'QAFT-first is the rule
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-1027) 'QAFT 4-bit (quantization-aware fine-tuning) is preferred where
+2026-08-25T00:01:39Z (RFD66606-1027) 'QAFT 4-bit (quantization-aware fine-tuning) is preferred where
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:47Z (RFD66606-1027) 'upstream ships one. Only Gemma ships true QAFT for the current stack;
+2026-08-25T00:01:40Z (RFD66606-1027) 'upstream ships one. Only Gemma ships true QAFT for the current stack;
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:48Z (RFD66606-1027) 'Wan-VACE, Pixal3D, VoxHammer, MoGe-3 do not, per RFD66606-2139's 2026-09-01
+2026-08-25T00:01:41Z (RFD66606-1027) 'Wan-VACE, Pixal3D, VoxHammer, MoGe-3 do not, per RFD66606-2139's 2026-09-01
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:49Z (RFD66606-1027) 'survey. Those run at published precision (bf16) with staged loading.
+2026-08-25T00:01:42Z (RFD66606-1027) 'survey. Those run at published precision (bf16) with staged loading.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:50Z (RFD66606-1027) '
+2026-08-25T00:01:43Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:51Z (RFD66606-1027) 'CLAUDE.md's 2026-09-02 retraction of Condition 5 lifts the earlier
+2026-08-25T00:01:44Z (RFD66606-1027) 'CLAUDE.md's 2026-09-02 retraction of Condition 5 lifts the earlier
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:52Z (RFD66606-1027) 'ban on quantised weights producing corpus data; PTQ (AWQ, GPTQ, NF4)
+2026-08-25T00:01:45Z (RFD66606-1027) 'ban on quantised weights producing corpus data; PTQ (AWQ, GPTQ, NF4)
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:53Z (RFD66606-1027) 'is now permitted where a QAFT release is not available, subject to
+2026-08-25T00:01:46Z (RFD66606-1027) 'is now permitted where a QAFT release is not available, subject to
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:54Z (RFD66606-1027) 'the four surviving conditions on generated synthetic.
+2026-08-25T00:01:47Z (RFD66606-1027) 'the four surviving conditions on generated synthetic.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:55Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1027) 'Staging makes the tier
+2026-08-25T00:01:48Z (RFD66606-1027) 'Staging makes the tier
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:57Z (RFD66606-1027) 'Pixal3D holds 24.05 GB and peaks at 6.50 GB. Three stages run in
+2026-08-25T00:01:49Z (RFD66606-1027) 'Pixal3D holds 24.05 GB and peaks at 6.50 GB. Three stages run in
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:58Z (RFD66606-1027) 'order, and each frees before the next loads. Without that staging it
+2026-08-25T00:01:50Z (RFD66606-1027) 'order, and each frees before the next loads. Without that staging it
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:01:59Z (RFD66606-1027) 'would need an 80 GB card.
+2026-08-25T00:01:51Z (RFD66606-1027) 'would need an 80 GB card.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:00Z (RFD66606-1027) '
+2026-08-25T00:01:52Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:01Z (RFD66606-1027) 'See-Through holds 9.82 GB and peaks at 5.13 GB, for the same reason.
+2026-08-25T00:01:53Z (RFD66606-1027) 'See-Through holds 9.82 GB and peaks at 5.13 GB, for the same reason.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-1027) 'RFD66606-1044 makes the load and the unload real actions, thus the peak is
+2026-08-25T00:01:54Z (RFD66606-1027) 'RFD66606-1044 makes the load and the unload real actions, thus the peak is
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:03Z (RFD66606-1027) 'a planning result.
+2026-08-25T00:01:55Z (RFD66606-1027) 'a planning result.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:04Z (RFD66606-1027) '
+2026-08-25T00:01:56Z (RFD66606-1027) '
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:05Z (RFD66606-1027) 'A model image that loads every stage at once pays for a larger card every
+2026-08-25T00:01:57Z (RFD66606-1027) 'A model image that loads every stage at once pays for a larger card every
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:06Z (RFD66606-1027) 'second it runs.
+2026-08-25T00:01:58Z (RFD66606-1027) 'second it runs.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:07Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-1027) 'Quantization is standardized, not a cost choice
+2026-08-25T00:01:59Z (RFD66606-1027) 'Quantization is standardized, not a cost choice
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:09Z (RFD66606-1027) 'An earlier draft framed quantization as a per-request cost knob
+2026-08-25T00:02:00Z (RFD66606-1027) 'An earlier draft framed quantization as a per-request cost knob
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:10Z (RFD66606-1027) 'against Replicate pricing. Retracted: the workspace uses the local
+2026-08-25T00:02:01Z (RFD66606-1027) 'against Replicate pricing. Retracted: the workspace uses the local
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1027) 'desktop GPU only (CLAUDE.md; Replicate is not a host here), so there
+2026-08-25T00:02:02Z (RFD66606-1027) 'desktop GPU only (CLAUDE.md; Replicate is not a host here), so there
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:12Z (RFD66606-1027) 'is no per-second price signal to trade against quality. The
+2026-08-25T00:02:03Z (RFD66606-1027) 'is no per-second price signal to trade against quality. The
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:13Z (RFD66606-1027) 'standardization is QAFT 4-bit where upstream publishes one, bf16
+2026-08-25T00:02:04Z (RFD66606-1027) 'standardization is QAFT 4-bit where upstream publishes one, bf16
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:14Z (RFD66606-1027) 'otherwise. See the QAFT-first rule above.
+2026-08-25T00:02:05Z (RFD66606-1027) 'otherwise. See the QAFT-first rule above.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:15Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:02:16Z (RFD66606-1027) 'What to do
+2026-08-25T00:02:06Z (RFD66606-1027) 'What to do
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:17Z (RFD66606-1027) '- Size each model alone. A set total means nothing here.
+2026-08-25T00:02:07Z (RFD66606-1027) '- Size each model alone. A set total means nothing here.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:18Z (RFD66606-1027) '- Stage the loads, and report the peak and not the sum.
+2026-08-25T00:02:08Z (RFD66606-1027) '- Stage the loads, and report the peak and not the sum.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:19Z (RFD66606-1027) '- Prefer bf16 over fp16 where a checkpoint offers both. The memory is
+2026-08-25T00:02:09Z (RFD66606-1027) '- Prefer bf16 over fp16 where a checkpoint offers both. The memory is
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:20Z (RFD66606-1027) '  the same, and bf16 carries the wider exponent range.
+2026-08-25T00:02:10Z (RFD66606-1027) '  the same, and bf16 carries the wider exponent range.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:21Z (RFD66606-1027) '- Add the activation peak for the resolution and the batch size of
+2026-08-25T00:02:11Z (RFD66606-1027) '- Add the activation peak for the resolution and the batch size of
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:22Z (RFD66606-1027) '  each job. The tiers above count weights only.
+2026-08-25T00:02:12Z (RFD66606-1027) '  each job. The tiers above count weights only.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:23Z (RFD66606-1027) '
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-1027) 'The problem
+2026-08-25T00:02:13Z (RFD66606-1027) 'The problem
  # tags: rfd:details-heading
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:25Z (RFD66606-1027) 'That question came from hardware this project does not have. CLAUDE.md
+2026-08-25T00:02:14Z (RFD66606-1027) 'That question came from hardware this project does not have. CLAUDE.md
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:26Z (RFD66606-1027) 'now names the local desktop GPU as the only compute; each model runs
+2026-08-25T00:02:15Z (RFD66606-1027) 'now names the local desktop GPU as the only compute; each model runs
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:27Z (RFD66606-1027) 'in its own container per RFD66606-1036, so two never compete for one
+2026-08-25T00:02:16Z (RFD66606-1027) 'in its own container per RFD66606-1036, so two never compete for one
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written
 
-2026-08-25T00:02:28Z (RFD66606-1027) 'device. The old finding was an artifact.
- # tags: rfd:details
- Text:RFD1027  1 LINE
- Text:Written
-
-2026-08-25T00:02:29Z (RFD66606-1027) '
+2026-08-25T00:02:17Z (RFD66606-1027) 'device. The old finding was an artifact.
  # tags: rfd:details
  Text:RFD1027  1 LINE
  Text:Written

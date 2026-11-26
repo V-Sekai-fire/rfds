@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2397) 'the transport and lock-down step: zone and voice guests, the CA and capabilities.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2397  1 LINE
  Text:Written
 
@@ -14,312 +14,277 @@
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2397) '
- # tags: rfd:hook
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2397) 'A certificate from another CA is accepted by the null verifier, and a transfer with no
+2026-10-31T00:00:03Z (RFD66606-2397) 'A certificate from another CA is accepted by the null verifier, and a transfer with no
  # tags: rfd:intrigue
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2397) 'capability goes through a table that skips the bit test.
+2026-10-31T00:00:04Z (RFD66606-2397) 'capability goes through a table that skips the bit test.
  # tags: rfd:intrigue
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2397) '
- # tags: rfd:intrigue
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2397) 'Run the Lean tests over the compiled C++ with an in-memory UDP pair, and make each control fail.
+2026-10-31T00:00:05Z (RFD66606-2397) 'Run the Lean tests over the compiled C++ with an in-memory UDP pair, and make each control fail.
  # tags: rfd:exit
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2397) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2397) 'the transport step puts a certificate authority and capabilities in guests
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2397) 'the transport step puts a certificate authority and capabilities in guests
- # tags: rfd:details-title
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2397) '- Two repositories shaped like &{repo("interactor-lasso")}, placed after it:
+2026-10-31T00:00:07Z (RFD66606-2397) '- Two repositories shaped like &{repo("interactor-lasso")}, placed after it:
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2397) '  &{repo("interactor-fabric-zone")} and &{repo("interactor-voice")}.
+2026-10-31T00:00:08Z (RFD66606-2397) '  &{repo("interactor-fabric-zone")} and &{repo("interactor-voice")}.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2397) '- `zone.elf` has a player mode, as `FabricZone::is_player` does, so there is no `client.elf`.
+2026-10-31T00:00:09Z (RFD66606-2397) '- `zone.elf` has a player mode, as `FabricZone::is_player` does, so there is no `client.elf`.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2397) '- picoquic lives only in `zone.elf`. `ca.elf` carries mbedTLS only.
+2026-10-31T00:00:10Z (RFD66606-2397) '- picoquic lives only in `zone.elf`. `ca.elf` carries mbedTLS only.
  # tags: rfd:decision
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2397) '
- # tags: rfd:decision
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2397) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:11Z (RFD66606-2397) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2397) '
- # tags: rfd:related
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2397) 'The guests and the host
+2026-10-31T00:00:12Z (RFD66606-2397) 'The guests and the host
  # tags: rfd:details-heading
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2397) '- `guest/transport`: `quic_picoquic_backend.cpp` rewritten without
+2026-10-31T00:00:13Z (RFD66606-2397) '- `guest/transport`: `quic_picoquic_backend.cpp` rewritten without
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2397) '  `picoquic_packet_loop` and its thread: `picoquic_incoming_packet`
+2026-10-31T00:00:14Z (RFD66606-2397) '  `picoquic_packet_loop` and its thread: `picoquic_incoming_packet`
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2397) '  and `picoquic_prepare_next_packet_ex`, driven by `tick(now_us)`.
+2026-10-31T00:00:15Z (RFD66606-2397) '  and `picoquic_prepare_next_packet_ex`, driven by `tick(now_us)`.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2397) '  Entropy and clock come from the host (`net_seed`, `zone_tick`'s
+2026-10-31T00:00:16Z (RFD66606-2397) '  Entropy and clock come from the host (`net_seed`, `zone_tick`'s
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2397) '  wall time). The null verifier is replaced by
+2026-10-31T00:00:17Z (RFD66606-2397) '  wall time). The null verifier is replaced by
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2397) '  `ptls_mbedtls_get_certificate_verifier` over the session root DER,
+2026-10-31T00:00:18Z (RFD66606-2397) '  `ptls_mbedtls_get_certificate_verifier` over the session root DER,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2397) '  `thirdparty/webtransportd/frame.c` verbatim.
+2026-10-31T00:00:19Z (RFD66606-2397) '  `thirdparty/webtransportd/frame.c` verbatim.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2397) '- `guest/ca`: a root key made in guest memory at `ca_open`,
+2026-10-31T00:00:20Z (RFD66606-2397) '- `guest/ca`: a root key made in guest memory at `ca_open`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2397) '  `ca_issue(csr, name, now)` issues one-hour certificates for names
+2026-10-31T00:00:21Z (RFD66606-2397) '  `ca_issue(csr, name, now)` issues one-hour certificates for names
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2397) '  matching `^[a-z0-9-]+\\.zone\\.fabric\\.internal$`. `ca.elf` has no
+2026-10-31T00:00:22Z (RFD66606-2397) '  matching `^[a-z0-9-]+\\.zone\\.fabric\\.internal$`. `ca.elf` has no
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2397) '  transfer entry point at all.
+2026-10-31T00:00:23Z (RFD66606-2397) '  transfer entry point at all.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2397) '- `guest/capability`: macaroons as an HMAC-SHA256 chain with caveats
+2026-10-31T00:00:24Z (RFD66606-2397) '- `guest/capability`: macaroons as an HMAC-SHA256 chain with caveats
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2397) '  vm, verb, object, expires, epoch. The host (`stages/capability.gd`)
+2026-10-31T00:00:25Z (RFD66606-2397) '  vm, verb, object, expires, epoch. The host (`stages/capability.gd`)
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2397) '  holds the root key and hands each VM a derived key, so `ca.elf`,
+2026-10-31T00:00:26Z (RFD66606-2397) '  holds the root key and hands each VM a derived key, so `ca.elf`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2397) '  which gets none, can verify no transfer. The per-VM bit in the
+2026-10-31T00:00:27Z (RFD66606-2397) '  which gets none, can verify no transfer. The per-VM bit in the
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2397) '  godot-sandbox host-call table lands in
+2026-10-31T00:00:28Z (RFD66606-2397) '  godot-sandbox host-call table lands in
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2397) '  &{repo("entities-godot-sandbox", planned: "4-entities")}.
+2026-10-31T00:00:29Z (RFD66606-2397) '  &{repo("entities-godot-sandbox", planned: "4-entities")}.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2397) '- Host: `stages/zone_stage.gd` owns a `PacketPeerUDP`, drains it into
+2026-10-31T00:00:30Z (RFD66606-2397) '- Host: `stages/zone_stage.gd` owns a `PacketPeerUDP`, drains it into
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2397) '  `net_rx`, sends `net_tx`, calls `zone_tick` once a frame. Enrolment
+2026-10-31T00:00:31Z (RFD66606-2397) '  `net_rx`, sends `net_tx`, calls `zone_tick` once a frame. Enrolment
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2397) '  is a CSR on an `ENROL` stream the desktop hands to `ca_stage.gd`,
+2026-10-31T00:00:32Z (RFD66606-2397) '  is a CSR on an `ENROL` stream the desktop hands to `ca_stage.gd`,
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2397) '  then a reconnect with mTLS. The root DER passes out of band as a
+2026-10-31T00:00:33Z (RFD66606-2397) '  then a reconnect with mTLS. The root DER passes out of band as a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2397) '  launch argument.
+2026-10-31T00:00:34Z (RFD66606-2397) '  launch argument.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2397) '- Vendored at riscv64 from the fabric tag by
+2026-10-31T00:00:35Z (RFD66606-2397) '- Vendored at riscv64 from the fabric tag by
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2397) '  `tools/vendor/from_godot_fabric.py`: picoquic without its socket
+2026-10-31T00:00:36Z (RFD66606-2397) '  `tools/vendor/from_godot_fabric.py`: picoquic without its socket
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2397) '  loops and other TLS backends, picotls's four files, mbedTLS with
+2026-10-31T00:00:37Z (RFD66606-2397) '  loops and other TLS backends, picotls's four files, mbedTLS with
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2397) '  `FS_IO`, `THREADING`, `NET` and `SSL` off, SQLite as `OS_OTHER` on
+2026-10-31T00:00:38Z (RFD66606-2397) '  `FS_IO`, `THREADING`, `NET` and `SSL` off, SQLite as `OS_OTHER` on
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2397) '  `spmemvfs`, zstd's three directories. Each directory with a
+2026-10-31T00:00:39Z (RFD66606-2397) '  `spmemvfs`, zstd's three directories. Each directory with a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2397) '  `CITATION.cff` naming the tag.
+2026-10-31T00:00:40Z (RFD66606-2397) '  `CITATION.cff` naming the tag.
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2397) '
+2026-10-31T00:00:41Z (RFD66606-2397) '
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2397) '
- # tags: rfd:details
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2397) 'Check and controls
+2026-10-31T00:00:42Z (RFD66606-2397) 'Check and controls
  # tags: rfd:details-heading
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2397) 'Check, Lean tests over the compiled C++ with an in-memory UDP pair:
+2026-10-31T00:00:43Z (RFD66606-2397) 'Check, Lean tests over the compiled C++ with an in-memory UDP pair:
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2397) 'a certificate from another CA is refused (control: the null verifier
+2026-10-31T00:00:44Z (RFD66606-2397) 'a certificate from another CA is refused (control: the null verifier
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2397) 'accepts it). An expired one is refused (control: the clock frozen at
+2026-10-31T00:00:45Z (RFD66606-2397) 'accepts it). An expired one is refused (control: the clock frozen at
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2397) 'issue accepts it). An out-of-pattern name is not issued (control: a
+2026-10-31T00:00:46Z (RFD66606-2397) 'issue accepts it). An out-of-pattern name is not issued (control: a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2397) 'suffix check issues `a.zone.fabric.internal.evil.com`). A transfer
+2026-10-31T00:00:47Z (RFD66606-2397) 'suffix check issues `a.zone.fabric.internal.evil.com`). A transfer
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2397) 'with no capability is refused and goes ahead once minted (control: a
+2026-10-31T00:00:48Z (RFD66606-2397) 'with no capability is refused and goes ahead once minted (control: a
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2397) 'table that skips the bit test lets it through. A macaroon with one
+2026-10-31T00:00:49Z (RFD66606-2397) 'table that skips the bit test lets it through. A macaroon with one
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2397) 'caveat altered still verifies).
+2026-10-31T00:00:50Z (RFD66606-2397) 'caveat altered still verifies).
  # tags: rfd:details
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2397) '
- # tags: rfd:details
- Text:RFD2397  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2397) '2351
+2026-10-31T00:00:51Z (RFD66606-2397) '2351
  # tags: rebac:verbs-from
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2397) 'rfd-2397 provides guest-ca-capabilities-repos
+2026-10-31T00:00:52Z (RFD66606-2397) 'rfd-2397 provides guest-ca-capabilities-repos
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2397) 'rfd-2397 provides zone-player-mode-elf
+2026-10-31T00:00:53Z (RFD66606-2397) 'rfd-2397 provides zone-player-mode-elf
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:01Z (RFD66606-2397) 'rfd-2397 is_a guest-runtime
+2026-10-31T00:00:54Z (RFD66606-2397) 'rfd-2397 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:02Z (RFD66606-2397) 'rfd-2397 spends guest-elf-double
+2026-10-31T00:00:55Z (RFD66606-2397) 'rfd-2397 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2397) 'rfd-2397 spends webtransport-guest-signer
+2026-10-31T00:00:56Z (RFD66606-2397) 'rfd-2397 spends webtransport-guest-signer
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written
 
-2026-10-31T00:01:04Z (RFD66606-2397) 'rfd-2397 spends guest-macaroon-capabilities
+2026-10-31T00:00:57Z (RFD66606-2397) 'rfd-2397 spends guest-macaroon-capabilities
  # tags: rebac:relate
  Text:RFD2397  1 LINE
  Text:Written

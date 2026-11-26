@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2430) 'the ten rungs of the gacha path and its runtime motion source.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2430  1 LINE
  Text:Written
 
@@ -14,177 +14,147 @@
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2430) '
- # tags: rfd:hook
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2430) 'Each rung produces an output the next rung consumes, so a rung with no output leaves the next
+2026-10-31T00:00:03Z (RFD66606-2430) 'Each rung produces an output the next rung consumes, so a rung with no output leaves the next
  # tags: rfd:intrigue
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2430) 'one nothing to take.
+2026-10-31T00:00:04Z (RFD66606-2430) 'one nothing to take.
  # tags: rfd:intrigue
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2430) '
- # tags: rfd:intrigue
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2430) 'Follow the ten rungs in order, from the language prompt to the public hosted roll page, and
+2026-10-31T00:00:05Z (RFD66606-2430) 'Follow the ten rungs in order, from the language prompt to the public hosted roll page, and
  # tags: rfd:exit
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2430) 'check that each consumes the output of the one before.
+2026-10-31T00:00:06Z (RFD66606-2430) 'check that each consumes the output of the one before.
  # tags: rfd:exit
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:07Z (RFD66606-2430) 'the gacha critical path is ten rungs from a prompt to a public roll
+ # tags: rfd:details-title, rfd:no-final-newline
+ Text:RFD2430  1 LINE
+ Text:Written
+
+2026-10-31T00:00:08Z (RFD66606-2430) 'Ten rungs, each producing an output the next rung consumes:
+ # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
 2026-10-31T00:00:09Z (RFD66606-2430) '
- # tags: rfd:exit
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2430) 'the gacha critical path is ten rungs from a prompt to a public roll
- # tags: rfd:details-title
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2430) 'Ten rungs, each producing an output the next rung consumes:
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2430) '
+2026-10-31T00:00:10Z (RFD66606-2430) '    0. Language prompt → image           (OmniGen2, Q4 GGUF + Flow LCM LoRA GGUF)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2430) '    0. Language prompt → image           (OmniGen2, Q4 GGUF + Flow LCM LoRA GGUF)
+2026-10-31T00:00:11Z (RFD66606-2430) '    1. Image → mesh                      (Pixal3D, Q4 GGUF)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2430) '    1. Image → mesh                      (Pixal3D, Q4 GGUF)
+2026-10-31T00:00:12Z (RFD66606-2430) '    2. Mesh → judged                     (EditScore over Qwen3-VL-8B Q4 GGUF)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2430) '    2. Mesh → judged                     (EditScore over Qwen3-VL-8B Q4 GGUF)
+2026-10-31T00:00:13Z (RFD66606-2430) '    3. Judged → repaired                 (VoxHammer, procedural, N-attempt bound)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2430) '    3. Judged → repaired                 (VoxHammer, procedural, N-attempt bound)
+2026-10-31T00:00:14Z (RFD66606-2430) '    4. Repaired → skinned                (skin-tokens.cpp against ANNY, GGUF)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2430) '    4. Repaired → skinned                (skin-tokens.cpp against ANNY, GGUF)
+2026-10-31T00:00:15Z (RFD66606-2430) '    5. Skinned → tagged (SAM2 or rf-detr-Seg + OmniGen2 per RFD66606-2183, all GGUF)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2430) '    5. Skinned → tagged (SAM2 or rf-detr-Seg + OmniGen2 per RFD66606-2183, all GGUF)
+2026-10-31T00:00:16Z (RFD66606-2430) '    6. Tagged → VRM                      (portable character)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2430) '    6. Tagged → VRM                      (portable character)
+2026-10-31T00:00:17Z (RFD66606-2430) '    7. Prompt list → pool                (~50 VRMs, judged, seed-reproducible)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2430) '    7. Prompt list → pool                (~50 VRMs, judged, seed-reproducible)
+2026-10-31T00:00:18Z (RFD66606-2430) '    8. Pool → roll button                (native Godot binary head per RFD66606-2210)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2430) '    8. Pool → roll button                (native Godot binary head per RFD66606-2210)
+2026-10-31T00:00:19Z (RFD66606-2430) '    9. Public                            (hosted with sponsor link)
  # tags: rfd:decision
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2430) '    9. Public                            (hosted with sponsor link)
- # tags: rfd:decision
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2430) '
- # tags: rfd:decision
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2430) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:20Z (RFD66606-2430) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2430) '- RFD66606-2183, the tagging of rung 5.
+2026-10-31T00:00:21Z (RFD66606-2430) '- RFD66606-2183, the tagging of rung 5.
  # tags: rfd:related
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2430) '- RFD66606-2210, the native Godot binary head of rung 8.
+2026-10-31T00:00:22Z (RFD66606-2430) '- RFD66606-2210, the native Godot binary head of rung 8.
  # tags: rfd:related
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2430) '- RFD66606-1028, the license class already accepted for Kimodo-SOMA-*.
+2026-10-31T00:00:23Z (RFD66606-2430) '- RFD66606-1028, the license class already accepted for Kimodo-SOMA-*.
  # tags: rfd:related
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2430) '- RFD66606-2230, the shared `modules/ggml/` module.
+2026-10-31T00:00:24Z (RFD66606-2430) '- RFD66606-2230, the shared `modules/ggml/` module.
  # tags: rfd:related
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2430) '
- # tags: rfd:related
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2430) 'Runtime motion
+2026-10-31T00:00:25Z (RFD66606-2430) 'Runtime motion
  # tags: rfd:details-heading
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2430) 'Runtime motion: motion-bricks.cpp (already ggml/GGUF) generates keyframe-driven animation from
+2026-10-31T00:00:26Z (RFD66606-2430) 'Runtime motion: motion-bricks.cpp (already ggml/GGUF) generates keyframe-driven animation from
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2430) 'the shipped VRM. Apache-2.0 code, NVIDIA Open Model License on weights (same license class
+2026-10-31T00:00:27Z (RFD66606-2430) 'the shipped VRM. Apache-2.0 code, NVIDIA Open Model License on weights (same license class
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2430) 'already accepted for Kimodo-SOMA-* per RFD66606-1028). The model has 183M params. Runs
+2026-10-31T00:00:28Z (RFD66606-2430) 'already accepted for Kimodo-SOMA-* per RFD66606-1028). The model has 183M params. Runs
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2430) 'alongside rungs 7-9 as
+2026-10-31T00:00:29Z (RFD66606-2430) 'alongside rungs 7-9 as
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2430) 'the animation source for the pool preview and hosted roll page. Loaded through the shared
+2026-10-31T00:00:30Z (RFD66606-2430) 'the animation source for the pool preview and hosted roll page. Loaded through the shared
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2430) '`modules/ggml/` module per RFD66606-2230.
- # tags: rfd:details
- Text:RFD2430  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2430) '
+2026-10-31T00:00:31Z (RFD66606-2430) '`modules/ggml/` module per RFD66606-2230.
  # tags: rfd:details
  Text:RFD2430  1 LINE
  Text:Written

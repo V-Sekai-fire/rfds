@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2479) 'the Maple dress fit's leftover hem, blendshape and weight issues get closed out.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2479  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2479) 'the Maple dress garment, its Unity scene and the body it fits in that scene.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2479  1 LINE
  Text:Written
 
@@ -24,97 +24,77 @@
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2479) '
- # tags: rfd:hook
- Text:RFD2479  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2479) 'The Maple fit left four items open: hem spikes on the dress, the ClothFit blendshape that
+2026-11-07T00:00:05Z (RFD66606-2479) 'The Maple fit left four items open: hem spikes on the dress, the ClothFit blendshape that
  # tags: rfd:intrigue
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2479) 'the fit shipped back into the Unity scene instead of consuming, other outfit pieces that
+2026-11-07T00:00:06Z (RFD66606-2479) 'the fit shipped back into the Unity scene instead of consuming, other outfit pieces that
  # tags: rfd:intrigue
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2479) 'were not carried through the same fit, and scene body weights that still reflect the
+2026-11-07T00:00:07Z (RFD66606-2479) 'were not carried through the same fit, and scene body weights that still reflect the
  # tags: rfd:intrigue
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2479) 'pre-fit body. The unity-garment-cloth-fit skill covers the fit and bind steps these items
+2026-11-07T00:00:08Z (RFD66606-2479) 'pre-fit body. The unity-garment-cloth-fit skill covers the fit and bind steps these items
  # tags: rfd:intrigue
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:10Z (RFD66606-2479) 'touch.
+2026-11-07T00:00:09Z (RFD66606-2479) 'touch.
  # tags: rfd:intrigue
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2479) '
- # tags: rfd:intrigue
- Text:RFD2479  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2479) 'The dress renders in Unity with no hem spikes, no ClothFit blendshape left on the mesh, every
+2026-11-07T00:00:10Z (RFD66606-2479) 'The dress renders in Unity with no hem spikes, no ClothFit blendshape left on the mesh, every
  # tags: rfd:exit
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2479) 'other outfit piece carried through the same fit, and body weights matching the fitted body.
+2026-11-07T00:00:11Z (RFD66606-2479) 'other outfit piece carried through the same fit, and body weights matching the fitted body.
  # tags: rfd:exit
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2479) '
- # tags: rfd:exit
- Text:RFD2479  1 LINE
- Text:Written
-
-2026-11-07T00:00:15Z (RFD66606-2479) '- Smooth or re-solve the hem spikes left on the Maple dress's cloth-fit result until the hem
+2026-11-07T00:00:12Z (RFD66606-2479) '- Smooth or re-solve the hem spikes left on the Maple dress's cloth-fit result until the hem
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2479) '  reads flat in the Unity scene.
+2026-11-07T00:00:13Z (RFD66606-2479) '  reads flat in the Unity scene.
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2479) '- Remove the ClothFit blendshape the fit shipped back into the Unity scene; it is a solver
+2026-11-07T00:00:14Z (RFD66606-2479) '- Remove the ClothFit blendshape the fit shipped back into the Unity scene; it is a solver
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2479) '  artifact, not a scene asset, and must not ship on the mesh.
+2026-11-07T00:00:15Z (RFD66606-2479) '  artifact, not a scene asset, and must not ship on the mesh.
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2479) '- Carry every other outfit piece on the Maple body through the same cloth-fit pass the dress
+2026-11-07T00:00:16Z (RFD66606-2479) '- Carry every other outfit piece on the Maple body through the same cloth-fit pass the dress
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2479) '  used, so no piece is fit to a stale body.
+2026-11-07T00:00:17Z (RFD66606-2479) '  used, so no piece is fit to a stale body.
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2479) '- Rebind the scene's body weights to the fitted body so skinning matches the cloth-fit result,
+2026-11-07T00:00:18Z (RFD66606-2479) '- Rebind the scene's body weights to the fitted body so skinning matches the cloth-fit result,
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2479) '  following the unity-garment-cloth-fit skill's bind step.
- # tags: rfd:decision
- Text:RFD2479  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2479) '
+2026-11-07T00:00:19Z (RFD66606-2479) '  following the unity-garment-cloth-fit skill's bind step.
  # tags: rfd:decision
  Text:RFD2479  1 LINE
  Text:Written

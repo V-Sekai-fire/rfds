@@ -15,7 +15,7 @@
  Text:Written
 
 2026-09-05T00:00:03Z (RFD66606-2209) 'before shipping any derived corpus
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2209  1 LINE
  Text:Written
 
@@ -35,7 +35,7 @@
  Text:Written
 
 2026-09-05T00:00:07Z (RFD66606-2209) 'against the dataforged repo
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2209  1 LINE
  Text:Written
 
@@ -44,447 +44,447 @@
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:09Z (RFD66606-2209) '
- # tags: rfd:hook
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:10Z (RFD66606-2209) 'Dataforged, the community JSON rendering of the Starforged and Ironsworn SRDs, carries a mixed
+2026-09-05T00:00:09Z (RFD66606-2209) 'Dataforged, the community JSON rendering of the Starforged and Ironsworn SRDs, carries a mixed
  # tags: rfd:intrigue
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:11Z (RFD66606-2209) 'licence. Without a filter the Starforged corpus on HuggingFace would ship CC-BY-NC rows mixed
+2026-09-05T00:00:10Z (RFD66606-2209) 'licence. Without a filter the Starforged corpus on HuggingFace would ship CC-BY-NC rows mixed
  # tags: rfd:intrigue
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:12Z (RFD66606-2209) 'with CC-BY-4.0 rows under a single licence declaration.
+2026-09-05T00:00:11Z (RFD66606-2209) 'with CC-BY-4.0 rows under a single licence declaration.
  # tags: rfd:intrigue
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:13Z (RFD66606-2209) '
- # tags: rfd:intrigue
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:14Z (RFD66606-2209) 'Run `scripts/check_starforged_hf.py`, which asserts every surviving row is CC-BY-4.0.
+2026-09-05T00:00:12Z (RFD66606-2209) 'Run `scripts/check_starforged_hf.py`, which asserts every surviving row is CC-BY-4.0.
  # tags: rfd:exit
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:13Z (RFD66606-2209) 'CC-BY-NC as a blocklist entry
+ # tags: rfd:details-title, rfd:no-final-newline
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:14Z (RFD66606-2209) 'Add a row to CLAUDE.md's "Blocklists" table:
+ # tags: rfd:decision
  Text:RFD2209  1 LINE
  Text:Written
 
 2026-09-05T00:00:15Z (RFD66606-2209) '
- # tags: rfd:exit
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:16Z (RFD66606-2209) 'CC-BY-NC as a blocklist entry
- # tags: rfd:details-title
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:17Z (RFD66606-2209) 'Add a row to CLAUDE.md's "Blocklists" table:
  # tags: rfd:decision
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:18Z (RFD66606-2209) '
+2026-09-05T00:00:16Z (RFD66606-2209) '`DETAILS.md` carries the full text of this RFD.
  # tags: rfd:decision
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:19Z (RFD66606-2209) '`DETAILS.md` carries the full text of this RFD.
- # tags: rfd:decision
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:20Z (RFD66606-2209) '
- # tags: rfd:decision
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:21Z (RFD66606-2209) '- CLAUDE.md's existing `CC-BY-SA` row, same shape, same argument.
+2026-09-05T00:00:17Z (RFD66606-2209) '- CLAUDE.md's existing `CC-BY-SA` row, same shape, same argument.
  # tags: rfd:related
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:22Z (RFD66606-2209) '- RFD66606-2205 (Taskweft in Bao), the Starforged play surface whose
+2026-09-05T00:00:18Z (RFD66606-2209) '- RFD66606-2205 (Taskweft in Bao), the Starforged play surface whose
  # tags: rfd:related
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:23Z (RFD66606-2209) '  corpus is the concrete case.
+2026-09-05T00:00:19Z (RFD66606-2209) '  corpus is the concrete case.
  # tags: rfd:related
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:20Z (RFD66606-2209) 'The BLOCKLIST.md section to add
+ # tags: rfd:details-heading
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:21Z (RFD66606-2209) 'Below the `CC-BY-SA` section, add:
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:22Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:23Z (RFD66606-2209) '    ### CC-BY-NC (all versions)
+ # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
 2026-09-05T00:00:24Z (RFD66606-2209) '
- # tags: rfd:related
+ # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:25Z (RFD66606-2209) 'The BLOCKLIST.md section to add
+2026-09-05T00:00:25Z (RFD66606-2209) '    A non-commercial restriction on a row propagates into any
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:26Z (RFD66606-2209) '    corpus, dataset, or artifact that ships the row. The
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:27Z (RFD66606-2209) '    workspace's deployments (VRChat, service demos, HF datasets,
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:28Z (RFD66606-2209) '    trained models) are commercial in the sense the licence
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:29Z (RFD66606-2209) '    excludes, sales, ad-supported distribution, and paid access
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:30Z (RFD66606-2209) '    are all on the table for shipped work, and a licence that
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:31Z (RFD66606-2209) '    reserves them defeats the downstream question before it is
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:32Z (RFD66606-2209) '    asked.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:33Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:34Z (RFD66606-2209) '    Same shape as CC-BY-SA's row. Different clause (non-commercial
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:35Z (RFD66606-2209) '    vs. share-alike); the downstream cost of ignoring it is the
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:36Z (RFD66606-2209) '    same.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:37Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:38Z (RFD66606-2209) '    **Concrete case (2026-09-05):** dataforged
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:39Z (RFD66606-2209) '    (`github.com/rsek/dataforged`) carries a mixed licence.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:40Z (RFD66606-2209) '    `dist/starforged/*.json` is CC-BY-4.0 and ships as
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:41Z (RFD66606-2209) '    `chibifire/starforged` on HuggingFace. The `ironsworn/`
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:42Z (RFD66606-2209) '    subtree and raster illustrations are CC-BY-NC-4.0 and are
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:43Z (RFD66606-2209) '    filtered out by `scripts/build_starforged_hf.py` before the
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:44Z (RFD66606-2209) '    parquet write. `scripts/check_starforged_hf.py` asserts every
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:45Z (RFD66606-2209) '    surviving row is CC-BY-4.0 as a rule-3 named-not-silent gate.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:46Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:47Z (RFD66606-2209) '    **What is not banned.** Reading CC-BY-NC content for
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:48Z (RFD66606-2209) '    inspection, citing it in an RFD, or naming it as a source is
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:49Z (RFD66606-2209) '    fine. Shipping its content in a derived corpus is the case
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:50Z (RFD66606-2209) '    this row covers.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:00:51Z (RFD66606-2209) 'Filter implementation shape
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:26Z (RFD66606-2209) 'Below the `CC-BY-SA` section, add:
+2026-09-05T00:00:52Z (RFD66606-2209) 'Every builder that ingests a mixed-licence source carries the
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:27Z (RFD66606-2209) '
+2026-09-05T00:00:53Z (RFD66606-2209) 'same three-step shape:
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:28Z (RFD66606-2209) '    ### CC-BY-NC (all versions)
+2026-09-05T00:00:54Z (RFD66606-2209) '
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:29Z (RFD66606-2209) '
+2026-09-05T00:00:55Z (RFD66606-2209) '1. Read the source row.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:30Z (RFD66606-2209) '    A non-commercial restriction on a row propagates into any
+2026-09-05T00:00:56Z (RFD66606-2209) '2. Consult the row's licence field (dataforged tags each entry;
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:31Z (RFD66606-2209) '    corpus, dataset, or artifact that ships the row. The
+2026-09-05T00:00:57Z (RFD66606-2209) '   other sources may need per-source lookup logic).
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:32Z (RFD66606-2209) '    workspace's deployments (VRChat, service demos, HF datasets,
+2026-09-05T00:00:58Z (RFD66606-2209) '3. If `licence in {"CC-BY-NC-4.0", "CC-BY-NC-3.0",
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:33Z (RFD66606-2209) '    trained models) are commercial in the sense the licence
+2026-09-05T00:00:59Z (RFD66606-2209) '   "CC-BY-NC-SA-*", "CC-BY-NC-ND-*"}`, drop the row and
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:34Z (RFD66606-2209) '    excludes, sales, ad-supported distribution, and paid access
+2026-09-05T00:01:00Z (RFD66606-2209) '   increment a counter.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:35Z (RFD66606-2209) '    are all on the table for shipped work, and a licence that
+2026-09-05T00:01:01Z (RFD66606-2209) '
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:36Z (RFD66606-2209) '    reserves them defeats the downstream question before it is
+2026-09-05T00:01:02Z (RFD66606-2209) 'At the end of the build, print the drop count and a per-licence
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:37Z (RFD66606-2209) '    asked.
+2026-09-05T00:01:03Z (RFD66606-2209) 'histogram of dropped rows. A silent skip reads as a pass; rule 3
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:38Z (RFD66606-2209) '
+2026-09-05T00:01:04Z (RFD66606-2209) 'says name the count. The reference implementation is in
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:39Z (RFD66606-2209) '    Same shape as CC-BY-SA's row. Different clause (non-commercial
+2026-09-05T00:01:05Z (RFD66606-2209) '`scripts/build_starforged_hf.py` from the current session.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:40Z (RFD66606-2209) '    vs. share-alike); the downstream cost of ignoring it is the
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:41Z (RFD66606-2209) '    same.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:42Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:43Z (RFD66606-2209) '    **Concrete case (2026-09-05):** dataforged
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:44Z (RFD66606-2209) '    (`github.com/rsek/dataforged`) carries a mixed licence.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:45Z (RFD66606-2209) '    `dist/starforged/*.json` is CC-BY-4.0 and ships as
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:46Z (RFD66606-2209) '    `chibifire/starforged` on HuggingFace. The `ironsworn/`
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:47Z (RFD66606-2209) '    subtree and raster illustrations are CC-BY-NC-4.0 and are
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:48Z (RFD66606-2209) '    filtered out by `scripts/build_starforged_hf.py` before the
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:49Z (RFD66606-2209) '    parquet write. `scripts/check_starforged_hf.py` asserts every
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:50Z (RFD66606-2209) '    surviving row is CC-BY-4.0 as a rule-3 named-not-silent gate.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:51Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:52Z (RFD66606-2209) '    **What is not banned.** Reading CC-BY-NC content for
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:53Z (RFD66606-2209) '    inspection, citing it in an RFD, or naming it as a source is
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:54Z (RFD66606-2209) '    fine. Shipping its content in a derived corpus is the case
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:55Z (RFD66606-2209) '    this row covers.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:56Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:00:57Z (RFD66606-2209) 'Filter implementation shape
+2026-09-05T00:01:06Z (RFD66606-2209) 'Verification
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:58Z (RFD66606-2209) 'Every builder that ingests a mixed-licence source carries the
+2026-09-05T00:01:07Z (RFD66606-2209) '- **Positive:** `check_starforged_hf.py` reads the shipped
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:00:59Z (RFD66606-2209) 'same three-step shape:
+2026-09-05T00:01:08Z (RFD66606-2209) '  parquet shards and asserts `every row's licence == CC-BY-4.0`.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:00Z (RFD66606-2209) '
+2026-09-05T00:01:09Z (RFD66606-2209) '- **Negative control** (rule 2): the checker's `--self-test`
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:01Z (RFD66606-2209) '1. Read the source row.
+2026-09-05T00:01:10Z (RFD66606-2209) '  mutates one row's licence field to `CC-BY-NC-4.0` in memory
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:02Z (RFD66606-2209) '2. Consult the row's licence field (dataforged tags each entry;
+2026-09-05T00:01:11Z (RFD66606-2209) '  and asserts the checker fails on that row.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:03Z (RFD66606-2209) '   other sources may need per-source lookup logic).
+2026-09-05T00:01:12Z (RFD66606-2209) '- **Builder self-test:** `build_starforged_hf.py --self-test`
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:04Z (RFD66606-2209) '3. If `licence in {"CC-BY-NC-4.0", "CC-BY-NC-3.0",
+2026-09-05T00:01:13Z (RFD66606-2209) '  runs against a small hand-built fixture with a planted
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:05Z (RFD66606-2209) '   "CC-BY-NC-SA-*", "CC-BY-NC-ND-*"}`, drop the row and
+2026-09-05T00:01:14Z (RFD66606-2209) '  CC-BY-NC row and asserts the row is dropped, the drop count is
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:06Z (RFD66606-2209) '   increment a counter.
+2026-09-05T00:01:15Z (RFD66606-2209) '  1, and the output does not contain the row's id.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:07Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:08Z (RFD66606-2209) 'At the end of the build, print the drop count and a per-licence
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:09Z (RFD66606-2209) 'histogram of dropped rows. A silent skip reads as a pass; rule 3
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:10Z (RFD66606-2209) 'says name the count. The reference implementation is in
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:11Z (RFD66606-2209) '`scripts/build_starforged_hf.py` from the current session.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:12Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:13Z (RFD66606-2209) 'Verification
+2026-09-05T00:01:16Z (RFD66606-2209) 'Related retractions
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:14Z (RFD66606-2209) '- **Positive:** `check_starforged_hf.py` reads the shipped
+2026-09-05T00:01:17Z (RFD66606-2209) 'None. The blocklist row is additive; no earlier decision is
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:15Z (RFD66606-2209) '  parquet shards and asserts `every row's licence == CC-BY-4.0`.
+2026-09-05T00:01:18Z (RFD66606-2209) 'withdrawn. The corresponding CC-BY-SA row on the blocklist is not
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:16Z (RFD66606-2209) '- **Negative control** (rule 2): the checker's `--self-test`
+2026-09-05T00:01:19Z (RFD66606-2209) 'touched.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:17Z (RFD66606-2209) '  mutates one row's licence field to `CC-BY-NC-4.0` in memory
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:18Z (RFD66606-2209) '  and asserts the checker fails on that row.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:19Z (RFD66606-2209) '- **Builder self-test:** `build_starforged_hf.py --self-test`
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:20Z (RFD66606-2209) '  runs against a small hand-built fixture with a planted
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:21Z (RFD66606-2209) '  CC-BY-NC row and asserts the row is dropped, the drop count is
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:22Z (RFD66606-2209) '  1, and the output does not contain the row's id.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:23Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:24Z (RFD66606-2209) 'Related retractions
+2026-09-05T00:01:20Z (RFD66606-2209) 'From the README, moved here on 2026-09-07
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:25Z (RFD66606-2209) 'None. The blocklist row is additive; no earlier decision is
- # tags: rfd:details
+2026-09-05T00:01:21Z (RFD66606-2209) '
+ # tags: rfd:details, rfd:no-final-newline
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:26Z (RFD66606-2209) 'withdrawn. The corresponding CC-BY-SA row on the blocklist is not
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:27Z (RFD66606-2209) 'touched.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:28Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:29Z (RFD66606-2209) 'From the README, moved here on 2026-09-07
+2026-09-05T00:01:22Z (RFD66606-2209) 'Decision
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:30Z (RFD66606-2209) '
+2026-09-05T00:01:23Z (RFD66606-2209) 'Add a row to CLAUDE.md's "Blocklists" table:
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:31Z (RFD66606-2209) 'Decision
- # tags: rfd:details-heading
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:32Z (RFD66606-2209) 'Add a row to CLAUDE.md's "Blocklists" table:
+2026-09-05T00:01:24Z (RFD66606-2209) '
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:33Z (RFD66606-2209) '
+2026-09-05T00:01:25Z (RFD66606-2209) '    | **CC-BY-NC (all versions)** | non-commercial restriction propagates into anything derived from the row, same downstream-risk shape as CC-BY-SA, see below |
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:34Z (RFD66606-2209) '    | **CC-BY-NC (all versions)** | non-commercial restriction propagates into anything derived from the row, same downstream-risk shape as CC-BY-SA, see below |
+2026-09-05T00:01:26Z (RFD66606-2209) '
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:35Z (RFD66606-2209) '
+2026-09-05T00:01:27Z (RFD66606-2209) 'with a corresponding section in `BLOCKLIST.md` argued below. The
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:36Z (RFD66606-2209) 'with a corresponding section in `BLOCKLIST.md` argued below. The
+2026-09-05T00:01:28Z (RFD66606-2209) 'row is enforced two places:
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:37Z (RFD66606-2209) 'row is enforced two places:
+2026-09-05T00:01:29Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:30Z (RFD66606-2209) '1. **Build-script filter.** Any script that ingests a mixed-licence
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:31Z (RFD66606-2209) '   source reads each row's licence field and drops CC-BY-NC rows
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:32Z (RFD66606-2209) '   before the parquet or SQLite write. Reports the drop count as a
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:33Z (RFD66606-2209) '   rule-3 named-not-silent gate.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:34Z (RFD66606-2209) '2. **CI on manuals-weftspun.** `scripts/check_starforged_hf.py`
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:35Z (RFD66606-2209) '   asserts `every row's licence == CC-BY-4.0` (or another
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:36Z (RFD66606-2209) '   commercial-clean licence the workspace already accepts). A
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:37Z (RFD66606-2209) '   CC-BY-NC row surviving the filter fails CI.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
@@ -494,42 +494,42 @@
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:39Z (RFD66606-2209) '1. **Build-script filter.** Any script that ingests a mixed-licence
+2026-09-05T00:01:39Z (RFD66606-2209) 'The rule does NOT ban *reading* CC-BY-NC content locally for
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:40Z (RFD66606-2209) '   source reads each row's licence field and drops CC-BY-NC rows
+2026-09-05T00:01:40Z (RFD66606-2209) 'inspection. It bans CC-BY-NC rows from shipping in a derived
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:41Z (RFD66606-2209) '   before the parquet or SQLite write. Reports the drop count as a
+2026-09-05T00:01:41Z (RFD66606-2209) 'corpus, a training dataset, a demo fixture, or any artifact this
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:42Z (RFD66606-2209) '   rule-3 named-not-silent gate.
+2026-09-05T00:01:42Z (RFD66606-2209) 'workspace publishes.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:43Z (RFD66606-2209) '2. **CI on manuals-weftspun.** `scripts/check_starforged_hf.py`
+2026-09-05T00:01:43Z (RFD66606-2209) 'Problem
+ # tags: rfd:details-heading
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:44Z (RFD66606-2209) 'Concrete case that produced this RFD: **dataforged**, the
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:44Z (RFD66606-2209) '   asserts `every row's licence == CC-BY-4.0` (or another
+2026-09-05T00:01:45Z (RFD66606-2209) 'community JSON rendering of the Starforged and Ironsworn SRDs at
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:45Z (RFD66606-2209) '   commercial-clean licence the workspace already accepts). A
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:01:46Z (RFD66606-2209) '   CC-BY-NC row surviving the filter fails CI.
+2026-09-05T00:01:46Z (RFD66606-2209) '`github.com/rsek/dataforged`, carries a mixed licence:
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
@@ -539,262 +539,192 @@
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:48Z (RFD66606-2209) 'The rule does NOT ban *reading* CC-BY-NC content locally for
+2026-09-05T00:01:48Z (RFD66606-2209) '- `dist/starforged/*.json`, CC-BY-4.0. Ships.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:49Z (RFD66606-2209) 'inspection. It bans CC-BY-NC rows from shipping in a derived
+2026-09-05T00:01:49Z (RFD66606-2209) '- `ironsworn/` subtree, CC-BY-NC-4.0. Filtered out.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:50Z (RFD66606-2209) 'corpus, a training dataset, a demo fixture, or any artifact this
+2026-09-05T00:01:50Z (RFD66606-2209) '- Raster illustrations, CC-BY-NC-4.0. Filtered out.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:51Z (RFD66606-2209) 'workspace publishes.
+2026-09-05T00:01:51Z (RFD66606-2209) '
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:52Z (RFD66606-2209) '
+2026-09-05T00:01:52Z (RFD66606-2209) 'Without the filter, `chibifire/starforged` on HuggingFace would
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:53Z (RFD66606-2209) 'Problem
+2026-09-05T00:01:53Z (RFD66606-2209) 'have shipped CC-BY-NC rows mixed with CC-BY-4.0 rows under a
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:54Z (RFD66606-2209) 'single licence declaration. That is a licence-provenance failure
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:55Z (RFD66606-2209) 'for downstream consumers who take the workspace at its word that
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:56Z (RFD66606-2209) '`chibifire/starforged` is CC-BY-4.0. The filter closes it. The
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:57Z (RFD66606-2209) 'row on CLAUDE.md's blocklist ensures the *next* mixed-licence
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:58Z (RFD66606-2209) 'source (dataforged is not going to be the last) inherits the same
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:01:59Z (RFD66606-2209) 'handling by default rather than by anyone remembering.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:00Z (RFD66606-2209) '
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:01Z (RFD66606-2209) 'The failure mode is the same as CC-BY-SA's, a share-alike or
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:02Z (RFD66606-2209) 'non-commercial restriction that propagates into anything derived
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:03Z (RFD66606-2209) 'from the row. Different clause, same downstream shape. The CC-BY-SA
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:04Z (RFD66606-2209) 'row already on the blocklist is the argument this row mirrors.
+ # tags: rfd:details
+ Text:RFD2209  1 LINE
+ Text:Written
+
+2026-09-05T00:02:05Z (RFD66606-2209) 'Non-goals
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:54Z (RFD66606-2209) 'Concrete case that produced this RFD: **dataforged**, the
+2026-09-05T00:02:06Z (RFD66606-2209) 'Not a rule against every restrictive licence, CC0, MIT, Apache,
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:55Z (RFD66606-2209) 'community JSON rendering of the Starforged and Ironsworn SRDs at
+2026-09-05T00:02:07Z (RFD66606-2209) 'CC-BY-4.0, and the other permissive licences the workspace
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:56Z (RFD66606-2209) '`github.com/rsek/dataforged`, carries a mixed licence:
+2026-09-05T00:02:08Z (RFD66606-2209) 'already accepts continue to. Not a rule against downloading
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:57Z (RFD66606-2209) '
+2026-09-05T00:02:09Z (RFD66606-2209) 'CC-BY-NC content for personal inspection (an operator reading the
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:58Z (RFD66606-2209) '- `dist/starforged/*.json`, CC-BY-4.0. Ships.
+2026-09-05T00:02:10Z (RFD66606-2209) 'Ironsworn PDF is fine; a corpus builder ingesting its text is not).
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:01:59Z (RFD66606-2209) '- `ironsworn/` subtree, CC-BY-NC-4.0. Filtered out.
+2026-09-05T00:02:11Z (RFD66606-2209) 'Not a rule against forking or citing CC-BY-NC works, attribution
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:00Z (RFD66606-2209) '- Raster illustrations, CC-BY-NC-4.0. Filtered out.
+2026-09-05T00:02:12Z (RFD66606-2209) 'of a source is different from shipping its content.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:01Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:02Z (RFD66606-2209) 'Without the filter, `chibifire/starforged` on HuggingFace would
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:03Z (RFD66606-2209) 'have shipped CC-BY-NC rows mixed with CC-BY-4.0 rows under a
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:04Z (RFD66606-2209) 'single licence declaration. That is a licence-provenance failure
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:05Z (RFD66606-2209) 'for downstream consumers who take the workspace at its word that
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:06Z (RFD66606-2209) '`chibifire/starforged` is CC-BY-4.0. The filter closes it. The
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:07Z (RFD66606-2209) 'row on CLAUDE.md's blocklist ensures the *next* mixed-licence
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:08Z (RFD66606-2209) 'source (dataforged is not going to be the last) inherits the same
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:09Z (RFD66606-2209) 'handling by default rather than by anyone remembering.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:10Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:11Z (RFD66606-2209) 'The failure mode is the same as CC-BY-SA's, a share-alike or
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:12Z (RFD66606-2209) 'non-commercial restriction that propagates into anything derived
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:13Z (RFD66606-2209) 'from the row. Different clause, same downstream shape. The CC-BY-SA
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:14Z (RFD66606-2209) 'row already on the blocklist is the argument this row mirrors.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:15Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:16Z (RFD66606-2209) 'Non-goals
+2026-09-05T00:02:13Z (RFD66606-2209) 'Related
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:17Z (RFD66606-2209) 'Not a rule against every restrictive licence, CC0, MIT, Apache,
+2026-09-05T00:02:14Z (RFD66606-2209) '- CLAUDE.md's existing `CC-BY-SA` row, same shape, same argument.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:18Z (RFD66606-2209) 'CC-BY-4.0, and the other permissive licences the workspace
+2026-09-05T00:02:15Z (RFD66606-2209) '- RFD66606-2205 (Taskweft in Bao), the Starforged play surface whose
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:19Z (RFD66606-2209) 'already accepts continue to. Not a rule against downloading
+2026-09-05T00:02:16Z (RFD66606-2209) '  corpus is the concrete case.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:20Z (RFD66606-2209) 'CC-BY-NC content for personal inspection (an operator reading the
+2026-09-05T00:02:17Z (RFD66606-2209) '- Codebase: `2-contract/manuals-weftspun/scripts/build_starforged_hf.py`
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:21Z (RFD66606-2209) 'Ironsworn PDF is fine; a corpus builder ingesting its text is not).
+2026-09-05T00:02:18Z (RFD66606-2209) '  and `build_starforged_sqlite.py`, the reference filter
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:22Z (RFD66606-2209) 'Not a rule against forking or citing CC-BY-NC works, attribution
+2026-09-05T00:02:19Z (RFD66606-2209) '  implementations.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:23Z (RFD66606-2209) 'of a source is different from shipping its content.
+2026-09-05T00:02:20Z (RFD66606-2209) '- Codebase: `2-contract/manuals-weftspun/scripts/check_starforged_hf.py`
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:24Z (RFD66606-2209) '
+2026-09-05T00:02:21Z (RFD66606-2209) ' , the downstream CI assertion.
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:25Z (RFD66606-2209) 'Related
+2026-09-05T00:02:22Z (RFD66606-2209) 'The problem
  # tags: rfd:details-heading
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:26Z (RFD66606-2209) '- CLAUDE.md's existing `CC-BY-SA` row, same shape, same argument.
+2026-09-05T00:02:23Z (RFD66606-2209) 'Concrete case that produced this RFD: **dataforged**, the
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:27Z (RFD66606-2209) '- RFD66606-2205 (Taskweft in Bao), the Starforged play surface whose
+2026-09-05T00:02:24Z (RFD66606-2209) 'community JSON rendering of the Starforged and Ironsworn SRDs at
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written
 
-2026-09-05T00:02:28Z (RFD66606-2209) '  corpus is the concrete case.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:29Z (RFD66606-2209) '- Codebase: `2-contract/manuals-weftspun/scripts/build_starforged_hf.py`
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:30Z (RFD66606-2209) '  and `build_starforged_sqlite.py`, the reference filter
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:31Z (RFD66606-2209) '  implementations.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:32Z (RFD66606-2209) '- Codebase: `2-contract/manuals-weftspun/scripts/check_starforged_hf.py`
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:33Z (RFD66606-2209) ' , the downstream CI assertion.
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:34Z (RFD66606-2209) '
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:35Z (RFD66606-2209) 'The problem
- # tags: rfd:details-heading
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:36Z (RFD66606-2209) 'Concrete case that produced this RFD: **dataforged**, the
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:37Z (RFD66606-2209) 'community JSON rendering of the Starforged and Ironsworn SRDs at
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:38Z (RFD66606-2209) '`github.com/rsek/dataforged`, carries a mixed licence:
- # tags: rfd:details
- Text:RFD2209  1 LINE
- Text:Written
-
-2026-09-05T00:02:39Z (RFD66606-2209) '
+2026-09-05T00:02:25Z (RFD66606-2209) '`github.com/rsek/dataforged`, carries a mixed licence:
  # tags: rfd:details
  Text:RFD2209  1 LINE
  Text:Written

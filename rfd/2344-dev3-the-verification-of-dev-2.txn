@@ -10,12 +10,12 @@
  Text:Written
 
 2026-10-30T00:00:02Z (RFD66606-2344) 'seen to fail
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2344  1 LINE
  Text:Written
 
 2026-10-30T00:00:03Z (RFD66606-2344) 'the pen and the tray at the pins of RFD66606-2343; no new feature
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2344  1 LINE
  Text:Written
 
@@ -24,337 +24,282 @@
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2344) '
- # tags: rfd:hook
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:06Z (RFD66606-2344) 'The pen's gates were written on the FOSS side, several run headless, and none
+2026-10-30T00:00:05Z (RFD66606-2344) 'The pen's gates were written on the FOSS side, several run headless, and none
  # tags: rfd:intrigue
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2344) 'has run under the private pins.
+2026-10-30T00:00:06Z (RFD66606-2344) 'has run under the private pins.
  # tags: rfd:intrigue
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2344) '
- # tags: rfd:intrigue
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:09Z (RFD66606-2344) 'Read RFD66606-2343 for the dev.2 list that dev.3 proves.
+2026-10-30T00:00:07Z (RFD66606-2344) 'Read RFD66606-2343 for the dev.2 list that dev.3 proves.
  # tags: rfd:exit
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:10Z (RFD66606-2344) '
- # tags: rfd:exit
+2026-10-30T00:00:08Z (RFD66606-2344) 'dev.3, the proof of dev.2
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:11Z (RFD66606-2344) 'dev.3, the proof of dev.2
- # tags: rfd:details-title
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2344) 'dev.3 proves what RFD66606-2343 lists and adds nothing. Each dev.2 gate runs on
+2026-10-30T00:00:09Z (RFD66606-2344) 'dev.3 proves what RFD66606-2343 lists and adds nothing. Each dev.2 gate runs on
  # tags: rfd:decision
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:13Z (RFD66606-2344) 'the pinned double editor with a real renderer, on OXRSys and flat, and each of
+2026-10-30T00:00:10Z (RFD66606-2344) 'the pinned double editor with a real renderer, on OXRSys and flat, and each of
  # tags: rfd:decision
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:14Z (RFD66606-2344) 'its controls is seen to fail as planted. A claim with no passing run is a
+2026-10-30T00:00:11Z (RFD66606-2344) 'its controls is seen to fail as planted. A claim with no passing run is a
  # tags: rfd:decision
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2344) 'counted gap, not a feature.
+2026-10-30T00:00:12Z (RFD66606-2344) 'counted gap, not a feature.
  # tags: rfd:decision
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2344) '
- # tags: rfd:decision
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:17Z (RFD66606-2344) '- RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2341, dev.next.
+2026-10-30T00:00:13Z (RFD66606-2344) '- RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2341, dev.next.
  # tags: rfd:related
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2344) '- The private brief, the private blocklist and the private pitfalls list.
+2026-10-30T00:00:14Z (RFD66606-2344) '- The private brief, the private blocklist and the private pitfalls list.
  # tags: rfd:related
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2344) '
- # tags: rfd:related
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:20Z (RFD66606-2344) 'How every run is made
+2026-10-30T00:00:15Z (RFD66606-2344) 'How every run is made
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2344) 'The pinned double editor from our Godot double build, never headless: a
+2026-10-30T00:00:16Z (RFD66606-2344) 'The pinned double editor from our Godot double build, never headless: a
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2344) 'small windowed `--resolution` where a gate's own usage line says
+2026-10-30T00:00:17Z (RFD66606-2344) 'small windowed `--resolution` where a gate's own usage line says
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2344) '`--headless`. XR runs use OXRSys as the runtime and `xr_pilot_mcp` to see and
+2026-10-30T00:00:18Z (RFD66606-2344) '`--headless`. XR runs use OXRSys as the runtime and `xr_pilot_mcp` to see and
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2344) 'drive. Each command, its pins and its output go verbatim into
+2026-10-30T00:00:19Z (RFD66606-2344) 'drive. Each command, its pins and its output go verbatim into
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2344) '`logbook/logbook-dev3.md`.
+2026-10-30T00:00:20Z (RFD66606-2344) '`logbook/logbook-dev3.md`.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2344) '
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:27Z (RFD66606-2344) 'Gates and controls
+2026-10-30T00:00:21Z (RFD66606-2344) 'Gates and controls
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2344) '1. `gate_xr_scripted.gd`, XR and flat: 6 strokes, 2 cycles, 2 openings, one
+2026-10-30T00:00:22Z (RFD66606-2344) '1. `gate_xr_scripted.gd`, XR and flat: 6 strokes, 2 cycles, 2 openings, one
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:29Z (RFD66606-2344) '   shell. Controls: `--control=drop_seam` FAILs at MESH; `--expect=xr` with
+2026-10-30T00:00:23Z (RFD66606-2344) '   shell. Controls: `--control=drop_seam` FAILs at MESH; `--expect=xr` with
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2344) '   the runtime hidden FAILs as flat.
+2026-10-30T00:00:24Z (RFD66606-2344) '   the runtime hidden FAILs as flat.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2344) '2. `gate_replay.gd`, through OXRSys and from `tools/strokes/skirt.usda`, and the
+2026-10-30T00:00:25Z (RFD66606-2344) '2. `gate_replay.gd`, through OXRSys and from `tools/strokes/skirt.usda`, and the
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:32Z (RFD66606-2344) '   CASSIE dress layer. Control: `--control=drop_seam` FAILs at MESH.
+2026-10-30T00:00:26Z (RFD66606-2344) '   CASSIE dress layer. Control: `--control=drop_seam` FAILs at MESH.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2344) '3. `gate_statue.gd`: the skirt lands in the statue's body frame and shows on
+2026-10-30T00:00:27Z (RFD66606-2344) '3. `gate_statue.gd`: the skirt lands in the statue's body frame and shows on
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:34Z (RFD66606-2344) '   it. Controls: `on_monument` and `canvas_frame` each FAIL.
+2026-10-30T00:00:28Z (RFD66606-2344) '   it. Controls: `on_monument` and `canvas_frame` each FAIL.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2344) '4. `gate_world_grab.gd`: carry 0.30 m within 5 mm, scale 2x within 2 %, one
+2026-10-30T00:00:29Z (RFD66606-2344) '4. `gate_world_grab.gd`: carry 0.30 m within 5 mm, scale 2x within 2 %, one
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2344) '   grip holds within 1 mm. Control: `cold_debounce` FAILs on the first grab.
+2026-10-30T00:00:30Z (RFD66606-2344) '   grip holds within 1 mm. Control: `cold_debounce` FAILs on the first grab.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2344) '5. `gate_locomotion.gd`: walk, stairs, refusals, snap turn, teleport, repeat.
+2026-10-30T00:00:31Z (RFD66606-2344) '5. `gate_locomotion.gd`: walk, stairs, refusals, snap turn, teleport, repeat.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2344) '   Controls: `step_high`, `no_resolve`, `solid_land`, `no_floor` and `ulp`
+2026-10-30T00:00:32Z (RFD66606-2344) '   Controls: `step_high`, `no_resolve`, `solid_land`, `no_floor` and `ulp`
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2344) '   each FAIL.
+2026-10-30T00:00:33Z (RFD66606-2344) '   each FAIL.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:40Z (RFD66606-2344) '6. The tray: its `tools/gate_dev1.exs`, gates 1 to 7 of RFD66606-2342,
+2026-10-30T00:00:34Z (RFD66606-2344) '6. The tray: its `tools/gate_dev1.exs`, gates 1 to 7 of RFD66606-2342,
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:41Z (RFD66606-2344) '   each with its control.
+2026-10-30T00:00:35Z (RFD66606-2344) '   each with its control.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2344) '7. Reliability, over a 30-minute run of gate 1 in XR: at most 1 frame in
+2026-10-30T00:00:36Z (RFD66606-2344) '7. Reliability, over a 30-minute run of gate 1 in XR: at most 1 frame in
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2344) '   100,000 over 27.8 ms. Control: a planted 30 ms stall every 10,000 frames
+2026-10-30T00:00:37Z (RFD66606-2344) '   100,000 over 27.8 ms. Control: a planted 30 ms stall every 10,000 frames
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:44Z (RFD66606-2344) '   FAILs by count.
+2026-10-30T00:00:38Z (RFD66606-2344) '   FAILs by count.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:45Z (RFD66606-2344) '8. Churn: zero pin moves and zero edits to RFD66606-2343 and this file between
+2026-10-30T00:00:39Z (RFD66606-2344) '8. Churn: zero pin moves and zero edits to RFD66606-2343 and this file between
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2344) '   open and tag. Control: a planted pin bump FAILs by name.
+2026-10-30T00:00:40Z (RFD66606-2344) '   open and tag. Control: a planted pin bump FAILs by name.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2344) '
+2026-10-30T00:00:41Z (RFD66606-2344) '
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2344) 'A gate that passes with its control also passing is decoration and counts as
+2026-10-30T00:00:42Z (RFD66606-2344) 'A gate that passes with its control also passing is decoration and counts as
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:49Z (RFD66606-2344) 'a FAIL.
+2026-10-30T00:00:43Z (RFD66606-2344) 'a FAIL.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2344) '
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:51Z (RFD66606-2344) 'The playtest
+2026-10-30T00:00:44Z (RFD66606-2344) 'The playtest
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:52Z (RFD66606-2344) 'One person on OXRSys draws with the pen for 15 minutes, three sessions,
+2026-10-30T00:00:45Z (RFD66606-2344) 'One person on OXRSys draws with the pen for 15 minutes, three sessions,
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2344) 'rotating the user, a teammate and one trusted outsider. At minute 15: "What
+2026-10-30T00:00:46Z (RFD66606-2344) 'rotating the user, a teammate and one trusted outsider. At minute 15: "What
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2344) 'were you about to draw next?", "Do you want to keep going?", "Did anything
+2026-10-30T00:00:47Z (RFD66606-2344) 'were you about to draw next?", "Do you want to keep going?", "Did anything
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2344) 'look wrong or uncomfortable?" Every answer goes in the logbook verbatim.
+2026-10-30T00:00:48Z (RFD66606-2344) 'look wrong or uncomfortable?" Every answer goes in the logbook verbatim.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2344) '
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2344) 'The release
+2026-10-30T00:00:49Z (RFD66606-2344) 'The release
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:58Z (RFD66606-2344) '`v<date>-dev.3` on the pen and the tray, `logbook-dev3.md`, and the counted
+2026-10-30T00:00:50Z (RFD66606-2344) '`v<date>-dev.3` on the pen and the tray, `logbook-dev3.md`, and the counted
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:00:59Z (RFD66606-2344) 'gaps. The gaps and RFD66606-2341's items plan dev.4.
+2026-10-30T00:00:51Z (RFD66606-2344) 'gaps. The gaps and RFD66606-2341's items plan dev.4.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:00Z (RFD66606-2344) '
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:01:01Z (RFD66606-2344) 'The pins, the same as RFD66606-2343
+2026-10-30T00:00:52Z (RFD66606-2344) 'The pins, the same as RFD66606-2343
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2344) 'Each pin is the commit or release the dev.2 logbook names.
+2026-10-30T00:00:53Z (RFD66606-2344) 'Each pin is the commit or release the dev.2 logbook names.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:03Z (RFD66606-2344) '
+2026-10-30T00:00:54Z (RFD66606-2344) '
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:04Z (RFD66606-2344) '- Engine: our Godot build fork's release v20260930-double.1.
+2026-10-30T00:00:55Z (RFD66606-2344) '- Engine: our Godot build fork's release v20260930-double.1.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:05Z (RFD66606-2344) '- Our meshing pen and our curvenet interactor.
+2026-10-30T00:00:56Z (RFD66606-2344) '- Our meshing pen and our curvenet interactor.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2344) '- Our XR pilot interactor: OXRSys and xr_pilot_mcp.
+2026-10-30T00:00:57Z (RFD66606-2344) '- Our XR pilot interactor: OXRSys and xr_pilot_mcp.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2344) '- The tray's dev.1 build.
+2026-10-30T00:00:58Z (RFD66606-2344) '- The tray's dev.1 build.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:08Z (RFD66606-2344) '
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:01:09Z (RFD66606-2344) 'The problem
+2026-10-30T00:00:59Z (RFD66606-2344) 'The problem
  # tags: rfd:details-heading
  Text:RFD2344  1 LINE
  Text:Written
 
-2026-10-30T00:01:10Z (RFD66606-2344) 'Until they do, dev.2 is a list, not a result.
- # tags: rfd:details
- Text:RFD2344  1 LINE
- Text:Written
-
-2026-10-30T00:01:11Z (RFD66606-2344) '
+2026-10-30T00:01:00Z (RFD66606-2344) 'Until they do, dev.2 is a list, not a result.
  # tags: rfd:details
  Text:RFD2344  1 LINE
  Text:Written

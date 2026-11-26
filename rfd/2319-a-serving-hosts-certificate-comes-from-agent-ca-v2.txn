@@ -10,7 +10,7 @@
  Text:Written
 
 2026-10-16T00:00:02Z (RFD66606-2319) 'signed by Bao's agent CA v2 without the root token
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2319  1 LINE
  Text:Written
 
@@ -20,7 +20,7 @@
  Text:Written
 
 2026-10-16T00:00:04Z (RFD66606-2319) 'every stunnel or edge endpoint that serves under an agent identity
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2319  1 LINE
  Text:Written
 
@@ -29,392 +29,392 @@
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:06Z (RFD66606-2319) '
- # tags: rfd:hook
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:07Z (RFD66606-2319) 'Bao has two agent CAs, and nothing said which one does what. Bao signs a certificate in
+2026-10-16T00:00:06Z (RFD66606-2319) 'Bao has two agent CAs, and nothing said which one does what. Bao signs a certificate in
  # tags: rfd:intrigue
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:08Z (RFD66606-2319) '`pki-agents` that names the tailnet host anyway, and every client then rejects it.
+2026-10-16T00:00:07Z (RFD66606-2319) '`pki-agents` that names the tailnet host anyway, and every client then rejects it.
  # tags: rfd:intrigue
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:09Z (RFD66606-2319) '
- # tags: rfd:intrigue
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:10Z (RFD66606-2319) 'Read below for the mounts and the `agent-endpoint` role.
+2026-10-16T00:00:08Z (RFD66606-2319) 'Read below for the mounts and the `agent-endpoint` role.
  # tags: rfd:exit
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:11Z (RFD66606-2319) '
- # tags: rfd:exit
+2026-10-16T00:00:09Z (RFD66606-2319) 'a serving host's certificate comes from agent CA v2
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:12Z (RFD66606-2319) 'a serving host's certificate comes from agent CA v2
- # tags: rfd:details-title
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:13Z (RFD66606-2319) 'A host that serves takes a second certificate for its agent name from the
+2026-10-16T00:00:10Z (RFD66606-2319) 'A host that serves takes a second certificate for its agent name from the
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:14Z (RFD66606-2319) '`pki-agents-v2` mount, through role `agent-endpoint`. That role sets server
+2026-10-16T00:00:11Z (RFD66606-2319) '`pki-agents-v2` mount, through role `agent-endpoint`. That role sets server
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:15Z (RFD66606-2319) 'and client use, allows `*.agents.weftspun`, `*.stonecat-ratio.ts.net` and
+2026-10-16T00:00:12Z (RFD66606-2319) 'and client use, allows `*.agents.weftspun`, `*.stonecat-ratio.ts.net` and
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:16Z (RFD66606-2319) 'tailnet addresses, caps a certificate at 90 days and stores no record of it.
+2026-10-16T00:00:13Z (RFD66606-2319) 'tailnet addresses, caps a certificate at 90 days and stores no record of it.
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:17Z (RFD66606-2319) 'The `csr-signer` policy may sign through it, so an agent identity issues an
+2026-10-16T00:00:14Z (RFD66606-2319) 'The `csr-signer` policy may sign through it, so an agent identity issues an
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:18Z (RFD66606-2319) 'endpoint certificate without the root token. The key is made on the host and
+2026-10-16T00:00:15Z (RFD66606-2319) 'endpoint certificate without the root token. The key is made on the host and
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:19Z (RFD66606-2319) 'never leaves it.
+2026-10-16T00:00:16Z (RFD66606-2319) 'never leaves it.
  # tags: rfd:decision
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:20Z (RFD66606-2319) '
- # tags: rfd:decision
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:21Z (RFD66606-2319) '- RFD66606-2142 (Bao PKI service TLS), the first PKI mount.
+2026-10-16T00:00:17Z (RFD66606-2319) '- RFD66606-2142 (Bao PKI service TLS), the first PKI mount.
  # tags: rfd:related
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:22Z (RFD66606-2319) '- RFD66606-2145 (certificate lifetimes), the 90-day leaf ceiling.
+2026-10-16T00:00:18Z (RFD66606-2319) '- RFD66606-2145 (certificate lifetimes), the 90-day leaf ceiling.
  # tags: rfd:related
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:23Z (RFD66606-2319) '- RFD66606-2316 (Bao bounded storage), why no record is stored.
+2026-10-16T00:00:19Z (RFD66606-2319) '- RFD66606-2316 (Bao bounded storage), why no record is stored.
  # tags: rfd:related
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:24Z (RFD66606-2319) '- RFD66606-2311 (Bonsai 2 serving), the first host to need this.
+2026-10-16T00:00:20Z (RFD66606-2319) '- RFD66606-2311 (Bonsai 2 serving), the first host to need this.
  # tags: rfd:related
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:25Z (RFD66606-2319) '
- # tags: rfd:related
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:26Z (RFD66606-2319) 'What failed
+2026-10-16T00:00:21Z (RFD66606-2319) 'What failed
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:27Z (RFD66606-2319) '`pki-agents`
+2026-10-16T00:00:22Z (RFD66606-2319) '`pki-agents`
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:28Z (RFD66606-2319) 'holds the agent CA, whose name constraints allow only `chibifire.com` and
+2026-10-16T00:00:23Z (RFD66606-2319) 'holds the agent CA, whose name constraints allow only `chibifire.com` and
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:29Z (RFD66606-2319) '`agents.weftspun`. On 2026-10-16 a server certificate
+2026-10-16T00:00:24Z (RFD66606-2319) '`agents.weftspun`. On 2026-10-16 a server certificate
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:30Z (RFD66606-2319) 'for the Linux 4090 host failed this way.
+2026-10-16T00:00:25Z (RFD66606-2319) 'for the Linux 4090 host failed this way.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:31Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:32Z (RFD66606-2319) 'Sources
+2026-10-16T00:00:26Z (RFD66606-2319) 'Sources
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:33Z (RFD66606-2319) 'Read on 2026-10-16 from the live cluster through the active `weftspun-fdb`
+2026-10-16T00:00:27Z (RFD66606-2319) 'Read on 2026-10-16 from the live cluster through the active `weftspun-fdb`
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:34Z (RFD66606-2319) 'machine: each mount's CA certificate and name constraints, the
+2026-10-16T00:00:28Z (RFD66606-2319) 'machine: each mount's CA certificate and name constraints, the
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:35Z (RFD66606-2319) '`csr-signer` policy, and the issuers on `pki-agents`. The Authority
+2026-10-16T00:00:29Z (RFD66606-2319) '`csr-signer` policy, and the issuers on `pki-agents`. The Authority
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:36Z (RFD66606-2319) 'Information Access field of the Mac's own server certificate named
+2026-10-16T00:00:30Z (RFD66606-2319) 'Information Access field of the Mac's own server certificate named
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:37Z (RFD66606-2319) '`pki-agents-v2`, which is how that mount was found.
+2026-10-16T00:00:31Z (RFD66606-2319) '`pki-agents-v2`, which is how that mount was found.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:38Z (RFD66606-2319) '
+2026-10-16T00:00:32Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:39Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:40Z (RFD66606-2319) 'The mounts
+2026-10-16T00:00:33Z (RFD66606-2319) 'The mounts
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:41Z (RFD66606-2319) '- `pki-agents`: issuer chibifire.com agent CA, constrained to `chibifire.com`
+2026-10-16T00:00:34Z (RFD66606-2319) '- `pki-agents`: issuer chibifire.com agent CA, constrained to `chibifire.com`
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:42Z (RFD66606-2319) '  and `agents.weftspun`. An agent signs with `agent-client`: client use
+2026-10-16T00:00:35Z (RFD66606-2319) '  and `agents.weftspun`. An agent signs with `agent-client`: client use
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:43Z (RFD66606-2319) '  only, 1 year.
+2026-10-16T00:00:36Z (RFD66606-2319) '  only, 1 year.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:44Z (RFD66606-2319) '- `pki-agents-v2`: issuer chibifire.com agent CA v2, constrained to the two
+2026-10-16T00:00:37Z (RFD66606-2319) '- `pki-agents-v2`: issuer chibifire.com agent CA v2, constrained to the two
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:45Z (RFD66606-2319) '  above, `stonecat-ratio.ts.net` and `100.64.0.0/10`. An agent signs with
+2026-10-16T00:00:38Z (RFD66606-2319) '  above, `stonecat-ratio.ts.net` and `100.64.0.0/10`. An agent signs with
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:46Z (RFD66606-2319) '  `agent-endpoint` (this RFD).
+2026-10-16T00:00:39Z (RFD66606-2319) '  `agent-endpoint` (this RFD).
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:47Z (RFD66606-2319) '- `pki`: issuer Intermediate CA v2, no constraints read. No agent role; its
+2026-10-16T00:00:40Z (RFD66606-2319) '- `pki`: issuer Intermediate CA v2, no constraints read. No agent role; its
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:48Z (RFD66606-2319) '  key is unreadable on the node.
+2026-10-16T00:00:41Z (RFD66606-2319) '  key is unreadable on the node.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:49Z (RFD66606-2319) '- `pki-listener`: issuer bao listener CA, constrained to Bao's own names.
+2026-10-16T00:00:42Z (RFD66606-2319) '- `pki-listener`: issuer bao listener CA, constrained to Bao's own names.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:50Z (RFD66606-2319) '  Bao's listener only.
+2026-10-16T00:00:43Z (RFD66606-2319) '  Bao's listener only.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:51Z (RFD66606-2319) '
+2026-10-16T00:00:44Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:52Z (RFD66606-2319) 'Every issuer chains to the chibifire.com Root CA, so a client that trusts
+2026-10-16T00:00:45Z (RFD66606-2319) 'Every issuer chains to the chibifire.com Root CA, so a client that trusts
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:53Z (RFD66606-2319) 'the Root (`~/.bao.d/server-ca.pem` on the Mac) verifies both agent CAs.
+2026-10-16T00:00:46Z (RFD66606-2319) 'the Root (`~/.bao.d/server-ca.pem` on the Mac) verifies both agent CAs.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:54Z (RFD66606-2319) '
+2026-10-16T00:00:47Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:55Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:00:56Z (RFD66606-2319) 'The role
+2026-10-16T00:00:48Z (RFD66606-2319) 'The role
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:57Z (RFD66606-2319) '    pki-agents-v2/roles/agent-endpoint
+2026-10-16T00:00:49Z (RFD66606-2319) '    pki-agents-v2/roles/agent-endpoint
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:58Z (RFD66606-2319) '      allowed_domains   agents.weftspun,stonecat-ratio.ts.net
+2026-10-16T00:00:50Z (RFD66606-2319) '      allowed_domains   agents.weftspun,stonecat-ratio.ts.net
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:00:59Z (RFD66606-2319) '      allow_subdomains  true
+2026-10-16T00:00:51Z (RFD66606-2319) '      allow_subdomains  true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:00Z (RFD66606-2319) '      allow_ip_sans     true
+2026-10-16T00:00:52Z (RFD66606-2319) '      allow_ip_sans     true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:01Z (RFD66606-2319) '      enforce_hostnames true
+2026-10-16T00:00:53Z (RFD66606-2319) '      enforce_hostnames true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:02Z (RFD66606-2319) '      server_flag       true
+2026-10-16T00:00:54Z (RFD66606-2319) '      server_flag       true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:03Z (RFD66606-2319) '      client_flag       true
+2026-10-16T00:00:55Z (RFD66606-2319) '      client_flag       true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:04Z (RFD66606-2319) '      use_csr_sans      true
+2026-10-16T00:00:56Z (RFD66606-2319) '      use_csr_sans      true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:05Z (RFD66606-2319) '      ttl, max_ttl      2160h
+2026-10-16T00:00:57Z (RFD66606-2319) '      ttl, max_ttl      2160h
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:06Z (RFD66606-2319) '      no_store          true
+2026-10-16T00:00:58Z (RFD66606-2319) '      no_store          true
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:07Z (RFD66606-2319) '
+2026-10-16T00:00:59Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:08Z (RFD66606-2319) 'With `no_store`, Bao keeps no copy and cannot revoke the certificate. Each
+2026-10-16T00:01:00Z (RFD66606-2319) 'With `no_store`, Bao keeps no copy and cannot revoke the certificate. Each
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:09Z (RFD66606-2319) 'one expires within 90 days, which is the revocation (RFD66606-2316). The login
+2026-10-16T00:01:01Z (RFD66606-2319) 'one expires within 90 days, which is the revocation (RFD66606-2316). The login
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:10Z (RFD66606-2319) 'certificate an agent already holds stays as it is; the endpoint certificate
+2026-10-16T00:01:02Z (RFD66606-2319) 'certificate an agent already holds stays as it is; the endpoint certificate
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:11Z (RFD66606-2319) 'is a second one for the same name.
+2026-10-16T00:01:03Z (RFD66606-2319) 'is a second one for the same name.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:12Z (RFD66606-2319) '
+2026-10-16T00:01:04Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:13Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:14Z (RFD66606-2319) 'Issuing one
+2026-10-16T00:01:05Z (RFD66606-2319) 'Issuing one
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:15Z (RFD66606-2319) '1. On the host, make a P-256 key and a request whose config file carries
+2026-10-16T00:01:06Z (RFD66606-2319) '1. On the host, make a P-256 key and a request whose config file carries
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:16Z (RFD66606-2319) '   `extendedKeyUsage=serverAuth,clientAuth` and the subject names: the
+2026-10-16T00:01:07Z (RFD66606-2319) '   `extendedKeyUsage=serverAuth,clientAuth` and the subject names: the
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:17Z (RFD66606-2319) '   agent name, the host's `stonecat-ratio.ts.net` name and its tailnet
+2026-10-16T00:01:08Z (RFD66606-2319) '   agent name, the host's `stonecat-ratio.ts.net` name and its tailnet
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:18Z (RFD66606-2319) '   address.
+2026-10-16T00:01:09Z (RFD66606-2319) '   address.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:19Z (RFD66606-2319) '2. Copy only the request off the host. An agent signs it with
+2026-10-16T00:01:10Z (RFD66606-2319) '2. Copy only the request off the host. An agent signs it with
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:20Z (RFD66606-2319) '   `pki-agents-v2/sign/agent-endpoint` under its own cert login.
+2026-10-16T00:01:11Z (RFD66606-2319) '   `pki-agents-v2/sign/agent-endpoint` under its own cert login.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:21Z (RFD66606-2319) '3. Install the leaf with agent CA v2 after it as the full chain, and leave
+2026-10-16T00:01:12Z (RFD66606-2319) '3. Install the leaf with agent CA v2 after it as the full chain, and leave
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:22Z (RFD66606-2319) '   the Root out of the chain.
+2026-10-16T00:01:13Z (RFD66606-2319) '   the Root out of the chain.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:23Z (RFD66606-2319) '
+2026-10-16T00:01:14Z (RFD66606-2319) '
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:15Z (RFD66606-2319) 'Witnesses
+ # tags: rfd:details-heading
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:16Z (RFD66606-2319) '- **Chain.** `openssl verify -purpose sslserver` of the leaf against the
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:17Z (RFD66606-2319) '  Root, with agent CA v2 as the untrusted intermediate, prints OK. The
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:18Z (RFD66606-2319) '  same request signed on `pki-agents` fails with error 47, permitted
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:19Z (RFD66606-2319) '  subtree violation.
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:20Z (RFD66606-2319) '- **Use.** A client-only `agent-client` leaf fails the same check with
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:21Z (RFD66606-2319) '  error 26, unsupported certificate purpose.
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:22Z (RFD66606-2319) '- **Signer.** `bao token capabilities pki-agents-v2/sign/agent-endpoint`
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:23Z (RFD66606-2319) '  under an agent cert login returns create and update.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
@@ -424,112 +424,112 @@
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:25Z (RFD66606-2319) 'Witnesses
+2026-10-16T00:01:25Z (RFD66606-2319) 'The first two controls were run on 2026-10-16 and failed as planted, and
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:26Z (RFD66606-2319) 'the passing case ran the same day on the certificate below.
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:27Z (RFD66606-2319) '
+ # tags: rfd:details
+ Text:RFD2319  1 LINE
+ Text:Written
+
+2026-10-16T00:01:28Z (RFD66606-2319) 'What went wrong first
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:26Z (RFD66606-2319) '- **Chain.** `openssl verify -purpose sslserver` of the leaf against the
+2026-10-16T00:01:29Z (RFD66606-2319) 'On 2026-10-16 the role was written on `pki-agents`, the mount the client
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:27Z (RFD66606-2319) '  Root, with agent CA v2 as the untrusted intermediate, prints OK. The
+2026-10-16T00:01:30Z (RFD66606-2319) 'role lives on. It signed a certificate for the Linux host that failed error
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:28Z (RFD66606-2319) '  same request signed on `pki-agents` fails with error 47, permitted
+2026-10-16T00:01:31Z (RFD66606-2319) '47, and that certificate (serial `28:01:5a:de`) was revoked the same hour.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:29Z (RFD66606-2319) '  subtree violation.
+2026-10-16T00:01:32Z (RFD66606-2319) 'A role named `agent-endpoint` already existed there and was overwritten
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:30Z (RFD66606-2319) '- **Use.** A client-only `agent-client` leaf fails the same check with
+2026-10-16T00:01:33Z (RFD66606-2319) 'without being read, so its earlier settings are lost. The `csr-signer`
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:31Z (RFD66606-2319) '  error 26, unsupported certificate purpose.
+2026-10-16T00:01:34Z (RFD66606-2319) 'policy gained `pki-agents/sign/agent-endpoint` in the same write. Both
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:32Z (RFD66606-2319) '- **Signer.** `bao token capabilities pki-agents-v2/sign/agent-endpoint`
+2026-10-16T00:01:35Z (RFD66606-2319) 'were removed later that day, when the role was written on `pki-agents-v2`.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:33Z (RFD66606-2319) '  under an agent cert login returns create and update.
+2026-10-16T00:01:36Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:34Z (RFD66606-2319) '
+2026-10-16T00:01:37Z (RFD66606-2319) '`pki-agents-v2` already carried `agent-endpoint` and `agent-client`, both
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:35Z (RFD66606-2319) 'The first two controls were run on 2026-10-16 and failed as planted, and
+2026-10-16T00:01:38Z (RFD66606-2319) 'allowing `agents.weftspun`, `stonecat-ratio.ts.net` and tailnet addresses.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:36Z (RFD66606-2319) 'the passing case ran the same day on the certificate below.
+2026-10-16T00:01:39Z (RFD66606-2319) 'The existing `agent-endpoint` had a one-year ceiling and stored each
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:37Z (RFD66606-2319) '
+2026-10-16T00:01:40Z (RFD66606-2319) 'certificate; this RFD's write changed it to 90 days and `no_store`. The
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:38Z (RFD66606-2319) '
+2026-10-16T00:01:41Z (RFD66606-2319) 'Mac's own server certificate came from that role before the change.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:39Z (RFD66606-2319) 'What went wrong first
- # tags: rfd:details-heading
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:40Z (RFD66606-2319) 'On 2026-10-16 the role was written on `pki-agents`, the mount the client
+2026-10-16T00:01:42Z (RFD66606-2319) '
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:41Z (RFD66606-2319) 'role lives on. It signed a certificate for the Linux host that failed error
+2026-10-16T00:01:43Z (RFD66606-2319) 'The operator then requested the old settings back. Only the root token can
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:42Z (RFD66606-2319) '47, and that certificate (serial `28:01:5a:de`) was revoked the same hour.
+2026-10-16T00:01:44Z (RFD66606-2319) 'write the role, and it sits in the password manager, which routine work
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:43Z (RFD66606-2319) 'A role named `agent-endpoint` already existed there and was overwritten
+2026-10-16T00:01:45Z (RFD66606-2319) 'does not use. The operator kept the 90-day role and had both certificates
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:44Z (RFD66606-2319) 'without being read, so its earlier settings are lost. The `csr-signer`
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:45Z (RFD66606-2319) 'policy gained `pki-agents/sign/agent-endpoint` in the same write. Both
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:46Z (RFD66606-2319) 'were removed later that day, when the role was written on `pki-agents-v2`.
+2026-10-16T00:01:46Z (RFD66606-2319) 'rotated through it instead.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
@@ -539,132 +539,67 @@
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:01:48Z (RFD66606-2319) '`pki-agents-v2` already carried `agent-endpoint` and `agent-client`, both
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:49Z (RFD66606-2319) 'allowing `agents.weftspun`, `stonecat-ratio.ts.net` and tailnet addresses.
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:50Z (RFD66606-2319) 'The existing `agent-endpoint` had a one-year ceiling and stored each
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:51Z (RFD66606-2319) 'certificate; this RFD's write changed it to 90 days and `no_store`. The
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:52Z (RFD66606-2319) 'Mac's own server certificate came from that role before the change.
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:53Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:54Z (RFD66606-2319) 'The operator then requested the old settings back. Only the root token can
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:55Z (RFD66606-2319) 'write the role, and it sits in the password manager, which routine work
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:56Z (RFD66606-2319) 'does not use. The operator kept the 90-day role and had both certificates
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:57Z (RFD66606-2319) 'rotated through it instead.
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:58Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:01:59Z (RFD66606-2319) '
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:02:00Z (RFD66606-2319) 'The certificates in use
+2026-10-16T00:01:48Z (RFD66606-2319) 'The certificates in use
  # tags: rfd:details-heading
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:01Z (RFD66606-2319) 'Both were rotated on 2026-10-16 with a fresh P-256 key made on each host
+2026-10-16T00:01:49Z (RFD66606-2319) 'Both were rotated on 2026-10-16 with a fresh P-256 key made on each host
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:02Z (RFD66606-2319) 'and signed by the Mac agent identity with no root token. Each is valid to
+2026-10-16T00:01:50Z (RFD66606-2319) 'and signed by the Mac agent identity with no root token. Each is valid to
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:03Z (RFD66606-2319) '2027-01-14, passes the chain gate, and matches its key.
+2026-10-16T00:01:51Z (RFD66606-2319) '2027-01-14, passes the chain gate, and matches its key.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:04Z (RFD66606-2319) '- `fedora-9a6c28.agents.weftspun`, serial `5d:9c:e6:f3`, at
+2026-10-16T00:01:52Z (RFD66606-2319) '- `fedora-9a6c28.agents.weftspun`, serial `5d:9c:e6:f3`, at
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:05Z (RFD66606-2319) '  `~/.bao-creds/fedora-9a6c28/srv-fullchain.pem`. It replaces serial
+2026-10-16T00:01:53Z (RFD66606-2319) '  `~/.bao-creds/fedora-9a6c28/srv-fullchain.pem`. It replaces serial
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:06Z (RFD66606-2319) '  `21:f0:0c:1d`, issued earlier the same day, never served, and deleted
+2026-10-16T00:01:54Z (RFD66606-2319) '  `21:f0:0c:1d`, issued earlier the same day, never served, and deleted
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:07Z (RFD66606-2319) '  with its key.
+2026-10-16T00:01:55Z (RFD66606-2319) '  with its key.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:08Z (RFD66606-2319) '- `mac-mini-fire-01b8f5.agents.weftspun`, serial `3e:dd:70:c0`, at
+2026-10-16T00:01:56Z (RFD66606-2319) '- `mac-mini-fire-01b8f5.agents.weftspun`, serial `3e:dd:70:c0`, at
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:09Z (RFD66606-2319) '  `~/.bao-creds/mac-mini-fire-01b8f5/srv-fullchain.pem`. It replaces
+2026-10-16T00:01:57Z (RFD66606-2319) '  `~/.bao-creds/mac-mini-fire-01b8f5/srv-fullchain.pem`. It replaces
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:10Z (RFD66606-2319) '  serial `60:1e:4b:98`, a one-year certificate from the old role. No
+2026-10-16T00:01:58Z (RFD66606-2319) '  serial `60:1e:4b:98`, a one-year certificate from the old role. No
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:11Z (RFD66606-2319) '  agent identity may revoke on `pki-agents-v2`, so that one stays valid
+2026-10-16T00:01:59Z (RFD66606-2319) '  agent identity may revoke on `pki-agents-v2`, so that one stays valid
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written
 
-2026-10-16T00:02:12Z (RFD66606-2319) '  to 2027-10-12; nothing on the Mac reads it.
- # tags: rfd:details
- Text:RFD2319  1 LINE
- Text:Written
-
-2026-10-16T00:02:13Z (RFD66606-2319) '
+2026-10-16T00:02:00Z (RFD66606-2319) '  to 2027-10-12; nothing on the Mac reads it.
  # tags: rfd:details
  Text:RFD2319  1 LINE
  Text:Written

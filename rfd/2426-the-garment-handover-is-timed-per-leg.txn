@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2426) 'the timed garment handover, its legs, its load and its checks.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2426  1 LINE
  Text:Written
 
@@ -14,192 +14,192 @@
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2426) '
- # tags: rfd:hook
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2426) 'The round trip from a player's desk to the store's region measured 22 to 28 ms. Which leg of the
+2026-10-31T00:00:03Z (RFD66606-2426) 'The round trip from a player's desk to the store's region measured 22 to 28 ms. Which leg of the
  # tags: rfd:intrigue
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2426) 'handover spends it?
+2026-10-31T00:00:04Z (RFD66606-2426) 'handover spends it?
  # tags: rfd:intrigue
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2426) '
- # tags: rfd:intrigue
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2426) 'Run the timed handover: replay the recorded pen strokes for 5 minutes and read the 95th and 99th
+2026-10-31T00:00:05Z (RFD66606-2426) 'Run the timed handover: replay the recorded pen strokes for 5 minutes and read the 95th and 99th
  # tags: rfd:exit
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2426) 'percentiles of each leg.
+2026-10-31T00:00:06Z (RFD66606-2426) 'percentiles of each leg.
  # tags: rfd:exit
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2426) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2426) 'the garment handover is timed per leg
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2426) 'the garment handover is timed per leg
- # tags: rfd:details-title
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2426) 'The store and the backend stay together in one region, and the zones run on a server near the
+2026-10-31T00:00:08Z (RFD66606-2426) 'The store and the backend stay together in one region, and the zones run on a server near the
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2426) 'players (operator, 2026-10-23). The handover is the step that crosses the round trip, and the
+2026-10-31T00:00:09Z (RFD66606-2426) 'players (operator, 2026-10-23). The handover is the step that crosses the round trip, and the
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2426) 'rung times it. The measure is per server and per leg, never a count of servers to minimise
+2026-10-31T00:00:10Z (RFD66606-2426) 'rung times it. The measure is per server and per leg, never a count of servers to minimise
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2426) '(operator, 2026-10-23).
+2026-10-31T00:00:11Z (RFD66606-2426) '(operator, 2026-10-23).
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2426) '
+2026-10-31T00:00:12Z (RFD66606-2426) '
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2426) 'The time runs from the worker zone finishing the garment to its ghost drawn in the players'
+2026-10-31T00:00:13Z (RFD66606-2426) 'The time runs from the worker zone finishing the garment to its ghost drawn in the players'
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2426) 'zone, split by leg: the store commit, the ownership handover, and the fetch by hash. The load is
+2026-10-31T00:00:14Z (RFD66606-2426) 'zone, split by leg: the store commit, the ownership handover, and the fetch by hash. The load is
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2426) 'a replay of recorded pen strokes with the players' recorded head and hand tracks, pauses
+2026-10-31T00:00:15Z (RFD66606-2426) 'a replay of recorded pen strokes with the players' recorded head and hand tracks, pauses
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2426) 'included, never scripted motion. It holds for 5 minutes and is judged on the 95th and 99th
+2026-10-31T00:00:16Z (RFD66606-2426) 'included, never scripted motion. It holds for 5 minutes and is judged on the 95th and 99th
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2426) 'percentiles, never on a mean.
+2026-10-31T00:00:17Z (RFD66606-2426) 'percentiles, never on a mean.
  # tags: rfd:decision
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2426) '
- # tags: rfd:decision
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2426) '- RFD66606-2287, where this rule lived before the split.
+2026-10-31T00:00:18Z (RFD66606-2426) '- RFD66606-2287, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2426) '
- # tags: rfd:related
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2426) 'Why several servers
+2026-10-31T00:00:19Z (RFD66606-2426) 'Why several servers
  # tags: rfd:details-heading
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2426) 'Running several servers is expected: a system that tolerates faulty or lying members needs more
+2026-10-31T00:00:20Z (RFD66606-2426) 'Running several servers is expected: a system that tolerates faulty or lying members needs more
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2426) 'machines to match one machine's reliability, so the measure is per server and per leg.
+2026-10-31T00:00:21Z (RFD66606-2426) 'machines to match one machine's reliability, so the measure is per server and per leg.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2426) '
+2026-10-31T00:00:22Z (RFD66606-2426) '
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2426) '
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2426) 'Rules of the run
+2026-10-31T00:00:23Z (RFD66606-2426) 'Rules of the run
  # tags: rfd:details-heading
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2426) '- A zone confirms a handover only after the store commits it. Writes may group into one commit,
+2026-10-31T00:00:24Z (RFD66606-2426) '- A zone confirms a handover only after the store commits it. Writes may group into one commit,
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2426) '  and every waiter waits for that commit.
+2026-10-31T00:00:25Z (RFD66606-2426) '  and every waiter waits for that commit.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2426) '- The zone's tick never waits on the store.
+2026-10-31T00:00:26Z (RFD66606-2426) '- The zone's tick never waits on the store.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2426) '- A player who pauses keeps their session. The replay's pauses must not cause a reconnect.
+2026-10-31T00:00:27Z (RFD66606-2426) '- A player who pauses keeps their session. The replay's pauses must not cause a reconnect.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2426) '- The report names what stopped the run: tick time, memory, the store commit, or sessions.
+2026-10-31T00:00:28Z (RFD66606-2426) '- The report names what stopped the run: tick time, memory, the store commit, or sessions.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2426) '- The first run on a new host repeats a reference build, so a change of machine is not read as a
+2026-10-31T00:00:29Z (RFD66606-2426) '- The first run on a new host repeats a reference build, so a change of machine is not read as a
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2426) '  change of code.
+2026-10-31T00:00:30Z (RFD66606-2426) '  change of code.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2426) '
+2026-10-31T00:00:31Z (RFD66606-2426) '
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2426) '
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2426) 'Checks and controls
+2026-10-31T00:00:32Z (RFD66606-2426) 'Checks and controls
  # tags: rfd:details-heading
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2426) 'Checks, each with a control that must fail:
+2026-10-31T00:00:33Z (RFD66606-2426) 'Checks, each with a control that must fail:
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:34Z (RFD66606-2426) '
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:35Z (RFD66606-2426) '- The legs add up to the measured total. A control that adds a delay to the store commit must
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:36Z (RFD66606-2426) '  show up in that leg and nowhere else.
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:37Z (RFD66606-2426) '- No player sees a garment confirmed before its commit. A control that confirms first must be
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:38Z (RFD66606-2426) '  caught.
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:39Z (RFD66606-2426) '- The replay is not the bottleneck: the replay host's own load is reported beside the zone's,
+ # tags: rfd:details
+ Text:RFD2426  1 LINE
+ Text:Written
+
+2026-10-31T00:00:40Z (RFD66606-2426) '  and a control that throttles the replay must be named as the limit.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
@@ -209,87 +209,42 @@
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2426) '- The legs add up to the measured total. A control that adds a delay to the store commit must
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2426) '  show up in that leg and nowhere else.
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2426) '- No player sees a garment confirmed before its commit. A control that confirms first must be
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2426) '  caught.
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2426) '- The replay is not the bottleneck: the replay host's own load is reported beside the zone's,
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:47Z (RFD66606-2426) '  and a control that throttles the replay must be named as the limit.
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:48Z (RFD66606-2426) '
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2426) '
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2426) 'Pass limits
+2026-10-31T00:00:42Z (RFD66606-2426) 'Pass limits
  # tags: rfd:details-heading
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2426) 'The pass limits are not set yet: the first sustained run measures them, and the operator sets
+2026-10-31T00:00:43Z (RFD66606-2426) 'The pass limits are not set yet: the first sustained run measures them, and the operator sets
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2426) 'them from it.
+2026-10-31T00:00:44Z (RFD66606-2426) 'them from it.
  # tags: rfd:details
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2426) '
- # tags: rfd:details
- Text:RFD2426  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2426) '2351
+2026-10-31T00:00:45Z (RFD66606-2426) '2351
  # tags: rebac:verbs-from
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2426) 'rfd-2426 provides per-leg-handover-timing
+2026-10-31T00:00:46Z (RFD66606-2426) 'rfd-2426 provides per-leg-handover-timing
  # tags: rebac:relate
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2426) 'rfd-2426 spends worker-zone-dispatch
+2026-10-31T00:00:47Z (RFD66606-2426) 'rfd-2426 spends worker-zone-dispatch
  # tags: rebac:relate
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2426) 'rfd-2426 spends fdb-sqlite
+2026-10-31T00:00:48Z (RFD66606-2426) 'rfd-2426 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2426  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2426) 'rfd-2426 is_a experiment-record
+2026-10-31T00:00:49Z (RFD66606-2426) 'rfd-2426 is_a experiment-record
  # tags: rebac:relate
  Text:RFD2426  1 LINE
  Text:Written

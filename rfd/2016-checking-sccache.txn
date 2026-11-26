@@ -9,192 +9,192 @@
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2016) '
- # tags: rfd:hook
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-2016) 'The failure mode is silent: if the `SCCACHE_*` environment is missing, the credentials are
+2026-08-25T00:00:02Z (RFD66606-2016) 'The failure mode is silent: if the `SCCACHE_*` environment is missing, the credentials are
  # tags: rfd:intrigue
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-2016) 'wrong, or the region/endpoint is off, sccache quietly falls back to a local disk cache, or
+2026-08-25T00:00:03Z (RFD66606-2016) 'wrong, or the region/endpoint is off, sccache quietly falls back to a local disk cache, or
  # tags: rfd:intrigue
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-2016) 'records read/write errors, while the build still succeeds.
+2026-08-25T00:00:04Z (RFD66606-2016) 'records read/write errors, while the build still succeeds.
  # tags: rfd:intrigue
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-2016) '
- # tags: rfd:intrigue
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-2016) 'Run `sccache --show-stats` after a build and check that `Cache errors` reads 0.
+2026-08-25T00:00:05Z (RFD66606-2016) 'Run `sccache --show-stats` after a build and check that `Cache errors` reads 0.
  # tags: rfd:exit
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2016) '
- # tags: rfd:exit
+2026-08-25T00:00:06Z (RFD66606-2016) 'Checking sccache
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2016) 'Checking sccache
- # tags: rfd:details-title
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-2016) '`sccache --show-stats` is how anyone confirms the cache is healthy, and
+2026-08-25T00:00:07Z (RFD66606-2016) '`sccache --show-stats` is how anyone confirms the cache is healthy, and
  # tags: rfd:decision
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2016) '`Cache errors 0` after a build is the confirmation that the bucket,
+2026-08-25T00:00:08Z (RFD66606-2016) '`Cache errors 0` after a build is the confirmation that the bucket,
  # tags: rfd:decision
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2016) 'region and credentials are all right. Nothing else proves it: a
+2026-08-25T00:00:09Z (RFD66606-2016) 'region and credentials are all right. Nothing else proves it: a
  # tags: rfd:decision
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-2016) 'misconfigured sccache falls back to local disk and the build still
+2026-08-25T00:00:10Z (RFD66606-2016) 'misconfigured sccache falls back to local disk and the build still
  # tags: rfd:decision
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-2016) 'succeeds, so "the build worked" is not evidence the cache worked.
+2026-08-25T00:00:11Z (RFD66606-2016) 'succeeds, so "the build worked" is not evidence the cache worked.
  # tags: rfd:decision
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-2016) '
- # tags: rfd:decision
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-2016) '- RFD66606-2017 compiles the engine through this cache.
+2026-08-25T00:00:12Z (RFD66606-2016) '- RFD66606-2017 compiles the engine through this cache.
  # tags: rfd:related
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2016) '
- # tags: rfd:related
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-2016) 'Context and Problem Statement
+2026-08-25T00:00:13Z (RFD66606-2016) 'Context and Problem Statement
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-2016) 'Native builds route compilation through sccache
+2026-08-25T00:00:14Z (RFD66606-2016) 'Native builds route compilation through sccache
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-2016) '(https://github.com/mozilla/sccache) backed by a shared DigitalOcean
+2026-08-25T00:00:15Z (RFD66606-2016) '(https://github.com/mozilla/sccache) backed by a shared DigitalOcean
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2016) 'Spaces bucket (`chibifire-sccache`, region `tor1`), so object files are
+2026-08-25T00:00:16Z (RFD66606-2016) 'Spaces bucket (`chibifire-sccache`, region `tor1`), so object files are
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-2016) 'cached across machines and CI (see
+2026-08-25T00:00:17Z (RFD66606-2016) 'cached across machines and CI (see
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-2016) '`rfd/2017-compiling-godot-engine/index.md`). The failure mode is
+2026-08-25T00:00:18Z (RFD66606-2016) '`rfd/2017-compiling-godot-engine/index.md`). The failure mode is
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2016) 'silent: if the `SCCACHE_*` environment is missing, the credentials are
+2026-08-25T00:00:19Z (RFD66606-2016) 'silent: if the `SCCACHE_*` environment is missing, the credentials are
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2016) 'wrong, or the region/endpoint is off, sccache quietly falls back to a
+2026-08-25T00:00:20Z (RFD66606-2016) 'wrong, or the region/endpoint is off, sccache quietly falls back to a
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2016) 'local disk cache, or records read/write errors, while the build still
+2026-08-25T00:00:21Z (RFD66606-2016) 'local disk cache, or records read/write errors, while the build still
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-2016) 'succeeds. The shared-cache benefit is lost with no obvious signal. How
+2026-08-25T00:00:22Z (RFD66606-2016) 'succeeds. The shared-cache benefit is lost with no obvious signal. How
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2016) 'does someone confirm sccache is actually using the remote bucket and is
+2026-08-25T00:00:23Z (RFD66606-2016) 'does someone confirm sccache is actually using the remote bucket and is
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-2016) 'healthy?
+2026-08-25T00:00:24Z (RFD66606-2016) 'healthy?
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-2016) 'Decision Drivers
+2026-08-25T00:00:25Z (RFD66606-2016) 'Decision Drivers
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2016) '- A misconfigured cache degrades silently (local disk, or errored
+2026-08-25T00:00:26Z (RFD66606-2016) '- A misconfigured cache degrades silently (local disk, or errored
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2016) '  requests) without failing the build, so "the build worked" is not
+2026-08-25T00:00:27Z (RFD66606-2016) '  requests) without failing the build, so "the build worked" is not
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-2016) '  evidence the cache worked.
+2026-08-25T00:00:28Z (RFD66606-2016) '  evidence the cache worked.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2016) '- The check should be one command, not a ritual or a log dive.
+2026-08-25T00:00:29Z (RFD66606-2016) '- The check should be one command, not a ritual or a log dive.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2016) '- Credentials are scoped to the `do-tor1` AWS profile, not global
+2026-08-25T00:00:30Z (RFD66606-2016) '- Credentials are scoped to the `do-tor1` AWS profile, not global
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-2016) '  environment variables, so the check must not require exporting
+2026-08-25T00:00:31Z (RFD66606-2016) '  environment variables, so the check must not require exporting
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2016) '  secrets.
+2026-08-25T00:00:32Z (RFD66606-2016) '  secrets.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2016) '- It should read the same on Windows (PowerShell) and WSL/Linux.
+2026-08-25T00:00:33Z (RFD66606-2016) '- It should read the same on Windows (PowerShell) and WSL/Linux.
+ # tags: rfd:details
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-2016) 'Considered Options
+ # tags: rfd:details-heading
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-2016) '- Infer from build times (implicit, unreliable, no backend visibility).
+ # tags: rfd:details
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-2016) '- Enable `SCCACHE_LOG=debug` and read the per-request log every build.
+ # tags: rfd:details
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-2016) '- Read `sccache --show-stats` and check the backend and error counters.
+ # tags: rfd:details
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-2016) 'Windows PowerShell wrapper
+ # tags: rfd:details-heading
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-2016) 'Aliases cannot carry logic, hence a function plus a `Set-Alias` shim:
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
@@ -204,37 +204,37 @@
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2016) 'Considered Options
- # tags: rfd:details-heading
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-2016) '- Infer from build times (implicit, unreliable, no backend visibility).
+2026-08-25T00:00:41Z (RFD66606-2016) '```powershell
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2016) '- Enable `SCCACHE_LOG=debug` and read the per-request log every build.
+2026-08-25T00:00:42Z (RFD66606-2016) 'function sccheck {
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2016) '- Read `sccache --show-stats` and check the backend and error counters.
+2026-08-25T00:00:43Z (RFD66606-2016) '    sccache --show-stats |
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-2016) '
+2026-08-25T00:00:44Z (RFD66606-2016) '        Select-String -Pattern 'Compile requests|Cache hits|Cache misses|Cache .*errors|Cache location'
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-2016) 'Windows PowerShell wrapper
- # tags: rfd:details-heading
+2026-08-25T00:00:45Z (RFD66606-2016) '}
+ # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-2016) 'Aliases cannot carry logic, hence a function plus a `Set-Alias` shim:
+2026-08-25T00:00:46Z (RFD66606-2016) 'Set-Alias scc sccheck
+ # tags: rfd:details
+ Text:RFD2016  1 LINE
+ Text:Written
+
+2026-08-25T00:00:47Z (RFD66606-2016) '```
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
@@ -244,282 +244,217 @@
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-2016) '```powershell
+2026-08-25T00:00:49Z (RFD66606-2016) 'The bash equivalent is `sccache --show-stats` filtered with `grep`. To
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-2016) 'function sccheck {
+2026-08-25T00:00:50Z (RFD66606-2016) 'measure a single build, reset first:
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-2016) '    sccache --show-stats |
+2026-08-25T00:00:51Z (RFD66606-2016) '`sccache --zero-stats; <build>; sccache --show-stats`.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-2016) '        Select-String -Pattern 'Compile requests|Cache hits|Cache misses|Cache .*errors|Cache location'
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-2016) '}
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-2016) 'Set-Alias scc sccheck
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-2016) '```
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-2016) 'The bash equivalent is `sccache --show-stats` filtered with `grep`. To
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-2016) 'measure a single build, reset first:
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-2016) '`sccache --zero-stats; <build>; sccache --show-stats`.
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-2016) 'Consequences
+2026-08-25T00:00:52Z (RFD66606-2016) 'Consequences
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-2016) '- Good: one command shows the backend and health; no secrets needed,
+2026-08-25T00:00:53Z (RFD66606-2016) '- Good: one command shows the backend and health; no secrets needed,
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-2016) '  since stats read the running server's own counters.
+2026-08-25T00:00:54Z (RFD66606-2016) '  since stats read the running server's own counters.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-2016) '- Good: works identically across shells; the PowerShell `sccheck`/`scc`
+2026-08-25T00:00:55Z (RFD66606-2016) '- Good: works identically across shells; the PowerShell `sccheck`/`scc`
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-2016) '  shortcut makes it a reflex.
+2026-08-25T00:00:56Z (RFD66606-2016) '  shortcut makes it a reflex.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-2016) '- Bad: the counters are per-server-session, they reset when the
+2026-08-25T00:00:57Z (RFD66606-2016) '- Bad: the counters are per-server-session, they reset when the
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-2016) '  sccache server restarts or on `--zero-stats`, so they are not
+2026-08-25T00:00:58Z (RFD66606-2016) '  sccache server restarts or on `--zero-stats`, so they are not
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-2016) '  lifetime bucket totals.
+2026-08-25T00:00:59Z (RFD66606-2016) '  lifetime bucket totals.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-2016) '- Bad: `--show-stats` alone does not prove S3 connectivity; only a
+2026-08-25T00:01:00Z (RFD66606-2016) '- Bad: `--show-stats` alone does not prove S3 connectivity; only a
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-2016) '  compile (or a full build) exercises read/write. `Cache errors = 0`
+2026-08-25T00:01:01Z (RFD66606-2016) '  compile (or a full build) exercises read/write. `Cache errors = 0`
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-2016) '  after a build is the real confirmation that auth and the endpoint are
+2026-08-25T00:01:02Z (RFD66606-2016) '  after a build is the real confirmation that auth and the endpoint are
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-2016) '  correct.
+2026-08-25T00:01:03Z (RFD66606-2016) '  correct.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-2016) 'Confirmation
+2026-08-25T00:01:04Z (RFD66606-2016) 'Confirmation
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-2016) 'Running `sccheck` reported `Cache location  s3, name: chibifire-sccache,
+2026-08-25T00:01:05Z (RFD66606-2016) 'Running `sccheck` reported `Cache location  s3, name: chibifire-sccache,
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-2016) 'prefix: /godot/`, `Cache errors 0`, and hits accumulating during a Godot
+2026-08-25T00:01:06Z (RFD66606-2016) 'prefix: /godot/`, `Cache errors 0`, and hits accumulating during a Godot
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-2016) 'rebuild, so the remote backend, region, and `do-tor1` credentials are
+2026-08-25T00:01:07Z (RFD66606-2016) 'rebuild, so the remote backend, region, and `do-tor1` credentials are
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-2016) 'all working.
+2026-08-25T00:01:08Z (RFD66606-2016) 'all working.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-2016) 'More Information
+2026-08-25T00:01:09Z (RFD66606-2016) 'More Information
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-2016) 'Native builds route through sccache against `chibifire-sccache`, and
+2026-08-25T00:01:10Z (RFD66606-2016) 'Native builds route through sccache against `chibifire-sccache`, and
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-2016) '`scons` keeps its own cache alongside it. That pairing is settled; an
+2026-08-25T00:01:11Z (RFD66606-2016) '`scons` keeps its own cache alongside it. That pairing is settled; an
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-2016) 'install that forgets the `SCCACHE_*` environment is an installation
+2026-08-25T00:01:12Z (RFD66606-2016) 'install that forgets the `SCCACHE_*` environment is an installation
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-2016) 'defect rather than an open question.
+2026-08-25T00:01:13Z (RFD66606-2016) 'defect rather than an open question.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-2016) '
+2026-08-25T00:01:14Z (RFD66606-2016) '
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-2016) '- The non-secret `SCCACHE_*` variables (`SCCACHE_BUCKET`,
+2026-08-25T00:01:15Z (RFD66606-2016) '- The non-secret `SCCACHE_*` variables (`SCCACHE_BUCKET`,
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-2016) '  `SCCACHE_ENDPOINT`, `SCCACHE_REGION`, `SCCACHE_S3_USE_SSL`,
+2026-08-25T00:01:16Z (RFD66606-2016) '  `SCCACHE_ENDPOINT`, `SCCACHE_REGION`, `SCCACHE_S3_USE_SSL`,
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-2016) '  `SCCACHE_S3_KEY_PREFIX`) are set globally; credentials live in the
+2026-08-25T00:01:17Z (RFD66606-2016) '  `SCCACHE_S3_KEY_PREFIX`) are set globally; credentials live in the
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-2016) '  `do-tor1` profile (`~/.aws/credentials`) and are applied only for the
+2026-08-25T00:01:18Z (RFD66606-2016) '  `do-tor1` profile (`~/.aws/credentials`) and are applied only for the
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-2016) '  duration of a build, so the real AWS CLI is never shadowed.
+2026-08-25T00:01:19Z (RFD66606-2016) '  duration of a build, so the real AWS CLI is never shadowed.
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-2016) '- Per-project key prefixes keep objects from colliding in the one
+2026-08-25T00:01:20Z (RFD66606-2016) '- Per-project key prefixes keep objects from colliding in the one
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:32Z (RFD66606-2016) '  bucket (e.g. `godot` vs `idtx-flow`).
+2026-08-25T00:01:21Z (RFD66606-2016) '  bucket (e.g. `godot` vs `idtx-flow`).
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-2016) '- To debug a non-zero error count, set `SCCACHE_LOG=debug` and
+2026-08-25T00:01:22Z (RFD66606-2016) '- To debug a non-zero error count, set `SCCACHE_LOG=debug` and
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:34Z (RFD66606-2016) '  `SCCACHE_ERROR_LOG` in the sccache service launcher and reinstall the
+2026-08-25T00:01:23Z (RFD66606-2016) '  `SCCACHE_ERROR_LOG` in the sccache service launcher and reinstall the
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-2016) '  service so the supervised server picks them up
+2026-08-25T00:01:24Z (RFD66606-2016) '  service so the supervised server picks them up
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-2016) '  (`decisions/20260606-windows-background-services-nssm.md`).
+2026-08-25T00:01:25Z (RFD66606-2016) '  (`decisions/20260606-windows-background-services-nssm.md`).
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-2016) '
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-2016) 'The problem
+2026-08-25T00:01:26Z (RFD66606-2016) 'The problem
  # tags: rfd:details-heading
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-2016) 'Native builds route compilation through sccache
+2026-08-25T00:01:27Z (RFD66606-2016) 'Native builds route compilation through sccache
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:40Z (RFD66606-2016) '(https://github.com/mozilla/sccache) backed by a shared DigitalOcean
+2026-08-25T00:01:28Z (RFD66606-2016) '(https://github.com/mozilla/sccache) backed by a shared DigitalOcean
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:41Z (RFD66606-2016) 'Spaces bucket (`chibifire-sccache`, region `tor1`), so object files
+2026-08-25T00:01:29Z (RFD66606-2016) 'Spaces bucket (`chibifire-sccache`, region `tor1`), so object files
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-2016) 'are cached across machines and CI (see
+2026-08-25T00:01:30Z (RFD66606-2016) 'are cached across machines and CI (see
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-2016) '`rfd/2017-compiling-godot-engine/index.md`).
- # tags: rfd:details
- Text:RFD2016  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-2016) '
+2026-08-25T00:01:31Z (RFD66606-2016) '`rfd/2017-compiling-godot-engine/index.md`).
  # tags: rfd:details
  Text:RFD2016  1 LINE
  Text:Written

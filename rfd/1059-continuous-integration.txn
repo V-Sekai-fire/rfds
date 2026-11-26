@@ -5,7 +5,7 @@
  Serials:Weftspun
 
 2026-08-25T00:00:01Z (RFD66606-1059) '`scripts/ci.sh`, `.github/workflows/main.yml`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1059  1 LINE
  Text:Written
 
@@ -14,192 +14,192 @@
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1059) '
- # tags: rfd:hook
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1059) '`.github/workflows/main.yml` ran `npm run test:anim-regression`. `package.json` never
+2026-08-25T00:00:03Z (RFD66606-1059) '`.github/workflows/main.yml` ran `npm run test:anim-regression`. `package.json` never
  # tags: rfd:intrigue
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1059) 'defined that script.
+2026-08-25T00:00:04Z (RFD66606-1059) 'defined that script.
  # tags: rfd:intrigue
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1059) '
- # tags: rfd:intrigue
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1059) 'Run `scripts/ci.sh` before committing, and read below for the three steps in order.
+2026-08-25T00:00:05Z (RFD66606-1059) 'Run `scripts/ci.sh` before committing, and read below for the three steps in order.
  # tags: rfd:exit
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1059) '
- # tags: rfd:exit
+2026-08-25T00:00:06Z (RFD66606-1059) 'Continuous integration, in one step
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1059) 'Continuous integration, in one step
- # tags: rfd:details-title
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1059) 'Follow Martin Fowler's ["Continuous
+2026-08-25T00:00:07Z (RFD66606-1059) 'Follow Martin Fowler's ["Continuous
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1059) 'Integration"](https://martinfowler.com/articles/continuousIntegration.html).
+2026-08-25T00:00:08Z (RFD66606-1059) 'Integration"](https://martinfowler.com/articles/continuousIntegration.html).
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1059) 'One command builds and self-tests the whole system. A developer runs
+2026-08-25T00:00:09Z (RFD66606-1059) 'One command builds and self-tests the whole system. A developer runs
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1059) 'it before committing, and the integration machine runs the identical
+2026-08-25T00:00:10Z (RFD66606-1059) 'it before committing, and the integration machine runs the identical
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1059) 'command.
+2026-08-25T00:00:11Z (RFD66606-1059) 'command.
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1059) '
+2026-08-25T00:00:12Z (RFD66606-1059) '
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1059) '`scripts/ci.sh` is that one command. A developer runs it before
+2026-08-25T00:00:13Z (RFD66606-1059) '`scripts/ci.sh` is that one command. A developer runs it before
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1059) 'committing, and an integration machine runs the identical command.
+2026-08-25T00:00:14Z (RFD66606-1059) 'committing, and an integration machine runs the identical command.
  # tags: rfd:decision
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1059) '
- # tags: rfd:decision
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1059) 'RFD66606-1058 gives the two container images this script builds. RFD66606-1020
+2026-08-25T00:00:15Z (RFD66606-1059) 'RFD66606-1058 gives the two container images this script builds. RFD66606-1020
  # tags: rfd:related
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1059) 'gives the CockroachDB the Elixir step tests against.
+2026-08-25T00:00:16Z (RFD66606-1059) 'gives the CockroachDB the Elixir step tests against.
  # tags: rfd:related
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1059) '
- # tags: rfd:related
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1059) 'Fowler's two practices
+2026-08-25T00:00:17Z (RFD66606-1059) 'Fowler's two practices
  # tags: rfd:details-heading
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1059) 'Two of his practices name the fault directly. "Automate the Build"
+2026-08-25T00:00:18Z (RFD66606-1059) 'Two of his practices name the fault directly. "Automate the Build"
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1059) 'and "Make Your Build Self-Testing" are the two. A broken `npm run`
+2026-08-25T00:00:19Z (RFD66606-1059) 'and "Make Your Build Self-Testing" are the two. A broken `npm run`
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1059) 'line that only ran on GitHub's machine shows what happens when the
+2026-08-25T00:00:20Z (RFD66606-1059) 'line that only ran on GitHub's machine shows what happens when the
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1059) 'person who last touched a build never runs it.
+2026-08-25T00:00:21Z (RFD66606-1059) 'person who last touched a build never runs it.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1059) '
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-1059) 'What the one step does
+2026-08-25T00:00:22Z (RFD66606-1059) 'What the one step does
  # tags: rfd:details-heading
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1059) 'In order, stopping at the first failure:
+2026-08-25T00:00:23Z (RFD66606-1059) 'In order, stopping at the first failure:
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1059) '
+2026-08-25T00:00:24Z (RFD66606-1059) '
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1059) '1. `npm install`, `vitest run`, `npm run build`. The JS side.
+2026-08-25T00:00:25Z (RFD66606-1059) '1. `npm install`, `vitest run`, `npm run build`. The JS side.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1059) '2. `mix deps.get`, `mix compile --warnings-as-errors`, `mix test`
+2026-08-25T00:00:26Z (RFD66606-1059) '2. `mix deps.get`, `mix compile --warnings-as-errors`, `mix test`
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1059) '   against an ephemeral CockroachDB node the script starts and tears
+2026-08-25T00:00:27Z (RFD66606-1059) '   against an ephemeral CockroachDB node the script starts and tears
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1059) '   down itself (`mix weftspun.crdb`). The Elixir side.
+2026-08-25T00:00:28Z (RFD66606-1059) '   down itself (`mix weftspun.crdb`). The Elixir side.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1059) '3. `podman build` (or `docker build`, whichever is on `PATH`) for
+2026-08-25T00:00:29Z (RFD66606-1059) '3. `podman build` (or `docker build`, whichever is on `PATH`) for
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1059) '   both RFD66606-1058 images. No push, build only.
+2026-08-25T00:00:30Z (RFD66606-1059) '   both RFD66606-1058 images. No push, build only.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1059) '
+2026-08-25T00:00:31Z (RFD66606-1059) '
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1059) 'Each step must pass before the next runs. A JS test failure never
+2026-08-25T00:00:32Z (RFD66606-1059) 'Each step must pass before the next runs. A JS test failure never
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1059) 'reaches the Elixir suite. A compile warning fails the build the same
+2026-08-25T00:00:33Z (RFD66606-1059) 'reaches the Elixir suite. A compile warning fails the build the same
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1059) 'as a test failure does, per `--warnings-as-errors`.
+2026-08-25T00:00:34Z (RFD66606-1059) 'as a test failure does, per `--warnings-as-errors`.
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1059) 'Why one script, not three CI steps
+ # tags: rfd:details-heading
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:36Z (RFD66606-1059) 'A step written only in YAML runs nowhere but GitHub's machine. This
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:37Z (RFD66606-1059) 'repository's one broken CI step proves what that costs. Nobody ran
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:38Z (RFD66606-1059) 'it locally, so nobody noticed it never worked. A shell script runs on
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:39Z (RFD66606-1059) 'a laptop and on a runner identically, through `bash scripts/ci.sh`,
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:40Z (RFD66606-1059) 'so the gap this RFD closes cannot reopen the same way.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
@@ -209,162 +209,162 @@
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1059) 'Why one script, not three CI steps
+2026-08-25T00:00:42Z (RFD66606-1059) '`CONTAINER_ENGINE` picks `podman` first, falling back to `docker`,
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:43Z (RFD66606-1059) 'because this project develops against Podman (RFD66606-1058), while
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:44Z (RFD66606-1059) 'GitHub's runners ship Docker. The Dockerfiles are engine-agnostic.
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:45Z (RFD66606-1059) 'Neither one assumes Podman.
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:46Z (RFD66606-1059) 'Retracted for now: the GitHub workflow that called the script
  # tags: rfd:details-heading
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1059) 'A step written only in YAML runs nowhere but GitHub's machine. This
+2026-08-25T00:00:47Z (RFD66606-1059) '`.github/workflows/main.yml` once installed the toolchains and called
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1059) 'repository's one broken CI step proves what that costs. Nobody ran
+2026-08-25T00:00:48Z (RFD66606-1059) '`scripts/ci.sh`, and nothing in it duplicated a step the script already
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1059) 'it locally, so nobody noticed it never worked. A shell script runs on
+2026-08-25T00:00:49Z (RFD66606-1059) 'ran. That file is deleted, on purpose.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1059) 'a laptop and on a runner identically, through `bash scripts/ci.sh`,
+2026-08-25T00:00:50Z (RFD66606-1059) '
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1059) 'so the gap this RFD closes cannot reopen the same way.
+2026-08-25T00:00:51Z (RFD66606-1059) '`scripts/ci.sh` still exists, still runs the same one command, and a
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1059) '
+2026-08-25T00:00:52Z (RFD66606-1059) 'developer still runs it before committing. The browser client's own
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1059) '`CONTAINER_ENGINE` picks `podman` first, falling back to `docker`,
+2026-08-25T00:00:53Z (RFD66606-1059) 'test suite carries many pre-existing failures across several files,
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1059) 'because this project develops against Podman (RFD66606-1058), while
+2026-08-25T00:00:54Z (RFD66606-1059) 'unrelated to any one commit, and every push turned red for that reason
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1059) 'GitHub's runners ship Docker. The Dockerfiles are engine-agnostic.
+2026-08-25T00:00:55Z (RFD66606-1059) 'alone. RFD66606-1057 tracks restoring the workflow once that suite is fixed.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1059) 'Neither one assumes Podman.
+2026-08-25T00:00:56Z (RFD66606-1059) '
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1059) '
+2026-08-25T00:00:57Z (RFD66606-1059) 'The decision this retracts is Fowler's, not this repository's, and it
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1059) 'Retracted for now: the GitHub workflow that called the script
+2026-08-25T00:00:58Z (RFD66606-1059) 'still holds. One command builds and self-tests the system. What is
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1059) 'missing is the machine that runs it, not the command.
+ # tags: rfd:details
+ Text:RFD1059  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1059) 'What this does not cover
  # tags: rfd:details-heading
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1059) '`.github/workflows/main.yml` once installed the toolchains and called
+2026-08-25T00:01:01Z (RFD66606-1059) 'Playwright (`test:e2e`) and the smoke scripts under
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1059) '`scripts/ci.sh`, and nothing in it duplicated a step the script already
+2026-08-25T00:01:02Z (RFD66606-1059) '`test:anim-smoke` / `test:appearance-*` stay outside `scripts/ci.sh`.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1059) 'ran. That file is deleted, on purpose.
+2026-08-25T00:01:03Z (RFD66606-1059) 'They need a browser, or a running dev server this RFD does not stand
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1059) '
+2026-08-25T00:01:04Z (RFD66606-1059) 'up.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1059) '`scripts/ci.sh` still exists, still runs the same one command, and a
+2026-08-25T00:01:05Z (RFD66606-1059) '
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1059) 'developer still runs it before committing. The browser client's own
+2026-08-25T00:01:06Z (RFD66606-1059) 'RFD66606-1058's `deploy-weftspun-quadlet.sh` stays outside it too.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1059) 'test suite carries many pre-existing failures across several files,
+2026-08-25T00:01:07Z (RFD66606-1059) 'Continuous integration is not continuous deployment, and RFD66606-1058's
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1059) 'unrelated to any one commit, and every push turned red for that reason
+2026-08-25T00:01:08Z (RFD66606-1059) 'open firewall question means that script cannot pass on this host
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1059) 'alone. RFD66606-1057 tracks restoring the workflow once that suite is fixed.
+2026-08-25T00:01:09Z (RFD66606-1059) 'yet regardless.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1059) '
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1059) 'The decision this retracts is Fowler's, not this repository's, and it
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1059) 'still holds. One command builds and self-tests the system. What is
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1059) 'missing is the machine that runs it, not the command.
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1059) '
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1059) 'What this does not cover
+2026-08-25T00:01:10Z (RFD66606-1059) 'The problem
  # tags: rfd:details-heading
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1059) 'Playwright (`test:e2e`) and the smoke scripts under
+2026-08-25T00:01:11Z (RFD66606-1059) 'Every run of this job
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1059) '`test:anim-smoke` / `test:appearance-*` stay outside `scripts/ci.sh`.
+2026-08-25T00:01:12Z (RFD66606-1059) 'failed at that line. CI stayed red, or silently skipped, since
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1059) 'They need a browser, or a running dev server this RFD does not stand
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1059) 'up.
+2026-08-25T00:01:13Z (RFD66606-1059) 'whenever that step was added.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
@@ -374,67 +374,12 @@
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1059) 'RFD66606-1058's `deploy-weftspun-quadlet.sh` stays outside it too.
+2026-08-25T00:01:15Z (RFD66606-1059) 'It also tested one of three parts of this repository. `weftspun_studio/`
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1059) 'Continuous integration is not continuous deployment, and RFD66606-1058's
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1059) 'open firewall question means that script cannot pass on this host
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1059) 'yet regardless.
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1059) '
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1059) 'The problem
- # tags: rfd:details-heading
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1059) 'Every run of this job
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1059) 'failed at that line. CI stayed red, or silently skipped, since
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1059) 'whenever that step was added.
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-1059) '
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1059) 'It also tested one of three parts of this repository. `weftspun_studio/`
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1059) 'had no CI at all, and neither did the two Podman images RFD66606-1058 adds.
- # tags: rfd:details
- Text:RFD1059  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1059) '
+2026-08-25T00:01:16Z (RFD66606-1059) 'had no CI at all, and neither did the two Podman images RFD66606-1058 adds.
  # tags: rfd:details
  Text:RFD1059  1 LINE
  Text:Written

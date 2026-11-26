@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-16T00:00:01Z (RFD66606-2496) 'a data disk on the Mac desk is one ZFS pool whose settings are fixed at creation.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2496  1 LINE
  Text:Written
 
 2026-11-16T00:00:02Z (RFD66606-2496) 'the Mac desk's external data disks: the check before a wipe, the pool, its proof.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2496  1 LINE
  Text:Written
 
@@ -24,142 +24,142 @@
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:05Z (RFD66606-2496) '
- # tags: rfd:hook
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:06Z (RFD66606-2496) 'Nothing in the workspace said how to prepare a ZFS disk. The first one was a 4 TB external
+2026-11-16T00:00:05Z (RFD66606-2496) 'Nothing in the workspace said how to prepare a ZFS disk. The first one was a 4 TB external
  # tags: rfd:intrigue
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:07Z (RFD66606-2496) 'drive whose partition table named a FAT volume, while its first sector held zeros. Sampling
+2026-11-16T00:00:06Z (RFD66606-2496) 'drive whose partition table named a FAT volume, while its first sector held zeros. Sampling
  # tags: rfd:intrigue
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:08Z (RFD66606-2496) '125 places across it found only zeros, so the label was stale and the disk was empty. The
+2026-11-16T00:00:07Z (RFD66606-2496) '125 places across it found only zeros, so the label was stale and the disk was empty. The
  # tags: rfd:intrigue
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:09Z (RFD66606-2496) 'settings that the Mac file browser needs, folded Unicode names and case-insensitive lookups,
+2026-11-16T00:00:08Z (RFD66606-2496) 'settings that the Mac file browser needs, folded Unicode names and case-insensitive lookups,
  # tags: rfd:intrigue
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:10Z (RFD66606-2496) 'are the ones that cannot be changed afterwards.
+2026-11-16T00:00:09Z (RFD66606-2496) 'are the ones that cannot be changed afterwards.
  # tags: rfd:intrigue
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:11Z (RFD66606-2496) '
- # tags: rfd:intrigue
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:12Z (RFD66606-2496) 'Read the section "The recorded run" for the commands. Run its checks against any pool: it
+2026-11-16T00:00:10Z (RFD66606-2496) 'Read the section "The recorded run" for the commands. Run its checks against any pool: it
  # tags: rfd:exit
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:13Z (RFD66606-2496) 'passes when every check prints its expected line, and the case control leaves one file.
+2026-11-16T00:00:11Z (RFD66606-2496) 'passes when every check prints its expected line, and the case control leaves one file.
  # tags: rfd:exit
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:14Z (RFD66606-2496) '
- # tags: rfd:exit
+2026-11-16T00:00:12Z (RFD66606-2496) 'ZFS data disks on the Mac desk
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:15Z (RFD66606-2496) 'ZFS data disks on the Mac desk
- # tags: rfd:details-title
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:16Z (RFD66606-2496) '- A data disk is one whole-disk pool made with the OpenZFS port for the Mac (operator,
+2026-11-16T00:00:13Z (RFD66606-2496) '- A data disk is one whole-disk pool made with the OpenZFS port for the Mac (operator,
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:17Z (RFD66606-2496) '  2026-11-16). The disk is chosen by media name and byte size, never by its disk number.
+2026-11-16T00:00:14Z (RFD66606-2496) '  2026-11-16). The disk is chosen by media name and byte size, never by its disk number.
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:18Z (RFD66606-2496) '- The pool is created with a 4096-byte sector shift, zstd compression, no access times, one
+2026-11-16T00:00:15Z (RFD66606-2496) '- The pool is created with a 4096-byte sector shift, zstd compression, no access times, one
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:19Z (RFD66606-2496) '  copy of each block, folded Unicode names, case-insensitive lookups and UTF-8 names only.
+2026-11-16T00:00:16Z (RFD66606-2496) '  copy of each block, folded Unicode names, case-insensitive lookups and UTF-8 names only.
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:20Z (RFD66606-2496) '- Before the wipe, the disk is unmounted, sampled for existing data, and the operator
+2026-11-16T00:00:17Z (RFD66606-2496) '- Before the wipe, the disk is unmounted, sampled for existing data, and the operator
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:21Z (RFD66606-2496) '  approves the wipe by name.
+2026-11-16T00:00:18Z (RFD66606-2496) '  approves the wipe by name.
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:22Z (RFD66606-2496) '- The pool is done when it reads ONLINE, its settings read back, a written file hashes the
+2026-11-16T00:00:19Z (RFD66606-2496) '- The pool is done when it reads ONLINE, its settings read back, a written file hashes the
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:23Z (RFD66606-2496) '  same after a sync, a second name differing only in case replaces the first, a scrub finds
+2026-11-16T00:00:20Z (RFD66606-2496) '  same after a sync, a second name differing only in case replaces the first, a scrub finds
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:24Z (RFD66606-2496) '  no errors and the pool survives an export and an import.
+2026-11-16T00:00:21Z (RFD66606-2496) '  no errors and the pool survives an export and an import.
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:25Z (RFD66606-2496) '- A pool is exported before its disk is unplugged. Boot pools on other hosts are out of
+2026-11-16T00:00:22Z (RFD66606-2496) '- A pool is exported before its disk is unplugged. Boot pools on other hosts are out of
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:26Z (RFD66606-2496) '  scope.
+2026-11-16T00:00:23Z (RFD66606-2496) '  scope.
  # tags: rfd:decision
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:27Z (RFD66606-2496) '
- # tags: rfd:decision
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:28Z (RFD66606-2496) '- RFD66606-2294, the rule that agent knowledge lives in RFDs.
+2026-11-16T00:00:24Z (RFD66606-2496) '- RFD66606-2294, the rule that agent knowledge lives in RFDs.
  # tags: rfd:related
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:29Z (RFD66606-2496) '
- # tags: rfd:related
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:30Z (RFD66606-2496) 'The recorded run
+2026-11-16T00:00:25Z (RFD66606-2496) 'The recorded run
  # tags: rfd:details-heading
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:31Z (RFD66606-2496) 'The first pool is FIRE202610 on a 4.0 TB external USB drive, 7,814,037,168 sectors of 512
+2026-11-16T00:00:26Z (RFD66606-2496) 'The first pool is FIRE202610 on a 4.0 TB external USB drive, 7,814,037,168 sectors of 512
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:32Z (RFD66606-2496) 'bytes. The tools are in `/usr/local/zfs/bin`, version 2.3.1, and the kernel module is loaded.
+2026-11-16T00:00:27Z (RFD66606-2496) 'bytes. The tools are in `/usr/local/zfs/bin`, version 2.3.1, and the kernel module is loaded.
+ # tags: rfd:details
+ Text:RFD2496  1 LINE
+ Text:Written
+
+2026-11-16T00:00:28Z (RFD66606-2496) '
+ # tags: rfd:details
+ Text:RFD2496  1 LINE
+ Text:Written
+
+2026-11-16T00:00:29Z (RFD66606-2496) 'Before the wipe, the desk read the media name, the byte size and the partition table with
+ # tags: rfd:details
+ Text:RFD2496  1 LINE
+ Text:Written
+
+2026-11-16T00:00:30Z (RFD66606-2496) '`diskutil`, then read 4096 bytes at 125 places of the data partition, including the start,
+ # tags: rfd:details
+ Text:RFD2496  1 LINE
+ Text:Written
+
+2026-11-16T00:00:31Z (RFD66606-2496) 'the middle and the end. All 125 were zeros. A dry run with `zpool create -n` accepted the
+ # tags: rfd:details
+ Text:RFD2496  1 LINE
+ Text:Written
+
+2026-11-16T00:00:32Z (RFD66606-2496) 'options before the real one.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
@@ -169,257 +169,217 @@
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:34Z (RFD66606-2496) 'Before the wipe, the desk read the media name, the byte size and the partition table with
+2026-11-16T00:00:34Z (RFD66606-2496) 'The pool is created with these options:
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:35Z (RFD66606-2496) '`diskutil`, then read 4096 bytes at 125 places of the data partition, including the start,
+2026-11-16T00:00:35Z (RFD66606-2496) '
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:36Z (RFD66606-2496) 'the middle and the end. All 125 were zeros. A dry run with `zpool create -n` accepted the
+2026-11-16T00:00:36Z (RFD66606-2496) '```sh
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:37Z (RFD66606-2496) 'options before the real one.
+2026-11-16T00:00:37Z (RFD66606-2496) 'sudo diskutil unmountDisk force disk6
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:38Z (RFD66606-2496) '
+2026-11-16T00:00:38Z (RFD66606-2496) 'sudo /usr/local/zfs/bin/zpool create -f \
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:39Z (RFD66606-2496) 'The pool is created with these options:
+2026-11-16T00:00:39Z (RFD66606-2496) '  -o ashift=12 -o autoexpand=on \
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:40Z (RFD66606-2496) '
+2026-11-16T00:00:40Z (RFD66606-2496) '  -O compression=zstd -O atime=off -O copies=1 \
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:41Z (RFD66606-2496) '```sh
+2026-11-16T00:00:41Z (RFD66606-2496) '  -O normalization=formD -O casesensitivity=insensitive -O utf8only=on \
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:42Z (RFD66606-2496) 'sudo diskutil unmountDisk force disk6
+2026-11-16T00:00:42Z (RFD66606-2496) '  -O mountpoint=/Volumes/FIRE202610 \
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:43Z (RFD66606-2496) 'sudo /usr/local/zfs/bin/zpool create -f \
+2026-11-16T00:00:43Z (RFD66606-2496) '  FIRE202610 /dev/disk6
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:44Z (RFD66606-2496) '  -o ashift=12 -o autoexpand=on \
+2026-11-16T00:00:44Z (RFD66606-2496) '```
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:45Z (RFD66606-2496) '  -O compression=zstd -O atime=off -O copies=1 \
+2026-11-16T00:00:45Z (RFD66606-2496) '
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:46Z (RFD66606-2496) '  -O normalization=formD -O casesensitivity=insensitive -O utf8only=on \
+2026-11-16T00:00:46Z (RFD66606-2496) 'The properties normalization, casesensitivity and utf8only cannot be changed after
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:47Z (RFD66606-2496) '  -O mountpoint=/Volumes/FIRE202610 \
+2026-11-16T00:00:47Z (RFD66606-2496) 'creation. Compression and copies can be changed, and they apply to data written afterwards.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:48Z (RFD66606-2496) '  FIRE202610 /dev/disk6
+2026-11-16T00:00:48Z (RFD66606-2496) '
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:49Z (RFD66606-2496) '```
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:50Z (RFD66606-2496) '
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:51Z (RFD66606-2496) 'The properties normalization, casesensitivity and utf8only cannot be changed after
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:52Z (RFD66606-2496) 'creation. Compression and copies can be changed, and they apply to data written afterwards.
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:53Z (RFD66606-2496) '
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:54Z (RFD66606-2496) '
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:00:55Z (RFD66606-2496) 'The checks
+2026-11-16T00:00:49Z (RFD66606-2496) 'The checks
  # tags: rfd:details-heading
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:56Z (RFD66606-2496) '- Status: `zpool status` reads ONLINE with no errors, and `zfs get` reads back each option.
+2026-11-16T00:00:50Z (RFD66606-2496) '- Status: `zpool status` reads ONLINE with no errors, and `zfs get` reads back each option.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:57Z (RFD66606-2496) '- Readback: a 200 MB compressible file and a 50 MB random file hash the same before and
+2026-11-16T00:00:51Z (RFD66606-2496) '- Readback: a 200 MB compressible file and a 50 MB random file hash the same before and
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:58Z (RFD66606-2496) '  after `sync`.
+2026-11-16T00:00:52Z (RFD66606-2496) '  after `sync`.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:00:59Z (RFD66606-2496) '- Compression: the test dataset held 243 MB and took 49.7 MB, a ratio of 4.90x. The random
+2026-11-16T00:00:53Z (RFD66606-2496) '- Compression: the test dataset held 243 MB and took 49.7 MB, a ratio of 4.90x. The random
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:00Z (RFD66606-2496) '  file takes its full size, so a ratio near 1.00x on it is the control.
+2026-11-16T00:00:54Z (RFD66606-2496) '  file takes its full size, so a ratio near 1.00x on it is the control.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:01Z (RFD66606-2496) '- Case: writing `a.txt` after `A.txt` leaves one file whose content is the second write.
+2026-11-16T00:00:55Z (RFD66606-2496) '- Case: writing `a.txt` after `A.txt` leaves one file whose content is the second write.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:02Z (RFD66606-2496) '  That is the wanted result on a case-insensitive pool, and a pool that keeps two files
+2026-11-16T00:00:56Z (RFD66606-2496) '  That is the wanted result on a case-insensitive pool, and a pool that keeps two files
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:03Z (RFD66606-2496) '  fails the check.
+2026-11-16T00:00:57Z (RFD66606-2496) '  fails the check.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:04Z (RFD66606-2496) '- Scrub: `zpool scrub` repairs 0 bytes and reports 0 errors.
+2026-11-16T00:00:58Z (RFD66606-2496) '- Scrub: `zpool scrub` repairs 0 bytes and reports 0 errors.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:05Z (RFD66606-2496) '- Table: `diskutil list` shows the data partition as type ZFS and a second 8.4 MB ZFS
+2026-11-16T00:00:59Z (RFD66606-2496) '- Table: `diskutil list` shows the data partition as type ZFS and a second 8.4 MB ZFS
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:06Z (RFD66606-2496) '  reserve partition, and no FAT or EFI partition remains.
+2026-11-16T00:01:00Z (RFD66606-2496) '  reserve partition, and no FAT or EFI partition remains.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:07Z (RFD66606-2496) '- Round trip: after `zpool export`, `sudo zpool import` lists the pool ONLINE, and
+2026-11-16T00:01:01Z (RFD66606-2496) '- Round trip: after `zpool export`, `sudo zpool import` lists the pool ONLINE, and
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:08Z (RFD66606-2496) '  `sudo zpool import <name>` mounts it again. `zpool import` without sudo fails with
+2026-11-16T00:01:02Z (RFD66606-2496) '  `sudo zpool import <name>` mounts it again. `zpool import` without sudo fails with
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:09Z (RFD66606-2496) '  permission denied.
+2026-11-16T00:01:03Z (RFD66606-2496) '  permission denied.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:10Z (RFD66606-2496) '
+2026-11-16T00:01:04Z (RFD66606-2496) '
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:11Z (RFD66606-2496) 'After the import the pool lists its disk by GPT media identifier. That identifier stays the
+2026-11-16T00:01:05Z (RFD66606-2496) 'After the import the pool lists its disk by GPT media identifier. That identifier stays the
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:12Z (RFD66606-2496) 'same when the drive moves to another port, and the disk number changes, so the record names
+2026-11-16T00:01:06Z (RFD66606-2496) 'same when the drive moves to another port, and the disk number changes, so the record names
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:13Z (RFD66606-2496) 'the media and never the number.
+2026-11-16T00:01:07Z (RFD66606-2496) 'the media and never the number.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:14Z (RFD66606-2496) '
+2026-11-16T00:01:08Z (RFD66606-2496) '
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:15Z (RFD66606-2496) '
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:01:16Z (RFD66606-2496) 'What is not known
+2026-11-16T00:01:09Z (RFD66606-2496) 'What is not known
  # tags: rfd:details-heading
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:17Z (RFD66606-2496) '- How often a scrub runs, and who runs it.
+2026-11-16T00:01:10Z (RFD66606-2496) '- How often a scrub runs, and who runs it.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:18Z (RFD66606-2496) '- Whether the filename check holds for decomposed accents. The one test run counted 0 files,
+2026-11-16T00:01:11Z (RFD66606-2496) '- Whether the filename check holds for decomposed accents. The one test run counted 0 files,
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:19Z (RFD66606-2496) '  probably because the shell's locale did not match the accent, so the result proves nothing.
+2026-11-16T00:01:12Z (RFD66606-2496) '  probably because the shell's locale did not match the accent, so the result proves nothing.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:20Z (RFD66606-2496) '- The USB link speed of the first drive was not read: `system_profiler` listed no matching
+2026-11-16T00:01:13Z (RFD66606-2496) '- The USB link speed of the first drive was not read: `system_profiler` listed no matching
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:21Z (RFD66606-2496) '  device.
+2026-11-16T00:01:14Z (RFD66606-2496) '  device.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:22Z (RFD66606-2496) '- Whether a pool of one disk needs `copies=2` on a dataset worth protecting.
+2026-11-16T00:01:15Z (RFD66606-2496) '- Whether a pool of one disk needs `copies=2` on a dataset worth protecting.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written
 
-2026-11-16T00:01:23Z (RFD66606-2496) '- How later pools are named.
- # tags: rfd:details
- Text:RFD2496  1 LINE
- Text:Written
-
-2026-11-16T00:01:24Z (RFD66606-2496) '
+2026-11-16T00:01:16Z (RFD66606-2496) '- How later pools are named.
  # tags: rfd:details
  Text:RFD2496  1 LINE
  Text:Written

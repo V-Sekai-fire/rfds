@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-30T00:00:01Z (RFD66606-2345) 'one intermediate format for every rendered video
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2345  1 LINE
  Text:Written
 
@@ -15,7 +15,7 @@
  Text:Written
 
 2026-10-30T00:00:03Z (RFD66606-2345) 'interactor
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2345  1 LINE
  Text:Written
 
@@ -24,372 +24,307 @@
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2345) '
- # tags: rfd:hook
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:06Z (RFD66606-2345) 'The decider-pong recorders wrote H.264 and AAC in MP4. That is a lossy delivery format, and
+2026-10-30T00:00:05Z (RFD66606-2345) 'The decider-pong recorders wrote H.264 and AAC in MP4. That is a lossy delivery format, and
  # tags: rfd:intrigue
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2345) 'a second encode loses more.
+2026-10-30T00:00:06Z (RFD66606-2345) 'a second encode loses more.
  # tags: rfd:intrigue
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2345) '
- # tags: rfd:intrigue
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:09Z (RFD66606-2345) 'Check a video with `ffprobe`, which must report `cfhd`, `gbrp12le`, 1920x1080 and the
+2026-10-30T00:00:07Z (RFD66606-2345) 'Check a video with `ffprobe`, which must report `cfhd`, `gbrp12le`, 1920x1080 and the
  # tags: rfd:exit
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:10Z (RFD66606-2345) '`matroska` format.
+2026-10-30T00:00:08Z (RFD66606-2345) '`matroska` format.
  # tags: rfd:exit
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:11Z (RFD66606-2345) '
- # tags: rfd:exit
+2026-10-30T00:00:09Z (RFD66606-2345) 'The format, how fast it encodes, and how a file is checked
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:12Z (RFD66606-2345) 'The format, how fast it encodes, and how a file is checked
- # tags: rfd:details-title
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2345) 'Every rendered video is written as CineForm video and FLAC audio
+2026-10-30T00:00:10Z (RFD66606-2345) 'Every rendered video is written as CineForm video and FLAC audio
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:14Z (RFD66606-2345) 'in a Matroska (`.mkv`) file. CineForm runs at `gbrp12le`, so RGB frames
+2026-10-30T00:00:11Z (RFD66606-2345) 'in a Matroska (`.mkv`) file. CineForm runs at `gbrp12le`, so RGB frames
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2345) 'keep full chroma. MP4 is blocklisted as a container, and H.264 and AAC
+2026-10-30T00:00:12Z (RFD66606-2345) 'keep full chroma. MP4 is blocklisted as a container, and H.264 and AAC
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2345) 'are not written as outputs. A tool that writes video refuses an output
+2026-10-30T00:00:13Z (RFD66606-2345) 'are not written as outputs. A tool that writes video refuses an output
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:17Z (RFD66606-2345) 'path that does not end in `.mkv`. Uncompressed PCM audio is accepted in
+2026-10-30T00:00:14Z (RFD66606-2345) 'path that does not end in `.mkv`. Uncompressed PCM audio is accepted in
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2345) 'place of FLAC (operator, 2026-10-23); both are lossless.
+2026-10-30T00:00:15Z (RFD66606-2345) 'place of FLAC (operator, 2026-10-23); both are lossless.
  # tags: rfd:decision
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2345) '
- # tags: rfd:decision
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:20Z (RFD66606-2345) '- RFD66606-2349, which replaces the encoder, the live recorder and the
+2026-10-30T00:00:16Z (RFD66606-2345) '- RFD66606-2349, which replaces the encoder, the live recorder and the
  # tags: rfd:related
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2345) '  file check below. The format here stands.
+2026-10-30T00:00:17Z (RFD66606-2345) '  file check below. The format here stands.
  # tags: rfd:related
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2345) '- RFD66606-2346, decider-pong in the workspace; RFD66606-2347, the
+2026-10-30T00:00:18Z (RFD66606-2345) '- RFD66606-2346, decider-pong in the workspace; RFD66606-2347, the
  # tags: rfd:related
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2345) '  decider-pong review.
+2026-10-30T00:00:19Z (RFD66606-2345) '  decider-pong review.
  # tags: rfd:related
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2345) '
- # tags: rfd:related
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:25Z (RFD66606-2345) 'Also related
+2026-10-30T00:00:20Z (RFD66606-2345) 'Also related
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2345) '- The private blocklist, which lists MP4.
+2026-10-30T00:00:21Z (RFD66606-2345) '- The private blocklist, which lists MP4.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:27Z (RFD66606-2345) '- The decider-pong skill carries the same rule for agents.
+2026-10-30T00:00:22Z (RFD66606-2345) '- The decider-pong skill carries the same rule for agents.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:29Z (RFD66606-2345) 'Why an intermediate
+2026-10-30T00:00:23Z (RFD66606-2345) 'Why an intermediate
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2345) 'An intermediate must survive re-encoding and keep sharp synthetic edges.
+2026-10-30T00:00:24Z (RFD66606-2345) 'An intermediate must survive re-encoding and keep sharp synthetic edges.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:32Z (RFD66606-2345) 'Encoder settings
+2026-10-30T00:00:25Z (RFD66606-2345) 'Encoder settings
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2345) 'The homebrew ffmpeg ships the `cfhd` encoder. It takes `yuv422p10le`,
+2026-10-30T00:00:26Z (RFD66606-2345) 'The homebrew ffmpeg ships the `cfhd` encoder. It takes `yuv422p10le`,
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:34Z (RFD66606-2345) '`gbrp12le` and `gbrap12le`. The recorders use `gbrp12le`, because
+2026-10-30T00:00:27Z (RFD66606-2345) '`gbrp12le` and `gbrap12le`. The recorders use `gbrp12le`, because
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2345) 'their frames are RGB and Pong's edges are one colour against another.
+2026-10-30T00:00:28Z (RFD66606-2345) 'their frames are RGB and Pong's edges are one colour against another.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2345) 'Audio is FLAC, or uncompressed PCM, at 48 kHz, stereo. An engine movie
+2026-10-30T00:00:29Z (RFD66606-2345) 'Audio is FLAC, or uncompressed PCM, at 48 kHz, stereo. An engine movie
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2345) 'writer receives 32-bit samples, so it writes `pcm_s24le` and never
+2026-10-30T00:00:30Z (RFD66606-2345) 'writer receives 32-bit samples, so it writes `pcm_s24le` and never
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2345) '16-bit.
+2026-10-30T00:00:31Z (RFD66606-2345) '16-bit.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2345) '
+2026-10-30T00:00:32Z (RFD66606-2345) '
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:40Z (RFD66606-2345) 'CineForm fails on a frame whose width is not divisible by 16 or whose
+2026-10-30T00:00:33Z (RFD66606-2345) 'CineForm fails on a frame whose width is not divisible by 16 or whose
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:41Z (RFD66606-2345) 'height is not divisible by 8. A writer checks the size before it starts
+2026-10-30T00:00:34Z (RFD66606-2345) 'height is not divisible by 8. A writer checks the size before it starts
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2345) 'and refuses with a message that names the size, because the encoder
+2026-10-30T00:00:35Z (RFD66606-2345) 'and refuses with a message that names the size, because the encoder
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2345) 'otherwise dies mid-stream and the only symptom is a broken pipe.
+2026-10-30T00:00:36Z (RFD66606-2345) 'otherwise dies mid-stream and the only symptom is a broken pipe.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:44Z (RFD66606-2345) '
+2026-10-30T00:00:37Z (RFD66606-2345) '
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:45Z (RFD66606-2345) 'A live recorder pipes raw RGB to one ffmpeg process that writes
+2026-10-30T00:00:38Z (RFD66606-2345) 'A live recorder pipes raw RGB to one ffmpeg process that writes
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2345) 'CineForm in Matroska, then a second pass copies that video and adds
+2026-10-30T00:00:39Z (RFD66606-2345) 'CineForm in Matroska, then a second pass copies that video and adds
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2345) 'the FLAC track. Nothing is held in memory past the pipe.
+2026-10-30T00:00:40Z (RFD66606-2345) 'the FLAC track. Nothing is held in memory past the pipe.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:49Z (RFD66606-2345) 'Cost
+2026-10-30T00:00:41Z (RFD66606-2345) 'Cost
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2345) 'On the Mac mini, `cfhd` encodes a 1080p test source at about 170
+2026-10-30T00:00:42Z (RFD66606-2345) 'On the Mac mini, `cfhd` encodes a 1080p test source at about 170
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:51Z (RFD66606-2345) 'frames a second, so a 30 fps live render keeps up with room to spare.
+2026-10-30T00:00:43Z (RFD66606-2345) 'frames a second, so a 30 fps live render keeps up with room to spare.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:52Z (RFD66606-2345) 'A file grows by about 20 MB a second at 1080p. A 2-minute render is
+2026-10-30T00:00:44Z (RFD66606-2345) 'A file grows by about 20 MB a second at 1080p. A 2-minute render is
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2345) 'about 2.4 GB and a 5-minute render about 6 GB. The Desktop filled to
+2026-10-30T00:00:45Z (RFD66606-2345) 'about 2.4 GB and a 5-minute render about 6 GB. The Desktop filled to
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2345) '43 GB in one session, so superseded renders are listed for deletion
+2026-10-30T00:00:46Z (RFD66606-2345) '43 GB in one session, so superseded renders are listed for deletion
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2345) 'and deleted only on request.
+2026-10-30T00:00:47Z (RFD66606-2345) 'and deleted only on request.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2345) 'How a file is checked
+2026-10-30T00:00:48Z (RFD66606-2345) 'How a file is checked
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:58Z (RFD66606-2345) '`ffprobe` must report `cfhd`, `gbrp12le`, 1920x1080, `flac` or a
+2026-10-30T00:00:49Z (RFD66606-2345) '`ffprobe` must report `cfhd`, `gbrp12le`, 1920x1080, `flac` or a
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:00:59Z (RFD66606-2345) '`pcm_s16le`/`pcm_s24le` stream at 48000 Hz
+2026-10-30T00:00:50Z (RFD66606-2345) '`pcm_s16le`/`pcm_s24le` stream at 48000 Hz
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:00Z (RFD66606-2345) 'and the `matroska` format, with the duration the run asked for. A
+2026-10-30T00:00:51Z (RFD66606-2345) 'and the `matroska` format, with the duration the run asked for. A
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2345) 'frame is then pulled with `ffmpeg -ss` and looked at. That report and
+2026-10-30T00:00:52Z (RFD66606-2345) 'frame is then pulled with `ffmpeg -ss` and looked at. That report and
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2345) 'that frame are the check, whatever exit code the recorder returns.
+2026-10-30T00:00:53Z (RFD66606-2345) 'that frame are the check, whatever exit code the recorder returns.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:03Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:01:04Z (RFD66606-2345) 'The guard and its control
+2026-10-30T00:00:54Z (RFD66606-2345) 'The guard and its control
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:05Z (RFD66606-2345) '`recorder_second_opinion.py` exits with an error on any `--out` that
+2026-10-30T00:00:55Z (RFD66606-2345) '`recorder_second_opinion.py` exits with an error on any `--out` that
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2345) 'does not end in `.mkv`. The planted control asked for
+2026-10-30T00:00:56Z (RFD66606-2345) 'does not end in `.mkv`. The planted control asked for
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2345) '`planted.mp4`: the run exited 1 and wrote no file.
+2026-10-30T00:00:57Z (RFD66606-2345) '`planted.mp4`: the run exited 1 and wrote no file.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:08Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:01:09Z (RFD66606-2345) 'What changed in decider-pong
+2026-10-30T00:00:58Z (RFD66606-2345) 'What changed in decider-pong
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:10Z (RFD66606-2345) '`recorder_pong_v.py` and `recorder_second_opinion.py` now write
+2026-10-30T00:00:59Z (RFD66606-2345) '`recorder_pong_v.py` and `recorder_second_opinion.py` now write
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:11Z (RFD66606-2345) 'CineForm and FLAC. Four superseded recorders that only wrote MP4 were
+2026-10-30T00:01:00Z (RFD66606-2345) 'CineForm and FLAC. Four superseded recorders that only wrote MP4 were
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:12Z (RFD66606-2345) 'deleted: `recorder_live.py`, `recorder_pong_live.py`,
+2026-10-30T00:01:01Z (RFD66606-2345) 'deleted: `recorder_live.py`, `recorder_pong_live.py`,
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:13Z (RFD66606-2345) '`recorder_pong_vector.py` and `recorder_realtime.py`. Every MP4 the
+2026-10-30T00:01:02Z (RFD66606-2345) '`recorder_pong_vector.py` and `recorder_realtime.py`. Every MP4 the
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:14Z (RFD66606-2345) 'session had made was removed and re-rendered.
+2026-10-30T00:01:03Z (RFD66606-2345) 'session had made was removed and re-rendered.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:15Z (RFD66606-2345) '
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:01:16Z (RFD66606-2345) 'The problem
+2026-10-30T00:01:04Z (RFD66606-2345) 'The problem
  # tags: rfd:details-heading
  Text:RFD2345  1 LINE
  Text:Written
 
-2026-10-30T00:01:17Z (RFD66606-2345) 'The workspace had no written format, so each recorder picked its own.
- # tags: rfd:details
- Text:RFD2345  1 LINE
- Text:Written
-
-2026-10-30T00:01:18Z (RFD66606-2345) '
+2026-10-30T00:01:05Z (RFD66606-2345) 'The workspace had no written format, so each recorder picked its own.
  # tags: rfd:details
  Text:RFD2345  1 LINE
  Text:Written

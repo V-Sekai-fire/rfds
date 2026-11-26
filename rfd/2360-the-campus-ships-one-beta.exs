@@ -31,8 +31,8 @@ rfd 2360, "The campus as a beta", :discussion do
     passes with its control, and it ships each use case whose own gate has passed by then.
   - The beta ships a native build for each target: win64 on Windows, and native builds for the
     Steam Frame and the Steam Deck (operator, 2026-11-12).
-  - A server piece ships as win64 under NSSM (operator, 2026-11-26). Every protocol and server
-    has an AsyncAPI 3.1 document (operator, 2026-11-25); see the details.
+  - A server is a NixOS flake container under Ankaios (operator, 2026-11-26). Every protocol
+    and server has an AsyncAPI 3.1 document (operator, 2026-11-25); see the details.
   :: related
   - RFD66606-2436, the one slice; RFD66606-2487, RFD66606-2408 and RFD66606-2363, walking.
   - RFD66606-2312, the form of the release tag.
@@ -60,11 +60,10 @@ rfd 2360, "The campus as a beta", :discussion do
   document. The server refuses a message with no transition from its state, and a document without
   the block describes a plain gen_server (operator, 2026-11-25).
 
-  Every server piece ships as a win64 binary and runs as a Windows service under NSSM: the zone
-  server, the stores and the secrets engine. It is published like every other file of
-  RFD66606-2501, pushed with ORAS as a plain-file artifact and pulled by digest, then installed
-  with `nssm install`. No server piece ships as a NixOS flake service or a container image
-  (operator, 2026-11-26).
+  The zone server, the stores and the secrets engine are each a NixOS flake that builds a container
+  image, run by Podman under Eclipse Ankaios as a workload whose manifest pins the image by digest
+  (RFD66606-2501). The win64 client ships as folders pushed with ORAS and pulled by digest. No
+  server piece ships as win64 or runs under NSSM (operator, 2026-11-26).
   :: details Walk mode
   The character walks by walk mode: the motion guest drives it from clips in an AnimationLibrary
   (RFD66606-2487), first proved on the plaza walk of RFD66606-2408. No hand-written character

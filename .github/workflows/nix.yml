@@ -85,6 +85,9 @@ jobs:
           tag="v0.0.0-$stamp-${GITHUB_SHA:0:12}"
           mkdir out
           cp -rL result out/site
+          # The store copy is read-only; a read-only folder in the
+          # tar cannot be written into when it is pulled.
+          chmod -R u+w out/site
           cd out
           find site -type f | sort | xargs sha256sum > SHA256SUMS
           echo "$TOKEN" |

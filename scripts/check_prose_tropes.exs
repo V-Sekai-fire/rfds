@@ -124,27 +124,7 @@ defmodule ProseTropes do
   @max_words 22
   @commons 0.30
   @floor_words 200
-  @exts [".md", ".py", ".ex", ".exs", ".usda", ".txn"]
-  # USD CARRIES PROSE THAT THIS GATE NEVER SCORED. `rfd1122-plan.usda` holds 11,096 words of
-  # `doc` strings -- the largest single body of prose in this repository -- at 2.16 per
-  # 1k, higher than CLAUDE.md or BLOCKLIST.md. It went unscored because this gate
-  # selected markdown and source, and a layer file is neither. Only the doc strings are
-  # read: scoring the whole file would count `float2 extent = (0, 1)` as prose, and the
-  # quote-stripping rule would eat a single-line `doc = "..."` entirely.
-  @usda_doc_block ~r/doc\s*=\s*"""(.*?)"""/s
-  @usda_doc_line ~r/doc\s*=\s*"([^"\n]*)"/
-
-  @doc "The scoreable prose in a file: doc strings for USD, the whole text otherwise."
-  def prose(path, text) do
-    if String.ends_with?(path, ".usda"), do: usda_doc(text), else: text
-  end
-
-  def usda_doc(text) do
-    blocks = Regex.scan(@usda_doc_block, text) |> Enum.map(fn [_, body] -> body end)
-    rest = Regex.replace(@usda_doc_block, text, " ")
-    lines = Regex.scan(@usda_doc_line, rest) |> Enum.map(fn [_, body] -> body end)
-    Enum.join(blocks ++ lines, "\n\n")
-  end
+  @exts [".md", ".py", ".ex", ".exs", ".txn"]
 
   def rate(text) do
     text = Regex.replace(@quoted, text, " ")
@@ -255,7 +235,7 @@ defmodule ProseTropes do
       0
     else
       text = if RfdText.rfd?(path), do: RfdText.markdown(repo, nil, path), else: File.read!(full)
-      {now, hits, words} = rate(prose(path, text))
+      {now, hits, words} = rate(text)
 
       cond do
         words < @floor_words ->
@@ -271,7 +251,7 @@ defmodule ProseTropes do
               do: RfdText.markdown(repo, base, path),
               else: git(repo, ["show", "#{base}:#{path}"])
 
-          before = if prev, do: elem(rate(prose(path, prev)), 0), else: 0.0
+          before = if prev, do: elem(rate(prev), 0), else: 0.0
           {ok, ceiling, why} = judge(before, now, prev != nil)
 
           if ok do
@@ -336,53 +316,6 @@ defmodule ProseTropes do
     bad =
       Enum.reduce(detector, [], fn {label, text, ok}, acc ->
         {r, _, _} = rate(text)
-        IO.puts("  #{if ok.(r), do: "ok  ", else: "BAD "} #{label}: #{f(r)} per 1k")
-        if ok.(r), do: acc, else: [label | acc]
-      end)
-
-    IO.puts("extraction controls:")
-
-    # BUILT WITHOUT BACKSLASH-ESCAPED QUOTES, AND THAT IS LOAD-BEARING. The use/mention rule
-    # drops `"..."` spans before scanning, and a fixture written with \" splits the span at the
-    # escape, so the specimen inside leaks out and is counted against this file. It did: these
-    # controls failed their own gate until the quote came from a variable instead.
-    q = <<34>>
-
-    usd_noise =
-      "# A stage is not a scene." <>
-        "\ndef Xform " <>
-        q <> "root" <> q <> " {\n  float2 extent = (0, 1)\n  int parent = -1\n}\n"
-
-    usd_block =
-      "def Xform " <>
-        q <>
-        "root" <>
-        q <>
-        " {\n  doc = " <>
-        q <>
-        q <>
-        q <>
-        plain <> " An ignore is not a lock." <> q <> q <> q <> "\n}\n"
-
-    usd_line =
-      "def Xform " <>
-        q <>
-        "root" <>
-        q <>
-        " {\n  doc = " <>
-        q <>
-        plain <> " A file is not a capability." <> q <> "\n}\n"
-
-    extraction = [
-      {"usd syntax outside a doc string is not prose", "x.usda", usd_noise, fn r -> r == 0.0 end},
-      {"a triple-quoted doc string is read", "x.usda", usd_block, fn r -> r > 0.0 end},
-      {"a single-line doc string is read", "x.usda", usd_line, fn r -> r > 0.0 end},
-      {"a non-usda path is passed through whole", "x.md", usd_noise, fn r -> r > 0.0 end}
-    ]
-
-    bad =
-      Enum.reduce(extraction, bad, fn {label, path, text, ok}, acc ->
-        {r, _, _} = rate(prose(path, text))
         IO.puts("  #{if ok.(r), do: "ok  ", else: "BAD "} #{label}: #{f(r)} per 1k")
         if ok.(r), do: acc, else: [label | acc]
       end)

@@ -2,16 +2,15 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 defmodule Mix.Tasks.Rfd.Plan do
-  @shortdoc "Render every apparatus plan .exs to its sibling .usda"
+  @shortdoc "Validate every apparatus plan source"
   @moduledoc """
-  `mix rfd.plan` writes `<name>.usda` beside each `<name>.exs` plan source.
+  `mix rfd.plan` compiles each plan source and reports every rule it breaks.
 
       mix rfd.plan               # every plan source
       mix rfd.plan PATH...       # only these
-      mix rfd.plan --check       # render to memory and fail on any drift
 
-  `--check` is what a gate runs: it re-renders and compares against the file on disk
-  without writing, so a hand-edited layer or a stale artifact fails a command.
+  It writes nothing. The `.exs` is the plan, and no layer is rendered beside it
+  (operator, 2026-11-26).
   """
   use Mix.Task
 
@@ -20,18 +19,17 @@ defmodule Mix.Tasks.Rfd.Plan do
   @impl true
   def run(argv) do
     Mix.Task.run("app.start")
-    {opts, paths} = OptionParser.parse!(argv, strict: [check: :boolean])
+    {_opts, paths} = OptionParser.parse!(argv, strict: [])
     sources = if paths == [], do: discover(), else: paths
 
     if sources == [] do
       Mix.raise("no plan source found; a plan source is an .exs whose module uses RFD.Plan")
     end
 
-    results = Enum.map(sources, &render(&1, opts[:check] == true))
-    bad = Enum.count(results, &(&1 == :drift))
+    bad = sources |> Enum.map(&check/1) |> Enum.count(&(&1 == :bad))
 
-    Mix.shell().info("#{length(results)} plan(s), #{bad} out of date")
-    if bad > 0, do: Mix.raise("a rendered layer disagrees with its source; run `mix rfd.plan`")
+    Mix.shell().info("#{length(sources)} plan(s), #{bad} outside their shape")
+    if bad > 0, do: Mix.raise("a plan source breaks its shape; see the lines above")
   end
 
   defp discover do
@@ -42,36 +40,29 @@ defmodule Mix.Tasks.Rfd.Plan do
     |> Enum.uniq()
   end
 
-  defp render(source, check?) do
-    out = Path.rootname(source) <> ".usda"
-    text = source |> load() |> RFD.Plan.usda()
+  defp check(source) do
+    case load(source) |> problems() do
+      [] ->
+        Mix.shell().info("  ok   #{source}")
+        :ok
 
-    cond do
-      check? and not File.exists?(out) ->
-        Mix.shell().info("  FAIL #{out}: never rendered")
-        :drift
-
-      check? ->
-        if normalise(File.read!(out)) == normalise(text) do
-          Mix.shell().info("  ok   #{out}")
-          :same
-        else
-          Mix.shell().info("  FAIL #{out}: disagrees with #{Path.basename(source)}")
-          :drift
-        end
-
-      true ->
-        File.write!(out, text)
-        Mix.shell().info("  ok   #{out}")
-        :written
+      ps ->
+        Mix.shell().info("  FAIL #{source}:\n         " <> Enum.join(ps, "\n         "))
+        :bad
     end
   end
 
-  # Line endings are the checkout's business, not the layer's.
-  defp normalise(s), do: String.replace(s, "\r\n", "\n")
+  defp problems({:ok, plan}), do: RFD.Plan.problems(plan)
+  defp problems({:error, msg}), do: [msg]
 
+  # `RFD.Plan.build/2` raises while the source compiles, so a broken plan arrives here as
+  # an exception rather than as a struct; both are reported the same way.
   defp load(source) do
-    [{mod, _} | _] = Code.compile_file(source)
-    mod.__plan__()
+    case Enum.find(Code.compile_file(source), fn {m, _} -> function_exported?(m, :__plan__, 0) end) do
+      {mod, _} -> {:ok, mod.__plan__()}
+      nil -> {:error, "defines no module with __plan__/0"}
+    end
+  rescue
+    e -> {:error, Exception.message(e)}
   end
 end

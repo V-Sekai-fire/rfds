@@ -51,7 +51,7 @@ defmodule HouseholdUnits do
   # away. A stop is a period with no digit on both sides of it.
   @sentence ~r/(?:[^.!?\n]|(?<=\d)\.(?=\d))+[.!?]?/
   @anchors ~w(card penny pennies pencil AAA AA nickel golf wrist can cans coin)
-  @exts [".md", ".py", ".ex", ".exs", ".usda"]
+  @exts [".md", ".py", ".ex", ".exs"]
 
   def anchors, do: @anchors
 

@@ -361,7 +361,6 @@ def check_citations(name, tokens, nums):
                 # Another site's number. This gate owns this site's serials, and
                 # the composed layer that holds every site's is workspace-scoped,
                 # so resolving it here is not possible from one checkout.
-                # `check_pen_66606.py` is where cross-site numbers are held.
                 continue
             if n not in nums:
                 problems.append(

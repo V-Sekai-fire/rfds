@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 """Measured throughput for the devices in RFD66606-1122's plan, against their derived peak rates.
 
-WHY THIS EXISTS. `rfd1122-plan.usda`'s Devices scope carries peak rates DERIVED from
+WHY THIS EXISTS. `rfd1122-plan.exs`'s Devices scope carries peak rates DERIVED from
 architecture -- units x lanes x 2 for the fused multiply-add x clock -- and every clock in it is
 a vendor boost figure marked ASSUMED. `check_rfd1122_plan.exs` re-derives the arithmetic, which
 catches a transcription error and nothing else: a derivation cannot tell you whether a device
@@ -35,7 +35,7 @@ import subprocess
 import sys
 import time
 
-# Derived peak, from `rfd1122-plan.usda`'s Devices scope. Restated here would be a second place
+# Derived peak, from `rfd1122-plan.exs`'s Devices scope. Restated here would be a second place
 # for the fact to live, so the arithmetic is repeated rather than the answer: 19 cores x 128
 # lanes x 2 x 1.398 GHz. If the stage changes, this line is what should be edited to match, and
 # `check_rfd1122_plan.exs` is what checks the stage against itself.

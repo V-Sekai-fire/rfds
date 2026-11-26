@@ -9,7 +9,7 @@ defmodule RFD.MixProject do
       app: :rfd,
       version: "0.2.0",
       elixir: "~> 1.20",
-      deps: [{:mdex, "~> 0.14.6"}]
+      deps: [{:mdex, "~> 0.14.6"}, {:nimble_parsec, "~> 1.4"}]
     ]
   end
 

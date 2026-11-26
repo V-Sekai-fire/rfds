@@ -11,3 +11,5 @@
 *.pdf binary
 *.zst binary
 *.usdc binary
+# Byte-exact tackler parser fixtures, CRLF case included
+test/fixtures/tackler/*.txn -text

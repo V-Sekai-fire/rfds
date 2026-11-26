@@ -90,7 +90,7 @@
             ${lib.concatMapStrings unpack hex}
             rm -f mix.lock
             substituteInPlace mix.exs --replace-fail \
-              'deps: [{:mdex, "~> 0.14.6"}]' \
+              'deps: [{:mdex, "~> 0.14.6"}, {:nimble_parsec, "~> 1.4"}]' \
               'deps: [${lib.concatMapStringsSep ", " pathDep hex}]'
             mix compile
             mix run scripts/pages_docs.exs --write

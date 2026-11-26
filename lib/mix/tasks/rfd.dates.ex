@@ -75,18 +75,12 @@ defmodule Mix.Tasks.Rfd.Dates do
   end
 
   defp render(changes) do
-    head = """
-    ; The day each page of the site changed: one transaction per page
-    ; and day, its code the page's path. Written by `mix rfd.dates`.
-
-    """
-
     body =
       for {path, day} <- changes do
         "#{day} (#{path})\n  #{account(path)}  1 CHANGE\n  Commits\n\n"
       end
 
-    IO.iodata_to_binary([head | body])
+    IO.iodata_to_binary(body)
   end
 
   defp account("rfd/" <> _), do: "Pages:RFD"

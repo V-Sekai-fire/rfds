@@ -74,6 +74,6 @@ rfd 1063, "STE enforcement moves to the plugin", :discussion do
   RFD66606-1000 named `scripts/ste-lint-decisions.py` as this repository's
   STE linter. It scored each RFD's prose at violations per 100 words.
   It ran in CI, through `npm run lint:ste`. It ran again in
-  `.pre-commit-config.yaml`'s `ste-lint` hook. 
+  `.pre-commit-config.yaml`'s `ste-lint` hook.
   """
 end

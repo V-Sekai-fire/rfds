@@ -10,7 +10,7 @@
  Text:Written
 
 2026-10-17T00:00:02Z (RFD66606-2320) 'Simulator through cua-driver, in the background
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2320  1 LINE
  Text:Written
 
@@ -20,7 +20,7 @@
  Text:Written
 
 2026-10-17T00:00:04Z (RFD66606-2320) '`oxrsys/scripts/xr-cua-oxrsys-register.sh`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2320  1 LINE
  Text:Written
 
@@ -29,127 +29,127 @@
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:06Z (RFD66606-2320) '
- # tags: rfd:hook
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:07Z (RFD66606-2320) 'The simulator is a desktop window. Without a way for an agent to see it and
+2026-10-17T00:00:06Z (RFD66606-2320) 'The simulator is a desktop window. Without a way for an agent to see it and
  # tags: rfd:intrigue
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:08Z (RFD66606-2320) 'give it input, every simulator run needed a person at the keyboard.
+2026-10-17T00:00:07Z (RFD66606-2320) 'give it input, every simulator run needed a person at the keyboard.
  # tags: rfd:intrigue
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:09Z (RFD66606-2320) '
- # tags: rfd:intrigue
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:10Z (RFD66606-2320) 'Run `scripts/xr-cua-oxrsys-register.sh` to register `xr-cua-oxrsys`; it prints the diff.
+2026-10-17T00:00:08Z (RFD66606-2320) 'Run `scripts/xr-cua-oxrsys-register.sh` to register `xr-cua-oxrsys`; it prints the diff.
  # tags: rfd:exit
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:11Z (RFD66606-2320) '
- # tags: rfd:exit
+2026-10-17T00:00:09Z (RFD66606-2320) 'how it is set up, and what it leaves out
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:12Z (RFD66606-2320) 'how it is set up, and what it leaves out
- # tags: rfd:details-title
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:13Z (RFD66606-2320) 'An agent drives the OXRSys Simulator on the Mac through cua-driver's own MCP
+2026-10-17T00:00:10Z (RFD66606-2320) 'An agent drives the OXRSys Simulator on the Mac through cua-driver's own MCP
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:14Z (RFD66606-2320) 'server, registered under the name `xr-cua-oxrsys`. It launches the simulator,
+2026-10-17T00:00:11Z (RFD66606-2320) 'server, registered under the name `xr-cua-oxrsys`. It launches the simulator,
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:15Z (RFD66606-2320) 'reads the decoded preview as pixels and the control row as accessibility
+2026-10-17T00:00:12Z (RFD66606-2320) 'reads the decoded preview as pixels and the control row as accessibility
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:16Z (RFD66606-2320) 'elements, and sends keys, clicks, typing and scrolls into the view. Every call
+2026-10-17T00:00:13Z (RFD66606-2320) 'elements, and sends keys, clicks, typing and scrolls into the view. Every call
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:17Z (RFD66606-2320) 'runs in the background: no focus change and no cursor move, so the operator
+2026-10-17T00:00:14Z (RFD66606-2320) 'runs in the background: no focus change and no cursor move, so the operator
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:18Z (RFD66606-2320) 'keeps working in another window. The operator ruled it done on 2026-10-17.
+2026-10-17T00:00:15Z (RFD66606-2320) 'keeps working in another window. The operator ruled it done on 2026-10-17.
  # tags: rfd:decision
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:19Z (RFD66606-2320) '
- # tags: rfd:decision
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:20Z (RFD66606-2320) '- RFD66606-2235, the agent that plans with taskweft through the editor, done in
+2026-10-17T00:00:16Z (RFD66606-2320) '- RFD66606-2235, the agent that plans with taskweft through the editor, done in
  # tags: rfd:related
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:21Z (RFD66606-2320) '  desktop mode through XR Pilot's plan tool.
+2026-10-17T00:00:17Z (RFD66606-2320) '  desktop mode through XR Pilot's plan tool.
  # tags: rfd:related
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:22Z (RFD66606-2320) '
- # tags: rfd:related
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:23Z (RFD66606-2320) 'Setup
+2026-10-17T00:00:18Z (RFD66606-2320) 'Setup
  # tags: rfd:details-heading
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:24Z (RFD66606-2320) 'cua-driver is installed once on the Mac and reused across projects. Its
+2026-10-17T00:00:19Z (RFD66606-2320) 'cua-driver is installed once on the Mac and reused across projects. Its
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:25Z (RFD66606-2320) 'accessibility and screen-recording grants belong to the driver app, not to the
+2026-10-17T00:00:20Z (RFD66606-2320) 'accessibility and screen-recording grants belong to the driver app, not to the
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:26Z (RFD66606-2320) 'terminal that runs the agent. `scripts/xr-cua-oxrsys-register.sh` writes the
+2026-10-17T00:00:21Z (RFD66606-2320) 'terminal that runs the agent. `scripts/xr-cua-oxrsys-register.sh` writes the
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:27Z (RFD66606-2320) '`xr-cua-oxrsys` entry (command `cua-driver`, argument `mcp`) into the agent's
+2026-10-17T00:00:22Z (RFD66606-2320) '`xr-cua-oxrsys` entry (command `cua-driver`, argument `mcp`) into the agent's
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:28Z (RFD66606-2320) 'MCP settings, keeps every other server and prints the diff. A running session
+2026-10-17T00:00:23Z (RFD66606-2320) 'MCP settings, keeps every other server and prints the diff. A running session
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:29Z (RFD66606-2320) 'picks the entry up when it reconnects its MCP servers.
+2026-10-17T00:00:24Z (RFD66606-2320) 'picks the entry up when it reconnects its MCP servers.
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:30Z (RFD66606-2320) '
+2026-10-17T00:00:25Z (RFD66606-2320) '
+ # tags: rfd:details
+ Text:RFD2320  1 LINE
+ Text:Written
+
+2026-10-17T00:00:26Z (RFD66606-2320) 'Where it landed
+ # tags: rfd:details-heading
+ Text:RFD2320  1 LINE
+ Text:Written
+
+2026-10-17T00:00:27Z (RFD66606-2320) 'XR Pilot's repository, commit "Add xr-cua-oxrsys as the automation
+ # tags: rfd:details
+ Text:RFD2320  1 LINE
+ Text:Written
+
+2026-10-17T00:00:28Z (RFD66606-2320) 'surface for the simulator" (2026-10-01): the document and the installer, 91
+ # tags: rfd:details
+ Text:RFD2320  1 LINE
+ Text:Written
+
+2026-10-17T00:00:29Z (RFD66606-2320) 'lines in two files. The plan tool landed there in "Add a plan tool that acts
+ # tags: rfd:details
+ Text:RFD2320  1 LINE
+ Text:Written
+
+2026-10-17T00:00:30Z (RFD66606-2320) 'out a taskweft RECTGTN task network" (2026-10-04).
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
@@ -159,72 +159,32 @@
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:32Z (RFD66606-2320) 'Where it landed
+2026-10-17T00:00:32Z (RFD66606-2320) 'What it leaves out
  # tags: rfd:details-heading
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:33Z (RFD66606-2320) 'XR Pilot's repository, commit "Add xr-cua-oxrsys as the automation
+2026-10-17T00:00:33Z (RFD66606-2320) '- The headset side, a second server reached over SSH, is not on `main`. The
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:34Z (RFD66606-2320) 'surface for the simulator" (2026-10-01): the document and the installer, 91
+2026-10-17T00:00:34Z (RFD66606-2320) '  document places it on the Flow 2 branch, and `docs/platforms/` does not
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:35Z (RFD66606-2320) 'lines in two files. The plan tool landed there in "Add a plan tool that acts
+2026-10-17T00:00:35Z (RFD66606-2320) '  exist on `main` (read 2026-10-17).
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:36Z (RFD66606-2320) 'out a taskweft RECTGTN task network" (2026-10-04).
+2026-10-17T00:00:36Z (RFD66606-2320) '- The simulator does not ship with cua-driver.
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written
 
-2026-10-17T00:00:37Z (RFD66606-2320) '
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:38Z (RFD66606-2320) '
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:39Z (RFD66606-2320) 'What it leaves out
- # tags: rfd:details-heading
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:40Z (RFD66606-2320) '- The headset side, a second server reached over SSH, is not on `main`. The
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:41Z (RFD66606-2320) '  document places it on the Flow 2 branch, and `docs/platforms/` does not
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:42Z (RFD66606-2320) '  exist on `main` (read 2026-10-17).
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:43Z (RFD66606-2320) '- The simulator does not ship with cua-driver.
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:44Z (RFD66606-2320) '- The name ends in `-oxrsys` so it does not clash with the headset-side server.
- # tags: rfd:details
- Text:RFD2320  1 LINE
- Text:Written
-
-2026-10-17T00:00:45Z (RFD66606-2320) '
+2026-10-17T00:00:37Z (RFD66606-2320) '- The name ends in `-oxrsys` so it does not clash with the headset-side server.
  # tags: rfd:details
  Text:RFD2320  1 LINE
  Text:Written

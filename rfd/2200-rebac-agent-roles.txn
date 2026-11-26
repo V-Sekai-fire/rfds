@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-09-04T00:00:01Z (RFD66606-2200) 'relationship tuples in Bao KV under `relationships/` define agent roles and what they can and cannot do
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
 2026-09-04T00:00:02Z (RFD66606-2200) 'Bao coordination store, all live agents, future onboarding flow
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
@@ -19,292 +19,292 @@
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:04Z (RFD66606-2200) '
- # tags: rfd:hook
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:05Z (RFD66606-2200) 'The current `agents-rw` policy is one shared grant across every
+2026-09-04T00:00:04Z (RFD66606-2200) 'The current `agents-rw` policy is one shared grant across every
  # tags: rfd:intrigue
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:06Z (RFD66606-2200) 'peer. Adding a fourth agent that shouldn't touch GPU code, or a
+2026-09-04T00:00:05Z (RFD66606-2200) 'peer. Adding a fourth agent that shouldn't touch GPU code, or a
  # tags: rfd:intrigue
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:07Z (RFD66606-2200) 'Hailo-specific agent that must not touch the 3090, means either a
+2026-09-04T00:00:06Z (RFD66606-2200) 'Hailo-specific agent that must not touch the 3090, means either a
  # tags: rfd:intrigue
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:08Z (RFD66606-2200) 'new per-agent policy (RBAC sprawl) or ad-hoc restrictions in prose.
+2026-09-04T00:00:07Z (RFD66606-2200) 'new per-agent policy (RBAC sprawl) or ad-hoc restrictions in prose.
  # tags: rfd:intrigue
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:09Z (RFD66606-2200) '
- # tags: rfd:intrigue
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:10Z (RFD66606-2200) 'Run `mix rfd.rebac` to hold every rebac block in the corpus against the verb vocabulary.
+2026-09-04T00:00:08Z (RFD66606-2200) 'Run `mix rfd.rebac` to hold every rebac block in the corpus against the verb vocabulary.
  # tags: rfd:exit
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:11Z (RFD66606-2200) '
- # tags: rfd:exit
+2026-09-04T00:00:09Z (RFD66606-2200) 'ReBAC agent roles as tuples, not per-agent policy sprawl
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:12Z (RFD66606-2200) 'ReBAC agent roles as tuples, not per-agent policy sprawl
- # tags: rfd:details-title
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:13Z (RFD66606-2200) 'Model agent roles as **ReBAC relationship tuples** in a Bao KV mount
+2026-09-04T00:00:10Z (RFD66606-2200) 'Model agent roles as **ReBAC relationship tuples** in a Bao KV mount
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:14Z (RFD66606-2200) 'at `relationships/`, one tuple per row, key shape
+2026-09-04T00:00:11Z (RFD66606-2200) 'at `relationships/`, one tuple per row, key shape
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:15Z (RFD66606-2200) '`<subject>--<verb>--<object>`. This RFD owns the verb vocabulary and
+2026-09-04T00:00:12Z (RFD66606-2200) '`<subject>--<verb>--<object>`. This RFD owns the verb vocabulary and
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:16Z (RFD66606-2200) 'declares it in a `rebac` block (RFD66606-2291, ReBAC as a DSL feature), so
+2026-09-04T00:00:13Z (RFD66606-2200) 'declares it in a `rebac` block (RFD66606-2291, ReBAC as a DSL feature), so
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:17Z (RFD66606-2200) 'the verbs are data rather than a table a gate parses. Three named roles
+2026-09-04T00:00:14Z (RFD66606-2200) 'the verbs are data rather than a table a gate parses. Three named roles
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:18Z (RFD66606-2200) 'fall out: coordinator (MPS), gpu-experimenter (CUDA),
+2026-09-04T00:00:15Z (RFD66606-2200) 'fall out: coordinator (MPS), gpu-experimenter (CUDA),
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:19Z (RFD66606-2200) 'edge-qat-specialist (HAILO). `DETAILS.md` carries verbs, rows, scopes.
+2026-09-04T00:00:16Z (RFD66606-2200) 'edge-qat-specialist (HAILO). `DETAILS.md` carries verbs, rows, scopes.
  # tags: rfd:decision
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:20Z (RFD66606-2200) '
- # tags: rfd:decision
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:21Z (RFD66606-2200) 'RFD66606-2195 (Bao PKI + agent-provisioning discipline), agent-sync skill
+2026-09-04T00:00:17Z (RFD66606-2200) 'RFD66606-2195 (Bao PKI + agent-provisioning discipline), agent-sync skill
  # tags: rfd:related
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:22Z (RFD66606-2200) 'in dot-claude.
+2026-09-04T00:00:18Z (RFD66606-2200) 'in dot-claude.
  # tags: rfd:related
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:23Z (RFD66606-2200) '
- # tags: rfd:related
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:24Z (RFD66606-2200) 'Non-goals
+2026-09-04T00:00:19Z (RFD66606-2200) 'Non-goals
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:25Z (RFD66606-2200) 'Not enforced today. The tuples are data; nothing gates a KV write
+2026-09-04T00:00:20Z (RFD66606-2200) 'Not enforced today. The tuples are data; nothing gates a KV write
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:26Z (RFD66606-2200) 'against them yet. When enforcement lands it goes in a separate RFD.
+2026-09-04T00:00:21Z (RFD66606-2200) 'against them yet. When enforcement lands it goes in a separate RFD.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:27Z (RFD66606-2200) 'Also not covered: an external ReBAC engine (OpenFGA, SpiceDB).
+2026-09-04T00:00:22Z (RFD66606-2200) 'Also not covered: an external ReBAC engine (OpenFGA, SpiceDB).
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:28Z (RFD66606-2200) 'The tuples-in-KV shim is the minimum that answers the question we
+2026-09-04T00:00:23Z (RFD66606-2200) 'The tuples-in-KV shim is the minimum that answers the question we
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:29Z (RFD66606-2200) 'have. A production ReBAC engine is a future call.
+2026-09-04T00:00:24Z (RFD66606-2200) 'have. A production ReBAC engine is a future call.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:30Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:31Z (RFD66606-2200) 'The tuple shape
+2026-09-04T00:00:25Z (RFD66606-2200) 'The tuple shape
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:32Z (RFD66606-2200) 'Each tuple is one KV row under `relationships/`. Key format is
+2026-09-04T00:00:26Z (RFD66606-2200) 'Each tuple is one KV row under `relationships/`. Key format is
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:33Z (RFD66606-2200) '`<subject>--<verb>--<object>` (double-hyphen separator, all segments
+2026-09-04T00:00:27Z (RFD66606-2200) '`<subject>--<verb>--<object>` (double-hyphen separator, all segments
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:34Z (RFD66606-2200) 'lowercase-kebab). Data is the parsed fields plus a timestamp:
+2026-09-04T00:00:28Z (RFD66606-2200) 'lowercase-kebab). Data is the parsed fields plus a timestamp:
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:35Z (RFD66606-2200) '
+2026-09-04T00:00:29Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:36Z (RFD66606-2200) '    subject: mps-45994b
+2026-09-04T00:00:30Z (RFD66606-2200) '    subject: mps-45994b
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:37Z (RFD66606-2200) '    verb: authors
+2026-09-04T00:00:31Z (RFD66606-2200) '    verb: authors
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:38Z (RFD66606-2200) '    object: weftspun-agreements
+2026-09-04T00:00:32Z (RFD66606-2200) '    object: weftspun-agreements
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:39Z (RFD66606-2200) '    created_at: <unix>
+2026-09-04T00:00:33Z (RFD66606-2200) '    created_at: <unix>
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:40Z (RFD66606-2200) '
+2026-09-04T00:00:34Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:41Z (RFD66606-2200) 'The verb vocabulary is below, one `verb` declaration per row. It is
+2026-09-04T00:00:35Z (RFD66606-2200) 'The verb vocabulary is below, one `verb` declaration per row. It is
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:42Z (RFD66606-2200) 'small on purpose. A new verb is a `verb` line in this RFD before it is
+2026-09-04T00:00:36Z (RFD66606-2200) 'small on purpose. A new verb is a `verb` line in this RFD before it is
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:43Z (RFD66606-2200) 'a row anywhere; overloading an existing verb is fine when the mapping
+2026-09-04T00:00:37Z (RFD66606-2200) 'a row anywhere; overloading an existing verb is fine when the mapping
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:44Z (RFD66606-2200) 'is obvious.
+2026-09-04T00:00:38Z (RFD66606-2200) 'is obvious.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:45Z (RFD66606-2200) '
+2026-09-04T00:00:39Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:46Z (RFD66606-2200) 'A row whose verb carries a `!` is a denial: `<subject>--!<verb>--<object>`
+2026-09-04T00:00:40Z (RFD66606-2200) 'A row whose verb carries a `!` is a denial: `<subject>--!<verb>--<object>`
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:47Z (RFD66606-2200) 'says the subject does not hold the relation, and it carries its reason
+2026-09-04T00:00:41Z (RFD66606-2200) 'says the subject does not hold the relation, and it carries its reason
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:48Z (RFD66606-2200) 'after `#`. Default deny already covers what no row names; a denial row
+2026-09-04T00:00:42Z (RFD66606-2200) 'after `#`. Default deny already covers what no row names; a denial row
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:49Z (RFD66606-2200) 'answers a question an agent would otherwise have to ask.
+2026-09-04T00:00:43Z (RFD66606-2200) 'answers a question an agent would otherwise have to ask.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:50Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:00:51Z (RFD66606-2200) 'Tuples in a document
+2026-09-04T00:00:44Z (RFD66606-2200) 'Tuples in a document
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:52Z (RFD66606-2200) '`AGENTS.md` carries the desk agent's tuples in a fenced `rebac` block,
+2026-09-04T00:00:45Z (RFD66606-2200) '`AGENTS.md` carries the desk agent's tuples in a fenced `rebac` block,
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:53Z (RFD66606-2200) 'one row per line, with a note or a reason after `#`. The block is
+2026-09-04T00:00:46Z (RFD66606-2200) 'one row per line, with a note or a reason after `#`. The block is
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:54Z (RFD66606-2200) 'rendered from the `renders_into "AGENTS.md"` rows declared here, so the
+2026-09-04T00:00:47Z (RFD66606-2200) 'rendered from the `renders_into "AGENTS.md"` rows declared here, so the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:55Z (RFD66606-2200) 'document holds no second copy to drift from.
+2026-09-04T00:00:48Z (RFD66606-2200) 'document holds no second copy to drift from.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:56Z (RFD66606-2200) '
+2026-09-04T00:00:49Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:57Z (RFD66606-2200) '`mix rfd.rebac` holds every block in the corpus against the vocabulary,
+2026-09-04T00:00:50Z (RFD66606-2200) '`mix rfd.rebac` holds every block in the corpus against the vocabulary,
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:58Z (RFD66606-2200) 'and `scripts/check_rebac.exs` holds `CLAUDE.md` against it on its own.
+2026-09-04T00:00:51Z (RFD66606-2200) 'and `scripts/check_rebac.exs` holds `CLAUDE.md` against it on its own.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:00:59Z (RFD66606-2200) 'Both read `RFD.ReBAC`, so a verb no RFD declares fails, and so does a
+2026-09-04T00:00:52Z (RFD66606-2200) 'Both read `RFD.ReBAC`, so a verb no RFD declares fails, and so does a
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:00Z (RFD66606-2200) 'denial without its reason, a repeated row, or a relation both granted
+2026-09-04T00:00:53Z (RFD66606-2200) 'denial without its reason, a repeated row, or a relation both granted
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:01Z (RFD66606-2200) 'and denied.
+2026-09-04T00:00:54Z (RFD66606-2200) 'and denied.
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:00:55Z (RFD66606-2200) 'The three roles
+ # tags: rfd:details-heading
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:00:56Z (RFD66606-2200) '**Coordinator**, MPS. Bao admin (`mps-admin` policy). Authors
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:00:57Z (RFD66606-2200) '`weftspun-agreements` (CLAUDE.md, RFDs, doctrine, retraction pointers).
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:00:58Z (RFD66606-2200) 'Provisions agent identities on operator instruction. Drafts logbook
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:00:59Z (RFD66606-2200) 'entries **only** when relaying a peer's measurement, with the peer
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:00Z (RFD66606-2200) 'credited as the measuring session. Does not own ML hypotheses; does not
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:01Z (RFD66606-2200) 'run GPU experiments; does not touch peer hardware.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
@@ -314,402 +314,402 @@
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:03Z (RFD66606-2200) 'The three roles
+2026-09-04T00:01:03Z (RFD66606-2200) '**GPU-experimenter**, CUDA. Owns 3090 + 4090. Authors
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:04Z (RFD66606-2200) '`gpu-experiments`, Lumina2 distillation, LLaDA-o step sweeps, OmniGen2
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:05Z (RFD66606-2200) 'comparisons, EditScore ladder runs. Publishes measurements as logbook
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:06Z (RFD66606-2200) 'PRs on its own branches; drafts + files its own retractions when a
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:07Z (RFD66606-2200) 'result doesn't survive scale-up. `agents-rw` policy; no admin ops
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:08Z (RFD66606-2200) '(no mint, no revoke, no policy edit).
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:09Z (RFD66606-2200) '
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:10Z (RFD66606-2200) '**Edge-QAT-specialist**, HAILO. Owns USB-Hailo NPU. Authors
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:11Z (RFD66606-2200) '`edge-qat-experiments`, RFD66606-2199 direction, HailoRT + DFC compiler
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:12Z (RFD66606-2200) 'work, HEF deployment. Same PR-driven measurement discipline as
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:13Z (RFD66606-2200) 'gpu-experimenter. `agents-rw` policy; does not touch CUDA's cards, and
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:14Z (RFD66606-2200) 'CUDA does not touch the Hailo NPU, even though both agents `runs-on`
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:15Z (RFD66606-2200) 'the same `windows-desktop`.
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:16Z (RFD66606-2200) 'What the tuples buy that RBAC doesn't
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:04Z (RFD66606-2200) '**Coordinator**, MPS. Bao admin (`mps-admin` policy). Authors
+2026-09-04T00:01:17Z (RFD66606-2200) '**Composability.** "CUDA touches the 3090" is not a permission written
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:05Z (RFD66606-2200) '`weftspun-agreements` (CLAUDE.md, RFDs, doctrine, retraction pointers).
+2026-09-04T00:01:18Z (RFD66606-2200) 'into a policy; it is `cuda-a63415 owns desktop-3090` and a general rule
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:06Z (RFD66606-2200) 'Provisions agent identities on operator instruction. Drafts logbook
+2026-09-04T00:01:19Z (RFD66606-2200) '"an agent's `owns` relations bound the hardware it can drive." Adding
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:07Z (RFD66606-2200) 'entries **only** when relaying a peer's measurement, with the peer
+2026-09-04T00:01:20Z (RFD66606-2200) 'a fourth agent that inherits GPU access means adding `<new>--owns--
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:08Z (RFD66606-2200) 'credited as the measuring session. Does not own ML hypotheses; does not
+2026-09-04T00:01:21Z (RFD66606-2200) '<card>`, not editing a policy.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:09Z (RFD66606-2200) 'run GPU experiments; does not touch peer hardware.
+2026-09-04T00:01:22Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:10Z (RFD66606-2200) '
+2026-09-04T00:01:23Z (RFD66606-2200) '**Cross-cutting constraints from graph traversal.** The shared-$HOME
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:11Z (RFD66606-2200) '**GPU-experimenter**, CUDA. Owns 3090 + 4090. Authors
+2026-09-04T00:01:24Z (RFD66606-2200) 'risk that killed CUDA's key earlier today is graph-reachable:
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:12Z (RFD66606-2200) '`gpu-experiments`, Lumina2 distillation, LLaDA-o step sweeps, OmniGen2
+2026-09-04T00:01:25Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:13Z (RFD66606-2200) 'comparisons, EditScore ladder runs. Publishes measurements as logbook
+2026-09-04T00:01:26Z (RFD66606-2200) '    ?x runs-on ?h  AND  ?y runs-on ?h  AND  ?x != ?y
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:14Z (RFD66606-2200) 'PRs on its own branches; drafts + files its own retractions when a
+2026-09-04T00:01:27Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:15Z (RFD66606-2200) 'result doesn't survive scale-up. `agents-rw` policy; no admin ops
+2026-09-04T00:01:28Z (RFD66606-2200) 'resolves to `(cuda-a63415, hailo-552dfa, windows-desktop)`. A future
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:16Z (RFD66606-2200) '(no mint, no revoke, no policy edit).
+2026-09-04T00:01:29Z (RFD66606-2200) 'onboarding flow can check "does this new agent share a host with an
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:17Z (RFD66606-2200) '
+2026-09-04T00:01:30Z (RFD66606-2200) 'existing agent?" mechanically from the tuples, and if so require the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:18Z (RFD66606-2200) '**Edge-QAT-specialist**, HAILO. Owns USB-Hailo NPU. Authors
+2026-09-04T00:01:31Z (RFD66606-2200) 'per-agent-suffixed cred dir before enrolment. RBAC has no way to
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:19Z (RFD66606-2200) '`edge-qat-experiments`, RFD66606-2199 direction, HailoRT + DFC compiler
+2026-09-04T00:01:32Z (RFD66606-2200) 'express that.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:20Z (RFD66606-2200) 'work, HEF deployment. Same PR-driven measurement discipline as
+2026-09-04T00:01:33Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:21Z (RFD66606-2200) 'gpu-experimenter. `agents-rw` policy; does not touch CUDA's cards, and
+2026-09-04T00:01:34Z (RFD66606-2200) '**Retraction responsibility.** When an RFD is retracted, the doctrine
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:22Z (RFD66606-2200) 'CUDA does not touch the Hailo NPU, even though both agents `runs-on`
+2026-09-04T00:01:35Z (RFD66606-2200) 'in CLAUDE.md says the pointer names the logbook entry that carries the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:23Z (RFD66606-2200) 'the same `windows-desktop`.
+2026-09-04T00:01:36Z (RFD66606-2200) 'measurement. `authored-by` tuples on the RFD and the logbook entry
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:24Z (RFD66606-2200) '
+2026-09-04T00:01:37Z (RFD66606-2200) 'resolve to the same agent, so the pointer's target is not a lookup;
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:25Z (RFD66606-2200) 'What the tuples buy that RBAC doesn't
+2026-09-04T00:01:38Z (RFD66606-2200) 'it is the second tuple that shares a subject with the first.
+ # tags: rfd:details
+ Text:RFD2200  1 LINE
+ Text:Written
+
+2026-09-04T00:01:39Z (RFD66606-2200) 'What the tuples do not do today
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:26Z (RFD66606-2200) '**Composability.** "CUDA touches the 3090" is not a permission written
+2026-09-04T00:01:40Z (RFD66606-2200) 'No policy consults them. `agents-rw` still writes based on identity
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:27Z (RFD66606-2200) 'into a policy; it is `cuda-a63415 owns desktop-3090` and a general rule
+2026-09-04T00:01:41Z (RFD66606-2200) 'templating, not tuple membership. This RFD lands the **schema and the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:28Z (RFD66606-2200) '"an agent's `owns` relations bound the hardware it can drive." Adding
+2026-09-04T00:01:42Z (RFD66606-2200) 'tuples**, not enforcement.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:29Z (RFD66606-2200) 'a fourth agent that inherits GPU access means adding `<new>--owns--
+2026-09-04T00:01:43Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:30Z (RFD66606-2200) '<card>`, not editing a policy.
+2026-09-04T00:01:44Z (RFD66606-2200) 'Enforcement would need one of:
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:31Z (RFD66606-2200) '
+2026-09-04T00:01:45Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:32Z (RFD66606-2200) '**Cross-cutting constraints from graph traversal.** The shared-$HOME
+2026-09-04T00:01:46Z (RFD66606-2200) '1. **Client-side check in the agent-sync skill.** Read
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:33Z (RFD66606-2200) 'risk that killed CUDA's key earlier today is graph-reachable:
+2026-09-04T00:01:47Z (RFD66606-2200) '   `relationships/*` on startup, memoise, refuse local operations
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:34Z (RFD66606-2200) '
+2026-09-04T00:01:48Z (RFD66606-2200) '   that would violate a tuple relation. Cheap; only as strong as
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:35Z (RFD66606-2200) '    ?x runs-on ?h  AND  ?y runs-on ?h  AND  ?x != ?y
+2026-09-04T00:01:49Z (RFD66606-2200) '   agent cooperation.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:36Z (RFD66606-2200) '
+2026-09-04T00:01:50Z (RFD66606-2200) '2. **Bao Sentinel or a custom auth method** that consults
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:37Z (RFD66606-2200) 'resolves to `(cuda-a63415, hailo-552dfa, windows-desktop)`. A future
+2026-09-04T00:01:51Z (RFD66606-2200) '   `relationships/` before granting a write. Requires either Bao
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:38Z (RFD66606-2200) 'onboarding flow can check "does this new agent share a host with an
+2026-09-04T00:01:52Z (RFD66606-2200) '   Enterprise or a shim.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:39Z (RFD66606-2200) 'existing agent?" mechanically from the tuples, and if so require the
+2026-09-04T00:01:53Z (RFD66606-2200) '3. **A separate ReBAC engine** (OpenFGA, SpiceDB, Zanzibar-alike) as
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:40Z (RFD66606-2200) 'per-agent-suffixed cred dir before enrolment. RBAC has no way to
+2026-09-04T00:01:54Z (RFD66606-2200) '   the source of truth; Bao KV becomes cache. Correct long-term shape
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:41Z (RFD66606-2200) 'express that.
+2026-09-04T00:01:55Z (RFD66606-2200) '   at the cost of a second service.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:42Z (RFD66606-2200) '
+2026-09-04T00:01:56Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:43Z (RFD66606-2200) '**Retraction responsibility.** When an RFD is retracted, the doctrine
+2026-09-04T00:01:57Z (RFD66606-2200) 'None of the three ships in this RFD. The tuples come first because
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:44Z (RFD66606-2200) 'in CLAUDE.md says the pointer names the logbook entry that carries the
+2026-09-04T00:01:58Z (RFD66606-2200) 'storing the relationships is the small commitment that any of the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:45Z (RFD66606-2200) 'measurement. `authored-by` tuples on the RFD and the logbook entry
+2026-09-04T00:01:59Z (RFD66606-2200) 'three build on. Enforcement is a separate call and a separate RFD.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:46Z (RFD66606-2200) 'resolve to the same agent, so the pointer's target is not a lookup;
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:01:47Z (RFD66606-2200) 'it is the second tuple that shares a subject with the first.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:01:48Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:01:49Z (RFD66606-2200) 'What the tuples do not do today
+2026-09-04T00:02:00Z (RFD66606-2200) 'The extend flow
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:50Z (RFD66606-2200) 'No policy consults them. `agents-rw` still writes based on identity
+2026-09-04T00:02:01Z (RFD66606-2200) 'Adding a new agent:
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:51Z (RFD66606-2200) 'templating, not tuple membership. This RFD lands the **schema and the
+2026-09-04T00:02:02Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:52Z (RFD66606-2200) 'tuples**, not enforcement.
+2026-09-04T00:02:03Z (RFD66606-2200) '1. Operator authorises identity (per RFD66606-2195 rule zero).
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:53Z (RFD66606-2200) '
+2026-09-04T00:02:04Z (RFD66606-2200) '2. Admin (MPS) mints cert, publishes bundle to `certs/<cn>`.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:54Z (RFD66606-2200) 'Enforcement would need one of:
+2026-09-04T00:02:05Z (RFD66606-2200) '3. **Admin writes the new agent's tuples to `relationships/`** in
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:55Z (RFD66606-2200) '
+2026-09-04T00:02:06Z (RFD66606-2200) '   the same session, at minimum a `runs-on` tuple, plus the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:56Z (RFD66606-2200) '1. **Client-side check in the agent-sync skill.** Read
+2026-09-04T00:02:07Z (RFD66606-2200) '   `owns` and `authors` tuples that scope the new agent's role.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:57Z (RFD66606-2200) '   `relationships/*` on startup, memoise, refuse local operations
+2026-09-04T00:02:08Z (RFD66606-2200) '4. If a `runs-on` shares a host with an existing agent, admin
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:58Z (RFD66606-2200) '   that would violate a tuple relation. Cheap; only as strong as
+2026-09-04T00:02:09Z (RFD66606-2200) '   confirms the new agent will use a per-agent-suffixed cred dir
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:01:59Z (RFD66606-2200) '   agent cooperation.
+2026-09-04T00:02:10Z (RFD66606-2200) '   before completing onboarding.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:00Z (RFD66606-2200) '2. **Bao Sentinel or a custom auth method** that consults
+2026-09-04T00:02:11Z (RFD66606-2200) '5. Agent writes its first KV row to `agents/<cn>.agents.weftspun`.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:01Z (RFD66606-2200) '   `relationships/` before granting a write. Requires either Bao
+2026-09-04T00:02:12Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:02Z (RFD66606-2200) '   Enterprise or a shim.
+2026-09-04T00:02:13Z (RFD66606-2200) 'Removing an agent (revocation):
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:03Z (RFD66606-2200) '3. **A separate ReBAC engine** (OpenFGA, SpiceDB, Zanzibar-alike) as
+2026-09-04T00:02:14Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:04Z (RFD66606-2200) '   the source of truth; Bao KV becomes cache. Correct long-term shape
+2026-09-04T00:02:15Z (RFD66606-2200) '1. Admin revokes cert per RFD66606-2195's Revocation section.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:05Z (RFD66606-2200) '   at the cost of a second service.
+2026-09-04T00:02:16Z (RFD66606-2200) '2. Admin deletes tuples where the revoked agent is `subject` (its
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:06Z (RFD66606-2200) '
+2026-09-04T00:02:17Z (RFD66606-2200) '   claims stop being active) but preserves tuples where the revoked
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:07Z (RFD66606-2200) 'None of the three ships in this RFD. The tuples come first because
+2026-09-04T00:02:18Z (RFD66606-2200) '   agent is `object` (so `windows-desktop hosts cuda-a63415`
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:08Z (RFD66606-2200) 'storing the relationships is the small commitment that any of the
+2026-09-04T00:02:19Z (RFD66606-2200) '   survives if we're just revoking CUDA, and the tuple gets deleted
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:09Z (RFD66606-2200) 'three build on. Enforcement is a separate call and a separate RFD.
+2026-09-04T00:02:20Z (RFD66606-2200) '   on the same step as CUDA's other row cleanups).
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:10Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:11Z (RFD66606-2200) 'The extend flow
+2026-09-04T00:02:21Z (RFD66606-2200) 'Enumerating current relationships
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:12Z (RFD66606-2200) 'Adding a new agent:
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:13Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:14Z (RFD66606-2200) '1. Operator authorises identity (per RFD66606-2195 rule zero).
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:15Z (RFD66606-2200) '2. Admin (MPS) mints cert, publishes bundle to `certs/<cn>`.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:16Z (RFD66606-2200) '3. **Admin writes the new agent's tuples to `relationships/`** in
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:17Z (RFD66606-2200) '   the same session, at minimum a `runs-on` tuple, plus the
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:18Z (RFD66606-2200) '   `owns` and `authors` tuples that scope the new agent's role.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:19Z (RFD66606-2200) '4. If a `runs-on` shares a host with an existing agent, admin
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:20Z (RFD66606-2200) '   confirms the new agent will use a per-agent-suffixed cred dir
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:21Z (RFD66606-2200) '   before completing onboarding.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:22Z (RFD66606-2200) '5. Agent writes its first KV row to `agents/<cn>.agents.weftspun`.
+2026-09-04T00:02:22Z (RFD66606-2200) 'Cheap `bao kv list relationships/` followed by per-tuple read:
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
@@ -719,362 +719,292 @@
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:24Z (RFD66606-2200) 'Removing an agent (revocation):
+2026-09-04T00:02:24Z (RFD66606-2200) '    for k in $(bao kv list -format=json relationships/ | jq -r '.[]'); do
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:25Z (RFD66606-2200) '
+2026-09-04T00:02:25Z (RFD66606-2200) '      bao kv get -field=subject relationships/$k
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:26Z (RFD66606-2200) '1. Admin revokes cert per RFD66606-2195's Revocation section.
+2026-09-04T00:02:26Z (RFD66606-2200) '      bao kv get -field=verb    relationships/$k
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:27Z (RFD66606-2200) '2. Admin deletes tuples where the revoked agent is `subject` (its
+2026-09-04T00:02:27Z (RFD66606-2200) '      bao kv get -field=object  relationships/$k
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:28Z (RFD66606-2200) '   claims stop being active) but preserves tuples where the revoked
+2026-09-04T00:02:28Z (RFD66606-2200) '    done
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:29Z (RFD66606-2200) '   agent is `object` (so `windows-desktop hosts cuda-a63415`
+2026-09-04T00:02:29Z (RFD66606-2200) '
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:30Z (RFD66606-2200) '   survives if we're just revoking CUDA, and the tuple gets deleted
+2026-09-04T00:02:30Z (RFD66606-2200) 'A `list_agent_roles.py` helper would do this more efficiently
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:31Z (RFD66606-2200) '   on the same step as CUDA's other row cleanups).
+2026-09-04T00:02:31Z (RFD66606-2200) 'against the API; not written today.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:32Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:33Z (RFD66606-2200) 'Enumerating current relationships
+2026-09-04T00:02:32Z (RFD66606-2200) 'The problem
  # tags: rfd:details-heading
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:34Z (RFD66606-2200) 'Cheap `bao kv list relationships/` followed by per-tuple read:
+2026-09-04T00:02:33Z (RFD66606-2200) 'Neither answers the question the shared-$HOME clobber raised: the
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:35Z (RFD66606-2200) '
+2026-09-04T00:02:34Z (RFD66606-2200) 'risk is the **relationship** between two agents, not the identity of
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:36Z (RFD66606-2200) '    for k in $(bao kv list -format=json relationships/ | jq -r '.[]'); do
+2026-09-04T00:02:35Z (RFD66606-2200) 'either.
  # tags: rfd:details
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:37Z (RFD66606-2200) '      bao kv get -field=subject relationships/$k
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:38Z (RFD66606-2200) '      bao kv get -field=verb    relationships/$k
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:39Z (RFD66606-2200) '      bao kv get -field=object  relationships/$k
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:40Z (RFD66606-2200) '    done
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:41Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:42Z (RFD66606-2200) 'A `list_agent_roles.py` helper would do this more efficiently
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:43Z (RFD66606-2200) 'against the API; not written today.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:44Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:45Z (RFD66606-2200) 'The problem
- # tags: rfd:details-heading
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:46Z (RFD66606-2200) 'Neither answers the question the shared-$HOME clobber raised: the
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:47Z (RFD66606-2200) 'risk is the **relationship** between two agents, not the identity of
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:48Z (RFD66606-2200) 'either.
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:49Z (RFD66606-2200) '
- # tags: rfd:details
- Text:RFD2200  1 LINE
- Text:Written
-
-2026-09-04T00:02:50Z (RFD66606-2200) '2351
+2026-09-04T00:02:36Z (RFD66606-2200) '2351
  # tags: rebac:verbs-from
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:51Z (RFD66606-2200) 'authors
+2026-09-04T00:02:37Z (RFD66606-2200) 'authors
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:52Z (RFD66606-2200) 'the subject drafts and owns retractions for the object (docs, experiments, RFDs)
- # tags: rebac:meaning
+2026-09-04T00:02:38Z (RFD66606-2200) 'the subject drafts and owns retractions for the object (docs, experiments, RFDs)
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:53Z (RFD66606-2200) 'admin
+2026-09-04T00:02:39Z (RFD66606-2200) 'admin
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:54Z (RFD66606-2200) 'the subject administers the object (Bao PKI, cert-auth, mount config)
- # tags: rebac:meaning
+2026-09-04T00:02:40Z (RFD66606-2200) 'the subject administers the object (Bao PKI, cert-auth, mount config)
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:55Z (RFD66606-2200) 'owns
+2026-09-04T00:02:41Z (RFD66606-2200) 'owns
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:56Z (RFD66606-2200) 'the subject holds and operates the object as hardware (a GPU card, an NPU)
- # tags: rebac:meaning
+2026-09-04T00:02:42Z (RFD66606-2200) 'the subject holds and operates the object as hardware (a GPU card, an NPU)
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:57Z (RFD66606-2200) 'runs_on
+2026-09-04T00:02:43Z (RFD66606-2200) 'runs_on
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:58Z (RFD66606-2200) 'the subject's Claude Code process is hosted on the object machine
- # tags: rebac:meaning
+2026-09-04T00:02:44Z (RFD66606-2200) 'the subject's Claude Code process is hosted on the object machine
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:02:59Z (RFD66606-2200) 'hosts
+2026-09-04T00:02:45Z (RFD66606-2200) 'hosts
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:00Z (RFD66606-2200) 'inverse of `runs-on`, from the host side; makes queries "who is on host X" cheap
- # tags: rebac:meaning
+2026-09-04T00:02:46Z (RFD66606-2200) 'inverse of `runs-on`, from the host side; makes queries "who is on host X" cheap
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:01Z (RFD66606-2200) 'reaches
+2026-09-04T00:02:47Z (RFD66606-2200) 'reaches
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:02Z (RFD66606-2200) 'the subject works on the object over the network as an unprivileged user
- # tags: rebac:meaning
+2026-09-04T00:02:48Z (RFD66606-2200) 'the subject works on the object over the network as an unprivileged user
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:03Z (RFD66606-2200) 'restarts
+2026-09-04T00:02:49Z (RFD66606-2200) 'restarts
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:04Z (RFD66606-2200) 'the subject stops and starts the object service without holding its host
- # tags: rebac:meaning
+2026-09-04T00:02:50Z (RFD66606-2200) 'the subject stops and starts the object service without holding its host
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:05Z (RFD66606-2200) 'mints
+2026-09-04T00:02:51Z (RFD66606-2200) 'mints
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:06Z (RFD66606-2200) 'the subject mints short-lived credentials of the object's kind, each expiring
- # tags: rebac:meaning
+2026-09-04T00:02:52Z (RFD66606-2200) 'the subject mints short-lived credentials of the object's kind, each expiring
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:07Z (RFD66606-2200) 'pushes
+2026-09-04T00:02:53Z (RFD66606-2200) 'pushes
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:08Z (RFD66606-2200) 'the subject pushes feature branches to the object, never its default branch
- # tags: rebac:meaning
+2026-09-04T00:02:54Z (RFD66606-2200) 'the subject pushes feature branches to the object, never its default branch
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:09Z (RFD66606-2200) 'role
+2026-09-04T00:02:55Z (RFD66606-2200) 'role
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:10Z (RFD66606-2200) 'the subject holds the object as its role, which RFD66606-2202 maps to a Bao group
- # tags: rebac:meaning
+2026-09-04T00:02:56Z (RFD66606-2200) 'the subject holds the object as its role, which RFD66606-2202 maps to a Bao group
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:11Z (RFD66606-2200) 'may_use
+2026-09-04T00:02:57Z (RFD66606-2200) 'may_use
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:12Z (RFD66606-2200) 'the subject uses the object as compute, which no Bao policy gates (RFD66606-2202)
- # tags: rebac:meaning
+2026-09-04T00:02:58Z (RFD66606-2200) 'the subject uses the object as compute, which no Bao policy gates (RFD66606-2202)
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:13Z (RFD66606-2200) 'trusts
+2026-09-04T00:02:59Z (RFD66606-2200) 'trusts
  # tags: rebac:verb
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:14Z (RFD66606-2200) 'the subject reads the object as a source it does not verify again (RFD66606-2239)
- # tags: rebac:meaning
+2026-09-04T00:03:00Z (RFD66606-2200) 'the subject reads the object as a source it does not verify again (RFD66606-2239)
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:15Z (RFD66606-2200) 'rfd-2200 provides rebac-agent-role-tuples
+2026-09-04T00:03:01Z (RFD66606-2200) 'rfd-2200 provides rebac-agent-role-tuples
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:16Z (RFD66606-2200) 'rfd-2200 spends bao
+2026-09-04T00:03:02Z (RFD66606-2200) 'rfd-2200 spends bao
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:17Z (RFD66606-2200) 'rfd-2200 spends rfd-elixir-dsl-compiler
+2026-09-04T00:03:03Z (RFD66606-2200) 'rfd-2200 spends rfd-elixir-dsl-compiler
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:18Z (RFD66606-2200) 'rfd-2200 is_a security-control
+2026-09-04T00:03:04Z (RFD66606-2200) 'rfd-2200 is_a security-control
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:19Z (RFD66606-2200) 'desk-agent runs_on windows-desktop
+2026-09-04T00:03:05Z (RFD66606-2200) 'desk-agent runs_on windows-desktop
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:20Z (RFD66606-2200) 'desk-agent reaches headset
+2026-09-04T00:03:06Z (RFD66606-2200) 'desk-agent reaches headset
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:21Z (RFD66606-2200) 'SSH as its unprivileged user, with the desk key, from Windows OpenSSH
- # tags: rebac:reason
+2026-09-04T00:03:07Z (RFD66606-2200) 'SSH as its unprivileged user, with the desk key, from Windows OpenSSH
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:22Z (RFD66606-2200) 'desk-agent restarts vr-runtime
+2026-09-04T00:03:08Z (RFD66606-2200) 'desk-agent restarts vr-runtime
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:23Z (RFD66606-2200) 'then restarts the eye-tracking bridge the restart orphans
- # tags: rebac:reason
+2026-09-04T00:03:09Z (RFD66606-2200) 'then restarts the eye-tracking bridge the restart orphans
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:24Z (RFD66606-2200) 'desk-agent mints github-token
+2026-09-04T00:03:10Z (RFD66606-2200) 'desk-agent mints github-token
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:25Z (RFD66606-2200) 'from Bao, for both organisations; each left to expire
- # tags: rebac:reason
+2026-09-04T00:03:11Z (RFD66606-2200) 'from Bao, for both organisations; each left to expire
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:26Z (RFD66606-2200) 'desk-agent pushes v-sekai-fire
+2026-09-04T00:03:12Z (RFD66606-2200) 'desk-agent pushes v-sekai-fire
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:27Z (RFD66606-2200) 'feature branches; a diverged one goes up under a new name
- # tags: rebac:reason
+2026-09-04T00:03:13Z (RFD66606-2200) 'feature branches; a diverged one goes up under a new name
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:28Z (RFD66606-2200) 'desk-agent pushes chibifire-stages
+2026-09-04T00:03:14Z (RFD66606-2200) 'desk-agent pushes chibifire-stages
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:29Z (RFD66606-2200) 'feature branches
- # tags: rebac:reason
+2026-09-04T00:03:15Z (RFD66606-2200) 'feature branches
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:30Z (RFD66606-2200) 'desk-agent admin headset
+2026-09-04T00:03:16Z (RFD66606-2200) 'desk-agent admin headset
  # tags: rebac:deny
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:31Z (RFD66606-2200) 'root needs the operator's approval at the password manager
- # tags: rebac:reason
+2026-09-04T00:03:17Z (RFD66606-2200) 'root needs the operator's approval at the password manager
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:32Z (RFD66606-2200) 'desk-agent admin default-branch
+2026-09-04T00:03:18Z (RFD66606-2200) 'desk-agent admin default-branch
  # tags: rebac:relate
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:33Z (RFD66606-2200) 'may merge with the admin override (operator, 2026-10-30)
- # tags: rebac:reason
+2026-09-04T00:03:19Z (RFD66606-2200) 'may merge with the admin override (operator, 2026-10-30)
+ # tags: rebac:reason, rfd:no-final-newline
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:34Z (RFD66606-2200) 'AGENTS.md
+2026-09-04T00:03:20Z (RFD66606-2200) 'AGENTS.md
  # tags: rebac:renders-into
  Text:RFD2200  1 LINE
  Text:Written
 
-2026-09-04T00:03:35Z (RFD66606-2200) 'desk-agent
+2026-09-04T00:03:21Z (RFD66606-2200) 'desk-agent
  # tags: rebac:renders-subject
  Text:RFD2200  1 LINE
  Text:Written

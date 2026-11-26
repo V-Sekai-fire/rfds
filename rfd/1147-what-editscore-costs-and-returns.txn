@@ -5,12 +5,12 @@
  Serials:Weftspun
 
 2026-08-25T00:00:01Z (RFD66606-1147) 'the scorer shared by all four loops
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD1147  1 LINE
  Text:Written
 
 2026-08-25T00:00:02Z (RFD66606-1147) '`fourloops-plan.usda`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1147  1 LINE
  Text:Written
 
@@ -19,162 +19,162 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1147) '
- # tags: rfd:hook
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1147) 'EditScore's measurements were written into RFD66606-1144, so a reader of loop 3 had to know
+2026-08-25T00:00:04Z (RFD66606-1147) 'EditScore's measurements were written into RFD66606-1144, so a reader of loop 3 had to know
  # tags: rfd:intrigue
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1147) 'to look in loop 2 for what the scorer costs.
+2026-08-25T00:00:05Z (RFD66606-1147) 'to look in loop 2 for what the scorer costs.
  # tags: rfd:intrigue
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1147) '
- # tags: rfd:intrigue
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1147) 'Cite this RFD, and not RFD66606-1144, when a loop needs the scorer's peak memory or its
+2026-08-25T00:00:06Z (RFD66606-1147) 'Cite this RFD, and not RFD66606-1144, when a loop needs the scorer's peak memory or its
  # tags: rfd:exit
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1147) 'overall score.
+2026-08-25T00:00:07Z (RFD66606-1147) 'overall score.
  # tags: rfd:exit
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1147) '
- # tags: rfd:exit
+2026-08-25T00:00:08Z (RFD66606-1147) 'What EditScore costs and returns
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1147) 'What EditScore costs and returns
- # tags: rfd:details-title
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1147) 'Measured on the desk described in `logbook-fourloops-first-runs.md`, which holds
+2026-08-25T00:00:09Z (RFD66606-1147) 'Measured on the desk described in `logbook-fourloops-first-runs.md`, which holds
  # tags: rfd:details-preamble
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1147) 'the apparatus these figures come from. The entry says how the runs were made and
+2026-08-25T00:00:10Z (RFD66606-1147) 'the apparatus these figures come from. The entry says how the runs were made and
  # tags: rfd:details-preamble
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1147) 'this file says what they returned; re-running them needs the entry.
+2026-08-25T00:00:11Z (RFD66606-1147) 'this file says what they returned; re-running them needs the entry.
  # tags: rfd:details-preamble
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1147) '
- # tags: rfd:details-preamble
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1147) 'Give the scorer its own RFD, and let the loops cite it.
+2026-08-25T00:00:12Z (RFD66606-1147) 'Give the scorer its own RFD, and let the loops cite it.
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1147) '
+2026-08-25T00:00:13Z (RFD66606-1147) '
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1147) '`DETAILS.md` holds what it costs and what it returns: peak memory at
+2026-08-25T00:00:14Z (RFD66606-1147) '`DETAILS.md` holds what it costs and what it returns: peak memory at
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1147) '512 and at 1024 square, the overall score for an instruction the edit
+2026-08-25T00:00:15Z (RFD66606-1147) '512 and at 1024 square, the overall score for an instruction the edit
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1147) 'matched, and the two-axis spread behind that overall. Both
+2026-08-25T00:00:16Z (RFD66606-1147) 'matched, and the two-axis spread behind that overall. Both
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1147) '`fourloops-plan.usda` and `fourloops-etnf.usda` name it as a source, so
+2026-08-25T00:00:17Z (RFD66606-1147) '`fourloops-plan.usda` and `fourloops-etnf.usda` name it as a source, so
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1147) 'a quantity in either layer resolves against the scorer's own document.
+2026-08-25T00:00:18Z (RFD66606-1147) 'a quantity in either layer resolves against the scorer's own document.
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1147) '
+2026-08-25T00:00:19Z (RFD66606-1147) '
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1147) '**Its negative control makes the number a measurement.** A
+2026-08-25T00:00:20Z (RFD66606-1147) '**Its negative control makes the number a measurement.** A
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1147) 'nonsense instruction returns 0.0 overall. A scorer that returns a
+2026-08-25T00:00:21Z (RFD66606-1147) 'nonsense instruction returns 0.0 overall. A scorer that returns a
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1147) 'middling figure for nonsense has not discriminated, and its score for a
+2026-08-25T00:00:22Z (RFD66606-1147) 'middling figure for nonsense has not discriminated, and its score for a
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1147) 'real edit would mean nothing.
+2026-08-25T00:00:23Z (RFD66606-1147) 'real edit would mean nothing.
  # tags: rfd:decision
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1147) '
- # tags: rfd:decision
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-1147) 'RFD66606-1143 through RFD66606-1146 are the four loops that score with it.
+2026-08-25T00:00:24Z (RFD66606-1147) 'RFD66606-1143 through RFD66606-1146 are the four loops that score with it.
  # tags: rfd:related
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1147) 'RFD66606-1122 is the goal they serve.
+2026-08-25T00:00:25Z (RFD66606-1147) 'RFD66606-1122 is the goal they serve.
  # tags: rfd:related
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1147) '
- # tags: rfd:related
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1147) 'What it returns when the instruction matched
+2026-08-25T00:00:26Z (RFD66606-1147) 'What it returns when the instruction matched
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1147) '| scale max | consistency | a second axis | overall |
+2026-08-25T00:00:27Z (RFD66606-1147) '| scale max | consistency | a second axis | overall |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1147) '| --------: | ----------: | ------------: | ------: |
+2026-08-25T00:00:28Z (RFD66606-1147) '| --------: | ----------: | ------------: | ------: |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1147) '|      10.0 |         9.2 |           2.0 |    4.29 |
+2026-08-25T00:00:29Z (RFD66606-1147) '|      10.0 |         9.2 |           2.0 |    4.29 |
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:30Z (RFD66606-1147) '
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:31Z (RFD66606-1147) 'The overall figure is 4.29 out of 10.0, and the spread behind it is the reason
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:32Z (RFD66606-1147) 'to carry both. Consistency scored 9.2 while the second axis scored 2.0, so a
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:33Z (RFD66606-1147) 'scorer reporting only the overall would say "middling" about a result that is
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:34Z (RFD66606-1147) 'excellent on one axis and poor on another. Which axis failed is the actionable
+ # tags: rfd:details
+ Text:RFD1147  1 LINE
+ Text:Written
+
+2026-08-25T00:00:35Z (RFD66606-1147) 'half, and the overall alone discards it.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
@@ -184,252 +184,192 @@
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1147) 'The overall figure is 4.29 out of 10.0, and the spread behind it is the reason
+2026-08-25T00:00:37Z (RFD66606-1147) '**The negative control.** A nonsense instruction returns 0.0 overall. That
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1147) 'to carry both. Consistency scored 9.2 while the second axis scored 2.0, so a
+2026-08-25T00:00:38Z (RFD66606-1147) 'makes 4.29 a measurement rather than an impression: a scorer that cannot
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1147) 'scorer reporting only the overall would say "middling" about a result that is
+2026-08-25T00:00:39Z (RFD66606-1147) 'return 0.0 for nonsense is not discriminating, and every score it gives is
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1147) 'excellent on one axis and poor on another. Which axis failed is the actionable
+2026-08-25T00:00:40Z (RFD66606-1147) 'consistent with it having read nothing. `editscoreNonsenseOverall = 0.0` in
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1147) 'half, and the overall alone discards it.
+2026-08-25T00:00:41Z (RFD66606-1147) '`fourloops-plan.usda` carries that control beside the quantity it validates.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1147) '**The negative control.** A nonsense instruction returns 0.0 overall. That
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1147) 'makes 4.29 a measurement rather than an impression: a scorer that cannot
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1147) 'return 0.0 for nonsense is not discriminating, and every score it gives is
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1147) 'consistent with it having read nothing. `editscoreNonsenseOverall = 0.0` in
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1147) '`fourloops-plan.usda` carries that control beside the quantity it validates.
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1147) 'What it costs
+2026-08-25T00:00:42Z (RFD66606-1147) 'What it costs
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1147) '| configuration  | peak       | seconds  |
+2026-08-25T00:00:43Z (RFD66606-1147) '| configuration  | peak       | seconds  |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1147) '| -------------- | ---------- | -------- |
+2026-08-25T00:00:44Z (RFD66606-1147) '| -------------- | ---------- | -------- |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1147) '| NF4, 512 x 512 | 6.7506 GiB | 28 to 36 |
+2026-08-25T00:00:45Z (RFD66606-1147) '| NF4, 512 x 512 | 6.7506 GiB | 28 to 36 |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1147) '| NF4, 1024 x 1024 | 8.6 GiB  |          |
+2026-08-25T00:00:46Z (RFD66606-1147) '| NF4, 1024 x 1024 | 8.6 GiB  |          |
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1147) '
+2026-08-25T00:00:47Z (RFD66606-1147) '
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1147) '6.7506 GiB is measured; the plan rounds it to 6.75 in `editscorePeakGib512`, and
+2026-08-25T00:00:48Z (RFD66606-1147) '6.7506 GiB is measured; the plan rounds it to 6.75 in `editscorePeakGib512`, and
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1147) 'carries 8.6 as `editscorePeakGib1024`.
+2026-08-25T00:00:49Z (RFD66606-1147) 'carries 8.6 as `editscorePeakGib1024`.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1147) '
+2026-08-25T00:00:50Z (RFD66606-1147) '
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1147) 'The seconds are a range rather than a median, and deliberately. The run-to-run
+2026-08-25T00:00:51Z (RFD66606-1147) 'The seconds are a range rather than a median, and deliberately. The run-to-run
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1147) 'spread at 512 is wider than the gap between the two OmniGen2 precisions RFD66606-1144
+2026-08-25T00:00:52Z (RFD66606-1147) 'spread at 512 is wider than the gap between the two OmniGen2 precisions RFD66606-1144
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1147) 'reports, so a single figure would imply a resolution these runs do not support.
+2026-08-25T00:00:53Z (RFD66606-1147) 'reports, so a single figure would imply a resolution these runs do not support.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1147) 'Where the apparatus lives
+2026-08-25T00:00:54Z (RFD66606-1147) 'Where the apparatus lives
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1147) '`logbook-fourloops-first-runs.md` keeps the apparatus, and this RFD
+2026-08-25T00:00:55Z (RFD66606-1147) '`logbook-fourloops-first-runs.md` keeps the apparatus, and this RFD
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1147) 'keeps the result. The entry says how the runs were made, which is what
+2026-08-25T00:00:56Z (RFD66606-1147) 'keeps the result. The entry says how the runs were made, which is what
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1147) 'lets somebody make them again.
+2026-08-25T00:00:57Z (RFD66606-1147) 'lets somebody make them again.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-1147) 'Why the measurements moved
+2026-08-25T00:00:58Z (RFD66606-1147) 'Why the measurements moved
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1147) 'Its measurements were written into RFD66606-1144 because loop 2 is the
+2026-08-25T00:00:59Z (RFD66606-1147) 'Its measurements were written into RFD66606-1144 because loop 2 is the
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1147) 'smallest loop that exercises it. That put a figure belonging to four
+2026-08-25T00:01:00Z (RFD66606-1147) 'smallest loop that exercises it. That put a figure belonging to four
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1147) 'loops inside the document for one of them.
+2026-08-25T00:01:01Z (RFD66606-1147) 'loops inside the document for one of them.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1147) 'Why this lives in its own document
+2026-08-25T00:01:02Z (RFD66606-1147) 'Why this lives in its own document
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1147) 'Every loop in `fourloops-plan.usda` names EditScore as its `score` stage, and
+2026-08-25T00:01:03Z (RFD66606-1147) 'Every loop in `fourloops-plan.usda` names EditScore as its `score` stage, and
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1147) 'loop 1 pairs it with the Referee because an image scorer and a body scorer
+2026-08-25T00:01:04Z (RFD66606-1147) 'loop 1 pairs it with the Referee because an image scorer and a body scorer
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1147) 'answer different questions. A figure that four loops depend on belongs beside
+2026-08-25T00:01:05Z (RFD66606-1147) 'answer different questions. A figure that four loops depend on belongs beside
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1147) 'none of them in particular.
+2026-08-25T00:01:06Z (RFD66606-1147) 'none of them in particular.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1147) '
+2026-08-25T00:01:07Z (RFD66606-1147) '
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1147) 'It was in RFD66606-1144 first, on the reasoning that loop 2 is the smallest loop
+2026-08-25T00:01:08Z (RFD66606-1147) 'It was in RFD66606-1144 first, on the reasoning that loop 2 is the smallest loop
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1147) 'exercising the scorer and so its numbers were the plan's. That reasoning holds
+2026-08-25T00:01:09Z (RFD66606-1147) 'exercising the scorer and so its numbers were the plan's. That reasoning holds
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-1147) 'for OmniGen2, which loops 2 and 3 use and loops 1 and 4 do not. It does not hold
+2026-08-25T00:01:10Z (RFD66606-1147) 'for OmniGen2, which loops 2 and 3 use and loops 1 and 4 do not. It does not hold
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1147) 'for a stage all four share.
+2026-08-25T00:01:11Z (RFD66606-1147) 'for a stage all four share.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1147) '
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-1147) 'The problem
+2026-08-25T00:01:12Z (RFD66606-1147) 'The problem
  # tags: rfd:details-heading
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1147) 'EditScore is the `score` stage of every loop in `fourloops-plan.usda`.
+2026-08-25T00:01:13Z (RFD66606-1147) 'EditScore is the `score` stage of every loop in `fourloops-plan.usda`.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-1147) 'Loops 1 through 4 each name it, and loop 1 pairs it with the Referee.
- # tags: rfd:details
- Text:RFD1147  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1147) '
+2026-08-25T00:01:14Z (RFD66606-1147) 'Loops 1 through 4 each name it, and loop 1 pairs it with the Referee.
  # tags: rfd:details
  Text:RFD1147  1 LINE
  Text:Written

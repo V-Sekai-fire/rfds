@@ -5,7 +5,7 @@
  Serials:Weftspun
 
 2026-08-27T00:00:01Z (RFD66606-1153) 'matte evaluation
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD1153  1 LINE
  Text:Written
 
@@ -14,197 +14,197 @@
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:03Z (RFD66606-1153) '
- # tags: rfd:hook
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:04Z (RFD66606-1153) 'Background removal produced three candidate mattes per image and no way to say which
+2026-08-27T00:00:03Z (RFD66606-1153) 'Background removal produced three candidate mattes per image and no way to say which
  # tags: rfd:intrigue
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:05Z (RFD66606-1153) 'was broken.
+2026-08-27T00:00:04Z (RFD66606-1153) 'was broken.
  # tags: rfd:intrigue
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:06Z (RFD66606-1153) '
- # tags: rfd:intrigue
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:07Z (RFD66606-1153) 'Judge a matte as a composite onto a flat backing, in native 100x100 crops, scored for
+2026-08-27T00:00:05Z (RFD66606-1153) 'Judge a matte as a composite onto a flat backing, in native 100x100 crops, scored for
  # tags: rfd:exit
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:08Z (RFD66606-1153) 'connectivity and gradient apart; the sections below derive where EditScore fits.
+2026-08-27T00:00:06Z (RFD66606-1153) 'connectivity and gradient apart; the sections below derive where EditScore fits.
  # tags: rfd:exit
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:09Z (RFD66606-1153) '
- # tags: rfd:exit
+2026-08-27T00:00:07Z (RFD66606-1153) 'Judging matte quality
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:10Z (RFD66606-1153) 'Judging matte quality
- # tags: rfd:details-title
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:11Z (RFD66606-1153) 'Judging follows the field's standard benchmark. Rhemann et al., *A Perceptually
+2026-08-27T00:00:08Z (RFD66606-1153) 'Judging follows the field's standard benchmark. Rhemann et al., *A Perceptually
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:12Z (RFD66606-1153) 'Motivated Online Benchmark for Image Matting* (CVPR 2009), derived error
+2026-08-27T00:00:09Z (RFD66606-1153) 'Motivated Online Benchmark for Image Matting* (CVPR 2009), derived error
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:13Z (RFD66606-1153) 'functions from a 17-participant user study because SAD and MSE do not track human
+2026-08-27T00:00:10Z (RFD66606-1153) 'functions from a 17-participant user study because SAD and MSE do not track human
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:14Z (RFD66606-1153) 'judgement. Three of their decisions are adopted, each explaining one failure:
+2026-08-27T00:00:11Z (RFD66606-1153) 'judgement. Three of their decisions are adopted, each explaining one failure:
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:15Z (RFD66606-1153) '
+2026-08-27T00:00:12Z (RFD66606-1153) '
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:16Z (RFD66606-1153) '1. The judged artefact is a **composite onto a flat backing**, never raw alpha.
+2026-08-27T00:00:13Z (RFD66606-1153) '1. The judged artefact is a **composite onto a flat backing**, never raw alpha.
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:17Z (RFD66606-1153) '   Humans were never shown alpha, which is why the twin panel did worse.
+2026-08-27T00:00:14Z (RFD66606-1153) '   Humans were never shown alpha, which is why the twin panel did worse.
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:18Z (RFD66606-1153) '2. Crops of **100x100 pixels at native resolution**, where alpha is uncertain.
+2026-08-27T00:00:15Z (RFD66606-1153) '2. Crops of **100x100 pixels at native resolution**, where alpha is uncertain.
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:19Z (RFD66606-1153) '   Whole downscaled photographs resolved nothing: edge error is invisible at
+2026-08-27T00:00:16Z (RFD66606-1153) '   Whole downscaled photographs resolved nothing: edge error is invisible at
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:20Z (RFD66606-1153) '   448px.
+2026-08-27T00:00:17Z (RFD66606-1153) '   448px.
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:21Z (RFD66606-1153) '3. Two categories scored separately: **connectivity** (detached fragments, holes)
+2026-08-27T00:00:18Z (RFD66606-1153) '3. Two categories scored separately: **connectivity** (detached fragments, holes)
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:22Z (RFD66606-1153) '   and **gradient** (oversmoothing, or false hard edges).
+2026-08-27T00:00:19Z (RFD66606-1153) '   and **gradient** (oversmoothing, or false hard edges).
  # tags: rfd:decision
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:23Z (RFD66606-1153) '
- # tags: rfd:decision
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:24Z (RFD66606-1153) 'RFD66606-1152 selects the background remover this judges. RFD66606-1006 covers layer
+2026-08-27T00:00:20Z (RFD66606-1153) 'RFD66606-1152 selects the background remover this judges. RFD66606-1006 covers layer
  # tags: rfd:related
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:25Z (RFD66606-1153) 'decomposition.
+2026-08-27T00:00:21Z (RFD66606-1153) 'decomposition.
  # tags: rfd:related
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:26Z (RFD66606-1153) '
- # tags: rfd:related
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:27Z (RFD66606-1153) 'Where EditScore fits
+2026-08-27T00:00:22Z (RFD66606-1153) 'Where EditScore fits
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:28Z (RFD66606-1153) 'EditScore, configured as published, reproduces the ground-truth ordering of the
+2026-08-27T00:00:23Z (RFD66606-1153) 'EditScore, configured as published, reproduces the ground-truth ordering of the
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:29Z (RFD66606-1153) 'three backends; misconfigured it inverts it. It cannot pick between them on one
+2026-08-27T00:00:24Z (RFD66606-1153) 'three backends; misconfigured it inverts it. It cannot pick between them on one
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:30Z (RFD66606-1153) 'image, because it scores *edits* and three mattes of a photograph are
+2026-08-27T00:00:25Z (RFD66606-1153) 'image, because it scores *edits* and three mattes of a photograph are
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:31Z (RFD66606-1153) 'near-identical as edits. Use it where candidates differ semantically, and alpha
+2026-08-27T00:00:26Z (RFD66606-1153) 'near-identical as edits. Use it where candidates differ semantically, and alpha
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:32Z (RFD66606-1153) 'error where they differ by pixels of silhouette.
+2026-08-27T00:00:27Z (RFD66606-1153) 'error where they differ by pixels of silhouette.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:33Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:34Z (RFD66606-1153) 'Result
+2026-08-27T00:00:28Z (RFD66606-1153) 'Result
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:35Z (RFD66606-1153) '72 crops, four per cutout, across three backends and six photographs chosen for
+2026-08-27T00:00:29Z (RFD66606-1153) '72 crops, four per cutout, across three backends and six photographs chosen for
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:36Z (RFD66606-1153) 'sheer fabric, specular surfaces and wispy hair.
+2026-08-27T00:00:30Z (RFD66606-1153) 'sheer fabric, specular surfaces and wispy hair.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:37Z (RFD66606-1153) '
+2026-08-27T00:00:31Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:38Z (RFD66606-1153) '| category | mean | below 6.0 |
+2026-08-27T00:00:32Z (RFD66606-1153) '| category | mean | below 6.0 |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:39Z (RFD66606-1153) '|---|---|---|
+2026-08-27T00:00:33Z (RFD66606-1153) '|---|---|---|
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:40Z (RFD66606-1153) '| connectivity | 9.63 | **0 / 72** |
+2026-08-27T00:00:34Z (RFD66606-1153) '| connectivity | 9.63 | **0 / 72** |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:41Z (RFD66606-1153) '| gradient | 3.79 | **47 / 72** |
+2026-08-27T00:00:35Z (RFD66606-1153) '| gradient | 3.79 | **47 / 72** |
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:36Z (RFD66606-1153) '
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:37Z (RFD66606-1153) 'The failure mode of these background removers on this corpus is **edge fidelity,
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:38Z (RFD66606-1153) 'and only edge fidelity**. Not one crop showed a connectivity fault: no floating
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:39Z (RFD66606-1153) 'fragments, no holes punched through solid regions. 65% of crops showed a gradient
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:40Z (RFD66606-1153) 'fault, an edge either smeared into a blur or, more often here, hardened into an
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:00:41Z (RFD66606-1153) 'abrupt cut where the real edge is soft.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
@@ -214,127 +214,127 @@
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:43Z (RFD66606-1153) 'The failure mode of these background removers on this corpus is **edge fidelity,
+2026-08-27T00:00:43Z (RFD66606-1153) 'Unlike the two whole-image formats, this produces variance: connectivity spans
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:44Z (RFD66606-1153) 'and only edge fidelity**. Not one crop showed a connectivity fault: no floating
+2026-08-27T00:00:44Z (RFD66606-1153) '8.0 to 10.0 and gradient spans 0.8 to 8.0.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:45Z (RFD66606-1153) 'fragments, no holes punched through solid regions. 65% of crops showed a gradient
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:46Z (RFD66606-1153) 'fault, an edge either smeared into a blur or, more often here, hardened into an
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:47Z (RFD66606-1153) 'abrupt cut where the real edge is soft.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:48Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:49Z (RFD66606-1153) 'Unlike the two whole-image formats, this produces variance: connectivity spans
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:50Z (RFD66606-1153) '8.0 to 10.0 and gradient spans 0.8 to 8.0.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:51Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:00:52Z (RFD66606-1153) 'Crop selection
+2026-08-27T00:00:45Z (RFD66606-1153) 'Crop selection
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:53Z (RFD66606-1153) 'The study selected crops by hand for exhibiting one artefact category.
+2026-08-27T00:00:46Z (RFD66606-1153) 'The study selected crops by hand for exhibiting one artefact category.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:54Z (RFD66606-1153) 'Automating that: artefacts live where the matte is uncertain, so candidate
+2026-08-27T00:00:47Z (RFD66606-1153) 'Automating that: artefacts live where the matte is uncertain, so candidate
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:55Z (RFD66606-1153) 'windows are ranked by how much partial alpha they contain, taken at native
+2026-08-27T00:00:48Z (RFD66606-1153) 'windows are ranked by how much partial alpha they contain, taken at native
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:56Z (RFD66606-1153) 'resolution and spaced apart so k crops are not k views of one artefact.
+2026-08-27T00:00:49Z (RFD66606-1153) 'resolution and spaced apart so k crops are not k views of one artefact.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:57Z (RFD66606-1153) '
+2026-08-27T00:00:50Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:58Z (RFD66606-1153) 'Measured concentration on a wispy-hair source: whole-image soft alpha 3.97%,
+2026-08-27T00:00:51Z (RFD66606-1153) 'Measured concentration on a wispy-hair source: whole-image soft alpha 3.97%,
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:00:59Z (RFD66606-1153) 'selected crops 35-75%. A 9 to 19 times enrichment, which is the mechanism that
+2026-08-27T00:00:52Z (RFD66606-1153) 'selected crops 35-75%. A 9 to 19 times enrichment, which is the mechanism that
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:00Z (RFD66606-1153) 'puts artefacts inside the judge's input budget.
+2026-08-27T00:00:53Z (RFD66606-1153) 'puts artefacts inside the judge's input budget.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:01Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:02Z (RFD66606-1153) 'Configuration, not capability
+2026-08-27T00:00:54Z (RFD66606-1153) 'Configuration, not capability
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:03Z (RFD66606-1153) 'EditScore's stated applications are best-of-N reranking and supplying an RL
+2026-08-27T00:00:55Z (RFD66606-1153) 'EditScore's stated applications are best-of-N reranking and supplying an RL
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:04Z (RFD66606-1153) 'reward signal. Both failed on first attempt here, and the cause was how it was
+2026-08-27T00:00:56Z (RFD66606-1153) 'reward signal. Both failed on first attempt here, and the cause was how it was
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:05Z (RFD66606-1153) 'configured rather than the model.
+2026-08-27T00:00:57Z (RFD66606-1153) 'configured rather than the model.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:06Z (RFD66606-1153) '
+2026-08-27T00:00:58Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:07Z (RFD66606-1153) 'Three faults, all ours:
+2026-08-27T00:00:59Z (RFD66606-1153) 'Three faults, all ours:
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:00Z (RFD66606-1153) '
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:01Z (RFD66606-1153) '* `num_pass=1` at temperature 0.7, a single stochastic sample. Self-ensembling
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:02Z (RFD66606-1153) '  is how the paper reaches its headline numbers.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:03Z (RFD66606-1153) '* a pairwise "is B better than A" comparator, which is not how best-of-N works:
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:04Z (RFD66606-1153) '  candidates are scored independently against the source and the best wins. That
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:05Z (RFD66606-1153) '  comparator was position-driven in 37 of 52 pairings.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:06Z (RFD66606-1153) '* custom single-image rubrics, which bypass the SC pass entirely and are not
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:07Z (RFD66606-1153) '  EditScore at all.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
@@ -344,112 +344,112 @@
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:09Z (RFD66606-1153) '* `num_pass=1` at temperature 0.7, a single stochastic sample. Self-ensembling
+2026-08-27T00:01:09Z (RFD66606-1153) 'Corrected, published SC rubric, source and candidate as the pair, an edit
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:10Z (RFD66606-1153) '  is how the paper reaches its headline numbers.
+2026-08-27T00:01:10Z (RFD66606-1153) 'instruction, `num_pass=3`, judged on 100px crops, it reproduces the
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:11Z (RFD66606-1153) '* a pairwise "is B better than A" comparator, which is not how best-of-N works:
+2026-08-27T00:01:11Z (RFD66606-1153) 'ground-truth ordering on the alphamatting.com set:
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:12Z (RFD66606-1153) '  candidates are scored independently against the source and the best wins. That
+2026-08-27T00:01:12Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:13Z (RFD66606-1153) '  comparator was position-driven in 37 of 52 pairings.
+2026-08-27T00:01:13Z (RFD66606-1153) '| backend | overall | following | true SAD |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:14Z (RFD66606-1153) '* custom single-image rubrics, which bypass the SC pass entirely and are not
+2026-08-27T00:01:14Z (RFD66606-1153) '|---|---:|---:|---:|
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:15Z (RFD66606-1153) '  EditScore at all.
+2026-08-27T00:01:15Z (RFD66606-1153) '| birefnet-hr-matting | 4.07 | 5.39 | 4.00 |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:16Z (RFD66606-1153) '
+2026-08-27T00:01:16Z (RFD66606-1153) '| birefnet-matting | 3.81 | 4.97 | 4.90 |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:17Z (RFD66606-1153) 'Corrected, published SC rubric, source and candidate as the pair, an edit
+2026-08-27T00:01:17Z (RFD66606-1153) '| birefnet | 3.44 | 4.78 | 8.15 |
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:18Z (RFD66606-1153) 'instruction, `num_pass=3`, judged on 100px crops, it reproduces the
+2026-08-27T00:01:18Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:19Z (RFD66606-1153) 'ground-truth ordering on the alphamatting.com set:
+2026-08-27T00:01:19Z (RFD66606-1153) '48 judgements over 8 images. Both score columns descend monotonically as true
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:20Z (RFD66606-1153) '
+2026-08-27T00:01:20Z (RFD66606-1153) 'error rises, and the ordering held when the sample was tripled from an earlier
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:21Z (RFD66606-1153) '| backend | overall | following | true SAD |
+2026-08-27T00:01:21Z (RFD66606-1153) '15-judgement run. The misconfigured run had ranked the segmenter *best* on
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:22Z (RFD66606-1153) '|---|---:|---:|---:|
+2026-08-27T00:01:22Z (RFD66606-1153) 'gradient, which ground truth inverts.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:23Z (RFD66606-1153) '| birefnet-hr-matting | 4.07 | 5.39 | 4.00 |
+2026-08-27T00:01:23Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:24Z (RFD66606-1153) '| birefnet-matting | 3.81 | 4.97 | 4.90 |
+2026-08-27T00:01:24Z (RFD66606-1153) '**Aggregate ranking works; per-sample selection does not.** Spearman against true
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:25Z (RFD66606-1153) '| birefnet | 3.44 | 4.78 | 8.15 |
+2026-08-27T00:01:25Z (RFD66606-1153) 'SAD is -0.237, right sign, strengthening with sample size (-0.139 at n=15),
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:26Z (RFD66606-1153) '
+2026-08-27T00:01:26Z (RFD66606-1153) 'still weak. Best-of-N picked the true best on 6 of 16 crops, 37.5% against a 33%
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:27Z (RFD66606-1153) '48 judgements over 8 images. Both score columns descend monotonically as true
+2026-08-27T00:01:27Z (RFD66606-1153) 'chance rate: at n=15 it read 3 of 5 and that was noise.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:28Z (RFD66606-1153) 'error rises, and the ordering held when the sample was tripled from an earlier
+2026-08-27T00:01:28Z (RFD66606-1153) 'Why per-sample fails, from the methodology
+ # tags: rfd:details-heading
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:29Z (RFD66606-1153) 'The split is not a defect in the model. It follows from what EditScore is built
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:29Z (RFD66606-1153) '15-judgement run. The misconfigured run had ranked the segmenter *best* on
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:30Z (RFD66606-1153) 'gradient, which ground truth inverts.
+2026-08-27T00:01:30Z (RFD66606-1153) 'to score.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
@@ -459,322 +459,247 @@
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:32Z (RFD66606-1153) '**Aggregate ranking works; per-sample selection does not.** Spearman against true
+2026-08-27T00:01:32Z (RFD66606-1153) 'EditScore scores *an edit*: a source image, an edited result, and the instruction
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:33Z (RFD66606-1153) 'SAD is -0.237, right sign, strengthening with sample size (-0.139 at n=15),
+2026-08-27T00:01:33Z (RFD66606-1153) 'that was supposed to have been applied. Its SC pass asks whether the instruction
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:34Z (RFD66606-1153) 'still weak. Best-of-N picked the true best on 6 of 16 crops, 37.5% against a 33%
+2026-08-27T00:01:34Z (RFD66606-1153) 'was followed and whether the result stays consistent with the source. Best-of-N,
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:35Z (RFD66606-1153) 'chance rate: at n=15 it read 3 of 5 and that was noise.
+2026-08-27T00:01:35Z (RFD66606-1153) 'in the repository's own usage, means N generations of the same edit from the same
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:36Z (RFD66606-1153) '
+2026-08-27T00:01:36Z (RFD66606-1153) 'model differing by seed, candidates that differ in visible, semantic content.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:37Z (RFD66606-1153) 'Why per-sample fails, from the methodology
+2026-08-27T00:01:37Z (RFD66606-1153) '
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:38Z (RFD66606-1153) 'Our candidates are three mattes of one photograph. As whole images they are
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:39Z (RFD66606-1153) 'nearly identical: they differ by a few pixels of alpha along one silhouette.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:40Z (RFD66606-1153) 'When the judge returned the same score for multiple backends on 9 of 16
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:41Z (RFD66606-1153) 'comparisons, that was not a failure to discriminate. It was an accurate report
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:42Z (RFD66606-1153) 'that the images are near-identical *as edits*. The question it answers is
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:43Z (RFD66606-1153) 'correct; it is not the question a matte comparison asks.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:44Z (RFD66606-1153) '
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:45Z (RFD66606-1153) 'The same fact explains why the aggregate ordering survives. A small consistent
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:46Z (RFD66606-1153) 'bias toward the better matte averages up over sixteen judgements. On any single
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:47Z (RFD66606-1153) 'comparison it sits below the model's resolution, and below the 0.4 quantisation
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:48Z (RFD66606-1153) 'step that `score_range=25` implies, only 24 distinct `overall` values appeared
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:49Z (RFD66606-1153) 'across 48 judgements.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:01:50Z (RFD66606-1153) 'Consequence
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:38Z (RFD66606-1153) 'The split is not a defect in the model. It follows from what EditScore is built
+2026-08-27T00:01:51Z (RFD66606-1153) 'Use EditScore where the candidates differ semantically at whole-image scale:
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:39Z (RFD66606-1153) 'to score.
+2026-08-27T00:01:52Z (RFD66606-1153) 'whether an edit happened, whether the subject was altered, whether residue
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:40Z (RFD66606-1153) '
+2026-08-27T00:01:53Z (RFD66606-1153) 'remains. Do not use it to grade edge quality between near-identical candidates.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:41Z (RFD66606-1153) 'EditScore scores *an edit*: a source image, an edited result, and the instruction
+2026-08-27T00:01:54Z (RFD66606-1153) '
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:42Z (RFD66606-1153) 'that was supposed to have been applied. Its SC pass asks whether the instruction
+2026-08-27T00:01:55Z (RFD66606-1153) 'Alpha error, SAD, MSE, gradient, connectivity against ground truth, is the
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:43Z (RFD66606-1153) 'was followed and whether the result stays consistent with the source. Best-of-N,
+2026-08-27T00:01:56Z (RFD66606-1153) 'field's instrument for that, and it settled the model choice unambiguously in a
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:44Z (RFD66606-1153) 'in the repository's own usage, means N generations of the same edit from the same
+2026-08-27T00:01:57Z (RFD66606-1153) 'single run where the judge needed 48 to reach a weak correlation. RFD66606-1152
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:45Z (RFD66606-1153) 'model differing by seed, candidates that differ in visible, semantic content.
+2026-08-27T00:01:58Z (RFD66606-1153) 'records that result.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:01:46Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:47Z (RFD66606-1153) 'Our candidates are three mattes of one photograph. As whole images they are
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:48Z (RFD66606-1153) 'nearly identical: they differ by a few pixels of alpha along one silhouette.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:49Z (RFD66606-1153) 'When the judge returned the same score for multiple backends on 9 of 16
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:50Z (RFD66606-1153) 'comparisons, that was not a failure to discriminate. It was an accurate report
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:51Z (RFD66606-1153) 'that the images are near-identical *as edits*. The question it answers is
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:52Z (RFD66606-1153) 'correct; it is not the question a matte comparison asks.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:53Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:54Z (RFD66606-1153) 'The same fact explains why the aggregate ordering survives. A small consistent
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:55Z (RFD66606-1153) 'bias toward the better matte averages up over sixteen judgements. On any single
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:56Z (RFD66606-1153) 'comparison it sits below the model's resolution, and below the 0.4 quantisation
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:57Z (RFD66606-1153) 'step that `score_range=25` implies, only 24 distinct `overall` values appeared
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:58Z (RFD66606-1153) 'across 48 judgements.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:01:59Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:00Z (RFD66606-1153) 'Consequence
+2026-08-27T00:01:59Z (RFD66606-1153) 'What this does not establish
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:01Z (RFD66606-1153) 'Use EditScore where the candidates differ semantically at whole-image scale:
+2026-08-27T00:02:00Z (RFD66606-1153) '**The between-backend ordering**, for the reasons above. Model selection was
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:02Z (RFD66606-1153) 'whether an edit happened, whether the subject was altered, whether residue
+2026-08-27T00:02:01Z (RFD66606-1153) 'settled separately, against ground truth: see RFD66606-1152.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:03Z (RFD66606-1153) 'remains. Do not use it to grade edge quality between near-identical candidates.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:04Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:05Z (RFD66606-1153) 'Alpha error, SAD, MSE, gradient, connectivity against ground truth, is the
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:06Z (RFD66606-1153) 'field's instrument for that, and it settled the model choice unambiguously in a
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:07Z (RFD66606-1153) 'single run where the judge needed 48 to reach a weak correlation. RFD66606-1152
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:08Z (RFD66606-1153) 'records that result.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:09Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:10Z (RFD66606-1153) 'What this does not establish
+2026-08-27T00:02:02Z (RFD66606-1153) 'No rationales
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:11Z (RFD66606-1153) '**The between-backend ordering**, for the reasons above. Model selection was
+2026-08-27T00:02:03Z (RFD66606-1153) 'Every fault carries `reasoning: "concise"`. The Apple-silicon backbone prefills
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:12Z (RFD66606-1153) 'settled separately, against ground truth: see RFD66606-1152.
+2026-08-27T00:02:04Z (RFD66606-1153) 'the assistant turn as far as `{"reasoning": "concise", "score": [` so that only
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:13Z (RFD66606-1153) '
+2026-08-27T00:02:05Z (RFD66606-1153) 'the score tokens are generated, which is roughly 20 times less decoding. The
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:14Z (RFD66606-1153) 'No rationales
+2026-08-27T00:02:06Z (RFD66606-1153) 'reasoning field is therefore a constant supplied by us, not model output.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:02:07Z (RFD66606-1153) '
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:02:08Z (RFD66606-1153) 'Scores are unaffected. Recovering explanations means dropping the prefill and
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:02:09Z (RFD66606-1153) 'paying full decode.
+ # tags: rfd:details
+ Text:RFD1153  1 LINE
+ Text:Written
+
+2026-08-27T00:02:10Z (RFD66606-1153) 'Rubric scale hazard
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:15Z (RFD66606-1153) 'Every fault carries `reasoning: "concise"`. The Apple-silicon backbone prefills
+2026-08-27T00:02:11Z (RFD66606-1153) 'EditScore builds its rubrics as `text.replace('10', str(score_range))` and
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:16Z (RFD66606-1153) 'the assistant turn as far as `{"reasoning": "concise", "score": [` so that only
+2026-08-27T00:02:12Z (RFD66606-1153) 'divides the answer by `score_range / 10`. A rubric injected without the same
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:17Z (RFD66606-1153) 'the score tokens are generated, which is roughly 20 times less decoding. The
+2026-08-27T00:02:13Z (RFD66606-1153) 'replace is answered on a 0-10 scale and rescaled as if it were 0-25. Full marks
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:18Z (RFD66606-1153) 'reasoning field is therefore a constant supplied by us, not model output.
+2026-08-27T00:02:14Z (RFD66606-1153) 'then read 4.00, and the range looks compressed into three levels when it is not.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:19Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:20Z (RFD66606-1153) 'Scores are unaffected. Recovering explanations means dropping the prefill and
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:21Z (RFD66606-1153) 'paying full decode.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:22Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:23Z (RFD66606-1153) 'Rubric scale hazard
+2026-08-27T00:02:15Z (RFD66606-1153) 'The problem
  # tags: rfd:details-heading
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:24Z (RFD66606-1153) 'EditScore builds its rubrics as `text.replace('10', str(score_range))` and
+2026-08-27T00:02:16Z (RFD66606-1153) 'The available proxy, soft-alpha pixels per silhouette perimeter, ranks model
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:25Z (RFD66606-1153) 'divides the answer by `score_range / 10`. A rubric injected without the same
+2026-08-27T00:02:17Z (RFD66606-1153) 'families but cannot judge one matte. Two attempts with
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:26Z (RFD66606-1153) 'replace is answered on a 0-10 scale and rescaled as if it were 0-25. Full marks
+2026-08-27T00:02:18Z (RFD66606-1153) 'EditScore failed: whole images flattened onto grey scored near-constant within
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:27Z (RFD66606-1153) 'then read 4.00, and the range looks compressed into three levels when it is not.
+2026-08-27T00:02:19Z (RFD66606-1153) 'each image, so the judge was reading the photograph rather than the cutout, and a
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written
 
-2026-08-27T00:02:28Z (RFD66606-1153) '
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:29Z (RFD66606-1153) 'The problem
- # tags: rfd:details-heading
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:30Z (RFD66606-1153) 'The available proxy, soft-alpha pixels per silhouette perimeter, ranks model
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:31Z (RFD66606-1153) 'families but cannot judge one matte. Two attempts with
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:32Z (RFD66606-1153) 'EditScore failed: whole images flattened onto grey scored near-constant within
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:33Z (RFD66606-1153) 'each image, so the judge was reading the photograph rather than the cutout, and a
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:34Z (RFD66606-1153) 'twin panel of cutout beside alpha returned exactly 8.00 for all eighteen.
- # tags: rfd:details
- Text:RFD1153  1 LINE
- Text:Written
-
-2026-08-27T00:02:35Z (RFD66606-1153) '
+2026-08-27T00:02:20Z (RFD66606-1153) 'twin panel of cutout beside alpha returned exactly 8.00 for all eighteen.
  # tags: rfd:details
  Text:RFD1153  1 LINE
  Text:Written

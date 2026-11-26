@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2419) 'how a desk runs slash-switch commands from Git Bash on Windows.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2419  1 LINE
  Text:Written
 
@@ -14,107 +14,77 @@
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2419) '
- # tags: rfd:hook
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2419) 'What happens when Git Bash rewrites your switches into paths? And when an empty title arrives as
+2026-10-31T00:00:03Z (RFD66606-2419) 'What happens when Git Bash rewrites your switches into paths? And when an empty title arrives as
  # tags: rfd:intrigue
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2419) '`\"\"` and `start` tries to run `\`?
+2026-10-31T00:00:04Z (RFD66606-2419) '`\"\"` and `start` tries to run `\`?
  # tags: rfd:intrigue
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2419) '
- # tags: rfd:intrigue
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2419) 'Run your next slash-switch command from Git Bash under
+2026-10-31T00:00:05Z (RFD66606-2419) 'Run your next slash-switch command from Git Bash under
  # tags: rfd:exit
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`.
+2026-10-31T00:00:06Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`.
  # tags: rfd:exit
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2419) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2419) 'Git Bash on Windows runs slash-switch commands under a path-conversion guard
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2419) 'Git Bash on Windows runs slash-switch commands under a path-conversion guard
- # tags: rfd:details-title
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2419) 'From Git Bash on Windows, a command with `/`-switches runs under
+2026-10-31T00:00:08Z (RFD66606-2419) 'From Git Bash on Windows, a command with `/`-switches runs under
  # tags: rfd:decision
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`, so the switches are not rewritten into paths.
+2026-10-31T00:00:09Z (RFD66606-2419) '`MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`, so the switches are not rewritten into paths.
  # tags: rfd:decision
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2419) '
- # tags: rfd:decision
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2419) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:10Z (RFD66606-2419) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2419) '
- # tags: rfd:related
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2419) 'The start command and Godot priority
+2026-10-31T00:00:11Z (RFD66606-2419) 'The start command and Godot priority
  # tags: rfd:details-heading
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2419) '`start "" ...` goes in a `.cmd` file: passed inline, the empty title arrives as `\"\"` and
+2026-10-31T00:00:12Z (RFD66606-2419) '`start "" ...` goes in a `.cmd` file: passed inline, the empty title arrives as `\"\"` and
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2419) '`start` tries to run `\`. Godot raises its own process to above-normal priority, so a desk run
+2026-10-31T00:00:13Z (RFD66606-2419) '`start` tries to run `\`. Godot raises its own process to above-normal priority, so a desk run
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2419) 'lowers it by PID once started.
+2026-10-31T00:00:14Z (RFD66606-2419) 'lowers it by PID once started.
  # tags: rfd:details
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2419) '
- # tags: rfd:details
- Text:RFD2419  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2419) '2351
+2026-10-31T00:00:15Z (RFD66606-2419) '2351
  # tags: rebac:verbs-from
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2419) 'rfd-2419 provides gitbash-pathconv-guard
+2026-10-31T00:00:16Z (RFD66606-2419) 'rfd-2419 provides gitbash-pathconv-guard
  # tags: rebac:relate
  Text:RFD2419  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2419) 'rfd-2419 is_a workspace-policy
+2026-10-31T00:00:17Z (RFD66606-2419) 'rfd-2419 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2419  1 LINE
  Text:Written

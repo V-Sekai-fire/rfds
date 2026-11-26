@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-10-30T00:00:01Z (RFD66606-2341) 'the parked work that no numbered dev rung has claimed
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2341  1 LINE
  Text:Written
 
 2026-10-30T00:00:02Z (RFD66606-2341) 'everything past dev.2 that waits for a rung of its own
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2341  1 LINE
  Text:Written
 
@@ -19,837 +19,797 @@
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:04Z (RFD66606-2341) '
- # tags: rfd:hook
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:00:05Z (RFD66606-2341) 'Reducing churn is an absolute requirement. An ask added to an open rung moves its pins or
+2026-10-30T00:00:04Z (RFD66606-2341) 'Reducing churn is an absolute requirement. An ask added to an open rung moves its pins or
  # tags: rfd:intrigue
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:06Z (RFD66606-2341) 'edits its file, which the churn gate counts as a failure.
+2026-10-30T00:00:05Z (RFD66606-2341) 'edits its file, which the churn gate counts as a failure.
  # tags: rfd:intrigue
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2341) '
- # tags: rfd:intrigue
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:00:08Z (RFD66606-2341) 'Write a new ask into dev.next instead of an open rung, and check that the open rung's file and
+2026-10-30T00:00:06Z (RFD66606-2341) 'Write a new ask into dev.next instead of an open rung, and check that the open rung's file and
  # tags: rfd:exit
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2341) 'pins stay unchanged. The sections below list the parked items.
+2026-10-30T00:00:07Z (RFD66606-2341) 'pins stay unchanged. The sections below list the parked items.
  # tags: rfd:exit
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:10Z (RFD66606-2341) '
- # tags: rfd:exit
+2026-10-30T00:00:08Z (RFD66606-2341) 'dev.next, parked and not designed
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:11Z (RFD66606-2341) 'dev.next, parked and not designed
- # tags: rfd:details-title
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2341) 'dev.next holds every ask that no numbered rung has claimed. An idea
+2026-10-30T00:00:09Z (RFD66606-2341) 'dev.next holds every ask that no numbered rung has claimed. An idea
  # tags: rfd:decision
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:13Z (RFD66606-2341) 'that arrives while a rung is open is written here, and the open rung's
+2026-10-30T00:00:10Z (RFD66606-2341) 'that arrives while a rung is open is written here, and the open rung's
  # tags: rfd:decision
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:14Z (RFD66606-2341) 'definition does not change. An item leaves dev.next when a numbered
+2026-10-30T00:00:11Z (RFD66606-2341) 'definition does not change. An item leaves dev.next when a numbered
  # tags: rfd:decision
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2341) 'rung is planned around it.
+2026-10-30T00:00:12Z (RFD66606-2341) 'rung is planned around it.
  # tags: rfd:decision
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2341) '
- # tags: rfd:decision
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:00:17Z (RFD66606-2341) '- RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2344, dev.3.
+2026-10-30T00:00:13Z (RFD66606-2341) '- RFD66606-2342, dev.1; RFD66606-2343, dev.2; RFD66606-2344, dev.3.
  # tags: rfd:related
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2341) '
- # tags: rfd:related
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:00:19Z (RFD66606-2341) 'The parked items
+2026-10-30T00:00:14Z (RFD66606-2341) 'The parked items
  # tags: rfd:details-heading
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:20Z (RFD66606-2341) '- An original mascot, swapped into the stand-in mascot's three slots
+2026-10-30T00:00:15Z (RFD66606-2341) '- An original mascot, swapped into the stand-in mascot's three slots
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2341) '  (the tray icon, the popup, the requests in the world).
+2026-10-30T00:00:16Z (RFD66606-2341) '  (the tray icon, the popup, the requests in the world).
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2341) '- A thematic world that replaces the placeholder backstory and
+2026-10-30T00:00:17Z (RFD66606-2341) '- A thematic world that replaces the placeholder backstory and
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2341) '  explains the dummy, the requests, the shared world and the
+2026-10-30T00:00:18Z (RFD66606-2341) '  explains the dummy, the requests, the shared world and the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2341) '  persistence.
+2026-10-30T00:00:19Z (RFD66606-2341) '  persistence.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2341) '- The vehicle story, chosen as a ladder of choices. You carry the
+2026-10-30T00:00:20Z (RFD66606-2341) '- The vehicle story, chosen as a ladder of choices. You carry the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2341) '  atelier as a sample case and deploy it on any flat surface. The
+2026-10-30T00:00:21Z (RFD66606-2341) '  atelier as a sample case and deploy it on any flat surface. The
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:27Z (RFD66606-2341) '  dress form is in the lid and the ledger is the lining. Closing the
+2026-10-30T00:00:22Z (RFD66606-2341) '  dress form is in the lid and the ledger is the lining. Closing the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2341) '  case writes the journal. Opening it replays the journal. AR comes
+2026-10-30T00:00:23Z (RFD66606-2341) '  case writes the journal. Opening it replays the journal. AR comes
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:29Z (RFD66606-2341) '  first: the alpha blend mode with nothing drawn behind the case,
+2026-10-30T00:00:24Z (RFD66606-2341) '  first: the alpha blend mode with nothing drawn behind the case,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2341) '  which OXRSys already accepts with `passthrough_enabled`. VR is the
+2026-10-30T00:00:25Z (RFD66606-2341) '  which OXRSys already accepts with `passthrough_enabled`. VR is the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2341) '  same scene in the opaque mode. The case is the town (operator,
+2026-10-30T00:00:26Z (RFD66606-2341) '  same scene in the opaque mode. The case is the town (operator,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:32Z (RFD66606-2341) '  2026-10-09): opened, it holds the procedural station town the pen
+2026-10-30T00:00:27Z (RFD66606-2341) '  2026-10-09): opened, it holds the procedural station town the pen
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2341) '  already vendors (MIT) as a diorama you look into, like a tabletop
+2026-10-30T00:00:28Z (RFD66606-2341) '  already vendors (MIT) as a diorama you look into, like a tabletop
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:34Z (RFD66606-2341) '  Japanese town built in a wooden tray. It is not a case of building
+2026-10-30T00:00:29Z (RFD66606-2341) '  Japanese town built in a wooden tray. It is not a case of building
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2341) '  pieces carried through a full-size town. This is the station RFD66606-2343
+2026-10-30T00:00:30Z (RFD66606-2341) '  pieces carried through a full-size town. This is the station RFD66606-2343
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2341) '  left for a later rung. The surface is found by MoGe-3 (MIT) when you set
+2026-10-30T00:00:31Z (RFD66606-2341) '  left for a later rung. The surface is found by MoGe-3 (MIT) when you set
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2341) '  the case down. In AR it reads the colour stereo pair from the
+2026-10-30T00:00:32Z (RFD66606-2341) '  the case down. In AR it reads the colour stereo pair from the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2341) '  headset's colour camera module, on the expansion port. The built-in
+2026-10-30T00:00:33Z (RFD66606-2341) '  headset's colour camera module, on the expansion port. The built-in
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2341) '  cameras are monochrome and are not used. In a social VR world we did
+2026-10-30T00:00:34Z (RFD66606-2341) '  cameras are monochrome and are not used. In a social VR world we did
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:40Z (RFD66606-2341) '  not build, it reads the rendered eye pair. Its metric points and
+2026-10-30T00:00:35Z (RFD66606-2341) '  not build, it reads the rendered eye pair. Its metric points and
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:41Z (RFD66606-2341) '  normals give the plane, and the second eye checks the first. Without
+2026-10-30T00:00:36Z (RFD66606-2341) '  normals give the plane, and the second eye checks the first. Without
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2341) '  root, the headset's runtime publishes one colour view as a loopback
+2026-10-30T00:00:37Z (RFD66606-2341) '  root, the headset's runtime publishes one colour view as a loopback
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2341) '  camera that the video group can read. It advertises 1920x1080 at 30
+2026-10-30T00:00:38Z (RFD66606-2341) '  camera that the video group can read. It advertises 1920x1080 at 30
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:44Z (RFD66606-2341) '  fps and measured 1.4 to 3.8 fps. Its own camera API is off by
+2026-10-30T00:00:39Z (RFD66606-2341) '  fps and measured 1.4 to 3.8 fps. Its own camera API is off by
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:45Z (RFD66606-2341) '  default. MoGe-3 runs as a godot-sandbox guest ELF on ggml-rd, the
+2026-10-30T00:00:40Z (RFD66606-2341) '  default. MoGe-3 runs as a godot-sandbox guest ELF on ggml-rd, the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2341) '  shape RFD66606-2272 proved for segmentation. Its weights come
+2026-10-30T00:00:41Z (RFD66606-2341) '  shape RFD66606-2272 proved for segmentation. Its weights come
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2341) '  through the weight pump, and no Python is in the running path. It
+2026-10-30T00:00:42Z (RFD66606-2341) '  through the weight pump, and no Python is in the running path. It
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2341) '  spends no innovation token: it is one more guest on the route
+2026-10-30T00:00:43Z (RFD66606-2341) '  spends no innovation token: it is one more guest on the route
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:49Z (RFD66606-2341) '  `zone.elf` and `curvenet.elf` already use. With no confident plane,
+2026-10-30T00:00:44Z (RFD66606-2341) '  `zone.elf` and `curvenet.elf` already use. With no confident plane,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2341) '  the case falls back to the controller pose. Its dense graph is 1,406
+2026-10-30T00:00:45Z (RFD66606-2341) '  the case falls back to the controller pose. Its dense graph is 1,406
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:51Z (RFD66606-2341) '  nodes. ggml-rd lacks only replicate padding and one antialiased
+2026-10-30T00:00:46Z (RFD66606-2341) '  nodes. ggml-rd lacks only replicate padding and one antialiased
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:52Z (RFD66606-2341) '  resize. Its sparse 3D refiner has no ggml-rd kernels and is left
+2026-10-30T00:00:47Z (RFD66606-2341) '  resize. Its sparse 3D refiner has no ggml-rd kernels and is left
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2341) '  out. Passthrough is tested sim-to-real in virtual worlds only. Two
+2026-10-30T00:00:48Z (RFD66606-2341) '  out. Passthrough is tested sim-to-real in virtual worlds only. Two
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2341) '  held-out sets are frozen before they render: path-traced rooms built
+2026-10-30T00:00:49Z (RFD66606-2341) '  held-out sets are frozen before they render: path-traced rooms built
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2341) '  from CC0 scanned furniture, and the station, whose build publishes
+2026-10-30T00:00:50Z (RFD66606-2341) '  from CC0 scanned furniture, and the station, whose build publishes
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2341) '  every seat height. The station set matters because MoGe is unproven
+2026-10-30T00:00:51Z (RFD66606-2341) '  every seat height. The station set matters because MoGe is unproven
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:57Z (RFD66606-2341) '  on stylized frames. Gate: the surface under the crosshair, scaled by
+2026-10-30T00:00:52Z (RFD66606-2341) '  on stylized frames. Gate: the surface under the crosshair, scaled by
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:58Z (RFD66606-2341) '  the floor at the tracked eye height, lies within 3 cm of truth.
+2026-10-30T00:00:53Z (RFD66606-2341) '  the floor at the tracked eye height, lies within 3 cm of truth.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:00:59Z (RFD66606-2341) '  Controls: a frame with no flat surface must fall back, and
+2026-10-30T00:00:54Z (RFD66606-2341) '  Controls: a frame with no flat surface must fall back, and
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:00Z (RFD66606-2341) '  `GGML_RD_FAULT=1` must fail the fit. RFD66606-2313 parks the full
+2026-10-30T00:00:55Z (RFD66606-2341) '  `GGML_RD_FAULT=1` must fail the fit. RFD66606-2313 parks the full
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2341) '  loop over colour passthrough on this surface.
+2026-10-30T00:00:56Z (RFD66606-2341) '  loop over colour passthrough on this surface.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2341) '- Lookdev: style frames for the world, the mascot, Maro in SCSS and
+2026-10-30T00:00:57Z (RFD66606-2341) '- Lookdev: style frames for the world, the mascot, Maro in SCSS and
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:03Z (RFD66606-2341) '  the dummy. Image generation waits for a rung.
+2026-10-30T00:00:58Z (RFD66606-2341) '  the dummy. Image generation waits for a rung.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:04Z (RFD66606-2341) '- A mechanics search, ranked by best-of-breed sorting and valuation.
+2026-10-30T00:00:59Z (RFD66606-2341) '- A mechanics search, ranked by best-of-breed sorting and valuation.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:05Z (RFD66606-2341) '  A first pass on public evidence is running, and its result lands
+2026-10-30T00:01:00Z (RFD66606-2341) '  A first pass on public evidence is running, and its result lands
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2341) '  here.
+2026-10-30T00:01:01Z (RFD66606-2341) '  here.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2341) '- Shared-world building gameplay, which follows from the world and the
+2026-10-30T00:01:02Z (RFD66606-2341) '- Shared-world building gameplay, which follows from the world and the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:08Z (RFD66606-2341) '  mechanics search.
+2026-10-30T00:01:03Z (RFD66606-2341) '  mechanics search.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:09Z (RFD66606-2341) '- The shared world of two, cut from the first dev.2 draft (operator,
+2026-10-30T00:01:04Z (RFD66606-2341) '- The shared world of two, cut from the first dev.2 draft (operator,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:10Z (RFD66606-2341) '  2026-10-12): the tray as zone host for two clients over ENet on
+2026-10-30T00:01:05Z (RFD66606-2341) '  2026-10-12): the tray as zone host for two clients over ENet on
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:11Z (RFD66606-2341) '  localhost, the FDB-SQLite wardrobe that survives a zone restart, the
+2026-10-30T00:01:06Z (RFD66606-2341) '  localhost, the FDB-SQLite wardrobe that survives a zone restart, the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:12Z (RFD66606-2341) '  three fabric-zone changes (`set_payload` and `zone_despawn`,
+2026-10-30T00:01:07Z (RFD66606-2341) '  three fabric-zone changes (`set_payload` and `zone_despawn`,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:13Z (RFD66606-2341) '  `Journal::replay` on open, the payload in `pack_intent`), the stand-in
+2026-10-30T00:01:08Z (RFD66606-2341) '  `Journal::replay` on open, the payload in `pack_intent`), the stand-in
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:14Z (RFD66606-2341) '  mascot's 36 never-repeating requests with one constraint each, the backstory, the
+2026-10-30T00:01:09Z (RFD66606-2341) '  mascot's 36 never-repeating requests with one constraint each, the backstory, the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:15Z (RFD66606-2341) '  fourteen signs and the ledger board, two procedural audio cues, and the
+2026-10-30T00:01:10Z (RFD66606-2341) '  fourteen signs and the ledger board, two procedural audio cues, and the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:16Z (RFD66606-2341) '  two-person playtest.
+2026-10-30T00:01:11Z (RFD66606-2341) '  two-person playtest.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:17Z (RFD66606-2341) '- Wearing on Maro: the fit against her body mesh, the clothing hide in the
+2026-10-30T00:01:12Z (RFD66606-2341) '- Wearing on Maro: the fit against her body mesh, the clothing hide in the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:18Z (RFD66606-2341) '  same frame, no bone off rest scale, the pop-on, and Maro in the ported
+2026-10-30T00:01:13Z (RFD66606-2341) '  same frame, no bone off rest scale, the pop-on, and Maro in the ported
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:19Z (RFD66606-2341) '  SCSS. No dev.2 gate reaches past MESH.
+2026-10-30T00:01:14Z (RFD66606-2341) '  SCSS. No dev.2 gate reaches past MESH.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:20Z (RFD66606-2341) '- The avatar's tail opening (operator, 2026-10-17). The opening is
+2026-10-30T00:01:15Z (RFD66606-2341) '- The avatar's tail opening (operator, 2026-10-17). The opening is
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:21Z (RFD66606-2341) '  cut in the cardigan, the outer layer, fitted tight around the tail's
+2026-10-30T00:01:16Z (RFD66606-2341) '  cut in the cardigan, the outer layer, fitted tight around the tail's
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:22Z (RFD66606-2341) '  base, and the dress keeps a small slot under it. No flap, lap panel,
+2026-10-30T00:01:17Z (RFD66606-2341) '  base, and the dress keeps a small slot under it. No flap, lap panel,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:23Z (RFD66606-2341) '  ruffle trim or bow covers it, and the tail is kept. The cut is the
+2026-10-30T00:01:18Z (RFD66606-2341) '  ruffle trim or bow covers it, and the tail is kept. The cut is the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:24Z (RFD66606-2341) '  tail base's sweep over the motion clips plus 5 mm. The tail's long
+2026-10-30T00:01:19Z (RFD66606-2341) '  tail base's sweep over the motion clips plus 5 mm. The tail's long
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:25Z (RFD66606-2341) '  strands still cross the cardigan in motion. That is open.
+2026-10-30T00:01:20Z (RFD66606-2341) '  strands still cross the cardigan in motion. That is open.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:26Z (RFD66606-2341) '- The Windows x86_64 executable, signing once a legal entity is chosen,
+2026-10-30T00:01:21Z (RFD66606-2341) '- The Windows x86_64 executable, signing once a legal entity is chosen,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:27Z (RFD66606-2341) '  spatial voice, controller walking and the first headset test.
+2026-10-30T00:01:22Z (RFD66606-2341) '  spatial voice, controller walking and the first headset test.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:28Z (RFD66606-2341) '- The guest transport (QUIC, TLS and the session CA in guests) for
+2026-10-30T00:01:23Z (RFD66606-2341) '- The guest transport (QUIC, TLS and the session CA in guests) for
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:29Z (RFD66606-2341) '  friends over the internet.
+2026-10-30T00:01:24Z (RFD66606-2341) '  friends over the internet.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:30Z (RFD66606-2341) '- The Hilbert AOI band ported into `zone.elf`, for neighbour zones.
+2026-10-30T00:01:25Z (RFD66606-2341) '- The Hilbert AOI band ported into `zone.elf`, for neighbour zones.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:31Z (RFD66606-2341) '- Binary translation in the pen (dev.3 logbook). The pen's
+2026-10-30T00:01:26Z (RFD66606-2341) '- Binary translation in the pen (dev.3 logbook). The pen's
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:32Z (RFD66606-2341) '  `tools/build.exs` sets `GODOT_SANDBOX_BINTR_UNITS`, compiles the
+2026-10-30T00:01:27Z (RFD66606-2341) '  `tools/build.exs` sets `GODOT_SANDBOX_BINTR_UNITS`, compiles the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:33Z (RFD66606-2341) '  units in parallel and links one library per guest, and the pen
+2026-10-30T00:01:28Z (RFD66606-2341) '  units in parallel and links one library per guest, and the pen
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:34Z (RFD66606-2341) '  vendors an addon at or after the godot-sandbox commit the dev.3
+2026-10-30T00:01:29Z (RFD66606-2341) '  vendors an addon at or after the godot-sandbox commit the dev.3
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:35Z (RFD66606-2341) '  logbook names. Split into 24
+2026-10-30T00:01:30Z (RFD66606-2341) '  logbook names. Split into 24
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:36Z (RFD66606-2341) '  units, `usd` compiled and linked in 81 s; as one file it ran past
+2026-10-30T00:01:31Z (RFD66606-2341) '  units, `usd` compiled and linked in 81 s; as one file it ran past
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:37Z (RFD66606-2341) '  7 min on one core. Gate: every guest the probe loads reports
+2026-10-30T00:01:32Z (RFD66606-2341) '  7 min on one core. Gate: every guest the probe loads reports
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:38Z (RFD66606-2341) '  translated. Control: the probe with no `bintr/` fails by name.
+2026-10-30T00:01:33Z (RFD66606-2341) '  translated. Control: the probe with no `bintr/` fails by name.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:39Z (RFD66606-2341) '- The dev.3 gaps, each counted in the dev.3 logbook: the CASSIE dress
+2026-10-30T00:01:34Z (RFD66606-2341) '- The dev.3 gaps, each counted in the dev.3 logbook: the CASSIE dress
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:40Z (RFD66606-2341) '  replay (90 of 102 cycles) and a dress-layer control; the OpenXR
+2026-10-30T00:01:35Z (RFD66606-2341) '  replay (90 of 102 cycles) and a dress-layer control; the OpenXR
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:41Z (RFD66606-2341) '  alert that hangs a gate with no runtime; `--xr-mode off` in the
+2026-10-30T00:01:36Z (RFD66606-2341) '  alert that hangs a gate with no runtime; `--xr-mode off` in the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:42Z (RFD66606-2341) '  world-grab usage line; a stall control in the pen's reliability
+2026-10-30T00:01:37Z (RFD66606-2341) '  world-grab usage line; a stall control in the pen's reliability
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:43Z (RFD66606-2341) '  gate; a churn tool with its planted pin bump; a windowed Windows
+2026-10-30T00:01:38Z (RFD66606-2341) '  gate; a churn tool with its planted pin bump; a windowed Windows
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:44Z (RFD66606-2341) '  export in the tray's `release.exs`; the tray's Dock tile.
+2026-10-30T00:01:39Z (RFD66606-2341) '  export in the tray's `release.exs`; the tray's Dock tile.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:45Z (RFD66606-2341) '- RFD66606-2349's file check on the house recorder's recordings, which
+2026-10-30T00:01:40Z (RFD66606-2341) '- RFD66606-2349's file check on the house recorder's recordings, which
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:46Z (RFD66606-2341) '  dev.3 did not run (dev.3 logbook, The verdict). The recorder's MKV
+2026-10-30T00:01:41Z (RFD66606-2341) '  dev.3 did not run (dev.3 logbook, The verdict). The recorder's MKV
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:47Z (RFD66606-2341) '  carries CineForm frames, the
+2026-10-30T00:01:42Z (RFD66606-2341) '  carries CineForm frames, the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:48Z (RFD66606-2341) '  codec a `.cfhd` holds. `av1mkv` builds on Windows only; the MKV reader
+2026-10-30T00:01:43Z (RFD66606-2341) '  codec a `.cfhd` holds. `av1mkv` builds on Windows only; the MKV reader
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:49Z (RFD66606-2341) '  in entities-godot's media I/O can read it on any desk (operator,
+2026-10-30T00:01:44Z (RFD66606-2341) '  in entities-godot's media I/O can read it on any desk (operator,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:50Z (RFD66606-2341) '  2026-10-12).
+2026-10-30T00:01:45Z (RFD66606-2341) '  2026-10-12).
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:51Z (RFD66606-2341) '- A pin for every project a rung names, as a commit or as a tag-like
+2026-10-30T00:01:46Z (RFD66606-2341) '- A pin for every project a rung names, as a commit or as a tag-like
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:52Z (RFD66606-2341) '  branch that does not move by convention (operator, 2026-10-20:
+2026-10-30T00:01:47Z (RFD66606-2341) '  branch that does not move by convention (operator, 2026-10-20:
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:53Z (RFD66606-2341) '  branches are preferred). The private manifest tracked 8 of its
+2026-10-30T00:01:48Z (RFD66606-2341) '  branches are preferred). The private manifest tracked 8 of its
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:54Z (RFD66606-2341) '  projects at `main`, the tray and the double engine among them, so a
+2026-10-30T00:01:49Z (RFD66606-2341) '  projects at `main`, the tray and the double engine among them, so a
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:55Z (RFD66606-2341) '  merge moved what a sync checks out and the churn gate counted nothing
+2026-10-30T00:01:50Z (RFD66606-2341) '  merge moved what a sync checks out and the churn gate counted nothing
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:56Z (RFD66606-2341) '  (dev.3 logbook, gate 8). `tools/churn_gate.exs` now reads a branch
+2026-10-30T00:01:51Z (RFD66606-2341) '  (dev.3 logbook, gate 8). `tools/churn_gate.exs` now reads a branch
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:57Z (RFD66606-2341) '  row's tip from the checkout, now and at open, and a moved tip fails by
+2026-10-30T00:01:52Z (RFD66606-2341) '  row's tip from the checkout, now and at open, and a moved tip fails by
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:58Z (RFD66606-2341) '  name, so `main` cannot serve as a rung's pin.
+2026-10-30T00:01:53Z (RFD66606-2341) '  name, so `main` cannot serve as a rung's pin.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:01:59Z (RFD66606-2341) '- A loading screen in the pen (operator, 2026-10-12): the app shows it
+2026-10-30T00:01:54Z (RFD66606-2341) '- A loading screen in the pen (operator, 2026-10-12): the app shows it
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:00Z (RFD66606-2341) '  from launch until the world is ready, in place of the engine's boot
+2026-10-30T00:01:55Z (RFD66606-2341) '  from launch until the world is ready, in place of the engine's boot
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:01Z (RFD66606-2341) '  splash, which every dev.3 recording opens on for up to 30 s. It is
+2026-10-30T00:01:56Z (RFD66606-2341) '  splash, which every dev.3 recording opens on for up to 30 s. It is
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:02Z (RFD66606-2341) '  not white or drab (operator, 2026-10-12): it carries the world's own
+2026-10-30T00:01:57Z (RFD66606-2341) '  not white or drab (operator, 2026-10-12): it carries the world's own
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:03Z (RFD66606-2341) '  colour and something that moves, so a wait reads as the app. The pen
+2026-10-30T00:01:58Z (RFD66606-2341) '  colour and something that moves, so a wait reads as the app. The pen
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:04Z (RFD66606-2341) '  is an upstream fork read-only from the private org, so it lands through the
+2026-10-30T00:01:59Z (RFD66606-2341) '  is an upstream fork read-only from the private org, so it lands through the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:05Z (RFD66606-2341) '  pen's own repo and a pin bump.
+2026-10-30T00:02:00Z (RFD66606-2341) '  pen's own repo and a pin bump.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:06Z (RFD66606-2341) '- No magenta in the pen (operator, 2026-10-12: "magenta is ugly").
+2026-10-30T00:02:01Z (RFD66606-2341) '- No magenta in the pen (operator, 2026-10-12: "magenta is ugly").
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:07Z (RFD66606-2341) '  The dev.3 recordings in flat mode (the orbit, gate 1 flat and the
+2026-10-30T00:02:02Z (RFD66606-2341) '  The dev.3 recordings in flat mode (the orbit, gate 1 flat and the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:08Z (RFD66606-2341) '  drop_seam control) show the engine's missing-texture magenta, so a
+2026-10-30T00:02:03Z (RFD66606-2341) '  drop_seam control) show the engine's missing-texture magenta, so a
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:09Z (RFD66606-2341) '  material does not load there. A gate check fails a frame that carries
+2026-10-30T00:02:04Z (RFD66606-2341) '  material does not load there. A gate check fails a frame that carries
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:10Z (RFD66606-2341) '  it, with a planted missing texture as the control.
+2026-10-30T00:02:05Z (RFD66606-2341) '  it, with a planted missing texture as the control.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:11Z (RFD66606-2341) '- Gate recordings from the runtime's stream, not the screen (dev.3
+2026-10-30T00:02:06Z (RFD66606-2341) '- Gate recordings from the runtime's stream, not the screen (dev.3
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:12Z (RFD66606-2341) '  logbook, Recordings): four of eight screen captures miss the gate's
+2026-10-30T00:02:07Z (RFD66606-2341) '  logbook, Recordings): four of eight screen captures miss the gate's
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:13Z (RFD66606-2341) '  subject. With it, an orbit that drives the camera the window draws
+2026-10-30T00:02:08Z (RFD66606-2341) '  subject. With it, an orbit that drives the camera the window draws
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:14Z (RFD66606-2341) '  from, so the contact sheet shows ten views.
+2026-10-30T00:02:09Z (RFD66606-2341) '  from, so the contact sheet shows ten views.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:15Z (RFD66606-2341) '- A fast loop split from the soak (operator, 2026-10-12). Every gate's
+2026-10-30T00:02:10Z (RFD66606-2341) '- A fast loop split from the soak (operator, 2026-10-12). Every gate's
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:16Z (RFD66606-2341) '  quick form runs on each change, about 2 min in all. The 30-minute
+2026-10-30T00:02:11Z (RFD66606-2341) '  quick form runs on each change, about 2 min in all. The 30-minute
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:17Z (RFD66606-2341) '  soaks run once per rung, in the background, and never hold the
+2026-10-30T00:02:12Z (RFD66606-2341) '  soaks run once per rung, in the background, and never hold the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:18Z (RFD66606-2341) '  logbook or the pull request; their result is appended when it lands.
+2026-10-30T00:02:13Z (RFD66606-2341) '  logbook or the pull request; their result is appended when it lands.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:19Z (RFD66606-2341) '  dev.3 spent about 70 min of its cycle on soaks run one after another.
+2026-10-30T00:02:14Z (RFD66606-2341) '  dev.3 spent about 70 min of its cycle on soaks run one after another.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:20Z (RFD66606-2341) '- Three tray checks that dev.3 left NOT RUN (operator, 2026-10-12):
+2026-10-30T00:02:15Z (RFD66606-2341) '- Three tray checks that dev.3 left NOT RUN (operator, 2026-10-12):
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:21Z (RFD66606-2341) '  the first launch past the OS download warning, which needs a download
+2026-10-30T00:02:16Z (RFD66606-2341) '  the first launch past the OS download warning, which needs a download
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:22Z (RFD66606-2341) '  that carries the mark of the web and a person to click Run anyway,
+2026-10-30T00:02:17Z (RFD66606-2341) '  that carries the mark of the web and a person to click Run anyway,
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:23Z (RFD66606-2341) '  and the install from a fresh account, on Windows and on macOS.
+2026-10-30T00:02:18Z (RFD66606-2341) '  and the install from a fresh account, on Windows and on macOS.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:24Z (RFD66606-2341) '- decider-pong, a Pong recording where a live model drives one paddle.
+2026-10-30T00:02:19Z (RFD66606-2341) '- decider-pong, a Pong recording where a live model drives one paddle.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:25Z (RFD66606-2341) '  It sits in the interactor tier, beside its pinned upstream decider.
+2026-10-30T00:02:20Z (RFD66606-2341) '  It sits in the interactor tier, beside its pinned upstream decider.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:26Z (RFD66606-2341) '  Two questions wait for a rung. Its
+2026-10-30T00:02:21Z (RFD66606-2341) '  Two questions wait for a rung. Its
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:27Z (RFD66606-2341) '  Python breaks the languages rule, so it is ported to Elixir or to the
+2026-10-30T00:02:22Z (RFD66606-2341) '  Python breaks the languages rule, so it is ported to Elixir or to the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:28Z (RFD66606-2341) '  engine, or it gets a named exemption. Its name lacks the
+2026-10-30T00:02:23Z (RFD66606-2341) '  engine, or it gets a named exemption. Its name lacks the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:29Z (RFD66606-2341) '  interactor side prefix, which needs a rename by the user on the forge
+2026-10-30T00:02:24Z (RFD66606-2341) '  interactor side prefix, which needs a rename by the user on the forge
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:30Z (RFD66606-2341) '  and one manifest line. RFD66606-2346 records how it was placed.
+2026-10-30T00:02:25Z (RFD66606-2341) '  and one manifest line. RFD66606-2346 records how it was placed.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:31Z (RFD66606-2341) '
- # tags: rfd:details
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:02:32Z (RFD66606-2341) 'Parked work held in manifest issues
+2026-10-30T00:02:26Z (RFD66606-2341) 'Parked work held in manifest issues
  # tags: rfd:details-heading
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:33Z (RFD66606-2341) 'Each item below has an issue on the private manifest, which holds the
+2026-10-30T00:02:27Z (RFD66606-2341) 'Each item below has an issue on the private manifest, which holds the
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:34Z (RFD66606-2341) 'state and how to resume.
+2026-10-30T00:02:28Z (RFD66606-2341) 'state and how to resume.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:35Z (RFD66606-2341) '
+2026-10-30T00:02:29Z (RFD66606-2341) '
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:36Z (RFD66606-2341) '- One set of repository settings across the two orgs, the pr-credit
+2026-10-30T00:02:30Z (RFD66606-2341) '- One set of repository settings across the two orgs, the pr-credit
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:37Z (RFD66606-2341) '  lease, and the private bootstrap's Nushell, Erlang and Elixir tools.
+2026-10-30T00:02:31Z (RFD66606-2341) '  lease, and the private bootstrap's Nushell, Erlang and Elixir tools.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:38Z (RFD66606-2341) '- The Lean v4.34.1 move, 43 of 45 pull requests merged, and the CI
+2026-10-30T00:02:32Z (RFD66606-2341) '- The Lean v4.34.1 move, 43 of 45 pull requests merged, and the CI
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:39Z (RFD66606-2341) '  circuit breaker.
+2026-10-30T00:02:33Z (RFD66606-2341) '  circuit breaker.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:40Z (RFD66606-2341) '- The Sakuragaoka Station port: the blossom cluster LOD, the headset
+2026-10-30T00:02:34Z (RFD66606-2341) '- The Sakuragaoka Station port: the blossom cluster LOD, the headset
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:41Z (RFD66606-2341) '  budget and the credit ledger.
+2026-10-30T00:02:35Z (RFD66606-2341) '  budget and the credit ledger.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:42Z (RFD66606-2341) '- XR Pilot fixes, one CI slot per repository, and the org's CI state.
+2026-10-30T00:02:36Z (RFD66606-2341) '- XR Pilot fixes, one CI slot per repository, and the org's CI state.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:43Z (RFD66606-2341) '- An honest real-time Snake video, recorded with the house recorder in
+2026-10-30T00:02:37Z (RFD66606-2341) '- An honest real-time Snake video, recorded with the house recorder in
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:44Z (RFD66606-2341) '  CineForm.
+2026-10-30T00:02:38Z (RFD66606-2341) '  CineForm.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:45Z (RFD66606-2341) '- The forge READMEs still off the house shape, and the README churn
+2026-10-30T00:02:39Z (RFD66606-2341) '- The forge READMEs still off the house shape, and the README churn
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:46Z (RFD66606-2341) '  gate run on this workspace.
+2026-10-30T00:02:40Z (RFD66606-2341) '  gate run on this workspace.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:47Z (RFD66606-2341) '
- # tags: rfd:details
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:02:48Z (RFD66606-2341) 'The problem
+2026-10-30T00:02:41Z (RFD66606-2341) 'The problem
  # tags: rfd:details-heading
  Text:RFD2341  1 LINE
  Text:Written
 
-2026-10-30T00:02:49Z (RFD66606-2341) 'Parked work still needs one place to wait.
- # tags: rfd:details
- Text:RFD2341  1 LINE
- Text:Written
-
-2026-10-30T00:02:50Z (RFD66606-2341) '
+2026-10-30T00:02:42Z (RFD66606-2341) 'Parked work still needs one place to wait.
  # tags: rfd:details
  Text:RFD2341  1 LINE
  Text:Written

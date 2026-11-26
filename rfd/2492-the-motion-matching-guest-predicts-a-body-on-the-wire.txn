@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-13T00:00:01Z (RFD66606-2492) 'a sender states a clip and a time and sends only what the guest cannot predict.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2492  1 LINE
  Text:Written
 
 2026-11-13T00:00:02Z (RFD66606-2492) 'the presence slice's frame codec: a predictor under Zstandard, its gates and controls.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2492  1 LINE
  Text:Written
 
@@ -24,252 +24,252 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:05Z (RFD66606-2492) '
- # tags: rfd:hook
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:00:06Z (RFD66606-2492) 'A person's body goes on the wire as 21 entity Packets of 100 bytes, in two frames of 12, once
+2026-11-13T00:00:05Z (RFD66606-2492) 'A person's body goes on the wire as 21 entity Packets of 100 bytes, in two frames of 12, once
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:07Z (RFD66606-2492) 'every 6 ticks of a 64 Hz clock. Each frame is coded alone against one fixed dictionary.
+2026-11-13T00:00:06Z (RFD66606-2492) 'every 6 ticks of a 64 Hz clock. Each frame is coded alone against one fixed dictionary.
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:08Z (RFD66606-2492) 'Measured on 62 clips, that stream is 8,693 bytes a second at level 19, which is 6% over the
+2026-11-13T00:00:07Z (RFD66606-2492) 'Measured on 62 clips, that stream is 8,693 bytes a second at level 19, which is 6% over the
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:09Z (RFD66606-2492) 'sustained budget of 8,192. A dictionary cannot close the gap: coding a frame against the send
+2026-11-13T00:00:08Z (RFD66606-2492) 'sustained budget of 8,192. A dictionary cannot close the gap: coding a frame against the send
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:10Z (RFD66606-2492) 'before it saves 3%. But the body is not free motion. The stick feeds `mm_step`, which answers a
+2026-11-13T00:00:09Z (RFD66606-2492) 'before it saves 3%. But the body is not free motion. The stick feeds `mm_step`, which answers a
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:11Z (RFD66606-2492) 'clip and a time, and the body is that clip's pose placed in the world. A viewer that runs the
+2026-11-13T00:00:10Z (RFD66606-2492) 'clip and a time, and the body is that clip's pose placed in the world. A viewer that runs the
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:12Z (RFD66606-2492) 'same guest on the same clips can make most of that pose itself.
+2026-11-13T00:00:11Z (RFD66606-2492) 'same guest on the same clips can make most of that pose itself.
  # tags: rfd:intrigue
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:13Z (RFD66606-2492) '
- # tags: rfd:intrigue
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:00:14Z (RFD66606-2492) 'Run the frame size tool on the 62 clips with the predictor in the codec and without it. The
+2026-11-13T00:00:12Z (RFD66606-2492) 'Run the frame size tool on the 62 clips with the predictor in the codec and without it. The
  # tags: rfd:exit
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:15Z (RFD66606-2492) 'rung passes when the bytes a second with the predictor are below the 8,693 of the fixed
+2026-11-13T00:00:13Z (RFD66606-2492) 'rung passes when the bytes a second with the predictor are below the 8,693 of the fixed
  # tags: rfd:exit
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:16Z (RFD66606-2492) 'dictionary on the same sends, the decoded frames equal the frames that were sent, bit for bit,
+2026-11-13T00:00:14Z (RFD66606-2492) 'dictionary on the same sends, the decoded frames equal the frames that were sent, bit for bit,
  # tags: rfd:exit
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:17Z (RFD66606-2492) 'and each of the four controls below is caught.
+2026-11-13T00:00:15Z (RFD66606-2492) 'and each of the four controls below is caught.
  # tags: rfd:exit
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:18Z (RFD66606-2492) '
- # tags: rfd:exit
+2026-11-13T00:00:16Z (RFD66606-2492) 'the motion matching guest predicts a body on the wire
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:19Z (RFD66606-2492) 'the motion matching guest predicts a body on the wire
- # tags: rfd:details-title
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:00:20Z (RFD66606-2492) '- The predictor is the motion matching guest, `mm.elf` (operator, 2026-11-13: "he motion
+2026-11-13T00:00:17Z (RFD66606-2492) '- The predictor is the motion matching guest, `mm.elf` (operator, 2026-11-13: "he motion
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:21Z (RFD66606-2492) '  matching guest yes."). No learned model is brought in before this has been tried.
+2026-11-13T00:00:18Z (RFD66606-2492) '  matching guest yes."). No learned model is brought in before this has been tried.
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:22Z (RFD66606-2492) '- The predictor sits in the frame codec, under Zstandard. A decoded frame is still 12 whole
+2026-11-13T00:00:19Z (RFD66606-2492) '- The predictor sits in the frame codec, under Zstandard. A decoded frame is still 12 whole
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:23Z (RFD66606-2492) '  Packets of 100 bytes, so the Packet layout does not change and the observers hash the same
+2026-11-13T00:00:20Z (RFD66606-2492) '  Packets of 100 bytes, so the Packet layout does not change and the observers hash the same
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:24Z (RFD66606-2492) '  frames as today.
+2026-11-13T00:00:21Z (RFD66606-2492) '  frames as today.
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:25Z (RFD66606-2492) '- The clip and the time travel in the payload of a Packet that is already sent. Nothing travels
+2026-11-13T00:00:22Z (RFD66606-2492) '- The clip and the time travel in the payload of a Packet that is already sent. Nothing travels
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:26Z (RFD66606-2492) '  beside the Packets.
+2026-11-13T00:00:23Z (RFD66606-2492) '  beside the Packets.
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:27Z (RFD66606-2492) '- Every send states its own clip and time. A frame stands alone, and a lost send does not make
+2026-11-13T00:00:24Z (RFD66606-2492) '- Every send states its own clip and time. A frame stands alone, and a lost send does not make
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:28Z (RFD66606-2492) '  the next one unreadable.
+2026-11-13T00:00:25Z (RFD66606-2492) '  the next one unreadable.
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:29Z (RFD66606-2492) '- The hash of the clip set and of the guest joins the hashes of the dictionary and of the part
+2026-11-13T00:00:26Z (RFD66606-2492) '- The hash of the clip set and of the guest joins the hashes of the dictionary and of the part
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:30Z (RFD66606-2492) '  table as one protocol version. A viewer with another version is refused.
+2026-11-13T00:00:27Z (RFD66606-2492) '  table as one protocol version. A viewer with another version is refused.
  # tags: rfd:decision
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:31Z (RFD66606-2492) '
- # tags: rfd:decision
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:00:32Z (RFD66606-2492) '- RFD66606-2436, presence, the slice this codec serves.
+2026-11-13T00:00:28Z (RFD66606-2492) '- RFD66606-2436, presence, the slice this codec serves.
  # tags: rfd:related
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:33Z (RFD66606-2492) '- RFD66606-2442 and RFD66606-2443, the latency metric and the server that carries the frames.
+2026-11-13T00:00:29Z (RFD66606-2492) '- RFD66606-2442 and RFD66606-2443, the latency metric and the server that carries the frames.
  # tags: rfd:related
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:34Z (RFD66606-2492) '
- # tags: rfd:related
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:00:35Z (RFD66606-2492) 'Start here
+2026-11-13T00:00:30Z (RFD66606-2492) 'Start here
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:36Z (RFD66606-2492) 'This RFD is written so that a session with no memory of the work can begin from it. Read these
+2026-11-13T00:00:31Z (RFD66606-2492) 'This RFD is written so that a session with no memory of the work can begin from it. Read these
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:37Z (RFD66606-2492) 'in order before writing anything.
+2026-11-13T00:00:32Z (RFD66606-2492) 'in order before writing anything.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:38Z (RFD66606-2492) '
+2026-11-13T00:00:33Z (RFD66606-2492) '
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:39Z (RFD66606-2492) '- The gates repository, interactor-presence-gates in our organisation. Read `docs/wire.md`
+2026-11-13T00:00:34Z (RFD66606-2492) '- The gates repository, interactor-presence-gates in our organisation. Read `docs/wire.md`
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:40Z (RFD66606-2492) '  for frames and Packets, `docs/frame-sizes.md` for the measurement this RFD must beat,
+2026-11-13T00:00:35Z (RFD66606-2492) '  for frames and Packets, `docs/frame-sizes.md` for the measurement this RFD must beat,
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:41Z (RFD66606-2492) '  `docs/ledger.md` with `ledger.tsv` for how a rung is recorded, and `tools/frame_sizes.exs`,
+2026-11-13T00:00:36Z (RFD66606-2492) '  `docs/ledger.md` with `ledger.tsv` for how a rung is recorded, and `tools/frame_sizes.exs`,
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:42Z (RFD66606-2492) '  the tool that measures any recorded stream. The parts it joins are repositories of their
+2026-11-13T00:00:37Z (RFD66606-2492) '  the tool that measures any recorded stream. The parts it joins are repositories of their
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:43Z (RFD66606-2492) '  own beside it; the Packet codec is interactor-packets-guest and RFD66606-2493 names the
+2026-11-13T00:00:38Z (RFD66606-2492) '  own beside it; the Packet codec is interactor-packets-guest and RFD66606-2493 names the
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:44Z (RFD66606-2492) '  rest.
+2026-11-13T00:00:39Z (RFD66606-2492) '  rest.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:45Z (RFD66606-2492) '- The motion matching guest's repository, interactor-motion-matching-guest, which the
+2026-11-13T00:00:40Z (RFD66606-2492) '- The motion matching guest's repository, interactor-motion-matching-guest, which the
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:46Z (RFD66606-2492) '  workspace checks out on its interactor side. Its README has `mm_add_clip`, `mm_bake` and
+2026-11-13T00:00:41Z (RFD66606-2492) '  workspace checks out on its interactor side. Its README has `mm_add_clip`, `mm_bake` and
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:47Z (RFD66606-2492) '  `mm_step(dt, vx, vz, facing, mode, jump)`, which answers a clip, a time, the character and
+2026-11-13T00:00:42Z (RFD66606-2492) '  `mm_step(dt, vx, vz, facing, mode, jump)`, which answers a clip, a time, the character and
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:48Z (RFD66606-2492) '  the clip root for each frame.
+2026-11-13T00:00:43Z (RFD66606-2492) '  the clip root for each frame.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:49Z (RFD66606-2492) '- The packet contract, contract-entity-packet. A Packet is 100 bytes: `gid` at 0, position in
+2026-11-13T00:00:44Z (RFD66606-2492) '- The packet contract, contract-entity-packet. A Packet is 100 bytes: `gid` at 0, position in
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:50Z (RFD66606-2492) '  micrometres at 4, velocity at 28, acceleration at 34, the tick at 40, rotation at 52 and 40
+2026-11-13T00:00:45Z (RFD66606-2492) '  micrometres at 4, velocity at 28, acceleration at 34, the tick at 40, rotation at 52 and 40
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:51Z (RFD66606-2492) '  bytes of payload at 58.
+2026-11-13T00:00:46Z (RFD66606-2492) '  bytes of payload at 58.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:52Z (RFD66606-2492) '- The avatar follower, interactor-anny-follow-guest. `follow.sgd` and `data/drive.tsv` hold
+2026-11-13T00:00:47Z (RFD66606-2492) '- The avatar follower, interactor-anny-follow-guest. `follow.sgd` and `data/drive.tsv` hold
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:53Z (RFD66606-2492) '  the 21 bodies of the muscle skeleton that drive ANNY. Their order on the wire is
+2026-11-13T00:00:48Z (RFD66606-2492) '  the 21 bodies of the muscle skeleton that drive ANNY. Their order on the wire is
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:54Z (RFD66606-2492) '  `data/parts.tsv` of the codec's repository, a whole coarse body in the first frame.
+2026-11-13T00:00:49Z (RFD66606-2492) '  `data/parts.tsv` of the codec's repository, a whole coarse body in the first frame.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:50Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:51Z (RFD66606-2492) 'What was measured
+ # tags: rfd:details-heading
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:52Z (RFD66606-2492) 'The 62 clips that pass the retarget gates, 29 minutes of motion, were played at the tick and
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:53Z (RFD66606-2492) 'written as the frames one person would send. Half the clips built the dictionary and sends of
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:54Z (RFD66606-2492) 'the other half were measured.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
@@ -279,87 +279,87 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:56Z (RFD66606-2492) '
+2026-11-13T00:00:56Z (RFD66606-2492) '| Cadence | Dictionary | Level | Bytes a send | Bytes a second |
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:57Z (RFD66606-2492) 'What was measured
+2026-11-13T00:00:57Z (RFD66606-2492) '| --- | --- | --- | --- | --- |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:58Z (RFD66606-2492) '| 6 ticks | none | 3 | 982 | 10,476 |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:00:59Z (RFD66606-2492) '| 6 ticks | fixed, 64 KiB | 3 | 947 | 10,100 |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:00Z (RFD66606-2492) '| 6 ticks | fixed, 64 KiB | 19 | 815 | 8,693 |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:01Z (RFD66606-2492) '| 6 ticks | the send before | 19 | 791 | 8,436 |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:02Z (RFD66606-2492) '| 8 ticks | fixed, 64 KiB | 19 | 814 | 6,510 |
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:03Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:04Z (RFD66606-2492) 'The row to beat is the third. The fourth shows why a better dictionary is not the way: the
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:05Z (RFD66606-2492) 'best possible one, the send before, gains 3%.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:06Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:07Z (RFD66606-2492) 'Why a predictor should work here
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:58Z (RFD66606-2492) 'The 62 clips that pass the retarget gates, 29 minutes of motion, were played at the tick and
+2026-11-13T00:01:08Z (RFD66606-2492) 'A body in this slice is made in a chain. The left stick sets a wanted ground velocity. The
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:00:59Z (RFD66606-2492) 'written as the frames one person would send. Half the clips built the dictionary and sends of
+2026-11-13T00:01:09Z (RFD66606-2492) 'motion matching guest picks a clip and a time. The clip's pose at that time is placed in the
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:00Z (RFD66606-2492) 'the other half were measured.
+2026-11-13T00:01:10Z (RFD66606-2492) 'world, and the muscle skeleton takes it. So for a sender whose body follows the guest, clip,
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:01Z (RFD66606-2492) '
+2026-11-13T00:01:11Z (RFD66606-2492) 'time and root placement fix the pose of most of the 21 parts. What they do not fix is what the
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:02Z (RFD66606-2492) '| Cadence | Dictionary | Level | Bytes a send | Bytes a second |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:03Z (RFD66606-2492) '| --- | --- | --- | --- | --- |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:04Z (RFD66606-2492) '| 6 ticks | none | 3 | 982 | 10,476 |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:05Z (RFD66606-2492) '| 6 ticks | fixed, 64 KiB | 3 | 947 | 10,100 |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:06Z (RFD66606-2492) '| 6 ticks | fixed, 64 KiB | 19 | 815 | 8,693 |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:07Z (RFD66606-2492) '| 6 ticks | the send before | 19 | 791 | 8,436 |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:08Z (RFD66606-2492) '| 8 ticks | fixed, 64 KiB | 19 | 814 | 6,510 |
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:09Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:10Z (RFD66606-2492) 'The row to beat is the third. The fourth shows why a better dictionary is not the way: the
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:11Z (RFD66606-2492) 'best possible one, the send before, gains 3%.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:12Z (RFD66606-2492) '
+2026-11-13T00:01:12Z (RFD66606-2492) 'guest cannot know: the tracked head and hands, and what physics adds.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
@@ -369,52 +369,52 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:14Z (RFD66606-2492) 'Why a predictor should work here
+2026-11-13T00:01:14Z (RFD66606-2492) 'No number is claimed for the saving. A rough bound, if only the head and two hands carried
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:15Z (RFD66606-2492) 'information beyond clip, time and root, is 150 to 250 bytes a send against 815. It is a guess
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:16Z (RFD66606-2492) 'until the first rung measures it.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:17Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:18Z (RFD66606-2492) 'Loss is another matter
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:15Z (RFD66606-2492) 'A body in this slice is made in a chain. The left stick sets a wanted ground velocity. The
+2026-11-13T00:01:19Z (RFD66606-2492) 'Zstandard is not an error-correcting code and is not used as one. Compression removes
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:16Z (RFD66606-2492) 'motion matching guest picks a clip and a time. The clip's pose at that time is placed in the
+2026-11-13T00:01:20Z (RFD66606-2492) 'redundancy and a code for errors adds it. Loss is concealed by the curve a viewer already
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:17Z (RFD66606-2492) 'world, and the muscle skeleton takes it. So for a sender whose body follows the guest, clip,
+2026-11-13T00:01:21Z (RFD66606-2492) 'draws: one lost send costs nothing, and after three a part moves 7% over its top speed for one
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:18Z (RFD66606-2492) 'time and root placement fix the pose of most of the 21 parts. What they do not fix is what the
+2026-11-13T00:01:22Z (RFD66606-2492) 'segment. A third interval of playback delay is the first remedy if loss hurts. RFD66606-2327
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:19Z (RFD66606-2492) 'guest cannot know: the tracked head and hands, and what physics adds.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:20Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:21Z (RFD66606-2492) 'No number is claimed for the saving. A rough bound, if only the head and two hands carried
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:22Z (RFD66606-2492) 'information beyond clip, time and root, is 150 to 250 bytes a send against 815. It is a guess
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:23Z (RFD66606-2492) 'until the first rung measures it.
+2026-11-13T00:01:23Z (RFD66606-2492) 'has the gait phase the guest matches by, and RFD66606-2363 the controllers that feed it.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
@@ -424,37 +424,37 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:25Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:26Z (RFD66606-2492) 'Loss is another matter
+2026-11-13T00:01:25Z (RFD66606-2492) 'The ladder
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:27Z (RFD66606-2492) 'Zstandard is not an error-correcting code and is not used as one. Compression removes
+2026-11-13T00:01:26Z (RFD66606-2492) 'Each rung is held to the rung below it and not to the budget. The budget is where the ladder
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:28Z (RFD66606-2492) 'redundancy and a code for errors adds it. Loss is concealed by the curve a viewer already
+2026-11-13T00:01:27Z (RFD66606-2492) 'ends.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:29Z (RFD66606-2492) 'draws: one lost send costs nothing, and after three a part moves 7% over its top speed for one
+2026-11-13T00:01:28Z (RFD66606-2492) '
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:30Z (RFD66606-2492) 'segment. A third interval of playback delay is the first remedy if loss hurts. RFD66606-2327
+2026-11-13T00:01:29Z (RFD66606-2492) 'Rungs are climbed in this order and none is skipped. A rung is the run of the rung below with
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:31Z (RFD66606-2492) 'has the gait phase the guest matches by, and RFD66606-2363 the controllers that feed it.
+2026-11-13T00:01:30Z (RFD66606-2492) 'one thing changed. It is run on the development machine before anything is pushed, and it
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:31Z (RFD66606-2492) 'passes when its number is better than the rung below while its controls are caught.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
@@ -464,102 +464,102 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:33Z (RFD66606-2492) '
+2026-11-13T00:01:33Z (RFD66606-2492) '0. Run `tools/frame_sizes.exs` as it is on the 62 clips. Nothing has to improve: it must give
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:34Z (RFD66606-2492) 'The ladder
+2026-11-13T00:01:34Z (RFD66606-2492) '   8,693 again, so that the baseline is this session's own.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:35Z (RFD66606-2492) '1. The guest's digest on four hosts, as the MuJoCo guest has. Hosts that agree on `mm_step`
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:36Z (RFD66606-2492) '   go from 0 to 4.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:37Z (RFD66606-2492) '2. Residual frames: each Packet's fields less the predicted pose, for clips played back as
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:38Z (RFD66606-2492) '   they are. Bytes a second go below rung 0.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:39Z (RFD66606-2492) '3. Clip and time in a payload, and the decoder that rebuilds the frame from them. Frames
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:40Z (RFD66606-2492) '   rebuilt bit for bit go from none to all.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:41Z (RFD66606-2492) '4. A body that strays from the clip: head and hands on a recorded track. Bytes a second are
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:42Z (RFD66606-2492) '   set against rung 2 and reported as they are.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:43Z (RFD66606-2492) '5. The codec as a sandbox guest beside `curve.sgd`. Its bytes equal the tool's.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:44Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:45Z (RFD66606-2492) 'Rung 1 comes before any coding because a predictor that differs between two machines by one
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:46Z (RFD66606-2492) 'bit makes every decoded frame wrong. The MuJoCo guest already has a digest on Linux x86_64,
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:47Z (RFD66606-2492) 'Linux arm64, Windows x86_64 and macOS arm64, with the in-process JIT switched off, and that
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:48Z (RFD66606-2492) 'check found a defect on its first day.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:49Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:01:50Z (RFD66606-2492) 'Gates and controls
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:35Z (RFD66606-2492) 'Each rung is held to the rung below it and not to the budget. The budget is where the ladder
+2026-11-13T00:01:51Z (RFD66606-2492) 'Each gate prints a `RESULT:` line, and each control plants a defect that must be caught and
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:36Z (RFD66606-2492) 'ends.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:37Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:38Z (RFD66606-2492) 'Rungs are climbed in this order and none is skipped. A rung is the run of the rung below with
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:39Z (RFD66606-2492) 'one thing changed. It is run on the development machine before anything is pushed, and it
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:40Z (RFD66606-2492) 'passes when its number is better than the rung below while its controls are caught.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:41Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:42Z (RFD66606-2492) '0. Run `tools/frame_sizes.exs` as it is on the 62 clips. Nothing has to improve: it must give
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:43Z (RFD66606-2492) '   8,693 again, so that the baseline is this session's own.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:44Z (RFD66606-2492) '1. The guest's digest on four hosts, as the MuJoCo guest has. Hosts that agree on `mm_step`
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:45Z (RFD66606-2492) '   go from 0 to 4.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:46Z (RFD66606-2492) '2. Residual frames: each Packet's fields less the predicted pose, for clips played back as
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:47Z (RFD66606-2492) '   they are. Bytes a second go below rung 0.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:48Z (RFD66606-2492) '3. Clip and time in a payload, and the decoder that rebuilds the frame from them. Frames
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:49Z (RFD66606-2492) '   rebuilt bit for bit go from none to all.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:50Z (RFD66606-2492) '4. A body that strays from the clip: head and hands on a recorded track. Bytes a second are
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:51Z (RFD66606-2492) '   set against rung 2 and reported as they are.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:01:52Z (RFD66606-2492) '5. The codec as a sandbox guest beside `curve.sgd`. Its bytes equal the tool's.
+2026-11-13T00:01:52Z (RFD66606-2492) 'named.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
@@ -569,252 +569,182 @@
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:54Z (RFD66606-2492) 'Rung 1 comes before any coding because a predictor that differs between two machines by one
+2026-11-13T00:01:54Z (RFD66606-2492) '- Round trip: every frame that is coded decodes to the bytes that were sent. Control: one bit
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:55Z (RFD66606-2492) 'bit makes every decoded frame wrong. The MuJoCo guest already has a digest on Linux x86_64,
+2026-11-13T00:01:55Z (RFD66606-2492) '  of the residual flipped.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:56Z (RFD66606-2492) 'Linux arm64, Windows x86_64 and macOS arm64, with the in-process JIT switched off, and that
+2026-11-13T00:01:56Z (RFD66606-2492) '- Alone: a frame decodes with no other frame at hand. Control: a decoder that keeps the clip
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:57Z (RFD66606-2492) 'check found a defect on its first day.
+2026-11-13T00:01:57Z (RFD66606-2492) '  and time of the send before, which must fail when a send is withheld.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:58Z (RFD66606-2492) '
+2026-11-13T00:01:58Z (RFD66606-2492) '- Version: a viewer whose clip set differs is refused by name. Control: one clip altered.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:01:59Z (RFD66606-2492) '
+2026-11-13T00:01:59Z (RFD66606-2492) '- Bytes: the stream is smaller than the rung below on the same sends. Control: a predictor that
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:00Z (RFD66606-2492) 'Gates and controls
+2026-11-13T00:02:00Z (RFD66606-2492) '  answers the rest pose, which must give no saving.
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:02:01Z (RFD66606-2492) '
+ # tags: rfd:details
+ Text:RFD2492  1 LINE
+ Text:Written
+
+2026-11-13T00:02:02Z (RFD66606-2492) 'Rules a new session must keep
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:01Z (RFD66606-2492) 'Each gate prints a `RESULT:` line, and each control plants a defect that must be caught and
+2026-11-13T00:02:03Z (RFD66606-2492) '- The Packet stays 100 bytes and a frame stays 12 Packets. New data goes into a payload.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:02Z (RFD66606-2492) 'named.
+2026-11-13T00:02:04Z (RFD66606-2492) '- New guest code is SafeGDScript first. Mojo is also a guest language (RFD66606-2494, operator,
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:03Z (RFD66606-2492) '
+2026-11-13T00:02:05Z (RFD66606-2492) '  2026-11-14). Tools are `.exs` and gates are `.gd`. No new Python.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:04Z (RFD66606-2492) '- Round trip: every frame that is coded decodes to the bytes that were sent. Control: one bit
+2026-11-13T00:02:06Z (RFD66606-2492) '- Comments are at most 3% of a file's lines. The explanation goes into documentation.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:05Z (RFD66606-2492) '  of the residual flipped.
+2026-11-13T00:02:07Z (RFD66606-2492) '- Commits are authored as the operator, in sentence case, with no trailer and no agent credit.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:06Z (RFD66606-2492) '- Alone: a frame decodes with no other frame at hand. Control: a decoder that keeps the clip
+2026-11-13T00:02:08Z (RFD66606-2492) '- No file names the reference social VR platform.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:07Z (RFD66606-2492) '  and time of the send before, which must fail when a send is withheld.
+2026-11-13T00:02:09Z (RFD66606-2492) '- CI confirms and does not find out: one finished pull request at a time, after the gate and
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:08Z (RFD66606-2492) '- Version: a viewer whose clip set differs is refused by name. Control: one clip altered.
+2026-11-13T00:02:10Z (RFD66606-2492) '  its controls have passed on the development machine. No draft pull requests.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:09Z (RFD66606-2492) '- Bytes: the stream is smaller than the rung below on the same sends. Control: a predictor that
+2026-11-13T00:02:11Z (RFD66606-2492) '- Meshes are OpenUSD only. The clips come from a private repository whose release awaits a
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:10Z (RFD66606-2492) '  answers the rest pose, which must give no saving.
+2026-11-13T00:02:12Z (RFD66606-2492) '  provenance check, and they are cleared for this work.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:11Z (RFD66606-2492) '
+2026-11-13T00:02:13Z (RFD66606-2492) '
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:12Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:13Z (RFD66606-2492) 'Rules a new session must keep
+2026-11-13T00:02:14Z (RFD66606-2492) 'What is not known
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:14Z (RFD66606-2492) '- The Packet stays 100 bytes and a frame stays 12 Packets. New data goes into a payload.
+2026-11-13T00:02:15Z (RFD66606-2492) '- Whether `mm_step` is bit-identical across the four hosts. Nothing has run.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:15Z (RFD66606-2492) '- New guest code is SafeGDScript first. Mojo is also a guest language (RFD66606-2494, operator,
+2026-11-13T00:02:16Z (RFD66606-2492) '- How far a real player strays from the clips. Only play in a headset shows it, and the bytes
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:16Z (RFD66606-2492) '  2026-11-14). Tools are `.exs` and gates are `.gd`. No new Python.
+2026-11-13T00:02:17Z (RFD66606-2492) '  of rung 4 are a first estimate.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:17Z (RFD66606-2492) '- Comments are at most 3% of a file's lines. The explanation goes into documentation.
+2026-11-13T00:02:18Z (RFD66606-2492) '- The time to code a frame with the predictor. The tick has about 1.8 ms to spare on the
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:18Z (RFD66606-2492) '- Commits are authored as the operator, in sentence case, with no trailer and no agent credit.
+2026-11-13T00:02:19Z (RFD66606-2492) '  interpreted tier, so the codec may have to run off the tick.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:19Z (RFD66606-2492) '- No file names the reference social VR platform.
+2026-11-13T00:02:20Z (RFD66606-2492) '- Whether rotation needs its own residual form. The Packet carries rotation in a swing-twist
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:20Z (RFD66606-2492) '- CI confirms and does not find out: one finished pull request at a time, after the gate and
+2026-11-13T00:02:21Z (RFD66606-2492) '  code, and a small error there may not be a small number.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:21Z (RFD66606-2492) '  its controls have passed on the development machine. No draft pull requests.
+2026-11-13T00:02:22Z (RFD66606-2492) '
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:22Z (RFD66606-2492) '- Meshes are OpenUSD only. The clips come from a private repository whose release awaits a
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:23Z (RFD66606-2492) '  provenance check, and they are cleared for this work.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:24Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:25Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:26Z (RFD66606-2492) 'What is not known
+2026-11-13T00:02:23Z (RFD66606-2492) 'The problem
  # tags: rfd:details-heading
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:27Z (RFD66606-2492) '- Whether `mm_step` is bit-identical across the four hosts. Nothing has run.
+2026-11-13T00:02:24Z (RFD66606-2492) 'The stream is over its budget, the dictionary is spent, and the chosen cadence was kept twice
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:28Z (RFD66606-2492) '- How far a real player strays from the clips. Only play in a headset shows it, and the bytes
+2026-11-13T00:02:25Z (RFD66606-2492) 'by the operator. What is left is to stop sending what both ends already know.
  # tags: rfd:details
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:29Z (RFD66606-2492) '  of rung 4 are a first estimate.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:30Z (RFD66606-2492) '- The time to code a frame with the predictor. The tick has about 1.8 ms to spare on the
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:31Z (RFD66606-2492) '  interpreted tier, so the codec may have to run off the tick.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:32Z (RFD66606-2492) '- Whether rotation needs its own residual form. The Packet carries rotation in a swing-twist
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:33Z (RFD66606-2492) '  code, and a small error there may not be a small number.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:34Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:35Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:36Z (RFD66606-2492) 'The problem
- # tags: rfd:details-heading
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:37Z (RFD66606-2492) 'The stream is over its budget, the dictionary is spent, and the chosen cadence was kept twice
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:38Z (RFD66606-2492) 'by the operator. What is left is to stop sending what both ends already know.
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:39Z (RFD66606-2492) '
- # tags: rfd:details
- Text:RFD2492  1 LINE
- Text:Written
-
-2026-11-13T00:02:40Z (RFD66606-2492) '2351
+2026-11-13T00:02:26Z (RFD66606-2492) '2351
  # tags: rebac:verbs-from
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:41Z (RFD66606-2492) 'rfd-2492 provides motion-predicted-frames
+2026-11-13T00:02:27Z (RFD66606-2492) 'rfd-2492 provides motion-predicted-frames
  # tags: rebac:relate
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:42Z (RFD66606-2492) 'rfd-2492 spends elf-guest-native-translation
+2026-11-13T00:02:28Z (RFD66606-2492) 'rfd-2492 spends elf-guest-native-translation
  # tags: rebac:relate
  Text:RFD2492  1 LINE
  Text:Written
 
-2026-11-13T00:02:43Z (RFD66606-2492) 'rfd-2492 is_a frame-codec
+2026-11-13T00:02:29Z (RFD66606-2492) 'rfd-2492 is_a frame-codec
  # tags: rebac:relate
  Text:RFD2492  1 LINE
  Text:Written

@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2386) 'what this Mac builds so it serves as the desktop client.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2386  1 LINE
  Text:Written
 
@@ -14,112 +14,82 @@
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2386) '
- # tags: rfd:hook
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2386) 'Without a macOS client, the pen's parked `macos.yml` stays parked and the headless gates have
+2026-10-31T00:00:03Z (RFD66606-2386) 'Without a macOS client, the pen's parked `macos.yml` stays parked and the headless gates have
  # tags: rfd:intrigue
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2386) 'no macOS arm.
+2026-10-31T00:00:04Z (RFD66606-2386) 'no macOS arm.
  # tags: rfd:intrigue
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2386) '
- # tags: rfd:intrigue
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2386) 'Run `tools/run-mac.sh` beside `run-windows.sh` to start the flat client and the sidecar on this
+2026-10-31T00:00:05Z (RFD66606-2386) 'Run `tools/run-mac.sh` beside `run-windows.sh` to start the flat client and the sidecar on this
  # tags: rfd:exit
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2386) 'Mac.
+2026-10-31T00:00:06Z (RFD66606-2386) 'Mac.
  # tags: rfd:exit
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2386) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2386) 'this Mac is the desktop client
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2386) 'this Mac is the desktop client
- # tags: rfd:details-title
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2386) '- This Mac as the desktop client: the macOS double editor from the release, the addon's macOS
+2026-10-31T00:00:08Z (RFD66606-2386) '- This Mac as the desktop client: the macOS double editor from the release, the addon's macOS
  # tags: rfd:decision
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2386) '  double library, compute-rd on Metal through the same `rdc::Device`.
+2026-10-31T00:00:09Z (RFD66606-2386) '  double library, compute-rd on Metal through the same `rdc::Device`.
  # tags: rfd:decision
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2386) '
- # tags: rfd:decision
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2386) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:10Z (RFD66606-2386) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2386) '
- # tags: rfd:related
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2386) 'Scripts and gates
+2026-10-31T00:00:11Z (RFD66606-2386) 'Scripts and gates
  # tags: rfd:details-heading
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2386) '`tools/run-mac.sh` beside `run-windows.sh` for the flat client and the sidecar; the pen's
+2026-10-31T00:00:12Z (RFD66606-2386) '`tools/run-mac.sh` beside `run-windows.sh` for the flat client and the sidecar; the pen's
  # tags: rfd:details
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2386) 'parked `macos.yml` becomes the macOS arm of the headless gates.
+2026-10-31T00:00:13Z (RFD66606-2386) 'parked `macos.yml` becomes the macOS arm of the headless gates.
  # tags: rfd:details
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2386) '
- # tags: rfd:details
- Text:RFD2386  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2386) '2351
+2026-10-31T00:00:14Z (RFD66606-2386) '2351
  # tags: rebac:verbs-from
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2386) 'rfd-2386 provides mac-desktop-client
+2026-10-31T00:00:15Z (RFD66606-2386) 'rfd-2386 provides mac-desktop-client
  # tags: rebac:relate
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2386) 'rfd-2386 spends actions-builds-double-binaries
+2026-10-31T00:00:16Z (RFD66606-2386) 'rfd-2386 spends actions-builds-double-binaries
  # tags: rebac:relate
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2386) 'rfd-2386 spends sandbox-addon-double-pinned
+2026-10-31T00:00:17Z (RFD66606-2386) 'rfd-2386 spends sandbox-addon-double-pinned
  # tags: rebac:relate
  Text:RFD2386  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2386) 'rfd-2386 is_a deployment
+2026-10-31T00:00:18Z (RFD66606-2386) 'rfd-2386 is_a deployment
  # tags: rebac:relate
  Text:RFD2386  1 LINE
  Text:Written

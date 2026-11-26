@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2378) 'where each desktop library is built, and how the WSL steps run.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2378  1 LINE
  Text:Written
 
@@ -14,222 +14,177 @@
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2378) '
- # tags: rfd:hook
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2378) 'Ubuntu's clang 14 cannot parse the macOS SDK's libc++ headers. Nested quoting from `cmd`
+2026-10-31T00:00:03Z (RFD66606-2378) 'Ubuntu's clang 14 cannot parse the macOS SDK's libc++ headers. Nested quoting from `cmd`
  # tags: rfd:intrigue
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2378) 'into WSL returns empty output.
+2026-10-31T00:00:04Z (RFD66606-2378) 'into WSL returns empty output.
  # tags: rfd:intrigue
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2378) '
- # tags: rfd:intrigue
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2378) 'Put the next step that runs in WSL in a script file on the Windows side, and run it with
+2026-10-31T00:00:05Z (RFD66606-2378) 'Put the next step that runs in WSL in a script file on the Windows side, and run it with
  # tags: rfd:exit
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2378) '`wsl.exe` as root with `sh` from `/mnt/c/`.
+2026-10-31T00:00:06Z (RFD66606-2378) '`wsl.exe` as root with `sh` from `/mnt/c/`.
  # tags: rfd:exit
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2378) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2378) 'desktop libraries build in WSL and cross-build from the Mac
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2378) 'desktop libraries build in WSL and cross-build from the Mac
- # tags: rfd:details-title
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2378) '- Linux x86_64 is built and tested in WSL Ubuntu 22.04 on the Windows desk, not in a
+2026-10-31T00:00:08Z (RFD66606-2378) '- Linux x86_64 is built and tested in WSL Ubuntu 22.04 on the Windows desk, not in a
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2378) '  container on the Mac (operator, 2026-10-16). The library needs glibc 2.35, the floor the
+2026-10-31T00:00:09Z (RFD66606-2378) '  container on the Mac (operator, 2026-10-16). The library needs glibc 2.35, the floor the
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2378) '  Godot template already sets.
+2026-10-31T00:00:10Z (RFD66606-2378) '  Godot template already sets.
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2378) '- macOS arm64 is cross-built in the same WSL with osxcross and the macOS 15.4 SDK packed
+2026-10-31T00:00:11Z (RFD66606-2378) '- macOS arm64 is cross-built in the same WSL with osxcross and the macOS 15.4 SDK packed
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2378) '  from the Mac (operator, 2026-10-16). Windows x86_64 is cross-built with MinGW on the
+2026-10-31T00:00:12Z (RFD66606-2378) '  from the Mac (operator, 2026-10-16). Windows x86_64 is cross-built with MinGW on the
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2378) '  Mac.
+2026-10-31T00:00:13Z (RFD66606-2378) '  Mac.
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2378) '- Steps that run in WSL go in a script file on the Windows side, which `wsl.exe` runs as
+2026-10-31T00:00:14Z (RFD66606-2378) '- Steps that run in WSL go in a script file on the Windows side, which `wsl.exe` runs as
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2378) '  root with `sh` from `/mnt/c/`.
+2026-10-31T00:00:15Z (RFD66606-2378) '  root with `sh` from `/mnt/c/`.
  # tags: rfd:decision
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2378) '
- # tags: rfd:decision
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2378) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:16Z (RFD66606-2378) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2378) '- RFD66606-2374, which holds the rest of the paragraph on the Apple clang measurement.
+2026-10-31T00:00:17Z (RFD66606-2378) '- RFD66606-2374, which holds the rest of the paragraph on the Apple clang measurement.
  # tags: rfd:related
+ Text:RFD2378  1 LINE
+ Text:Written
+
+2026-10-31T00:00:18Z (RFD66606-2378) 'The osxcross compiler
+ # tags: rfd:details-heading
+ Text:RFD2378  1 LINE
+ Text:Written
+
+2026-10-31T00:00:19Z (RFD66606-2378) 'Ubuntu's clang 14 cannot parse that SDK's libc++ headers, so osxcross is built with clang
+ # tags: rfd:details
+ Text:RFD2378  1 LINE
+ Text:Written
+
+2026-10-31T00:00:20Z (RFD66606-2378) '18, and clang 18 is the `clang` on the PATH, because the osxcross wrapper calls plain
+ # tags: rfd:details
+ Text:RFD2378  1 LINE
+ Text:Written
+
+2026-10-31T00:00:21Z (RFD66606-2378) '`clang`.
+ # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
 2026-10-31T00:00:22Z (RFD66606-2378) '
- # tags: rfd:related
+ # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2378) 'The osxcross compiler
+2026-10-31T00:00:23Z (RFD66606-2378) 'Build times
  # tags: rfd:details-heading
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2378) 'Ubuntu's clang 14 cannot parse that SDK's libc++ headers, so osxcross is built with clang
+2026-10-31T00:00:24Z (RFD66606-2378) 'Compiling the 32 translation units took 158 s for macOS on the Mac, 348 s for Windows on
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2378) '18, and clang 18 is the `clang` on the PATH, because the osxcross wrapper calls plain
+2026-10-31T00:00:25Z (RFD66606-2378) 'the Mac and 590 s for Linux in WSL on the desk.
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2378) '`clang`.
+2026-10-31T00:00:26Z (RFD66606-2378) '
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2378) '
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2378) '
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2378) 'Build times
+2026-10-31T00:00:27Z (RFD66606-2378) 'What was measured
  # tags: rfd:details-heading
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2378) 'Compiling the 32 translation units took 158 s for macOS on the Mac, 348 s for Windows on
+2026-10-31T00:00:28Z (RFD66606-2378) 'The same macOS translation built with Apple clang took 69.5 to 72.4 ms against 37.7 to
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2378) 'the Mac and 590 s for Linux in WSL on the desk.
+2026-10-31T00:00:29Z (RFD66606-2378) '38.4 ms from osxcross with clang 18, so the osxcross build is the one that ships. The
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2378) '
+2026-10-31T00:00:30Z (RFD66606-2378) 'cause of that difference is not measured. Readings taken while another build ran on the
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2378) '
+2026-10-31T00:00:31Z (RFD66606-2378) 'same machine overstated the gap: Windows interpreted read 848 to 907 ms then.
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2378) 'What was measured
+2026-10-31T00:00:32Z (RFD66606-2378) 'The problem
  # tags: rfd:details-heading
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2378) 'The same macOS translation built with Apple clang took 69.5 to 72.4 ms against 37.7 to
+2026-10-31T00:00:33Z (RFD66606-2378) 'Nested quoting from `cmd` into WSL returns empty output.
  # tags: rfd:details
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2378) '38.4 ms from osxcross with clang 18, so the osxcross build is the one that ships. The
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2378) 'cause of that difference is not measured. Readings taken while another build ran on the
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2378) 'same machine overstated the gap: Windows interpreted read 848 to 907 ms then.
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2378) '
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:40Z (RFD66606-2378) 'The problem
- # tags: rfd:details-heading
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:41Z (RFD66606-2378) 'Nested quoting from `cmd` into WSL returns empty output.
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2378) '
- # tags: rfd:details
- Text:RFD2378  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2378) '2351
+2026-10-31T00:00:34Z (RFD66606-2378) '2351
  # tags: rebac:verbs-from
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2378) 'rfd-2378 provides wsl-desktop-library-builds
+2026-10-31T00:00:35Z (RFD66606-2378) 'rfd-2378 provides wsl-desktop-library-builds
  # tags: rebac:relate
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2378) 'rfd-2378 spends cross-build-image
+2026-10-31T00:00:36Z (RFD66606-2378) 'rfd-2378 spends cross-build-image
  # tags: rebac:relate
  Text:RFD2378  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2378) 'rfd-2378 is_a workspace-policy
+2026-10-31T00:00:37Z (RFD66606-2378) 'rfd-2378 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2378  1 LINE
  Text:Written

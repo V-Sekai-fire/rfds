@@ -5,7 +5,7 @@
  Serials:Weftspun
 
 2026-08-25T00:00:01Z (RFD66606-1053) 'asset interchange
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD1053  1 LINE
  Text:Written
 
@@ -14,292 +14,292 @@
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1053) '
- # tags: rfd:hook
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1053) 'Each pipeline stage reads a GLB and writes a GLB. A rig stage rewrites the whole file to add
+2026-08-25T00:00:03Z (RFD66606-1053) 'Each pipeline stage reads a GLB and writes a GLB. A rig stage rewrites the whole file to add
  # tags: rfd:intrigue
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1053) 'bones, a texture stage rewrites it again, and when a mesh is wrong no record says which stage
+2026-08-25T00:00:04Z (RFD66606-1053) 'bones, a texture stage rewrites it again, and when a mesh is wrong no record says which stage
  # tags: rfd:intrigue
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1053) 'made it wrong.
+2026-08-25T00:00:05Z (RFD66606-1053) 'made it wrong.
  # tags: rfd:intrigue
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1053) '
- # tags: rfd:intrigue
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1053) 'Convert to glTF or VRM at the boundary only, and check that each model image's `predict()`
+2026-08-25T00:00:06Z (RFD66606-1053) 'Convert to glTF or VRM at the boundary only, and check that each model image's `predict()`
  # tags: rfd:exit
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1053) 'returns the USD layer as well as the transmission file.
+2026-08-25T00:00:07Z (RFD66606-1053) 'returns the USD layer as well as the transmission file.
  # tags: rfd:exit
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1053) '
- # tags: rfd:exit
+2026-08-25T00:00:08Z (RFD66606-1053) 'OpenUSD as the internal format
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1053) 'OpenUSD as the internal format
- # tags: rfd:details-title
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1053) 'OpenUSD is the internal format. Every stage reads a stage and writes a
+2026-08-25T00:00:09Z (RFD66606-1053) 'OpenUSD is the internal format. Every stage reads a stage and writes a
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1053) 'layer. glTF, VRM, and KHR avatar stay the transmission formats, and
+2026-08-25T00:00:10Z (RFD66606-1053) 'layer. glTF, VRM, and KHR avatar stay the transmission formats, and
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1053) 'the pipeline converts to them at the edge.
+2026-08-25T00:00:11Z (RFD66606-1053) 'the pipeline converts to them at the edge.
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1053) '
+2026-08-25T00:00:12Z (RFD66606-1053) '
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1053) 'Committed 2026-09-02: CLAUDE.md ratifies the choice as a hard
+2026-08-25T00:00:13Z (RFD66606-1053) 'Committed 2026-09-02: CLAUDE.md ratifies the choice as a hard
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1053) 'constraint (OpenUSD `.usda` for text-editable, ZStandard parquet for
+2026-08-25T00:00:14Z (RFD66606-1053) 'constraint (OpenUSD `.usda` for text-editable, ZStandard parquet for
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1053) 'bulk; zip and gzip banned; usdz exempt). RFD66606-2169 abandoned the
+2026-08-25T00:00:15Z (RFD66606-1053) 'bulk; zip and gzip banned; usdz exempt). RFD66606-2169 abandoned the
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1053) 'Elixir studio core; the `fabric-stage-runtime` Hex package still
+2026-08-25T00:00:16Z (RFD66606-1053) 'Elixir studio core; the `fabric-stage-runtime` Hex package still
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1053) 'ships OpenUSD to every consumer.
+2026-08-25T00:00:17Z (RFD66606-1053) 'ships OpenUSD to every consumer.
  # tags: rfd:decision
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1053) '
- # tags: rfd:decision
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1053) 'RFD66606-1036 gives the model image convention. `fabric-stage-runtime`
+2026-08-25T00:00:18Z (RFD66606-1053) 'RFD66606-1036 gives the model image convention. `fabric-stage-runtime`
  # tags: rfd:related
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1053) '(Hex) links this runtime to every stage. RFD66606-1002 records the
+2026-08-25T00:00:19Z (RFD66606-1053) '(Hex) links this runtime to every stage. RFD66606-1002 records the
  # tags: rfd:related
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1053) 'pipeline stages that become layers.
+2026-08-25T00:00:20Z (RFD66606-1053) 'pipeline stages that become layers.
  # tags: rfd:related
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1053) '
- # tags: rfd:related
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-1053) 'Why layers, and not a better mesh format
+2026-08-25T00:00:21Z (RFD66606-1053) 'Why layers, and not a better mesh format
  # tags: rfd:details-heading
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1053) 'USD is to this pipeline what `.blend` is to Blender. It is the working
+2026-08-25T00:00:22Z (RFD66606-1053) 'USD is to this pipeline what `.blend` is to Blender. It is the working
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1053) 'file, and it never reaches a browser.
+2026-08-25T00:00:23Z (RFD66606-1053) 'file, and it never reaches a browser.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1053) '
+2026-08-25T00:00:24Z (RFD66606-1053) '
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1053) 'USD composes. A stage adds a sublayer with its own opinion, and the
+2026-08-25T00:00:25Z (RFD66606-1053) 'USD composes. A stage adds a sublayer with its own opinion, and the
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1053) 'layer below stays intact and readable.
+2026-08-25T00:00:26Z (RFD66606-1053) 'layer below stays intact and readable.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1053) '
+2026-08-25T00:00:27Z (RFD66606-1053) '
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1053) '| Stage        | Writes                                |
+2026-08-25T00:00:28Z (RFD66606-1053) '| Stage        | Writes                                |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1053) '| ------------ | ------------------------------------- |
+2026-08-25T00:00:29Z (RFD66606-1053) '| ------------ | ------------------------------------- |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1053) '| image to 3D  | the base mesh layer                   |
+2026-08-25T00:00:30Z (RFD66606-1053) '| image to 3D  | the base mesh layer                   |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1053) '| retopology   | a layer that overrides the mesh       |
+2026-08-25T00:00:31Z (RFD66606-1053) '| retopology   | a layer that overrides the mesh       |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1053) '| UV unwrap    | a layer that adds the primvar         |
+2026-08-25T00:00:32Z (RFD66606-1053) '| UV unwrap    | a layer that adds the primvar         |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1053) '| segmentation | a layer of part scopes                |
+2026-08-25T00:00:33Z (RFD66606-1053) '| segmentation | a layer of part scopes                |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1053) '| rig          | a layer of skeleton and skin bindings |
+2026-08-25T00:00:34Z (RFD66606-1053) '| rig          | a layer of skeleton and skin bindings |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1053) '| texture      | a layer of material bindings          |
+2026-08-25T00:00:35Z (RFD66606-1053) '| texture      | a layer of material bindings          |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1053) '
+2026-08-25T00:00:36Z (RFD66606-1053) '
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1053) 'A caller may then mute the retopology layer and see the original. That
+2026-08-25T00:00:37Z (RFD66606-1053) 'A caller may then mute the retopology layer and see the original. That
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1053) 'is not possible in a flat file.
+2026-08-25T00:00:38Z (RFD66606-1053) 'is not possible in a flat file.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1053) 'The boundary
+2026-08-25T00:00:39Z (RFD66606-1053) 'The boundary
  # tags: rfd:details-heading
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1053) '| Direction  | Format                       |
+2026-08-25T00:00:40Z (RFD66606-1053) '| Direction  | Format                       |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1053) '| ---------- | ---------------------------- |
+2026-08-25T00:00:41Z (RFD66606-1053) '| ---------- | ---------------------------- |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1053) '| Internal   | `.usdc`, and `.usda` to read |
+2026-08-25T00:00:42Z (RFD66606-1053) '| Internal   | `.usdc`, and `.usda` to read |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1053) '| Avatar out | VRM, or KHR avatar           |
+2026-08-25T00:00:43Z (RFD66606-1053) '| Avatar out | VRM, or KHR avatar           |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1053) '| Asset out  | glTF binary                  |
+2026-08-25T00:00:44Z (RFD66606-1053) '| Asset out  | glTF binary                  |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1053) '| Archive    | `.usdz`                      |
+2026-08-25T00:00:45Z (RFD66606-1053) '| Archive    | `.usdz`                      |
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1053) '
+2026-08-25T00:00:46Z (RFD66606-1053) '
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1053) 'Convert at the boundary only. A stage that converts in the middle
+2026-08-25T00:00:47Z (RFD66606-1053) 'Convert at the boundary only. A stage that converts in the middle
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1053) 'throws away the composition this RFD exists to keep.
+2026-08-25T00:00:48Z (RFD66606-1053) 'throws away the composition this RFD exists to keep.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-1053) 'Worlds
+2026-08-25T00:00:49Z (RFD66606-1053) 'Worlds
  # tags: rfd:details-heading
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1053) 'A world is a USD stage as well. Its root layer names a spawn point and
+2026-08-25T00:00:50Z (RFD66606-1053) 'A world is a USD stage as well. Its root layer names a spawn point and
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1053) 'sublayers the environment and the props; each prop is a prim with its
+2026-08-25T00:00:51Z (RFD66606-1053) 'sublayers the environment and the props; each prop is a prim with its
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1053) 'mesh, transform and interaction type. The avatar, the world and its
+2026-08-25T00:00:52Z (RFD66606-1053) 'mesh, transform and interaction type. The avatar, the world and its
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1053) 'props stay in separate layers, so loading one never replaces another.
+2026-08-25T00:00:53Z (RFD66606-1053) 'props stay in separate layers, so loading one never replaces another.
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:54Z (RFD66606-1053) 'The runtime
+ # tags: rfd:details-heading
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:55Z (RFD66606-1053) '`fabric-stage-runtime` ships OpenUSD 26.5.0 as an Elixir Hex package.
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:56Z (RFD66606-1053) 'It exposes `include_dir/0`, `lib_dir/0`, and `target/0`, thus every
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:57Z (RFD66606-1053) 'consumer links the same USD build the model images write. (An
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:58Z (RFD66606-1053) 'earlier draft named "the Elixir core from RFD 1019" as the consumer;
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:00:59Z (RFD66606-1053) 'RFD66606-2169 abandoned that plan, and the Hex package survives without
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:01:00Z (RFD66606-1053) 'the studio-core wrapper.)
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
@@ -309,107 +309,52 @@
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1053) 'The runtime
+2026-08-25T00:01:02Z (RFD66606-1053) 'One USD version across the pipeline matters. A layer written by a
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:01:03Z (RFD66606-1053) 'newer build may not open in an older one.
+ # tags: rfd:details
+ Text:RFD1053  1 LINE
+ Text:Written
+
+2026-08-25T00:01:04Z (RFD66606-1053) 'What each model image must do
  # tags: rfd:details-heading
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-1053) '`fabric-stage-runtime` ships OpenUSD 26.5.0 as an Elixir Hex package.
+2026-08-25T00:01:05Z (RFD66606-1053) '`predict()` returns the USD layer, and it returns the transmission
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1053) 'It exposes `include_dir/0`, `lib_dir/0`, and `target/0`, thus every
+2026-08-25T00:01:06Z (RFD66606-1053) 'file as well. The caller keeps the layer, and it ships the other.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1053) 'consumer links the same USD build the model images write. (An
+2026-08-25T00:01:07Z (RFD66606-1053) '
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1053) 'earlier draft named "the Elixir core from RFD 1019" as the consumer;
+2026-08-25T00:01:08Z (RFD66606-1053) 'RFD66606-1036 records this in the model image convention.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1053) 'RFD66606-2169 abandoned that plan, and the Hex package survives without
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-1053) 'the studio-core wrapper.)
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-1053) 'One USD version across the pipeline matters. A layer written by a
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1053) 'newer build may not open in an older one.
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-1053) 'What each model image must do
+2026-08-25T00:01:09Z (RFD66606-1053) 'The problem
  # tags: rfd:details-heading
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1053) '`predict()` returns the USD layer, and it returns the transmission
+2026-08-25T00:01:10Z (RFD66606-1053) 'Every rewrite loses what came before. glTF holds one flat result, thus
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1053) 'file as well. The caller keeps the layer, and it ships the other.
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-1053) 'RFD66606-1036 records this in the model image convention.
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-1053) '
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-1053) 'The problem
- # tags: rfd:details-heading
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1053) 'Every rewrite loses what came before. glTF holds one flat result, thus
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-1053) 'a stage cannot add an opinion without erasing the previous author.
- # tags: rfd:details
- Text:RFD1053  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-1053) '
+2026-08-25T00:01:11Z (RFD66606-1053) 'a stage cannot add an opinion without erasing the previous author.
  # tags: rfd:details
  Text:RFD1053  1 LINE
  Text:Written

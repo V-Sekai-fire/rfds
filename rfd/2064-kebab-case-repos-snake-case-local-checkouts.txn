@@ -9,532 +9,467 @@
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2064) '
- # tags: rfd:hook
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:03Z (RFD66606-2064) 'Repositories across our orgs grew inconsistent names. The loot-action slice under
+2026-08-25T00:00:02Z (RFD66606-2064) 'Repositories across our orgs grew inconsistent names. The loot-action slice under
  # tags: rfd:intrigue
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-2064) '`v-sekai-multiplayer-fabric` mixed kebab-case (`combat-core`, `loot-core`) with snake_case
+2026-08-25T00:00:03Z (RFD66606-2064) '`v-sekai-multiplayer-fabric` mixed kebab-case (`combat-core`, `loot-core`) with snake_case
  # tags: rfd:intrigue
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-2064) '(`entity_packet`), and the `sinew-mocap` org carried `mount_drift` and `vr_bridge` alongside
+2026-08-25T00:00:04Z (RFD66606-2064) '(`entity_packet`), and the `sinew-mocap` org carried `mount_drift` and `vr_bridge` alongside
  # tags: rfd:intrigue
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-2064) 'kebab-case peers.
+2026-08-25T00:00:05Z (RFD66606-2064) 'kebab-case peers.
  # tags: rfd:intrigue
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-2064) '
- # tags: rfd:intrigue
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-2064) 'Check a repository with `gh repo list <org>`, which shows no repository name matching
+2026-08-25T00:00:06Z (RFD66606-2064) 'Check a repository with `gh repo list <org>`, which shows no repository name matching
  # tags: rfd:exit
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2064) '`[_A-Z]`.
+2026-08-25T00:00:07Z (RFD66606-2064) '`[_A-Z]`.
  # tags: rfd:exit
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2064) '
- # tags: rfd:exit
+2026-08-25T00:00:08Z (RFD66606-2064) 'Kebab case repos snake case local checkouts
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2064) 'Kebab case repos snake case local checkouts
- # tags: rfd:details-title
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-2064) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:09Z (RFD66606-2064) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-2064) '
- # tags: rfd:decision
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-2064) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:10Z (RFD66606-2064) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-2064) '
- # tags: rfd:related
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-2064) 'The problem
+2026-08-25T00:00:11Z (RFD66606-2064) 'The problem
  # tags: rfd:details-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2064) 'We want one repo-naming convention so clones, links,
+2026-08-25T00:00:12Z (RFD66606-2064) 'We want one repo-naming convention so clones, links,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-2064) 'and code search stay predictable.
+2026-08-25T00:00:13Z (RFD66606-2064) 'and code search stay predictable.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-2064) 'Context and problem statement
+2026-08-25T00:00:14Z (RFD66606-2064) 'Context and problem statement
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2064) 'Repositories across our orgs grew inconsistent names. The loot-action
+2026-08-25T00:00:15Z (RFD66606-2064) 'Repositories across our orgs grew inconsistent names. The loot-action
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-2064) 'slice under `v-sekai-multiplayer-fabric` mixed kebab-case
+2026-08-25T00:00:16Z (RFD66606-2064) 'slice under `v-sekai-multiplayer-fabric` mixed kebab-case
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-2064) '(`combat-core`, `loot-core`) with snake_case (`entity_packet`), and
+2026-08-25T00:00:17Z (RFD66606-2064) '(`combat-core`, `loot-core`) with snake_case (`entity_packet`), and
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2064) 'the `sinew-mocap` org carried `mount_drift` and `vr_bridge` alongside
+2026-08-25T00:00:18Z (RFD66606-2064) 'the `sinew-mocap` org carried `mount_drift` and `vr_bridge` alongside
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2064) 'kebab-case peers. We want one repo-naming convention so clones, links,
+2026-08-25T00:00:19Z (RFD66606-2064) 'kebab-case peers. We want one repo-naming convention so clones, links,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2064) 'and code search stay predictable.
+2026-08-25T00:00:20Z (RFD66606-2064) 'and code search stay predictable.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-2064) '
+2026-08-25T00:00:21Z (RFD66606-2064) '
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2064) 'The complication is that several C++ repos are consumed as siblings
+2026-08-25T00:00:22Z (RFD66606-2064) 'The complication is that several C++ repos are consumed as siblings
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-2064) '_by directory path_. `solve/CMakeLists.txt` does
+2026-08-25T00:00:23Z (RFD66606-2064) '_by directory path_. `solve/CMakeLists.txt` does
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-2064) '`add_subdirectory(../mount_drift …)`, CI workflows in `solve`,
+2026-08-25T00:00:24Z (RFD66606-2064) '`add_subdirectory(../mount_drift …)`, CI workflows in `solve`,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-2064) '`viewer`, and `packaging` check the repo out to `path: mount_drift`,
+2026-08-25T00:00:25Z (RFD66606-2064) '`viewer`, and `packaging` check the repo out to `path: mount_drift`,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2064) 'and the homebrew formula stages a `mount_drift` resource to
+2026-08-25T00:00:26Z (RFD66606-2064) 'and the homebrew formula stages a `mount_drift` resource to
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2064) '`../mount_drift`. Renaming the local checkout directory to kebab-case
+2026-08-25T00:00:27Z (RFD66606-2064) '`../mount_drift`. Renaming the local checkout directory to kebab-case
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-2064) 'would break every one of those hardcoded paths. So: what should repos
+2026-08-25T00:00:28Z (RFD66606-2064) 'would break every one of those hardcoded paths. So: what should repos
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2064) 'be named, and must the local checkout directory match the repo name?
+2026-08-25T00:00:29Z (RFD66606-2064) 'be named, and must the local checkout directory match the repo name?
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-2064) 'Decision drivers
+2026-08-25T00:00:30Z (RFD66606-2064) 'Decision drivers
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2064) '- Repo names should be uniform and discoverable across orgs.
+2026-08-25T00:00:31Z (RFD66606-2064) '- Repo names should be uniform and discoverable across orgs.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2064) '- The convention must not break build wiring that hardcodes sibling
+2026-08-25T00:00:32Z (RFD66606-2064) '- The convention must not break build wiring that hardcodes sibling
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2064) '  directory paths.
+2026-08-25T00:00:33Z (RFD66606-2064) '  directory paths.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2064) '- Language-native package identifiers (Lean, C++) are snake_case;
+2026-08-25T00:00:34Z (RFD66606-2064) '- Language-native package identifiers (Lean, C++) are snake_case;
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2064) '  local dirs that feed the build should respect that.
+2026-08-25T00:00:35Z (RFD66606-2064) '  local dirs that feed the build should respect that.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2064) '- Renaming a GitHub repo is low-risk: GitHub serves automatic
+2026-08-25T00:00:36Z (RFD66606-2064) '- Renaming a GitHub repo is low-risk: GitHub serves automatic
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2064) '  redirects from the old name, so existing clone URLs and CI checkouts
+2026-08-25T00:00:37Z (RFD66606-2064) '  redirects from the old name, so existing clone URLs and CI checkouts
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-2064) '  keep working.
+2026-08-25T00:00:38Z (RFD66606-2064) '  keep working.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-2064) 'Considered options
+2026-08-25T00:00:39Z (RFD66606-2064) 'Considered options
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-2064) '- Kebab-case everywhere, both GitHub repos and local checkout
+2026-08-25T00:00:40Z (RFD66606-2064) '- Kebab-case everywhere, both GitHub repos and local checkout
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-2064) '  directories.
+2026-08-25T00:00:41Z (RFD66606-2064) '  directories.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-2064) '- snake_case everywhere.
+2026-08-25T00:00:42Z (RFD66606-2064) '- snake_case everywhere.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-2064) '- Kebab-case GitHub repos; local checkout directories keep
+2026-08-25T00:00:43Z (RFD66606-2064) '- Kebab-case GitHub repos; local checkout directories keep
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-2064) '  build-native names.
+2026-08-25T00:00:44Z (RFD66606-2064) '  build-native names.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-2064) 'Decision outcome
+2026-08-25T00:00:45Z (RFD66606-2064) 'Decision outcome
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-2064) 'Chosen option: "Kebab-case GitHub repos; local checkout directories
+2026-08-25T00:00:46Z (RFD66606-2064) 'Chosen option: "Kebab-case GitHub repos; local checkout directories
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-2064) 'keep build-native names", because it gives uniform remote naming
+2026-08-25T00:00:47Z (RFD66606-2064) 'keep build-native names", because it gives uniform remote naming
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-2064) 'while preserving the directory names that CMake, CI, and packaging
+2026-08-25T00:00:48Z (RFD66606-2064) 'while preserving the directory names that CMake, CI, and packaging
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-2064) 'reference as siblings.
+2026-08-25T00:00:49Z (RFD66606-2064) 'reference as siblings.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-2064) '
+2026-08-25T00:00:50Z (RFD66606-2064) '
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-2064) 'The rules:
+2026-08-25T00:00:51Z (RFD66606-2064) 'The rules:
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-2064) '
+2026-08-25T00:00:52Z (RFD66606-2064) '
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-2064) '- GitHub repository names are kebab-case, for example `combat-core`,
+2026-08-25T00:00:53Z (RFD66606-2064) '- GitHub repository names are kebab-case, for example `combat-core`,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-2064) '  `loot-core`, `entity-packet`, `mount-drift`, and `vr-bridge`.
+2026-08-25T00:00:54Z (RFD66606-2064) '  `loot-core`, `entity-packet`, `mount-drift`, and `vr-bridge`.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-2064) '- Local checkout directory names match what the build expects. Where a
+2026-08-25T00:00:55Z (RFD66606-2064) '- Local checkout directory names match what the build expects. Where a
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-2064) '  repo is consumed as a sibling by path
+2026-08-25T00:00:56Z (RFD66606-2064) '  repo is consumed as a sibling by path
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-2064) '  (`add_subdirectory(../mount_drift)`, a CI `path:`, a homebrew
+2026-08-25T00:00:57Z (RFD66606-2064) '  (`add_subdirectory(../mount_drift)`, a CI `path:`, a homebrew
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-2064) '  `resource`), the local directory keeps the snake_case name the
+2026-08-25T00:00:58Z (RFD66606-2064) '  `resource`), the local directory keeps the snake_case name the
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-2064) '  build hardcodes, so local `mount_drift` maps to remote
+2026-08-25T00:00:59Z (RFD66606-2064) '  build hardcodes, so local `mount_drift` maps to remote
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-2064) '  `sinew-mocap/mount-drift`.
+2026-08-25T00:01:00Z (RFD66606-2064) '  `sinew-mocap/mount-drift`.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-2064) '- Where no build path depends on the directory name, the local
+2026-08-25T00:01:01Z (RFD66606-2064) '- Where no build path depends on the directory name, the local
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-2064) '  directory may match the kebab-case repo name. The loot-action slice
+2026-08-25T00:01:02Z (RFD66606-2064) '  directory may match the kebab-case repo name. The loot-action slice
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-2064) '  directories were renamed to kebab-case on this basis
+2026-08-25T00:01:03Z (RFD66606-2064) '  directories were renamed to kebab-case on this basis
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-2064) '  (`combat-core`, `loot-core`, `entity-packet`, and the rest).
+2026-08-25T00:01:04Z (RFD66606-2064) '  (`combat-core`, `loot-core`, `entity-packet`, and the rest).
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-2064) '- Old remote URLs keep working through GitHub redirects. Update
+2026-08-25T00:01:05Z (RFD66606-2064) '- Old remote URLs keep working through GitHub redirects. Update
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-2064) '  `origin` URLs at convenience, and leave the hardcoded `repository:`
+2026-08-25T00:01:06Z (RFD66606-2064) '  `origin` URLs at convenience, and leave the hardcoded `repository:`
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-2064) '  and `resource` strings that already resolve through the redirect.
+2026-08-25T00:01:07Z (RFD66606-2064) '  and `resource` strings that already resolve through the redirect.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-2064) 'Consequences
+2026-08-25T00:01:08Z (RFD66606-2064) 'Consequences
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-2064) '- Good: remote names are uniform and code search / links are
+2026-08-25T00:01:09Z (RFD66606-2064) '- Good: remote names are uniform and code search / links are
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-2064) '  predictable.
+2026-08-25T00:01:10Z (RFD66606-2064) '  predictable.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-2064) '- Good: a rename is just `gh repo rename` plus a local `git remote
+2026-08-25T00:01:11Z (RFD66606-2064) '- Good: a rename is just `gh repo rename` plus a local `git remote
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-2064) 'set-url`; CI that still clones the old name keeps working through
+2026-08-25T00:01:12Z (RFD66606-2064) 'set-url`; CI that still clones the old name keeps working through
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-2064) '  the redirect.
+2026-08-25T00:01:13Z (RFD66606-2064) '  the redirect.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-2064) '- Good: no build breakage, sibling-by-path repos retain the directory
+2026-08-25T00:01:14Z (RFD66606-2064) '- Good: no build breakage, sibling-by-path repos retain the directory
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:25Z (RFD66606-2064) '  name the build hardcodes.
+2026-08-25T00:01:15Z (RFD66606-2064) '  name the build hardcodes.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:26Z (RFD66606-2064) '- Bad: a local directory name can differ from its remote repo name
+2026-08-25T00:01:16Z (RFD66606-2064) '- Bad: a local directory name can differ from its remote repo name
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:27Z (RFD66606-2064) '  (`mount_drift` ↔ `mount-drift`), which can surprise newcomers.
+2026-08-25T00:01:17Z (RFD66606-2064) '  (`mount_drift` ↔ `mount-drift`), which can surprise newcomers.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:28Z (RFD66606-2064) '- Bad: fully propagating kebab-case into the build files (CMake, CI,
+2026-08-25T00:01:18Z (RFD66606-2064) '- Bad: fully propagating kebab-case into the build files (CMake, CI,
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:29Z (RFD66606-2064) '  homebrew) would require coordinated multi-repo PRs through the merge
+2026-08-25T00:01:19Z (RFD66606-2064) '  homebrew) would require coordinated multi-repo PRs through the merge
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:30Z (RFD66606-2064) '  queue; that is deliberately out of scope here.
+2026-08-25T00:01:20Z (RFD66606-2064) '  queue; that is deliberately out of scope here.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:31Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-2064) 'Confirmation
+2026-08-25T00:01:21Z (RFD66606-2064) 'Confirmation
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:33Z (RFD66606-2064) '- `gh repo list <org>` shows no repository name matching `[_A-Z]`.
+2026-08-25T00:01:22Z (RFD66606-2064) '- `gh repo list <org>` shows no repository name matching `[_A-Z]`.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:34Z (RFD66606-2064) '- Repos consumed as siblings by path keep their snake_case checkout
+2026-08-25T00:01:23Z (RFD66606-2064) '- Repos consumed as siblings by path keep their snake_case checkout
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:35Z (RFD66606-2064) '  directory, and `add_subdirectory(../mount_drift)` still resolves
+2026-08-25T00:01:24Z (RFD66606-2064) '  directory, and `add_subdirectory(../mount_drift)` still resolves
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:36Z (RFD66606-2064) '  locally.
+2026-08-25T00:01:25Z (RFD66606-2064) '  locally.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:37Z (RFD66606-2064) '- For `sinew-mocap`: `mount_drift` → `sinew-mocap/mount-drift` and
+2026-08-25T00:01:26Z (RFD66606-2064) '- For `sinew-mocap`: `mount_drift` → `sinew-mocap/mount-drift` and
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:38Z (RFD66606-2064) '  `vr_bridge` → `sinew-mocap/vr-bridge` were renamed on GitHub; the
+2026-08-25T00:01:27Z (RFD66606-2064) '  `vr_bridge` → `sinew-mocap/vr-bridge` were renamed on GitHub; the
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:39Z (RFD66606-2064) '  local checkout directories remain `mount_drift` and `vr_bridge`.
+2026-08-25T00:01:28Z (RFD66606-2064) '  local checkout directories remain `mount_drift` and `vr_bridge`.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:40Z (RFD66606-2064) '
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-2064) 'More information
+2026-08-25T00:01:29Z (RFD66606-2064) 'More information
  # tags: rfd:madr-heading
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:42Z (RFD66606-2064) 'Relates to the org split that created `v-sekai-multiplayer-fabric` and
+2026-08-25T00:01:30Z (RFD66606-2064) 'Relates to the org split that created `v-sekai-multiplayer-fabric` and
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:43Z (RFD66606-2064) 'to the GHCR package-ownership decision; both concern how repositories
+2026-08-25T00:01:31Z (RFD66606-2064) 'to the GHCR package-ownership decision; both concern how repositories
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:44Z (RFD66606-2064) 'are organized and referenced. See
+2026-08-25T00:01:32Z (RFD66606-2064) 'are organized and referenced. See
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:45Z (RFD66606-2064) '`decisions/20260606-org-split-v-sekai-multiplayer-fabric.md` and
+2026-08-25T00:01:33Z (RFD66606-2064) '`decisions/20260606-org-split-v-sekai-multiplayer-fabric.md` and
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written
 
-2026-08-25T00:01:46Z (RFD66606-2064) '`rfd/2009-ghcr-package-ownership-same-repo`.
- # tags: rfd:details
- Text:RFD2064  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-2064) '
+2026-08-25T00:01:34Z (RFD66606-2064) '`rfd/2009-ghcr-package-ownership-same-repo`.
  # tags: rfd:details
  Text:RFD2064  1 LINE
  Text:Written

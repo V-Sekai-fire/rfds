@@ -10,7 +10,7 @@
  Text:Written
 
 2026-10-02T00:00:02Z (RFD66606-2295) '`(likely, p=0.80)`, from one fixed scale
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2295  1 LINE
  Text:Written
 
@@ -20,7 +20,7 @@
  Text:Written
 
 2026-10-02T00:00:04Z (RFD66606-2295) 'closing questions in both, and `scripts/check_confidence_tags.py`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2295  1 LINE
  Text:Written
 
@@ -29,227 +29,227 @@
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:06Z (RFD66606-2295) '
- # tags: rfd:hook
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:07Z (RFD66606-2295) 'Agent replies stated forecasts and diagnoses in the same voice as checked facts. A
+2026-10-02T00:00:06Z (RFD66606-2295) 'Agent replies stated forecasts and diagnoses in the same voice as checked facts. A
  # tags: rfd:intrigue
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:08Z (RFD66606-2295) 'reader cannot weigh a claim that does not say how sure it is.
+2026-10-02T00:00:07Z (RFD66606-2295) 'reader cannot weigh a claim that does not say how sure it is.
  # tags: rfd:intrigue
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:09Z (RFD66606-2295) '
- # tags: rfd:intrigue
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:10Z (RFD66606-2295) 'Run `scripts/check_confidence_tags.py` to check that each tag's number fits its word.
+2026-10-02T00:00:08Z (RFD66606-2295) 'Run `scripts/check_confidence_tags.py` to check that each tag's number fits its word.
  # tags: rfd:exit
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:11Z (RFD66606-2295) '
- # tags: rfd:exit
+2026-10-02T00:00:09Z (RFD66606-2295) 'agent replies state calibrated confidence
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:12Z (RFD66606-2295) 'agent replies state calibrated confidence
- # tags: rfd:details-title
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:13Z (RFD66606-2295) 'A claim an agent has not verified carries its confidence as a word and a
+2026-10-02T00:00:10Z (RFD66606-2295) 'A claim an agent has not verified carries its confidence as a word and a
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:14Z (RFD66606-2295) 'probability in one tag: `(likely, p=0.80)`. The word comes from a fixed
+2026-10-02T00:00:11Z (RFD66606-2295) 'probability in one tag: `(likely, p=0.80)`. The word comes from a fixed
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:15Z (RFD66606-2295) 'scale of five, and the number must fall inside that word's band. A
+2026-10-02T00:00:12Z (RFD66606-2295) 'scale of five, and the number must fall inside that word's band. A
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:16Z (RFD66606-2295) 'verified fact (a command's output, a merged pull request, a passing gate)
+2026-10-02T00:00:13Z (RFD66606-2295) 'verified fact (a command's output, a merged pull request, a passing gate)
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:17Z (RFD66606-2295) 'carries no tag. `scripts/check_confidence_tags.py` reads the bands from
+2026-10-02T00:00:14Z (RFD66606-2295) 'carries no tag. `scripts/check_confidence_tags.py` reads the bands from
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:18Z (RFD66606-2295) 'this RFD's source and fails any tag whose word and number
+2026-10-02T00:00:15Z (RFD66606-2295) 'this RFD's source and fails any tag whose word and number
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:19Z (RFD66606-2295) 'disagree, so the scale and the gate cannot drift apart.
+2026-10-02T00:00:16Z (RFD66606-2295) 'disagree, so the scale and the gate cannot drift apart.
  # tags: rfd:decision
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:20Z (RFD66606-2295) '
- # tags: rfd:decision
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:21Z (RFD66606-2295) 'The scale
+2026-10-02T00:00:17Z (RFD66606-2295) 'The scale
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:22Z (RFD66606-2295) 'The gate reads this table. A tag's number must lie inside its word's
+2026-10-02T00:00:18Z (RFD66606-2295) 'The gate reads this table. A tag's number must lie inside its word's
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:23Z (RFD66606-2295) 'band, lower bound inclusive and upper bound exclusive, except that
+2026-10-02T00:00:19Z (RFD66606-2295) 'band, lower bound inclusive and upper bound exclusive, except that
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:24Z (RFD66606-2295) '`almost certain` includes 1.00.
+2026-10-02T00:00:20Z (RFD66606-2295) '`almost certain` includes 1.00.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:25Z (RFD66606-2295) '
+2026-10-02T00:00:21Z (RFD66606-2295) '
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:26Z (RFD66606-2295) '| word | lower | upper |
+2026-10-02T00:00:22Z (RFD66606-2295) '| word | lower | upper |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:27Z (RFD66606-2295) '| --- | --- | --- |
+2026-10-02T00:00:23Z (RFD66606-2295) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:28Z (RFD66606-2295) '| remote | 0.00 | 0.10 |
+2026-10-02T00:00:24Z (RFD66606-2295) '| remote | 0.00 | 0.10 |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:29Z (RFD66606-2295) '| unlikely | 0.10 | 0.40 |
+2026-10-02T00:00:25Z (RFD66606-2295) '| unlikely | 0.10 | 0.40 |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:30Z (RFD66606-2295) '| even | 0.40 | 0.60 |
+2026-10-02T00:00:26Z (RFD66606-2295) '| even | 0.40 | 0.60 |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:31Z (RFD66606-2295) '| likely | 0.60 | 0.90 |
+2026-10-02T00:00:27Z (RFD66606-2295) '| likely | 0.60 | 0.90 |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:32Z (RFD66606-2295) '| almost certain | 0.90 | 1.00 |
+2026-10-02T00:00:28Z (RFD66606-2295) '| almost certain | 0.90 | 1.00 |
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:33Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:34Z (RFD66606-2295) 'The tag
+2026-10-02T00:00:29Z (RFD66606-2295) 'The tag
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:35Z (RFD66606-2295) 'The form is `(word, p=0.NN)`: the word, a comma, `p=` and the probability
+2026-10-02T00:00:30Z (RFD66606-2295) 'The form is `(word, p=0.NN)`: the word, a comma, `p=` and the probability
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:36Z (RFD66606-2295) 'with two decimals. It follows the claim it qualifies:
+2026-10-02T00:00:31Z (RFD66606-2295) 'with two decimals. It follows the claim it qualifies:
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:37Z (RFD66606-2295) '
+2026-10-02T00:00:32Z (RFD66606-2295) '
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:38Z (RFD66606-2295) '    The walker stays bit-deterministic (likely, p=0.75).
+2026-10-02T00:00:33Z (RFD66606-2295) '    The walker stays bit-deterministic (likely, p=0.75).
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:39Z (RFD66606-2295) '    The 12 modules finish today (unlikely, p=0.25).
+2026-10-02T00:00:34Z (RFD66606-2295) '    The 12 modules finish today (unlikely, p=0.25).
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:40Z (RFD66606-2295) '
+2026-10-02T00:00:35Z (RFD66606-2295) '
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:41Z (RFD66606-2295) 'Only unverified claims carry a tag. A claim the agent checked in the same
+2026-10-02T00:00:36Z (RFD66606-2295) 'Only unverified claims carry a tag. A claim the agent checked in the same
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:42Z (RFD66606-2295) 'turn states the check instead of a probability, because a probability on
+2026-10-02T00:00:37Z (RFD66606-2295) 'turn states the check instead of a probability, because a probability on
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:43Z (RFD66606-2295) 'a checked fact would hide that it was checked.
+2026-10-02T00:00:38Z (RFD66606-2295) 'a checked fact would hide that it was checked.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:44Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:45Z (RFD66606-2295) 'Calibration
+2026-10-02T00:00:39Z (RFD66606-2295) 'Calibration
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:46Z (RFD66606-2295) 'The numbers mean something only if they are calibrated: of the claims
+2026-10-02T00:00:40Z (RFD66606-2295) 'The numbers mean something only if they are calibrated: of the claims
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:47Z (RFD66606-2295) 'tagged `p=0.80`, about four in five should turn out true. A logbook entry
+2026-10-02T00:00:41Z (RFD66606-2295) 'tagged `p=0.80`, about four in five should turn out true. A logbook entry
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:48Z (RFD66606-2295) 'that records tagged forecasts also records how they resolved, so the
+2026-10-02T00:00:42Z (RFD66606-2295) 'that records tagged forecasts also records how they resolved, so the
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:49Z (RFD66606-2295) 'tags can be scored. No such score exists yet; the first logbook entry to
+2026-10-02T00:00:43Z (RFD66606-2295) 'tags can be scored. No such score exists yet; the first logbook entry to
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:50Z (RFD66606-2295) 'carry tagged forecasts starts it.
+2026-10-02T00:00:44Z (RFD66606-2295) 'carry tagged forecasts starts it.
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:45Z (RFD66606-2295) 'Times
+ # tags: rfd:details-heading
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:46Z (RFD66606-2295) 'A time in a reply, a logbook entry, an issue comment or a pull request
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:47Z (RFD66606-2295) 'is written in ISO 8601 with its date and UTC offset:
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:48Z (RFD66606-2295) '`2026-10-02T09:51-07:00`, not `09:51` or `11am`. A forecast's deadline
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:49Z (RFD66606-2295) 'is the same kind of time, so `tagged by 2026-10-02T11:00-07:00` is
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:50Z (RFD66606-2295) 'scorable by a reader in another zone or on another day.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
@@ -259,217 +259,157 @@
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:52Z (RFD66606-2295) 'Times
+2026-10-02T00:00:52Z (RFD66606-2295) 'A piece of work is timed as an ISO 8601 interval, start and end, followed
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:53Z (RFD66606-2295) 'by its duration (operator, 2026-10-02):
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:54Z (RFD66606-2295) '`2026-10-02T20:12:48+00:00/2026-10-02T20:40:10+00:00, PT27M22S`. Work
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:55Z (RFD66606-2295) 'still running gives its start and `open`. No gate checks this yet; it
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:56Z (RFD66606-2295) 'holds by agreement.
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:00:57Z (RFD66606-2295) 'Known unknowns
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:53Z (RFD66606-2295) 'A time in a reply, a logbook entry, an issue comment or a pull request
+2026-10-02T00:00:58Z (RFD66606-2295) 'A plan or a recommendation ends with zero to four questions about the
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:54Z (RFD66606-2295) 'is written in ISO 8601 with its date and UTC offset:
+2026-10-02T00:00:59Z (RFD66606-2295) 'known unknowns whose answers would change it, each answerable in one
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:55Z (RFD66606-2295) '`2026-10-02T09:51-07:00`, not `09:51` or `11am`. A forecast's deadline
+2026-10-02T00:01:00Z (RFD66606-2295) 'word with the recommended option marked. None are asked when nothing is
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:56Z (RFD66606-2295) 'is the same kind of time, so `tagged by 2026-10-02T11:00-07:00` is
+2026-10-02T00:01:01Z (RFD66606-2295) 'unknown, and never more than four (operator, 2026-10-02). Replies are
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:57Z (RFD66606-2295) 'scorable by a reader in another zone or on another day.
+2026-10-02T00:01:02Z (RFD66606-2295) 'not files, so this holds by agreement.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:00:58Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:00:59Z (RFD66606-2295) 'A piece of work is timed as an ISO 8601 interval, start and end, followed
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:00Z (RFD66606-2295) 'by its duration (operator, 2026-10-02):
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:01Z (RFD66606-2295) '`2026-10-02T20:12:48+00:00/2026-10-02T20:40:10+00:00, PT27M22S`. Work
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:02Z (RFD66606-2295) 'still running gives its start and `open`. No gate checks this yet; it
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:03Z (RFD66606-2295) 'holds by agreement.
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:04Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:05Z (RFD66606-2295) 'Known unknowns
+2026-10-02T00:01:03Z (RFD66606-2295) 'Related
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:06Z (RFD66606-2295) 'A plan or a recommendation ends with zero to four questions about the
+2026-10-02T00:01:04Z (RFD66606-2295) 'Lin, Hilton and Evans, "Teaching Models to Express Their Uncertainty in
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:07Z (RFD66606-2295) 'known unknowns whose answers would change it, each answerable in one
+2026-10-02T00:01:05Z (RFD66606-2295) 'Words" (2022, DOI 10.48550/arXiv.2205.14334, registered with DataCite)
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:08Z (RFD66606-2295) 'word with the recommended option marked. None are asked when nothing is
+2026-10-02T00:01:06Z (RFD66606-2295) 'is the method: a model states its confidence in words and numbers, and
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:09Z (RFD66606-2295) 'unknown, and never more than four (operator, 2026-10-02). Replies are
+2026-10-02T00:01:07Z (RFD66606-2295) 'the statement is scored for calibration. RFD66606-2294 (agent knowledge lives
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:10Z (RFD66606-2295) 'not files, so this holds by agreement.
+2026-10-02T00:01:08Z (RFD66606-2295) 'in RFDs) is why the rule is here and not in a desk's memory. `CLAUDE.md`'s
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:11Z (RFD66606-2295) '
+2026-10-02T00:01:09Z (RFD66606-2295) '"How Work Is Verified" rule 3 (a silent skip reads like a pass) is why a
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:12Z (RFD66606-2295) 'Related
+2026-10-02T00:01:10Z (RFD66606-2295) 'verified fact and a guess must look different.
+ # tags: rfd:details
+ Text:RFD2295  1 LINE
+ Text:Written
+
+2026-10-02T00:01:11Z (RFD66606-2295) 'What is checked
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:13Z (RFD66606-2295) 'Lin, Hilton and Evans, "Teaching Models to Express Their Uncertainty in
+2026-10-02T00:01:12Z (RFD66606-2295) '`scripts/check_confidence_tags.py` scans `logbook/*.md` and every RFD
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:14Z (RFD66606-2295) 'Words" (2022, DOI 10.48550/arXiv.2205.14334, registered with DataCite)
+2026-10-02T00:01:13Z (RFD66606-2295) 'source for tags, and fails a tag whose word is not on
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:15Z (RFD66606-2295) 'is the method: a model states its confidence in words and numbers, and
+2026-10-02T00:01:14Z (RFD66606-2295) 'the scale or whose number falls outside the word's band. Its self-test
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:16Z (RFD66606-2295) 'the statement is scored for calibration. RFD66606-2294 (agent knowledge lives
+2026-10-02T00:01:15Z (RFD66606-2295) 'plants one tag of each kind, a correct one, an unknown word and a number
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:17Z (RFD66606-2295) 'in RFDs) is why the rule is here and not in a desk's memory. `CLAUDE.md`'s
+2026-10-02T00:01:16Z (RFD66606-2295) 'outside its band, and asserts the gate passes the first and fails the
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:18Z (RFD66606-2295) '"How Work Is Verified" rule 3 (a silent skip reads like a pass) is why a
+2026-10-02T00:01:17Z (RFD66606-2295) 'other two. Replies are not files, so the gate cannot see them; the rule
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:19Z (RFD66606-2295) 'verified fact and a guess must look different.
+2026-10-02T00:01:18Z (RFD66606-2295) 'holds there by agreement.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:20Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:21Z (RFD66606-2295) 'What is checked
+2026-10-02T00:01:19Z (RFD66606-2295) 'The problem
  # tags: rfd:details-heading
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:22Z (RFD66606-2295) '`scripts/check_confidence_tags.py` scans `logbook/*.md` and every RFD
+2026-10-02T00:01:20Z (RFD66606-2295) 'On 2026-10-02 a reply described a Metal shader port as "Slang-to-MSL"
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:23Z (RFD66606-2295) 'source for tags, and fails a tag whose word is not on
+2026-10-02T00:01:21Z (RFD66606-2295) 'when the shaders were hand-written, and the operator caught it. A bare
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written
 
-2026-10-02T00:01:24Z (RFD66606-2295) 'the scale or whose number falls outside the word's band. Its self-test
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:25Z (RFD66606-2295) 'plants one tag of each kind, a correct one, an unknown word and a number
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:26Z (RFD66606-2295) 'outside its band, and asserts the gate passes the first and fails the
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:27Z (RFD66606-2295) 'other two. Replies are not files, so the gate cannot see them; the rule
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:28Z (RFD66606-2295) 'holds there by agreement.
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:29Z (RFD66606-2295) '
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:30Z (RFD66606-2295) 'The problem
- # tags: rfd:details-heading
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:31Z (RFD66606-2295) 'On 2026-10-02 a reply described a Metal shader port as "Slang-to-MSL"
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:32Z (RFD66606-2295) 'when the shaders were hand-written, and the operator caught it. A bare
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:33Z (RFD66606-2295) 'percentage reads as code rather than as language.
- # tags: rfd:details
- Text:RFD2295  1 LINE
- Text:Written
-
-2026-10-02T00:01:34Z (RFD66606-2295) '
+2026-10-02T00:01:22Z (RFD66606-2295) 'percentage reads as code rather than as language.
  # tags: rfd:details
  Text:RFD2295  1 LINE
  Text:Written

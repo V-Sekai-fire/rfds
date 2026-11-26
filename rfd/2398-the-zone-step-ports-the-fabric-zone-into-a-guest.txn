@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2398) 'the port of the fabric zone into the `guest/fabric` guest.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2398  1 LINE
  Text:Written
 
@@ -14,172 +14,142 @@
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2398) '
- # tags: rfd:hook
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2398) 'Could a frame have two owners or none? With the staging timeout floor removed, A rolls back to
+2026-10-31T00:00:03Z (RFD66606-2398) 'Could a frame have two owners or none? With the staging timeout floor removed, A rolls back to
  # tags: rfd:intrigue
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2398) 'OWNED.
+2026-10-31T00:00:04Z (RFD66606-2398) 'OWNED.
  # tags: rfd:intrigue
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2398) '
- # tags: rfd:intrigue
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2398) 'Run `tests/gate_fabric_two_clients.gd` and check that each client sees the other's pose.
+2026-10-31T00:00:05Z (RFD66606-2398) 'Run `tests/gate_fabric_two_clients.gd` and check that each client sees the other's pose.
  # tags: rfd:exit
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2398) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2398) 'the zone step ports the fabric zone into a guest
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2398) 'the zone step ports the fabric zone into a guest
- # tags: rfd:details-title
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2398) '- `guest/fabric`: `fabric_zone_types.h`, `relativistic_zone.h`, `predictive_bvh.h`, `r128.h` and
+2026-10-31T00:00:07Z (RFD66606-2398) '- `guest/fabric`: `fabric_zone_types.h`, `relativistic_zone.h`, `predictive_bvh.h`, `r128.h` and
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2398) '  the adapter verbatim with `real_t` as `double`; the static `_*_s` routines, intent packing and
+2026-10-31T00:00:08Z (RFD66606-2398) '  the adapter verbatim with `real_t` as `double`; the static `_*_s` routines, intent packing and
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2398) '  ghost helpers verbatim; `initialize`, `physics_process` and `finalize` rewritten as
+2026-10-31T00:00:09Z (RFD66606-2398) '  ghost helpers verbatim; `initialize`, `physics_process` and `finalize` rewritten as
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2398) '  `ZoneCore::open(cfg)` and `tick(now_us)` with the `SceneTree`, `Engine`, `OS` and
+2026-10-31T00:00:10Z (RFD66606-2398) '  `ZoneCore::open(cfg)` and `tick(now_us)` with the `SceneTree`, `Engine`, `OS` and
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2398) '  `ResourceSaver` calls replaced by arguments and byte buffers. The journal verbatim on
+2026-10-31T00:00:11Z (RFD66606-2398) '  `ResourceSaver` calls replaced by arguments and byte buffers. The journal verbatim on
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2398) '  in-memory
+2026-10-31T00:00:12Z (RFD66606-2398) '  in-memory
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2398) '  SQLite with `export()` behind the write capability. The peer rewritten as `fabric_link.cpp`,
+2026-10-31T00:00:13Z (RFD66606-2398) '  SQLite with `export()` behind the write capability. The peer rewritten as `fabric_link.cpp`,
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2398) '  one WebTransport session per neighbour with the channel in the frame. Each player is one
+2026-10-31T00:00:14Z (RFD66606-2398) '  one WebTransport session per neighbour with the channel in the frame. Each player is one
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2398) '  entity. Its pose is one `CH_POSE` datagram a tick, 53 swing-twist triplets as int16, relayed
+2026-10-31T00:00:15Z (RFD66606-2398) '  entity. Its pose is one `CH_POSE` datagram a tick, 53 swing-twist triplets as int16, relayed
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2398) '  with `local_broadcast_raw`.
+2026-10-31T00:00:16Z (RFD66606-2398) '  with `local_broadcast_raw`.
  # tags: rfd:decision
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2398) '
- # tags: rfd:decision
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2398) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:17Z (RFD66606-2398) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2398) '
- # tags: rfd:related
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2398) 'Check and control
+2026-10-31T00:00:18Z (RFD66606-2398) 'Check and control
  # tags: rfd:details-heading
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2398) 'Check: `tests/gate_fabric_two_clients.gd` runs server, worker and two players over loopback and
+2026-10-31T00:00:19Z (RFD66606-2398) 'Check: `tests/gate_fabric_two_clients.gd` runs server, worker and two players over loopback and
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2398) 'reads each client's view of the other's pose; the Lean tests search for a frame with two owners
+2026-10-31T00:00:20Z (RFD66606-2398) 'reads each client's view of the other's pose; the Lean tests search for a frame with two owners
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2398) 'or none across boundary crossings at candidate speeds and link delays. Control: the staging
+2026-10-31T00:00:21Z (RFD66606-2398) 'or none across boundary crossings at candidate speeds and link delays. Control: the staging
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2398) 'timeout floor removed with a one-tick delay rolls A back to OWNED while B's ACK is in flight,
+2026-10-31T00:00:22Z (RFD66606-2398) 'timeout floor removed with a one-tick delay rolls A back to OWNED while B's ACK is in flight,
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2398) 'and
+2026-10-31T00:00:23Z (RFD66606-2398) 'and
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2398) 'the search finds two owners.
+2026-10-31T00:00:24Z (RFD66606-2398) 'the search finds two owners.
  # tags: rfd:details
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2398) '
- # tags: rfd:details
- Text:RFD2398  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2398) '2351
+2026-10-31T00:00:25Z (RFD66606-2398) '2351
  # tags: rebac:verbs-from
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2398) 'rfd-2398 provides fabric-zone-guest-port
+2026-10-31T00:00:26Z (RFD66606-2398) 'rfd-2398 provides fabric-zone-guest-port
  # tags: rebac:relate
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2398) 'rfd-2398 provides zone-core-open-tick
+2026-10-31T00:00:27Z (RFD66606-2398) 'rfd-2398 provides zone-core-open-tick
  # tags: rebac:relate
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2398) 'rfd-2398 is_a guest-runtime
+2026-10-31T00:00:28Z (RFD66606-2398) 'rfd-2398 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2398) 'rfd-2398 spends guest-elf-double
+2026-10-31T00:00:29Z (RFD66606-2398) 'rfd-2398 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2398  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2398) 'rfd-2398 spends guest-ca-capabilities-repos
+2026-10-31T00:00:30Z (RFD66606-2398) 'rfd-2398 spends guest-ca-capabilities-repos
  # tags: rebac:relate
  Text:RFD2398  1 LINE
  Text:Written

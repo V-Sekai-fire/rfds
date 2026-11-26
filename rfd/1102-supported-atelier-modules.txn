@@ -15,7 +15,7 @@
  Text:Written
 
 2026-08-25T00:00:03Z (RFD66606-1102) 'adapters)
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1102  1 LINE
  Text:Written
 
@@ -24,382 +24,337 @@
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1102) '
- # tags: rfd:hook
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-1102) 'Wan-VACE, Pixal3D and MoGe-3 have no upstream GGUF conversion and carry "port needed".
+2026-08-25T00:00:05Z (RFD66606-1102) 'Wan-VACE, Pixal3D and MoGe-3 have no upstream GGUF conversion and carry "port needed".
  # tags: rfd:intrigue
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1102) '
- # tags: rfd:intrigue
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-1102) 'Before you merge a new atelier module, confirm it runs on ggml with GGUF weights at Q4, and
+2026-08-25T00:00:06Z (RFD66606-1102) 'Before you merge a new atelier module, confirm it runs on ggml with GGUF weights at Q4, and
  # tags: rfd:exit
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1102) 'mark it "port needed" when upstream has no GGUF conversion.
+2026-08-25T00:00:07Z (RFD66606-1102) 'mark it "port needed" when upstream has no GGUF conversion.
  # tags: rfd:exit
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1102) '
- # tags: rfd:exit
+2026-08-25T00:00:08Z (RFD66606-1102) 'The supported task catalog, one live source
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-1102) 'The supported task catalog, one live source
- # tags: rfd:details-title
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1102) 'Every module in the atelier catalog runs on **ggml** (RFD66606-2188:
+2026-08-25T00:00:09Z (RFD66606-1102) 'Every module in the atelier catalog runs on **ggml** (RFD66606-2188:
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1102) 'one ggml source across the workspace at `2-contract/ggml/`).
+2026-08-25T00:00:10Z (RFD66606-1102) 'one ggml source across the workspace at `2-contract/ggml/`).
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1102) 'Weights ship as GGUF, quantised to Q4 unless a measurement asks
+2026-08-25T00:00:11Z (RFD66606-1102) 'Weights ship as GGUF, quantised to Q4 unless a measurement asks
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1102) 'for wider precision. Consumer projects wrap the shared runtime;
+2026-08-25T00:00:12Z (RFD66606-1102) 'for wider precision. Consumer projects wrap the shared runtime;
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1102) 'per-model adapters (tokenizer, prompt template, LoRA, sampler
+2026-08-25T00:00:13Z (RFD66606-1102) 'per-model adapters (tokenizer, prompt template, LoRA, sampler
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1102) 'config) are GDScript files loaded under Godot's script sandbox per
+2026-08-25T00:00:14Z (RFD66606-1102) 'config) are GDScript files loaded under Godot's script sandbox per
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1102) 'RFD66606-2230. Models with no upstream GGUF conversion carry a "port
+2026-08-25T00:00:15Z (RFD66606-1102) 'RFD66606-2230. Models with no upstream GGUF conversion carry a "port
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1102) 'needed" note; RFD66606-2428 holds the six-step migration recipe.
+2026-08-25T00:00:16Z (RFD66606-1102) 'needed" note; RFD66606-2428 holds the six-step migration recipe.
  # tags: rfd:details-preamble
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1102) '
- # tags: rfd:details-preamble
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1102) 'Every module in the atelier catalog runs on **ggml** (RFD66606-2188). Weights ship as GGUF,
+2026-08-25T00:00:17Z (RFD66606-1102) 'Every module in the atelier catalog runs on **ggml** (RFD66606-2188). Weights ship as GGUF,
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1102) 'quantised to Q4. The set of Docker images this workspace ships per RFD66606-1036 (plain HTTP,
+2026-08-25T00:00:18Z (RFD66606-1102) 'quantised to Q4. The set of Docker images this workspace ships per RFD66606-1036 (plain HTTP,
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1102) '`/health` + `/predict`, weights at build time, one model per image) runs on the local desktop
+2026-08-25T00:00:19Z (RFD66606-1102) '`/health` + `/predict`, weights at build time, one model per image) runs on the local desktop
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1102) 'GPU per CLAUDE.md via ggml's Vulkan backend (RFD66606-2231's substitute), and feeds the two
+2026-08-25T00:00:20Z (RFD66606-1102) 'GPU per CLAUDE.md via ggml's Vulkan backend (RFD66606-2231's substitute), and feeds the two
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-1102) 'pipelines the workspace operates:
+2026-08-25T00:00:21Z (RFD66606-1102) 'pipelines the workspace operates:
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1102) '
+2026-08-25T00:00:22Z (RFD66606-1102) '
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1102) '- **MaskScore corpus construction** (RFD66606-1173): eight stubs across
+2026-08-25T00:00:23Z (RFD66606-1102) '- **MaskScore corpus construction** (RFD66606-1173): eight stubs across
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1102) '  mesh/depth/pose/keypoints/multimodal/speech/text/video. Five shipped on HF (RFD66606-2164
+2026-08-25T00:00:24Z (RFD66606-1102) '  mesh/depth/pose/keypoints/multimodal/speech/text/video. Five shipped on HF (RFD66606-2164
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1102) '  speech + Rung 1 walking skeleton).
+2026-08-25T00:00:25Z (RFD66606-1102) '  speech + Rung 1 walking skeleton).
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1102) '- **The gacha critical path** (RFD66606-2136): ten-rung ladder from a language prompt to a
+2026-08-25T00:00:26Z (RFD66606-1102) '- **The gacha critical path** (RFD66606-2136): ten-rung ladder from a language prompt to a
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1102) '  public roll-button-dispensed VRM.
+2026-08-25T00:00:27Z (RFD66606-1102) '  public roll-button-dispensed VRM.
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1102) '
+2026-08-25T00:00:28Z (RFD66606-1102) '
  # tags: rfd:decision
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1102) '
- # tags: rfd:decision
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging), RFD66606-1053 (OpenUSD internal + glTF/VRM at edge),
+2026-08-25T00:00:29Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging), RFD66606-1053 (OpenUSD internal + glTF/VRM at edge),
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1102) 'RFD66606-1027 (GPU tier), RFD66606-1173 (multimodal pipeline), RFD66606-2136 (gacha ladder),
+2026-08-25T00:00:30Z (RFD66606-1102) 'RFD66606-1027 (GPU tier), RFD66606-1173 (multimodal pipeline), RFD66606-2136 (gacha ladder),
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1102) 'RFD66606-2164 (Speech stub shipped), RFD66606-2188 (one ggml across workspace), RFD66606-2210
+2026-08-25T00:00:31Z (RFD66606-1102) 'RFD66606-2164 (Speech stub shipped), RFD66606-2188 (one ggml across workspace), RFD66606-2210
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1102) '(atelier native shipping surface), RFD66606-2214 (model bundle SQLite+ZSTD), RFD66606-2229
+2026-08-25T00:00:32Z (RFD66606-1102) '(atelier native shipping surface), RFD66606-2214 (model bundle SQLite+ZSTD), RFD66606-2229
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1102) '(interchangeable-parts consolidation), RFD66606-2230 (ggml adapters in godot-sandbox),
+2026-08-25T00:00:33Z (RFD66606-1102) '(interchangeable-parts consolidation), RFD66606-2230 (ggml adapters in godot-sandbox),
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1102) 'RFD66606-2231 (Vulkan renderer).
+2026-08-25T00:00:34Z (RFD66606-1102) 'RFD66606-2231 (Vulkan renderer).
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1102) 'RFD66606-2428 to RFD66606-2434, the recipe, the two pipelines, the format boundary, the
+2026-08-25T00:00:35Z (RFD66606-1102) 'RFD66606-2428 to RFD66606-2434, the recipe, the two pipelines, the format boundary, the
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1102) 'packaging, the backend API and the consumers, one RFD each.
+2026-08-25T00:00:36Z (RFD66606-1102) 'packaging, the backend API and the consumers, one RFD each.
  # tags: rfd:related
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1102) '
- # tags: rfd:related
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1102) 'Model catalog
+2026-08-25T00:00:37Z (RFD66606-1102) 'Model catalog
  # tags: rfd:details-heading
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1102) '| Task                          | Model                         | Weights (Q4 target)             | Runtime                                        |
+2026-08-25T00:00:38Z (RFD66606-1102) '| Task                          | Model                         | Weights (Q4 target)             | Runtime                                        |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1102) '| ----------------------------- | ----------------------------- | ------------------------------- | ---------------------------------------------- |
+2026-08-25T00:00:39Z (RFD66606-1102) '| ----------------------------- | ----------------------------- | ------------------------------- | ---------------------------------------------- |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1102) '| Text/image reasoning          | Gemma-4-12B (QAT Q4_0)        | ~6 GB Q4_0 GGUF                 | ggml native (llama.cpp Vulkan backend)         |
+2026-08-25T00:00:40Z (RFD66606-1102) '| Text/image reasoning          | Gemma-4-12B (QAT Q4_0)        | ~6 GB Q4_0 GGUF                 | ggml native (llama.cpp Vulkan backend)         |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1102) '| Reward model (image editing)  | Qwen3-VL-8B + EditScore LoRA  | ~4 GB Q4 GGUF + LoRA GGUF sidecar | ggml native; LoRA applied via `Ggml.load_lora` |
+2026-08-25T00:00:41Z (RFD66606-1102) '| Reward model (image editing)  | Qwen3-VL-8B + EditScore LoRA  | ~4 GB Q4 GGUF + LoRA GGUF sidecar | ggml native; LoRA applied via `Ggml.load_lora` |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1102) '| Text/image → image            | Wan-VACE                      | ~7 GB Q4 GGUF                   | ggml native; **port needed** (upstream is torch) |
+2026-08-25T00:00:42Z (RFD66606-1102) '| Text/image → image            | Wan-VACE                      | ~7 GB Q4 GGUF                   | ggml native; **port needed** (upstream is torch) |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1102) '| Image → coarse mesh           | Pixal3D (TRELLIS.2 impl)      | ~2 GB Q4 GGUF                   | ggml native; **port needed**                   |
+2026-08-25T00:00:43Z (RFD66606-1102) '| Image → coarse mesh           | Pixal3D (TRELLIS.2 impl)      | ~2 GB Q4 GGUF                   | ggml native; **port needed**                   |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1102) '| Mesh refinement               | VoxHammer                     | no weights                      | ggml native (procedural, no model file)        |
+2026-08-25T00:00:44Z (RFD66606-1102) '| Mesh refinement               | VoxHammer                     | no weights                      | ggml native (procedural, no model file)        |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1102) '| Image → mesh (fast)           | Pixal3D (TRELLIS.2 impl)      | same row as above               | one repo, one GGUF, one row per Pixal3D-is-TRELLIS.2 memory |
+2026-08-25T00:00:45Z (RFD66606-1102) '| Image → mesh (fast)           | Pixal3D (TRELLIS.2 impl)      | same row as above               | one repo, one GGUF, one row per Pixal3D-is-TRELLIS.2 memory |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1102) '| Metric depth                  | MoGe-3                        | ~250 MB Q4 GGUF                 | ggml native; **port needed**                   |
+2026-08-25T00:00:46Z (RFD66606-1102) '| Metric depth                  | MoGe-3                        | ~250 MB Q4 GGUF                 | ggml native; **port needed**                   |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1102) '| Auto-rig                      | SkinTokens                    | GGUF (skin-tokens.cpp)          | ggml native (vendor's own runtime, already GGML) |
+2026-08-25T00:00:47Z (RFD66606-1102) '| Auto-rig                      | SkinTokens                    | GGUF (skin-tokens.cpp)          | ggml native (vendor's own runtime, already GGML) |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1102) '| Text → motion | Kimodo | GGUF (motion-bricks-cpp rev) | ggml native; see the note below |
+2026-08-25T00:00:48Z (RFD66606-1102) '| Text → motion | Kimodo | GGUF (motion-bricks-cpp rev) | ggml native; see the note below |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1102) '| Mesh segmentation | rf-detr-Seg (RFD66606-1168) | GGUF (segmentation head) | ggml native;
+2026-08-25T00:00:49Z (RFD66606-1102) '| Mesh segmentation | rf-detr-Seg (RFD66606-1168) | GGUF (segmentation head) | ggml native;
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1102) '**port needed** from ONNX | | Layer decomposition | rf-detr-Seg + LaMa inpainting | GGUF each |
+2026-08-25T00:00:50Z (RFD66606-1102) '**port needed** from ONNX | | Layer decomposition | rf-detr-Seg + LaMa inpainting | GGUF each |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1102) 'ggml native; **port needed** | | Mesh retopology | AutoRemesher, xatlas UV | no weights | native
+2026-08-25T00:00:51Z (RFD66606-1102) 'ggml native; **port needed** | | Mesh retopology | AutoRemesher, xatlas UV | no weights | native
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1102) 'binary (format-adjacent tools) |
+2026-08-25T00:00:52Z (RFD66606-1102) 'binary (format-adjacent tools) |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:00:59Z (RFD66606-1102) '
+2026-08-25T00:00:53Z (RFD66606-1102) '
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1102) 'Kimodo writes the SOMA-2603.16858 pose format: 77 rotation vectors, which become 78 with the
+2026-08-25T00:00:54Z (RFD66606-1102) 'Kimodo writes the SOMA-2603.16858 pose format: 77 rotation vectors, which become 78 with the
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1102) 'root identity prepended.
+2026-08-25T00:00:55Z (RFD66606-1102) 'root identity prepended.
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-1102) '
- # tags: rfd:details
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1102) 'Voice + ASR (RFD66606-2164)
+2026-08-25T00:00:56Z (RFD66606-1102) 'Voice + ASR (RFD66606-2164)
  # tags: rfd:details-heading
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-1102) '| Task                          | Model                                      | Weights (Q4 target)   | Runtime                                    |
+2026-08-25T00:00:57Z (RFD66606-1102) '| Task                          | Model                                      | Weights (Q4 target)   | Runtime                                    |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-1102) '| ----------------------------- | ------------------------------------------ | --------------------- | ------------------------------------------ |
+2026-08-25T00:00:58Z (RFD66606-1102) '| ----------------------------- | ------------------------------------------ | --------------------- | ------------------------------------------ |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:06Z (RFD66606-1102) '| Voice cloning                 | Qwen3-TTS-12Hz-1.7B-Base                   | ~900 MB Q4 GGUF       | ggml native; **port needed**              |
+2026-08-25T00:00:59Z (RFD66606-1102) '| Voice cloning                 | Qwen3-TTS-12Hz-1.7B-Base                   | ~900 MB Q4 GGUF       | ggml native; **port needed**              |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1102) '| ASR (canonical)               | Parakeet TDT 0.6B v3 (CC-BY-4.0)           | ~350 MB Q4 GGUF       | ggml native; **port needed** from Nemo    |
+2026-08-25T00:01:00Z (RFD66606-1102) '| ASR (canonical)               | Parakeet TDT 0.6B v3 (CC-BY-4.0)           | ~350 MB Q4 GGUF       | ggml native; **port needed** from Nemo    |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1102) '| ASR panel (7 tracks)          | Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2, Voxtral-IPA, Gemma-4-12B GBNF-IPA, allosaurus universal + eng | ~various Q4 GGUFs     | ggml native for each; Gemma-4-12B already GGUF; Voxtral + wav2vec2 + allosaurus **ports needed** |
+2026-08-25T00:01:01Z (RFD66606-1102) '| ASR panel (7 tracks)          | Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2, Voxtral-IPA, Gemma-4-12B GBNF-IPA, allosaurus universal + eng | ~various Q4 GGUFs     | ggml native for each; Gemma-4-12B already GGUF; Voxtral + wav2vec2 + allosaurus **ports needed** |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1102) '| Speaker embedding             | Microsoft WavLM Base+ SV                   | ~100 MB Q4 GGUF       | ggml native; **port needed**              |
+2026-08-25T00:01:02Z (RFD66606-1102) '| Speaker embedding             | Microsoft WavLM Base+ SV                   | ~100 MB Q4 GGUF       | ggml native; **port needed**              |
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1102) '
- # tags: rfd:details
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-1102) 'Related
+2026-08-25T00:01:03Z (RFD66606-1102) 'Related
  # tags: rfd:details-heading
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging), RFD66606-1053 (OpenUSD internal + glTF/VRM
+2026-08-25T00:01:04Z (RFD66606-1102) 'RFD66606-1036 (Docker packaging), RFD66606-1053 (OpenUSD internal + glTF/VRM
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1102) 'at edge), RFD66606-1094 (multi-image routing), RFD66606-1084 (avatar pipeline
+2026-08-25T00:01:05Z (RFD66606-1102) 'at edge), RFD66606-1094 (multi-image routing), RFD66606-1084 (avatar pipeline
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1102) 'client side), RFD66606-1088 (HTTPS setup), RFD66606-1085 (code map), RFD66606-1105
+2026-08-25T00:01:06Z (RFD66606-1102) 'client side), RFD66606-1088 (HTTPS setup), RFD66606-1085 (code map), RFD66606-1105
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1102) '(webcam avatar control), RFD66606-1108 (XR floor anchoring), RFD66606-2188
+2026-08-25T00:01:07Z (RFD66606-1102) '(webcam avatar control), RFD66606-1108 (XR floor anchoring), RFD66606-2188
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1102) '(one ggml across workspace), RFD66606-2214 (model bundle SQLite+ZSTD),
+2026-08-25T00:01:08Z (RFD66606-1102) '(one ggml across workspace), RFD66606-2214 (model bundle SQLite+ZSTD),
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1102) 'RFD66606-2229 (interchangeable-parts consolidation policy), RFD66606-2230
+2026-08-25T00:01:09Z (RFD66606-1102) 'RFD66606-2229 (interchangeable-parts consolidation policy), RFD66606-2230
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1102) '(ggml adapters in godot-sandbox), RFD66606-2210 (atelier shipping
+2026-08-25T00:01:10Z (RFD66606-1102) '(ggml adapters in godot-sandbox), RFD66606-2210 (atelier shipping
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1102) 'surface, native).
- # tags: rfd:details
- Text:RFD1102  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-1102) '
+2026-08-25T00:01:11Z (RFD66606-1102) 'surface, native).
  # tags: rfd:details
  Text:RFD1102  1 LINE
  Text:Written

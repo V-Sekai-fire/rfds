@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-08-30T00:00:01Z (RFD66606-2134) 'mutual TLS on the weftspun-fdb cluster, and the client identity a service presents
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2134  1 LINE
  Text:Written
 
 2026-08-30T00:00:02Z (RFD66606-2134) 'weftspun-fdb on Fly; spot-broker as the first client; any later FDB client
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2134  1 LINE
  Text:Written
 
@@ -19,282 +19,282 @@
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:04Z (RFD66606-2134) '
- # tags: rfd:hook
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:05Z (RFD66606-2134) 'The weftspun-fdb cluster came up plaintext, and its backup could not
+2026-08-30T00:00:04Z (RFD66606-2134) 'The weftspun-fdb cluster came up plaintext, and its backup could not
  # tags: rfd:intrigue
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:06Z (RFD66606-2134) 'reach the blob store: FoundationDB uses one TLS policy for peers and
+2026-08-30T00:00:05Z (RFD66606-2134) 'reach the blob store: FoundationDB uses one TLS policy for peers and
  # tags: rfd:intrigue
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:07Z (RFD66606-2134) 'for S3, so a cluster with no trust store cannot speak HTTPS to Tigris.
+2026-08-30T00:00:06Z (RFD66606-2134) 'for S3, so a cluster with no trust store cannot speak HTTPS to Tigris.
  # tags: rfd:intrigue
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:08Z (RFD66606-2134) '
- # tags: rfd:intrigue
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:09Z (RFD66606-2134) 'Check a new cluster or client certificate against the v3 profile before you push it. The
+2026-08-30T00:00:07Z (RFD66606-2134) 'Check a new cluster or client certificate against the v3 profile before you push it. The
  # tags: rfd:exit
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:10Z (RFD66606-2134) 'sections below hold the profile and the procedure on a live plaintext cluster.
+2026-08-30T00:00:08Z (RFD66606-2134) 'sections below hold the profile and the procedure on a live plaintext cluster.
  # tags: rfd:exit
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:11Z (RFD66606-2134) '
- # tags: rfd:exit
+2026-08-30T00:00:09Z (RFD66606-2134) 'Cluster TLS is decided before data, and certificates carry v3 extensions
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:12Z (RFD66606-2134) 'Cluster TLS is decided before data, and certificates carry v3 extensions
- # tags: rfd:details-title
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:13Z (RFD66606-2134) 'Mutual TLS from a private CA, per-machine certificates named by Fly
+2026-08-30T00:00:10Z (RFD66606-2134) 'Mutual TLS from a private CA, per-machine certificates named by Fly
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:14Z (RFD66606-2134) 'machine ID, and one client certificate per consuming service, all
+2026-08-30T00:00:11Z (RFD66606-2134) 'machine ID, and one client certificate per consuming service, all
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:15Z (RFD66606-2134) 'carrying X.509v3 extensions, because FoundationDB's preverification
+2026-08-30T00:00:12Z (RFD66606-2134) 'carrying X.509v3 extensions, because FoundationDB's preverification
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:16Z (RFD66606-2134) 'rejects a bare `openssl req -x509` CA as `invalid CA certificate`.
+2026-08-30T00:00:13Z (RFD66606-2134) 'rejects a bare `openssl req -x509` CA as `invalid CA certificate`.
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:17Z (RFD66606-2134) 'The profile, the local Docker proof with its negative control, and the
+2026-08-30T00:00:14Z (RFD66606-2134) 'The profile, the local Docker proof with its negative control, and the
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:18Z (RFD66606-2134) 'full procedure are in DETAILS.md.
+2026-08-30T00:00:15Z (RFD66606-2134) 'full procedure are in DETAILS.md.
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:19Z (RFD66606-2134) '
+2026-08-30T00:00:16Z (RFD66606-2134) '
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:20Z (RFD66606-2134) 'A client is a TLS peer like any other: it presents its own leaf
+2026-08-30T00:00:17Z (RFD66606-2134) 'A client is a TLS peer like any other: it presents its own leaf
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:21Z (RFD66606-2134) '(`CN=fdb-spot-broker.chibifire.com`) through the `FDB_TLS_*` env vars
+2026-08-30T00:00:18Z (RFD66606-2134) '(`CN=fdb-spot-broker.chibifire.com`) through the `FDB_TLS_*` env vars
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:22Z (RFD66606-2134) 'libfdb_c reads, and verifies the cluster with the same rule the
+2026-08-30T00:00:19Z (RFD66606-2134) 'libfdb_c reads, and verifies the cluster with the same rule the
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:23Z (RFD66606-2134) 'cluster uses (`Check.Valid=1,S.CN>=fdb-,S.CN<=.chibifire.com`).
+2026-08-30T00:00:20Z (RFD66606-2134) 'cluster uses (`Check.Valid=1,S.CN>=fdb-,S.CN<=.chibifire.com`).
  # tags: rfd:decision
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:24Z (RFD66606-2134) '
- # tags: rfd:decision
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:25Z (RFD66606-2134) 'Verification
+2026-08-30T00:00:21Z (RFD66606-2134) 'Verification
  # tags: rfd:section-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:26Z (RFD66606-2134) 'A matched pair in local Docker before any push: v3 certificates form a
+2026-08-30T00:00:22Z (RFD66606-2134) 'A matched pair in local Docker before any push: v3 certificates form a
  # tags: rfd:section
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:27Z (RFD66606-2134) 'database; the previous extension-less certificates reproduce the
+2026-08-30T00:00:23Z (RFD66606-2134) 'database; the previous extension-less certificates reproduce the
  # tags: rfd:section
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:28Z (RFD66606-2134) 'production failure on the same server and rule. In prod, a ledger
+2026-08-30T00:00:24Z (RFD66606-2134) 'production failure on the same server and rule. In prod, a ledger
  # tags: rfd:section
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:29Z (RFD66606-2134) 'event survived a full machine replacement and read back over TLS.
+2026-08-30T00:00:25Z (RFD66606-2134) 'event survived a full machine replacement and read back over TLS.
  # tags: rfd:section
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:30Z (RFD66606-2134) '
- # tags: rfd:section
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:31Z (RFD66606-2134) 'The known wall
+2026-08-30T00:00:26Z (RFD66606-2134) 'The known wall
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:32Z (RFD66606-2134) 'The known wall is recorded in datasource-store's fdb-entrypoint and
+2026-08-30T00:00:27Z (RFD66606-2134) 'The known wall is recorded in datasource-store's fdb-entrypoint and
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:33Z (RFD66606-2134) 'held exactly: there is no in-place path from a plaintext cluster to a
+2026-08-30T00:00:28Z (RFD66606-2134) 'held exactly: there is no in-place path from a plaintext cluster to a
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:34Z (RFD66606-2134) 'TLS one, because `:tls` is part of a coordinator's address and the
+2026-08-30T00:00:29Z (RFD66606-2134) 'TLS one, because `:tls` is part of a coordinator's address and the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:35Z (RFD66606-2134) 'coordinated state on disk names addresses that no longer exist. The
+2026-08-30T00:00:30Z (RFD66606-2134) 'coordinated state on disk names addresses that no longer exist. The
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:36Z (RFD66606-2134) 'gated `WEFT_FDB_RESET=1` wipe is the remedy, so TLS is decided before
+2026-08-30T00:00:31Z (RFD66606-2134) 'gated `WEFT_FDB_RESET=1` wipe is the remedy, so TLS is decided before
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:37Z (RFD66606-2134) 'there is data worth keeping; this cluster held one test event.
+2026-08-30T00:00:32Z (RFD66606-2134) 'there is data worth keeping; this cluster held one test event.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:38Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:39Z (RFD66606-2134) 'The failure this profile exists for
+2026-08-30T00:00:33Z (RFD66606-2134) 'The failure this profile exists for
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:40Z (RFD66606-2134) 'With certificates from a bare `openssl req -x509` CA and extension-less
+2026-08-30T00:00:34Z (RFD66606-2134) 'With certificates from a bare `openssl req -x509` CA and extension-less
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:41Z (RFD66606-2134) '`openssl x509 -req` leaves, every fdbserver logged, on each handshake:
+2026-08-30T00:00:35Z (RFD66606-2134) '`openssl x509 -req` leaves, every fdbserver logged, on each handshake:
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:42Z (RFD66606-2134) '
+2026-08-30T00:00:36Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:43Z (RFD66606-2134) '    Type="TLSPolicyFailure" Reason="preverification failed"
+2026-08-30T00:00:37Z (RFD66606-2134) '    Type="TLSPolicyFailure" Reason="preverification failed"
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:44Z (RFD66606-2134) '    VerifyError="invalid CA certificate"
+2026-08-30T00:00:38Z (RFD66606-2134) '    VerifyError="invalid CA certificate"
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:45Z (RFD66606-2134) '
+2026-08-30T00:00:39Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:46Z (RFD66606-2134) 'and `status` reported the cluster's coordinators unreachable, the same
+2026-08-30T00:00:40Z (RFD66606-2134) 'and `status` reported the cluster's coordinators unreachable, the same
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:47Z (RFD66606-2134) 'line a network fault produces. Read the trace event, not the status
+2026-08-30T00:00:41Z (RFD66606-2134) 'line a network fault produces. Read the trace event, not the status
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:48Z (RFD66606-2134) 'line.
+2026-08-30T00:00:42Z (RFD66606-2134) 'line.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:49Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:00:50Z (RFD66606-2134) 'The profile
+2026-08-30T00:00:43Z (RFD66606-2134) 'The profile
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:51Z (RFD66606-2134) 'The 10-year CA and 2-year leaf numbers below were retracted by
+2026-08-30T00:00:44Z (RFD66606-2134) 'The 10-year CA and 2-year leaf numbers below were retracted by
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:52Z (RFD66606-2134) 'RFD66606-2145 on 2026-09-01. The current guidance is 25-year `notAfter` on
+2026-08-30T00:00:45Z (RFD66606-2134) 'RFD66606-2145 on 2026-09-01. The current guidance is 25-year `notAfter` on
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:53Z (RFD66606-2134) 'the offline root with 5-year policy rotation, 3-year intermediates, and
+2026-08-30T00:00:46Z (RFD66606-2134) 'the offline root with 5-year policy rotation, 3-year intermediates, and
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:54Z (RFD66606-2134) '90-day service leaves; see RFD66606-2145 and its `references/` for the CFF
+2026-08-30T00:00:47Z (RFD66606-2134) '90-day service leaves; see RFD66606-2145 and its `references/` for the CFF
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:55Z (RFD66606-2134) 'citations. The lines are kept in place so a reader working from an
+2026-08-30T00:00:48Z (RFD66606-2134) 'citations. The lines are kept in place so a reader working from an
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:56Z (RFD66606-2134) 'older linked reference can see what the values used to say and what
+2026-08-30T00:00:49Z (RFD66606-2134) 'older linked reference can see what the values used to say and what
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:57Z (RFD66606-2134) 'they moved to.
+2026-08-30T00:00:50Z (RFD66606-2134) 'they moved to.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:58Z (RFD66606-2134) '
+2026-08-30T00:00:51Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:00:59Z (RFD66606-2134) 'CA (`fdb-ca.chibifire.com`, 4096-bit RSA, 10 years):
+2026-08-30T00:00:52Z (RFD66606-2134) 'CA (`fdb-ca.chibifire.com`, 4096-bit RSA, 10 years):
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:53Z (RFD66606-2134) '
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:54Z (RFD66606-2134) '    basicConstraints = critical, CA:true
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:55Z (RFD66606-2134) '    keyUsage         = critical, keyCertSign, cRLSign
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:56Z (RFD66606-2134) '    subjectKeyIdentifier = hash
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:57Z (RFD66606-2134) '
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:58Z (RFD66606-2134) 'Leaf (2048-bit RSA, 2 years), one per machine and one per client
+ # tags: rfd:details
+ Text:RFD2134  1 LINE
+ Text:Written
+
+2026-08-30T00:00:59Z (RFD66606-2134) 'service:
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
@@ -304,512 +304,447 @@
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:01Z (RFD66606-2134) '    basicConstraints = critical, CA:true
+2026-08-30T00:01:01Z (RFD66606-2134) '    basicConstraints = CA:false
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:02Z (RFD66606-2134) '    keyUsage         = critical, keyCertSign, cRLSign
+2026-08-30T00:01:02Z (RFD66606-2134) '    keyUsage         = critical, digitalSignature, keyEncipherment
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:03Z (RFD66606-2134) '    subjectKeyIdentifier = hash
+2026-08-30T00:01:03Z (RFD66606-2134) '    extendedKeyUsage = serverAuth, clientAuth
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:04Z (RFD66606-2134) '
+2026-08-30T00:01:04Z (RFD66606-2134) '    subjectKeyIdentifier   = hash
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:05Z (RFD66606-2134) 'Leaf (2048-bit RSA, 2 years), one per machine and one per client
+2026-08-30T00:01:05Z (RFD66606-2134) '    authorityKeyIdentifier = keyid, issuer
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:06Z (RFD66606-2134) 'service:
+2026-08-30T00:01:06Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:07Z (RFD66606-2134) '
+2026-08-30T00:01:07Z (RFD66606-2134) 'Subjects: `fdb-<fly machine id>.chibifire.com` for cluster machines,
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:08Z (RFD66606-2134) '    basicConstraints = CA:false
+2026-08-30T00:01:08Z (RFD66606-2134) '`fdb-<service>.chibifire.com` for clients
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:09Z (RFD66606-2134) '    keyUsage         = critical, digitalSignature, keyEncipherment
+2026-08-30T00:01:09Z (RFD66606-2134) '(`fdb-spot-broker.chibifire.com`). The machine ID survives
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:10Z (RFD66606-2134) '    extendedKeyUsage = serverAuth, clientAuth
+2026-08-30T00:01:10Z (RFD66606-2134) '`fly machine update`, which the entrypoint records a NIC-named scheme
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:11Z (RFD66606-2134) '    subjectKeyIdentifier   = hash
+2026-08-30T00:01:11Z (RFD66606-2134) 'failing. All pass the one verify rule:
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:12Z (RFD66606-2134) '    authorityKeyIdentifier = keyid, issuer
+2026-08-30T00:01:12Z (RFD66606-2134) '`Check.Valid=1,S.CN>=fdb-,S.CN<=.chibifire.com`.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:13Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:14Z (RFD66606-2134) 'Subjects: `fdb-<fly machine id>.chibifire.com` for cluster machines,
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:15Z (RFD66606-2134) '`fdb-<service>.chibifire.com` for clients
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:16Z (RFD66606-2134) '(`fdb-spot-broker.chibifire.com`). The machine ID survives
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:17Z (RFD66606-2134) '`fly machine update`, which the entrypoint records a NIC-named scheme
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:18Z (RFD66606-2134) 'failing. All pass the one verify rule:
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:19Z (RFD66606-2134) '`Check.Valid=1,S.CN>=fdb-,S.CN<=.chibifire.com`.
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:20Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:21Z (RFD66606-2134) 'The proof, run before the push
+2026-08-30T00:01:13Z (RFD66606-2134) 'The proof, run before the push
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:22Z (RFD66606-2134) 'One `foundationdb/foundationdb:7.3.63` container, one fdbserver on
+2026-08-30T00:01:14Z (RFD66606-2134) 'One `foundationdb/foundationdb:7.3.63` container, one fdbserver on
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:23Z (RFD66606-2134) '`127.0.0.1:4500:tls`, the cluster's verify rule on both ends:
+2026-08-30T00:01:15Z (RFD66606-2134) '`127.0.0.1:4500:tls`, the cluster's verify rule on both ends:
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:24Z (RFD66606-2134) '
+2026-08-30T00:01:16Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:25Z (RFD66606-2134) '| certificates | result |
+2026-08-30T00:01:17Z (RFD66606-2134) '| certificates | result |
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:26Z (RFD66606-2134) '| --- | --- |
+2026-08-30T00:01:18Z (RFD66606-2134) '| --- | --- |
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:27Z (RFD66606-2134) '| v3 profile above | handshake clean, `configure new single memory` creates the database, 0 TLSPolicyFailure |
+2026-08-30T00:01:19Z (RFD66606-2134) '| v3 profile above | handshake clean, `configure new single memory` creates the database, 0 TLSPolicyFailure |
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:28Z (RFD66606-2134) '| extension-less (what production had) | `The database is unavailable`: the production symptom, reproduced |
+2026-08-30T00:01:20Z (RFD66606-2134) '| extension-less (what production had) | `The database is unavailable`: the production symptom, reproduced |
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:29Z (RFD66606-2134) '
+2026-08-30T00:01:21Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:30Z (RFD66606-2134) 'The negative control is the point: the same server, rule, and commands
+2026-08-30T00:01:22Z (RFD66606-2134) 'The negative control is the point: the same server, rule, and commands
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:31Z (RFD66606-2134) 'separate the two cert sets, so the diagnosis is the extensions and not
+2026-08-30T00:01:23Z (RFD66606-2134) 'separate the two cert sets, so the diagnosis is the extensions and not
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:32Z (RFD66606-2134) 'the rule, the addresses, or Fly.
+2026-08-30T00:01:24Z (RFD66606-2134) 'the rule, the addresses, or Fly.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:33Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:34Z (RFD66606-2134) 'The procedure on a live plaintext cluster
+2026-08-30T00:01:25Z (RFD66606-2134) 'The procedure on a live plaintext cluster
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:35Z (RFD66606-2134) '1. Certificates as above; base64 each PEM (`base64 -w0`).
+2026-08-30T00:01:26Z (RFD66606-2134) '1. Certificates as above; base64 each PEM (`base64 -w0`).
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:36Z (RFD66606-2134) '2. `fly secrets set` on weftspun-fdb: `FDB_TLS_CA_B64`, and per machine
+2026-08-30T00:01:27Z (RFD66606-2134) '2. `fly secrets set` on weftspun-fdb: `FDB_TLS_CA_B64`, and per machine
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:37Z (RFD66606-2134) '   `FDB_TLS_CERT_<machine id>_B64` / `FDB_TLS_KEY_<machine id>_B64`.
+2026-08-30T00:01:28Z (RFD66606-2134) '   `FDB_TLS_CERT_<machine id>_B64` / `FDB_TLS_KEY_<machine id>_B64`.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:38Z (RFD66606-2134) '   The entrypoint takes the pair addressed to the machine and refuses
+2026-08-30T00:01:29Z (RFD66606-2134) '   The entrypoint takes the pair addressed to the machine and refuses
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:39Z (RFD66606-2134) '   to borrow another's.
+2026-08-30T00:01:30Z (RFD66606-2134) '   to borrow another's.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:40Z (RFD66606-2134) '3. The cluster will NOT form: coordinated state on disk names the
+2026-08-30T00:01:31Z (RFD66606-2134) '3. The cluster will NOT form: coordinated state on disk names the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:41Z (RFD66606-2134) '   plaintext addresses. This is the entrypoint's documented wall.
+2026-08-30T00:01:32Z (RFD66606-2134) '   plaintext addresses. This is the entrypoint's documented wall.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:42Z (RFD66606-2134) '   `fly secrets set WEFT_FDB_RESET=1` wipes the data directories on
+2026-08-30T00:01:33Z (RFD66606-2134) '   `fly secrets set WEFT_FDB_RESET=1` wipes the data directories on
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:43Z (RFD66606-2134) '   restart; the lowest address reconfigures the database.
+2026-08-30T00:01:34Z (RFD66606-2134) '   restart; the lowest address reconfigures the database.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:44Z (RFD66606-2134) '4. Verify with a TLS-armed fdbcli (`--tls_certificate_file`,
+2026-08-30T00:01:35Z (RFD66606-2134) '4. Verify with a TLS-armed fdbcli (`--tls_certificate_file`,
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:45Z (RFD66606-2134) '   `--tls_key_file`, `--tls_ca_file`, `--tls_verify_peers`), then
+2026-08-30T00:01:36Z (RFD66606-2134) '   `--tls_key_file`, `--tls_ca_file`, `--tls_verify_peers`), then
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:46Z (RFD66606-2134) '   `fly secrets unset WEFT_FDB_RESET` and verify again; the second
+2026-08-30T00:01:37Z (RFD66606-2134) '   `fly secrets unset WEFT_FDB_RESET` and verify again; the second
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:47Z (RFD66606-2134) '   check proves a restart no longer wipes.
+2026-08-30T00:01:38Z (RFD66606-2134) '   check proves a restart no longer wipes.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:48Z (RFD66606-2134) '5. Each client service: its own leaf via `FDB_TLS_CERT_B64` /
+2026-08-30T00:01:39Z (RFD66606-2134) '5. Each client service: its own leaf via `FDB_TLS_CERT_B64` /
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:49Z (RFD66606-2134) '   `FDB_TLS_KEY_B64` / `FDB_TLS_CA_B64` secrets, materialised to files
+2026-08-30T00:01:40Z (RFD66606-2134) '   `FDB_TLS_KEY_B64` / `FDB_TLS_CA_B64` secrets, materialised to files
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:50Z (RFD66606-2134) '   at start and handed to libfdb_c through `FDB_TLS_CERTIFICATE_FILE`,
+2026-08-30T00:01:41Z (RFD66606-2134) '   at start and handed to libfdb_c through `FDB_TLS_CERTIFICATE_FILE`,
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:51Z (RFD66606-2134) '   `FDB_TLS_KEY_FILE`, `FDB_TLS_CA_FILE`, `FDB_TLS_VERIFY_PEERS`; the
+2026-08-30T00:01:42Z (RFD66606-2134) '   `FDB_TLS_KEY_FILE`, `FDB_TLS_CA_FILE`, `FDB_TLS_VERIFY_PEERS`; the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:52Z (RFD66606-2134) '   cluster string gains `:tls` on every coordinator.
+2026-08-30T00:01:43Z (RFD66606-2134) '   cluster string gains `:tls` on every coordinator.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:53Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:01:54Z (RFD66606-2134) 'What the prod verification measured
+2026-08-30T00:01:44Z (RFD66606-2134) 'What the prod verification measured
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:55Z (RFD66606-2134) 'spot-broker's `POST /target/zero` wrote a ledger event through the
+2026-08-30T00:01:45Z (RFD66606-2134) 'spot-broker's `POST /target/zero` wrote a ledger event through the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:56Z (RFD66606-2134) 'iceoryx2 bus into the TLS cluster. The broker machine was then fully
+2026-08-30T00:01:46Z (RFD66606-2134) 'iceoryx2 bus into the TLS cluster. The broker machine was then fully
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:57Z (RFD66606-2134) 'replaced by a deploy (no volume exists on that app), and `GET /status`
+2026-08-30T00:01:47Z (RFD66606-2134) 'replaced by a deploy (no volume exists on that app), and `GET /status`
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:58Z (RFD66606-2134) 'on the new machine returned the same event. That is the durability the
+2026-08-30T00:01:48Z (RFD66606-2134) 'on the new machine returned the same event. That is the durability the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:01:59Z (RFD66606-2134) 'architecture claims, measured: the machine held nothing, and the data
+2026-08-30T00:01:49Z (RFD66606-2134) 'architecture claims, measured: the machine held nothing, and the data
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:00Z (RFD66606-2134) 'came back from the cluster.
+2026-08-30T00:01:50Z (RFD66606-2134) 'came back from the cluster.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:01Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:02:02Z (RFD66606-2134) 'The backup, measured locally and blocked on SNI in prod
+2026-08-30T00:01:51Z (RFD66606-2134) 'The backup, measured locally and blocked on SNI in prod
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:03Z (RFD66606-2134) 'With the CA present the trust bundle forms (151 anchors) and OpenSSL
+2026-08-30T00:01:52Z (RFD66606-2134) 'With the CA present the trust bundle forms (151 anchors) and OpenSSL
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:04Z (RFD66606-2134) 'verifies Tigris against it, yet `fdbbackup` times out. The trace names
+2026-08-30T00:01:53Z (RFD66606-2134) 'verifies Tigris against it, yet `fdbbackup` times out. The trace names
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:05Z (RFD66606-2134) 'it: `N2_ConnectHandshakeError ErrorMsg="stream truncated"` against both
+2026-08-30T00:01:54Z (RFD66606-2134) 'it: `N2_ConnectHandshakeError ErrorMsg="stream truncated"` against both
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:06Z (RFD66606-2134) 'the A and the AAAA record. FoundationDB's blobstore client sends no SNI,
+2026-08-30T00:01:55Z (RFD66606-2134) 'the A and the AAAA record. FoundationDB's blobstore client sends no SNI,
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:07Z (RFD66606-2134) 'and Tigris's edge requires it; curl succeeds from the same machine
+2026-08-30T00:01:56Z (RFD66606-2134) 'and Tigris's edge requires it; curl succeeds from the same machine
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:08Z (RFD66606-2134) 'because curl sends it. The knob `resolve_prefer_ipv4_addr` changes which
+2026-08-30T00:01:57Z (RFD66606-2134) 'because curl sends it. The knob `resolve_prefer_ipv4_addr` changes which
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:09Z (RFD66606-2134) 'address dies, not whether.
+2026-08-30T00:01:58Z (RFD66606-2134) 'address dies, not whether.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:10Z (RFD66606-2134) '
+2026-08-30T00:01:59Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:11Z (RFD66606-2134) 'The controlled counterpart ran in local Docker against
+2026-08-30T00:02:00Z (RFD66606-2134) 'The controlled counterpart ran in local Docker against
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:12Z (RFD66606-2134) '[versitygw](https://github.com/versity/versitygw) (Apache-2.0), a
+2026-08-30T00:02:01Z (RFD66606-2134) '[versitygw](https://github.com/versity/versitygw) (Apache-2.0), a
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:13Z (RFD66606-2134) 'server that presents its one certificate without SNI. Same fdbbackup,
+2026-08-30T00:02:02Z (RFD66606-2134) 'server that presents its one certificate without SNI. Same fdbbackup,
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:14Z (RFD66606-2134) 'same CA profile, same verify-rule shape:
+2026-08-30T00:02:03Z (RFD66606-2134) 'same CA profile, same verify-rule shape:
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:15Z (RFD66606-2134) '
+2026-08-30T00:02:04Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:16Z (RFD66606-2134) '1. the TLS handshake completes, so the client's TLS is fine and SNI is
+2026-08-30T00:02:05Z (RFD66606-2134) '1. the TLS handshake completes, so the client's TLS is fine and SNI is
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:17Z (RFD66606-2134) '   the whole difference;
+2026-08-30T00:02:06Z (RFD66606-2134) '   the whole difference;
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:18Z (RFD66606-2134) '2. `--knob_http_request_aws_v4_header=true` is required, versitygw
+2026-08-30T00:02:07Z (RFD66606-2134) '2. `--knob_http_request_aws_v4_header=true` is required, versitygw
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:19Z (RFD66606-2134) '   refuses FoundationDB's default SigV2 (Tigris also speaks v4);
+2026-08-30T00:02:08Z (RFD66606-2134) '   refuses FoundationDB's default SigV2 (Tigris also speaks v4);
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:20Z (RFD66606-2134) '3. the bucket must pre-exist, FoundationDB's create-bucket body is
+2026-08-30T00:02:09Z (RFD66606-2134) '3. the bucket must pre-exist, FoundationDB's create-bucket body is
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:21Z (RFD66606-2134) '   refused as MalformedXML; created through the S3 API, the backup
+2026-08-30T00:02:10Z (RFD66606-2134) '   refused as MalformedXML; created through the S3 API, the backup
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:22Z (RFD66606-2134) '   submits and runs: `The backup on tag 'default' is in progress`.
+2026-08-30T00:02:11Z (RFD66606-2134) '   submits and runs: `The backup on tag 'default' is in progress`.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:23Z (RFD66606-2134) '
+2026-08-30T00:02:12Z (RFD66606-2134) '
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:24Z (RFD66606-2134) 'The production hop that landed is stunnel, not the versitygw sidecar
+2026-08-30T00:02:13Z (RFD66606-2134) 'The production hop that landed is stunnel, not the versitygw sidecar
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:25Z (RFD66606-2134) 'first named here: the job needed only SNI added to a TCP stream, and a
+2026-08-30T00:02:14Z (RFD66606-2134) 'first named here: the job needed only SNI added to a TCP stream, and a
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:26Z (RFD66606-2134) 'second S3 implementation in the path was more moving parts than eleven
+2026-08-30T00:02:15Z (RFD66606-2134) 'second S3 implementation in the path was more moving parts than eleven
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:27Z (RFD66606-2134) 'lines of stunnel config. The operator rescinded versitygw on 2026-11-16, and SeaweedFS is
+2026-08-30T00:02:16Z (RFD66606-2134) 'lines of stunnel config. The operator rescinded versitygw on 2026-11-16, and SeaweedFS is
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:28Z (RFD66606-2134) 'the S3-compatible server (RFD66606-2364). One more wall surfaced live, Tigris routes
+2026-08-30T00:02:17Z (RFD66606-2134) 'the S3-compatible server (RFD66606-2364). One more wall surfaced live, Tigris routes
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:29Z (RFD66606-2134) 'buckets from the Host header, so the endpoint's name has to survive the
+2026-08-30T00:02:18Z (RFD66606-2134) 'buckets from the Host header, so the endpoint's name has to survive the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:30Z (RFD66606-2134) 'hop (/etc/hosts points it at loopback after the IP is resolved for
+2026-08-30T00:02:19Z (RFD66606-2134) 'hop (/etc/hosts points it at loopback after the IP is resolved for
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:31Z (RFD66606-2134) 'stunnel's literal dial). datasource-store PRs #4 and #5 carry the
+2026-08-30T00:02:20Z (RFD66606-2134) 'stunnel's literal dial). datasource-store PRs #4 and #5 carry the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:32Z (RFD66606-2134) 'change; `logbook-rfd2134-backup-through-the-sni-hop.md` carries the
+2026-08-30T00:02:21Z (RFD66606-2134) 'change; `logbook-rfd2134-backup-through-the-sni-hop.md` carries the
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:33Z (RFD66606-2134) 'measurements, ending with kvrange objects listed in the bucket.
+2026-08-30T00:02:22Z (RFD66606-2134) 'measurements, ending with kvrange objects listed in the bucket.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:34Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:02:35Z (RFD66606-2134) 'The problem
+2026-08-30T00:02:23Z (RFD66606-2134) 'The problem
  # tags: rfd:details-heading
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:36Z (RFD66606-2134) 'Turning TLS on after the fact hit two walls, one known and one new.
+2026-08-30T00:02:24Z (RFD66606-2134) 'Turning TLS on after the fact hit two walls, one known and one new.
  # tags: rfd:details
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:37Z (RFD66606-2134) '
- # tags: rfd:details
- Text:RFD2134  1 LINE
- Text:Written
-
-2026-08-30T00:02:38Z (RFD66606-2134) '2351
+2026-08-30T00:02:25Z (RFD66606-2134) '2351
  # tags: rebac:verbs-from
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:39Z (RFD66606-2134) 'rfd-2134 provides fdb-cluster-mutual-tls
+2026-08-30T00:02:26Z (RFD66606-2134) 'rfd-2134 provides fdb-cluster-mutual-tls
  # tags: rebac:relate
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:40Z (RFD66606-2134) 'rfd-2134 provides x509-v3-cert-profile
+2026-08-30T00:02:27Z (RFD66606-2134) 'rfd-2134 provides x509-v3-cert-profile
  # tags: rebac:relate
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:41Z (RFD66606-2134) 'rfd-2134 spends fdb-sqlite
+2026-08-30T00:02:28Z (RFD66606-2134) 'rfd-2134 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2134  1 LINE
  Text:Written
 
-2026-08-30T00:02:42Z (RFD66606-2134) 'rfd-2134 is_a security-control
+2026-08-30T00:02:29Z (RFD66606-2134) 'rfd-2134 is_a security-control
  # tags: rebac:relate
  Text:RFD2134  1 LINE
  Text:Written

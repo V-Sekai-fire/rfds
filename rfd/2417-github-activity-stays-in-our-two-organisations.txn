@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2417) 'which GitHub organisations our activity may touch, and how pushed text cites upstream.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2417  1 LINE
  Text:Written
 
@@ -19,122 +19,87 @@
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2417) '
- # tags: rfd:hook
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2417) 'An `owner/repo#N` reference or an issue or pull request URL in pushed text is posted back onto
+2026-10-31T00:00:04Z (RFD66606-2417) 'An `owner/repo#N` reference or an issue or pull request URL in pushed text is posted back onto
  # tags: rfd:intrigue
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2417) 'the upstream's timeline.
+2026-10-31T00:00:05Z (RFD66606-2417) 'the upstream's timeline.
  # tags: rfd:intrigue
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2417) '
- # tags: rfd:intrigue
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2417) 'Check a push against the rule: cite an upstream change by its bare commit SHA.
+2026-10-31T00:00:06Z (RFD66606-2417) 'Check a push against the rule: cite an upstream change by its bare commit SHA.
  # tags: rfd:exit
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2417) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2417) 'GitHub activity stays in our two organisations
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2417) 'GitHub activity stays in our two organisations
- # tags: rfd:details-title
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2417) '- All GitHub activity stays in V-Sekai-fire and chibifire-stages: forks, new repositories and
+2026-10-31T00:00:08Z (RFD66606-2417) '- All GitHub activity stays in V-Sekai-fire and chibifire-stages: forks, new repositories and
  # tags: rfd:decision
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2417) '  pushes, and no pull request, issue, comment or mention in any other organisation.
+2026-10-31T00:00:09Z (RFD66606-2417) '  pushes, and no pull request, issue, comment or mention in any other organisation.
  # tags: rfd:decision
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2417) '- Pushed text cites an upstream change by its bare commit SHA, never by an `owner/repo#N`
+2026-10-31T00:00:10Z (RFD66606-2417) '- Pushed text cites an upstream change by its bare commit SHA, never by an `owner/repo#N`
  # tags: rfd:decision
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2417) '  reference or an issue or pull request URL.
+2026-10-31T00:00:11Z (RFD66606-2417) '  reference or an issue or pull request URL.
  # tags: rfd:decision
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2417) '
- # tags: rfd:decision
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2417) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:12Z (RFD66606-2417) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2417) '
- # tags: rfd:related
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2417) 'Reading is fine
+2026-10-31T00:00:13Z (RFD66606-2417) 'Reading is fine
  # tags: rfd:details-heading
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2417) 'Reading and cloning public repositories is fine.
+2026-10-31T00:00:14Z (RFD66606-2417) 'Reading and cloning public repositories is fine.
  # tags: rfd:details
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2417) '
- # tags: rfd:details
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2417) 'The problem
+2026-10-31T00:00:15Z (RFD66606-2417) 'The problem
  # tags: rfd:details-heading
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2417) 'GitHub posts those back onto the upstream's timeline.
+2026-10-31T00:00:16Z (RFD66606-2417) 'GitHub posts those back onto the upstream's timeline.
  # tags: rfd:details
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2417) '
- # tags: rfd:details
- Text:RFD2417  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2417) '2351
+2026-10-31T00:00:17Z (RFD66606-2417) '2351
  # tags: rebac:verbs-from
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2417) 'rfd-2417 provides github-two-orgs-only
+2026-10-31T00:00:18Z (RFD66606-2417) 'rfd-2417 provides github-two-orgs-only
  # tags: rebac:relate
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2417) 'rfd-2417 provides upstream-cited-by-bare-sha
+2026-10-31T00:00:19Z (RFD66606-2417) 'rfd-2417 provides upstream-cited-by-bare-sha
  # tags: rebac:relate
  Text:RFD2417  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2417) 'rfd-2417 is_a workspace-policy
+2026-10-31T00:00:20Z (RFD66606-2417) 'rfd-2417 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2417  1 LINE
  Text:Written

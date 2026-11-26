@@ -15,7 +15,7 @@
  Text:Written
 
 2026-09-29T00:00:03Z (RFD66606-2288) 'call and cached for the VM
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
@@ -25,7 +25,7 @@
  Text:Written
 
 2026-09-29T00:00:05Z (RFD66606-2288) 'makes host calls, and the ReBAC tuples of RFD66606-2200
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
@@ -34,537 +34,482 @@
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:07Z (RFD66606-2288) '
- # tags: rfd:hook
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:08Z (RFD66606-2288) 'A ReBAC check on every host call is too slow for calls made every frame, and no check makes
+2026-09-29T00:00:07Z (RFD66606-2288) 'A ReBAC check on every host call is too slow for calls made every frame, and no check makes
  # tags: rfd:intrigue
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:09Z (RFD66606-2288) 'every guest a leak.
+2026-09-29T00:00:08Z (RFD66606-2288) 'every guest a leak.
  # tags: rfd:intrigue
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:10Z (RFD66606-2288) '
- # tags: rfd:intrigue
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:11Z (RFD66606-2288) 'Read RFD66606-2200 next for the ReBAC tuples that decide what a capability grants.
+2026-09-29T00:00:09Z (RFD66606-2288) 'Read RFD66606-2200 next for the ReBAC tuples that decide what a capability grants.
  # tags: rfd:exit
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:12Z (RFD66606-2288) '
- # tags: rfd:exit
+2026-09-29T00:00:10Z (RFD66606-2288) 'guest capabilities: macaroons minted from ReBAC
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:13Z (RFD66606-2288) 'guest capabilities: macaroons minted from ReBAC
- # tags: rfd:details-title
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:14Z (RFD66606-2288) 'Capabilities are an allowlist. A guest starts with none. Each host
+2026-09-29T00:00:11Z (RFD66606-2288) 'Capabilities are an allowlist. A guest starts with none. Each host
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:15Z (RFD66606-2288) 'call that reaches outside the guest's own memory needs one, and a new
+2026-09-29T00:00:12Z (RFD66606-2288) 'call that reaches outside the guest's own memory needs one, and a new
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:16Z (RFD66606-2288) 'need gets a new, narrow capability, never a wider old one. A
+2026-09-29T00:00:13Z (RFD66606-2288) 'need gets a new, narrow capability, never a wider old one. A
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:17Z (RFD66606-2288) 'capability is a macaroon. A ReBAC check (RFD66606-2200) mints it, with
+2026-09-29T00:00:14Z (RFD66606-2288) 'capability is a macaroon. A ReBAC check (RFD66606-2200) mints it, with
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:18Z (RFD66606-2288) 'caveats that name the VM, the verb, the object, an expiry at most 5 s
+2026-09-29T00:00:15Z (RFD66606-2288) 'caveats that name the VM, the verb, the object, an expiry at most 5 s
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:19Z (RFD66606-2288) 'away and the VM's revocation epoch. The host verifies the macaroon's
+2026-09-29T00:00:16Z (RFD66606-2288) 'away and the VM's revocation epoch. The host verifies the macaroon's
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:20Z (RFD66606-2288) 'HMAC chain once and caches the grant in that VM's host-call table, so
+2026-09-29T00:00:17Z (RFD66606-2288) 'HMAC chain once and caches the grant in that VM's host-call table, so
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:21Z (RFD66606-2288) 'each later call costs a bit test and two integer compares. The host
+2026-09-29T00:00:18Z (RFD66606-2288) 'each later call costs a bit test and two integer compares. The host
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:22Z (RFD66606-2288) 'verifies the macaroon again every 5 s. Bumping a VM's epoch voids its
+2026-09-29T00:00:19Z (RFD66606-2288) 'verifies the macaroon again every 5 s. Bumping a VM's epoch voids its
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:23Z (RFD66606-2288) 'cached grants at their next call. A guest's writes to its own memory
+2026-09-29T00:00:20Z (RFD66606-2288) 'cached grants at their next call. A guest's writes to its own memory
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:24Z (RFD66606-2288) 'are not host calls, and nothing checks them.
+2026-09-29T00:00:21Z (RFD66606-2288) 'are not host calls, and nothing checks them.
  # tags: rfd:decision
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:25Z (RFD66606-2288) '
- # tags: rfd:decision
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:26Z (RFD66606-2288) '- RFD66606-2200, the ReBAC tuples that decide what a capability grants.
+2026-09-29T00:00:22Z (RFD66606-2288) '- RFD66606-2200, the ReBAC tuples that decide what a capability grants.
  # tags: rfd:related
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:27Z (RFD66606-2288) '
- # tags: rfd:related
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:28Z (RFD66606-2288) 'Related
+2026-09-29T00:00:23Z (RFD66606-2288) 'Related
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:29Z (RFD66606-2288) 'RFD66606-2287, whose CA relies on no transfer capability for its VM.
+2026-09-29T00:00:24Z (RFD66606-2288) 'RFD66606-2287, whose CA relies on no transfer capability for its VM.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:30Z (RFD66606-2288) 'Gate, unmet: no macaroon minting, grant table or epoch code exists in any
+2026-09-29T00:00:25Z (RFD66606-2288) 'Gate, unmet: no macaroon minting, grant table or epoch code exists in any
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:31Z (RFD66606-2288) 'product repo (searched 2026-11-11), so the acceptance is not met.
+2026-09-29T00:00:26Z (RFD66606-2288) 'product repo (searched 2026-11-11), so the acceptance is not met.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:32Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:33Z (RFD66606-2288) 'Why check once per grant
+2026-09-29T00:00:27Z (RFD66606-2288) 'Why check once per grant
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:34Z (RFD66606-2288) 'RFD66606-2287's CA keeps its root key in guest memory, but a VM transfer
+2026-09-29T00:00:28Z (RFD66606-2288) 'RFD66606-2287's CA keeps its root key in guest memory, but a VM transfer
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:35Z (RFD66606-2288) 'carries all of that memory, and so does a host read of it. So the check runs once per grant,
+2026-09-29T00:00:29Z (RFD66606-2288) 'carries all of that memory, and so does a host read of it. So the check runs once per grant,
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:36Z (RFD66606-2288) 'needs no network round trip, and costs little to repeat.
+2026-09-29T00:00:30Z (RFD66606-2288) 'needs no network round trip, and costs little to repeat.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:37Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:38Z (RFD66606-2288) 'The macaroon
+2026-09-29T00:00:31Z (RFD66606-2288) 'The macaroon
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:39Z (RFD66606-2288) 'The host that runs the guest holds the macaroon root key and mints.
+2026-09-29T00:00:32Z (RFD66606-2288) 'The host that runs the guest holds the macaroon root key and mints.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:40Z (RFD66606-2288) 'Before it mints, it asks the ReBAC store whether a tuple relates the
+2026-09-29T00:00:33Z (RFD66606-2288) 'Before it mints, it asks the ReBAC store whether a tuple relates the
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:41Z (RFD66606-2288) 'subject to the object with the verb. No tuple, no macaroon. The
+2026-09-29T00:00:34Z (RFD66606-2288) 'subject to the object with the verb. No tuple, no macaroon. The
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:42Z (RFD66606-2288) 'caveats are `vm`, `verb`, `object`, `expires` and `epoch`. A zone that
+2026-09-29T00:00:35Z (RFD66606-2288) 'caveats are `vm`, `verb`, `object`, `expires` and `epoch`. A zone that
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:43Z (RFD66606-2288) 'hands work to another zone adds caveats before it passes the
+2026-09-29T00:00:36Z (RFD66606-2288) 'hands work to another zone adds caveats before it passes the
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:44Z (RFD66606-2288) 'macaroon on, which narrows it without a round trip. Nobody can remove
+2026-09-29T00:00:37Z (RFD66606-2288) 'macaroon on, which narrows it without a round trip. Nobody can remove
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:45Z (RFD66606-2288) 'a caveat, because the HMAC chain then fails.
+2026-09-29T00:00:38Z (RFD66606-2288) 'a caveat, because the HMAC chain then fails.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:46Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:47Z (RFD66606-2288) 'The hot path
+2026-09-29T00:00:39Z (RFD66606-2288) 'The hot path
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:48Z (RFD66606-2288) 'The host-call table holds, per VM, one bit per granted capability,
+2026-09-29T00:00:40Z (RFD66606-2288) 'The host-call table holds, per VM, one bit per granted capability,
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:49Z (RFD66606-2288) 'its expiry and the epoch it was granted at. A host call checks the
+2026-09-29T00:00:41Z (RFD66606-2288) 'its expiry and the epoch it was granted at. A host call checks the
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:50Z (RFD66606-2288) 'bit, compares the clock with the expiry, and compares the stored
+2026-09-29T00:00:42Z (RFD66606-2288) 'bit, compares the clock with the expiry, and compares the stored
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:51Z (RFD66606-2288) 'epoch with the VM's current one. Past the expiry the host verifies the
+2026-09-29T00:00:43Z (RFD66606-2288) 'epoch with the VM's current one. Past the expiry the host verifies the
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:52Z (RFD66606-2288) 'macaroon again and refreshes the entry. The 5 s bound keeps a revoked
+2026-09-29T00:00:44Z (RFD66606-2288) 'macaroon again and refreshes the entry. The 5 s bound keeps a revoked
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:53Z (RFD66606-2288) 'grant short-lived and a retry cheap.
+2026-09-29T00:00:45Z (RFD66606-2288) 'grant short-lived and a retry cheap.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:54Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:00:55Z (RFD66606-2288) 'Adding a capability
+2026-09-29T00:00:46Z (RFD66606-2288) 'Adding a capability
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:56Z (RFD66606-2288) 'A capability names one verb on one object, and the table below carries
+2026-09-29T00:00:47Z (RFD66606-2288) 'A capability names one verb on one object, and the table below carries
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:57Z (RFD66606-2288) 'the three that exist as `capability` declarations (RFD66606-2291, ReBAC as a
+2026-09-29T00:00:48Z (RFD66606-2288) 'the three that exist as `capability` declarations (RFD66606-2291, ReBAC as a
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:58Z (RFD66606-2288) 'DSL feature), so a reader counts them rather than reading for them. A
+2026-09-29T00:00:49Z (RFD66606-2288) 'DSL feature), so a reader counts them rather than reading for them. A
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:00:59Z (RFD66606-2288) 'new need adds a declaration for that narrow verb and object, and a
+2026-09-29T00:00:50Z (RFD66606-2288) 'new need adds a declaration for that narrow verb and object, and a
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:00Z (RFD66606-2288) 'tuple that mints it. A wider capability is not allowed; a second,
+2026-09-29T00:00:51Z (RFD66606-2288) 'tuple that mints it. A wider capability is not allowed; a second,
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:01Z (RFD66606-2288) 'narrow one is. `ca.elf` gets no `transfer` or memory-read capability.
+2026-09-29T00:00:52Z (RFD66606-2288) 'narrow one is. `ca.elf` gets no `transfer` or memory-read capability.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:02Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:01:03Z (RFD66606-2288) 'Checks
+2026-09-29T00:00:53Z (RFD66606-2288) 'Checks
  # tags: rfd:details-heading
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:04Z (RFD66606-2288) 'Each has a control, and each runs with the guest's real host calls.
+2026-09-29T00:00:54Z (RFD66606-2288) 'Each has a control, and each runs with the guest's real host calls.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:05Z (RFD66606-2288) '
+2026-09-29T00:00:55Z (RFD66606-2288) '
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:06Z (RFD66606-2288) '- A host call with no capability is refused. Control: the same call
+2026-09-29T00:00:56Z (RFD66606-2288) '- A host call with no capability is refused. Control: the same call
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:07Z (RFD66606-2288) '  with its capability goes ahead.
+2026-09-29T00:00:57Z (RFD66606-2288) '  with its capability goes ahead.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:08Z (RFD66606-2288) '- A call after an epoch bump is refused; the same call before the
+2026-09-29T00:00:58Z (RFD66606-2288) '- A call after an epoch bump is refused; the same call before the
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:09Z (RFD66606-2288) '  bump goes ahead.
+2026-09-29T00:00:59Z (RFD66606-2288) '  bump goes ahead.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:10Z (RFD66606-2288) '- A call past the expiry is refused until the macaroon verifies
+2026-09-29T00:01:00Z (RFD66606-2288) '- A call past the expiry is refused until the macaroon verifies
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:11Z (RFD66606-2288) '  again.
+2026-09-29T00:01:01Z (RFD66606-2288) '  again.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:12Z (RFD66606-2288) '- A macaroon with one caveat changed fails its HMAC check, and so
+2026-09-29T00:01:02Z (RFD66606-2288) '- A macaroon with one caveat changed fails its HMAC check, and so
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:13Z (RFD66606-2288) '  does one with a caveat removed.
+2026-09-29T00:01:03Z (RFD66606-2288) '  does one with a caveat removed.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:14Z (RFD66606-2288) '- A narrowed macaroon passed to another zone cannot do what the wider
+2026-09-29T00:01:04Z (RFD66606-2288) '- A narrowed macaroon passed to another zone cannot do what the wider
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:15Z (RFD66606-2288) '  one could.
+2026-09-29T00:01:05Z (RFD66606-2288) '  one could.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:16Z (RFD66606-2288) '- The cost per call is measured against the same call with no check.
+2026-09-29T00:01:06Z (RFD66606-2288) '- The cost per call is measured against the same call with no check.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:17Z (RFD66606-2288) '  The guest's own memory writes show no change.
+2026-09-29T00:01:07Z (RFD66606-2288) '  The guest's own memory writes show no change.
  # tags: rfd:details
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:18Z (RFD66606-2288) '
- # tags: rfd:details
- Text:RFD2288  1 LINE
- Text:Written
-
-2026-09-29T00:01:19Z (RFD66606-2288) '2200
+2026-09-29T00:01:08Z (RFD66606-2288) '2200
  # tags: rebac:verbs-from
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:20Z (RFD66606-2288) '2351
+2026-09-29T00:01:09Z (RFD66606-2288) '2351
  # tags: rebac:verbs-from
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:21Z (RFD66606-2288) 'send
+2026-09-29T00:01:10Z (RFD66606-2288) 'send
  # tags: rebac:verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:22Z (RFD66606-2288) 'the guest sends a frame to the object relay
- # tags: rebac:meaning
+2026-09-29T00:01:11Z (RFD66606-2288) 'the guest sends a frame to the object relay
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:23Z (RFD66606-2288) 'write
+2026-09-29T00:01:12Z (RFD66606-2288) 'write
  # tags: rebac:verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:24Z (RFD66606-2288) 'the guest appends to the object file the zone holds
- # tags: rebac:meaning
+2026-09-29T00:01:13Z (RFD66606-2288) 'the guest appends to the object file the zone holds
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:25Z (RFD66606-2288) 'transfer
+2026-09-29T00:01:14Z (RFD66606-2288) 'transfer
  # tags: rebac:verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:26Z (RFD66606-2288) 'the guest's VM moves to the object zone
- # tags: rebac:meaning
+2026-09-29T00:01:15Z (RFD66606-2288) 'the guest's VM moves to the object zone
+ # tags: rebac:meaning, rfd:no-final-newline
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:27Z (RFD66606-2288) 'rfd-2288 provides guest-macaroon-capabilities
+2026-09-29T00:01:16Z (RFD66606-2288) 'rfd-2288 provides guest-macaroon-capabilities
  # tags: rebac:relate
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:28Z (RFD66606-2288) 'rfd-2288 spends rebac-agent-role-tuples
+2026-09-29T00:01:17Z (RFD66606-2288) 'rfd-2288 spends rebac-agent-role-tuples
  # tags: rebac:relate
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:29Z (RFD66606-2288) 'rfd-2288 is_a security-control
+2026-09-29T00:01:18Z (RFD66606-2288) 'rfd-2288 is_a security-control
  # tags: rebac:relate
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:30Z (RFD66606-2288) 'send
+2026-09-29T00:01:19Z (RFD66606-2288) 'send
  # tags: rebac:capability
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:31Z (RFD66606-2288) 'send
+2026-09-29T00:01:20Z (RFD66606-2288) 'send
  # tags: rebac:capability-verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:32Z (RFD66606-2288) 'session-relay
+2026-09-29T00:01:21Z (RFD66606-2288) 'session-relay
  # tags: rebac:capability-object
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:33Z (RFD66606-2288) 'vm
+2026-09-29T00:01:22Z (RFD66606-2288) 'vm
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:34Z (RFD66606-2288) 'verb
+2026-09-29T00:01:23Z (RFD66606-2288) 'verb
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:35Z (RFD66606-2288) 'object
+2026-09-29T00:01:24Z (RFD66606-2288) 'object
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:36Z (RFD66606-2288) 'expires
+2026-09-29T00:01:25Z (RFD66606-2288) 'expires
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:37Z (RFD66606-2288) 'epoch
+2026-09-29T00:01:26Z (RFD66606-2288) 'epoch
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:38Z (RFD66606-2288) 'write
+2026-09-29T00:01:27Z (RFD66606-2288) 'write
  # tags: rebac:capability
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:39Z (RFD66606-2288) 'write
+2026-09-29T00:01:28Z (RFD66606-2288) 'write
  # tags: rebac:capability-verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:40Z (RFD66606-2288) 'zone-journal
+2026-09-29T00:01:29Z (RFD66606-2288) 'zone-journal
  # tags: rebac:capability-object
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:41Z (RFD66606-2288) 'vm
+2026-09-29T00:01:30Z (RFD66606-2288) 'vm
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:42Z (RFD66606-2288) 'verb
+2026-09-29T00:01:31Z (RFD66606-2288) 'verb
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:43Z (RFD66606-2288) 'object
+2026-09-29T00:01:32Z (RFD66606-2288) 'object
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:44Z (RFD66606-2288) 'expires
+2026-09-29T00:01:33Z (RFD66606-2288) 'expires
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:45Z (RFD66606-2288) 'epoch
+2026-09-29T00:01:34Z (RFD66606-2288) 'epoch
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:46Z (RFD66606-2288) 'transfer
+2026-09-29T00:01:35Z (RFD66606-2288) 'transfer
  # tags: rebac:capability
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:47Z (RFD66606-2288) 'transfer
+2026-09-29T00:01:36Z (RFD66606-2288) 'transfer
  # tags: rebac:capability-verb
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:48Z (RFD66606-2288) 'vm
+2026-09-29T00:01:37Z (RFD66606-2288) 'vm
  # tags: rebac:capability-object
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:49Z (RFD66606-2288) 'vm
+2026-09-29T00:01:38Z (RFD66606-2288) 'vm
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:50Z (RFD66606-2288) 'verb
+2026-09-29T00:01:39Z (RFD66606-2288) 'verb
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:51Z (RFD66606-2288) 'object
+2026-09-29T00:01:40Z (RFD66606-2288) 'object
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:52Z (RFD66606-2288) 'expires
+2026-09-29T00:01:41Z (RFD66606-2288) 'expires
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written
 
-2026-09-29T00:01:53Z (RFD66606-2288) 'epoch
+2026-09-29T00:01:42Z (RFD66606-2288) 'epoch
  # tags: rebac:caveat
  Text:RFD2288  1 LINE
  Text:Written

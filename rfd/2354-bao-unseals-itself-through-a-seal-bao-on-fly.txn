@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2354) 'the seal of every Bao, its key, and its recovery.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2354  1 LINE
  Text:Written
 
@@ -14,472 +14,472 @@
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2354) '
- # tags: rfd:hook
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2354) 'Three Baos mean three seal states and three unseal calls per fleet restart.
+2026-10-31T00:00:03Z (RFD66606-2354) 'Three Baos mean three seal states and three unseal calls per fleet restart.
  # tags: rfd:intrigue
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2354) '
- # tags: rfd:intrigue
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2354) 'Pass the recovery test on clean hosts before prod moves; the sections below hold the steps.
+2026-10-31T00:00:04Z (RFD66606-2354) 'Pass the recovery test on clean hosts before prod moves; the sections below hold the steps.
  # tags: rfd:exit
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2354) '
- # tags: rfd:exit
+2026-10-31T00:00:05Z (RFD66606-2354) 'Bao unseals itself through a Seal Bao on Fly
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2354) 'Bao unseals itself through a Seal Bao on Fly
- # tags: rfd:details-title
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2354) 'A transit seal on a Seal Bao on Fly, unwrapped from Fly KMS at boot (operator,
+2026-10-31T00:00:06Z (RFD66606-2354) 'A transit seal on a Seal Bao on Fly, unwrapped from Fly KMS at boot (operator,
  # tags: rfd:decision
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2354) '2026-10-30). Recovery becomes hands-off, not operator-with-1P. Superseded on 2026-11-01:
+2026-10-31T00:00:07Z (RFD66606-2354) '2026-10-30). Recovery becomes hands-off, not operator-with-1P. Superseded on 2026-11-01:
  # tags: rfd:decision
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2354) 'Bao runs as one Fly machine and unseals from Fly KMS at boot, with an offline division of
+2026-10-31T00:00:08Z (RFD66606-2354) 'Bao runs as one Fly machine and unseals from Fly KMS at boot, with an offline division of
  # tags: rfd:decision
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2354) 'the seal key with n=1 as the last resort (operator, 2026-11-01).
+2026-10-31T00:00:09Z (RFD66606-2354) 'the seal key with n=1 as the last resort (operator, 2026-11-01).
  # tags: rfd:decision
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2354) '
- # tags: rfd:decision
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2354) 'RFD66606-2144, RFD66606-2145, RFD66606-2146.
+2026-10-31T00:00:10Z (RFD66606-2354) 'RFD66606-2144, RFD66606-2145, RFD66606-2146.
  # tags: rfd:related
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2354) 'Split from the old RFD66606-2147: RFD66606-2353 (replicas), 2355 (cache), 2356 (no CDN proxy).
+2026-10-31T00:00:11Z (RFD66606-2354) 'Split from the old RFD66606-2147: RFD66606-2353 (replicas), 2355 (cache), 2356 (no CDN proxy).
  # tags: rfd:related
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2354) '
- # tags: rfd:related
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2354) 'Auto-unseal: KMS wrapper, Shamir stays as break-glass
+2026-10-31T00:00:12Z (RFD66606-2354) 'Auto-unseal: KMS wrapper, Shamir stays as break-glass
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2354) 'Shamir with a manual share is the right seal for one-of-one, wrong for
+2026-10-31T00:00:13Z (RFD66606-2354) 'Shamir with a manual share is the right seal for one-of-one, wrong for
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2354) 'three-of-three. Options:
+2026-10-31T00:00:14Z (RFD66606-2354) 'three-of-three. Options:
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2354) '
+2026-10-31T00:00:15Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2354) '- **Cloud KMS seal** (AWS KMS, GCP KMS, Azure Key Vault, Oracle). The
+2026-10-31T00:00:16Z (RFD66606-2354) '- **Cloud KMS seal** (AWS KMS, GCP KMS, Azure Key Vault, Oracle). The
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2354) '  key stays in the cloud KMS; Bao decrypts the master key at boot via
+2026-10-31T00:00:17Z (RFD66606-2354) '  key stays in the cloud KMS; Bao decrypts the master key at boot via
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2354) '  the KMS API. Standard pattern. Cost is per-request against the KMS,
+2026-10-31T00:00:18Z (RFD66606-2354) '  the KMS API. Standard pattern. Cost is per-request against the KMS,
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2354) '  measured in fractions of a cent per unseal.
+2026-10-31T00:00:19Z (RFD66606-2354) '  measured in fractions of a cent per unseal.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2354) '- **Transit seal** (a second, seed-only Bao). Chicken-and-egg unless
+2026-10-31T00:00:20Z (RFD66606-2354) '- **Transit seal** (a second, seed-only Bao). Chicken-and-egg unless
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2354) '  the seed Bao is truly offline (Raspberry Pi, HSM, boot-from-USB).
+2026-10-31T00:00:21Z (RFD66606-2354) '  the seed Bao is truly offline (Raspberry Pi, HSM, boot-from-USB).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2354) '  Adds a second thing to maintain.
+2026-10-31T00:00:22Z (RFD66606-2354) '  Adds a second thing to maintain.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2354) '- **HSM / PKCS#11**. Right answer for a fleet in a datacenter with
+2026-10-31T00:00:23Z (RFD66606-2354) '- **HSM / PKCS#11**. Right answer for a fleet in a datacenter with
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2354) '  its own HSM. Overkill for this workspace's scale.
+2026-10-31T00:00:24Z (RFD66606-2354) '  its own HSM. Overkill for this workspace's scale.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2354) '- **HCP Vault / OpenBao managed**. Not this workspace's shape.
+2026-10-31T00:00:25Z (RFD66606-2354) '- **HCP Vault / OpenBao managed**. Not this workspace's shape.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2354) '
+2026-10-31T00:00:26Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2354) 'Recommendation: Fly KMS, through a Seal Bao. Fly app secret keys are a
+2026-10-31T00:00:27Z (RFD66606-2354) 'Recommendation: Fly KMS, through a Seal Bao. Fly app secret keys are a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2354) 'first-party KMS, usable only from inside a machine of the owning app, and
+2026-10-31T00:00:28Z (RFD66606-2354) 'first-party KMS, usable only from inside a machine of the owning app, and
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2354) 'OpenBao has no Fly seal type, so a Seal Bao bridges the two (operator,
+2026-10-31T00:00:29Z (RFD66606-2354) 'OpenBao has no Fly seal type, so a Seal Bao bridges the two (operator,
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2354) '2026-10-30). The break-glass key for the day the KMS itself is the outage
+2026-10-31T00:00:30Z (RFD66606-2354) '2026-10-30). The break-glass key for the day the KMS itself is the outage
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2354) '(the day RFD66606-2144 logs as its eleventh defect) is the Seal Bao's static key, held offline
+2026-10-31T00:00:31Z (RFD66606-2354) '(the day RFD66606-2144 logs as its eleventh defect) is the Seal Bao's static key, held offline
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2354) 'as a Shamir share, whose count may be 1.
+2026-10-31T00:00:32Z (RFD66606-2354) 'as a Shamir share, whose count may be 1.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2354) '
+2026-10-31T00:00:33Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2354) 'An auto-unseal wrapper does not change the CRL-loop bug logged
+2026-10-31T00:00:34Z (RFD66606-2354) 'An auto-unseal wrapper does not change the CRL-loop bug logged
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2354) 'during the DR (Bao's authenticated paths going flaky after a
+2026-10-31T00:00:35Z (RFD66606-2354) 'during the DR (Bao's authenticated paths going flaky after a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2354) 'particular sequence of issuer imports). That is a separate item.
+2026-10-31T00:00:36Z (RFD66606-2354) 'particular sequence of issuer imports). That is a separate item.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2354) 'Transit seal on Fly, unwrapped by Fly KMS
+2026-10-31T00:00:37Z (RFD66606-2354) 'Transit seal on Fly, unwrapped by Fly KMS
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2354) 'The operator chose on 2026-10-13 to unseal the Fly instances from a small Bao,
+2026-10-31T00:00:38Z (RFD66606-2354) 'The operator chose on 2026-10-13 to unseal the Fly instances from a small Bao,
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2354) 'rescinded the Mac mini as its host on 2026-10-30, and chose a Seal Bao on Fly that
+2026-10-31T00:00:39Z (RFD66606-2354) 'rescinded the Mac mini as its host on 2026-10-30, and chose a Seal Bao on Fly that
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2354) 'unwraps its own key from Fly KMS (operator, 2026-10-30).
+2026-10-31T00:00:40Z (RFD66606-2354) 'unwraps its own key from Fly KMS (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2354) '
+2026-10-31T00:00:41Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2354) '- Encrypt and decrypt with a Fly secret key work only from inside a machine of the
+2026-10-31T00:00:42Z (RFD66606-2354) '- Encrypt and decrypt with a Fly secret key work only from inside a machine of the
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2354) '  owning app, through the machine's local API socket; the public API refuses. The Seal
+2026-10-31T00:00:43Z (RFD66606-2354) '  owning app, through the machine's local API socket; the public API refuses. The Seal
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2354) '  Bao's start-up script decrypts a wrapped 32-byte key into memory and starts Bao with a
+2026-10-31T00:00:44Z (RFD66606-2354) '  Bao's start-up script decrypts a wrapped 32-byte key into memory and starts Bao with a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:51Z (RFD66606-2354) '  `static` seal. Every other Bao uses a stock transit seal against it.
+2026-10-31T00:00:45Z (RFD66606-2354) '  `static` seal. Every other Bao uses a stock transit seal against it.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:52Z (RFD66606-2354) '- The Seal Bao runs as one machine or as an HA set of three voters. Two voters tolerate
+2026-10-31T00:00:46Z (RFD66606-2354) '- The Seal Bao runs as one machine or as an HA set of three voters. Two voters tolerate
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:53Z (RFD66606-2354) '  no failure, so two is not a valid setting (operator, 2026-10-30). One machine relies on
+2026-10-31T00:00:47Z (RFD66606-2354) '  no failure, so two is not a valid setting (operator, 2026-10-30). One machine relies on
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:54Z (RFD66606-2354) '  a restore from backup that has been tested.
+2026-10-31T00:00:48Z (RFD66606-2354) '  a restore from backup that has been tested.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:55Z (RFD66606-2354) '- It listens only on its tailnet address, over TLS, and the tailnet policy lets only Bao
+2026-10-31T00:00:49Z (RFD66606-2354) '- It listens only on its tailnet address, over TLS, and the tailnet policy lets only Bao
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:56Z (RFD66606-2354) '  nodes reach it. No peer reaches a localhost or public listener.
+2026-10-31T00:00:50Z (RFD66606-2354) '  nodes reach it. No peer reaches a localhost or public listener.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:57Z (RFD66606-2354) '- Each Bao has its own transit key and a policy limited to encrypt and decrypt on that
+2026-10-31T00:00:51Z (RFD66606-2354) '- Each Bao has its own transit key and a policy limited to encrypt and decrypt on that
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2354) '  key. A certificate login yields a short token, but a seal needs its token at boot, so
+2026-10-31T00:00:52Z (RFD66606-2354) '  key. A certificate login yields a short token, but a seal needs its token at boot, so
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2354) '  each Bao also holds a periodic orphan token for its key: a Fly secret on the Fly
+2026-10-31T00:00:53Z (RFD66606-2354) '  each Bao also holds a periodic orphan token for its key: a Fly secret on the Fly
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2354) '  instances, a file readable only by its own user elsewhere. Measured on a throwaway Bao,
+2026-10-31T00:00:54Z (RFD66606-2354) '  instances, a file readable only by its own user elsewhere. Measured on a throwaway Bao,
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:01Z (RFD66606-2354) '  the seal renews that token while the Bao runs; the token expires if the Bao is down
+2026-10-31T00:00:55Z (RFD66606-2354) '  the seal renews that token while the Bao runs; the token expires if the Bao is down
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:02Z (RFD66606-2354) '  longer than its period, so the period is set to days and a longer outage needs a new
+2026-10-31T00:00:56Z (RFD66606-2354) '  longer than its period, so the period is set to days and a longer outage needs a new
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2354) '  token.
+2026-10-31T00:00:57Z (RFD66606-2354) '  token.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:04Z (RFD66606-2354) '- If the Seal Bao is down, a restarted Bao stays sealed until it is back. Running Baos
+2026-10-31T00:00:58Z (RFD66606-2354) '- If the Seal Bao is down, a restarted Bao stays sealed until it is back. Running Baos
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2354) '  keep serving.
+2026-10-31T00:00:59Z (RFD66606-2354) '  keep serving.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2354) '- The break-glass key is the Seal Bao's static key, held offline as a Shamir share even
+2026-10-31T00:01:00Z (RFD66606-2354) '- The break-glass key is the Seal Bao's static key, held offline as a Shamir share even
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2354) '  when the count is 1, and never in the backup bucket. A new Seal Bao started with that
+2026-10-31T00:01:01Z (RFD66606-2354) '  when the count is 1, and never in the backup bucket. A new Seal Bao started with that
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:08Z (RFD66606-2354) '  key and a restored snapshot unlocks every other Bao. Each Bao's Shamir recovery keys
+2026-10-31T00:01:02Z (RFD66606-2354) '  key and a restored snapshot unlocks every other Bao. Each Bao's Shamir recovery keys
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2354) '  authorise operations such as generating a root token; they do not unseal.
+2026-10-31T00:01:03Z (RFD66606-2354) '  authorise operations such as generating a root token; they do not unseal.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:10Z (RFD66606-2354) '- The Seal Bao backs up to the same bucket as the others, under its own prefix, with
+2026-10-31T00:01:04Z (RFD66606-2354) '- The Seal Bao backs up to the same bucket as the others, under its own prefix, with
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:11Z (RFD66606-2354) '  unique object names and a retention lock; plain-text config files stay out of the
+2026-10-31T00:01:05Z (RFD66606-2354) '  unique object names and a retention lock; plain-text config files stay out of the
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:12Z (RFD66606-2354) '  snapshots and are protected separately.
+2026-10-31T00:01:06Z (RFD66606-2354) '  snapshots and are protected separately.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:13Z (RFD66606-2354) '- The change is proved with a planted control: with the Seal Bao stopped, a restarted
+2026-10-31T00:01:07Z (RFD66606-2354) '- The change is proved with a planted control: with the Seal Bao stopped, a restarted
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:14Z (RFD66606-2354) '  Bao stays sealed. The recovery test passes before prod moves: on clean hosts with Fly
+2026-10-31T00:01:08Z (RFD66606-2354) '  Bao stays sealed. The recovery test passes before prod moves: on clean hosts with Fly
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:15Z (RFD66606-2354) '  blocked, restore the Seal Bao from the offline key and the backup, then restore one
+2026-10-31T00:01:09Z (RFD66606-2354) '  blocked, restore the Seal Bao from the offline key and the backup, then restore one
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:16Z (RFD66606-2354) '  other Bao through it and read back data.
+2026-10-31T00:01:10Z (RFD66606-2354) '  other Bao through it and read back data.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:17Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2354) 'Recovery without Fly KMS
+2026-10-31T00:01:11Z (RFD66606-2354) 'Recovery without Fly KMS
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:19Z (RFD66606-2354) 'This procedure needs no Fly account, no Fly machine and no network path to Fly. It is
+2026-10-31T00:01:12Z (RFD66606-2354) 'This procedure needs no Fly account, no Fly machine and no network path to Fly. It is
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:20Z (RFD66606-2354) 'the one the recovery test runs (operator, 2026-10-30).
+2026-10-31T00:01:13Z (RFD66606-2354) 'the one the recovery test runs (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:21Z (RFD66606-2354) '
+2026-10-31T00:01:14Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:22Z (RFD66606-2354) '1. Gather the materials: the offline Shamir share or shares of the Seal Bao's static
+2026-10-31T00:01:15Z (RFD66606-2354) '1. Gather the materials: the offline Shamir share or shares of the Seal Bao's static
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:23Z (RFD66606-2354) '   key, the Seal Bao's configuration without its secrets, and the newest snapshot of
+2026-10-31T00:01:16Z (RFD66606-2354) '   key, the Seal Bao's configuration without its secrets, and the newest snapshot of
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2354) '   the Seal Bao from the backup bucket.
+2026-10-31T00:01:17Z (RFD66606-2354) '   the Seal Bao from the backup bucket.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:25Z (RFD66606-2354) '2. Rebuild the key: combine the shares into the 32-byte key (one share is the key
+2026-10-31T00:01:18Z (RFD66606-2354) '2. Rebuild the key: combine the shares into the 32-byte key (one share is the key
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2354) '   itself). Check the length and the key id the configuration names before use.
+2026-10-31T00:01:19Z (RFD66606-2354) '   itself). Check the length and the key id the configuration names before use.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:27Z (RFD66606-2354) '3. Start a new Seal Bao on any host with a `static` seal whose key is a file in memory
+2026-10-31T00:01:20Z (RFD66606-2354) '3. Start a new Seal Bao on any host with a `static` seal whose key is a file in memory
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2354) '   backed storage, and with the same listener rules: tailnet address, TLS.
+2026-10-31T00:01:21Z (RFD66606-2354) '   backed storage, and with the same listener rules: tailnet address, TLS.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:29Z (RFD66606-2354) '4. Restore the snapshot into it. Whether the restore needs the force option under a
+2026-10-31T00:01:22Z (RFD66606-2354) '4. Restore the snapshot into it. Whether the restore needs the force option under a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2354) '   fresh barrier is not yet measured; the recovery test settles it.
+2026-10-31T00:01:23Z (RFD66606-2354) '   fresh barrier is not yet measured; the recovery test settles it.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2354) '5. Check that the transit keys, the policies and the cert roles are back, and that one
+2026-10-31T00:01:24Z (RFD66606-2354) '5. Check that the transit keys, the policies and the cert roles are back, and that one
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2354) '   other Bao unseals through the new address with its existing periodic token.
+2026-10-31T00:01:25Z (RFD66606-2354) '   other Bao unseals through the new address with its existing periodic token.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:33Z (RFD66606-2354) '6. Point the other Baos at the new address if it changed, one at a time.
+2026-10-31T00:01:26Z (RFD66606-2354) '6. Point the other Baos at the new address if it changed, one at a time.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:34Z (RFD66606-2354) '7. Resume hands-off unsealing by wrapping the key with a new KMS, or by leaving it
+2026-10-31T00:01:27Z (RFD66606-2354) '7. Resume hands-off unsealing by wrapping the key with a new KMS, or by leaving it
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:35Z (RFD66606-2354) '   manual until one exists. A Bao that stays up needs none of this; only a restart does.
+2026-10-31T00:01:28Z (RFD66606-2354) '   manual until one exists. A Bao that stays up needs none of this; only a restart does.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:36Z (RFD66606-2354) '8. Write down what the restore took and which step was unclear, then amend this block.
+2026-10-31T00:01:29Z (RFD66606-2354) '8. Write down what the restore took and which step was unclear, then amend this block.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:30Z (RFD66606-2354) '
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:31Z (RFD66606-2354) 'The key never leaves the offline store except during steps 2 and 3, and the memory copy
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:32Z (RFD66606-2354) 'is destroyed when the host stops.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:33Z (RFD66606-2354) 'Alternative wrapper: a passkey
+ # tags: rfd:details-heading
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:34Z (RFD66606-2354) 'Fly KMS is the hands-off wrapper. A passkey can wrap the same 32-byte static key when no
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:35Z (RFD66606-2354) 'Fly KMS is available, at the price of a person at every restart (operator, 2026-10-30).
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:36Z (RFD66606-2354) 'The route has not been run here; the recovery test measures it.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
@@ -489,367 +489,297 @@
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:38Z (RFD66606-2354) 'The key never leaves the offline store except during steps 2 and 3, and the memory copy
+2026-10-31T00:01:38Z (RFD66606-2354) '- **Passkey.** A passkey whose authenticator offers a secret-derivation extension can
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:39Z (RFD66606-2354) 'is destroyed when the host stops.
+2026-10-31T00:01:39Z (RFD66606-2354) '  derive a wrapping key from a challenge, with a touch. Support differs by authenticator
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:40Z (RFD66606-2354) '
+2026-10-31T00:01:40Z (RFD66606-2354) '  and by client library, so confirm that the same credential returns the same secret on
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:41Z (RFD66606-2354) 'Alternative wrapper: a passkey
+2026-10-31T00:01:41Z (RFD66606-2354) '  a second host before relying on it. A passkey that only signs cannot wrap anything.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:42Z (RFD66606-2354) '- **Hardware seal in Bao.** OpenBao can seal through a PKCS#11 module, but that needs a
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:43Z (RFD66606-2354) '  token that decrypts or unwraps with a mechanism the seal supports; whether a passkey
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:44Z (RFD66606-2354) '  does is not known. Until measured, the passkey wraps the static key and Bao keeps its
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:45Z (RFD66606-2354) '  `static` seal.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:46Z (RFD66606-2354) '- Keep two passkeys, stored apart, since one lost token otherwise ends recovery. A
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:47Z (RFD66606-2354) '  passkey stays out of the backup bucket and off any Fly host.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:01:48Z (RFD66606-2354) 'How the key arrives, and rotating the seal
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:42Z (RFD66606-2354) 'Fly KMS is the hands-off wrapper. A passkey can wrap the same 32-byte static key when no
+2026-10-31T00:01:49Z (RFD66606-2354) 'A Bao on a `static` seal holds one 32-byte key. How that key reaches the process is a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:43Z (RFD66606-2354) 'Fly KMS is available, at the price of a person at every restart (operator, 2026-10-30).
+2026-10-31T00:01:50Z (RFD66606-2354) 'mode in the start-up script, not part of the seal. Every mode supplies the same key, so
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:44Z (RFD66606-2354) 'The route has not been run here; the recovery test measures it.
+2026-10-31T00:01:51Z (RFD66606-2354) 'a node changes mode with no migration (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:45Z (RFD66606-2354) '
+2026-10-31T00:01:52Z (RFD66606-2354) '
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:46Z (RFD66606-2354) '- **Passkey.** A passkey whose authenticator offers a secret-derivation extension can
+2026-10-31T00:01:53Z (RFD66606-2354) '- `tpm`: a non-exportable TPM key unwraps a wrapped copy of the key at start, with no
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:47Z (RFD66606-2354) '  derive a wrapping key from a challenge, with a touch. Support differs by authenticator
+2026-10-31T00:01:54Z (RFD66606-2354) '  PIN and no touch. The wrapped file opens only on that machine.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:48Z (RFD66606-2354) '  and by client library, so confirm that the same credential returns the same secret on
+2026-10-31T00:01:55Z (RFD66606-2354) '- `kms`: the start-up script asks the Seal Bao, or on Fly the machine's own KMS, for
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:49Z (RFD66606-2354) '  a second host before relying on it. A passkey that only signs cannot wrap anything.
+2026-10-31T00:01:56Z (RFD66606-2354) '  the key.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:50Z (RFD66606-2354) '- **Hardware seal in Bao.** OpenBao can seal through a PKCS#11 module, but that needs a
+2026-10-31T00:01:57Z (RFD66606-2354) '- `passkey`: a person touches the passkey at each start.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:51Z (RFD66606-2354) '  token that decrypts or unwraps with a mechanism the seal supports; whether a passkey
+2026-10-31T00:01:58Z (RFD66606-2354) '- `manual`: the script asks a person for the key, for example from the offline Shamir
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:52Z (RFD66606-2354) '  does is not known. Until measured, the passkey wraps the static key and Bao keeps its
+2026-10-31T00:01:59Z (RFD66606-2354) '  shares, and then starts Bao. Bao does not start without the key, and a `static` seal
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:53Z (RFD66606-2354) '  `static` seal.
+2026-10-31T00:02:00Z (RFD66606-2354) '  has no manual unseal of its own. A node left in this mode starts nothing on its own.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:54Z (RFD66606-2354) '- Keep two passkeys, stored apart, since one lost token otherwise ends recovery. A
+2026-10-31T00:02:01Z (RFD66606-2354) '- A node lists the modes it has in order and uses the first that works, for example
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:55Z (RFD66606-2354) '  passkey stays out of the backup bucket and off any Fly host.
+2026-10-31T00:02:02Z (RFD66606-2354) '  `tpm`, then `kms`, then `passkey`, then `manual`. Each node wraps the key once per
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:56Z (RFD66606-2354) '
+2026-10-31T00:02:03Z (RFD66606-2354) '  mode it lists, so any one is enough (operator, 2026-10-30). The script logs which mode
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:57Z (RFD66606-2354) 'How the key arrives, and rotating the seal
+2026-10-31T00:02:04Z (RFD66606-2354) '  unwrapped the key, so a fallback shows. Splitting the key so that several modes are all
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:05Z (RFD66606-2354) '  required is not used: one broken mode would then block the start.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:06Z (RFD66606-2354) '- The plain key is held in memory-backed storage only for the start, and the file is
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:07Z (RFD66606-2354) '  deleted once Bao reports unsealed.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:08Z (RFD66606-2354) '- Changing the seal type is a different act: it is seal key rotation, run with
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:09Z (RFD66606-2354) '  `bao operator unseal -migrate` while the old seal still answers, and it needs a
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:10Z (RFD66606-2354) '  restart.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:11Z (RFD66606-2354) '
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:12Z (RFD66606-2354) 'Measured on the operator's desktop on 2026-10-30, a TPM 2.0 firmware TPM: a 32-byte key
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:13Z (RFD66606-2354) 'wrapped to a non-exportable key unwrapped to the same bytes; a changed byte in the
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:14Z (RFD66606-2354) 'wrapped file, an export of the private key and a deleted key were each refused. A Bao
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:15Z (RFD66606-2354) 'with a `static` seal fed by that unwrap initialised, restarted and unsealed with nobody
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:16Z (RFD66606-2354) 'typing, and a wrong key left it sealed. Not measured: a reboot, a copy of the wrapped file
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:17Z (RFD66606-2354) 'on another machine, and the `kms`, `passkey` and `manual` modes. The Steam Deck shows a
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:18Z (RFD66606-2354) 'TPM 2.0 device that `systemd-creds` cannot use without root; the Steam Frame is
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:19Z (RFD66606-2354) 'unchecked.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:20Z (RFD66606-2354) 'Migration to the transit seal
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:58Z (RFD66606-2354) 'A Bao on a `static` seal holds one 32-byte key. How that key reaches the process is a
+2026-10-31T00:02:21Z (RFD66606-2354) 'Stand up the Seal Bao on Fly and pass its recovery test, add a `seal "transit"`
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:01:59Z (RFD66606-2354) 'mode in the start-up script, not part of the seal. Every mode supplies the same key, so
+2026-10-31T00:02:22Z (RFD66606-2354) 'block to the Fly config, and migrate with one last Shamir unseal (`-migrate`).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:00Z (RFD66606-2354) 'a node changes mode with no migration (operator, 2026-10-30).
+2026-10-31T00:02:23Z (RFD66606-2354) 'The Shamir key stays offline as the recovery key.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:01Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:02Z (RFD66606-2354) '- `tpm`: a non-exportable TPM key unwraps a wrapped copy of the key at start, with no
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:03Z (RFD66606-2354) '  PIN and no touch. The wrapped file opens only on that machine.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:04Z (RFD66606-2354) '- `kms`: the start-up script asks the Seal Bao, or on Fly the machine's own KMS, for
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:05Z (RFD66606-2354) '  the key.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:06Z (RFD66606-2354) '- `passkey`: a person touches the passkey at each start.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:07Z (RFD66606-2354) '- `manual`: the script asks a person for the key, for example from the offline Shamir
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:08Z (RFD66606-2354) '  shares, and then starts Bao. Bao does not start without the key, and a `static` seal
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:09Z (RFD66606-2354) '  has no manual unseal of its own. A node left in this mode starts nothing on its own.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:10Z (RFD66606-2354) '- A node lists the modes it has in order and uses the first that works, for example
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:11Z (RFD66606-2354) '  `tpm`, then `kms`, then `passkey`, then `manual`. Each node wraps the key once per
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:12Z (RFD66606-2354) '  mode it lists, so any one is enough (operator, 2026-10-30). The script logs which mode
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:13Z (RFD66606-2354) '  unwrapped the key, so a fallback shows. Splitting the key so that several modes are all
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:14Z (RFD66606-2354) '  required is not used: one broken mode would then block the start.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:15Z (RFD66606-2354) '- The plain key is held in memory-backed storage only for the start, and the file is
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:16Z (RFD66606-2354) '  deleted once Bao reports unsealed.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:17Z (RFD66606-2354) '- Changing the seal type is a different act: it is seal key rotation, run with
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:18Z (RFD66606-2354) '  `bao operator unseal -migrate` while the old seal still answers, and it needs a
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:19Z (RFD66606-2354) '  restart.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:20Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:21Z (RFD66606-2354) 'Measured on the operator's desktop on 2026-10-30, a TPM 2.0 firmware TPM: a 32-byte key
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:22Z (RFD66606-2354) 'wrapped to a non-exportable key unwrapped to the same bytes; a changed byte in the
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:23Z (RFD66606-2354) 'wrapped file, an export of the private key and a deleted key were each refused. A Bao
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:24Z (RFD66606-2354) 'with a `static` seal fed by that unwrap initialised, restarted and unsealed with nobody
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:25Z (RFD66606-2354) 'typing, and a wrong key left it sealed. Not measured: a reboot, a copy of the wrapped file
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:26Z (RFD66606-2354) 'on another machine, and the `kms`, `passkey` and `manual` modes. The Steam Deck shows a
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:27Z (RFD66606-2354) 'TPM 2.0 device that `systemd-creds` cannot use without root; the Steam Frame is
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:28Z (RFD66606-2354) 'unchecked.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:29Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:30Z (RFD66606-2354) 'Migration to the transit seal
+2026-10-31T00:02:24Z (RFD66606-2354) 'Sub-decisions open
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:31Z (RFD66606-2354) 'Stand up the Seal Bao on Fly and pass its recovery test, add a `seal "transit"`
+2026-10-31T00:02:25Z (RFD66606-2354) '- The seal provider: a Seal Bao on Fly, unwrapped from Fly KMS (operator, 2026-10-30).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:32Z (RFD66606-2354) 'block to the Fly config, and migrate with one last Shamir unseal (`-migrate`).
+2026-10-31T00:02:26Z (RFD66606-2354) '- Whether the Seal Bao runs as one machine or as three voters; both are allowed.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:33Z (RFD66606-2354) 'The Shamir key stays offline as the recovery key.
+2026-10-31T00:02:27Z (RFD66606-2354) '- Where the offline copy of the Seal Bao's key is kept.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:34Z (RFD66606-2354) '
+2026-10-31T00:02:28Z (RFD66606-2354) '- Whether to write the CRL-loop fix (a separate bug) into this
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:35Z (RFD66606-2354) 'Sub-decisions open
+2026-10-31T00:02:29Z (RFD66606-2354) '  rollout or before it.
+ # tags: rfd:details
+ Text:RFD2354  1 LINE
+ Text:Written
+
+2026-10-31T00:02:30Z (RFD66606-2354) 'Sources
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:36Z (RFD66606-2354) '- The seal provider: a Seal Bao on Fly, unwrapped from Fly KMS (operator, 2026-10-30).
+2026-10-31T00:02:31Z (RFD66606-2354) '- Vault auto-unseal precedent for the KMS wrapper pattern
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:37Z (RFD66606-2354) '- Whether the Seal Bao runs as one machine or as three voters; both are allowed.
+2026-10-31T00:02:32Z (RFD66606-2354) '  (`cloud kms auto-unseal`, applies unchanged to OpenBao forks).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:38Z (RFD66606-2354) '- Where the offline copy of the Seal Bao's key is kept.
+2026-10-31T00:02:33Z (RFD66606-2354) '- RFD66606-2144 (its eleventh defect: the without-auto-unseal failure mode).
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:39Z (RFD66606-2354) '- Whether to write the CRL-loop fix (a separate bug) into this
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:40Z (RFD66606-2354) '  rollout or before it.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:41Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:42Z (RFD66606-2354) 'Sources
+2026-10-31T00:02:34Z (RFD66606-2354) 'The problem
  # tags: rfd:details-heading
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:43Z (RFD66606-2354) '- Vault auto-unseal precedent for the KMS wrapper pattern
+2026-10-31T00:02:35Z (RFD66606-2354) 'Bao was one machine, Shamir seal single share, operator+1P recovery per restart. Shamir with a
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written
 
-2026-10-31T00:02:44Z (RFD66606-2354) '  (`cloud kms auto-unseal`, applies unchanged to OpenBao forks).
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:45Z (RFD66606-2354) '- RFD66606-2144 (its eleventh defect: the without-auto-unseal failure mode).
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:46Z (RFD66606-2354) '
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:47Z (RFD66606-2354) 'The problem
- # tags: rfd:details-heading
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:48Z (RFD66606-2354) 'Bao was one machine, Shamir seal single share, operator+1P recovery per restart. Shamir with a
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:49Z (RFD66606-2354) 'manual share is the right seal for one-of-one, wrong for three-of-three.
- # tags: rfd:details
- Text:RFD2354  1 LINE
- Text:Written
-
-2026-10-31T00:02:50Z (RFD66606-2354) '
+2026-10-31T00:02:36Z (RFD66606-2354) 'manual share is the right seal for one-of-one, wrong for three-of-three.
  # tags: rfd:details
  Text:RFD2354  1 LINE
  Text:Written

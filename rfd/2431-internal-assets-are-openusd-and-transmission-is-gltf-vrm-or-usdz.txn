@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2431) 'the file formats used inside the pipeline and the ones sent out of it.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2431  1 LINE
  Text:Written
 
@@ -14,82 +14,52 @@
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2431) '
- # tags: rfd:hook
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2431) 'Each stage adds a layer to the OpenUSD stage, and only the boundary may convert it.
+2026-10-31T00:00:03Z (RFD66606-2431) 'Each stage adds a layer to the OpenUSD stage, and only the boundary may convert it.
  # tags: rfd:intrigue
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2431) '
- # tags: rfd:intrigue
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2431) 'Before you pass an asset between stages, keep it as an OpenUSD `.usda` or `.usdc` layer.
+2026-10-31T00:00:04Z (RFD66606-2431) 'Before you pass an asset between stages, keep it as an OpenUSD `.usda` or `.usdc` layer.
  # tags: rfd:exit
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2431) 'Convert to glTF binary, VRM or USDZ only at the boundary.
+2026-10-31T00:00:05Z (RFD66606-2431) 'Convert to glTF binary, VRM or USDZ only at the boundary.
  # tags: rfd:exit
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2431) '
- # tags: rfd:exit
+2026-10-31T00:00:06Z (RFD66606-2431) 'internal assets are OpenUSD and transmission is glTF, VRM or USDZ
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2431) 'internal assets are OpenUSD and transmission is glTF, VRM or USDZ
- # tags: rfd:details-title
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2431) '- Internal: OpenUSD `.usda` / `.usdc` (RFD66606-1053 `committed`), each stage adds a layer.
+2026-10-31T00:00:07Z (RFD66606-2431) '- Internal: OpenUSD `.usda` / `.usdc` (RFD66606-1053 `committed`), each stage adds a layer.
  # tags: rfd:decision
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2431) '- Convert at the boundary only.
+2026-10-31T00:00:08Z (RFD66606-2431) '- Convert at the boundary only.
  # tags: rfd:decision
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2431) '
- # tags: rfd:decision
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2431) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2431) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2431) '- RFD66606-1053, the `committed` OpenUSD stage.
+2026-10-31T00:00:10Z (RFD66606-2431) '- RFD66606-1053, the `committed` OpenUSD stage.
  # tags: rfd:related
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2431) '
- # tags: rfd:related
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2431) 'Transmission formats
+2026-10-31T00:00:11Z (RFD66606-2431) 'Transmission formats
  # tags: rfd:details-heading
  Text:RFD2431  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2431) 'Transmission: glTF binary (asset), VRM (avatar), USDZ (archive).
- # tags: rfd:details
- Text:RFD2431  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2431) '
+2026-10-31T00:00:12Z (RFD66606-2431) 'Transmission: glTF binary (asset), VRM (avatar), USDZ (archive).
  # tags: rfd:details
  Text:RFD2431  1 LINE
  Text:Written

@@ -10,7 +10,7 @@
  Text:Written
 
 2026-10-12T00:00:02Z (RFD66606-2311) 'tokens, and this RFD is how to set that up again from nothing on any Fedora 44 host
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2311  1 LINE
  Text:Written
 
@@ -25,7 +25,7 @@
  Text:Written
 
 2026-10-12T00:00:05Z (RFD66606-2311) 'router port
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2311  1 LINE
  Text:Written
 
@@ -34,142 +34,142 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:07Z (RFD66606-2311) '
- # tags: rfd:hook
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:08Z (RFD66606-2311) 'No RFD decided how a card serves Bonsai 2, and the setup lived in agents' notes, tied to
+2026-10-12T00:00:07Z (RFD66606-2311) 'No RFD decided how a card serves Bonsai 2, and the setup lived in agents' notes, tied to
  # tags: rfd:intrigue
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:09Z (RFD66606-2311) 'whichever machine held the cards that week.
+2026-10-12T00:00:08Z (RFD66606-2311) 'whichever machine held the cards that week.
  # tags: rfd:intrigue
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:10Z (RFD66606-2311) '
- # tags: rfd:intrigue
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:11Z (RFD66606-2311) 'Build the engine and the host as the sections below say, then run the witnesses.
+2026-10-12T00:00:09Z (RFD66606-2311) 'Build the engine and the host as the sections below say, then run the witnesses.
  # tags: rfd:exit
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:12Z (RFD66606-2311) '
- # tags: rfd:exit
+2026-10-12T00:00:10Z (RFD66606-2311) 'serving bonsai 2 with ninfer-all and dflash2
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:13Z (RFD66606-2311) 'serving bonsai 2 with ninfer-all and dflash2
- # tags: rfd:details-title
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:14Z (RFD66606-2311) 'A Bonsai 2 language server is ninfer-all serving the t2
+2026-10-12T00:00:11Z (RFD66606-2311) 'A Bonsai 2 language server is ninfer-all serving the t2
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:15Z (RFD66606-2311) '`bonsai2-27b-heretic.ninfer` artifact with `--spec dflash2 --draft-tokens 5`,
+2026-10-12T00:00:12Z (RFD66606-2311) '`bonsai2-27b-heretic.ninfer` artifact with `--spec dflash2 --draft-tokens 5`,
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:16Z (RFD66606-2311) 'one server per card, each a systemd unit on Fedora 44, native or in WSL2.
+2026-10-12T00:00:13Z (RFD66606-2311) 'one server per card, each a systemd unit on Fedora 44, native or in WSL2.
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:17Z (RFD66606-2311) 'Each server binds loopback only and takes an API key. stunnel with mutual
+2026-10-12T00:00:14Z (RFD66606-2311) 'Each server binds loopback only and takes an API key. stunnel with mutual
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:18Z (RFD66606-2311) 'TLS is the only way in from off the host. Clients reach every server
+2026-10-12T00:00:15Z (RFD66606-2311) 'TLS is the only way in from off the host. Clients reach every server
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:19Z (RFD66606-2311) 'through one router port. Fedora 44 is the only supported OS (operator,
+2026-10-12T00:00:16Z (RFD66606-2311) 'through one router port. Fedora 44 is the only supported OS (operator,
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:20Z (RFD66606-2311) '2026-10-17).
+2026-10-12T00:00:17Z (RFD66606-2311) '2026-10-17).
  # tags: rfd:decision
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:21Z (RFD66606-2311) '
- # tags: rfd:decision
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:22Z (RFD66606-2311) '- RFD66606-2308 (Mac ninfer port), which uses this server as its reference.
+2026-10-12T00:00:18Z (RFD66606-2311) '- RFD66606-2308 (Mac ninfer port), which uses this server as its reference.
  # tags: rfd:related
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:23Z (RFD66606-2311) '- RFD66606-2319 (endpoint certificates), where the front's certificate comes
+2026-10-12T00:00:19Z (RFD66606-2311) '- RFD66606-2319 (endpoint certificates), where the front's certificate comes
  # tags: rfd:related
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:24Z (RFD66606-2311) '  from.
+2026-10-12T00:00:20Z (RFD66606-2311) '  from.
  # tags: rfd:related
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:25Z (RFD66606-2311) '- RFD66606-2310 (eye-landmark scorer), which calls this server.
+2026-10-12T00:00:21Z (RFD66606-2311) '- RFD66606-2310 (eye-landmark scorer), which calls this server.
  # tags: rfd:related
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:26Z (RFD66606-2311) '
- # tags: rfd:related
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:27Z (RFD66606-2311) 'The choice
+2026-10-12T00:00:22Z (RFD66606-2311) 'The choice
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:28Z (RFD66606-2311) 'The operator chose the engine and drafter on 2026-10-12
+2026-10-12T00:00:23Z (RFD66606-2311) 'The operator chose the engine and drafter on 2026-10-12
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:29Z (RFD66606-2311) '("The ninfer with dflash won") after the A-B-A run in the details.
+2026-10-12T00:00:24Z (RFD66606-2311) '("The ninfer with dflash won") after the A-B-A run in the details.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:30Z (RFD66606-2311) '
+2026-10-12T00:00:25Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:31Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:32Z (RFD66606-2311) 'Blocklist
+2026-10-12T00:00:26Z (RFD66606-2311) 'Blocklist
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:33Z (RFD66606-2311) '- BLOCKLIST.md, "Speculative decoders other than MTP-3" and "1-bit
+2026-10-12T00:00:27Z (RFD66606-2311) '- BLOCKLIST.md, "Speculative decoders other than MTP-3" and "1-bit
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:34Z (RFD66606-2311) '  PTQ1_0 bodies", both for the ggml language server.
+2026-10-12T00:00:28Z (RFD66606-2311) '  PTQ1_0 bodies", both for the ggml language server.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:29Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:30Z (RFD66606-2311) 'Sources
+ # tags: rfd:details-heading
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:31Z (RFD66606-2311) 'Drafted on 2026-10-12 from an A-B-A run on one RTX 4090. Rewritten on
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:32Z (RFD66606-2311) '2026-10-17 to describe the setup rather than the machines it ran on, after
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:33Z (RFD66606-2311) 'the operator unshipped the fork's Windows support and kept Fedora 44,
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:34Z (RFD66606-2311) 'native or WSL2.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
@@ -179,32 +179,32 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:36Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:37Z (RFD66606-2311) 'Sources
+2026-10-12T00:00:36Z (RFD66606-2311) 'The measurement
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:38Z (RFD66606-2311) 'Drafted on 2026-10-12 from an A-B-A run on one RTX 4090. Rewritten on
+2026-10-12T00:00:37Z (RFD66606-2311) 'One RTX 4090, the same launcher flags on every arm (`--max-context 262144`,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:39Z (RFD66606-2311) '2026-10-17 to describe the setup rather than the machines it ran on, after
+2026-10-12T00:00:38Z (RFD66606-2311) '`--kv-dtype rk8v4`, `--vision`, one request at a time), three repetitions,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:40Z (RFD66606-2311) 'the operator unshipped the fork's Windows support and kept Fedora 44,
+2026-10-12T00:00:39Z (RFD66606-2311) 'temperature 0, 512 generated tokens, speeds read from the server's own
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:41Z (RFD66606-2311) 'native or WSL2.
+2026-10-12T00:00:40Z (RFD66606-2311) '`timings`. Arms ran A-B-A so the repeated arm shows drift. Decode in tokens
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:41Z (RFD66606-2311) 'per second:
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
@@ -214,117 +214,117 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:43Z (RFD66606-2311) '
+2026-10-12T00:00:43Z (RFD66606-2311) '| Arm | chat | code | story |
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:44Z (RFD66606-2311) 'The measurement
+2026-10-12T00:00:44Z (RFD66606-2311) '| --- | --- | --- | --- |
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:45Z (RFD66606-2311) '| ninfer-all, DFlash2 K=5 | 218-232 | 314-360 | 176-187 |
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:46Z (RFD66606-2311) '| prebuilt engine, MTP-3 | 206-226 | 279-282 | 176-184 |
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:47Z (RFD66606-2311) '| ninfer-all, MTP-3 | 193-206 | 239-267 | 164-172 |
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:48Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:49Z (RFD66606-2311) '- Prefill on ninfer-all is about 10% faster at 3k prompt tokens.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:50Z (RFD66606-2311) '- Story is a tie inside the spread. ninfer-all with MTP-3 is the slowest
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:51Z (RFD66606-2311) '  arm, so the gain needs both the engine and the drafter.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:52Z (RFD66606-2311) '- Temperature-0 text differs between the two engines and between the two
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:53Z (RFD66606-2311) '  drafters inside ninfer-all.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:54Z (RFD66606-2311) '- The prebuilt engine cannot run DFlash2 on this artifact without
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:55Z (RFD66606-2311) '  `--lm-head-draft`, and with it DFlash2 was slower than its MTP-3 on every
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:56Z (RFD66606-2311) '  workload.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:57Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:00:58Z (RFD66606-2311) 'The artifact
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:45Z (RFD66606-2311) 'One RTX 4090, the same launcher flags on every arm (`--max-context 262144`,
+2026-10-12T00:00:59Z (RFD66606-2311) '`bonsai2-27b-heretic.ninfer`, format `t2_g128_fp16`, with the vision tower,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:46Z (RFD66606-2311) '`--kv-dtype rk8v4`, `--vision`, one request at a time), three repetitions,
+2026-10-12T00:01:00Z (RFD66606-2311) 'the MTP head and the DFlash2 head inside it. The converter is pure Python
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:47Z (RFD66606-2311) 'temperature 0, 512 generated tokens, speeds read from the server's own
+2026-10-12T00:01:01Z (RFD66606-2311) 'and runs on the CPU, with recipe `bonsai2_27b_ternary` from the Heretic
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:48Z (RFD66606-2311) '`timings`. Arms ran A-B-A so the repeated arm shows drift. Decode in tokens
+2026-10-12T00:01:02Z (RFD66606-2311) 'PQ2_0 body and the Bonsai-trained MTP and DFlash2 heads. The four sources
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:49Z (RFD66606-2311) 'per second:
+2026-10-12T00:01:03Z (RFD66606-2311) 'and the artifact are published in the public dataset
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:50Z (RFD66606-2311) '
+2026-10-12T00:01:04Z (RFD66606-2311) '`chibifire/ninfer-bonsai2-heretic` (operator, 2026-10-12), with a sha256 to
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:00:51Z (RFD66606-2311) '| Arm | chat | code | story |
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:52Z (RFD66606-2311) '| --- | --- | --- | --- |
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:53Z (RFD66606-2311) '| ninfer-all, DFlash2 K=5 | 218-232 | 314-360 | 176-187 |
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:54Z (RFD66606-2311) '| prebuilt engine, MTP-3 | 206-226 | 279-282 | 176-184 |
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:55Z (RFD66606-2311) '| ninfer-all, MTP-3 | 193-206 | 239-267 | 164-172 |
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:56Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:57Z (RFD66606-2311) '- Prefill on ninfer-all is about 10% faster at 3k prompt tokens.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:58Z (RFD66606-2311) '- Story is a tie inside the spread. ninfer-all with MTP-3 is the slowest
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:00:59Z (RFD66606-2311) '  arm, so the gain needs both the engine and the drafter.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:00Z (RFD66606-2311) '- Temperature-0 text differs between the two engines and between the two
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:01Z (RFD66606-2311) '  drafters inside ninfer-all.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:02Z (RFD66606-2311) '- The prebuilt engine cannot run DFlash2 on this artifact without
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:03Z (RFD66606-2311) '  `--lm-head-draft`, and with it DFlash2 was slower than its MTP-3 on every
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:04Z (RFD66606-2311) '  workload.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:05Z (RFD66606-2311) '
+2026-10-12T00:01:05Z (RFD66606-2311) 'check a download against.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
@@ -334,42 +334,42 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:07Z (RFD66606-2311) 'The artifact
- # tags: rfd:details-heading
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:08Z (RFD66606-2311) '`bonsai2-27b-heretic.ninfer`, format `t2_g128_fp16`, with the vision tower,
+2026-10-12T00:01:07Z (RFD66606-2311) 'Every input is Apache-2.0: Qwen3.8-27B, Ternary Bonsai 2 27B, the Heretic
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:09Z (RFD66606-2311) 'the MTP head and the DFlash2 head inside it. The converter is pure Python
+2026-10-12T00:01:08Z (RFD66606-2311) 'v2 modification, the MTP and DFlash2 heads and the weights they adapt. The
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:10Z (RFD66606-2311) 'and runs on the CPU, with recipe `bonsai2_27b_ternary` from the Heretic
+2026-10-12T00:01:09Z (RFD66606-2311) 'dataset carries their licence and notice files, a root `NOTICE` that names
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:11Z (RFD66606-2311) 'PQ2_0 body and the Bonsai-trained MTP and DFlash2 heads. The four sources
+2026-10-12T00:01:10Z (RFD66606-2311) 'each author and states the conversion, and an Apache-2.0 card.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:12Z (RFD66606-2311) 'and the artifact are published in the public dataset
+2026-10-12T00:01:11Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:13Z (RFD66606-2311) '`chibifire/ninfer-bonsai2-heretic` (operator, 2026-10-12), with a sha256 to
+2026-10-12T00:01:12Z (RFD66606-2311) 'A published artifact names no host path. A workflow in the fork converts on
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:14Z (RFD66606-2311) 'check a download against.
+2026-10-12T00:01:13Z (RFD66606-2311) 'a clean runner and fails on any of the runner's directories in the artifact
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:14Z (RFD66606-2311) 'or its report, after a planted path is caught.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
@@ -379,137 +379,137 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:16Z (RFD66606-2311) 'Every input is Apache-2.0: Qwen3.8-27B, Ternary Bonsai 2 27B, the Heretic
+2026-10-12T00:01:16Z (RFD66606-2311) 'The prebuilt engine reads only `t5_g128_fp16`, and ninfer-all reads only
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:17Z (RFD66606-2311) 'v2 modification, the MTP and DFlash2 heads and the weights they adapt. The
+2026-10-12T00:01:17Z (RFD66606-2311) '`t2_g128_fp16`. An artifact from one family does not load in the other. The
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:18Z (RFD66606-2311) 'dataset carries their licence and notice files, a root `NOTICE` that names
+2026-10-12T00:01:18Z (RFD66606-2311) 'artifact cannot take `--lm-head-q6`; with it the server exits at startup.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:19Z (RFD66606-2311) 'each author and states the conversion, and an Apache-2.0 card.
+2026-10-12T00:01:19Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:20Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:21Z (RFD66606-2311) 'A published artifact names no host path. A workflow in the fork converts on
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:22Z (RFD66606-2311) 'a clean runner and fails on any of the runner's directories in the artifact
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:23Z (RFD66606-2311) 'or its report, after a planted path is caught.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:24Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:25Z (RFD66606-2311) 'The prebuilt engine reads only `t5_g128_fp16`, and ninfer-all reads only
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:26Z (RFD66606-2311) '`t2_g128_fp16`. An artifact from one family does not load in the other. The
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:27Z (RFD66606-2311) 'artifact cannot take `--lm-head-q6`; with it the server exits at startup.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:28Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:29Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:30Z (RFD66606-2311) 'Building the engine
+2026-10-12T00:01:20Z (RFD66606-2311) 'Building the engine
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:31Z (RFD66606-2311) '`v-sekai/build.nu` in the fork builds on Fedora 44, native or WSL2, inside
+2026-10-12T00:01:21Z (RFD66606-2311) '`v-sekai/build.nu` in the fork builds on Fedora 44, native or WSL2, inside
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:32Z (RFD66606-2311) 'the fork's pixi `build` environment, which carries the compilers, CUDA,
+2026-10-12T00:01:22Z (RFD66606-2311) 'the fork's pixi `build` environment, which carries the compilers, CUDA,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:33Z (RFD66606-2311) 'git, strip and gh. The host needs only curl to fetch pixi; git runs through
+2026-10-12T00:01:23Z (RFD66606-2311) 'git, strip and gh. The host needs only curl to fetch pixi; git runs through
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:34Z (RFD66606-2311) '`pixi exec`. The output is `dist/linux` (the programs and their library
+2026-10-12T00:01:24Z (RFD66606-2311) '`pixi exec`. The output is `dist/linux` (the programs and their library
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:35Z (RFD66606-2311) 'closure) and `dist/tools-linux/ninfer-install`.
+2026-10-12T00:01:25Z (RFD66606-2311) 'closure) and `dist/tools-linux/ninfer-install`.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:36Z (RFD66606-2311) '
+2026-10-12T00:01:26Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:37Z (RFD66606-2311) '- One build compiles for one CUDA architecture; CMake refuses a list.
+2026-10-12T00:01:27Z (RFD66606-2311) '- One build compiles for one CUDA architecture; CMake refuses a list.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:38Z (RFD66606-2311) '- An sm_86 build runs on an RTX 3090 and an RTX 4090, so one build serves
+2026-10-12T00:01:28Z (RFD66606-2311) '- An sm_86 build runs on an RTX 3090 and an RTX 4090, so one build serves
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:39Z (RFD66606-2311) '  both cards of a two-card host.
+2026-10-12T00:01:29Z (RFD66606-2311) '  both cards of a two-card host.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:40Z (RFD66606-2311) '- In WSL2 the build drops the Windows entries from `PATH`, because CMake's
+2026-10-12T00:01:30Z (RFD66606-2311) '- In WSL2 the build drops the Windows entries from `PATH`, because CMake's
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:41Z (RFD66606-2311) '  package search over the 9p bridge takes minutes per lookup.
+2026-10-12T00:01:31Z (RFD66606-2311) '  package search over the 9p bridge takes minutes per lookup.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:42Z (RFD66606-2311) '
+2026-10-12T00:01:32Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:33Z (RFD66606-2311) 'The host layout
+ # tags: rfd:details-heading
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:34Z (RFD66606-2311) '- `/opt/ninfer/bin` and `/opt/ninfer/lib` come from `dist/linux` and are
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:35Z (RFD66606-2311) '  checked against its `SHA256SUMS`. `/opt/ninfer/models` holds the
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:36Z (RFD66606-2311) '  artifact, checked against the dataset's sha256.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:37Z (RFD66606-2311) '- A system user `ninference` runs the servers. The key is
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:38Z (RFD66606-2311) '  `NINFER_API_KEY=` in `/etc/ninfer/env`, root-only, read by systemd.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:39Z (RFD66606-2311) '- One unit per card, `ninfer-serve-<card>.service`, enabled, restarting
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:40Z (RFD66606-2311) '  on any exit. It sets `CUDA_DEVICE_ORDER=PCI_BUS_ID` and picks the card
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:41Z (RFD66606-2311) '  with `--device`, adds `/opt/ninfer/lib` to the library path (and
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:42Z (RFD66606-2311) '  `/usr/lib/wsl/lib` in WSL2), and runs:
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
@@ -519,427 +519,342 @@
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:44Z (RFD66606-2311) 'The host layout
+2026-10-12T00:01:44Z (RFD66606-2311) '      ninfer-serve /opt/ninfer/models/bonsai2-27b-heretic.ninfer
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:45Z (RFD66606-2311) '        --device <n> --host 127.0.0.1 --port <port> --api-key ${NINFER_API_KEY}
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:46Z (RFD66606-2311) '        --model-id bonsai-27b --max-context 262144 --kv-capacity 262144
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:47Z (RFD66606-2311) '        --kv-dtype rk8v4 --vision --max-concurrency 1
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:48Z (RFD66606-2311) '        --spec dflash2 --draft-tokens 5 --no-thinking
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:49Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:50Z (RFD66606-2311) '- The binary takes the key only on its command line, so a shell on the
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:51Z (RFD66606-2311) '  host sees it in `/proc`, `ps` and `systemctl status`. Mask `--api-key`
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:52Z (RFD66606-2311) '  whenever processes or units are listed.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:53Z (RFD66606-2311) '- In WSL2 the distribution stops when no Windows process holds it, and its
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:54Z (RFD66606-2311) '  units stop with it. A logon task keeps one process running in it.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:55Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:01:56Z (RFD66606-2311) 'Reaching it
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:45Z (RFD66606-2311) '- `/opt/ninfer/bin` and `/opt/ninfer/lib` come from `dist/linux` and are
+2026-10-12T00:01:57Z (RFD66606-2311) 'stunnel accepts on the host's tailnet address, one port per card, and
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:46Z (RFD66606-2311) '  checked against its `SHA256SUMS`. `/opt/ninfer/models` holds the
+2026-10-12T00:01:58Z (RFD66606-2311) 'forwards to the server's loopback port. It requires a client certificate
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:47Z (RFD66606-2311) '  artifact, checked against the dataset's sha256.
+2026-10-12T00:01:59Z (RFD66606-2311) 'under the chibifire Root and agent CA, and checks the client's host name
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:48Z (RFD66606-2311) '- A system user `ninference` runs the servers. The key is
+2026-10-12T00:02:00Z (RFD66606-2311) 'against an allowlist. Its own certificate comes from RFD66606-2319. In WSL2 the
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:49Z (RFD66606-2311) '  `NINFER_API_KEY=` in `/etc/ninfer/env`, root-only, read by systemd.
+2026-10-12T00:02:01Z (RFD66606-2311) 'tailnet address belongs to Windows, so stunnel runs there and forwards to
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:50Z (RFD66606-2311) '- One unit per card, `ninfer-serve-<card>.service`, enabled, restarting
+2026-10-12T00:02:02Z (RFD66606-2311) 'the loopback port that WSL2 forwards into the distribution.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:51Z (RFD66606-2311) '  on any exit. It sets `CUDA_DEVICE_ORDER=PCI_BUS_ID` and picks the card
+2026-10-12T00:02:03Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:52Z (RFD66606-2311) '  with `--device`, adds `/opt/ninfer/lib` to the library path (and
+2026-10-12T00:02:04Z (RFD66606-2311) 'On the client, a stunnel client maps each server to a local port, and a
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:53Z (RFD66606-2311) '  `/usr/lib/wsl/lib` in WSL2), and runs:
+2026-10-12T00:02:05Z (RFD66606-2311) 'LiteLLM proxy (`v-sekai/router/` in the fork) puts all of them behind one
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:54Z (RFD66606-2311) '
+2026-10-12T00:02:06Z (RFD66606-2311) 'port and one key. Its `bonsai` model goes to the least busy live server
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:55Z (RFD66606-2311) '      ninfer-serve /opt/ninfer/models/bonsai2-27b-heretic.ninfer
+2026-10-12T00:02:07Z (RFD66606-2311) 'and skips one that is down; a name per card selects one server. Hermes
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:56Z (RFD66606-2311) '        --device <n> --host 127.0.0.1 --port <port> --api-key ${NINFER_API_KEY}
+2026-10-12T00:02:08Z (RFD66606-2311) 'calls only the router.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:57Z (RFD66606-2311) '        --model-id bonsai-27b --max-context 262144 --kv-capacity 262144
+2026-10-12T00:02:09Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:01:58Z (RFD66606-2311) '        --kv-dtype rk8v4 --vision --max-concurrency 1
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:01:59Z (RFD66606-2311) '        --spec dflash2 --draft-tokens 5 --no-thinking
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:00Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:01Z (RFD66606-2311) '- The binary takes the key only on its command line, so a shell on the
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:02Z (RFD66606-2311) '  host sees it in `/proc`, `ps` and `systemctl status`. Mask `--api-key`
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:03Z (RFD66606-2311) '  whenever processes or units are listed.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:04Z (RFD66606-2311) '- In WSL2 the distribution stops when no Windows process holds it, and its
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:05Z (RFD66606-2311) '  units stop with it. A logon task keeps one process running in it.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:06Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:07Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:08Z (RFD66606-2311) 'Reaching it
+2026-10-12T00:02:10Z (RFD66606-2311) 'Witnesses
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:09Z (RFD66606-2311) 'stunnel accepts on the host's tailnet address, one port per card, and
+2026-10-12T00:02:11Z (RFD66606-2311) 'Each one carries a control that must fail.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:10Z (RFD66606-2311) 'forwards to the server's loopback port. It requires a client certificate
+2026-10-12T00:02:12Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:11Z (RFD66606-2311) 'under the chibifire Root and agent CA, and checks the client's host name
+2026-10-12T00:02:13Z (RFD66606-2311) '- **Ready.** `GET /v1/models` through the tunnel returns 200 with the key,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:12Z (RFD66606-2311) 'against an allowlist. Its own certificate comes from RFD66606-2319. In WSL2 the
+2026-10-12T00:02:14Z (RFD66606-2311) '  and 401 without a key and with a wrong one.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:13Z (RFD66606-2311) 'tailnet address belongs to Windows, so stunnel runs there and forwards to
+2026-10-12T00:02:15Z (RFD66606-2311) '- **Spec.** The unit's command line, key masked, carries `--spec dflash2
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:14Z (RFD66606-2311) 'the loopback port that WSL2 forwards into the distribution.
+2026-10-12T00:02:16Z (RFD66606-2311) '  --draft-tokens 5`, and the server log reports draft acceptance above zero.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:15Z (RFD66606-2311) '
+2026-10-12T00:02:17Z (RFD66606-2311) '- **Vision.** `v-sekai/vision_zero_shot_probe.py` against the tunnel names
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:16Z (RFD66606-2311) 'On the client, a stunnel client maps each server to a local port, and a
+2026-10-12T00:02:18Z (RFD66606-2311) '  the red circle, the blue square and the text 42. A text-only server
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:17Z (RFD66606-2311) 'LiteLLM proxy (`v-sekai/router/` in the fork) puts all of them behind one
+2026-10-12T00:02:19Z (RFD66606-2311) '  returns an error on the same request.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:18Z (RFD66606-2311) 'port and one key. Its `bonsai` model goes to the least busy live server
+2026-10-12T00:02:20Z (RFD66606-2311) '- **mTLS.** The allowlisted client gets an HTTP answer. No certificate,
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:19Z (RFD66606-2311) 'and skips one that is down; a name per card selects one server. Hermes
+2026-10-12T00:02:21Z (RFD66606-2311) '  and a certificate for a second client under the same CA, are both
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:20Z (RFD66606-2311) 'calls only the router.
+2026-10-12T00:02:22Z (RFD66606-2311) '  refused, the second with a subject-check failure.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:21Z (RFD66606-2311) '
+2026-10-12T00:02:23Z (RFD66606-2311) '- **Answer.** The same temperature-0 code prompt gives the same answer
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:22Z (RFD66606-2311) '
+2026-10-12T00:02:24Z (RFD66606-2311) '  hash on a rerun and after a reinstall on the same card.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:23Z (RFD66606-2311) 'Witnesses
+2026-10-12T00:02:25Z (RFD66606-2311) '- **Speed.** Three reps of a 512-token code answer at temperature 0 land
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:02:26Z (RFD66606-2311) '  inside the card's previous runs. A number without that baseline is not
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:02:27Z (RFD66606-2311) '  reported.
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:02:28Z (RFD66606-2311) '
+ # tags: rfd:details
+ Text:RFD2311  1 LINE
+ Text:Written
+
+2026-10-12T00:02:29Z (RFD66606-2311) 'Pitfalls
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:24Z (RFD66606-2311) 'Each one carries a control that must fail.
+2026-10-12T00:02:30Z (RFD66606-2311) '- Check that the files the running server holds still exist before a
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:25Z (RFD66606-2311) '
+2026-10-12T00:02:31Z (RFD66606-2311) '  restart. A server keeps serving from a deleted model file, and the
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:26Z (RFD66606-2311) '- **Ready.** `GET /v1/models` through the tunnel returns 200 with the key,
+2026-10-12T00:02:32Z (RFD66606-2311) '  restart then fails with `startup failed | inspecting artifact`.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:27Z (RFD66606-2311) '  and 401 without a key and with a wrong one.
+2026-10-12T00:02:33Z (RFD66606-2311) '- `CUDA_DEVICE_ORDER=PCI_BUS_ID` changes which card a device index names.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:28Z (RFD66606-2311) '- **Spec.** The unit's command line, key masked, carries `--spec dflash2
+2026-10-12T00:02:34Z (RFD66606-2311) '  Read `nvidia-smi` in the same order before choosing `--device`; a build
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:29Z (RFD66606-2311) '  --draft-tokens 5`, and the server log reports draft acceptance above zero.
+2026-10-12T00:02:35Z (RFD66606-2311) '  for a newer architecture fails on an older card with `no kernel image`.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:30Z (RFD66606-2311) '- **Vision.** `v-sekai/vision_zero_shot_probe.py` against the tunnel names
+2026-10-12T00:02:36Z (RFD66606-2311) '- Wait for the ready line `listening on` with a journal cursor taken before
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:31Z (RFD66606-2311) '  the red circle, the blue square and the text 42. A text-only server
+2026-10-12T00:02:37Z (RFD66606-2311) '  the restart, not with a timestamp.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:32Z (RFD66606-2311) '  returns an error on the same request.
+2026-10-12T00:02:38Z (RFD66606-2311) '- An A/B that swaps `--spec` restores the unit in the same script on
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:33Z (RFD66606-2311) '- **mTLS.** The allowlisted client gets an HTTP answer. No certificate,
+2026-10-12T00:02:39Z (RFD66606-2311) '  failure, because a server that dies at startup leaves its card down.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:34Z (RFD66606-2311) '  and a certificate for a second client under the same CA, are both
+2026-10-12T00:02:40Z (RFD66606-2311) '
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:35Z (RFD66606-2311) '  refused, the second with a subject-check failure.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:36Z (RFD66606-2311) '- **Answer.** The same temperature-0 code prompt gives the same answer
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:37Z (RFD66606-2311) '  hash on a rerun and after a reinstall on the same card.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:38Z (RFD66606-2311) '- **Speed.** Three reps of a 512-token code answer at temperature 0 land
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:39Z (RFD66606-2311) '  inside the card's previous runs. A number without that baseline is not
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:40Z (RFD66606-2311) '  reported.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:41Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:42Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:43Z (RFD66606-2311) 'Pitfalls
+2026-10-12T00:02:41Z (RFD66606-2311) 'Open questions
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:44Z (RFD66606-2311) '- Check that the files the running server holds still exist before a
+2026-10-12T00:02:42Z (RFD66606-2311) '- The decider benchmark behind the MTP-3 blocklist row has not been run on
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:45Z (RFD66606-2311) '  restart. A server keeps serving from a deleted model file, and the
+2026-10-12T00:02:43Z (RFD66606-2311) '  ninfer-all. Until it is, the row and this RFD measure different
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:46Z (RFD66606-2311) '  restart then fails with `startup failed | inspecting artifact`.
+2026-10-12T00:02:44Z (RFD66606-2311) '  workloads, and neither says which drafter makes better decisions.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:47Z (RFD66606-2311) '- `CUDA_DEVICE_ORDER=PCI_BUS_ID` changes which card a device index names.
+2026-10-12T00:02:45Z (RFD66606-2311) '- MTP's upstream advantage is a second request lane
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:48Z (RFD66606-2311) '  Read `nvidia-smi` in the same order before choosing `--device`; a build
+2026-10-12T00:02:46Z (RFD66606-2311) '  (`--max-concurrency 2`). Every arm here served one request at a time.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:49Z (RFD66606-2311) '  for a newer architecture fails on an older card with `no kernel image`.
+2026-10-12T00:02:47Z (RFD66606-2311) '- DFlash2 at six and seven draft tokens is measured on one card only.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:50Z (RFD66606-2311) '- Wait for the ready line `listening on` with a journal cursor taken before
+2026-10-12T00:02:48Z (RFD66606-2311) '- The unit and stunnel files are written by hand on each host and are in
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:51Z (RFD66606-2311) '  the restart, not with a timestamp.
+2026-10-12T00:02:49Z (RFD66606-2311) '  no repository.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:52Z (RFD66606-2311) '- An A/B that swaps `--spec` restores the unit in the same script on
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:53Z (RFD66606-2311) '  failure, because a server that dies at startup leaves its card down.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:54Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:55Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:56Z (RFD66606-2311) 'Open questions
+2026-10-12T00:02:50Z (RFD66606-2311) 'The problem
  # tags: rfd:details-heading
  Text:RFD2311  1 LINE
  Text:Written
 
-2026-10-12T00:02:57Z (RFD66606-2311) '- The decider benchmark behind the MTP-3 blocklist row has not been run on
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:58Z (RFD66606-2311) '  ninfer-all. Until it is, the row and this RFD measure different
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:02:59Z (RFD66606-2311) '  workloads, and neither says which drafter makes better decisions.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:00Z (RFD66606-2311) '- MTP's upstream advantage is a second request lane
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:01Z (RFD66606-2311) '  (`--max-concurrency 2`). Every arm here served one request at a time.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:02Z (RFD66606-2311) '- DFlash2 at six and seven draft tokens is measured on one card only.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:03Z (RFD66606-2311) '- The unit and stunnel files are written by hand on each host and are in
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:04Z (RFD66606-2311) '  no repository.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:05Z (RFD66606-2311) '
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:06Z (RFD66606-2311) 'The problem
- # tags: rfd:details-heading
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:07Z (RFD66606-2311) 'Every move of the cards rebuilt it by hand.
- # tags: rfd:details
- Text:RFD2311  1 LINE
- Text:Written
-
-2026-10-12T00:03:08Z (RFD66606-2311) '
+2026-10-12T00:02:51Z (RFD66606-2311) 'Every move of the cards rebuilt it by hand.
  # tags: rfd:details
  Text:RFD2311  1 LINE
  Text:Written

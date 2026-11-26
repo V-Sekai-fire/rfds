@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-11-07T00:00:01Z (RFD66606-2443) 'a sibling EntityServer serves 64 Hz 3D state beside FeedServer.
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2443  1 LINE
  Text:Written
 
 2026-11-07T00:00:02Z (RFD66606-2443) 'the transport repository: entity modules, one executable, the codec, the load generator.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2443  1 LINE
  Text:Written
 
@@ -24,312 +24,267 @@
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2443) '
- # tags: rfd:hook
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2443) 'The repository already has the io_uring glue with a provided-buffer ring, a store that opens
+2026-11-07T00:00:05Z (RFD66606-2443) 'The repository already has the io_uring glue with a provided-buffer ring, a store that opens
  # tags: rfd:intrigue
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:07Z (RFD66606-2443) 'FoundationDB through a VFS, and layered proofs. It has no tick, no packet codec and no load
+2026-11-07T00:00:06Z (RFD66606-2443) 'FoundationDB through a VFS, and layered proofs. It has no tick, no packet codec and no load
  # tags: rfd:intrigue
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:08Z (RFD66606-2443) 'generator.
+2026-11-07T00:00:07Z (RFD66606-2443) 'generator.
  # tags: rfd:intrigue
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:09Z (RFD66606-2443) '
- # tags: rfd:intrigue
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2443) 'The first gate: a binary ticks at 64 Hz on Linux, sends a fixed batch of 12 entities to one
+2026-11-07T00:00:08Z (RFD66606-2443) 'The first gate: a binary ticks at 64 Hz on Linux, sends a fixed batch of 12 entities to one
  # tags: rfd:exit
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2443) 'registered address, and prints tick-to-send percentiles.
+2026-11-07T00:00:09Z (RFD66606-2443) 'registered address, and prints tick-to-send percentiles.
  # tags: rfd:exit
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:12Z (RFD66606-2443) '
- # tags: rfd:exit
+2026-11-07T00:00:10Z (RFD66606-2443) 'EntityServer serves 64 Hz entity state beside FeedServer
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2443) 'EntityServer serves 64 Hz entity state beside FeedServer
- # tags: rfd:details-title
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2443) 'EntityServer is a sibling of FeedServer in the same repository, built by the same lakefile
+2026-11-07T00:00:11Z (RFD66606-2443) 'EntityServer is a sibling of FeedServer in the same repository, built by the same lakefile
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2443) '(operator, 2026-11-07). It reuses the ring glue, the JWT layer and the store, and edits them
+2026-11-07T00:00:12Z (RFD66606-2443) '(operator, 2026-11-07). It reuses the ring glue, the JWT layer and the store, and edits them
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2443) 'where they must change. It adds no parallel copy.
+2026-11-07T00:00:13Z (RFD66606-2443) 'where they must change. It adds no parallel copy.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2443) '- State lives in memory in a flat array. The tick path does no SQLite and no disk I/O.
+2026-11-07T00:00:14Z (RFD66606-2443) '- State lives in memory in a flat array. The tick path does no SQLite and no disk I/O.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2443) '- The 100 byte packet layout has one source, the entity packet contract, taken by subtree.
+2026-11-07T00:00:15Z (RFD66606-2443) '- The 100 byte packet layout has one source, the entity packet contract, taken by subtree.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2443) '  EntityServer never re-emits the offsets.
+2026-11-07T00:00:16Z (RFD66606-2443) '  EntityServer never re-emits the offsets.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2443) '- The tick kernel is written in a restricted Lean subset with proofs and emitted as standalone
+2026-11-07T00:00:17Z (RFD66606-2443) '- The tick kernel is written in a restricted Lean subset with proofs and emitted as standalone
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2443) '  C99 with fixed-capacity arrays and no heap. The ring loop stays hand-written C.
+2026-11-07T00:00:18Z (RFD66606-2443) '  C99 with fixed-capacity arrays and no heap. The ring loop stays hand-written C.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:22Z (RFD66606-2443) '- Pose goes by datagram. Join, leave and ownership go on a small reliable channel.
+2026-11-07T00:00:19Z (RFD66606-2443) '- Pose goes by datagram. Join, leave and ownership go on a small reliable channel.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:23Z (RFD66606-2443) '- The timer uses absolute deadlines on the monotonic clock. An overrun coalesces or drops, and
+2026-11-07T00:00:20Z (RFD66606-2443) '- The timer uses absolute deadlines on the monotonic clock. An overrun coalesces or drops, and
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:24Z (RFD66606-2443) '  never queues a backlog.
+2026-11-07T00:00:21Z (RFD66606-2443) '  never queues a backlog.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2443) '- Each client owns its own avatar entity, so pose has no write conflicts. Store writes happen
+2026-11-07T00:00:22Z (RFD66606-2443) '- Each client owns its own avatar entity, so pose has no write conflicts. Store writes happen
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2443) '  behind the tick.
+2026-11-07T00:00:23Z (RFD66606-2443) '  behind the tick.
  # tags: rfd:decision
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2443) '
- # tags: rfd:decision
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2443) '- RFD66606-2442, the latency metric that judges this server.
+2026-11-07T00:00:24Z (RFD66606-2443) '- RFD66606-2442, the latency metric that judges this server.
  # tags: rfd:related
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2443) '- RFD66606-2044, Lean at build time and a flat C ABI at run time.
+2026-11-07T00:00:25Z (RFD66606-2443) '- RFD66606-2044, Lean at build time and a flat C ABI at run time.
  # tags: rfd:related
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2443) '- RFD66606-2304, the one Lean library that generates a C planner through the same compiler.
+2026-11-07T00:00:26Z (RFD66606-2443) '- RFD66606-2304, the one Lean library that generates a C planner through the same compiler.
  # tags: rfd:related
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2443) '
- # tags: rfd:related
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:32Z (RFD66606-2443) 'The problem
+2026-11-07T00:00:27Z (RFD66606-2443) 'The problem
  # tags: rfd:details-heading
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2443) 'The repository's own record was partly stale. The store path through FoundationDB, its header
+2026-11-07T00:00:28Z (RFD66606-2443) 'The repository's own record was partly stale. The store path through FoundationDB, its header
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2443) 'and the subtree are on the main branch. Parity and profile figures in the divergence notes were
+2026-11-07T00:00:29Z (RFD66606-2443) 'and the subtree are on the main branch. Parity and profile figures in the divergence notes were
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2443) 'measured on SQLite, not on FoundationDB, and the README said the submission has no FoundationDB
+2026-11-07T00:00:30Z (RFD66606-2443) 'measured on SQLite, not on FoundationDB, and the README said the submission has no FoundationDB
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2443) 'code.
+2026-11-07T00:00:31Z (RFD66606-2443) 'code.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2443) '
- # tags: rfd:details
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:38Z (RFD66606-2443) 'Rungs
+2026-11-07T00:00:32Z (RFD66606-2443) 'Rungs
  # tags: rfd:details-heading
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2443) '- Skateboard: timer, UDP socket, fixed batch of 12 entities, tick-to-send percentiles printed.
+2026-11-07T00:00:33Z (RFD66606-2443) '- Skateboard: timer, UDP socket, fixed batch of 12 entities, tick-to-send percentiles printed.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:40Z (RFD66606-2443) '- Multishot receive into the existing buffer ring, and a session table keyed by address.
+2026-11-07T00:00:34Z (RFD66606-2443) '- Multishot receive into the existing buffer ring, and a session table keyed by address.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:41Z (RFD66606-2443) '- The codec from the contract, with two proofs: a decode reads no more than 100 bytes, and a
+2026-11-07T00:00:35Z (RFD66606-2443) '- The codec from the contract, with two proofs: a decode reads no more than 100 bytes, and a
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:42Z (RFD66606-2443) '  batch with headers stays within 1,280 bytes.
+2026-11-07T00:00:36Z (RFD66606-2443) '  batch with headers stays within 1,280 bytes.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:43Z (RFD66606-2443) '- Area-of-interest grid, so fan-out is users times entities in view, not users squared.
+2026-11-07T00:00:37Z (RFD66606-2443) '- Area-of-interest grid, so fan-out is users times entities in view, not users squared.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:44Z (RFD66606-2443) '- Load generator and sweep, with a control that fails: a planted slow handler that pushes p99
+2026-11-07T00:00:38Z (RFD66606-2443) '- Load generator and sweep, with a control that fails: a planted slow handler that pushes p99
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:45Z (RFD66606-2443) '  over budget.
+2026-11-07T00:00:39Z (RFD66606-2443) '  over budget.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:46Z (RFD66606-2443) '- Write-behind to the node's store, then two nodes.
+2026-11-07T00:00:40Z (RFD66606-2443) '- Write-behind to the node's store, then two nodes.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:47Z (RFD66606-2443) '
- # tags: rfd:details
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:48Z (RFD66606-2443) 'Acceptance
+2026-11-07T00:00:41Z (RFD66606-2443) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2443) '- The emitted C builds with strict C99 warnings as errors, and the tick object has no allocation
+2026-11-07T00:00:42Z (RFD66606-2443) '- The emitted C builds with strict C99 warnings as errors, and the tick object has no allocation
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2443) '  or runtime symbols.
+2026-11-07T00:00:43Z (RFD66606-2443) '  or runtime symbols.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2443) '- Fixtures through the Lean semantics and through the emitted C give identical bytes, and a
+2026-11-07T00:00:44Z (RFD66606-2443) '- Fixtures through the Lean semantics and through the emitted C give identical bytes, and a
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:52Z (RFD66606-2443) '  planted bug in the C makes that check fail.
+2026-11-07T00:00:45Z (RFD66606-2443) '  planted bug in the C makes that check fail.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2443) '- The tick kernel has zero unproved goals. No MISRA conformance is claimed.
+2026-11-07T00:00:46Z (RFD66606-2443) '- The tick kernel has zero unproved goals. No MISRA conformance is claimed.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:54Z (RFD66606-2443) '- The default feed path keeps passing its diff and smoke scripts.
+2026-11-07T00:00:47Z (RFD66606-2443) '- The default feed path keeps passing its diff and smoke scripts.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:55Z (RFD66606-2443) '- On the CPU runner, only checks that need no cluster run. A live FoundationDB check is an
+2026-11-07T00:00:48Z (RFD66606-2443) '- On the CPU runner, only checks that need no cluster run. A live FoundationDB check is an
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2443) '  integration test.
+2026-11-07T00:00:49Z (RFD66606-2443) '  integration test.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:57Z (RFD66606-2443) '
- # tags: rfd:details
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:00:58Z (RFD66606-2443) 'Open
+2026-11-07T00:00:50Z (RFD66606-2443) 'Open
  # tags: rfd:details-heading
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:00:59Z (RFD66606-2443) 'Extend the in-house emitter, which emits only the codec header today, or vendor the Trust-Lean
+2026-11-07T00:00:51Z (RFD66606-2443) 'Extend the in-house emitter, which emits only the codec header today, or vendor the Trust-Lean
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:00Z (RFD66606-2443) 'compiler by subtree. One source either way, never a copy or a submodule.
+2026-11-07T00:00:52Z (RFD66606-2443) 'compiler by subtree. One source either way, never a copy or a submodule.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:01Z (RFD66606-2443) '- Gate evidence: the feed server, CI run
+2026-11-07T00:00:53Z (RFD66606-2443) '- Gate evidence: the feed server, CI run
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:02Z (RFD66606-2443) '  42417791013, jobs tick-budget and client sweeps (success). entity_serve.c fails a
+2026-11-07T00:00:54Z (RFD66606-2443) '  42417791013, jobs tick-budget and client sweeps (success). entity_serve.c fails a
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2443) '  run whose p99 is over 4 ms, and the planted-defect sweeps are caught. The Lean tick
+2026-11-07T00:00:55Z (RFD66606-2443) '  run whose p99 is over 4 ms, and the planted-defect sweeps are caught. The Lean tick
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:04Z (RFD66606-2443) '  kernel and its emitted-C byte check are not in the repo, so the Lean-to-C acceptance
+2026-11-07T00:00:56Z (RFD66606-2443) '  kernel and its emitted-C byte check are not in the repo, so the Lean-to-C acceptance
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written
 
-2026-11-07T00:01:05Z (RFD66606-2443) '  is unmet and stated as such.
- # tags: rfd:details
- Text:RFD2443  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2443) '
+2026-11-07T00:00:57Z (RFD66606-2443) '  is unmet and stated as such.
  # tags: rfd:details
  Text:RFD2443  1 LINE
  Text:Written

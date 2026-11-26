@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-09-02T00:00:01Z (RFD66606-2180) 'documentation retraction with investigation record
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2180  1 LINE
  Text:Written
 
 2026-09-02T00:00:02Z (RFD66606-2180) 'RFD66606-2164, RFD66606-2179; `emit_10track_panel.py`; `CITATION.cff`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2180  1 LINE
  Text:Written
 
@@ -19,117 +19,117 @@
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2180) '
- # tags: rfd:hook
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:05Z (RFD66606-2180) 'RFD66606-2179 (Whisper drop) flagged gemma-auto shipping empty transcripts across all 15 clips
+2026-09-02T00:00:04Z (RFD66606-2180) 'RFD66606-2179 (Whisper drop) flagged gemma-auto shipping empty transcripts across all 15 clips
  # tags: rfd:intrigue
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:06Z (RFD66606-2180) '(WER 1.000, .vtt files carried only the WEBVTT header). Follow-up was fix-or-drop.
+2026-09-02T00:00:05Z (RFD66606-2180) '(WER 1.000, .vtt files carried only the WEBVTT header). Follow-up was fix-or-drop.
  # tags: rfd:intrigue
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:07Z (RFD66606-2180) '
- # tags: rfd:intrigue
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:08Z (RFD66606-2180) 'Check any proposal to restore the gemma-auto track against the numbers above: it must beat
+2026-09-02T00:00:06Z (RFD66606-2180) 'Check any proposal to restore the gemma-auto track against the numbers above: it must beat
  # tags: rfd:exit
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:09Z (RFD66606-2180) 'Voxtral's 0.000 WER at sub-second latency, and the sections below hold the 15-clip WER table.
+2026-09-02T00:00:07Z (RFD66606-2180) 'Voxtral's 0.000 WER at sub-second latency, and the sections below hold the 15-clip WER table.
  # tags: rfd:exit
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2180) '
- # tags: rfd:exit
+2026-09-02T00:00:08Z (RFD66606-2180) 'Drop the gemma-auto ASR track (bug fixed, drop confirmed)
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2180) 'Drop the gemma-auto ASR track (bug fixed, drop confirmed)
- # tags: rfd:details-title
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2180) 'Drop the gemma-auto ASR track; the bug that produced empty transcripts is fixable, but the fixed track's WER of 0.690 at several-seconds latency loses to Voxtral's 0.000 at sub-second.
+2026-09-02T00:00:09Z (RFD66606-2180) 'Drop the gemma-auto ASR track; the bug that produced empty transcripts is fixable, but the fixed track's WER of 0.690 at several-seconds latency loses to Voxtral's 0.000 at sub-second.
  # tags: rfd:decision
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:13Z (RFD66606-2180) '
- # tags: rfd:decision
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:14Z (RFD66606-2180) 'Fix and panel
+2026-09-02T00:00:10Z (RFD66606-2180) 'Fix and panel
  # tags: rfd:section-heading
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:15Z (RFD66606-2180) 'Fix, for the record: firmer ASR-only prompt plus `-n 400`. 15-clip WER pass with the fix: 0.690
+2026-09-02T00:00:11Z (RFD66606-2180) 'Fix, for the record: firmer ASR-only prompt plus `-n 400`. 15-clip WER pass with the fix: 0.690
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:16Z (RFD66606-2180) 'mean (6 exact, 3 accent-mishears, 6 still truncated mid-reasoning). Voxtral runs the same clips
+2026-09-02T00:00:12Z (RFD66606-2180) 'mean (6 exact, 3 accent-mishears, 6 still truncated mid-reasoning). Voxtral runs the same clips
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:17Z (RFD66606-2180) 'at 0.000 sub-second. Gemma-auto's several-seconds-per-clip latency plus 0.690 WER matches the
+2026-09-02T00:00:13Z (RFD66606-2180) 'at 0.000 sub-second. Gemma-auto's several-seconds-per-clip latency plus 0.690 WER matches the
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:18Z (RFD66606-2180) 'speed-plus-quality argument RFD66606-2179 used for Whisper.
+2026-09-02T00:00:14Z (RFD66606-2180) 'speed-plus-quality argument RFD66606-2179 used for Whisper.
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:19Z (RFD66606-2180) '
+2026-09-02T00:00:15Z (RFD66606-2180) '
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2180) 'Gemma-IPA stays: the GBNF constraint pins output to IPA characters and forces short completions; neither failure mode appears on that track.
+2026-09-02T00:00:16Z (RFD66606-2180) 'Gemma-IPA stays: the GBNF constraint pins output to IPA characters and forces short completions; neither failure mode appears on that track.
  # tags: rfd:section
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:21Z (RFD66606-2180) '
- # tags: rfd:section
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2180) 'Extends RFD66606-2179 (Whisper drop). DETAILS.md holds the 15-clip WER table with the fix
+2026-09-02T00:00:17Z (RFD66606-2180) 'Extends RFD66606-2179 (Whisper drop). DETAILS.md holds the 15-clip WER table with the fix
  # tags: rfd:related
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:23Z (RFD66606-2180) 'applied and the exact prompt plus argv.
+2026-09-02T00:00:18Z (RFD66606-2180) 'applied and the exact prompt plus argv.
  # tags: rfd:related
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:24Z (RFD66606-2180) '
- # tags: rfd:related
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:25Z (RFD66606-2180) 'Panel after the drop
+2026-09-02T00:00:19Z (RFD66606-2180) 'Panel after the drop
  # tags: rfd:details-heading
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:26Z (RFD66606-2180) 'Panel drops from 9 tracks (post-2179) to 8:
+2026-09-02T00:00:20Z (RFD66606-2180) 'Panel drops from 9 tracks (post-2179) to 8:
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:21Z (RFD66606-2180) '
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:22Z (RFD66606-2180) '  text-track   Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:23Z (RFD66606-2180) '  IPA-track    Voxtral-IPA, Gemma-4-12B GBNF-IPA
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:24Z (RFD66606-2180) '  phone-track  allosaurus (universal + eng + rus)
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:25Z (RFD66606-2180) 'The bug
+ # tags: rfd:details-heading
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:26Z (RFD66606-2180) '`emit_10track_panel.py`'s `gemma_cli_run` invoked:
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
@@ -139,87 +139,87 @@
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:28Z (RFD66606-2180) '  text-track   Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2
+2026-09-02T00:00:28Z (RFD66606-2180) '    llama-mtmd-cli -m gemma-4-12b-it-qat-q4_0.gguf
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:29Z (RFD66606-2180) '  IPA-track    Voxtral-IPA, Gemma-4-12B GBNF-IPA
+2026-09-02T00:00:29Z (RFD66606-2180) '      --mmproj mmproj-gemma-4-12b-it-qat-q4_0.gguf
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:30Z (RFD66606-2180) '  phone-track  allosaurus (universal + eng + rus)
+2026-09-02T00:00:30Z (RFD66606-2180) '      --jinja --audio <wav>
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:31Z (RFD66606-2180) '
+2026-09-02T00:00:31Z (RFD66606-2180) '      -p "Transcribe this audio verbatim. Output the transcription only."
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:32Z (RFD66606-2180) 'The bug
- # tags: rfd:details-heading
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:33Z (RFD66606-2180) '`emit_10track_panel.py`'s `gemma_cli_run` invoked:
+2026-09-02T00:00:32Z (RFD66606-2180) '      --temp 0.0 --seed 0 -n 200 --no-warmup
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:34Z (RFD66606-2180) '
+2026-09-02T00:00:33Z (RFD66606-2180) '
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:35Z (RFD66606-2180) '    llama-mtmd-cli -m gemma-4-12b-it-qat-q4_0.gguf
+2026-09-02T00:00:34Z (RFD66606-2180) 'Gemma-4-12B is chat-templated (`--jinja`). It heard the audio as
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:36Z (RFD66606-2180) '      --mmproj mmproj-gemma-4-12b-it-qat-q4_0.gguf
+2026-09-02T00:00:35Z (RFD66606-2180) 'spoken user input and started reasoning about how to respond to that
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:37Z (RFD66606-2180) '      --jinja --audio <wav>
+2026-09-02T00:00:36Z (RFD66606-2180) 'input as a helpful assistant, not about how to transcribe it. Example
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:38Z (RFD66606-2180) '      -p "Transcribe this audio verbatim. Output the transcription only."
+2026-09-02T00:00:37Z (RFD66606-2180) 'chain-of-thought (clip 1134, canonical "Switch off my vacuum for me"):
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:39Z (RFD66606-2180) '      --temp 0.0 --seed 0 -n 200 --no-warmup
+2026-09-02T00:00:38Z (RFD66606-2180) '
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:40Z (RFD66606-2180) '
+2026-09-02T00:00:39Z (RFD66606-2180) '    <|channel>thought
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:41Z (RFD66606-2180) 'Gemma-4-12B is chat-templated (`--jinja`). It heard the audio as
+2026-09-02T00:00:40Z (RFD66606-2180) '    The user wants me to switch off their vacuum.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:42Z (RFD66606-2180) 'spoken user input and started reasoning about how to respond to that
+2026-09-02T00:00:41Z (RFD66606-2180) '    I am an AI, a large language model. I do not have physical access
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:43Z (RFD66606-2180) 'input as a helpful assistant, not about how to transcribe it. Example
+2026-09-02T00:00:42Z (RFD66606-2180) '    to the user's home or devices.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:44Z (RFD66606-2180) 'chain-of-thought (clip 1134, canonical "Switch off my vacuum for me"):
+2026-09-02T00:00:43Z (RFD66606-2180) '    I cannot perform physical actions like turning off a vacuum cleaner.
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:44Z (RFD66606-2180) '    ...
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
@@ -229,52 +229,52 @@
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:46Z (RFD66606-2180) '    <|channel>thought
+2026-09-02T00:00:46Z (RFD66606-2180) '`-n 200` expired before Gemma reached the `<channel|>` final marker.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:47Z (RFD66606-2180) '    The user wants me to switch off their vacuum.
+2026-09-02T00:00:47Z (RFD66606-2180) '`gemma_cli_run` returned "" (empty), `write_vtt` skipped empty text,
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:48Z (RFD66606-2180) '    I am an AI, a large language model. I do not have physical access
+2026-09-02T00:00:48Z (RFD66606-2180) 'the .vtt shipped with only the WEBVTT header.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:49Z (RFD66606-2180) '    to the user's home or devices.
+2026-09-02T00:00:49Z (RFD66606-2180) 'The fix
+ # tags: rfd:details-heading
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:50Z (RFD66606-2180) 'Two changes to `gemma_cli_run` invocation:
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:50Z (RFD66606-2180) '    I cannot perform physical actions like turning off a vacuum cleaner.
+2026-09-02T00:00:51Z (RFD66606-2180) '
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:51Z (RFD66606-2180) '    ...
+2026-09-02T00:00:52Z (RFD66606-2180) '  prompt  "You are an automatic speech recognition system. Transcribe
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:52Z (RFD66606-2180) '
+2026-09-02T00:00:53Z (RFD66606-2180) '          the exact words spoken in the audio. Do not respond to the
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:53Z (RFD66606-2180) '`-n 200` expired before Gemma reached the `<channel|>` final marker.
+2026-09-02T00:00:54Z (RFD66606-2180) '          content. Output only the transcript, nothing else."
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:54Z (RFD66606-2180) '`gemma_cli_run` returned "" (empty), `write_vtt` skipped empty text,
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:00:55Z (RFD66606-2180) 'the .vtt shipped with only the WEBVTT header.
+2026-09-02T00:00:55Z (RFD66606-2180) '  -n      400 (was 200)
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
@@ -284,282 +284,222 @@
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:57Z (RFD66606-2180) 'The fix
+2026-09-02T00:00:57Z (RFD66606-2180) 'The firmer prompt shifts Gemma from "respond to the audio" to "run
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:58Z (RFD66606-2180) 'ASR on the audio". `-n 400` gives room for both reasoning and answer.
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:00:59Z (RFD66606-2180) 'Output parser (`splitlines() -> non-empty -> split('<channel|>')[-1]`)
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:00Z (RFD66606-2180) 'already handled the chat-template format correctly.
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:01Z (RFD66606-2180) '15-clip WER pass with the fix
  # tags: rfd:details-heading
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:58Z (RFD66606-2180) 'Two changes to `gemma_cli_run` invocation:
+2026-09-02T00:01:02Z (RFD66606-2180) '| clip | canonical | gemma-auto (fixed) | WER |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:00:59Z (RFD66606-2180) '
+2026-09-02T00:01:03Z (RFD66606-2180) '| --- | --- | --- | ---: |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:00Z (RFD66606-2180) '  prompt  "You are an automatic speech recognition system. Transcribe
+2026-09-02T00:01:04Z (RFD66606-2180) '| 100_1_2_1_1134_1 | Switch off my vacuum for me. | Switch off my vacuum for me. | 0.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:01Z (RFD66606-2180) '          the exact words spoken in the audio. Do not respond to the
+2026-09-02T00:01:05Z (RFD66606-2180) '| 100_1_2_1_1293_1 | A joke. | If there | 1.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:02Z (RFD66606-2180) '          content. Output only the transcript, nothing else."
+2026-09-02T00:01:06Z (RFD66606-2180) '| 100_1_2_1_574_1  | Is Disposita instrumental? | Es disperso instrumental. | 1.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:03Z (RFD66606-2180) '  -n      400 (was 200)
+2026-09-02T00:01:07Z (RFD66606-2180) '| 100_1_2_1_594_1  | Best of YouTube YouTube channels | *Decision:* Since | 1.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:04Z (RFD66606-2180) '
+2026-09-02T00:01:08Z (RFD66606-2180) '| 100_1_2_1_856_1  | The steps I have taken. | The steps I have taken. | 0.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:05Z (RFD66606-2180) 'The firmer prompt shifts Gemma from "respond to the audio" to "run
+2026-09-02T00:01:09Z (RFD66606-2180) '| 100_1_2_1_97_1   | Add jingle bells to dance mood on Spotify. | *   Let me try | 1.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:06Z (RFD66606-2180) 'ASR on the audio". `-n 400` gives room for both reasoning and answer.
+2026-09-02T00:01:10Z (RFD66606-2180) '| 100_1_2_2_1170_1 | My Instagrams that use filter King Gam. | It sounds like "King Dam | 1.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:07Z (RFD66606-2180) 'Output parser (`splitlines() -> non-empty -> split('<channel|>')[-1]`)
+2026-09-02T00:01:11Z (RFD66606-2180) '| 100_1_2_2_1202_1 | The BPM of Song Disposito | El BPM ha sido disparado. | 0.800 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:08Z (RFD66606-2180) 'already handled the chat-template format correctly.
+2026-09-02T00:01:12Z (RFD66606-2180) '| 100_1_2_2_288_1  | Lower the entrance curtains. | Lower the entrance curtains. | 0.000 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:09Z (RFD66606-2180) '
+2026-09-02T00:01:13Z (RFD66606-2180) '| 100_1_2_2_323_1  | Play the songs Rolling in the Deep on Spotify. | I'm just trying to figure out how to get my phone to work wi | 1.889 |
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:10Z (RFD66606-2180) '15-clip WER pass with the fix
+2026-09-02T00:01:14Z (RFD66606-2180) '| 100_1_2_2_846_1  | NASA's Astronomy Picture of the Day. | NASA's Astronomy Picture of the Day. | 0.000 |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:15Z (RFD66606-2180) '| 100_1_2_3_1070_1 | Order me a black mocha. | Order me a black mocha. | 0.000 |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:16Z (RFD66606-2180) '| 100_1_2_3_1098_1 | Order me a white mocha. | Order me a white mocha. | 0.000 |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:17Z (RFD66606-2180) '| 100_1_2_3_351_1  | YouTube channels with category courses. | Since I cannot hear any | 1.000 |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:18Z (RFD66606-2180) '| 100_1_2_3_380_1  | YouTube's cooking channels. | *   *Wait*, looking at the | 1.667 |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:19Z (RFD66606-2180) '| **MEAN** | | | **0.690** |
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:20Z (RFD66606-2180) '
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:21Z (RFD66606-2180) 'Distribution: 6 exact (40%), 3 accent-mishears, 6 truncated. Six of
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:22Z (RFD66606-2180) 'the truncated clips could plausibly succeed at `-n 800` or higher,
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:23Z (RFD66606-2180) 'but the compute cost doubles and Voxtral still beats every possible
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:24Z (RFD66606-2180) 'outcome at 0.000 for free.
+ # tags: rfd:details
+ Text:RFD2180  1 LINE
+ Text:Written
+
+2026-09-02T00:01:25Z (RFD66606-2180) 'Why the drop is right anyway
  # tags: rfd:details-heading
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:11Z (RFD66606-2180) '| clip | canonical | gemma-auto (fixed) | WER |
+2026-09-02T00:01:26Z (RFD66606-2180) '  Voxtral       0.000 mean WER, sub-second per clip on MPS
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:12Z (RFD66606-2180) '| --- | --- | --- | ---: |
+2026-09-02T00:01:27Z (RFD66606-2180) '  Parakeet      0.501 mean WER, sub-second, CC-BY-4.0 canonical
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:13Z (RFD66606-2180) '| 100_1_2_1_1134_1 | Switch off my vacuum for me. | Switch off my vacuum for me. | 0.000 |
+2026-09-02T00:01:28Z (RFD66606-2180) '  wav2vec2      0.571 mean WER, sub-second, Apache-2.0 alternate
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:14Z (RFD66606-2180) '| 100_1_2_1_1293_1 | A joke. | If there | 1.000 |
+2026-09-02T00:01:29Z (RFD66606-2180) '  Whisper       0.339 mean WER, several seconds, dropped (RFD66606-2179)
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:15Z (RFD66606-2180) '| 100_1_2_1_574_1  | Is Disposita instrumental? | Es disperso instrumental. | 1.000 |
+2026-09-02T00:01:30Z (RFD66606-2180) '  Gemma-auto    0.690 mean WER, several seconds, drop here
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:16Z (RFD66606-2180) '| 100_1_2_1_594_1  | Best of YouTube YouTube channels | *Decision:* Since | 1.000 |
+2026-09-02T00:01:31Z (RFD66606-2180) '
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:17Z (RFD66606-2180) '| 100_1_2_1_856_1  | The steps I have taken. | The steps I have taken. | 0.000 |
+2026-09-02T00:01:32Z (RFD66606-2180) 'Gemma-auto's quality is worst-in-panel and its latency matches the
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:18Z (RFD66606-2180) '| 100_1_2_1_97_1   | Add jingle bells to dance mood on Spotify. | *   Let me try | 1.000 |
+2026-09-02T00:01:33Z (RFD66606-2180) 'already-dropped Whisper family. Keeping it needs a WHY that isn't
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:19Z (RFD66606-2180) '| 100_1_2_2_1170_1 | My Instagrams that use filter King Gam. | It sounds like "King Dam | 1.000 |
+2026-09-02T00:01:34Z (RFD66606-2180) 'here.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:20Z (RFD66606-2180) '| 100_1_2_2_1202_1 | The BPM of Song Disposito | El BPM ha sido disparado. | 0.800 |
+2026-09-02T00:01:35Z (RFD66606-2180) '
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:21Z (RFD66606-2180) '| 100_1_2_2_288_1  | Lower the entrance curtains. | Lower the entrance curtains. | 0.000 |
+2026-09-02T00:01:36Z (RFD66606-2180) 'Gemma-IPA stays: the GBNF constraint pins output to IPA characters
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:22Z (RFD66606-2180) '| 100_1_2_2_323_1  | Play the songs Rolling in the Deep on Spotify. | I'm just trying to figure out how to get my phone to work wi | 1.889 |
+2026-09-02T00:01:37Z (RFD66606-2180) 'and forces short completions, so the failure modes (misread as
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:23Z (RFD66606-2180) '| 100_1_2_2_846_1  | NASA's Astronomy Picture of the Day. | NASA's Astronomy Picture of the Day. | 0.000 |
+2026-09-02T00:01:38Z (RFD66606-2180) 'command, chain-of-thought overrun) do not appear on that track.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:24Z (RFD66606-2180) '| 100_1_2_3_1070_1 | Order me a black mocha. | Order me a black mocha. | 0.000 |
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:25Z (RFD66606-2180) '| 100_1_2_3_1098_1 | Order me a white mocha. | Order me a white mocha. | 0.000 |
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:26Z (RFD66606-2180) '| 100_1_2_3_351_1  | YouTube channels with category courses. | Since I cannot hear any | 1.000 |
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:27Z (RFD66606-2180) '| 100_1_2_3_380_1  | YouTube's cooking channels. | *   *Wait*, looking at the | 1.667 |
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:28Z (RFD66606-2180) '| **MEAN** | | | **0.690** |
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:29Z (RFD66606-2180) '
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:30Z (RFD66606-2180) 'Distribution: 6 exact (40%), 3 accent-mishears, 6 truncated. Six of
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:31Z (RFD66606-2180) 'the truncated clips could plausibly succeed at `-n 800` or higher,
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:32Z (RFD66606-2180) 'but the compute cost doubles and Voxtral still beats every possible
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:33Z (RFD66606-2180) 'outcome at 0.000 for free.
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:34Z (RFD66606-2180) '
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:35Z (RFD66606-2180) 'Why the drop is right anyway
+2026-09-02T00:01:39Z (RFD66606-2180) 'The problem
  # tags: rfd:details-heading
  Text:RFD2180  1 LINE
  Text:Written
 
-2026-09-02T00:01:36Z (RFD66606-2180) '  Voxtral       0.000 mean WER, sub-second per clip on MPS
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:37Z (RFD66606-2180) '  Parakeet      0.501 mean WER, sub-second, CC-BY-4.0 canonical
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:38Z (RFD66606-2180) '  wav2vec2      0.571 mean WER, sub-second, Apache-2.0 alternate
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:39Z (RFD66606-2180) '  Whisper       0.339 mean WER, several seconds, dropped (RFD66606-2179)
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:40Z (RFD66606-2180) '  Gemma-auto    0.690 mean WER, several seconds, drop here
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:41Z (RFD66606-2180) '
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:42Z (RFD66606-2180) 'Gemma-auto's quality is worst-in-panel and its latency matches the
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:43Z (RFD66606-2180) 'already-dropped Whisper family. Keeping it needs a WHY that isn't
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:44Z (RFD66606-2180) 'here.
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:45Z (RFD66606-2180) '
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:46Z (RFD66606-2180) 'Gemma-IPA stays: the GBNF constraint pins output to IPA characters
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:47Z (RFD66606-2180) 'and forces short completions, so the failure modes (misread as
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:48Z (RFD66606-2180) 'command, chain-of-thought overrun) do not appear on that track.
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:49Z (RFD66606-2180) '
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:50Z (RFD66606-2180) 'The problem
- # tags: rfd:details-heading
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:51Z (RFD66606-2180) 'Investigation (DETAILS.md): `gemma_cli_run` used prompt "Transcribe this audio verbatim" with `-n 200`. Gemma-4-12B heard the audio as spoken user input, reasoned about how to respond as an AI assistant, and expired the token budget inside chain-of-thought without reaching the final channel. Empty output.
- # tags: rfd:details
- Text:RFD2180  1 LINE
- Text:Written
-
-2026-09-02T00:01:52Z (RFD66606-2180) '
+2026-09-02T00:01:40Z (RFD66606-2180) 'Investigation (DETAILS.md): `gemma_cli_run` used prompt "Transcribe this audio verbatim" with `-n 200`. Gemma-4-12B heard the audio as spoken user input, reasoned about how to respond as an AI assistant, and expired the token budget inside chain-of-thought without reaching the final channel. Empty output.
  # tags: rfd:details
  Text:RFD2180  1 LINE
  Text:Written

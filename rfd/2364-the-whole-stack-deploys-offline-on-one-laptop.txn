@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2364) 'deploying the whole stack on one laptop with nothing from the WAN.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2364  1 LINE
  Text:Written
 
@@ -14,167 +14,137 @@
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2364) '
- # tags: rfd:hook
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2364) 'A fetch that reaches past the laptop fails by name once the stack runs with its network
+2026-10-31T00:00:03Z (RFD66606-2364) 'A fetch that reaches past the laptop fails by name once the stack runs with its network
  # tags: rfd:intrigue
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2364) 'unshared.
+2026-10-31T00:00:04Z (RFD66606-2364) 'unshared.
  # tags: rfd:intrigue
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2364) '
- # tags: rfd:intrigue
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2364) 'Run the Bubblewrap test: run the stack with its network unshared and read the name of any
+2026-10-31T00:00:05Z (RFD66606-2364) 'Run the Bubblewrap test: run the stack with its network unshared and read the name of any
  # tags: rfd:exit
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2364) 'fetch that fails.
+2026-10-31T00:00:06Z (RFD66606-2364) 'fetch that fails.
  # tags: rfd:exit
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2364) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2364) 'the whole stack deploys offline on one laptop
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2364) 'the whole stack deploys offline on one laptop
- # tags: rfd:details-title
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2364) 'The whole stack deploys offline on one laptop, reachable on the LAN and perhaps
+2026-10-31T00:00:08Z (RFD66606-2364) 'The whole stack deploys offline on one laptop, reachable on the LAN and perhaps
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2364) 'the tailnet, with nothing needed from the WAN:
+2026-10-31T00:00:09Z (RFD66606-2364) 'the tailnet, with nothing needed from the WAN:
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2364) '
+2026-10-31T00:00:10Z (RFD66606-2364) '
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2364) '- every build source is in the manifest and mirrored on the laptop, and release
+2026-10-31T00:00:11Z (RFD66606-2364) '- every build source is in the manifest and mirrored on the laptop, and release
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2364) '  binaries are mirrored with their sha256s;
+2026-10-31T00:00:12Z (RFD66606-2364) '  binaries are mirrored with their sha256s;
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2364) '- each runtime (FoundationDB, Uro, OpenBao, the zone servers, the object store)
+2026-10-31T00:00:13Z (RFD66606-2364) '- each runtime (FoundationDB, Uro, OpenBao, the zone servers, the object store)
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2364) '  runs on the laptop, with only its own data;
+2026-10-31T00:00:14Z (RFD66606-2364) '  runs on the laptop, with only its own data;
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2364) '- the S3-compatible object store is SeaweedFS (operator, 2026-11-16). Fly's Tigris and
+2026-10-31T00:00:15Z (RFD66606-2364) '- the S3-compatible object store is SeaweedFS (operator, 2026-11-16). Fly's Tigris and
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2364) '  Cloudflare's R2 stay as the hosted S3 stores, and versitygw is rescinded;
+2026-10-31T00:00:16Z (RFD66606-2364) '  Cloudflare's R2 stay as the hosted S3 stores, and versitygw is rescinded;
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2364) '- names come from the laptop's own resolver or the tailnet, and certificates
+2026-10-31T00:00:17Z (RFD66606-2364) '- names come from the laptop's own resolver or the tailnet, and certificates
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2364) '  from the offline CA;
+2026-10-31T00:00:18Z (RFD66606-2364) '  from the offline CA;
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2364) '- sign-in has a LAN-only method beside the third-party providers.
+2026-10-31T00:00:19Z (RFD66606-2364) '- sign-in has a LAN-only method beside the third-party providers.
  # tags: rfd:decision
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2364) '
- # tags: rfd:decision
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2364) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:20Z (RFD66606-2364) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2364) '
- # tags: rfd:related
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2364) 'The Bubblewrap test
+2026-10-31T00:00:21Z (RFD66606-2364) 'The Bubblewrap test
  # tags: rfd:details-heading
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2364) 'Bubblewrap is the test: the stack runs with its network unshared, so a fetch
+2026-10-31T00:00:22Z (RFD66606-2364) 'Bubblewrap is the test: the stack runs with its network unshared, so a fetch
  # tags: rfd:details
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2364) 'that reaches past the laptop fails by name. Uro runs next to its FoundationDB
+2026-10-31T00:00:23Z (RFD66606-2364) 'that reaches past the laptop fails by name. Uro runs next to its FoundationDB
  # tags: rfd:details
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2364) 'cluster, so a page read never leaves one machine.
+2026-10-31T00:00:24Z (RFD66606-2364) 'cluster, so a page read never leaves one machine.
  # tags: rfd:details
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2364) '
- # tags: rfd:details
- Text:RFD2364  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2364) '2351
+2026-10-31T00:00:25Z (RFD66606-2364) '2351
  # tags: rebac:verbs-from
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2364) 'rfd-2364 provides offline-laptop-deploy
+2026-10-31T00:00:26Z (RFD66606-2364) 'rfd-2364 provides offline-laptop-deploy
  # tags: rebac:relate
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2364) 'rfd-2364 is_a deployment
+2026-10-31T00:00:27Z (RFD66606-2364) 'rfd-2364 is_a deployment
  # tags: rebac:relate
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2364) 'rfd-2364 spends bao
+2026-10-31T00:00:28Z (RFD66606-2364) 'rfd-2364 spends bao
  # tags: rebac:relate
  Text:RFD2364  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2364) 'rfd-2364 spends fdb-sqlite
+2026-10-31T00:00:29Z (RFD66606-2364) 'rfd-2364 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2364  1 LINE
  Text:Written

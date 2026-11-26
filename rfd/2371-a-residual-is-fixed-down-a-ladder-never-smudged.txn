@@ -5,7 +5,7 @@
  Serials:VSekaiFabric
 
 2026-10-31T00:00:01Z (RFD66606-2371) 'how a residual in a visual diff is fixed.
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2371  1 LINE
  Text:Written
 
@@ -14,157 +14,122 @@
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2371) '
- # tags: rfd:hook
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:04Z (RFD66606-2371) 'What if a residual vanished because an image was blurred, a threshold loosened or a region
+2026-10-31T00:00:03Z (RFD66606-2371) 'What if a residual vanished because an image was blurred, a threshold loosened or a region
  # tags: rfd:intrigue
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2371) 'masked?
+2026-10-31T00:00:04Z (RFD66606-2371) 'masked?
  # tags: rfd:intrigue
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2371) '
- # tags: rfd:intrigue
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2371) 'Check a proposed fix against the rule: measure it with the diff's own metric before and after,
+2026-10-31T00:00:05Z (RFD66606-2371) 'Check a proposed fix against the rule: measure it with the diff's own metric before and after,
  # tags: rfd:exit
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2371) 'rung by rung.
+2026-10-31T00:00:06Z (RFD66606-2371) 'rung by rung.
  # tags: rfd:exit
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2371) '
- # tags: rfd:exit
+2026-10-31T00:00:07Z (RFD66606-2371) 'a residual is fixed down a ladder, never smudged
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2371) 'a residual is fixed down a ladder, never smudged
- # tags: rfd:details-title
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2371) '- A residual is fixed, never smudged: nothing blurs an image before the diff, loosens a
+2026-10-31T00:00:08Z (RFD66606-2371) '- A residual is fixed, never smudged: nothing blurs an image before the diff, loosens a
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2371) 'threshold
+2026-10-31T00:00:09Z (RFD66606-2371) 'threshold
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2371) '  or masks a region.
+2026-10-31T00:00:10Z (RFD66606-2371) '  or masks a region.
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2371) '- Fixes go down a ladder, each rung measured with the diff's own metric before and after: exact
+2026-10-31T00:00:11Z (RFD66606-2371) '- Fixes go down a ladder, each rung measured with the diff's own metric before and after: exact
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2371) '  fixes at the source, then missing structure, then registration, then fitted parameters.
+2026-10-31T00:00:12Z (RFD66606-2371) '  fixes at the source, then missing structure, then registration, then fitted parameters.
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2371) '- What remains is reported beside its floor, and a later change may not raise it.
+2026-10-31T00:00:13Z (RFD66606-2371) '- What remains is reported beside its floor, and a later change may not raise it.
  # tags: rfd:decision
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2371) '
- # tags: rfd:decision
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2371) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:14Z (RFD66606-2371) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2371) '
- # tags: rfd:related
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2371) 'The rungs
+2026-10-31T00:00:15Z (RFD66606-2371) 'The rungs
  # tags: rfd:details-heading
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2371) 'Registration is where a camera that does not match is fixed in the camera and never by warping
+2026-10-31T00:00:16Z (RFD66606-2371) 'Registration is where a camera that does not match is fixed in the camera and never by warping
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2371) 'an
+2026-10-31T00:00:17Z (RFD66606-2371) 'an
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2371) 'image. The last rung is parameters fitted to the oracle with &{repo("contract-lbfgsb")} on the
+2026-10-31T00:00:18Z (RFD66606-2371) 'image. The last rung is parameters fitted to the oracle with &{repo("contract-lbfgsb")} on the
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2371) 'GPU, coarse to fine, written back into the source assets and checked on views the fit did not
+2026-10-31T00:00:19Z (RFD66606-2371) 'GPU, coarse to fine, written back into the source assets and checked on views the fit did not
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2371) 'use.
+2026-10-31T00:00:20Z (RFD66606-2371) 'use.
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2371) '
+2026-10-31T00:00:21Z (RFD66606-2371) '
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2371) '
- # tags: rfd:details
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2371) 'What stays
+2026-10-31T00:00:22Z (RFD66606-2371) 'What stays
  # tags: rfd:details-heading
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2371) 'Antialiasing and distance fades that belong to the renderer stay.
+2026-10-31T00:00:23Z (RFD66606-2371) 'Antialiasing and distance fades that belong to the renderer stay.
  # tags: rfd:details
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2371) '
- # tags: rfd:details
- Text:RFD2371  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2371) '2351
+2026-10-31T00:00:24Z (RFD66606-2371) '2351
  # tags: rebac:verbs-from
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:32Z (RFD66606-2371) 'rfd-2371 provides residual-fix-ladder
+2026-10-31T00:00:25Z (RFD66606-2371) 'rfd-2371 provides residual-fix-ladder
  # tags: rebac:relate
  Text:RFD2371  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2371) 'rfd-2371 is_a workspace-policy
+2026-10-31T00:00:26Z (RFD66606-2371) 'rfd-2371 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2371  1 LINE
  Text:Written

@@ -5,12 +5,12 @@
  Serials:VSekaiFabric
 
 2026-09-03T00:00:01Z (RFD66606-2196) 'authoring rules for HuggingFace dataset repos so the viewer renders
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2196  1 LINE
  Text:Written
 
 2026-09-03T00:00:02Z (RFD66606-2196) 'any dataset published under `huggingface.co/datasets/chibifire/*`
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2196  1 LINE
  Text:Written
 
@@ -19,237 +19,237 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:04Z (RFD66606-2196) '
- # tags: rfd:hook
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:05Z (RFD66606-2196) 'Three dataset rebuilds on 2026-09-03 each failed a different silent gate: too-big `.arrow`
+2026-09-03T00:00:04Z (RFD66606-2196) 'Three dataset rebuilds on 2026-09-03 each failed a different silent gate: too-big `.arrow`
  # tags: rfd:intrigue
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:06Z (RFD66606-2196) 'shards crashed the auto-viewer, xet finalize stalled at 6 KB/s and timed out twice, and one
+2026-09-03T00:00:05Z (RFD66606-2196) 'shards crashed the auto-viewer, xet finalize stalled at 6 KB/s and timed out twice, and one
  # tags: rfd:intrigue
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:07Z (RFD66606-2196) 'dataset silently dropped every 2-image row because shared image paths collided.
+2026-09-03T00:00:06Z (RFD66606-2196) 'dataset silently dropped every 2-image row because shared image paths collided.
  # tags: rfd:intrigue
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:08Z (RFD66606-2196) '
- # tags: rfd:intrigue
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:09Z (RFD66606-2196) 'Before you publish, check zstd shards, row groups of at most 300 MB, and an LFS push.
+2026-09-03T00:00:07Z (RFD66606-2196) 'Before you publish, check zstd shards, row groups of at most 300 MB, and an LFS push.
  # tags: rfd:exit
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:10Z (RFD66606-2196) '
- # tags: rfd:exit
+2026-09-03T00:00:08Z (RFD66606-2196) 'HuggingFace dataset viewer rules
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:11Z (RFD66606-2196) 'HuggingFace dataset viewer rules
- # tags: rfd:details-title
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:12Z (RFD66606-2196) 'Publish HuggingFace datasets as zstd-compressed parquet shards under
+2026-09-03T00:00:09Z (RFD66606-2196) 'Publish HuggingFace datasets as zstd-compressed parquet shards under
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:13Z (RFD66606-2196) '`data/`, one wide denormalized row per logical example, with row
+2026-09-03T00:00:10Z (RFD66606-2196) '`data/`, one wide denormalized row per logical example, with row
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:14Z (RFD66606-2196) 'groups <= 300 MB and images embedded as `struct<bytes:binary, path:string>`.
+2026-09-03T00:00:11Z (RFD66606-2196) 'groups <= 300 MB and images embedded as `struct<bytes:binary, path:string>`.
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:15Z (RFD66606-2196) 'Skip ETNF/6NF normalization for anything destined for HF. Push with
+2026-09-03T00:00:12Z (RFD66606-2196) 'Skip ETNF/6NF normalization for anything destined for HF. Push with
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:16Z (RFD66606-2196) 'LFS + `hf_transfer`, not xet, whose finalize call times out on multi-GB
+2026-09-03T00:00:13Z (RFD66606-2196) 'LFS + `hf_transfer`, not xet, whose finalize call times out on multi-GB
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:17Z (RFD66606-2196) 'commits.
+2026-09-03T00:00:14Z (RFD66606-2196) 'commits.
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:18Z (RFD66606-2196) '
+2026-09-03T00:00:15Z (RFD66606-2196) '
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:19Z (RFD66606-2196) 'The viewer's contract is enforced silently by an auto-indexer that
+2026-09-03T00:00:16Z (RFD66606-2196) 'The viewer's contract is enforced silently by an auto-indexer that
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:20Z (RFD66606-2196) 'either succeeds or falls back to a "Preview" badge.
+2026-09-03T00:00:17Z (RFD66606-2196) 'either succeeds or falls back to a "Preview" badge.
  # tags: rfd:decision
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:21Z (RFD66606-2196) '
- # tags: rfd:decision
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:22Z (RFD66606-2196) 'Companion skills `hf-datasets-no-etnf`, `hf-parquet-image-column`,
+2026-09-03T00:00:18Z (RFD66606-2196) 'Companion skills `hf-datasets-no-etnf`, `hf-parquet-image-column`,
  # tags: rfd:related
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:23Z (RFD66606-2196) '`hf-upload-large`, `hf-download-streaming` are the single-page how-to
+2026-09-03T00:00:19Z (RFD66606-2196) '`hf-upload-large`, `hf-download-streaming` are the single-page how-to
  # tags: rfd:related
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:24Z (RFD66606-2196) 'per rule. RFD66606-2183 (OmniGen layer decomp) and RFD66606-2193 (editscore
+2026-09-03T00:00:20Z (RFD66606-2196) 'per rule. RFD66606-2183 (OmniGen layer decomp) and RFD66606-2193 (editscore
  # tags: rfd:related
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:25Z (RFD66606-2196) 'reproducibility bar) both consume datasets published under these rules.
+2026-09-03T00:00:21Z (RFD66606-2196) 'reproducibility bar) both consume datasets published under these rules.
  # tags: rfd:related
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:26Z (RFD66606-2196) '
- # tags: rfd:related
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:27Z (RFD66606-2196) 'The three rebuilds
+2026-09-03T00:00:22Z (RFD66606-2196) 'The three rebuilds
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:28Z (RFD66606-2196) 'The three rebuilds were `chibifire/editreward-bench`,
+2026-09-03T00:00:23Z (RFD66606-2196) 'The three rebuilds were `chibifire/editreward-bench`,
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:29Z (RFD66606-2196) '`chibifire/editscore-rl-train` and `chibifire/editscore-reward-train`.
+2026-09-03T00:00:24Z (RFD66606-2196) '`chibifire/editscore-rl-train` and `chibifire/editscore-reward-train`.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:30Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:31Z (RFD66606-2196) 'The viewer's contract, verbatim from what it enforces
+2026-09-03T00:00:25Z (RFD66606-2196) 'The viewer's contract, verbatim from what it enforces
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:32Z (RFD66606-2196) '| Rule | What breaks if you skip it | Error surface |
+2026-09-03T00:00:26Z (RFD66606-2196) '| Rule | What breaks if you skip it | Error surface |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:33Z (RFD66606-2196) '|---|---|---|
+2026-09-03T00:00:27Z (RFD66606-2196) '|---|---|---|
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:34Z (RFD66606-2196) '| Row group ≤ 300 MB | Scan limit exceeded | `Parquet error: Scan size limit exceeded: attempted to read <N> bytes, limit is 300000000 bytes` |
+2026-09-03T00:00:28Z (RFD66606-2196) '| Row group ≤ 300 MB | Scan limit exceeded | `Parquet error: Scan size limit exceeded: attempted to read <N> bytes, limit is 300000000 bytes` |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:35Z (RFD66606-2196) '| One row shape per split | Viewer picks arbitrary schema | Missing columns, silent NULLs |
+2026-09-03T00:00:29Z (RFD66606-2196) '| One row shape per split | Viewer picks arbitrary schema | Missing columns, silent NULLs |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:36Z (RFD66606-2196) '| Image column = `struct<bytes:binary, path:string>` | No thumbnails | Column shows as a struct blob |
+2026-09-03T00:00:30Z (RFD66606-2196) '| Image column = `struct<bytes:binary, path:string>` | No thumbnails | Column shows as a struct blob |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:37Z (RFD66606-2196) '| Shards under `data/` with `train-XXXXX-of-YYYYY.parquet` | Auto-indexer skips them | "Preview" badge, no viewer |
+2026-09-03T00:00:31Z (RFD66606-2196) '| Shards under `data/` with `train-XXXXX-of-YYYYY.parquet` | Auto-indexer skips them | "Preview" badge, no viewer |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:38Z (RFD66606-2196) '| Whole-commit under HF's job limits | Auto-convert job dies | `JobManagerCrashedError` |
+2026-09-03T00:00:32Z (RFD66606-2196) '| Whole-commit under HF's job limits | Auto-convert job dies | `JobManagerCrashedError` |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:39Z (RFD66606-2196) '| LFS-backed for >10 GB pushes | Xet finalize times out | `RuntimeError: Internal error: timed out reading request body` |
+2026-09-03T00:00:33Z (RFD66606-2196) '| LFS-backed for >10 GB pushes | Xet finalize times out | `RuntimeError: Internal error: timed out reading request body` |
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:40Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:41Z (RFD66606-2196) 'Rule 1: one wide row per example (denormalize)
+2026-09-03T00:00:34Z (RFD66606-2196) 'Rule 1: one wide row per example (denormalize)
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:42Z (RFD66606-2196) 'The HF viewer paginates one wide table per split. Split into satellite
+2026-09-03T00:00:35Z (RFD66606-2196) 'The HF viewer paginates one wide table per split. Split into satellite
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:43Z (RFD66606-2196) 'tables (Hermes / ETNF / 6NF style) and the viewer's `train[0..N]`
+2026-09-03T00:00:36Z (RFD66606-2196) 'tables (Hermes / ETNF / 6NF style) and the viewer's `train[0..N]`
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:44Z (RFD66606-2196) 'browsing collapses. Rules:
+2026-09-03T00:00:37Z (RFD66606-2196) 'browsing collapses. Rules:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:45Z (RFD66606-2196) '
+2026-09-03T00:00:38Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:46Z (RFD66606-2196) '- One row per logical example. NULLs are fine.
+2026-09-03T00:00:39Z (RFD66606-2196) '- One row per logical example. NULLs are fine.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:47Z (RFD66606-2196) '- Nested lists and structs are fine (multiple images per row,
+2026-09-03T00:00:40Z (RFD66606-2196) '- Nested lists and structs are fine (multiple images per row,
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:48Z (RFD66606-2196) '  conversation turns), one row per example still.
+2026-09-03T00:00:41Z (RFD66606-2196) '  conversation turns), one row per example still.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:49Z (RFD66606-2196) '- Do NOT emit `entity`, `entity_score`, `entity_conversation` as
+2026-09-03T00:00:42Z (RFD66606-2196) '- Do NOT emit `entity`, `entity_score`, `entity_conversation` as
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:50Z (RFD66606-2196) '  separate parquet files thinking the viewer will join them.
+2026-09-03T00:00:43Z (RFD66606-2196) '  separate parquet files thinking the viewer will join them.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:44Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:45Z (RFD66606-2196) 'Companion skill: `hf-datasets-no-etnf`.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:46Z (RFD66606-2196) 'Rule 2: row groups ≤ 300 MB
+ # tags: rfd:details-heading
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:47Z (RFD66606-2196) 'The viewer scans one row group at a time when the reader requests a
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:48Z (RFD66606-2196) 'page. Above 300 MB it hard-fails. With images embedded (~1 MB each), a
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:49Z (RFD66606-2196) '1000-row shard is one 1 GB row group by pyarrow default, always
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:50Z (RFD66606-2196) 'oversized.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -259,7 +259,7 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:52Z (RFD66606-2196) 'Companion skill: `hf-datasets-no-etnf`.
+2026-09-03T00:00:52Z (RFD66606-2196) 'Write with:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -269,27 +269,27 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:54Z (RFD66606-2196) 'Rule 2: row groups ≤ 300 MB
- # tags: rfd:details-heading
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:00:55Z (RFD66606-2196) 'The viewer scans one row group at a time when the reader requests a
+2026-09-03T00:00:54Z (RFD66606-2196) '```python
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:56Z (RFD66606-2196) 'page. Above 300 MB it hard-fails. With images embedded (~1 MB each), a
+2026-09-03T00:00:55Z (RFD66606-2196) 'pq.write_table(tbl, path,
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:57Z (RFD66606-2196) '1000-row shard is one 1 GB row group by pyarrow default, always
+2026-09-03T00:00:56Z (RFD66606-2196) '               compression="zstd", compression_level=9,
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:00:58Z (RFD66606-2196) 'oversized.
+2026-09-03T00:00:57Z (RFD66606-2196) '               row_group_size=100)   # 100 rows × ~1 MB = ~100 MB
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:00:58Z (RFD66606-2196) '```
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -299,127 +299,127 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:00Z (RFD66606-2196) 'Write with:
+2026-09-03T00:01:00Z (RFD66606-2196) '`row_group_size` is the maximum number of rows per group. Set it so
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:01Z (RFD66606-2196) '
+2026-09-03T00:01:01Z (RFD66606-2196) '`rows_per_group × avg_row_bytes < 200 MB` (30 % safety margin).
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:02Z (RFD66606-2196) '```python
+2026-09-03T00:01:02Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:03Z (RFD66606-2196) 'pq.write_table(tbl, path,
+2026-09-03T00:01:03Z (RFD66606-2196) 'For an already-published shard, rewrite in place, no re-extraction
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:04Z (RFD66606-2196) '               compression="zstd", compression_level=9,
+2026-09-03T00:01:04Z (RFD66606-2196) 'needed:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:05Z (RFD66606-2196) '               row_group_size=100)   # 100 rows × ~1 MB = ~100 MB
+2026-09-03T00:01:05Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:06Z (RFD66606-2196) '```
+2026-09-03T00:01:06Z (RFD66606-2196) '```python
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:07Z (RFD66606-2196) '
+2026-09-03T00:01:07Z (RFD66606-2196) 'tbl = pq.read_table(path)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:08Z (RFD66606-2196) '`row_group_size` is the maximum number of rows per group. Set it so
+2026-09-03T00:01:08Z (RFD66606-2196) 'pq.write_table(tbl, path_tmp, compression="zstd",
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:09Z (RFD66606-2196) '`rows_per_group × avg_row_bytes < 200 MB` (30 % safety margin).
+2026-09-03T00:01:09Z (RFD66606-2196) '               compression_level=9, row_group_size=100)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:10Z (RFD66606-2196) '
+2026-09-03T00:01:10Z (RFD66606-2196) 'path_tmp.replace(path)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:11Z (RFD66606-2196) 'For an already-published shard, rewrite in place, no re-extraction
+2026-09-03T00:01:11Z (RFD66606-2196) '```
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:12Z (RFD66606-2196) 'needed:
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:13Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:14Z (RFD66606-2196) '```python
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:15Z (RFD66606-2196) 'tbl = pq.read_table(path)
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:16Z (RFD66606-2196) 'pq.write_table(tbl, path_tmp, compression="zstd",
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:17Z (RFD66606-2196) '               compression_level=9, row_group_size=100)
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:18Z (RFD66606-2196) 'path_tmp.replace(path)
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:19Z (RFD66606-2196) '```
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:20Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:21Z (RFD66606-2196) 'Rule 3: shards ~500 MB, named `data/train-XXXXX-of-YYYYY.parquet`
+2026-09-03T00:01:12Z (RFD66606-2196) 'Rule 3: shards ~500 MB, named `data/train-XXXXX-of-YYYYY.parquet`
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:22Z (RFD66606-2196) 'The auto-indexer scans `data/` for files matching that name pattern and
+2026-09-03T00:01:13Z (RFD66606-2196) 'The auto-indexer scans `data/` for files matching that name pattern and
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:23Z (RFD66606-2196) 'groups them into splits. Bigger shards (up to ~1 GB) work but slow the
+2026-09-03T00:01:14Z (RFD66606-2196) 'groups them into splits. Bigger shards (up to ~1 GB) work but slow the
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:24Z (RFD66606-2196) 'viewer's first paint. Aim for ~500 MB for image-embedded data.
+2026-09-03T00:01:15Z (RFD66606-2196) 'viewer's first paint. Aim for ~500 MB for image-embedded data.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:16Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:17Z (RFD66606-2196) 'Layout examples:
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:18Z (RFD66606-2196) '```
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:19Z (RFD66606-2196) 'data/train-00000-of-00110.parquet     # single split
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:20Z (RFD66606-2196) 'data/train-...  data/validation-...   # multiple splits, same config
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:21Z (RFD66606-2196) 'default/train-... other/train-...     # multiple configs (put configs at top)
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:22Z (RFD66606-2196) '```
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:23Z (RFD66606-2196) 'Rule 4: image column = `struct<bytes:binary, path:string>`
+ # tags: rfd:details-heading
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:24Z (RFD66606-2196) 'Exact Arrow type:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -429,52 +429,52 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:26Z (RFD66606-2196) 'Layout examples:
+2026-09-03T00:01:26Z (RFD66606-2196) '```python
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:27Z (RFD66606-2196) '```
+2026-09-03T00:01:27Z (RFD66606-2196) 'import pyarrow as pa
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:28Z (RFD66606-2196) 'data/train-00000-of-00110.parquet     # single split
+2026-09-03T00:01:28Z (RFD66606-2196) 'image_type = pa.struct([("bytes", pa.binary()), ("path", pa.string())])
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:29Z (RFD66606-2196) 'data/train-...  data/validation-...   # multiple splits, same config
+2026-09-03T00:01:29Z (RFD66606-2196) '# single image per row
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:30Z (RFD66606-2196) 'default/train-... other/train-...     # multiple configs (put configs at top)
+2026-09-03T00:01:30Z (RFD66606-2196) 'schema = pa.schema([..., ("image",  image_type)])
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:31Z (RFD66606-2196) '```
+2026-09-03T00:01:31Z (RFD66606-2196) '# multiple images per row (viewer renders a gallery)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:32Z (RFD66606-2196) '
+2026-09-03T00:01:32Z (RFD66606-2196) 'schema = pa.schema([..., ("images", pa.list_(image_type))])
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:33Z (RFD66606-2196) 'Rule 4: image column = `struct<bytes:binary, path:string>`
- # tags: rfd:details-heading
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:34Z (RFD66606-2196) 'Exact Arrow type:
+2026-09-03T00:01:33Z (RFD66606-2196) '```
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:35Z (RFD66606-2196) '
+2026-09-03T00:01:34Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:01:35Z (RFD66606-2196) 'Row shape:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -484,382 +484,382 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:37Z (RFD66606-2196) 'import pyarrow as pa
+2026-09-03T00:01:37Z (RFD66606-2196) '{"bytes": <raw png/jpg bytes>, "path": "images/whatever.png"}
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:38Z (RFD66606-2196) 'image_type = pa.struct([("bytes", pa.binary()), ("path", pa.string())])
+2026-09-03T00:01:38Z (RFD66606-2196) '```
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:39Z (RFD66606-2196) '# single image per row
+2026-09-03T00:01:39Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:40Z (RFD66606-2196) 'schema = pa.schema([..., ("image",  image_type)])
+2026-09-03T00:01:40Z (RFD66606-2196) 'What does NOT work:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:41Z (RFD66606-2196) '# multiple images per row (viewer renders a gallery)
+2026-09-03T00:01:41Z (RFD66606-2196) '- `pa.binary()` alone (no thumbnail rendering)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:42Z (RFD66606-2196) 'schema = pa.schema([..., ("images", pa.list_(image_type))])
+2026-09-03T00:01:42Z (RFD66606-2196) '- `{"path": "images/x.png"}` referencing a file elsewhere in the repo
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:43Z (RFD66606-2196) '```
+2026-09-03T00:01:43Z (RFD66606-2196) '- gzipping/zstd-ing the image bytes yourself (parquet's zstd handles it)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:44Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:45Z (RFD66606-2196) 'Row shape:
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:46Z (RFD66606-2196) '```python
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:47Z (RFD66606-2196) '{"bytes": <raw png/jpg bytes>, "path": "images/whatever.png"}
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:48Z (RFD66606-2196) '```
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:49Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:50Z (RFD66606-2196) 'What does NOT work:
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:51Z (RFD66606-2196) '- `pa.binary()` alone (no thumbnail rendering)
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:52Z (RFD66606-2196) '- `{"path": "images/x.png"}` referencing a file elsewhere in the repo
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:53Z (RFD66606-2196) '- gzipping/zstd-ing the image bytes yourself (parquet's zstd handles it)
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:54Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:01:55Z (RFD66606-2196) 'Rule 5: LFS + hf_transfer for large pushes
+2026-09-03T00:01:44Z (RFD66606-2196) 'Rule 5: LFS + hf_transfer for large pushes
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:56Z (RFD66606-2196) '`huggingface_hub`'s default xet path stalls on multi-GB commits: the
+2026-09-03T00:01:45Z (RFD66606-2196) '`huggingface_hub`'s default xet path stalls on multi-GB commits: the
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:57Z (RFD66606-2196) 'CDN endpoint sits ESTABLISHED but transmits nothing, then the client
+2026-09-03T00:01:46Z (RFD66606-2196) 'CDN endpoint sits ESTABLISHED but transmits nothing, then the client
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:58Z (RFD66606-2196) 'raises `RuntimeError: Internal error: timed out reading request body`
+2026-09-03T00:01:47Z (RFD66606-2196) 'raises `RuntimeError: Internal error: timed out reading request body`
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:01:59Z (RFD66606-2196) 'on the finalize call. Observed at 94 GB / 110 shards. Multiple retries
+2026-09-03T00:01:48Z (RFD66606-2196) 'on the finalize call. Observed at 94 GB / 110 shards. Multiple retries
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:00Z (RFD66606-2196) 'did not help; batching into 15-file commits did not help.
+2026-09-03T00:01:49Z (RFD66606-2196) 'did not help; batching into 15-file commits did not help.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:01Z (RFD66606-2196) '
+2026-09-03T00:01:50Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:02Z (RFD66606-2196) 'Reliable recipe:
+2026-09-03T00:01:51Z (RFD66606-2196) 'Reliable recipe:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:03Z (RFD66606-2196) '
+2026-09-03T00:01:52Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:04Z (RFD66606-2196) '```sh
+2026-09-03T00:01:53Z (RFD66606-2196) '```sh
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:05Z (RFD66606-2196) 'pip install hf_transfer
+2026-09-03T00:01:54Z (RFD66606-2196) 'pip install hf_transfer
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:06Z (RFD66606-2196) 'HF_HUB_DISABLE_XET=1 \
+2026-09-03T00:01:55Z (RFD66606-2196) 'HF_HUB_DISABLE_XET=1 \
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:07Z (RFD66606-2196) 'HF_HUB_ENABLE_HF_TRANSFER=1 \
+2026-09-03T00:01:56Z (RFD66606-2196) 'HF_HUB_ENABLE_HF_TRANSFER=1 \
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:08Z (RFD66606-2196) 'hf upload-large-folder \
+2026-09-03T00:01:57Z (RFD66606-2196) 'hf upload-large-folder \
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:09Z (RFD66606-2196) '  --repo-type dataset \
+2026-09-03T00:01:58Z (RFD66606-2196) '  --repo-type dataset \
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:10Z (RFD66606-2196) '  REPO_ID LOCAL_DIR \
+2026-09-03T00:01:59Z (RFD66606-2196) '  REPO_ID LOCAL_DIR \
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:11Z (RFD66606-2196) '  --num-workers 8
+2026-09-03T00:02:00Z (RFD66606-2196) '  --num-workers 8
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:12Z (RFD66606-2196) '```
+2026-09-03T00:02:01Z (RFD66606-2196) '```
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:13Z (RFD66606-2196) '
+2026-09-03T00:02:02Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:14Z (RFD66606-2196) 'Notes:
+2026-09-03T00:02:03Z (RFD66606-2196) 'Notes:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:15Z (RFD66606-2196) '- `upload-large-folder` doesn't accept `--path-in-repo`. Structure
+2026-09-03T00:02:04Z (RFD66606-2196) '- `upload-large-folder` doesn't accept `--path-in-repo`. Structure
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:16Z (RFD66606-2196) '  `LOCAL_DIR` so its tree already matches the repo (put parquet under
+2026-09-03T00:02:05Z (RFD66606-2196) '  `LOCAL_DIR` so its tree already matches the repo (put parquet under
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:17Z (RFD66606-2196) '  `LOCAL_DIR/data/`) and pass `LOCAL_DIR` itself.
+2026-09-03T00:02:06Z (RFD66606-2196) '  `LOCAL_DIR/data/`) and pass `LOCAL_DIR` itself.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:18Z (RFD66606-2196) '- Symlinks are not followed, move or copy real files in.
+2026-09-03T00:02:07Z (RFD66606-2196) '- Symlinks are not followed, move or copy real files in.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:19Z (RFD66606-2196) '- Per-file resume state is in `LOCAL_DIR/.cache/huggingface/`. An
+2026-09-03T00:02:08Z (RFD66606-2196) '- Per-file resume state is in `LOCAL_DIR/.cache/huggingface/`. An
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:20Z (RFD66606-2196) '  interrupted run resumes without re-hashing.
+2026-09-03T00:02:09Z (RFD66606-2196) '  interrupted run resumes without re-hashing.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:21Z (RFD66606-2196) '- Do NOT run two `upload-large-folder` processes against the same
+2026-09-03T00:02:10Z (RFD66606-2196) '- Do NOT run two `upload-large-folder` processes against the same
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:22Z (RFD66606-2196) '  `LOCAL_DIR`.
+2026-09-03T00:02:11Z (RFD66606-2196) '  `LOCAL_DIR`.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:23Z (RFD66606-2196) '- Deletes and small commits work fine over the standard
+2026-09-03T00:02:12Z (RFD66606-2196) '- Deletes and small commits work fine over the standard
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:24Z (RFD66606-2196) '  `HfApi().create_commit` path; only large adds need the LFS+hf_transfer
+2026-09-03T00:02:13Z (RFD66606-2196) '  `HfApi().create_commit` path; only large adds need the LFS+hf_transfer
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:25Z (RFD66606-2196) '  route.
+2026-09-03T00:02:14Z (RFD66606-2196) '  route.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:26Z (RFD66606-2196) '
+2026-09-03T00:02:15Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:27Z (RFD66606-2196) 'Companion skill: `hf-upload-large`.
+2026-09-03T00:02:16Z (RFD66606-2196) 'Companion skill: `hf-upload-large`.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:28Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:02:29Z (RFD66606-2196) 'Streaming download without doubling disk
+2026-09-03T00:02:17Z (RFD66606-2196) 'Streaming download without doubling disk
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:30Z (RFD66606-2196) '`hf_hub_download(..., local_dir=…)` and `hf download --local-dir` write
+2026-09-03T00:02:18Z (RFD66606-2196) '`hf_hub_download(..., local_dir=…)` and `hf download --local-dir` write
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:31Z (RFD66606-2196) 'the file to BOTH `~/.cache/huggingface/hub/…/blobs/` AND the requested
+2026-09-03T00:02:19Z (RFD66606-2196) 'the file to BOTH `~/.cache/huggingface/hub/…/blobs/` AND the requested
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:32Z (RFD66606-2196) '`local_dir` (on macOS the intended hardlink often becomes a copy). Cost
+2026-09-03T00:02:20Z (RFD66606-2196) '`local_dir` (on macOS the intended hardlink often becomes a copy). Cost
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:33Z (RFD66606-2196) 'observed: 86 GB target dir → 170 GB actual disk.
+2026-09-03T00:02:21Z (RFD66606-2196) 'observed: 86 GB target dir → 170 GB actual disk.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:34Z (RFD66606-2196) '
+2026-09-03T00:02:22Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:35Z (RFD66606-2196) 'For one-shot streaming pipelines, bypass the cache with direct HTTPS:
+2026-09-03T00:02:23Z (RFD66606-2196) 'For one-shot streaming pipelines, bypass the cache with direct HTTPS:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:36Z (RFD66606-2196) '
+2026-09-03T00:02:24Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:37Z (RFD66606-2196) '```python
+2026-09-03T00:02:25Z (RFD66606-2196) '```python
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:38Z (RFD66606-2196) 'import os, requests
+2026-09-03T00:02:26Z (RFD66606-2196) 'import os, requests
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:39Z (RFD66606-2196) 'from huggingface_hub import HfApi
+2026-09-03T00:02:27Z (RFD66606-2196) 'from huggingface_hub import HfApi
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:40Z (RFD66606-2196) 'TOKEN = HfApi().token or os.environ["HF_TOKEN"]
+2026-09-03T00:02:28Z (RFD66606-2196) 'TOKEN = HfApi().token or os.environ["HF_TOKEN"]
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:41Z (RFD66606-2196) 'S = requests.Session()
+2026-09-03T00:02:29Z (RFD66606-2196) 'S = requests.Session()
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:42Z (RFD66606-2196) 'S.headers["Authorization"] = f"Bearer {TOKEN}"
+2026-09-03T00:02:30Z (RFD66606-2196) 'S.headers["Authorization"] = f"Bearer {TOKEN}"
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:43Z (RFD66606-2196) '
+2026-09-03T00:02:31Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:44Z (RFD66606-2196) 'url = f"https://huggingface.co/datasets/{REPO}/resolve/main/{name}"
+2026-09-03T00:02:32Z (RFD66606-2196) 'url = f"https://huggingface.co/datasets/{REPO}/resolve/main/{name}"
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:45Z (RFD66606-2196) 'with S.get(url, stream=True) as r:
+2026-09-03T00:02:33Z (RFD66606-2196) 'with S.get(url, stream=True) as r:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:46Z (RFD66606-2196) '    r.raise_for_status()
+2026-09-03T00:02:34Z (RFD66606-2196) '    r.raise_for_status()
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:47Z (RFD66606-2196) '    with open(local_path, "wb") as f:
+2026-09-03T00:02:35Z (RFD66606-2196) '    with open(local_path, "wb") as f:
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:48Z (RFD66606-2196) '        for chunk in r.iter_content(1 << 22):
+2026-09-03T00:02:36Z (RFD66606-2196) '        for chunk in r.iter_content(1 << 22):
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:49Z (RFD66606-2196) '            f.write(chunk)
+2026-09-03T00:02:37Z (RFD66606-2196) '            f.write(chunk)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:50Z (RFD66606-2196) '# process...
+2026-09-03T00:02:38Z (RFD66606-2196) '# process...
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:51Z (RFD66606-2196) 'local_path.unlink()
+2026-09-03T00:02:39Z (RFD66606-2196) 'local_path.unlink()
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:52Z (RFD66606-2196) '```
+2026-09-03T00:02:40Z (RFD66606-2196) '```
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:41Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:42Z (RFD66606-2196) 'For repeated reads, let the cache do its job, the doubling pays for
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:43Z (RFD66606-2196) 'retry and dedup.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:44Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:45Z (RFD66606-2196) 'Companion skill: `hf-download-streaming`.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:46Z (RFD66606-2196) 'Pitfall: shared images across rows
+ # tags: rfd:details-heading
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:47Z (RFD66606-2196) 'If your metadata references the same image path from multiple rows
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:48Z (RFD66606-2196) '(observed in `chibifire/editscore-reward-train`: `images/0_0.png`
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:49Z (RFD66606-2196) 'referenced by 7 different rows), a naive `img2row: dict[str, int]` maps
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:50Z (RFD66606-2196) 'each path to only the LAST row that claimed it. When the tar stream
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:51Z (RFD66606-2196) 'delivers that image, all other claiming rows are orphaned and dropped
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:02:52Z (RFD66606-2196) 'silently at the end.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
@@ -869,412 +869,312 @@
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:54Z (RFD66606-2196) 'For repeated reads, let the cache do its job, the doubling pays for
+2026-09-03T00:02:54Z (RFD66606-2196) 'Fix: `img2rows: dict[str, list[int]]` with `defaultdict(list)`, and on
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:55Z (RFD66606-2196) 'retry and dedup.
+2026-09-03T00:02:55Z (RFD66606-2196) 'each tar member deliver the bytes to every interested row. Bytes are
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:56Z (RFD66606-2196) '
+2026-09-03T00:02:56Z (RFD66606-2196) 'shared by reference, no memory blowup.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:02:57Z (RFD66606-2196) 'Companion skill: `hf-download-streaming`.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:02:58Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:02:59Z (RFD66606-2196) 'Pitfall: shared images across rows
+2026-09-03T00:02:57Z (RFD66606-2196) 'Pitfall: auto-viewer job crash on legacy `.arrow` shards
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:00Z (RFD66606-2196) 'If your metadata references the same image path from multiple rows
+2026-09-03T00:02:58Z (RFD66606-2196) 'A dataset saved with `datasets.save_to_disk` publishes as `.arrow`
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:01Z (RFD66606-2196) '(observed in `chibifire/editscore-reward-train`: `images/0_0.png`
+2026-09-03T00:02:59Z (RFD66606-2196) 'shards plus `dataset_info.json` / `state.json`. HF tries to
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:02Z (RFD66606-2196) 'referenced by 7 different rows), a naive `img2row: dict[str, int]` maps
+2026-09-03T00:03:00Z (RFD66606-2196) 'auto-convert those to parquet in a job that has resource limits, it
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:03Z (RFD66606-2196) 'each path to only the LAST row that claimed it. When the tar stream
+2026-09-03T00:03:01Z (RFD66606-2196) 'died with `JobManagerCrashedError` on the ~5 GB `chibifire/editreward-bench`
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:04Z (RFD66606-2196) 'delivers that image, all other claiming rows are orphaned and dropped
+2026-09-03T00:03:02Z (RFD66606-2196) 'input, leaving the viewer stuck as "Preview". Fix: convert to parquet
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:05Z (RFD66606-2196) 'silently at the end.
+2026-09-03T00:03:03Z (RFD66606-2196) 'yourself, push under `data/`, and delete the `.arrow` shards and
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:06Z (RFD66606-2196) '
+2026-09-03T00:03:04Z (RFD66606-2196) '`dataset_info.json` / `state.json` in the same commit.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:07Z (RFD66606-2196) 'Fix: `img2rows: dict[str, list[int]]` with `defaultdict(list)`, and on
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:08Z (RFD66606-2196) 'each tar member deliver the bytes to every interested row. Bytes are
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:09Z (RFD66606-2196) 'shared by reference, no memory blowup.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:10Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:11Z (RFD66606-2196) 'Pitfall: auto-viewer job crash on legacy `.arrow` shards
+2026-09-03T00:03:05Z (RFD66606-2196) 'Rule 6: `dataset_info.features` must match the on-disk Arrow shape
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:12Z (RFD66606-2196) 'A dataset saved with `datasets.save_to_disk` publishes as `.arrow`
+2026-09-03T00:03:06Z (RFD66606-2196) 'An earlier draft of this document listed "explicit `datasets.Features`
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:13Z (RFD66606-2196) 'shards plus `dataset_info.json` / `state.json`. HF tries to
+2026-09-03T00:03:07Z (RFD66606-2196) 'definition" as a non-goal, on the argument that an unambiguous Arrow
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:14Z (RFD66606-2196) 'auto-convert those to parquet in a job that has resource limits, it
+2026-09-03T00:03:08Z (RFD66606-2196) 'schema was enough. Observed 2026-09-03 on
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:15Z (RFD66606-2196) 'died with `JobManagerCrashedError` on the ~5 GB `chibifire/editreward-bench`
+2026-09-03T00:03:09Z (RFD66606-2196) '`chibifire/zenodo-second-hand-fashion-v3`: on-disk parquet held
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:16Z (RFD66606-2196) 'input, leaving the viewer stuck as "Preview". Fix: convert to parquet
+2026-09-03T00:03:10Z (RFD66606-2196) '`list<struct<slot, damage, damage_image, damage_location>>` (list of
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:17Z (RFD66606-2196) 'yourself, push under `data/`, and delete the `.arrow` shards and
+2026-09-03T00:03:11Z (RFD66606-2196) 'struct); the README's `dataset_info.features` block declared
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:18Z (RFD66606-2196) '`dataset_info.json` / `state.json` in the same commit.
+2026-09-03T00:03:12Z (RFD66606-2196) '
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:19Z (RFD66606-2196) '
+2026-09-03T00:03:13Z (RFD66606-2196) '   , name: damage
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:20Z (RFD66606-2196) 'Rule 6: `dataset_info.features` must match the on-disk Arrow shape
+2026-09-03T00:03:14Z (RFD66606-2196) '      sequence:
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:15Z (RFD66606-2196) '       , name: slot ...
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:16Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:17Z (RFD66606-2196) 'which HF-datasets' YAML loader reads as `Sequence(dict(...))`, and
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:18Z (RFD66606-2196) 'that translates to `struct<slot: list, damage: list, ...>` (**struct
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:19Z (RFD66606-2196) 'of lists**) in Arrow, the historical tfds convention. The viewer
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:20Z (RFD66606-2196) 'tried to cast on-disk list-of-struct to declared struct-of-lists and
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:21Z (RFD66606-2196) 'died with `UnexpectedError` on that split, viewer red.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:22Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:23Z (RFD66606-2196) 'The two Features shapes:
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:24Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:25Z (RFD66606-2196) '| YAML | datasets class | Arrow shape |
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:26Z (RFD66606-2196) '|---|---|---|
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:27Z (RFD66606-2196) '| `sequence: {...}` | `Sequence(dict)` | `struct<field: list<T>>` (struct of lists) |
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:28Z (RFD66606-2196) '| `list: [{...}]`   | `List(dict)`     | `list<struct<field: T>>` (list of struct) |
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:29Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:30Z (RFD66606-2196) 'For a single-typed sequence (`sequence: string`) both YAML keywords
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:31Z (RFD66606-2196) 'land at `list<T>` and the distinction does not matter. For a sequence
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:32Z (RFD66606-2196) 'of records the distinction is the whole rule: pick the keyword whose
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:33Z (RFD66606-2196) 'Arrow shape matches what you actually wrote, or the auto-cast fails.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:34Z (RFD66606-2196) '
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:35Z (RFD66606-2196) 'The fix is one YAML character (`sequence:` -> `list:`) or a parquet
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:36Z (RFD66606-2196) 'rewrite that flips the shape; the character fix is trivial and
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:37Z (RFD66606-2196) 'correct-by-construction when the parquet was already list-of-struct.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:38Z (RFD66606-2196) 'Non-goals for this RFD
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:21Z (RFD66606-2196) 'An earlier draft of this document listed "explicit `datasets.Features`
+2026-09-03T00:03:39Z (RFD66606-2196) '- **Dataset card / README frontmatter** other than `dataset_info` (task
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:22Z (RFD66606-2196) 'definition" as a non-goal, on the argument that an unambiguous Arrow
+2026-09-03T00:03:40Z (RFD66606-2196) '  category, language, licence tags).
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:23Z (RFD66606-2196) 'schema was enough. Observed 2026-09-03 on
+2026-09-03T00:03:41Z (RFD66606-2196) '- **PII gating**, HF's access-control settings are per-repo, out of scope here.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:24Z (RFD66606-2196) '`chibifire/zenodo-second-hand-fashion-v3`: on-disk parquet held
+2026-09-03T00:03:42Z (RFD66606-2196) '- **Splits & configs directory conventions**, the auto-detector handles
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:25Z (RFD66606-2196) '`list<struct<slot, damage, damage_image, damage_location>>` (list of
+2026-09-03T00:03:43Z (RFD66606-2196) '  the common cases; a dedicated RFD if we hit an ambiguous layout.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:26Z (RFD66606-2196) 'struct); the README's `dataset_info.features` block declared
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:27Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:28Z (RFD66606-2196) '   , name: damage
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:29Z (RFD66606-2196) '      sequence:
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:30Z (RFD66606-2196) '       , name: slot ...
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:31Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:32Z (RFD66606-2196) 'which HF-datasets' YAML loader reads as `Sequence(dict(...))`, and
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:33Z (RFD66606-2196) 'that translates to `struct<slot: list, damage: list, ...>` (**struct
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:34Z (RFD66606-2196) 'of lists**) in Arrow, the historical tfds convention. The viewer
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:35Z (RFD66606-2196) 'tried to cast on-disk list-of-struct to declared struct-of-lists and
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:36Z (RFD66606-2196) 'died with `UnexpectedError` on that split, viewer red.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:37Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:38Z (RFD66606-2196) 'The two Features shapes:
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:39Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:40Z (RFD66606-2196) '| YAML | datasets class | Arrow shape |
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:41Z (RFD66606-2196) '|---|---|---|
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:42Z (RFD66606-2196) '| `sequence: {...}` | `Sequence(dict)` | `struct<field: list<T>>` (struct of lists) |
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:43Z (RFD66606-2196) '| `list: [{...}]`   | `List(dict)`     | `list<struct<field: T>>` (list of struct) |
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:44Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:45Z (RFD66606-2196) 'For a single-typed sequence (`sequence: string`) both YAML keywords
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:46Z (RFD66606-2196) 'land at `list<T>` and the distinction does not matter. For a sequence
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:47Z (RFD66606-2196) 'of records the distinction is the whole rule: pick the keyword whose
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:48Z (RFD66606-2196) 'Arrow shape matches what you actually wrote, or the auto-cast fails.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:49Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:50Z (RFD66606-2196) 'The fix is one YAML character (`sequence:` -> `list:`) or a parquet
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:51Z (RFD66606-2196) 'rewrite that flips the shape; the character fix is trivial and
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:52Z (RFD66606-2196) 'correct-by-construction when the parquet was already list-of-struct.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:53Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:54Z (RFD66606-2196) 'Non-goals for this RFD
+2026-09-03T00:03:44Z (RFD66606-2196) 'Related RFDs
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:55Z (RFD66606-2196) '- **Dataset card / README frontmatter** other than `dataset_info` (task
+2026-09-03T00:03:45Z (RFD66606-2196) '- RFD66606-2183, retrain OmniGen for layer decomposition (consumer of these datasets)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:56Z (RFD66606-2196) '  category, language, licence tags).
+2026-09-03T00:03:46Z (RFD66606-2196) '- RFD66606-2193, editscore as reproducibility bar (consumer)
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:03:57Z (RFD66606-2196) '- **PII gating**, HF's access-control settings are per-repo, out of scope here.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:58Z (RFD66606-2196) '- **Splits & configs directory conventions**, the auto-detector handles
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:03:59Z (RFD66606-2196) '  the common cases; a dedicated RFD if we hit an ambiguous layout.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:00Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:01Z (RFD66606-2196) 'Related RFDs
+2026-09-03T00:03:47Z (RFD66606-2196) 'Reference commit set
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:02Z (RFD66606-2196) '- RFD66606-2183, retrain OmniGen for layer decomposition (consumer of these datasets)
+2026-09-03T00:03:48Z (RFD66606-2196) '- `chibifire/editreward-bench`, commit `057671b9…`, `.arrow` → parquet, viewer restored.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:03Z (RFD66606-2196) '- RFD66606-2193, editscore as reproducibility bar (consumer)
+2026-09-03T00:03:49Z (RFD66606-2196) '- `chibifire/editscore-rl-train`, post-fix commit (row_group_size=100), 110 shards under
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:04Z (RFD66606-2196) '
+2026-09-03T00:03:50Z (RFD66606-2196) '`data/`.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:05Z (RFD66606-2196) 'Reference commit set
+2026-09-03T00:03:51Z (RFD66606-2196) '- `chibifire/editscore-reward-train`, post-fix commit, 97,256 rows written, no silent drops.
+ # tags: rfd:details
+ Text:RFD2196  1 LINE
+ Text:Written
+
+2026-09-03T00:03:52Z (RFD66606-2196) 'The problem
  # tags: rfd:details-heading
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:06Z (RFD66606-2196) '- `chibifire/editreward-bench`, commit `057671b9…`, `.arrow` → parquet, viewer restored.
+2026-09-03T00:03:53Z (RFD66606-2196) 'Landing a dataset that renders needs
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:07Z (RFD66606-2196) '- `chibifire/editscore-rl-train`, post-fix commit (row_group_size=100), 110 shards under
+2026-09-03T00:03:54Z (RFD66606-2196) 'each of the five rules matched at author time, not fixed after the
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written
 
-2026-09-03T00:04:08Z (RFD66606-2196) '`data/`.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:09Z (RFD66606-2196) '- `chibifire/editscore-reward-train`, post-fix commit, 97,256 rows written, no silent drops.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:10Z (RFD66606-2196) '
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:11Z (RFD66606-2196) 'The problem
- # tags: rfd:details-heading
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:12Z (RFD66606-2196) 'Landing a dataset that renders needs
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:13Z (RFD66606-2196) 'each of the five rules matched at author time, not fixed after the
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:14Z (RFD66606-2196) 'push has happened.
- # tags: rfd:details
- Text:RFD2196  1 LINE
- Text:Written
-
-2026-09-03T00:04:15Z (RFD66606-2196) '
+2026-09-03T00:03:55Z (RFD66606-2196) 'push has happened.
  # tags: rfd:details
  Text:RFD2196  1 LINE
  Text:Written

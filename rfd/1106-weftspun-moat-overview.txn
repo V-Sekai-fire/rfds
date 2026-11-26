@@ -5,7 +5,7 @@
  Serials:Weftspun
 
 2026-08-25T00:00:01Z (RFD66606-1106) 'licensing, trademark, the hosted service boundary
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD1106  1 LINE
  Text:Written
 
@@ -14,302 +14,257 @@
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1106) '
- # tags: rfd:hook
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-1106) 'The client source is open. A fork could read that as an invitation to run as "Weftspun," or
+2026-08-25T00:00:03Z (RFD66606-1106) 'The client source is open. A fork could read that as an invitation to run as "Weftspun," or
  # tags: rfd:intrigue
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:05Z (RFD66606-1106) 'reuse the hosted AI and registry backends.
+2026-08-25T00:00:04Z (RFD66606-1106) 'reuse the hosted AI and registry backends.
  # tags: rfd:intrigue
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1106) '
- # tags: rfd:intrigue
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1106) 'Check any public statement of the license boundary against the three proprietary areas above
+2026-08-25T00:00:05Z (RFD66606-1106) 'Check any public statement of the license boundary against the three proprietary areas above
  # tags: rfd:exit
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1106) 'before you publish it; the sections below hold the per-area table.
+2026-08-25T00:00:06Z (RFD66606-1106) 'before you publish it; the sections below hold the per-area table.
  # tags: rfd:exit
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1106) '
- # tags: rfd:exit
+2026-08-25T00:00:07Z (RFD66606-1106) 'The open/proprietary boundary, in public words
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1106) 'The open/proprietary boundary, in public words
- # tags: rfd:details-title
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1106) 'Publish one page stating the split, with no pricing, revenue
+2026-08-25T00:00:08Z (RFD66606-1106) 'Publish one page stating the split, with no pricing, revenue
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1106) 'target, or investor detail in it. The client (`LICENSE`) is open,
+2026-08-25T00:00:09Z (RFD66606-1106) 'target, or investor detail in it. The client (`LICENSE`) is open,
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-1106) 'self-hostable under a different product name. Three areas stay
+2026-08-25T00:00:10Z (RFD66606-1106) 'self-hostable under a different product name. Three areas stay
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:14Z (RFD66606-1106) 'proprietary, not granted by the OSS license: the trademark, the
+2026-08-25T00:00:11Z (RFD66606-1106) 'proprietary, not granted by the OSS license: the trademark, the
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1106) 'hosted `3DAIGC-API` with its model tuning and quality gates, and the
+2026-08-25T00:00:12Z (RFD66606-1106) 'hosted `3DAIGC-API` with its model tuning and quality gates, and the
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1106) 'marketplace/personalization services built on it.
+2026-08-25T00:00:13Z (RFD66606-1106) 'marketplace/personalization services built on it.
  # tags: rfd:decision
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1106) '
- # tags: rfd:decision
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1106) 'The public Vercel demo (`0098-public-deploy/`) runs the open client
+2026-08-25T00:00:14Z (RFD66606-1106) 'The public Vercel demo (`0098-public-deploy/`) runs the open client
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1106) 'with none of the proprietary services exposed. Trademark terms live
+2026-08-25T00:00:15Z (RFD66606-1106) 'with none of the proprietary services exposed. Trademark terms live
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1106) 'in this project's own `README.md` and `TRADEMARKS`. RFD66606-1109 gives
+2026-08-25T00:00:16Z (RFD66606-1106) 'in this project's own `README.md` and `TRADEMARKS`. RFD66606-1109 gives
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-1106) 'the payment-rail and phygital-registry areas this page's own source
+2026-08-25T00:00:17Z (RFD66606-1106) 'the payment-rail and phygital-registry areas this page's own source
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-1106) 'document once listed; both are abandoned, per RFD66606-1012 and
+2026-08-25T00:00:18Z (RFD66606-1106) 'document once listed; both are abandoned, per RFD66606-1012 and
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-1106) 'RFD66606-1015, and removed from this table.
+2026-08-25T00:00:19Z (RFD66606-1106) 'RFD66606-1015, and removed from this table.
  # tags: rfd:related
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-1106) '
- # tags: rfd:related
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1106) 'What forking the repository does not grant
+2026-08-25T00:00:20Z (RFD66606-1106) 'What forking the repository does not grant
  # tags: rfd:details-heading
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1106) '| Area                    | Why it stays proprietary                                                                                                             |
+2026-08-25T00:00:21Z (RFD66606-1106) '| Area                    | Why it stays proprietary                                                                                                             |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1106) '| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+2026-08-25T00:00:22Z (RFD66606-1106) '| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1106) '| Trademark               | "Weftspun", the Weftspun3DStudio branding, the logo, apparel designs. See this project's own `README.md`, Legal & Trademark section. |
+2026-08-25T00:00:23Z (RFD66606-1106) '| Trademark               | "Weftspun", the Weftspun3DStudio branding, the logo, apparel designs. See this project's own `README.md`, Legal & Trademark section. |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1106) '| Hosted AI               | The commercial `3DAIGC-API` queue, model-matrix tuning, and quality gates, running on operator hardware.                             |
+2026-08-25T00:00:24Z (RFD66606-1106) '| Hosted AI               | The commercial `3DAIGC-API` queue, model-matrix tuning, and quality gates, running on operator hardware.                             |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1106) '| Marketplace graph       | Curated mint paths, soulbound identity and equippable assets, official secondary listings.                                           |
+2026-08-25T00:00:25Z (RFD66606-1106) '| Marketplace graph       | Curated mint paths, soulbound identity and equippable assets, official secondary listings.                                           |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1106) '| Personalization service | Optional, user-approved profile context for generation. A compute product, not a sale of raw user data.                              |
+2026-08-25T00:00:26Z (RFD66606-1106) '| Personalization service | Optional, user-approved profile context for generation. A compute product, not a sale of raw user data.                              |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1106) '
+2026-08-25T00:00:27Z (RFD66606-1106) '
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-1106) 'Two areas this page's own source document once listed here, payment
+2026-08-25T00:00:28Z (RFD66606-1106) 'Two areas this page's own source document once listed here, payment
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-1106) 'rails (x402/wallet) and a phygital passport registry, are gone from
+2026-08-25T00:00:29Z (RFD66606-1106) 'rails (x402/wallet) and a phygital passport registry, are gone from
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1106) 'this table. RFD66606-1109 gives why: both are abandoned, per RFD66606-1012 and
+2026-08-25T00:00:30Z (RFD66606-1106) 'this table. RFD66606-1109 gives why: both are abandoned, per RFD66606-1012 and
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1106) 'RFD66606-1015, and both were fully stripped from the codebase before this
+2026-08-25T00:00:31Z (RFD66606-1106) 'RFD66606-1015, and both were fully stripped from the codebase before this
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-1106) 'page was even written. Listing them as a current proprietary moat
+2026-08-25T00:00:32Z (RFD66606-1106) 'page was even written. Listing them as a current proprietary moat
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-1106) 'was incorrect.
+2026-08-25T00:00:33Z (RFD66606-1106) 'was incorrect.
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1106) '
- # tags: rfd:details
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:40Z (RFD66606-1106) 'The architecture split
+2026-08-25T00:00:34Z (RFD66606-1106) 'The architecture split
  # tags: rfd:details-heading
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1106) '```
+2026-08-25T00:00:35Z (RFD66606-1106) '```
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-1106) '[Open OSS client]  --API-->  [Hosted 3DAIGC + billing + SLA]  (operator moat)
+2026-08-25T00:00:36Z (RFD66606-1106) '[Open OSS client]  --API-->  [Hosted 3DAIGC + billing + SLA]  (operator moat)
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-1106) '       |
+2026-08-25T00:00:37Z (RFD66606-1106) '       |
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-1106) '       +--> Trademark + official drops (brand moat)
+2026-08-25T00:00:38Z (RFD66606-1106) '       +--> Trademark + official drops (brand moat)
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-1106) '       +--> Marketplace / personalization loop (network moat)
+2026-08-25T00:00:39Z (RFD66606-1106) '       +--> Marketplace / personalization loop (network moat)
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-1106) '```
+2026-08-25T00:00:40Z (RFD66606-1106) '```
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-1106) '
+2026-08-25T00:00:41Z (RFD66606-1106) '
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-1106) 'Forking the repository grants the client source under its own
+2026-08-25T00:00:42Z (RFD66606-1106) 'Forking the repository grants the client source under its own
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-1106) 'license. It grants nothing else: not the right to operate as
+2026-08-25T00:00:43Z (RFD66606-1106) 'license. It grants nothing else: not the right to operate as
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-1106) '"Weftspun," and not access to the hosted AI or marketplace backends
+2026-08-25T00:00:44Z (RFD66606-1106) '"Weftspun," and not access to the hosted AI or marketplace backends
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1106) 'this page names.
+2026-08-25T00:00:45Z (RFD66606-1106) 'this page names.
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1106) '
- # tags: rfd:details
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-1106) 'What stays out of this document, on purpose
+2026-08-25T00:00:46Z (RFD66606-1106) 'What stays out of this document, on purpose
  # tags: rfd:details-heading
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1106) 'Internal strategy (pricing, ARR, the full revenue map) lives in
+2026-08-25T00:00:47Z (RFD66606-1106) 'Internal strategy (pricing, ARR, the full revenue map) lives in
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1106) 'local-only files this session found and removed from public view
+2026-08-25T00:00:48Z (RFD66606-1106) 'local-only files this session found and removed from public view
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1106) 'once discovered, not in any RFD; this repository's own history
+2026-08-25T00:00:49Z (RFD66606-1106) 'once discovered, not in any RFD; this repository's own history
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1106) 'carries that redaction as a real commit, not a silent one.
+2026-08-25T00:00:50Z (RFD66606-1106) 'carries that redaction as a real commit, not a silent one.
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-1106) '
- # tags: rfd:details
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1106) 'The problem
+2026-08-25T00:00:51Z (RFD66606-1106) 'The problem
  # tags: rfd:details-heading
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:01:00Z (RFD66606-1106) 'Nothing public states where the open license ends and the
+2026-08-25T00:00:52Z (RFD66606-1106) 'Nothing public states where the open license ends and the
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-1106) 'proprietary service begins.
- # tags: rfd:details
- Text:RFD1106  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1106) '
+2026-08-25T00:00:53Z (RFD66606-1106) 'proprietary service begins.
  # tags: rfd:details
  Text:RFD1106  1 LINE
  Text:Written

@@ -10,12 +10,12 @@
  Text:Written
 
 2026-10-30T00:00:02Z (RFD66606-2342) 'rung
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2342  1 LINE
  Text:Written
 
 2026-10-30T00:00:03Z (RFD66606-2342) 'the tray's `v<date>-dev.1` release
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2342  1 LINE
  Text:Written
 
@@ -24,152 +24,152 @@
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2342) '
- # tags: rfd:hook
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:06Z (RFD66606-2342) 'Install, integrity, silence and uninstall must work before anything is drawn.
+2026-10-30T00:00:05Z (RFD66606-2342) 'Install, integrity, silence and uninstall must work before anything is drawn.
  # tags: rfd:intrigue
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2342) '
- # tags: rfd:intrigue
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:08Z (RFD66606-2342) 'Run the gates in `tools/gate_dev1.exs` against OXRSys.
+2026-10-30T00:00:06Z (RFD66606-2342) 'Run the gates in `tools/gate_dev1.exs` against OXRSys.
  # tags: rfd:exit
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2342) '
- # tags: rfd:exit
+2026-10-30T00:00:07Z (RFD66606-2342) 'dev.1, the tray icon
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:10Z (RFD66606-2342) 'dev.1, the tray icon
- # tags: rfd:details-title
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:11Z (RFD66606-2342) 'dev.1 ships one Godot scene, built with the pinned double editor and
+2026-10-30T00:00:08Z (RFD66606-2342) 'dev.1 ships one Godot scene, built with the pinned double editor and
  # tags: rfd:decision
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:12Z (RFD66606-2342) 'exported with its templates for macOS and Windows. A borrowed mascot's
+2026-10-30T00:00:09Z (RFD66606-2342) 'exported with its templates for macOS and Windows. A borrowed mascot's
  # tags: rfd:decision
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:13Z (RFD66606-2342) 'face is the icon. A click opens a popup with the version, a headset
+2026-10-30T00:00:10Z (RFD66606-2342) 'face is the icon. A click opens a popup with the version, a headset
  # tags: rfd:decision
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:14Z (RFD66606-2342) 'line, a zone line, a disabled "Draw" button and the mascot playing Idle.
+2026-10-30T00:00:11Z (RFD66606-2342) 'line, a zone line, a disabled "Draw" button and the mascot playing Idle.
  # tags: rfd:decision
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2342) '
- # tags: rfd:decision
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:16Z (RFD66606-2342) '- RFD66606-2343, dev.2, the first playable core.
+2026-10-30T00:00:12Z (RFD66606-2342) '- RFD66606-2343, dev.2, the first playable core.
  # tags: rfd:related
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:17Z (RFD66606-2342) '- RFD66606-2341, dev.next.
+2026-10-30T00:00:13Z (RFD66606-2342) '- RFD66606-2341, dev.next.
  # tags: rfd:related
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2342) '- The FOSS release ladder this rung follows as defined: weftspun
+2026-10-30T00:00:14Z (RFD66606-2342) '- The FOSS release ladder this rung follows as defined: weftspun
  # tags: rfd:related
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2342) '  RFD66606-2262 (releases).
+2026-10-30T00:00:15Z (RFD66606-2342) '  RFD66606-2262 (releases).
  # tags: rfd:related
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:20Z (RFD66606-2342) '- The private blocklist, the private pitfalls list and the private licence audit.
+2026-10-30T00:00:16Z (RFD66606-2342) '- The private blocklist, the private pitfalls list and the private licence audit.
  # tags: rfd:related
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2342) '
- # tags: rfd:related
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:22Z (RFD66606-2342) 'dev.1: the feature
+2026-10-30T00:00:17Z (RFD66606-2342) 'dev.1: the feature
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2342) 'One Godot scene, built with the pinned double editor and exported with
+2026-10-30T00:00:18Z (RFD66606-2342) 'One Godot scene, built with the pinned double editor and exported with
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2342) 'its templates for macOS and Windows. The stand-in mascot's face is the
+2026-10-30T00:00:19Z (RFD66606-2342) 'its templates for macOS and Windows. The stand-in mascot's face is the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2342) 'icon. Clicking it opens a popup with:
+2026-10-30T00:00:20Z (RFD66606-2342) 'icon. Clicking it opens a popup with:
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2342) '
+2026-10-30T00:00:21Z (RFD66606-2342) '
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:27Z (RFD66606-2342) '- the version;
+2026-10-30T00:00:22Z (RFD66606-2342) '- the version;
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:28Z (RFD66606-2342) '- a "headset: connected / not found" line;
+2026-10-30T00:00:23Z (RFD66606-2342) '- a "headset: connected / not found" line;
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:29Z (RFD66606-2342) '- a "zone: none" line;
+2026-10-30T00:00:24Z (RFD66606-2342) '- a "zone: none" line;
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2342) '- a disabled "Draw" button;
+2026-10-30T00:00:25Z (RFD66606-2342) '- a disabled "Draw" button;
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2342) '- a viewport where the mascot's glb plays Idle with its own materials.
+2026-10-30T00:00:26Z (RFD66606-2342) '- a viewport where the mascot's glb plays Idle with its own materials.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:32Z (RFD66606-2342) '
+2026-10-30T00:00:27Z (RFD66606-2342) '
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:33Z (RFD66606-2342) 'The tray becomes the zone host and the desktop client's launcher in
+2026-10-30T00:00:28Z (RFD66606-2342) 'The tray becomes the zone host and the desktop client's launcher in
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:34Z (RFD66606-2342) 'dev.2, so it comes first.
+2026-10-30T00:00:29Z (RFD66606-2342) 'dev.2, so it comes first.
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:00:30Z (RFD66606-2342) '
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:00:31Z (RFD66606-2342) '- macOS: a menu-bar status item via
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:00:32Z (RFD66606-2342) '  `DisplayServer.create_status_indicator`, guarded by
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:00:33Z (RFD66606-2342) '  `has_feature(FEATURE_STATUS_INDICATOR)`; ad-hoc signed; a DMG.
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:00:34Z (RFD66606-2342) '- Windows: a system tray icon via the same API; a zip.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
@@ -179,257 +179,257 @@
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2342) '- macOS: a menu-bar status item via
+2026-10-30T00:00:36Z (RFD66606-2342) 'The mascot is borrowed third-party work under MIT, not ours. It is the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2342) '  `DisplayServer.create_status_indicator`, guarded by
+2026-10-30T00:00:37Z (RFD66606-2342) 'stand-in for dev.1 and dev.2, and no public asset shows it.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2342) '  `has_feature(FEATURE_STATUS_INDICATOR)`; ad-hoc signed; a DMG.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:39Z (RFD66606-2342) '- Windows: a system tray icon via the same API; a zip.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:40Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:41Z (RFD66606-2342) 'The mascot is borrowed third-party work under MIT, not ours. It is the
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:42Z (RFD66606-2342) 'stand-in for dev.1 and dev.2, and no public asset shows it.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:43Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:44Z (RFD66606-2342) 'The pins, frozen from open to tag
+2026-10-30T00:00:38Z (RFD66606-2342) 'The pins, frozen from open to tag
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:45Z (RFD66606-2342) 'This file names every pin when the rung opens, and nothing moves until
+2026-10-30T00:00:39Z (RFD66606-2342) 'This file names every pin when the rung opens, and nothing moves until
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:46Z (RFD66606-2342) 'the rung tags. Bumps happen between rungs, as one batch, recorded in
+2026-10-30T00:00:40Z (RFD66606-2342) 'the rung tags. Bumps happen between rungs, as one batch, recorded in
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2342) 'the logbook.
+2026-10-30T00:00:41Z (RFD66606-2342) 'the logbook.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2342) '
+2026-10-30T00:00:42Z (RFD66606-2342) '
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:49Z (RFD66606-2342) '- Engine: our Godot build fork's release v20260930-double.1, at the
+2026-10-30T00:00:43Z (RFD66606-2342) '- Engine: our Godot build fork's release v20260930-double.1, at the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:50Z (RFD66606-2342) '  engine ref its release notes name, with the macOS arm64 editor and
+2026-10-30T00:00:44Z (RFD66606-2342) '  engine ref its release notes name, with the macOS arm64 editor and
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:51Z (RFD66606-2342) '  templates and the Windows x86_64 templates.
+2026-10-30T00:00:45Z (RFD66606-2342) '  templates and the Windows x86_64 templates.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:52Z (RFD66606-2342) '- OXRSys and `xr_pilot_mcp`: our XR pilot interactor at the commit the
+2026-10-30T00:00:46Z (RFD66606-2342) '- OXRSys and `xr_pilot_mcp`: our XR pilot interactor at the commit the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2342) '  logbook names.
+2026-10-30T00:00:47Z (RFD66606-2342) '  logbook names.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2342) '- The headset probe: the pen's OpenXR probe, from our meshing pen at the
+2026-10-30T00:00:48Z (RFD66606-2342) '- The headset probe: the pen's OpenXR probe, from our meshing pen at the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2342) '  commit the logbook names.
+2026-10-30T00:00:49Z (RFD66606-2342) '  commit the logbook names.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2342) '- The mascot: the borrowed stand-in (MIT), from the private character repo.
+2026-10-30T00:00:50Z (RFD66606-2342) '- The mascot: the borrowed stand-in (MIT), from the private character repo.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:57Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:00:58Z (RFD66606-2342) 'The reliability gate
+2026-10-30T00:00:51Z (RFD66606-2342) 'The reliability gate
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:00:59Z (RFD66606-2342) 'Every client logs frame times. At most 1 frame in 100,000 may exceed
+2026-10-30T00:00:52Z (RFD66606-2342) 'Every client logs frame times. At most 1 frame in 100,000 may exceed
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:00Z (RFD66606-2342) 'twice its budget (27.8 ms at 72 Hz), with zero crashes and zero
+2026-10-30T00:00:53Z (RFD66606-2342) 'twice its budget (27.8 ms at 72 Hz), with zero crashes and zero
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2342) 'disconnects across the playtest. It is measured on OXRSys and on the
+2026-10-30T00:00:54Z (RFD66606-2342) 'disconnects across the playtest. It is measured on OXRSys and on the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2342) 'flat client. Control: a planted 30 ms stall every 10,000 frames must
+2026-10-30T00:00:55Z (RFD66606-2342) 'flat client. Control: a planted 30 ms stall every 10,000 frames must
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:03Z (RFD66606-2342) 'fail by count.
+2026-10-30T00:00:56Z (RFD66606-2342) 'fail by count.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:04Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:05Z (RFD66606-2342) 'Gates and controls
+2026-10-30T00:00:57Z (RFD66606-2342) 'Gates and controls
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2342) 'The tray's `tools/gate_dev1.exs` runs these against OXRSys.
+2026-10-30T00:00:58Z (RFD66606-2342) 'The tray's `tools/gate_dev1.exs` runs these against OXRSys.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:07Z (RFD66606-2342) '
+2026-10-30T00:00:59Z (RFD66606-2342) '
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:08Z (RFD66606-2342) '1. Install and launch from a fresh user account. The icon appears
+2026-10-30T00:01:00Z (RFD66606-2342) '1. Install and launch from a fresh user account. The icon appears
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:09Z (RFD66606-2342) '   within 5 s. The version matches the tag. Control: a wrong version
+2026-10-30T00:01:01Z (RFD66606-2342) '   within 5 s. The version matches the tag. Control: a wrong version
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:10Z (RFD66606-2342) '   string must fail by name.
+2026-10-30T00:01:02Z (RFD66606-2342) '   string must fail by name.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:11Z (RFD66606-2342) '2. Integrity. Signing waits on a signing identity, so dev.1 ships
+2026-10-30T00:01:03Z (RFD66606-2342) '2. Integrity. Signing waits on a signing identity, so dev.1 ships
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:12Z (RFD66606-2342) '   ad-hoc signed on macOS and unsigned on Windows, with one documented
+2026-10-30T00:01:04Z (RFD66606-2342) '   ad-hoc signed on macOS and unsigned on Windows, with one documented
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:13Z (RFD66606-2342) '   first-launch override. A SHA-256 per artifact is published and
+2026-10-30T00:01:05Z (RFD66606-2342) '   first-launch override. A SHA-256 per artifact is published and
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:14Z (RFD66606-2342) '   checked. Control: a tampered artifact must fail its hash by name.
+2026-10-30T00:01:06Z (RFD66606-2342) '   checked. Control: a tampered artifact must fail its hash by name.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:15Z (RFD66606-2342) '3. "headset: connected" only when an OpenXR session can be created on
+2026-10-30T00:01:07Z (RFD66606-2342) '3. "headset: connected" only when an OpenXR session can be created on
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:16Z (RFD66606-2342) '   OXRSys. Control: `XR_RUNTIME_JSON` at a missing file must give
+2026-10-30T00:01:08Z (RFD66606-2342) '   OXRSys. Control: `XR_RUNTIME_JSON` at a missing file must give
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:17Z (RFD66606-2342) '   "not found".
+2026-10-30T00:01:09Z (RFD66606-2342) '   "not found".
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:18Z (RFD66606-2342) '4. Zero outbound connections in a 10-minute idle capture. Control: the
+2026-10-30T00:01:10Z (RFD66606-2342) '4. Zero outbound connections in a 10-minute idle capture. Control: the
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:19Z (RFD66606-2342) '   off-by-default update check, switched on, must show exactly one.
+2026-10-30T00:01:11Z (RFD66606-2342) '   off-by-default update check, switched on, must show exactly one.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:20Z (RFD66606-2342) '5. Uninstall leaves nothing behind. Control: a planted stray file must
+2026-10-30T00:01:12Z (RFD66606-2342) '5. Uninstall leaves nothing behind. Control: a planted stray file must
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:21Z (RFD66606-2342) '   be named.
+2026-10-30T00:01:13Z (RFD66606-2342) '   be named.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:22Z (RFD66606-2342) '6. The mascot's Idle plays in the popup, and the reliability gate holds
+2026-10-30T00:01:14Z (RFD66606-2342) '6. The mascot's Idle plays in the popup, and the reliability gate holds
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:23Z (RFD66606-2342) '   over a 30-minute idle run. Controls: the glb removed must fail by
+2026-10-30T00:01:15Z (RFD66606-2342) '   over a 30-minute idle run. Controls: the glb removed must fail by
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:24Z (RFD66606-2342) '   path; the planted stall must fail by count.
+2026-10-30T00:01:16Z (RFD66606-2342) '   path; the planted stall must fail by count.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:25Z (RFD66606-2342) '7. Churn: zero pin moves and zero edits to this RFD between open and
+2026-10-30T00:01:17Z (RFD66606-2342) '7. Churn: zero pin moves and zero edits to this RFD between open and
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:26Z (RFD66606-2342) '   tag. Control: a planted pin bump must fail by name.
+2026-10-30T00:01:18Z (RFD66606-2342) '   tag. Control: a planted pin bump must fail by name.
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:19Z (RFD66606-2342) 'The playtest
+ # tags: rfd:details-heading
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:20Z (RFD66606-2342) 'The user, a teammate and one trusted outsider each install on a Mac or
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:21Z (RFD66606-2342) 'PC they own, from the release page, with no help beyond the written
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:22Z (RFD66606-2342) 'first-launch override. Pass: three icons running at day's end. Every
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:23Z (RFD66606-2342) 'install question is logged.
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:24Z (RFD66606-2342) 'Which features are likely to bring joy
+ # tags: rfd:details-heading
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:25Z (RFD66606-2342) 'Each forecast uses the sense-of-wonder rubric of RFD66606-2412 and
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:26Z (RFD66606-2342) 'the tag form of RFD66606-2295.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
@@ -439,137 +439,72 @@
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:28Z (RFD66606-2342) 'The playtest
+2026-10-30T00:01:28Z (RFD66606-2342) '| rung | feature | criteria | joy |
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:29Z (RFD66606-2342) '| --- | --- | --- | --- |
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:30Z (RFD66606-2342) '| dev.1 | tray icon | one override, hash-checked, silent | (remote, p=0.05): plumbing |
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:31Z (RFD66606-2342) '| dev.1 | the mascot idles in the popup | the glb plays | (unlikely, p=0.20) |
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:32Z (RFD66606-2342) 'The release
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:29Z (RFD66606-2342) 'The user, a teammate and one trusted outsider each install on a Mac or
+2026-10-30T00:01:33Z (RFD66606-2342) '`v<date>-dev.1` on the tray: a private release with the artifacts and
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:30Z (RFD66606-2342) 'PC they own, from the release page, with no help beyond the written
+2026-10-30T00:01:34Z (RFD66606-2342) 'their hashes, and `logbook/logbook-dev1.md` in the private manifest.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:31Z (RFD66606-2342) 'first-launch override. Pass: three icons running at day's end. Every
+2026-10-30T00:01:35Z (RFD66606-2342) '
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:32Z (RFD66606-2342) 'install question is logged.
+2026-10-30T00:01:36Z (RFD66606-2342) 'After the tag: the three installs, the logbook, the counted gaps, one
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:33Z (RFD66606-2342) '
+2026-10-30T00:01:37Z (RFD66606-2342) 'batch of pin bumps, and RFD66606-2343 (dev.2) opened with its pins
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:34Z (RFD66606-2342) 'Which features are likely to bring joy
+2026-10-30T00:01:38Z (RFD66606-2342) 'frozen.
+ # tags: rfd:details
+ Text:RFD2342  1 LINE
+ Text:Written
+
+2026-10-30T00:01:39Z (RFD66606-2342) 'The problem
  # tags: rfd:details-heading
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:35Z (RFD66606-2342) 'Each forecast uses the sense-of-wonder rubric of RFD66606-2412 and
+2026-10-30T00:01:40Z (RFD66606-2342) 'In dev.2 the tray is the zone host and the desktop client's launcher.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written
 
-2026-10-30T00:01:36Z (RFD66606-2342) 'the tag form of RFD66606-2295.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:37Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:38Z (RFD66606-2342) '| rung | feature | criteria | joy |
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:39Z (RFD66606-2342) '| --- | --- | --- | --- |
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:40Z (RFD66606-2342) '| dev.1 | tray icon | one override, hash-checked, silent | (remote, p=0.05): plumbing |
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:41Z (RFD66606-2342) '| dev.1 | the mascot idles in the popup | the glb plays | (unlikely, p=0.20) |
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:42Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:43Z (RFD66606-2342) 'The release
- # tags: rfd:details-heading
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:44Z (RFD66606-2342) '`v<date>-dev.1` on the tray: a private release with the artifacts and
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:45Z (RFD66606-2342) 'their hashes, and `logbook/logbook-dev1.md` in the private manifest.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:46Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:47Z (RFD66606-2342) 'After the tag: the three installs, the logbook, the counted gaps, one
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:48Z (RFD66606-2342) 'batch of pin bumps, and RFD66606-2343 (dev.2) opened with its pins
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:49Z (RFD66606-2342) 'frozen.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:50Z (RFD66606-2342) '
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:51Z (RFD66606-2342) 'The problem
- # tags: rfd:details-heading
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:52Z (RFD66606-2342) 'In dev.2 the tray is the zone host and the desktop client's launcher.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:53Z (RFD66606-2342) 'So the plumbing ships first, with a face.
- # tags: rfd:details
- Text:RFD2342  1 LINE
- Text:Written
-
-2026-10-30T00:01:54Z (RFD66606-2342) '
+2026-10-30T00:01:41Z (RFD66606-2342) 'So the plumbing ships first, with a face.
  # tags: rfd:details
  Text:RFD2342  1 LINE
  Text:Written

@@ -10,7 +10,7 @@
  Text:Written
 
 2026-09-25T00:00:02Z (RFD66606-2261) 'builds on mbedTLS
- # tags: rfd:feature
+ # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2261  1 LINE
  Text:Written
 
@@ -20,7 +20,7 @@
  Text:Written
 
 2026-09-25T00:00:04Z (RFD66606-2261) 'certificate or signs a token
- # tags: rfd:scope
+ # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2261  1 LINE
  Text:Written
 
@@ -29,102 +29,72 @@
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:06Z (RFD66606-2261) '
- # tags: rfd:hook
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:07Z (RFD66606-2261) 'Each new component chose its own TLS stack, and a guest ELF that must reach Bao cannot lean on
+2026-09-25T00:00:06Z (RFD66606-2261) 'Each new component chose its own TLS stack, and a guest ELF that must reach Bao cannot lean on
  # tags: rfd:intrigue
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:08Z (RFD66606-2261) 'the engine's HTTP client.
+2026-09-25T00:00:07Z (RFD66606-2261) 'the engine's HTTP client.
  # tags: rfd:intrigue
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:09Z (RFD66606-2261) '
- # tags: rfd:intrigue
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:10Z (RFD66606-2261) 'Read RFD66606-2256 next: its QUIC stack runs TLS 1.3 through picotls on mbedTLS.
+2026-09-25T00:00:08Z (RFD66606-2261) 'Read RFD66606-2256 next: its QUIC stack runs TLS 1.3 through picotls on mbedTLS.
  # tags: rfd:exit
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:11Z (RFD66606-2261) '
- # tags: rfd:exit
+2026-09-25T00:00:09Z (RFD66606-2261) 'mbedTLS is the TLS library
+ # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:12Z (RFD66606-2261) 'mbedTLS is the TLS library
- # tags: rfd:details-title
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:13Z (RFD66606-2261) 'mbedTLS (Apache-2.0) is the TLS and crypto library for new code:
+2026-09-25T00:00:10Z (RFD66606-2261) 'mbedTLS (Apache-2.0) is the TLS and crypto library for new code:
  # tags: rfd:decision
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:14Z (RFD66606-2261) 'the same library Godot vendors, so an engine build and a guest
+2026-09-25T00:00:11Z (RFD66606-2261) 'the same library Godot vendors, so an engine build and a guest
  # tags: rfd:decision
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:15Z (RFD66606-2261) 'ELF share one implementation. It covers mutual TLS with an agent
+2026-09-25T00:00:12Z (RFD66606-2261) 'ELF share one implementation. It covers mutual TLS with an agent
  # tags: rfd:decision
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:16Z (RFD66606-2261) 'certificate and the RS256 signing an app-token JWT needs.
+2026-09-25T00:00:13Z (RFD66606-2261) 'certificate and the RS256 signing an app-token JWT needs.
  # tags: rfd:decision
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:17Z (RFD66606-2261) '
- # tags: rfd:decision
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:18Z (RFD66606-2261) '- RFD66606-2256 (WebTransport inside a sandbox guest), whose QUIC stack
+2026-09-25T00:00:14Z (RFD66606-2261) '- RFD66606-2256 (WebTransport inside a sandbox guest), whose QUIC stack
  # tags: rfd:related
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:19Z (RFD66606-2261) '  runs TLS 1.3 through picotls on mbedTLS.
+2026-09-25T00:00:15Z (RFD66606-2261) '  runs TLS 1.3 through picotls on mbedTLS.
  # tags: rfd:related
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:20Z (RFD66606-2261) '
- # tags: rfd:related
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:21Z (RFD66606-2261) 'The problem
+2026-09-25T00:00:16Z (RFD66606-2261) 'The problem
  # tags: rfd:details-heading
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:22Z (RFD66606-2261) 'A guest ELF that
+2026-09-25T00:00:17Z (RFD66606-2261) 'A guest ELF that
  # tags: rfd:details
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:23Z (RFD66606-2261) 'must reach Bao needs client certificates the engine's HTTP client
+2026-09-25T00:00:18Z (RFD66606-2261) 'must reach Bao needs client certificates the engine's HTTP client
  # tags: rfd:details
  Text:RFD2261  1 LINE
  Text:Written
 
-2026-09-25T00:00:24Z (RFD66606-2261) 'cannot present.
- # tags: rfd:details
- Text:RFD2261  1 LINE
- Text:Written
-
-2026-09-25T00:00:25Z (RFD66606-2261) '
+2026-09-25T00:00:19Z (RFD66606-2261) 'cannot present.
  # tags: rfd:details
  Text:RFD2261  1 LINE
  Text:Written

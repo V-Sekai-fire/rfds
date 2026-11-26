@@ -9,292 +9,127 @@
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:02Z (RFD66606-2346) 'the private manifest's `default.xml`, the decider-pong interactor and its upstream
- # tags: rfd:scope
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:03Z (RFD66606-2346) 'decider interactor
+2026-10-30T00:00:02Z (RFD66606-2346) 'the private manifest's `default.xml`, the decider-pong interactor and its upstream decider interactor
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:04Z (RFD66606-2346) 'decider-pong is a manifest row, synced offline like every other project.
+2026-10-30T00:00:03Z (RFD66606-2346) 'decider-pong is a manifest row, synced offline like every other project.
  # tags: rfd:hook
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2346) 'The repo lived outside the workspace, on GitHub only, with its upstream as a submodule.
+2026-10-30T00:00:04Z (RFD66606-2346) 'The repo lived outside the workspace, on GitHub only, with its upstream as a submodule.
  # tags: rfd:intrigue
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:06Z (RFD66606-2346) 'Read RFD66606-2341 for the two open questions, parked in dev.next.
+2026-10-30T00:00:05Z (RFD66606-2346) 'Read RFD66606-2341 for the two open questions, parked in dev.next.
  # tags: rfd:exit
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2346) 'How the project was placed, and what is still open
+2026-10-30T00:00:06Z (RFD66606-2346) 'How the project was placed, and what is still open
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2346) 'decider-pong is a manifest row on the interactor side, tracking
+2026-10-30T00:00:07Z (RFD66606-2346) 'decider-pong is a manifest row on the interactor side, tracking `main`. Its upstream, `Mapika/decider` (Apache-2.0), is a second row beside it, pinned to a commit. It was a git submodule; it is not any more. Both are in the local mirror, and a fresh offline client syncs them with 0 failures. The OpenBao credential helper was removed from the tree.
  # tags: rfd:decision
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2346) '`main`. Its upstream, `Mapika/decider` (Apache-2.0), is a second row
- # tags: rfd:decision
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:10Z (RFD66606-2346) 'beside it, pinned to a commit. It was a git submodule; it is not any
- # tags: rfd:decision
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:11Z (RFD66606-2346) 'more. Both are in the local mirror, and a fresh offline client syncs
- # tags: rfd:decision
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2346) 'them with 0 failures. The OpenBao credential helper was removed from
- # tags: rfd:decision
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2346) 'the tree.
- # tags: rfd:decision
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:14Z (RFD66606-2346) '- RFD66606-2341, dev.next, where the two open questions are parked.
+2026-10-30T00:00:08Z (RFD66606-2346) '- RFD66606-2341, dev.next, where the two open questions are parked.
  # tags: rfd:related
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2346) '- RFD66606-2345, the video format; RFD66606-2347, the decider-pong
+2026-10-30T00:00:09Z (RFD66606-2346) '- RFD66606-2345, the video format; RFD66606-2347, the decider-pong review.
  # tags: rfd:related
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2346) '  review.
- # tags: rfd:related
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:17Z (RFD66606-2346) 'Related
+2026-10-30T00:00:10Z (RFD66606-2346) 'Related
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2346) '- The private working agreements, the org and languages sections; the
+2026-10-30T00:00:11Z (RFD66606-2346) '- The private working agreements, the org and languages sections; the private blocklist.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2346) '  private blocklist.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:20Z (RFD66606-2346) 'The steps, in order
+2026-10-30T00:00:12Z (RFD66606-2346) 'The steps, in order
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2346) '1. The pending prompt change was committed in decider-pong.
+2026-10-30T00:00:13Z (RFD66606-2346) '1. The pending prompt change was committed in decider-pong.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2346) '2. The submodule checkout was shallow, so the mirror refused it. It
+2026-10-30T00:00:14Z (RFD66606-2346) '2. The submodule checkout was shallow, so the mirror refused it. It was unshallowed from GitHub, and the pinned upstream commit was pushed to a new bare mirror of the upstream. All 98 commits arrived and `git fsck` is clean.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2346) '   was unshallowed from GitHub, and the pinned upstream commit was
+2026-10-30T00:00:15Z (RFD66606-2346) '3. `bin/bao-github-credential` was removed in one commit, then the submodule was replaced by the manifest row in the next.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2346) '   pushed to a new bare mirror of the upstream. All 98 commits arrived
+2026-10-30T00:00:16Z (RFD66606-2346) '4. A bare mirror of decider-pong was made and `main` was pushed to it.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2346) '   and `git fsck` is clean.
+2026-10-30T00:00:17Z (RFD66606-2346) '5. Two rows were added to `default.xml` beside the other interactors, committed and pushed to the manifest mirror.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2346) '3. `bin/bao-github-credential` was removed in one commit, then the
+2026-10-30T00:00:18Z (RFD66606-2346) '6. A scoped `repo sync` of the two paths placed both checkouts. A full sync was not run, because three projects sit on `dev1` branches that the preflight would park.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:27Z (RFD66606-2346) '   submodule was replaced by the manifest row in the next.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:28Z (RFD66606-2346) '4. A bare mirror of decider-pong was made and `main` was pushed to it.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:29Z (RFD66606-2346) '5. Two rows were added to `default.xml` beside the other interactors,
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:30Z (RFD66606-2346) '   committed and pushed to the manifest mirror.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:31Z (RFD66606-2346) '6. A scoped `repo sync` of the two paths placed both checkouts. A full
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:32Z (RFD66606-2346) '   sync was not run, because three projects sit on `dev1` branches
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:33Z (RFD66606-2346) '   that the preflight would park.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:34Z (RFD66606-2346) 'Gates run
+2026-10-30T00:00:19Z (RFD66606-2346) 'Gates run
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2346) '`check_manifest_comments.py`, `check_manifest_xml.py --offline`,
+2026-10-30T00:00:20Z (RFD66606-2346) '`check_manifest_comments.py`, `check_manifest_xml.py --offline`, `check_manifest_dupes.exs` and `check_manifest_root.py` passed, each after its self-test. `check_offline.exs` lists 19 projects with 0 failures, both decider rows at their pins, and its self-test fails as planted. One run reported 1 failure while a push to the mirror was in flight; three runs after it reported 0.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2346) '`check_manifest_dupes.exs` and `check_manifest_root.py` passed, each
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:37Z (RFD66606-2346) 'after its self-test. `check_offline.exs` lists 19 projects with 0
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:38Z (RFD66606-2346) 'failures, both decider rows at their pins, and its self-test fails
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:39Z (RFD66606-2346) 'as planted. One run reported 1 failure while a push to the mirror was
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:40Z (RFD66606-2346) 'in flight; three runs after it reported 0.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:41Z (RFD66606-2346) 'GitHub and the mirror
+2026-10-30T00:00:21Z (RFD66606-2346) 'GitHub and the mirror
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2346) 'decider-pong's GitHub `main` fast-forwards to the mirror's and is
+2026-10-30T00:00:22Z (RFD66606-2346) 'decider-pong's GitHub `main` fast-forwards to the mirror's and is pushed there too. The manifest was pushed to the mirror only. GitHub's manifest carries one commit the mirror lacks, which adds a row for a repo not yet mirrored. Reconciling the two needs that repo mirrored first, and is the user's call.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:43Z (RFD66606-2346) 'pushed there too. The manifest was pushed to the mirror only. GitHub's
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:44Z (RFD66606-2346) 'manifest carries one commit the mirror lacks, which adds a row for a
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:45Z (RFD66606-2346) 'repo not yet mirrored. Reconciling the two needs that repo mirrored
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:46Z (RFD66606-2346) 'first, and is the user's call.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:47Z (RFD66606-2346) 'Open questions, parked in dev.next
+2026-10-30T00:00:23Z (RFD66606-2346) 'Open questions, parked in dev.next
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2346) 'The languages rule forbids project Python. decider-pong is an
+2026-10-30T00:00:24Z (RFD66606-2346) 'The languages rule forbids project Python. decider-pong is an evaluation harness. It is either ported to Elixir or the engine, or given a named exemption. The org names repos by hexagon side; the repo should carry the interactor prefix. Only the user renames repos on GitHub. After the rename the manifest row changes by one line. The removed helper stays in history from the commit that added it; dropping it means rewriting a published branch.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:49Z (RFD66606-2346) 'evaluation harness. It is either ported to Elixir or the engine, or
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:50Z (RFD66606-2346) 'given a named exemption. The org names repos by hexagon side; the repo
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:51Z (RFD66606-2346) 'should carry the interactor prefix. Only the user renames repos on
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:52Z (RFD66606-2346) 'GitHub. After the rename the manifest row changes by one line. The
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:53Z (RFD66606-2346) 'removed helper stays in history from the commit that added it;
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:54Z (RFD66606-2346) 'dropping it means rewriting a published branch.
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:55Z (RFD66606-2346) 'The problem
+2026-10-30T00:00:25Z (RFD66606-2346) 'The problem
  # tags: rfd:details-heading
  Text:RFD2346  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2346) 'The contract places a repo in the manifest
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2346) 'the day it is created and pins upstreams as manifest rows. The repo
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:58Z (RFD66606-2346) 'also carried a blocklisted OpenBao helper. Two questions remain open:
- # tags: rfd:details
- Text:RFD2346  1 LINE
- Text:Written
-
-2026-10-30T00:00:59Z (RFD66606-2346) 'the repo is all Python, and its name lacks a side prefix.
+2026-10-30T00:00:26Z (RFD66606-2346) 'The contract places a repo in the manifest the day it is created and pins upstreams as manifest rows. The repo also carried a blocklisted OpenBao helper. Two questions remain open: the repo is all Python, and its name lacks a side prefix.
  # tags: rfd:details
  Text:RFD2346  1 LINE
  Text:Written

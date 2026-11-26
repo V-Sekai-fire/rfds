@@ -14,632 +14,252 @@
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:03Z (RFD66606-2495) 'Can one segmentation model split a dressed avatar into body and auxiliary parts, with a named
+2026-11-14T00:00:03Z (RFD66606-2495) 'Can one segmentation model split a dressed avatar into body and auxiliary parts, with a named source of labels for each of the ten classes, including the ones no dataset covers?
  # tags: rfd:hook
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:04Z (RFD66606-2495) 'source of labels for each of the ten classes, including the ones no dataset covers?
- # tags: rfd:hook
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:05Z (RFD66606-2495) 'The cage-wrapped net of RFD66606-2488 (cage-wrapped surface net) needs a cage and a trained
+2026-11-14T00:00:04Z (RFD66606-2495) 'The cage-wrapped net of RFD66606-2488 (cage-wrapped surface net) needs a cage and a trained DiffusionNet. Alchemy3D-Segment reads 1 to 8 coloured 2D maps instead, and its weights exist. Its README lists the map-making pipeline as unreleased, and its training code is unreleased. GarmentCode has panel programs for skirts, sleeves, collars and waistbands, and none for a cape, scarf, belt or bag. ANNY has no twist bones and no correctives. SOMA-X has both.
  # tags: rfd:intrigue
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:06Z (RFD66606-2495) 'DiffusionNet. Alchemy3D-Segment reads 1 to 8 coloured 2D maps instead, and its weights exist.
- # tags: rfd:intrigue
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:07Z (RFD66606-2495) 'Its README lists the map-making pipeline as unreleased, and its training code is unreleased.
- # tags: rfd:intrigue
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:08Z (RFD66606-2495) 'GarmentCode has panel programs for skirts, sleeves, collars and waistbands, and none for a
- # tags: rfd:intrigue
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:09Z (RFD66606-2495) 'cape, scarf, belt or bag. ANNY has no twist bones and no correctives. SOMA-X has both.
- # tags: rfd:intrigue
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:10Z (RFD66606-2495) 'Read DETAILS for the class table, what was measured and the open test, which dresses a
+2026-11-14T00:00:05Z (RFD66606-2495) 'Read DETAILS for the class table, what was measured and the open test, which dresses a garment on a body before Segment reads it.
  # tags: rfd:exit
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:11Z (RFD66606-2495) 'garment on a body before Segment reads it.
- # tags: rfd:exit
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:12Z (RFD66606-2495) 'aux part labels from alchemy3d-segment
+2026-11-14T00:00:06Z (RFD66606-2495) 'aux part labels from alchemy3d-segment
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:13Z (RFD66606-2495) '- Alchemy3D-Segment (a LoRA that paints part colours onto a 3D asset from 2D maps) labels the
+2026-11-14T00:00:07Z (RFD66606-2495) '- Alchemy3D-Segment (a LoRA that paints part colours onto a 3D asset from 2D maps) labels the parts, in place of the cage-wrapped net and of TailorRig labelling (operator, 2026-11-14).
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:14Z (RFD66606-2495) '  parts, in place of the cage-wrapped net and of TailorRig labelling (operator, 2026-11-14).
+2026-11-14T00:00:08Z (RFD66606-2495) '- Separating auxiliary parts from the body is enough. SkinTokens (the skeleton and skin weight model) keeps rigging the body (operator, 2026-11-14).
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:15Z (RFD66606-2495) '- Separating auxiliary parts from the body is enough. SkinTokens (the skeleton and skin
+2026-11-14T00:00:09Z (RFD66606-2495) '- The class set is TailorRig's ten auxiliary classes: Twist, Accessory, Correction, Muscle, Skirt, Hair, Cape, Sleeve, Collar, Face. Every class gets a source, and none is skipped because it is hard to source (operator, 2026-11-14).
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:16Z (RFD66606-2495) '  weight model) keeps rigging the body (operator, 2026-11-14).
+2026-11-14T00:00:10Z (RFD66606-2495) '- Skirt, Sleeve and Collar come from GarmentCodeData panel labels. Cape, scarf, belt and bag come from patterns and shells we author, draped or built here with exact labels.
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:17Z (RFD66606-2495) '- The class set is TailorRig's ten auxiliary classes: Twist, Accessory, Correction, Muscle,
+2026-11-14T00:00:11Z (RFD66606-2495) '- Hair comes from HairDeck. Twist and Correction come from SOMA-X. Face comes from ANNY's own body-part segmentation. Muscle comes from the source RFD66606-2478 (ANNY-soma-x pipeline) names, which is still unread for this use.
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:18Z (RFD66606-2495) '  Skirt, Hair, Cape, Sleeve, Collar, Face. Every class gets a source, and none is skipped
+2026-11-14T00:00:12Z (RFD66606-2495) '- The 2D maps come from RF-DETR segmentation of renders. Instance or semantic maps are decided by testing Segment on both, not by preference (operator, 2026-11-14).
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:19Z (RFD66606-2495) '  because it is hard to source (operator, 2026-11-14).
+2026-11-14T00:00:13Z (RFD66606-2495) '- Which classes are rigid and which are soft is our rule per class, not TailorRig's.
  # tags: rfd:decision
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:20Z (RFD66606-2495) '- Skirt, Sleeve and Collar come from GarmentCodeData panel labels. Cape, scarf, belt and bag
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:21Z (RFD66606-2495) '  come from patterns and shells we author, draped or built here with exact labels.
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:22Z (RFD66606-2495) '- Hair comes from HairDeck. Twist and Correction come from SOMA-X. Face comes from ANNY's own
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:23Z (RFD66606-2495) '  body-part segmentation. Muscle comes from the source RFD66606-2478 (ANNY-soma-x pipeline)
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:24Z (RFD66606-2495) '  names, which is still unread for this use.
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:25Z (RFD66606-2495) '- The 2D maps come from RF-DETR segmentation of renders. Instance or semantic maps are decided
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:26Z (RFD66606-2495) '  by testing Segment on both, not by preference (operator, 2026-11-14).
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:27Z (RFD66606-2495) '- Which classes are rigid and which are soft is our rule per class, not TailorRig's.
- # tags: rfd:decision
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:28Z (RFD66606-2495) '- RFD66606-2488, the cage-wrapped net whose segmentation step this replaces.
+2026-11-14T00:00:14Z (RFD66606-2495) '- RFD66606-2488, the cage-wrapped net whose segmentation step this replaces.
  # tags: rfd:related
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:29Z (RFD66606-2495) '- RFD66606-2478, ANNY-soma-x, whose HairDeck licence note this updates.
+2026-11-14T00:00:15Z (RFD66606-2495) '- RFD66606-2478, ANNY-soma-x, whose HairDeck licence note this updates.
  # tags: rfd:related
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:30Z (RFD66606-2495) 'Class table
+2026-11-14T00:00:16Z (RFD66606-2495) 'Class table
  # tags: rfd:details-heading
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:31Z (RFD66606-2495) 'The ten classes were read by eye from the dataset-histogram figure of the TailorRig paper.
+2026-11-14T00:00:17Z (RFD66606-2495) 'The ten classes were read by eye from the dataset-histogram figure of the TailorRig paper. The spelling and the per-class counts need a recheck before they go in a shared document.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:32Z (RFD66606-2495) 'The spelling and the per-class counts need a recheck before they go in a shared document.
+2026-11-14T00:00:18Z (RFD66606-2495) '- Skirt, Sleeve, Collar: GarmentCodeData batch 0 of the default body, 3,450 garments. About ten panel families hold 7,537 distinct labels. Skirt is the largest. Hood belongs to the collar family upstream, and TailorRig has no hood class, so it is an open row.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:33Z (RFD66606-2495) '- Skirt, Sleeve, Collar: GarmentCodeData batch 0 of the default body, 3,450 garments. About
+2026-11-14T00:00:19Z (RFD66606-2495) '- Cape: no source exists. GarmentCode has no cape program, Fashionpedia has 19 clean images. We author a circle panel hung from a neck band and drape it.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:34Z (RFD66606-2495) '  ten panel families hold 7,537 distinct labels. Skirt is the largest. Hood belongs to the
+2026-11-14T00:00:20Z (RFD66606-2495) '- Scarf and belt: waistbands exist upstream. A scarf is a long strip at the neck and a belt is a band at the waist, both authored.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:35Z (RFD66606-2495) '  collar family upstream, and TailorRig has no hood class, so it is an open row.
+2026-11-14T00:00:21Z (RFD66606-2495) '- Bag: three bodies. A tote is two panels and two strap bands with a proxy volume inside. A shoulder bag or handbag is a parametric rigid shell with a strap curve. A backpack is a shell with two straps. Straps on ANNY's shoulders and a posed hand are untested.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:36Z (RFD66606-2495) '- Cape: no source exists. GarmentCode has no cape program, Fashionpedia has 19 clean images.
+2026-11-14T00:00:22Z (RFD66606-2495) '- Hair: HairDeck turns one portrait into hair cards and spring-bone chains. The cards are separate meshes, so labels are exact. Its code and checkpoints are Apache-2.0, which settles the licence question RFD66606-2478 left open for those two. It needs the SAM 3 and DINOv3 weights, which are gated, and Blender with the VRM add-on. Its output is generated data, so the generated-data rules apply.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:37Z (RFD66606-2495) '  We author a circle panel hung from a neck band and drape it.
+2026-11-14T00:00:23Z (RFD66606-2495) '- Twist and Correction: ANNY's rigs and its bundled 78-bone SOMA rig have no twist bone, and its 1,136 blendshapes are shape, not correctives. The SOMA-X model repository (Apache-2.0, not gated) defines twist joints on a 110-joint template rig and ships a corrective network from joint rotations to vertex offsets.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:38Z (RFD66606-2495) '- Scarf and belt: waistbands exist upstream. A scarf is a long strip at the neck and a belt
+2026-11-14T00:00:24Z (RFD66606-2495) '- Face: ANNY ships a body-part segmentation with head, eyes, mouth cavity, tongue, hands and feet.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:39Z (RFD66606-2495) '  is a band at the waist, both authored.
+2026-11-14T00:00:25Z (RFD66606-2495) '- Muscle: not read for this use.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:40Z (RFD66606-2495) '- Bag: three bodies. A tote is two panels and two strap bands with a proxy volume inside. A
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:41Z (RFD66606-2495) '  shoulder bag or handbag is a parametric rigid shell with a strap curve. A backpack is a
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:42Z (RFD66606-2495) '  shell with two straps. Straps on ANNY's shoulders and a posed hand are untested.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:43Z (RFD66606-2495) '- Hair: HairDeck turns one portrait into hair cards and spring-bone chains. The cards are
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:44Z (RFD66606-2495) '  separate meshes, so labels are exact. Its code and checkpoints are Apache-2.0, which
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:45Z (RFD66606-2495) '  settles the licence question RFD66606-2478 left open for those two. It needs the SAM 3
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:46Z (RFD66606-2495) '  and DINOv3 weights, which are gated, and Blender with the VRM add-on. Its output is
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:47Z (RFD66606-2495) '  generated data, so the generated-data rules apply.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:48Z (RFD66606-2495) '- Twist and Correction: ANNY's rigs and its bundled 78-bone SOMA rig have no twist bone, and
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:49Z (RFD66606-2495) '  its 1,136 blendshapes are shape, not correctives. The SOMA-X model repository
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:50Z (RFD66606-2495) '  (Apache-2.0, not gated) defines twist joints on a 110-joint template rig and ships a
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:51Z (RFD66606-2495) '  corrective network from joint rotations to vertex offsets.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:52Z (RFD66606-2495) '- Face: ANNY ships a body-part segmentation with head, eyes, mouth cavity, tongue, hands
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:53Z (RFD66606-2495) '  and feet.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:54Z (RFD66606-2495) '- Muscle: not read for this use.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:00:55Z (RFD66606-2495) 'What was measured
+2026-11-14T00:00:26Z (RFD66606-2495) 'What was measured
  # tags: rfd:details-heading
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:56Z (RFD66606-2495) '- The GarmentCode segmentation file has one label per vertex of the box mesh: 29,667 labels
+2026-11-14T00:00:27Z (RFD66606-2495) '- The GarmentCode segmentation file has one label per vertex of the box mesh: 29,667 labels and 29,667 vertices for one garment. The draped mesh has 29,784 vertices. Matching by index gives 83.2 percent of faces whose non-seam vertices share one panel, against 12.3 percent for a shuffled control. Exact labels on a drape need a drape we run ourselves.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:57Z (RFD66606-2495) '  and 29,667 vertices for one garment. The draped mesh has 29,784 vertices. Matching by index
+2026-11-14T00:00:28Z (RFD66606-2495) '- Seam vertices are 4.6 percent of batch 0.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:58Z (RFD66606-2495) '  gives 83.2 percent of faces whose non-seam vertices share one panel, against 12.3 percent
+2026-11-14T00:00:29Z (RFD66606-2495) '- RF-DETR segmentation fine-tuned on Fashionpedia, a local clothing set and pseudo-labelled poseswap garments matched the baseline on held-out photographs: mask AP 0.327 against 0.328 on the test split. Pseudo-labels added edges, not knowledge.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:00:59Z (RFD66606-2495) '  for a shuffled control. Exact labels on a drape need a drape we run ourselves.
+2026-11-14T00:00:30Z (RFD66606-2495) '- Segment ran on its README example in 6 to 12 seconds and 10.5 GB of GPU memory. Its labels come from MeanShift clustering of the colours it paints, so they are anonymous same-part ids, not class ids.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:00Z (RFD66606-2495) '- Seam vertices are 4.6 percent of batch 0.
+2026-11-14T00:00:31Z (RFD66606-2495) '- Positive control: given maps rendered from the pony's own labels, Segment reproduces them at adjusted Rand index (ARI, 1 for the same grouping, 0 for chance) 0.985. The example's own maps give 0.981 and a shuffled truth gives 0.0.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:01Z (RFD66606-2495) '- RF-DETR segmentation fine-tuned on Fashionpedia, a local clothing set and pseudo-labelled
+2026-11-14T00:00:32Z (RFD66606-2495) '- A first set of GarmentCode runs scored ARI 0.015 to 0.22 and was wrong. Segment looks each label up by nearest neighbour between the source file's own coordinates and its output, which sits in a unit cube. The source was in centimetres, 170 units tall, so the lookup distance was 94 units instead of 0.0007. Those numbers are withdrawn. Every result below used a source normalised into the unit cube.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:02Z (RFD66606-2495) '  poseswap garments matched the baseline on held-out photographs: mask AP 0.327 against 0.328
+2026-11-14T00:00:33Z (RFD66606-2495) '- One GarmentCode garment, eight Hammersley views, maps rendered from its exact labels with one colour per class or panel, scored against the true labels. On the neutral body, with a red cloth and a skin texture, semantic maps give ARI 0.81 against the five true classes and 0.61 against panels. Instance maps give 0.60 against classes and 0.75 against panels. Shuffled controls sit at 0.00. The garment alone reaches 0.97 on classes with semantic maps.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:03Z (RFD66606-2495) '  on the test split. Pseudo-labels added edges, not knowledge.
+2026-11-14T00:00:34Z (RFD66606-2495) '- Garment against body as a two-way split: connected components separate them exactly (ARI 1.000, 19 components, none mixed) because they are separate shells. Segment scores 0.44 with instance maps and 0.58 with semantic maps, and calls 92 percent of faces right.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:04Z (RFD66606-2495) '- Segment ran on its README example in 6 to 12 seconds and 10.5 GB of GPU memory. Its labels
+2026-11-14T00:00:35Z (RFD66606-2495) '- Welding the garment to the body within 5 mm (about three stacked pennies) changes 2,297 vertices and leaves one connected mesh, so components score 0.0. Segment scores the same as before the weld: 0.45 and 0.57. It does not need separate shells, and it does not beat components where they work.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:05Z (RFD66606-2495) '  come from MeanShift clustering of the colours it paints, so they are anonymous same-part
+2026-11-14T00:00:36Z (RFD66606-2495) '- RF-DETR masks as the maps, on shaded renders of the same garment: the baseline checkpoint gives ARI 0.61 against garment and body, 0.65 against classes and 0.46 against panels. The fine-tune is worse on every row. The baseline's masks overlap the true garment pixels at a mean IoU of 0.88.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:06Z (RFD66606-2495) '  ids, not class ids.
+2026-11-14T00:00:37Z (RFD66606-2495) '- Training data for the 2D maps is relabelled into AUX ids: Skirt 1, Sleeve 2, Collar 3, Cape 4 and Accessory 5. The real Fashionpedia-class set keeps 10,248 of 28,400 train annotations (Sleeve 5,600, Accessory 3,005, Collar 1,026, Skirt 595, Cape 22). Cape has no validation instance and two test instances, so it cannot be scored. Hood joins Collar and a sleeve cuff follows its sleeve. Whole garments, shoes, tights and details such as pockets are left as background.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:07Z (RFD66606-2495) '- Positive control: given maps rendered from the pony's own labels, Segment reproduces them
+2026-11-14T00:00:38Z (RFD66606-2495) '- A synthetic set from 360 GarmentCode drapes on the neutral body (281 train, 39 valid, 40 test, split by garment, the tested garment held out) carries exact masks for Skirt, Sleeve and Collar. The fine-tune on it reached validation mask AP 0.367 at epoch 5 of 15 and was still rising. It has not been scored on the test split or on real photographs.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:08Z (RFD66606-2495) '  at adjusted Rand index (ARI, 1 for the same grouping, 0 for chance) 0.985. The example's
+2026-11-14T00:00:39Z (RFD66606-2495) '- HairDeck, which makes hair cards and spring-bone chains from one portrait, ran on the Mac (Apple MPS) on one poseswap portrait in 35 seconds. It needs SAM 3 and DINOv3, both gated. Mirrors of the same bytes matched the pinned SHA-256 of each. The output was not inspected beyond its mask.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:09Z (RFD66606-2495) '  own maps give 0.981 and a shuffled truth gives 0.0.
+2026-11-14T00:00:40Z (RFD66606-2495) '- Segment has no camera input. Each map is cropped to its bounding box and fed as image tokens, and run() defaults to seed 42, so repeat runs match.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:10Z (RFD66606-2495) '- A first set of GarmentCode runs scored ARI 0.015 to 0.22 and was wrong. Segment looks each
+2026-11-14T00:00:41Z (RFD66606-2495) '- Mitsuba 3 and a nvdiffrast rasteriser agree on silhouettes at IoU 0.99 for seven of eight views. The pole view differs because its up vector is degenerate.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:11Z (RFD66606-2495) '  label up by nearest neighbour between the source file's own coordinates and its output,
+2026-11-14T00:00:42Z (RFD66606-2495) '- Segment ran without Blender, which is blocklisted as a renderer. The source ingest uses trimesh and the O-Voxel textured-mesh voxelizer, and is untested against upstream's path.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:12Z (RFD66606-2495) '  which sits in a unit cube. The source was in centimetres, 170 units tall, so the lookup
+2026-11-14T00:00:43Z (RFD66606-2495) '- Generating mannequin outfits with OmniGen2 takes 67 seconds an image at 50 steps and 34 seconds at 25. At 25 steps, three of three prompts dropped a requested garment.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:13Z (RFD66606-2495) '  distance was 94 units instead of 0.0007. Those numbers are withdrawn. Every result below
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:14Z (RFD66606-2495) '  used a source normalised into the unit cube.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:15Z (RFD66606-2495) '- One GarmentCode garment, eight Hammersley views, maps rendered from its exact labels with
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:16Z (RFD66606-2495) '  one colour per class or panel, scored against the true labels. On the neutral body, with
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:17Z (RFD66606-2495) '  a red cloth and a skin texture, semantic maps give ARI 0.81 against the five true classes
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:18Z (RFD66606-2495) '  and 0.61 against panels. Instance maps give 0.60 against classes and 0.75 against panels.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:19Z (RFD66606-2495) '  Shuffled controls sit at 0.00. The garment alone reaches 0.97 on classes with semantic maps.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:20Z (RFD66606-2495) '- Garment against body as a two-way split: connected components separate them exactly (ARI
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:21Z (RFD66606-2495) '  1.000, 19 components, none mixed) because they are separate shells. Segment scores 0.44
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:22Z (RFD66606-2495) '  with instance maps and 0.58 with semantic maps, and calls 92 percent of faces right.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:23Z (RFD66606-2495) '- Welding the garment to the body within 5 mm (about three stacked pennies) changes 2,297
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:24Z (RFD66606-2495) '  vertices and leaves one connected mesh, so components score 0.0. Segment scores the same
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:25Z (RFD66606-2495) '  as before the weld: 0.45 and 0.57. It does not need separate shells, and it does not beat
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:26Z (RFD66606-2495) '  components where they work.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:27Z (RFD66606-2495) '- RF-DETR masks as the maps, on shaded renders of the same garment: the baseline checkpoint
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:28Z (RFD66606-2495) '  gives ARI 0.61 against garment and body, 0.65 against classes and 0.46 against panels. The
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:29Z (RFD66606-2495) '  fine-tune is worse on every row. The baseline's masks overlap the true garment pixels at a
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:30Z (RFD66606-2495) '  mean IoU of 0.88.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:31Z (RFD66606-2495) '- Training data for the 2D maps is relabelled into AUX ids: Skirt 1, Sleeve 2, Collar 3, Cape
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:32Z (RFD66606-2495) '  4 and Accessory 5. The real Fashionpedia-class set keeps 10,248 of 28,400 train
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:33Z (RFD66606-2495) '  annotations (Sleeve 5,600, Accessory 3,005, Collar 1,026, Skirt 595, Cape 22). Cape has no
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:34Z (RFD66606-2495) '  validation instance and two test instances, so it cannot be scored. Hood joins Collar and
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:35Z (RFD66606-2495) '  a sleeve cuff follows its sleeve. Whole garments, shoes, tights and details such as
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:36Z (RFD66606-2495) '  pockets are left as background.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:37Z (RFD66606-2495) '- A synthetic set from 360 GarmentCode drapes on the neutral body (281 train, 39 valid, 40
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:38Z (RFD66606-2495) '  test, split by garment, the tested garment held out) carries exact masks for Skirt, Sleeve
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:39Z (RFD66606-2495) '  and Collar. The fine-tune on it reached validation mask AP 0.367 at epoch 5 of 15 and
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:40Z (RFD66606-2495) '  was still rising. It has not been scored on the test split or on real photographs.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:41Z (RFD66606-2495) '- HairDeck, which makes hair cards and spring-bone chains from one portrait, ran on the Mac
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:42Z (RFD66606-2495) '  (Apple MPS) on one poseswap portrait in 35 seconds. It needs SAM 3 and DINOv3, both
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:43Z (RFD66606-2495) '  gated. Mirrors of the same bytes matched the pinned SHA-256 of each. The output was not
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:44Z (RFD66606-2495) '  inspected beyond its mask.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:45Z (RFD66606-2495) '- Segment has no camera input. Each map is cropped to its bounding box and fed as image
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:46Z (RFD66606-2495) '  tokens, and run() defaults to seed 42, so repeat runs match.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:47Z (RFD66606-2495) '- Mitsuba 3 and a nvdiffrast rasteriser agree on silhouettes at IoU 0.99 for seven of eight
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:48Z (RFD66606-2495) '  views. The pole view differs because its up vector is degenerate.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:49Z (RFD66606-2495) '- Segment ran without Blender, which is blocklisted as a renderer. The source ingest uses
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:50Z (RFD66606-2495) '  trimesh and the O-Voxel textured-mesh voxelizer, and is untested against upstream's path.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:51Z (RFD66606-2495) '- Generating mannequin outfits with OmniGen2 takes 67 seconds an image at 50 steps and 34
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:52Z (RFD66606-2495) '  seconds at 25. At 25 steps, three of three prompts dropped a requested garment.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:53Z (RFD66606-2495) 'Not yet run
+2026-11-14T00:00:44Z (RFD66606-2495) 'Not yet run
  # tags: rfd:details-heading
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:54Z (RFD66606-2495) '- Every garment result is one garment, one body and one set of shaded renders, and RF-DETR
+2026-11-14T00:00:45Z (RFD66606-2495) '- Every garment result is one garment, one body and one set of shaded renders, and RF-DETR was trained on photographs. The cage guest has not run on any of this: it rejected the skirt shell at every knot count tried. The pony control and the view-order ablations come from before the unit fix, and a rerun is pending.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:55Z (RFD66606-2495) '  was trained on photographs. The cage guest has not run on any of this: it rejected the
+2026-11-14T00:00:46Z (RFD66606-2495) '- Where the SOMA-X twist skin weights live, and whether its ANNY wrap carries them to ANNY's topology, is unchecked. Labelling corrective vertices by offset magnitude over a pose set is our proposal, with a threshold SOMA-X does not define.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:56Z (RFD66606-2495) '  skirt shell at every knot count tried. The pony control and the view-order ablations come
+2026-11-14T00:00:47Z (RFD66606-2495) '- Only batch 0 of GarmentCodeData was surveyed.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:57Z (RFD66606-2495) '  from before the unit fix, and a rerun is pending.
+2026-11-14T00:00:48Z (RFD66606-2495) '- TailorRig is CC BY-NC-ND and its dataset is blocklisted. Only the paper was read, and only for the class names.
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:01:58Z (RFD66606-2495) '- Where the SOMA-X twist skin weights live, and whether its ANNY wrap carries them to ANNY's
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:01:59Z (RFD66606-2495) '  topology, is unchecked. Labelling corrective vertices by offset magnitude over a pose set
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:00Z (RFD66606-2495) '  is our proposal, with a threshold SOMA-X does not define.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:01Z (RFD66606-2495) '- Only batch 0 of GarmentCodeData was surveyed.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:02Z (RFD66606-2495) '- TailorRig is CC BY-NC-ND and its dataset is blocklisted. Only the paper was read, and
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:03Z (RFD66606-2495) '  only for the class names.
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:04Z (RFD66606-2495) 'Open questions
+2026-11-14T00:00:49Z (RFD66606-2495) 'Open questions
  # tags: rfd:details-heading
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:02:05Z (RFD66606-2495) '- Do the scores hold on more garments, other bodies and the five classes GarmentCode lacks?
+2026-11-14T00:00:50Z (RFD66606-2495) '- Do the scores hold on more garments, other bodies and the five classes GarmentCode lacks?
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:02:06Z (RFD66606-2495) '- Hood goes to Collar and sleeve cuffs follow their sleeve in the training data. Does the
+2026-11-14T00:00:51Z (RFD66606-2495) '- Hood goes to Collar and sleeve cuffs follow their sleeve in the training data. Does the operator accept that, and should a trouser cuff stay with the body?
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written
 
-2026-11-14T00:02:07Z (RFD66606-2495) '  operator accept that, and should a trouser cuff stay with the body?
- # tags: rfd:details
- Text:RFD2495  1 LINE
- Text:Written
-
-2026-11-14T00:02:08Z (RFD66606-2495) '- Can RF-DETR maps on photographs or dressed ANNY renders match the synthetic scores?
+2026-11-14T00:00:52Z (RFD66606-2495) '- Can RF-DETR maps on photographs or dressed ANNY renders match the synthetic scores?
  # tags: rfd:details
  Text:RFD2495  1 LINE
  Text:Written

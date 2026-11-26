@@ -14,482 +14,147 @@
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2382) 'Which manifest is the live goal for the Skateboard, and which holds everything else? A row whose
+2026-10-31T00:00:03Z (RFD66606-2382) 'Which manifest is the live goal for the Skateboard, and which holds everything else? A row whose revision does not resolve is refused by name.
  # tags: rfd:intrigue
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2382) 'revision does not resolve is refused by name.
- # tags: rfd:intrigue
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2382) 'Run `curl -fsSL <raw>/bootstrap.sh | sh` on a bare directory and check that it ends with
+2026-10-31T00:00:04Z (RFD66606-2382) 'Run `curl -fsSL <raw>/bootstrap.sh | sh` on a bare directory and check that it ends with `sync.exs --preflight` at zero blocking and every row on disk.
  # tags: rfd:exit
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2382) '`sync.exs --preflight` at zero blocking and every row on disk.
- # tags: rfd:exit
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2382) 'the Skateboard has a manifest of its own
+2026-10-31T00:00:05Z (RFD66606-2382) 'the Skateboard has a manifest of its own
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2382) '- One repository, &{repo("contract-manifest-skateboard", planned: "2-contract")},
+2026-10-31T00:00:06Z (RFD66606-2382) '- One repository, &{repo("contract-manifest-skateboard", planned: "2-contract")}, default branch `main`, made by `gh repo create` under the `v-sekai-fire-persona` user and given the taskweft manifest's ruleset shape: PR plus merge queue, the six required contexts `manifest-comments`, `manifest-dupes`, `manifest-root`, `manifest-root-shepherd`, `manifest-xml`, `sync-preflight`, never `--admin`.
  # tags: rfd:decision
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2382) '  default branch `main`, made by `gh repo create` under the
+2026-10-31T00:00:07Z (RFD66606-2382) '- The manual's Sides paragraph names the new repository as the live goal manifest for the Skateboard and the taskweft one as the goal manifest of everything else.
  # tags: rfd:decision
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2382) '  `v-sekai-fire-persona` user and given the taskweft manifest's ruleset
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2382) '  shape: PR plus merge queue, the six required contexts
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2382) '  `manifest-comments`, `manifest-dupes`, `manifest-root`,
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2382) '  `manifest-root-shepherd`, `manifest-xml`, `sync-preflight`, never
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2382) '  `--admin`.
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2382) '- The manual's Sides paragraph names the new repository as the live
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2382) '  goal manifest for the Skateboard and the taskweft one as the goal
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2382) '  manifest of everything else.
- # tags: rfd:decision
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2382) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2382) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2382) 'The workspace: contract-manifest-skateboard
+2026-10-31T00:00:09Z (RFD66606-2382) 'The workspace: contract-manifest-skateboard
  # tags: rfd:details-heading
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2382) 'The repository's contents:
+2026-10-31T00:00:10Z (RFD66606-2382) 'The repository's contents:
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2382) '
+2026-10-31T00:00:11Z (RFD66606-2382) '- `default.xml`, the five gates and the preflight copied from the taskweft manifest (`check_manifest_{comments,dupes,root,xml}`, `sync.exs`, `.github/workflows/gates.yml`), each keeping its `--self-test`.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2382) '- `default.xml`, the five gates and the preflight copied from the
+2026-10-31T00:00:12Z (RFD66606-2382) '- `bootstrap.sh`, `bootstrap.ps1`, `install.sh`, `install.ps1`, `bootstrap-pins.txt`, `pixi.toml`, `pixi.lock`, `check_bootstrap.py` and the bootstrap workflow copied from &{repo("contract-bootstrap")}, with `bootstrap.sh`'s two defaults (`WEFTSPUN_RAW`, `WEFTSPUN_MANIFEST`) and `bootstrap.ps1`'s pointed at the new repository. `pixi.toml` loses the `web` feature and the `emsdk-install` task. The `llvm-mingw` pin moves to 20260922, the version the headset build used.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2382) '  taskweft manifest (`check_manifest_{comments,dupes,root,xml}`,
+2026-10-31T00:00:13Z (RFD66606-2382) '- `default.xml` places the bootstrap repository at the same path the taskweft manifest gives it, with the seven `<linkfile>`s it carries today, so `bootstrap.sh`'s `repo sync` of that path and step 4's `cmp` of the pins hold without change.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2382) '  `sync.exs`, `.github/workflows/gates.yml`), each keeping its
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2382) '  `--self-test`.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2382) '- `bootstrap.sh`, `bootstrap.ps1`, `install.sh`, `install.ps1`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2382) '  `bootstrap-pins.txt`, `pixi.toml`, `pixi.lock`, `check_bootstrap.py`
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2382) '  and the bootstrap workflow copied from &{repo("contract-bootstrap")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2382) '  with `bootstrap.sh`'s two defaults (`WEFTSPUN_RAW`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2382) '  `WEFTSPUN_MANIFEST`) and `bootstrap.ps1`'s pointed at the new
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2382) '  repository. `pixi.toml` loses the `web` feature and the
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2382) '  `emsdk-install` task. The `llvm-mingw` pin moves to 20260922, the version
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2382) '  the headset build used.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2382) '- `default.xml` places the bootstrap repository at the same path the
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2382) '  taskweft manifest gives it, with the seven `<linkfile>`s it carries
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2382) '  today, so `bootstrap.sh`'s `repo sync` of that path and step 4's
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2382) '  `cmp` of the pins hold without change.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2382) '
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2382) 'The rows
+2026-10-31T00:00:14Z (RFD66606-2382) 'The rows
  # tags: rfd:details-heading
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2382) 'The rows, by side, every one at the revision the taskweft manifest
+2026-10-31T00:00:15Z (RFD66606-2382) 'The rows, by side, every one at the revision the taskweft manifest pins today unless named:
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2382) 'pins today unless named:
+2026-10-31T00:00:16Z (RFD66606-2382) '- 1-transport: &{repo("transport-meshing-pen")} at `main`; `weftspun-studio`, &{repo("transport-cineform-tui")}, &{repo("transport-elixir-libgodot-connector")}, &{repo("transport-central-launcher")}, &{repo("transport-usbip-frame")}.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2382) '
+2026-10-31T00:00:17Z (RFD66606-2382) '- 2-contract: &{repo("manuals-weftspun")} with its five linkfiles, &{repo("contract-guest-runtime")}, &{repo("contract-guest-common")}, &{repo("contract-ggml-rd")}, `ggml`, `plausible-witness-dag`, `weftspun-agreements`, and the manifest itself.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2382) '- 1-transport: &{repo("transport-meshing-pen")} at `main`;
+2026-10-31T00:00:18Z (RFD66606-2382) '- 3-interactor: &{repo("interactor-curvenet")}, &{repo("interactor-lasso")}, &{repo("interactor-usd-guest")}, &{repo("interactor-fabric-zone")} and &{repo("interactor-voice")} (step 4), &{repo("interactor-av1mkv")}, &{repo("interactor-cineform")}, &{repo("interactor-mujoco-sandbox-demo")}, &{repo("frame-controller-sim")}, &{repo("interactor-taskweft-godot-sandbox")}, &{repo("sakuragaoka-station")} at &{pin("sakuragaoka-station")} (the three.js original, the parity oracle), and a &{repo("pyrowave")} fork at &{pin("pyrowave")} carrying `pwbench.cpp`.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2382) '  `weftspun-studio`, &{repo("transport-cineform-tui")},
+2026-10-31T00:00:19Z (RFD66606-2382) '- 4-entities: &{repo("entities-godot")} at master and at the fabric tag (the port source for steps 4 to 7), &{repo("entities-godot-sandbox", planned: "4-entities")} at `b1118e`, &{repo("entities-sakuragaoka-station")} (the Godot port), &{repo("contract-cineform-movie-writer")}, &{repo("godot_openvr")} at its manifest revision, `godot-vrm`, &{repo("entities-godot-sandbox-gdscript-compiler")}.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2382) '  &{repo("transport-elixir-libgodot-connector")},
+2026-10-31T00:00:20Z (RFD66606-2382) '- 5-repository: &{repo("repository-riscv64-sysroot")}; &{repo("character-mille-mire-feuille")} and &{repo("character-marocchino")} from the `chibifire-stages` remote, each with a `<linkfile>` of its committed glTF into the pen's gitignored `avatars/`.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2382) '  &{repo("transport-central-launcher")}, &{repo("transport-usbip-frame")}.
+2026-10-31T00:00:21Z (RFD66606-2382) '- 6-datasource: &{repo("datasource-cassie")}; &{repo("datasource-store")} (fabric-store, the SQLite VFS whose pages live in FoundationDB, with its `<linkfile>` of `fdb_vfs.c` into the SQLite secrets engine's `thirdparty/store/`) and &{repo("datasource-foundationdb")}.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2382) '- 2-contract: &{repo("manuals-weftspun")} with its five linkfiles,
+2026-10-31T00:00:22Z (RFD66606-2382) '- 7-service: &{repo("service-godot-build")} (the workflows' home), &{repo("service-cineform")}, &{repo("service-openbao")}, &{repo("service-bao-sqlite-fdb")} (the OpenBao secrets engine that runs catalogued SQL over fabric-store databases; the zone journals' home), &{repo("service-zone")} (the Fly app's Containerfile and `fly.toml`).
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2382) '  &{repo("contract-guest-runtime")}, &{repo("contract-guest-common")},
+2026-10-31T00:00:23Z (RFD66606-2382) '- The dot repositories `.github`, `dot-claude`, `dot-vscode`, `fire-s-extension-pack`.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2382) '  &{repo("contract-ggml-rd")}, `ggml`, `plausible-witness-dag`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2382) '  `weftspun-agreements`, and the manifest itself.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2382) '- 3-interactor: &{repo("interactor-curvenet")}, &{repo("interactor-lasso")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2382) '  &{repo("interactor-usd-guest")}, &{repo("interactor-fabric-zone")} and
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2382) '  &{repo("interactor-voice")} (step 4), &{repo("interactor-av1mkv")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2382) '  &{repo("interactor-cineform")}, &{repo("interactor-mujoco-sandbox-demo")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2382) '  &{repo("frame-controller-sim")}, &{repo("interactor-taskweft-godot-sandbox")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2382) '  &{repo("sakuragaoka-station")} at &{pin("sakuragaoka-station")} (the
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2382) '  three.js original, the parity oracle), and a &{repo("pyrowave")} fork
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:58Z (RFD66606-2382) '  at &{pin("pyrowave")} carrying `pwbench.cpp`.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:00:59Z (RFD66606-2382) '- 4-entities: &{repo("entities-godot")} at master and at the fabric tag
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:00Z (RFD66606-2382) '  (the port source for steps 4 to 7),
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:01Z (RFD66606-2382) '  &{repo("entities-godot-sandbox", planned: "4-entities")} at `b1118e`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:02Z (RFD66606-2382) '  &{repo("entities-sakuragaoka-station")} (the Godot port),
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:03Z (RFD66606-2382) '  &{repo("contract-cineform-movie-writer")}, &{repo("godot_openvr")} at its
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:04Z (RFD66606-2382) '  manifest revision, `godot-vrm`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:05Z (RFD66606-2382) '  &{repo("entities-godot-sandbox-gdscript-compiler")}.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:06Z (RFD66606-2382) '- 5-repository: &{repo("repository-riscv64-sysroot")};
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:07Z (RFD66606-2382) '  &{repo("character-mille-mire-feuille")} and
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:08Z (RFD66606-2382) '  &{repo("character-marocchino")} from the `chibifire-stages` remote,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:09Z (RFD66606-2382) '  each with a `<linkfile>` of its committed glTF into the pen's
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2382) '  gitignored `avatars/`.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2382) '- 6-datasource: &{repo("datasource-cassie")}; &{repo("datasource-store")}
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:12Z (RFD66606-2382) '  (fabric-store, the SQLite VFS whose pages live in FoundationDB,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2382) '  with its `<linkfile>` of `fdb_vfs.c` into the SQLite secrets
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:14Z (RFD66606-2382) '  engine's `thirdparty/store/`) and &{repo("datasource-foundationdb")}.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:15Z (RFD66606-2382) '- 7-service: &{repo("service-godot-build")} (the workflows' home),
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2382) '  &{repo("service-cineform")}, &{repo("service-openbao")},
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:17Z (RFD66606-2382) '  &{repo("service-bao-sqlite-fdb")} (the OpenBao secrets engine that
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2382) '  runs catalogued SQL over fabric-store databases; the zone journals'
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2382) '  home), &{repo("service-zone")} (the Fly app's
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2382) '  Containerfile and `fly.toml`).
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:21Z (RFD66606-2382) '- The dot repositories `.github`, `dot-claude`, `dot-vscode`,
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2382) '  `fire-s-extension-pack`.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:23Z (RFD66606-2382) '
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:24Z (RFD66606-2382) 'The allowlist
+2026-10-31T00:00:24Z (RFD66606-2382) 'The allowlist
  # tags: rfd:details-heading
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:25Z (RFD66606-2382) 'The allowlist gains picoquic (MIT),
+2026-10-31T00:00:25Z (RFD66606-2382) 'The allowlist gains picoquic (MIT), picotls (MIT), mbedTLS (Apache-2.0), SQLite (public domain), spmemvfs (BSD), zstd (BSD-3) and Opus (BSD-3) for step 4.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2382) 'picotls (MIT), mbedTLS (Apache-2.0), SQLite (public domain), spmemvfs
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:27Z (RFD66606-2382) '(BSD), zstd (BSD-3) and Opus (BSD-3) for step 4.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:28Z (RFD66606-2382) '
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:29Z (RFD66606-2382) 'Check and control
+2026-10-31T00:00:26Z (RFD66606-2382) 'Check and control
  # tags: rfd:details-heading
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2382) 'Check: on a bare directory, `curl -fsSL <raw>/bootstrap.sh | sh`
+2026-10-31T00:00:27Z (RFD66606-2382) 'Check: on a bare directory, `curl -fsSL <raw>/bootstrap.sh | sh` ends with `sync.exs --preflight` at zero blocking and every row on disk; `check_bootstrap.py --self-test` and the five gates' `--self-test` pass. Control: a row whose revision does not resolve is refused by `check_manifest_xml.py` by name.
  # tags: rfd:details
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2382) 'ends with `sync.exs --preflight` at zero blocking and every row on
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:32Z (RFD66606-2382) 'disk; `check_bootstrap.py --self-test` and the five gates'
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:33Z (RFD66606-2382) '`--self-test` pass. Control: a row whose revision does not resolve
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:34Z (RFD66606-2382) 'is refused by `check_manifest_xml.py` by name.
- # tags: rfd:details
- Text:RFD2382  1 LINE
- Text:Written
-
-2026-10-31T00:01:35Z (RFD66606-2382) '2351
+2026-10-31T00:00:28Z (RFD66606-2382) '2351
  # tags: rebac:verbs-from
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:36Z (RFD66606-2382) 'rfd-2382 provides skateboard-manifest-repo
+2026-10-31T00:00:29Z (RFD66606-2382) 'rfd-2382 provides skateboard-manifest-repo
  # tags: rebac:relate
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:37Z (RFD66606-2382) 'rfd-2382 spends pixi
+2026-10-31T00:00:30Z (RFD66606-2382) 'rfd-2382 spends pixi
  # tags: rebac:relate
  Text:RFD2382  1 LINE
  Text:Written
 
-2026-10-31T00:01:38Z (RFD66606-2382) 'rfd-2382 is_a workspace-policy
+2026-10-31T00:00:31Z (RFD66606-2382) 'rfd-2382 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2382  1 LINE
  Text:Written

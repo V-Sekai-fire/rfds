@@ -14,102 +14,37 @@
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2458) 'Does a capability that several RFDs can provide ever get recorded as a real choice, with a
+2026-11-07T00:00:03Z (RFD66606-2458) 'Does a capability that several RFDs can provide ever get recorded as a real choice, with a preferred order and a fallback the planner can use when one provider fails?
  # tags: rfd:hook
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2458) 'preferred order and a fallback the planner can use when one provider fails?
- # tags: rfd:hook
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2458) 'The generator already knows how to turn a capability with multiple providers into an
+2026-11-07T00:00:04Z (RFD66606-2458) 'The generator already knows how to turn a capability with multiple providers into an alternative set, ordered by commit date, then publish date, then serial, and a planner that backtracks to the next provider when one fails. The idea was tested on one synthetic pair, but no capability in the RFD corpus today actually has two providers recorded, so the beta's own route never exercises the backtracking path it depends on.
  # tags: rfd:intrigue
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2458) 'alternative set, ordered by commit date, then publish date, then serial, and a planner that
- # tags: rfd:intrigue
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2458) 'backtracks to the next provider when one fails. The idea was tested on one synthetic pair, but
- # tags: rfd:intrigue
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2458) 'no capability in the RFD corpus today actually has two providers recorded, so the beta's own
- # tags: rfd:intrigue
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2458) 'route never exercises the backtracking path it depends on.
- # tags: rfd:intrigue
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2458) 'Run a research pass over the corpus and its neighbors, from titles and bodies only, to find
+2026-11-07T00:00:05Z (RFD66606-2458) 'Run a research pass over the corpus and its neighbors, from titles and bodies only, to find capabilities with more than one stated provider, fallback, or rejected approach, and record each as a second `provides` edge in preference order.
  # tags: rfd:exit
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2458) 'capabilities with more than one stated provider, fallback, or rejected approach, and record
- # tags: rfd:exit
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2458) 'each as a second `provides` edge in preference order.
- # tags: rfd:exit
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2458) '- Treat this as a research task before a code task: read the cone of RFDs named in the issue
+2026-11-07T00:00:06Z (RFD66606-2458) '- Treat this as a research task before a code task: read the cone of RFDs named in the issue and their neighbors for stated alternatives, fallbacks, and rejected approaches.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2458) '  and their neighbors for stated alternatives, fallbacks, and rejected approaches.
+2026-11-07T00:00:07Z (RFD66606-2458) '- Where two RFDs plausibly provide the same capability, add a second `provides` edge in preference order so the planner's backtracking has a real pair to exercise.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2458) '- Where two RFDs plausibly provide the same capability, add a second `provides` edge in
+2026-11-07T00:00:08Z (RFD66606-2458) '- Candidate pairs raised by the issue, unverified until read: Tailscale versus an SSH tunnel for reaching Bao, standalone versus PC VR streaming for headset rendering, WSL libraries versus this Mac as the desktop client, and two RFDs that both claimed the same guest ELF double capability in an early drafting pass.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2458) '  preference order so the planner's backtracking has a real pair to exercise.
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2458) '- Candidate pairs raised by the issue, unverified until read: Tailscale versus an SSH tunnel
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2458) '  for reaching Bao, standalone versus PC VR streaming for headset rendering, WSL libraries
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2458) '  versus this Mac as the desktop client, and two RFDs that both claimed the same guest ELF
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2458) '  double capability in an early drafting pass.
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2458) '- Until a pair is verified by reading both RFDs in full, no alternative edge should be
- # tags: rfd:decision
- Text:RFD2458  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2458) '  committed.
+2026-11-07T00:00:09Z (RFD66606-2458) '- Until a pair is verified by reading both RFDs in full, no alternative edge should be committed.
  # tags: rfd:decision
  Text:RFD2458  1 LINE
  Text:Written

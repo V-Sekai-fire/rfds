@@ -9,487 +9,142 @@
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:02Z (RFD66606-2176) 'every `committed` or `published` RFD that cites an
- # tags: rfd:scope
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:03Z (RFD66606-2176) '`abandoned` or `moved` RFD
+2026-09-02T00:00:02Z (RFD66606-2176) 'every `committed` or `published` RFD that cites an `abandoned` or `moved` RFD
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2176) 'Settled RFDs citing withdrawn ones: 39 pairs found, and only 11 need follow-up.
+2026-09-02T00:00:03Z (RFD66606-2176) 'Settled RFDs citing withdrawn ones: 39 pairs found, and only 11 need follow-up.
  # tags: rfd:hook
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:05Z (RFD66606-2176) 'Settled decisions leaning on withdrawn ones read as authoritative, so this class of drift is
+2026-09-02T00:00:04Z (RFD66606-2176) 'Settled decisions leaning on withdrawn ones read as authoritative, so this class of drift is higher severity than RFD66606-2174 (open-to-abandoned index)'s open-to-abandoned class.
  # tags: rfd:intrigue
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:06Z (RFD66606-2176) 'higher severity than RFD66606-2174 (open-to-abandoned index)'s open-to-abandoned class.
- # tags: rfd:intrigue
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:07Z (RFD66606-2176) 'Check each of the 11 real-drift pairs against its successor annotation below when you next edit
+2026-09-02T00:00:05Z (RFD66606-2176) 'Check each of the 11 real-drift pairs against its successor annotation below when you next edit the citing RFD.
  # tags: rfd:exit
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:08Z (RFD66606-2176) 'the citing RFD.
- # tags: rfd:exit
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:09Z (RFD66606-2176) 'Index of committed/published RFDs citing terminal RFDs
+2026-09-02T00:00:06Z (RFD66606-2176) 'Index of committed/published RFDs citing terminal RFDs
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2176) 'Full list from the Lean 4 audit (`Report.lean` output). Three classes:
+2026-09-02T00:00:07Z (RFD66606-2176) 'Full list from the Lean 4 audit (`Report.lean` output). Three classes: retraction chain (keep), historical framing (keep, weakly stale), real drift (successor annotated).
  # tags: rfd:details-preamble
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2176) 'retraction chain (keep), historical framing (keep, weakly stale), real
- # tags: rfd:details-preamble
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2176) 'drift (successor annotated).
- # tags: rfd:details-preamble
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2176) 'This RFD is the citable index for settled-to-terminal citation drift; a Lean-verified audit
+2026-09-02T00:00:08Z (RFD66606-2176) 'This RFD is the citable index for settled-to-terminal citation drift; a Lean-verified audit found 39 pairs, and only 11 real-drift pairs need per-RFD follow-up.
  # tags: rfd:decision
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:14Z (RFD66606-2176) 'found 39 pairs, and only 11 real-drift pairs need per-RFD follow-up.
- # tags: rfd:decision
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:15Z (RFD66606-2176) 'Spine: urn:oid:1.3.6.1.4.1.66606.1.1.1000 (RFD conventions).
+2026-09-02T00:00:09Z (RFD66606-2176) 'Spine: urn:oid:1.3.6.1.4.1.66606.1.1.1000 (RFD conventions). Companion: urn:oid:1.3.6.1.4.1.66606.1.2.2174 (open-to-abandoned). Verified by: Lean 4 spec in `scratchpad/rfd_check/RfdSoundness.lean`.
  # tags: rfd:related
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:16Z (RFD66606-2176) 'Companion: urn:oid:1.3.6.1.4.1.66606.1.2.2174 (open-to-abandoned).
- # tags: rfd:related
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:17Z (RFD66606-2176) 'Verified by: Lean 4 spec in `scratchpad/rfd_check/RfdSoundness.lean`.
- # tags: rfd:related
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:18Z (RFD66606-2176) 'Disposition of the classes
+2026-09-02T00:00:10Z (RFD66606-2176) 'Disposition of the classes
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:19Z (RFD66606-2176) 'Same pattern as RFD66606-2174. The 14 retraction chains need no action. The 14
+2026-09-02T00:00:11Z (RFD66606-2176) 'Same pattern as RFD66606-2174. The 14 retraction chains need no action. The 14 historical-framing pairs stay as-is (retitling a published RFD to name a successor for a citation that describes a superseded problem framing does more damage than the drift). The 11 real-drift pairs migrate on next edit; DETAILS.md names each successor.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2176) 'historical-framing pairs stay as-is (retitling a published RFD to name a successor for a
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2176) 'citation that describes a superseded problem framing does more damage than the drift). The 11
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2176) 'real-drift pairs migrate on next edit; DETAILS.md names each successor.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2176) 'Retraction chains (14, keep as-is)
+2026-09-02T00:00:12Z (RFD66606-2176) 'Retraction chains (14, keep as-is)
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:24Z (RFD66606-2176) 'The citer IS the retraction; citation is by design.
+2026-09-02T00:00:13Z (RFD66606-2176) 'The citer IS the retraction; citation is by design.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2176) '
+2026-09-02T00:00:14Z (RFD66606-2176) '  2168 → 1122     RFD66606-2168 abandons 1122 2169 → 1019     RFD66606-2169 abandons 1019 2169 → 1067     RFD66606-2169 references abandoned CockroachDB 2173 → 1019     Qwen3-VL migration index references studio-core 2174 → 1019     Abandoned-citation index references itself 2174 → 1122     " 2174 → 1166     " 2175 → 1132     Rented-compute retraction lists what it abandons 2175 → 1140     " 2175 → 1163     " 2175 → 2133     " 2175 → 2138     " 2159 → 2158     RFD66606-2159 supersedes 2158 (self-hosted RISC-V compiler) (5 rented-compute rows already appear in 2175's own list)
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:26Z (RFD66606-2176) '  2168 → 1122     RFD66606-2168 abandons 1122
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:27Z (RFD66606-2176) '  2169 → 1019     RFD66606-2169 abandons 1019
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:28Z (RFD66606-2176) '  2169 → 1067     RFD66606-2169 references abandoned CockroachDB
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:29Z (RFD66606-2176) '  2173 → 1019     Qwen3-VL migration index references studio-core
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:30Z (RFD66606-2176) '  2174 → 1019     Abandoned-citation index references itself
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:31Z (RFD66606-2176) '  2174 → 1122     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:32Z (RFD66606-2176) '  2174 → 1166     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:33Z (RFD66606-2176) '  2175 → 1132     Rented-compute retraction lists what it abandons
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:34Z (RFD66606-2176) '  2175 → 1140     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:35Z (RFD66606-2176) '  2175 → 1163     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:36Z (RFD66606-2176) '  2175 → 2133     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:37Z (RFD66606-2176) '  2175 → 2138     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:38Z (RFD66606-2176) '  2159 → 2158     RFD66606-2159 supersedes 2158 (self-hosted RISC-V compiler)
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:39Z (RFD66606-2176) '  (5 rented-compute rows already appear in 2175's own list)
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:40Z (RFD66606-2176) 'Historical framing (14, keep as-is, weakly stale)
+2026-09-02T00:00:15Z (RFD66606-2176) 'Historical framing (14, keep as-is, weakly stale)
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:41Z (RFD66606-2176) 'Published loop-RFDs and moat-narrative RFDs cite the framing the
+2026-09-02T00:00:16Z (RFD66606-2176) 'Published loop-RFDs and moat-narrative RFDs cite the framing the workspace used at the time. Rewriting risks losing the story.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:42Z (RFD66606-2176) 'workspace used at the time. Rewriting risks losing the story.
+2026-09-02T00:00:17Z (RFD66606-2176) '  1005 → 1012     Avatar pipeline history 1020 → 1019     CockroachDB persistence over the abandoned Elixir core 1021 → 1019     Shared HRR library history 1030 → 1019     See-Through component models history 1030 → 1166     " 1054 → 1019     Planner history 1057 → 1062     Open work history 1058 → 1019     Zero-trust networking history 1060 → 1019     Thirdparty reset history 1106 → 1012     Moat overview 1106 → 1015     " 1106 → 1109     " 1143 → 1122     Keypoints-to-ANNY loop cites the wholebody framing 1145 → 1122     Stylized-to-OmniGen2 loop, same framing 1147 → 1122     EditScore cost, same framing
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:00:43Z (RFD66606-2176) '
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:44Z (RFD66606-2176) '  1005 → 1012     Avatar pipeline history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:45Z (RFD66606-2176) '  1020 → 1019     CockroachDB persistence over the abandoned Elixir core
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:46Z (RFD66606-2176) '  1021 → 1019     Shared HRR library history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:47Z (RFD66606-2176) '  1030 → 1019     See-Through component models history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:48Z (RFD66606-2176) '  1030 → 1166     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:49Z (RFD66606-2176) '  1054 → 1019     Planner history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:50Z (RFD66606-2176) '  1057 → 1062     Open work history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:51Z (RFD66606-2176) '  1058 → 1019     Zero-trust networking history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:52Z (RFD66606-2176) '  1060 → 1019     Thirdparty reset history
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:53Z (RFD66606-2176) '  1106 → 1012     Moat overview
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:54Z (RFD66606-2176) '  1106 → 1015     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:55Z (RFD66606-2176) '  1106 → 1109     "
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:56Z (RFD66606-2176) '  1143 → 1122     Keypoints-to-ANNY loop cites the wholebody framing
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:57Z (RFD66606-2176) '  1145 → 1122     Stylized-to-OmniGen2 loop, same framing
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:58Z (RFD66606-2176) '  1147 → 1122     EditScore cost, same framing
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:00:59Z (RFD66606-2176) 'Real drift (11, per-pair successor annotated)
+2026-09-02T00:00:18Z (RFD66606-2176) 'Real drift (11, per-pair successor annotated)
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:00Z (RFD66606-2176) 'Citations that should migrate on next edit. Each names a specific
+2026-09-02T00:00:19Z (RFD66606-2176) 'Citations that should migrate on next edit. Each names a specific successor.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:01Z (RFD66606-2176) 'successor.
+2026-09-02T00:00:20Z (RFD66606-2176) '  1080 → 1062     Fly deploy cost cites Fly.io toplevel (abandoned). Successor: none; drop on next edit. 1086 → 1101     Dev machine topology cites SSH host names (aband). Successor: none; drop. 1095 → 1100     NVIDIA XR AI cites spatial fabric integration (abandoned). Successor: RFD66606-1107 (world package). 1099 → 1100     Scripts cheatsheet, same abandoned RFD66606-1100. Successor: RFD66606-1107. 1102 → 1100     3DAIGC modules, same. Successor: RFD66606-1107. 1103 → 1098     Vercel loot cites public deploy (aband). Drop. 1107 → 1100     World package cites spatial fabric integration. Self-successor; keep or drop. 1108 → 1090     XR mode cites IWSDK integration (aband). Drop. 1111 → 1100     3DAIGC-API reference cites 1100. Successor: 1107. 1146 → 1132     Latent-to-Pixal3D cites priority list (abandoned by RFD66606-2175). Successor: RFD66606-2175. 1057 → 1062     Open work also drops abandoned Fly.io toplevel.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:02Z (RFD66606-2176) '
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:03Z (RFD66606-2176) '  1080 → 1062     Fly deploy cost cites Fly.io toplevel (abandoned).
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:04Z (RFD66606-2176) '                  Successor: none; drop on next edit.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:05Z (RFD66606-2176) '  1086 → 1101     Dev machine topology cites SSH host names (aband).
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:06Z (RFD66606-2176) '                  Successor: none; drop.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:07Z (RFD66606-2176) '  1095 → 1100     NVIDIA XR AI cites spatial fabric integration
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:08Z (RFD66606-2176) '                  (abandoned). Successor: RFD66606-1107 (world package).
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:09Z (RFD66606-2176) '  1099 → 1100     Scripts cheatsheet, same abandoned RFD66606-1100.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:10Z (RFD66606-2176) '                  Successor: RFD66606-1107.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:11Z (RFD66606-2176) '  1102 → 1100     3DAIGC modules, same. Successor: RFD66606-1107.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:12Z (RFD66606-2176) '  1103 → 1098     Vercel loot cites public deploy (aband). Drop.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:13Z (RFD66606-2176) '  1107 → 1100     World package cites spatial fabric integration.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:14Z (RFD66606-2176) '                  Self-successor; keep or drop.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:15Z (RFD66606-2176) '  1108 → 1090     XR mode cites IWSDK integration (aband). Drop.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:16Z (RFD66606-2176) '  1111 → 1100     3DAIGC-API reference cites 1100. Successor: 1107.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:17Z (RFD66606-2176) '  1146 → 1132     Latent-to-Pixal3D cites priority list (abandoned
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:18Z (RFD66606-2176) '                  by RFD66606-2175). Successor: RFD66606-2175.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:19Z (RFD66606-2176) '  1057 → 1062     Open work also drops abandoned Fly.io toplevel.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:20Z (RFD66606-2176) 'Verification
+2026-09-02T00:00:21Z (RFD66606-2176) 'Verification
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:21Z (RFD66606-2176) 'Lean 4 (v4.33.1) audit:
+2026-09-02T00:00:22Z (RFD66606-2176) 'Lean 4 (v4.33.1) audit: ` cd scratchpad/rfd_check && lake build rfdReport && ./.lake/build/bin/rfdReport`
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:22Z (RFD66606-2176) '  ` cd scratchpad/rfd_check && lake build rfdReport && ./.lake/build/bin/rfdReport`
+2026-09-02T00:00:23Z (RFD66606-2176) 'Four metatheorems typecheck: `unknown_not_open`, `abandoned_not_open`, `moved_not_open`, `classification_complete`.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:23Z (RFD66606-2176) '
+2026-09-02T00:00:24Z (RFD66606-2176) 'Counterexamples are extensional (a real inhabitant of the pair list, not a missing proof); the classification above cites the full 39.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:24Z (RFD66606-2176) 'Four metatheorems typecheck:
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:25Z (RFD66606-2176) '  `unknown_not_open`, `abandoned_not_open`, `moved_not_open`,
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:26Z (RFD66606-2176) '  `classification_complete`.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:27Z (RFD66606-2176) '
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:28Z (RFD66606-2176) 'Counterexamples are extensional (a real inhabitant of the pair list,
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:29Z (RFD66606-2176) 'not a missing proof); the classification above cites the full 39.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:30Z (RFD66606-2176) 'The problem
+2026-09-02T00:00:25Z (RFD66606-2176) 'The problem
  # tags: rfd:details-heading
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:31Z (RFD66606-2176) 'Of the 39 pairs:
+2026-09-02T00:00:26Z (RFD66606-2176) 'Of the 39 pairs:
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:32Z (RFD66606-2176) '
+2026-09-02T00:00:27Z (RFD66606-2176) '- 14 retraction chains. The RFD is the retraction (2168-2175, 2159). Correct as-is.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:33Z (RFD66606-2176) '- 14 retraction chains. The RFD is the retraction (2168-2175, 2159). Correct as-is.
+2026-09-02T00:00:28Z (RFD66606-2176) '- 14 historical framing pairs in published loop-RFDs (1030, 1143-1147 cite RFD66606-1122; 1020-1060 cite the pre-MaskScore (edit-reward corpus) RFD66606-1019). Weakly stale; the framing was correct when written.
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written
 
-2026-09-02T00:01:34Z (RFD66606-2176) '- 14 historical framing pairs in published loop-RFDs (1030, 1143-1147 cite RFD66606-1122;
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:35Z (RFD66606-2176) '1020-1060 cite the pre-MaskScore (edit-reward corpus) RFD66606-1019). Weakly stale; the framing
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:36Z (RFD66606-2176) 'was correct when written.
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:37Z (RFD66606-2176) '- 11 real drift pairs. A settled decision references a terminal RFD without acknowledging the
- # tags: rfd:details
- Text:RFD2176  1 LINE
- Text:Written
-
-2026-09-02T00:01:38Z (RFD66606-2176) 'retraction chain. Per-pair successor annotations in [DETAILS.md](DETAILS.md).
+2026-09-02T00:00:29Z (RFD66606-2176) '- 11 real drift pairs. A settled decision references a terminal RFD without acknowledging the retraction chain. Per-pair successor annotations in [DETAILS.md](DETAILS.md).
  # tags: rfd:details
  Text:RFD2176  1 LINE
  Text:Written

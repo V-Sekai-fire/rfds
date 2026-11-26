@@ -14,122 +14,57 @@
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:03Z (RFD66606-2185) 'Shelved 2026-09-02: waiting for measurement showing See-Through V3
+2026-09-02T00:00:03Z (RFD66606-2185) 'Shelved 2026-09-02: waiting for measurement showing See-Through V3 (23 parts, RFD66606-2183 stopgap via `anny_v3_face_groups.py`) is a bottleneck. Resume when a task lands that V3 cannot label.
  # tags: rfd:preamble
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2185) '(23 parts, RFD66606-2183 stopgap via `anny_v3_face_groups.py`) is a
- # tags: rfd:preamble
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:05Z (RFD66606-2185) 'bottleneck. Resume when a task lands that V3 cannot label.
- # tags: rfd:preamble
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:06Z (RFD66606-2185) 'Every body, clothing and accessory part gets one stable OID, whatever its label.
+2026-09-02T00:00:04Z (RFD66606-2185) 'Every body, clothing and accessory part gets one stable OID, whatever its label.
  # tags: rfd:hook
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:07Z (RFD66606-2185) 'V3 (23 parts, RFD66606-2183 stopgap) covers 10 today. Finer tasks (skin/makeup, cloth
+2026-09-02T00:00:05Z (RFD66606-2185) 'V3 (23 parts, RFD66606-2183 stopgap) covers 10 today. Finer tasks (skin/makeup, cloth sub-parts, multi-character, hair sub-strands) break a flat schema.
  # tags: rfd:intrigue
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:08Z (RFD66606-2185) 'sub-parts, multi-character, hair sub-strands) break a flat schema.
- # tags: rfd:intrigue
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:09Z (RFD66606-2185) 'Read RFD66606-2183 next, the layer-decomp pipeline that the V3 stopgap sits under.
+2026-09-02T00:00:06Z (RFD66606-2185) 'Read RFD66606-2183 next, the layer-decomp pipeline that the V3 stopgap sits under.
  # tags: rfd:exit
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2185) 'Hierarchical OID part registry under PEN
+2026-09-02T00:00:07Z (RFD66606-2185) 'Hierarchical OID part registry under PEN
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2185) 'Every part gets a stable OID under `1.3.6.1.4.1.66606.<arc>.parts.<hierarchy>`.
+2026-09-02T00:00:08Z (RFD66606-2185) 'Every part gets a stable OID under `1.3.6.1.4.1.66606.<arc>.parts.<hierarchy>`. Hierarchical addressing: `body/head/hair/front-fringe`, so a v4 addition is a new child, not a schema break.
  # tags: rfd:decision
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:12Z (RFD66606-2185) 'Hierarchical addressing: `body/head/hair/front-fringe`, so a v4
- # tags: rfd:decision
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2185) 'addition is a new child, not a schema break.
- # tags: rfd:decision
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:14Z (RFD66606-2185) 'RFD66606-2183 (layer-decomp pipeline; V3 stopgap sits under this),
+2026-09-02T00:00:09Z (RFD66606-2185) 'RFD66606-2183 (layer-decomp pipeline; V3 stopgap sits under this), RFD66606-2184 (EditScore bootstrap for unmapped parts), RFD66606-1122 (AlternativeTopology; reference precedent), RFD66606-1000 (RFD conventions; OID arc rules).
  # tags: rfd:related
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:15Z (RFD66606-2185) 'RFD66606-2184 (EditScore bootstrap for unmapped parts), RFD66606-1122
- # tags: rfd:related
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:16Z (RFD66606-2185) '(AlternativeTopology; reference precedent), RFD66606-1000 (RFD
- # tags: rfd:related
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:17Z (RFD66606-2185) 'conventions; OID arc rules).
- # tags: rfd:related
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:18Z (RFD66606-2185) 'Leaf alias sets
+2026-09-02T00:00:10Z (RFD66606-2185) 'Leaf alias sets
  # tags: rfd:details-heading
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:19Z (RFD66606-2185) 'Four leaf alias sets pointing at the same OID hierarchy: See-Through
+2026-09-02T00:00:11Z (RFD66606-2185) 'Four leaf alias sets pointing at the same OID hierarchy: See-Through V3 (RFD66606-2183 stopgap), ANNY 104 joints (RFD66606-1122 topology), PASCAL-Part (public benchmark interop), VRM 1.0 humanoid bones (deployment interop). Ingest maps any leaf alias to the canonical OID; storage is OID, not string, so v3->v4 never rewrites a corpus.
  # tags: rfd:details
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2185) 'V3 (RFD66606-2183 stopgap), ANNY 104 joints (RFD66606-1122 topology),
- # tags: rfd:details
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2185) 'PASCAL-Part (public benchmark interop), VRM 1.0 humanoid bones
- # tags: rfd:details
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2185) '(deployment interop). Ingest maps any leaf alias to the canonical
- # tags: rfd:details
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2185) 'OID; storage is OID, not string, so v3->v4 never rewrites a corpus.
- # tags: rfd:details
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2185) 'The problem
+2026-09-02T00:00:12Z (RFD66606-2185) 'The problem
  # tags: rfd:details-heading
  Text:RFD2185  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2185) 'String labels lose meaning across versions;
- # tags: rfd:details
- Text:RFD2185  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2185) 'OIDs do not. RFD66606-1122 (AlternativeTopology) is the precedent shape.
+2026-09-02T00:00:13Z (RFD66606-2185) 'String labels lose meaning across versions; OIDs do not. RFD66606-1122 (AlternativeTopology) is the precedent shape.
  # tags: rfd:details
  Text:RFD2185  1 LINE
  Text:Written

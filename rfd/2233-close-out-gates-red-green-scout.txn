@@ -19,352 +19,182 @@
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:04Z (RFD66606-2233) 'A gate recorded only passing is decoration: it has never shown it can detect the broken
+2026-09-07T00:00:04Z (RFD66606-2233) 'A gate recorded only passing is decoration: it has never shown it can detect the broken state, and a pass without its command cannot be re-run.
  # tags: rfd:intrigue
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:05Z (RFD66606-2233) 'state, and a pass without its command cannot be re-run.
- # tags: rfd:intrigue
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:06Z (RFD66606-2233) 'Check each close-out logbook entry for the red command failing, the green command passing,
+2026-09-07T00:00:05Z (RFD66606-2233) 'Check each close-out logbook entry for the red command failing, the green command passing, and a scout inventory non-empty before cleanup and empty after.
  # tags: rfd:exit
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:07Z (RFD66606-2233) 'and a scout inventory non-empty before cleanup and empty after.
- # tags: rfd:exit
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:08Z (RFD66606-2233) 'Close-out gates: red control, green, scout
+2026-09-07T00:00:06Z (RFD66606-2233) 'Close-out gates: red control, green, scout
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:09Z (RFD66606-2233) 'The gates were first run, and backfilled, on the account.chibifire.com
+2026-09-07T00:00:07Z (RFD66606-2233) 'The gates were first run, and backfilled, on the account.chibifire.com DNS rollout. `logbook-taskweft-planned-dns-traces.md` holds the full record; this file keeps the shape each gate takes.
  # tags: rfd:details-preamble
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:10Z (RFD66606-2233) 'DNS rollout. `logbook-taskweft-planned-dns-traces.md` holds the full
- # tags: rfd:details-preamble
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:11Z (RFD66606-2233) 'record; this file keeps the shape each gate takes.
- # tags: rfd:details-preamble
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:12Z (RFD66606-2233) 'Work closes with three gates in the logbook, each with runnable
+2026-09-07T00:00:08Z (RFD66606-2233) 'Work closes with three gates in the logbook, each with runnable apparatus. Backfilling any of them is permitted: the record is the requirement, not the timing.
  # tags: rfd:decision
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:13Z (RFD66606-2233) 'apparatus. Backfilling any of them is permitted: the record is the
+2026-09-07T00:00:09Z (RFD66606-2233) '1. **Red control gate.** The exact command shown failing on the broken state. Verification rule 2 in the working agreements.
  # tags: rfd:decision
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:14Z (RFD66606-2233) 'requirement, not the timing.
+2026-09-07T00:00:10Z (RFD66606-2233) '2. **Green gate.** The same check shown passing on the fixed state. The probe must distinguish the two states it separates; an identity-blind probe (one that answers alike for both) does not qualify.
  # tags: rfd:decision
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:15Z (RFD66606-2233) '
+2026-09-07T00:00:11Z (RFD66606-2233) '3. **Scout gate.** The place left better than we arrived: an inventory of the session's side effects shown non-empty before cleanup and empty after, plus what was improved beyond the task.
  # tags: rfd:decision
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:16Z (RFD66606-2233) '1. **Red control gate.** The exact command shown failing on the
+2026-09-07T00:00:12Z (RFD66606-2233) '`DETAILS.md` carries the reference case with its measurements.
  # tags: rfd:decision
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:17Z (RFD66606-2233) '   broken state. Verification rule 2 in the working agreements.
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:18Z (RFD66606-2233) '2. **Green gate.** The same check shown passing on the fixed state.
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:19Z (RFD66606-2233) '   The probe must distinguish the two states it separates; an
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:20Z (RFD66606-2233) '   identity-blind probe (one that answers alike for both) does not
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:21Z (RFD66606-2233) '   qualify.
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:22Z (RFD66606-2233) '3. **Scout gate.** The place left better than we arrived: an
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:23Z (RFD66606-2233) '   inventory of the session's side effects shown non-empty before
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:24Z (RFD66606-2233) '   cleanup and empty after, plus what was improved beyond the task.
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:25Z (RFD66606-2233) '
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:26Z (RFD66606-2233) '`DETAILS.md` carries the reference case with its measurements.
- # tags: rfd:decision
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:27Z (RFD66606-2233) 'Red control gate
+2026-09-07T00:00:13Z (RFD66606-2233) 'Red control gate
  # tags: rfd:details-heading
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:28Z (RFD66606-2233) 'One command, the broken state, the observed failure:
+2026-09-07T00:00:14Z (RFD66606-2233) 'One command, the broken state, the observed failure:
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:29Z (RFD66606-2233) '
+2026-09-07T00:00:15Z (RFD66606-2233) '    # taskweft v0.5.3 release binary, on its own bundled example
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:30Z (RFD66606-2233) '    # taskweft v0.5.3 release binary, on its own bundled example
+2026-09-07T00:00:16Z (RFD66606-2233) '    taskweft plan priv/plans/domains/blocks_world_dsl.ex
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:31Z (RFD66606-2233) '    taskweft plan priv/plans/domains/blocks_world_dsl.ex
+2026-09-07T00:00:17Z (RFD66606-2233) '    taskweft: failed_to_load_domain
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:32Z (RFD66606-2233) '    taskweft: failed_to_load_domain
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:33Z (RFD66606-2233) 'Green gate
+2026-09-07T00:00:18Z (RFD66606-2233) 'Green gate
  # tags: rfd:details-heading
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:34Z (RFD66606-2233) 'The same command on the fixed state:
+2026-09-07T00:00:19Z (RFD66606-2233) 'The same command on the fixed state:
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:35Z (RFD66606-2233) '
+2026-09-07T00:00:20Z (RFD66606-2233) '    # taskweft v0.5.4, same file
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:36Z (RFD66606-2233) '    # taskweft v0.5.4, same file
+2026-09-07T00:00:21Z (RFD66606-2233) '    taskweft plan priv/plans/domains/blocks_world_dsl.ex
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:37Z (RFD66606-2233) '    taskweft plan priv/plans/domains/blocks_world_dsl.ex
+2026-09-07T00:00:22Z (RFD66606-2233) '    [["a_unstack", "a"], ["a_putdown", "a"], ...]
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:38Z (RFD66606-2233) '    [["a_unstack", "a"], ["a_putdown", "a"], ...]
+2026-09-07T00:00:23Z (RFD66606-2233) 'A green gate must tell the two states apart. The counterexample from the reference case: an MCP `initialize` probe reported the same serverInfo for v0.5.3 and v0.5.4, so it stayed green while a stale v0.5.3 process held the port and the v0.5.4 launch died on eaddrinuse into /dev/null. The qualifying probe plans a DSL domain over MCP, an operation only the fixed build performs.
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:39Z (RFD66606-2233) '
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:40Z (RFD66606-2233) 'A green gate must tell the two states apart. The counterexample from
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:41Z (RFD66606-2233) 'the reference case: an MCP `initialize` probe reported the same
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:42Z (RFD66606-2233) 'serverInfo for v0.5.3 and v0.5.4, so it stayed green while a stale
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:43Z (RFD66606-2233) 'v0.5.3 process held the port and the v0.5.4 launch died on
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:44Z (RFD66606-2233) 'eaddrinuse into /dev/null. The qualifying probe plans a DSL domain
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:45Z (RFD66606-2233) 'over MCP, an operation only the fixed build performs.
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:46Z (RFD66606-2233) 'Scout gate
+2026-09-07T00:00:24Z (RFD66606-2233) 'Scout gate
  # tags: rfd:details-heading
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:47Z (RFD66606-2233) 'Inventory before, non-empty; the same inventory after, empty; and
+2026-09-07T00:00:25Z (RFD66606-2233) 'Inventory before, non-empty; the same inventory after, empty; and what improved beyond the task.
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:48Z (RFD66606-2233) 'what improved beyond the task.
+2026-09-07T00:00:26Z (RFD66606-2233) '    # red side
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:49Z (RFD66606-2233) '
+2026-09-07T00:00:27Z (RFD66606-2233) '    pgrep -fl "fly proxy"        →  18477 fly proxy 18300:8300
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:50Z (RFD66606-2233) '    # red side
+2026-09-07T00:00:28Z (RFD66606-2233) '    ls /tmp/ff_cookies.sqlite    →  1.5 MB of session cookies in /tmp
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:51Z (RFD66606-2233) '    pgrep -fl "fly proxy"        →  18477 fly proxy 18300:8300
+2026-09-07T00:00:29Z (RFD66606-2233) '    ls ~/Library/.../.burrito/   →  two stale payload directories
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:52Z (RFD66606-2233) '    ls /tmp/ff_cookies.sqlite    →  1.5 MB of session cookies in /tmp
+2026-09-07T00:00:30Z (RFD66606-2233) '
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:53Z (RFD66606-2233) '    ls ~/Library/.../.burrito/   →  two stale payload directories
+2026-09-07T00:00:31Z (RFD66606-2233) '    # green side
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:54Z (RFD66606-2233) '
+2026-09-07T00:00:32Z (RFD66606-2233) '    pgrep -fl "fly proxy"        →  (nothing)
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:55Z (RFD66606-2233) '    # green side
+2026-09-07T00:00:33Z (RFD66606-2233) '    ls /tmp/ff_cookies.sqlite    →  (nothing)
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:56Z (RFD66606-2233) '    pgrep -fl "fly proxy"        →  (nothing)
+2026-09-07T00:00:34Z (RFD66606-2233) '    ls ~/Library/.../.burrito/   →  the current payload only
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:57Z (RFD66606-2233) '    ls /tmp/ff_cookies.sqlite    →  (nothing)
+2026-09-07T00:00:35Z (RFD66606-2233) 'Beyond the task: the planner defect was fixed upstream and released rather than worked around locally.
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:00:58Z (RFD66606-2233) '    ls ~/Library/.../.burrito/   →  the current payload only
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:00:59Z (RFD66606-2233) '
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:00Z (RFD66606-2233) 'Beyond the task: the planner defect was fixed upstream and released
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:01Z (RFD66606-2233) 'rather than worked around locally.
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:02Z (RFD66606-2233) 'What stays out of an RFD
+2026-09-07T00:00:36Z (RFD66606-2233) 'What stays out of an RFD
  # tags: rfd:details-heading
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:01:03Z (RFD66606-2233) 'Machine-local facts, ports, cache paths on one desk, credential
+2026-09-07T00:00:37Z (RFD66606-2233) 'Machine-local facts, ports, cache paths on one desk, credential store contents, tokens, belong to the desk that produced them, not to this record. The gate shapes above are the published part; the values flow through a logbook entry when they are measurements, and through nothing at all when they are secrets.
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:01:04Z (RFD66606-2233) 'store contents, tokens, belong to the desk that produced them, not
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:05Z (RFD66606-2233) 'to this record. The gate shapes above are the published part; the
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:06Z (RFD66606-2233) 'values flow through a logbook entry when they are measurements, and
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:07Z (RFD66606-2233) 'through nothing at all when they are secrets.
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:08Z (RFD66606-2233) 'The problem
+2026-09-07T00:00:38Z (RFD66606-2233) 'The problem
  # tags: rfd:details-heading
  Text:RFD2233  1 LINE
  Text:Written
 
-2026-09-07T00:01:09Z (RFD66606-2233) 'Sessions also shed side effects, stray processes, /tmp
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:10Z (RFD66606-2233) 'files, caches, credentials, that no gate inspects, and a defect can
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:11Z (RFD66606-2233) 'hide inside them. The first inventory run found a stale server
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:12Z (RFD66606-2233) 'holding a port behind a probe that reported the same identity for
- # tags: rfd:details
- Text:RFD2233  1 LINE
- Text:Written
-
-2026-09-07T00:01:13Z (RFD66606-2233) 'the broken and the fixed build.
+2026-09-07T00:00:39Z (RFD66606-2233) 'Sessions also shed side effects, stray processes, /tmp files, caches, credentials, that no gate inspects, and a defect can hide inside them. The first inventory run found a stale server holding a port behind a probe that reported the same identity for the broken and the fixed build.
  # tags: rfd:details
  Text:RFD2233  1 LINE
  Text:Written

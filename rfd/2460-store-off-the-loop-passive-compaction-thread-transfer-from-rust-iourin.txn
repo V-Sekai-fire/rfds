@@ -14,97 +14,37 @@
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2460) 'Can the store's compaction run on its own thread, on a timer, so a write caller never pays a
+2026-11-07T00:00:03Z (RFD66606-2460) 'Can the store's compaction run on its own thread, on a timer, so a write caller never pays a fold's cost on its own latency?
  # tags: rfd:hook
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2460) 'fold's cost on its own latency?
- # tags: rfd:hook
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2460) 'A winning entry in an outside challenge, rust-iouring-kensac, already runs its checkpoint and
+2026-11-07T00:00:04Z (RFD66606-2460) 'A winning entry in an outside challenge, rust-iouring-kensac, already runs its checkpoint and compaction off the write loop on a second, low-priority thread, so write callers never wait on it. The store's compaction today is demand-driven: a call to weft_compact_due blocks whichever caller happens to ask for it. That is exactly the kind of tail latency a day-long benchmark is built to catch, since it measures the slowest save a day reaches rather than a p99.
  # tags: rfd:intrigue
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2460) 'compaction off the write loop on a second, low-priority thread, so write callers never wait on
- # tags: rfd:intrigue
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2460) 'it. The store's compaction today is demand-driven: a call to weft_compact_due blocks whichever
- # tags: rfd:intrigue
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2460) 'caller happens to ask for it. That is exactly the kind of tail latency a day-long benchmark is
- # tags: rfd:intrigue
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2460) 'built to catch, since it measures the slowest save a day reaches rather than a p99.
- # tags: rfd:intrigue
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2460) 'Add a dedicated, nice'd compaction thread on its own FoundationDB connection, and measure
+2026-11-07T00:00:05Z (RFD66606-2460) 'Add a dedicated, nice'd compaction thread on its own FoundationDB connection, and measure whether a planted burst of writes still shows a fold cost on the write caller's own latency.
  # tags: rfd:exit
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2460) 'whether a planted burst of writes still shows a fold cost on the write caller's own latency.
- # tags: rfd:exit
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2460) '- Add a dedicated, lower-priority compaction thread that opens its own FoundationDB connection
+2026-11-07T00:00:06Z (RFD66606-2460) '- Add a dedicated, lower-priority compaction thread that opens its own FoundationDB connection and runs folds passively on a timer once the log grows past a threshold, instead of folding on demand inside the caller's path.
  # tags: rfd:decision
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2460) '  and runs folds passively on a timer once the log grows past a threshold, instead of folding
+2026-11-07T00:00:07Z (RFD66606-2460) '- Change weft_compact_due from a blocking fold into a cheap call that wakes the thread when the log is already short, so the write loop never performs the fold itself.
  # tags: rfd:decision
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2460) '  on demand inside the caller's path.
+2026-11-07T00:00:08Z (RFD66606-2460) '- Bound the hold time the compaction thread may take per pass, following the referenced entry's bound of at most 250 milliseconds, so passive compaction cannot itself become a tail-latency source.
  # tags: rfd:decision
  Text:RFD2460  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2460) '- Change weft_compact_due from a blocking fold into a cheap call that wakes the thread when the
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2460) '  log is already short, so the write loop never performs the fold itself.
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2460) '- Bound the hold time the compaction thread may take per pass, following the referenced
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2460) '  entry's bound of at most 250 milliseconds, so passive compaction cannot itself become a
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2460) '  tail-latency source.
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2460) '- Verify the change against the existing day-long benchmark that measures the slowest saves a
- # tags: rfd:decision
- Text:RFD2460  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2460) '  day reaches, not only the median or the p99.
+2026-11-07T00:00:09Z (RFD66606-2460) '- Verify the change against the existing day-long benchmark that measures the slowest saves a day reaches, not only the median or the p99.
  # tags: rfd:decision
  Text:RFD2460  1 LINE
  Text:Written

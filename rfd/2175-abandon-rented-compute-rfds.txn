@@ -19,132 +19,47 @@
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2175) 'CLAUDE.md's hard constraint is "the local desktop GPU is the only compute; RunPod and Vast.ai
+2026-09-02T00:00:04Z (RFD66606-2175) 'CLAUDE.md's hard constraint is "the local desktop GPU is the only compute; RunPod and Vast.ai blocklisted". Five open RFDs still name rented compute as their decision.
  # tags: rfd:intrigue
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:05Z (RFD66606-2175) 'blocklisted". Five open RFDs still name rented compute as their decision.
- # tags: rfd:intrigue
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:06Z (RFD66606-2175) 'Read RFD66606-2169 next, the companion walk-back of the same class.
+2026-09-02T00:00:05Z (RFD66606-2175) 'Read RFD66606-2169 next, the companion walk-back of the same class.
  # tags: rfd:exit
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:07Z (RFD66606-2175) 'Abandon RFDs whose decision uses blocklisted rented compute
+2026-09-02T00:00:06Z (RFD66606-2175) 'Abandon RFDs whose decision uses blocklisted rented compute
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:08Z (RFD66606-2175) 'Abandon five RFDs (1132, 1140, 1163, 2133, 2138) whose decisions name RunPod or Vast.ai rented
+2026-09-02T00:00:07Z (RFD66606-2175) 'Abandon five RFDs (1132, 1140, 1163, 2133, 2138) whose decisions name RunPod or Vast.ai rented compute, which CLAUDE.md's hard constraint blocklisted when this was written. Each moves to `abandoned` alongside this document landing. The Compute rule re-allowed rented providers on 2026-11-04; the five stay abandoned to keep the scope down.
  # tags: rfd:decision
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:09Z (RFD66606-2175) 'compute, which CLAUDE.md's hard constraint blocklisted when this was written. Each moves to
- # tags: rfd:decision
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:10Z (RFD66606-2175) '`abandoned` alongside this document landing. The Compute rule re-allowed rented providers on
- # tags: rfd:decision
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:11Z (RFD66606-2175) '2026-11-04; the five stay abandoned to keep the scope down.
- # tags: rfd:decision
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2175) 'Retracts: urn:oid:1.3.6.1.4.1.66606.1.1.{1132,1140,1163},
+2026-09-02T00:00:08Z (RFD66606-2175) 'Retracts: urn:oid:1.3.6.1.4.1.66606.1.1.{1132,1140,1163}, urn:oid:1.3.6.1.4.1.66606.1.2.{2133,2138} Anchor: CLAUDE.md's Compute hard constraint as it stood when this was written. Companion: RFD66606-2169 (studio-core abandonment), same class of walk-back.
  # tags: rfd:related
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:13Z (RFD66606-2175) 'urn:oid:1.3.6.1.4.1.66606.1.2.{2133,2138}
- # tags: rfd:related
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:14Z (RFD66606-2175) 'Anchor: CLAUDE.md's Compute hard constraint as it stood when this was written.
- # tags: rfd:related
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:15Z (RFD66606-2175) 'Companion: RFD66606-2169 (studio-core abandonment), same class of walk-back.
- # tags: rfd:related
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:16Z (RFD66606-2175) 'The five
+2026-09-02T00:00:09Z (RFD66606-2175) 'The five
  # tags: rfd:details-heading
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:17Z (RFD66606-2175) '  RFD66606-1140  Rented GPUs on RunPod. Decision 'rented GPU work runs
+2026-09-02T00:00:10Z (RFD66606-2175) '  RFD66606-1140  Rented GPUs on RunPod. Decision 'rented GPU work runs on RunPod' contradicts CLAUDE.md's RunPod blocklist. RFD66606-1132  Priority list of converted models. RunPod as serving interactor. Same contradiction. RFD66606-1163  The accelerator in the loops. 'flow runs on RunPod'. RFD66606-2133  The pool rents from the spot book. 'Rent single RTX 4090s from the vast.ai book'. RFD66606-2138  interactor-shuttle. Merges the spot-broker whose whole reason was renting vast.ai. Abandoned with 2133.
  # tags: rfd:details
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:18Z (RFD66606-2175) '            on RunPod' contradicts CLAUDE.md's RunPod blocklist.
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:19Z (RFD66606-2175) '  RFD66606-1132  Priority list of converted models. RunPod as serving
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:20Z (RFD66606-2175) '            interactor. Same contradiction.
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2175) '  RFD66606-1163  The accelerator in the loops. 'flow runs on RunPod'.
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2175) '  RFD66606-2133  The pool rents from the spot book. 'Rent single
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2175) '            RTX 4090s from the vast.ai book'.
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2175) '  RFD66606-2138  interactor-shuttle. Merges the spot-broker whose whole
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:25Z (RFD66606-2175) '            reason was renting vast.ai. Abandoned with 2133.
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2175) 'The problem
+2026-09-02T00:00:11Z (RFD66606-2175) 'The problem
  # tags: rfd:details-heading
  Text:RFD2175  1 LINE
  Text:Written
 
-2026-09-02T00:00:27Z (RFD66606-2175) 'The RFD's whole reason for existing contradicts the blocklist. The RFDs themselves stay in
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:28Z (RFD66606-2175) 'the register for citation, per CLAUDE.md's "retractions stay in place next to what they
- # tags: rfd:details
- Text:RFD2175  1 LINE
- Text:Written
-
-2026-09-02T00:00:29Z (RFD66606-2175) 'retract".
+2026-09-02T00:00:12Z (RFD66606-2175) 'The RFD's whole reason for existing contradicts the blocklist. The RFDs themselves stay in the register for citation, per CLAUDE.md's "retractions stay in place next to what they retract".
  # tags: rfd:details
  Text:RFD2175  1 LINE
  Text:Written

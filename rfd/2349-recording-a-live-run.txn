@@ -19,297 +19,137 @@
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:04Z (RFD66606-2349) 'Movie Maker renders at a fixed frame rate, so the game waits for the model and the video
+2026-10-30T00:00:04Z (RFD66606-2349) 'Movie Maker renders at a fixed frame rate, so the game waits for the model and the video hides its latency. A video of a live model must show the latency it has.
  # tags: rfd:intrigue
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2349) 'hides its latency. A video of a live model must show the latency it has.
- # tags: rfd:intrigue
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:06Z (RFD66606-2349) 'Read RFD66606-2345 for the format this RFD amends.
+2026-10-30T00:00:05Z (RFD66606-2349) 'Read RFD66606-2345 for the format this RFD amends.
  # tags: rfd:exit
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2349) 'The recorder, the codec, the check and what is open
+2026-10-30T00:00:06Z (RFD66606-2349) 'The recorder, the codec, the check and what is open
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:08Z (RFD66606-2349) 'A live run is recorded with the house recorder on the Mac at a
+2026-10-30T00:00:07Z (RFD66606-2349) 'A live run is recorded with the house recorder on the Mac at a 3840x2160 canvas. The recorder writes CineForm video and FLAC audio in Matroska through its custom output. The game runs on the wall clock and never waits for the model. Godot Movie Maker is blocklisted. FFmpeg never runs as a tool. RFD66606-2345's format stands; this RFD replaces its encoder, its live recorder and its file check.
  # tags: rfd:decision
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2349) '3840x2160 canvas. The recorder writes CineForm video and FLAC audio in
- # tags: rfd:decision
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:10Z (RFD66606-2349) 'Matroska through its custom output. The game runs on the wall clock
- # tags: rfd:decision
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:11Z (RFD66606-2349) 'and never waits for the model. Godot Movie Maker is blocklisted.
- # tags: rfd:decision
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2349) 'FFmpeg never runs as a tool. RFD66606-2345's format stands; this RFD
- # tags: rfd:decision
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2349) 'replaces its encoder, its live recorder and its file check.
- # tags: rfd:decision
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:14Z (RFD66606-2349) '- RFD66606-2345, the video format, which this RFD amends;
+2026-10-30T00:00:08Z (RFD66606-2349) '- RFD66606-2345, the video format, which this RFD amends; RFD66606-2347, the decider-pong review.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:15Z (RFD66606-2349) '  RFD66606-2347, the decider-pong review.
+2026-10-30T00:00:09Z (RFD66606-2349) '- The private blocklist, which lists Movie Maker and FFmpeg as a tool.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:16Z (RFD66606-2349) '- The private blocklist, which lists Movie Maker and FFmpeg as a tool.
+2026-10-30T00:00:10Z (RFD66606-2349) '- The private manifest's issue on the parked Snake video, which records the rulings and the house recorder test.
  # tags: rfd:related
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:17Z (RFD66606-2349) '- The private manifest's issue on the parked Snake video, which
- # tags: rfd:related
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:18Z (RFD66606-2349) '  records the rulings and the house recorder test.
- # tags: rfd:related
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:19Z (RFD66606-2349) 'The operator's rulings, 2026-10-09 and 2026-10-10
+2026-10-30T00:00:11Z (RFD66606-2349) 'The operator's rulings, 2026-10-09 and 2026-10-10
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:20Z (RFD66606-2349) '- The recorder is the house recorder. Movie Maker is blocklisted.
+2026-10-30T00:00:12Z (RFD66606-2349) '- The recorder is the house recorder. Movie Maker is blocklisted.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2349) '- The video is 3840x2160. 2K is denied.
+2026-10-30T00:00:13Z (RFD66606-2349) '- The video is 3840x2160. 2K is denied.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2349) '- A video holds at least 2 minutes of real run time. A short run is
+2026-10-30T00:00:14Z (RFD66606-2349) '- A video holds at least 2 minutes of real run time. A short run is made longer by running longer, never by holding or repeating frames.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:23Z (RFD66606-2349) '  made longer by running longer, never by holding or repeating frames.
+2026-10-30T00:00:15Z (RFD66606-2349) '- The game ticks on the wall clock. A late reply applies at the next tick. With no reply the game takes its default move.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:24Z (RFD66606-2349) '- The game ticks on the wall clock. A late reply applies at the next
+2026-10-30T00:00:16Z (RFD66606-2349) '- CineForm everywhere. No ProRes is written and converted to CineForm.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:25Z (RFD66606-2349) '  tick. With no reply the game takes its default move.
+2026-10-30T00:00:17Z (RFD66606-2349) '- FFmpeg never runs as a tool, and headless Godot never runs.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:26Z (RFD66606-2349) '- CineForm everywhere. No ProRes is written and converted to CineForm.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:27Z (RFD66606-2349) '- FFmpeg never runs as a tool, and headless Godot never runs.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:28Z (RFD66606-2349) 'How the house recorder writes CineForm
+2026-10-30T00:00:18Z (RFD66606-2349) 'How the house recorder writes CineForm
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:29Z (RFD66606-2349) 'The house recorder's current release ships the `cfhd` CineForm
+2026-10-30T00:00:19Z (RFD66606-2349) 'The house recorder's current release ships the `cfhd` CineForm encoder. Its custom output, built on FFmpeg, is set to Matroska with `cfhd` video and FLAC audio. In a still-frame test every frame decoded through the CineForm SDK at 39.4 dB against the input. The control, the same input shifted 40 px, scored 16.3 dB.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2349) 'encoder. Its custom output, built on FFmpeg, is set to Matroska with
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:31Z (RFD66606-2349) '`cfhd` video and FLAC audio. In a still-frame test every frame decoded
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:32Z (RFD66606-2349) 'through the CineForm SDK at 39.4 dB against the input. The control,
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:33Z (RFD66606-2349) 'the same input shifted 40 px, scored 16.3 dB.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:34Z (RFD66606-2349) 'Encoding outside the house recorder
+2026-10-30T00:00:20Z (RFD66606-2349) 'Encoding outside the house recorder
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:35Z (RFD66606-2349) 'A render that is not a live capture encodes with the CineForm SDK
+2026-10-30T00:00:21Z (RFD66606-2349) 'A render that is not a live capture encodes with the CineForm SDK through the engine's CineForm module or the CineForm interactor. Delivery uses the AV1-in-Matroska interactor's `deliver.exs`. It rewraps the frames byte for byte and checks every frame and sample.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:36Z (RFD66606-2349) 'through the engine's CineForm module or the CineForm interactor.
+2026-10-30T00:00:22Z (RFD66606-2349) '- A render reel records through the engine's movie writer straight to CineForm. It writes no PNG frames to encode later (operator, 2026-10-17).
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:37Z (RFD66606-2349) 'Delivery uses the AV1-in-Matroska interactor's `deliver.exs`. It
+2026-10-30T00:00:23Z (RFD66606-2349) '- Large media and videos are kept on the Windows desk, not on the Mac mini, which sits on a remote network (operator, 2026-10-17). A render made on the Mac is copied to the desk, its size is read back there, and only then is the Mac copy deleted.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2349) 'rewraps the frames byte for byte and checks every frame and sample.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:39Z (RFD66606-2349) '- A render reel records through the engine's movie writer straight to
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:40Z (RFD66606-2349) '  CineForm. It writes no PNG frames to encode later (operator,
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:41Z (RFD66606-2349) '  2026-10-17).
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:42Z (RFD66606-2349) '- Large media and videos are kept on the Windows desk, not on the
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:43Z (RFD66606-2349) '  Mac mini, which sits on a remote network (operator, 2026-10-17). A
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:44Z (RFD66606-2349) '  render made on the Mac is copied to the desk, its size is read back
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:45Z (RFD66606-2349) '  there, and only then is the Mac copy deleted.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:46Z (RFD66606-2349) 'How a file is checked
+2026-10-30T00:00:24Z (RFD66606-2349) 'How a file is checked
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:47Z (RFD66606-2349) '`deliver.exs` checks every frame and every sample. `av1mkv dump-frame`
+2026-10-30T00:00:25Z (RFD66606-2349) '`deliver.exs` checks every frame and every sample. `av1mkv dump-frame` pulls frames, and a person looks at them. The run's length is gated from the frames' own timestamps, and a short frame set is the control that must fail. The frames and samples are the check, whatever exit code the recorder returns.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:48Z (RFD66606-2349) 'pulls frames, and a person looks at them. The run's length is gated
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:49Z (RFD66606-2349) 'from the frames' own timestamps, and a short frame set is the control
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:50Z (RFD66606-2349) 'that must fail. The frames and samples are the check, whatever exit
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:51Z (RFD66606-2349) 'code the recorder returns.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:52Z (RFD66606-2349) 'Still open
+2026-10-30T00:00:26Z (RFD66606-2349) 'Still open
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:53Z (RFD66606-2349) '- The house recorder's custom output uses FFmpeg's encoder inside the
+2026-10-30T00:00:27Z (RFD66606-2349) '- The house recorder's custom output uses FFmpeg's encoder inside the recorder. The ruling bans FFmpeg as a tool, and the Snake video issue records the house recorder as the route. The operator has not ruled on whether the licence reason reaches the house recorder.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:54Z (RFD66606-2349) '  recorder. The ruling bans FFmpeg as a tool, and the Snake video
+2026-10-30T00:00:28Z (RFD66606-2349) '- The decider-pong recorders named in RFD66606-2345 still call `ffmpeg`. They move to the house recorder or the SDK route when that project is next worked on.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2349) '  issue records the house recorder as the route. The operator has not
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:56Z (RFD66606-2349) '  ruled on whether the licence reason reaches the house recorder.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2349) '- The decider-pong recorders named in RFD66606-2345 still call
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:58Z (RFD66606-2349) '  `ffmpeg`. They move to the house recorder or the SDK route when that
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:00:59Z (RFD66606-2349) '  project is next worked on.
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:00Z (RFD66606-2349) 'The problem
+2026-10-30T00:00:29Z (RFD66606-2349) 'The problem
  # tags: rfd:details-heading
  Text:RFD2349  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2349) 'RFD66606-2345 encodes with the homebrew `ffmpeg` and checks files with
- # tags: rfd:details
- Text:RFD2349  1 LINE
- Text:Written
-
-2026-10-30T00:01:02Z (RFD66606-2349) '`ffprobe`. FFmpeg as a tool is now banned.
+2026-10-30T00:00:30Z (RFD66606-2349) 'RFD66606-2345 encodes with the homebrew `ffmpeg` and checks files with `ffprobe`. FFmpeg as a tool is now banned.
  # tags: rfd:details
  Text:RFD2349  1 LINE
  Text:Written

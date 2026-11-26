@@ -9,992 +9,427 @@
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2021) 'The `manuals` repo had no branch protection on `main`. Changes landed by pushing directly
+2026-08-25T00:00:02Z (RFD66606-2021) 'The `manuals` repo had no branch protection on `main`. Changes landed by pushing directly or by manually merging pull requests, with no guarantee that a PR's checks ran against the tip it was about to join.
  # tags: rfd:intrigue
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-2021) 'or by manually merging pull requests, with no guarantee that a PR's checks ran against the
- # tags: rfd:intrigue
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-2021) 'tip it was about to join.
- # tags: rfd:intrigue
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-2021) 'Run `gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'` to confirm the rule list
+2026-08-25T00:00:03Z (RFD66606-2021) 'Run `gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'` to confirm the rule list carries no `merge_queue` entry, and read below for the merge-method argument.
  # tags: rfd:exit
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-2021) 'carries no `merge_queue` entry, and read below for the merge-method argument.
- # tags: rfd:exit
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-2021) 'Require pr and merge queue on main
+2026-08-25T00:00:04Z (RFD66606-2021) 'Require pr and merge queue on main
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2021) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:05Z (RFD66606-2021) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2021) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2021) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2021) 'The problem
+2026-08-25T00:00:07Z (RFD66606-2021) 'The problem
  # tags: rfd:details-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2021) 'Two PRs can each pass against an older `main` and then conflict or
+2026-08-25T00:00:08Z (RFD66606-2021) 'Two PRs can each pass against an older `main` and then conflict or break the Quarto build once both land. How should changes reach `main` so that every merge is reviewable and tested against the tip it will actually join?
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2021) 'break the Quarto build once both land. How should changes reach `main`
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-2021) 'so that every merge is reviewable and tested against the tip it will
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-2021) 'actually join?
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-2021) 'Context and problem statement
+2026-08-25T00:00:09Z (RFD66606-2021) 'Context and problem statement
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-2021) 'The `manuals` repo had no branch protection on `main`. Changes landed
+2026-08-25T00:00:10Z (RFD66606-2021) 'The `manuals` repo had no branch protection on `main`. Changes landed by pushing directly or by manually merging pull requests, with no guarantee that a PR's checks ran against the tip it was about to join. Two PRs can each pass against an older `main` and then conflict or break the Quarto build once both land. How should changes reach `main` so that every merge is reviewable and tested against the tip it will actually join?
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-2021) 'by pushing directly or by manually merging pull requests, with no
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-2021) 'guarantee that a PR's checks ran against the tip it was about to
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-2021) 'join. Two PRs can each pass against an older `main` and then conflict
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-2021) 'or break the Quarto build once both land. How should changes reach
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-2021) '`main` so that every merge is reviewable and tested against the tip it
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-2021) 'will actually join?
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-2021) 'Decision drivers
+2026-08-25T00:00:11Z (RFD66606-2021) 'Decision drivers
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2021) '- Every change to `main` should arrive through a pull request, not a
+2026-08-25T00:00:12Z (RFD66606-2021) '- Every change to `main` should arrive through a pull request, not a direct push.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2021) '  direct push.
+2026-08-25T00:00:13Z (RFD66606-2021) '- A PR should be validated against the latest `main` before it lands.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-2021) '- A PR should be validated against the latest `main` before it lands.
+2026-08-25T00:00:14Z (RFD66606-2021) '- The team is small, so the process should add little ceremony (no mandatory second reviewer, no enqueue step).
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-2021) '- The team is small, so the process should add little ceremony (no
+2026-08-25T00:00:15Z (RFD66606-2021) '- The setting should be declarative and recorded, not click-ops folklore.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-2021) '  mandatory second reviewer, no enqueue step).
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-2021) '- The setting should be declarative and recorded, not click-ops
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:30Z (RFD66606-2021) '  folklore.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:31Z (RFD66606-2021) 'Considered options
+2026-08-25T00:00:16Z (RFD66606-2021) 'Considered options
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2021) '- Leave `main` unprotected (status quo).
+2026-08-25T00:00:17Z (RFD66606-2021) '- Leave `main` unprotected (status quo).
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:33Z (RFD66606-2021) '- Branch protection requiring a pull request only.
+2026-08-25T00:00:18Z (RFD66606-2021) '- Branch protection requiring a pull request only.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:34Z (RFD66606-2021) '- A repository ruleset requiring a pull request plus a merge queue.
+2026-08-25T00:00:19Z (RFD66606-2021) '- A repository ruleset requiring a pull request plus a merge queue.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2021) '- A repository ruleset requiring a pull request plus strict required
+2026-08-25T00:00:20Z (RFD66606-2021) '- A repository ruleset requiring a pull request plus strict required status checks.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2021) '  status checks.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-2021) 'Decision outcome
+2026-08-25T00:00:21Z (RFD66606-2021) 'Decision outcome
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2021) 'Chosen option: a repository ruleset requiring a pull request plus
+2026-08-25T00:00:22Z (RFD66606-2021) 'Chosen option: a repository ruleset requiring a pull request plus strict required status checks, because it keeps `main` PR-only and tests each change against the current tip without forcing a second reviewer or an enqueue step.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2021) 'strict required status checks, because it keeps `main` PR-only and
+2026-08-25T00:00:23Z (RFD66606-2021) 'The ruleset targets the default branch with these rules:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2021) 'tests each change against the current tip without forcing a second
+2026-08-25T00:00:24Z (RFD66606-2021) '- Block branch deletion and non-fast-forward pushes.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2021) 'reviewer or an enqueue step.
+2026-08-25T00:00:25Z (RFD66606-2021) '- Require a pull request, with `0` required approvals (review is allowed, not mandated).
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2021) '
+2026-08-25T00:00:26Z (RFD66606-2021) '- Require status check `prek`, with `strict_required_status_checks_policy` set to `true`, so a PR whose branch is behind `main` updates and re-runs its checks before it merges.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2021) 'The ruleset targets the default branch with these rules:
+2026-08-25T00:00:27Z (RFD66606-2021) 'Alongside the ruleset, the repository sets `delete_branch_on_merge`, so a merged PR's source branch is removed automatically.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2021) '
+2026-08-25T00:00:28Z (RFD66606-2021) '### The merge method
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:45Z (RFD66606-2021) '- Block branch deletion and non-fast-forward pushes.
+2026-08-25T00:00:29Z (RFD66606-2021) '`allow_squash_merge` and `allow_rebase_merge` are both `false`, leaving `allow_merge_commit` as the only way a pull request can land. Auto-merge stays enabled; with the other two off it can only produce a merge commit.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:46Z (RFD66606-2021) '- Require a pull request, with `0` required approvals (review is
+2026-08-25T00:00:30Z (RFD66606-2021) 'This is not a preference for more commits. A split costs CI linearly: every commit must pass on its own, so a branch of `n` commits is `n` verifications and not one, paid again on every push while the branch lives. Against that a split buys understandability, review reads one idea at a time, and `git bisect` lands on a change small enough to read rather than on a whole feature.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:47Z (RFD66606-2021) '  allowed, not mandated).
+2026-08-25T00:00:31Z (RFD66606-2021) 'The trade is real in both directions and it is decided per branch. Most branches are one idea and should be squashed locally before the pull request is final; the doc-gate port in `fabric#52` was collapsed from four commits to one for exactly that reason. A split earns its keep only when the concerns are independent, as in `fabric#54`, where a new gate and a documentation correction had nothing to do with each other and each passed alone.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:48Z (RFD66606-2021) '- Require status check `prek`, with
+2026-08-25T00:00:32Z (RFD66606-2021) 'So the question the setting answers is not how many commits a branch should have. It is who decides, and when:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:49Z (RFD66606-2021) '  `strict_required_status_checks_policy` set to `true`, so a PR whose
+2026-08-25T00:00:33Z (RFD66606-2021) '- Squashing at merge time decides for every branch, after review, and collapses the series that was deliberately kept along with the ones that were not. The author already had the cheaper option, `git rebase -i` before marking the PR ready, and it costs the same CI either way, because the squashed branch is verified once as one commit.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:50Z (RFD66606-2021) '  branch is behind `main` updates and re-runs its checks before it
+2026-08-25T00:00:34Z (RFD66606-2021) '- A squash or a rebase also gives the merge a new SHA, so the branch tip is not an ancestor of the default branch afterwards. The documented post-merge check reads exactly that, and reported three complete merges as unmerged in a single day.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-2021) '  merges.
+2026-08-25T00:00:35Z (RFD66606-2021) 'The second could be answered by comparing trees instead of commits, and that change is worth making anyway because history already holds squashed merges. It does not answer the first.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-2021) '
+2026-08-25T00:00:36Z (RFD66606-2021) '### Why not a merge queue
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-2021) 'Alongside the ruleset, the repository sets `delete_branch_on_merge`, so
+2026-08-25T00:00:37Z (RFD66606-2021) 'The earlier form of this decision required a `merge_queue` rule. The queue serializes entries and builds each against the branch tip, which is worth its cost on a repo with enough concurrent PRs that rebasing by hand becomes the bottleneck. This repo merges documentation changes a few at a time, and the queue charged for capacity it never used:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-2021) 'a merged PR's source branch is removed automatically.
+2026-08-25T00:00:38Z (RFD66606-2021) '- Every merge needs an explicit enqueue step, and the queue snapshots the PR head at enqueue time, so a late fix races the merge and can be orphaned.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-2021) '
+2026-08-25T00:00:39Z (RFD66606-2021) '- `gh pr merge --delete-branch` fails while a queue is enabled ("Cannot use `-d` or `--delete-branch` when merge queue enabled"), so branch cleanup has to move to the repo-level `delete_branch_on_merge` setting.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-2021) '### The merge method
+2026-08-25T00:00:40Z (RFD66606-2021) '- The `merge_queue` rule names no CI job on its own. A ruleset carrying `pull_request` + `merge_queue` and no `required_status_checks` rule merges a PR through the queue even when every check on it failed. This bit two dependent repos (`taskweft/taskweft`, `taskweft/nif`).
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-2021) '
+2026-08-25T00:00:41Z (RFD66606-2021) 'The strict `required_status_checks` policy keeps the property the queue was there for, a change is tested against the tip it joins, and the enqueue discipline goes away with it.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:00:58Z (RFD66606-2021) '`allow_squash_merge` and `allow_rebase_merge` are both `false`, leaving
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-2021) '`allow_merge_commit` as the only way a pull request can land. Auto-merge
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-2021) 'stays enabled; with the other two off it can only produce a merge commit.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-2021) 'This is not a preference for more commits. A split costs CI linearly:
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-2021) 'every commit must pass on its own, so a branch of `n` commits is `n`
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-2021) 'verifications and not one, paid again on every push while the branch
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-2021) 'lives. Against that a split buys understandability, review reads one
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-2021) 'idea at a time, and `git bisect` lands on a change small enough to read
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-2021) 'rather than on a whole feature.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-2021) 'The trade is real in both directions and it is decided per branch. Most
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:10Z (RFD66606-2021) 'branches are one idea and should be squashed locally before the pull
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:11Z (RFD66606-2021) 'request is final; the doc-gate port in `fabric#52` was collapsed from
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-2021) 'four commits to one for exactly that reason. A split earns its keep only
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-2021) 'when the concerns are independent, as in `fabric#54`, where a new gate
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:14Z (RFD66606-2021) 'and a documentation correction had nothing to do with each other and
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-2021) 'each passed alone.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-2021) 'So the question the setting answers is not how many commits a branch
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:18Z (RFD66606-2021) 'should have. It is who decides, and when:
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:19Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:20Z (RFD66606-2021) '- Squashing at merge time decides for every branch, after review, and
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:21Z (RFD66606-2021) '  collapses the series that was deliberately kept along with the ones
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:22Z (RFD66606-2021) '  that were not. The author already had the cheaper option, `git rebase
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:23Z (RFD66606-2021) '-i` before marking the PR ready, and it costs the same CI either way,
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:24Z (RFD66606-2021) '  because the squashed branch is verified once as one commit.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-2021) '- A squash or a rebase also gives the merge a new SHA, so the branch tip
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-2021) '  is not an ancestor of the default branch afterwards. The documented
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-2021) '  post-merge check reads exactly that, and reported three complete merges
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-2021) '  as unmerged in a single day.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-2021) 'The second could be answered by comparing trees instead of commits, and
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-2021) 'that change is worth making anyway because history already holds squashed
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-2021) 'merges. It does not answer the first.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-2021) '### Why not a merge queue
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-2021) 'The earlier form of this decision required a `merge_queue` rule. The
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-2021) 'queue serializes entries and builds each against the branch tip, which
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-2021) 'is worth its cost on a repo with enough concurrent PRs that rebasing by
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-2021) 'hand becomes the bottleneck. This repo merges documentation changes a
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-2021) 'few at a time, and the queue charged for capacity it never used:
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-2021) '- Every merge needs an explicit enqueue step, and the queue snapshots
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:43Z (RFD66606-2021) '  the PR head at enqueue time, so a late fix races the merge and can be
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-2021) '  orphaned.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-2021) '- `gh pr merge --delete-branch` fails while a queue is enabled
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:46Z (RFD66606-2021) '  ("Cannot use `-d` or `--delete-branch` when merge queue enabled"), so
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-2021) '  branch cleanup has to move to the repo-level
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:48Z (RFD66606-2021) '  `delete_branch_on_merge` setting.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:49Z (RFD66606-2021) '- The `merge_queue` rule names no CI job on its own. A ruleset carrying
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:50Z (RFD66606-2021) '  `pull_request` + `merge_queue` and no `required_status_checks` rule
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-2021) '  merges a PR through the queue even when every check on it failed.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:52Z (RFD66606-2021) '  This bit two dependent repos (`taskweft/taskweft`, `taskweft/nif`).
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:53Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-2021) 'The strict `required_status_checks` policy keeps the property the queue
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-2021) 'was there for, a change is tested against the tip it joins, and the
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-2021) 'enqueue discipline goes away with it.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-2021) 'Consequences
+2026-08-25T00:00:42Z (RFD66606-2021) 'Consequences
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:01:58Z (RFD66606-2021) '- Good: `main` only changes through PRs, and a PR behind the tip
+2026-08-25T00:00:43Z (RFD66606-2021) '- Good: `main` only changes through PRs, and a PR behind the tip updates and re-runs its checks before it lands.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:01:59Z (RFD66606-2021) '  updates and re-runs its checks before it lands.
+2026-08-25T00:00:44Z (RFD66606-2021) '- Good: the configuration is captured here and reproducible from the ruleset JSON.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:00Z (RFD66606-2021) '- Good: the configuration is captured here and reproducible from the
+2026-08-25T00:00:45Z (RFD66606-2021) '- Good: merging is a single `gh pr merge` with no enqueue step and no dequeue-to-fix dance.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:01Z (RFD66606-2021) '  ruleset JSON.
+2026-08-25T00:00:46Z (RFD66606-2021) '- Bad: solo edits still need a PR.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:02Z (RFD66606-2021) '- Good: merging is a single `gh pr merge` with no enqueue step and no
+2026-08-25T00:00:47Z (RFD66606-2021) '- Bad: with `0` required approvals, the rule enforces process but not review, so an unreviewed PR can still merge.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:03Z (RFD66606-2021) '  dequeue-to-fix dance.
+2026-08-25T00:00:48Z (RFD66606-2021) '- Bad: strict checks re-run on update, so a burst of concurrent PRs costs one extra CI round per PR that falls behind, with no batching.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:04Z (RFD66606-2021) '- Bad: solo edits still need a PR.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-2021) '- Bad: with `0` required approvals, the rule enforces process but not
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:06Z (RFD66606-2021) '  review, so an unreviewed PR can still merge.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-2021) '- Bad: strict checks re-run on update, so a burst of concurrent PRs
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:08Z (RFD66606-2021) '  costs one extra CI round per PR that falls behind, with no batching.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:09Z (RFD66606-2021) 'Confirmation
+2026-08-25T00:00:49Z (RFD66606-2021) 'Confirmation
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:10Z (RFD66606-2021) 'The ruleset is active (id `17352485`). `gh api
+2026-08-25T00:00:50Z (RFD66606-2021) 'The ruleset is active (id `17352485`). `gh api repos/v-sekai-multiplayer-fabric/multiplayer-fabric-manuals/rulesets` lists it, a direct push to `main` is rejected, and the rule list carries no `merge_queue` entry:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-2021) 'repos/v-sekai-multiplayer-fabric/multiplayer-fabric-manuals/rulesets` lists it, a direct
+2026-08-25T00:00:51Z (RFD66606-2021) '```sh
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:12Z (RFD66606-2021) 'push to `main` is rejected, and the rule list carries no `merge_queue`
+2026-08-25T00:00:52Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:13Z (RFD66606-2021) 'entry:
+2026-08-25T00:00:53Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:14Z (RFD66606-2021) '
+2026-08-25T00:00:54Z (RFD66606-2021) '`gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[] | select(.type == "required_status_checks")'` returns the rule with the expected job names and `strict_required_status_checks_policy: true`, and a PR with a failing check cannot merge.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:15Z (RFD66606-2021) '```sh
+2026-08-25T00:00:55Z (RFD66606-2021) '`gh api repos/v-sekai-multiplayer-fabric/<repo> --jq .delete_branch_on_merge` returns `true`, and the source branch of a merged PR no longer exists.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:16Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'
+2026-08-25T00:00:56Z (RFD66606-2021) 'In the RFD repository, ruleset `23145233` carries `deletion`, `pull_request` and `merge_queue`, and no `required_status_checks` rule (operator, 2026-11-13). As the section on the merge queue says of such a ruleset, the queue merges a pull request whatever `prek` reports. The gate is run on the desk before a pull request is enqueued: both steps of the `prek` job, on the Erlang/OTP and Elixir versions the workflow pins.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:17Z (RFD66606-2021) '```
+2026-08-25T00:00:57Z (RFD66606-2021) 'The rule was removed while a `prek` job sat queued for 26 minutes with no runner to take it. The command is the one under More information, sent with the rule left out:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:18Z (RFD66606-2021) '
+2026-08-25T00:00:58Z (RFD66606-2021) '```sh
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:19Z (RFD66606-2021) '`gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[] | select(.type
+2026-08-25T00:00:59Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:20Z (RFD66606-2021) '== "required_status_checks")'` returns the rule with the expected job
+2026-08-25T00:01:00Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:21Z (RFD66606-2021) 'names and `strict_required_status_checks_policy: true`, and a PR with a
+2026-08-25T00:01:01Z (RFD66606-2021) 'prints `deletion`, `pull_request` and `merge_queue`.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:22Z (RFD66606-2021) 'failing check cannot merge.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:23Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-2021) '`gh api repos/v-sekai-multiplayer-fabric/<repo> --jq
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:25Z (RFD66606-2021) '.delete_branch_on_merge` returns `true`, and the source branch of a
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-2021) 'merged PR no longer exists.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:27Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:28Z (RFD66606-2021) 'In the RFD repository, ruleset `23145233` carries `deletion`, `pull_request` and
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:29Z (RFD66606-2021) '`merge_queue`, and no `required_status_checks` rule (operator, 2026-11-13). As the section
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:30Z (RFD66606-2021) 'on the merge queue says of such a ruleset, the queue merges a pull request whatever `prek`
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:31Z (RFD66606-2021) 'reports. The gate is run on the desk before a pull request is enqueued: both steps of the
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:32Z (RFD66606-2021) '`prek` job, on the Erlang/OTP and Elixir versions the workflow pins.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:33Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-2021) 'The rule was removed while a `prek` job sat queued for 26 minutes with no runner to take
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-2021) 'it. The command is the one under More information, sent with the rule left out:
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:36Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-2021) '```sh
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:38Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules[].type'
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:39Z (RFD66606-2021) '```
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:40Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-2021) 'prints `deletion`, `pull_request` and `merge_queue`.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:02:42Z (RFD66606-2021) 'More information
+2026-08-25T00:01:02Z (RFD66606-2021) 'More information
  # tags: rfd:madr-heading
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:43Z (RFD66606-2021) 'The ruleset is edited with `gh api -X PUT
+2026-08-25T00:01:03Z (RFD66606-2021) 'The ruleset is edited with `gh api -X PUT repos/<org>/<repo>/rulesets/<id> --input ruleset.json`. The API replaces the whole rule array, so read the current rules first and send back every rule to keep, not only the one being changed:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:44Z (RFD66606-2021) 'repos/<org>/<repo>/rulesets/<id> --input ruleset.json`. The API
+2026-08-25T00:01:04Z (RFD66606-2021) '```sh
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:45Z (RFD66606-2021) 'replaces the whole rule array, so read the current rules first and send
+2026-08-25T00:01:05Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules'
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:46Z (RFD66606-2021) 'back every rule to keep, not only the one being changed:
+2026-08-25T00:01:06Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:47Z (RFD66606-2021) '
+2026-08-25T00:01:07Z (RFD66606-2021) 'Job names to require come from a real PR's checks:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:48Z (RFD66606-2021) '```sh
+2026-08-25T00:01:08Z (RFD66606-2021) '```sh
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:49Z (RFD66606-2021) 'gh api repos/<org>/<repo>/rulesets/<id> --jq '.rules'
+2026-08-25T00:01:09Z (RFD66606-2021) 'gh pr checks <PR-number> --repo <org>/<repo>
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:50Z (RFD66606-2021) '```
+2026-08-25T00:01:10Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:51Z (RFD66606-2021) '
+2026-08-25T00:01:11Z (RFD66606-2021) 'and the status-check rule takes the shape:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:52Z (RFD66606-2021) 'Job names to require come from a real PR's checks:
+2026-08-25T00:01:12Z (RFD66606-2021) '```json
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:53Z (RFD66606-2021) '
+2026-08-25T00:01:13Z (RFD66606-2021) '{
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:54Z (RFD66606-2021) '```sh
+2026-08-25T00:01:14Z (RFD66606-2021) '  "type": "required_status_checks",
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:55Z (RFD66606-2021) 'gh pr checks <PR-number> --repo <org>/<repo>
+2026-08-25T00:01:15Z (RFD66606-2021) '  "parameters": {
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:56Z (RFD66606-2021) '```
+2026-08-25T00:01:16Z (RFD66606-2021) '    "strict_required_status_checks_policy": true,
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:57Z (RFD66606-2021) '
+2026-08-25T00:01:17Z (RFD66606-2021) '    "required_status_checks": [{ "context": "<job name from gh pr checks>" }]
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:58Z (RFD66606-2021) 'and the status-check rule takes the shape:
+2026-08-25T00:01:18Z (RFD66606-2021) '  }
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:02:59Z (RFD66606-2021) '
+2026-08-25T00:01:19Z (RFD66606-2021) '}
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:00Z (RFD66606-2021) '```json
+2026-08-25T00:01:20Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:01Z (RFD66606-2021) '{
+2026-08-25T00:01:21Z (RFD66606-2021) 'Change the policy by editing the ruleset rather than protecting the branch through the classic branch-protection API, so the two mechanisms do not overlap.
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:02Z (RFD66606-2021) '  "type": "required_status_checks",
+2026-08-25T00:01:22Z (RFD66606-2021) 'Apply the branch-cleanup setting declaratively:
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:03Z (RFD66606-2021) '  "parameters": {
+2026-08-25T00:01:23Z (RFD66606-2021) '```sh
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:04Z (RFD66606-2021) '    "strict_required_status_checks_policy": true,
+2026-08-25T00:01:24Z (RFD66606-2021) 'gh api -X PATCH repos/v-sekai-multiplayer-fabric/<repo> \
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:05Z (RFD66606-2021) '    "required_status_checks": [{ "context": "<job name from gh pr checks>" }]
+2026-08-25T00:01:25Z (RFD66606-2021) '  -F delete_branch_on_merge=true
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written
 
-2026-08-25T00:03:06Z (RFD66606-2021) '  }
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:07Z (RFD66606-2021) '}
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:08Z (RFD66606-2021) '```
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:09Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:10Z (RFD66606-2021) 'Change the policy by editing the ruleset rather than protecting the
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:11Z (RFD66606-2021) 'branch through the classic branch-protection API, so the two mechanisms
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:12Z (RFD66606-2021) 'do not overlap.
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:13Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:14Z (RFD66606-2021) 'Apply the branch-cleanup setting declaratively:
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:15Z (RFD66606-2021) '
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:16Z (RFD66606-2021) '```sh
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:17Z (RFD66606-2021) 'gh api -X PATCH repos/v-sekai-multiplayer-fabric/<repo> \
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:18Z (RFD66606-2021) '  -F delete_branch_on_merge=true
- # tags: rfd:details
- Text:RFD2021  1 LINE
- Text:Written
-
-2026-08-25T00:03:19Z (RFD66606-2021) '```
+2026-08-25T00:01:26Z (RFD66606-2021) '```
  # tags: rfd:details
  Text:RFD2021  1 LINE
  Text:Written

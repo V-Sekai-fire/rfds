@@ -19,887 +19,447 @@
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:04Z (RFD66606-2240) 'A `.cff` beside a clip is separated from it the first time either is copied, and no editor
+2026-09-08T00:00:04Z (RFD66606-2240) 'A `.cff` beside a clip is separated from it the first time either is copied, and no editor or player reads YAML attribution.
  # tags: rfd:intrigue
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:05Z (RFD66606-2240) 'or player reads YAML attribution.
- # tags: rfd:intrigue
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:06Z (RFD66606-2240) 'Run `mix cff.xmp` with `--check` on a sidecar to catch a stale derivation, and read below for
+2026-09-08T00:00:05Z (RFD66606-2240) 'Run `mix cff.xmp` with `--check` on a sidecar to catch a stale derivation, and read below for the mapping matrix and the precedence rules.
  # tags: rfd:exit
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:07Z (RFD66606-2240) 'the mapping matrix and the precedence rules.
- # tags: rfd:exit
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:08Z (RFD66606-2240) 'One citation, one metadata serialization, one vector pair, one intermediate, one review timeline
+2026-09-08T00:00:06Z (RFD66606-2240) 'One citation, one metadata serialization, one vector pair, one intermediate, one review timeline
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:09Z (RFD66606-2240) '`CITATION.cff` stays the master attribution record and every other metadata artefact is derived
+2026-09-08T00:00:07Z (RFD66606-2240) '`CITATION.cff` stays the master attribution record and every other metadata artefact is derived from it. The machine serialization is ISO 16684-1 (XMP) as RDF/XML, in a sidecar named for the asset's own stem, so a clip, a drawing or an animation carries its title, authors, licence and identifier wherever it travels. Static vector is W3C SVG, animated vector is Lottie under its IANA type `video/lottie+json` with the extension `.lot`, the intermediate is CineForm, and a review timeline is OpenTimelineIO with OpenColorIO naming the display. The converter is Elixir. `DETAILS.md` carries the mapping matrix, the precedence rules, and the two places this workspace differs from the specification as it arrived.
  # tags: rfd:decision
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:10Z (RFD66606-2240) 'from it. The machine serialization is ISO 16684-1 (XMP) as RDF/XML, in a sidecar named for the
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:11Z (RFD66606-2240) 'asset's own stem, so a clip, a drawing or an animation carries its title, authors, licence and
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:12Z (RFD66606-2240) 'identifier wherever it travels. Static vector is W3C SVG, animated vector is Lottie under its
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:13Z (RFD66606-2240) 'IANA type `video/lottie+json` with the extension `.lot`, the intermediate is CineForm, and a
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:14Z (RFD66606-2240) 'review timeline is OpenTimelineIO with OpenColorIO naming the display. The converter is Elixir.
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:15Z (RFD66606-2240) '`DETAILS.md` carries the mapping matrix, the precedence rules, and the two places this workspace
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:16Z (RFD66606-2240) 'differs from the specification as it arrived.
- # tags: rfd:decision
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:17Z (RFD66606-2240) '- W3C SVG 1.1 and 2.0; Lottie under IANA `video/lottie+json`
+2026-09-08T00:00:08Z (RFD66606-2240) '- W3C SVG 1.1 and 2.0; Lottie under IANA `video/lottie+json`
  # tags: rfd:references
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:18Z (RFD66606-2240) '- SMPTE VC-5, the CineForm intra-frame wavelet codec, and RFD66606-1123 which chose its SDK
+2026-09-08T00:00:09Z (RFD66606-2240) '- SMPTE VC-5, the CineForm intra-frame wavelet codec, and RFD66606-1123 which chose its SDK
  # tags: rfd:references
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:19Z (RFD66606-2240) '- Academy Software Foundation OpenTimelineIO and OpenColorIO 2
+2026-09-08T00:00:10Z (RFD66606-2240) '- Academy Software Foundation OpenTimelineIO and OpenColorIO 2
  # tags: rfd:references
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:20Z (RFD66606-2240) 'RFD66606-1123 (CineForm in Godot: the SDK over FFmpeg on licence), RFD66606-1137 (encoding a
+2026-09-08T00:00:11Z (RFD66606-2240) 'RFD66606-1123 (CineForm in Godot: the SDK over FFmpeg on licence), RFD66606-1137 (encoding a frame set, the working pair), RFD66606-2166 (the maskscore CineForm bundle), RFD66606-2239 (a row's artefacts as columns), RFD66606-2232 (documents rendered from a source).
  # tags: rfd:related
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:21Z (RFD66606-2240) 'frame set, the working pair), RFD66606-2166 (the maskscore CineForm bundle), RFD66606-2239 (a
- # tags: rfd:related
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:22Z (RFD66606-2240) 'row's artefacts as columns), RFD66606-2232 (documents rendered from a source).
- # tags: rfd:related
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:23Z (RFD66606-2240) 'Standards
+2026-09-08T00:00:12Z (RFD66606-2240) 'Standards
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:24Z (RFD66606-2240) 'Citation File Format 1.2.0, and ISO 16684-1:2012, the XMP data model and its RDF/XML
+2026-09-08T00:00:13Z (RFD66606-2240) 'Citation File Format 1.2.0, and ISO 16684-1:2012, the XMP data model and its RDF/XML serialization.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:25Z (RFD66606-2240) 'serialization.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:26Z (RFD66606-2240) 'What was missing
+2026-09-08T00:00:14Z (RFD66606-2240) 'What was missing
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:27Z (RFD66606-2240) 'The workspace already required a `.cff` beside a deliverable and already encoded intermediates
+2026-09-08T00:00:15Z (RFD66606-2240) 'The workspace already required a `.cff` beside a deliverable and already encoded intermediates as CineForm, but nothing said how a citation reaches the asset a reviewer opens. Review timelines had no interchange, the vector formats were used without being named, and the same citation was retyped by hand.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:28Z (RFD66606-2240) 'as CineForm, but nothing said how a citation reaches the asset a reviewer opens. Review
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:29Z (RFD66606-2240) 'timelines had no interchange, the vector formats were used without being
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:30Z (RFD66606-2240) 'named, and the same citation was retyped by hand.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:31Z (RFD66606-2240) 'The stack
+2026-09-08T00:00:16Z (RFD66606-2240) 'The stack
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:32Z (RFD66606-2240) '| layer | standard | in this workspace |
+2026-09-08T00:00:17Z (RFD66606-2240) '| layer | standard | in this workspace |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:33Z (RFD66606-2240) '| --- | --- | --- |
+2026-09-08T00:00:18Z (RFD66606-2240) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:34Z (RFD66606-2240) '| attribution record | Citation File Format 1.2.0 | `CITATION.cff`, one per placed project and one per deliverable |
+2026-09-08T00:00:19Z (RFD66606-2240) '| attribution record | Citation File Format 1.2.0 | `CITATION.cff`, one per placed project and one per deliverable |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:35Z (RFD66606-2240) '| metadata serialization | ISO 16684-1:2012 (XMP), RDF/XML | `<stem>.xmp` beside the asset; `CITATION.xmp` at a project root |
+2026-09-08T00:00:20Z (RFD66606-2240) '| metadata serialization | ISO 16684-1:2012 (XMP), RDF/XML | `<stem>.xmp` beside the asset; `CITATION.xmp` at a project root |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:36Z (RFD66606-2240) '| static vector | W3C SVG 1.1 / 2.0 | `.svg`, which may also carry the packet inline |
+2026-09-08T00:00:21Z (RFD66606-2240) '| static vector | W3C SVG 1.1 / 2.0 | `.svg`, which may also carry the packet inline |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:37Z (RFD66606-2240) '| animated vector | Lottie, IANA `video/lottie+json` | `.lot` with a mandatory sidecar |
+2026-09-08T00:00:22Z (RFD66606-2240) '| animated vector | Lottie, IANA `video/lottie+json` | `.lot` with a mandatory sidecar |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:38Z (RFD66606-2240) '| intermediate video | CineForm (SMPTE VC-5), intra-frame | `interactor-cineform` writing Matroska |
+2026-09-08T00:00:23Z (RFD66606-2240) '| intermediate video | CineForm (SMPTE VC-5), intra-frame | `interactor-cineform` writing Matroska |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:39Z (RFD66606-2240) '| review timeline | OpenTimelineIO | `.otio` under `review/` |
+2026-09-08T00:00:24Z (RFD66606-2240) '| review timeline | OpenTimelineIO | `.otio` under `review/` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:40Z (RFD66606-2240) '| display transform | OpenColorIO 2 | the configuration named by the timeline |
+2026-09-08T00:00:25Z (RFD66606-2240) '| display transform | OpenColorIO 2 | the configuration named by the timeline |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:41Z (RFD66606-2240) '
+2026-09-08T00:00:26Z (RFD66606-2240) 'Every layer is an open standard with a permissive implementation the workspace can link. That is the same argument RFD66606-1123 made when it chose the CineForm SDK, which is `Apache-2.0 OR MIT`, over an LGPL alternative that a single-binary export cannot relink.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:42Z (RFD66606-2240) 'Every layer is an open standard with a permissive implementation the
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:43Z (RFD66606-2240) 'workspace can link. That is the same argument RFD66606-1123 made when it chose
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:44Z (RFD66606-2240) 'the CineForm SDK, which is `Apache-2.0 OR MIT`, over an LGPL alternative
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:45Z (RFD66606-2240) 'that a single-binary export cannot relink.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:00:46Z (RFD66606-2240) 'Where a file goes
+2026-09-08T00:00:27Z (RFD66606-2240) 'Where a file goes
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:47Z (RFD66606-2240) '    project_root/
+2026-09-08T00:00:28Z (RFD66606-2240) '    project_root/
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:48Z (RFD66606-2240) '    |-- CITATION.cff                     the master record, hand-written
+2026-09-08T00:00:29Z (RFD66606-2240) '    |-- CITATION.cff                     the master record, hand-written
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:49Z (RFD66606-2240) '    |-- CITATION.xmp                     derived from it, never hand-written
+2026-09-08T00:00:30Z (RFD66606-2240) '    |-- CITATION.xmp                     derived from it, never hand-written
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:50Z (RFD66606-2240) '    |-- review/
+2026-09-08T00:00:31Z (RFD66606-2240) '    |-- review/
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:51Z (RFD66606-2240) '    |   |-- sequence_101_review.otio     the cut list, markers and annotation tracks
+2026-09-08T00:00:32Z (RFD66606-2240) '    |   |-- sequence_101_review.otio     the cut list, markers and annotation tracks
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:52Z (RFD66606-2240) '    |   `-- sequence_101_review.ocio     the display configuration
+2026-09-08T00:00:33Z (RFD66606-2240) '    |   `-- sequence_101_review.ocio     the display configuration
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:53Z (RFD66606-2240) '    `-- assets/
+2026-09-08T00:00:34Z (RFD66606-2240) '    `-- assets/
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:54Z (RFD66606-2240) '        |-- video/
+2026-09-08T00:00:35Z (RFD66606-2240) '        |-- video/
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:55Z (RFD66606-2240) '        |   |-- shot_010_comp.mkv        the CineForm intermediate
+2026-09-08T00:00:36Z (RFD66606-2240) '        |   |-- shot_010_comp.mkv        the CineForm intermediate
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:56Z (RFD66606-2240) '        |   `-- shot_010_comp.xmp        its sidecar
+2026-09-08T00:00:37Z (RFD66606-2240) '        |   `-- shot_010_comp.xmp        its sidecar
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:57Z (RFD66606-2240) '        `-- annotations/
+2026-09-08T00:00:38Z (RFD66606-2240) '        `-- annotations/
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:58Z (RFD66606-2240) '            |-- shot_010_draw.svg        static markup
+2026-09-08T00:00:39Z (RFD66606-2240) '            |-- shot_010_draw.svg        static markup
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:00:59Z (RFD66606-2240) '            |-- shot_010_draw.xmp
+2026-09-08T00:00:40Z (RFD66606-2240) '            |-- shot_010_draw.xmp
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:00Z (RFD66606-2240) '            |-- shot_010_anim.lot        animated markup
+2026-09-08T00:00:41Z (RFD66606-2240) '            |-- shot_010_anim.lot        animated markup
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:01Z (RFD66606-2240) '            `-- shot_010_anim.xmp
+2026-09-08T00:00:42Z (RFD66606-2240) '            `-- shot_010_anim.xmp
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:02Z (RFD66606-2240) '
+2026-09-08T00:00:43Z (RFD66606-2240) '**Stem parity.** A sidecar shares its asset's stem exactly and adds `.xmp`. Nothing else names a sidecar, and `CITATION.xmp` is the one file named for the record rather than for an asset.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:03Z (RFD66606-2240) '**Stem parity.** A sidecar shares its asset's stem exactly and adds `.xmp`.
+2026-09-08T00:00:44Z (RFD66606-2240) '**Precedence.** The `.cff` is the authority and every `.xmp` is derived from it, so a disagreement is a stale derivation and not a decision to be made. An SVG may carry its packet inline for standalone rendering, and the sidecar still wins at ingest, so one reader does not see one story and another a different one. A `.lot` never carries RDF: a Lottie player wants strictly formed JSON, and the sidecar is mandatory there for that reason. A CineForm file is left alone. Its extended metadata resolves through the sidecar.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:04Z (RFD66606-2240) 'Nothing else names a sidecar, and `CITATION.xmp` is the one file named for
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:05Z (RFD66606-2240) 'the record rather than for an asset.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:06Z (RFD66606-2240) '
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:07Z (RFD66606-2240) '**Precedence.** The `.cff` is the authority and every `.xmp` is derived from
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:08Z (RFD66606-2240) 'it, so a disagreement is a stale derivation and not a decision to be made.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:09Z (RFD66606-2240) 'An SVG may carry its packet inline for standalone rendering, and the sidecar
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:10Z (RFD66606-2240) 'still wins at ingest, so one reader does not see one story and another a
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:11Z (RFD66606-2240) 'different one. A `.lot` never carries RDF: a Lottie player wants strictly
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:12Z (RFD66606-2240) 'formed JSON, and the sidecar is mandatory there for that reason. A CineForm
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:13Z (RFD66606-2240) 'file is left alone. Its extended metadata resolves through the sidecar.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:14Z (RFD66606-2240) 'The mapping, CFF 1.2.0 to ISO 16684-1
+2026-09-08T00:00:45Z (RFD66606-2240) 'The mapping, CFF 1.2.0 to ISO 16684-1
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:15Z (RFD66606-2240) 'Namespaces: `dc:` Dublin Core, `xmp:` XMP Basic, `xmpRights:` Rights
+2026-09-08T00:00:46Z (RFD66606-2240) 'Namespaces: `dc:` Dublin Core, `xmp:` XMP Basic, `xmpRights:` Rights Management, `prism:` PRISM Basic, `xmpDM:` Dynamic Media, and `cff:` for the two fields no standard namespace carries.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:16Z (RFD66606-2240) 'Management, `prism:` PRISM Basic, `xmpDM:` Dynamic Media, and `cff:` for the
+2026-09-08T00:00:47Z (RFD66606-2240) '| CFF field | XMP property | RDF structure |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:17Z (RFD66606-2240) 'two fields no standard namespace carries.
+2026-09-08T00:00:48Z (RFD66606-2240) '| --- | --- | --- |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:18Z (RFD66606-2240) '
+2026-09-08T00:00:49Z (RFD66606-2240) '| `cff-version` | `cff:schemaVersion` | plain literal |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:19Z (RFD66606-2240) '| CFF field | XMP property | RDF structure |
+2026-09-08T00:00:50Z (RFD66606-2240) '| `title` | `dc:title` | `rdf:Alt` with `xml:lang="x-default"` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:20Z (RFD66606-2240) '| --- | --- | --- |
+2026-09-08T00:00:51Z (RFD66606-2240) '| `message` or `abstract` | `dc:description` | `rdf:Alt` with `xml:lang="x-default"` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:21Z (RFD66606-2240) '| `cff-version` | `cff:schemaVersion` | plain literal |
+2026-09-08T00:00:52Z (RFD66606-2240) '| `version` | `prism:version` and `xmp:Identifier` | plain literal |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:22Z (RFD66606-2240) '| `title` | `dc:title` | `rdf:Alt` with `xml:lang="x-default"` |
+2026-09-08T00:00:53Z (RFD66606-2240) '| `date-released` | `xmp:CreateDate` and `dc:date` | `rdf:Seq` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:23Z (RFD66606-2240) '| `message` or `abstract` | `dc:description` | `rdf:Alt` with `xml:lang="x-default"` |
+2026-09-08T00:00:54Z (RFD66606-2240) '| `authors` | `dc:creator` | `rdf:Seq`, order preserved |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:24Z (RFD66606-2240) '| `version` | `prism:version` and `xmp:Identifier` | plain literal |
+2026-09-08T00:00:55Z (RFD66606-2240) '| `license` | `dc:rights` and `xmpRights:Marked` | `rdf:Alt`, and `True` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:25Z (RFD66606-2240) '| `date-released` | `xmp:CreateDate` and `dc:date` | `rdf:Seq` |
+2026-09-08T00:00:56Z (RFD66606-2240) '| `doi` | `prism:doi` and `dc:identifier` | plain literal, `doi:` prefixed |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:26Z (RFD66606-2240) '| `authors` | `dc:creator` | `rdf:Seq`, order preserved |
+2026-09-08T00:00:57Z (RFD66606-2240) '| `repository-code` or `url` | `prism:url` and `dc:relation` | plain literal |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:27Z (RFD66606-2240) '| `license` | `dc:rights` and `xmpRights:Marked` | `rdf:Alt`, and `True` |
+2026-09-08T00:00:58Z (RFD66606-2240) '| `keywords` | `dc:subject` | `rdf:Bag` |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:28Z (RFD66606-2240) '| `doi` | `prism:doi` and `dc:identifier` | plain literal, `doi:` prefixed |
+2026-09-08T00:00:59Z (RFD66606-2240) '| `commit` | `cff:commit` | plain literal |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:29Z (RFD66606-2240) '| `repository-code` or `url` | `prism:url` and `dc:relation` | plain literal |
+2026-09-08T00:01:00Z (RFD66606-2240) 'An author with `name` is taken as written. One with `given-names` and `family-names` is joined in that order. `dc:format` carries the asset's media type, which is `video/lottie+json` for a `.lot`, `image/svg+xml` for an `.svg`, and the container's type for a clip. A media sidecar adds `xmpDM:videoFrameRate` and `xmpDM:duration`, which is what lets a timeline marker and an animation agree on a frame.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:30Z (RFD66606-2240) '| `keywords` | `dc:subject` | `rdf:Bag` |
+2026-09-08T00:01:01Z (RFD66606-2240) 'The packet is wrapped in the standard `xpacket` markers so a reader that scans a file for one finds it.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:31Z (RFD66606-2240) '| `commit` | `cff:commit` | plain literal |
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:32Z (RFD66606-2240) '
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:33Z (RFD66606-2240) 'An author with `name` is taken as written. One with `given-names` and
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:34Z (RFD66606-2240) '`family-names` is joined in that order. `dc:format` carries the asset's
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:35Z (RFD66606-2240) 'media type, which is `video/lottie+json` for a `.lot`, `image/svg+xml` for
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:36Z (RFD66606-2240) 'an `.svg`, and the container's type for a clip. A media sidecar adds
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:37Z (RFD66606-2240) '`xmpDM:videoFrameRate` and `xmpDM:duration`, which is what lets a timeline
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:38Z (RFD66606-2240) 'marker and an animation agree on a frame.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:39Z (RFD66606-2240) '
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:40Z (RFD66606-2240) 'The packet is wrapped in the standard `xpacket` markers so a reader that
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:41Z (RFD66606-2240) 'scans a file for one finds it.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:42Z (RFD66606-2240) 'Where this differs from the specification as it arrived
+2026-09-08T00:01:02Z (RFD66606-2240) 'Where this differs from the specification as it arrived
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:43Z (RFD66606-2240) 'Two differences, both because an existing decision already carries an
+2026-09-08T00:01:03Z (RFD66606-2240) 'Two differences, both because an existing decision already carries an argument.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:44Z (RFD66606-2240) 'argument.
+2026-09-08T00:01:04Z (RFD66606-2240) '**The container is Matroska, not QuickTime.** The specification wraps CineForm in `.mov`. RFD66606-1123 chose Matroska and recorded why: AVI's 32-bit size field stops a file at 4 GiB, about 56 seconds of 4K60 at these bitrates, and MOV performed the same as Matroska while being less open. &{repo("interactor-cineform")} writes Matroska today, with a `V_MS/VFW/FOURCC` video track carrying `CFHD` and an uncompressed PCM audio track. A specification that named the container differently does not undo a measurement, so the container stays Matroska and the sidecar rule is unchanged: the stem is the stem whatever the extension.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:45Z (RFD66606-2240) '
+2026-09-08T00:01:05Z (RFD66606-2240) '**The converter is Elixir, not Python.** The workspace's rule is that new scripting is Elixir and that a reader parses rather than matches text. The specification's reference implementation builds RDF with an XML tree, which is the right shape; it is transcribed rather than adopted. A Python file that survives in this workspace is a runner wrapping a model and says so in its first line, which a metadata converter is not.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:01:46Z (RFD66606-2240) '**The container is Matroska, not QuickTime.** The specification wraps
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:47Z (RFD66606-2240) 'CineForm in `.mov`. RFD66606-1123 chose Matroska and recorded why: AVI's 32-bit
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:48Z (RFD66606-2240) 'size field stops a file at 4 GiB, about 56 seconds of 4K60 at these
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:49Z (RFD66606-2240) 'bitrates, and MOV performed the same as Matroska while being less open.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:50Z (RFD66606-2240) '&{repo("interactor-cineform")} writes Matroska today, with a `V_MS/VFW/FOURCC` video
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:51Z (RFD66606-2240) 'track carrying `CFHD` and an uncompressed PCM audio track. A specification
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:52Z (RFD66606-2240) 'that named the container differently does not undo a measurement, so the
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:53Z (RFD66606-2240) 'container stays Matroska and the sidecar rule is unchanged: the stem is the
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:54Z (RFD66606-2240) 'stem whatever the extension.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:55Z (RFD66606-2240) '
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:56Z (RFD66606-2240) '**The converter is Elixir, not Python.** The workspace's rule is that new
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:57Z (RFD66606-2240) 'scripting is Elixir and that a reader parses rather than matches text. The
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:58Z (RFD66606-2240) 'specification's reference implementation builds RDF with an XML tree, which
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:01:59Z (RFD66606-2240) 'is the right shape; it is transcribed rather than adopted. A Python file
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:00Z (RFD66606-2240) 'that survives in this workspace is a runner wrapping a model and says so in
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:01Z (RFD66606-2240) 'its first line, which a metadata converter is not.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:02Z (RFD66606-2240) 'What is built and what is not
+2026-09-08T00:01:06Z (RFD66606-2240) 'What is built and what is not
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:03Z (RFD66606-2240) 'Read on this desk, 2026-09-08:
+2026-09-08T00:01:07Z (RFD66606-2240) 'Read on this desk, 2026-09-08:
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:04Z (RFD66606-2240) '
+2026-09-08T00:01:08Z (RFD66606-2240) '| piece | state |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:05Z (RFD66606-2240) '| piece | state |
+2026-09-08T00:01:09Z (RFD66606-2240) '| --- | --- |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:06Z (RFD66606-2240) '| --- | --- |
+2026-09-08T00:01:10Z (RFD66606-2240) '| `interactor-cineform` | source complete, **its own manifest root**; `contract-bus`, QCBOR, `cineform-sdk` and `libwebm` placed by it. Not compiled here |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:07Z (RFD66606-2240) '| `interactor-cineform` | source complete, **its own manifest root**; `contract-bus`, QCBOR, `cineform-sdk` and `libwebm` placed by it. Not compiled here |
+2026-09-08T00:01:11Z (RFD66606-2240) '| `transport-cineform-tui` | source complete, a manifest root of its own, the job sender over the bus |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:08Z (RFD66606-2240) '| `transport-cineform-tui` | source complete, a manifest root of its own, the job sender over the bus |
+2026-09-08T00:01:12Z (RFD66606-2240) '| `service-cineform` | composes the two so one `contract-bus` is checked out rather than two, and states which pin wins where they disagree |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:09Z (RFD66606-2240) '| `service-cineform` | composes the two so one `contract-bus` is checked out rather than two, and states which pin wins where they disagree |
+2026-09-08T00:01:13Z (RFD66606-2240) '| the engine-side writer | `modules/cineform` on the fork's `cineform-movie-writer` branch: `movie_writer_cineform.cpp`, `video_stream_cineform.cpp`, the class reference and a demo, with `thirdparty/cineform` and `thirdparty/libwebm` vendored on that branch. The branch is not merged into the working branch the manifest names |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:10Z (RFD66606-2240) '| the engine-side writer | `modules/cineform` on the fork's `cineform-movie-writer` branch: `movie_writer_cineform.cpp`, `video_stream_cineform.cpp`, the class reference and a demo, with `thirdparty/cineform` and `thirdparty/libwebm` vendored on that branch. The branch is not merged into the working branch the manifest names |
+2026-09-08T00:01:14Z (RFD66606-2240) '| Lottie, written | already here and older than this document: `scripts/keypoint_render.py` writes an animation, `scripts/lottie.schema.json` is the 1.0 schema vendored with its provenance, and `scripts/check_lottie_spec.py` validates against it and caught 207 errors when first run |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:11Z (RFD66606-2240) '| Lottie, written | already here and older than this document: `scripts/keypoint_render.py` writes an animation, `scripts/lottie.schema.json` is the 1.0 schema vendored with its provenance, and `scripts/check_lottie_spec.py` validates against it and caught 207 errors when first run |
+2026-09-08T00:01:15Z (RFD66606-2240) '| Lottie, read | ThorVG is vendored in the fork at `thirdparty/thorvg` with only the SVG and raster loaders; the loader sources are not in the placed tree, and a branch of the fork carries the re-vendoring unmerged. Upstream 1.0.3 is now placed at `2-contract/thorvg` with the loader intact |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:12Z (RFD66606-2240) '| Lottie, read | ThorVG is vendored in the fork at `thirdparty/thorvg` with only the SVG and raster loaders; the loader sources are not in the placed tree, and a branch of the fork carries the re-vendoring unmerged. Upstream 1.0.3 is now placed at `2-contract/thorvg` with the loader intact |
+2026-09-08T00:01:16Z (RFD66606-2240) '| OpenColorIO | a build option of the OpenUSD source vendored under `datasource-flow`, not built here |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:13Z (RFD66606-2240) '| OpenColorIO | a build option of the OpenUSD source vendored under `datasource-flow`, not built here |
+2026-09-08T00:01:17Z (RFD66606-2240) '| cmake and ninja | **present and running**: cmake 4.4.3 and ninja 1.13.2 from the `datasource-flow` and `voxhammer.cpp` environments. Neither is on the default `PATH`, which is what an earlier reading of mine mistook for absence |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:14Z (RFD66606-2240) '| cmake and ninja | **present and running**: cmake 4.4.3 and ninja 1.13.2 from the `datasource-flow` and `voxhammer.cpp` environments. Neither is on the default `PATH`, which is what an earlier reading of mine mistook for absence |
+2026-09-08T00:01:18Z (RFD66606-2240) '| FFmpeg | blocklisted, and now with the row that says so. Not installed and not on `PATH`, but two runnable copies sit in package caches; the one that runs is a GPL build and does hold a `cfhd` encoder, which is why the row argues licence rather than capability |
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:15Z (RFD66606-2240) '| FFmpeg | blocklisted, and now with the row that says so. Not installed and not on `PATH`, but two runnable copies sit in package caches; the one that runs is a GPL build and does hold a `cfhd` encoder, which is why the row argues licence rather than capability |
+2026-09-08T00:01:19Z (RFD66606-2240) 'Four of those rows correct an earlier claim of mine, and the pattern behind every one is the same: I probed a `PATH` or a single manifest and reported a filesystem fact. The engine-side writer is not an unplaced repository; RFD66606-1123 recorded that the separate repository was created, used and deleted and that the module shipped inside the fork, and the fork is placed. cmake and ninja run here. Lottie is not a new format for this workspace at all: a writer, a vendored schema and a validator predate this document, and this document's contribution is to say that the extension that validator already demands is the one the workspace uses.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:16Z (RFD66606-2240) '
+2026-09-08T00:01:20Z (RFD66606-2240) 'That gate had never run. Nothing invoked it, its `jsonschema` dependency was declared nowhere, and the writer kept emitting `.json` while the gate refused anything but `.lot`, so the rename it was written to force never happened. The dependency is pinned and the writer renamed in the same change as this document.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:17Z (RFD66606-2240) 'Four of those rows correct an earlier claim of mine, and the pattern behind
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:18Z (RFD66606-2240) 'every one is the same: I probed a `PATH` or a single manifest and reported
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:19Z (RFD66606-2240) 'a filesystem fact. The engine-side writer is not an unplaced repository;
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:20Z (RFD66606-2240) 'RFD66606-1123 recorded that the separate repository was created, used and
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:21Z (RFD66606-2240) 'deleted and that the module shipped inside the fork, and the fork is
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:22Z (RFD66606-2240) 'placed. cmake and ninja run here. Lottie is not a new format for this
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:23Z (RFD66606-2240) 'workspace at all: a writer, a vendored schema and a validator predate this
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:24Z (RFD66606-2240) 'document, and this document's contribution is to say that the extension
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:25Z (RFD66606-2240) 'that validator already demands is the one the workspace uses.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:26Z (RFD66606-2240) '
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:27Z (RFD66606-2240) 'That gate had never run. Nothing invoked it, its `jsonschema` dependency
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:28Z (RFD66606-2240) 'was declared nowhere, and the writer kept emitting `.json` while the gate
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:29Z (RFD66606-2240) 'refused anything but `.lot`, so the rename it was written to force never
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:30Z (RFD66606-2240) 'happened. The dependency is pinned and the writer renamed in the same
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:31Z (RFD66606-2240) 'change as this document.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:32Z (RFD66606-2240) 'The gates
+2026-09-08T00:01:21Z (RFD66606-2240) 'The gates
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:33Z (RFD66606-2240) '- `mix cff.xmp <in.cff> <out.xmp>` derives a sidecar; `--check` derives into
+2026-09-08T00:01:22Z (RFD66606-2240) '- `mix cff.xmp <in.cff> <out.xmp>` derives a sidecar; `--check` derives into memory and refuses when the file on disk differs, which is how a stale sidecar is caught rather than trusted.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:34Z (RFD66606-2240) '  memory and refuses when the file on disk differs, which is how a stale
+2026-09-08T00:01:23Z (RFD66606-2240) '- Every field in the matrix has a round-trip test: a record carrying it produces the property, and a record without it produces no empty element.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:35Z (RFD66606-2240) '  sidecar is caught rather than trusted.
+2026-09-08T00:01:24Z (RFD66606-2240) '- Controls: a `.cff` that is not a mapping is refused by shape; an author with neither `name` nor `family-names` is refused with the entry named; a planted stale sidecar fails `--check`; a `.lot` carrying an RDF packet is refused; an asset with no sidecar is reported, counted and never skipped.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:36Z (RFD66606-2240) '- Every field in the matrix has a round-trip test: a record carrying it
+2026-09-08T00:01:25Z (RFD66606-2240) '- The anti-entropy pass gains the pair "asset against its sidecar", with one planted sidecar-less asset reporting exactly one more.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:37Z (RFD66606-2240) '  produces the property, and a record without it produces no empty element.
+2026-09-08T00:01:26Z (RFD66606-2240) '- A clip's sidecar states the frame rate and duration, and the timeline marker that names the clip must agree; a planted disagreement fails.
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:38Z (RFD66606-2240) '- Controls: a `.cff` that is not a mapping is refused by shape; an author
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:39Z (RFD66606-2240) '  with neither `name` nor `family-names` is refused with the entry named; a
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:40Z (RFD66606-2240) '  planted stale sidecar fails `--check`; a `.lot` carrying an RDF packet is
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:41Z (RFD66606-2240) '  refused; an asset with no sidecar is reported, counted and never skipped.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:42Z (RFD66606-2240) '- The anti-entropy pass gains the pair "asset against its sidecar", with one
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:43Z (RFD66606-2240) '  planted sidecar-less asset reporting exactly one more.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:44Z (RFD66606-2240) '- A clip's sidecar states the frame rate and duration, and the timeline
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:45Z (RFD66606-2240) '  marker that names the clip must agree; a planted disagreement fails.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:46Z (RFD66606-2240) 'Static delivery
+2026-09-08T00:01:27Z (RFD66606-2240) 'Static delivery
  # tags: rfd:details-heading
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:47Z (RFD66606-2240) 'Deliverables ship as static files. The RFD site is one HTML page, its search
+2026-09-08T00:01:28Z (RFD66606-2240) 'Deliverables ship as static files. The RFD site is one HTML page, its search index, its assets and an empty `.nojekyll`. The pages workflow runs `mix run scripts/pages_docs.exs --write` on each push to main and publishes `docs/`, and `docs/` is not committed (operator, 2026-11-24). MDEx turns the page's Markdown into HTML. The script's self-test checks that conversion. The edition line carries the newest author date among the page's own sources, and no commit name. `mix cff.xmp` reads the YAML subset the house records use and refuses the rest. Where the mapping offers two sources, `abstract` comes before `message` for `dc:description`, and a list of licences joins with " OR ".
  # tags: rfd:details
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:48Z (RFD66606-2240) 'index, its assets and an empty `.nojekyll`. The pages workflow runs `mix run
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:49Z (RFD66606-2240) 'scripts/pages_docs.exs --write` on each push to main and publishes `docs/`,
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:50Z (RFD66606-2240) 'and `docs/` is not committed (operator, 2026-11-24). MDEx turns the page's
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:51Z (RFD66606-2240) 'Markdown into HTML. The script's self-test checks that conversion.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:52Z (RFD66606-2240) 'The edition line carries the newest author date among the page's own
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:53Z (RFD66606-2240) 'sources, and no commit name.
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:54Z (RFD66606-2240) '`mix cff.xmp` reads the YAML subset the house records use and refuses the
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:55Z (RFD66606-2240) 'rest. Where the mapping offers two sources, `abstract` comes before `message`
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:56Z (RFD66606-2240) 'for `dc:description`, and a list of licences joins with " OR ".
- # tags: rfd:details
- Text:RFD2240  1 LINE
- Text:Written
-
-2026-09-08T00:02:57Z (RFD66606-2240) '2351
+2026-09-08T00:01:29Z (RFD66606-2240) '2351
  # tags: rebac:verbs-from
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:58Z (RFD66606-2240) 'rfd-2240 provides cff-xmp-metadata-derivation
+2026-09-08T00:01:30Z (RFD66606-2240) 'rfd-2240 provides cff-xmp-metadata-derivation
  # tags: rebac:relate
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:02:59Z (RFD66606-2240) 'rfd-2240 spends elixir
+2026-09-08T00:01:31Z (RFD66606-2240) 'rfd-2240 spends elixir
  # tags: rebac:relate
  Text:RFD2240  1 LINE
  Text:Written
 
-2026-09-08T00:03:00Z (RFD66606-2240) 'rfd-2240 is_a workspace-policy
+2026-09-08T00:01:32Z (RFD66606-2240) 'rfd-2240 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2240  1 LINE
  Text:Written

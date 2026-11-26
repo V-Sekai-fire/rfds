@@ -19,62 +19,62 @@
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2429) 'Check a new stub against the diagram: it is a 3-file ZSTD parquet in ETNF with the
+2026-10-31T00:00:04Z (RFD66606-2429) 'Check a new stub against the diagram: it is a 3-file ZSTD parquet in ETNF with the RFD66606-2165.1 schema.
  # tags: rfd:exit
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2429) 'RFD66606-2165.1 schema.
- # tags: rfd:exit
- Text:RFD2429  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2429) 'the MaskScore pipeline runs from a container to HF
+2026-10-31T00:00:05Z (RFD66606-2429) 'the MaskScore pipeline runs from a container to HF
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2429) '- The pipeline runs in order: input, render, MaskScore, parquet, HF.
+2026-10-31T00:00:06Z (RFD66606-2429) '- The pipeline runs in order: input, render, MaskScore, parquet, HF.
  # tags: rfd:decision
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2429) '- Input is a Docker container per model with /health and /predict (RFD66606-1036).
+2026-10-31T00:00:07Z (RFD66606-2429) '- Input is a Docker container per model with /health and /predict (RFD66606-1036).
  # tags: rfd:decision
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2429) '- The reconstruct model is ggml native per RFD66606-1102.
+2026-10-31T00:00:08Z (RFD66606-2429) '- The reconstruct model is ggml native per RFD66606-1102.
  # tags: rfd:decision
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2429) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2429) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2429) '- RFD66606-1036, the model container with /health and /predict.
+2026-10-31T00:00:10Z (RFD66606-2429) '- RFD66606-1036, the model container with /health and /predict.
  # tags: rfd:related
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2429) '- RFD66606-2165, the schema of the parquet stubs.
+2026-10-31T00:00:11Z (RFD66606-2429) '- RFD66606-2165, the schema of the parquet stubs.
  # tags: rfd:related
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2429) 'Pipeline: MaskScore corpus construction
+2026-10-31T00:00:12Z (RFD66606-2429) 'Pipeline: MaskScore corpus construction
  # tags: rfd:details-heading
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2429) '
+2026-10-31T00:00:13Z (RFD66606-2429) '      input      Docker container per model, /health + /predict (RFD66606-1036)
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2429) '      input      Docker container per model, /health + /predict (RFD66606-1036)
+2026-10-31T00:00:14Z (RFD66606-2429) '           |
+ # tags: rfd:details
+ Text:RFD2429  1 LINE
+ Text:Written
+
+2026-10-31T00:00:15Z (RFD66606-2429) '      render     Mitsuba llvm_ad_rgb or metal_ad_rgb, sphere_hammersley
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
@@ -84,47 +84,37 @@
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2429) '      render     Mitsuba llvm_ad_rgb or metal_ad_rgb, sphere_hammersley
+2026-10-31T00:00:17Z (RFD66606-2429) '      MaskScore  mask → reconstruct → score decoded outputs
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2429) '           |
+2026-10-31T00:00:18Z (RFD66606-2429) '           |     (reconstruct model = ggml native per this RFD)
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2429) '      MaskScore  mask → reconstruct → score decoded outputs
+2026-10-31T00:00:19Z (RFD66606-2429) '      parquet    3-file ZSTD per stub (root + candidates + scores),
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2429) '           |     (reconstruct model = ggml native per this RFD)
+2026-10-31T00:00:20Z (RFD66606-2429) '                 ETNF (no nulls, interned vocab), RFD66606-2165.1 schema
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2429) '      parquet    3-file ZSTD per stub (root + candidates + scores),
+2026-10-31T00:00:21Z (RFD66606-2429) '           |
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2429) '                 ETNF (no nulls, interned vocab), RFD66606-2165.1 schema
+2026-10-31T00:00:22Z (RFD66606-2429) '      HF         chibifire/maskscore-rung-1-bootstrap, 5 of 8 stubs shipped
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2429) '           |
- # tags: rfd:details
- Text:RFD2429  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2429) '      HF         chibifire/maskscore-rung-1-bootstrap, 5 of 8 stubs shipped
- # tags: rfd:details
- Text:RFD2429  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2429) '                 (mesh, depth, pose, keypoints, multimodal, speech)
+2026-10-31T00:00:23Z (RFD66606-2429) '                 (mesh, depth, pose, keypoints, multimodal, speech)
  # tags: rfd:details
  Text:RFD2429  1 LINE
  Text:Written

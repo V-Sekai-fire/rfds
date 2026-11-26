@@ -14,162 +14,87 @@
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:03Z (RFD66606-2475) 'Which tag family, marker size and detector settings give the fewest wrong reads at distance
+2026-11-07T00:00:03Z (RFD66606-2475) 'Which tag family, marker size and detector settings give the fewest wrong reads at distance and tilt?
  # tags: rfd:hook
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2475) 'and tilt?
- # tags: rfd:hook
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:05Z (RFD66606-2475) 'The first bench run was invalid: the flat sheets rendered mirrored, so flipping the frame read
+2026-11-07T00:00:04Z (RFD66606-2475) 'The first bench run was invalid: the flat sheets rendered mirrored, so flipping the frame read 263 markers instead of the expected count, which gave 3,913 of 3,917 tags "broken" and failed the control outright. That bug is fixed in `tag_bench.py`. A per-tag blocklist is not a usable gate on its own, since it only reacts to tags that already failed; the frontier table has to decide tag family, marker size and detector settings up front instead.
  # tags: rfd:intrigue
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:06Z (RFD66606-2475) '263 markers instead of the expected count, which gave 3,913 of 3,917 tags "broken" and failed
- # tags: rfd:intrigue
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2475) 'the control outright. That bug is fixed in `tag_bench.py`. A per-tag blocklist is not a usable
- # tags: rfd:intrigue
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2475) 'gate on its own, since it only reacts to tags that already failed; the frontier table has to
- # tags: rfd:intrigue
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2475) 'decide tag family, marker size and detector settings up front instead.
- # tags: rfd:intrigue
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2475) 'Re-render the bench and build the frontier table: detector variants crossed with distance and
+2026-11-07T00:00:05Z (RFD66606-2475) 'Re-render the bench and build the frontier table: detector variants crossed with distance and tilt, each cell holding its wrong-read count, plus a flipped-frame control that must itself read as broken.
  # tags: rfd:exit
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:11Z (RFD66606-2475) 'tilt, each cell holding its wrong-read count, plus a flipped-frame control that must itself
- # tags: rfd:exit
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2475) 'read as broken.
- # tags: rfd:exit
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:13Z (RFD66606-2475) 'Suit markers: tag bench and the marker frontier
+2026-11-07T00:00:06Z (RFD66606-2475) 'Suit markers: tag bench and the marker frontier
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:14Z (RFD66606-2475) 'Ship the frontier table as the gate that selects tag family, marker size and detector settings,
+2026-11-07T00:00:07Z (RFD66606-2475) 'Ship the frontier table as the gate that selects tag family, marker size and detector settings, replacing any per-tag blocklist approach. Detector settings already show they matter at large marker scale: a window of 3 to 203 and a threshold constant of 3 recovered most of the unread markers at 220 px, and that setting becomes the frontier's starting point rather than a fixed default.
  # tags: rfd:decision
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2475) 'replacing any per-tag blocklist approach. Detector settings already show they matter at large
- # tags: rfd:decision
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:16Z (RFD66606-2475) 'marker scale: a window of 3 to 203 and a threshold constant of 3 recovered most of the unread
- # tags: rfd:decision
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:17Z (RFD66606-2475) 'markers at 220 px, and that setting becomes the frontier's starting point rather than a fixed
- # tags: rfd:decision
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:18Z (RFD66606-2475) 'default.
- # tags: rfd:decision
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:19Z (RFD66606-2475) 'The mirrored-frame bug
+2026-11-07T00:00:08Z (RFD66606-2475) 'The mirrored-frame bug
  # tags: rfd:details-heading
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:20Z (RFD66606-2475) 'The flat sheets used to validate detector settings rendered mirrored left-to-right. Flipping
+2026-11-07T00:00:09Z (RFD66606-2475) 'The flat sheets used to validate detector settings rendered mirrored left-to-right. Flipping the frame before detection recovered 263 readable markers that the un-flipped frame reported as unreadable, which inflated the broken-tag count to 3,913 of 3,917 and made the bench's own control pass for the wrong reason. `tag_bench.py` now flips consistently with the render path.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:21Z (RFD66606-2475) 'the frame before detection recovered 263 readable markers that the un-flipped frame reported
- # tags: rfd:details
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2475) 'as unreadable, which inflated the broken-tag count to 3,913 of 3,917 and made the bench's own
- # tags: rfd:details
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2475) 'control pass for the wrong reason. `tag_bench.py` now flips consistently with the render path.
- # tags: rfd:details
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2475) 'Frontier axes
+2026-11-07T00:00:10Z (RFD66606-2475) 'Frontier axes
  # tags: rfd:details-heading
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:25Z (RFD66606-2475) '- Tag family: which marker dictionary is painted.
+2026-11-07T00:00:11Z (RFD66606-2475) '- Tag family: which marker dictionary is painted.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:26Z (RFD66606-2475) '- Marker size: physical size in mm (and the derived pixel count at a given camera distance).
+2026-11-07T00:00:12Z (RFD66606-2475) '- Marker size: physical size in mm (and the derived pixel count at a given camera distance).
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:27Z (RFD66606-2475) '- Detector settings: adaptive-threshold window size and threshold constant.
+2026-11-07T00:00:13Z (RFD66606-2475) '- Detector settings: adaptive-threshold window size and threshold constant.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:28Z (RFD66606-2475) '- Distance and tilt: the two viewing conditions crossed against every other axis.
+2026-11-07T00:00:14Z (RFD66606-2475) '- Distance and tilt: the two viewing conditions crossed against every other axis.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2475) '- Flipped-frame control: every cell also runs mirrored, and must report broken, not readable.
+2026-11-07T00:00:15Z (RFD66606-2475) '- Flipped-frame control: every cell also runs mirrored, and must report broken, not readable.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:30Z (RFD66606-2475) 'Code
+2026-11-07T00:00:16Z (RFD66606-2475) 'Code
  # tags: rfd:details-heading
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2475) '`tag_bench.py` and `frontier_markers.py`, both in
+2026-11-07T00:00:17Z (RFD66606-2475) '`tag_bench.py` and `frontier_markers.py`, both in https://github.com/V-Sekai-fire/interactor-garment-proxy.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2475) 'https://github.com/V-Sekai-fire/interactor-garment-proxy.
- # tags: rfd:details
- Text:RFD2475  1 LINE
- Text:Written
-
-2026-11-07T00:00:33Z (RFD66606-2475) 'Open
+2026-11-07T00:00:18Z (RFD66606-2475) 'Open
  # tags: rfd:details-heading
  Text:RFD2475  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2475) 'The re-render and the full frontier table were queued, not yet run, at the time of this draft.
+2026-11-07T00:00:19Z (RFD66606-2475) 'The re-render and the full frontier table were queued, not yet run, at the time of this draft.
  # tags: rfd:details
  Text:RFD2475  1 LINE
  Text:Written

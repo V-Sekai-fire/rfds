@@ -9,382 +9,182 @@
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:02Z (RFD66606-2059) 'A status report carries an outcome the reader acts on: a slipped date,
+2026-08-25T00:00:02Z (RFD66606-2059) 'A status report carries an outcome the reader acts on: a slipped date, a broken build, a failed smoke. A report that opens with progress and buffers the outcome to the end makes the reader scan for the catch before the report says anything they can use.
  # tags: rfd:intrigue
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-2059) 'a broken build, a failed smoke. A report that opens with progress and
- # tags: rfd:intrigue
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:04Z (RFD66606-2059) 'buffers the outcome to the end makes the reader scan for the catch
- # tags: rfd:intrigue
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-2059) 'before the report says anything they can use.
- # tags: rfd:intrigue
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:06Z (RFD66606-2059) 'Check that a status report opens on its outcome, with the explanation and the next step
+2026-08-25T00:00:03Z (RFD66606-2059) 'Check that a status report opens on its outcome, with the explanation and the next step after it.
  # tags: rfd:exit
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-2059) 'after it.
- # tags: rfd:exit
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:08Z (RFD66606-2059) 'Bad news reports lead with the bottom line
+2026-08-25T00:00:04Z (RFD66606-2059) 'Bad news reports lead with the bottom line
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2059) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:05Z (RFD66606-2059) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2059) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2059) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2059) 'The problem
+2026-08-25T00:00:07Z (RFD66606-2059) 'The problem
  # tags: rfd:details-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-2059) 'How does a report in
+2026-08-25T00:00:08Z (RFD66606-2059) 'How does a report in this project phrase an outcome the reader needs first?
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:13Z (RFD66606-2059) 'this project phrase an outcome the reader needs first?
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-2059) 'Context and problem statement
+2026-08-25T00:00:09Z (RFD66606-2059) 'Context and problem statement
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-2059) 'A status report carries an outcome the reader acts on: a slipped date,
+2026-08-25T00:00:10Z (RFD66606-2059) 'A status report carries an outcome the reader acts on: a slipped date, a broken build, a failed smoke. A report that opens with progress and buffers the outcome to the end makes the reader scan for the catch before the report says anything they can use. How does a report in this project phrase an outcome the reader needs first?
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-2059) 'a broken build, a failed smoke. A report that opens with progress and
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-2059) 'buffers the outcome to the end makes the reader scan for the catch
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-2059) 'before the report says anything they can use. How does a report in
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-2059) 'this project phrase an outcome the reader needs first?
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-2059) 'Decision drivers
+2026-08-25T00:00:11Z (RFD66606-2059) 'Decision drivers
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2059) '- A reader who learns the outcome in the first sentence starts
+2026-08-25T00:00:12Z (RFD66606-2059) '- A reader who learns the outcome in the first sentence starts deciding on it immediately, rather than after a paragraph of buildup.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-2059) '  deciding on it immediately, rather than after a paragraph of
+2026-08-25T00:00:13Z (RFD66606-2059) '- An executive or on-call reader scans the opening line and stops; the rest is there for whoever needs the why.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:23Z (RFD66606-2059) '  buildup.
+2026-08-25T00:00:14Z (RFD66606-2059) '- The rule stays mechanical enough to apply in review without debate.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:24Z (RFD66606-2059) '- An executive or on-call reader scans the opening line and stops; the
+2026-08-25T00:00:15Z (RFD66606-2059) '- Urgency, a down service, a failed gate, leaves no room for a warm-up.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2059) '  rest is there for whoever needs the why.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-2059) '- The rule stays mechanical enough to apply in review without debate.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-2059) '- Urgency, a down service, a failed gate, leaves no room for a
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-2059) '  warm-up.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:29Z (RFD66606-2059) 'Considered options
+2026-08-25T00:00:16Z (RFD66606-2059) 'Considered options
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-2059) '- Indirect approach: open with a progress buffer, then state the
+2026-08-25T00:00:17Z (RFD66606-2059) '- Indirect approach: open with a progress buffer, then state the outcome.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-2059) '  outcome.
+2026-08-25T00:00:18Z (RFD66606-2059) '- Direct approach (bottom line up front): state the outcome first, then the explanation, then the next step.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-2059) '- Direct approach (bottom line up front): state the outcome first,
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-2059) '  then the explanation, then the next step.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-2059) 'Decision outcome
+2026-08-25T00:00:19Z (RFD66606-2059) 'Decision outcome
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-2059) 'Chosen option: "the direct approach", because the reader holds the
+2026-08-25T00:00:20Z (RFD66606-2059) 'Chosen option: "the direct approach", because the reader holds the outcome before the explanation, so the explanation reads as context rather than as suspense, and a reader who needs only the outcome stops after one line.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-2059) 'outcome before the explanation, so the explanation reads as context
+2026-08-25T00:00:21Z (RFD66606-2059) 'A status report carries three parts in order:
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:37Z (RFD66606-2059) 'rather than as suspense, and a reader who needs only the outcome stops
+2026-08-25T00:00:22Z (RFD66606-2059) '1. The bottom line comes first. The opening sentence states the outcome plainly, the slip, the failure, the result, with no buffer, no apology, and no warm-up. A reader who reads only this line knows where the work stands.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:38Z (RFD66606-2059) 'after one line.
+2026-08-25T00:00:23Z (RFD66606-2059) '2. The explanation follows. It gives the factual reason for the outcome; the reader already holds the result, so the explanation carries the why without holding it back.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-2059) '
+2026-08-25T00:00:24Z (RFD66606-2059) '3. The next step closes the report: the fix underway, the alternative open to the reader, or the time of the next update.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-2059) 'A status report carries three parts in order:
+2026-08-25T00:00:25Z (RFD66606-2059) 'The voice rules out two habits:
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-2059) '
+2026-08-25T00:00:26Z (RFD66606-2059) '- A progress buffer that opens on what went well and defers the outcome to the end.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:42Z (RFD66606-2059) '1. The bottom line comes first. The opening sentence states the
+2026-08-25T00:00:27Z (RFD66606-2059) '- An apology or hedge in place of the outcome in the first sentence.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:43Z (RFD66606-2059) '   outcome plainly, the slip, the failure, the result, with no
+2026-08-25T00:00:28Z (RFD66606-2059) 'A good outcome takes the same shape: the first sentence states the result, and the rest carries the why and the next step.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:00:44Z (RFD66606-2059) '   buffer, no apology, and no warm-up. A reader who reads only this
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-2059) '   line knows where the work stands.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-2059) '2. The explanation follows. It gives the factual reason for the
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-2059) '   outcome; the reader already holds the result, so the explanation
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-2059) '   carries the why without holding it back.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-2059) '3. The next step closes the report: the fix underway, the alternative
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-2059) '   open to the reader, or the time of the next update.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:51Z (RFD66606-2059) '
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:52Z (RFD66606-2059) 'The voice rules out two habits:
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:53Z (RFD66606-2059) '
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:54Z (RFD66606-2059) '- A progress buffer that opens on what went well and defers the
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:55Z (RFD66606-2059) '  outcome to the end.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:56Z (RFD66606-2059) '- An apology or hedge in place of the outcome in the first sentence.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:57Z (RFD66606-2059) '
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-2059) 'A good outcome takes the same shape: the first sentence states the
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-2059) 'result, and the rest carries the why and the next step.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-2059) 'Consequences
+2026-08-25T00:00:29Z (RFD66606-2059) 'Consequences
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:01Z (RFD66606-2059) '- Good, because the reader decides on the outcome from the first line
+2026-08-25T00:00:30Z (RFD66606-2059) '- Good, because the reader decides on the outcome from the first line instead of scanning for it.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:02Z (RFD66606-2059) '  instead of scanning for it.
+2026-08-25T00:00:31Z (RFD66606-2059) '- Good, because one shape covers a slip, a failed gate, and a shipped result alike.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:03Z (RFD66606-2059) '- Good, because one shape covers a slip, a failed gate, and a shipped
+2026-08-25T00:00:32Z (RFD66606-2059) '- Good, because an urgent report, a down service, a recall, leads with the fact that drives the response.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:04Z (RFD66606-2059) '  result alike.
+2026-08-25T00:00:33Z (RFD66606-2059) '- Bad, because the opening reads blunt, and an author used to a buffer needs practice to drop it.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:05Z (RFD66606-2059) '- Good, because an urgent report, a down service, a recall, leads
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-2059) '  with the fact that drives the response.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:07Z (RFD66606-2059) '- Bad, because the opening reads blunt, and an author used to a buffer
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:08Z (RFD66606-2059) '  needs practice to drop it.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:09Z (RFD66606-2059) 'Confirmation
+2026-08-25T00:00:34Z (RFD66606-2059) 'Confirmation
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-2059) 'Review checks that a status report opens on its outcome, with the
+2026-08-25T00:00:35Z (RFD66606-2059) 'Review checks that a status report opens on its outcome, with the explanation and the next step after it, and no progress buffer or apology ahead of the bottom line.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-2059) 'explanation and the next step after it, and no progress buffer or
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:12Z (RFD66606-2059) 'apology ahead of the bottom line.
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:13Z (RFD66606-2059) 'More information
+2026-08-25T00:00:36Z (RFD66606-2059) 'More information
  # tags: rfd:madr-heading
  Text:RFD2059  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-2059) 'This applies the BLUF (bottom line up front) convention to status
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:15Z (RFD66606-2059) 'reports, and sits alongside the tenseless continuous-present voice
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:16Z (RFD66606-2059) '(`rfd/2025-tenseless-continuous-present-voice`) for prose across the
- # tags: rfd:details
- Text:RFD2059  1 LINE
- Text:Written
-
-2026-08-25T00:01:17Z (RFD66606-2059) 'repo.
+2026-08-25T00:00:37Z (RFD66606-2059) 'This applies the BLUF (bottom line up front) convention to status reports, and sits alongside the tenseless continuous-present voice (`rfd/2025-tenseless-continuous-present-voice`) for prose across the repo.
  # tags: rfd:details
  Text:RFD2059  1 LINE
  Text:Written

@@ -14,197 +14,112 @@
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2399) 'What if a zone restarts and its journal stayed in the guest? One owner per entity would hold
+2026-10-31T00:00:03Z (RFD66606-2399) 'What if a zone restarts and its journal stayed in the guest? One owner per entity would hold only across a hand-off.
  # tags: rfd:intrigue
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2399) 'only across a hand-off.
- # tags: rfd:intrigue
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2399) 'Run `bao read` for a row the zone wrote and check that its entity id and tick match.
+2026-10-31T00:00:04Z (RFD66606-2399) 'Run `bao read` for a row the zone wrote and check that its entity id and tick match.
  # tags: rfd:exit
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2399) 'the zone journal lives in Bao over FoundationDB
+2026-10-31T00:00:05Z (RFD66606-2399) 'the zone journal lives in Bao over FoundationDB
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2399) 'The journal does not stay in the guest. `OpenBao -> fdb -> s3` is the placement.
+2026-10-31T00:00:06Z (RFD66606-2399) 'The journal does not stay in the guest. `OpenBao -> fdb -> s3` is the placement. `stages/zone_stage.gd` drains `zone_journal_export` under the write capability every tick that changed a row and hands the rows to the host's Bao client, which runs the catalogued execs `append_mutation` and `append_snapshot` on the database `zone-<id>`. A zone that restarts loads its last snapshot back through `query/zone-<id>/latest_snapshot` into `zone_load_snapshot`.
  # tags: rfd:decision
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2399) '`stages/zone_stage.gd` drains `zone_journal_export` under the write capability every tick that
- # tags: rfd:decision
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2399) 'changed a row and hands the rows to the host's Bao client, which runs the catalogued execs
- # tags: rfd:decision
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2399) '`append_mutation` and `append_snapshot` on the database `zone-<id>`. A zone that restarts loads
- # tags: rfd:decision
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2399) 'its last snapshot back through `query/zone-<id>/latest_snapshot` into `zone_load_snapshot`.
- # tags: rfd:decision
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2399) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2399) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2399) '- RFD66606-2142, the shape of the desk's agent identity over Tailscale.
+2026-10-31T00:00:08Z (RFD66606-2399) '- RFD66606-2142, the shape of the desk's agent identity over Tailscale.
  # tags: rfd:related
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2399) 'The placement
+2026-10-31T00:00:09Z (RFD66606-2399) 'The placement
  # tags: rfd:details-heading
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2399) 'The placement is &{repo("service-openbao")} on FoundationDB, &{repo("datasource-store")}'s
+2026-10-31T00:00:10Z (RFD66606-2399) 'The placement is &{repo("service-openbao")} on FoundationDB, &{repo("datasource-store")}'s `fdb_vfs.c` giving SQLite pages that live in the same cluster, and &{repo("service-bao-sqlite-fdb")} answering `bao read <mount>/query/<name>` and `bao write <mount>/exec/<db>/<name>` from a startup catalog and nothing else.
  # tags: rfd:details
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2399) '`fdb_vfs.c` giving SQLite pages that live in the same cluster, and
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2399) '&{repo("service-bao-sqlite-fdb")} answering `bao read <mount>/query/<name>` and
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2399) '`bao write <mount>/exec/<db>/<name>` from a startup catalog and nothing else.
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2399) '
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2399) 'The write and the schema
+2026-10-31T00:00:11Z (RFD66606-2399) 'The write and the schema
  # tags: rfd:details-heading
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2399) 'The host's Bao client is the desk's agent identity over Tailscale, RFD66606-2142's shape. The
+2026-10-31T00:00:12Z (RFD66606-2399) 'The host's Bao client is the desk's agent identity over Tailscale, RFD66606-2142's shape. The schema is `fabric_zone_journal.cpp`'s two tables, `entity_mutations` and `entity_snapshots`, in a `schema "zone-*"` block.
  # tags: rfd:details
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2399) 'schema is `fabric_zone_journal.cpp`'s two tables, `entity_mutations` and `entity_snapshots`, in
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2399) 'a `schema "zone-*"` block.
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2399) '
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2399) 'The restart and the garment index
+2026-10-31T00:00:13Z (RFD66606-2399) 'The restart and the garment index
  # tags: rfd:details-heading
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2399) 'So one owner per entity holds across a restart as well as across a hand-off. The garment's index
+2026-10-31T00:00:14Z (RFD66606-2399) 'So one owner per entity holds across a restart as well as across a hand-off. The garment's index hash is a row in the same journal, so step 6's fetch has a record a session later.
  # tags: rfd:details
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:27Z (RFD66606-2399) 'hash is a row in the same journal, so step 6's fetch has a record a session later.
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2399) '
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2399) 'Check and controls
+2026-10-31T00:00:15Z (RFD66606-2399) 'Check and controls
  # tags: rfd:details-heading
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2399) 'Check: a row the zone wrote is read back by `bao read` with the same entity id and tick, and a
+2026-10-31T00:00:16Z (RFD66606-2399) 'Check: a row the zone wrote is read back by `bao read` with the same entity id and tick, and a restarted zone resumes at its last snapshot's tick. Controls: an export with no write capability is refused by `capability.gd` before any Bao call. An exec name not in the catalog is refused by Bao. The plugin's own `--self-test` plants a fenced database opened without its fence.
  # tags: rfd:details
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2399) 'restarted zone resumes at its last snapshot's tick. Controls: an export with no write capability
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2399) 'is refused by `capability.gd` before any Bao call. An exec name not in the catalog is refused by
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2399) 'Bao. The plugin's own `--self-test` plants a fenced database opened without its fence.
- # tags: rfd:details
- Text:RFD2399  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2399) '2351
+2026-10-31T00:00:17Z (RFD66606-2399) '2351
  # tags: rebac:verbs-from
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:35Z (RFD66606-2399) 'rfd-2399 provides zone-journal-in-bao-fdb
+2026-10-31T00:00:18Z (RFD66606-2399) 'rfd-2399 provides zone-journal-in-bao-fdb
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:36Z (RFD66606-2399) 'rfd-2399 is_a deployment
+2026-10-31T00:00:19Z (RFD66606-2399) 'rfd-2399 is_a deployment
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2399) 'rfd-2399 spends bao
+2026-10-31T00:00:20Z (RFD66606-2399) 'rfd-2399 spends bao
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2399) 'rfd-2399 spends bao-fdb-storage-backend
+2026-10-31T00:00:21Z (RFD66606-2399) 'rfd-2399 spends bao-fdb-storage-backend
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2399) 'rfd-2399 spends fdb-sqlite
+2026-10-31T00:00:22Z (RFD66606-2399) 'rfd-2399 spends fdb-sqlite
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2399) 'rfd-2399 spends tailscale
+2026-10-31T00:00:23Z (RFD66606-2399) 'rfd-2399 spends tailscale
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2399) 'rfd-2399 spends zone-core-open-tick
+2026-10-31T00:00:24Z (RFD66606-2399) 'rfd-2399 spends zone-core-open-tick
  # tags: rebac:relate
  Text:RFD2399  1 LINE
  Text:Written

@@ -19,657 +19,342 @@
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2362) 'Twelve detectors report zero on the corpus, and three of those zeros come from detectors that
+2026-10-31T00:00:04Z (RFD66606-2362) 'Twelve detectors report zero on the corpus, and three of those zeros come from detectors that cannot fire, so a broken detector reads exactly like a clean corpus.
  # tags: rfd:intrigue
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2362) 'cannot fire, so a broken detector reads exactly like a clean corpus.
- # tags: rfd:intrigue
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2362) 'Run `--audit` first, before you trust any zero; it exits non-zero while any detector is
+2026-10-31T00:00:05Z (RFD66606-2362) 'Run `--audit` first, before you trust any zero; it exits non-zero while any detector is broken.
  # tags: rfd:exit
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2362) 'broken.
- # tags: rfd:exit
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:08Z (RFD66606-2362) 'A prose rule ships after it runs against the corpus
+2026-10-31T00:00:06Z (RFD66606-2362) 'A prose rule ships after it runs against the corpus
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2362) '**A rule ships only after it runs against the corpus**, the bar RFD66606-1124 set.
+2026-10-31T00:00:07Z (RFD66606-2362) '**A rule ships only after it runs against the corpus**, the bar RFD66606-1124 set. Three of the table's fifteen detectors cannot fire, so they wait on repair.
  # tags: rfd:decision
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2362) 'Three of the table's fifteen detectors cannot fire, so they wait on repair.
- # tags: rfd:decision
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2362) 'RFD66606-1125 assigns the AI-trope table to essays. RFD66606-2361 marks each section with
+2026-10-31T00:00:08Z (RFD66606-2362) 'RFD66606-1125 assigns the AI-trope table to essays. RFD66606-2361 marks each section with its gate. RFD66606-1124 gives the measure-first rule.
  # tags: rfd:related
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2362) 'its gate. RFD66606-1124 gives the measure-first rule.
- # tags: rfd:related
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2362) 'What already exists
+2026-10-31T00:00:09Z (RFD66606-2362) 'What already exists
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:00:10Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2362) '
+2026-10-31T00:00:11Z (RFD66606-2362) 'This RFD proposes less than it first appears. The `tropes-removal-model` project holds most of the parts:
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2362) 'This RFD proposes less than it first appears. The `tropes-removal-model` project
+2026-10-31T00:00:12Z (RFD66606-2362) '| part                       | state                                                    |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2362) 'holds most of the parts:
+2026-10-31T00:00:13Z (RFD66606-2362) '| -------------------------- | -------------------------------------------------------- |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2362) '
+2026-10-31T00:00:14Z (RFD66606-2362) '| `seeds/trope.parquet`      | 28 ASD-STE100 violation categories                       |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2362) '| part                       | state                                                    |
+2026-10-31T00:00:15Z (RFD66606-2362) '| `seeds/ai_trope.parquet`   | 20 AI-writing tropes, seeded from tropes.fyi             |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2362) '| -------------------------- | -------------------------------------------------------- |
+2026-10-31T00:00:16Z (RFD66606-2362) '| `runtime/prose_nodes.py`   | CommonMark prose extraction, so a gate reads no syntax   |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2362) '| `seeds/trope.parquet`      | 28 ASD-STE100 violation categories                       |
+2026-10-31T00:00:17Z (RFD66606-2362) '| `gate.py`                  | the ASD-STE100 gate; it runs the STE table only          |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2362) '| `seeds/ai_trope.parquet`   | 20 AI-writing tropes, seeded from tropes.fyi             |
+2026-10-31T00:00:18Z (RFD66606-2362) '| a runner for the AI tropes | **absent**                                               |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2362) '| `runtime/prose_nodes.py`   | CommonMark prose extraction, so a gate reads no syntax   |
+2026-10-31T00:00:19Z (RFD66606-2362) '`scripts/seed_ai_tropes.py` reached the same conclusion as this RFD before this RFD did. Its own docstring states that ASD-STE100 "gates the wrong things" in an essay. Two facts remain to settle, and this RFD settles them.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2362) '| `gate.py`                  | the ASD-STE100 gate; it runs the STE table only          |
+2026-10-31T00:00:20Z (RFD66606-2362) '`gate.py` does not import `prose_nodes`, and nothing reads `ai_trope.parquet`. The catalog and the parser exist and are not connected.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2362) '| a runner for the AI tropes | **absent**                                               |
+2026-10-31T00:00:21Z (RFD66606-2362) '`runtime/prose_nodes.py` imports `markdown_it`. `pixi.toml` does not declare it. The RFD gates pin `markdown-it-py==3.0.0`, so the two projects must agree on a version once both depend on it.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:26Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2362) '`scripts/seed_ai_tropes.py` reached the same conclusion as this RFD before this
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2362) 'RFD did. Its own docstring states that ASD-STE100 "gates the wrong things" in an
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2362) 'essay. Two facts remain to settle, and this RFD settles them.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2362) '`gate.py` does not import `prose_nodes`, and nothing reads `ai_trope.parquet`.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2362) 'The catalog and the parser exist and are not connected.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2362) '`runtime/prose_nodes.py` imports `markdown_it`. `pixi.toml` does not declare it.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2362) 'The RFD gates pin `markdown-it-py==3.0.0`, so the two projects must agree on a
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2362) 'version once both depend on it.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2362) 'The measurement
+2026-10-31T00:00:22Z (RFD66606-2362) 'The measurement
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:00:23Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2362) '
+2026-10-31T00:00:24Z (RFD66606-2362) '`scripts/measure_ai_tropes.py` in `tropes-removal-model` reads `seeds/ai_trope.parquet` and `runtime/prose_nodes.py`. It owns no patterns and no parser, because a second copy of either would drift from the first.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2362) '`scripts/measure_ai_tropes.py` in `tropes-removal-model` reads
+2026-10-31T00:00:25Z (RFD66606-2362) 'It reads all 119 RFD `README.md` files. The counts are exact: the population is fixed and the script reads every member, which is what CLAUDE.md rule 5 asks for.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2362) '`seeds/ai_trope.parquet` and `runtime/prose_nodes.py`. It owns no patterns and
+2026-10-31T00:00:26Z (RFD66606-2362) 'The table holds 20 tropes: 15 regex, 3 classifier, 2 manual. Three of the 15 find anything:
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2362) 'no parser, because a second copy of either would drift from the first.
+2026-10-31T00:00:27Z (RFD66606-2362) '| trope               | documents | share | hits |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:44Z (RFD66606-2362) '
+2026-10-31T00:00:28Z (RFD66606-2362) '| ------------------- | --------- | ----- | ---- |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:45Z (RFD66606-2362) 'It reads all 119 RFD `README.md` files. The counts are exact: the population is
+2026-10-31T00:00:29Z (RFD66606-2362) '| Compulsive Counting | 6         | 5%    | 7    |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:46Z (RFD66606-2362) 'fixed and the script reads every member, which is what CLAUDE.md rule 5 asks for.
+2026-10-31T00:00:30Z (RFD66606-2362) '| Overused Adverb     | 2         | 2%    | 2    |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2362) '
+2026-10-31T00:00:31Z (RFD66606-2362) '| Em-Dash Addiction   | 2         | 2%    | 2    |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2362) 'The table holds 20 tropes: 15 regex, 3 classifier, 2 manual. Three of the 15
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:49Z (RFD66606-2362) 'find anything:
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:50Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:51Z (RFD66606-2362) '| trope               | documents | share | hits |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:52Z (RFD66606-2362) '| ------------------- | --------- | ----- | ---- |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:53Z (RFD66606-2362) '| Compulsive Counting | 6         | 5%    | 7    |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:54Z (RFD66606-2362) '| Overused Adverb     | 2         | 2%    | 2    |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:55Z (RFD66606-2362) '| Em-Dash Addiction   | 2         | 2%    | 2    |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:56Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:00:57Z (RFD66606-2362) 'Three detectors cannot fire
+2026-10-31T00:00:32Z (RFD66606-2362) 'Three detectors cannot fire
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:58Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:00:33Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:00:59Z (RFD66606-2362) '
+2026-10-31T00:00:34Z (RFD66606-2362) 'Twelve detectors report zero. Nine of those zeros are real. Three are not.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:00Z (RFD66606-2362) 'Twelve detectors report zero. Nine of those zeros are real. Three are not.
+2026-10-31T00:00:35Z (RFD66606-2362) '`--audit` feeds each pattern its own recorded `example_phrase`, passes it through `prose_nodes`, and asserts the pattern still matches. A detector that cannot match its own example is BROKEN, and its zero on a corpus means nothing.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:01Z (RFD66606-2362) '
+2026-10-31T00:00:36Z (RFD66606-2362) '| detector              | fault                                                |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:02Z (RFD66606-2362) '`--audit` feeds each pattern its own recorded `example_phrase`, passes it through
+2026-10-31T00:00:37Z (RFD66606-2362) '| --------------------- | ---------------------------------------------------- |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:03Z (RFD66606-2362) '`prose_nodes`, and asserts the pattern still matches. A detector that cannot
+2026-10-31T00:00:38Z (RFD66606-2362) '| Bolded Lead Clause    | matches `**...**`; `prose_nodes` removes the markers |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:04Z (RFD66606-2362) 'match its own example is BROKEN, and its zero on a corpus means nothing.
+2026-10-31T00:00:39Z (RFD66606-2362) '| Where/What/Why Header | matches `#{1,6}`; `prose_nodes` removes the hashes   |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:05Z (RFD66606-2362) '
+2026-10-31T00:00:40Z (RFD66606-2362) '| Negative Parallelism  | spells `it'?s`; its own example says "it is"         |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:06Z (RFD66606-2362) '| detector              | fault                                                |
+2026-10-31T00:00:41Z (RFD66606-2362) 'The first two are one fault twice. Both patterns were written against raw markdown, and the extractor hands over the text a reader sees. Measured on one file: `Bolded Lead Clause` finds 5 in the source and 0 after extraction.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:07Z (RFD66606-2362) '| --------------------- | ---------------------------------------------------- |
+2026-10-31T00:00:42Z (RFD66606-2362) 'Each repair is small. Move the two formatting rules to run before extraction, or rewrite them against the extracted text. Add `it is` to the third alternation.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:08Z (RFD66606-2362) '| Bolded Lead Clause    | matches `**...**`; `prose_nodes` removes the markers |
+2026-10-31T00:00:43Z (RFD66606-2362) 'A zero from a broken detector reads exactly like a clean corpus. That is the failure CLAUDE.md rule 3 names, and it is why `--audit` runs first.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:09Z (RFD66606-2362) '| Where/What/Why Header | matches `#{1,6}`; `prose_nodes` removes the hashes   |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:10Z (RFD66606-2362) '| Negative Parallelism  | spells `it'?s`; its own example says "it is"         |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:11Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:12Z (RFD66606-2362) 'The first two are one fault twice. Both patterns were written against raw
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:13Z (RFD66606-2362) 'markdown, and the extractor hands over the text a reader sees. Measured on one
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:14Z (RFD66606-2362) 'file: `Bolded Lead Clause` finds 5 in the source and 0 after extraction.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:15Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:16Z (RFD66606-2362) 'Each repair is small. Move the two formatting rules to run before extraction, or
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:17Z (RFD66606-2362) 'rewrite them against the extracted text. Add `it is` to the third alternation.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:18Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:19Z (RFD66606-2362) 'A zero from a broken detector reads exactly like a clean corpus. That is the
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:20Z (RFD66606-2362) 'failure CLAUDE.md rule 3 names, and it is why `--audit` runs first.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:21Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:22Z (RFD66606-2362) 'Every hit is a false positive
+2026-10-31T00:00:44Z (RFD66606-2362) 'Every hit is a false positive
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:23Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:00:45Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:24Z (RFD66606-2362) '
+2026-10-31T00:00:46Z (RFD66606-2362) 'Run `--inspect` to see each hit in context. The inspection changes the result, so the count alone is not the measurement.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:25Z (RFD66606-2362) 'Run `--inspect` to see each hit in context. The inspection changes the result,
+2026-10-31T00:00:47Z (RFD66606-2362) '| trope               | what the hits are                                      |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:26Z (RFD66606-2362) 'so the count alone is not the measurement.
+2026-10-31T00:00:48Z (RFD66606-2362) '| ------------------- | ------------------------------------------------------ |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:27Z (RFD66606-2362) '
+2026-10-31T00:00:49Z (RFD66606-2362) '| Compulsive Counting | exact counts of items the document then enumerates     |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:28Z (RFD66606-2362) '| trope               | what the hits are                                      |
+2026-10-31T00:00:50Z (RFD66606-2362) '| Overused Adverb     | "silently", describing a check that skipped in silence |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:29Z (RFD66606-2362) '| ------------------- | ------------------------------------------------------ |
+2026-10-31T00:00:51Z (RFD66606-2362) '| Em-Dash Addiction   | two parenthetical dashes across 119 documents          |
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:30Z (RFD66606-2362) '| Compulsive Counting | exact counts of items the document then enumerates     |
+2026-10-31T00:00:52Z (RFD66606-2362) '`seed_ai_tropes.py` predicted this. Its docstring records that a regex is "a screen, not a verdict", and that Compulsive Counting "fires on the phrase 'three things', which is sometimes just three things". The corpus agrees: all seven hits count things the document goes on to list.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:31Z (RFD66606-2362) '| Overused Adverb     | "silently", describing a check that skipped in silence |
+2026-10-31T00:00:53Z (RFD66606-2362) 'No hit in the corpus is a true positive. Against the mechanical subset, the corpus is clean, and every firing rule needs narrowing before it gates anything.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:32Z (RFD66606-2362) '| Em-Dash Addiction   | two parenthetical dashes across 119 documents          |
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:33Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:34Z (RFD66606-2362) '`seed_ai_tropes.py` predicted this. Its docstring records that a regex is "a
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:35Z (RFD66606-2362) 'screen, not a verdict", and that Compulsive Counting "fires on the phrase 'three
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:36Z (RFD66606-2362) 'things', which is sometimes just three things". The corpus agrees: all seven hits
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:37Z (RFD66606-2362) 'count things the document goes on to list.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:38Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:39Z (RFD66606-2362) 'No hit in the corpus is a true positive. Against the mechanical subset, the
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:40Z (RFD66606-2362) 'corpus is clean, and every firing rule needs narrowing before it gates anything.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:41Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:42Z (RFD66606-2362) 'What no mechanical detector reaches
+2026-10-31T00:00:54Z (RFD66606-2362) 'What no mechanical detector reaches
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:43Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:00:55Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:44Z (RFD66606-2362) '
+2026-10-31T00:00:56Z (RFD66606-2362) 'tropes.fyi lists 49 tropes. The table seeds 20, and records that limit per row in its `coverage` column rather than in a README.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:45Z (RFD66606-2362) 'tropes.fyi lists 49 tropes. The table seeds 20, and records that limit per row in
+2026-10-31T00:00:57Z (RFD66606-2362) 'Five of the 20 have no regex. `Invented Concept Label`, `Premise Stacking` and `Enumeration As Prose` need the classifier. `Circular Fractal` and `Symmetric Paragraph Length` have no automatic detector at all.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:46Z (RFD66606-2362) 'its `coverage` column rather than in a README.
+2026-10-31T00:00:58Z (RFD66606-2362) 'The ASD-STE100 half splits the same way: about 18 mechanical rules as regular expressions, about 8 semantic rules through a SetFit classifier, and 2 more through a whole-document pass in `runtime/cross_sentence.py`. An essay gate needs the same second half, and this RFD does not build it.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:47Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:48Z (RFD66606-2362) 'Five of the 20 have no regex. `Invented Concept Label`, `Premise Stacking` and
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:49Z (RFD66606-2362) '`Enumeration As Prose` need the classifier. `Circular Fractal` and
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:50Z (RFD66606-2362) '`Symmetric Paragraph Length` have no automatic detector at all.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:51Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:52Z (RFD66606-2362) 'The ASD-STE100 half splits the same way: about 18 mechanical rules as regular
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:53Z (RFD66606-2362) 'expressions, about 8 semantic rules through a SetFit classifier, and 2 more
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:54Z (RFD66606-2362) 'through a whole-document pass in `runtime/cross_sentence.py`. An essay gate needs
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:55Z (RFD66606-2362) 'the same second half, and this RFD does not build it.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:56Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:01:57Z (RFD66606-2362) 'How to re-run
+2026-10-31T00:00:59Z (RFD66606-2362) 'How to re-run
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:58Z (RFD66606-2362) '<!-- gate: ste100 -->
+2026-10-31T00:01:00Z (RFD66606-2362) '<!-- gate: ste100 -->
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:01:59Z (RFD66606-2362) '
+2026-10-31T00:01:01Z (RFD66606-2362) '```
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:00Z (RFD66606-2362) '```
+2026-10-31T00:01:02Z (RFD66606-2362) 'cd .tropes_removal_model
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:01Z (RFD66606-2362) 'cd .tropes_removal_model
+2026-10-31T00:01:03Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --audit    # check each detector can fire
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:02Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --audit    # check each detector can fire
+2026-10-31T00:01:04Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py            # the AI-trope table
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:03Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py            # the AI-trope table
+2026-10-31T00:01:05Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --inspect  # every hit, in context
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:04Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --inspect  # every hit, in context
+2026-10-31T00:01:06Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --compare  # both tables, same extractor
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:05Z (RFD66606-2362) 'python3 scripts/measure_ai_tropes.py --compare  # both tables, same extractor
+2026-10-31T00:01:07Z (RFD66606-2362) '```
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:06Z (RFD66606-2362) '```
+2026-10-31T00:01:08Z (RFD66606-2362) '`--audit` exits non-zero while any detector is broken. Run it before you trust a zero from the other modes.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:07Z (RFD66606-2362) '
+2026-10-31T00:01:09Z (RFD66606-2362) 'The default path is `../.request_for_discussion`, which holds when both projects sit at the workspace root. `default.xml` places them there.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:08Z (RFD66606-2362) '`--audit` exits non-zero while any detector is broken. Run it before you trust a
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:02:09Z (RFD66606-2362) 'zero from the other modes.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:02:10Z (RFD66606-2362) '
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:02:11Z (RFD66606-2362) 'The default path is `../.request_for_discussion`, which holds when both projects
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:02:12Z (RFD66606-2362) 'sit at the workspace root. `default.xml` places them there.
- # tags: rfd:details
- Text:RFD2362  1 LINE
- Text:Written
-
-2026-10-31T00:02:13Z (RFD66606-2362) 'The problem
+2026-10-31T00:01:10Z (RFD66606-2362) 'The problem
  # tags: rfd:details-heading
  Text:RFD2362  1 LINE
  Text:Written
 
-2026-10-31T00:02:14Z (RFD66606-2362) 'The catalog and the parser exist and are not connected.
+2026-10-31T00:01:11Z (RFD66606-2362) 'The catalog and the parser exist and are not connected.
  # tags: rfd:details
  Text:RFD2362  1 LINE
  Text:Written

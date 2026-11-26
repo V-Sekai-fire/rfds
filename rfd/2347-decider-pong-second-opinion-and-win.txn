@@ -4,357 +4,132 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-10-30T00:00:01Z (RFD66606-2347) 'a Pong recording whose labels match what the live model does, and a run where it
- # tags: rfd:feature
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:02Z (RFD66606-2347) 'wins
+2026-10-30T00:00:01Z (RFD66606-2347) 'a Pong recording whose labels match what the live model does, and a run where it wins
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:03Z (RFD66606-2347) 'the decider-pong interactor's `recorder_second_opinion.py`, its simulators, evals
- # tags: rfd:scope
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:04Z (RFD66606-2347) 'and `PEER_REVIEW.md`
+2026-10-30T00:00:02Z (RFD66606-2347) 'the decider-pong interactor's `recorder_second_opinion.py`, its simulators, evals and `PEER_REVIEW.md`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:05Z (RFD66606-2347) 'A live Pong model wins 7-0 and 8-0, and the write-up says who does the predicting.
+2026-10-30T00:00:03Z (RFD66606-2347) 'A live Pong model wins 7-0 and 8-0, and the write-up says who does the predicting.
  # tags: rfd:hook
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:06Z (RFD66606-2347) 'The shipped video showed "a live decider" playing Pong. The model was right on 34 to 52
+2026-10-30T00:00:04Z (RFD66606-2347) 'The shipped video showed "a live decider" playing Pong. The model was right on 34 to 52 percent of its replies, answered "up" most of the time, and lost 0-25 in 2 minutes.
  # tags: rfd:intrigue
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:07Z (RFD66606-2347) 'percent of its replies, answered "up" most of the time, and lost 0-25 in 2 minutes.
- # tags: rfd:intrigue
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:08Z (RFD66606-2347) 'Read `PEER_REVIEW.md` in decider-pong, which carries every number.
+2026-10-30T00:00:05Z (RFD66606-2347) 'Read `PEER_REVIEW.md` in decider-pong, which carries every number.
  # tags: rfd:exit
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:09Z (RFD66606-2347) 'What was wrong, what was tried, and what the win shows
+2026-10-30T00:00:06Z (RFD66606-2347) 'What was wrong, what was tried, and what the win shows
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:10Z (RFD66606-2347) 'The live paddle plays with four parts. Code predicts the y where the
+2026-10-30T00:00:07Z (RFD66606-2347) 'The live paddle plays with four parts. Code predicts the y where the ball will reach the paddle by running `Pong.step` forward. The model answers the sign of the 10-px steps to that point. A held move stops at the target. An answer older than 15 frames hands the paddle to the teacher. With the classic angle rule on both paddles, the model wins 7-0 and 8-0 on its own points over two 5-minute runs. The teacher controls on the same seeds end 7-6 and 9-8.
  # tags: rfd:decision
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:11Z (RFD66606-2347) 'ball will reach the paddle by running `Pong.step` forward. The model
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:12Z (RFD66606-2347) 'answers the sign of the 10-px steps to that point. A held move stops
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:13Z (RFD66606-2347) 'at the target. An answer older than 15 frames hands the paddle to the
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:14Z (RFD66606-2347) 'teacher. With the classic angle rule on both paddles, the model wins
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:15Z (RFD66606-2347) '7-0 and 8-0 on its own points over two 5-minute runs. The teacher
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:16Z (RFD66606-2347) 'controls on the same seeds end 7-6 and 9-8.
- # tags: rfd:decision
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:17Z (RFD66606-2347) '- RFD66606-2345, the video format; RFD66606-2346, decider-pong in the
+2026-10-30T00:00:08Z (RFD66606-2347) '- RFD66606-2345, the video format; RFD66606-2346, decider-pong in the workspace.
  # tags: rfd:related
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:18Z (RFD66606-2347) '  workspace.
+2026-10-30T00:00:09Z (RFD66606-2347) '- `PEER_REVIEW.md` and `evidence/` in decider-pong carry every number.
  # tags: rfd:related
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:19Z (RFD66606-2347) '- `PEER_REVIEW.md` and `evidence/` in decider-pong carry every number.
- # tags: rfd:related
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:20Z (RFD66606-2347) 'The review, in short
+2026-10-30T00:00:10Z (RFD66606-2347) 'The review, in short
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:21Z (RFD66606-2347) 'The shipped prompt scored 68 percent offline, with 41 of 60 answers
+2026-10-30T00:00:11Z (RFD66606-2347) 'The shipped prompt scored 68 percent offline, with 41 of 60 answers "up". A held answer overshot: one "move" carries the paddle 40 px over a 4-frame reply, against a 14-px reach. One failed request froze the paddle on "stay" for the rest of a run. The drawn paddles were twice the size of the colliding ones, and the right one sat 10 px behind its hit plane. The overlap test had a wrong y term, the timecode printed hundredths, serves were seeded from the clock, and 600 frames sat in memory. The README contradicted the files on disk.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:22Z (RFD66606-2347) '"up". A held answer overshot: one "move" carries the paddle 40 px over
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:23Z (RFD66606-2347) 'a 4-frame reply, against a 14-px reach. One failed request froze the
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:24Z (RFD66606-2347) 'paddle on "stay" for the rest of a run. The drawn paddles were twice
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:25Z (RFD66606-2347) 'the size of the colliding ones, and the right one sat 10 px behind its
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:26Z (RFD66606-2347) 'hit plane. The overlap test had a wrong y term, the timecode printed
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:27Z (RFD66606-2347) 'hundredths, serves were seeded from the clock, and 600 frames sat in
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:28Z (RFD66606-2347) 'memory. The README contradicted the files on disk.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:29Z (RFD66606-2347) 'Why the game could not be won
+2026-10-30T00:00:12Z (RFD66606-2347) 'Why the game could not be won
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:30Z (RFD66606-2347) 'Under the repo physics no paddle can win: the teacher never misses.
+2026-10-30T00:00:13Z (RFD66606-2347) 'Under the repo physics no paddle can win: the teacher never misses. A hit never changes the ball's vertical speed, which stays under 4.1 px a frame. A paddle moves 10 px a frame. Teacher against teacher held 0-0 for 30 simulated minutes on three seeds. The classic angle rule, `--english 8`, lets the hit point change the vertical speed by up to 8 px a frame. It applies to both paddles, and teacher against teacher stays even under it.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:31Z (RFD66606-2347) 'A hit never changes the ball's vertical speed, which stays under 4.1
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:32Z (RFD66606-2347) 'px a frame. A paddle moves 10 px a frame. Teacher against teacher held
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:33Z (RFD66606-2347) '0-0 for 30 simulated minutes on three seeds. The classic angle rule,
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:34Z (RFD66606-2347) '`--english 8`, lets the hit point change the vertical speed by up to 8
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:35Z (RFD66606-2347) 'px a frame. It applies to both paddles, and teacher against teacher
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:36Z (RFD66606-2347) 'stays even under it.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:37Z (RFD66606-2347) 'What each step fixed
+2026-10-30T00:00:14Z (RFD66606-2347) 'What each step fixed
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:38Z (RFD66606-2347) '1. Simulation first. `sim_right_paddle.py` showed that even a paddle
+2026-10-30T00:00:15Z (RFD66606-2347) '1. Simulation first. `sim_right_paddle.py` showed that even a paddle that is always right loses about 4 points a minute when it holds an answer for a 4-frame delay. Aiming at the crossing point and stopping there loses almost none, even with 60 percent wrong answers.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:39Z (RFD66606-2347) '   that is always right loses about 4 points a minute when it holds an
+2026-10-30T00:00:16Z (RFD66606-2347) '2. Prompt. A two-number prompt at temperature 0 was right 98 percent of the time on spread cases, but 81 percent on gaps under 30 px, where it answered "stay". The STEPS prompt was right on 80 of 80 close calls at a median of about 105 ms.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:40Z (RFD66606-2347) '   answer for a 4-frame delay. Aiming at the crossing point and
+2026-10-30T00:00:17Z (RFD66606-2347) '3. Prediction. A mirror-reflection formula tied 2-2. It was wrong on 80 of 80 approaches, because the game pins the ball to the wall. The rollout matched the real hit-test y on 80 of 80.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:41Z (RFD66606-2347) '   stopping there loses almost none, even with 60 percent wrong answers.
+2026-10-30T00:00:18Z (RFD66606-2347) '4. Staleness. The first 5-minute rollout run led 4-0, then an endpoint stall froze the paddle for about 30 s and it lost 13 points. A 1 s request timeout and a 15-frame answer limit fixed it. A planted endpoint that never answers gave 600 of 600 teacher frames, with the paddle still moving.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:42Z (RFD66606-2347) '2. Prompt. A two-number prompt at temperature 0 was right 98 percent
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:43Z (RFD66606-2347) '   of the time on spread cases, but 81 percent on gaps under 30 px,
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:44Z (RFD66606-2347) '   where it answered "stay". The STEPS prompt was right on 80 of 80
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:45Z (RFD66606-2347) '   close calls at a median of about 105 ms.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:46Z (RFD66606-2347) '3. Prediction. A mirror-reflection formula tied 2-2. It was wrong on
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:47Z (RFD66606-2347) '   80 of 80 approaches, because the game pins the ball to the wall.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:48Z (RFD66606-2347) '   The rollout matched the real hit-test y on 80 of 80.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:49Z (RFD66606-2347) '4. Staleness. The first 5-minute rollout run led 4-0, then an endpoint
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:50Z (RFD66606-2347) '   stall froze the paddle for about 30 s and it lost 13 points. A 1 s
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:51Z (RFD66606-2347) '   request timeout and a 15-frame answer limit fixed it. A planted
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:52Z (RFD66606-2347) '   endpoint that never answers gave 600 of 600 teacher frames, with
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:53Z (RFD66606-2347) '   the paddle still moving.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:54Z (RFD66606-2347) 'Results that count
+2026-10-30T00:00:19Z (RFD66606-2347) 'Results that count
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:55Z (RFD66606-2347) 'Seed 7, 5 minutes: 0-7, all 7 points the model's, 3232 of 3232 replies
+2026-10-30T00:00:20Z (RFD66606-2347) 'Seed 7, 5 minutes: 0-7, all 7 points the model's, 3232 of 3232 replies correct, p50 84 ms. Seed 11, 5 minutes: 2-8. The model's points are 8-0, and the 2 lost came while the teacher held the paddle during 13 endpoint failures. Without the angle rule the rollout run holds 0-0, the most the physics allows.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:00:56Z (RFD66606-2347) 'correct, p50 84 ms. Seed 11, 5 minutes: 2-8. The model's points are
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:57Z (RFD66606-2347) '8-0, and the 2 lost came while the teacher held the paddle during 13
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:58Z (RFD66606-2347) 'endpoint failures. Without the angle rule the rollout run holds 0-0,
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:00:59Z (RFD66606-2347) 'the most the physics allows.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:00Z (RFD66606-2347) 'What the win does not show
+2026-10-30T00:00:21Z (RFD66606-2347) 'What the win does not show
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:01:01Z (RFD66606-2347) 'The model answers the sign of a small integer. A rule in code would do
+2026-10-30T00:00:22Z (RFD66606-2347) 'The model answers the sign of a small integer. A rule in code would do the same. It does not plan, aim or read the game. The next test gives the model the game state and scores the target it chooses.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:01:02Z (RFD66606-2347) 'the same. It does not plan, aim or read the game. The next test gives
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:03Z (RFD66606-2347) 'the model the game state and scores the target it chooses.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:04Z (RFD66606-2347) 'Files
+2026-10-30T00:00:23Z (RFD66606-2347) 'Files
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:01:05Z (RFD66606-2347) 'Every render is CineForm and FLAC in Matroska on the Desktop, named by
+2026-10-30T00:00:24Z (RFD66606-2347) 'Every render is CineForm and FLAC in Matroska on the Desktop, named by mode, seed and length, with its decision log. Runs that exposed a bug keep a suffix that says so, such as `_stale-reply-bug`. The commits that carry this work are on decider-pong `main`.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:01:06Z (RFD66606-2347) 'mode, seed and length, with its decision log. Runs that exposed a bug
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:07Z (RFD66606-2347) 'keep a suffix that says so, such as `_stale-reply-bug`. The commits
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:08Z (RFD66606-2347) 'that carry this work are on decider-pong `main`.
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:09Z (RFD66606-2347) 'The problem
+2026-10-30T00:00:25Z (RFD66606-2347) 'The problem
  # tags: rfd:details-heading
  Text:RFD2347  1 LINE
  Text:Written
 
-2026-10-30T00:01:10Z (RFD66606-2347) 'Code does the predicting in the winning
- # tags: rfd:details
- Text:RFD2347  1 LINE
- Text:Written
-
-2026-10-30T00:01:11Z (RFD66606-2347) 'runs, and the write-up must say so.
+2026-10-30T00:00:26Z (RFD66606-2347) 'Code does the predicting in the winning runs, and the write-up must say so.
  # tags: rfd:details
  Text:RFD2347  1 LINE
  Text:Written

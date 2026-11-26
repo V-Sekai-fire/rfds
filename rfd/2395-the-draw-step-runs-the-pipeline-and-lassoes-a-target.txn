@@ -19,237 +19,87 @@
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2395) 'Run `elixir tools/build.exs --no-elfs --gates=load,crossings`, then check the replay and the
+2026-10-31T00:00:04Z (RFD66606-2395) 'Run `elixir tools/build.exs --no-elfs --gates=load,crossings`, then check the replay and the controls listed in the details.
  # tags: rfd:exit
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2395) 'controls listed in the details.
- # tags: rfd:exit
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2395) 'the draw step runs the pipeline and lassoes a target
+2026-10-31T00:00:05Z (RFD66606-2395) 'the draw step runs the pipeline and lassoes a target
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2395) '- `stages/pipeline.gd` runs `INFER, RIG, AUTHOR, MESH, ATTACH, DONE`:
+2026-10-31T00:00:06Z (RFD66606-2395) '- `stages/pipeline.gd` runs `INFER, RIG, AUTHOR, MESH, ATTACH, DONE`: `_mesh_done` goes to `ATTACH`, which emits `garment_ready` and the new `attach_ready(bone)`. The fit, check and drape states, their options and `main.gd`'s wrappers go. FIT and DRAPE are the next rung's.
  # tags: rfd:decision
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2395) '  `_mesh_done` goes to `ATTACH`, which emits `garment_ready` and the
+2026-10-31T00:00:07Z (RFD66606-2395) '- `stages/lasso_stage.gd` opens `lasso.elf` through `make_sandbox` with `lasso_snap`, `lasso_redirect`, `lasso_check_all`. `xr/lasso_pointer.gd` on each `XRController3D` sends the hand's basis and origin as the source and the `lasso_targets` group (the avatar, the mirror, the garment) as targets while `grip` is held, highlights the snapped target, pulses `haptic` when it changes, and on trigger over the avatar calls `Main.dress_on_wear()`. `lasso.elf` leaves `.gitignore` and is committed like `curvenet.elf`. The engine fork's `modules/lasso` is deleted.
  # tags: rfd:decision
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2395) '  new `attach_ready(bone)`. The fit, check and drape states, their
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2395) '  options and `main.gd`'s wrappers go. FIT and DRAPE are the next
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2395) '  rung's.
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2395) '- `stages/lasso_stage.gd` opens `lasso.elf` through `make_sandbox`
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2395) '  with `lasso_snap`, `lasso_redirect`, `lasso_check_all`.
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2395) '  `xr/lasso_pointer.gd` on each `XRController3D` sends the hand's
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2395) '  basis and origin as the source and the `lasso_targets` group (the
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2395) '  avatar, the mirror, the garment) as targets while `grip` is held,
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2395) '  highlights the snapped target, pulses `haptic` when it changes, and
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2395) '  on trigger over the avatar calls `Main.dress_on_wear()`.
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2395) '  `lasso.elf` leaves `.gitignore` and is committed like
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2395) '  `curvenet.elf`. The engine fork's `modules/lasso` is deleted.
- # tags: rfd:decision
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2395) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2395) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2395) 'World grid and project settings
+2026-10-31T00:00:09Z (RFD66606-2395) 'World grid and project settings
  # tags: rfd:details-heading
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2395) '- The world-locked grid `addons/procedural_3d_grid/core/procedural_grid_3d.tscn`
+2026-10-31T00:00:10Z (RFD66606-2395) '- The world-locked grid `addons/procedural_3d_grid/core/procedural_grid_3d.tscn` is instanced under `World` at the floor.
  # tags: rfd:details
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2395) '  is instanced under `World` at the floor.
+2026-10-31T00:00:11Z (RFD66606-2395) '- `project.godot`: `xr/openxr/reference_space=2` (local floor) and `xr/openxr/extensions/hand_tracking=true`. The action map gains `/interaction_profiles/ext/hand_interaction_ext` with `trigger` on pinch and `aim_pose`. Godot master has no Frame controller profile, so the gate logs each hand's `get_tracker_profile()` and the logbook records the measured binding.
  # tags: rfd:details
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:25Z (RFD66606-2395) '- `project.godot`: `xr/openxr/reference_space=2` (local floor) and
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2395) '  `xr/openxr/extensions/hand_tracking=true`. The action map gains
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2395) '  `/interaction_profiles/ext/hand_interaction_ext` with `trigger` on
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2395) '  pinch and `aim_pose`. Godot master has no Frame controller profile,
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2395) '  so the gate logs each hand's `get_tracker_profile()` and the
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2395) '  logbook records the measured binding.
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2395) '
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2395) 'The replay control
+2026-10-31T00:00:12Z (RFD66606-2395) 'The replay control
  # tags: rfd:details-heading
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2395) '- `tools/gate_replay.gd` gets its control: `skirt.usda`'s
+2026-10-31T00:00:13Z (RFD66606-2395) '- `tools/gate_replay.gd` gets its control: `skirt.usda`'s `customLayerData` carries `expected = {cycles: 2, openings: 2}` (regenerated by `tools/make_skirt.gd`), and `--control=drop_seam` drops the stroke `seam_back` in `_author` before `StrokesUsd.events` and must fail at MESH.
  # tags: rfd:details
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2395) '  `customLayerData` carries `expected = {cycles: 2, openings: 2}`
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2395) '  (regenerated by `tools/make_skirt.gd`), and `--control=drop_seam`
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2395) '  drops the stroke `seam_back` in `_author` before `StrokesUsd.events`
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2395) '  and must fail at MESH.
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2395) '
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2395) 'Check and controls
+2026-10-31T00:00:14Z (RFD66606-2395) 'Check and controls
  # tags: rfd:details-heading
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2395) 'Check: the replay passes headless on the double build and on the
+2026-10-31T00:00:15Z (RFD66606-2395) 'Check: the replay passes headless on the double build and on the Frame in priority mode (six strokes, two cycles, two openings). The Lean tests in &{repo("interactor-lasso")}'s `tests/lasso` pass with their controls; `elixir tools/build.exs --no-elfs --gates=load,crossings`. Controls: `drop_seam` fails, `hidden` and `flat --expect=xr` fail, and priority off draws nothing.
  # tags: rfd:details
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2395) 'Frame in priority mode (six strokes, two cycles, two openings). The
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:42Z (RFD66606-2395) 'Lean tests in &{repo("interactor-lasso")}'s `tests/lasso` pass with their
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:43Z (RFD66606-2395) 'controls; `elixir tools/build.exs --no-elfs --gates=load,crossings`.
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:44Z (RFD66606-2395) 'Controls: `drop_seam` fails, `hidden` and `flat --expect=xr` fail, and priority off draws
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:45Z (RFD66606-2395) 'nothing.
- # tags: rfd:details
- Text:RFD2395  1 LINE
- Text:Written
-
-2026-10-31T00:00:46Z (RFD66606-2395) '2351
+2026-10-31T00:00:16Z (RFD66606-2395) '2351
  # tags: rebac:verbs-from
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:47Z (RFD66606-2395) 'rfd-2395 provides draw-step-pipeline-attach
+2026-10-31T00:00:17Z (RFD66606-2395) 'rfd-2395 provides draw-step-pipeline-attach
  # tags: rebac:relate
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:48Z (RFD66606-2395) 'rfd-2395 provides hand-lasso-target
+2026-10-31T00:00:18Z (RFD66606-2395) 'rfd-2395 provides hand-lasso-target
  # tags: rebac:relate
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:49Z (RFD66606-2395) 'rfd-2395 is_a avatar-pipeline
+2026-10-31T00:00:19Z (RFD66606-2395) 'rfd-2395 is_a avatar-pipeline
  # tags: rebac:relate
  Text:RFD2395  1 LINE
  Text:Written
 
-2026-10-31T00:00:50Z (RFD66606-2395) 'rfd-2395 spends guest-elf-double
+2026-10-31T00:00:20Z (RFD66606-2395) 'rfd-2395 spends guest-elf-double
  # tags: rebac:relate
  Text:RFD2395  1 LINE
  Text:Written

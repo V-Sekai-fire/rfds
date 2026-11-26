@@ -14,257 +14,82 @@
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:03Z (RFD66606-2487) 'Why does a clip the guest needs sometimes never reach the shipped package, with nothing
+2026-11-08T00:00:03Z (RFD66606-2487) 'Why does a clip the guest needs sometimes never reach the shipped package, with nothing catching it until a user opens the app?
  # tags: rfd:hook
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:04Z (RFD66606-2487) 'catching it until a user opens the app?
- # tags: rfd:hook
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:05Z (RFD66606-2487) 'A release once shipped walk mode with its clip data missing. Two fixes were tried and
+2026-11-08T00:00:04Z (RFD66606-2487) 'A release once shipped walk mode with its clip data missing. Two fixes were tried and withdrawn: a loader change and a pack allowlist change, each disproven by planting a real clip in a fresh export and watching it come through fine either way. The honest cause is narrower: the one script step that copies clip files into the project before packing wrote nothing, once, and nothing in the resource system noticed, because raw files carry no such check. The guest's own data loader already changed shape once for this port: a comment in the guest's pose code says clips arrive as flat transforms instead of animation tracks, changed only for the sandboxed port. Upstream's own baker reads a real AnimationLibrary directly, built from a mixer and a skeleton.
  # tags: rfd:intrigue
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:06Z (RFD66606-2487) 'withdrawn: a loader change and a pack allowlist change, each disproven by planting a real
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:07Z (RFD66606-2487) 'clip in a fresh export and watching it come through fine either way. The honest cause is
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:08Z (RFD66606-2487) 'narrower: the one script step that copies clip files into the project before packing wrote
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:09Z (RFD66606-2487) 'nothing, once, and nothing in the resource system noticed, because raw files carry no such
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:10Z (RFD66606-2487) 'check. The guest's own data loader already changed shape once for this port: a comment in
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:11Z (RFD66606-2487) 'the guest's pose code says clips arrive as flat transforms instead of animation tracks,
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:12Z (RFD66606-2487) 'changed only for the sandboxed port. Upstream's own baker reads a real AnimationLibrary
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:13Z (RFD66606-2487) 'directly, built from a mixer and a skeleton.
- # tags: rfd:intrigue
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:14Z (RFD66606-2487) 'Clip data for a shipped package is as safe as any other imported resource: if it is still
+2026-11-08T00:00:05Z (RFD66606-2487) 'Clip data for a shipped package is as safe as any other imported resource: if it is still missing, the package itself failed to build, not merely to work once launched.
  # tags: rfd:exit
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:15Z (RFD66606-2487) 'missing, the package itself failed to build, not merely to work once launched.
- # tags: rfd:exit
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:16Z (RFD66606-2487) 'Walk mode's clips should rejoin the AnimationMixer ecosystem
+2026-11-08T00:00:06Z (RFD66606-2487) 'Walk mode's clips should rejoin the AnimationMixer ecosystem
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:17Z (RFD66606-2487) '- Build one AnimationLibrary resource per clip set, keyed one track at a time, in place of
+2026-11-08T00:00:07Z (RFD66606-2487) '- Build one AnimationLibrary resource per clip set, keyed one track at a time, in place of the flat transform files and the clip list file.
  # tags: rfd:decision
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:18Z (RFD66606-2487) '  the flat transform files and the clip list file.
+2026-11-08T00:00:08Z (RFD66606-2487) '- Decide whether the guest bakes its own pose database from that library over the sandbox's existing calls into engine objects, or whether baking happens once on the engine side and only the finished flat arrays cross into the guest, as they do today.
  # tags: rfd:decision
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:19Z (RFD66606-2487) '- Decide whether the guest bakes its own pose database from that library over the sandbox's
+2026-11-08T00:00:09Z (RFD66606-2487) '- Drop the three script steps whose only job is moving clip files between repositories and into the exported package once the library carries the same data as a tracked resource.
  # tags: rfd:decision
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:20Z (RFD66606-2487) '  existing calls into engine objects, or whether baking happens once on the engine side and
- # tags: rfd:decision
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:21Z (RFD66606-2487) '  only the finished flat arrays cross into the guest, as they do today.
- # tags: rfd:decision
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:22Z (RFD66606-2487) '- Drop the three script steps whose only job is moving clip files between repositories and
- # tags: rfd:decision
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:23Z (RFD66606-2487) '  into the exported package once the library carries the same data as a tracked resource.
- # tags: rfd:decision
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:24Z (RFD66606-2487) '- RFD66606-2382, which names the datasource store these release steps also move data for.
+2026-11-08T00:00:10Z (RFD66606-2487) '- RFD66606-2382, which names the datasource store these release steps also move data for.
  # tags: rfd:related
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:25Z (RFD66606-2487) 'Current data flow
+2026-11-08T00:00:11Z (RFD66606-2487) 'Current data flow
  # tags: rfd:details-heading
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:26Z (RFD66606-2487) 'Clip data is produced as a set of per-bone transform arrays, a clip list file, a skeleton
+2026-11-08T00:00:12Z (RFD66606-2487) 'Clip data is produced as a set of per-bone transform arrays, a clip list file, a skeleton description and a parent list, one set of files per clip. A release step copies these files from the source repository into the project, where an editor setting is relied on to carry them into the exported package as plain files. The guest reads its own copy of these files at run time and parses the transform layout itself to build its pose search structure.
  # tags: rfd:details
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:27Z (RFD66606-2487) 'description and a parent list, one set of files per clip. A release step copies these files
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:28Z (RFD66606-2487) 'from the source repository into the project, where an editor setting is relied on to carry
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:29Z (RFD66606-2487) 'them into the exported package as plain files. The guest reads its own copy of these files
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:30Z (RFD66606-2487) 'at run time and parses the transform layout itself to build its pose search structure.
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:31Z (RFD66606-2487) '
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:32Z (RFD66606-2487) 'Where the raw layout came from
+2026-11-08T00:00:13Z (RFD66606-2487) 'Where the raw layout came from
  # tags: rfd:details-heading
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:33Z (RFD66606-2487) 'The guest is a port of an existing engine plugin whose pose database is built directly from
+2026-11-08T00:00:14Z (RFD66606-2487) 'The guest is a port of an existing engine plugin whose pose database is built directly from an AnimationLibrary, over a real mixer and skeleton, using the engine's own animation tracks. The port's own comment records that clips were changed to arrive as flat transforms "instead of Godot Animation tracks", changed for the sandboxed port alone.
  # tags: rfd:details
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:34Z (RFD66606-2487) 'an AnimationLibrary, over a real mixer and skeleton, using the engine's own animation
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:35Z (RFD66606-2487) 'tracks. The port's own comment records that clips were changed to arrive as flat transforms
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:36Z (RFD66606-2487) '"instead of Godot Animation tracks", changed for the sandboxed port alone.
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:37Z (RFD66606-2487) '
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:38Z (RFD66606-2487) 'Target data flow
+2026-11-08T00:00:15Z (RFD66606-2487) 'Target data flow
  # tags: rfd:details-heading
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:39Z (RFD66606-2487) 'A build step reads the same source transform arrays once and writes one AnimationLibrary
+2026-11-08T00:00:16Z (RFD66606-2487) 'A build step reads the same source transform arrays once and writes one AnimationLibrary resource, one Animation per clip, each built by adding a track and inserting a key at a time rather than copying bytes. That resource is tracked and imported like any other project asset, so the normal export path carries it with no special allowlist. The guest reads pose data through the sandbox's existing calls into engine objects rather than through a file.
  # tags: rfd:details
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:40Z (RFD66606-2487) 'resource, one Animation per clip, each built by adding a track and inserting a key at a
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:41Z (RFD66606-2487) 'time rather than copying bytes. That resource is tracked and imported like any other
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:42Z (RFD66606-2487) 'project asset, so the normal export path carries it with no special allowlist. The guest
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:43Z (RFD66606-2487) 'reads pose data through the sandbox's existing calls into engine objects rather than
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:44Z (RFD66606-2487) 'through a file.
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:45Z (RFD66606-2487) '
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:46Z (RFD66606-2487) 'Open question
+2026-11-08T00:00:17Z (RFD66606-2487) 'Open question
  # tags: rfd:details-heading
  Text:RFD2487  1 LINE
  Text:Written
 
-2026-11-08T00:00:47Z (RFD66606-2487) 'Two shapes remain undecided. In one, the guest keeps baking its own pose search structure,
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:48Z (RFD66606-2487) 'now reading the AnimationLibrary's tracks over the sandbox's calls into engine objects
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:49Z (RFD66606-2487) 'instead of a file, closest to the original plugin's design. In the other, baking moves to
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:50Z (RFD66606-2487) 'the engine side entirely, producing the same flat arrays the guest reads today, handed
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:51Z (RFD66606-2487) 'across once rather than read from a file. The guest's own search code stays as it is. The
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:52Z (RFD66606-2487) 'choice needs a measurement of how much the sandbox's call overhead costs when pulling every
- # tags: rfd:details
- Text:RFD2487  1 LINE
- Text:Written
-
-2026-11-08T00:00:53Z (RFD66606-2487) 'key of every clip once at bake time, not at the frame rate the search itself runs at.
+2026-11-08T00:00:18Z (RFD66606-2487) 'Two shapes remain undecided. In one, the guest keeps baking its own pose search structure, now reading the AnimationLibrary's tracks over the sandbox's calls into engine objects instead of a file, closest to the original plugin's design. In the other, baking moves to the engine side entirely, producing the same flat arrays the guest reads today, handed across once rather than read from a file. The guest's own search code stays as it is. The choice needs a measurement of how much the sandbox's call overhead costs when pulling every key of every clip once at bake time, not at the frame rate the search itself runs at.
  # tags: rfd:details
  Text:RFD2487  1 LINE
  Text:Written

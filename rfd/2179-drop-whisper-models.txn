@@ -9,407 +9,207 @@
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:02Z (RFD66606-2179) 'RFD66606-2164, RFD66606-2178, RFD66606-1102, RFD66606-1027; CITATION.cff;
- # tags: rfd:scope
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:03Z (RFD66606-2179) '`emit_10track_panel.py`
+2026-09-02T00:00:02Z (RFD66606-2179) 'RFD66606-2164, RFD66606-2178, RFD66606-1102, RFD66606-1027; CITATION.cff; `emit_10track_panel.py`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2179) 'The ASR panel drops Whisper entirely, for latency and not for accuracy.
+2026-09-02T00:00:03Z (RFD66606-2179) 'The ASR panel drops Whisper entirely, for latency and not for accuracy.
  # tags: rfd:hook
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:05Z (RFD66606-2179) 'whisper-large-v3 dominates panel wall-time (several seconds each on MPS versus
+2026-09-02T00:00:04Z (RFD66606-2179) 'whisper-large-v3 dominates panel wall-time (several seconds each on MPS versus sub-second for Voxtral and Parakeet).
  # tags: rfd:intrigue
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:06Z (RFD66606-2179) 'sub-second for Voxtral and Parakeet).
- # tags: rfd:intrigue
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:07Z (RFD66606-2179) 'Drop the whisper backends from `emit_10track_panel.py`, and the Whisper entries from
+2026-09-02T00:00:05Z (RFD66606-2179) 'Drop the whisper backends from `emit_10track_panel.py`, and the Whisper entries from `CITATION.cff` and the downstream RFDs.
  # tags: rfd:exit
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:08Z (RFD66606-2179) '`CITATION.cff` and the downstream RFDs.
- # tags: rfd:exit
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:09Z (RFD66606-2179) 'Drop all Whisper models from the ASR panel
+2026-09-02T00:00:06Z (RFD66606-2179) 'Drop all Whisper models from the ASR panel
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2179) 'Per-clip WER against SpeakingFaces canonical text. Lower is better.
+2026-09-02T00:00:07Z (RFD66606-2179) 'Per-clip WER against SpeakingFaces canonical text. Lower is better. Zero = exact match on the canonical wording (case-insensitive, whitespace- split, Levenshtein / reference word count).
  # tags: rfd:details-preamble
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:11Z (RFD66606-2179) 'Zero = exact match on the canonical wording (case-insensitive, whitespace-
- # tags: rfd:details-preamble
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:12Z (RFD66606-2179) 'split, Levenshtein / reference word count).
- # tags: rfd:details-preamble
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2179) 'Drop all three Whisper models (whisper-large-v3, ipa-whisper-small, ipa-whisper-base) from the ASR panel; the panel drops from 12 tracks to 9, and Whisper is not replaced.
+2026-09-02T00:00:08Z (RFD66606-2179) 'Drop all three Whisper models (whisper-large-v3, ipa-whisper-small, ipa-whisper-base) from the ASR panel; the panel drops from 12 tracks to 9, and Whisper is not replaced.
  # tags: rfd:decision
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:14Z (RFD66606-2179) 'Retracts three rows from RFD66606-2164 (Rung 1 corpus); amends RFD66606-2178 (QAFT stack plan),
+2026-09-02T00:00:09Z (RFD66606-2179) 'Retracts three rows from RFD66606-2164 (Rung 1 corpus); amends RFD66606-2178 (QAFT stack plan), three Class B rungs go.
  # tags: rfd:related
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:15Z (RFD66606-2179) 'three Class B rungs go.
- # tags: rfd:related
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:16Z (RFD66606-2179) 'Panel after the drop
+2026-09-02T00:00:10Z (RFD66606-2179) 'Panel after the drop
  # tags: rfd:details-heading
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:17Z (RFD66606-2179) '  text-track    Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2,
+2026-09-02T00:00:11Z (RFD66606-2179) '  text-track    Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2, Gemma-4-12B auto IPA-track     Voxtral-IPA, Gemma-4-12B GBNF-IPA phone-track   allosaurus (universal + eng + rus)
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:18Z (RFD66606-2179) '                Gemma-4-12B auto
+2026-09-02T00:00:12Z (RFD66606-2179) 'Voxtral is the accuracy leader; Parakeet stays as the CC-BY-4.0 alternate.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:19Z (RFD66606-2179) '  IPA-track     Voxtral-IPA, Gemma-4-12B GBNF-IPA
+2026-09-02T00:00:13Z (RFD66606-2179) 'Follow-ups: `emit_10track_panel.py` drops the whisper backends; downstream RFDs and CITATION.cff drop Whisper entries. Gemma-auto shipped empty transcripts on all 15 clips (WER 1.000); separate follow-up to fix or drop.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:20Z (RFD66606-2179) '  phone-track   allosaurus (universal + eng + rus)
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2179) '
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2179) 'Voxtral is the accuracy leader; Parakeet stays as the CC-BY-4.0 alternate.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2179) '
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2179) 'Follow-ups: `emit_10track_panel.py` drops the whisper backends; downstream RFDs and CITATION.cff drop Whisper entries. Gemma-auto shipped empty transcripts on all 15 clips (WER 1.000); separate follow-up to fix or drop.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:25Z (RFD66606-2179) 'Per-clip
+2026-09-02T00:00:14Z (RFD66606-2179) 'Per-clip
  # tags: rfd:details-heading
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:26Z (RFD66606-2179) '| clip                     | parakeet | whisper | voxtral | wav2vec2 | gemma-auto |
+2026-09-02T00:00:15Z (RFD66606-2179) '| clip                     | parakeet | whisper | voxtral | wav2vec2 | gemma-auto |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:27Z (RFD66606-2179) '| ------------------------ | -------: | ------: | ------: | -------: | ---------: |
+2026-09-02T00:00:16Z (RFD66606-2179) '| ------------------------ | -------: | ------: | ------: | -------: | ---------: |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:28Z (RFD66606-2179) '| 100_1_2_1_1134_1         | 0.000    | 0.000   | 0.000   | 0.500    | 1.000      |
+2026-09-02T00:00:17Z (RFD66606-2179) '| 100_1_2_1_1134_1         | 0.000    | 0.000   | 0.000   | 0.500    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:29Z (RFD66606-2179) '| 100_1_2_1_1293_1         | 1.000    | 1.000   | 0.000   | 0.500    | 1.000      |
+2026-09-02T00:00:18Z (RFD66606-2179) '| 100_1_2_1_1293_1         | 1.000    | 1.000   | 0.000   | 0.500    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:30Z (RFD66606-2179) '| 100_1_2_1_574_1          | 1.000    | 1.000   | 0.000   | 1.000    | 1.000      |
+2026-09-02T00:00:19Z (RFD66606-2179) '| 100_1_2_1_574_1          | 1.000    | 1.000   | 0.000   | 1.000    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:31Z (RFD66606-2179) '| 100_1_2_1_594_1          | 1.000    | 0.200   | 0.000   | 0.400    | 1.000      |
+2026-09-02T00:00:20Z (RFD66606-2179) '| 100_1_2_1_594_1          | 1.000    | 0.200   | 0.000   | 0.400    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:32Z (RFD66606-2179) '| 100_1_2_1_856_1          | 0.000    | 1.000   | 0.000   | 0.200    | 1.000      |
+2026-09-02T00:00:21Z (RFD66606-2179) '| 100_1_2_1_856_1          | 0.000    | 1.000   | 0.000   | 0.200    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:33Z (RFD66606-2179) '| 100_1_2_1_97_1           | 0.125    | 0.000   | 0.000   | 0.500    | 1.000      |
+2026-09-02T00:00:22Z (RFD66606-2179) '| 100_1_2_1_97_1           | 0.125    | 0.000   | 0.000   | 0.500    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:34Z (RFD66606-2179) '| 100_1_2_2_1170_1         | 0.286    | 0.286   | 0.000   | 1.000    | 1.000      |
+2026-09-02T00:00:23Z (RFD66606-2179) '| 100_1_2_2_1170_1         | 0.286    | 0.286   | 0.000   | 1.000    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:35Z (RFD66606-2179) '| 100_1_2_2_1202_1         | 0.200    | 0.400   | 0.000   | 0.400    | 1.000      |
+2026-09-02T00:00:24Z (RFD66606-2179) '| 100_1_2_2_1202_1         | 0.200    | 0.400   | 0.000   | 0.400    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:36Z (RFD66606-2179) '| 100_1_2_2_288_1          | 1.000    | 0.000   | 0.000   | 0.500    | 1.000      |
+2026-09-02T00:00:25Z (RFD66606-2179) '| 100_1_2_2_288_1          | 1.000    | 0.000   | 0.000   | 0.500    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:37Z (RFD66606-2179) '| 100_1_2_2_323_1          | 0.111    | 0.000   | 0.000   | 0.333    | 1.000      |
+2026-09-02T00:00:26Z (RFD66606-2179) '| 100_1_2_2_323_1          | 0.111    | 0.000   | 0.000   | 0.333    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:38Z (RFD66606-2179) '| 100_1_2_2_846_1          | 1.000    | 1.000   | 0.000   | 0.500    | 1.000      |
+2026-09-02T00:00:27Z (RFD66606-2179) '| 100_1_2_2_846_1          | 1.000    | 1.000   | 0.000   | 0.500    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:39Z (RFD66606-2179) '| 100_1_2_3_1070_1         | 0.600    | 0.000   | 0.000   | 0.400    | 1.000      |
+2026-09-02T00:00:28Z (RFD66606-2179) '| 100_1_2_3_1070_1         | 0.600    | 0.000   | 0.000   | 0.400    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:40Z (RFD66606-2179) '| 100_1_2_3_1098_1         | 0.000    | 0.000   | 0.000   | 0.400    | 1.000      |
+2026-09-02T00:00:29Z (RFD66606-2179) '| 100_1_2_3_1098_1         | 0.000    | 0.000   | 0.000   | 0.400    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:41Z (RFD66606-2179) '| 100_1_2_3_351_1          | 0.200    | 0.200   | 0.000   | 0.600    | 1.000      |
+2026-09-02T00:00:30Z (RFD66606-2179) '| 100_1_2_3_351_1          | 0.200    | 0.200   | 0.000   | 0.600    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:42Z (RFD66606-2179) '| 100_1_2_3_380_1          | 1.000    | 0.000   | 0.000   | 1.333    | 1.000      |
+2026-09-02T00:00:31Z (RFD66606-2179) '| 100_1_2_3_380_1          | 1.000    | 0.000   | 0.000   | 1.333    | 1.000      |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:43Z (RFD66606-2179) '| **MEAN**                 | **0.501**| **0.339**| **0.000**| **0.571**| **1.000**  |
+2026-09-02T00:00:32Z (RFD66606-2179) '| **MEAN**                 | **0.501**| **0.339**| **0.000**| **0.571**| **1.000**  |
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:44Z (RFD66606-2179) '
+2026-09-02T00:00:33Z (RFD66606-2179) 'Method: hypothesis is the concatenated cue text from each track's `.vtt` (WEBVTT header + timing lines stripped, remaining text whitespace-joined). Reference is the SpeakingFaces canonical text from `maskscore_speech.parquet`.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:45Z (RFD66606-2179) 'Method: hypothesis is the concatenated cue text from each track's
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:46Z (RFD66606-2179) '`.vtt` (WEBVTT header + timing lines stripped, remaining text
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:47Z (RFD66606-2179) 'whitespace-joined). Reference is the SpeakingFaces canonical text
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:48Z (RFD66606-2179) 'from `maskscore_speech.parquet`.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:49Z (RFD66606-2179) 'What the numbers say
+2026-09-02T00:00:34Z (RFD66606-2179) 'What the numbers say
  # tags: rfd:details-heading
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:50Z (RFD66606-2179) '**Voxtral is the accuracy leader (0.000 mean WER, all 15 clips
+2026-09-02T00:00:35Z (RFD66606-2179) '**Voxtral is the accuracy leader (0.000 mean WER, all 15 clips exact).** Same track also returns sub-second per clip on MPS. Whichever axis dominates the decision (speed or accuracy), Voxtral wins.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:51Z (RFD66606-2179) 'exact).** Same track also returns sub-second per clip on MPS.
+2026-09-02T00:00:36Z (RFD66606-2179) '**Whisper-large-v3 is not the worst on accuracy (0.339 mean).** It beats Parakeet (0.501) and wav2vec2 (0.571) but takes several seconds per clip on MPS. The reason to drop it is latency, not accuracy. The operator's initial "bad accuracy" observation was partially wrong; Whisper's problem is speed.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:52Z (RFD66606-2179) 'Whichever axis dominates the decision (speed or accuracy), Voxtral
+2026-09-02T00:00:37Z (RFD66606-2179) '**Parakeet is the workspace's stated CC-BY-4.0 canonical (RFD66606-2164) but sits at 0.501 mean WER**, worse than Whisper. Kept because the canonical-judge choice was made on license grounds, not accuracy alone; Voxtral is the accuracy-first alternate.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:53Z (RFD66606-2179) 'wins.
+2026-09-02T00:00:38Z (RFD66606-2179) '**Gemma-auto shipped empty transcripts across all 15 clips** (WER 1.000 because the vtt files carry only the WEBVTT header, no cues). Separate bug: either the llama-mtmd-cli invocation failed or the output-parsing step drops the response. Follow-up separate from this RFD.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:00:54Z (RFD66606-2179) '
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:55Z (RFD66606-2179) '**Whisper-large-v3 is not the worst on accuracy (0.339 mean).** It
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:56Z (RFD66606-2179) 'beats Parakeet (0.501) and wav2vec2 (0.571) but takes several
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:57Z (RFD66606-2179) 'seconds per clip on MPS. The reason to drop it is latency, not
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:58Z (RFD66606-2179) 'accuracy. The operator's initial "bad accuracy" observation was
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:00:59Z (RFD66606-2179) 'partially wrong; Whisper's problem is speed.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:00Z (RFD66606-2179) '
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:01Z (RFD66606-2179) '**Parakeet is the workspace's stated CC-BY-4.0 canonical (RFD66606-2164)
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:02Z (RFD66606-2179) 'but sits at 0.501 mean WER**, worse than Whisper. Kept because the
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:03Z (RFD66606-2179) 'canonical-judge choice was made on license grounds, not accuracy
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:04Z (RFD66606-2179) 'alone; Voxtral is the accuracy-first alternate.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:05Z (RFD66606-2179) '
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:06Z (RFD66606-2179) '**Gemma-auto shipped empty transcripts across all 15 clips**
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:07Z (RFD66606-2179) '(WER 1.000 because the vtt files carry only the WEBVTT header, no
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:08Z (RFD66606-2179) 'cues). Separate bug: either the llama-mtmd-cli invocation failed or
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:09Z (RFD66606-2179) 'the output-parsing step drops the response. Follow-up separate from
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:10Z (RFD66606-2179) 'this RFD.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:11Z (RFD66606-2179) 'The 15-clip subset
+2026-09-02T00:00:39Z (RFD66606-2179) 'The 15-clip subset
  # tags: rfd:details-heading
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:01:12Z (RFD66606-2179) 'Sub_100 speaking English into a Kazakh L1 accent. Not a general-purpose
+2026-09-02T00:00:40Z (RFD66606-2179) 'Sub_100 speaking English into a Kazakh L1 accent. Not a general-purpose benchmark. The three tracks Whisper family loses to (Voxtral wins, Parakeet loses, wav2vec2 loses) do not necessarily generalise to other accents. If a wider corpus lands (Rung 2, more SpeakingFaces subjects), rerun.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:01:13Z (RFD66606-2179) 'benchmark. The three tracks Whisper family loses to (Voxtral wins,
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:14Z (RFD66606-2179) 'Parakeet loses, wav2vec2 loses) do not necessarily generalise to
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:15Z (RFD66606-2179) 'other accents. If a wider corpus lands (Rung 2, more SpeakingFaces
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:16Z (RFD66606-2179) 'subjects), rerun.
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:17Z (RFD66606-2179) 'The problem
+2026-09-02T00:00:41Z (RFD66606-2179) 'The problem
  # tags: rfd:details-heading
  Text:RFD2179  1 LINE
  Text:Written
 
-2026-09-02T00:01:18Z (RFD66606-2179) 'RFD66606-2164 (Rung 1 corpus)'s 12-track panel carries whisper-large-v3, ipa-whisper-small,
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:19Z (RFD66606-2179) 'ipa-whisper-base. The ipa-whisper variants share that latency, and the IPA
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:20Z (RFD66606-2179) 'slot is already served by Voxtral-IPA and Gemma-IPA. A 15-clip WER pass across the surviving
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:21Z (RFD66606-2179) 'text tracks (DETAILS.md) puts whisper-large-v3 at 0.339 mean, beating Parakeet (0.501) and
- # tags: rfd:details
- Text:RFD2179  1 LINE
- Text:Written
-
-2026-09-02T00:01:22Z (RFD66606-2179) 'wav2vec2 (0.571); Voxtral leads at 0.000. The reason to drop is latency, not accuracy.
+2026-09-02T00:00:42Z (RFD66606-2179) 'RFD66606-2164 (Rung 1 corpus)'s 12-track panel carries whisper-large-v3, ipa-whisper-small, ipa-whisper-base. The ipa-whisper variants share that latency, and the IPA slot is already served by Voxtral-IPA and Gemma-IPA. A 15-clip WER pass across the surviving text tracks (DETAILS.md) puts whisper-large-v3 at 0.339 mean, beating Parakeet (0.501) and wav2vec2 (0.571); Voxtral leads at 0.000. The reason to drop is latency, not accuracy.
  # tags: rfd:details
  Text:RFD2179  1 LINE
  Text:Written

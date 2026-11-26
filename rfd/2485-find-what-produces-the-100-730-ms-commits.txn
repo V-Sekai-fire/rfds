@@ -19,352 +19,172 @@
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:04Z (RFD66606-2485) '`results-contention-matrix5.log` (commit 6be7ddb) ran a bare libfdb_c loop with no SQLite
+2026-11-07T00:00:04Z (RFD66606-2485) '`results-contention-matrix5.log` (commit 6be7ddb) ran a bare libfdb_c loop with no SQLite and no VFS (the SQLite-on-FoundationDB virtual file system), so the VFS is not the cause. Slow-commit clusters (events within 0.25 s of each other) numbered 24 across 12 cells: 14 touched more than one process and 10 touched one, correcting an earlier report that every cluster touched more than one process. A lone process stalled in 2 of 3 repeats, so sharing alone does not explain the stalls. Server CPU stayed near half a core, ratekeeper reported `limited_by=workload` throughout, and the scratch trace logs held one SlowTask event in total and no disk-stall events.
  # tags: rfd:intrigue
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:05Z (RFD66606-2485) 'and no VFS (the SQLite-on-FoundationDB virtual file system), so the VFS is not the cause.
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:06Z (RFD66606-2485) 'Slow-commit clusters (events within 0.25 s of each other) numbered 24 across 12 cells: 14
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:07Z (RFD66606-2485) 'touched more than one process and 10 touched one, correcting an earlier report that every
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:08Z (RFD66606-2485) 'cluster touched more than one process. A lone process stalled in 2 of 3 repeats, so
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:09Z (RFD66606-2485) 'sharing alone does not explain the stalls. Server CPU stayed near half a core, ratekeeper
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:10Z (RFD66606-2485) 'reported `limited_by=workload` throughout, and the scratch trace logs held one SlowTask
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:11Z (RFD66606-2485) 'event in total and no disk-stall events.
- # tags: rfd:intrigue
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:12Z (RFD66606-2485) 'A cause counts only if a control reproduces or suppresses the stall on demand; otherwise
+2026-11-07T00:00:05Z (RFD66606-2485) 'A cause counts only if a control reproduces or suppresses the stall on demand; otherwise it stays undetermined, with what was ruled out, built from log files.
  # tags: rfd:exit
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:13Z (RFD66606-2485) 'it stays undetermined, with what was ruled out, built from log files.
- # tags: rfd:exit
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:14Z (RFD66606-2485) 'Find what produces the 100 ms to 730 ms commits
+2026-11-07T00:00:06Z (RFD66606-2485) 'Find what produces the 100 ms to 730 ms commits
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:15Z (RFD66606-2485) '- Run a plain C loop of `write` plus `fcntl(F_FULLFSYNC)` on the same volume as the scratch
+2026-11-07T00:00:07Z (RFD66606-2485) '- Run a plain C loop of `write` plus `fcntl(F_FULLFSYNC)` on the same volume as the scratch cluster, recording the maximum latency, both alone and alongside a commit loop; if it stalls the same way, FoundationDB is cleared as the cause.
  # tags: rfd:decision
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:16Z (RFD66606-2485) '  cluster, recording the maximum latency, both alone and alongside a commit loop; if it
+2026-11-07T00:00:08Z (RFD66606-2485) '- Correlate the wall-clock start of every slow commit against fdbserver trace events and against production `fdbmonitor` log activity; sample `fs_usage` or `iostat` during the cells; run a RAM-disk cluster arm on the Mac and the desk arm from the sibling scheduling probe.
  # tags: rfd:decision
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:17Z (RFD66606-2485) '  stalls the same way, FoundationDB is cleared as the cause.
+2026-11-07T00:00:09Z (RFD66606-2485) '- Run the two controls: `SIGSTOP` a scratch `fdbserver` for 300 ms and confirm the detector reports a multi-process cluster; run with no load and confirm no stalls are reported.
  # tags: rfd:decision
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:18Z (RFD66606-2485) '- Correlate the wall-clock start of every slow commit against fdbserver trace events and
+2026-11-07T00:00:10Z (RFD66606-2485) '- Keep the three candidates separate and untested until a control decides each: the scratch tlog's fsync sharing the Mac's SSD with the production cluster, macOS scheduling of client processes, and a cluster-wide pause. Do not cite the commit-proxy latency lines in `status json` per cell; they are cluster-wide windows, repeated across cells.
  # tags: rfd:decision
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:19Z (RFD66606-2485) '  against production `fdbmonitor` log activity; sample `fs_usage` or `iostat` during the
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:20Z (RFD66606-2485) '  cells; run a RAM-disk cluster arm on the Mac and the desk arm from the sibling scheduling
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:21Z (RFD66606-2485) '  probe.
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:22Z (RFD66606-2485) '- Run the two controls: `SIGSTOP` a scratch `fdbserver` for 300 ms and confirm the detector
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:23Z (RFD66606-2485) '  reports a multi-process cluster; run with no load and confirm no stalls are reported.
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:24Z (RFD66606-2485) '- Keep the three candidates separate and untested until a control decides each: the
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:25Z (RFD66606-2485) '  scratch tlog's fsync sharing the Mac's SSD with the production cluster, macOS scheduling
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:26Z (RFD66606-2485) '  of client processes, and a cluster-wide pause. Do not cite the commit-proxy latency
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:27Z (RFD66606-2485) '  lines in `status json` per cell; they are cluster-wide windows, repeated across cells.
- # tags: rfd:decision
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:28Z (RFD66606-2485) '- RFD66606-2382, the skateboard's manifest, which names datasource-store's SQLite VFS over
+2026-11-07T00:00:11Z (RFD66606-2485) '- RFD66606-2382, the skateboard's manifest, which names datasource-store's SQLite VFS over FoundationDB as the store these commits were measured against.
  # tags: rfd:related
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:29Z (RFD66606-2485) '  FoundationDB as the store these commits were measured against.
- # tags: rfd:related
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:30Z (RFD66606-2485) 'Data so far
+2026-11-07T00:00:12Z (RFD66606-2485) 'Data so far
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:31Z (RFD66606-2485) '`results-contention-matrix5.log` (6be7ddb), bare libfdb_c loop, no SQLite and no VFS, so
+2026-11-07T00:00:13Z (RFD66606-2485) '`results-contention-matrix5.log` (6be7ddb), bare libfdb_c loop, no SQLite and no VFS, so the VFS is not the cause:
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:32Z (RFD66606-2485) 'the VFS is not the cause:
+2026-11-07T00:00:14Z (RFD66606-2485) '- Slow-commit clusters (events within 0.25 s of each other): 24 in the 12 cells. 14 touched more than one process, 10 touched one.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:33Z (RFD66606-2485) '
+2026-11-07T00:00:15Z (RFD66606-2485) '  - N=1: 8 clusters, all single-process. N=2: 4, all multi. N=4: 3, all multi. N=8: 9, of which 7 multi and 2 single.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:34Z (RFD66606-2485) '- Slow-commit clusters (events within 0.25 s of each other): 24 in the 12 cells. 14
+2026-11-07T00:00:16Z (RFD66606-2485) '  - An earlier report said every cluster hit more than one process. That was wrong, and this table corrects it.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:35Z (RFD66606-2485) '  touched more than one process, 10 touched one.
+2026-11-07T00:00:17Z (RFD66606-2485) '- A lone process stalled in 2 of 3 repeats (5 and 4 commits over 100 ms), so sharing alone does not explain the stalls.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:36Z (RFD66606-2485) '  - N=1: 8 clusters, all single-process. N=2: 4, all multi. N=4: 3, all multi. N=8: 9, of
+2026-11-07T00:00:18Z (RFD66606-2485) '- Server CPU stayed near half a core. Ratekeeper said `limited_by=workload` throughout.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:37Z (RFD66606-2485) '    which 7 multi and 2 single.
+2026-11-07T00:00:19Z (RFD66606-2485) '- The scratch trace logs held one SlowTask event in total and no disk-stall events.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:38Z (RFD66606-2485) '  - An earlier report said every cluster hit more than one process. That was wrong, and
+2026-11-07T00:00:20Z (RFD66606-2485) '- The commit-proxy latency lines in `status json` are cluster-wide windows, repeated identically across cells. Do not cite them per cell.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:39Z (RFD66606-2485) '    this table corrects it.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:40Z (RFD66606-2485) '- A lone process stalled in 2 of 3 repeats (5 and 4 commits over 100 ms), so sharing alone
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:41Z (RFD66606-2485) '  does not explain the stalls.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:42Z (RFD66606-2485) '- Server CPU stayed near half a core. Ratekeeper said `limited_by=workload` throughout.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:43Z (RFD66606-2485) '- The scratch trace logs held one SlowTask event in total and no disk-stall events.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:44Z (RFD66606-2485) '- The commit-proxy latency lines in `status json` are cluster-wide windows, repeated
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:45Z (RFD66606-2485) '  identically across cells. Do not cite them per cell.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:46Z (RFD66606-2485) '
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:47Z (RFD66606-2485) 'Candidates, kept separate and all untested
+2026-11-07T00:00:21Z (RFD66606-2485) 'Candidates, kept separate and all untested
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:48Z (RFD66606-2485) '1. The scratch tlog's fsync sharing the Mac's SSD with the production cluster.
+2026-11-07T00:00:22Z (RFD66606-2485) '1. The scratch tlog's fsync sharing the Mac's SSD with the production cluster.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:49Z (RFD66606-2485) '2. macOS scheduling of the client processes.
+2026-11-07T00:00:23Z (RFD66606-2485) '2. macOS scheduling of the client processes.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:50Z (RFD66606-2485) '3. A pause across the cluster.
+2026-11-07T00:00:24Z (RFD66606-2485) '3. A pause across the cluster.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:51Z (RFD66606-2485) '
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:52Z (RFD66606-2485) 'Method
+2026-11-07T00:00:25Z (RFD66606-2485) 'Method
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:53Z (RFD66606-2485) '- Cheap decisive probe: a plain C loop of `write` plus `fcntl(F_FULLFSYNC)` on the same
+2026-11-07T00:00:26Z (RFD66606-2485) '- Cheap decisive probe: a plain C loop of `write` plus `fcntl(F_FULLFSYNC)` on the same volume, recording the maximum latency, run alone and alongside a commit loop. If it stalls the same way, FoundationDB is cleared.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:54Z (RFD66606-2485) '  volume, recording the maximum latency, run alone and alongside a commit loop. If it
+2026-11-07T00:00:27Z (RFD66606-2485) '- Correlate the wall-clock start of every slow commit with fdbserver trace events (trace format with timestamps) and with production `fdbmonitor` log activity.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:55Z (RFD66606-2485) '  stalls the same way, FoundationDB is cleared.
+2026-11-07T00:00:28Z (RFD66606-2485) '- Sample `fs_usage` or `iostat` during the cells.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:56Z (RFD66606-2485) '- Correlate the wall-clock start of every slow commit with fdbserver trace events (trace
+2026-11-07T00:00:29Z (RFD66606-2485) '- A RAM-disk cluster arm on the Mac.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:57Z (RFD66606-2485) '  format with timestamps) and with production `fdbmonitor` log activity.
+2026-11-07T00:00:30Z (RFD66606-2485) '- The desk arm from the sibling scheduling probe.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:00:58Z (RFD66606-2485) '- Sample `fs_usage` or `iostat` during the cells.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:00:59Z (RFD66606-2485) '- A RAM-disk cluster arm on the Mac.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:00Z (RFD66606-2485) '- The desk arm from the sibling scheduling probe.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:01Z (RFD66606-2485) '
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:02Z (RFD66606-2485) 'Controls that must be able to fail
+2026-11-07T00:00:31Z (RFD66606-2485) 'Controls that must be able to fail
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:03Z (RFD66606-2485) '- SIGSTOP a scratch `fdbserver` for 300 ms: the detector must report it as a multi-process
+2026-11-07T00:00:32Z (RFD66606-2485) '- SIGSTOP a scratch `fdbserver` for 300 ms: the detector must report it as a multi-process cluster.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:04Z (RFD66606-2485) '  cluster.
+2026-11-07T00:00:33Z (RFD66606-2485) '- A run with no load must show no stalls.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:05Z (RFD66606-2485) '- A run with no load must show no stalls.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:06Z (RFD66606-2485) '
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:07Z (RFD66606-2485) 'Reading rule, fixed before the run
+2026-11-07T00:00:34Z (RFD66606-2485) 'Reading rule, fixed before the run
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:08Z (RFD66606-2485) 'A cause counts only if a control reproduces or suppresses the stall on demand. Otherwise
+2026-11-07T00:00:35Z (RFD66606-2485) 'A cause counts only if a control reproduces or suppresses the stall on demand. Otherwise it stays "undetermined", with the list of what was ruled out.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:09Z (RFD66606-2485) 'it stays "undetermined", with the list of what was ruled out.
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:10Z (RFD66606-2485) '
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:11Z (RFD66606-2485) 'Acceptance
+2026-11-07T00:00:36Z (RFD66606-2485) 'Acceptance
  # tags: rfd:details-heading
  Text:RFD2485  1 LINE
  Text:Written
 
-2026-11-07T00:01:12Z (RFD66606-2485) 'One named cause, or an explicit "undetermined" with what was ruled out, built from log
- # tags: rfd:details
- Text:RFD2485  1 LINE
- Text:Written
-
-2026-11-07T00:01:13Z (RFD66606-2485) 'files.
+2026-11-07T00:00:37Z (RFD66606-2485) 'One named cause, or an explicit "undetermined" with what was ruled out, built from log files.
  # tags: rfd:details
  Text:RFD2485  1 LINE
  Text:Written

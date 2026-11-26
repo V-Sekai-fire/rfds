@@ -14,142 +14,82 @@
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2370) 'A sheet is composed by rendering, never by a GDScript loop over pixels, and no gate reads a
+2026-10-31T00:00:03Z (RFD66606-2370) 'A sheet is composed by rendering, never by a GDScript loop over pixels, and no gate reads a sheet.
  # tags: rfd:intrigue
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2370) 'sheet.
- # tags: rfd:intrigue
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2370) 'Check a new visual comparison against the rule: one row per case, one column per source, each
+2026-10-31T00:00:04Z (RFD66606-2370) 'Check a new visual comparison against the rule: one row per case, one column per source, each cell labelled with its metric, failures first.
  # tags: rfd:exit
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2370) 'cell labelled with its metric, failures first.
- # tags: rfd:exit
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2370) 'a visual comparison is a labelled contact sheet
+2026-10-31T00:00:05Z (RFD66606-2370) 'a visual comparison is a labelled contact sheet
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2370) '- A visual comparison is delivered as a labelled contact sheet, the format for both vision-model
+2026-10-31T00:00:06Z (RFD66606-2370) '- A visual comparison is delivered as a labelled contact sheet, the format for both vision-model review and human QA: one row per case, one column per source (original, before, after, diff), each cell labelled with its metric, failures first, and the numbers kept beside the sheet.
  # tags: rfd:decision
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2370) '  review and human QA: one row per case, one column per source (original, before, after, diff),
+2026-10-31T00:00:07Z (RFD66606-2370) '- These rules hold by agreement. No gate reads a sheet.
  # tags: rfd:decision
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2370) '  each cell labelled with its metric, failures first, and the numbers kept beside the sheet.
- # tags: rfd:decision
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2370) '- These rules hold by agreement. No gate reads a sheet.
- # tags: rfd:decision
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2370) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2370) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2370) '- RFD66606-2283, verification by recording, which the contact sheets deliver.
+2026-10-31T00:00:09Z (RFD66606-2370) '- RFD66606-2283, verification by recording, which the contact sheets deliver.
  # tags: rfd:related
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2370) '- RFD66606-2240, the `.cff` and `<stem>.xmp` sidecar of each sheet.
+2026-10-31T00:00:10Z (RFD66606-2370) '- RFD66606-2240, the `.cff` and `<stem>.xmp` sidecar of each sheet.
  # tags: rfd:related
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2370) 'The layout and how a sheet is made
+2026-10-31T00:00:11Z (RFD66606-2370) 'The layout and how a sheet is made
  # tags: rfd:details-heading
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2370) '&{repo("entities-sakuragaoka-station")}'s `tools/prop_shots.gd` is the precedent for that layout
+2026-10-31T00:00:12Z (RFD66606-2370) '&{repo("entities-sakuragaoka-station")}'s `tools/prop_shots.gd` is the precedent for that layout only (RFD66606-2283). A sheet is composed by rendering, with fragment shaders into a `SubViewport`, or in a godot-sandbox guest, never by a GDScript loop over pixels. Its script ships as `.sgd`, and its views come from `sphere_hammersley_sequence`.
  # tags: rfd:details
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2370) 'only (RFD66606-2283). A sheet is composed by rendering, with fragment shaders into a
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2370) '`SubViewport`, or in a godot-sandbox guest, never by a GDScript loop over pixels. Its script
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2370) 'ships
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2370) 'as `.sgd`, and its views come from `sphere_hammersley_sequence`.
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2370) '
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2370) 'Sidecars and copies
+2026-10-31T00:00:13Z (RFD66606-2370) 'Sidecars and copies
  # tags: rfd:details-heading
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2370) 'Each sheet carries a `.cff` and its `<stem>.xmp` sidecar (RFD66606-2240). A copy goes to
+2026-10-31T00:00:14Z (RFD66606-2370) 'Each sheet carries a `.cff` and its `<stem>.xmp` sidecar (RFD66606-2240). A copy goes to `lookdev-contact-sheets/` on the Desktop of the desk that made it, as `<topic>-NN.png`, the number rising so that no sheet is overwritten.
  # tags: rfd:details
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:24Z (RFD66606-2370) '`lookdev-contact-sheets/` on the Desktop of the desk that made it, as `<topic>-NN.png`, the
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2370) 'number
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2370) 'rising so that no sheet is overwritten.
- # tags: rfd:details
- Text:RFD2370  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2370) '2351
+2026-10-31T00:00:15Z (RFD66606-2370) '2351
  # tags: rebac:verbs-from
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:28Z (RFD66606-2370) 'rfd-2370 provides labelled-contact-sheet-compare
+2026-10-31T00:00:16Z (RFD66606-2370) 'rfd-2370 provides labelled-contact-sheet-compare
  # tags: rebac:relate
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2370) 'rfd-2370 is_a workspace-policy
+2026-10-31T00:00:17Z (RFD66606-2370) 'rfd-2370 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2370  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2370) 'rfd-2370 spends cff-xmp-metadata-derivation
+2026-10-31T00:00:18Z (RFD66606-2370) 'rfd-2370 spends cff-xmp-metadata-derivation
  # tags: rebac:relate
  Text:RFD2370  1 LINE
  Text:Written

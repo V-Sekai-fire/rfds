@@ -4,257 +4,102 @@
  RFD:Discussion  1 RFD
  Serials:VSekaiFabric
 
-2026-11-26T00:00:01Z (RFD66606-2501) 'a repository's binaries are built by the NixOS flake in that
- # tags: rfd:feature
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:02Z (RFD66606-2501) 'repository, and published as ORAS folders for the client and as a
- # tags: rfd:feature
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:03Z (RFD66606-2501) 'container image for a server
+2026-11-26T00:00:01Z (RFD66606-2501) 'a repository's binaries are built by the NixOS flake in that repository, and published as ORAS folders for the client and as a container image for a server
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:04Z (RFD66606-2501) 'the binaries of the V-Sekai-fire repositories and the CI that
- # tags: rfd:scope
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:05Z (RFD66606-2501) 'publishes and fetches them
+2026-11-26T00:00:02Z (RFD66606-2501) 'the binaries of the V-Sekai-fire repositories and the CI that publishes and fetches them
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:06Z (RFD66606-2501) 'Each repository builds its own binaries in its own NixOS flake.
+2026-11-26T00:00:03Z (RFD66606-2501) 'Each repository builds its own binaries in its own NixOS flake.
  # tags: rfd:hook
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:07Z (RFD66606-2501) 'A fresh checkout must load with no download from another repository's
+2026-11-26T00:00:04Z (RFD66606-2501) 'A fresh checkout must load with no download from another repository's CI and no hand build.
  # tags: rfd:intrigue
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:08Z (RFD66606-2501) 'CI and no hand build.
- # tags: rfd:intrigue
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:09Z (RFD66606-2501) 'Run `nix build` in the repository that owns a binary, or `oras pull`
+2026-11-26T00:00:05Z (RFD66606-2501) 'Run `nix build` in the repository that owns a binary, or `oras pull` it by digest in CI.
  # tags: rfd:exit
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:10Z (RFD66606-2501) 'it by digest in CI.
- # tags: rfd:exit
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:11Z (RFD66606-2501) 'binaries come from each repository's flake
+2026-11-26T00:00:06Z (RFD66606-2501) 'binaries come from each repository's flake
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:12Z (RFD66606-2501) '- A repository's binaries are built offline by its own `flake.nix` and
+2026-11-26T00:00:07Z (RFD66606-2501) '- A repository's binaries are built offline by its own `flake.nix` and pushed with ORAS to `ghcr.io/v-sekai-fire/<repository>` under a Go pseudo-version (RFD66606-2312); CI pulls them by digest.
  # tags: rfd:decision
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:13Z (RFD66606-2501) '  pushed with ORAS to `ghcr.io/v-sekai-fire/<repository>` under a Go
+2026-11-26T00:00:08Z (RFD66606-2501) '- The PC client ships as ORAS folders. A server is a NixOS flake container run by Podman under Eclipse Ankaios, pinned by digest (operator, 2026-11-26).
  # tags: rfd:decision
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:14Z (RFD66606-2501) '  pseudo-version (RFD66606-2312); CI pulls them by digest.
+2026-11-26T00:00:09Z (RFD66606-2501) '- The details hold the targets, the image rules and how flakes compose.
  # tags: rfd:decision
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:15Z (RFD66606-2501) '- The PC client ships as ORAS folders. A server is a NixOS flake
- # tags: rfd:decision
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:16Z (RFD66606-2501) '  container run by Podman under Eclipse Ankaios, pinned by digest
- # tags: rfd:decision
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:17Z (RFD66606-2501) '  (operator, 2026-11-26).
- # tags: rfd:decision
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:18Z (RFD66606-2501) '- The details hold the targets, the image rules and how flakes
- # tags: rfd:decision
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:19Z (RFD66606-2501) '  compose.
- # tags: rfd:decision
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:20Z (RFD66606-2501) '- RFD66606-2312, release tags are Go pseudo-versions.
+2026-11-26T00:00:10Z (RFD66606-2501) '- RFD66606-2312, release tags are Go pseudo-versions.
  # tags: rfd:related
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:21Z (RFD66606-2501) '- RFD66606-2391, the precisions the beta runs.
+2026-11-26T00:00:11Z (RFD66606-2501) '- RFD66606-2391, the precisions the beta runs.
  # tags: rfd:related
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:22Z (RFD66606-2501) 'The rulings
+2026-11-26T00:00:12Z (RFD66606-2501) 'The rulings
  # tags: rfd:details-heading
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:23Z (RFD66606-2501) '- A repository's binaries are built by the `flake.nix` in that
+2026-11-26T00:00:13Z (RFD66606-2501) '- A repository's binaries are built by the `flake.nix` in that repository, never by another repository's CI or by hand. The targets are Windows x86_64 and Linux x86_64 and aarch64, at single and double precision where the Variant size matters.
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:24Z (RFD66606-2501) '  repository, never by another repository's CI or by hand. The targets
+2026-11-26T00:00:14Z (RFD66606-2501) '- Files, such as libraries, guest ELFs and addons, are pushed with ORAS as plain-file OCI artifacts to `ghcr.io/v-sekai-fire/<repository>`, tagged with the commit's Go pseudo-version (RFD66606-2312). CI pulls them by digest with `oras pull`.
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:25Z (RFD66606-2501) '  are Windows x86_64 and Linux x86_64 and aarch64, at single and
+2026-11-26T00:00:15Z (RFD66606-2501) '- The PC client ships as folders pushed with ORAS and pulled by digest (operator, 2026-11-26).
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:26Z (RFD66606-2501) '  double precision where the Variant size matters.
+2026-11-26T00:00:16Z (RFD66606-2501) '- A server piece is a NixOS flake that builds an OCI image with `dockerTools.buildLayeredImage` from nixpkgs, holding only the service and its closure. Podman runs it under Eclipse Ankaios: each server is an Ankaios workload whose manifest pins the image by digest and names its ports and restart policy. CI extracts an image with skopeo and umoci, and Docker Engine is not used. No server piece ships as win64 or runs under NSSM (operator, 2026-11-26).
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:27Z (RFD66606-2501) '- Files, such as libraries, guest ELFs and addons, are pushed with
+2026-11-26T00:00:17Z (RFD66606-2501) '- The build works offline: the lock file pins every input and no derivation fetches. CI is one job that restores the Nix store from a zstd-compressed cache, builds, and publishes on `main`.
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:28Z (RFD66606-2501) '  ORAS as plain-file OCI artifacts to
+2026-11-26T00:00:18Z (RFD66606-2501) '- Flakes compose. Each takes one `nixpkgs` input that a consumer can make `follows` its own, and exposes `packages` and `overlays.default`. Another offline flake takes it as an input.
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:29Z (RFD66606-2501) '  `ghcr.io/v-sekai-fire/<repository>`, tagged with the commit's Go
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:30Z (RFD66606-2501) '  pseudo-version (RFD66606-2312). CI pulls them by digest with `oras
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:31Z (RFD66606-2501) '  pull`.
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:32Z (RFD66606-2501) '- The PC client ships as folders pushed with ORAS and pulled by digest
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:33Z (RFD66606-2501) '  (operator, 2026-11-26).
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:34Z (RFD66606-2501) '- A server piece is a NixOS flake that builds an OCI image with
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:35Z (RFD66606-2501) '  `dockerTools.buildLayeredImage` from nixpkgs, holding only the
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:36Z (RFD66606-2501) '  service and its closure. Podman runs it under Eclipse Ankaios: each
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:37Z (RFD66606-2501) '  server is an Ankaios workload whose manifest pins the image by
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:38Z (RFD66606-2501) '  digest and names its ports and restart policy. CI extracts an image
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:39Z (RFD66606-2501) '  with skopeo and umoci, and Docker Engine is not used. No server
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:40Z (RFD66606-2501) '  piece ships as win64 or runs under NSSM (operator, 2026-11-26).
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:41Z (RFD66606-2501) '- The build works offline: the lock file pins every input and no
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:42Z (RFD66606-2501) '  derivation fetches. CI is one job that restores the Nix store from a
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:43Z (RFD66606-2501) '  zstd-compressed cache, builds, and publishes on `main`.
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:44Z (RFD66606-2501) '- Flakes compose. Each takes one `nixpkgs` input that a consumer can
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:45Z (RFD66606-2501) '  make `follows` its own, and exposes `packages` and
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:46Z (RFD66606-2501) '  `overlays.default`. Another offline flake takes it as an input.
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:47Z (RFD66606-2501) 'Where the tools come from
+2026-11-26T00:00:19Z (RFD66606-2501) 'Where the tools come from
  # tags: rfd:details-heading
  Text:RFD2501  1 LINE
  Text:Written
 
-2026-11-26T00:00:48Z (RFD66606-2501) 'ORAS pushes and pulls plain files as OCI artifacts:
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:49Z (RFD66606-2501) 'https://oras.land/docs/quickstart/ Eclipse Ankaios runs and
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:50Z (RFD66606-2501) 'orchestrates the server workloads, with Podman as its runtime:
- # tags: rfd:details
- Text:RFD2501  1 LINE
- Text:Written
-
-2026-11-26T00:00:51Z (RFD66606-2501) 'https://github.com/eclipse-ankaios/ankaios
+2026-11-26T00:00:20Z (RFD66606-2501) 'ORAS pushes and pulls plain files as OCI artifacts: https://oras.land/docs/quickstart/ Eclipse Ankaios runs and orchestrates the server workloads, with Podman as its runtime: https://github.com/eclipse-ankaios/ankaios
  # tags: rfd:details
  Text:RFD2501  1 LINE
  Text:Written

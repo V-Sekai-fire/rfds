@@ -14,132 +14,67 @@
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-2009) 'Check that a package and the workflow that pulls it share one repository before you rely on the
+2026-08-25T00:00:03Z (RFD66606-2009) 'Check that a package and the workflow that pulls it share one repository before you rely on the pull. The sections below list the consequences.
  # tags: rfd:exit
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-2009) 'pull. The sections below list the consequences.
- # tags: rfd:exit
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-2009) 'Ghcr package ownership same repo
+2026-08-25T00:00:04Z (RFD66606-2009) 'Ghcr package ownership same repo
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-2009) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:05Z (RFD66606-2009) 'See `DETAILS.md` for the full argument.
  # tags: rfd:decision
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-2009) 'See `DETAILS.md` for the full argument.
+2026-08-25T00:00:06Z (RFD66606-2009) 'See `DETAILS.md` for the full argument.
  # tags: rfd:related
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-2009) 'Context
+2026-08-25T00:00:07Z (RFD66606-2009) 'Context
  # tags: rfd:details-heading
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-2009) 'The zone server binary was built by `multiplayer-fabric-baker` and
+2026-08-25T00:00:08Z (RFD66606-2009) 'The zone server binary was built by `multiplayer-fabric-baker` and pushed to `ghcr.io/v-sekai-fire/godot-zone-double`. The zone deploy workflow (in `multiplayer-fabric-zone`) used `--local-only` with `docker/login-action` to pull that image, but received 403 Forbidden.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-2009) 'pushed to `ghcr.io/v-sekai-fire/godot-zone-double`. The zone deploy
+2026-08-25T00:00:09Z (RFD66606-2009) 'GitHub Container Registry ties package write access to the repository whose `GITHUB_TOKEN` created it. The zone repo's token could not push to a package owned by the baker repo, and could not pull a private package owned by another repo without package-scoped access.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:11Z (RFD66606-2009) 'workflow (in `multiplayer-fabric-zone`) used `--local-only` with
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-2009) '`docker/login-action` to pull that image, but received 403 Forbidden.
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-2009) '
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-2009) 'GitHub Container Registry ties package write access to the repository
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-2009) 'whose `GITHUB_TOKEN` created it. The zone repo's token could not push to
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-2009) 'a package owned by the baker repo, and could not pull a private package
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-2009) 'owned by another repo without package-scoped access.
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-2009) 'Consequences
+2026-08-25T00:00:10Z (RFD66606-2009) 'Consequences
  # tags: rfd:details-heading
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-2009) '- Package names must reflect the owning repo to avoid confusion.
+2026-08-25T00:00:11Z (RFD66606-2009) '- Package names must reflect the owning repo to avoid confusion.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-2009) '- Moving a package between repos requires deleting it (needs
+2026-08-25T00:00:12Z (RFD66606-2009) '- Moving a package between repos requires deleting it (needs `delete:packages` API scope) and rebuilding, or renaming.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:21Z (RFD66606-2009) '  `delete:packages` API scope) and rebuilding, or renaming.
+2026-08-25T00:00:13Z (RFD66606-2009) '- Cross-repo GHCR access requires either a PAT with `read:packages` scope or making the package public.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:22Z (RFD66606-2009) '- Cross-repo GHCR access requires either a PAT with `read:packages`
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-2009) '  scope or making the package public.
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-2009) 'The problem
+2026-08-25T00:00:14Z (RFD66606-2009) 'The problem
  # tags: rfd:details-heading
  Text:RFD2009  1 LINE
  Text:Written
 
-2026-08-25T00:00:25Z (RFD66606-2009) 'The zone server binary was built by `multiplayer-fabric-baker` and
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:26Z (RFD66606-2009) 'pushed to `ghcr.io/v-sekai-fire/godot-zone-double`. The zone deploy
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:27Z (RFD66606-2009) 'workflow (in `multiplayer-fabric-zone`) used `--local-only` with
- # tags: rfd:details
- Text:RFD2009  1 LINE
- Text:Written
-
-2026-08-25T00:00:28Z (RFD66606-2009) '`docker/login-action` to pull that image, but received 403 Forbidden.
+2026-08-25T00:00:15Z (RFD66606-2009) 'The zone server binary was built by `multiplayer-fabric-baker` and pushed to `ghcr.io/v-sekai-fire/godot-zone-double`. The zone deploy workflow (in `multiplayer-fabric-zone`) used `--local-only` with `docker/login-action` to pull that image, but received 403 Forbidden.
  # tags: rfd:details
  Text:RFD2009  1 LINE
  Text:Written

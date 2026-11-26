@@ -19,132 +19,72 @@
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:04Z (RFD66606-2489) 'The base model is the body base (the reference rig everything else hangs from).
+2026-11-10T00:00:04Z (RFD66606-2489) 'The base model is the body base (the reference rig everything else hangs from). GarmentCodeData v2 (the CC BY 4.0 garment dataset) stores body measurements beside the waist and collar vertex labels. Those labels plus the mesh are all a garment needs to sit on the body. So the measurements must be re-readable from the base model alone.
  # tags: rfd:intrigue
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:05Z (RFD66606-2489) 'GarmentCodeData v2 (the CC BY 4.0 garment dataset) stores body measurements
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:06Z (RFD66606-2489) 'beside the waist and collar vertex labels.
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:07Z (RFD66606-2489) 'Those labels plus the mesh are all a garment needs to sit on the body.
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:08Z (RFD66606-2489) 'So the measurements must be re-readable from the base model alone.
- # tags: rfd:intrigue
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:09Z (RFD66606-2489) 'Read DETAILS for the loop definitions and the first gate.
+2026-11-10T00:00:05Z (RFD66606-2489) 'Read DETAILS for the loop definitions and the first gate.
  # tags: rfd:exit
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:10Z (RFD66606-2489) 'Extracting body measurements from the base model
+2026-11-10T00:00:06Z (RFD66606-2489) 'Extracting body measurements from the base model
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:11Z (RFD66606-2489) 'The base model's body measurements come from the mesh itself.
+2026-11-10T00:00:07Z (RFD66606-2489) 'The base model's body measurements come from the mesh itself. Circumference is the perimeter of a labeled cross-section loop. Length is a geodesic distance between two landmarks. GarmentCodeData v2 supplies the waist and collar vertex labels that anchor them. RFD66606-2488 (cage-wrapped surface net) reproduces those same labels. So measuring the base model is also a check that the net read the parts correctly.
  # tags: rfd:decision
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:12Z (RFD66606-2489) 'Circumference is the perimeter of a labeled cross-section loop.
- # tags: rfd:decision
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:13Z (RFD66606-2489) 'Length is a geodesic distance between two landmarks.
- # tags: rfd:decision
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:14Z (RFD66606-2489) 'GarmentCodeData v2 supplies the waist and collar vertex labels that anchor them.
- # tags: rfd:decision
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:15Z (RFD66606-2489) 'RFD66606-2488 (cage-wrapped surface net) reproduces those same labels.
- # tags: rfd:decision
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:16Z (RFD66606-2489) 'So measuring the base model is also a check that the net read the parts correctly.
- # tags: rfd:decision
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:17Z (RFD66606-2489) '- RFD66606-2488, the cage-wrapped surface net whose part labels this RFD reads.
+2026-11-10T00:00:08Z (RFD66606-2489) '- RFD66606-2488, the cage-wrapped surface net whose part labels this RFD reads.
  # tags: rfd:related
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:18Z (RFD66606-2489) '- RFD66606-2424, the anthropometric keypoint fit whose landmark vocabulary this inherits.
+2026-11-10T00:00:09Z (RFD66606-2489) '- RFD66606-2424, the anthropometric keypoint fit whose landmark vocabulary this inherits.
  # tags: rfd:related
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:19Z (RFD66606-2489) 'The problem
+2026-11-10T00:00:10Z (RFD66606-2489) 'The problem
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:20Z (RFD66606-2489) 'The base model is the reference body mesh, the static rig everything hangs from.
+2026-11-10T00:00:11Z (RFD66606-2489) 'The base model is the reference body mesh, the static rig everything hangs from. It must be measured so garments fit it and the net can be checked. Hand-measured numbers are the only source today and they do not round-trip to the mesh.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:21Z (RFD66606-2489) 'It must be measured so garments fit it and the net can be checked.
- # tags: rfd:details
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:22Z (RFD66606-2489) 'Hand-measured numbers are the only source today and they do not round-trip to the mesh.
- # tags: rfd:details
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:23Z (RFD66606-2489) 'How measurement is made
+2026-11-10T00:00:12Z (RFD66606-2489) 'How measurement is made
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:24Z (RFD66606-2489) '- Circumference is the perimeter of a labeled cross-section loop.
+2026-11-10T00:00:13Z (RFD66606-2489) '- Circumference is the perimeter of a labeled cross-section loop.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:25Z (RFD66606-2489) '- Waist and collar are the loops GarmentCodeData v2 already labels.
+2026-11-10T00:00:14Z (RFD66606-2489) '- Waist and collar are the loops GarmentCodeData v2 already labels.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:26Z (RFD66606-2489) '- Length is a geodesic distance between two landmarks.
+2026-11-10T00:00:15Z (RFD66606-2489) '- Length is a geodesic distance between two landmarks.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:27Z (RFD66606-2489) 'First gate
+2026-11-10T00:00:16Z (RFD66606-2489) 'First gate
  # tags: rfd:details-heading
  Text:RFD2489  1 LINE
  Text:Written
 
-2026-11-10T00:00:28Z (RFD66606-2489) 'Re-derive the stored body measurements from the base model mesh alone.
- # tags: rfd:details
- Text:RFD2489  1 LINE
- Text:Written
-
-2026-11-10T00:00:29Z (RFD66606-2489) 'The recovered numbers agree with GarmentCodeData v2 within tolerance in the model-explorer viewer.
+2026-11-10T00:00:17Z (RFD66606-2489) 'Re-derive the stored body measurements from the base model mesh alone. The recovered numbers agree with GarmentCodeData v2 within tolerance in the model-explorer viewer.
  # tags: rfd:details
  Text:RFD2489  1 LINE
  Text:Written

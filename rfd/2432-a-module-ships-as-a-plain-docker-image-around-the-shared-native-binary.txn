@@ -19,77 +19,52 @@
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2432) 'Check a new image against RFD66606-1036: plain Docker, `/health` + `/predict`, weights at
+2026-10-31T00:00:04Z (RFD66606-2432) 'Check a new image against RFD66606-1036: plain Docker, `/health` + `/predict`, weights at build time, a two-stage Dockerfile and one model per image.
  # tags: rfd:exit
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2432) 'build time, a two-stage Dockerfile and one model per image.
- # tags: rfd:exit
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2432) 'a module ships as a plain Docker image around the shared native binary
+2026-10-31T00:00:05Z (RFD66606-2432) 'a module ships as a plain Docker image around the shared native binary
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2432) '- Per RFD66606-1036 (`committed`): plain Docker, `/health` + `/predict`, weights at build time,
+2026-10-31T00:00:06Z (RFD66606-2432) '- Per RFD66606-1036 (`committed`): plain Docker, `/health` + `/predict`, weights at build time, two-stage Dockerfile (`contract` + `worker`), one model per image.
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2432) '  two-stage Dockerfile (`contract` + `worker`), one model per image.
+2026-10-31T00:00:07Z (RFD66606-2432) '- The container's inference binary is the shared native Godot binary from &{repo("entities-godot-sandbox", planned: "4-entities")} (RFD66606-2210) with the per-model adapter mounted. The runtime is ggml with the Vulkan backend per RFD66606-2231's substitute (Vulkan on native).
  # tags: rfd:decision
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2432) '- The container's inference binary is the shared native Godot binary from
- # tags: rfd:decision
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2432) '  &{repo("entities-godot-sandbox", planned: "4-entities")} (RFD66606-2210) with the per-model
- # tags: rfd:decision
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2432) '  adapter mounted. The runtime is
- # tags: rfd:decision
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2432) '  ggml with the Vulkan backend per RFD66606-2231's substitute (Vulkan on native).
- # tags: rfd:decision
- Text:RFD2432  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2432) '- RFD66606-1102, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2432) '- RFD66606-1102, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2432) '- RFD66606-1036, the plain Docker packaging.
+2026-10-31T00:00:09Z (RFD66606-2432) '- RFD66606-1036, the plain Docker packaging.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2432) '- RFD66606-2210, the shared native Godot binary.
+2026-10-31T00:00:10Z (RFD66606-2432) '- RFD66606-2210, the shared native Godot binary.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2432) '- RFD66606-2231, the Vulkan substitute.
+2026-10-31T00:00:11Z (RFD66606-2432) '- RFD66606-2231, the Vulkan substitute.
  # tags: rfd:related
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2432) 'Target card
+2026-10-31T00:00:12Z (RFD66606-2432) 'Target card
  # tags: rfd:details-heading
  Text:RFD2432  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2432) 'Target 24 GB card (local desktop GPU per CLAUDE.md).
+2026-10-31T00:00:13Z (RFD66606-2432) 'Target 24 GB card (local desktop GPU per CLAUDE.md).
  # tags: rfd:details
  Text:RFD2432  1 LINE
  Text:Written

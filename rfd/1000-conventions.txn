@@ -29,797 +29,287 @@
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1000) 'This repository writes Request-for-Discussion documents in the Oxide
+2026-08-25T00:00:06Z (RFD66606-1000) 'This repository writes Request-for-Discussion documents in the Oxide style. Each RFD has a state: prediscussion, ideation, discussion, published, committed, or abandoned.
  # tags: rfd:decision
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:07Z (RFD66606-1000) 'style. Each RFD has a state: prediscussion, ideation, discussion,
+2026-08-25T00:00:07Z (RFD66606-1000) 'Scope is not a state. A plan lists the RFDs it spends. An RFD outside that list keeps its state. An RFD becomes abandoned when its own decision is withdrawn, so one change abandons or deletes three live RFDs at most. `scripts/check_rfd_state_churn.py` holds that limit.
  # tags: rfd:decision
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1000) 'published, committed, or abandoned.
+2026-08-25T00:00:08Z (RFD66606-1000) 'Technical writing follows ASD-STE100 Simplified Technical English. An essay follows the AI-trope gate, and a section names which one it takes. RFD66606-1125 gives that rule. Code and identifiers follow neither.
  # tags: rfd:decision
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1000) '
+2026-08-25T00:00:09Z (RFD66606-1000) 'Each RFD's `README.md` stays at 40 lines or fewer. It states the hook, intrigue, decision and exit (HIDE), in the fewest lines that keep them true. The `draft-readable-rfd` skill has the BLUF rules. Measurement, verification log, deep walkthrough, or code sample moves to a sibling `DETAILS.md`, which the site prints on the same page. Retractions move with the rest, and stay next to what they retract.
  # tags: rfd:decision
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:10Z (RFD66606-1000) 'Scope is not a state. A plan lists the RFDs it spends. An RFD outside
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1000) 'that list keeps its state. An RFD becomes abandoned when its own decision
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:12Z (RFD66606-1000) 'is withdrawn, so one change abandons or deletes three live RFDs at most.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1000) '`scripts/check_rfd_state_churn.py` holds that limit.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1000) '
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:15Z (RFD66606-1000) 'Technical writing follows ASD-STE100 Simplified Technical English.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:16Z (RFD66606-1000) 'An essay follows the AI-trope gate, and a section names which one it
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:17Z (RFD66606-1000) 'takes. RFD66606-1125 gives that rule. Code and identifiers follow neither.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:18Z (RFD66606-1000) '
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:19Z (RFD66606-1000) 'Each RFD's `README.md` stays at 40 lines or fewer. It states the
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:20Z (RFD66606-1000) 'hook, intrigue, decision and exit (HIDE), in the fewest lines that
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1000) 'keep them true. The `draft-readable-rfd` skill has the BLUF rules.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1000) 'Measurement, verification log, deep walkthrough, or code sample
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1000) 'moves to a sibling `DETAILS.md`, which the site prints on the same page. Retractions
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1000) 'move with the rest, and stay next to what they retract.
- # tags: rfd:decision
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1000) '- RFD style: `rfd-driven-architecture` skill
+2026-08-25T00:00:10Z (RFD66606-1000) '- RFD style: `rfd-driven-architecture` skill
  # tags: rfd:references
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1000) '- Numbering rule and OID arc: `DETAILS.md`. Serials in use: `SERIALS.usda`
+2026-08-25T00:00:11Z (RFD66606-1000) '- Numbering rule and OID arc: `DETAILS.md`. Serials in use: `SERIALS.usda`
  # tags: rfd:references
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1000) '- STE spec: https://www.asd-ste100.org/ Tropes: https://tropes.fyi
+2026-08-25T00:00:12Z (RFD66606-1000) '- STE spec: https://www.asd-ste100.org/ Tropes: https://tropes.fyi
  # tags: rfd:references
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1000) 'See the DRY policy and the STE policy in `decisions/README.md`.
+2026-08-25T00:00:13Z (RFD66606-1000) 'See the DRY policy and the STE policy in `decisions/README.md`.
  # tags: rfd:related
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1000) 'The STE linter
+2026-08-25T00:00:14Z (RFD66606-1000) 'The STE linter
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1000) 'STE linter: the `simplified-technical-english` Claude Code plugin
+2026-08-25T00:00:15Z (RFD66606-1000) 'STE linter: the `simplified-technical-english` Claude Code plugin (`fire/claude-ste-plugin`). RFD66606-1063 records the move off a repo-local script.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1000) '(`fire/claude-ste-plugin`). RFD66606-1063 records the move off a
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:32Z (RFD66606-1000) 'repo-local script.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1000) 'Where designs live
+2026-08-25T00:00:16Z (RFD66606-1000) 'Where designs live
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:35Z (RFD66606-1000) 'The repository keeps designs in one place. The decisions directory
+2026-08-25T00:00:17Z (RFD66606-1000) 'The repository keeps designs in one place. The decisions directory records durable decisions. The docs tree holds detailed designs. An RFD points to its source. It does not copy the source.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:36Z (RFD66606-1000) 'records durable decisions. The docs tree holds detailed designs.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1000) 'An RFD points to its source. It does not copy the source.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1000) 'The problem this rule answers
+2026-08-25T00:00:18Z (RFD66606-1000) 'The problem this rule answers
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:39Z (RFD66606-1000) 'Two repositories allocated RFD numbers from what each treated as a private
+2026-08-25T00:00:19Z (RFD66606-1000) 'Two repositories allocated RFD numbers from what each treated as a private space. The spaces were the same space. This repository held 116 RFDs numbered 0000 to 0123. `v-sekai-fabric/multiplayer-fabric-manuals` held 129 RFDs numbered 0000 to 0132. 113 numbers named a document in both places.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1000) 'space. The spaces were the same space. This repository held 116 RFDs numbered
+2026-08-25T00:00:20Z (RFD66606-1000) 'The old rule in this file did not cause the collision on its own. It said nothing about numbering at all. The root README said the repository used "one shared numbering space", and it meant shared across weftspun projects. The fabric repository told its writers to check its own listing and, in its own words, "not any other repo's own numbering". Each rule was correct inside its repository. Together they guaranteed the collision.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:41Z (RFD66606-1000) '0000 to 0123. `v-sekai-fabric/multiplayer-fabric-manuals` held 129 RFDs
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:42Z (RFD66606-1000) 'numbered 0000 to 0132. 113 numbers named a document in both places.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:43Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:44Z (RFD66606-1000) 'The old rule in this file did not cause the collision on its own. It said
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:45Z (RFD66606-1000) 'nothing about numbering at all. The root README said the repository used "one
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:46Z (RFD66606-1000) 'shared numbering space", and it meant shared across weftspun projects. The
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:47Z (RFD66606-1000) 'fabric repository told its writers to check its own listing and, in its own
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:48Z (RFD66606-1000) 'words, "not any other repo's own numbering". Each rule was correct inside its
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:49Z (RFD66606-1000) 'repository. Together they guaranteed the collision.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:50Z (RFD66606-1000) 'The rule
+2026-08-25T00:00:21Z (RFD66606-1000) 'The rule
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:51Z (RFD66606-1000) 'An RFD number has four decimal digits.
+2026-08-25T00:00:22Z (RFD66606-1000) 'An RFD number has four decimal digits.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:52Z (RFD66606-1000) '
+2026-08-25T00:00:23Z (RFD66606-1000) 'The first digit names the organization. This repository uses digit 1. The fabric manuals use digit 2. V-Sekai-fire's private manuals use digit 3 (operator, 2026-10-12). `fire/manuals` reserves digit 4 and has no RFD.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:53Z (RFD66606-1000) 'The first digit names the organization. This repository uses digit 1. The
+2026-08-25T00:00:24Z (RFD66606-1000) 'The last three digits are the serial number. A new RFD takes the next unused serial under its own organization digit. A writer no longer checks another repository, because another organization cannot reach this digit.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:54Z (RFD66606-1000) 'fabric manuals use digit 2. V-Sekai-fire's private manuals use digit 3
+2026-08-25T00:00:25Z (RFD66606-1000) '    RFD 1015    this repository, serial 015
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:55Z (RFD66606-1000) '(operator, 2026-10-12). `fire/manuals` reserves digit 4 and has no RFD.
+2026-08-25T00:00:26Z (RFD66606-1000) '    RFD 2015    the fabric manuals, serial 015
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:56Z (RFD66606-1000) '
+2026-08-25T00:00:27Z (RFD66606-1000) 'Three decimal digits give 1000 serials for each organization. This repository uses 131 of them.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:00:57Z (RFD66606-1000) 'The last three digits are the serial number. A new RFD takes the next unused
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:58Z (RFD66606-1000) 'serial under its own organization digit. A writer no longer checks another
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:00:59Z (RFD66606-1000) 'repository, because another organization cannot reach this digit.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:00Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:01Z (RFD66606-1000) '    RFD 1015    this repository, serial 015
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:02Z (RFD66606-1000) '    RFD 2015    the fabric manuals, serial 015
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:03Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:04Z (RFD66606-1000) 'Three decimal digits give 1000 serials for each organization. This repository
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:05Z (RFD66606-1000) 'uses 131 of them.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:06Z (RFD66606-1000) 'Where the organization digit comes from
+2026-08-25T00:00:28Z (RFD66606-1000) 'Where the organization digit comes from
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:07Z (RFD66606-1000) 'The digit is a short name for an arc under an IANA Private Enterprise Number.
+2026-08-25T00:00:29Z (RFD66606-1000) 'The digit is a short name for an arc under an IANA Private Enterprise Number. PEN 66606 is assigned to iFire. RFC 9371 gives the registration procedure, and the assignment is itself the delegation. No arc below 66606 is registered with anybody.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:08Z (RFD66606-1000) 'PEN 66606 is assigned to iFire. RFC 9371 gives the
+2026-08-25T00:00:30Z (RFD66606-1000) 'That is also the hazard. RFC 9371 section 1.1 says plainly that no one controls how an assignee uses its PEN. Nothing outside this workspace will stop two of our own namespaces from minting the same arc. Only a table we keep will.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:09Z (RFD66606-1000) 'registration procedure, and the assignment is itself the delegation. No arc
+2026-08-25T00:00:31Z (RFD66606-1000) 'So one arc under the PEN names a namespace, and no namespace mints a sibling of another:
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:10Z (RFD66606-1000) 'below 66606 is registered with anybody.
+2026-08-25T00:00:32Z (RFD66606-1000) '    66606.1    documents, one arc for each manual site
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:11Z (RFD66606-1000) '
+2026-08-25T00:00:33Z (RFD66606-1000) 'The category arc is not decoration. Without it, a manual site and anything else this PEN ever identifies allocate from one space. A fifth site would take arc 5, and whatever else had picked 5 would already hold it.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:12Z (RFD66606-1000) 'That is also the hazard. RFC 9371 section 1.1 says plainly that no one controls
+2026-08-25T00:00:34Z (RFD66606-1000) 'No second category is allocated. This document allocates one when something needs one, under RFD66606-1070's rule.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:13Z (RFD66606-1000) 'how an assignee uses its PEN. Nothing outside this workspace will stop two of
+2026-08-25T00:00:35Z (RFD66606-1000) '66606.1 carries the sites, and the site arc is the organization digit:
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:14Z (RFD66606-1000) 'our own namespaces from minting the same arc. Only a table we keep will.
+2026-08-25T00:00:36Z (RFD66606-1000) '    66606.1.1    weftspun
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:15Z (RFD66606-1000) '
+2026-08-25T00:00:37Z (RFD66606-1000) '    66606.1.2    v-sekai-fabric
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:16Z (RFD66606-1000) 'So one arc under the PEN names a namespace, and no namespace mints a sibling of
+2026-08-25T00:00:38Z (RFD66606-1000) '    66606.1.3    v-sekai-fire
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:17Z (RFD66606-1000) 'another:
+2026-08-25T00:00:39Z (RFD66606-1000) '    66606.1.4    fire
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:18Z (RFD66606-1000) '
+2026-08-25T00:00:40Z (RFD66606-1000) '`fire/manuals` names a decision by its date rather than by a serial, so digit 4 is reserved and holds nothing. Digit 3 allocates 3NNN serials, and its register stays with the private manuals that allocate from it. A reserved digit costs one line here. An unreserved one costs what the collision above cost, which was 113 numbers meaning two documents at once.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:19Z (RFD66606-1000) '    66606.1    documents, one arc for each manual site
+2026-08-25T00:00:41Z (RFD66606-1000) 'Site 1 was decommissioned on 2026-08-31. `SERIALS.usda` at arc 66606.1.1 is frozen: existing 1NNN serials stay in place and stay citable, and no new serial is allocated there. New RFDs in this repository take the next unused 2NNN serial from `SERIALS-vsekai-fabric.usda` at arc 66606.1.2, whose site was decommissioned on 2026-08-29 and reactivated on 2026-08-31 for that purpose. The full argument, and the retraction of the 2026-08-29 sentence that promised no further allocations under 66606.1.2, is in `pen-66606.usda` `sitesDecommissioned`. When site 2 fills up, site 5 opens at arc 66606.1.5 under this rule; site 4 stays reserved for a date-named register.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:20Z (RFD66606-1000) '
+2026-08-25T00:00:42Z (RFD66606-1000) 'The full identifier of an RFD is:
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:21Z (RFD66606-1000) 'The category arc is not decoration. Without it, a manual site and anything else
+2026-08-25T00:00:43Z (RFD66606-1000) '    1.3.6.1.4.1.66606.1.<site>.<number>
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:22Z (RFD66606-1000) 'this PEN ever identifies allocate from one space. A fifth site would take arc
+2026-08-25T00:00:44Z (RFD66606-1000) 'RFD66606-1015 is `urn:oid:1.3.6.1.4.1.66606.1.1.1015`. The last arc is the four digits the folder name already writes. Its first digit repeats the site arc above it, and the repetition is worth its cost. The mapping from a document number to its arc is the identity, so a reader who can read one can read the other. That is what the decimal rule below was for.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:23Z (RFD66606-1000) '5, and whatever else had picked 5 would already hold it.
+2026-08-25T00:00:45Z (RFD66606-1000) 'Two rules carry to whatever takes the next category. It keeps a register of what it allocates, in the way `SERIALS.usda` does. A kind of thing gets an arc of its own rather than a neighbouring parent number, because `<thing>.1.<id>` and `<thing>.2.<id>` say which kind they are and `<thing>` beside `<thing+1>` does not.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:01:24Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:25Z (RFD66606-1000) 'No second category is allocated. This document allocates one when something
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:26Z (RFD66606-1000) 'needs one, under RFD66606-1070's rule.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:27Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:28Z (RFD66606-1000) '66606.1 carries the sites, and the site arc is the organization digit:
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:29Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:30Z (RFD66606-1000) '    66606.1.1    weftspun
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:31Z (RFD66606-1000) '    66606.1.2    v-sekai-fabric
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:32Z (RFD66606-1000) '    66606.1.3    v-sekai-fire
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:33Z (RFD66606-1000) '    66606.1.4    fire
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:34Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:35Z (RFD66606-1000) '`fire/manuals` names a decision by its date rather than by a serial, so
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:36Z (RFD66606-1000) 'digit 4 is reserved and holds nothing. Digit 3 allocates 3NNN serials, and
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:37Z (RFD66606-1000) 'its register stays with the private manuals that allocate from it. A reserved
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:38Z (RFD66606-1000) 'digit costs one line here. An unreserved one costs what the collision above
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:39Z (RFD66606-1000) 'cost, which was 113 numbers meaning two documents at once.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:40Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:41Z (RFD66606-1000) 'Site 1 was decommissioned on 2026-08-31. `SERIALS.usda` at arc 66606.1.1 is
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:42Z (RFD66606-1000) 'frozen: existing 1NNN serials stay in place and stay citable, and no new
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:43Z (RFD66606-1000) 'serial is allocated there. New RFDs in this repository take the next unused
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:44Z (RFD66606-1000) '2NNN serial from `SERIALS-vsekai-fabric.usda` at arc 66606.1.2, whose site
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:45Z (RFD66606-1000) 'was decommissioned on 2026-08-29 and reactivated on 2026-08-31 for that
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:46Z (RFD66606-1000) 'purpose. The full argument, and the retraction of the 2026-08-29 sentence
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:47Z (RFD66606-1000) 'that promised no further allocations under 66606.1.2, is in
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:48Z (RFD66606-1000) '`pen-66606.usda` `sitesDecommissioned`. When site 2 fills up, site 5 opens
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:49Z (RFD66606-1000) 'at arc 66606.1.5 under this rule; site 4 stays reserved for a
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:50Z (RFD66606-1000) 'date-named register.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:51Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:52Z (RFD66606-1000) 'The full identifier of an RFD is:
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:53Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:54Z (RFD66606-1000) '    1.3.6.1.4.1.66606.1.<site>.<number>
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:55Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:56Z (RFD66606-1000) 'RFD66606-1015 is `urn:oid:1.3.6.1.4.1.66606.1.1.1015`. The last arc is the four
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:57Z (RFD66606-1000) 'digits the folder name already writes. Its first digit repeats the site arc
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:58Z (RFD66606-1000) 'above it, and the repetition is worth its cost. The mapping from a document
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:01:59Z (RFD66606-1000) 'number to its arc is the identity, so a reader who can read one can read the
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:00Z (RFD66606-1000) 'other. That is what the decimal rule below was for.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:01Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:02Z (RFD66606-1000) 'Two rules carry to whatever takes the next category. It keeps a register of
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:03Z (RFD66606-1000) 'what it allocates, in the way `SERIALS.usda` does. A kind of thing gets an arc of
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:04Z (RFD66606-1000) 'its own rather than a neighbouring parent number, because `<thing>.1.<id>` and
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:05Z (RFD66606-1000) '`<thing>.2.<id>` say which kind they are and `<thing>` beside `<thing+1>` does
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:06Z (RFD66606-1000) 'not.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:07Z (RFD66606-1000) 'The searchable shorthand
+2026-08-25T00:00:46Z (RFD66606-1000) 'The searchable shorthand
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:08Z (RFD66606-1000) 'A search engine reads `RFD 1015` as two common words, and `rfd1015` already
+2026-08-25T00:00:47Z (RFD66606-1000) 'A search engine reads `RFD 1015` as two common words, and `rfd1015` already names an unrelated account, so neither finds one of these documents alone. The shorthand puts the PEN in the name (operator, 2026-10-24):
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:09Z (RFD66606-1000) 'names an unrelated account, so neither finds one of these documents alone.
+2026-08-25T00:00:48Z (RFD66606-1000) '    RFD66606-1015    urn:oid:1.3.6.1.4.1.66606.1.1.1015
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:10Z (RFD66606-1000) 'The shorthand puts the PEN in the name (operator, 2026-10-24):
+2026-08-25T00:00:49Z (RFD66606-1000) '    RFD66606-2287    urn:oid:1.3.6.1.4.1.66606.1.2.2287
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:11Z (RFD66606-1000) '
+2026-08-25T00:00:50Z (RFD66606-1000) 'It holds the PEN and the four digits, and the first digit is the site arc, so each shorthand names exactly one full identifier. A web search for `RFD66606` found nothing when it was chosen, so a search for it finds only these documents.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:12Z (RFD66606-1000) '    RFD66606-1015    urn:oid:1.3.6.1.4.1.66606.1.1.1015
+2026-08-25T00:00:51Z (RFD66606-1000) 'Every title, citation, code comment, commit subject and pull request title writes this form (operator, 2026-10-24). Code, and text quoted from a commit or a person, stays as written. `check-rfd-structure.py` refuses a bare `RFD NNNN` in rendered prose outside code and quotes, and `check_commit_style.py` refuses one in a commit subject; each has a planted control that must fail.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:13Z (RFD66606-1000) '    RFD66606-2287    urn:oid:1.3.6.1.4.1.66606.1.2.2287
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:14Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:15Z (RFD66606-1000) 'It holds the PEN and the four digits, and the first digit is the site arc,
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:16Z (RFD66606-1000) 'so each shorthand names exactly one full identifier. A web search for
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:17Z (RFD66606-1000) '`RFD66606` found nothing when it was chosen, so a search for it finds only
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:18Z (RFD66606-1000) 'these documents.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:19Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:20Z (RFD66606-1000) 'Every title, citation, code comment, commit subject and pull request title
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:21Z (RFD66606-1000) 'writes this form (operator, 2026-10-24). Code, and text quoted from a commit
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:22Z (RFD66606-1000) 'or a person, stays as written. `check-rfd-structure.py` refuses a bare
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:23Z (RFD66606-1000) '`RFD NNNN` in rendered prose outside code and quotes, and
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:24Z (RFD66606-1000) '`check_commit_style.py` refuses one in a commit subject; each has a planted
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:25Z (RFD66606-1000) 'control that must fail.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:26Z (RFD66606-1000) 'The HIDE beats
+2026-08-25T00:00:52Z (RFD66606-1000) 'The HIDE beats
  # tags: rfd:details-heading
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:27Z (RFD66606-1000) 'Every live RFD declares three keywords beside its decision (operator, 2026-10-31).
+2026-08-25T00:00:53Z (RFD66606-1000) 'Every live RFD declares three keywords beside its decision (operator, 2026-10-31). `RFD.Hide` checks them when the source compiles, so `mix rfd.render` and `mix rfd.check` refuse a source without them. In a `prose` block each one opens with `:: hook`, `:: intrigue` or `:: exit`.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:28Z (RFD66606-1000) '`RFD.Hide` checks them when the source compiles, so `mix rfd.render` and `mix rfd.check`
+2026-08-25T00:00:54Z (RFD66606-1000) '- `hook`: one paragraph, the promise. The README prints it in bold above the decision.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:29Z (RFD66606-1000) 'refuse a source without them. In a `prose` block each one opens with `:: hook`,
+2026-08-25T00:00:55Z (RFD66606-1000) '- `intrigue`: one paragraph that ends in a sentence. The README prints it first in the problem.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:30Z (RFD66606-1000) '`:: intrigue` or `:: exit`.
+2026-08-25T00:00:56Z (RFD66606-1000) '- `exit`: one paragraph that ends in a period and is not a list item, a table row or a code fence. The README prints it last in the decision.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:31Z (RFD66606-1000) '
+2026-08-25T00:00:57Z (RFD66606-1000) '- The decision is the Delivery, and the README prints it between the hook and the exit.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:32Z (RFD66606-1000) '- `hook`: one paragraph, the promise. The README prints it in bold above the decision.
+2026-08-25T00:00:58Z (RFD66606-1000) 'An abandoned stub is outside the rule. The test file `test/rfd_hide_test.exs` plants a source that lacks each beat in turn, and each one must be refused.
  # tags: rfd:details
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:33Z (RFD66606-1000) '- `intrigue`: one paragraph that ends in a sentence. The README prints it first in the
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:34Z (RFD66606-1000) '  problem.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:35Z (RFD66606-1000) '- `exit`: one paragraph that ends in a period and is not a list item, a table row or a
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:36Z (RFD66606-1000) '  code fence. The README prints it last in the decision.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:37Z (RFD66606-1000) '- The decision is the Delivery, and the README prints it between the hook and the exit.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:38Z (RFD66606-1000) '
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:39Z (RFD66606-1000) 'An abandoned stub is outside the rule. The test file `test/rfd_hide_test.exs` plants a
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:40Z (RFD66606-1000) 'source that lacks each beat in turn, and each one must be refused.
- # tags: rfd:details
- Text:RFD1000  1 LINE
- Text:Written
-
-2026-08-25T00:02:41Z (RFD66606-1000) '2351
+2026-08-25T00:00:59Z (RFD66606-1000) '2351
  # tags: rebac:verbs-from
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:42Z (RFD66606-1000) 'rfd-1000 provides rfd-numbering-rule
+2026-08-25T00:01:00Z (RFD66606-1000) 'rfd-1000 provides rfd-numbering-rule
  # tags: rebac:relate
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:43Z (RFD66606-1000) 'rfd-1000 provides rfd-state-lifecycle
+2026-08-25T00:01:01Z (RFD66606-1000) 'rfd-1000 provides rfd-state-lifecycle
  # tags: rebac:relate
  Text:RFD1000  1 LINE
  Text:Written
 
-2026-08-25T00:02:44Z (RFD66606-1000) 'rfd-1000 is_a workspace-policy
+2026-08-25T00:01:02Z (RFD66606-1000) 'rfd-1000 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD1000  1 LINE
  Text:Written

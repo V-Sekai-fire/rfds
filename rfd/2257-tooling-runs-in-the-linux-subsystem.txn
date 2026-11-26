@@ -4,177 +4,87 @@
  RFD:Committed  1 RFD
  Serials:VSekaiFabric
 
-2026-09-25T00:00:01Z (RFD66606-2257) 'Every workspace tool on a desk runs inside the host's Linux
- # tags: rfd:feature
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:02Z (RFD66606-2257) 'subsystem, with the host's network mirrored in, so one
- # tags: rfd:feature
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:03Z (RFD66606-2257) 'toolchain and one credential store serve the whole session
+2026-09-25T00:00:01Z (RFD66606-2257) 'Every workspace tool on a desk runs inside the host's Linux subsystem, with the host's network mirrored in, so one toolchain and one credential store serve the whole session
  # tags: rfd:feature, rfd:no-final-newline
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:04Z (RFD66606-2257) 'the desks' host operating system, the subsystem's `.wslconfig`,
- # tags: rfd:scope
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:05Z (RFD66606-2257) 'and the pixi environments the gates run in
+2026-09-25T00:00:02Z (RFD66606-2257) 'the desks' host operating system, the subsystem's `.wslconfig`, and the pixi environments the gates run in
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:06Z (RFD66606-2257) 'Workspace tools run in one place, so one toolchain and one credential store serve a session.
+2026-09-25T00:00:03Z (RFD66606-2257) 'Workspace tools run in one place, so one toolchain and one credential store serve a session.
  # tags: rfd:hook
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:07Z (RFD66606-2257) 'A tool installed on both sides keeps two copies of its state: the password manager answered
+2026-09-25T00:00:04Z (RFD66606-2257) 'A tool installed on both sides keeps two copies of its state: the password manager answered on one side and not the other, and the Bao CLI existed on only one.
  # tags: rfd:intrigue
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:08Z (RFD66606-2257) 'on one side and not the other, and the Bao CLI existed on only one.
- # tags: rfd:intrigue
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:09Z (RFD66606-2257) 'Read RFD66606-2255 next, the SSH tunnel to Bao that IPv6 opened.
+2026-09-25T00:00:05Z (RFD66606-2257) 'Read RFD66606-2255 next, the SSH tunnel to Bao that IPv6 opened.
  # tags: rfd:exit
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:10Z (RFD66606-2257) 'workspace tooling runs in the Linux subsystem
+2026-09-25T00:00:06Z (RFD66606-2257) 'workspace tooling runs in the Linux subsystem
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:11Z (RFD66606-2257) 'The desk's host operating system is blocklisted as a place to run
+2026-09-25T00:00:07Z (RFD66606-2257) 'The desk's host operating system is blocklisted as a place to run workspace tooling: `repo`, `pixi`, the `bao` and 1Password CLIs, the gates, builds and runs all run in the Linux subsystem. The subsystem uses mirrored networking (`networkingMode=mirrored` in `%UserProfile%\.wslconfig`), so it shares the host's IPv6 route. A release artifact built for the host is still tested on the host.
  # tags: rfd:decision
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:12Z (RFD66606-2257) 'workspace tooling: `repo`, `pixi`, the `bao` and 1Password CLIs,
- # tags: rfd:decision
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:13Z (RFD66606-2257) 'the gates, builds and runs all run in the Linux subsystem. The
- # tags: rfd:decision
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:14Z (RFD66606-2257) 'subsystem uses mirrored networking (`networkingMode=mirrored` in
- # tags: rfd:decision
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:15Z (RFD66606-2257) '`%UserProfile%\.wslconfig`), so it shares the host's IPv6 route.
- # tags: rfd:decision
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:16Z (RFD66606-2257) 'A release artifact built for the host is still tested on the host.
- # tags: rfd:decision
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:17Z (RFD66606-2257) '- RFD66606-2255 (SSH tunnel to Bao), the path IPv6 opened.
+2026-09-25T00:00:08Z (RFD66606-2257) '- RFD66606-2255 (SSH tunnel to Bao), the path IPv6 opened.
  # tags: rfd:related
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:18Z (RFD66606-2257) '- RFD66606-2016 (checking sccache), whose cross-shell driver this
+2026-09-25T00:00:09Z (RFD66606-2257) '- RFD66606-2016 (checking sccache), whose cross-shell driver this rule changes.
  # tags: rfd:related
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:19Z (RFD66606-2257) '  rule changes.
- # tags: rfd:related
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:20Z (RFD66606-2257) 'What the rule governs
+2026-09-25T00:00:10Z (RFD66606-2257) 'What the rule governs
  # tags: rfd:details-heading
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:21Z (RFD66606-2257) 'This rule governs where tools run, not what ships.
+2026-09-25T00:00:11Z (RFD66606-2257) 'This rule governs where tools run, not what ships.
  # tags: rfd:details
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:22Z (RFD66606-2257) 'What is measured
+2026-09-25T00:00:12Z (RFD66606-2257) 'What is measured
  # tags: rfd:details-heading
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:23Z (RFD66606-2257) 'Under NAT, `ip -6 route` held only the link-local route and an
+2026-09-25T00:00:13Z (RFD66606-2257) 'Under NAT, `ip -6 route` held only the link-local route and an IPv6 fetch returned nothing, while the host reached the same address. After `networkingMode=mirrored` and a restart, the subsystem fetched over IPv6 (HTTP 200) and opened the Bao tunnel on its public IPv6 address.
  # tags: rfd:details
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:24Z (RFD66606-2257) 'IPv6 fetch returned nothing, while the host reached the same
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:25Z (RFD66606-2257) 'address. After `networkingMode=mirrored` and a restart, the
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:26Z (RFD66606-2257) 'subsystem fetched over IPv6 (HTTP 200) and opened the Bao tunnel
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:27Z (RFD66606-2257) 'on its public IPv6 address.
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:28Z (RFD66606-2257) 'The toolchain
+2026-09-25T00:00:14Z (RFD66606-2257) 'The toolchain
  # tags: rfd:details-heading
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:29Z (RFD66606-2257) 'Elixir 1.20.4 on Erlang/OTP 29.1.1 comes from pixi (`pixi global
+2026-09-25T00:00:15Z (RFD66606-2257) 'Elixir 1.20.4 on Erlang/OTP 29.1.1 comes from pixi (`pixi global install --environment elixir`), the same pair CI pins, and `~/.pixi/bin` sits ahead of the host PATH the subsystem appends. The request-for-discussion pixi workspace declares `linux-64`.
  # tags: rfd:details
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:30Z (RFD66606-2257) 'install --environment elixir`), the same pair CI pins, and
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:31Z (RFD66606-2257) '`~/.pixi/bin` sits ahead of the host PATH the subsystem appends.
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:32Z (RFD66606-2257) 'The request-for-discussion pixi workspace declares `linux-64`.
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:33Z (RFD66606-2257) 'The problem
+2026-09-25T00:00:16Z (RFD66606-2257) 'The problem
  # tags: rfd:details-heading
  Text:RFD2257  1 LINE
  Text:Written
 
-2026-09-25T00:00:34Z (RFD66606-2257) 'Under NAT the subsystem had no IPv6,
- # tags: rfd:details
- Text:RFD2257  1 LINE
- Text:Written
-
-2026-09-25T00:00:35Z (RFD66606-2257) 'so it could not reach Bao's public tunnel address at all.
+2026-09-25T00:00:17Z (RFD66606-2257) 'Under NAT the subsystem had no IPv6, so it could not reach Bao's public tunnel address at all.
  # tags: rfd:details
  Text:RFD2257  1 LINE
  Text:Written

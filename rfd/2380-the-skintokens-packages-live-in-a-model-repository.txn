@@ -14,87 +14,62 @@
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2380) 'Each package holds the rig model and is about 1.3 GB, more than a Space can hold. Which files
+2026-10-31T00:00:03Z (RFD66606-2380) 'Each package holds the rig model and is about 1.3 GB, more than a Space can hold. Which files do visitors get, and who decides when they change?
  # tags: rfd:intrigue
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2380) 'do visitors get, and who decides when they change?
- # tags: rfd:intrigue
- Text:RFD2380  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2380) 'Check each upload by comparing the repository's file hashes with the package's `SHA256SUMS`,
+2026-10-31T00:00:04Z (RFD66606-2380) 'Check each upload by comparing the repository's file hashes with the package's `SHA256SUMS`, and change the Space page's SHA-256 lines in the same pass.
  # tags: rfd:exit
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2380) 'and change the Space page's SHA-256 lines in the same pass.
- # tags: rfd:exit
- Text:RFD2380  1 LINE
- Text:Written
-
-2026-10-31T00:00:07Z (RFD66606-2380) 'the SkinTokens packages live in a model repository
+2026-10-31T00:00:05Z (RFD66606-2380) 'the SkinTokens packages live in a model repository
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2380) '- The packages are files of a public model repository on Hugging Face, and the auto-rig Space
+2026-10-31T00:00:06Z (RFD66606-2380) '- The packages are files of a public model repository on Hugging Face, and the auto-rig Space links that repository's `main`.
  # tags: rfd:decision
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2380) '  links that repository's `main`.
- # tags: rfd:decision
- Text:RFD2380  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2380) '- RFD66606-2294, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2380) '- RFD66606-2294, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2380) 'Dev releases
+2026-10-31T00:00:08Z (RFD66606-2380) 'Dev releases
  # tags: rfd:details-heading
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2380) 'A dev release puts the same files on its `dev` branch, so visitors keep the files on `main`
+2026-10-31T00:00:09Z (RFD66606-2380) 'A dev release puts the same files on its `dev` branch, so visitors keep the files on `main` until the operator promotes it (operator, 2026-10-18).
  # tags: rfd:details
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2380) 'until the operator promotes it (operator, 2026-10-18).
- # tags: rfd:details
- Text:RFD2380  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2380) 'The problem
+2026-10-31T00:00:10Z (RFD66606-2380) 'The problem
  # tags: rfd:details-heading
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2380) 'The SkinTokens viewer's packages hold the rig model, about 1.3 GB each, more than a Space can
+2026-10-31T00:00:11Z (RFD66606-2380) 'The SkinTokens viewer's packages hold the rig model, about 1.3 GB each, more than a Space can hold.
  # tags: rfd:details
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:16Z (RFD66606-2380) 'hold.
- # tags: rfd:details
- Text:RFD2380  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2380) '2351
+2026-10-31T00:00:12Z (RFD66606-2380) '2351
  # tags: rebac:verbs-from
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2380) 'rfd-2380 provides skintokens-model-repo-packages
+2026-10-31T00:00:13Z (RFD66606-2380) 'rfd-2380 provides skintokens-model-repo-packages
  # tags: rebac:relate
  Text:RFD2380  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2380) 'rfd-2380 is_a deployment
+2026-10-31T00:00:14Z (RFD66606-2380) 'rfd-2380 is_a deployment
  # tags: rebac:relate
  Text:RFD2380  1 LINE
  Text:Written

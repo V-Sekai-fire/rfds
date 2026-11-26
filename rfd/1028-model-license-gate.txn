@@ -14,197 +14,102 @@
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:03Z (RFD66606-1028) 'Some model weights permit non-commercial use only, and some carry territory rules and
+2026-08-25T00:00:03Z (RFD66606-1028) 'Some model weights permit non-commercial use only, and some carry territory rules and user-count rules. Shipped to paying users, either breaks the license.
  # tags: rfd:intrigue
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:04Z (RFD66606-1028) 'user-count rules. Shipped to paying users, either breaks the license.
- # tags: rfd:intrigue
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:05Z (RFD66606-1028) 'Check a new model against the commercial-use gate in MODEL_LICENSES.md before it ships to
+2026-08-25T00:00:04Z (RFD66606-1028) 'Check a new model against the commercial-use gate in MODEL_LICENSES.md before it ships to paying users, and read RFD66606-1029 for the FOSS replacements.
  # tags: rfd:exit
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:06Z (RFD66606-1028) 'paying users, and read RFD66606-1029 for the FOSS replacements.
- # tags: rfd:exit
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:07Z (RFD66606-1028) 'Model license gate
+2026-08-25T00:00:05Z (RFD66606-1028) 'Model license gate
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:08Z (RFD66606-1028) 'Any model shipped to paying users must clear commercial use. The gate
+2026-08-25T00:00:06Z (RFD66606-1028) 'Any model shipped to paying users must clear commercial use. The gate is the hard prerequisite in MODEL_LICENSES.md. The repository keeps a FOSS blocklist for permissive licenses only.
  # tags: rfd:decision
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:09Z (RFD66606-1028) 'is the hard prerequisite in MODEL_LICENSES.md. The repository keeps a
- # tags: rfd:decision
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:10Z (RFD66606-1028) 'FOSS blocklist for permissive licenses only.
- # tags: rfd:decision
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:11Z (RFD66606-1028) 'RFD66606-1016 lists the active models. RFD66606-1029 gives the FOSS
+2026-08-25T00:00:07Z (RFD66606-1028) 'RFD66606-1016 lists the active models. RFD66606-1029 gives the FOSS replacements. RFD66606-1035 lists the legacy models. The license audit is docs/MODEL_LICENSES.md in AlfaOmegaGrafx/3DAIGC-API.
  # tags: rfd:related
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:12Z (RFD66606-1028) 'replacements. RFD66606-1035 lists the legacy models. The license audit is
- # tags: rfd:related
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:13Z (RFD66606-1028) 'docs/MODEL_LICENSES.md in AlfaOmegaGrafx/3DAIGC-API.
- # tags: rfd:related
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:14Z (RFD66606-1028) 'Deleted models
+2026-08-25T00:00:08Z (RFD66606-1028) 'Deleted models
  # tags: rfd:details-heading
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:15Z (RFD66606-1028) 'PartField, PartPacker, and FastMesh fail the gate. Their weight
+2026-08-25T00:00:09Z (RFD66606-1028) 'PartField, PartPacker, and FastMesh fail the gate. Their weight licenses permit non-commercial use only.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:16Z (RFD66606-1028) 'licenses permit non-commercial use only.
+2026-08-25T00:00:10Z (RFD66606-1028) '- PartField uses the NVIDIA license section 3.3.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:17Z (RFD66606-1028) '
+2026-08-25T00:00:11Z (RFD66606-1028) '- PartPacker uses the NVIDIA Source Code License section 3.3.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:18Z (RFD66606-1028) '- PartField uses the NVIDIA license section 3.3.
+2026-08-25T00:00:12Z (RFD66606-1028) '- FastMesh uses the S-Lab non-commercial license.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:19Z (RFD66606-1028) '- PartPacker uses the NVIDIA Source Code License section 3.3.
+2026-08-25T00:00:13Z (RFD66606-1028) 'The pass tracks in issue #6. These models are not in the catalog. The repository does not reference them in the UI. Their residual references remain in docs/api/api.md. The delete pass removes them.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:20Z (RFD66606-1028) '- FastMesh uses the S-Lab non-commercial license.
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:21Z (RFD66606-1028) '
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:22Z (RFD66606-1028) 'The pass tracks in issue #6. These models are not in the catalog. The
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:23Z (RFD66606-1028) 'repository does not reference them in the UI. Their residual
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:24Z (RFD66606-1028) 'references remain in docs/api/api.md. The delete pass removes them.
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:25Z (RFD66606-1028) 'Blocklisted models
+2026-08-25T00:00:14Z (RFD66606-1028) 'Blocklisted models
  # tags: rfd:details-heading
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:26Z (RFD66606-1028) '- hunyuan3dv21_image_to_raw_mesh uses the Tencent Community license.
+2026-08-25T00:00:15Z (RFD66606-1028) '- hunyuan3dv21_image_to_raw_mesh uses the Tencent Community license. The license has territory and MAU rules. The blocklist removes it.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:27Z (RFD66606-1028) '  The license has territory and MAU rules. The blocklist removes it.
+2026-08-25T00:00:16Z (RFD66606-1028) '- ultrashape_image_to_raw_mesh inherits the Hunyuan pipelines. It inherits the Tencent rules. Review it with the same gate.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:28Z (RFD66606-1028) '- ultrashape_image_to_raw_mesh inherits the Hunyuan pipelines. It
+2026-08-25T00:00:17Z (RFD66606-1028) '- hunyuan3dv21_image_to_textured_mesh uses the same Tencent license. It needs the same review.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:29Z (RFD66606-1028) '  inherits the Tencent rules. Review it with the same gate.
+2026-08-25T00:00:18Z (RFD66606-1028) '- hunyuan3dv21_image_mesh_painting uses the same Tencent license. It needs the same review.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:30Z (RFD66606-1028) '- hunyuan3dv21_image_to_textured_mesh uses the same Tencent license.
+2026-08-25T00:00:19Z (RFD66606-1028) '- CGAL uses the GPL license with a commercial dual license. The project excludes GPL on license grounds. The blocklist removes it.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:31Z (RFD66606-1028) '  It needs the same review.
+2026-08-25T00:00:20Z (RFD66606-1028) 'The FOSS replacement for raw mesh generation is TRELLIS.2. It uses the MIT license. The catalog already carries it.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:32Z (RFD66606-1028) '- hunyuan3dv21_image_mesh_painting uses the same Tencent license. It
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:33Z (RFD66606-1028) '  needs the same review.
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:34Z (RFD66606-1028) '- CGAL uses the GPL license with a commercial dual license. The
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:35Z (RFD66606-1028) '  project excludes GPL on license grounds. The blocklist removes it.
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:36Z (RFD66606-1028) '
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:37Z (RFD66606-1028) 'The FOSS replacement for raw mesh generation is TRELLIS.2. It uses the
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:38Z (RFD66606-1028) 'MIT license. The catalog already carries it.
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:39Z (RFD66606-1028) 'The problem
+2026-08-25T00:00:21Z (RFD66606-1028) 'The problem
  # tags: rfd:details-heading
  Text:RFD1028  1 LINE
  Text:Written
 
-2026-08-25T00:00:40Z (RFD66606-1028) 'The catalog must not ship them
- # tags: rfd:details
- Text:RFD1028  1 LINE
- Text:Written
-
-2026-08-25T00:00:41Z (RFD66606-1028) 'to paying users.
+2026-08-25T00:00:22Z (RFD66606-1028) 'The catalog must not ship them to paying users.
  # tags: rfd:details
  Text:RFD1028  1 LINE
  Text:Written

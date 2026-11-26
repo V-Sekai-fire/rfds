@@ -14,197 +14,97 @@
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:03Z (RFD66606-2400) 'What if one byte of one chunk is flipped on the way back? The worker verifies every chunk
+2026-10-31T00:00:03Z (RFD66606-2400) 'What if one byte of one chunk is flipped on the way back? The worker verifies every chunk against its id, so the flip is caught there.
  # tags: rfd:intrigue
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2400) 'against its id, so the flip is caught there.
- # tags: rfd:intrigue
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:05Z (RFD66606-2400) 'Run the two-client gate and check that it counts exactly one owner of the garment every tick.
+2026-10-31T00:00:04Z (RFD66606-2400) 'Run the two-client gate and check that it counts exactly one owner of the garment every tick.
  # tags: rfd:exit
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:06Z (RFD66606-2400) 'the worker zone dispatches and a sidecar computes
+2026-10-31T00:00:05Z (RFD66606-2400) 'the worker zone dispatches and a sidecar computes
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2400) '- The worker zone is tiny and has no GPU, so it owns and dispatches and does not compute.
+2026-10-31T00:00:06Z (RFD66606-2400) '- The worker zone is tiny and has no GPU, so it owns and dispatches and does not compute. `zone.elf` in worker mode (zone 1) keeps the job queue, the garment's ownership and the asset index.
  # tags: rfd:decision
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2400) '  `zone.elf` in worker mode (zone 1) keeps the job queue, the garment's ownership and the
+2026-10-31T00:00:07Z (RFD66606-2400) '- The GPU stage runs on a sidecar, a client that has a GPU and the pen's sandbox (this Mac in this rung, the Frame when it is idle), which registers with the worker over a `CH_JOB` stream when it connects.
  # tags: rfd:decision
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2400) '  asset index.
+2026-10-31T00:00:08Z (RFD66606-2400) '- When no sidecar is attached the worker runs the CPU target of the same Lean-emitted kernels (`kernels/cassie/cpp`, the slangc cpp emits under slang-rt, one source two targets) itself, slower and the same answer within RFD66606-2269's intervals.
  # tags: rfd:decision
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:10Z (RFD66606-2400) '- The GPU stage runs on a sidecar, a client that has a GPU and the pen's sandbox (this Mac in
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2400) '  this rung, the Frame when it is idle), which registers with the worker over a `CH_JOB`
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2400) '  stream when it connects.
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:13Z (RFD66606-2400) '- When no sidecar is attached the worker runs the CPU target of the same Lean-emitted kernels
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2400) '  (`kernels/cassie/cpp`, the slangc cpp emits under slang-rt, one source two targets) itself,
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2400) '  slower and the same answer within RFD66606-2269's intervals.
- # tags: rfd:decision
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2400) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:09Z (RFD66606-2400) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:17Z (RFD66606-2400) '- RFD66606-2269, the CPU oracle's intervals.
+2026-10-31T00:00:10Z (RFD66606-2400) '- RFD66606-2269, the CPU oracle's intervals.
  # tags: rfd:related
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:18Z (RFD66606-2400) 'The sidecar path
+2026-10-31T00:00:11Z (RFD66606-2400) 'The sidecar path
  # tags: rfd:details-heading
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:19Z (RFD66606-2400) 'On `strokes_ready` the worker sends the stroke set to one sidecar. The sidecar's
+2026-10-31T00:00:12Z (RFD66606-2400) 'On `strokes_ready` the worker sends the stroke set to one sidecar. The sidecar's `stages/sidecar_stage.gd` runs `curvenet.elf` on compute-rd, then `asset_store` through `asset.elf`, and streams the `.caibx` and the chunks back on `CH_ASSET`. The worker verifies every chunk against its id (`guest/asset`: `parse_caibx`, the buzhash chunker, `sha512_256`, `decompress_and_verify_chunk`, `assemble_from_caibx`, lifted from `fabric_mmog_asset.cpp` onto std types. HTTP, keychain and ACL dropped), writes them under the server's store, records the index hash in its journal, then `zone_garment_spawn(hash)` and `zone_handoff(eid, 0)`. The ghost carries the index hash. Each client fetches by it and assembles.
  # tags: rfd:details
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2400) '`stages/sidecar_stage.gd` runs `curvenet.elf` on compute-rd, then `asset_store` through
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:21Z (RFD66606-2400) '`asset.elf`, and streams the `.caibx` and the chunks back on `CH_ASSET`. The worker verifies
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:22Z (RFD66606-2400) 'every chunk against its id (`guest/asset`: `parse_caibx`, the buzhash chunker, `sha512_256`,
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:23Z (RFD66606-2400) '`decompress_and_verify_chunk`, `assemble_from_caibx`, lifted from `fabric_mmog_asset.cpp` onto
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2400) 'std types. HTTP, keychain and ACL dropped), writes them under the server's store, records the
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2400) 'index hash in its journal, then `zone_garment_spawn(hash)` and `zone_handoff(eid, 0)`. The
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2400) 'ghost carries the index hash. Each client fetches by it and assembles.
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2400) '
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2400) 'Check and controls
+2026-10-31T00:00:13Z (RFD66606-2400) 'Check and controls
  # tags: rfd:details-heading
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:29Z (RFD66606-2400) 'Check: the two-client gate counts the garment's owners every tick and finds exactly one. A
+2026-10-31T00:00:14Z (RFD66606-2400) 'Check: the two-client gate counts the garment's owners every tick and finds exactly one. A garment the sidecar made lies inside the CPU oracle's intervals (RFD66606-2269). The Lean chunk property stores random data up to 1 MiB, verifies every chunk and assembles the input.
  # tags: rfd:details
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:30Z (RFD66606-2400) 'garment the sidecar made lies inside the CPU oracle's intervals (RFD66606-2269). The Lean chunk
+2026-10-31T00:00:15Z (RFD66606-2400) 'Controls: one byte of one chunk flipped with the expectation kept must be caught at the worker. A sidecar kernel built with `-ffp-contract=on` falls outside the interval and is named. The worker with no sidecar makes the garment itself and the gate records both times.
  # tags: rfd:details
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:31Z (RFD66606-2400) 'property stores random data up to 1 MiB, verifies every chunk and assembles the input.
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2400) '
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:33Z (RFD66606-2400) 'Controls: one byte of one chunk flipped with the expectation kept must be caught at the worker.
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:34Z (RFD66606-2400) 'A sidecar kernel built with `-ffp-contract=on` falls outside the interval and is named. The
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2400) 'worker with no sidecar makes the garment itself and the gate records both times.
- # tags: rfd:details
- Text:RFD2400  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2400) '2351
+2026-10-31T00:00:16Z (RFD66606-2400) '2351
  # tags: rebac:verbs-from
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:37Z (RFD66606-2400) 'rfd-2400 provides worker-zone-dispatch
+2026-10-31T00:00:17Z (RFD66606-2400) 'rfd-2400 provides worker-zone-dispatch
  # tags: rebac:relate
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:38Z (RFD66606-2400) 'rfd-2400 provides gpu-sidecar-compute
+2026-10-31T00:00:18Z (RFD66606-2400) 'rfd-2400 provides gpu-sidecar-compute
  # tags: rebac:relate
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:39Z (RFD66606-2400) 'rfd-2400 is_a guest-runtime
+2026-10-31T00:00:19Z (RFD66606-2400) 'rfd-2400 is_a guest-runtime
  # tags: rebac:relate
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2400) 'rfd-2400 spends zone-core-open-tick
+2026-10-31T00:00:20Z (RFD66606-2400) 'rfd-2400 spends zone-core-open-tick
  # tags: rebac:relate
  Text:RFD2400  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2400) 'rfd-2400 spends sandbox-guest-heavy-compute
+2026-10-31T00:00:21Z (RFD66606-2400) 'rfd-2400 spends sandbox-guest-heavy-compute
  # tags: rebac:relate
  Text:RFD2400  1 LINE
  Text:Written

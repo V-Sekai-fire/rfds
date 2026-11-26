@@ -19,202 +19,92 @@
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2396) 'Run the check in `tools/gate_xr_scripted.gd` after DONE: move the hips bone 0.100 m up and read
+2026-10-31T00:00:04Z (RFD66606-2396) 'Run the check in `tools/gate_xr_scripted.gd` after DONE: move the hips bone 0.100 m up and read the garment's box centre one frame later.
  # tags: rfd:exit
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2396) 'the garment's box centre one frame later.
- # tags: rfd:exit
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2396) 'the wear step attaches the garment to the avatar's hips
+2026-10-31T00:00:05Z (RFD66606-2396) 'the wear step attaches the garment to the avatar's hips
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2396) '- `xr/xr_world.gd` on `attach_ready` makes a `BoneAttachment3D` on the TSV's Hips joint and
+2026-10-31T00:00:06Z (RFD66606-2396) '- `xr/xr_world.gd` on `attach_ready` makes a `BoneAttachment3D` on the TSV's Hips joint and reparents `Body/Garment` under it with the global transform kept. A haptic pulse marks it.
  # tags: rfd:decision
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2396) '  reparents `Body/Garment` under it with the global transform kept. A haptic pulse marks it.
+2026-10-31T00:00:07Z (RFD66606-2396) '- Each avatar repository, in `chibifire-stages` itself, gets a commit with a glTF exported once by this Mac's Blender from `Mire.blend` and `Marocchino.fbx` and a `<name>.humanoid.tsv` of role to joint.
  # tags: rfd:decision
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:09Z (RFD66606-2396) '- Each avatar repository, in `chibifire-stages` itself, gets a commit with a glTF exported once
- # tags: rfd:decision
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2396) '  by this Mac's Blender from `Mire.blend` and `Marocchino.fbx` and a `<name>.humanoid.tsv` of
- # tags: rfd:decision
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:11Z (RFD66606-2396) '  role to joint.
- # tags: rfd:decision
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:12Z (RFD66606-2396) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:08Z (RFD66606-2396) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2396) 'Avatar repositories
+2026-10-31T00:00:09Z (RFD66606-2396) 'Avatar repositories
  # tags: rfd:details-heading
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:14Z (RFD66606-2396) 'Each avatar repository gets a glTF exported (Godot master imports glTF and FBX, not USD) and a
+2026-10-31T00:00:10Z (RFD66606-2396) 'Each avatar repository gets a glTF exported (Godot master imports glTF and FBX, not USD) and a `<name>.humanoid.tsv` of 53 roles in `SkeletonProfileHumanoid`'s vocabulary, derived from Marocchino's `.fbx.meta` and Mire's `.unitypackage`. The manifest gains a `chibifire-stages` remote and links each glTF into the pen's `avatars/`.
  # tags: rfd:details
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:15Z (RFD66606-2396) '`<name>.humanoid.tsv` of 53 roles in `SkeletonProfileHumanoid`'s vocabulary, derived from
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2396) 'Marocchino's `.fbx.meta` and Mire's `.unitypackage`. The manifest gains a `chibifire-stages`
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2396) 'remote and links each glTF into the pen's `avatars/`.
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2396) '
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2396) 'Loading and the mirror
+2026-10-31T00:00:11Z (RFD66606-2396) 'Loading and the mirror
  # tags: rfd:details-heading
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:20Z (RFD66606-2396) '`util/avatar_load.gd` loads the glTF at runtime (`GLTFDocument.append_from_file`,
+2026-10-31T00:00:12Z (RFD66606-2396) '`util/avatar_load.gd` loads the glTF at runtime (`GLTFDocument.append_from_file`, `generate_scene`), returns the `Skeleton3D`, the rest-pose body surfaces, and a rig `{positions, bones, names}` that `util/skeleton15.gd`'s `adapt` already maps by alias (`Hips`, `Upper_leg_L`, `Lower_leg_L`, `Upper_arm_L`, `LeftHand` are in Marocchino's joint list). `stages/infer_stage.gd` takes `opts.avatar` and keeps FoxGirl as the fixture when it is empty.
  # tags: rfd:details
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2396) '`generate_scene`), returns the `Skeleton3D`, the rest-pose body surfaces, and a rig
+2026-10-31T00:00:13Z (RFD66606-2396) 'The mirror, `xr/mirror.gd`: a `SubViewport` camera on the mirror plane facing the person, shown on a 1 by 2 m quad 2 m away, a world-locked video mirror, which is what it is called.
  # tags: rfd:details
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2396) '`{positions, bones, names}` that `util/skeleton15.gd`'s `adapt` already maps by alias (`Hips`,
+2026-10-31T00:00:14Z (RFD66606-2396) '`tools/frame/push.sh` rsyncs the pen, the engine and the DLL to `~/rfd2287/`, because the headset sync was never recorded.
  # tags: rfd:details
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2396) '`Upper_leg_L`, `Lower_leg_L`, `Upper_arm_L`, `LeftHand` are in Marocchino's joint list).
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:24Z (RFD66606-2396) '`stages/infer_stage.gd` takes `opts.avatar` and keeps FoxGirl as the fixture when it is empty.
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:25Z (RFD66606-2396) '
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:26Z (RFD66606-2396) 'The mirror, `xr/mirror.gd`: a `SubViewport` camera on the mirror plane facing the person, shown
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:27Z (RFD66606-2396) 'on a 1 by 2 m quad 2 m away, a world-locked video mirror, which is what it is called.
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:28Z (RFD66606-2396) '
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:29Z (RFD66606-2396) '`tools/frame/push.sh` rsyncs the pen, the engine and the DLL to `~/rfd2287/`, because the
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:30Z (RFD66606-2396) 'headset sync was never recorded.
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:31Z (RFD66606-2396) '
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:32Z (RFD66606-2396) 'Check and control
+2026-10-31T00:00:15Z (RFD66606-2396) 'Check and control
  # tags: rfd:details-heading
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:33Z (RFD66606-2396) 'Check, in `tools/gate_xr_scripted.gd` after DONE: move the hips bone 0.100 m up and read the
+2026-10-31T00:00:16Z (RFD66606-2396) 'Check, in `tools/gate_xr_scripted.gd` after DONE: move the hips bone 0.100 m up and read the garment's box centre one frame later. Displacement 0.100 m within 0.002 m (a tenth of a metre, about a soda can and a half across. The tolerance about a credit card and a half). The waist loop's mean height within 0.15 m below and 0.05 m above the hips. `--png` and `still.sh` give the stills, one of them in the mirror. Control: `--control=no_attach` leaves the garment under `Body`, displacement zero, FAIL.
  # tags: rfd:details
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:34Z (RFD66606-2396) 'garment's box centre one frame later. Displacement 0.100 m within 0.002 m (a tenth of a metre,
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:35Z (RFD66606-2396) 'about a soda can and a half across. The tolerance about a credit card and a half). The waist
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:36Z (RFD66606-2396) 'loop's mean height within 0.15 m below and 0.05 m above the hips. `--png` and `still.sh` give
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:37Z (RFD66606-2396) 'the stills, one of them in the mirror. Control: `--control=no_attach` leaves the garment under
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:38Z (RFD66606-2396) '`Body`, displacement zero, FAIL.
- # tags: rfd:details
- Text:RFD2396  1 LINE
- Text:Written
-
-2026-10-31T00:00:39Z (RFD66606-2396) '2351
+2026-10-31T00:00:17Z (RFD66606-2396) '2351
  # tags: rebac:verbs-from
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:40Z (RFD66606-2396) 'rfd-2396 provides garment-follows-hips
+2026-10-31T00:00:18Z (RFD66606-2396) 'rfd-2396 provides garment-follows-hips
  # tags: rebac:relate
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:41Z (RFD66606-2396) 'rfd-2396 provides avatar-repo-humanoid-tsv
+2026-10-31T00:00:19Z (RFD66606-2396) 'rfd-2396 provides avatar-repo-humanoid-tsv
  # tags: rebac:relate
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:42Z (RFD66606-2396) 'rfd-2396 is_a avatar-pipeline
+2026-10-31T00:00:20Z (RFD66606-2396) 'rfd-2396 is_a avatar-pipeline
  # tags: rebac:relate
  Text:RFD2396  1 LINE
  Text:Written
 
-2026-10-31T00:00:43Z (RFD66606-2396) 'rfd-2396 spends draw-step-pipeline-attach
+2026-10-31T00:00:21Z (RFD66606-2396) 'rfd-2396 spends draw-step-pipeline-attach
  # tags: rebac:relate
  Text:RFD2396  1 LINE
  Text:Written

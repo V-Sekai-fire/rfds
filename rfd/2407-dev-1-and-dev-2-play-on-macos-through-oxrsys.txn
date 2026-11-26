@@ -19,102 +19,52 @@
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:04Z (RFD66606-2407) 'Check a dev release against the rule: it carries the macOS engine and addon checked against
+2026-10-31T00:00:04Z (RFD66606-2407) 'Check a dev release against the rule: it carries the macOS engine and addon checked against their sums.
  # tags: rfd:exit
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:05Z (RFD66606-2407) 'their sums.
- # tags: rfd:exit
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:06Z (RFD66606-2407) 'dev.1 and dev.2 play on macOS through oxrsys
+2026-10-31T00:00:05Z (RFD66606-2407) 'dev.1 and dev.2 play on macOS through oxrsys
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:07Z (RFD66606-2407) '- dev.1 and dev.2 play on macOS; dev.3 plays on the Frame. dev.1 and dev.2 run the macOS arm64
+2026-10-31T00:00:06Z (RFD66606-2407) '- dev.1 and dev.2 play on macOS; dev.3 plays on the Frame. dev.1 and dev.2 run the macOS arm64 double editor and addon through the oxrsys OpenXR runtime and its simulator, streaming with PyroWave, so one machine carries the whole loop.
  # tags: rfd:decision
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:08Z (RFD66606-2407) '  double editor and addon through the oxrsys OpenXR runtime and its simulator, streaming with
- # tags: rfd:decision
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:09Z (RFD66606-2407) '  PyroWave, so one machine carries the whole loop.
- # tags: rfd:decision
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:10Z (RFD66606-2407) '- RFD66606-2293, where this rule lived before the split.
+2026-10-31T00:00:07Z (RFD66606-2407) '- RFD66606-2293, where this rule lived before the split.
  # tags: rfd:related
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:11Z (RFD66606-2407) 'The release and the playtest
+2026-10-31T00:00:08Z (RFD66606-2407) 'The release and the playtest
  # tags: rfd:details-heading
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:12Z (RFD66606-2407) 'The release carries the macOS engine and addon checked against their sums, with oxrsys pinned in
+2026-10-31T00:00:09Z (RFD66606-2407) 'The release carries the macOS engine and addon checked against their sums, with oxrsys pinned in `tools/frame/releases.env`. Collision and walking run in the MuJoCo guest, never Godot's physics, because the guest is bit-deterministic and migratable. The playtest of a dev rung is persona locomotion: a named visitor persona, driven by a language model through the simulator, visits the station beat by beat, each beat with a screenshot, and the logbook records it as the playtest with that deviation named.
  # tags: rfd:details
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:13Z (RFD66606-2407) '`tools/frame/releases.env`. Collision and walking run in the MuJoCo guest, never Godot's
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:14Z (RFD66606-2407) 'physics,
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:15Z (RFD66606-2407) 'because the guest is bit-deterministic and migratable. The playtest of a dev rung is persona
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:16Z (RFD66606-2407) 'locomotion: a named visitor persona, driven by a language model through the simulator, visits
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:17Z (RFD66606-2407) 'the
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:18Z (RFD66606-2407) 'station beat by beat, each beat with a screenshot, and the logbook records it as the playtest
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:19Z (RFD66606-2407) 'with that deviation named.
- # tags: rfd:details
- Text:RFD2407  1 LINE
- Text:Written
-
-2026-10-31T00:00:20Z (RFD66606-2407) '2351
+2026-10-31T00:00:10Z (RFD66606-2407) '2351
  # tags: rebac:verbs-from
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:21Z (RFD66606-2407) 'rfd-2407 provides macos-oxrsys-dev-play
+2026-10-31T00:00:11Z (RFD66606-2407) 'rfd-2407 provides macos-oxrsys-dev-play
  # tags: rebac:relate
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:22Z (RFD66606-2407) 'rfd-2407 is_a workspace-policy
+2026-10-31T00:00:12Z (RFD66606-2407) 'rfd-2407 is_a workspace-policy
  # tags: rebac:relate
  Text:RFD2407  1 LINE
  Text:Written
 
-2026-10-31T00:00:23Z (RFD66606-2407) 'rfd-2407 spends mac-desktop-client
+2026-10-31T00:00:13Z (RFD66606-2407) 'rfd-2407 spends mac-desktop-client
  # tags: rebac:relate
  Text:RFD2407  1 LINE
  Text:Written

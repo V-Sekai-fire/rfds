@@ -9,142 +9,67 @@
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:02Z (RFD66606-2181) 'RFD66606-2164, RFD66606-2170; `emit_10track_panel.py`;
- # tags: rfd:scope
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:03Z (RFD66606-2181) '`add_allosaurus_control.py`; `CITATION.cff`
+2026-09-02T00:00:02Z (RFD66606-2181) 'RFD66606-2164, RFD66606-2170; `emit_10track_panel.py`; `add_allosaurus_control.py`; `CITATION.cff`
  # tags: rfd:scope, rfd:no-final-newline
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:04Z (RFD66606-2181) 'The ASR panel drops one control and keeps a language-free default.
+2026-09-02T00:00:03Z (RFD66606-2181) 'The ASR panel drops one control and keeps a language-free default.
  # tags: rfd:hook
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:05Z (RFD66606-2181) 'The panel runs a Russian phone inventory on every clip regardless of the speaker's L1.
+2026-09-02T00:00:04Z (RFD66606-2181) 'The panel runs a Russian phone inventory on every clip regardless of the speaker's L1.
  # tags: rfd:intrigue
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:06Z (RFD66606-2181) 'Run the panel at 7 tracks, with `universal` as the default and `eng` as the control. Read
+2026-09-02T00:00:05Z (RFD66606-2181) 'Run the panel at 7 tracks, with `universal` as the default and `eng` as the control. Read RFD66606-2179 for the Whisper models the panel also drops.
  # tags: rfd:exit
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:07Z (RFD66606-2181) 'RFD66606-2179 for the Whisper models the panel also drops.
- # tags: rfd:exit
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:08Z (RFD66606-2181) 'Drop the allosaurus-rus phone-inventory control
+2026-09-02T00:00:06Z (RFD66606-2181) 'Drop the allosaurus-rus phone-inventory control
  # tags: rfd:details-title, rfd:no-final-newline
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:09Z (RFD66606-2181) 'Drop the `allosaurus-rus` phone-inventory control; the panel drops from 8 tracks to 7, keeping
+2026-09-02T00:00:07Z (RFD66606-2181) 'Drop the `allosaurus-rus` phone-inventory control; the panel drops from 8 tracks to 7, keeping `universal` as the language-inventory-free default and `eng` as the English control.
  # tags: rfd:decision
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:10Z (RFD66606-2181) '`universal` as the language-inventory-free default and `eng` as the English control.
- # tags: rfd:decision
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:11Z (RFD66606-2181) 'Extends RFD66606-2179 (Whisper drop) and RFD66606-2180 (gemma-auto drop). Amends the panel row
+2026-09-02T00:00:08Z (RFD66606-2181) 'Extends RFD66606-2179 (Whisper drop) and RFD66606-2180 (gemma-auto drop). Amends the panel row in RFD66606-2170 (allosaurus language set)'s decision that named `universal + eng + rus`.
  # tags: rfd:related
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:12Z (RFD66606-2181) 'in RFD66606-2170 (allosaurus language set)'s decision that named `universal + eng + rus`.
- # tags: rfd:related
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:13Z (RFD66606-2181) 'Panel after the drop
+2026-09-02T00:00:09Z (RFD66606-2181) 'Panel after the drop
  # tags: rfd:details-heading
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:14Z (RFD66606-2181) '  text-track   Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2
+2026-09-02T00:00:10Z (RFD66606-2181) '  text-track   Parakeet TDT 0.6B v3, Voxtral Mini 3B, wav2vec2 IPA-track    Voxtral-IPA, Gemma-4-12B GBNF-IPA phone-track  allosaurus universal + eng
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:15Z (RFD66606-2181) '  IPA-track    Voxtral-IPA, Gemma-4-12B GBNF-IPA
+2026-09-02T00:00:11Z (RFD66606-2181) 'Per-clip language inventories can be added back keyed to the speaker's L1 if a future corpus documents it, rather than one hard-coded language for everyone.
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:16Z (RFD66606-2181) '  phone-track  allosaurus universal + eng
+2026-09-02T00:00:12Z (RFD66606-2181) 'Follow-ups: `emit_10track_panel.py` and `add_allosaurus_control.py` drop the `rus` inventory; downstream RFDs lose their `rus` mentions; `CITATION.cff` unaffected (allosaurus itself stays).
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:17Z (RFD66606-2181) '
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:18Z (RFD66606-2181) 'Per-clip language inventories can be added back keyed to the speaker's L1 if a future corpus
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:19Z (RFD66606-2181) 'documents it, rather than one hard-coded language for everyone.
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:20Z (RFD66606-2181) '
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:21Z (RFD66606-2181) 'Follow-ups: `emit_10track_panel.py` and `add_allosaurus_control.py` drop the `rus` inventory;
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:22Z (RFD66606-2181) 'downstream RFDs lose their `rus` mentions; `CITATION.cff` unaffected (allosaurus itself
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:23Z (RFD66606-2181) 'stays).
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:24Z (RFD66606-2181) 'The problem
+2026-09-02T00:00:13Z (RFD66606-2181) 'The problem
  # tags: rfd:details-heading
  Text:RFD2181  1 LINE
  Text:Written
 
-2026-09-02T00:00:25Z (RFD66606-2181) 'RFD66606-2164 (Rung 1 corpus) shipped allosaurus at three inventories: `universal`, `eng`,
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:26Z (RFD66606-2181) '`rus`. The `rus` inventory was picked as a plausible L1 transfer partner for the first
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:27Z (RFD66606-2181) 'SpeakingFaces subject (Kazakh L2 English speaker); RFD66606-2170 (allosaurus language set) then
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:28Z (RFD66606-2181) 'generalised the set. The panel's implementation still carries `rus` as a per-clip inventory and
- # tags: rfd:details
- Text:RFD2181  1 LINE
- Text:Written
-
-2026-09-02T00:00:29Z (RFD66606-2181) 'runs it on every clip regardless of the speaker's L1.
+2026-09-02T00:00:14Z (RFD66606-2181) 'RFD66606-2164 (Rung 1 corpus) shipped allosaurus at three inventories: `universal`, `eng`, `rus`. The `rus` inventory was picked as a plausible L1 transfer partner for the first SpeakingFaces subject (Kazakh L2 English speaker); RFD66606-2170 (allosaurus language set) then generalised the set. The panel's implementation still carries `rus` as a per-clip inventory and runs it on every clip regardless of the speaker's L1.
  # tags: rfd:details
  Text:RFD2181  1 LINE
  Text:Written

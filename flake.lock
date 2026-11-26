@@ -1,0 +1,124 @@
+{
+  "nodes": {
+    "hex-jason": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-hgD7igJXrTl/I5/XRVlf+liL0gl0bpa94Hb03Im37Uk=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/jason-1.4.5.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/jason-1.4.5.tar"
+      }
+    },
+    "hex-mdex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-jB9iuTSsMa4A2VCmz+njvJv8WvMNRs5eMJpnkrXWgCw=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/mdex-0.14.6.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/mdex-0.14.6.tar"
+      }
+    },
+    "hex-mdex_native": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-3rr7UicyYu7jNxQR42A/S9chBnRjPz2WqZ1/YLJ6lY8=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/mdex_native-0.3.1.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/mdex_native-0.3.1.tar"
+      }
+    },
+    "hex-nimble_options": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-8xm0WzQHjPyQg3KlC5iUvtG0XIhXG9cgTAgSDBviSHQ=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/nimble_options-1.2.0.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/nimble_options-1.2.0.tar"
+      }
+    },
+    "hex-nimble_parsec": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-X85CxnVITPC/p1eX9rwKbzCq38W97BaZXfkE4NhWlrQ=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/nimble_parsec-1.4.2.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/nimble_parsec-1.4.2.tar"
+      }
+    },
+    "hex-rustler_precompiled": {
+      "flake": false,
+      "locked": {
+        "lastModified": 946684800,
+        "narHash": "sha256-ZAA+FRgzj1WVTb2Vx54Rs3xN58RnZcy1X6GsAoFNNsk=",
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/rustler_precompiled-0.10.1.tar"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://repo.hex.pm/tarballs/rustler_precompiled-0.10.1.tar"
+      }
+    },
+    "mdex-nif": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-HLR3V4rBOgkT1wY0Rn01PYJlsFHrRColOyS/9zSz0tI=",
+        "type": "file",
+        "url": "https://github.com/leandrocp/mdex_native/releases/download/v0.3.1/libmdex_native_nif-v0.3.1-nif-2.15-x86_64-unknown-linux-gnu.so.tar.gz"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/leandrocp/mdex_native/releases/download/v0.3.1/libmdex_native_nif-v0.3.1-nif-2.15-x86_64-unknown-linux-gnu.so.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1795234589,
+        "narHash": "sha256-f/VVvxf5RsQgWVhUtefoca5ktVg0DA2bnkMOcmSnozo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "2786a2a72088ecf32aea5b3ec52099e6a7cff78f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "hex-jason": "hex-jason",
+        "hex-mdex": "hex-mdex",
+        "hex-mdex_native": "hex-mdex_native",
+        "hex-nimble_options": "hex-nimble_options",
+        "hex-nimble_parsec": "hex-nimble_parsec",
+        "hex-rustler_precompiled": "hex-rustler_precompiled",
+        "mdex-nif": "mdex-nif",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

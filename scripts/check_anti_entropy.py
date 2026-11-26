@@ -52,12 +52,45 @@ check("  control: an underscore we picked is caught",
       "planted 3-interactor/bad_name caught, vendored third_party not")
 
 # --- B. serials, enumerated both directions -------------------------------------------
-# A text read, where check-rfd-serials.py reads the same rows through the USD API; two
-# implementations disagreeing is the finding. The .exs source is tracked, the .usda is not.
-REGISTERS = ["SERIALS.exs", "SERIALS-vsekai-fabric.exs", "../manuals-smoke-water/SERIALS.exs"]
+# A text read, where `mix rfd.serials` builds the same rows through RFD.Register.Journal;
+# two implementations disagreeing is the finding. This repository's registers are
+# journals (operator, 2026-11-26): an allocated serial is its rfd/NNNN-slug.txn, and
+# journal/serials.txn holds the rest. They are read here into the `serial N, "slug"`
+# block text the other workspace register, still a SERIALS.exs, is written in.
+JOURNAL = "journal/serials.txn"
+REGISTERS = [JOURNAL, "../manuals-smoke-water/SERIALS.exs"]
 absent = [f for f in REGISTERS if not (RFD/f).is_file()]
 check("every serial register present", not absent, f"{len(REGISTERS)} registers, absent: {absent or 'none'}")
-s = "\n".join((RFD/f).read_text(encoding="utf-8") for f in REGISTERS if (RFD/f).is_file())
+
+
+def _journal_blocks(root):
+    """The journals as register block text: allocated, then unused and deleted."""
+    out = ["allocated do"]
+    for f in sorted((root/"rfd").glob("[0-9][0-9][0-9][0-9]-*.txn")):
+        out.append(f'      serial {f.name[:4]}, "{f.name[5:-4]}"')
+    out.append("    end")
+    path = root/JOURNAL
+    if not path.is_file():
+        return "\n".join(out)
+    txns = path.read_text(encoding="utf-8").split("\n\n")
+    head = re.compile(r"^\S+ \(RFD66606-(\d{4})\)(?: '(\S+))?$")
+    for table in ("NeverWritten", "Deleted", "Retired"):
+        out.append("unused do" if table == "NeverWritten" else "deleted do")
+        for t in txns:
+            lines = t.strip().splitlines()
+            if not lines or f":{table}  1 RFD" not in t:
+                continue
+            m = head.match(lines[0])
+            if m and table == "Deleted":
+                out.append(f'      serial {m.group(1)}, "{m.group(2)}"')
+            elif m:
+                out.append(f"      {'never_written' if table == 'NeverWritten' else 'retired'} {m.group(1)},")
+        out.append("    end")
+    return "\n".join(out)
+
+
+s = _journal_blocks(RFD) + "\n" + "\n".join(
+    (RFD/f).read_text(encoding="utf-8") for f in REGISTERS[1:] if (RFD/f).is_file())
 
 # `allocated` and `deleted` both spell a row `serial N, "slug"`, so reading the whole file
 # counts a retired serial as live and then reports it as a serial that reaches no document.
@@ -94,7 +127,7 @@ for tree in sorted({ROOT/p/"rfd" for _, p in projects} | {RFD/"rfd"}):
     if not tree.is_dir():
         continue
     for entry in sorted(os.listdir(tree)):
-        name = entry[:-4] if entry.endswith(".exs") else entry
+        name = entry[:-4] if entry.endswith((".exs", ".txn")) else entry
         m = re.match(r"^(\d{4})-", name)
         if m:
             # A name, not a path: 1144 is both an .exs source and a linked directory.
@@ -139,7 +172,7 @@ check("every linkfile resolves", not broken, f"{len(links)} links, broken: {brok
 # The READMEs are build artifacts (RFD66606-2232). Rule 3: an unbuilt checkout is an unmet
 # precondition and fails, rather than measuring zero of them and reporting no offenders.
 limit = 40
-sources = sorted((RFD/"rfd").glob("*.exs"))
+sources = sorted((RFD/"rfd").glob("*.txn"))
 rendered = sorted((RFD/"rfd").glob("*/README.md"))
 check("READMEs rendered to measure", bool(rendered),
       f"{len(rendered)} rendered / {len(sources)} sources"

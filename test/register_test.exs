@@ -141,6 +141,8 @@ defmodule RegisterTest do
              )
   end
 
+  # The DSL is what a base revision with SERIALS*.exs still holds; `mix rfd.serials --base`
+  # compiles it.
   test "the DSL builds the same struct and refuses a serial/3 outside a slug table" do
     code = """
     defmodule RegisterTestGood do

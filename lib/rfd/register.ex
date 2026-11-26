@@ -4,10 +4,12 @@
 defmodule RFD.Register do
   @moduledoc """
   One site's serial register as data, and the `SERIALS*.usda` layer rendered from it.
-  `SERIALS.exs` at the repository root is the reference source; README.md
-  shows the block. A serial is appended once and never reused, so the compile refuses
-  a serial listed twice, a serial from another site, and a retired row whose
-  `recorded_in` names no serial in the register.
+  The journals are its source (operator, 2026-11-26): `from_journals/1` builds every
+  site's register from the RFD journals and `journal/serials.txn`, as
+  `RFD.Register.Journal` describes. The `register` DSL stays to read a base revision
+  that still has `SERIALS*.exs`. A serial is appended once and never reused, so a
+  register is refused for a serial listed twice, a serial from another site, and a
+  retired row whose `recorded_in` names no serial in the register.
   """
 
   @enforce_keys [:name]
@@ -95,6 +97,18 @@ defmodule RFD.Register do
       end
     end
   end
+
+  @doc "Every site's register, built from the journals under `root`."
+  def from_journals(root \\ RFD.Source.repo_root()), do: RFD.Register.Journal.registers(root)
+
+  # The names the layers had beside their SERIALS*.exs sources; pen-66606 sublayers them.
+  @usda %{1 => "SERIALS.usda", 2 => "SERIALS-vsekai-fabric.usda"}
+
+  @doc "The file a register's `.usda` layer is rendered to."
+  def usda_name(%__MODULE__{layer: l}), do: @usda[l.site] || "SERIALS-#{l.site_name}.usda"
+
+  @doc "The register as an `RFD.Corpus` corpus."
+  def corpus(%__MODULE__{} = r), do: %{kind: :serials, name: r.name, entries: r.rows}
 
   @doc false
   def slug_table(:allocated), do: :allocated

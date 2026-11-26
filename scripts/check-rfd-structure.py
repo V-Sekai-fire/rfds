@@ -44,16 +44,83 @@ HEX_CITE_RE = re.compile(r"\bRFD\s+([1-9][0-9a-f]{0,2}[a-f][0-9a-f]*)\b")
 CITE_RE = re.compile(r"\bRFD(?:\s+|66606-)([0-9]{4})\b")
 BARE_RE = re.compile(r"\bRFDs?\s+([0-9]{4})\b")
 QUOTED_RE = re.compile(r'"[^"]*"|“[^”]*”')
-# The register's own reader, so the two gates cannot disagree about which
-# serials exist. A deleted serial stays citable, so both tables count.
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import importlib.util as _ilu
+# The registers are built from the journals and rendered to SERIALS*.usda by
+# `mix rfd.render`; `mix rfd.serials` holds them against the tree (operator,
+# 2026-11-26). This gate reads the rendered layer. A deleted serial stays
+# citable, so both tables count.
+from pxr import Sdf, Usd
 
-_spec = _ilu.spec_from_file_location(
-    "rfd_serials", os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                "check-rfd-serials.py"))
-_serials = _ilu.module_from_spec(_spec)
-_spec.loader.exec_module(_serials)
+ROW_RE = re.compile(r"^S(\d+)$")
+
+
+def table_rows(prim, names):
+    """Rows of one relation, in whichever of the two shapes the layer uses.
+
+    ROW FORM is one prim per tuple, the primary key in the prim name. USD refuses
+    two siblings with one name, so a duplicate key cannot be authored and there is
+    no second array to fall out of step with the first.
+
+    ARRAY FORM is parallel `int[]`/`string[]`, which is what this register held
+    until the row form replaced it and what other sites still author. It is read
+    because `pen-66606.usda` sublayers those registers, and a reader that
+    understood only the new shape would compose them to nothing -- which reads
+    exactly like a site with no serials.
+    """
+    children = [(m.group(1), c) for c in prim.GetChildren()
+                if (m := ROW_RE.match(c.GetName()))]
+    if children:
+        other = [n for n in names if n != "serial"]
+        rows = []
+        for key, child in children:
+            value = key
+            for name in other:
+                a = child.GetAttribute(name)
+                if a and a.HasAuthoredValue():
+                    value = a.Get()
+            rows.append((int(key), value))
+        return rows
+
+    arrays = {}
+    for name in names:
+        a = prim.GetAttribute(name)
+        arrays[name] = list(a.Get()) if a and a.HasAuthoredValue() else None
+    if arrays.get("serial") is None:
+        return []
+    other = "slug" if "slug" in names else "recorded_in"
+    values = arrays.get(other)
+    if values is None or len(values) != len(arrays["serial"]):
+        return []
+    return list(zip(arrays["serial"], values))
+
+
+def read(text):
+    """(allocated, deleted) as serial -> value, read off the composed stage.
+
+    A relation is any prim declaring `columns`, and the scope above it says
+    which table it is. Reading the declaration rather than a fixed prim path
+    means a site can name its own scope after itself.
+    """
+    layer = Sdf.Layer.CreateAnonymous(".usda")
+    if not layer.ImportFromString(text):
+        raise ValueError("a SERIALS*.usda register does not parse as USD")
+    stage = Usd.Stage.Open(layer)
+    allocated, deleted = {}, {}
+    for prim in stage.Traverse():
+        cols = prim.GetAttribute("columns")
+        if not (cols and cols.HasAuthoredValue()):
+            continue
+        names = [str(c).split()[0] for c in cols.Get() if str(c).strip()]
+        table = None
+        for ancestor in str(prim.GetPath()).split("/"):
+            if ancestor == "Allocated":
+                table = allocated
+            elif ancestor == "Deleted":
+                table = deleted
+        if table is None:
+            continue
+        for serial, value in table_rows(prim, names):
+            table[f"{serial}"] = str(value)
+    return allocated, deleted
 
 # The order these carry when present. Extra headings may sit between them.
 SPINE = ("Decision", "References", "Related")
@@ -138,10 +205,9 @@ def known_numbers(root, dirs):
     RFDs and still cite them by number. Requiring a directory would reject the
     citation that records the deletion.
 
-    SERIALS.usda is the one place those numbers live, and `check-rfd-serials.py`
-    holds it against the tree. This gate borrows that file's reader rather than
-    parsing the register a second way, so the two cannot disagree about which
-    numbers exist.
+    The SERIALS*.usda layers carry those numbers, rendered from the journals,
+    and `mix rfd.serials` holds the registers against the tree. This gate reads
+    the rendered layer, so it reads the numbers the registers hold.
     """
     nums = {d[:4] for d in dirs}
     # Every SERIALS*.usda register in the repo root contributes: SERIALS.usda
@@ -152,7 +218,7 @@ def known_numbers(root, dirs):
                                              and entry.endswith(".usda"))):
             continue
         with open(os.path.join(root, entry), encoding="utf-8") as fh:
-            allocated, deleted = _serials.read(fh.read())
+            allocated, deleted = read(fh.read())
         nums |= set(allocated) | set(deleted)
     return nums
 
@@ -448,7 +514,37 @@ See `DETAILS.md` for the rest.
 GOOD_DETAILS = "# RFD66606-1001 details: the rest\n\nProse.\n"
 # The gate reads the citable numbers out of the register, so the fixture tree
 # carries one. RFD66606-1002 is deleted here, and the good README cites it.
-REGISTER = _serials.GOOD
+REGISTER = """#usda 1.0
+(
+    defaultPrim = "Serials"
+)
+
+def Scope "Serials"
+{
+    def Scope "Weftspun"
+    {
+        def Scope "Allocated"
+        {
+            def "Rfd"
+            {
+                custom string[] columns = ["serial int16 PK", "slug string"]
+                custom int[] serial = [1000, 1001]
+                custom string[] slug = ["conventions", "a-slug"]
+            }
+        }
+
+        def Scope "Deleted"
+        {
+            def "Retired"
+            {
+                custom string[] columns = ["serial int16 PK", "recorded_in int16 FK"]
+                custom int[] serial = [1002]
+                custom int[] recorded_in = [1070]
+            }
+        }
+    }
+}
+"""
 GOOD_CONVENTIONS = """# RFD66606-1000: Conventions
 
 **State:** published

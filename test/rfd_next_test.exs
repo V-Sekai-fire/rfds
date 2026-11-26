@@ -25,6 +25,13 @@ defmodule RfdNextTest do
     assert Next.next(reg(@rows), [3012]) == 2006
   end
 
+  test "the register that allocates is the one site not decommissioned" do
+    frozen = %RFD.Register{name: "F", layer: %{site: 1, note: {:decommissioned, "x"}}, rows: []}
+    open = %RFD.Register{name: "T", layer: %{site: 2, note: {:reactivated, "y"}}, rows: @rows}
+    assert Next.allocating([frozen, open]) == open
+    assert_raise Mix.Error, fn -> Next.allocating([frozen]) end
+  end
+
   test "a full site raises rather than spilling into the next site's digit" do
     assert_raise Mix.Error, fn -> Next.next(reg([{:allocated, 2999, "z", []}])) end
   end

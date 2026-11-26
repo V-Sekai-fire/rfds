@@ -229,7 +229,7 @@ repos:
       # commit is judged and `prek run --all-files` in CI is not -- nothing is staged
       # there and the gate would report a green run for a check it did not perform.
       # The `comment-ladder` job in checks.yml passes `--base origin/<base>` for that
-      # reason, the way `rfd-serials` already does.
+      # reason, the way `ci-rfd-serials` already does.
       - id: comment-ladder
         name: no changed source file climbs the comment-density ladder
         entry: elixir scripts/check_comment_ladder.exs
@@ -354,17 +354,18 @@ repos:
           Elixir, thus the formatter is the first check it passes.
         entry: mix format --check-formatted
         language: system
-        files: '^([0-9]{4}-.*\.exs?|rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^([0-9]{4}-.*\.exs?|rfd/[0-9]{4}-[^/]+\.txn|journal/serials\.txn|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
-      # RFD66606-2232: every RFD is rfd/NNNN-slug.exs and every register is SERIALS*.exs;
-      # the Markdown and the .usda are rendered from them and untracked, so the hooks
-      # below that read the tree read a fresh rendering.
+      # RFD66606-2232: every RFD is rfd/NNNN-slug.txn, and the registers are built from
+      # those journals and journal/serials.txn (operator, 2026-11-26); the Markdown and
+      # the .usda are rendered from them and untracked, so the hooks below that read the
+      # tree read a fresh rendering.
       - id: rfd-dsl-render
         name: render the RFD and register sources
         entry: mix rfd.render
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|journal/serials\.txn|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: rfd-dates
@@ -378,14 +379,16 @@ repos:
         name: every RFD and register source compiles inside RFD66606-1000's shape
         entry: mix rfd.check
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|journal/serials\.txn|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
+      # Also what `check-rfd-serials.py` held: the register against the tree, here for
+      # both sites, and against its last revision in ci-rfd-serials below.
       - id: rfd-dsl-serials
         name: the registers agree with the sources on disk
         entry: mix rfd.serials
         language: system
-        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|lib/.*|test/.*|mix\.exs)$'
+        files: '^(rfd/[0-9]{4}-[^/]+\.txn|journal/serials\.txn|lib/.*|test/.*|mix\.exs)$'
         pass_filenames: false
 
       - id: rfd-dsl-rectgtn
@@ -422,7 +425,7 @@ repos:
         name: the RFD DSL still refuses known-broken documents
         entry: mix test
         language: system
-        files: '^(lib/.*|test/.*|mix\.exs|RFD\.lock\.exs|MEASUREMENTS\.exs)$'
+        files: '^(lib/.*|test/.*|mix\.exs|RFD\.lock\.exs|MEASUREMENTS\.exs|journal/serials\.txn)$'
         pass_filenames: false
 
       # Churny literals in RFD prose (side paths, branches, PR numbers, SHAs, file:line)
@@ -484,18 +487,6 @@ repos:
         entry: python scripts/check-rfd-numbers.py --self-test
         language: python
         files: ^scripts/check-rfd-numbers\.py$
-        pass_filenames: false
-
-      - id: rfd-serials
-        name: rfd serials (the register)
-        description: >-
-          Holds SERIALS.usda against the tree, and against its own
-          last revision. A renumbering removes serials, so it fails
-          there. RFD66606-1000 gives the rule.
-        entry: python scripts/check-rfd-serials.py
-        language: python
-        additional_dependencies: [usd-core==26.8]
-        files: '^(rfd/[0-9]{4}-[^/]+\.txn|SERIALS[^/]*\.exs|[0-9]{4}-.*|SERIALS\.usda)$'
         pass_filenames: false
 
       - id: dockerfile-and-server
@@ -644,7 +635,7 @@ repos:
 
       - id: ci-rfd-serials
         name: the register still matches the RFDs against the base
-        entry: bash -c 'python scripts/check-rfd-serials.py --self-test && python scripts/check-rfd-serials.py --base "${GATE_BASE:?GATE_BASE unset}"'
+        entry: bash -c 'mix rfd.serials --base "${GATE_BASE:?GATE_BASE unset}"'
         language: system
         pass_filenames: false
         always_run: true

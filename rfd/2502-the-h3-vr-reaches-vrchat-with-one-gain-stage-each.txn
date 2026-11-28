@@ -1,0 +1,245 @@
+2026-11-28T00:00:00Z (RFD66606-2502) 'the h3-vr reaches vrchat with one gain stage each
+ # uuid: 3713b1c7-99e3-50c1-9318-bd6eaabe0ab9
+ # tags: rfd:title, rfd:flight-level:l1
+ RFD:Discussion  1 RFD
+ Serials:VSekaiFabric
+
+2026-11-28T00:00:01Z (RFD66606-2502) 'a Zoom H3-VR used as the VRChat microphone, with each gain stage set once and named.
+ # tags: rfd:feature, rfd:no-final-newline
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:02Z (RFD66606-2502) 'the voice chain from the H3-VR's own gain to what other people in VRChat hear: the recorder, the Windows device, VRChat's input, gate and noise suppression.
+ # tags: rfd:scope, rfd:no-final-newline
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:03Z (RFD66606-2502) 'Can a 360 audio recorder be a VRChat microphone that sounds clear without a person guessing at five different volume knobs?
+ # tags: rfd:hook
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:04Z (RFD66606-2502) 'The chain has five places that change loudness or remove sound: the recorder's gain, the Windows device level, VRChat's output mic level, VRChat's mic gate and VRChat's noise suppression. Set wrong, two of them fight. A gate that is too high cuts the start of words. Noise suppression on a good microphone eats the voice it was meant to keep. A device level and a recorder gain both low push the signal down into the noise floor, and both high clip it.
+ # tags: rfd:intrigue
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:05Z (RFD66606-2502) 'Record the same spoken test line through the chain at the values below and at one changed value per stage. It passes when the line is heard whole, with no clipped peaks and no cut word starts, at the values below, and a single changed stage breaks at least one of those.
+ # tags: rfd:exit
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:06Z (RFD66606-2502) 'the h3-vr reaches vrchat with one gain stage each
+ # tags: rfd:details-title, rfd:no-final-newline
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:07Z (RFD66606-2502) '- The H3-VR's mic gain is 25 (operator, 2026-11-28).
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:08Z (RFD66606-2502) '- The Windows microphone device level is 80 percent.
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:09Z (RFD66606-2502) '- VRChat's output mic level is 100.
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:10Z (RFD66606-2502) '- VRChat's mic gate is 2 percent.
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:11Z (RFD66606-2502) '- VRChat's noise suppression is off.
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:12Z (RFD66606-2502) '- The H3-VR is in USB "Audio I/F" mode, "Stereo" (2-in/2-out, a stereo mix of its four inputs), not "4ch Ambisonics" (operator, 2026-11-28).
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:13Z (RFD66606-2502) '- These five values are the setting to start from, and a change to one of them is made one at a time and written here.
+ # tags: rfd:decision
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:14Z (RFD66606-2502) '- H3-VR Operation Manual: https://zoomcorp.com/media/documents/E_H3-VR_2.pdf ("Using as an audio interface", page 80; "Adjusting input levels", page 37).
+ # tags: rfd:related
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:15Z (RFD66606-2502) '- Zoom H3-VR support: https://zoomcorp.com/en/ca/handheld-recorders/handheld-recorders/h3-vr-360-audio-recorder/h3-vr-support/
+ # tags: rfd:related
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:16Z (RFD66606-2502) 'The chain
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:17Z (RFD66606-2502) '| Stage | Where | Value |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:18Z (RFD66606-2502) '| --- | --- | --- |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:19Z (RFD66606-2502) '| Recorder gain | H3-VR mic gain | 25 |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:20Z (RFD66606-2502) '| Device level | Windows sound settings, the H3-VR as input | 80 percent |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:21Z (RFD66606-2502) '| Output mic | VRChat audio settings | 100 |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:22Z (RFD66606-2502) '| Mic gate | VRChat audio settings | 2 percent |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:23Z (RFD66606-2502) '| Noise suppression | VRChat audio settings | off |
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:24Z (RFD66606-2502) 'What the manual says
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:25Z (RFD66606-2502) '- Audio interface modes: "Stereo" sends inputs 1-4 as a stereo mix, 2-in/2-out, for Windows and Mac, on USB bus power. "4ch Ambisonics" sends the four converted tracks, 4-in/2-out, and on Windows needs the driver from ZOOM's website. "Stereo (iOS)" is for iOS devices.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:26Z (RFD66606-2502) '- Over USB 2.0 High Speed the interface runs 44.1 or 48 kHz at 24 bit. Full Speed is 16 bit.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:27Z (RFD66606-2502) '- Mic gain is +18 to +48 dB. The manual says to adjust so peaks on the level meters stay around -12 dBFS, and to lower the gain if the clipping indicator lights. It does not say what 25 on the dial is in dB.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:28Z (RFD66606-2502) '- The recorder has its own Lo Cut (10 to 240 Hz or off) and limiter. Neither is in the chain above, and both change the voice before VRChat hears it.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:29Z (RFD66606-2502) '- Direct Monitor and Loop Back are audio interface settings. Loop Back mixes the computer's playback into what is sent back, so it must be off or other people hear themselves. It cannot be used in "4ch Ambisonics".
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:30Z (RFD66606-2502) '- The manual's loudness rule is peaks at -12 dBFS, so the gain of 25 is tested against that and not taken as right.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:31Z (RFD66606-2502) 'Why each value
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:32Z (RFD66606-2502) '- The mode is "Stereo" because it is the one that needs no driver on Windows and gives the fewest channels. VRChat takes only a mono microphone (operator, 2026-11-28), so the two channels are made into one somewhere between the recorder and VRChat. Which stage does that is not known. "4ch Ambisonics" would send four channels and needs a driver on Windows. Not tested with it.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:33Z (RFD66606-2502) '- Noise suppression is off because the recorder already gives a clean signal and suppression changes the voice. Not measured here.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:34Z (RFD66606-2502) '- The gate is 2 percent so it opens on quiet speech and still closes on silence. Not measured here.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:35Z (RFD66606-2502) '- The device level is 80 percent and not 100 so the Windows stage has room before clipping. Not measured here.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:36Z (RFD66606-2502) 'What was measured
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:37Z (RFD66606-2502) 'Nothing yet. The values were read out from a working setup by the operator on 2026-11-28. The test in the exit line is not run.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:38Z (RFD66606-2502) 'What is not known
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:39Z (RFD66606-2502) '- What gain 25 is in dB, and whether its peaks sit near -12 dBFS on a spoken line.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:40Z (RFD66606-2502) '- Where the stereo mix becomes the one channel VRChat uses (the Windows device or VRChat), and whether the two channels cancel or add on a spoken line.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:41Z (RFD66606-2502) '- Lo Cut, limiter and Loop Back settings in use.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:42Z (RFD66606-2502) '- Whether the same values hold in a quiet room and a loud one.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:43Z (RFD66606-2502) '- Whether the gate at 2 percent opens on room noise when the recorder gain is 25.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:44Z (RFD66606-2502) 'The problem
+ # tags: rfd:details-heading
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:45Z (RFD66606-2502) 'The values live in a chat message. The next person with an H3-VR starts from nothing.
+ # tags: rfd:details
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:46Z (RFD66606-2502) '2351
+ # tags: rebac:verbs-from
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:47Z (RFD66606-2502) 'rfd-2502 provides h3-vr-vrchat-voice-chain
+ # tags: rebac:relate
+ Text:RFD2502  1 LINE
+ Text:Written
+
+2026-11-28T00:00:48Z (RFD66606-2502) 'rfd-2502 is_a voice-setup
+ # tags: rebac:relate
+ Text:RFD2502  1 LINE
+ Text:Written
